@@ -1,0 +1,43 @@
+{% layout "layout" %}
+
+{% block title %}Blog Archive - {{ global.title }}{% endblock %}
+
+{% block content %} 
+
+<h1 class="text-center">Blog Archive</h1>
+
+<div class="row">
+  <div class="col-sm-offset-3 col-sm-6 text-center">
+    Tags:
+    {% for tag in global.tags %}
+      <a href="/blog/tag/{{ tag | downcase }}">{{ tag }}</a>{% if forloop.index != forloop.length %}, {% endif %}
+    {% endfor %}
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-offset-3 col-sm-6">
+    <p>
+    <form class="text-center form-inline" action="http://google.com/search" method="get">
+      <input type="hidden" name="q" value="site:code.makery.ch">
+        <div class="input-group">
+          <input type="text" class="form-control" name="q" results="0">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-default">Search</button>
+          </span>
+        </div>
+    </form>
+    </p>
+  </div>
+</div>
+
+{% archive "blog" %}
+  {% for item in archive.items %}
+    <h3>{{ item.year }}</h3>
+    <ul class="blog-archive">
+    {% for post in item.children %}
+      <li><a href="{{ post.slug }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  {% endfor %}
+{% endarchive %}
+{% endblock %} 

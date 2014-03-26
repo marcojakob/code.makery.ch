@@ -1,0 +1,8 @@
+<article>
+	<h1>Uh oh :(</h1>
+	{% if mixture.route.tag %}
+	<p>Sorry, I couldn't find any posts with the tag "{{ mixture.route.tag | uri_decode }}"</p>
+	{% else %}
+	<p>No posts have been posted here yet!</p>
+	{% endif %}
+</article>

@@ -1,0 +1,31 @@
+//
+// Custom variables
+// ------------------------------------------------------------
+
+
+//
+// Font Bootstrap overwrites
+// ---------------------------------
+$font-family-sans-serif:  "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       "Museo Slab", Georgia, "Times New Roman", Times, serif !default;
+$font-family-base:        $font-family-serif !default;
+
+$font-size-base:          16px !default;
+$line-height-base:        1.625 !default; // 26 / 16
+
+$font-size-code-block:    14px !default;
+
+$headings-font-family:    $font-family-sans-serif !default;
+$headings-font-weight:    700 !default;
+
+
+//
+// Other Bootstrap Overwrites
+$pre-scrollable-max-height:  30em !default;
+
+
+//
+// Colors
+// ---------------------------------
+$avocado-green:           #8ba644 !default;
+$panel-hover-border:      #adadad !default;

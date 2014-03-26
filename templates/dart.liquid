@@ -1,0 +1,44 @@
+{% layout "layout" %}
+
+{% block title %}Dart - {{ global.title }}{% endblock %}
+
+{% block content %} 
+<article class="java-page">
+  <h1 class="text-center">Dart</h1>
+  <p>
+    I plan to write more about how to learn <code>Dart</code> (hopefully soon). For now, have a look at my open source projects.
+  </p>
+  
+  <h2 id="learn-java">Open Source Projects</h2>
+  
+  <!-- Dart Event Bus -->
+  <a class="panel-link" href="/dart/event-bus">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">Dart Event Bus</h4>
+      </div>
+      <div class="panel-body">
+        <img src="/assets/dart/event-bus.png">
+        <p>
+          An Event Bus library for Dart for decoupling applications.
+        </p>
+      </div>
+    </div>
+  </a>
+  
+  <!-- Dart HTML5 Drag and Drop -->
+  <a class="panel-link" href="/dart/html5-drag-and-drop">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">Dart HTML5 Drag and Drop</h4>
+      </div>
+      <div class="panel-body">
+        <img src="/assets/dart/dnd-example.png">
+        <p>
+          Dart library to simplify HTML5 Drag and Drop accross all modern browsers.
+        </p>
+      </div>
+    </div>
+  </a>
+</article>
+{% endblock %}

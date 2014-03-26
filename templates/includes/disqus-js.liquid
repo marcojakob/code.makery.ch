@@ -1,0 +1,40 @@
+{% if model.comments %}
+  {% if model.comments.shortname %}
+    {% assign shortname = model.comments.shortname %}
+  {% else %}
+    {% assign shortname = global.disqus-shortname %}
+  {% endif %}
+
+  {% if model.comments.identifier %}
+    {% assign identifier = model.comments.identifier %}
+  {% else %}
+    {% assign identifier = model.slug %}
+  {% endif %}
+
+  {% if model.comments.url %}
+    {% assign url = model.comments.url %}
+  {% else %}
+    {% capture url %}{{ global.domain }}/{{ mixture.url }}{% endcapture %}
+  {% endif %}
+
+  {% if model.comments.title %}
+    {% assign title = model.comments.title | remove: "'" %}
+  {% else %}
+    {% assign title = model.title | remove: "'" %}
+  {% endif %}
+
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = '{{ shortname }}'; // Required - the forum shortname
+    var disqus_identifier = '{{ identifier }}';
+    var disqus_url = '{{ url }}';
+    var disqus_title = '{{ title }}';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+{% endif %}

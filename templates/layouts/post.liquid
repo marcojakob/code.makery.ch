@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="alternate" type="application/rss+xml" href="/rss" title="RSS Feed">
+    <!-- Title block allowing child pages to override -->
+    <title>{% block title %}{{ model.title }} - {{ global.title }}{% endblock %}</title>
+    {% include "html-head-end" %}
+  </head>
+  <body {% include "prettify-onload" %}>
+    {% include "header" %}
+
+    <div class="post-container container">
+      {% include "navigation" %}
+      
+      <header class="post-header">
+        <h1 class="post-title">{{ model.title }}</h1>
+        {% include "post/date-tags" with model %}
+      </header>
+
+      <section class="post-content">
+        {% block content %}{% endblock %}
+      </section>
+      
+      {% if model.comments %}
+      <hr>
+      <section class="post-comments">
+        <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+      </section>
+      {% endif %}
+    </div>
+    
+    {% include "footer" %}
+    
+    {% include "html-body-end" %}
+  </body>
+</html>

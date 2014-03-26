@@ -1,0 +1,10 @@
+{
+  "title": "code.makery.ch",
+  "intro": "Learning how to code.",
+  "analytics-id": "UA-34917397-3",
+  "analytics-name": "makery.ch",
+  "domain": "http://code.makery.ch",
+  "email": "majakob@gmx.ch",
+  "disqus-shortname": "codemakery",
+  "tags": [ "Dart", "Java", "JavaFX" ]
+}

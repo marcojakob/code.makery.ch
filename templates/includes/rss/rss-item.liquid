@@ -1,0 +1,10 @@
+<item>
+	<title>{{ rss-item.title | html_encode }}</title>
+	<link>{{ global.domain }}{{ rss-item.slug }}</link>
+	<guid>{{ rss-item.slug }}</guid>
+	{% for category in rss-item.categories %}
+	<category>{{ category | html_encode }}</category>
+	{% endfor %}
+	<pubDate>{{ rss-item.date | date:'%a, %d %b %Y %H:%M:%S GMT'}}</pubDate>
+	<description>{{ rss-item.body | strip_html | truncatewords:50,'...' | html_encode }}</description>
+</item>
