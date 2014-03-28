@@ -10643,7 +10643,7 @@ sectionDropEffects: function() {
 
 sectionDragImages: function() {
   var png, canvas, t1, ctx, canvasImage, dragGroupOne, dragGroupTwo, dragGroupThree, dropGroup;
-  png = $.ImageElement_ImageElement(null, "/assets/collections/dart/html5-drag-and-drop/smiley-happy.png", null);
+  png = $.ImageElement_ImageElement(null, "/assets/dart/html5-drag-and-drop/smiley-happy.png", null);
   canvas = $.CanvasElement_CanvasElement(null, null);
   t1 = $.getInterceptor$x(canvas);
   ctx = t1.get$context2D(canvas);
@@ -10697,7 +10697,7 @@ sectionSortableList: function() {
 
 sectionSortableTwoGroups: function() {
   var png, sortGroup1, t1, sortGroup2;
-  png = $.ImageElement_ImageElement(null, "/assets/collections/dart/html5-drag-and-drop/smiley-happy.png", null);
+  png = $.ImageElement_ImageElement(null, "/assets/dart/html5-drag-and-drop/smiley-happy.png", null);
   sortGroup1 = new $.SortableGroup("dnd-placeholder", true, false, null, new $.DropzoneGroup(new $.HashSet(0, null, null, null, null), null, null, null, null, new $.HashMap(0, null, null, null, null)), $.List_List($), null, "dnd-drag-occurring", "dnd-dragging", "dnd-over", "move", null, null, "input,textarea,button,select,option", null, null, null, false, new $.HashMap(0, null, null, null, null));
   sortGroup1.DraggableGroup$3$cancel$dragImageFunction$handle("input,textarea,button,select,option", null, null);
   sortGroup1.draggingClass = null;

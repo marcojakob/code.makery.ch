@@ -144,7 +144,7 @@ For our simple data model it's much easier to use XML. We'll use a library calle
 
 Since Java 7 there are some convenient classes to deal with reading and writing files. For a detailed tutorial see Oracle's [File I/O Tutorial](http://docs.oracle.com/javase/tutorial/essential/io/fileio.html).
 
-Since we might need to read/write files in different places of our application we'll create a handy `FileUtil` helper class. This class provides one static method for reading from a file and one for writing to a file. Copy the following file into the `ch.makery.util` package:
+Since we might need to read/write files in different places of our application we'll create a handy `FileUtil` helper class. This class provides one static method for reading from a file and one for writing to a file. Copy the following file into the `ch.makery.address.util` package:
 
 
 ##### FileUtil.java

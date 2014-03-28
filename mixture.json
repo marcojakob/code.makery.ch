@@ -19,7 +19,7 @@
     "modelSource": null,
     "domain": null,
     "convertHtmlOutput": null,
-    "convertHtmlExtension": ".html",
+    "convertHtmlExtension": null,
     "followLeader": true,
     "routes": [
         {
@@ -36,6 +36,21 @@
             "route": "blog/tag/:tag/page-:page",
             "template": "blog",
             "redirect": null
+        },
+        {
+            "route": "blog/index",
+            "template": "blog",
+            "redirect": null
+        },
+        {
+            "route": "dart/index",
+            "template": "dart",
+            "redirect": null
+        },
+        {
+            "route": "java/index",
+            "template": "java",
+            "redirect": null
         }
     ],
     "customRuby": false,
@@ -43,7 +58,7 @@
     "remoteDebugPort": 0,
     "optimiseImages": true,
     "password": null,
-    "ignoreDir": "ignore",
+    "ignoreDir": "ignore,models",
     "customTodos": [
         {
             "fileTypes": "md",
@@ -63,7 +78,7 @@
     "sitemap": false,
     "gitHubPages": {
         "repoUrl": "https://github.com/marcojakob/code.makery.ch.git",
-        "guid": "e186d08c-0679-4a3a-bd7e-f9a781d049e7"
+        "guid": "68cb0f51-5f17-47b5-b12f-1099c825f4af"
     },
     "less": null,
     "optimiseSVG": true
