@@ -3,7 +3,7 @@
     "lintScripts": false,
     "preprocessorLocations": "assets,theme",
     "preprocessorScriptOutput": null,
-    "preprocessorStyleOutput": null,
+    "preprocessorStyleOutput": "theme/css",
     "projectName": "code.makery",
     "projectDescription": "Learning how to make code.",
     "publishedId": null,

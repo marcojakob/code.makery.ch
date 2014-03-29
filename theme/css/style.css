@@ -6371,6 +6371,30 @@ ol.alpha-list,
     .alpha-list + ol ol ol {
       list-style-type: decimal; }
 
+.ribbon {
+  background-color: #8ba644;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  right: -60px;
+  top: 60px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-shadow: 0 0 10px #888;
+  box-shadow: 0 0 10px #888; }
+
+.ribbon a {
+  border: 1px solid #b5c48c;
+  color: #fff;
+  display: block;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 1px 0;
+  padding: 2px 50px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 5px #444; }
+
 .panel-body img {
   float: left;
   max-width: 120px; }
@@ -6519,83 +6543,4 @@ ol.alpha-list,
   .paging .next {
     position: absolute;
     right: 0; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

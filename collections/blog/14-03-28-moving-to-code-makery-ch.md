@@ -9,7 +9,7 @@ comments: true
 ---
 
 
-This blog is moving to a new home:
+This blog moved from edu.makery.ch to code.makery.ch.
 
 #### Please update your links and RSS feeds to [code.makery.ch](http://code.makery.ch)   
 #### Or even better: Sign up to [receive updates by email](https://tinyletter.com/code-makery)

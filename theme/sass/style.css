@@ -6371,6 +6371,21 @@ ol.alpha-list,
     .alpha-list + ol ol ol {
       list-style-type: decimal; }
 
+.ribbon2 {
+  background-color: #a00;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.ribbon2 a {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 81.25% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 1px 0;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none; }
+
 .panel-body img {
   float: left;
   max-width: 120px; }
