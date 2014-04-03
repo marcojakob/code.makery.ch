@@ -20,6 +20,8 @@
     "domain": null,
     "convertHtmlOutput": null,
     "convertHtmlExtension": null,
+    "convertHtmlIgnore": null,
+    "convertHtmlDefault": "index",
     "followLeader": true,
     "routes": [
         {
@@ -35,21 +37,6 @@
         {
             "route": "blog/tag/:tag/page-:page",
             "template": "blog",
-            "redirect": null
-        },
-        {
-            "route": "blog/index",
-            "template": "blog",
-            "redirect": null
-        },
-        {
-            "route": "dart/index",
-            "template": "dart",
-            "redirect": null
-        },
-        {
-            "route": "java/index",
-            "template": "java",
             "redirect": null
         }
     ],

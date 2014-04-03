@@ -1,14 +1,14 @@
 <article>
   {% assign post = post-short %}
   <header class="post-header">
-    <h2 class="post-title"><a class="black-link" href="{{ post.slug }}">{{ post.title }}</a></h2>
+    <h2 class="post-title"><a class="black-link" href="{{ post.slug }}/">{{ post.title }}</a></h2>
     {% include "post/date-tags" with post %}
   </header>
   
   <section class="post-content">
     {% capture more %}... {% endcapture %}
     <p>{{ post.body | strip_html | truncatewords:50,more }}</p>
-    <p><a href="{{ post.slug }}" class="post-more btn btn-default">Read more &rarr;</a></p>
+    <p><a href="{{ post.slug }}/" class="post-more btn btn-default">Read more &rarr;</a></p>
   </section>
   <hr class="post-ruler">
 </article>

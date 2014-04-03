@@ -13,23 +13,23 @@ sidebars:
   paging: true
   body:
   - text: "Introduction"
-    link: /java/javafx-2-tutorial-intro
+    link: /java/javafx-2-tutorial-intro/
     intro: true
   - text: "Part 1: Scene Builder"
-    link: /java/javafx-2-tutorial-part1
+    link: /java/javafx-2-tutorial-part1/
   - text: "Part 2: Model and TableView"
-    link: /java/javafx-2-tutorial-part2
+    link: /java/javafx-2-tutorial-part2/
     active: true
   - text: "Part 3: Interacting with the User"
-    link: /java/javafx-2-tutorial-part3
+    link: /java/javafx-2-tutorial-part3/
   - text: "Part 4: CSS Styling"
-    link: /java/javafx-2-tutorial-part4
+    link: /java/javafx-2-tutorial-part4/
   - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-2-tutorial-part5
+    link: /java/javafx-2-tutorial-part5/
   - text: "Part 6: Statistics Chart"
-    link: /java/javafx-2-tutorial-part6
+    link: /java/javafx-2-tutorial-part6/
   - text: "Part 7: Deployment with e(fx)clipse"
-    link: /java/javafx-2-tutorial-part7
+    link: /java/javafx-2-tutorial-part7/
 - header: "Download Sources"
   body:
   - text: Source of Part 2 (Eclipse Project)
@@ -305,7 +305,7 @@ public void showPersonOverview() {
 
 * * *
 
-## Hook the view to the Controller
+## Hook the View to the Controller
 
 We're almost there! But one little thing is missing: We haven't told our `PersonOverview.fxml` file yet, which controller to use and which element should match to which field inside the controller.
 
@@ -332,4 +332,4 @@ Congratulations!
 
 ### What's Next?
 
-In [Tutorial Part 3](/java/javafx-2-tutorial-part3) we will add more functionality like adding, deleting and editing Persons.
+In [Tutorial Part 3](/java/javafx-2-tutorial-part3/) we will add more functionality like adding, deleting and editing Persons.

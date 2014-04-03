@@ -11,27 +11,27 @@ sidebars:
   paging: true
   body:
   - text: "Introduction"
-    link: /java/greenfoot-kara-intro
+    link: /java/greenfoot-kara-intro/
     intro: true
     active: true
   - text: "Teacher's Info"
-    link: /java/greenfoot-kara-teachers-info
+    link: /java/greenfoot-kara-teachers-info/
     icon-css: fa fa-fw fa-info
     paging-exclude: true
   - text: "Chapter 1: First Steps"
-    link: /java/greenfoot-kara-chapter1
+    link: /java/greenfoot-kara-chapter1/
   - text: "Chapter 2: Program Flow"
-    link: /java/greenfoot-kara-chapter2
+    link: /java/greenfoot-kara-chapter2/
   - text: "Chapter 3: Variables"
-    link: /java/greenfoot-kara-chapter3
+    link: /java/greenfoot-kara-chapter3/
   - text: "Chapter 4: Sokoban Game"
-    link: /java/greenfoot-kara-chapter4
+    link: /java/greenfoot-kara-chapter4/
   - text: "Chapter 5: Methods"
-    link: /java/greenfoot-kara-chapter5
+    link: /java/greenfoot-kara-chapter5/
 - header: Languages
   body:
   - text: Deutsch
-    link: /java/greenfoot-kara-intro-de
+    link: /java/greenfoot-kara-intro-de/
     icon-css: fa fa-fw fa-globe
 ---
 
@@ -81,7 +81,7 @@ The rules of Kara’s world are simple:
 
 Download and install [Greenfoot](http://www.greenfoot.org/download). After the installation you should be able to open and compile the predefined Kara scenarios (see downloads on the following pages).
 
-To jump right in go to [Chapter 1: First Steps](/java/greenfoot-kara-chapter1).
+To jump right in go to [Chapter 1: First Steps](/java/greenfoot-kara-chapter1/).
 
-To get mor background about `GreenfootKara` and its design decisions visit [Teacher's Info](/java/greenfoot-kara-teachers-info) (is especially recommmended for teachers).
+To get mor background about `GreenfootKara` and its design decisions visit [Teacher's Info](/java/greenfoot-kara-teachers-info/) (is especially recommmended for teachers).
 

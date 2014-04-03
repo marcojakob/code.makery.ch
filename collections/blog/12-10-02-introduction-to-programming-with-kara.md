@@ -65,19 +65,19 @@ I usually prefer to start directly with writing code in the Java or Dart languag
 
 ### DartKara (Dart)
 
-DartKara is a scenario written in Dart. It can be used in the Dart Editor which is a very nice and simple development environment. The scenario comes with handouts and exercises. You can find those resources on the [Dart](/dart) page.
+DartKara is a scenario written in Dart. It can be used in the Dart Editor which is a very nice and simple development environment. The scenario comes with handouts and exercises. You can find those resources on the [Dart](/dart/) page.
 
 
 ### GreenfootKara (Java)
 
-Since I really like the editor of the [Greenfoot IDE](http://greenfoot.org) I decided to create a Kara version that works with Greenfoot, it is called GreenfootKara. In addition to this I wrote an entire beginners course of 16-20 lessons with exercises and handouts to go along with GreenfootKara. You can find the links to the German and English versions on the [GreenfootKara](/java/greenfoot-kara-intro) page.
+Since I really like the editor of the [Greenfoot IDE](http://greenfoot.org) I decided to create a Kara version that works with Greenfoot, it is called GreenfootKara. In addition to this I wrote an entire beginners course of 16-20 lessons with exercises and handouts to go along with GreenfootKara. You can find the links to the German and English versions on the [GreenfootKara](/java/greenfoot-kara-intro/) page.
 
 
 ### GameGridKara (Java)
 
 Sometimes, especially if time is too short, it might be good to directly start with a professional development environment like Eclipse or NetBeans. Since it was not possible to integrate Greenfoot into Eclipse/NetBeans, I had to find another solution. Altough, we could start JavaKara from Eclipse/NetBeans, there are just some things that are not possible (like programming an interactive Kara game). The solution was to port the code to work with a library called *JGameGrid*.
 
-GameGridKara enables us to use Kara in any IDE of our choice by simply adding two jar files to a project. The link to GameGridKara with the adjusted beginners course in German and English can be found on the [GameGridKara](/java/gamegrid-kara-intro) page.
+GameGridKara enables us to use Kara in any IDE of our choice by simply adding two jar files to a project. The link to GameGridKara with the adjusted beginners course in German and English can be found on the [GameGridKara](/java/gamegrid-kara-intro/) page.
 
 
 ### JavaKara (Java)

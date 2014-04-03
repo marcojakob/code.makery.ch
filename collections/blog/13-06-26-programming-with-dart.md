@@ -18,7 +18,7 @@ The last few months I have been programming with Google's new [Dart](http://www.
 
 After a while I found some things that I was missing and started to write a few Dart libraries:
 
-* The first was a [Dart EventBus](/dart/event-bus) for decoupling applications.
-* The second was [HTML5 Drag and Drop](/dart/html5-drag-and-drop) support.
+* The first was a [Dart EventBus](/dart/event-bus/) for decoupling applications.
+* The second was [HTML5 Drag and Drop](/dart/html5-drag-and-drop/) support.
 
 HTML5 Drag and Drop was quite a task to get working across different browsers! Take a look and let me know what you think or if you have any issues with it.

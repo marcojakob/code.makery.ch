@@ -15,7 +15,7 @@ Almost every application will need some way to persistently store data. There ar
 
 ![Floppy](/assets/blog/12-12-13-persisting-data-in-java/floppy.png)
 
-Some of the techniques (Preferences, XML and reading/writing Files) described here were already used in the [JavaFX 2 Tutorial Part 5](/java/javafx-2-tutorial-part5). 
+Some of the techniques (Preferences, XML and reading/writing Files) described here were already used in the [JavaFX 2 Tutorial Part 5](/java/javafx-2-tutorial-part5/). 
 
 
 * * *
@@ -26,7 +26,7 @@ With the class [`Preferences`](http://docs.oracle.com/javase/7/docs/api/index.ht
 
 Depending on the operating system, the `Preferences` are saved in different places (e.g. the registry file in Windows).
 
-* `Preferences` example in [JavaFX 2 Tutorial Part 5](/java/javafx-2-tutorial-part5).
+* `Preferences` example in [JavaFX 2 Tutorial Part 5](/java/javafx-2-tutorial-part5/).
 * Instructions in *German* in the book [Java ist auch eine Insel](http://openbook.galileocomputing.de/javainsel/javainsel_11_009.html#dodtp29221705-11a7-4fe0-8f23-bfb46d58ff59)
 
 
@@ -50,7 +50,7 @@ That's why it helps to save data in some structured form like XML.
 
 XStream is a simple library to serialize objects to XML and back again. Serializing means that, given an object (which may contain a reference to other objects), XStream will create a single XML-String representing this object(s). The XML-String can then be saved to a file. XStream will later accept this XML-String to reproduce the object(s) again.
 
-* XML example in [JavaFX 2 Tutorial Part 5](/java/javafx-2-tutorial-part5).
+* XML example in [JavaFX 2 Tutorial Part 5](/java/javafx-2-tutorial-part5/).
 * Official [XStream Website](http://xstream.codehaus.org/) with a good [Two Minute Tutorial](http://xstream.codehaus.org/tutorial.html).
 
 When data gets more complex then a database instead of XML is appropriate.

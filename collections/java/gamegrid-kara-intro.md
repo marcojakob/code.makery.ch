@@ -8,7 +8,7 @@ sidebars:
 - header: Languages
   body:
   - text: Deutsch
-    link: /java/gamegrid-kara-intro-de
+    link: /java/gamegrid-kara-intro-de/
     icon-css: fa fa-fw fa-globe
 ---
 

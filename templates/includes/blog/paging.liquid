@@ -3,15 +3,15 @@
   
   {% if collection.previous %}
     {% if collection.current_page == "2" %}
-        <a href="/blog{{ current_tag }}" class="previous">&larr; Newer Posts</a>
+        <a href="/blog{{ current_tag }}/" class="previous">&larr; Newer Posts</a>
     {% else %}
-        <a href="/blog{{ current_tag }}/page-{{ collection.current_page | minus: 1 }}" class="previous">&larr; Newer Posts</a>
+        <a href="/blog{{ current_tag }}/page-{{ collection.current_page | minus: 1 }}/" class="previous">&larr; Newer Posts</a>
     {% endif %}
   {% endif %}
   
-  <a href="/archive">&mdash; Blog Archive &mdash;</a>
+  <a href="/archive/">&mdash; Blog Archive &mdash;</a>
   
   {% if collection.next %}
-      <a href="/blog{{ current_tag }}/page-{{ collection.current_page | plus: 1 }}" class="next">Older Posts &rarr;</a>
+      <a href="/blog{{ current_tag }}/page-{{ collection.current_page | plus: 1 }}/" class="next">Older Posts &rarr;</a>
   {% endif %}
 </div>

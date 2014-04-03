@@ -9,7 +9,7 @@ sidebars:
 - header: Languages
   body:
   - text: English
-    link: /java/greenfoot-kara-intro
+    link: /java/greenfoot-kara-intro/
     icon-css: fa fa-fw fa-globe
 ---
 

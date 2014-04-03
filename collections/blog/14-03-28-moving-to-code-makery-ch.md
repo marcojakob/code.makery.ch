@@ -24,7 +24,7 @@ So I decided to move to a new subdomain that expresses what the website is about
 
 ## Redesign
 
-At the same time I made a **complete redesign** and separated the rather large tutorials from the blog (containing shorter posts).
+At the same time I made a **complete redesign** and separated the rather large tutorials from the blog (containing shorter posts). I changed the technology from [Octopress](http://octopress.org/) to [mixture.io](http://mixture.io/). Mixture.io is awesome. If you're thinking about creating a static website or blog, you should definitely check out mixture.io! 
 
 
 ## Expect More Tutorials

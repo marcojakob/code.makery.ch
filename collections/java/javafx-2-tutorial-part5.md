@@ -13,23 +13,23 @@ sidebars:
   paging: true
   body:
   - text: "Introduction"
-    link: /java/javafx-2-tutorial-intro
+    link: /java/javafx-2-tutorial-intro/
     intro: true
   - text: "Part 1: Scene Builder"
-    link: /java/javafx-2-tutorial-part1
+    link: /java/javafx-2-tutorial-part1/
   - text: "Part 2: Model and TableView"
-    link: /java/javafx-2-tutorial-part2
+    link: /java/javafx-2-tutorial-part2/
   - text: "Part 3: Interacting with the User"
-    link: /java/javafx-2-tutorial-part3
+    link: /java/javafx-2-tutorial-part3/
   - text: "Part 4: CSS Styling"
-    link: /java/javafx-2-tutorial-part4
+    link: /java/javafx-2-tutorial-part4/
   - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-2-tutorial-part5
+    link: /java/javafx-2-tutorial-part5/
     active: true
   - text: "Part 6: Statistics Chart"
-    link: /java/javafx-2-tutorial-part6
+    link: /java/javafx-2-tutorial-part6/
   - text: "Part 7: Deployment with e(fx)clipse"
-    link: /java/javafx-2-tutorial-part7
+    link: /java/javafx-2-tutorial-part7/
 - header: "Download Sources"
   body:
   - text: Source of Part 5 (Eclipse Project)
@@ -492,5 +492,5 @@ Let's see how it all works together:
 
 ### What's Next?
 
-In Tutorial [Part 6](/java/javafx-2-tutorial-part6) we'll add a birthday statistics chart.
+In Tutorial [Part 6](/java/javafx-2-tutorial-part6/) we'll add a birthday statistics chart.
 

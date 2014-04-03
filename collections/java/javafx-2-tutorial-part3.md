@@ -13,23 +13,23 @@ sidebars:
   paging: true
   body:
   - text: "Introduction"
-    link: /java/javafx-2-tutorial-intro
+    link: /java/javafx-2-tutorial-intro/
     intro: true
   - text: "Part 1: Scene Builder"
-    link: /java/javafx-2-tutorial-part1
+    link: /java/javafx-2-tutorial-part1/
   - text: "Part 2: Model and TableView"
-    link: /java/javafx-2-tutorial-part2
+    link: /java/javafx-2-tutorial-part2/
   - text: "Part 3: Interacting with the User"
-    link: /java/javafx-2-tutorial-part3
+    link: /java/javafx-2-tutorial-part3/
     active: true
   - text: "Part 4: CSS Styling"
-    link: /java/javafx-2-tutorial-part4
+    link: /java/javafx-2-tutorial-part4/
   - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-2-tutorial-part5
+    link: /java/javafx-2-tutorial-part5/
   - text: "Part 6: Statistics Chart"
-    link: /java/javafx-2-tutorial-part6
+    link: /java/javafx-2-tutorial-part6/
   - text: "Part 7: Deployment with e(fx)clipse"
-    link: /java/javafx-2-tutorial-part7
+    link: /java/javafx-2-tutorial-part7/
 - header: "Download Sources"
   body:
   - text: Source of Part 3 (Eclipse Project)
@@ -261,16 +261,22 @@ private void handleDeletePerson() {
 
 * * *
 
-## The New and Edit Buttons
+## The New and Edit Dialog
 
-The new and edit buttons are a bit more work: We'll need a new custom dialog (a.k.a stage) with a form to ask the user for details about the person.
+The new and edit actions are a bit more work: We'll need a new custom dialog (a.k.a. stage) with a form to ask the user for details about the person.
+
+
+### Design the Dialog
 
 1. Create a new fxml file called `PersonEditDialog.fxml` inside the view package.
-2. Use a `GridPane`, `Label`s, `TextBoxe`s and `Button`s to create a Dialog like the following:   
+2. Use a `GridPane`, `Label`s, `TextField`s and `Button`s to create a Dialog like the following:   
 ![Edit Dialog](/assets/java/javafx-2-tutorial-part3/addressapp03.png)   
 If you don't to do the work, you can download this [PersonEditDialog.fxml](/assets/java/javafx-2-tutorial-part3/PersonEditDialog.fxml). 
 
-3. Create the controller `PersonEditDialogController`:
+
+### Create the Controller
+
+Create the controller for the Dialog as `PersonEditDialogController.java`:
 
 ##### PersonEditDialogController.java
 
@@ -437,6 +443,17 @@ A few things to note about this controller:
 * The boolean `okClicked` is used so that the caller can determine whether the user clicked the OK or Cancel button.
 
 
+### Link View and Controller 
+
+With the View (FXML) and the controller created we need to link them together:
+
+1. Open the `PersonEditDialog.fxml` and select the topmost *AnchorPane* in the *Hierarchy*. 
+2. Open *Code* on the right side and select the `PersonEditDialogController` as controller class.
+3. Set the **fx:id** of all `TextField`s to the corresponding field of the controller.
+4. Set the **onAction** of the two buttons to the corresponding handler method.
+
+
+
 ### Opening the Dialog
 
 Add a method to load and display the edit person dialog inside our `MainApp`:   
@@ -552,5 +569,5 @@ I hope the concepts and structure of this application will get you started with 
 
 
 ### What's Next? ###
-In [Tutorial Part 4](/java/javafx-2-tutorial-part4) we will add some CSS styling.
+In [Tutorial Part 4](/java/javafx-2-tutorial-part4/) we will add some CSS styling.
 

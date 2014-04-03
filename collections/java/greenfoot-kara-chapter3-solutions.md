@@ -11,23 +11,23 @@ sidebars:
   paging: true
   body:
   - text: "Introduction"
-    link: /java/greenfoot-kara-intro
+    link: /java/greenfoot-kara-intro/
     intro: true
   - text: "Chapter 1: First Steps"
-    link: /java/greenfoot-kara-chapter1
+    link: /java/greenfoot-kara-chapter1/
   - text: "Chapter 2: Program Flow"
-    link: /java/greenfoot-kara-chapter2
+    link: /java/greenfoot-kara-chapter2/
   - text: "Chapter 3: Variables"
-    link: /java/greenfoot-kara-chapter3
+    link: /java/greenfoot-kara-chapter3/
   - text: "Solutions Chapter 3"
-    link: /java/greenfoot-kara-chapter3-solutions
+    link: /java/greenfoot-kara-chapter3-solutions/
     icon-css: fa fa-fw fa-check-square-o
     active: true
     paging-exclude: true
   - text: "Chapter 4: Sokoban Game"
-    link: /java/greenfoot-kara-chapter4
+    link: /java/greenfoot-kara-chapter4/
   - text: "Chapter 5: Methods"
-    link: /java/greenfoot-kara-chapter5
+    link: /java/greenfoot-kara-chapter5/
 - header: Downloads
   body:
   - text: scenarios-chapter-3-solutions.zip
@@ -39,7 +39,7 @@ sidebars:
 - header: Languages
   body:
   - text: Deutsch
-    link: /java/greenfoot-kara-intro-de
+    link: /java/greenfoot-kara-intro-de/
     icon-css: fa fa-fw fa-globe
 ---
 

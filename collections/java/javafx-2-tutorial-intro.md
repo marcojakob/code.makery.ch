@@ -15,19 +15,19 @@ sidebars:
     intro: true
     active: true
   - text: "Part 1: Scene Builder"
-    link: /java/javafx-2-tutorial-part1
+    link: /java/javafx-2-tutorial-part1/
   - text: "Part 2: Model and TableView"
-    link: /java/javafx-2-tutorial-part2
+    link: /java/javafx-2-tutorial-part2/
   - text: "Part 3: Interacting with the User"
-    link: /java/javafx-2-tutorial-part3
+    link: /java/javafx-2-tutorial-part3/
   - text: "Part 4: CSS Styling"
-    link: /java/javafx-2-tutorial-part4
+    link: /java/javafx-2-tutorial-part4/
   - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-2-tutorial-part5
+    link: /java/javafx-2-tutorial-part5/
   - text: "Part 6: Statistics Chart"
-    link: /java/javafx-2-tutorial-part6
+    link: /java/javafx-2-tutorial-part6/
   - text: "Part 7: Deployment with e(fx)clipse"
-    link: /java/javafx-2-tutorial-part7
+    link: /java/javafx-2-tutorial-part7/
 ---
 
 JavaFX provides Java developers with a very nice graphics platform. In October 2011, JavaFX 2.0 was released. It was intended to be the choice for new graphical user interfaces (GUI) rather than the older Java Swing. When I started teaching JavaFX in 2012 it was still very early. There were no books covering JavaFX that I found **suitable for students new to programming**. So I started to write a very detailed tutorial series on JavaFX. 
@@ -65,4 +65,4 @@ There are two ways to use this tutorial:
 * **learn-a-lot track:** Create your own JavaFX project from the ground up.
 * **fast track:** Import the source code for a tutorial part into your IDE (it's an Eclipse project, but you could use other IDEs like NetBeans with slight modifications). Then go through the tutorial to understand the code. This approach is also helpful whenever you get stuck when you're on the *learn-a-lot track*!
 
-Now, I hope you'll have fun and learn a lot! Start with [Part 1: Scene Builder](/java/javafx-2-tutorial-part1).
+Now, I hope you'll have fun and learn a lot! Start with [Part 1: Scene Builder](/java/javafx-2-tutorial-part1/).

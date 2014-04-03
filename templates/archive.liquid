@@ -10,7 +10,7 @@
   <div class="col-sm-offset-3 col-sm-6 text-center">
     Tags:
     {% for tag in global.tags %}
-      <a href="/blog/tag/{{ tag | downcase }}">{{ tag }}</a>{% if forloop.index != forloop.length %}, {% endif %}
+      <a href="/blog/tag/{{ tag | downcase }}/">{{ tag }}</a>{% if forloop.index != forloop.length %}, {% endif %}
     {% endfor %}
   </div>
 </div>
@@ -35,7 +35,7 @@
     <h3>{{ item.year }}</h3>
     <ul class="blog-archive">
     {% for post in item.children %}
-      <li><a href="{{ post.slug }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.slug }}/">{{ post.title }}</a></li>
     {% endfor %}
     </ul>
   {% endfor %}

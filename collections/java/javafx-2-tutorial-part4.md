@@ -13,23 +13,23 @@ sidebars:
   paging: true
   body:
   - text: "Introduction"
-    link: /java/javafx-2-tutorial-intro
+    link: /java/javafx-2-tutorial-intro/
     intro: true
   - text: "Part 1: Scene Builder"
-    link: /java/javafx-2-tutorial-part1
+    link: /java/javafx-2-tutorial-part1/
   - text: "Part 2: Model and TableView"
-    link: /java/javafx-2-tutorial-part2
+    link: /java/javafx-2-tutorial-part2/
   - text: "Part 3: Interacting with the User"
-    link: /java/javafx-2-tutorial-part3
+    link: /java/javafx-2-tutorial-part3/
   - text: "Part 4: CSS Styling"
-    link: /java/javafx-2-tutorial-part4
+    link: /java/javafx-2-tutorial-part4/
     active: true
   - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-2-tutorial-part5
+    link: /java/javafx-2-tutorial-part5/
   - text: "Part 6: Statistics Chart"
-    link: /java/javafx-2-tutorial-part6
+    link: /java/javafx-2-tutorial-part6/
   - text: "Part 7: Deployment with e(fx)clipse"
-    link: /java/javafx-2-tutorial-part7
+    link: /java/javafx-2-tutorial-part7/
 - header: "Download Sources"
   body:
   - text: Source of Part 4 (Eclipse Project)
@@ -332,5 +332,5 @@ You can also add an icon to the stage of the person edit dialog, of course.
 
 
 ### What's Next? ###
-In [Tutorial Part 5](/java/javafx-2-tutorial-part5) we will add XML storage for our data.
+In [Tutorial Part 5](/java/javafx-2-tutorial-part5/) we will add XML storage for our data.
 
