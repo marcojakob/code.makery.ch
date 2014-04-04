@@ -1,4 +1,4 @@
-{
+﻿{
     "debug": false,
     "lintScripts": false,
     "preprocessorLocations": "assets,theme",
@@ -19,9 +19,9 @@
     "modelSource": null,
     "domain": null,
     "convertHtmlOutput": null,
-    "convertHtmlExtension": null,
-    "convertHtmlIgnore": null,
     "convertHtmlDefault": "index",
+    "convertHtmlIgnore": null,
+    "convertHtmlExtension": null,
     "followLeader": true,
     "routes": [
         {
@@ -65,7 +65,7 @@
     "sitemap": false,
     "gitHubPages": {
         "repoUrl": "https://github.com/marcojakob/code.makery.ch.git",
-        "guid": "68cb0f51-5f17-47b5-b12f-1099c825f4af"
+        "guid": "b5c90cda-94a3-4c5f-b680-501c2703b94c"
     },
     "less": null,
     "optimiseSVG": true

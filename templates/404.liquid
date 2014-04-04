@@ -1,6 +1,12 @@
 {% layout "layout" %}
 
 {% block title %}{{ global.title }}{% endblock %}
+{% block head_end %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://code.makery.ch/theme/css/style.min.css" rel="stylesheet" type="text/css" media="all" />
+    {% include "analytics-js" %}
+{% endblock %}
+
 
 {% block content %} 
 <article>

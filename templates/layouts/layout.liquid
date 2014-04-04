@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>{% block title %}{{ model.title }} - {{ global.title }}{% endblock %}</title>
-    {% include "html-head-end" %}
+    {% block head_end %}{% include "html-head-end" %}{% endblock %}
   </head>
   <body>
     {% include "header" %}

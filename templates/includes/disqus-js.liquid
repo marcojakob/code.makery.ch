@@ -9,14 +9,17 @@
     {% assign identifier = model.comments.identifier %}
   {% else %}
     {% assign identifier = model.slug %}
+    {% assign last = identifier | last %}
+    {% unless last == '/' %}{% assign identifier = identifier | append: '/' %}{% endunless %}
   {% endif %}
-
+{{ identifier }}
   {% if model.comments.url %}
     {% assign url = model.comments.url %}
   {% else %}
     {% capture url %}{{ global.domain }}/{{ mixture.url }}{% endcapture %}
+    {% assign last = url | last %}
+    {% unless last == '/' %}{% assign url = url | append: '/' %}{% endunless %}
   {% endif %}
-
   {% if model.comments.title %}
     {% assign title = model.comments.title | remove: "'" %}
   {% else %}
