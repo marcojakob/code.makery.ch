@@ -1,4 +1,4 @@
-﻿{
+{
     "debug": false,
     "lintScripts": false,
     "preprocessorLocations": "assets,theme",
@@ -31,12 +31,12 @@
         },
         {
             "route": "blog/tag/:tag",
-            "template": "blog",
+            "template": "blogtag",
             "redirect": null
         },
         {
             "route": "blog/tag/:tag/page-:page",
-            "template": "blog",
+            "template": "blogtag",
             "redirect": null
         }
     ],
@@ -65,7 +65,7 @@
     "sitemap": false,
     "gitHubPages": {
         "repoUrl": "https://github.com/marcojakob/code.makery.ch.git",
-        "guid": "b5c90cda-94a3-4c5f-b680-501c2703b94c"
+        "guid": "968f40f5-a57a-4a52-88ed-af8e3ee1130a"
     },
     "less": null,
     "optimiseSVG": true

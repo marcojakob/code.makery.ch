@@ -2,7 +2,9 @@
 layout: post
 title: JavaFX 2 Dialogs
 date: 2012-10-30 00:00
+updated: 2014-04-18 00:00
 slug: javafx-2-dialogs
+description: "When programming a graphical user interface (GUI) there are occasions where you'll need a simple popup dialog to communicate with the user."
 published: true
 prettify: true
 comments: 
@@ -12,6 +14,10 @@ tags:
 - Java
 - JavaFX
 ---
+
+<div class="alert alert-info">
+  &rarr; If you're using JDK 8.0 or later go to <a href="/blog/javafx-8-dialogs/" class="alert-link">JavaFX 8 Dialogs</a>
+</div>
 
 When programming a graphical user interface (GUI) there are occasions where you'll need a simple popup dialog to communicate with the user. In Swing (the predecessor of JavaFX) there is a convenient class called [JOptionPane](http://docs.oracle.com/javase/tutorial/uiswing/components/dialog.html) for such dialogs. A similar class doesn't exist in JavaFX 2.x (yet).
 

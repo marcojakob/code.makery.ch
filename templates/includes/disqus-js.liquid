@@ -12,7 +12,6 @@
     {% assign last = identifier | last %}
     {% unless last == '/' %}{% assign identifier = identifier | append: '/' %}{% endunless %}
   {% endif %}
-{{ identifier }}
   {% if model.comments.url %}
     {% assign url = model.comments.url %}
   {% else %}

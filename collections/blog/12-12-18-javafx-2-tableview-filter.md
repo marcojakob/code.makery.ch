@@ -164,14 +164,14 @@ public class PersonTableController {
 	@FXML
 	private TextField filterField;
 	@FXML
-	private TableView<Person> personTable;
+	private TableView&lt;Person> personTable;
 	@FXML
-	private TableColumn<Person, String> firstNameColumn;
+	private TableColumn&lt;Person, String> firstNameColumn;
 	@FXML
-	private TableColumn<Person, String> lastNameColumn;
+	private TableColumn&lt;Person, String> lastNameColumn;
 	
-	private ObservableList<Person> masterData = FXCollections.observableArrayList();
-	private ObservableList<Person> filteredData = FXCollections.observableArrayList();
+	private ObservableList&lt;Person> masterData = FXCollections.observableArrayList();
+	private ObservableList&lt;Person> filteredData = FXCollections.observableArrayList();
 	
 	/**
 	 * The constructor. The constructor is called before the initialize()
@@ -194,9 +194,9 @@ public class PersonTableController {
 		
 		// Listen for changes in master data.
 		// Whenever the master data changes we must also update the filtered data.
-		masterData.addListener(new ListChangeListener<Person>() {
+		masterData.addListener(new ListChangeListener&lt;Person>() {
 			@Override
-			public void onChanged(ListChangeListener.Change<? extends Person> change) {
+			public void onChanged(ListChangeListener.Change&lt;? extends Person> change) {
 				updateFilteredData();
 			}
 		});
@@ -210,17 +210,17 @@ public class PersonTableController {
 	private void initialize() {
 		// Initialize the person table
 		firstNameColumn.setCellValueFactory(
-				new PropertyValueFactory<Person, String>("firstName"));
+				new PropertyValueFactory&lt;Person, String>("firstName"));
 		lastNameColumn.setCellValueFactory(
-				new PropertyValueFactory<Person, String>("lastName"));
+				new PropertyValueFactory&lt;Person, String>("lastName"));
 		
 		// Add filtered data to the table
 		personTable.setItems(filteredData);
 
 		// Listen for text changes in the filter text field
-		filterField.textProperty().addListener(new ChangeListener<String>() {
+		filterField.textProperty().addListener(new ChangeListener&lt;String>() {
 			@Override
-			public void changed(ObservableValue<? extends String> observable,
+			public void changed(ObservableValue&lt;? extends String> observable,
 					String oldValue, String newValue) {
 				
 				updateFilteredData();
@@ -271,7 +271,7 @@ public class PersonTableController {
 	}
 	
 	private void reapplyTableSortOrder() {
-		ArrayList<TableColumn<Person, ?>> sortOrder = new ArrayList<>(personTable.getSortOrder());
+		ArrayList&lt;TableColumn&lt;Person, ?>> sortOrder = new ArrayList&lt;>(personTable.getSortOrder());
 		personTable.getSortOrder().clear();
 		personTable.getSortOrder().addAll(sortOrder);
 	}

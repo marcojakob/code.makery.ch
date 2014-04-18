@@ -11,6 +11,8 @@ comments: true
 
 This blog moved from edu.makery.ch to code.makery.ch.
 
+![code.makery](/assets/blog/14-03-28-moving-to-code-makery-ch/code-makery.png)
+
 #### Please update your links and RSS feeds to [code.makery.ch](http://code.makery.ch)   
 #### Or even better: Sign up to [receive updates by email](https://tinyletter.com/code-makery)
 

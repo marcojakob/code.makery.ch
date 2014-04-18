@@ -1,6 +1,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/theme/css/style.min.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="alternate" type="application/rss+xml" href="/rss" title="code.makery.ch - RSS Feed">
+    {% if model.description %}<meta name="description" content="{{ model.description }}">{% endif %}
+    {% if global.googleplus %}<link rel="author" href="https://plus.google.com/{{ global.googleplus }}"/>{% endif %}
     {% include "prettify-css" %}
     {% include "custom-css" %}
     {% include "analytics-js" %}
