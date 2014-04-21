@@ -5,41 +5,35 @@ date: 2012-11-17 00:30
 updated: 2013-02-08 00:00
 prettify: true
 published: true
-comments: 
-  shortname: edumakery
-  identifier: http://edu.makery.ch/blog/2012/11/17/javafx-tutorial-addressapp-2/
+comments: true
 sidebars:
 - header: "Articles in this Series"
   paging: true
   body:
   - text: "Introduction"
-    link: /java/javafx-2-tutorial-intro/
+    link: /java/javafx-8-tutorial-intro/
     intro: true
   - text: "Part 1: Scene Builder"
-    link: /java/javafx-2-tutorial-part1/
+    link: /java/javafx-8-tutorial-part1/
   - text: "Part 2: Model and TableView"
-    link: /java/javafx-2-tutorial-part2/
+    link: /java/javafx-8-tutorial-part2/
     active: true
   - text: "Part 3: Interacting with the User"
-    link: /java/javafx-2-tutorial-part3/
+    link: /java/javafx-8-tutorial-part3/
   - text: "Part 4: CSS Styling"
-    link: /java/javafx-2-tutorial-part4/
+    link: /java/javafx-8-tutorial-part4/
   - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-2-tutorial-part5/
+    link: /java/javafx-8-tutorial-part5/
   - text: "Part 6: Statistics Chart"
-    link: /java/javafx-2-tutorial-part6/
+    link: /java/javafx-8-tutorial-part6/
   - text: "Part 7: Deployment with e(fx)clipse"
-    link: /java/javafx-2-tutorial-part7/
+    link: /java/javafx-8-tutorial-part7/
 - header: "Download Sources"
   body:
   - text: Source of Part 2 (Eclipse Project)
-    link: /assets/java/javafx-2-tutorial-part2/addressapp-part-2.zip
+    link: /assets/java/javafx-8-tutorial-part2/addressapp-part-2.zip
     icon-css: fa fa-fw fa-download
 ---
-
-<div class="alert alert-info">
-  I'm currently rewriting the entire JavaFX 2 tutorial for JavaFX 8. <a href="https://tinyletter.com/code-makery" class="alert-link">Subscribe here</a> and I'll send you an email when all tutorial parts are ready!
-</div>
 
 ![Screenshot AddressApp Part 2](/assets/java/javafx-2-tutorial-part2/addressapp01.png)
 

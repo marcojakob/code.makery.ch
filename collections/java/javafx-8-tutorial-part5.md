@@ -3,7 +3,7 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 5: Storing Data as XML"
 date: 2012-11-27 22:00
 updated: 2013-02-08 00:00
-published: true
+published: false
 prettify: true
 comments: 
   shortname: edumakery
@@ -36,10 +36,6 @@ sidebars:
     link: /assets/java/javafx-2-tutorial-part5/addressapp-part-5.zip
     icon-css: fa fa-fw fa-download
 ---
-
-<div class="alert alert-info">
-  I'm currently rewriting the entire JavaFX 2 tutorial for JavaFX 8. <a href="https://tinyletter.com/code-makery" class="alert-link">Subscribe here</a> and I'll send you an email when all tutorial parts are ready!
-</div>
 
 ![Screenshot AddressApp Part 5](/assets/java/javafx-2-tutorial-part5/addressapp01.png)
 

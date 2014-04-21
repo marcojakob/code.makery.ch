@@ -3,7 +3,7 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 4: CSS Styling"
 date: 2012-11-26 13:00
 updated: 2013-02-08 00:00
-published: true
+published: false
 prettify: true
 comments: 
   shortname: edumakery
@@ -36,10 +36,6 @@ sidebars:
     link: /assets/java/javafx-2-tutorial-part4/addressapp-part-4.zip
     icon-css: fa fa-fw fa-download
 ---
-
-<div class="alert alert-info">
-  I'm currently rewriting the entire JavaFX 2 tutorial for JavaFX 8. <a href="https://tinyletter.com/code-makery" class="alert-link">Subscribe here</a> and I'll send you an email when all tutorial parts are ready!
-</div>
 
 ![Screenshot AddressApp Part 4](/assets/java/javafx-2-tutorial-part4/addressapp01.png)
 
