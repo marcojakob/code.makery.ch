@@ -30,11 +30,11 @@ sidebars:
 - header: "Download Sources"
   body:
   - text: Source of Part 1 (Eclipse Project)
-    link: /assets/java/javafx-8-tutorial-part1/addressapp-part-1.zip
+    link: /assets/java/javafx-8-tutorial-part1/addressapp-jfx8-part-1.zip
     icon-css: fa fa-fw fa-download
 ---
 
-![Screenshot AddressApp Part 1](/assets/java/javafx-8-tutorial-part1/address-app-part1.png)
+![Screenshot AddressApp Part 1](/assets/java/javafx-8-tutorial-part1/addressapp-part1.png)
 
 ### Topics in Part 1
 
@@ -92,7 +92,7 @@ Remove the *application* package and its content if it was automatically created
 
 Right from the start we will follow good software design principles. One very important principle is that of [**Model-View-Controller** (MVC)](http://en.wikipedia.org/wiki/Model_View_Controller). According to this we divide our code into three units and create a package for each (Right-click on the src-folder, *New... | Package*):
 
-* `ch.makery.address.controller` - contains *most* controller classes (=business logic)
+* `ch.makery.address` - contains *most* controller classes (=business logic)
 * `ch.makery.address.model` - contains model classes
 * `ch.makery.address.view` - contains views 
 
@@ -173,15 +173,19 @@ We need another FXML for our root layout which will contain a menu bar and wraps
 4. Add a *MenuBar* into the TOP Slot. We will not implement the menu functionality at the moment.   
 ![MenuBar](/assets/java/javafx-8-tutorial-part1/menu-bar.png)
 
-5. Now, we need to create the **main java class** that starts up our application with the `RootLayout.fxml` and adds the `PersonOverview.fxml` in the center. 
-
-6. Right-click on the controller package, *New | Other...* and choose *JavaFX Main Class*. We'll call it `MainApp`.   
-![New JavaFX Main Class](/assets/java/javafx-8-tutorial-part1/new-main-class.png)
-
 
 ### The JavaFX Main Class 
 
-The generated `MainApp.java` class extends from `Application` and contains two methods. This is the basic structure that we need to start a JavaFX Application. The most important part for us is the `start(Stage primaryStage)` method. It is automatically called when the application is `launched` from the `main` method.
+Now, we need to create the **main java class** that starts up our application with the `RootLayout.fxml` and adds the `PersonOverview.fxml` in the center. 
+
+1. Right-click on your project and choose *New | Other...* and choose *JavaFX Main Class*.   
+![New JavaFX Main Class](/assets/java/javafx-8-tutorial-part1/new-main-class.png)
+
+2. We'll call the class `MainApp` and put it in the controller package `ch.makery.address` (note: this is the parent package of the `view` and `model` subpackages).   
+![New JavaFX Main Class](/assets/java/javafx-8-tutorial-part1/new-main-class2.png)
+
+
+The generated `MainApp.java` class extends from `Application` and contains two methods. This is the basic structure that we need to start a JavaFX Application. The most important part for us is the `start(Stage primaryStage)` method. It is automatically called when the application is `launched` from within the `main` method.
 
 As you see, the `start(...)` method receives a `Stage` as parameter. The following graphic illustrates the structure of every JavaFX application:
 
@@ -190,12 +194,15 @@ As you see, the `start(...)` method receives a `Stage` as parameter. The followi
 
 **It's like a theater play**: The `Stage` is the main container which is usually a `Window` with a border and the typical minimize, maximize and close buttons. Inside the `Stage` you add a `Scene` which can, of course, be switched out by another `Scene`. Inside the `Scene` the actual JavaFX nodes like `AnchorPane`, `TextBox`, etc. are added.
 
+For more information on this turn to [Working with the JavaFX Scene Graph](http://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm).
+
+
 *****
 
 Open `MainApp.java` and replace the code with the following:
 
 <pre class="prettyprint lang-java">
-package ch.makery.address.controller;
+package ch.makery.address;
 
 import java.io.IOException;
 
@@ -228,7 +235,7 @@ public class MainApp extends Application {
         try {
             // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainApp.class.getResource("../view/RootLayout.fxml"));
+            loader.setLocation(MainApp.class.getResource("view/RootLayout.fxml"));
             rootLayout = (BorderPane) loader.load();
             
             // Show the scene containing the root layout.
@@ -247,7 +254,7 @@ public class MainApp extends Application {
         try {
             // Load person overview.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainApp.class.getResource("../view/PersonOverview.fxml"));
+            loader.setLocation(MainApp.class.getResource("view/PersonOverview.fxml"));
             AnchorPane personOverview = (AnchorPane) loader.load();
             
             // Set person overview into the center of root layout.
@@ -267,9 +274,17 @@ The various comments should give you some hints about what's going on.
 
 If you run the application now, you should see something like the screenshot at the beginning of this post.
 
-<!-- TODO: Review the source of part1 -->
 
-* * *
+### Frequent Problems
+
+If JavaFX can't find the `fxml` file you speicified, you might get the following error message: 
+
+`java.lang.IllegalStateException: Location is not set.`
+
+To solve this issue double check if you didn't misspell the name of your `fxml` files!
+
+
+*****
 
 ### What's Next?
 

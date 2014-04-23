@@ -1,10 +1,9 @@
 ---
 layout: article
-title: "JavaFX 2 Tutorial - Part 2: Model and TableView"
-date: 2012-11-17 00:30
-updated: 2013-02-08 00:00
-prettify: true
+title: "JavaFX 8 Tutorial - Part 2: Model and TableView"
+date: 2014-04-23 00:00
 published: true
+prettify: true
 comments: true
 sidebars:
 - header: "Articles in this Series"
@@ -31,11 +30,12 @@ sidebars:
 - header: "Download Sources"
   body:
   - text: Source of Part 2 (Eclipse Project)
-    link: /assets/java/javafx-8-tutorial-part2/addressapp-part-2.zip
+    link: /assets/java/javafx-8-tutorial-part2/addressapp-jfx8-part-2.zip
     icon-css: fa fa-fw fa-download
 ---
 
-![Screenshot AddressApp Part 2](/assets/java/javafx-2-tutorial-part2/addressapp01.png)
+![Screenshot AddressApp Part 2](/assets/java/javafx-8-tutorial-part2/addressapp-part2.png)
+
 
 ## Topics in Part 2
 
@@ -43,11 +43,12 @@ sidebars:
 * Using the model class in an **ObservableList**
 * Show data in the **TableView** using **Controllers**
 
-* * * 
+
+*****
 
 ## Create the Model Class
 
-We need a model class to hold information about the people in our address book. Add a new class to the model package (`ch.makery.address.model`) called `Person`. This makes sense, since we want to manage people and their addresses. The `Person` class will have a few instance variables for the name, address and birthday. Add the following code to the class:
+We need a model class to hold information about the people in our address book. Add a new class to the model package (`ch.makery.address.model`) called `Person`. The `Person` class will have a few instance variables for the name, address and birthday. Add the following code to the class. I'll explain some JavaFX specifics after the code.
 
 
 ##### Person.java
@@ -55,7 +56,14 @@ We need a model class to hold information about the people in our address book. 
 <pre class="prettyprint lang-java">
 package ch.makery.address.model;
 
-import java.util.Calendar;
+import java.time.LocalDate;
+
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 
 /**
  * Model class for a Person.
@@ -64,17 +72,18 @@ import java.util.Calendar;
  */
 public class Person {
 
-	private String firstName;
-	private String lastName;
-	private String street;
-	private int postalCode;
-	private String city;
-	private Calendar birthday;
+	private final StringProperty firstName;
+	private final StringProperty lastName;
+	private final StringProperty street;
+	private final IntegerProperty postalCode;
+	private final StringProperty city;
+	private final ObjectProperty&lt;LocalDate&gt; birthday;
 
 	/**
 	 * Default constructor.
 	 */
 	public Person() {
+		this(null, null);
 	}
 	
 	/**
@@ -84,76 +93,107 @@ public class Person {
 	 * @param lastName
 	 */
 	public Person(String firstName, String lastName) {
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.firstName = new SimpleStringProperty(firstName);
+		this.lastName = new SimpleStringProperty(lastName);
 		
-		// some initial dummy data
-		this.street = "some street";
-		this.postalCode = 1234;
-		this.city = "some city";
-		this.birthday = Calendar.getInstance();
+		// Some initial dummy data, just for convenient testing.
+		this.street = new SimpleStringProperty("some street");
+		this.postalCode = new SimpleIntegerProperty(1234);
+		this.city = new SimpleStringProperty("some city");
+		this.birthday = new SimpleObjectProperty&lt;LocalDate&gt;(LocalDate.of(1999, 2, 21));
 	}
 	
 	public String getFirstName() {
-		return firstName;
+		return firstName.get();
 	}
 
 	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+		this.firstName.set(firstName);
+	}
+	
+	public StringProperty firstNameProperty() {
+		return firstName;
 	}
 
 	public String getLastName() {
-		return lastName;
+		return lastName.get();
 	}
 
 	public void setLastName(String lastName) {
-		this.lastName = lastName;
+		this.lastName.set(lastName);
+	}
+	
+	public StringProperty lastNameProperty() {
+		return lastName;
 	}
 
 	public String getStreet() {
-		return street;
+		return street.get();
 	}
 
 	public void setStreet(String street) {
-		this.street = street;
+		this.street.set(street);
+	}
+	
+	public StringProperty streetProperty() {
+		return street;
 	}
 
 	public int getPostalCode() {
-		return postalCode;
+		return postalCode.get();
 	}
 
 	public void setPostalCode(int postalCode) {
-		this.postalCode = postalCode;
+		this.postalCode.set(postalCode);
+	}
+	
+	public IntegerProperty postalCodeProperty() {
+		return postalCode;
 	}
 
 	public String getCity() {
-		return city;
+		return city.get();
 	}
 
 	public void setCity(String city) {
-		this.city = city;
+		this.city.set(city);
+	}
+	
+	public StringProperty cityProperty() {
+		return city;
 	}
 
-	public Calendar getBirthday() {
+	public LocalDate getBirthday() {
+		return birthday.get();
+	}
+
+	public void setBirthday(LocalDate birthday) {
+		this.birthday.set(birthday);
+	}
+	
+	public ObjectProperty&lt;LocalDate&gt; birthdayProperty() {
 		return birthday;
-	}
-
-	public void setBirthday(Calendar birthday) {
-		this.birthday = birthday;
 	}
 }
 </pre>
 
-* * *
+
+### Explanations
+
+* With JavaFX it's common to use [`Properties`](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html) for all fields of a model class. A `Property` allow us, for example, to automatically be notified when the `lastName` or any other variable is changed. This helps us keep the view in sync with the data. To learn more about `Properties` read [Using JavaFX Properties and Binding](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm).
+* [`LocalDate`](http://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html), the type we're using for `birthday`, is part of the new [Date and Time API for JDK 8](http://docs.oracle.com/javase/tutorial/datetime/iso/).
+
+
+*****
 
 ## A List of Persons
 
-The main Data that our application manages is a bunch of persons. Let's create a list for `Person` objects inside the `MainApp` class. All other controller classes will later get access to the list inside the `MainApp`. 
+The main Data that our application manages, is a bunch of persons. Let's create a list for `Person` objects inside the `MainApp` class. All other controller classes will later get access to that central list inside the `MainApp`. 
 
 
 ### ObservableList
 
-We are working with JavaFX view classes that always need to be informed about any changes made to the list of persons. This is important, since otherwise the view would not be in sync with the data. For this purpose, JavaFX introduces some new [Collection classes](http://docs.oracle.com/javafx/2/collections/jfxpub-collections.htm). 
+We are working with JavaFX view classes that need to be informed about any changes made to the list of persons. This is important, since otherwise the view would not be in sync with the data. For this purpose, JavaFX introduces some new [Collection classes](http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm). 
 
 From those collections, we need the `ObservableList`. To create a new `ObservableList`, add the following code at the beginning of the `MainApp` class. We'll also add a constructor that creates some sample data and a public getter method:
 
@@ -161,10 +201,8 @@ From those collections, we need the `ObservableList`. To create a new `Observabl
 ##### MainApp.java
 
 <pre class="prettyprint lang-java">
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 
-  // ...
+    // ... AFTER THE OTHER VARIABLES ...
 
 	/**
 	 * The data as an observable list of Persons.
@@ -195,131 +233,154 @@ import javafx.collections.ObservableList;
 		return personData;
 	}
   
-// ...
+    // ... THE REST OF THE CLASS ...
 </pre>
 
-* * *
+
+*****
 
 ## The PersonOverviewController ##
 
-Now let's finally view some data in our table.
+Now let's finally get some data into our table. We'll need a controller for our `PersonOverview.fxml`.
 
-1. Create a normal class inside the controller package called `PersonOverviewController.java`.
-2. We'll add some instance variables that give us access to the table and the labels inside the view. The fields and some methods have a special `@FXML` annotation. This is necessary for the fxml file to have access to those variables. After we have everything set up in the fxml file, the application will automatically fill the variables when the fxml file is loaded. So let's add the following code:
+1. Create a normal class inside the **view** package called `PersonOverviewController.java`. (We must put it in the same package as the `PersonOverview.fxml`, otherwise the SceneBuilder won't find it - at least not in the current version).
+2. We'll add some instance variables that give us access to the table and the labels inside the view. The fields and some methods have a special `@FXML` annotation. This is necessary for the fxml file to have access to private fields and private methods. After we have everything set up in the fxml file, the application will automatically fill the variables when the fxml file is loaded. So let's add the following code:
 
-**Note: Remember to always use the javafx imports (not awt or swing)!**
+**Note: Remember to always use the javafx imports, NOT awt or swing!**
 
 
 ##### PersonOverviewController.java
 
 <pre class="prettyprint lang-java">
+package ch.makery.address.view;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import ch.makery.address.MainApp;
+import ch.makery.address.model.Person;
+
 public class PersonOverviewController {
-	@FXML
-	private TableView&lt;Person&gt; personTable;
-	@FXML
-	private TableColumn&lt;Person, String&gt; firstNameColumn;
-	@FXML
-	private TableColumn&lt;Person, String&gt; lastNameColumn;
-	
-	@FXML
-	private Label firstNameLabel;
-	@FXML
-	private Label lastNameLabel;
-	@FXML
-	private Label streetLabel;
-	@FXML
-	private Label postalCodeLabel;
-	@FXML
-	private Label cityLabel;
-	@FXML
-	private Label birthdayLabel;
-	
-	// Reference to the main application
-	private MainApp mainApp;
-	
-	/**
-	 * The constructor.
-	 * The constructor is called before the initialize() method.
-	 */
-	public PersonOverviewController() {
-	}
-	
-	/**
-	 * Initializes the controller class. This method is automatically called
-	 * after the fxml file has been loaded.
-	 */
-	@FXML
-	private void initialize() {
-    // Initialize the person table
-		firstNameColumn.setCellValueFactory(new PropertyValueFactory&lt;Person, String&gt;("firstName"));
-		lastNameColumn.setCellValueFactory(new PropertyValueFactory&lt;Person, String&gt;("lastName"));
-	}
-  
-	/**
-	 * Is called by the main application to give a reference back to itself.
-	 * 
-	 * @param mainApp
-	 */
-	public void setMainApp(MainApp mainApp) {
-		this.mainApp = mainApp;
-		
-		// Add observable list data to the table
-		personTable.setItems(mainApp.getPersonData());
-	}
+    @FXML
+    private TableView&lt;Person&gt; personTable;
+    @FXML
+    private TableColumn&lt;Person, String&gt; firstNameColumn;
+    @FXML
+    private TableColumn&lt;Person, String&gt; lastNameColumn;
+
+    @FXML
+    private Label firstNameLabel;
+    @FXML
+    private Label lastNameLabel;
+    @FXML
+    private Label streetLabel;
+    @FXML
+    private Label postalCodeLabel;
+    @FXML
+    private Label cityLabel;
+    @FXML
+    private Label birthdayLabel;
+
+    // Reference to the main application.
+    private MainApp mainApp;
+
+    /**
+     * The constructor.
+     * The constructor is called before the initialize() method.
+     */
+    public PersonOverviewController() {
+    }
+
+    /**
+     * Initializes the controller class. This method is automatically called
+     * after the fxml file has been loaded.
+     */
+    @FXML
+    private void initialize() {
+    	// Initialize the person table with the two columns.
+        firstNameColumn.setCellValueFactory(cellData -> cellData.getValue().firstNameProperty());
+        lastNameColumn.setCellValueFactory(cellData -> cellData.getValue().lastNameProperty());
+    }
+
+    /**
+     * Is called by the main application to give a reference back to itself.
+     * 
+     * @param mainApp
+     */
+    public void setMainApp(MainApp mainApp) {
+        this.mainApp = mainApp;
+
+        // Add observable list data to the table
+        personTable.setItems(mainApp.getPersonData());
+    }
 }
 </pre>
 
-Now this code will need some explanation:
 
-* All fields and methods where the fxml file needs access must be annotated with `@FXML`. Actually, only if they are private, but it's better to have them private and mark them with the annotation!.
+Now this code will probably need some explaining:
+
+* All fields and methods where the fxml file needs access must be annotated with `@FXML`. Actually, only if they are private, but it's better to have them private and mark them with the annotation!
 * The `initialize()` method is automatically called after the fxml file has been loaded. At this time, all the FXML fields should have been initialized already.
-* The `PropertyValueFactory` that we set on the table colums are used to determine which field inside the `Person` objects should be used for the particular column.
-* The `setMainApp(...)` method must be called by the `MainApp` class. This gives us a way to access the `MainApp` object and get the list of data and other things. In fact, let's do that call right now. Replace the `showPersonOverview()` method with the following. It contains two additional lines:
+* The `setCellValueFactory(...)` that we set on the table colums are used to determine which field inside the `Person` objects should be used for the particular column. The arrow `->` indicates that we're using a Java 8 feature called *Lambdas*. (Another option would be to use a [PropertyValueFactory](http://docs.oracle.com/javase/8/javafx/api/), but this is not type-safe).
 
 
-##### MainApp.java
+### Connecting MainApp with the PersonOverviewController
+
+The `setMainApp(...)` method must be called by the `MainApp` class. This gives us a way to access the `MainApp` object and get the list of `Persons` and other things. Replace the `showPersonOverview()` method with the following. It contains two additional lines:
+
+
+##### MainApp.java - new showPersonOverview() method
 
 <pre class="prettyprint lang-java">
 /**
- * Shows the person overview scene.
+ * Shows the person overview inside the root layout.
  */
 public void showPersonOverview() {
     try {
-        // Load the fxml file and set into the center of the main layout
-        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("view/PersonOverview.fxml"));
-        AnchorPane overviewPage = (AnchorPane) loader.load();
-        rootLayout.setCenter(overviewPage);
+        // Load person overview.
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(MainApp.class.getResource("view/PersonOverview.fxml"));
+        AnchorPane personOverview = (AnchorPane) loader.load();
 
-        // Give the controller access to the main app
+        // Set person overview into the center of root layout.
+        rootLayout.setCenter(personOverview);
+
+        // Give the controller access to the main app.
         PersonOverviewController controller = loader.getController();
         controller.setMainApp(this);
 
     } catch (IOException e) {
-        // Exception gets thrown if the fxml file could not be loaded
         e.printStackTrace();
     }
 }
 </pre>
 
-* * *
+
+
+*****
+
 
 ## Hook the View to the Controller
 
 We're almost there! But one little thing is missing: We haven't told our `PersonOverview.fxml` file yet, which controller to use and which element should match to which field inside the controller.
 
-1. Open `PersonOverview.fxml` with the Scene Builder.
-2. Select the topmost *AnchorPane* in the Hierarchy.
-3. Open *Code* on the right side and select the `PersonOverviewController` as **controller class**.   
-![Set Controller Class](/assets/java/javafx-2-tutorial-part2/addressapp02.png)
+1. Open `PersonOverview.fxml` with the *SceneBuilder*.
 
-4. Select the TableView and choose under Properties the `personTable` field as **fx:id**.   
-![Set fx:id](/assets/java/javafx-2-tutorial-part2/addressapp03.png)
+2. Open the *Controller* group on the left side and select the `PersonOverviewController` as **controller class**.   
+![Set Controller Class](/assets/java/javafx-8-tutorial-part2/set-controller-class.png)
 
-5. Do the same for the columns and select `firstNameColumn` and `lastNameColumn` respectively.
-6. For each label in the second column, choose the corresponding **fx:id**.
-7. Important: Go back to Eclipse and refresh the entire AddressApp project (F5). This is necessary because Eclipse sometimes doesn't know about changes that were made inside the Scene Builder.
+3. Select the `TableView` in the *Hierarchy* group and choose in the *Code* group the `personTable` field as **fx:id**.   
+![Set fx:id](/assets/java/javafx-8-tutorial-part2/set-fx-id.png)
 
-* * *
+4. Do the same for the columns and select `firstNameColumn` and `lastNameColumn` as **fx:id** respectively.
+
+5. For **each label** in the second column, choose the corresponding **fx:id**.
+
+6. Important: Go back to Eclipse and **refresh the entire AddressApp project** (F5). This is necessary because Eclipse sometimes doesn't know about changes that were made inside the Scene Builder.
+
+
+*****
 
 ## Start the Application
 
@@ -330,4 +391,4 @@ Congratulations!
 
 ### What's Next?
 
-In [Tutorial Part 3](/java/javafx-2-tutorial-part3/) we will add more functionality like adding, deleting and editing Persons.
+In [Tutorial Part 3](/java/javafx-8-tutorial-part3/) we will add more functionality like adding, deleting and editing Persons.

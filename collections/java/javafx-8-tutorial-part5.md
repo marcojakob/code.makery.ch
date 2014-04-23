@@ -2,7 +2,6 @@
 layout: article
 title: "JavaFX 2 Tutorial - Part 5: Storing Data as XML"
 date: 2012-11-27 22:00
-updated: 2013-02-08 00:00
 published: false
 prettify: true
 comments: 

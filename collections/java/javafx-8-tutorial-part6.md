@@ -2,7 +2,6 @@
 layout: article
 title: "JavaFX 2 Tutorial - Part 6: Statistics Chart"
 date: 2012-12-04 12:00
-updated: 2013-02-08 00:00
 published: false
 prettify: true
 comments: 

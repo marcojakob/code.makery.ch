@@ -80,7 +80,6 @@ Now, let's get started!
 
 * * *
 
-
 ## Create a new JavaFX Project
 
 In Eclipse (with e(fx)clipse installed) go to *File | New | Other...* and choose *JavaFX Project*.

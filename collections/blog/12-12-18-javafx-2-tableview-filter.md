@@ -13,6 +13,10 @@ tags:
 - JavaFX
 ---
 
+<div class="alert alert-info">
+  I'm currently rewriting all JavaFX 2 articles for JavaFX 8. <a href="https://tinyletter.com/code-makery" class="alert-link">Subscribe here</a> and I'll send you an email when all tutorial parts are ready!
+</div>
+
 The JavaFX 2 TableView lacks the ability for filtering. The intention before JavaFX 2.0 shipped was to include a `FilteredList` that would wrap an `ObservableList` (see Oracle forum [Filter rows on TableView](https://forums.oracle.com/forums/thread.jspa?threadID=2350647)). Unfortunately, the filtering was removed again. It will appear in JavaFX 8 which won't be released before late 2013.
 
 In this post I will explain how we can manually do row filtering in JavaFX 2.

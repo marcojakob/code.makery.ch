@@ -29,10 +29,6 @@ sidebars:
     link: /java/javafx-8-tutorial-part7/
 ---
 
-<div class="alert alert-info">
-  I'm currently rewriting the entire JavaFX 2 tutorial for JavaFX 8. <a href="https://tinyletter.com/code-makery" class="alert-link">Subscribe here</a> and I'll send you an email when all tutorial parts are ready!
-</div>
-
 JavaFX 8 is included in JDK 8 and is the **officially recommended graphics toolkit for Java 8 applications**. I've been using JavaFX 2 since 2012 and am very pleased as it was already a major step forward compared to Swing. Now with JavaFX 8 it has become even better, with new UI controls like [DatePicker](/blog/javafx-8-date-picker), a modern theme called *Modena*, rich text support, to just name a few. 
 
 ![JavaFX Logo](/assets/java/javafx-8-tutorial-intro/javafx-logo.png)

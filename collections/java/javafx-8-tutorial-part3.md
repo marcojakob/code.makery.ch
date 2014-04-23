@@ -1,43 +1,40 @@
 ---
 layout: article
-title: "JavaFX 2 Tutorial - Part 3: Interacting with the User"
-date: 2012-11-20 17:30
-updated: 2013-02-08 00:00
-published: false
+title: "JavaFX 8 Tutorial - Part 3: Interacting with the User"
+date: 2014-04-24 00:00
+published: true
 prettify: true
-comments: 
-  shortname: edumakery
-  identifier: http://edu.makery.ch/blog/2012/11/20/javafx-tutorial-addressapp-3/
+comments: true
 sidebars:
 - header: "Articles in this Series"
   paging: true
   body:
   - text: "Introduction"
-    link: /java/javafx-2-tutorial-intro/
+    link: /java/javafx-8-tutorial-intro/
     intro: true
   - text: "Part 1: Scene Builder"
-    link: /java/javafx-2-tutorial-part1/
+    link: /java/javafx-8-tutorial-part1/
   - text: "Part 2: Model and TableView"
-    link: /java/javafx-2-tutorial-part2/
+    link: /java/javafx-8-tutorial-part2/
   - text: "Part 3: Interacting with the User"
-    link: /java/javafx-2-tutorial-part3/
+    link: /java/javafx-8-tutorial-part3/
     active: true
   - text: "Part 4: CSS Styling"
-    link: /java/javafx-2-tutorial-part4/
+    link: /java/javafx-8-tutorial-part4/
   - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-2-tutorial-part5/
+    link: /java/javafx-8-tutorial-part5/
   - text: "Part 6: Statistics Chart"
-    link: /java/javafx-2-tutorial-part6/
+    link: /java/javafx-8-tutorial-part6/
   - text: "Part 7: Deployment with e(fx)clipse"
-    link: /java/javafx-2-tutorial-part7/
+    link: /java/javafx-8-tutorial-part7/
 - header: "Download Sources"
   body:
   - text: Source of Part 3 (Eclipse Project)
-    link: /assets/java/javafx-2-tutorial-part3/addressapp-part-3.zip
+    link: /assets/java/javafx-8-tutorial-part3/addressapp-part-3.zip
     icon-css: fa fa-fw fa-download
 ---
 
-![Screenshot AddressApp Part 3](/assets/java/javafx-2-tutorial-part3/addressapp01.png)
+![Screenshot AddressApp Part 3](/assets/java/javafx-8-tutorial-part3/addressapp-part3.png)
 
 
 ## Topics in Part 3
@@ -45,15 +42,20 @@ sidebars:
 * **React to selection changes** in the table.
 * Add functionality to the **add**, **edit**, and **remove** buttons.
 * Create a custom **popup dialog** to edit a person.
-* **Validating user input**.
+* **Validate user input**.
 
-* * * 
+
+*****
+
 
 ## React to Table Selections
 
-Obviousely, we haven't used the right side of our application, yet. The idea is when the user selects a person in the table, the details about that person should be displayed on the right side.
+Obviousely, we haven't used the right side of our application, yet. The idea is, when the user selects a person in the table, the details about that person should be displayed on the right side.
 
 First, let's add a new method inside `PersonOverviewController` that helps us fill the labels with the data from a single `Person`.
+
+<!-- TODO: Continue here. --> 
+
 
 Create a method called `showPersonDetails(Person person)`. Go trough all the labels and set the text using `setText(...)` with details from the person. If `null` is passed as parameter, all labels should be cleared.
 

@@ -13,6 +13,10 @@ tags:
 - JavaFX
 ---
 
+<div class="alert alert-info">
+  I'm currently rewriting all JavaFX 2 articles for JavaFX 8. <a href="https://tinyletter.com/code-makery" class="alert-link">Subscribe here</a> and I'll send you an email when all tutorial parts are ready!
+</div>
+
 In this post I will show how to customize the rendering of a JavaFX 2 TableView. The *Birthday* column in the screenshot below is a formatted `Calendar` object. Depending on the year, the text color is changed. 
 
 ![TableView Cell Renderer](/assets/blog/12-12-19-javafx-2-tableview-cell-renderer/screenshot-01.png)

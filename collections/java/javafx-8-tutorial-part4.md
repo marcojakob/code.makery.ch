@@ -2,7 +2,6 @@
 layout: article
 title: "JavaFX 2 Tutorial - Part 4: CSS Styling"
 date: 2012-11-26 13:00
-updated: 2013-02-08 00:00
 published: false
 prettify: true
 comments: 

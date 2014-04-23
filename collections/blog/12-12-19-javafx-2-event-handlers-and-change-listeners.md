@@ -13,6 +13,10 @@ tags:
 - JavaFX
 ---
 
+<div class="alert alert-info">
+  I'm currently rewriting all JavaFX 2 articles for JavaFX 8. <a href="https://tinyletter.com/code-makery" class="alert-link">Subscribe here</a> and I'll send you an email when all tutorial parts are ready!
+</div>
+
 Very often in JavaFX we have to react to user events: The user clicks a button, presses a key, moves the mouse, etc. This post describes how to handle such events. 
 
 We'll try to do as much event handling with *Scene Builder* and `fxml` as possible. For some events we'll add event handling in the Java code of the controller.
