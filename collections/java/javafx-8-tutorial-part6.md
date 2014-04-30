@@ -27,7 +27,7 @@ sidebars:
   - text: "Part 6: Statistics Chart"
     link: /java/javafx-2-tutorial-part6/
     active: true
-  - text: "Part 7: Deployment with e(fx)clipse"
+  - text: "Part 7: Deployment"
     link: /java/javafx-2-tutorial-part7/
 - header: "Download Sources"
   body:
@@ -251,5 +251,5 @@ A good place for more information is the official Oracle tutorial on [Using Java
 
 ### What's Next?
 
-In the last tutorial [Part 7](/java/javafx-2-tutorial-part7/) we will finally deploy our application (i.e. package and deliver the app to our users).
+In the last tutorial [Part 7](/java/javafx-8-tutorial-part7/) we will finally deploy our application (i.e. package and deliver the app to our users).
 

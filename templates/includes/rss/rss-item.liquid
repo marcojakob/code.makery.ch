@@ -1,7 +1,10 @@
+{% assign identifier = rss-item.slug %}
+{% assign last = rss-item.slug | last %}
+{% unless last == '/' %}{% assign identifier = identifier | append: '/' %}{% endunless %}
 <item>
 	<title>{{ rss-item.title | html_encode }}</title>
-	<link>{{ global.domain }}{{ rss-item.slug }}</link>
-	<guid>{{ rss-item.slug }}</guid>
+	<link>{{ global.domain }}{{ identifier }}</link>
+	<guid>{{ identifier }}</guid>
 	{% for category in rss-item.categories %}
 	<category>{{ category | html_encode }}</category>
 	{% endfor %}

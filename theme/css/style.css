@@ -6372,9 +6372,15 @@ ol.alpha-list,
       list-style-type: decimal; }
 
 .ribbon {
-  background-color: #8ba644;
   overflow: hidden;
   white-space: nowrap;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px; }
+
+.ribbon a {
   position: absolute;
   right: -60px;
   top: 60px;
@@ -6382,18 +6388,29 @@ ol.alpha-list,
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   -webkit-box-shadow: 0 0 10px #888;
-  box-shadow: 0 0 10px #888; }
-
-.ribbon a {
-  border: 1px solid #b5c48c;
+  box-shadow: 0 0 10px #888;
+  background-color: #8ba644;
   color: #fff;
   display: block;
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 1px 0;
-  padding: 2px 50px;
+  padding: 5px 50px;
   text-align: center;
   text-decoration: none;
   text-shadow: 0 0 5px #444; }
+  .ribbon a:before, .ribbon a:after {
+    content: '';
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 1px;
+    background-color: #b5c48c; }
+  .ribbon a:before {
+    top: 1px; }
+  .ribbon a:after {
+    top: auto;
+    bottom: 1px; }
 
 .panel-body img {
   float: left;
@@ -6543,6 +6560,74 @@ ol.alpha-list,
   .paging .next {
     position: absolute;
     right: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

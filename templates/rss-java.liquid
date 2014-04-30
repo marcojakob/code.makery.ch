@@ -1,0 +1,18 @@
+{% layout "none" %}
+{% contenttype "application/xml" %}
+<rss version="2.0">
+  <channel>
+    <generator>Mixture</generator>
+    <title>{{ global.title }} (java)</title>
+    <link>{{ global.domain }}</link>
+    <description>{{ global.intro }}</description>
+    <language>en</language>
+    <webMaster>{{ global.email }}</webMaster>
+    <copyright>{{ 'now' | date: "%Y" }}</copyright>
+    <pubDate>Thu, 06 Jun 2013 12:17:05 GMT</pubDate>
+    <lastBuildDate>Thu, 06 Jun 2013 12:17:05 GMT</lastBuildDate>
+    {% collection "blog" by 10 query 'tags=java' order desc %}
+      {% include "rss/rss-item" with collection.items %}
+    {% endcollection %}
+  </channel>
+</rss>

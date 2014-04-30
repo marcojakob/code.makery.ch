@@ -25,7 +25,7 @@ sidebars:
     link: /java/javafx-8-tutorial-part5/
   - text: "Part 6: Statistics Chart"
     link: /java/javafx-8-tutorial-part6/
-  - text: "Part 7: Deployment with e(fx)clipse"
+  - text: "Part 7: Deployment"
     link: /java/javafx-8-tutorial-part7/
 - header: "Download Sources"
   body:
@@ -371,11 +371,12 @@ We're almost there! But one little thing is missing: We haven't told our `Person
 ![Set Controller Class](/assets/java/javafx-8-tutorial-part2/set-controller-class.png)
 
 3. Select the `TableView` in the *Hierarchy* group and choose in the *Code* group the `personTable` field as **fx:id**.   
-![Set fx:id](/assets/java/javafx-8-tutorial-part2/set-fx-id.png)
+![Set TableView fx:id](/assets/java/javafx-8-tutorial-part2/set-tableview-fx-id.png)
 
 4. Do the same for the columns and select `firstNameColumn` and `lastNameColumn` as **fx:id** respectively.
 
-5. For **each label** in the second column, choose the corresponding **fx:id**.
+5. For **each label** in the second column, choose the corresponding **fx:id**.   
+![Set Label fx:id](/assets/java/javafx-8-tutorial-part2/set-label-fx-id.png)
 
 6. Important: Go back to Eclipse and **refresh the entire AddressApp project** (F5). This is necessary because Eclipse sometimes doesn't know about changes that were made inside the Scene Builder.
 

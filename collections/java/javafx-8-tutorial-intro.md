@@ -2,7 +2,7 @@
 layout: article
 title: "JavaFX 8 Tutorial - Introduction"
 date: 2014-04-19 00:00
-published: false
+published: true
 prettify: true
 comments: true
 sidebars:
@@ -25,7 +25,7 @@ sidebars:
     link: /java/javafx-8-tutorial-part5/
   - text: "Part 6: Statistics Chart"
     link: /java/javafx-8-tutorial-part6/
-  - text: "Part 7: Deployment with e(fx)clipse"
+  - text: "Part 7: Deployment"
     link: /java/javafx-8-tutorial-part7/
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "JavaFX 2 Tutorial - Part 7: Deployment with e(fx)clipse"
+title: "JavaFX 2 Tutorial - Part 7: Deployment"
 date: 2012-12-18 01:00
 published: false
 prettify: true
@@ -26,7 +26,7 @@ sidebars:
     link: /java/javafx-2-tutorial-part5/
   - text: "Part 6: Statistics Chart"
     link: /java/javafx-2-tutorial-part6/
-  - text: "Part 7: Deployment with e(fx)clipse"
+  - text: "Part 7: Deployment"
     link: /java/javafx-2-tutorial-part7/
     active: true
 - header: "Download Sources"

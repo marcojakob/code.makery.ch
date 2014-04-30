@@ -14,7 +14,7 @@ tags:
 ---
 
 <div class="alert alert-info">
-  &rarr; If you're using JDK 8.0 or later go to <a href="/blog/javafx-8-date-picker/" class="alert-link">JavaFX 8 Date Picker</a>
+  &rarr; For an UPDATED VERSION of this article go to: <a href="/blog/javafx-8-date-picker/" class="alert-link">JavaFX 8 Date Picker</a>
 </div>
 
 As JavaFX 2.2 doesn't contain a Calendar control we would have to create our own to provide a convenient way to enter a date. Fortunately, [Christian Schudt](http://myjavafx.blogspot.ch/2012/01/javafx-calendar-control.html) has created a very nice DatePicker that we can use:

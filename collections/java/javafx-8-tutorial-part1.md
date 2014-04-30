@@ -25,7 +25,7 @@ sidebars:
     link: /java/javafx-8-tutorial-part5/
   - text: "Part 6: Statistics Chart"
     link: /java/javafx-8-tutorial-part6/
-  - text: "Part 7: Deployment with e(fx)clipse"
+  - text: "Part 7: Deployment"
     link: /java/javafx-8-tutorial-part7/
 - header: "Download Sources"
   body:
@@ -150,7 +150,7 @@ Right-click on `PersonOverview.fxml` and choose *Open with Scene Builder*. Now y
 10. Add the three buttons at the bottom. Tip: Select all of them, right-click and call *Wrap In | HBox*. This groups them together. You might need to specify a *spacing* inside the HBox. Then, also set anchors (right and bottom) so they stay in the right place.   
 ![Button Group](/assets/java/javafx-8-tutorial-part1/button-group.png)
 
-11. Now you should see something like the following. You should test its resizing behaviour using the *Preview* menu.   
+11. Now you should see something like the following. Use the *Preview* menu to test its resizing behaviour.   
 ![Preview](/assets/java/javafx-8-tutorial-part1/scene-builder-preview.png)
 
 
@@ -263,6 +263,14 @@ public class MainApp extends Application {
             e.printStackTrace();
         }
     }
+    
+	/**
+	 * Returns the main stage.
+	 * @return
+	 */
+	public Stage getPrimaryStage() {
+		return primaryStage;
+	}
 
     public static void main(String[] args) {
         launch(args);

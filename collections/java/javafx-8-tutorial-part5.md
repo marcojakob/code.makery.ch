@@ -1,38 +1,36 @@
 ---
 layout: article
-title: "JavaFX 2 Tutorial - Part 5: Storing Data as XML"
-date: 2012-11-27 22:00
-published: false
+title: "JavaFX 8 Tutorial - Part 5: Storing Data as XML"
+date: 2014-04-25 01:00
+published: true
 prettify: true
-comments: 
-  shortname: edumakery
-  identifier: http://edu.makery.ch/blog/2012/11/27/javafx-tutorial-addressapp-5/
+comments: true
 sidebars:
 - header: "Articles in this Series"
   paging: true
   body:
   - text: "Introduction"
-    link: /java/javafx-2-tutorial-intro/
+    link: /java/javafx-8-tutorial-intro/
     intro: true
   - text: "Part 1: Scene Builder"
-    link: /java/javafx-2-tutorial-part1/
+    link: /java/javafx-8-tutorial-part1/
   - text: "Part 2: Model and TableView"
-    link: /java/javafx-2-tutorial-part2/
+    link: /java/javafx-8-tutorial-part2/
   - text: "Part 3: Interacting with the User"
-    link: /java/javafx-2-tutorial-part3/
+    link: /java/javafx-8-tutorial-part3/
   - text: "Part 4: CSS Styling"
-    link: /java/javafx-2-tutorial-part4/
+    link: /java/javafx-8-tutorial-part4/
   - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-2-tutorial-part5/
+    link: /java/javafx-8-tutorial-part5/
     active: true
   - text: "Part 6: Statistics Chart"
-    link: /java/javafx-2-tutorial-part6/
-  - text: "Part 7: Deployment with e(fx)clipse"
-    link: /java/javafx-2-tutorial-part7/
+    link: /java/javafx-8-tutorial-part6/
+  - text: "Part 7: Deployment"
+    link: /java/javafx-8-tutorial-part7/
 - header: "Download Sources"
   body:
   - text: Source of Part 5 (Eclipse Project)
-    link: /assets/java/javafx-2-tutorial-part5/addressapp-part-5.zip
+    link: /assets/java/javafx-8-tutorial-part5/addressapp-jfx8-part-5.zip
     icon-css: fa fa-fw fa-download
 ---
 
@@ -46,7 +44,12 @@ sidebars:
 * Using the JavaFX **Menu**
 * Saving the last opened file path in **user preferences**
 
-* * *
+
+
+*****
+
+At the moment our address application's data only resides in memory. Every time we close the application, the data is lost. So it's about time to start thinking about persistently storing data.
+
 
 ## Saving User Preferences
 
@@ -55,6 +58,9 @@ Java allows us to save some application state using a class called `Preferences`
 We won't be able to use `Preferences` to store our entire address book. But it allows us to save some simple application state. One such thing is the path to the *last opened file*. With this information we could load the last application state whenever the user restarts the application.
 
 The following two methods take care of saving and retrieving Preferences. Add them to the end of your `MainApp` class:
+
+
+##### MainApp.java
 
 <pre class="prettyprint lang-java">
 /**
@@ -96,11 +102,12 @@ public void setPersonFilePath(File file) {
 }
 </pre>
 
-* * *
+
+
+*****
+
 
 ## Persisting Data as XML
-
-At the moment our address application's data only resides in memory. Every time we close the application, the data is lost. So it's about time to start thinking persistently storing data.
 
 
 ### Why XML?
@@ -291,14 +298,14 @@ Hint: Using the *Accelerator* setting under properties you can set shortcut keys
 
 ### The RootLayoutController
 
-For handling menu actions we'll need a new controller class. Create a class `RootLayoutController` inside the controller package `ch.makery.address`. 
+For handling menu actions we'll need a new controller class. Create a class `RootLayoutController` inside the controller package `ch.makery.address.view`. 
 
 Add the following content to the controller:
 
 ##### RootLayoutController.java
 
 <pre class="prettyprint lang-java pre-scrollable">
-package ch.makery.address;
+package ch.makery.address.view;
 
 import java.io.File;
 
