@@ -14,7 +14,7 @@ tags:
 ---
 
 <div class="alert alert-info">
-  &rarr; For an UPDATED VERSION of this article go to: <a href="/blog/javafx-8-tableview-sorting-filtering/" class="alert-link">JavaFX 8 TableView Sorting and Filtering</a>
+  &rarr; UPDATED VERSION of this article: <a href="/blog/javafx-8-tableview-sorting-filtering/" class="alert-link">JavaFX 8 TableView Sorting and Filtering</a>
 </div>
 
 The JavaFX 2 TableView lacks the ability for filtering. The intention before JavaFX 2.0 shipped was to include a `FilteredList` that would wrap an `ObservableList` (see Oracle forum [Filter rows on TableView](https://forums.oracle.com/forums/thread.jspa?threadID=2350647)). Unfortunately, the filtering was removed again. It will appear in JavaFX 8 which won't be released before late 2013.

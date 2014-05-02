@@ -2,7 +2,7 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 3: Interacting with the User"
 date: 2014-04-24 00:00
-published: true
+published: false
 prettify: true
 comments: true
 sidebars:

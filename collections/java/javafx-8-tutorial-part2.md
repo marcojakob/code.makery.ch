@@ -2,7 +2,7 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 2: Model and TableView"
 date: 2014-04-23 00:00
-published: true
+published: false
 prettify: true
 comments: true
 sidebars:

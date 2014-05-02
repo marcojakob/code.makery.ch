@@ -1,7 +1,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/theme/css/style.min.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="alternate" type="application/rss+xml" href="/rss{% if mixture.route.tag %}-{{ mixture.route.tag }}{% endif %}" title="code.makery.ch - RSS Feed">
-    {% if model.description %}<meta name="description" content="{{ model.description }}">{% endif %}
+    <meta name="description" content="{{ model.description }}">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="summary">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ model.title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="{{ model.description }}" />
+    <meta property="og:url" content="{% include "util/domain-and-url" %}" />
+    {% if model.image %}
+    <meta property="og:image" content="{{ global.domain }}{{ model.image }}" />
+    {% else %}
+    <meta property="og:image" content="{{ global.domain }}/assets/logo-280x280.png" />
+    {% endif %}
     {% if global.googleplus %}<link rel="author" href="https://plus.google.com/{{ global.googleplus }}"/>{% endif %}
     {% include "prettify-css" %}
     {% include "custom-css" %}

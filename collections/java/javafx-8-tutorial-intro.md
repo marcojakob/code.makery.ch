@@ -2,7 +2,7 @@
 layout: article
 title: "JavaFX 8 Tutorial - Introduction"
 date: 2014-04-19 00:00
-published: true
+published: false
 prettify: true
 comments: true
 sidebars:

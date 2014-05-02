@@ -2,7 +2,7 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 4: CSS Styling"
 date: 2014-04-25 00:00
-published: true
+published: false
 prettify: true
 comments: true
 sidebars:
