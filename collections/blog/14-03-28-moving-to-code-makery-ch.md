@@ -3,6 +3,7 @@ layout: post
 title: Moving to code.makery.ch
 date: 2014-03-28 00:00
 slug: moving-to-code-makery-ch
+description: "This blog moved from edu.makery.ch to code.makery.ch."
 published: true
 prettify: true
 comments: true

@@ -3,6 +3,7 @@ layout: post
 title: Programming with Dart
 date: 2013-06-13 00:00
 slug: programming-with-dart
+description: "The last few months I have been programming with Google's new Dart language. I'm very excited about how great it is to work with Dart!"
 published: true
 prettify: true
 comments: true

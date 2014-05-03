@@ -1,10 +1,8 @@
-{% assign identifier = rss-item.slug %}
-{% assign last = rss-item.slug | last %}
-{% unless last == '/' %}{% assign identifier = identifier | append: '/' %}{% endunless %}
+{% assign url = rss-item.slug | append: '/' %}
 <item>
 	<title><![CDATA[{{ rss-item.title }}]]></title>
-	<link>{{ global.domain }}{{ identifier }}</link>
-	<guid>{{ identifier }}</guid>
+	<link>{{ global.domain }}{{ url }}</link>
+	<guid>{{ url }}</guid>
 	{% for category in rss-item.tags %}
 	<category>{{ category | html_encode }}</category>
 	{% endfor %}

@@ -13,8 +13,6 @@
     <meta property="og:url" content="{% include "util/domain-and-url" %}" />
     {% if model.image %}
     <meta property="og:image" content="{{ global.domain }}{{ model.image }}" />
-    {% else %}
-    <meta property="og:image" content="{{ global.domain }}/assets/logo-280x280.png" />
     {% endif %}
     {% if global.googleplus %}<link rel="author" href="https://plus.google.com/{{ global.googleplus }}"/>{% endif %}
     {% include "prettify-css" %}
