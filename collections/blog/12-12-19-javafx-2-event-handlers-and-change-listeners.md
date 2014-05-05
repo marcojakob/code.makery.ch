@@ -12,9 +12,8 @@ tags:
 - Java
 - JavaFX
 ---
-
 <div class="alert alert-info">
-  I'm currently rewriting all JavaFX 2 articles for JavaFX 8. <a href="https://tinyletter.com/code-makery" class="alert-link">Subscribe here</a> and I'll send you an email when all tutorial parts are ready!
+  &rarr; UPDATED VERSION of this article available: <a href="/blog/javafx-8-event-handling-examples/" class="alert-link">JavaFX 8 Event Handling Examples</a>
 </div>
 
 Very often in JavaFX we have to react to user events: The user clicks a button, presses a key, moves the mouse, etc. This post describes how to handle such events. 

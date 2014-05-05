@@ -6517,6 +6517,14 @@ ol.alpha-list,
 .home-featured {
   margin-top: 70px; }
 
+.home-recent {
+  margin-top: 70px; }
+  .home-recent h3 {
+    font-weight: normal;
+    color: #999999; }
+  .home-recent h4 {
+    font-weight: normal; }
+
 .post-container {
   max-width: 750px; }
 
@@ -6560,97 +6568,5 @@ ol.alpha-list,
   .paging .next {
     position: absolute;
     right: 0; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

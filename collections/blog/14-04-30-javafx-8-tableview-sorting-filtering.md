@@ -4,6 +4,7 @@ title: JavaFX 8 TableView Sorting and Filtering
 date: 2014-04-30 00:00
 slug: javafx-8-tableview-sorting-filtering
 description: "The JavaFX 8 SortedList and FilteredList allow easy sorting and filtering of data in a TableView." 
+image: /assets/blog/14-04-30-javafx-8-tableview-sorting-filtering/tableview-sorting-filtering.png
 published: true
 prettify: true
 comments: true

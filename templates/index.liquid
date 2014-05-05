@@ -45,12 +45,33 @@
       <h2>Blog</h2>
     </a>
     <p>
-      I write whenever I add or update tutorials or libraries.</p>
+      I write about programming and how to learn it.</p>
       If you <a href="https://tinyletter.com/code-makery">subscribe via Email</a> I'll send updates directly to your inbox.
     </p>
     <p>
       <a class="btn btn-default" href="/blog/">Read the Blog</a>
     </p>
+  </div>
+</div>
+
+<div class="row home-recent">
+  <div class="col-sm-offset-2 col-sm-8 text-center">
+    <h3><a class="black-link" href="/blog/">Recent Blog Posts</a></h3>
+  </div>
+  <div class="col-sm-offset-2 col-sm-8">
+  {% collection "blog" by 2 order desc %}
+    {% if collection.current_page > collection.pages and collection.size > 0 %}
+      {% include "blog/paged-too-far" %}
+    {% elseif collection.size == 0 %}
+      {% include "blog/no-posts" %}
+    {% else %}
+      {% assign currentpage = collection.current_page %}
+      {% include "blog/post-recent" with collection.items %}
+      <div class="text-center">
+        <a href="/archive/">&mdash; Blog Archive &mdash;</a>
+      </div>
+    {% endif %}
+  {% endcollection %}
   </div>
 </div>
 {% endblock %}

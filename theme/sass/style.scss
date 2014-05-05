@@ -300,12 +300,24 @@ ol.alpha-list,
 }
 
 //
-// Home page
+// Home page (index.html)
 // -------------------------------
 .home-featured {
   margin-top: 70px; 
 }
 
+.home-recent {
+  margin-top: 70px;
+  
+  h3 {
+    font-weight: normal;
+    color: $headings-small-color;
+  }
+  
+  h4 {
+    font-weight: normal;
+  }
+}
 
 //
 // Java page
@@ -313,10 +325,6 @@ ol.alpha-list,
 .java-container {
    
 }
-
-//
-// Blog page
-// -------------------------------
 
 
 //
