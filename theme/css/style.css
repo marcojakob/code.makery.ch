@@ -6325,13 +6325,15 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+a.black-link, a.gray-link, a.green-link {
+  text-decoration: none; }
 a.black-link {
-  color: #333333;
-  text-decoration: none; }
+  color: #333333; }
+a.gray-link {
+  color: #999999; }
 a.green-link {
-  color: #8ba644;
-  text-decoration: none; }
-a:hover.black-link, a:focus.black-link, a:hover.green-link, a:focus.green-link {
+  color: #8ba644; }
+a:hover.black-link, a:focus.black-link, a:hover.gray-link, a:focus.gray-link, a:hover.green-link, a:focus.green-link {
   color: #428bca; }
 
 img {
@@ -6519,9 +6521,7 @@ ol.alpha-list,
 
 .home-recent {
   margin-top: 70px; }
-  .home-recent h3 {
-    font-weight: normal;
-    color: #999999; }
+  .home-recent h3,
   .home-recent h4 {
     font-weight: normal; }
 
@@ -6568,5 +6568,4 @@ ol.alpha-list,
   .paging .next {
     position: absolute;
     right: 0; }
-
 

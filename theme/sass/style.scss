@@ -10,20 +10,31 @@
 
 // Black links without text decorations.
 a {
+  &.black-link,
+  &.gray-link, 
+  &.green-link {
+    text-decoration: none;
+  }
+
   &.black-link {
     color: $text-color;
-    text-decoration: none;
+  }
+  
+  &.gray-link {
+    color: $gray-light;
   }
   
   &.green-link {
     color: $avocado-green;
-    text-decoration: none;
   }
   
   &:hover.black-link,
   &:focus.black-link, 
+  &:hover.gray-link,
+  &:focus.gray-link,
   &:hover.green-link,
-  &:focus.green-link {
+  &:focus.green-link
+  {
     color: $link-color;
   }
 }
@@ -309,11 +320,7 @@ ol.alpha-list,
 .home-recent {
   margin-top: 70px;
   
-  h3 {
-    font-weight: normal;
-    color: $headings-small-color;
-  }
-  
+  h3,
   h4 {
     font-weight: normal;
   }
