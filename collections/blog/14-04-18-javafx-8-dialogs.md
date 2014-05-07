@@ -2,6 +2,7 @@
 layout: post
 title: JavaFX 8 Dialogs
 date: 2014-04-18 00:00
+updated: 2014-05-07 00:00
 slug: javafx-8-dialogs
 description: "Examples of how to create simple popup Dialogs in JavaFX 8."
 published: true
@@ -26,6 +27,17 @@ In this post I will show some examples of how to use the [ControlsFX Dialogs](ht
 **Note: ControlsFX will only work on JavaFX 8.0 or later. Make sure you are using JDK 8 or later in your project.**
 3. Add the jar file to your project's classpath: In Eclipse *right-click on the jar file* | *Build Path* | *Add to Build Path*. Now Eclipse knows about the library.
 4. Now ControlsFX is ready to be used. Add one of the following code snippets to create a Dialog.
+
+
+### Localizing the Dialogs
+
+If you want to **change the text of the buttons**, you must add a localized properties file: 
+
+1. Open the `controlsfx-8.x.x.jar` and make a copy of the file `controlsfx.properties`. This file contains the default English translation.
+2. Add your desired locale to the filname of the copied properties file. For example, my locale is `de` for language and `CH` for country. That results in `controlsfx_de_CH.properties` as my file name.
+3. Change the texts inside the properties file. 
+4. Move the new properties file to your project, e.g. into your `src` folder or somewhere else on the classpath.
+5. It should already work for your system's locale. If you want to change to a different locale, you can set the locale by calling `Localization.setLocale(new Locale("de", "CH"))`.
 
 
 ## Standard Dialogs
