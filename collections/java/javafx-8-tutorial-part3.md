@@ -2,6 +2,8 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 3: Interacting with the User"
 date: 2014-04-24 00:00
+description: "React to selection changes in the JavaFX TableView. Add, edit and remove items from the table and validate user input."
+image: /assets/java/javafx-8-tutorial-part3/addressapp-part3.png
 published: true
 prettify: true
 comments: true

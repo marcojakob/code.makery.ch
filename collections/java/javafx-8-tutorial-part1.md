@@ -2,6 +2,8 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 1: Scene Builder"
 date: 2014-04-19 01:00
+description: "How to create a JavaFX project and design it with Scene Builder. Uses Model View Controller for the application structure."
+image: /assets/java/javafx-8-tutorial-part1/addressapp-part1.png
 published: true
 prettify: true
 comments: true

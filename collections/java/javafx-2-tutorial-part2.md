@@ -44,7 +44,7 @@ sidebars:
 ---
 
 <div class="alert alert-info">
-  I'm currently rewriting the entire JavaFX 2 tutorial for JavaFX 8. <a href="https://tinyletter.com/code-makery" class="alert-link">Subscribe here</a> and I'll send you an email when all tutorial parts are ready!
+  &rarr; UPDATED VERSION for JDK 8 available: <a href="/java/javafx-8-tutorial-part2/" class="alert-link">JavaFX 8 Tutorial</a>
 </div>
 
 ![Screenshot AddressApp Part 2](/assets/java/javafx-2-tutorial-part2/addressapp01.png)

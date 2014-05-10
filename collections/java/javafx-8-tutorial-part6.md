@@ -2,6 +2,8 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 6: Statistics Chart"
 date: 2014-05-09 00:00
+description: "Learn how to create a JavaFX Bar Chart."
+image: /assets/java/javafx-8-tutorial-part6/addressapp-part6.png
 published: true
 prettify: true
 comments: true

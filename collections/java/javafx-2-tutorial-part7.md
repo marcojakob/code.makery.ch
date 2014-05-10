@@ -44,7 +44,7 @@ sidebars:
 ---
 
 <div class="alert alert-info">
-  I'm currently rewriting the entire JavaFX 2 tutorial for JavaFX 8. <a href="https://tinyletter.com/code-makery" class="alert-link">Subscribe here</a> and I'll send you an email when all tutorial parts are ready!
+  &rarr; UPDATED VERSION for JDK 8 available: <a href="/java/javafx-8-tutorial-part7/" class="alert-link">JavaFX 8 Tutorial</a>
 </div>
 
 *Update Feb 11th, 2013: New instructions for Deployment on Mac OS. Thank you Eskil for providing me with this information!*

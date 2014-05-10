@@ -40,5 +40,24 @@
       </div>
     </div>
   </a>
+  
+  <div class="row java-recent">
+    <div class="col-sm-offset-2 col-sm-8 text-center">
+    <h3><a class="gray-link" href="/blog/tag/dart/">Recent Dart Blog Posts</a></h3>
+    {% collection "blog" by 5 query 'tags=dart' order desc %}
+      {% if collection.size == 0 %}
+        {% include "blog/no-posts" %}
+      {% else %}
+        {% assign currentpage = collection.current_page %}
+        {% include "blog/post-recent" with collection.items %}
+      {% endif %}
+    {% endcollection %}
+      <div class="text-center">
+        <a href="/blog/tag/dart/">&mdash; All Dart Posts ({% collection "blog" query 'tags=dart' %}{{ collection.size }}{% endcollection %}) &mdash;</a>
+      </div>
+    </div>
+  </div>
+  
+  
 </article>
 {% endblock %}

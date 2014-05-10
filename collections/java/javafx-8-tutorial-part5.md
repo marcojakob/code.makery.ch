@@ -2,6 +2,8 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 5: Storing Data as XML"
 date: 2014-04-25 01:00
+description: "Save data as XML with JAXB. Learn how to use the JavaFX FileChooser and the JavaFX Menu."
+image: /assets/java/javafx-8-tutorial-part5/addressapp-part5.png
 published: true
 prettify: true
 comments: true

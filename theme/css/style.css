@@ -6346,9 +6346,11 @@ img {
 pre {
   font-size: 14px; }
 
-.label {
+.label,
+.badge {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  .label.pull-right {
+  .label.pull-right,
+  .badge.pull-right {
     margin-left: 5px; }
 
 .label-green {
@@ -6414,7 +6416,8 @@ ol.alpha-list,
     top: auto;
     bottom: 1px; }
 
-.panel-body img {
+.panel-body img,
+.panel-body i {
   float: left;
   max-width: 120px; }
 .panel-body p {
@@ -6525,6 +6528,15 @@ ol.alpha-list,
   .home-recent h4 {
     font-weight: normal; }
 
+.java-recent,
+.dart-recent {
+  margin-top: 35px; }
+  .java-recent h3,
+  .java-recent h4,
+  .dart-recent h3,
+  .dart-recent h4 {
+    font-weight: normal; }
+
 .post-container {
   max-width: 750px; }
 
@@ -6568,10 +6580,6 @@ ol.alpha-list,
   .paging .next {
     position: absolute;
     right: 0; }
-
-
-
-
 
 
 

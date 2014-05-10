@@ -37,7 +37,7 @@ sidebars:
 ---
 
 <div class="alert alert-info">
-  I'm currently rewriting the entire JavaFX 2 tutorial for JavaFX 8. <a href="https://tinyletter.com/code-makery" class="alert-link">Subscribe here</a> and I'll send you an email when all tutorial parts are ready!
+  &rarr; UPDATED VERSION for JDK 8 available: <a href="/java/javafx-8-tutorial-intro/" class="alert-link">JavaFX 8 Tutorial</a>
 </div>
 
 JavaFX provides Java developers with a very nice graphics platform. In October 2011, JavaFX 2.0 was released. It was intended to be the choice for new graphical user interfaces (GUI) rather than the older Java Swing. When I started teaching JavaFX in 2012 it was still very early. There were no books covering JavaFX that I found **suitable for students new to programming**. So I started to write a very detailed tutorial series on JavaFX. 

@@ -2,6 +2,8 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 2: Model and TableView"
 date: 2014-04-23 00:00
+description: "Use a JavaFX TableView to display an ObservableList of Persons."
+image: /assets/java/javafx-8-tutorial-part2/addressapp-part2.png
 published: true
 prettify: true
 comments: true
