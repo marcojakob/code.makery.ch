@@ -8,26 +8,32 @@ prettify: false
 comments: false
 sidebars:
 - header: "Articles in this Series"
-  paging: true
   body:
   - text: "Introduction"
     link: /java/javafx-2-tutorial-intro
-    intro: true
+    paging: Intro
     active: true
   - text: "Part 1: Scene Builder"
     link: /java/javafx-2-tutorial-part1/
+    paging: 1
   - text: "Part 2: Model and TableView"
     link: /java/javafx-2-tutorial-part2/
+    paging: 2
   - text: "Part 3: Interacting with the User"
     link: /java/javafx-2-tutorial-part3/
+    paging: 3
   - text: "Part 4: CSS Styling"
     link: /java/javafx-2-tutorial-part4/
+    paging: 4
   - text: "Part 5: Storing Data as XML"
     link: /java/javafx-2-tutorial-part5/
+    paging: 5
   - text: "Part 6: Statistics Chart"
     link: /java/javafx-2-tutorial-part6/
+    paging: 6
   - text: "Part 7: Deployment with e(fx)clipse"
     link: /java/javafx-2-tutorial-part7/
+    paging: 7
 ---
 
 <div class="alert alert-info">

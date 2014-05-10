@@ -1,27 +1,19 @@
-{% for sidebar in model.sidebars %}
-  {% if sidebar.paging %}
-    <div class="article-paging">
-      <ul class="pagination">
-        {% assign counter = 1 %}
-        {% for item in sidebar.body %}
-          {% unless item.paging-exclude %}
-            {% if item.intro %}
-              {% assign item_text = "Intro" %}
-            {% else %}
-              {% assign item_text = counter %}
-              {% assign counter = counter | plus: 1 %}
-            {% endif %}
-
-            {% if item.active %}
-              <li class="active">
-            {% else %}
-              <li>
-            {% endif %}
-            <a href="{{ item.link }}" data-toggle="tooltip" title="{{ item.text }}">{{ item_text }}</a></li>
-          {% endunless %}
-        {% endfor %}
-      </ul>
-    </div>
-  {% endif %}
-{% endfor %}
-
+{% capture sidebarelements -%}
+{% for sidebar in model.sidebars -%}
+  {% for item in sidebar.body -%}
+    {% if item.paging -%}
+      {% assign containspaging = true %}
+      {% if item.active %}<li class="active">{% else %}<li>{% endif %}
+      <a href="{{ item.link }}" data-toggle="tooltip" title="{{ item.text }}">{{ item.paging }}</a>
+      </li>
+    {% endif -%}
+  {% endfor -%}
+{% endfor -%}
+{% endcapture -%}
+{% if containspaging %}
+  <div class="article-paging">
+    <ul class="pagination">
+      {{ sidebarelements }}
+    </ul>
+  </div>
+{% endif %}

@@ -2,31 +2,37 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 2: Model and TableView"
 date: 2014-04-23 00:00
-published: false
+published: true
 prettify: true
 comments: true
 sidebars:
 - header: "Articles in this Series"
-  paging: true
   body:
   - text: "Introduction"
-    link: /java/javafx-8-tutorial-intro/
-    intro: true
+    link: /java/javafx-8-tutorial-intro
+    paging: Intro
   - text: "Part 1: Scene Builder"
     link: /java/javafx-8-tutorial-part1/
+    paging: 1
   - text: "Part 2: Model and TableView"
     link: /java/javafx-8-tutorial-part2/
+    paging: 2
     active: true
   - text: "Part 3: Interacting with the User"
     link: /java/javafx-8-tutorial-part3/
+    paging: 3
   - text: "Part 4: CSS Styling"
     link: /java/javafx-8-tutorial-part4/
+    paging: 4
   - text: "Part 5: Storing Data as XML"
     link: /java/javafx-8-tutorial-part5/
+    paging: 5
   - text: "Part 6: Statistics Chart"
     link: /java/javafx-8-tutorial-part6/
+    paging: 6
   - text: "Part 7: Deployment"
     link: /java/javafx-8-tutorial-part7/
+    paging: 7
 - header: "Download Sources"
   body:
   - text: Source of Part 2 (Eclipse Project)
@@ -393,3 +399,12 @@ Congratulations!
 ### What's Next?
 
 In [Tutorial Part 3](/java/javafx-8-tutorial-part3/) we will add more functionality like adding, deleting and editing Persons.
+
+
+##### Some other articles you might find interesting
+
+* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Date Picker](/blog/javafx-8-date-picker/)
+* [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
+* [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
+* [JavaFX TableView Cell Renderer](/blog/javafx-8-tableview-cell-renderer/)

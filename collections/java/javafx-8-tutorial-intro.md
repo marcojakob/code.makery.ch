@@ -2,31 +2,37 @@
 layout: article
 title: "JavaFX 8 Tutorial - Introduction"
 date: 2014-04-19 00:00
-published: false
+published: true
 prettify: true
 comments: true
 sidebars:
 - header: "Articles in this Series"
-  paging: true
   body:
   - text: "Introduction"
     link: /java/javafx-8-tutorial-intro
-    intro: true
+    paging: Intro
     active: true
   - text: "Part 1: Scene Builder"
     link: /java/javafx-8-tutorial-part1/
+    paging: 1
   - text: "Part 2: Model and TableView"
     link: /java/javafx-8-tutorial-part2/
+    paging: 2
   - text: "Part 3: Interacting with the User"
     link: /java/javafx-8-tutorial-part3/
+    paging: 3
   - text: "Part 4: CSS Styling"
     link: /java/javafx-8-tutorial-part4/
+    paging: 4
   - text: "Part 5: Storing Data as XML"
     link: /java/javafx-8-tutorial-part5/
+    paging: 5
   - text: "Part 6: Statistics Chart"
     link: /java/javafx-8-tutorial-part6/
+    paging: 6
   - text: "Part 7: Deployment"
     link: /java/javafx-8-tutorial-part7/
+    paging: 7
 ---
 
 JavaFX 8 is included in JDK 8 and is the **officially recommended graphics toolkit for Java 8 applications**. I've been using JavaFX 2 since 2012 and am very pleased as it was already a major step forward compared to Swing. Now with JavaFX 8 it has become even better, with new UI controls like [DatePicker](/blog/javafx-8-date-picker), a modern theme called *Modena*, rich text support, to just name a few. 
