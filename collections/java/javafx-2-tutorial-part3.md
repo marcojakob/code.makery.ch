@@ -3,6 +3,7 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 3: Interacting with the User"
 date: 2012-11-20 17:30
 updated: 2013-02-08 00:00
+description: "React to selection changes in the JavaFX TableView. Add, edit and remove items from the table and validate user input."
 published: true
 prettify: true
 comments: 
@@ -43,8 +44,8 @@ sidebars:
     icon-css: fa fa-fw fa-download
 ---
 
-<div class="alert alert-info">
-  &rarr; UPDATED VERSION for JDK 8 available: <a href="/java/javafx-8-tutorial-part3/" class="alert-link">JavaFX 8 Tutorial</a>
+<div class="alert alert-danger">
+  &rarr; UPDATED VERSION for Java 8 available: <a href="/java/javafx-8-tutorial-part3/" class="alert-link">JavaFX 8 Tutorial</a>
 </div>
 
 ![Screenshot AddressApp Part 3](/assets/java/javafx-2-tutorial-part3/addressapp01.png)

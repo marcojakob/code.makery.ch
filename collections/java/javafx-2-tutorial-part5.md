@@ -3,6 +3,7 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 5: Storing Data as XML"
 date: 2012-11-27 22:00
 updated: 2013-02-08 00:00
+description: "Save data as XML with XStream. Learn how to use the JavaFX FileChooser and the JavaFX Menu."
 published: true
 prettify: true
 comments: 
@@ -43,7 +44,7 @@ sidebars:
     icon-css: fa fa-fw fa-download
 ---
 
-<div class="alert alert-info">
+<div class="alert alert-danger">
   &rarr; UPDATED VERSION for JDK 8 available: <a href="/java/javafx-8-tutorial-part5/" class="alert-link">JavaFX 8 Tutorial</a>
 </div>
 

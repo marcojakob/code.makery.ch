@@ -5,6 +5,7 @@ date: 2014-04-18 00:00
 updated: 2014-05-07 00:00
 slug: javafx-8-dialogs
 description: "Examples of how to create simple popup Dialogs in JavaFX 8."
+image: /assets/blog/14-04-18-javafx-8-dialogs/custom-dialog.png
 published: true
 prettify: true
 comments: true

@@ -3,6 +3,8 @@ layout: post
 title: JavaFX 2 TableView Cell Renderer
 date: 2012-12-19 00:00
 slug: javafx-2-tableview-cell-renderer
+description: "In this post I will show how to customize the rendering of a JavaFX TableView."
+image: /assets/blog/12-12-19-javafx-2-tableview-cell-renderer/screenshot-01.png
 published: true
 prettify: true
 comments: 
@@ -13,7 +15,7 @@ tags:
 - JavaFX
 ---
 
-<div class="alert alert-info">
+<div class="alert alert-danger">
   &rarr; UPDATED VERSION of this article available at: <a href="/blog/javafx-8-tableview-cell-renderer/" class="alert-link">JavaFX 8 TableView Cell Renderer</a>
 </div>
 

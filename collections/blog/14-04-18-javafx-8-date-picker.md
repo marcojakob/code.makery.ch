@@ -4,6 +4,7 @@ title: JavaFX 8 Date Picker
 date: 2014-04-18 01:00
 slug: javafx-8-date-picker
 description: "Finally, with JavaFX 8 a DatePicker control was added! Learn how to use it, together with the new Java 8 Date and Time API."
+image: /assets/blog/14-04-18-javafx-8-date-picker/date-picker.png
 published: true
 prettify: true
 comments: true
@@ -47,7 +48,7 @@ I usually prefer keeping as much of the view in `fxml` instead of instantiating 
 
 ## Options
 
-### Show Week Numbers
+### Hide Week Numbers
 
 We can set the `showWeekNumbersProperty` to true/false to show/hide a column showing week numbers. Note: The default value depends on the country of the current locale. 
 

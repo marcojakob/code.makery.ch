@@ -5,6 +5,7 @@ date: 2012-10-30 00:00
 updated: 2014-04-18 00:00
 slug: javafx-2-dialogs
 description: "When programming a graphical user interface (GUI) there are occasions where you'll need a simple popup dialog to communicate with the user."
+image: /assets/blog/12-10-30-javafx-2-dialogs/javafx-custom-dialog.png
 published: true
 prettify: true
 comments: 
@@ -15,7 +16,7 @@ tags:
 - JavaFX
 ---
 
-<div class="alert alert-info">
+<div class="alert alert-danger">
   &rarr; For an UPDATED VERSION of this article go to: <a href="/blog/javafx-8-dialogs/" class="alert-link">JavaFX 8 Dialogs</a>
 </div>
 

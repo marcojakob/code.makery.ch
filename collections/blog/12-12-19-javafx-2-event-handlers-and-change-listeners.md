@@ -3,6 +3,8 @@ layout: post
 title: JavaFX 2 Event Handlers and Change Listeners
 date: 2012-12-19 01:00
 slug: javafx-2-event-handlers-and-change-listeners
+description: "We explore how to handle the most common JavaFX events: Button events, CheckBox events, Hyperlink events, Slider events, TextBox events, ListView events."
+image: /assets/blog/12-12-19-javafx-2-event-handlers-and-change-listeners/screenshot-01.png
 published: true
 prettify: true
 comments: 
@@ -12,7 +14,7 @@ tags:
 - Java
 - JavaFX
 ---
-<div class="alert alert-info">
+<div class="alert alert-danger">
   &rarr; UPDATED VERSION of this article available: <a href="/blog/javafx-8-event-handling-examples/" class="alert-link">JavaFX 8 Event Handling Examples</a>
 </div>
 
@@ -22,7 +24,7 @@ We'll try to do as much event handling with *Scene Builder* and `fxml` as possib
 
 Our example covers some of the most used events on common JavaFX 2 controls:
 
-![TableView Filter](/assets/blog/12-12-19-javafx-2-event-handlers-and-change-listeners/screenshot-01.png)
+![Event Handlers](/assets/blog/12-12-19-javafx-2-event-handlers-and-change-listeners/screenshot-01.png)
 
 Note: For background information refer to the official [JavaFX Events Tutorial](http://docs.oracle.com/javafx/2/events/jfxpub-events.htm) (does not cover `fxml`).
 

@@ -3,6 +3,7 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 4: CSS Styling"
 date: 2012-11-26 13:00
 updated: 2013-02-08 00:00
+description: "In JavaFX you can style your user interface using CSS. We'll also add an application icon in this tutorial part."
 published: true
 prettify: true
 comments: 
@@ -43,8 +44,8 @@ sidebars:
     icon-css: fa fa-fw fa-download
 ---
 
-<div class="alert alert-info">
-  &rarr; UPDATED VERSION for JDK 8 available: <a href="/java/javafx-8-tutorial-part4/" class="alert-link">JavaFX 8 Tutorial</a>
+<div class="alert alert-danger">
+  &rarr; UPDATED VERSION for Java 8 available: <a href="/java/javafx-8-tutorial-part4/" class="alert-link">JavaFX 8 Tutorial</a>
 </div>
 
 ![Screenshot AddressApp Part 4](/assets/java/javafx-2-tutorial-part4/addressapp01.png)

@@ -3,6 +3,8 @@ layout: post
 title: JavaFX 2 Date Picker
 date: 2013-01-07 00:00
 slug: javafx-2-date-picker
+description: "As JavaFX 2 doesn't contain a Calendar control we create our own to provide a convenient way to enter a date."
+image: /assets/blog/13-01-07-javafx-2-date-picker/javafx-date-picker.png
 published: true
 prettify: true
 comments: 
@@ -13,13 +15,13 @@ tags:
 - JavaFX
 ---
 
-<div class="alert alert-info">
+<div class="alert alert-danger">
   &rarr; For an UPDATED VERSION of this article go to: <a href="/blog/javafx-8-date-picker/" class="alert-link">JavaFX 8 Date Picker</a>
 </div>
 
 As JavaFX 2.2 doesn't contain a Calendar control we would have to create our own to provide a convenient way to enter a date. Fortunately, [Christian Schudt](http://myjavafx.blogspot.ch/2012/01/javafx-calendar-control.html) has created a very nice DatePicker that we can use:
 
-![TableView Cell Renderer](/assets/blog/13-01-07-javafx-2-date-picker/javafx-date-picker.png)
+![Date Picker](/assets/blog/13-01-07-javafx-2-date-picker/javafx-date-picker.png)
 
 I modified [Christian Schudt's](http://myjavafx.blogspot.ch/2012/01/javafx-calendar-control.html) `DatePicker` class a little with a few additional lines at the end of the constructor. One change is to let the `DatePicker` grow horizontally with its parent and the other change passes the style sheet to the popup.
 

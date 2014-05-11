@@ -3,6 +3,8 @@ layout: post
 title: JavaFX 2 TableView Filter
 date: 2012-12-18 00:00
 slug: javafx-2-tableview-filter
+description: "The JavaFX 2 TableView lacks the ability for filtering. In this post I will explain how we can manually do row filtering in JavaFX 2." 
+image: /assets/blog/12-12-18-javafx-2-tableview-filter/tableview-filter.png
 published: true
 prettify: true
 comments: 
@@ -13,7 +15,7 @@ tags:
 - JavaFX
 ---
 
-<div class="alert alert-info">
+<div class="alert alert-danger">
   &rarr; UPDATED VERSION of this article: <a href="/blog/javafx-8-tableview-sorting-filtering/" class="alert-link">JavaFX 8 TableView Sorting and Filtering</a>
 </div>
 

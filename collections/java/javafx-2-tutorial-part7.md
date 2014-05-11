@@ -3,6 +3,7 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 7: Deployment with e(fx)clipse"
 date: 2012-12-18 01:00
 updated: 2013-05-22 00:00
+description: "How to deploy a JavaFX application as native package. Create an installer for Windows, MacOS, or Linux."
 published: true
 prettify: true
 comments: 
@@ -43,8 +44,8 @@ sidebars:
     icon-css: fa fa-fw fa-download
 ---
 
-<div class="alert alert-info">
-  &rarr; UPDATED VERSION for JDK 8 available: <a href="/java/javafx-8-tutorial-part7/" class="alert-link">JavaFX 8 Tutorial</a>
+<div class="alert alert-danger">
+  &rarr; UPDATED VERSION for Java 8 available: <a href="/java/javafx-8-tutorial-part7/" class="alert-link">JavaFX 8 Tutorial</a>
 </div>
 
 *Update Feb 11th, 2013: New instructions for Deployment on Mac OS. Thank you Eskil for providing me with this information!*

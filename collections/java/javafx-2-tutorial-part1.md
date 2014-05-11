@@ -3,6 +3,7 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 1: Scene Builder"
 date: 2012-11-16 22:00
 updated: 2013-02-08 00:00
+description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
 published: true
 prettify: true
 comments: 
@@ -43,8 +44,8 @@ sidebars:
     icon-css: fa fa-fw fa-download
 ---
 
-<div class="alert alert-info">
-  &rarr; UPDATED VERSION for JDK 8 available: <a href="/java/javafx-8-tutorial-intro/" class="alert-link">JavaFX 8 Tutorial</a>
+<div class="alert alert-danger">
+  &rarr; UPDATED VERSION for Java 8 available: <a href="/java/javafx-8-tutorial-intro/" class="alert-link">JavaFX 8 Tutorial</a>
 </div>
 
 ![Screenshot AddressApp Part 1](/assets/java/javafx-2-tutorial-part1/addressapp01.png)
