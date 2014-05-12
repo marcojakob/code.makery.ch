@@ -2,6 +2,7 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 1: Scene Builder"
 date: 2014-04-19 01:00
+updated: 2014-05-12 00:00
 description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
 image: /assets/java/javafx-8-tutorial-part1/addressapp-part1.png
 published: true
@@ -67,10 +68,17 @@ sidebars:
 We need to tell Eclipse to use JDK 8 and also where it will find the Scene Builder:
 
 1. Open the Eclipse Preferences and navigate to *Java | Installed JREs*.
+
 2. Click *Add...*, select *Standard VM* and choose the installation *Directory* of your JDK 8.
-3. Remove the other JREs or JDKs so that the JDK 8 becomes the default.
-4. Navigate to the *JavaFX* preferences.
-5. Specify the path to your Scene Builder executable.
+
+3. Remove the other JREs or JDKs so that the **JDK 8 becomes the default**.   
+![Preferences JDK](/assets/java/javafx-8-tutorial-part1/preferences-jdk.png)
+
+4. Navigate to *Java | Compiler*. Set the **Compiler compliance level to 1.8**.   
+![Preferences Compliance](/assets/java/javafx-8-tutorial-part1/preferences-compliance.png)
+
+5. Navigate to the *JavaFX* preferences. Specify the path to your Scene Builder executable.   
+![Preferences JavaFX](/assets/java/javafx-8-tutorial-part1/preferences-javafx.png)
 
 
 ### Helpful Links
@@ -126,6 +134,10 @@ Right-click on the view package and create a new *FXML Document* called `PersonO
 
 
 ## Design with Scene Builder
+
+<div class="alert alert-warning">
+  Note: As we're using an Early Access version of Scene Builder 2 there might be some issues (see <a href="#comment-1380574334" class="alert-link">comments</a> below). If you can't get it to work, download the source of this tutorial part and try it with the included fxml.
+</div>
 
 Right-click on `PersonOverview.fxml` and choose *Open with Scene Builder*. Now you should see the Scene Builder with just an *AncherPane* (visible under Hierarchy on the left).
 
