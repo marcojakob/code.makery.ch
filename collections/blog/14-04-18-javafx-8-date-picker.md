@@ -2,6 +2,7 @@
 layout: post
 title: JavaFX 8 Date Picker
 date: 2014-04-18 01:00
+updated: 2014-05-14 00:00
 slug: javafx-8-date-picker
 description: "Finally, with JavaFX 8 a DatePicker control was added! Learn how to use it, together with the new Java 8 Date and Time API."
 image: /assets/blog/14-04-18-javafx-8-date-picker/date-picker.png
@@ -94,11 +95,27 @@ datePicker.setConverter(new StringConverter&lt;LocalDate&gt;() {
 </pre>
 
 
-### Chronology
+### Other Calendar Systems
 
 If you need a different chronology, e.g. the Japanese Imperial calendar system, you can change it as follows:
 
 <pre class="prettyprint lang-java">
+// Japanese calendar.
 datePicker.setChronology(JapaneseChronology.INSTANCE);
+
+// Hijrah calendar.
+datePicker.setChronology(HijrahChronology.INSTANCE);
+
+// Minguo calendar.
+datePicker.setChronology(MinguoChronology.INSTANCE);
+
+// Buddhist calendar.
+datePicker.setChronology(ThaiBuddhistChronology.INSTANCE);
 </pre>
+
+Here is a screenshot of the Hijrah calendar:
+
+![Hijrah Calendar](/assets/blog/14-04-18-javafx-8-date-picker/hijrah-calendar.png)
+
+
 

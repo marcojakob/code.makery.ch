@@ -165,6 +165,7 @@ Right-click on `PersonOverview.fxml` and choose *Open with Scene Builder*. Now y
 ![GridPane Layout](/assets/java/javafx-8-tutorial-part1/grid-pane-layout.png)
 
 9. Add the following labels to the cells.   
+*Note: To add a row to the GridPane select an existing row number (will turn yellow), right-click the row number and choose "Add Row".*   
 ![Add labels](/assets/java/javafx-8-tutorial-part1/add-labels.png)
 
 10. Add the three buttons at the bottom. Tip: Select all of them, right-click and call *Wrap In | HBox*. This groups them together. You might need to specify a *spacing* inside the HBox. Then, also set anchors (right and bottom) so they stay in the right place.   
