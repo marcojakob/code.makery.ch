@@ -199,7 +199,7 @@ Notice the two annotations:
 * `@XmlElement` is an optional name we can specify for the element.
 
 
-#### Reading and Writing Date with JAXB
+#### Reading and Writing Data with JAXB
 
 We'll make our `MainApp` class responsible for reading and writing the person data. Add the following two methods to the end of `MainApp.java`:
 
