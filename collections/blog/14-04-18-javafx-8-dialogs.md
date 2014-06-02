@@ -2,7 +2,7 @@
 layout: post
 title: JavaFX 8 Dialogs
 date: 2014-04-18 00:00
-updated: 2014-05-07 00:00
+updated: 2014-06-02 00:00
 slug: javafx-8-dialogs
 description: "Examples of how to create simple popup Dialogs in JavaFX 8."
 image: /assets/blog/14-04-18-javafx-8-dialogs/custom-dialog.png
@@ -23,10 +23,14 @@ In this post I will show some examples of how to use the [ControlsFX Dialogs](ht
 
 ## How To Use ControlsFX Dialogs
 
-1. Download the latest **ControlsFX** zip file from the [ControlsFX Website](http://fxexperience.com/controlsfx/). (It is also available as Maven dependency if you prefer to use Maven.)  
+1. Download the latest **ControlsFX** zip file from the [ControlsFX Website](http://fxexperience.com/controlsfx/). (It is also available as Maven dependency if you prefer to use Maven.)   
+**Important: The ControlsFX version must be `greater than 8.0.6` as there was a breaking change introduced in that version.**
+
 2. Inside the zip file you should find a `controlsfx-8.x.x.jar` file. Add the jar file to your JavaFX 8 project (usually inside a `lib` subfolder).   
 **Note: ControlsFX will only work on JavaFX 8.0 or later. Make sure you are using JDK 8 or later in your project.**
+
 3. Add the jar file to your project's classpath: In Eclipse *right-click on the jar file* | *Build Path* | *Add to Build Path*. Now Eclipse knows about the library.
+
 4. Now ControlsFX is ready to be used. Add one of the following code snippets to create a Dialog.
 
 
@@ -164,14 +168,20 @@ if (response == Dialog.Actions.OK) {
 ![JavaFX Choice Input Dialog](/assets/blog/14-04-18-javafx-8-dialogs/text-input-dialog.png)
 
 <pre class="prettyprint lang-java">
-String name = Dialogs.create()
+Optional&lt;String> response = Dialogs.create()
         .owner(stage)
         .title("Text Input Dialog")
         .masthead("Look, a Text Input Dialog")
         .message("Please enter your name:")
         .showTextInput("walter");
 
-System.out.println("Your name: " + name);
+// One way to get the response value.
+if (response.isPresent()) {
+    System.out.println("Your name: " + response.get());
+}
+
+// The Java 8 way to get the response value (with lambda expression).
+response.ifPresent(name -> System.out.println("Your name: " + name));
 </pre>
 
 
@@ -180,22 +190,29 @@ System.out.println("Your name: " + name);
 ![JavaFX Choice Input Dialog](/assets/blog/14-04-18-javafx-8-dialogs/choice-input-dialog.png)
 
 <pre class="prettyprint lang-java">
-List&lt;String&gt; choices = new ArrayList&lt;&gt;();
+List&lt;String> choices = new ArrayList<>();
 choices.add("a");
 choices.add("b");
 choices.add("c");
 
-String chosenElement = Dialogs.create()
+Optional&lt;String> response = Dialogs.create()
         .owner(stage)
         .title("Choice Input Dialog")
         .masthead("Look, a Choice Input Dialog")
         .message("Choose your letter:")
         .showChoices(choices);
 
-System.out.println("The user chose: " + chosenElement);
+// One way to get the response value.
+if (response.isPresent()) {
+    System.out.println("The user chose: " + response.get());
+}
+
+// The Java 8 way to get the response value (with lambda expression).
+response.ifPresent(chosen -> System.out.println("The user chose: " + chosen));
 </pre>
 
-Note: The `chosenElement` will be null if the user didn't choose anything or cancelled the dialog.
+
+Note: The `response.isPresent()` will return `false` if the user didn't choose anything or cancelled the dialog.
 
 
 ## Special Purpose Dialogs
@@ -232,7 +249,7 @@ The response will either be one of the `CommandLink`s or `Dialog.Actions.CANCEL`
 ![JavaFX Font Selector Dialog](/assets/blog/14-04-18-javafx-8-dialogs/font-selector-dialog.png)
 
 <pre class="prettyprint lang-java">
-Font chosenFont = Dialogs.create()
+Optional&lt;Font> response = Dialogs.create()
         .owner(stage)
         .masthead("Choose what you like")
         .showFontSelector(Font.font("Times New Roman"));
@@ -289,7 +306,7 @@ final TextField username = new TextField();
 final PasswordField password = new PasswordField();
 final Action actionLogin = new AbstractAction("Login") {
     // This method is called when the login button is clicked ...
-    public void execute(ActionEvent ae) {
+    public void handle(ActionEvent ae) {
         Dialog d = (Dialog) ae.getSource();
         // Do the login here.
         d.hide();
@@ -330,7 +347,6 @@ public void start(Stage stage) {
     Platform.runLater(() -> username.requestFocus());
 
     dlg.show();
-}
 </pre>
 
 

@@ -2,7 +2,9 @@
   {% assign post = post-recent %}
   <header class="post-header">
     <h4 class="post-title"><a class="black-link" href="{{ post.slug }}/">{{ post.title }}</a></h4>
-    {% include "blog/date-tags" with post %}
+    {% assign tags = post.tags %}
+    {% assign date = post.date %}
+    {% include "blog/date-tags" %}
   </header>
   
   <hr class="post-ruler">

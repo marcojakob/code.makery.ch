@@ -1,10 +1,14 @@
 <div class="post-date text-center">
   <span>
-    {{ date-tags.date | date:'%b %d, %Y' }}
-  </span>
-  {% if date-tags.tags %}
+    {{ date | date:'%b %d, %Y' }}
+    {% if updated %}
      • 
-    {% for tag in date-tags.tags %}
+    Updated {{ updated | date:'%b %d, %Y' }}
+  {% endif %}
+  </span>
+  {% if tags %}
+     • 
+    {% for tag in tags %}
       <span>
         <a href="/blog/tag/{{ tag | downcase }}/">{{ tag }}</a>{% if forloop.index != forloop.length %}, {% endif %}
       </span>

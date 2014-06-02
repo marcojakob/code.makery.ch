@@ -2,7 +2,9 @@
   {% assign post = post-short %}
   <header class="post-header">
     <h2 class="post-title"><a class="black-link" href="{{ post.slug }}/">{{ post.title }}</a></h2>
-    {% include "blog/date-tags" with post %}
+    {% assign tags = post.tags %}
+    {% assign date = post.date %}
+    {% include "blog/date-tags" %}
   </header>
   
   <section class="post-content">
