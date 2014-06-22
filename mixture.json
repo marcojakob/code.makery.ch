@@ -1,7 +1,10 @@
 {
     "debug": false,
     "lintScripts": false,
-    "preprocessorLocations": "assets,theme",
+    "preprocessorLocations": [
+        "assets",
+        "theme"
+    ],
     "preprocessorScriptOutput": null,
     "preprocessorStyleOutput": "theme/css",
     "projectName": "code.makery",
@@ -18,10 +21,6 @@
     "simpleModeFileTypes": null,
     "modelSource": null,
     "domain": null,
-    "convertHtmlOutput": null,
-    "convertHtmlDefault": "index",
-    "convertHtmlIgnore": null,
-    "convertHtmlExtension": null,
     "followLeader": true,
     "routes": [
         {
@@ -45,28 +44,33 @@
     "remoteDebugPort": 0,
     "optimiseImages": true,
     "password": null,
-    "ignoreDir": "ignore,models",
+    "ignoreDir": [
+        "ignore",
+        "models"
+    ],
     "customTodos": [
         {
             "fileTypes": "md",
-            "regex": "(?<=<!-- TODO:).*?(?=-->)"
+            "regex": "(?\u003c=\u003c!-- TODO:).*?(?=--\u003e)"
         }
     ],
-    "ftpSettings": null,
     "autoPrefixer": {
         "active": true,
         "browsers": [
             "last 2 version",
-            "> 1%",
+            "\u003e 1%",
             "ie 8"
         ]
     },
     "sass": null,
     "sitemap": false,
-    "gitHubPages": {
-        "repoUrl": "https://github.com/marcojakob/code.makery.ch.git",
-        "guid": "ba5d9f7d-ef87-4456-8976-07f4048702fc"
-    },
     "less": null,
-    "optimiseSVG": true
+    "optimiseSVG": true,
+    "convertHtml": {
+        "extension": null,
+        "path": null,
+        "ignoreUrls": null,
+        "relativePath": false,
+        "default": "index"
+    }
 }
