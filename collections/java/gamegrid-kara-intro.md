@@ -7,7 +7,11 @@ published: true
 sidebars:
 - header: Languages
   body:
-  - text: Deutsch
+  - text: English
+    link: /java/gamegrid-kara-intro/
+    icon-css: fa fa-fw fa-globe
+    active: true
+  - text: German
     link: /java/gamegrid-kara-intro-de/
     icon-css: fa fa-fw fa-globe
 ---

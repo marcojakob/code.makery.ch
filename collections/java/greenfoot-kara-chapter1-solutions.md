@@ -41,7 +41,11 @@ sidebars:
     icon-css: fa fa-fw fa-file-text
 - header: Languages
   body:
-  - text: Deutsch
+  - text: English
+    link: /java/greenfoot-kara-chapter1-solutions/
+    icon-css: fa fa-fw fa-globe
+    active: true
+  - text: German
     link: /java/greenfoot-kara-intro-de/
     icon-css: fa fa-fw fa-globe
 ---

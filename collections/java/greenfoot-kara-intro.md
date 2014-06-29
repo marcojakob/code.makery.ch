@@ -33,7 +33,11 @@ sidebars:
     paging: 5
 - header: Languages
   body:
-  - text: Deutsch
+  - text: English
+    link: /java/greenfoot-kara-intro/
+    icon-css: fa fa-fw fa-globe
+    active: true
+  - text: German
     link: /java/greenfoot-kara-intro-de/
     icon-css: fa fa-fw fa-globe
 ---

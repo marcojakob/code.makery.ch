@@ -37,7 +37,11 @@ sidebars:
     icon-css: fa fa-fw fa-github-alt
 - header: Languages
   body:
-  - text: Deutsch
+  - text: English
+    link: /java/greenfoot-kara-teachers-info/
+    icon-css: fa fa-fw fa-globe
+    active: true
+  - text: German
     link: /java/greenfoot-kara-intro-de/
     icon-css: fa fa-fw fa-globe
 ---
