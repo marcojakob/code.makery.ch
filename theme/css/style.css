@@ -2947,6 +2947,9 @@ output {
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+  .form-control::-moz-placeholder {
+    color: #999999;
+    opacity: 1; }
   .form-control:-ms-input-placeholder {
     color: #999999; }
   .form-control::-webkit-input-placeholder {
@@ -6325,22 +6328,22 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-a.black-link, a.gray-link, a.green-link {
+a.black-link, a.gray-link, a.main-link {
   text-decoration: none; }
 a.black-link {
   color: #333333; }
 a.gray-link {
   color: #999999; }
-a.green-link {
+a.main-link {
   color: #8ba644; }
-a:hover.black-link, a:focus.black-link, a:hover.gray-link, a:focus.gray-link, a:hover.green-link, a:focus.green-link {
+a:hover.black-link, a:focus.black-link, a:hover.gray-link, a:focus.gray-link, a:hover.main-link, a:focus.main-link {
   color: #428bca; }
 
 img {
   max-width: 100%;
   height: auto; }
 
-.green-text {
+.main-text {
   color: #8ba644; }
 
 pre {
@@ -6353,9 +6356,9 @@ pre {
   .badge.pull-right {
     margin-left: 5px; }
 
-.label-green {
+.label-main {
   background-color: #8ba644; }
-  .label-green[href]:hover, .label-green[href]:focus {
+  .label-main[href]:hover, .label-main[href]:focus {
     background-color: #6d8235; }
 
 ol {
@@ -6409,7 +6412,7 @@ ol.alpha-list,
     position: absolute;
     left: 0;
     height: 1px;
-    background-color: #b5c48c; }
+    background-color: #b8cc84; }
   .ribbon a:before {
     top: 1px; }
   .ribbon a:after {

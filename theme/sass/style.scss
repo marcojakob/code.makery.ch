@@ -12,7 +12,7 @@
 a {
   &.black-link,
   &.gray-link, 
-  &.green-link {
+  &.main-link {
     text-decoration: none;
   }
 
@@ -24,16 +24,16 @@ a {
     color: $gray-light;
   }
   
-  &.green-link {
-    color: $avocado-green;
+  &.main-link {
+    color: $main-color;
   }
   
   &:hover.black-link,
   &:focus.black-link, 
   &:hover.gray-link,
   &:focus.gray-link,
-  &:hover.green-link,
-  &:focus.green-link
+  &:hover.main-link,
+  &:focus.main-link
   {
     color: $link-color;
   }
@@ -44,8 +44,8 @@ img {
   height: auto;
 }
 
-.green-text {
-  color: $avocado-green;
+.main-text {
+  color: $main-color;
 }
 
 // Code blocks
@@ -63,8 +63,8 @@ pre {
   }
 }
 
-.label-green {
-  @include label-variant($avocado-green);
+.label-main {
+  @include label-variant($main-color);
 }
 
 // Ordered lists
@@ -109,7 +109,7 @@ ol.alpha-list,
   top: 60px;
   transform: rotate(45deg);
   box-shadow: 0 0 10px #888;
-  background-color: #8ba644;
+  background-color: $main-color;
   color: #fff;
   display: block;
   font-family: $font-family-sans-serif;
@@ -127,7 +127,7 @@ ol.alpha-list,
     position: absolute;
     left: 0;
     height: 1px;
-    background-color: #b5c48c;
+    background-color: lighten($main-color, 20%);
   }
   &:before {
     top: 1px;
