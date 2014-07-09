@@ -10,7 +10,7 @@
   <div class="row">
     <div class="col-sm-offset-3 col-sm-6 text-center">
       Tags:
-      {% for tag in global.tags %}
+      {% for tag in model.tags %}
         <a href="/blog/tag/{{ tag | downcase }}/">{{ tag }}</a>{% if forloop.index != forloop.length %}, {% endif %}
       {% endfor %}
     </div>
