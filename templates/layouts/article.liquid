@@ -10,9 +10,15 @@
     
     <div class="container article-container">
       {% include "navigation" %}
-    
-      <div class="row">
+      
+      <div class="row" class="article-row">
         <div class="col-md-9 col-md-push-3">
+          {%- if model.github -%}
+          <div class="github-edit">
+            <a href="{{ model.github }}">Edit on GitHub</a>
+          </div>
+          {%- endif -%}
+        
           <header class="article-header">
             <h1 class="article-title">{{ model.title }}</h1>
             {% include "article/date" %}

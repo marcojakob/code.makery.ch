@@ -1,5 +1,5 @@
 <div class="paging">
-  {% capture current_tag %}{% if mixture.route.tag %}/tag/{{ mixture.route.tag }}{% endif %}{% endcapture %}
+  {%- capture current_tag %}{% if mixture.route.tag %}/tag/{{ mixture.route.tag }}{% endif %}{% endcapture -%}
   
   {% if collection.previous %}
     {% if collection.current_page == "2" %}

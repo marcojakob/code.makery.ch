@@ -4,6 +4,7 @@ title: "GreenfootKara - Einleitung"
 date: 2012-10-03 00:00
 updated: 2014-03-08 00:00
 slug: greenfoot-kara/de
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-de.md
 published: true
 prettify: false
 comments: true

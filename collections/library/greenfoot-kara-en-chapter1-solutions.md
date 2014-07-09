@@ -4,6 +4,7 @@ title: "GreenfootKara - Solutions Chapter 1"
 date: 2012-10-03 00:00
 updated: 2014-03-08 00:00
 slug: greenfoot-kara/chapter1-solutions
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-en-chapter1-solutions.md
 published: true
 prettify: true
 comments: true

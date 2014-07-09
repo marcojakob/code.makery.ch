@@ -5196,15 +5196,6 @@ ol.alpha-list,
   .home-recent h4 {
     font-weight: normal; }
 
-.java-recent,
-.dart-recent {
-  margin-top: 35px; }
-  .java-recent h3,
-  .java-recent h4,
-  .dart-recent h3,
-  .dart-recent h4 {
-    font-weight: normal; }
-
 .post-container {
   max-width: 750px; }
 
@@ -5232,6 +5223,12 @@ ol.alpha-list,
 .article-paging {
   text-align: center;
   margin-top: 2em; }
+
+.github-edit {
+  position: absolute;
+  top: -20px;
+  right: 15px;
+  font-size: 15px; }
 
 .panel-container {
   position: relative; }

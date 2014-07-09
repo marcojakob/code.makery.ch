@@ -1,12 +1,12 @@
 {% capture sidebarelements -%}
 {% for sidebar in model.sidebars -%}
-  {% for item in sidebar.body -%}
-    {% if item.paging -%}
-      {% assign containspaging = true %}
-      {% if item.active %}<li class="active">{% else %}<li>{% endif %}
+  {%- for item in sidebar.body -%}
+    {%- if item.paging -%}
+      {%- assign containspaging = true -%}
+      {%- if item.active %}<li class="active">{% else %}<li>{% endif %}
       <a href="{{ item.link }}" data-toggle="tooltip" title="{{ item.text }}">{{ item.paging }}</a>
       </li>
-    {% endif -%}
+    {%- endif -%}
   {% endfor -%}
 {% endfor -%}
 {% endcapture -%}

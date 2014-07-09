@@ -153,7 +153,7 @@ date: 2014-04-19 00:00
 updated: 2014-05-07 00:00
 slug: my-example-article1
 description: "This is the place where we can put a description in one or two sentences."
-githubEdit: https://github.com/marcojakob/code.makery.ch/edit/master/collections/mycollection/my-example-article1.md
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/mycollection/my-example-article1.md
 image: /assets/mycollection/my-example-article1/some-image.png
 published: true
 prettify: true
@@ -197,7 +197,7 @@ For a description of most items see above. Here are the items that are special t
 
 * `updated`: (optional) The date when the article was updated.
 * `slug` (optional): The url that will be used together with the collection name. The example above will result in the following url `/mycollection/my-example-article1/`.
-* `githubEdit` (optional): The url to edit the article on GitHub.
+* `github` (optional): The url to the article on GitHub.
 * `sidebars`: (optional) A list of custom sidebars. A single sidebar supports the following elements:
   * `header`: The header of the sidebar.
   * `body`: The content (items) of the sidebar. Each item contains the following subelements:

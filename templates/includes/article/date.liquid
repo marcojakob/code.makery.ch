@@ -1,7 +1,6 @@
 <div class="article-date">
   {{ model.date | date:'%b %d, %Y' }}
-  {% if model.updated %}
-     • 
-    Updated {{ model.updated | date:'%b %d, %Y' }}
-  {% endif %}
+  {%- if model.updated -%}
+  • Updated {{ model.updated | date:'%b %d, %Y' }}
+  {%- endif -%}  
 </div>
