@@ -3,6 +3,7 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 3: Interacting with the User"
 date: 2012-11-20 17:30
 updated: 2013-02-08 00:00
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-2-tutorial-part3.md
 description: "React to selection changes in the JavaFX TableView. Add, edit and remove items from the table and validate user input."
 published: true
 prettify: true

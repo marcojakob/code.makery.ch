@@ -3,6 +3,7 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 7: Deployment with e(fx)clipse"
 date: 2012-12-18 01:00
 updated: 2013-05-22 00:00
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-2-tutorial-part7.md
 description: "How to deploy a JavaFX application as native package. Create an installer for Windows, MacOS, or Linux."
 published: true
 prettify: true

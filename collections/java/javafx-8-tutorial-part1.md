@@ -3,6 +3,7 @@ layout: article
 title: "JavaFX 8 Tutorial - Part 1: Scene Builder"
 date: 2014-04-19 01:00
 updated: 2014-05-12 00:00
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-8-tutorial-part1.md
 description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
 image: /assets/java/javafx-8-tutorial-part1/addressapp-part1.png
 published: true

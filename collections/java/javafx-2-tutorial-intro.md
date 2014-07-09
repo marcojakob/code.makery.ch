@@ -3,6 +3,7 @@ layout: article
 title: "JavaFX 2 Tutorial - Introduction"
 date: 2012-11-16 20:00
 updated: 2013-02-08 00:00
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-2-tutorial-intro.md
 description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
 published: true
 prettify: false

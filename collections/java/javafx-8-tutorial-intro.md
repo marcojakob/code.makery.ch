@@ -2,6 +2,7 @@
 layout: article
 title: "JavaFX 8 Tutorial - Introduction"
 date: 2014-04-19 00:00
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-8-tutorial-intro.md
 description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
 image: /assets/java/javafx-8-tutorial-intro/addressapp.png
 published: true

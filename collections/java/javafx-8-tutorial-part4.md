@@ -2,6 +2,7 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 4: CSS Styling"
 date: 2014-04-25 00:00
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-8-tutorial-part4.md
 description: "In JavaFX you can style your user interface using CSS. We'll also add an application icon in this tutorial part."
 image: /assets/java/javafx-8-tutorial-part4/addressapp-part4.png
 published: true

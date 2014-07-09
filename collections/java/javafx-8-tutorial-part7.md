@@ -2,6 +2,7 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 7: Deployment"
 date: 2014-05-10 00:00
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-8-tutorial-part7.md
 description: "How to deploy a JavaFX application as native package. Create an installer for Windows, MacOS, or Linux."
 image: /assets/java/javafx-8-tutorial-part7/addressapp-macos.png
 published: true
