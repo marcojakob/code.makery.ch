@@ -1,0 +1,53 @@
+{
+  "topics": [ "Java", "JavaFX", "Dart" ],
+  "items": [
+    {
+      "title": "GreenfootKara",
+      "link": "/library/greenfoot-kara/",
+      "image": "/assets/java/greenfoot-kara-logo-large.png",
+      "summary": "GreenfootKara is a visual and interactive introduction to programming based on the <b>Greenfoot IDE</b>. An entire beginners course of 16-20 lessons.",
+      "topics": [ "Java" ],
+      "languages": [ "English", "Deutsch", "Français" ]
+    },
+    {
+      "title": "GameGridKara",
+      "link": "/library/gamegrid-kara/",
+      "image": "/assets/java/gamegrid-kara-logo-large.png",
+      "summary": "GameGridKara is an introduction to programming with the mini-world Kara. All scenarios can be used in <b>any IDE like Eclipse, Netbeans or BlueJ</b>.",
+      "topics": [ "Java" ],
+      "languages": [ "English", "Deutsch" ]
+    },
+    {
+      "title": "JavaFX 8 Tutorial",
+      "link": "/java/javafx-8-tutorial-intro/",
+      "image": "/assets/java/addressapp-javafx8.png",
+      "summary": "Seven-part tutorial series for learning JavaFX from the ground up. Uses the new Java 8 and JavaFX 8 features.",
+      "topics": [ "JavaFX" ],
+      "languages": [ "English" ]
+    },
+    {
+      "title": "JavaFX 2 Tutorial",
+      "link": "/java/javafx-2-tutorial-intro/",
+      "image": "/assets/java/addressapp.png",
+      "summary": "Seven-part tutorial series for learning JavaFX from the ground up.",
+      "topics": [ "JavaFX" ],
+      "languages": [ "English" ]
+    },
+    {
+      "title": "Dart Event Bus",
+      "link": "/dart/event-bus/",
+      "image": "/assets/dart/event-bus.png",
+      "summary": "An Event Bus library for Dart for decoupling applications.",
+      "topics": [ "Dart" ],
+      "languages": [ "English" ]
+    },
+    {
+      "title": "Dart HTML5 Drag and Drop",
+      "link": "/dart/html5-drag-and-drop/",
+      "image": "/assets/dart/dnd-example.png",
+      "summary": " Dart library to simplify HTML5 Drag and Drop accross all modern browsers.",
+      "topics": [ "Dart" ],
+      "languages": [ "English" ]
+    }
+  ]
+}

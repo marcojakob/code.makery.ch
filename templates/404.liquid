@@ -7,10 +7,12 @@
     {% include "analytics-js" %}
 {% endblock %}
 
-
-{% block content %} 
-<article>
-    <h1>Looks like you're Lost</h1>
-    <p>The page you requested doesn't exist, I'll get you <a href="/">back on track</a>.</p>
-</article>
+{% block content %}
+<div class="container container-center">
+  {% include "navigation" %}
+  <article>
+      <h1>Looks like you're lost</h1>
+      <p>The page you requested doesn't exist, I'll get you <a href="/">back on track</a>.</p>
+  </article>
+</div>
 {% endblock %}

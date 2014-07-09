@@ -2,29 +2,31 @@
 
 {% block title %}About - {{ global.title }}{% endblock %}
 
-{% block content %} 
-<h1 class="text-center">About</h1>
+{% block content %}
+<div class="container container-restricted">
+  {% include "navigation" %}
 
-<div class="row">
-  <div class="text-center col-sm-offset-2 col-sm-8">
-    <p>
-      <img src="/assets/about/marco.jpg" class="img-thumbnail img-responsive">
-    </p>
-    <h3>Marco Jakob</h3>
-    <p>
-      I have a passion for education, business, programming, God and mushrooms. Most of the time I try to combine any of those subjects. 
-    </p>
-    <p>
-      On this website I focus mostly on programming but with a strong relation to education. Many of the tutorials have been written for my students. 
-    </p>
-    <p>
-      Which brings me to what I do for a living: I teach computer science and sometimes economics. Then I hope that some of my side-projects will take off and I can start my own business. 
-    </p>
-    <h4>Contact</h4>
-    <p>
-      Find me on <a href="https://plus.google.com/{{ global.googleplus }}">Google+</a> or write an email to:
-    </p>
-    <img src="/assets/about/mail.png">
+  <div class="row">
+    <div class="text-center col-sm-offset-2 col-sm-8">
+      <p>
+        <img src="/assets/about/marco.jpg" class="img-thumbnail img-responsive">
+      </p>
+      <h3>Marco Jakob</h3>
+      <p>
+        I have a passion for education, business, programming, God and mushrooms. Most of the time I try to combine any of those subjects. 
+      </p>
+      <p>
+        On this website I focus mostly on programming but with a strong relation to education. Many of the tutorials have been written for my students. 
+      </p>
+      <p>
+        Which brings me to what I do for a living: I teach computer science and sometimes economics. Then I hope that some of my side-projects will take off and I can start my own business. 
+      </p>
+      <h4>Contact</h4>
+      <p>
+        Find me on <a href="https://plus.google.com/{{ global.googleplus }}">Google+</a> or write an email to:
+      </p>
+      <img src="/assets/about/mail.png">
+    </div>
   </div>
 </div>
 {% endblock %} 

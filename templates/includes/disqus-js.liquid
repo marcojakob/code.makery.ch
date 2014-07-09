@@ -1,25 +1,24 @@
-{% if model.comments %}
-  {% if model.comments.shortname %}
-    {% assign shortname = model.comments.shortname %}
-  {% else %}
-    {% assign shortname = global.disqus-shortname %}
-  {% endif %}
-
-  {% if model.comments.identifier %}
-    {% assign identifier = model.comments.identifier %}
-  {% else %}
-    {% capture identifier %}{% include "util/url" %}{% endcapture %}
-  {% endif %}
-  {% if model.comments.url %}
-    {% assign url = model.comments.url %}
-  {% else %}
-    {% capture url %}{% include "util/domain-and-url" %}{% endcapture %}
-  {% endif %}
-  {% if model.comments.title %}
-    {% assign title = model.comments.title | remove: "'" %}
-  {% else %}
-    {% assign title = model.title | remove: "'" %}
-  {% endif %}
+{% if model.comments -%}
+  {% if model.comments.shortname -%}
+    {% assign shortname = model.comments.shortname -%}
+  {% else -%}
+    {% assign shortname = global.disqusShortname -%}
+  {% endif -%}
+  {% if model.comments.identifier -%}
+    {% assign identifier = model.comments.identifier -%}
+  {% else -%}
+    {% capture identifier %}{% include "util/url" %}{% endcapture -%}
+  {% endif -%}
+  {% if model.comments.url -%}
+    {% assign url = model.comments.url -%}
+  {% else -%}
+    {% capture url %}{% include "util/domain-and-url" %}{% endcapture -%}
+  {% endif -%}
+  {% if model.comments.title -%}
+    {% assign title = model.comments.title | remove: "'" -%}
+  {% else -%}
+    {% assign title = model.title | remove: "'" -%}
+  {% endif -%}
 
   <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */

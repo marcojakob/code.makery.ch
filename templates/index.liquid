@@ -2,74 +2,74 @@
 
 {% block title %}{{ global.title }}{% endblock %}
 
-{% comment %}No navigation on index page!{% endcomment %}
-{% block navigation %}{% endblock %}
-
-{% block container_class %}index-container{% endblock %}
-
 {% block content %}
-<div class="row home-featured">
-  <div class="col-sm-4 text-center">
-    <a class="black-link" href="/dart/">
-      <div>
-        <i class="fa fa-code fa-5x"></i>
-      </div>
-      <h2>Dart</h2>
-    </a>
-    <p>
-      Dart is a wonderful language for the web. I write <b>tutorials on how to learn Dart</b> and open sourced some <b>Dart libraries</b>.
-    </p>
-    <p>
-      <a class="btn btn-default" href="/dart/">Read Dart Tutorials</a>
-    </p>
-  </div>
-  <div class="col-sm-4 text-center">
-    <a class="black-link" href="/java/">
-      <div>
-        <i class="fa fa-terminal fa-5x"></i>
-      </div>
-      <h2>Java</h2>
-    </a>
-    <p>
-      Java is the language I grew up with. I write <b>tutorials on how to learn Java</b> and how to program <b>graphical user interfaces with JavaFX</b>.
-    </p>
-    <p>
-      <a class="btn btn-default" href="/java/">Read Java(FX) Tutorials</a>
-    </p>
-  </div>
-  <div class="col-sm-4 text-center">
-    <a class="black-link" href="/blog/">
-      <div>
-        <i class="fa fa-file-text-o fa-5x"></i>
-      </div>
-      <h2>Blog</h2>
-    </a>
-    <p>
-      I write about programming and how to learn it.</p>
-      If you <a href="https://tinyletter.com/code-makery">subscribe via Email</a> I'll send updates directly to your inbox.
-    </p>
-    <p>
-      <a class="btn btn-default" href="/blog/">Read the Blog</a>
-    </p>
-  </div>
-</div>
-
-<div class="row home-recent">
-  <div class="col-sm-offset-2 col-sm-8 text-center">
-    <h3><a class="gray-link" href="/blog/">Recent Blog Posts</a></h3>
-    {% collection "blog" by 2 order desc %}
-      {% if collection.current_page > collection.pages and collection.size > 0 %}
-        {% include "blog/paged-too-far" %}
-      {% elseif collection.size == 0 %}
-        {% include "blog/no-posts" %}
-      {% else %}
-        {% assign currentpage = collection.current_page %}
-        {% include "blog/post-recent" with collection.items %}
-        <div class="text-center">
-          <a href="/archive/">&mdash; Blog Archive &mdash;</a>
+<div class="container">
+  <div class="row home-featured">
+    <div class="col-sm-4 text-center">
+      <a class="black-link" href="/library/">
+        <div>
+          <i class="fa fa-code fa-5x"></i>
         </div>
-      {% endif %}
-    {% endcollection %}
+        <h2>Library</h2>
+      </a>
+      <p>
+        A complete catalog of available <strong>tutorials</strong> and <strong>open source projects</strong>.
+      </p>
+      <p>
+        <a class="btn btn-default" href="/library/">Browse Library</a>
+      </p>
+    </div>
+    
+    <div class="col-sm-4 text-center">
+      <a class="black-link" href="/paths/">
+        <div>
+          <i class="fa fa-code-fork fa-flip-vertical fa-5x"></i>
+        </div>
+        <h2>Paths</h2>
+      </a>
+      <p>Learning paths guide you through a topic you would like to learn.</p>
+      <p>
+        Coming soon...
+      </p>
+      <p>
+        <a class="btn btn-default" href="/paths/">Browse Paths</a>
+      </p>
+    </div>
+  
+    <div class="col-sm-4 text-center">
+      <a class="black-link" href="/blog/">
+        <div>
+          <i class="fa fa-file-text-o fa-5x"></i>
+        </div>
+        <h2>Blog</h2>
+      </a>
+      <p>
+        I write about programming and how to learn it.</p>
+        If you <a href="https://tinyletter.com/code-makery">subscribe via Email</a> I'll send updates directly to your inbox.
+      </p>
+      <p>
+        <a class="btn btn-default" href="/blog/">Read the Blog</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="row home-recent">
+    <div class="col-sm-offset-2 col-sm-8 text-center">
+      <h3><a class="gray-link" href="/blog/">Recent Blog Posts</a></h3>
+      {% collection "blog" by 2 order desc %}
+        {% if collection.current_page > collection.pages and collection.size > 0 %}
+          {% include "blog/paged-too-far" %}
+        {% elseif collection.size == 0 %}
+          {% include "blog/no-posts" %}
+        {% else %}
+          {% assign currentpage = collection.current_page %}
+          {% include "blog/post-recent" with collection.items %}
+          <div class="text-center">
+            <a href="/archive/">&mdash; Blog Archive &mdash;</a>
+          </div>
+        {% endif %}
+      {% endcollection %}
+    </div>
   </div>
 </div>
 {% endblock %}

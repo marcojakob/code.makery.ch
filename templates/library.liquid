@@ -1,0 +1,61 @@
+{% layout "layout" %}
+
+{% block title %}Library - {{ global.title }}{% endblock %}
+
+{% block content %}
+<div class="container container-restricted">
+  {% include "navigation" %}
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="panel panel-default sidebar">
+        <div class="panel-heading">
+          <h4 class="panel-title">Topics</h4>  
+        </div>
+        <div class="list-group">
+          <a href="/{{ mixture.url }}/" class="list-group-item{% unless mixture.route.topic %} active{% endunless %}">All Topics</a>
+          
+          {%- for topic in model.topics -%}
+          {%- assign topic_downcase = topic | downcase -%}
+          <a href="/{{ mixture.url }}/topic/{{ topic_downcase }}/" class="list-group-item{% if mixture.route.topic == topic_downcase %} active{% endif %}">
+            <i class="fa fa-fw fa-circle topic-{{ topic_downcase }}"></i> {{ topic }}</a>
+          {%- endfor -%}
+        </div>
+      </div>
+      
+      <form class="text-center form-inline" action="http://google.com/search" method="get">
+        <input type="hidden" name="q" value="site:code.makery.ch">
+          <div class="input-group">
+            <input type="text" class="form-control" name="q" results="0">
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+            </span>
+          </div>
+      </form>
+      <br>
+    </div>
+    
+    <div class="col-sm-9">
+    {%- for item in model.items -%}
+      {%- comment -%}Test if item should be shown.{%- endcomment -%}
+      {%- if mixture.route.topic -%}
+        {%- comment -%}Test if current topic matches.{%- endcomment -%}
+        {%- assign show_item = false -%}
+        {%- for topic in item.topics -%}
+          {%- assign topic_downcase = topic | downcase -%}
+          {%- if mixture.route.topic == topic_downcase -%}
+            {%- assign show_item = true -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- else -%}
+        {%- comment -%}No topic, show item.{%- endcomment -%}
+        {%- assign show_item = true -%}
+      {%- endif -%}
+      
+      {%- if show_item -%}
+        {%- include "library/item" with item %}
+      {%- endif -%}
+    {%- endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

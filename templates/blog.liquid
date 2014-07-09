@@ -3,6 +3,9 @@
 {% block title %}Blog - {{ global.title }}{% endblock %}
 
 {% block content %}
+<div class="container container-restricted">
+  {% include "navigation" %}
+  
   {% collection "blog" by 5 order desc %}
     {% if collection.current_page > collection.pages and collection.size > 0 %}
       {% include "blog/paged-too-far" %}
@@ -14,4 +17,5 @@
       {% include "blog/paging" %}
     {% endif %}
   {% endcollection %}
+</div>
 {% endblock %}

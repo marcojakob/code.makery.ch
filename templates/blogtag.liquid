@@ -3,6 +3,9 @@
 {% block title %}Blog ({{ mixture.route.tag | uri_decode }}) - {{ global.title }}{% endblock %}
 
 {% block content %}
+<div class="container container-restricted">
+  {% include "navigation" %}
+  
   <h1 class="text-center"><small>Posts tagged</small> {{ mixture.route.tag | uri_decode }}</h1>
   <hr class="post-ruler">
 
@@ -17,4 +20,5 @@
       {% include "blog/paging" %}
     {% endif %}
   {% endcollection %}
+</div>
 {% endblock %}

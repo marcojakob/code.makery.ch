@@ -1,0 +1,27 @@
+<div class="panel-container">
+  <a class="panel-link" href="{{ item.link }}">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">{{ item.title }}</h4>
+      </div>
+      <div class="panel-body">
+        <img src="{{ item.image }}" class="img-rounded">
+        <p class="small">{{ item.summary }}</p>
+      </div>
+    </div>
+  </a>
+  <div class="topic-labels">
+    {% for topic in item.topics -%}
+    <a href="/{{ mixture.url }}/topic/{{ topic | downcase }}/" class="label label-topic-{{ topic | downcase }}">{{ topic }}</a>
+    {% endfor -%}
+  </div>
+    
+  <div class="language-buttons">
+    {% for language in item.languages -%}
+    {% capture lang_url %}
+      {%- if language != "English" -%}{{ global.languageCodes[language] }}/{% endif -%}
+    {% endcapture %}
+    <a href="{{ item.link }}{{ lang_url }}" class="btn btn-default btn-xs">{{ language }}</a>
+    {% endfor -%}
+  </div>
+</div>

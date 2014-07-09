@@ -37,6 +37,11 @@
             "route": "blog/tag/:tag/page-:page",
             "template": "blogtag",
             "redirect": null
+        },
+        {
+            "route": "library/topic/:topic/",
+            "template": "library",
+            "redirect": null
         }
     ],
     "customRuby": false,
@@ -70,7 +75,7 @@
         "extension": null,
         "path": null,
         "ignoreUrls": null,
-        "relativePath": false,
+        "relativePaths": false,
         "default": "index"
     }
 }

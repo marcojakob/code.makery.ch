@@ -8,13 +8,7 @@
   <body>
     {% include "header" %}
 
-    <!-- Allow child pages to override container css class. -->
-    <div class="container {% block container_class %}layout-container{% endblock %}">
-      {% block navigation %}{% include "navigation" %}{% endblock %}
-
-      <!-- Content block, child page inject content -->
-      {% block content %}{% endblock %}
-    </div>
+    {% block content %}{% endblock %}
       
     {% include "footer" %}
   

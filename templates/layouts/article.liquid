@@ -8,7 +8,7 @@
   <body {% include "prettify-onload" %}>
     {% include "header" %}
     
-    <div class="article-container container">
+    <div class="container article-container">
       {% include "navigation" %}
     
       <div class="row">
@@ -30,7 +30,7 @@
         </div>
         
         <div class="col-md-3 col-md-pull-9">
-          {% include "article/sidebars" %}
+          {% include "article/sidebar" with model.sidebars %}
         </div>
       </div>
       

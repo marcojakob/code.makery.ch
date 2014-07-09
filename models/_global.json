@@ -1,12 +1,17 @@
 {
   "title": "code.makery.ch",
   "intro": "Learning how to code.",
-  "analytics-id": "UA-34917397-3",
-  "analytics-name": "makery.ch",
+  "analyticsId": "UA-34917397-3",
+  "analyticsName": "makery.ch",
   "domain": "http://code.makery.ch",
   "email": "majakob@gmx.ch",
-  "disqus-shortname": "codemakery",
+  "disqusShortname": "codemakery",
   "googleplus": "114174035167840477870",
   "twitter": "marco_jakob",
-  "tags": [ "Dart", "Java", "JavaFX" ]
+  "tags": [ "Dart", "Java", "JavaFX" ],
+  "languageCodes": {
+    "English": "en",
+    "Deutsch": "de",
+    "Français": "fr"
+  }
 }

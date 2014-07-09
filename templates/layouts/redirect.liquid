@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>{% block title %}{{ model.title }} - {{ global.title }}{% endblock %}</title>
     <meta http-equiv="refresh" content="0; url={{ model.redirect }}">
-    <link rel="canonical" href="{{ model.redirect }}" />
+    <link rel="canonical" href="{{ global.domain }}{{ model.redirect }}" />
     {% include "analytics-js" %}
   </head>
   <body>
