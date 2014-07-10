@@ -49,6 +49,8 @@ sidebars:
     icon-css: fa fa-fw fa-globe
 ---
 
+Some test
+
 > `GreenfootKara` is a visual and interactive introduction to programming based on the [Greenfoot IDE](http://www.greenfoot.org). It combines the proven concept of the mini-world `Kara` with `Greenfoot`’s flexibility and ease of use.
 
 *Note: If you prefer to work with a professional IDE like **Eclipse or NetBeans** instead of Greenfoot, take a look at [GameGridKara](/library/gamegrid-kara/).*
