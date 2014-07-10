@@ -50,6 +50,9 @@ sidebars:
   - text: Deutsch
     link: /library/greenfoot-kara/de/chapter3/
     icon-css: fa fa-fw fa-globe
+  - text: Français
+    link: /library/greenfoot-kara/fr/chapter3/
+    icon-css: fa fa-fw fa-globe
 ---
 
 In the last chapter we have learned to repeat certain events while a condition is met. Now we want to do the following:

@@ -50,6 +50,9 @@ sidebars:
     link: /library/greenfoot-kara/de/chapter3/
     icon-css: fa fa-fw fa-globe
     active: true
+  - text: Français
+    link: /library/greenfoot-kara/fr/chapter3/
+    icon-css: fa fa-fw fa-globe
 ---
 
 Im letzten Kapitel haben wir gelernt, bestimmte Ereignisse zu wiederholen solange eine Bedingung erfüllt ist. Nun möchten wir aber folgendes tun:

@@ -50,6 +50,9 @@ sidebars:
   - text: Deutsch
     link: /library/greenfoot-kara/de/chapter4-solutions/
     icon-css: fa fa-fw fa-globe
+  - text: Français
+    link: /library/greenfoot-kara/fr/chapter4-solutions/
+    icon-css: fa fa-fw fa-globe
 ---
 
 #### <i class="fa fa-check-square-o"></i> SOLUTION TASK 4.01 to 4.09

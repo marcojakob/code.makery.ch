@@ -47,6 +47,9 @@ sidebars:
     link: /library/greenfoot-kara/de/
     icon-css: fa fa-fw fa-globe
     active: true
+  - text: Français
+    link: /library/greenfoot-kara/fr/
+    icon-css: fa fa-fw fa-globe
 ---
 
 > `GreenfootKara` ist eine visuelle und interaktive Einführung in die Programmierung. Es basiert auf der [Greenfoot IDE](http://www.greenfoot.org) und kombiniert das bewährte Konzept von [Kara](http://www.swisseduc.ch/informatik/karatojava/) mit der Flexibilität und Bedienerfreundlichkeit von Greenfoot.

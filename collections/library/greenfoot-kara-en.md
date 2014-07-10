@@ -47,9 +47,12 @@ sidebars:
   - text: Deutsch
     link: /library/greenfoot-kara/de/
     icon-css: fa fa-fw fa-globe
+  - text: Français
+    link: /library/greenfoot-kara/fr/
+    icon-css: fa fa-fw fa-globe
 ---
 
-> `GreenfootKara` is a visual and interactive introduction to programming based on the [Greenfoot IDE](http://www.greenfoot.org). It combines the proven concept of the mini-world `Kara` with `Greenfoot`’s flexibility and ease of use.
+> `GreenfootKara` is a visual and interactive introduction to programming based on the [Greenfoot IDE](http://www.greenfoot.org). It combines the proven concept of the mini-world `Kara` with `Greenfoot`'s flexibility and ease of use.
 
 *Note: If you prefer to work with a professional IDE like **Eclipse or NetBeans** instead of Greenfoot, take a look at [GameGridKara](/library/gamegrid-kara/).*
 
@@ -62,7 +65,7 @@ sidebars:
 
 If you're a teacher you can provide Greenfoot scenarios at any level of difficulty for your students. `GreenfootKara` contains many such scenarios with the ladybug Kara.
 
-Greenfoot is great for novice programmers because one doesn’t have to deal with many of the difficulties when starting to program (like `public static void main(String [])` and friends). Nevertheless, Greenfoot is real Java and leaves all options open. Thus, advanced students can also implement very complex projects.
+Greenfoot is great for novice programmers because one doesn't have to deal with many of the difficulties when starting to program (like `public static void main(String [])` and friends). Nevertheless, Greenfoot is real Java and leaves all options open. Thus, advanced students can also implement very complex projects.
 
 
 ## Kara
@@ -71,12 +74,12 @@ Kara is a ladybug that lives in a simple world with trees, leafs and mushrooms.
 
 ![Kara](/assets/library/greenfoot-kara/kara.png) ![Mushroom](/assets/library/greenfoot-kara/mushroom.png) ![Leaf](/assets/library/greenfoot-kara/leaf.png) ![Tree](/assets/library/greenfoot-kara/tree.png)
 
-The rules of Kara’s world are simple:
+The rules of Kara's world are simple:
 
 
 ### Kara's Actions
 
-* Kara can move around with `move()` (Kara can push a mushroom, can step on leafs but can’t walk through trees)
+* Kara can move around with `move()` (Kara can push a mushroom, can step on leafs but can't walk through trees)
 * Kara turns left or right with `turnLeft()` or `turnRight()`
 * Kara puts down a leaf with `putLeaf()`
 * Kara picks up a leaf with `removeLeaf()`

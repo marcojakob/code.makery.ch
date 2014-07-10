@@ -1,47 +1,46 @@
 ---
 layout: article
-title: "GreenfootKara - Lösungen Kapitel 4"
-date: 2012-10-03 00:00
-updated: 2014-03-08 00:00
-slug: greenfoot-kara/de/chapter4-solutions
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-de-chapter4-solutions.md
+title: "GreenfootKara - Solutions Chapitre 4"
+date: 2014-07-10 00:00
+slug: greenfoot-kara/fr/chapter4-solutions
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-fr-chapter4-solutions.md
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: Artikel dieser Serie
+- header: Articles de cette Série
   body:
-  - text: "Einleitung"
-    link: /library/greenfoot-kara/de/
+  - text: "Introduction"
+    link: /library/greenfoot-kara/fr/
     paging: Intro
-  - text: "Kapitel 1: Erste Schritte"
-    link: /library/greenfoot-kara/de/chapter1/
+  - text: "Chapitre 1: Premiers Pas"
+    link: /library/greenfoot-kara/fr/chapter1/
     paging: 1
-  - text: "Kapitel 2: Programmfluss"
-    link: /library/greenfoot-kara/de/chapter2/
+  - text: "Chapitre 2: Ordinogramme"
+    link: /library/greenfoot-kara/fr/chapter2/
     paging: 2
-  - text: "Kapitel 3: Variablen"
-    link: /library/greenfoot-kara/de/chapter3/
+  - text: "Chapitre 3: Variables"
+    link: /library/greenfoot-kara/fr/chapter3/
     paging: 3
-  - text: "Kapitel 4: Sokoban Spiel"
-    link: /library/greenfoot-kara/de/chapter4/
+  - text: "Chapitre 4: Jeu Sokoban"
+    link: /library/greenfoot-kara/fr/chapter4/
     paging: 4
-  - text: "Lösungen Kapitel 4"
-    link: /library/greenfoot-kara/de/chapter4-solutions/
+  - text: "Solutions Chapitre 4"
+    link: /library/greenfoot-kara/fr/chapter4-solutions/
     icon-css: fa fa-fw fa-check-square-o
     active: true
-  - text: "Kapitel 5: Methoden"
-    link: /library/greenfoot-kara/de/chapter5/
+  - text: "Chapitre 5: Méthodes"
+    link: /library/greenfoot-kara/fr/chapter5/
     paging: 5
 - header: Downloads
   body:
   - text: scenarios-chapter-4-solutions.zip
     link: https://github.com/marcojakob/greenfoot-kara/releases/download/2.1.0/scenarios-chapter-4-solutions.zip
     icon-css: fa fa-fw fa-file-archive-o
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
+  - text: Page as Word File
+    link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
-- header: Sprachen
+- header: Languages
   body:
   - text: English
     link: /library/greenfoot-kara/chapter4-solutions/
@@ -49,13 +48,13 @@ sidebars:
   - text: Deutsch
     link: /library/greenfoot-kara/de/chapter4-solutions/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Français
     link: /library/greenfoot-kara/fr/chapter4-solutions/
     icon-css: fa fa-fw fa-globe
+    active: true
 ---
 
-#### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 4.01 bis 4.09
+#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 4.01 to 4.09
 
 <pre class="prettyprint lang-java">
 public class MyKara extends KaraSokoban {
@@ -87,8 +86,8 @@ public class MyKara extends KaraSokoban {
 	}
 
 	/**
-	 * Kara macht einen Schritt. Diese Methode schaut zuerst, ob sich Kara
-	 * bewegen kann oder ob er zuerst noch einen Pilz schieben muss.
+	 * Kara makes one step. This method first tests if Kara can move or if he
+	 * has to move a mushroom first.
 	 */
 	public void tryToMove() {
 		if (!treeFront()) {
@@ -112,12 +111,12 @@ public class MyKara extends KaraSokoban {
 	}
 
 	/**
-	 * Diese Methode behandelt das Speichern der Highscore.
+	 * Handles the saving of the highscore.
 	 */
 	public void saveHighscore() {
-		// Testen, ob in den Top 3.
+		// Test if it is in the top 3
 		if (isHighscoreTop3(counter)) {
-			// Ist in Top 3 --> Hinzufügen zur Highscore.
+			// Is in top 3 --> add it
 			addHighscoreEntry(counter);
 		}
 	}

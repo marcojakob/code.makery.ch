@@ -50,6 +50,9 @@ sidebars:
     link: /library/greenfoot-kara/de/chapter1-solutions/
     icon-css: fa fa-fw fa-globe
     active: true
+  - text: Français
+    link: /library/greenfoot-kara/fr/chapter1-solutions/
+    icon-css: fa fa-fw fa-globe
 ---
 
 #### <i class="fa fa-check-square-o"></i> LÖSUNGEN AUFGABE 1.02

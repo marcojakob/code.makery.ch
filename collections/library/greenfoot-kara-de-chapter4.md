@@ -50,6 +50,9 @@ sidebars:
     link: /library/greenfoot-kara/de/chapter4/
     icon-css: fa fa-fw fa-globe
     active: true
+  - text: Français
+    link: /library/greenfoot-kara/fr/chapter4/
+    icon-css: fa fa-fw fa-globe
 ---
 
 ## Sokoban 

@@ -1,37 +1,36 @@
 ---
 layout: article
-title: "GreenfootKara - Solutions Chapter 2"
-date: 2012-10-03 00:00
-updated: 2014-03-08 00:00
-slug: greenfoot-kara/chapter2-solutions
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-en-chapter2-solutions.md
+title: "GreenfootKara - Solutions Chapitre 2"
+date: 2014-07-10 00:00
+slug: greenfoot-kara/fr/chapter2-solutions
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-fr-chapter2-solutions.md
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: Articles in this Series
+- header: Articles de cette Série
   body:
   - text: "Introduction"
-    link: /library/greenfoot-kara/
+    link: /library/greenfoot-kara/fr/
     paging: Intro
-  - text: "Chapter 1: First Steps"
-    link: /library/greenfoot-kara/chapter1/
+  - text: "Chapitre 1: Premiers Pas"
+    link: /library/greenfoot-kara/fr/chapter1/
     paging: 1
-  - text: "Chapter 2: Program Flow"
-    link: /library/greenfoot-kara/chapter2/
+  - text: "Chapitre 2: Ordinogramme"
+    link: /library/greenfoot-kara/fr/chapter2/
     paging: 2
-  - text: "Solutions Chapter 2"
-    link: /library/greenfoot-kara/chapter2-solutions/
+  - text: "Solutions Chapitre 2"
+    link: /library/greenfoot-kara/fr/chapter2-solutions/
     icon-css: fa fa-fw fa-check-square-o
     active: true
-  - text: "Chapter 3: Variables"
-    link: /library/greenfoot-kara/chapter3/
+  - text: "Chapitre 3: Variables"
+    link: /library/greenfoot-kara/fr/chapter3/
     paging: 3
-  - text: "Chapter 4: Sokoban Game"
-    link: /library/greenfoot-kara/chapter4/
+  - text: "Chapitre 4: Jeu Sokoban"
+    link: /library/greenfoot-kara/fr/chapter4/
     paging: 4
-  - text: "Chapter 5: Methods"
-    link: /library/greenfoot-kara/chapter5/
+  - text: "Chapitre 5: Méthodes"
+    link: /library/greenfoot-kara/fr/chapter5/
     paging: 5
 - header: Downloads
   body:
@@ -46,70 +45,72 @@ sidebars:
   - text: English
     link: /library/greenfoot-kara/chapter2-solutions/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Deutsch
     link: /library/greenfoot-kara/de/chapter2-solutions/
     icon-css: fa fa-fw fa-globe
   - text: Français
     link: /library/greenfoot-kara/fr/chapter2-solutions/
     icon-css: fa fa-fw fa-globe
+    active: true
 ---
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.01
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.01
 
 ![TASK 2.01 - Solution](/assets/library/greenfoot-kara/chapter2/task01-flowchart-solution.png)
 
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.02
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.02
 
 ![TASK 2.02 - Solution](/assets/library/greenfoot-kara/chapter2/task02-solution.png)
 
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.03
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.03
 
 <div class="alpha-list hidden"></div>
 
-1. Describe with words what the following code does.   
-  **Removes a leaf if there is one, puts a leaf if there is no leaf.**
+1. Décrivez avec des mots ce que réalise le code suivant.   
+  **Supprime une feuille s'il y en a une, dépose une feuille là où il n'y en n'a pas.**
 
-2. Sketch it as a flowchart.
+2. Puis décrivez chacune d'entre elles dans un diagramme.
 
 ![TASK 2.03 - Solution](/assets/library/greenfoot-kara/chapter2/task03-solution.png)
 
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.04
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.04
 
 <div class="alpha-list hidden"></div>
 
-1. Describe with words what the following code does.   
-  **If Kara is on a leaf he makes one step forward.**
-2. Sketch it as a flowchart.
+1. Décrivez avec des mots ce que réalise le code suivant.   
+  **Si Kara est sur une feuille elle avance d'un pas.**
+
+2. Puis décrivez chacune d'entre elles dans un diagramme.
 
 ![TASK 2.04 - Solution](/assets/library/greenfoot-kara/chapter2/task04-solution.png)
 
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.05
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.05
 
 <div class="alpha-list hidden"></div>
 
-1. Describe what happens when you run the program.   
-  **Removes the leaf if there is a tree on the left, otherwise, just makes a move.**
-2. Draw a corresponding flowchart.
+1. Décrivez avec des mots ce que réalise le code suivant.   
+  **Supprime la feuille s'il y a un arbre sur la gauche.**
+
+2. Puis décrivez chacune d'entre elles dans un diagramme.
 
 ![TASK 2.05 - Solution](/assets/library/greenfoot-kara/chapter2/task05-solution.png)
 
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.06: Around Tree II
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.06 : Autour de l'arbre II
 
 <pre class="prettyprint lang-java">
 public void act() {
@@ -140,7 +141,7 @@ public void goAroundTree() {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.07: Nested Conditions
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.07 : Conditions imbriquées
 
 <pre class="prettyprint lang-java">
 public void act() {
@@ -160,7 +161,7 @@ public void act() {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.08: Afraid of Tunnel
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.08 : Peur du tunnel
 
 <pre class="prettyprint lang-java">
 public void act() {
@@ -176,7 +177,7 @@ public void act() {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.09: Leaf at Tree
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.09 : Feuille sur l'arbre
 
 <pre class="prettyprint lang-java">
 public void act() {
@@ -196,7 +197,7 @@ public void act() {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.10: Put Leaf Track
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.10 : Réaliser une ligne de feuilles
 
 <pre class="prettyprint lang-java">
 public void act() {
@@ -215,7 +216,7 @@ public void act() {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.11: Round Trip
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.11 : Round Trip
 
 <pre class="prettyprint lang-java">
 public void act() {
@@ -240,7 +241,7 @@ public void act() {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.12: Kara Plays Pacman
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.12 : Kara joue à Pacman
 
 <pre class="prettyprint lang-java">
 public void act() {
@@ -279,15 +280,15 @@ public void turnAndGoBack() {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.13
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.13
 
 <table class="table">
   <thead>
     <tr>
       <th>#</th>
       <th>Code</th>
-      <th>Description</th>
-      <th>Steps</th>
+      <th>Explication</th>
+      <th>Nbre de pas</th>
     </tr>
   </thead>
   <tbody>
@@ -296,7 +297,7 @@ public void turnAndGoBack() {
       <td><pre>while (treeLeft()) {
   move();
 }</pre></td>
-      <td>Move as long as ther is a tree on the left.</td>
+      <td>Se déplace tant qu'il y a un arbre sur sa gauche.</td>
       <td>4</td>
     </tr>
     
@@ -305,7 +306,7 @@ public void turnAndGoBack() {
       <td><pre>while (treeRight()) {
   move();
 }</pre></td>
-      <td>Move as long as ther is a tree on the right.</td>
+      <td>Se déplace tant qu'il y a un arbre sur sa droite.</td>
       <td>0</td>
     </tr>
     
@@ -314,7 +315,7 @@ public void turnAndGoBack() {
       <td><pre>while (treeLeft() || treeRight()) {
   move();
 }</pre></td>
-      <td>Move as long there is a tree either on the right or on the left side.</td>
+      <td>Se déplace tant qu'il y a un arbre sur sa gauche ou sur sa droite ou de chaque côté.</td>
       <td>5</td>
     </tr>
     
@@ -325,8 +326,8 @@ public void turnAndGoBack() {
 } while (treeLeft() && treeRight()) {
   move();
 }</pre></td>
-      <td>First, move if there is a tree on the left side.
-Then move as long as there is a tree on the right and on the left side.
+      <td>D'abord, se déplace s'il y a un arbre sur la gauche ; 
+Puis se déplace tant qu'il y a un arbre à gauche et à droite.
 </td>
       <td>4</td>
     </tr>
@@ -338,9 +339,9 @@ Then move as long as there is a tree on the right and on the left side.
     move();
   }
 }</pre></td>
-      <td>As long as thre is no tree in front of Kara: If there is a tree on the left, make a step.
-
-**Warning: never-ending loop**
+      <td>Aussi longtemps qu'il n'y a pas d'arbre de-vant Kara : S'il y a un arbre à gauche, fait un pas.
+      
+      **Attention : boucle infinie !**
 </td>
       <td>4</td>
     </tr>
@@ -351,7 +352,7 @@ Then move as long as there is a tree on the right and on the left side.
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.14: Around Tree III
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.14 : Autour de l'arbre III
 
 <pre class="prettyprint lang-java">
 public void act() {
@@ -388,7 +389,7 @@ public void goAroundTree() {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.15: Climbing Up
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.15 : Grimper
 
 <pre class="prettyprint lang-java">
 public void act() {
@@ -410,7 +411,7 @@ public void oneStepUp() {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.16: Kara as Guard
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 2.16 : Kara garde forestier
 
 <pre class="prettyprint lang-java">
 public void act() {

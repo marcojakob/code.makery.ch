@@ -50,6 +50,9 @@ sidebars:
     link: /library/greenfoot-kara/de/chapter1/
     icon-css: fa fa-fw fa-globe
     active: true
+  - text: Français
+    link: /library/greenfoot-kara/fr/chapter1/
+    icon-css: fa fa-fw fa-globe
 ---
 
 In diesem Kapitel wagen wir unsere ersten Schritte im Programmieren.
@@ -225,7 +228,7 @@ Schreiben Sie nun ein Programm, welches Kara auf dem angegebenen Weg zum Kleebla
 
 #### <i class="fa fa-rocket"></i> AUFGABE 1.08: Around Tree with Method
 
-Wenn Sie Aufgabe 7 korrekt gelöst haben, so sollte Ihr Programm **drei gleiche Teile** enthalten, nämlich für das Herumgehen um jeden Baum. Dies können wir zur besseren Übersicht noch etwas erweitern, indem wir eine neue Methode einführen. Unterhalb der `act()`-Methode erstellen wir eine neue Methode:
+Wenn Sie Aufgabe 1.07 korrekt gelöst haben, so sollte Ihr Programm **drei gleiche Teile** enthalten, nämlich für das Herumgehen um jeden Baum. Dies können wir zur besseren Übersicht noch etwas erweitern, indem wir eine neue Methode einführen. Unterhalb der `act()`-Methode erstellen wir eine neue Methode:
 
 <pre class="prettyprint lang-java">
 public void goAroundTree() {

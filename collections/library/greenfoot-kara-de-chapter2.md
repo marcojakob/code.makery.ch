@@ -50,6 +50,9 @@ sidebars:
     link: /library/greenfoot-kara/de/chapter2/
     icon-css: fa fa-fw fa-globe
     active: true
+  - text: Français
+    link: /library/greenfoot-kara/fr/chapter2/
+    icon-css: fa fa-fw fa-globe
 ---
 
 ## Das Flussdiagramm

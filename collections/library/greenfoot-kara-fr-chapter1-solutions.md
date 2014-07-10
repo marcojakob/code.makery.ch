@@ -1,37 +1,36 @@
 ---
 layout: article
-title: "GreenfootKara - Solutions Chapter 1"
-date: 2012-10-03 00:00
-updated: 2014-03-08 00:00
-slug: greenfoot-kara/chapter1-solutions
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-en-chapter1-solutions.md
+title: "GreenfootKara - Solutions Chapitre 1"
+date: 2014-07-10 00:00
+slug: greenfoot-kara/fr/chapter1-solutions
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-fr-chapter1-solutions.md
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: Articles in this Series
+- header: Articles de cette Série
   body:
   - text: "Introduction"
-    link: /library/greenfoot-kara/
+    link: /library/greenfoot-kara/fr/
     paging: Intro
-  - text: "Chapter 1: First Steps"
-    link: /library/greenfoot-kara/chapter1/
+  - text: "Chapitre 1: Premiers Pas"
+    link: /library/greenfoot-kara/fr/chapter1/
     paging: 1
-  - text: "Solutions Chapter 1"
-    link: /library/greenfoot-kara/chapter1-solutions/
+  - text: "Solutions Chapitre 1"
+    link: /library/greenfoot-kara/fr/chapter1-solutions/
     icon-css: fa fa-fw fa-check-square-o
     active: true
-  - text: "Chapter 2: Program Flow"
-    link: /library/greenfoot-kara/chapter2/
+  - text: "Chapitre 2: Ordinogramme"
+    link: /library/greenfoot-kara/fr/chapter2/
     paging: 2
-  - text: "Chapter 3: Variables"
-    link: /library/greenfoot-kara/chapter3/
+  - text: "Chapitre 3: Variables"
+    link: /library/greenfoot-kara/fr/chapter3/
     paging: 3
-  - text: "Chapter 4: Sokoban Game"
-    link: /library/greenfoot-kara/chapter4/
+  - text: "Chapitre 4: Jeu Sokoban"
+    link: /library/greenfoot-kara/fr/chapter4/
     paging: 4
-  - text: "Chapter 5: Methods"
-    link: /library/greenfoot-kara/chapter5/
+  - text: "Chapitre 5: Méthodes"
+    link: /library/greenfoot-kara/fr/chapter5/
     paging: 5
 - header: Downloads
   body:
@@ -46,47 +45,52 @@ sidebars:
   - text: English
     link: /library/greenfoot-kara/chapter1-solutions/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Deutsch
     link: /library/greenfoot-kara/de/chapter1-solutions/
     icon-css: fa fa-fw fa-globe
   - text: Français
     link: /library/greenfoot-kara/fr/chapter1-solutions/
     icon-css: fa fa-fw fa-globe
+    active: true
 ---
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 1.02
+<div class="alert alert-warning">
+  <i class="fa fa-language"></i> This page contains parts that are not translated yet. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
+</div>
+
+
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 1.02
 
 <div class="alpha-list hidden"></div>
 
-1. What does the move() method do?   
-  **Kara moves ahead one field.**
-2. Place two Karas in your world and make sure that they face each other. Which method do you need?   
-  **turnLeft() or turnRight()**
-3. Try the other methods. There are two types of methods. What are those types and what do they do?   
-  **Method with void: Perform an action.**   
-  **Methods with boolean: Open a window containing the methods result.**
+1. Que fait la méthode `move()` ?   
+  **Kara avance d'une cellule.**
+2. Placez deux Karas et faites les se faire face. De quelle méthode avez-vous besoin ?   
+  **turnLeft() ou turnRight()**
+3. Essayez les autres méthodes. Il existe deux types de méthodes. Quelles sont ces 2 types et que font-elles ?   
+  **Les méthodes avec void: Réalise une action.**
+  **Les méthodes avec un boolean: Ouvre une fenêtre qui contient le résultat attendu.**
 
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 1.03
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 1.03
 
 <div class="alpha-list hidden"></div>
 
-1. Right-click on the Kara object and call the `onLeaf()` method. Does it always return `false`? If no, in which situations does it return `true`?   
-  **If Kara is on a leaf this method returns true.**
-2. Add an additional tree to the world. What method can you call to check if Kara is facing a tree?   
+1. Clic droit sur l'objet Kara et appelez la méthode `onLeaf()`. Est-ce qu'elle retourne toujours `false` ? Ou y a-t-il des cas où elle retourne `true` ?   
+  **Si Kara est sur une feuille, cette méthode retourne true.**
+2. Ajoutez un arbre au monde. Quelle méthode invoquer pour vérifier si Kara est face à un arbre ?   
   **treeFront()**
-3. What happens if you call Kara's `move()` method when Kara is facing a tree?   
-  **Kara complains that he can't move.**
+3. Que se passe-t-il si vous invoyez la méthode `move()` de Kara method alors qu'elle fait face à un arbre ?   
+  **Kara indique qu'elle ne peut pas avancer.**
 
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 1.04
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 1.04
 
-What are the values of the coordinates and rotation in the following situations?
+Quelles sont les valeurs des coordonnées et de la rotation dans les situations suivantes ?
 
 1. **x: 0, y: 0, rotation: 0**
 
@@ -95,25 +99,25 @@ What are the values of the coordinates and rotation in the following situations?
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 1.05
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 1.05
 
 <div class="alpha-list hidden"></div>
 
-1. Place a `MyKara` object into your world. What new method do you have available?   
+1. Placez un objet `MyKara` dans le monde. Quelle nouvelle méthode est  devenue disponible ?   
   **act()**
-2. What does this method do?   
+2. Que fait cette méthode ?   
   **Move, turn right, move**
-3. What happens if you press the **Act button** in the Greenfoot controls?   
-  **The same as before, the act() Method is called**
-4. Click on the **Run button**. What is happening? Try using the slider.   
-  **act() is called again and again until the pause button is clicked**
-5. What methods can be found when you *right-click* on *MyKara* and then *inherited from Kara*? Can you use them?   
-  **All methods from Kara. They can directly be used by MyKara**
+3. Que se passe-t-il si vous appuyez sur le bouton de contrôle Act de Greenfoot ?   
+  **Même choses que ci-desus, la méthode  act() est appelée**
+4. Appuyez sur le **bouton Run**. Que se passe-t-il ? Essayez d'utiliser le potentiomètre linéaire.   
+act() est appelée encore et encore jusqu'à ce le bouton pause soit cliqué.
+5. Quelle méthodes peut-on voir quand on clique droit sur `MyKara` puis "inherited from Kara" ? Peut-on utiliser ces méthodes ?   
+  **Toutes les méthodes héritées peuvent être utilisées directement dans MyKara.**
 
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 1.06
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 1.06
 
 <pre class="prettyprint lang-java">
 public class MyKara extends Kara {
@@ -130,7 +134,7 @@ public class MyKara extends Kara {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 1.07
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 1.07
 
 <pre class="prettyprint lang-java">
 public class MyKara extends Kara {
@@ -174,6 +178,7 @@ public class MyKara extends Kara {
 }
 </pre>
 
+
 #### Notes
 
 1. The **comments** in the code have been omitted (= the text that is in the Greenfoot editor either gray or blue).
@@ -186,7 +191,7 @@ Comments in the source code are written as additional information. The comments 
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 1.08
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 1.08
 
 <pre class="prettyprint lang-java">
 public class MyKara extends Kara {

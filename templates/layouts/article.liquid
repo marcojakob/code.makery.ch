@@ -35,9 +35,11 @@
           </div>
         </div>
         
+        {%- if model.sidebars -%}
         <div class="col-md-3 col-md-pull-9">
           {% include "article/sidebar" with model.sidebars %}
         </div>
+        {%- endif -%}
       </div>
       
       {% if model.comments %}

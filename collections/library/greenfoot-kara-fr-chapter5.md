@@ -1,37 +1,36 @@
 ---
 layout: article
-title: "GreenfootKara - Chapter 5: Methods"
-date: 2012-10-03 00:00
-updated: 2014-03-08 00:00
-slug: greenfoot-kara/chapter5
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-en-chapter5.md
+title: "GreenfootKara - Chapitre 5: Méthodes"
+date: 2014-07-10 00:00
+slug: greenfoot-kara/fr/chapter5
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-fr-chapter5.md
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: Articles in this Series
+- header: Articles de cette Série
   body:
   - text: "Introduction"
-    link: /library/greenfoot-kara/
+    link: /library/greenfoot-kara/fr/
     paging: Intro
-  - text: "Chapter 1: First Steps"
-    link: /library/greenfoot-kara/chapter1/
+  - text: "Chapitre 1: Premiers Pas"
+    link: /library/greenfoot-kara/fr/chapter1/
     paging: 1
-  - text: "Chapter 2: Program Flow"
-    link: /library/greenfoot-kara/chapter2/
+  - text: "Chapitre 2: Ordinogramme"
+    link: /library/greenfoot-kara/fr/chapter2/
     paging: 2
-  - text: "Chapter 3: Variables"
-    link: /library/greenfoot-kara/chapter3/
+  - text: "Chapitre 3: Variables"
+    link: /library/greenfoot-kara/fr/chapter3/
     paging: 3
-  - text: "Chapter 4: Sokoban Game"
-    link: /library/greenfoot-kara/chapter4/
+  - text: "Chapitre 4: Jeu Sokoban"
+    link: /library/greenfoot-kara/fr/chapter4/
     paging: 4
-  - text: "Chapter 5: Methods"
-    link: /library/greenfoot-kara/chapter5/
+  - text: "Chapitre 5: Méthodes"
+    link: /library/greenfoot-kara/fr/chapter5/
     paging: 5
     active: true
-  - text: "Solutions Chapter 5"
-    link: /library/greenfoot-kara/chapter5-solutions/
+  - text: "Solutions Chapitre 5"
+    link: /library/greenfoot-kara/fr/chapter5-solutions/
     icon-css: fa fa-fw fa-check-square-o
 - header: Downloads
   body:
@@ -46,14 +45,18 @@ sidebars:
   - text: English
     link: /library/greenfoot-kara/chapter5/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Deutsch
     link: /library/greenfoot-kara/de/chapter5/
     icon-css: fa fa-fw fa-globe
   - text: Français
     link: /library/greenfoot-kara/fr/chapter5/
     icon-css: fa fa-fw fa-globe
+    active: true
 ---
+
+<div class="alert alert-warning">
+  <i class="fa fa-language"></i> This page needs a French translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
+</div>
 
 *Once upon a time, there was a little girl who always wore a red riding cloak. So everyone called her Little Red Riding Hood. One moning the mother said to the child: "Red Riding Hood, today is your grandmother's birthday.Bake her favorite cake, take a bottle of good old wine from the cellar, put everything in one basket, and go visit her."*
 

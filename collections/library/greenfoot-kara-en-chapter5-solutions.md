@@ -50,6 +50,9 @@ sidebars:
   - text: Deutsch
     link: /library/greenfoot-kara/de/chapter5-solutions/
     icon-css: fa fa-fw fa-globe
+  - text: Français
+    link: /library/greenfoot-kara/fr/chapter5-solutions/
+    icon-css: fa fa-fw fa-globe
 ---
 
 #### <i class="fa fa-check-square-o"></i> SOLUTION TASK 5.01: Baking a Cake

@@ -1,36 +1,35 @@
 ---
 layout: article
-title: "GreenfootKara - Lösungen Kapitel 5"
-date: 2012-10-03 00:00
-updated: 2014-03-08 00:00
-slug: greenfoot-kara/de/chapter5-solutions
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-de-chapter5-solutions.md
+title: "GreenfootKara - Solutions Chapitre 5"
+date: 2014-07-10 00:00
+slug: greenfoot-kara/fr/chapter5-solutions
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-fr-chapter5-solutions.md
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: Artikel dieser Serie
+- header: Articles de cette Série
   body:
-  - text: "Einleitung"
-    link: /library/greenfoot-kara/de/
+  - text: "Introduction"
+    link: /library/greenfoot-kara/fr/
     paging: Intro
-  - text: "Kapitel 1: Erste Schritte"
-    link: /library/greenfoot-kara/de/chapter1/
+  - text: "Chapitre 1: Premiers Pas"
+    link: /library/greenfoot-kara/fr/chapter1/
     paging: 1
-  - text: "Kapitel 2: Programmfluss"
-    link: /library/greenfoot-kara/de/chapter2/
+  - text: "Chapitre 2: Ordinogramme"
+    link: /library/greenfoot-kara/fr/chapter2/
     paging: 2
-  - text: "Kapitel 3: Variablen"
-    link: /library/greenfoot-kara/de/chapter3/
+  - text: "Chapitre 3: Variables"
+    link: /library/greenfoot-kara/fr/chapter3/
     paging: 3
-  - text: "Kapitel 4: Sokoban Spiel"
-    link: /library/greenfoot-kara/de/chapter4/
+  - text: "Chapitre 4: Jeu Sokoban"
+    link: /library/greenfoot-kara/fr/chapter4/
     paging: 4
-  - text: "Kapitel 5: Methoden"
-    link: /library/greenfoot-kara/de/chapter5/
+  - text: "Chapitre 5: Méthodes"
+    link: /library/greenfoot-kara/fr/chapter5/
     paging: 5
-  - text: "Lösungen Kapitel 5"
-    link: /library/greenfoot-kara/de/chapter5-solutions/
+  - text: "Solutions Chapitre 5"
+    link: /library/greenfoot-kara/fr/chapter5-solutions/
     icon-css: fa fa-fw fa-check-square-o
     active: true
 - header: Downloads
@@ -38,10 +37,10 @@ sidebars:
   - text: scenarios-chapter-5-solutions.zip
     link: https://github.com/marcojakob/greenfoot-kara/releases/download/2.1.0/scenarios-chapter-5-solutions.zip
     icon-css: fa fa-fw fa-file-archive-o
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
+  - text: Page as Word File
+    link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
-- header: Sprachen
+- header: Languages
   body:
   - text: English
     link: /library/greenfoot-kara/chapter5-solutions/
@@ -49,13 +48,13 @@ sidebars:
   - text: Deutsch
     link: /library/greenfoot-kara/de/chapter5-solutions/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Français
     link: /library/greenfoot-kara/fr/chapter5-solutions/
     icon-css: fa fa-fw fa-globe
+    active: true
 ---
 
-#### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 5.01: Kuchen backen
+#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 5.01: Baking a Cake
 
 <pre class="prettyprint lang-java">
 public class MyKaraIO extends KaraIO {
@@ -73,7 +72,7 @@ public class MyKaraIO extends KaraIO {
 			turnAround();
 			multiMove(width);
 
-			// Zur nächsten Zeile gehen.
+			// Go to next line.
 			turnRight();
 			move();
 			turnRight();
@@ -109,7 +108,7 @@ public class MyKaraIO extends KaraIO {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 5.02: Kerzen auf Kuchen
+#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 5.02: Candles on Cake
 
 <pre class="prettyprint lang-java">
 public class MyKaraIO extends KaraIO {
@@ -156,7 +155,7 @@ public class MyKaraIO extends KaraIO {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 5.03: Kerzen nach Alter
+#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 5.03: Candles for Age
 
 <pre class="prettyprint lang-java">
 public class MyKaraIO extends KaraIO {
@@ -164,7 +163,7 @@ public class MyKaraIO extends KaraIO {
 	public void act() {
 		drawRectangle(21, 4);
 
-		int age = intInput("Wie alt ist Deine Grossmutter?");
+		int age = intInput("How old is your grandmother?");
 		drawCandles(age / 10);
 		
 		stop();
@@ -195,13 +194,13 @@ public class MyKaraIO extends KaraIO {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 5.04: Torte
+#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 5.04: Layered Cake
 
 <pre class="prettyprint lang-java">
 public class MyKaraIO extends KaraIO {
 
 	public void act() {
-		int age = intInput("Wie alt ist Deine Grossmutter?");
+		int age = intInput("How old is your grandmother?");
 		drawLayers(age / 10 - 5);
 		
 		stop();

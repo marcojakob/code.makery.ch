@@ -50,6 +50,9 @@ sidebars:
   - text: Deutsch
     link: /library/greenfoot-kara/de/chapter1/
     icon-css: fa fa-fw fa-globe
+  - text: Français
+    link: /library/greenfoot-kara/fr/chapter1/
+    icon-css: fa fa-fw fa-globe
 ---
 
 In this chapter we will take our first steps in programming.
@@ -81,7 +84,7 @@ For our projects we use the **Java** programming language. Java is a so-called o
 
 Consider the **class of** `Kara`. `Kara` is the class for the general concept of a ladybug - so to speak, it is like a blue-print from which we can create individual ladybugs. The produced ladybugs are called **objects** (or instances).
 
-In Greenfoot, we create new objects as follows: *Right click* on the class of Kara and chooste the menu item *new Kara()*. Then move the object anywhere in the world and click where you wish to place it.
+In Greenfoot, we create new objects as follows: *Right click* on the class of Kara and choose the menu item *new Kara()*. Then move the object anywhere in the world and click where you wish to place it.
 
 ![Screenshot 02](/assets/library/greenfoot-kara/chapter1/screenshot02.png)
 
@@ -104,7 +107,7 @@ To interact with objects in the world, we click with the right mouse button to b
 
 <div class="alpha-list hidden"></div>
 
-1. What does the move() method do?
+1. What does the `move()` method do?
 2. Place two Karas in your world and make sure that they face each other. Which method do you need?
 3. Try the other methods. There are two types of methods. What are those types and what do they do?
 
@@ -123,7 +126,7 @@ If instead of `void` anything else is stated, we know that our method returns a 
 
 1. Right-click on the Kara object and call the `onLeaf()` method. Does it always return `false`? If no, in which situations does it return `true`?
 2. Add an additional tree to the world. What method can you call to check if Kara is facing a tree?
-3. What happens if you call Kara’s `move()` method when Kara is facing a tree?
+3. What happens if you call Kara's `move()` method when Kara is facing a tree?
 
 
 ***
@@ -196,7 +199,7 @@ The classes in Greenfoot are translated using the button **Compile** (bottom rig
 
 #### <i class="fa fa-rocket"></i> TASK 1.06: Putting Leaf
 
-Change the content of the act() method so that Kara makes a step first, then puts a leaf down and takes a step again. (At the beginning of the class you will find a comment describing all the actions that Kara can per-form.)
+Change the content of the `act()` method so that Kara makes a step first, then puts a leaf down and takes a step again. (At the beginning of the class you will find a comment describing all the actions that Kara can per-form.)
 
 *Note: After each command we must include a semicolon!*
 
@@ -223,7 +226,7 @@ Write a program that takes Kara to the leaf along the dotted line on the image a
 
 #### <i class="fa fa-rocket"></i> TASK 1.08: Around Tree with Method
 
-If you have solved task 7 correctly, your program should contain **three equal parts**, namely for walking around each tree. We can expand our program for clarity by introducing a new method. Below the `act()` method we will create a new method:
+If you have solved task 1.07 correctly, your program should contain **three equal parts**, namely for walking around each tree. We can expand our program for clarity by introducing a new method. Below the `act()` method we will create a new method:
 
 <pre class="prettyprint lang-java">
 public void goAroundTree() {

@@ -49,6 +49,9 @@ sidebars:
     link: /library/greenfoot-kara/de/teachers-info/
     icon-css: fa fa-fw fa-globe
     active: true
+  - text: Français
+    link: /library/greenfoot-kara/fr/teachers-info/
+    icon-css: fa fa-fw fa-globe
 ---
 
 Auf dieser Seite finden Sie Hintergrundinformationen über `GreenfootKara`. Dies wird speziell hilfreich sein für Lehrpersonen.

@@ -50,6 +50,9 @@ sidebars:
   - text: Deutsch
     link: /library/greenfoot-kara/de/chapter4/
     icon-css: fa fa-fw fa-globe
+  - text: Français
+    link: /library/greenfoot-kara/fr/chapter4/
+    icon-css: fa fa-fw fa-globe
 ---
 
 ## Sokoban 
@@ -218,7 +221,7 @@ You could add sound to your Kara scenario with Greenfoot. Information on Sound c
 
 
 
-* * *
+***
 
 
 I hope you had fun with the ladybug Kara.

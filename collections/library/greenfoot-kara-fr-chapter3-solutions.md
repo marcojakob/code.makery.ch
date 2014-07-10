@@ -1,47 +1,46 @@
 ---
 layout: article
-title: "GreenfootKara - Lösungen Kapitel 3"
-date: 2012-10-03 00:00
-updated: 2014-03-08 00:00
-slug: greenfoot-kara/de/chapter3-solutions
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-de-chapter3-solutions.md
+title: "GreenfootKara - Solutions Chapitre 3"
+date: 2014-07-10 00:00
+slug: greenfoot-kara/fr/chapter3-solutions
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-fr-chapter3-solutions.md
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: Artikel dieser Serie
+- header: Articles de cette Série
   body:
-  - text: "Einleitung"
-    link: /library/greenfoot-kara/de/
+  - text: "Introduction"
+    link: /library/greenfoot-kara/fr/
     paging: Intro
-  - text: "Kapitel 1: Erste Schritte"
-    link: /library/greenfoot-kara/de/chapter1/
+  - text: "Chapitre 1: Premiers Pas"
+    link: /library/greenfoot-kara/fr/chapter1/
     paging: 1
-  - text: "Kapitel 2: Programmfluss"
-    link: /library/greenfoot-kara/de/chapter2/
+  - text: "Chapitre 2: Ordinogramme"
+    link: /library/greenfoot-kara/fr/chapter2/
     paging: 2
-  - text: "Kapitel 3: Variablen"
-    link: /library/greenfoot-kara/de/chapter3/
+  - text: "Chapitre 3: Variables"
+    link: /library/greenfoot-kara/fr/chapter3/
     paging: 3
-  - text: "Lösungen Kapitel 3"
-    link: /library/greenfoot-kara/de/chapter3-solutions/
+  - text: "Solutions Chapitre 3"
+    link: /library/greenfoot-kara/fr/chapter3-solutions/
     icon-css: fa fa-fw fa-check-square-o
     active: true
-  - text: "Kapitel 4: Sokoban Spiel"
-    link: /library/greenfoot-kara/de/chapter4/
+  - text: "Chapitre 4: Jeu Sokoban"
+    link: /library/greenfoot-kara/fr/chapter4/
     paging: 4
-  - text: "Kapitel 5: Methoden"
-    link: /library/greenfoot-kara/de/chapter5/
+  - text: "Chapitre 5: Méthodes"
+    link: /library/greenfoot-kara/fr/chapter5/
     paging: 5
 - header: Downloads
   body:
   - text: scenarios-chapter-3-solutions.zip
     link: https://github.com/marcojakob/greenfoot-kara/releases/download/2.1.0/scenarios-chapter-3-solutions.zip
     icon-css: fa fa-fw fa-file-archive-o
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
+  - text: Page as Word File
+    link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
-- header: Sprachen
+- header: Languages
   body:
   - text: English
     link: /library/greenfoot-kara/chapter3-solutions/
@@ -49,13 +48,13 @@ sidebars:
   - text: Deutsch
     link: /library/greenfoot-kara/de/chapter3-solutions/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Français
     link: /library/greenfoot-kara/fr/chapter3-solutions/
     icon-css: fa fa-fw fa-globe
+    active: true
 ---
 
-#### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 3.01
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 3.01
 
 <pre class="prettyprint lang-java">
 public void act() {
@@ -69,7 +68,7 @@ public void act() {
 		}
 	}
 
-	System.out.println("Das Resultat ist: " + count);
+	System.out.println("The result is: " + count);
 	
 	stop();
 }
@@ -78,7 +77,7 @@ public void act() {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 3.02
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 3.02
 
 <pre class="prettyprint lang-java">
 public class MyKara extends Kara {
@@ -90,10 +89,10 @@ public class MyKara extends Kara {
 		
 		if (treeFront()) {
 			if (goingRight) {
-				// Wir sind am rechten Rand.
+				// we are at the right border
 				turnAroundRight();
 			} else {
-				// Wir sind am linken Rand.
+				// we are at the left border
 				turnAroundLeft();
 			}
 		} else {
@@ -103,7 +102,7 @@ public class MyKara extends Kara {
 	
 	public void turnAroundRight() {
 		if (treeRight()) {
-			// Wir sind in der Ecke rechts unten.
+			// we are in the bottom right corner
 			stop();
 		} else {
 			turnRight();
@@ -115,7 +114,7 @@ public class MyKara extends Kara {
 	
 	public void turnAroundLeft() {
 		if (treeLeft()) {
-			// Wir sind in der Ecke links unten.
+			// we are in the bottom left corner
 			stop();
 		} else {
 			turnLeft();
@@ -138,7 +137,7 @@ public class MyKara extends Kara {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 3.03
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 3.03
 
 <pre class="prettyprint lang-java">
 public class MyKara extends Kara {
@@ -151,10 +150,10 @@ public class MyKara extends Kara {
 		
 		if (treeFront()) {
 			if (goingRight) {
-				// Wir sind am rechten Rand.
+				// we are at the right border
 				turnAroundRight();
 			} else {
-				// Wir sind am linken Rand.
+				// we are at the left border
 				turnAroundLeft();
 			}
 		} else {
@@ -165,7 +164,7 @@ public class MyKara extends Kara {
 	
 	public void turnAroundRight() {
 		if (treeRight()) {
-			// Wir sind in der Ecke rechts unten.
+			// we are in the bottom right corner
 			stop();
 		} else {
 			turnRight();
@@ -178,7 +177,7 @@ public class MyKara extends Kara {
 	
 	public void turnAroundLeft() {
 		if (treeLeft()) {
-			// Wir sind in der Ecke links unten.
+			// we are in the bottom left corner
 			stop();
 		} else {
 			turnLeft();
@@ -191,7 +190,7 @@ public class MyKara extends Kara {
 
 	public void putLeafIfEvenStep() {
 		if (step % 2 == 0) {
-			// Gerade Schrittnummer --> Lege ein Blatt.
+			// even step number --> put a leaf
 			putLeaf();
 		}
 	}
@@ -201,7 +200,7 @@ public class MyKara extends Kara {
 
 ***
 
-#### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 3.04
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 3.04
 
 <pre class="prettyprint lang-java">
 public class MyKara extends Kara {
@@ -216,8 +215,8 @@ public class MyKara extends Kara {
 			}
 		}
 
-		System.out.println("Die Längste Baumreihe ist " + longestRow + 
-				" Bäume lang");
+		System.out.println("The longest tree line is " + longestRow + 
+				" trees long");
 		stop();
 	}
 
@@ -230,13 +229,13 @@ public class MyKara extends Kara {
 			move();
 		}
 
-		// Gehe um die Baumreihe herum.
+		// go around tree line
 		turnRight();
 		move();
 		move();
 		turnRight();
 
-		// Gehe zurück nach unten.
+		// go back down
 		int i = 0;
 		while (i &lt; currentRow) {
 			move();
@@ -245,7 +244,7 @@ public class MyKara extends Kara {
 
 		turnLeft();
 
-		// Teste, ob die aktuelle Zeile länger ist.
+		// test whether the current row is longer
 		if (currentRow > longestRow) {
 			longestRow = currentRow;
 		}
@@ -254,7 +253,7 @@ public class MyKara extends Kara {
 </pre>
 
 
-#### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 3.05
+#### <i class="fa fa-check-square-o"></i> SOLUTION TÂCHE 3.05
 
-Siehe Lösungsszenario unter Downloads.
+Voir le scénario de solution dans la section "downloads".
 
