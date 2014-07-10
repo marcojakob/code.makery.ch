@@ -21,4 +21,4 @@ sidebars:
     active: true
 ---
 
-Coming soon...
+This is just a test.
