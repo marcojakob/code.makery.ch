@@ -54,9 +54,9 @@ sidebars:
     active: true
 ---
 
-## The Flowchart
+## Le diagramme
 
-Pour résoudre des problèmes difficiles en programmation, Il est souvent utile de représenter graphiquement la succession de tâches à l'aide d'un diagramme simple. On utilise pour cela les symboles suivants :
+Pour résoudre des problèmes difficiles en programmation, il est souvent utile de représenter graphiquement la succession de tâches à l'aide d'un diagramme simple. On utilise pour cela les symboles suivants :
 
 <table class="table table-bordered text-center">
   <tbody>
