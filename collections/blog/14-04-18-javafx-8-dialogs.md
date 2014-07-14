@@ -24,7 +24,7 @@ In this post I will show some examples of how to use the [ControlsFX Dialogs](ht
 ## How To Use ControlsFX Dialogs
 
 1. Download the latest **ControlsFX** zip file from the [ControlsFX Website](http://fxexperience.com/controlsfx/). (It is also available as Maven dependency if you prefer to use Maven.)   
-**Important: The ControlsFX version must be `greater than 8.0.6` as there was a breaking change introduced in that version.**
+**Important: The ControlsFX must be version `8.0.6 or greater` as there was a breaking change introduced in that version.**
 
 2. Inside the zip file you should find a `controlsfx-8.x.x.jar` file. Add the jar file to your JavaFX 8 project (usually inside a `lib` subfolder).   
 **Note: ControlsFX will only work on JavaFX 8.0 or later. Make sure you are using JDK 8 or later in your project.**
