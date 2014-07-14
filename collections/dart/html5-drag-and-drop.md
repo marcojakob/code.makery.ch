@@ -20,6 +20,18 @@ javascript:
 - /assets/dart/html5-drag-and-drop/html5_dnd_example.dart.min.js
 ---
 
+<div class="alert alert-danger">
+  <p>
+    <strong>Note:</strong> The following examples don't work at the moment. I'm currently redesigning the Drag and Drop library. 
+  </p>
+  <p>
+    But, I've given up on trying to work with the quirks of native HTML5 Drag and Drop (and I recommend you do too! - except for some special cases like dragging files from and to the desktop). 
+  </p>
+  <p>
+    If you want to be informed when the new library is available, tell me your <a href="https://tinyletter.com/code-makery" class="alert-link">email address here</a> and I'll let you know when it's ready.
+  </p>
+</div>
+
 <p>
   Native HTML5 Drag and Drop is <a href="http://www.quirksmode.org/blog/archives/2009/09/the_html5_drag.html">not easy to work with</a>! The 
   <a href="https://github.com/marcojakob/dart-html5-dnd">Dart HTML5 Drag and Drop</a> library was created to use HTML5 Drag and Drop in a consistend way across all modern browsers. Here are some examples of how to use it.
