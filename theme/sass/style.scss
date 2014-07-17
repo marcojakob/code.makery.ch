@@ -76,6 +76,11 @@ ol.alpha-list,
   }
 }
 
+// Remove border from iframe.
+iframe {
+  border: none;
+}
+
 // 
 // Ribbon (http://unindented.org/articles/github-ribbon-using-css-transforms/)
 // ----------------------------------------------------------------------------
@@ -399,9 +404,6 @@ ol.alpha-list,
 .label-topic-dart {
   @include label-variant($topic-dart);
 }
-
-
-
 
 /*
 // Collapsible panel

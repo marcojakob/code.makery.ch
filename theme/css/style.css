@@ -5063,6 +5063,9 @@ ol.alpha-list,
     .alpha-list + ol ol ol {
       list-style-type: decimal; }
 
+iframe {
+  border: none; }
+
 .ribbon {
   overflow: hidden;
   white-space: nowrap;
