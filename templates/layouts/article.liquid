@@ -28,11 +28,7 @@
             {% block content %}{% endblock %}
           </section>
           
-          <hr>
-          
-          <div class="hidden-xs hidden-sm">
-            {% include "article/paging" %}
-          </div>
+          {% include "article/paging" %}
         </div>
         
         {%- if model.sidebars -%}

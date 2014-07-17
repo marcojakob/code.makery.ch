@@ -11,9 +11,12 @@
 {% endfor -%}
 {% endcapture -%}
 {% if containspaging %}
-  <div class="article-paging">
-    <ul class="pagination">
-      {{ sidebarelements }}
-    </ul>
+  <hr>
+  <div class="hidden-xs hidden-sm">
+    <div class="article-paging">
+      <ul class="pagination">
+        {{ sidebarelements }}
+      </ul>
+    </div>
   </div>
 {% endif %}
