@@ -3,6 +3,7 @@ layout: article
 title: "GreenfootKara - Introduction"
 date: 2014-07-10 00:00
 slug: greenfoot-kara/fr
+canonical: /library/greenfoot-kara/
 github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-fr.md
 published: true
 prettify: false

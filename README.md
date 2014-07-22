@@ -152,6 +152,7 @@ title: "My Example Article"
 date: 2014-04-19 00:00
 updated: 2014-05-07 00:00
 slug: my-example-article1
+canonical: /mycollection/article-original/
 description: "This is the place where we can put a description in one or two sentences."
 github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/mycollection/my-example-article1.md
 image: /assets/mycollection/my-example-article1/some-image.png
@@ -193,10 +194,11 @@ javascript:
 ---
 ```
 
-For a description of most items see above. Here are the items that are special to the article layout:
+For a description of most items see blog post description above. Here are the items that are special to the article layout:
 
 * `updated`: (optional) The date when the article was updated.
 * `slug` (optional): The url that will be used together with the collection name. The example above will result in the following url `/mycollection/my-example-article1/`.
+* `canonical` (optional): The canonical url. This is used if an article (or blog post) exists on two pages. It indicates to search engines which is the main url of the article. I use this for articles that still need translation to indicate that it is currently just a copy of the main article.  
 * `github` (optional): The url to the article on GitHub.
 * `sidebars`: (optional) A list of custom sidebars. A single sidebar supports the following elements:
   * `header`: The header of the sidebar.

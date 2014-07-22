@@ -3,6 +3,9 @@ layout: article
 title: Dart Drag and Drop
 date: 2014-07-17 00:00
 slug: dart-drag-and-drop
+github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/dart-drag-and-drop.md
+description: "Drag and Drop for Dart web apps with mouse and touch support."
+image: /assets/library/dart-drag-and-drop/dnd-screenshot.png
 published: true
 prettify: true
 comments: true
@@ -65,6 +68,7 @@ Even without a drag avatar and `Dropzone` this helps quite a lot as it unifies t
 
 <iframe src="http://marcojakob.github.io/dart-dnd/detection-only/" width="100%" height="300px"></iframe>
 
+***
 
 
 ### Free Dragging
@@ -78,8 +82,6 @@ This example shows how to freely drag and position an element. Instead of using 
 <iframe src="http://marcojakob.github.io/dart-dnd/free-dragging/" width="100%" height="300px"></iframe>
 
 ***
-
-
 
 
 ### Handle
