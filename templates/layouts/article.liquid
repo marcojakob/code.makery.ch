@@ -11,7 +11,7 @@
     <div class="container article-container">
       {% include "navigation" %}
       
-      <div class="row" class="article-row">
+      <article class="row">
         <div class="col-md-9 col-md-push-3">
           {%- if model.github -%}
           <div class="github-edit">
@@ -28,23 +28,20 @@
             {% block content %}{% endblock %}
           </section>
           
+          <hr>
           {% include "article/paging" %}
         </div>
         
-        {%- if model.sidebars -%}
-        <div class="col-md-3 col-md-pull-9">
-          {% include "article/sidebar" with model.sidebars %}
-        </div>
-        {%- endif -%}
-      </div>
+        {% include "article/sidebar" %}
+      </article>
       
       {% if model.comments %}
-      <div class="row">
+      <section class="row">
         <div class="col-md-offset-3 col-md-9">
           <h1>Comments</h1>
           <div id="disqus_thread"></div>
         </div>
-      </div>
+      </section>
       {% endif %}
     </div>
     

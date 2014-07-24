@@ -3,7 +3,7 @@
   {%- for item in sidebar.body -%}
     {%- if item.paging -%}
       {%- assign containspaging = true -%}
-      {%- if item.active %}<li class="active">{% else %}<li>{% endif %}
+      {% if item.active %}<li class="active">{% else %}<li>{% endif %}
       <a href="{{ item.link }}" data-toggle="tooltip" title="{{ item.text }}">{{ item.paging }}</a>
       </li>
     {%- endif -%}
@@ -11,12 +11,11 @@
 {% endfor -%}
 {% endcapture -%}
 {% if containspaging %}
-  <hr>
-  <div class="hidden-xs hidden-sm">
+  <nav class="hidden-xs hidden-sm">
     <div class="article-paging">
       <ul class="pagination">
         {{ sidebarelements }}
       </ul>
     </div>
-  </div>
+  </nav>
 {% endif %}

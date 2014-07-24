@@ -5125,12 +5125,17 @@ iframe {
 .site-footer {
   position: relative;
   margin: 8rem 0 0 0;
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   border-top: #eeeeee 1px solid;
   text-align: center;
   background: #fbfbfb;
   font-size: 14px;
   color: #999999; }
+  .site-footer form {
+    margin-bottom: 13px; }
+  .site-footer .form-control {
+    margin-bottom: 5px; }
 
 .site-navigation {
   text-align: center;

@@ -159,12 +159,21 @@ iframe {
 .site-footer {
   position: relative;
   margin: 8rem 0 0 0;
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   border-top: $hr-border 1px solid;
   text-align: center;
   background: #fbfbfb;
   font-size: $font-size-small;
   color: $gray-light;
+  
+  form {
+    margin-bottom: ($line-height-computed / 2); 
+  }
+  
+  .form-control {
+    margin-bottom: 5px; 
+  }
 }
 
 
