@@ -56,16 +56,16 @@ Fügen Sie dieses Element im `<head>`-Bereich ein. Dann sollte Ihr Code etwa so 
   &lt;head>
     &lt;meta charset="utf-8">
     <mark>&lt;link rel="stylesheet" href="main.css"></mark>
-    &lt;title>Web Portfolio&lt;/title>
+    &lt;title>Web Portfolio von Marco&lt;/title>
   &lt;/head>
   &lt;body>
     &lt;h1>Web Portfolio von Marco&lt;/h1>
     
     &lt;h2>Willkommen!&lt;/h2>
     
-    &lt;p>Schön, dass du auf meiner Seite vorbei schaust.&lt;/p>
+    &lt;p>Schön, dass Sie auf meiner Seite vorbeischauen.&lt;/p>
     
-    &lt;p>Du kannst dich ruhig etwas umsehen. Im Blog dokumentiere ich meine Erfahrungen beim Programmieren. Daneben kannst du auch meine Webprojekte anschauen. Viel Spass.&lt;/p>
+    &lt;p>Sie können sich ruhig etwas umsehen. Im Blog dokumentiere ich meine Erfahrungen beim Programmieren. Daneben können Sie auch meine Webprojekte anschauen. Viel Spass.&lt;/p>
     
     &lt;img src="marco.jpg" alt="Foto von mir">
 
@@ -327,3 +327,37 @@ h2 {
   width: 5em;
 }
 </pre>
+
+
+## Beispiel Klassenselektor im Portfolio
+
+Nehmen wir mal an, wir möchten die Hauptüberschrift "Web Portfolio von Marco" etwas vergrössern. Das wäre natürlich möglich, indem wir eine CSS-Regel für das Element `h1` definieren würden. Etwa so:
+
+<pre class="prettyprint lang-css">
+h1 {
+  font-size: 65px;
+}
+</pre>
+
+Das Problem dabei ist, dass nun **alle** `h1`-Elemente eine grössere Schrift haben werden. Wir möchten jedoch nur diese erste Überschrift vergrössern. Dies können wir erreichen mit einem **Klassenselektor**.
+
+Dazu fügen wir zuerst dem `h1`-Element im HTML eine Klasse hinzu. Wir können irgend einen Wert für die Klasse vergeben, ich wähle hier `title`.
+
+<pre class="prettyprint lang-html">
+&lt;h1 class="title">Web Portfolio von Marco&lt;/h1>
+</pre>
+
+Dann können wir diesen einen Titel im CSS ansprechen mit `.title`. Die CSS-Regel ist jetzt:
+
+<pre class="prettyprint lang-css">
+.title {
+  font-size: 65px;
+}
+</pre>
+
+Wenn alles geklappt hat, dann sieht das Portfolio nun etwa so aus: 
+
+![Portfolio](/assets/library/html-css/intro-to-css/portfolio-de.png)
+
+
+

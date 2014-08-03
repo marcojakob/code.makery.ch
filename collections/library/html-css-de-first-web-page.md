@@ -133,7 +133,7 @@ Die Element `<html>` und `<body>` haben wir bereits kennen gelernt. Die Grundstr
 &lt;html>
   &lt;head>
     &lt;meta charset="utf-8">
-    &lt;title>Web Portfolio&lt;/title>
+    &lt;title>Web Portfolio von Marco&lt;/title>
   &lt;/head>
   &lt;body>
     &lt;h1>Web Portfolio von Marco&lt;/h1>
@@ -208,16 +208,16 @@ Der gesamte Code könnte nun etwa so aussehen (ich habe noch eine Unterüberschr
 &lt;html>
   &lt;head>
     &lt;meta charset="utf-8">
-    &lt;title>Web Portfolio&lt;/title>
+    &lt;title>Web Portfolio von Marco&lt;/title>
   &lt;/head>
   &lt;body>
     &lt;h1>Web Portfolio von Marco&lt;/h1>
     
     &lt;h2>Willkommen!&lt;/h2>
     
-    &lt;p>Schön, dass du auf meiner Seite vorbei schaust.&lt;/p>
+    &lt;p>Schön, dass Sie auf meiner Seite vorbeischauen.&lt;/p>
     
-    &lt;p>Du kannst dich ruhig etwas umsehen. Im Blog dokumentiere ich meine Erfahrungen beim Programmieren. Daneben kannst du auch meine Webprojekte anschauen. Viel Spass.&lt;/p>
+    &lt;p>Sie können sich ruhig etwas umsehen. Im Blog dokumentiere ich meine Erfahrungen beim Programmieren. Daneben können Sie auch meine Webprojekte anschauen. Viel Spass.&lt;/p>
     
     &lt;img src="marco.jpg" alt="Foto von mir">
 
