@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Einleitung"
+title: "HTML & CSS Tutorial"
 date: 2014-07-22 00:00
 slug: html-css/de
 github: false

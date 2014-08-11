@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "Unsere erste Webseite"
+title: "HTML & CSS Tutorial: Unsere erste Webseite"
 date: 2014-07-22 00:00
-slug: html-css/de/first-web-page
+slug: html-css/de/part1
 github: false
 published: true
 prettify: true
@@ -11,7 +11,7 @@ sidebars:
 - header: Artikel in dieser Serie
   body:
   - text: "Unsere erste Webseite"
-    link: /library/html-css/de/first-web-page/
+    link: /library/html-css/de/part1/
     paging: 1
     active: true
   - text: "Some Style"
@@ -37,7 +37,7 @@ Für die Webentwicklung brauchen wir zwei Programme: einen <abbr data-toggle="to
 
 Zum Erstellen von Webseiten reicht eigentlich ein ganz normaler Texteditor. Es gibt aber Editoren, die uns die Arbeit beim Programmieren stark vereinfachen. Deshalb empfehle ich, dass Sie gleich mit einem modernen Code-Editor beginnen.
 
-![Brackets Editor](/assets/library/html-css/first-web-page/brackets-editor.png)
+![Brackets Editor](/assets/library/html-css/part1/brackets-editor.png)
 
 Mein aktueller Favorit unter den zahlreichen Editoren ist [Brackets](http://brackets.io/) (kostenlos von Adobe). Ich werde zwischendurch auf die Bedienung von Brackets eingehen, was nicht heisst, dass Sie nicht auch einen anderen Editor verwenden können. Gute Alternativen zu Brackets wären zum Beispiel [Atom](http://atom.io) oder das etwas ältere [Notepad++](http://notepad-plus-plus.org/).
 
@@ -48,7 +48,7 @@ Also, legen Sie los und installieren Sie einen Editor. Wenn Sie nicht wissen wel
 
 Unsere Webseite sollte natürlich in allen gängigen Browsern (Internet Explorer, Firefox, Chrome und Safari) laufen. Für die Webentwicklung ist jedoch unbedingt [Chrome](https://www.google.com/chrome/browser/) zu empfehlen. Chrome beinhaltet sehr nützliche Tools für Entwickler, die wir oft nutzen werden. Ausserdem wird Chrome optimal vom Brackets Editor unterstützt, so dass Änderungen im Editor sofort in Chrome sichtbar sind (live reload).
 
-![Chrome Logo](/assets/library/html-css/first-web-page/chrome-logo.png)
+![Chrome Logo](/assets/library/html-css/part1/chrome-logo.png)
 
 Falls Sie Chrome noch nicht haben, können Sie ihn [hier installieren](https://www.google.com/chrome/browser/).
 
@@ -63,17 +63,17 @@ Ausgerüstet mit Editor und Browser erstellen wir das erste HTML Dokument für u
 
 3. Öffnen Sie das Menu *Datei* und wählen Sie ***Ordner öffnen...***. Suchen Sie dort den vorhin erstellten *Portfolio* Ordner und öffnen Sie diesen.
 <p>
-![Ordner öffnen](/assets/library/html-css/first-web-page/open-folder-de.png)
+![Ordner öffnen](/assets/library/html-css/part1/open-folder-de.png)
 </p>
 
 4. Klicken Sie unterhalb des Ordners *Portfolio* mit der *rechten Maustaste* und wählen Sie *Neue Datei*. Geben Sie der Datei den Namen `index.html`.
 <p>
-![Neue Datei](/assets/library/html-css/first-web-page/new-file-de.png)
+![Neue Datei](/assets/library/html-css/part1/new-file-de.png)
 </p>
 
 5. Nun haben wir eine ganz einfache, leere Textdatei namens `index.html`.
 <p>
-![index.html](/assets/library/html-css/first-web-page/new-index-file-de.png)
+![index.html](/assets/library/html-css/part1/new-index-file-de.png)
 </p>
 
 
@@ -86,7 +86,7 @@ Wie Sie wahrscheinlich ahnen konnten hat der Name `index.html` eine spezielle Be
 
 Nun wollen wir das Dokument mit Inhalt füllen. Tippen Sie die folgenden Zeilen ab. Als Text können Sie natürlich irgend etwas wählen.
 
-![HTML Struktur](/assets/library/html-css/first-web-page/first-website-de.png)
+![HTML Struktur](/assets/library/html-css/part1/first-website-de.png)
 
 Zum Anzeigen der Seite klicken Sie auf den *Blitz* am rechten Rand (Live Vorschau). Falls Brackets den Chrome Browser findet, dann wird jetzt die Seite angezeigt und sobald wir Änderungen vornehmen, werden diese gleich aktualisiert. 
 
@@ -116,7 +116,7 @@ Mit Attributen werden zusätzliche Informationen zu einem Element angegeben. Sie
 
 Als Beispiel schauen wir uns das HTML-Element für einen Link an. Es ist wahrscheinlich eines der wichtigsten Elemente &mdash; ja was wäre das Internet ohne Links?
 
-![HTML Element](/assets/library/html-css/first-web-page/html-element-attribute-de.png)
+![HTML Element](/assets/library/html-css/part1/html-element-attribute-de.png)
 
 Das abgebildete `a`-Element enthält ein `href`-Attribut (kurz für "Hypertext Reference") mit dem Wert `http://code.makery.ch`. Der Browser weiss damit, dass er den folgenden Link anzeigen muss: [Meine Webseite](http://code.makery.ch)
 
@@ -226,9 +226,9 @@ Der gesamte Code könnte nun etwa so aussehen (ich habe noch eine Unterüberschr
 &lt;/html>
 </pre>
 
-So sieht mein Portfolio im Moment im Browser aus:
+So sieht im Moment mein Portfolio im Browser aus:
 
-![Portfolio](/assets/library/html-css/first-web-page/portfolio-de.png)
+![Portfolio](/assets/library/html-css/part1/portfolio-de.png)
 
 ***
 

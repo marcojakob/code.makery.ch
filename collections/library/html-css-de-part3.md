@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "Einführung in CSS"
+title: "HTML & CSS Tutorial: Einführung in CSS"
 date: 2014-07-22 00:00
-slug: html-css/de/intro-to-css
+slug: html-css/de/part3
 github: false
 published: true
 prettify: true
@@ -30,13 +30,13 @@ Nochmals zur Erinnerung: <abbr data-toggle="tooltip" title="Hypertext Markup Lan
 Die Aufteilung von Struktur und Styling hat viele Vorteile, wie wir noch sehen werden. Es ist nicht zwingend, aber meistens schreibt man HTML und CSS auch in separate Dateien. 
 
 
-## Eine CSS-Datei erstellen
+## Eine CSS-Datei einbinden
 
 Eine CSS-Datei ist eine ganz normale Textdatei mit der Endung `.css`, die wir mit der HTML-Datei verknüpfen werden:
 
 Erstellen Sie also in Ihrem *Portfolio*-Ordner eine neue Datei. Wir geben der Datei den Namen `main.css`.
 
-![Neue CSS-Datei](/assets/library/html-css/intro-to-css/new-css-file-de.png)
+![Neue CSS-Datei](/assets/library/html-css/part3/new-css-file-de.png)
 
 Nun wechseln wir zur `index.html`-Datei und fügen innerhalb des `<head>`-Elements ein `<link>`-Element hinzu. Mit dem `<link>`-Element können wir der HTML-Seite mitteilen, dass sie die CSS-Datei laden soll:
 
@@ -94,7 +94,7 @@ h2 {
 
 Das Resultat sollte etwa so aussehen:
 
-![Geänderte Farben](/assets/library/html-css/intro-to-css/changed-color-de.png)
+![Geänderte Farben](/assets/library/html-css/part3/changed-color-de.png)
 
 
 ## Farbcodes
@@ -115,11 +115,11 @@ Das Ausdrücken von Farben mit Hexadezimalzahlen ist sehr beliebt, da man damit 
 
 Falls Sie als Editor den [Brackets](http://brackets.io/) verwenden, können Sie den Farbwähler gleich in der CSS-Datei aufrufen. Klicken Sie dazu mit der rechten Maustaste auf den Farbcode und wählen *Schnell bearbeiten*. Oder drücken Sie die Tastenkombination `Ctrl+E`.
 
-![Schnell bearbeiten](/assets/library/html-css/intro-to-css/quick-edit-de.png)
+![Schnell bearbeiten](/assets/library/html-css/part3/quick-edit-de.png)
 
 Dann erscheint sofort ein Farbwähler, wo man bequem die Farbe auswählen kann. Sie können mit den drei Knöpfen auch zwischen den verschiedenen Notationsformen umschalten.
 
-![Farbwähler](/assets/library/html-css/intro-to-css/color-chooser-de.png)
+![Farbwähler](/assets/library/html-css/part3/color-chooser-de.png)
 
 
 ### Online Farbwähler
@@ -149,6 +149,7 @@ Dazu gibt es verschiedene Hilfen, die das finden einer Farbpalette erleichtern. 
 
 * [Kuler](https://kuler.adobe.com) - eine Farbregel definieren, am Regler mit dem kleinen Pfeil ziehen und schon hat man fünf Farben, die zusammen passen.
 * [Paletton](http://www.paletton.com) - ein ausgeklügleter Regler zum Finden von Farbpaletten.
+* [Colourco.de](http://colourco.de/) - ein weiterer, praktischer Paletten-Generator
 
 
 ## CSS-Regeln
@@ -158,7 +159,7 @@ Sie haben nun bereits gesehen, wie CSS-Regeln die Farbe eines HTML-Elementes ver
 Eine CSS-Regel besteht aus drei Elementen, einem *Selektor*, einer *Eigenschaft* und einem *Wert*:
 
 
-![CSS-Regel](/assets/library/html-css/intro-to-css/css-rule-de.png)
+![CSS-Regel](/assets/library/html-css/part3/css-rule-de.png)
 
 Diese Regel besagt, dass alle `<h2>`-Elemente eine Hintergrundfarbe von `#607d8b` erhalten sollen.
 
@@ -357,7 +358,4 @@ Dann können wir diesen einen Titel im CSS ansprechen mit `.title`. Die CSS-Rege
 
 Wenn alles geklappt hat, dann sieht das Portfolio nun etwa so aus: 
 
-![Portfolio](/assets/library/html-css/intro-to-css/portfolio-de.png)
-
-
-
+![Portfolio](/assets/library/html-css/part3/portfolio-de.png)
