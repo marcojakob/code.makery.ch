@@ -1,32 +1,46 @@
 ---
 layout: article
-title: "HTML & CSS Tutorial: Unsere erste Webseite"
-date: 2014-07-22 00:00
+title: "HTML & CSS Tutorial - Teil 1: Unsere erste Webseite"
+date: 2014-08-13 00:00
 slug: html-css/de/part1
 github: false
 published: true
 prettify: true
 comments: false
 sidebars:
-- header: Artikel in dieser Serie
+- header: Teile dieser Serie
   body:
-  - text: "Unsere erste Webseite"
+  - text: "Einleitung"
+    link: /library/html-css/de/
+    paging: Intro
+  - text: "Teil 1: Unsere erste Webseite"
     link: /library/html-css/de/part1/
     paging: 1
     active: true
-  - text: "Some Style"
-    link: /library/html-css/de/some-style/
+  - text: "Teil 2: Webseite veröffentlichen"
+    link: /library/html-css/de/part2/
     paging: 2
+  - text: "Teil 3: Einführung in CSS"
+    link: /library/html-css/de/part3/
+    paging: 3
+  - text: "Teil 4: Entwicklertools im Browser"
+    link: /library/html-css/de/part4/
+    paging: 4
+  - text: "Teil 5: Navigieren zwischen Seiten"
+    link: /library/html-css/de/part5/
+    paging: 5
+  - text: "Teil 6: Bootstrap Framework verwenden"
+    link: /library/html-css/de/part6/
+    paging: 6
 - header: Downloads
   body:
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
-    icon-css: fa fa-fw fa-file-word-o
+  - text: Portfolio Teil 1
+    link: https://github.com/marcojakob/html-css-tutorial/releases/download/v0.1/portfolio-de-part1.zip
+    icon-css: fa fa-fw fa-file-archive-o
 ---
 
 Wir legen gleich los und erstellen unsere erste Webseite. 
 
-<!-- TODO: Beschreibung des Portfolio-Projektes -->
 
 ## Unsere Tools
 
@@ -155,7 +169,9 @@ Die Element `<html>` und `<body>` haben wir bereits kennen gelernt. Die Grundstr
   * Alles, was zwischen `<p>` und `</p>` steht ist ein Textabsatz (auch **P**aragraph genannt).
 * Nach jedem öffnenden Tag wird das nächste Element eingerückt (mit Tabulator oder zwei Leerschlägen) für eine bessere Übersicht. Dies sollten Sie sich unbedingt auch angewöhnen.
 
-**Tipp:** *Halten Sie das HTML Grundgerüst stets griffbereit. Wir werden es für jede neue HTML-Seite verwenden!*
+<div class="alert alert-info">
+**Tipp:** Halten Sie das HTML Grundgerüst stets griffbereit. Wir werden es für jede neue HTML-Seite verwenden!
+</div>
 
 Mit diesen Grundlegenden HTML-Elementen sind wir nun bestens vorbereitet, um unsere Webseite auf ein neues Level zu bringen. Als erstes fügen wir noch ein Bild ein, damit die Startseite unseres Portfolios etwas interessanter wird.
 
@@ -180,6 +196,16 @@ Wenn eine Datei **auf der gleichen Internetseite** liegt, dann wird eine ***rela
 Eine *relative URL* ist immer *relativ* zur aktuellen HTML-Seite. Wenn die Zieldatei in einem anderen Ordner liegt, muss dies berücksichtigt werden. Wenn das Bild aus dem Beispiel oben in einem Unterordner namens `bilder` liegt, dann würde die *relative URL* `bilder/marco.jpg` lauten. Falls die Datei in einem übergeordneten Ordner liegt, dann können wir mit `../` in diesen Ordner gelangen. Die URL wäre in diesem Fall `../marco.jpg`. 
 
 Wenn die Datei **auf einer anderen Internetseite** liegt, dann wird eine ***absolute URL*** verwendet. Dabei wird der ganze Domainname angegeben. Ein Beispiel wäre `http://code.makery.ch/bilder/marco.jpg`.
+
+<div class="alert alert-info">
+  **Merken Sie sich zu URLs:**
+  <ul>
+    <li>Mit Angabe von `http://` ist eine URL absolut.</li>
+    <li>Ohne Angabe von `http://` ist eine URL relativ zur aktuellen Webseite.</li>
+    <li>Ein Punkt (`.`) verweist auf das aktuelle Verzeichnis.</li>
+    <li>Zwei Punkte (`..`) verweist auf das übergeordnete Verzeichnis.</li>
+  </ul>
+</div>
  
 
 ##### Beispiele für relative und absolute URLs
@@ -190,7 +216,7 @@ Wenn die Datei **auf einer anderen Internetseite** liegt, dann wird eine ***abso
 &lt;a href="blog/mein-erster-eintrag.html">Mein Erster Blogeintrag&lt;/a>
 &lt;a href="../bildergalerie.html">Zurück zur Bildergalerie&lt;/a>
 
-&lt;!-- Relative URL -->
+&lt;!-- Absolute URL -->
 &lt;a href="http://www.mein-super-kollege.ch/blog.html">Blog eines Kollegen&lt;/a>
 </pre>
 
@@ -230,16 +256,10 @@ So sieht im Moment mein Portfolio im Browser aus:
 
 ![Portfolio](/assets/library/html-css/part1/portfolio-de.png)
 
+
 ***
 
-Als nächster Schritt...
-
-
-
-<!-- TODO: Bschreibung wie weiter. -->
-
-
-
+&rarr; Im nächsten Teil lernen Sie, wie Sie die Webseite im Internet veröffentlichen können. Weiter geht's mit [Teil 2: Webseite veröffentlichen](/library/html-css/de/part2/)
 
 
 

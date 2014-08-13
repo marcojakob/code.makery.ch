@@ -1,33 +1,52 @@
 ---
 layout: article
-title: "HTML & CSS Tutorial: Einführung in CSS"
-date: 2014-07-22 00:00
+title: "HTML & CSS Tutorial - Teil 3: Einführung in CSS"
+date: 2014-08-13 00:00
 slug: html-css/de/part3
 github: false
 published: true
 prettify: true
 comments: false
 sidebars:
-- header: Artikel in dieser Serie
+- header: Teile dieser Serie
   body:
-  - text: "Unsere erste Webseite"
-    link: /library/html-css/de/first-web-page/
+  - text: "Einleitung"
+    link: /library/html-css/de/
+    paging: Intro
+  - text: "Teil 1: Unsere erste Webseite"
+    link: /library/html-css/de/part1/
     paging: 1
+  - text: "Teil 2: Webseite veröffentlichen"
+    link: /library/html-css/de/part2/
+    paging: 2
+  - text: "Teil 3: Einführung in CSS"
+    link: /library/html-css/de/part3/
+    paging: 3
+    active: true
+  - text: "Teil 4: Entwicklertools im Browser"
+    link: /library/html-css/de/part4/
+    paging: 4
+  - text: "Teil 5: Navigieren zwischen Seiten"
+    link: /library/html-css/de/part5/
+    paging: 5
+  - text: "Teil 6: Bootstrap Framework verwenden"
+    link: /library/html-css/de/part6/
+    paging: 6
 - header: Downloads
   body:
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
-    icon-css: fa fa-fw fa-file-word-o
+  - text: Portfolio Teil 3
+    link: https://github.com/marcojakob/html-css-tutorial/releases/download/v0.1/portfolio-de-part3.zip
+    icon-css: fa fa-fw fa-file-archive-o
 ---
 
-Vorhin haben Sie eine erste Webseite, Ihr *Web Portfolio*, erstellt. Zugegeben, die Webseite hat noch wenig Inhalt und sieht nicht besonders ansprechend aus. Das wollen wir jetzt ändern. In diesem Kapitel lernen Sie ....
-Im nächsten Kapitel werden wir mit einem Framework ...
+Vorhin haben Sie eine erste Webseite erstellt und veröffentlicht. Zugegeben, die Webseite hat noch wenig Inhalt und sieht nicht besonders ansprechend aus. Das wollen wir jetzt ändern. In diesem Teil lernen Sie, wie Sie mit CSS die Seite gestalten können. Sptäer, im [Teil 5](/library/html-css/de/part5/) werden wir mit der Hilfe von einem Framework noch mehr Style in die Webseite bringen. 
 
-<!-- TODO: Satz fertig schreiben, evtl. Screenshot von Portfolio einfügen. -->
+
+## Struktur und Style
 
 Nochmals zur Erinnerung: <abbr data-toggle="tooltip" title="Hypertext Markup Language">HTML</abbr> beschreibt die Struktur einer Webseite während <abbr data-toggle="tooltip" title="Cascading Style Sheet">CSS</abbr> die visuelle Erscheinung definiert. 
 
-Die Aufteilung von Struktur und Styling hat viele Vorteile, wie wir noch sehen werden. Es ist nicht zwingend, aber meistens schreibt man HTML und CSS auch in separate Dateien. 
+Die Aufteilung von Struktur und Style hat viele Vorteile, wie wir noch sehen werden. Es ist nicht zwingend, aber meistens schreibt man HTML und CSS auch in separate Dateien.
 
 
 ## Eine CSS-Datei einbinden
@@ -74,7 +93,9 @@ Fügen Sie dieses Element im `<head>`-Bereich ein. Dann sollte Ihr Code etwa so 
 &lt;/html>
 </pre>
 
-**Wichtig:** Damit das CSS gefunden wird, muss das `href`-Attribut genau auf die Datei verweisen. Das heisst auch, falls die Datei in einem Unterordner liegen würde, müsste dieser auch angegeben werden, also zum Beispiel `href="unterordner/main.css"`. Mehr dazu siehe unter [relative und absolute URLs](/library/html-css/de/first-web-page/#relative-und-absolute-urls).
+<div class="alert alert-info">
+**Wichtig:** Damit das CSS gefunden wird, muss das `href`-Attribut genau auf die Datei verweisen. Das heisst auch, falls die Datei in einem Unterordner liegen würde, müsste dieser auch angegeben werden, also zum Beispiel `href="unterordner/main.css"`. Mehr dazu siehe unter <a class="alert-link" href="/library/html-css/de/part1/#relative-und-absolute-urls">relative und absolute URLs</a>.
+</div>
 
 
 ## Farben
@@ -168,8 +189,9 @@ Diese Regel besagt, dass alle `<h2>`-Elemente eine Hintergrundfarbe von `#607d8b
 
 Selektoren geben an, auf welches HTML-Element eine CSS-Regel angewandt werden soll. 
 
-**Hinweis:** *Wir werden hier nur die wichtigsten Selektoren kennen lernen. Damit kommt man schon sehr weit. Für eine ausführlichere Übersicht suchen Sie im Internet nach "CSS Selektoren".*
-
+<div class="alert alert-info">
+**Hinweis:** Wir werden hier nur die wichtigsten Selektoren kennen lernen. Damit kommt man schon sehr weit. Für eine ausführlichere Übersicht suchen Sie im Internet nach "CSS Selektoren".
+</div>
 
 #### Typselektor
 
@@ -266,7 +288,9 @@ p a {
 
 Der Nachkommenselektor `p a` wählt alle `a`-Elemente aus, die irgendwo innerhalb eines `p`-Elementes vorkommen. In unserem Beispiel würde die CSS-Regel auf *Meine Webseite* zutreffen, jedoch nicht auf *Example Webseite*. 
 
-**Wichtig:** *Das `a`-Element muss nicht unbedingt direkt dem `p`-Element untergeordnet sein. Der Nachkommenselektor trifft auf irgend eine *Nachkomme* zu. Für den anderen Fall gibt es den Kindselektor (`>`), auf den ich jedoch hier nicht eingehen werde.*
+<div class="alert alert-info">
+**Wichtig:** Das `a`-Element muss nicht unbedingt direkt dem `p`-Element untergeordnet sein. Der Nachkommenselektor trifft auf irgend ein *Nachkomme* zu. Für den anderen Fall gibt es den Kindselektor (`>`), auf den ich jedoch hier nicht eingehen werde.
+</div>
 
 
 ### CSS-Eigenschaften
@@ -359,3 +383,8 @@ Dann können wir diesen einen Titel im CSS ansprechen mit `.title`. Die CSS-Rege
 Wenn alles geklappt hat, dann sieht das Portfolio nun etwa so aus: 
 
 ![Portfolio](/assets/library/html-css/part3/portfolio-de.png)
+
+
+***
+
+&rarr; Weiter geht's mit [Teil 4: Entwicklertools im Browser](/library/html-css/de/part4/).

@@ -5240,8 +5240,7 @@ iframe {
 
 .panel-container {
   position: relative; }
-  .panel-container .panel-body img,
-  .panel-container .panel-body i {
+  .panel-container .panel-body img {
     float: left;
     max-width: 120px; }
   .panel-container .panel-body p {
@@ -5274,6 +5273,9 @@ iframe {
 .topic-dart {
   color: #00bcd4; }
 
+.topic-html-css {
+  color: #5677fc; }
+
 .label-topic-java {
   background-color: #9c27b0; }
   .label-topic-java[href]:hover, .label-topic-java[href]:focus {
@@ -5288,6 +5290,11 @@ iframe {
   background-color: #00bcd4; }
   .label-topic-dart[href]:hover, .label-topic-dart[href]:focus {
     background-color: #008fa1; }
+
+.label-topic-html-css {
+  background-color: #5677fc; }
+  .label-topic-html-css[href]:hover, .label-topic-html-css[href]:focus {
+    background-color: #244ffb; }
 
 /*
 // Collapsible panel

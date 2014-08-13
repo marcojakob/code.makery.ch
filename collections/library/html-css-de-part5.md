@@ -1,7 +1,7 @@
 ---
 layout: article
-title: "HTML & CSS Tutorial: Navigieren zwischen Seiten"
-date: 2014-07-22 00:00
+title: "HTML & CSS Tutorial - Teil 5: Navigieren zwischen Seiten"
+date: 2014-08-13 00:00
 slug: html-css/de/part5
 github: false
 published: true
@@ -10,14 +10,33 @@ comments: false
 sidebars:
 - header: Teile dieser Serie
   body:
-  - text: "Unsere erste Webseite"
-    link: /library/html-css/de/first-web-page/
+  - text: "Einleitung"
+    link: /library/html-css/de/
+    paging: Intro
+  - text: "Teil 1: Unsere erste Webseite"
+    link: /library/html-css/de/part1/
     paging: 1
+  - text: "Teil 2: Webseite veröffentlichen"
+    link: /library/html-css/de/part2/
+    paging: 2
+  - text: "Teil 3: Einführung in CSS"
+    link: /library/html-css/de/part3/
+    paging: 3
+  - text: "Teil 4: Entwicklertools im Browser"
+    link: /library/html-css/de/part4/
+    paging: 4
+  - text: "Teil 5: Navigieren zwischen Seiten"
+    link: /library/html-css/de/part5/
+    paging: 5
+    active: true
+  - text: "Teil 6: Bootstrap Framework verwenden"
+    link: /library/html-css/de/part6/
+    paging: 6
 - header: Downloads
   body:
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
-    icon-css: fa fa-fw fa-file-word-o
+  - text: Portfolio Teil 5
+    link: https://github.com/marcojakob/html-css-tutorial/releases/download/v0.1/portfolio-de-part5.zip
+    icon-css: fa fa-fw fa-file-archive-o
 ---
 
 Unser Portfolio hat bis hierhin nur eine Startseite. Die meisten *Websites* (gemeint ist damit der ganze Webauftritt) haben natürlich mehr als nur eine Seite. In diesem Teil werden wir weitere Seiten erstellen und eine Navigation einfügen, damit die Besucher zwischen den verschiedenen Seiten wechseln können.
@@ -25,7 +44,7 @@ Unser Portfolio hat bis hierhin nur eine Startseite. Die meisten *Websites* (gem
 
 ## Neue Seiten erstellen
 
-Wir erstellen drei neue Seiten: Eine Seite für unseren eigenen **Blog**, ein für **Projekte** und mit **Kontaktinformationen**. 
+Wir erstellen drei neue Seiten: Eine Seite für unseren eigenen **Blog**, eine für **Projekte** und eine für **Kontaktinformationen**. 
 
 Diese drei Seiten stellen unsere "Hauptseiten" dar. Das heisst, dass wir daran denken müssen, dass jeweils weitere Unterseiten dazukommen könnten. So wird es zum Beispiel im Blog später für jeden Blogeintrag eine eigenen Unterseite geben. Aus diesem Grund werden wir für diese drei Seiten **je einen eigenen Unterordner** erstellen. Das gibt uns eine gute Ordnung. 
 
@@ -33,7 +52,9 @@ Damit bei einem Aufruf des Unterordners die jeweilige Hauptseite automatisch als
 
 Eine neue Seite zu erstellen ist einfach. Am besten kopieren Sie die bisherige `index.html`, damit Sie bereits die Grundstruktur haben. Dann müssen wir natürlich jeweils ein paar Anpassungen vornehmen.
 
-**Achtung:** *Achten Sie darauf, dass Sie beim Benennen von Unterordnern und Dateinamen keine Umlaute und Sonderzeichen oder Leerschläge verwenden. Meistens wählt man auch nur Kleinbuchstaben. Sie können Wörter aber zum Beispiel durch ein Minus (`-`) trennen, wenn Sie möchten.* 
+<div class="alert alert-info">
+**Wichtig:** Achten Sie darauf, dass Sie beim Benennen von Unterordnern und Dateinamen keine Umlaute, Sonderzeichen oder Leerschläge verwenden. Meistens wählt man auch nur Kleinbuchstaben. Sie können Wörter aber zum Beispiel durch ein Minus (`-`) trennen, wenn Sie möchten.
+</div>
 
 
 ### Seite für den Blog
@@ -90,13 +111,15 @@ Im HTML-Code oben sehen Sie ein neues Element mit den Tags `<!--` und `-->`. Mit
 
 #### Blogeintrag als Unterseite
 
-Der Blog braucht natürlich noch Einträge. Wir erstellen für jeden Blogeintrag eine eigen HTML-Unterseite. Kopieren Sie die Datei `blog/index.html` und geben Sie Ihr den Namen `2014-08-02-erster-eintrag.html`. 
+Der Blog braucht natürlich noch Einträge. Wir erstellen für jeden Blogeintrag eine eigen HTML-Unterseite. Erstellen Sie einen Unterordner innerhalb des `blog`-Ordners mit dem Namen `2014-08-02-erster-eintrag`. Kopieren Sie die Datei `blog/index.html` in diesen Ordner hinein.
 
-Die Zahlenkombination `2014-08-02` ist das Datum in umgekehrter Reihenfolge, also der 2. August 2014. Man könnte natürlich irgend einen Namen vergeben, aber wenn man das Datum so in den Dateinamen integriert, dann hat man automatisch eine chronologische Sortierung der Dateien. Dies gibt uns eine bessere Übersicht, wenn wir später viele Blogeinträge haben.
+![Blogeintrag](/assets/library/html-css/part5/blog-entry-subfolder-de.png)
+
+Die Zahlenkombination `2014-08-02` ist das Datum in umgekehrter Reihenfolge, also der 2. August 2014. Man könnte natürlich irgend einen Namen vergeben, aber wenn man das Datum so in den Dateinamen integriert, dann hat man automatisch eine chronologische Sortierung der Dateien oder Ordner. Dies gibt uns eine bessere Übersicht, wenn wir später viele Blogeinträge haben.
 
 Im Blogeintrag ändern wir den Inhalt wie folgt ab:
 
-##### blog/2014-08-02-erster-eintrag.html
+##### blog/2014-08-02-erster-eintrag/index.html
 
 <pre class="prettyprint lang-html">
 &lt;!DOCTYPE html>
@@ -143,6 +166,10 @@ Mit solchen Blogeinträgen werden Sie beim Lernen von Programmierung viel schnel
 
 *Also, warten Sie nicht und legen Sie los. Es lohnt sich!*
 
+<div class="alert alert-info">
+**Hinweis:** Erstellen Sie für jeden Blogeintrag einen eigenen Unterordner (mit einer `index.html`-Seite). So haben Sie eine gute Ordnung und können Bilder oder andere Dateien für den Blogeintrag im Unterordner ablegen.
+</div>
+
 
 ### Seite für Projekte
 
@@ -176,7 +203,9 @@ Gehen Sie wie oben beim Blog vor und erstellen Sie einen Unterordner `projekte` 
 
 Als letzte Hauptseite fügen wir eine Seite mit Kontaktinformationen hinzu. Erstellen Sie einen Unterordner `kontakt` mit einer Datei `index.html`.
 
-**Wichtig:** *Überlegen Sie sich gut, welche Informationen Sie öffentlich machen wollen! Geben Sie **nicht Ihre Haupt-E-Mail-Adresse an**, denn es kann sein, dass Sie nachher auf diese Adresse Spamnachrichten erhalten.*
+<div class="alert alert-danger">
+**Wichtig:** *Überlegen Sie sich gut, welche Informationen Sie öffentlich machen wollen! Geben Sie zum Beispiel **nicht Ihre Haupt-E-Mail-Adresse an**, denn es kann sein, dass Sie nachher auf diese Adresse Spamnachrichten erhalten.*
+</div>
 
 ##### kontakt/index.html
 
@@ -198,7 +227,6 @@ Als letzte Hauptseite fügen wir eine Seite mit Kontaktinformationen hinzu. Erst
     
     &lt;p>
       Marco Jakob&lt;br>
-      Strasse 55b&lt;br>
       Schweiz
     &lt;/p>
   &lt;/body>
@@ -231,19 +259,32 @@ Mit einfachen Links können wir von der Startseite auf die anderen Seiten spring
 
 <pre class="prettyprint lang-html">
 &lt;body>
-  &lt;a href="/">Home&lt;/a>
-  &lt;a href="blog/">Blog&lt;/a>
-  &lt;a href="projekte/">Projekte&lt;/a>
-  &lt;a href="kontakt/">Kontakt&lt;/a>
+  <mark>&lt;a href="./">Home&lt;/a></mark>
+  <mark>&lt;a href="blog/">Blog&lt;/a></mark>
+  <mark>&lt;a href="projekte/">Projekte&lt;/a></mark>
+  <mark>&lt;a href="kontakt/">Kontakt&lt;/a></mark>
 
   &lt;h1 class="title">Web Portfolio von Marco&lt;/h1>
 </pre>
+
+<div class="alert alert-info">
+**Hinweis:** Der Link zu `./` verweist auf das aktuelle Verzeichnis. Mehr dazu im Abschnitt <a class="alert-link" href="/library/html-css/de/part1/#relative-und-absolute-urls">relative und absolute URLs</a>.
+</div>
 
 Und so sieht die Navigation nun aus:
 
 ![Navigation mit Links](/assets/library/html-css/part5/navigation-links-de.png)
 
 Überprüfen Sie, ob die Links auch wirklich funktionieren und Sie zur gewollten Seite bringen.
+
+<div class="alert alert-info">
+<p>
+**Hinweis:** Wenn Sie die Seite als Datei direkt im Browser öffnen (ohne die *Live-Vorschau* vom Brackets-Editor), dann werden die Links nicht ganz korrekt funktionieren. Der Grund ist, dass das Dateisystem einfach den Ordnerinhalt anzeigt und nicht automatisch `index.html` öffnet. Sie müssen dann manuell auf `index.html` klicken. 
+</p>
+<p>
+Sobald Sie aber die Seite auf einem Server veröffentlichen, sollten die Links ganz normal funktionieren.
+</p>
+</div>
 
 Im Moment ist unsere Navigation einfach eine Aneinanderreihung von Links. Meistens verwendet man für eine Navigation aber eine HTML-Liste von Links. Mit einer Liste werden die Navigationselemente entweder horizontal oder vertikal zusammen gruppiert und können so später besser formatiert werden. 
 
@@ -319,7 +360,7 @@ Die Links unserer Navigation werden also alle verpackt in `<li>`-Elemente, welch
 
 <pre class="prettyprint lang-html">
 &lt;ul>
-  &lt;li>&lt;a href="/">Home&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="./">Home&lt;/a>&lt;/li>
   &lt;li>&lt;a href="blog/">Blog&lt;/a>&lt;/li>
   &lt;li>&lt;a href="projekte/">Projekte&lt;/a>&lt;/li>
   &lt;li>&lt;a href="kontakt/">Kontakt&lt;/a>&lt;/li>
@@ -343,11 +384,15 @@ Auf unserer Blog-Seite hatten wir noch etwas Platz gelassen, wo wir unserer Blog
 &lt;!-- Hier kommt eine Liste mit allen Blogeinträgen. -->
 &lt;ul>
   &lt;li>Weitere Einträge folgen...&lt;/li>
-  &lt;li>&lt;a href="2014-08-02-erster-eintrag.html">Erster Eintrag&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="2014-08-02-erster-eintrag/">Erster Eintrag&lt;/a>&lt;/li>
 &lt;/ul>
 </pre>
 
+<div class="alert alert-info">
 **Hinweis:** *Blogeinträge werden meist in umgekehrter Reihenfolge aufgelistet, so dass der letzte Eintrag zuoberst in der Liste erscheint.*
+</div>
 
 
+***
 
+&rarr; Fahren Sie weiter mit [Teil 6: Bootstrap Framework verwenden](/library/html-css/de/part6/).

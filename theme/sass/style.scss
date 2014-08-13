@@ -346,8 +346,7 @@ iframe {
   position: relative; 
   
   .panel-body {
-    img, 
-    i {
+    img {
       float: left;
       max-width: 120px;
     }
@@ -401,6 +400,10 @@ iframe {
   color: $topic-dart; 
 }
 
+.topic-html-css {
+  color: $topic-html-css; 
+}
+
 // Topic Labels
 .label-topic-java {
   @include label-variant($topic-java);
@@ -412,6 +415,10 @@ iframe {
 
 .label-topic-dart {
   @include label-variant($topic-dart);
+}
+
+.label-topic-html-css {
+  @include label-variant($topic-html-css);
 }
 
 /*

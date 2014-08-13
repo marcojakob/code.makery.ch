@@ -1,6 +1,14 @@
 {
-  "topics": [ "Java", "JavaFX", "Dart" ],
+  "topics": [ "HTML-CSS", "Java", "JavaFX", "Dart" ],
   "items": [
+    {
+      "title": "HTML & CSS (BETA, GERMAN ONLY)",
+      "link": "/library/html-css/",
+      "image": "/assets/library/html-css/html-css.png",
+      "summary": "Course to learn HTML & CSS for beginners. <br><i>Note: This course is not yet finished and is currently <b>only available in German</b>.</i>",
+      "topics": [ "HTML-CSS" ],
+      "languages": [ "Deutsch" ]
+    },
     {
       "title": "GreenfootKara",
       "link": "/library/greenfoot-kara/",

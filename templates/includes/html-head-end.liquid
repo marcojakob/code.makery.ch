@@ -2,6 +2,8 @@
     <link href="/theme/css/style.min.css" rel="stylesheet" type="text/css" media="all" />
     {%- if model.canonical -%}
     <link rel="canonical" href="{{ global.domain }}{{ model.canonical }}" />
+    {%- else -%}
+    <link rel="canonical" href="{% include "util/domain-and-url" %}" />
     {%- endif -%}
     <link rel="alternate" type="application/rss+xml" href="/rss{% if mixture.route.tag %}-{{ mixture.route.tag }}{% endif %}" title="{{ global.title }} - RSS Feed">
     <meta name="description" content="{{ model.description }}">

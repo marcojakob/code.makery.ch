@@ -1,32 +1,44 @@
 ---
 layout: article
-title: "HTML & CSS Tutorial: Webseite veröffentlichen"
-date: 2014-07-22 00:00
+title: "HTML & CSS Tutorial - Teil 2: Webseite veröffentlichen"
+date: 2014-08-13 00:00
 slug: html-css/de/part2
 github: false
 published: true
 prettify: true
 comments: false
 sidebars:
-- header: Artikel in dieser Serie
+- header: Teile dieser Serie
   body:
-  - text: "Unsere erste Webseite"
+  - text: "Einleitung"
+    link: /library/html-css/de/
+    paging: Intro
+  - text: "Teil 1: Unsere erste Webseite"
     link: /library/html-css/de/part1/
     paging: 1
-    active: true
-  - text: "Some Style"
-    link: /library/html-css/de/some-style/
+  - text: "Teil 2: Webseite veröffentlichen"
+    link: /library/html-css/de/part2/
     paging: 2
-- header: Downloads
-  body:
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
-    icon-css: fa fa-fw fa-file-word-o
+    active: true
+  - text: "Teil 3: Einführung in CSS"
+    link: /library/html-css/de/part3/
+    paging: 3
+  - text: "Teil 4: Entwicklertools im Browser"
+    link: /library/html-css/de/part4/
+    paging: 4
+  - text: "Teil 5: Navigieren zwischen Seiten"
+    link: /library/html-css/de/part5/
+    paging: 5
+  - text: "Teil 6: Bootstrap Framework verwenden"
+    link: /library/html-css/de/part6/
+    paging: 6
 ---
 
 Im ersten Teil haben wir unsere erste Webseite erstellt. Es wäre ja schade, wenn diese Webseite nur auf unserem Computer liegt und sie gar nie von jemand anderem angeschaut werden kann. Deshalb werden wir jetzt die Webseite gleich live ins Internet stellen. 
 
-*Keine Angst, Sie können die Webseite später jederzeit ändern oder löschen. Sie müssen auch nicht befürchten, dass sofort viele Besucher Ihre Webseite anschauen werden. Denn solange Sie niemandem einen Link auf die Seite schicken oder den Link irgendwo veröffentlichen, wird wohl kaum jemand einfach auf Ihre Seite stossen.*
+<div class="alert alert-info">
+**Keine Angst:** Sie können die Webseite später jederzeit ändern oder löschen. Sie müssen auch nicht befürchten, dass sofort viele Besucher Ihre Webseite anschauen werden. Denn solange Sie niemandem einen Link auf die Seite schicken oder den Link irgendwo veröffentlichen, wird wohl kaum jemand einfach auf Ihre Seite stossen.
+</div>
 
 
 ## Hosting
@@ -112,4 +124,7 @@ Irgendwann kommt der Zeitpunkt, wo Sie einen ganz eigenen Domainnamen, wie zum B
 Ansonsten gibt es zahlreiche Webhosting- und Registrar-Dienste. Es lohnt sich ein paar Dienste zu vergleichen. Wenn Sie persönlichen Support möchten, können Sie auch mit einem Anbieter in Ihrer Umgebung Kontakt aufnehmen.
 
 
+***
+
+&rarr; Im nächsten Teil geht es darum, der Webseite etwas Style einzuhauchen. Weiter geht's also mit [Teil 3: Einführung in CSS](/library/html-css/de/part3/).
 

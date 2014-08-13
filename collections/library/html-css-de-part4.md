@@ -1,23 +1,37 @@
 ---
 layout: article
-title: "Entwicklertools im Browser"
-date: 2014-07-22 00:00
+title: "HTML & CSS Tutorial - Teil 4: Entwicklertools im Browser"
+date: 2014-08-13 00:00
 slug: html-css/de/part4
 github: false
 published: true
 prettify: true
 comments: false
 sidebars:
-- header: Artikel in dieser Serie
+- header: Teile dieser Serie
   body:
-  - text: "Unsere erste Webseite"
-    link: /library/html-css/de/first-web-page/
+  - text: "Einleitung"
+    link: /library/html-css/de/
+    paging: Intro
+  - text: "Teil 1: Unsere erste Webseite"
+    link: /library/html-css/de/part1/
     paging: 1
-- header: Downloads
-  body:
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
-    icon-css: fa fa-fw fa-file-word-o
+  - text: "Teil 2: Webseite veröffentlichen"
+    link: /library/html-css/de/part2/
+    paging: 2
+  - text: "Teil 3: Einführung in CSS"
+    link: /library/html-css/de/part3/
+    paging: 3
+  - text: "Teil 4: Entwicklertools im Browser"
+    link: /library/html-css/de/part4/
+    paging: 4
+    active: true
+  - text: "Teil 5: Navigieren zwischen Seiten"
+    link: /library/html-css/de/part5/
+    paging: 5
+  - text: "Teil 6: Bootstrap Framework verwenden"
+    link: /library/html-css/de/part6/
+    paging: 6
 ---
 
 
@@ -36,7 +50,9 @@ Versuchen Sie das gleich mal auf Ihrer Portfolio-Webseite. Es sollte sich nun fo
 
 ![DevTools öffnen](/assets/library/html-css/part4/open-devtools-de.png)
 
-**Hinweis:** *Wenn Sie den Brackets-Editor verwenden, deaktivieren Sie die Live-Vorschau und laden Sie die Seite neu. Ansonsten werden noch zusätzliche "ids" von Brackets angezeigt.*
+<div class="alert alert-info">
+**Hinweis:** Wenn Sie den Brackets-Editor verwenden, deaktivieren Sie die Live-Vorschau und laden Sie die Seite neu. Ansonsten werden noch zusätzliche "ids" von Brackets angezeigt.
+</div>
 
 
 ## Ein Element untersuchen
@@ -77,3 +93,8 @@ Wir werden *DevTools* immer mal wieder verwenden. Es gibt noch viele weitere Fun
 Es gibt noch viele weiter Möglichkeiten, um mit *DevTools* zu arbeite. Wenn Sie mehr darüber wissen möchten, lesen Sie die [DevTools Dokumentation](https://developer.chrome.com/devtools/index).
 
 Ausserdem gibt es einen sehr guten [DevTools Online-Kurs](http://discover-devtools.codeschool.com/), welcher gratis zur Verfügung steht. 
+
+
+***
+
+&rarr; Im nächsten Teil erstellen wir weitere Seiten und eine Navigation: [Teil 5: Navigieren zwischen Seiten](/library/html-css/de/part5/).
