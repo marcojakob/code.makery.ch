@@ -32,6 +32,9 @@ sidebars:
   - text: "Teil 6: Bootstrap Framework verwenden"
     link: /library/html-css/de/part6/
     paging: 6
+  - text: "Teil 7: Wie weiter?"
+    link: /library/html-css/de/part7/
+    paging: 7
 - header: Downloads
   body:
   - text: Portfolio Teil 1
@@ -51,18 +54,21 @@ Für die Webentwicklung brauchen wir zwei Programme: einen <abbr data-toggle="to
 
 Zum Erstellen von Webseiten reicht eigentlich ein ganz normaler Texteditor. Es gibt aber Editoren, die uns die Arbeit beim Programmieren stark vereinfachen. Deshalb empfehle ich, dass Sie gleich mit einem modernen Code-Editor beginnen.
 
-![Brackets Editor](/assets/library/html-css/part1/brackets-editor.png)
+![Brackets Editor](/assets/library/html-css/part1/brackets-editor-screenshot.png)
 
 Mein aktueller Favorit unter den zahlreichen Editoren ist [Brackets](http://brackets.io/) (kostenlos von Adobe). Ich werde zwischendurch auf die Bedienung von Brackets eingehen, was nicht heisst, dass Sie nicht auch einen anderen Editor verwenden können. Gute Alternativen zu Brackets wären zum Beispiel [Atom](http://atom.io) oder das etwas ältere [Notepad++](http://notepad-plus-plus.org/).
 
-Also, legen Sie los und installieren Sie einen Editor. Wenn Sie nicht wissen welchen, nehmen Sie vorläufig mal [Brackets](http://brackets.io).
+<a href="http://brackets.io" target="_blank">![Brackets Editor Logo](/assets/library/html-css/part1/brackets-editor-logo.jpg)
+</a>
+
+Also, legen Sie los und installieren Sie einen Editor. Wenn Sie nicht wissen welchen, nehmen Sie [Brackets](http://brackets.io).
 
 
 ### Browser
 
 Unsere Webseite sollte natürlich in allen gängigen Browsern (Internet Explorer, Firefox, Chrome und Safari) laufen. Für die Webentwicklung ist jedoch unbedingt [Chrome](https://www.google.com/chrome/browser/) zu empfehlen. Chrome beinhaltet sehr nützliche Tools für Entwickler, die wir oft nutzen werden. Ausserdem wird Chrome optimal vom Brackets Editor unterstützt, so dass Änderungen im Editor sofort in Chrome sichtbar sind (live reload).
 
-![Chrome Logo](/assets/library/html-css/part1/chrome-logo.png)
+<a href="https://www.google.com/chrome/browser/" target="_blank">![Chrome Logo](/assets/library/html-css/part1/chrome-logo.png)</a>
 
 Falls Sie Chrome noch nicht haben, können Sie ihn [hier installieren](https://www.google.com/chrome/browser/).
 
@@ -102,13 +108,36 @@ Nun wollen wir das Dokument mit Inhalt füllen. Tippen Sie die folgenden Zeilen 
 
 ![HTML Struktur](/assets/library/html-css/part1/first-website-de.png)
 
-Zum Anzeigen der Seite klicken Sie auf den *Blitz* am rechten Rand (Live Vorschau). Falls Brackets den Chrome Browser findet, dann wird jetzt die Seite angezeigt und sobald wir Änderungen vornehmen, werden diese gleich aktualisiert. 
+Zum Anzeigen der Seite klicken Sie auf den *Blitz* am rechten Rand (Live-Vorschau). Falls Brackets den Chrome Browser findet, dann wird jetzt die Seite angezeigt und sobald wir Änderungen vornehmen, werden diese gleich aktualisiert. 
 
+<div class="alert alert-info">
+<p>
 Falls die Seite **nicht angezeigt wird**: Suchen Sie die `index.html`-Datei auf Ihrem Computer und öffnen Sie diese mit Chrome oder einem anderen Browser.
-
+</p>
+<p>
 Falls die Seite **nicht aktualisiert wird** bei Änderungen: Klicken Sie im Browser die Taste `F5` oder `cmd+r`.
+</p>
+</div>
 
-*Gratuliere! Sie haben soeben Ihre erste Webseite erstellt!*
+***Gratuliere! Sie haben soeben Ihre erste Webseite erstellt!***
+
+
+### Richtiges Einrücken
+
+Damit Sie die Übersicht behalten ist es wichtig, dass Sie die Zeilen immer korrekt mit der **Tabulator-Taste** einrücken. Die Standardeinstellung in Brackets ist meist, dass ein Tabulator 4 Leerzeichen lang ist. Dies ist etwas lang. Ich empfehle deshalb, dass Sie die Einstellung am unteren Rand von Brackets auf `Leerzeichen: 2` ändern:
+
+![Brackets Leerzeichen](/assets/library/html-css/part1/brackets-spaces-de.png)
+
+**Wichtig:** Schauen Sie den **Beispielcode immer ganz genau an** und rücken Sie Ihren Code entsprechend ein. Es ist wirklich wichtig, dass Sie sich gleich von Anfang an sauberes Einrücken angewöhnen!
+
+<div class="alert alert-info">
+<p>
+**Tipp 1:** Mit `Shift+Tab` können Sie nach den Code nach links schieben.
+</p>
+<p>
+**Tipp 2:** Wenn Sie mehrere Zeilen markieren können Sie diese mit `Tab` oder `Shift+Tab` gleichzeitig einrücken.
+</p>
+</div>
 
 
 ## HTML-Elemente
@@ -170,7 +199,15 @@ Die Element `<html>` und `<body>` haben wir bereits kennen gelernt. Die Grundstr
 * Nach jedem öffnenden Tag wird das nächste Element eingerückt (mit Tabulator oder zwei Leerschlägen) für eine bessere Übersicht. Dies sollten Sie sich unbedingt auch angewöhnen.
 
 <div class="alert alert-info">
-**Tipp:** Halten Sie das HTML Grundgerüst stets griffbereit. Wir werden es für jede neue HTML-Seite verwenden!
+<p>
+**Tipp 1:** Halten Sie das HTML Grundgerüst stets griffbereit. Wir werden es für jede neue HTML-Seite verwenden!
+</p>
+<p>
+**Tipp 2:** Verwenden Sie die Tastenkombination `Ctrl+S` zum Speichern. 
+</p>
+<p>
+**Tipp 3:** Verwenden Sie die Tastenkombination `Ctrl+Z` für Rückgängig.
+</p>
 </div>
 
 Mit diesen Grundlegenden HTML-Elementen sind wir nun bestens vorbereitet, um unsere Webseite auf ein neues Level zu bringen. Als erstes fügen wir noch ein Bild ein, damit die Startseite unseres Portfolios etwas interessanter wird.
@@ -260,6 +297,5 @@ So sieht im Moment mein Portfolio im Browser aus:
 ***
 
 &rarr; Im nächsten Teil lernen Sie, wie Sie die Webseite im Internet veröffentlichen können. Weiter geht's mit [Teil 2: Webseite veröffentlichen](/library/html-css/de/part2/)
-
 
 

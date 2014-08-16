@@ -32,6 +32,9 @@ sidebars:
     link: /library/html-css/de/part6/
     paging: 6
     active: true
+  - text: "Teil 7: Wie weiter?"
+    link: /library/html-css/de/part7/
+    paging: 7
 - header: Downloads
   body:
   - text: Portfolio Teil 6

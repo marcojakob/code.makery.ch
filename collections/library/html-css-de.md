@@ -32,11 +32,14 @@ sidebars:
   - text: "Teil 6: Bootstrap Framework verwenden"
     link: /library/html-css/de/part6/
     paging: 6
+  - text: "Teil 7: Wie weiter?"
+    link: /library/html-css/de/part7/
+    paging: 7
 ---
 
 Mit diesem Tutorial lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen **sofort mit einem Projekt**, anstatt zuerst langweilige Theorie abzuhandeln.
 
-Die Theorie wird laufend erklärt, wenn sie gerade für das Projekt benötigt wird. Sie werden damit sehr schnell eine solide Grundlage für die Webentwicklung erhalten. Ich werde Sie auf verschiedene Unterlagen hinweisen, so dass Sie später beliebige Bereiche vertiefen können. 
+Die Theorie wird erklärt, sobald sie für das Projekt benötigt wird. Sie werden damit sehr schnell eine solide Grundlage für die Webentwicklung erhalten. Ich werde Sie auf verschiedene Unterlagen hinweisen, so dass Sie später beliebige Bereiche vertiefen können.
 
 
 ## Das Projekt

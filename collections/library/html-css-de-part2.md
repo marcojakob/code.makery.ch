@@ -32,6 +32,9 @@ sidebars:
   - text: "Teil 6: Bootstrap Framework verwenden"
     link: /library/html-css/de/part6/
     paging: 6
+  - text: "Teil 7: Wie weiter?"
+    link: /library/html-css/de/part7/
+    paging: 7
 ---
 
 Im ersten Teil haben wir unsere erste Webseite erstellt. Es wäre ja schade, wenn diese Webseite nur auf unserem Computer liegt und sie gar nie von jemand anderem angeschaut werden kann. Deshalb werden wir jetzt die Webseite gleich live ins Internet stellen. 

@@ -32,6 +32,9 @@ sidebars:
   - text: "Teil 6: Bootstrap Framework verwenden"
     link: /library/html-css/de/part6/
     paging: 6
+  - text: "Teil 7: Wie weiter?"
+    link: /library/html-css/de/part7/
+    paging: 7
 - header: Downloads
   body:
   - text: Portfolio Teil 3
@@ -53,7 +56,7 @@ Die Aufteilung von Struktur und Style hat viele Vorteile, wie wir noch sehen wer
 
 Eine CSS-Datei ist eine ganz normale Textdatei mit der Endung `.css`, die wir mit der HTML-Datei verknüpfen werden:
 
-Erstellen Sie also in Ihrem *Portfolio*-Ordner eine neue Datei. Wir geben der Datei den Namen `main.css`.
+Erstellen Sie also in Ihrem *Portfolio*-Ordner eine **neue Datei**. Wir geben der Datei den Namen `main.css`.
 
 ![Neue CSS-Datei](/assets/library/html-css/part3/new-css-file-de.png)
 
@@ -185,7 +188,7 @@ Eine CSS-Regel besteht aus drei Elementen, einem *Selektor*, einer *Eigenschaft*
 Diese Regel besagt, dass alle `<h2>`-Elemente eine Hintergrundfarbe von `#607d8b` erhalten sollen.
 
 
-### CSS-Selektoren
+## CSS-Selektoren
 
 Selektoren geben an, auf welches HTML-Element eine CSS-Regel angewandt werden soll. 
 
@@ -193,10 +196,12 @@ Selektoren geben an, auf welches HTML-Element eine CSS-Regel angewandt werden so
 **Hinweis:** Wir werden hier nur die wichtigsten Selektoren kennen lernen. Damit kommt man schon sehr weit. Für eine ausführlichere Übersicht suchen Sie im Internet nach "CSS Selektoren".
 </div>
 
-#### Typselektor
+
+### Typselektor
 
 Der Typselektor wird angewandt auf alle Elemente mit dem entsprechenden Tag. 
 Wenn wir als Beispiel alle `p`-Elemente ansprechen wollten, würde dies so aussehen:
+
 
 ##### CSS
 
@@ -206,6 +211,7 @@ p {
 }
 </pre>
 
+
 ##### HTML
 
 <pre class="prettyprint lang-html">
@@ -214,11 +220,12 @@ p {
 </pre>
 
 
-#### Klassenselektor
+### Klassenselektor
 
 Klassenselektoren werden sehr häufig verwendet. Dazu fügt man dem HTML-Element ein Attribut `class` hinzu und gibt ihm einen beliebigen Wert. In CSS kann man nun alle Elemente ansprechen, die das gleiche `class`-Attribut haben. Man macht dies mit einem **Punkt**, gefolgt vom `class`-Attribut.
 
 Im folgenden Beispiel gilt der Klassenselektor für alle Elemente, welche ein `class`-Attribut mit dem Wert `highlight` haben:
+
 
 ##### CSS
 
@@ -227,6 +234,7 @@ Im folgenden Beispiel gilt der Klassenselektor für alle Elemente, welche ein `c
   ...
 }
 </pre>
+
 
 ##### HTML
 
@@ -239,13 +247,14 @@ Im folgenden Beispiel gilt der Klassenselektor für alle Elemente, welche ein `c
 In diesem HTML würde die CSS-Regel auf das erste und das dritte `p`-Element angewandt werden. Wie sie sehen, ist es auch möglich, dass ein Element mehrere Klassen besitzt (`highlight` und `new`).
 
 
-#### ID-Selektor
+### ID-Selektor
 
 Der ID-Selektor ist sehr ähnlich wie der Klassenselektor. Er wird auf alle HTML-Elemente angewandt, die ein Attribut `id` mit einem entsprechenden Wert haben. Anstelle des Punktes verwendet man für ID-Selektoren ein **Rautezeichen** (`#`).
 
 Der wichtige Unterschied zum Klassenselektor besteht darin, dass ID-Selektoren **nur einmal** pro HTML-Seite vorkommen sollten, während eine Klasse für beliebig viele Elemente verwendet werden kann.
 
 Im folgenden Beispiel gilt der ID-Selektor für das Element, welches ein `id`-Attribut mit dem Wert `navigation` besitzt:
+
 
 ##### CSS
 
@@ -255,6 +264,7 @@ Im folgenden Beispiel gilt der ID-Selektor für das Element, welches ein `id`-At
 }
 </pre>
 
+
 ##### HTML
 
 <pre class="prettyprint lang-html">
@@ -263,11 +273,12 @@ Im folgenden Beispiel gilt der ID-Selektor für das Element, welches ein `id`-At
 </pre>
 
 
-#### Nachkommenselektor
+### Nachkommenselektor
 
 Mit einem Nachkommenselektor kann man Elemente noch etwas genauer auswählen, indem man mehrere Typ-, Klassen- oder ID-Selektoren kombiniert.
 
 Schauen wir uns gleich ein Beispiel an, bevor ich etwas näher darauf eingehe:
+
 
 ##### CSS
 
@@ -293,16 +304,16 @@ Der Nachkommenselektor `p a` wählt alle `a`-Elemente aus, die irgendwo innerhal
 </div>
 
 
-### CSS-Eigenschaften
+## CSS-Eigenschaften
 
 Durch CSS-Regeln wird festgelegt, wie HTML-Elemente angezeigt werden sollen. Es gibt zahlreiche Eigenschaften, die in CSS definiert werden können. Zwei davon haben wir bereits kennen gelernt, `background-color` und `color`.
 
 Ich verzichte darauf, hier weitere der vielen CSS-Eigenschaften zu erklären. Aber ich möchte Ihnen aufzeigen, wie Sie sich Schritt für Schritt mehr CSS-Wissen aneignen können. Es macht mehr Sinn, wenn Sie in dem Moment etwas lernen, wenn Sie auch wirklich ein konkretes Bedürfnis haben. Es gibt zwei Szenarien, wie sie später vorgehen können:
 
 
-#### Wenn Sie eine CSS-Eigenschaft sehen, die Sie nicht kennen:
+#### Wenn Sie eine CSS-Eigenschaft sehen, die Sie nicht kennen...
 
-Suchen Sie im Internet nach der Eigenschaft und zwar zusammen mit dem Stichwort `CSS`. Versuchen Sie es gleich einmal, indem Sie versuchen herauszufinden, was die CSS-Regel bewirkt:
+... dann **suchen Sie im Internet nach der Eigenschaft** und zwar zusammen mit dem Stichwort `CSS`. Versuchen Sie es gleich einmal, indem Sie versuchen herauszufinden, was die folgende CSS-Regel bewirkt:
 
 <pre class="prettyprint lang-css">
 padding: 5px;
@@ -313,14 +324,14 @@ Verwenden Sie als Suchbegriff `CSS padding`. Geben Sie sich nicht mit dem ersten
 Versuchen Sie auch mal diese Regel auf das `h2`-Element in Ihrem Portfolio-Projekt anzuwenden.
 
 
-#### Wenn Sie etwas verändern wollen, aber die CSS-Eigenschaft dazu nicht kennen:
+#### Wenn Sie etwas verändern wollen, aber die CSS-Eigenschaft dazu nicht kennen...
 
-Suchen Sie im Internet nach dem, was Sie tun wollen zusammen mit dem Stichwort `CSS`. Evtl. werden Sie mehrere Versuche brauchen, bis Sie das gefunden haben, wonach Sie gesucht haben.
+... dann **suchen Sie im Internet nach dem, was Sie tun wollen** zusammen mit dem Stichwort `CSS`. Evtl. werden Sie mehrere Versuche brauchen, bis Sie das gefunden haben, wonach Sie gesucht haben.
 
 Ein Beispiel: Angenommen, Sie wollen die Textgrösse verändern. Geben Sie in diesem Fall `Textgrössse CSS` als Suchbegriffe ein. Auch hier wieder darauf achten, dass Sie nicht nur das erste Suchresultat in Betracht ziehen.
 
 
-### CSS-Werte
+## CSS-Werte
 
 Wir haben bereits ein paar Werte von CSS-Eigenschaften kennen gelernt: Zum Beispiel Hexadezimalwerte wie `#ffffff` oder Grössenangaben wie `5px`. Je nach CSS-Eigenschaft muss man manchmal klar definierte Wörter angeben wie zum Beispiel `left` oder `right` für die Ausrichtung von Text.
 
