@@ -10,6 +10,14 @@
       "languages": [ "Deutsch" ]
     },
     {
+      "title": "More HTML & CSS (BETA, GERMAN ONLY)",
+      "link": "/library/more-html-css/",
+      "image": "/assets/library/more-html-css/more-html-css.png",
+      "summary": "A collection of various topics around HTML & CSS. <br><i>Note: This course is not yet finished and is currently <b>only available in German</b>.</i>",
+      "topics": [ "HTML-CSS" ],
+      "languages": [ "Deutsch" ]
+    },
+    {
       "title": "GreenfootKara",
       "link": "/library/greenfoot-kara/",
       "image": "/assets/library/greenfoot-kara/logo-large.png",

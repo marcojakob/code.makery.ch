@@ -37,56 +37,20 @@ sidebars:
     active: true
 ---
 
-Wow, das ist schon eine rechte Leistung, wenn Sie bis hier durchgehalten und Ihr Portfolio-Projekt mit diesem Tutorials erstellt haben!
+Wow, das ist schon eine rechte Leistung, wenn Sie bis hier durchgehalten und Ihr Portfolio-Projekt mit diesem Tutorial erstellt haben!
 
-In diesem letzten Teil zeige ich Ihnen Möglichkeiten auf, wie Sie Ihre Fähigkeiten als Webentwickler weiter entwickeln können.
-
-Die folgenden Seiten bauen direkt auf das Wissen aus diesem Tutorial auf:
-
-* blabla
+In diesem letzten Teil zeige ich Ihnen Möglichkeiten auf, wie Sie Ihre Fähigkeiten als Webprogrammierer weiter entwickeln können.
 
 
+## Mehr HTML & CSS
 
-## Bootstrap
+Die Serie [Mehr HTML & CSS](/library/more-html-css/de/) ist eine Sammlung von Anleitungen zu verschiedenen Themen rund um HTML & CSS. 
 
-* Layout
-* Icons
-* Formularelemente: Buttons, Checkbox, Radio-Button, Inputs, Textarea
-* Images: 
-  * Responsive: http://getbootstrap.com/css/#images-responsive
-  * float: left und margin-right: 10px
+Die Anleitungen bauen direkt auf den Kenntnissen aus diesem Tutorial auf. Es gibt dabei keine bestimmte Reihenfolge zwischen den einzelnen Teilen. Schauen Sie sich einfach die Themen an, welche Sie interessieren.
 
 
-## HTML
+## Webapplikationen mit Dart
 
-* Bold, Italics (strong, em)
-* Special Characters: 
-  * http://learn.shayhowe.com/html-css/getting-to-know-html/#practice-1
-  * http://copypastecharacter.com/
-  * Buch S. 199
-* Tables?
+Lernen Sie, dynamische Webapplikationen mit Dart zu entwickeln.
 
-
-## More CSS
-
-http://learn.shayhowe.com/html-css/getting-to-know-css/
-Buch S. 244 ff.
-
-* The Cascade
-* Specificity
-* Common properties
-* Float
-* Ränder (padding, margin, border), Buch S. 306 ff.
-
-
-## Bilder
-
-* Tools: pixlr, splashup, ipiccy, gimp, photoshop
-* High-res images: https://medium.com/@dustin/stock-photos-that-dont-suck-62ae4bcbe01b
-
-
-## Vorgehensweise/Arbeitsablauf zum erstellen einer Webseite
-
-* Buch S. 458ff.
-* Wireframes: http://gomockingbird.com, http://lovelycharts.com
-
+... coming soon ...

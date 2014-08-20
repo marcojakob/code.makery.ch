@@ -38,7 +38,7 @@ sidebars:
 - header: Downloads
   body:
   - text: Portfolio Teil 6
-    link: https://github.com/marcojakob/html-css-tutorial/releases/download/v0.1/portfolio-de-part6.zip
+    link: https://github.com/marcojakob/library-html-css/releases/download/v0.2/portfolio-de-part6.zip
     icon-css: fa fa-fw fa-file-archive-o
 ---
 

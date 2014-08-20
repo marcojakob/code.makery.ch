@@ -13,7 +13,18 @@ sidebars:
   - text: "Einleitung"
     link: /library/more-html-css/de/
     paging: Intro
+  - text: "Website-Layout mit Bootstrap 3"
+    link: /library/more-html-css/de/website-layout/
+    paging: 1
     active: true
+  - text: "Icon Fonts"
+    link: /library/more-html-css/de/icon-fonts/
+    paging: 2
+- header: Downloads
+  body:
+  - text: Portfolio mit Layout
+    link: https://github.com/marcojakob/library-more-html-css/releases/download/v0.1/portfolio-de-website-layout.zip
+    icon-css: fa fa-fw fa-file-archive-o
 ---
 
 Standardmässig werden HTML-Elemente auf zwei Arten angeordnet:
@@ -41,13 +52,13 @@ So etwas hinzubekommen ohne ein CSS-Framework wie *Bootstrap* wäre eine rechte 
 Zusätzlich wird das Layout in Bootstrap automatisch auf die Bilschirmgrösse angepasst (sogenanntes [Responsive Layout](http://de.wikipedia.org/wiki/Responsive_Webdesign)). Wir können zum Beispiel angeben, dass auf kleinen Bilschirmen die Spalten untereinander angezeigt werden sollen, weil sie nebeneinander nicht mehr Platz hätten.
 
 <div class="alert alert-info">
-Falls Sie Bootstrap in Ihrem Projekt noch nicht integriert haben, lesen Sie den Teil über <a href="/library/html-css/de-part6/" class="alert-link">Bootstrap Framework verwenden</a>.
+Falls Sie Bootstrap in Ihrem Projekt noch nicht integriert haben, lesen Sie <a href="/library/html-css/de-part6/" class="alert-link">Teil 6: Bootstrap Framework verwenden</a> aus dem HTML & CSS Tutorial.
 </div>
 
 
 ## Das Bootstrap Raster
 
-Bootstrap beinhaltet ein **12-spaltiges Rastersystem** für das Layout (siehe [Dokumentation des Bootstrap-Raster](http://holdirbootstrap.de/css/#grid)). Ein Raster kann man sich vorstellen wie eine unsichtbare Tabelle mit zwölf Spalten:
+Bootstrap beinhaltet ein **12-spaltiges Rastersystem** für das Layout (siehe [Dokumentation des Bootstrap-Rasters](http://holdirbootstrap.de/css/#grid)). Ein Raster kann man sich vorstellen, wie eine unsichtbare Tabelle mit zwölf Spalten:
 
 ![Zwölf Spalten](/assets/library/more-html-css/website-layout/bootstrap-twelve-columns.png)
 
@@ -56,7 +67,7 @@ Wir können nun unsere eigenen Spalten definieren, indem wir angeben, wie breit 
 
 ### Beispiel für ein 2-spaltiges Layout
 
-In diesem Beispiel definieren wir eine linke Spalte mit der Breite von 4 und eine rechte Spalte mit der Breite von 8. Links könnte man eine Navigation einfügen und rechts den Seiteninhalt.
+In diesem Beispiel definieren wir eine linke Spalte mit der Breite von 4 und eine rechte Spalte mit der Breite von 8. Links könnte man zum Beispiel eine Navigation einfügen und rechts den Seiteninhalt.
 
 ![2-Spalten Layout](/assets/library/more-html-css/website-layout/bootstrap-two-columns.png)
 
@@ -79,7 +90,7 @@ Im HTML-Code würde dieses Layout wie folgt aussehen:
 **Zu Beachten beim Bootstrap-Raster:**
 
 <ul>
-  <li>Das Raster sollte immer in einem `<div>` mit einer `container`-Klasse sein. (Wenn auch bei grossen Bilschirmen die ganze Breite ausgenutzt werden soll, kann man alternativ die `container-fluid`-Klasse verwenden.)</li>
+  <li>Das Raster sollte immer in einem `<div>` mit einer `container`-Klasse sein. (Wenn die Breite immer bis ganz zum Rand ausgefüllt werden soll, kann man alternativ die `container-fluid`-Klasse verwenden.)</li>
   <li>Innerhalb des Containers kommt ein `<div>` mit der Klasse `row`. Damit definieren wir eine Zeile im Raster.</li>
   <li>Innerhalb der Zeilen kommen schliesslich die Spalten mit den `col`-Klassen.  </li>
 </ul>
@@ -88,8 +99,6 @@ Im HTML-Code würde dieses Layout wie folgt aussehen:
 
 ### Bildschirmgrössen
 
-Im Beispiel oben sehen Sie eine CSS-Klasse für die linke Spalte: `col-sm-4`
-
 Eine Spaltenangabe beinhaltet immer in der Mitte eine Angabe über die Bildschirmgrösse. Es gibt die folgenden vier Bildschirmgrössen:
 
 * `col-xs` - Spalte für Extra-Small-Geräte (Smartphones)
@@ -97,18 +106,43 @@ Eine Spaltenangabe beinhaltet immer in der Mitte eine Angabe über die Bildschir
 * `col-md` - Spalte für Medium-Geräte (kleiner Desktop)
 * `col-lg` - Spalte für Large-Geräte (grosser Desktop)
 
-Die Angabe `col-sm-4` bedeutet also, dass ungefähr ab der grösse eines Tablets eine Spalte der Breite 4 dargestellt wird. 
+Die Angabe `col-sm-4` aus unserem Beispiel oben bedeutet also, dass ungefähr ab der Grösse eines Tablets eine Spalte der Breite 4 dargestellt wird. 
 
-Alle Bildschirme, welche kleiner sind als die angegebene Grösse, stellen die Spalten automatisch auf der ganzen Breite dar.
+Alle Bildschirme, welche kleiner sind als die angegebene Grösse, stellen die Spalten automatisch untereinander dar.
 
 So sieht unser Beispiel für das 2-spaltige Layout auf einem Smartphone aus:
 
 ![2-Spalten Layout Smartphone](/assets/library/more-html-css/website-layout/bootstrap-two-columns-smartphone.png)
 
 
-### Der Portfolio-Blog mit 2 Spalten
+### Beispiel für ein 3-spaltiges Layout
 
-Im [HTML & CSS Tutorial](/library/html-css/de/) haben wir ein Portfolio entwickelt mit einer Blog-Seite. Das folgende Beispiel zeigt ein 2-Spalten-Layout für diese Blog-Seite. In der linken Spalte ist der bisherige Inhalt. In der rechten Spalte haben wir neu Platz für ein paar Links. 
+In diesem Beispiel definieren wir drei Spalten.
+
+![3-Spalten Layout](/assets/library/more-html-css/website-layout/bootstrap-three-columns.png)
+
+Im HTML-Code würde dieses Layout wie folgt aussehen:
+
+<pre class="prettyprint lang-html">
+&lt;div class="<mark>container</mark>">
+  &lt;div class="<mark>row</mark>">
+    &lt;div class="<mark>col-sm-3</mark>">
+      Hier kommt der Inhalt der linken Spalte.
+    &lt;/div>
+    &lt;div class="<mark>col-sm-6</mark>">
+      Hier kommt der Inhalt der mittleren Spalte.
+    &lt;/div>
+    &lt;div class="<mark>col-sm-3</mark>">
+      Hier kommt der Inhalt der rechten Spalte.
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+
+
+## Anwendung auf Portfolio-Blog
+
+Im [HTML & CSS Tutorial](/library/html-css/de/) haben wir ein Portfolio entwickelt mit einer Blog-Seite. Das folgende Beispiel zeigt ein **2-Spalten-Layout** für diese Blog-Seite. In der linken Spalte ist der bisherige Inhalt. In der rechten Spalte haben wir neu Platz zum Beispiel für ein paar Links. 
 
 <img src="/assets/library/more-html-css/website-layout/portfolio-two-columns-de.png" alt="Portfolio" class="img-thumbnail">
 
@@ -149,41 +183,17 @@ Im [HTML & CSS Tutorial](/library/html-css/de/) haben wir ein Portfolio entwicke
 
 #### Hinweise
 
-* Bei der zweiten Spalte wurde noch eine zweite CSS-Klasse hinzugefügt: `col-sm-offset-1`. Dies bedeutet, dass die zweite Spalte um eins nach rechts gerückt werden soll. Damit erhalten wir einen etwas grösseren Abstand zwischen den beiden Spalten.
+* Bei der rechten Spalte wurde noch eine zweite CSS-Klasse hinzugefügt: `col-sm-offset-1`. Dies bedeutet, dass die rechte Spalte um eins nach rechts gerückt werden soll. Damit erhalten wir einen etwas grösseren Abstand zwischen den beiden Spalten.
 * Testen Sie das Layout in unterschiedlichen Browsergrössen.
 * Die Klasse `list-unstyled` bewirkt, dass die Listenelemente ohne Punkt angezeigt werden (siehe [Bootstrap Listen](http://holdirbootstrap.de/css/#type-lists)).
 
-
-### Beispiel für ein 3-spaltiges Layout
-
-In diesem Beispiel definieren wir drei Spalten.
-
-![3-Spalten Layout](/assets/library/more-html-css/website-layout/bootstrap-three-columns.png)
-
-Im HTML-Code würde dieses Layout wie folgt aussehen:
-
-<pre class="prettyprint lang-html">
-&lt;div class="<mark>container</mark>">
-  &lt;div class="<mark>row</mark>">
-    &lt;div class="<mark>col-sm-3</mark>">
-      Hier kommt der Inhalt der linken Spalte.
-    &lt;/div>
-    &lt;div class="<mark>col-sm-6</mark>">
-      Hier kommt der Inhalt der mittleren Spalte.
-    &lt;/div>
-    &lt;div class="<mark>col-sm-3</mark>">
-      Hier kommt der Inhalt der rechten Spalte.
-    &lt;/div>
-  &lt;/div>
-&lt;/div>
-</pre>
 
 
 ## Weitere Informationen zu Layout
 
 Lesen Sie den Abschnitt über das [Raster-System](http://holdirbootstrap.de/css/#grid) in der Bootstrap Dokumentation.
 
-Eine ausführliche Erklärung, warum das Raster-System funktioniert finden Sie in [The Subtle Magic Behind Why the Bootstrap 3 Grid Works](http://www.helloerik.com/the-subtle-magic-behind-why-the-bootstrap-3-grid-works). 
+Eine ausführliche Erklärung, wie das Raster-System funktioniert, finden Sie in [The Subtle Magic Behind Why the Bootstrap 3 Grid Works](http://www.helloerik.com/the-subtle-magic-behind-why-the-bootstrap-3-grid-works). 
 
 
 
