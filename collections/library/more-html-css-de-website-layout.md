@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Website-Layout mit Bootstrap 3"
+title: "Mehr HTML & CSS: Website-Layout"
 date: 2014-08-16 00:00
 slug: more-html-css/de/website-layout
 github: false
@@ -13,13 +13,19 @@ sidebars:
   - text: "Einleitung"
     link: /library/more-html-css/de/
     paging: Intro
-  - text: "Website-Layout mit Bootstrap 3"
+  - text: "Website-Layout"
     link: /library/more-html-css/de/website-layout/
     paging: 1
     active: true
-  - text: "Icon Fonts"
-    link: /library/more-html-css/de/icon-fonts/
+  - text: "Icons"
+    link: /library/more-html-css/de/icons/
     paging: 2
+  - text: "Bilder"
+    link: /library/more-html-css/de/images/
+    paging: 3
+  - text: "Textformatierung"
+    link: /library/more-html-css/de/text/
+    paging: 4
 - header: Downloads
   body:
   - text: Portfolio mit Layout
@@ -51,12 +57,12 @@ So etwas hinzubekommen ohne ein CSS-Framework wie *Bootstrap* wäre eine rechte 
 
 Zusätzlich wird das Layout in Bootstrap automatisch auf die Bilschirmgrösse angepasst (sogenanntes [Responsive Layout](http://de.wikipedia.org/wiki/Responsive_Webdesign)). Wir können zum Beispiel angeben, dass auf kleinen Bilschirmen die Spalten untereinander angezeigt werden sollen, weil sie nebeneinander nicht mehr Platz hätten.
 
-<div class="alert alert-info">
-Falls Sie Bootstrap in Ihrem Projekt noch nicht integriert haben, lesen Sie <a href="/library/html-css/de-part6/" class="alert-link">Teil 6: Bootstrap Framework verwenden</a> aus dem HTML & CSS Tutorial.
-</div>
-
 
 ## Das Bootstrap Raster
+
+<div class="alert alert-warning">
+Falls Sie Bootstrap in Ihrem Projekt noch nicht integriert haben, lesen Sie zuerst den Teil über <a href="/library/html-css/de/part6/" class="alert-link">Bootstrap Framework verwenden</a> aus dem HTML & CSS Tutorial.
+</div>
 
 Bootstrap beinhaltet ein **12-spaltiges Rastersystem** für das Layout (siehe [Dokumentation des Bootstrap-Rasters](http://holdirbootstrap.de/css/#grid)). Ein Raster kann man sich vorstellen, wie eine unsichtbare Tabelle mit zwölf Spalten:
 
