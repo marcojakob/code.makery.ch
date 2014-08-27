@@ -2,7 +2,8 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 4: CSS Styling"
 date: 2014-04-25 00:00
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-8-tutorial-part4.md
+updated: 2014-08-27 00:00
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part4.md
 description: "In JavaFX you can style your user interface using CSS. We'll also add an application icon in this tutorial part."
 image: /assets/java/javafx-8-tutorial-part4/addressapp-part4.png
 published: true
@@ -38,8 +39,8 @@ sidebars:
     paging: 7
 - header: "Download Sources"
   body:
-  - text: Source of Part 4 (Eclipse Project)
-    link: /assets/java/javafx-8-tutorial-part4/addressapp-jfx8-part-4.zip
+  - text: Part 4 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-4.zip
     icon-css: fa fa-fw fa-download
 ---
 
@@ -81,7 +82,9 @@ Unzip the `jfxrt.jar`. You should find the `modena.css` under `com/sun/javafx/sc
 
 This default style sheet is always applied to a JavaFX application. By adding a custom style sheet we can override the default styles of the `modena.css`.   
 
-*Hint: It helps to look at the default CSS file to see which styles you might need to override.*
+<div class="alert alert-info">
+**Hint:** It helps to look at the default CSS file to see which styles you might need to override.
+</div>
 
 
 ### Attaching CSS Style Sheets

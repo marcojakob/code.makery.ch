@@ -3,7 +3,7 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 3: Interacting with the User"
 date: 2012-11-20 17:30
 updated: 2013-02-08 00:00
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-2-tutorial-part3.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-2-tutorial-part3.md
 description: "React to selection changes in the JavaFX TableView. Add, edit and remove items from the table and validate user input."
 published: true
 prettify: true
@@ -41,7 +41,7 @@ sidebars:
 - header: "Download Sources"
   body:
   - text: Source of Part 3 (Eclipse Project)
-    link: /assets/java/javafx-2-tutorial-part3/addressapp-part-3.zip
+    link: https://github.com/marcojakob/tutorial-javafx-2/releases/download/v1.0/addressapp-part-3.zip
     icon-css: fa fa-fw fa-download
 ---
 

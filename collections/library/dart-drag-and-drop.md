@@ -3,7 +3,7 @@ layout: article
 title: Dart Drag and Drop
 date: 2014-07-17 00:00
 slug: dart-drag-and-drop
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/dart-drag-and-drop.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-drag-and-drop.md
 description: "Drag and Drop for Dart web apps with mouse and touch support."
 image: /assets/library/dart-drag-and-drop/dnd-screenshot.png
 published: true

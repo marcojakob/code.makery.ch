@@ -3,7 +3,7 @@ layout: article
 title: "GreenfootKara - Solutions Chapitre 5"
 date: 2014-07-10 00:00
 slug: greenfoot-kara/fr/chapter5-solutions
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-fr-chapter5-solutions.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/greenfoot-kara-fr-chapter5-solutions.md
 published: true
 prettify: true
 comments: true

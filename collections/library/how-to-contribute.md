@@ -2,8 +2,9 @@
 layout: article
 title: "How to Contribute"
 date: 2014-07-10 00:00
+updated: 2014-08-27 00:00
 slug: how-to-contribute
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/how-to-contribute.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/how-to-contribute.md
 published: true
 comments: true
 ---
@@ -21,11 +22,7 @@ Most articles have an **Edit on GitHub** link like to following example:
 
 This link takes you to the article's source on GitHub. You will need a [free GitHub account](https://github.com/) to be able to edit articles.
 
-If you have such an account and are logged in, the **Edit** button is enabled and you can edit the article directly on GitHub:
-
-![GitHub edit button](/assets/library/how-to-contribute/github-edit-button.png)
-
-When you click the **Edit** button it takes you to the code view:
+When you are logged in you will see the code view:
 
 ![Code view](/assets/library/how-to-contribute/code-view.png)
 

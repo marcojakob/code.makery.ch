@@ -2,8 +2,8 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 1: Scene Builder"
 date: 2014-04-19 01:00
-updated: 2014-05-12 00:00
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-8-tutorial-part1.md
+updated: 2014-08-27 00:00
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part1.md
 description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
 image: /assets/java/javafx-8-tutorial-part1/addressapp-part1.png
 published: true
@@ -39,8 +39,8 @@ sidebars:
     paging: 7
 - header: "Download Sources"
   body:
-  - text: Source of Part 1 (Eclipse Project)
-    link: /assets/java/javafx-8-tutorial-part1/addressapp-jfx8-part-1.zip
+  - text: Part 1 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
     icon-css: fa fa-fw fa-download
 ---
 
@@ -137,7 +137,7 @@ Right-click on the view package and create a new *FXML Document* called `PersonO
 ## Design with Scene Builder
 
 <div class="alert alert-warning">
-  Note: As we're using an Early Access version of Scene Builder 2 there might be some issues (see <a href="#comment-1380574334" class="alert-link">comments</a> below). If you can't get it to work, download the source of this tutorial part and try it with the included fxml.
+  **Note:** If you can't get it to work, download the source of this tutorial part and try it with the included fxml.
 </div>
 
 Right-click on `PersonOverview.fxml` and choose *Open with Scene Builder*. Now you should see the Scene Builder with just an *AncherPane* (visible under Hierarchy on the left).
@@ -312,6 +312,10 @@ If JavaFX can't find the `fxml` file you speicified, you might get the following
 `java.lang.IllegalStateException: Location is not set.`
 
 To solve this issue double check if you didn't misspell the name of your `fxml` files!
+
+<div class="alert alert-warning">
+  If it still doesn't work, download the source of this tutorial part and try it with the included fxml.
+</div>
 
 
 *****

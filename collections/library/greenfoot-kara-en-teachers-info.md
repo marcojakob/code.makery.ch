@@ -3,7 +3,7 @@ layout: article
 title: "GreenfootKara - Teacher's Info"
 date: 2012-10-03 00:00
 slug: greenfoot-kara/teachers-info
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-en-teachers-info.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/greenfoot-kara-en-teachers-info.md
 published: true
 prettify: true
 comments: true

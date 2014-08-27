@@ -2,7 +2,8 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 7: Deployment"
 date: 2014-05-10 00:00
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-8-tutorial-part7.md
+updated: 2014-08-27 00:00
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part7.md
 description: "How to deploy a JavaFX application as native package. Create an installer for Windows, MacOS, or Linux."
 image: /assets/java/javafx-8-tutorial-part7/addressapp-macos.png
 published: true
@@ -38,8 +39,8 @@ sidebars:
     active: true
 - header: "Download Sources"
   body:
-  - text: Source of Part 7 (Eclipse Project)
-    link: /assets/java/javafx-8-tutorial-part7/addressapp-jfx8-part-7.zip
+  - text: Part 7 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-7.zip
     icon-css: fa fa-fw fa-download
 ---
 

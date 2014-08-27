@@ -3,7 +3,7 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 1: Scene Builder"
 date: 2012-11-16 22:00
 updated: 2013-02-08 00:00
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-2-tutorial-part1.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-2-tutorial-part1.md
 description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
 published: true
 prettify: true
@@ -41,7 +41,7 @@ sidebars:
 - header: "Download Sources"
   body:
   - text: Source of Part 1 (Eclipse Project)
-    link: /assets/java/javafx-2-tutorial-part1/addressapp-part-1.zip
+    link: https://github.com/marcojakob/tutorial-javafx-2/releases/download/v1.0/addressapp-part-1.zip
     icon-css: fa fa-fw fa-download
 ---
 

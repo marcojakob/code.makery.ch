@@ -3,7 +3,7 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 2: Model and TableView"
 date: 2012-11-17 00:30
 updated: 2013-02-08 00:00
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-2-tutorial-part2.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-2-tutorial-part2.md
 description: "Use a JavaFX TableView to display an ObservableList of Persons."
 prettify: true
 published: true
@@ -41,7 +41,7 @@ sidebars:
 - header: "Download Sources"
   body:
   - text: Source of Part 2 (Eclipse Project)
-    link: /assets/java/javafx-2-tutorial-part2/addressapp-part-2.zip
+    link: https://github.com/marcojakob/tutorial-javafx-2/releases/download/v1.0/addressapp-part-2.zip
     icon-css: fa fa-fw fa-download
 ---
 

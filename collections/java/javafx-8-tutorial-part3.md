@@ -2,7 +2,8 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 3: Interacting with the User"
 date: 2014-04-24 00:00
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-8-tutorial-part3.md
+updated: 2014-08-27 00:00
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part3.md
 description: "React to selection changes in the JavaFX TableView. Add, edit and remove items from the table and validate user input."
 image: /assets/java/javafx-8-tutorial-part3/addressapp-part3.png
 published: true
@@ -38,10 +39,12 @@ sidebars:
     paging: 7
 - header: "Download Sources"
   body:
-  - text: Source of Part 3 (Eclipse Project)
-    link: /assets/java/javafx-8-tutorial-part3/addressapp-jfx8-part-3.zip
+  - text: Part 3 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-3.zip
     icon-css: fa fa-fw fa-download
 ---
+
+**Update Aug 27, 2014:** *Now using JDK 8u20 and ControlsFX 8.0.6_20*
 
 ![Screenshot AddressApp Part 3](/assets/java/javafx-8-tutorial-part3/addressapp-part3.png)
 
@@ -173,9 +176,10 @@ public class DateUtil {
 }
 </pre>
 
-
-*Note that you can change the format of the date by changing the
-`DATE_PATTERN`. For all possible formats see [`DateTimeFormatter`](http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html).*
+<div class="alert alert-info">
+**Hint:** You can change the format of the date by changing the
+`DATE_PATTERN`. For all possible formats see <a class="alert-link" href="http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a>.
+</div>
 
 
 #### Use the DateUtil
@@ -260,7 +264,8 @@ To ignore such an error is not very nice, of course. We should let the user know
 
 We'll add a popup dialog to inform the user. You'll need to **add a library** for the [Dialogs](/blog/javafx-8-dialogs/): 
 
-1. Download the latest **ControlsFX** zip file from the [ControlsFX Website](http://fxexperience.com/controlsfx/). (It is also available as Maven dependency if you prefer to use Maven.)  
+1. Download the latest **ControlsFX** zip file from the [ControlsFX Website](http://fxexperience.com/controlsfx/). (It is also available as Maven dependency if you prefer to use Maven.)   
+**Important: The ControlsFX must be version `8.0.6_20` or greater to work with `JDK 8u20` and above as there was a breaking change introduced in that version.**
 2. Inside the zip file you should find a `controlsfx-8.x.x.jar` file. Unzip that file to your computer (Eclipse does not accept files copied directly from a zip folder).
 3. Create a **lib** subfolder in the project and add the jar file to this folder.
 4. Add the library to your project's **classpath**: In Eclipse *right-click on the jar file* | *Build Path* | *Add to Build Path*. Now Eclipse knows about the library.
@@ -292,7 +297,9 @@ private void handleDeletePerson() {
 }
 </pre>
 
-*For more examples of Dialogs read the [JavaFX 8 Dialogs](/blog/javafx-8-dialogs/) blog post.*
+<div class="alert alert-info">
+For more examples on how to use Dialogs read <a class="alert-link" href="/blog/javafx-8-dialogs/">JavaFX 8 Dialogs</a>.
+</div>
 
 
 

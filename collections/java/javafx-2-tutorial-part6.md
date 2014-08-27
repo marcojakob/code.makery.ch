@@ -3,7 +3,7 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 6: Statistics Chart"
 date: 2012-12-04 12:00
 updated: 2013-02-08 00:00
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-2-tutorial-part6.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-2-tutorial-part6.md
 description: "Learn how to create a JavaFX Bar Chart."
 published: true
 prettify: true
@@ -41,7 +41,7 @@ sidebars:
 - header: "Download Sources"
   body:
   - text: Source of Part 6 (Eclipse Project)
-    link: /assets/java/javafx-2-tutorial-part6/addressapp-part-6.zip
+    link: https://github.com/marcojakob/tutorial-javafx-2/releases/download/v1.0/addressapp-part-6.zip
     icon-css: fa fa-fw fa-download
 ---
 

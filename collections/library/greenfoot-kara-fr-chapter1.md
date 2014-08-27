@@ -3,7 +3,7 @@ layout: article
 title: "GreenfootKara - Chapitre 1: Premiers Pas"
 date: 2014-07-10 00:00
 slug: greenfoot-kara/fr/chapter1
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-fr-chapter1.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/greenfoot-kara-fr-chapter1.md
 published: true
 prettify: true
 comments: true

@@ -2,7 +2,8 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 6: Statistics Chart"
 date: 2014-05-09 00:00
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-8-tutorial-part6.md
+updated: 2014-08-27 00:00
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part6.md
 description: "Learn how to create a JavaFX Bar Chart."
 image: /assets/java/javafx-8-tutorial-part6/addressapp-part6.png
 published: true
@@ -38,8 +39,8 @@ sidebars:
     paging: 7
 - header: "Download Sources"
   body:
-  - text: Source of Part 6 (Eclipse Project)
-    link: /assets/java/javafx-8-tutorial-part6/addressapp-jfx8-part-6.zip
+  - text: Part 6 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-6.zip
     icon-css: fa fa-fw fa-download
 ---
 

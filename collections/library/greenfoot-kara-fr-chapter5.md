@@ -4,7 +4,7 @@ title: "GreenfootKara - Chapitre 5: Méthodes"
 date: 2014-07-10 00:00
 slug: greenfoot-kara/fr/chapter5
 canonical: /library/greenfoot-kara/chapter5/
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-fr-chapter5.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/greenfoot-kara-fr-chapter5.md
 published: true
 prettify: true
 comments: true

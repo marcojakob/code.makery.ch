@@ -4,7 +4,7 @@ title: "GreenfootKara - Chapter 3: Variables"
 date: 2012-10-03 00:00
 updated: 2014-03-08 00:00
 slug: greenfoot-kara/chapter3
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-en-chapter3.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/greenfoot-kara-en-chapter3.md
 published: true
 prettify: true
 comments: true

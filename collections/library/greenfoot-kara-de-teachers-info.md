@@ -3,7 +3,7 @@ layout: article
 title: "GreenfootKara - Hinweise für Lehrpersonen"
 date: 2012-10-03 00:00
 slug: greenfoot-kara/de/teachers-info
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-de-teachers-info.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/greenfoot-kara-de-teachers-info.md
 published: true
 prettify: true
 comments: true

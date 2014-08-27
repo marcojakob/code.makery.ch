@@ -3,7 +3,7 @@ layout: article
 title: "GreenfootKara - Chapitre 4: Jeu Sokoban"
 date: 2014-07-10 00:00
 slug: greenfoot-kara/fr/chapter4
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/library/greenfoot-kara-fr-chapter4.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/greenfoot-kara-fr-chapter4.md
 published: true
 prettify: true
 comments: true

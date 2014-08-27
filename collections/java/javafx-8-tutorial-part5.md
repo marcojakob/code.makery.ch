@@ -2,7 +2,8 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 5: Storing Data as XML"
 date: 2014-04-25 01:00
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-8-tutorial-part5.md
+updated: 2014-08-27 00:00
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part5.md
 description: "Save data as XML with JAXB. Learn how to use the JavaFX FileChooser and the JavaFX Menu."
 image: /assets/java/javafx-8-tutorial-part5/addressapp-part5.png
 published: true
@@ -38,8 +39,8 @@ sidebars:
     paging: 7
 - header: "Download Sources"
   body:
-  - text: Source of Part 5 (Eclipse Project)
-    link: /assets/java/javafx-8-tutorial-part5/addressapp-jfx8-part-5.zip
+  - text: Part 5 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-5.zip
     icon-css: fa fa-fw fa-download
 ---
 

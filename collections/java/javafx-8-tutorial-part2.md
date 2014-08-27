@@ -2,7 +2,8 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 2: Model and TableView"
 date: 2014-04-23 00:00
-github: https://github.com/marcojakob/code.makery.ch/blob/master/collections/java/javafx-8-tutorial-part2.md
+updated: 2014-08-27 00:00
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part2.md
 description: "Use a JavaFX TableView to display an ObservableList of Persons."
 image: /assets/java/javafx-8-tutorial-part2/addressapp-part2.png
 published: true
@@ -38,8 +39,8 @@ sidebars:
     paging: 7
 - header: "Download Sources"
   body:
-  - text: Source of Part 2 (Eclipse Project)
-    link: /assets/java/javafx-8-tutorial-part2/addressapp-jfx8-part-2.zip
+  - text: Part 2 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-2.zip
     icon-css: fa fa-fw fa-download
 ---
 
@@ -255,7 +256,9 @@ Now let's finally get some data into our table. We'll need a controller for our 
 1. Create a normal class inside the **view** package called `PersonOverviewController.java`. (We must put it in the same package as the `PersonOverview.fxml`, otherwise the SceneBuilder won't find it - at least not in the current version).
 2. We'll add some instance variables that give us access to the table and the labels inside the view. The fields and some methods have a special `@FXML` annotation. This is necessary for the fxml file to have access to private fields and private methods. After we have everything set up in the fxml file, the application will automatically fill the variables when the fxml file is loaded. So let's add the following code:
 
-**Note: Remember to always use the javafx imports, NOT awt or swing!**
+<div class="alert alert-info">
+**Note:** Remember to always use the **javafx imports**, NOT awt or swing!
+</div>
 
 
 ##### PersonOverviewController.java

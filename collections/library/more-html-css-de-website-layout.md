@@ -29,7 +29,7 @@ sidebars:
 - header: Downloads
   body:
   - text: Portfolio mit Layout
-    link: https://github.com/marcojakob/library-more-html-css/releases/download/v0.1/portfolio-de-website-layout.zip
+    link: https://github.com/marcojakob/tutorial-more-html-css/releases/download/v0.1/portfolio-de-website-layout.zip
     icon-css: fa fa-fw fa-file-archive-o
 ---
 
