@@ -27,20 +27,24 @@
           <div class="visible-md visible-lg">
           {% include "article/sidebars" %}
           </div>
-          <div class="visible-xs visible-sm">
-          {% include "article/sidebars-dropdown" %}
-          </div>
         </aside>
         <div class="col-md-9">
         {%- else -%}
         <div class="col-md-offset-1 col-md-10">
         {%- endif -%}
-        
           <header class="article-header">
             <h1 class="article-title">{{ model.title }}</h1>
             {% include "article/date" %}
           </header>
-
+          
+          {%- if model.sidebars -%}
+          <div class="visible-xs visible-sm">
+            <aside>
+              {% include "article/sidebars-dropdown" %}
+            </aside>
+          </div>
+          {%- endif -%}
+          
           <section class="article-content">
             {% block content %}{% endblock %}
           </section>

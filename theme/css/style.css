@@ -3,7 +3,7 @@
  * PT SANS
  */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
-@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 /*
  * MUSEO SLAB
  */
@@ -5208,7 +5208,7 @@ iframe {
 
 .sidebar-dropdown {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 1em;
+  margin-top: 1em;
   margin-right: 5px; }
   .sidebar-dropdown button {
     font-weight: bold;
