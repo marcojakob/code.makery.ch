@@ -3,6 +3,7 @@ layout: article
 title: "Webseite nach Word umwandeln"
 date: 2014-07-07 00:00
 slug: convert-web-page-to-word/de
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/convert-web-page-to-word-de.md
 published: true
 comments: false
 sidebars:

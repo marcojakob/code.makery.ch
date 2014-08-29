@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Introduction"
+title: "JavaFX 8 Tutorial"
 date: 2014-04-19 00:00
 updated: 2014-08-27 00:00
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-intro.md

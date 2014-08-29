@@ -38,7 +38,7 @@ sidebars:
 - header: Downloads
   body:
   - text: Portfolio Teil 5
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.2/portfolio-de-part5.zip
+    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.3/portfolio-de-part5.zip
     icon-css: fa fa-fw fa-file-archive-o
 ---
 
@@ -85,7 +85,7 @@ Diese Änderung sollte dazu führen, dass das Styling vom CSS auch für die Blog
 
 Jetzt passen wir noch den Titel und Inhalt an:
 
-##### blog/index.html
+##### blog/index.html - Blog Hauptübersicht
 
 <pre class="prettyprint lang-html">
 &lt;!DOCTYPE html>
@@ -122,7 +122,7 @@ Die Zahlenkombination `2014-08-02` ist das Datum in umgekehrter Reihenfolge, als
 
 Im Blogeintrag ändern wir den Inhalt wie folgt ab:
 
-##### blog/2014-08-02-erster-eintrag/index.html
+##### blog/2014-08-02-erster-eintrag/index.html - Erster Blogeintrag
 
 <pre class="prettyprint lang-html">
 &lt;!DOCTYPE html>
@@ -130,7 +130,7 @@ Im Blogeintrag ändern wir den Inhalt wie folgt ab:
 &lt;html>
   &lt;head>
     &lt;meta charset="utf-8">
-    &lt;link rel="stylesheet" href="../main.css">
+    &lt;link rel="stylesheet" href="../../main.css">
     &lt;title>Erster Eintrag - Web Portfolio von Marco&lt;/title>
   &lt;/head>
   &lt;body>
@@ -172,6 +172,10 @@ Mit solchen Blogeinträgen werden Sie beim Lernen von Programmierung viel schnel
 <div class="alert alert-info">
 **Hinweis:** Erstellen Sie für jeden Blogeintrag einen eigenen Unterordner (mit einer `index.html`-Seite). So haben Sie eine gute Ordnung und können Bilder oder andere Dateien für den Blogeintrag im Unterordner ablegen.
 </div>
+
+##### Zweiter Blogeintrag
+
+![Blogeintrag 2](/assets/library/html-css/part5/blog-entry-subfolder2-de.png)
 
 
 ### Seite für Projekte

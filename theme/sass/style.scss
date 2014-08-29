@@ -241,12 +241,26 @@ iframe {
 
 
 //
-// Sidebar
+// Sidebar & Sidebar-Dropdown
 // -------------------------------
 .sidebar {
   font-size: 15px;
   font-family: $font-family-sans-serif;
-} 
+}
+
+.sidebar-dropdown {
+  font-family: $font-family-sans-serif;
+  margin-bottom: 1em;
+  
+  &:not(:first-child) {
+    margin-left: 5px;
+  }
+  
+  button {
+    font-weight: bold;
+    background-color: $panel-default-heading-bg;
+  }
+}
 
 
 //
@@ -342,7 +356,7 @@ iframe {
 // -------------------------------
 
 // Panels
-.panel-container {
+.library-panel {
   position: relative; 
   
   .panel-body {
@@ -387,6 +401,12 @@ iframe {
 }
 
 
+// Dropdowns
+
+
+
+
+
 // Topic Colors
 .topic-java {
   color: $topic-java; 
@@ -420,41 +440,3 @@ iframe {
 .label-topic-html-css {
   @include label-variant($topic-html-css);
 }
-
-/*
-// Collapsible panel
-.panel-collapsible {
-  cursor: pointer;
-  
-  .panel-footer {
-    font-size: $font-size-small;
-    i {
-      color: $gray-light;
-    }
-    &:hover i {
-      color: $text-color;
-    }
-  }
-  
-  // Correctly handle collapse show/hide icon and text.
-  .panel-show {
-    display: none; 
-  }
-  .collapse + .panel-footer {
-    .panel-show {
-      display: inline;
-    }
-    .panel-hide {
-      display: none;
-    }
-  }
-  .collapse.in + .panel-footer {
-    .panel-show {
-      display: none;
-    }
-    .panel-hide {
-      display: inline; 
-    }
-  }  
-}
-*/

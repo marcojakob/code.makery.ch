@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "GreenfootKara - Introduction"
+title: "GreenfootKara"
 date: 2014-07-10 00:00
 slug: greenfoot-kara/fr
 canonical: /library/greenfoot-kara/

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "GreenfootKara - Introduction"
+title: "GreenfootKara"
 date: 2012-10-03 00:00
 updated: 2014-03-08 00:00
 slug: greenfoot-kara

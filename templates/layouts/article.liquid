@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{% block title %}{{ model.title }} - {{ global.title }}{% endblock %}</title>
+    <title>{{ model.title }} - {{ global.title }}</title>
     {% include "html-head-end" %}
   </head>
   <body {% include "prettify-onload" %}>
@@ -11,13 +11,30 @@
     <div class="container article-container">
       {% include "navigation" %}
       
-      <article class="row">
-        <div class="col-md-9 col-md-push-3">
-          {%- if model.github -%}
+      {%- if model.github -%}
+      <div class="row">
+        <div class="col-md-12">
           <div class="github-edit">
             <a href="{{ model.github }}">Edit on GitHub</a>
           </div>
-          {%- endif -%}
+        </div>
+      </div>
+      {%- endif -%}
+      
+      <article class="row">
+        {%- if model.sidebars -%}
+        <aside class="col-md-3">
+          <div class="visible-md visible-lg">
+          {% include "article/sidebars" %}
+          </div>
+          <div class="visible-xs visible-sm">
+          {% include "article/sidebars-dropdown" %}
+          </div>
+        </aside>
+        <div class="col-md-9">
+        {%- else -%}
+        <div class="col-md-offset-1 col-md-10">
+        {%- endif -%}
         
           <header class="article-header">
             <h1 class="article-title">{{ model.title }}</h1>
@@ -32,7 +49,6 @@
           {% include "article/paging" %}
         </div>
         
-        {% include "article/sidebar" %}
       </article>
       
       {% if model.comments %}

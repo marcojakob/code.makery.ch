@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "JavaFX 2 Tutorial - Introduction"
+title: "JavaFX 2 Tutorial"
 date: 2012-11-16 20:00
 updated: 2013-02-08 00:00
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-2-tutorial-intro.md
