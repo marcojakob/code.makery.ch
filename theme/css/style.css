@@ -5208,9 +5208,8 @@ iframe {
 
 .sidebar-dropdown {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 1em; }
-  .sidebar-dropdown:not(:first-child) {
-    margin-left: 5px; }
+  margin-bottom: 1em;
+  margin-right: 5px; }
   .sidebar-dropdown button {
     font-weight: bold;
     background-color: #f5f5f5; }
