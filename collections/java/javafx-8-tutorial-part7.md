@@ -2,7 +2,7 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 7: Deployment"
 date: 2014-05-10 00:00
-updated: 2014-08-27 00:00
+updated: 2014-08-30 00:00
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part7.md
 description: "How to deploy a JavaFX application as native package. Create an installer for Windows, MacOS, or Linux."
 image: /assets/java/javafx-8-tutorial-part7/addressapp-macos.png
@@ -120,10 +120,8 @@ We would like to have some nice icons for our installer:
 1. Create the following subfolders in the `build` folder:
   * `build/package/windows` (only used for windows)
   * `build/package/macos` (only used for macos)
-
 2. Copy the corresponding icons from above into those subfolders. It should look something like this now:   
 ![Installer Icons](/assets/java/javafx-8-tutorial-part7/installer-icons.png)
-
 3. **Important**: The name of the icons must exactly match the **Application title** you specified in `build.fxbuild`:
   * `YourAppTitle.ico`
   * `YourAppTitle-setup-icon.bmp`
@@ -135,8 +133,7 @@ We would like to have some nice icons for our installer:
 Our `resources` folder isn't copied automatically. We must manually add it to the build directory:
 
 1. Create the following subfolder in the `build` folder:
-  * `build/dist`
-  
+  * `build/dist`   
 2. Copy the `resources` folder (containing our application images) into `build/dist`.    
 ![Build Resources](/assets/java/javafx-8-tutorial-part7/build-resources.png)
 
@@ -150,14 +147,14 @@ As e(fx)clipse can't be told (yet?) to include additional resources like our `re
 Open `build.xml` and find the path `fxant`. Add one line for the `${basedir}` (will make our installer icons available):
 
 
-##### build.xml
+##### build.xml - add "basedir"
 
 <pre class="prettyprint lang-xml">
 &lt;path id="fxant"&gt;
   &lt;filelist&gt;
     &lt;file name="${java.home}\..\lib\ant-javafx.jar"/&gt;
     &lt;file name="${java.home}\lib\jfxrt.jar"/&gt;
-    &lt;file name="${basedir}"/&gt;
+    <mark>&lt;file name="${basedir}"/&gt;</mark>
   &lt;/filelist&gt;
 &lt;/path&gt;
 </pre>    
@@ -165,15 +162,30 @@ Open `build.xml` and find the path `fxant`. Add one line for the `${basedir}` (w
 
 Find the block `fx:resources id="appRes"` further down in the file. Add one line for our `resources`:
 
+##### build.xml - add "resources"
+
 <pre class="prettyprint lang-xml">
 &lt;fx:resources id="appRes"&gt;
     &lt;fx:fileset dir="dist" includes="AddressApp.jar"/&gt;
     &lt;fx:fileset dir="dist" includes="libs/*"/&gt;
-    &lt;fx:fileset dir="dist" includes="resources/**"/&gt;
+    <mark>&lt;fx:fileset dir="dist" includes="resources/**"/&gt;</mark>
 &lt;/fx:resources&gt; 
 </pre>
 
-We could already run the `build.xml` as an Ant build. This would generate a jar file of the project. But we want to go a step further and create a nice installer.
+
+Somehow, the version number doesn't get added in the `fx:application` which makes the installer always default to version `1.0` (as pointed out by a few people in the comments). To fix this, manually add the version number (thanks Marc for [finding out](http://code.makery.ch/java/javafx-8-tutorial-part7/#comment-1566725959)):
+
+##### build.xml - add "version"
+
+<pre class="prettyprint lang-xml">
+&lt;fx:application id="fxApplication"
+    name="AddressApp"
+    mainClass="ch.makery.address.MainApp"
+    <mark>version="1.0"</mark>
+/>
+</pre>
+
+We could already run the `build.xml` as an Ant build at this point. This would generate a runnable jar file of the project. But we want to go a step further and create a nice installer.
 
 
 ### Step 5 (WINDOWS) - Windows exe Installer
