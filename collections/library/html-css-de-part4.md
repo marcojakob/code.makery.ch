@@ -8,7 +8,7 @@ published: true
 prettify: true
 comments: false
 sidebars:
-- header: Teile dieser Serie
+- header: Artikel dieser Serie
   body:
   - text: "Einleitung"
     link: /library/html-css/de/

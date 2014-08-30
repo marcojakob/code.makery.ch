@@ -9,7 +9,7 @@ published: true
 prettify: false
 comments: true
 sidebars:
-- header: Artikel in dieser Serie
+- header: Artikel dieser Serie
   body:
   - text: "Einleitung"
     link: /library/greenfoot-kara/de/
