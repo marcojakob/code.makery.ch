@@ -42,7 +42,7 @@ sidebars:
     icon-css: fa fa-fw fa-file-archive-o
 ---
 
-Vorhin haben Sie eine erste Webseite erstellt und veröffentlicht. Zugegeben, die Webseite hat noch wenig Inhalt und sieht nicht besonders ansprechend aus. Das wollen wir jetzt ändern. In diesem Teil lernen Sie, wie Sie mit CSS die Seite gestalten können. Sptäer, im [Teil 5](/library/html-css/de/part5/) werden wir mit der Hilfe von einem Framework noch mehr Style in die Webseite bringen. 
+Vorhin haben Sie eine erste Webseite erstellt und veröffentlicht. Zugegeben, die Webseite hat noch wenig Inhalt und sieht nicht besonders ansprechend aus. Das wollen wir jetzt ändern. In diesem Teil lernen Sie, wie Sie mit CSS die Seite gestalten können. Später, im [Teil 5](/library/html-css/de/part5/) werden wir mit der Hilfe von einem Framework noch mehr Style in die Webseite bringen. 
 
 
 ## Struktur und Style

@@ -140,7 +140,11 @@ Die einfachste Art, Schriften einzubetten, ist mit der Hilfe von [Google Fonts](
 
 Eine passende Schriftart auszuwählen ist sehr wichtig und gibt Ihrer Webseite ein persönliches Aussehen. Oft verwendet man zwei Schriftarten in Kombination, eine Schriftart für die Überschriften und eine für den Text.
 
-Schauen Sie sich empfohlene Schriftkombinationen von [Theme Armada](http://blog.themearmada.com/8-amazing-google-font-combinations/), von [Caleb McGuire](http://www.mrmcguire.com/10-useful-google-font-combinations-for-your-next-site/) oder von ähnlichen Webseiten an und wählen sie eine Kombination aus.
+Schauen Sie sich empfohlene Schriftkombinationen von Google Fonts auf folgenden Seiten an:
+* [Theme Armada](http://blog.themearmada.com/8-amazing-google-font-combinations/)
+* [Brian Gardner](http://briangardner.com/google-font-combinations/)
+* [Caleb McGuire](http://www.mrmcguire.com/10-useful-google-font-combinations-for-your-next-site/)
+* und weitere
 
 Als Beispiel wähle ich die Kombination von *Oswald* für Überschriften und *Lato* für den Text:
 
