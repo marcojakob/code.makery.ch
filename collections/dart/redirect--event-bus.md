@@ -1,18 +1,9 @@
 ---
-layout: article
-title: Dart Event Bus
-date: 2014-03-25 00:00
+layout: redirect
+title: "Dart Event Bus"
+slug: event-bus
+redirect: /library/dart-event-bus/
 published: true
-comments: true
-sidebars:
-- header: Source Code
-  body:
-  - text: Dart Event Bus (GitHub)
-    link: https://github.com/marcojakob/dart-event-bus
-    icon-css: fa fa-fw fa-github-alt
-javascript: 
-- /assets/dart/event-bus/dart.min.js
-- /assets/dart/event-bus/event_bus_example.dart.min.js
 ---
 
 A simple Event Bus using Dart [Streams](http://api.dartlang.org/docs/releases/latest/dart_async/Stream.html) 

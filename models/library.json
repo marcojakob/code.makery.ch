@@ -59,8 +59,8 @@
     },
     {
       "title": "Dart Event Bus",
-      "link": "/dart/event-bus/",
-      "image": "/assets/dart/event-bus.png",
+      "link": "/library/dart-event-bus/",
+      "image": "/assets/library/dart-event-bus/event-bus-small.png",
       "summary": "An Event Bus library for Dart for decoupling applications.",
       "topics": [ "Dart" ],
       "languages": [ "English" ]
