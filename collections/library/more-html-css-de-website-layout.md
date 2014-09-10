@@ -3,10 +3,10 @@ layout: article
 title: "Mehr HTML & CSS: Website-Layout"
 date: 2014-08-16 00:00
 slug: more-html-css/de/website-layout
-github: false
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-website-layout.md
 published: true
 prettify: true
-comments: false
+comments: true
 sidebars:
 - header: Artikel dieser Serie
   body:

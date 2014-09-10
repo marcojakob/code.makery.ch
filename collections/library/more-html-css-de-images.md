@@ -3,10 +3,10 @@ layout: article
 title: "Mehr HTML & CSS: Bilder"
 date: 2014-08-22 00:00
 slug: more-html-css/de/images
-github: false
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-images.md
 published: true
 prettify: true
-comments: false
+comments: true
 sidebars:
 - header: Artikel dieser Serie
   body:

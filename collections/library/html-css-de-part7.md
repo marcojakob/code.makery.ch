@@ -3,10 +3,10 @@ layout: article
 title: "HTML & CSS Tutorial - Teil 7: Wie weiter?"
 date: 2014-08-16 00:00
 slug: html-css/de/part7
-github: false
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part7.md
 published: true
 prettify: true
-comments: false
+comments: true
 sidebars:
 - header: Artikel dieser Serie
   body:

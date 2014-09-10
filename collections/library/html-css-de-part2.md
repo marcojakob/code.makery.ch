@@ -3,10 +3,10 @@ layout: article
 title: "HTML & CSS Tutorial - Teil 2: Webseite veröffentlichen"
 date: 2014-08-13 00:00
 slug: html-css/de/part2
-github: false
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part2.md
 published: true
 prettify: true
-comments: false
+comments: true
 sidebars:
 - header: Artikel dieser Serie
   body:
