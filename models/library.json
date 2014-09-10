@@ -35,11 +35,11 @@
     },
     {
       "title": "JavaFX 8 Tutorial",
-      "link": "/java/javafx-8-tutorial-intro/",
-      "image": "/assets/java/addressapp-javafx8.png",
+      "link": "/library/javafx-8-tutorial/",
+      "image": "/assets/library/javafx-8-tutorial/addressapp-javafx8.png",
       "summary": "Seven-part tutorial series for learning JavaFX from the ground up. Uses the new Java 8 and JavaFX 8 features.",
       "topics": [ "JavaFX" ],
-      "languages": [ "English" ]
+      "languages": [ "English", "Português" ]
     },
     {
       "title": "JavaFX 2 Tutorial",
