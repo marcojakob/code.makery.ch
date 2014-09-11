@@ -80,11 +80,12 @@ Este Tutorial em sete partes orienta a criação, programação e a implantaçã
 **São muitas coisas!** Assim, depois que você completar esta serie de tutoriais voceê estará pronto para criar aplicativos sofisticados com JavaFX.
 
 
-## How to use this Tutorial
+## Como usar este tutorial
+
+Há duas maneira de usar este tutorial:
+* **Aprendizagem:** Crie seu própio projeto JavaFX do zero.
+* **Modo rapido:** Importe o código fonte de uma parte do tutorial para sua IDE (é um projeto Eclipse, mas você pode usar outras IDEs como o NetBeans com algumas modificações). E depois ler o tutorial para entender o código.
 
 There are two ways to use this tutorial:
 
-* **learn-a-lot track:** Create your own JavaFX project from the ground up.
-* **fast track:** Import the source code for a tutorial part into your IDE (it's an Eclipse project, but you could use other IDEs like NetBeans with slight modifications). Then go through the tutorial to understand the code.
-
-Now, I hope you'll have fun! Start with [Part 1: Scene Builder](/library/javafx-8-tutorial/pt/part1/).
+Espero que você se divirta! Começe com [Parte 1: Scene Builder](/library/javafx-8-tutorial/pt/part1/).
