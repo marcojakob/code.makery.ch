@@ -86,6 +86,4 @@ Há duas maneira de usar este tutorial:
 * **Aprendizagem:** Crie seu própio projeto JavaFX do zero.
 * **Modo rapido:** Importe o código fonte de uma parte do tutorial para sua IDE (é um projeto Eclipse, mas você pode usar outras IDEs como o NetBeans com algumas modificações). E depois ler o tutorial para entender o código.
 
-There are two ways to use this tutorial:
-
 Espero que você se divirta! Começe com [Parte 1: Scene Builder](/library/javafx-8-tutorial/pt/part1/).
