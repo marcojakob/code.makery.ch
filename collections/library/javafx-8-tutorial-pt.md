@@ -6,40 +6,40 @@ updated: 2014-09-10 00:00
 slug: javafx-8-tutorial/pt
 canonical: /java/javafx-8-tutorial-intro/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt.md
-description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
+description: "Este Tutorial em sete partes orienta a criação, programação e a implantação de um aplicativo de endereços usando JavaFX."
 image: /assets/library/javafx-8-tutorial/addressapp.png
 published: true
 prettify: true
 comments: false
 sidebars:
-- header: "Articles in this Series"
+- header: "Artigos nesta serie"
   body:
-  - text: "Introduction"
+  - text: "Introdução"
     link: /library/javafx-8-tutorial/pt/
     paging: Intro
     active: true
-  - text: "Part 1: Scene Builder"
+  - text: "Parte 1: Scene Builder"
     link: /library/javafx-8-tutorial/pt/part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
+  - text: "Parte 2: Model and TableView"
     link: /library/javafx-8-tutorial/pt/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
+  - text: "Parte 3: Interagindo com o usuário"
     link: /library/javafx-8-tutorial/pt/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "Parte 4: Estilos usando CSS"
     link: /library/javafx-8-tutorial/pt/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
+  - text: "Parte 5: Salvando dados como XML"
     link: /library/javafx-8-tutorial/pt/part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
+  - text: "Parte 6: Gráficos de Estatistica"
     link: /library/javafx-8-tutorial/pt/part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "Parte 7: Implantação"
     link: /library/javafx-8-tutorial/pt/part7/
     paging: 7
-- header: Languages
+- header: Linguagens
   body:
   - text: English
     link: /java/javafx-8-tutorial-intro/
@@ -55,29 +55,29 @@ sidebars:
 </div>
 
 
-Back in 2012 I wrote a very detailed [JavaFX 2 tutorial series](/java/javafx-2-tutorial-intro/) for my students. Many people all over the world have been reading the tutorial and gave very positive feedback. So I decided to **rewrite the JavaFX 2 tutorial for JavaFX 8** (read about what changed in [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)).
+Em 2012 eu criei um tutorial muito detalhado [JavaFX 2 tutorial series](/java/javafx-2-tutorial-intro/) para meus alunos. Muitas pessoas ao redor do mundo leram o tutorial e derem um feedback possitivo. Então eu decidi ** rescrever o tutorial de JavaFX 2 para JavaFX 8**(Leia sobre o que mudou em [Atualização para JavaFX 8 - Quais as novidades ](/blog/update-to-javafx-8-whats-new/)).
 
-This tutorial walks you through designing, programming and deploying an address application. This is how the final appllication will look like:
+Este Tutorial em sete partes orienta a criação, programação e a implantação de um aplicativo de endereços. No fim nossa aplicação ficará como a da imagem:
 
 ![Screenshot AddressApp](/assets/library/javafx-8-tutorial/addressapp.png)
 
 
-## What you will learn
+## Oque você aprenderá
 
-* Creating and starting a JavaFX project
-* Using Scene Builder to design the user interface
-* Structuring an application with the Model View Controller (MVC) pattern
-* Using `ObservableLists` for automatically updating the user interface
-* Using `TableView` and reacting to selection changes in the table
-* Create a custom popup dialog to edit persons
-* Validating user input
-* Styling a JavaFX application with CSS
-* Persisting data as XML
-* Saving the last opened file path in user preferences
-* Creating a JavaFX chart for statistics
-* Deploying a JavaFX application as a native package
+* Criar e executar um projeto JavaFX
+* Usar o Scene Builder para criar a interface com o usuário
+* Estruturar uma aplicação usando o padrão MVC (Modelo Visão Controle)
+* Usar `ObservableLists` para atualizar automaticamente a interface do usuário
+* Usar `TableView`e mostar as informações ao selecionar uma linha
+* Criar uma caixa de dialogo popup para editar as informações das pessoas
+* Validar a entrada do usuário
+* Personalizar um aplicativo JavaFX usando CSS
+* Persistir dados usando XML
+* Armazenar o ultimo arquivo aberto nas preferencias do usuário
+* Criar gráfico JavaFX com estatísticas
+* Implementar um aplicativo JavaFX como um pacote nativo
 
-**This is quite a lot!** So, after you you've completed this tutorial series you should be ready to build sophisticated applications with JavaFX.
+**São muitas coisas!** Assim, depois que você completar esta serie de tutoriais voceê estará pronto para criar aplicativos sofisticados com JavaFX.
 
 
 ## How to use this Tutorial
