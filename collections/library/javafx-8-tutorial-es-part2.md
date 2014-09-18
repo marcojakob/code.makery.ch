@@ -5,7 +5,7 @@ date: 2014-09-17 00:00
 updated: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part2
 canonical: /java/javafx-8-tutorial-part2/
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-es-part2.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part2.md
 description: "Uso de un componente TableView para mostrar una lista (ObsevableList) de personas (Person)"
 image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
 published: true
@@ -17,13 +17,13 @@ sidebars:
   - text: "Introducción"
     link: /library/javafx-8-tutorial/es/
     paging: Intro
-    active: true
   - text: "Parte 1: Scene Builder"
     link: /library/javafx-8-tutorial/es/part1/
     paging: 1
   - text: "Parte 2: Modelo y TableView"
     link: /library/javafx-8-tutorial/es/part2/
     paging: 2
+    active: true
   - text: "Parte 3: Interacción con el usuario"
     link: /library/javafx-8-tutorial/es/part3/
     paging: 3
@@ -42,14 +42,13 @@ sidebars:
 - header: Lenguajes
   body:
   - text: English
-    link: /java/javafx-8-tutorial-intro/
+    link: /java/javafx-8-tutorial-part2/
     icon-css: fa fa-fw fa-globe
   - text: Português
-    link: /library/javafx-8-tutorial/pt/
+    link: /library/javafx-8-tutorial/pt/part2/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Español
-    link: /library/javafx-8-tutorial/es/
+    link: /library/javafx-8-tutorial/es/part2/
     icon-css: fa fa-fw fa-globe
     active: true
 ---

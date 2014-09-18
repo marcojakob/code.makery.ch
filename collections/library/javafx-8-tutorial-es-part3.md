@@ -3,8 +3,9 @@ layout: article
 title: "Tutorial JavaFX 8 - Parte 3: Interacción con el usuario"
 date: 2014-09-17 00:00
 updated: 2014-09-17 00:00
-slug: javafx-8-tutorial-part3
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part3.md
+slug: javafx-8-tutorial/es/part3
+canonical: /java/javafx-8-tutorial-part3/
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part3.md
 description: "Respuesta a cambios de selección en un TableView. Añadir, editar y borrar ítems de la tabla y validar la entrada del usuario."
 image: /assets/library/javafx-8-tutorial/part3/addressapp-part3.png
 published: true
@@ -16,7 +17,6 @@ sidebars:
   - text: "Introducción"
     link: /library/javafx-8-tutorial/es/
     paging: Intro
-    active: true
   - text: "Parte 1: Scene Builder"
     link: /library/javafx-8-tutorial/es/part1/
     paging: 1
@@ -26,6 +26,7 @@ sidebars:
   - text: "Parte 3: Interacción con el usuario"
     link: /library/javafx-8-tutorial/es/part3/
     paging: 3
+    active: true
   - text: "Parte 4: Hojas de estilo CSS"
     link: /library/javafx-8-tutorial/es/part4/
     paging: 4
@@ -41,19 +42,20 @@ sidebars:
 - header: Lenguajes
   body:
   - text: English
-    link: /java/javafx-8-tutorial-intro/
+    link: /java/javafx-8-tutorial-part3/
     icon-css: fa fa-fw fa-globe
   - text: Português
-    link: /library/javafx-8-tutorial/pt/
+    link: /library/javafx-8-tutorial/pt/part3/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Español
-    link: /library/javafx-8-tutorial/es/
+    link: /library/javafx-8-tutorial/es/part3/
     icon-css: fa fa-fw fa-globe
     active: true
 ---
 
-**Update Aug 27, 2014:** *Now using JDK 8u20 and ControlsFX 8.0.6_20*
+<div class="alert alert-warning">
+  <i class="fa fa-language"></i> This page is beeing translated to Spanish. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
+</div>
 
 ![Screenshot AddressApp Part 3](/assets/library/javafx-8-tutorial/part3/addressapp-part3.png)
 

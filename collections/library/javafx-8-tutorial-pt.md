@@ -48,6 +48,9 @@ sidebars:
     link: /library/javafx-8-tutorial/pt/
     icon-css: fa fa-fw fa-globe
     active: true
+  - text: Español
+    link: /library/javafx-8-tutorial/es/
+    icon-css: fa fa-fw fa-globe
 ---
 
 <div class="alert alert-warning">

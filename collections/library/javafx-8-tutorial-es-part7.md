@@ -4,7 +4,8 @@ title: "JavaFX 8 Tutorial - Part 7: Deployment"
 date: 2014-09-17 00:00
 updated: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part7
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part7.md
+canonical: /java/javafx-8-tutorial-part7/
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part7.md
 description: "How to deploy a JavaFX application as native package. Create an installer for Windows, MacOS, or Linux."
 image: /assets/library/javafx-8-tutorial/part7/addressapp-macos.png
 published: true
@@ -16,7 +17,6 @@ sidebars:
   - text: "Introducción"
     link: /library/javafx-8-tutorial/es/
     paging: Intro
-    active: true
   - text: "Parte 1: Scene Builder"
     link: /library/javafx-8-tutorial/es/part1/
     paging: 1
@@ -38,17 +38,17 @@ sidebars:
   - text: "Parte 7: Publicación con e(fx)clipse"
     link: /library/javafx-8-tutorial/es/part7/
     paging: 7
+    active: true
 - header: Lenguajes
   body:
   - text: English
-    link: /java/javafx-8-tutorial-intro/
+    link: /java/javafx-8-tutorial-part7/
     icon-css: fa fa-fw fa-globe
   - text: Português
-    link: /library/javafx-8-tutorial/pt/
+    link: /library/javafx-8-tutorial/pt/part7/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Español
-    link: /library/javafx-8-tutorial/es/
+    link: /library/javafx-8-tutorial/es/part7/
     icon-css: fa fa-fw fa-globe
     active: true
 ---

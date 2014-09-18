@@ -17,10 +17,10 @@ sidebars:
   - text: "Introducción"
     link: /library/javafx-8-tutorial/es/
     paging: Intro
-    active: true
   - text: "Parte 1: Scene Builder"
     link: /library/javafx-8-tutorial/es/part1/
     paging: 1
+    active: true
   - text: "Parte 2: Modelo y TableView"
     link: /library/javafx-8-tutorial/es/part2/
     paging: 2
@@ -42,14 +42,13 @@ sidebars:
 - header: Lenguajes
   body:
   - text: English
-    link: /java/javafx-8-tutorial-intro/
+    link: /java/javafx-8-tutorial-part1/
     icon-css: fa fa-fw fa-globe
   - text: Português
-    link: /library/javafx-8-tutorial/pt/
+    link: /library/javafx-8-tutorial/pt/part1/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Español
-    link: /library/javafx-8-tutorial/es/
+    link: /library/javafx-8-tutorial/es/part1/
     icon-css: fa fa-fw fa-globe
     active: true
 ---

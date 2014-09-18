@@ -4,6 +4,7 @@ title: "JavaFX 8 Tutorial - Part 4: CSS Styling"
 date: 2014-09-17 00:00
 updated: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part4
+canonical: /java/javafx-8-tutorial-part4/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part4.md
 description: "In JavaFX you can style your user interface using CSS. We'll also add an application icon in this tutorial part."
 image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png
@@ -16,11 +17,10 @@ sidebars:
   - text: "Introducción"
     link: /library/javafx-8-tutorial/es/
     paging: Intro
-    active: true
   - text: "Parte 1: Scene Builder"
     link: /library/javafx-8-tutorial/es/part1/
     paging: 1
-  - text: "Parte 2: Model y TableView"
+  - text: "Parte 2: Modelo y TableView"
     link: /library/javafx-8-tutorial/es/part2/
     paging: 2
   - text: "Parte 3: Interacción con el usuario"
@@ -29,6 +29,7 @@ sidebars:
   - text: "Parte 4: Hojas de estilo CSS"
     link: /library/javafx-8-tutorial/es/part4/
     paging: 4
+    active: true
   - text: "Parte 5: Persistencia de datos con XML"
     link: /library/javafx-8-tutorial/es/part5/
     paging: 5
@@ -41,14 +42,13 @@ sidebars:
 - header: Lenguajes
   body:
   - text: English
-    link: /java/javafx-8-tutorial-intro/
+    link: /java/javafx-8-tutorial-part4/
     icon-css: fa fa-fw fa-globe
   - text: Português
-    link: /library/javafx-8-tutorial/pt/
+    link: /library/javafx-8-tutorial/pt/part4/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Español
-    link: /library/javafx-8-tutorial/es/
+    link: /library/javafx-8-tutorial/es/part4/
     icon-css: fa fa-fw fa-globe
     active: true
 ---

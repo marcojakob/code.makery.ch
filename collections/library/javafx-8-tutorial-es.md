@@ -47,7 +47,6 @@ sidebars:
   - text: Português
     link: /library/javafx-8-tutorial/pt/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Español
     link: /library/javafx-8-tutorial/es/
     icon-css: fa fa-fw fa-globe
@@ -92,4 +91,4 @@ Hay dos formas de utilizarlo
 * **máxima-rápidez** Importa el código fuente de una parte del tutorial en tu entorno de desarrollo (es un proyecto Eclipse, pero puedes usar otros entornos, como Netbeans, con ligeras modificaciones). Después revisa el tutorial para entender el código. Este enfoque también resulta útil si te quedas atascado en la creación de tu propio código.
 
 
-¡ Espero que te diviertas y aprendas mucho ! Empieza en  [Part 1: Scene Builder](/java/javafx-2-tutorial-es-part1/).
+¡ Espero que te diviertas y aprendas mucho ! Empieza en  [Part 1: Scene Builder](/library/javafx-8-tutorial/es/part1/).
