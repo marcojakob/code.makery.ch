@@ -60,7 +60,7 @@ sidebars:
 
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
 
-### Temas en Parte 1
+## Contenidos en Parte 1
 
 * Familiarizándose con JavaFX
 * Crear y empezar un proyecto JavaFX
@@ -71,7 +71,7 @@ sidebars:
 *****
 
 
-### Prerequisitos
+## Prerequisitos
 
 * Última versión de  [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (includes **JavaFX 8**).
 * Eclipse 4.3 o superior con el plugin e(fx)clipse. La forma más sencilla de obtenerlo es descargarse la distribución preconfigurada desde [e(fx)clipse website](http://efxclipse.bestsolution.at/install.html#all-in-one). Como alternativa puedes usar un [sitio de actualización](http://www.eclipse.org/efxclipse/install.html) para tu instalación de Eclipse.
@@ -194,7 +194,7 @@ Haz clic derecho sobre `PersonOverview.fxml` y elige *Open with Scene Builder*. 
 *****
 
 
-## Creat la aplicación principal
+## Crea la aplicación principal
 
 Necesitamos otro archivo FXML para nuestra vista raíz, la cual contendrá una barra de menús y encapsulará la vista recién creada `PersonOverview.fxml`.
 

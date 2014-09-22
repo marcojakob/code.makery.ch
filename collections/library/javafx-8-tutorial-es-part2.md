@@ -60,7 +60,7 @@ sidebars:
 ![Screenshot AddressApp Part 2](/assets/library/javafx-8-tutorial/part2/addressapp-part2.png)
 
 
-## Temas en Parte 2
+## Contenidos en Parte 2
 
 * Creación de una clase para el **modelo**
 * Uso del modelo en una **ObservableList**
@@ -74,7 +74,7 @@ sidebars:
 Neceistamos un modelo para contener la información sobre los contactos de nuestra agenda. Añade una nueva clase al paquete encargado de contener los modelos (`ch.makery.address.model`) denominada `Person`. La clase `Person` tendrá atributos (instancias de clase) para el nombre, la dirección y la fecha de nacimiento. Añade el código siguiente a la clase. Explicaré detalles de JavaFX después del código.
 
 
-##### Person.java
+#### Person.java
 
 <pre class="prettyprint lang-java">
 package ch.makery.address.model;
@@ -201,10 +201,10 @@ public class Person {
 </pre>
 
 
-### Explicaciones
+### Explicación del código
 
-* Con JavaFX es habitual usar [`Properties`](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html) para todos los atributos de un clase usada como modelo. Una `Property` permite, entre otras cosas, recibir notificaciones automáticamente cuando el valor de una variable cambia (por ejemplo si cambia `lastName`. Esto ayuda a mantener sincronizados la vista y los datos. Para aprender más sobre `Properties` lee [Using JavaFX Properties and Binding](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm).
-* [`LocalDate`](http://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html), el tipo que usamos para contener la fecha de nacimiento (`birthday`), es parte de la nueva [API de JDK 8 para Date & Time](http://docs.oracle.com/javase/tutorial/datetime/iso/).
+* Con JavaFX es habitual usar [`Propiedades`](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html) para todos los atributos de un clase usada como modelo. Una `Propiedad` permite, entre otras cosas, recibir notificaciones automáticamente cuando el valor de una variable cambia (por ejemplo si cambia `lastName`. Esto ayuda a mantener sincronizados la vista y los datos. Para aprender más sobre `Propiedades` lee [Using JavaFX Properties and Binding](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm).
+* [`LocalDate`](http://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html), el tipo que usamos para especificar la fecha de nacimiento (`birthday`) es parte de la nueva [API de JDK 8 para la fecha y la hora](http://docs.oracle.com/javase/tutorial/datetime/iso/).
 
 
 *****
@@ -214,11 +214,11 @@ public class Person {
 Los principales datos que maneja nuestra aplicación son una colección de personas. Vamos a crear una lista de objetos de tipo `Person` dentro de la clase principal `MainApp`. El resto de controladores obtendrá luego acceso a esa lista central dentro de `MainApp`. 
 
 
-### ObservableList
+### Lista observable (ObservableList)
 
 Estamos clases gráficas de JavaFX que necesitan ser informadas sobre los cambios en la lista de personas. Esto es importante, pues de otro modo la vista no estará sincronizada con los datos. Para estos fines, JavaFX ha introducido nuevas [clases de colección](http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm). 
 
-De esas colecciones, necesitamos la denominada `ObservableList`. Para crear una nueva `ObservableList`, añade el código siguiente al principio de la clase `MainApp`. Tamb9én añadiremos un constructor para crear datos de ejemplo y un método de consulta (get) público:
+De esas colecciones, necesitamos la denominada `ObservableList`. Para crear una nueva `ObservableList`, añade el código siguiente al principio de la clase `MainApp`. También añadiremos un constructor para crear datos de ejemplo y un método de consulta (get) público:
 
 
 ##### MainApp.java
@@ -415,9 +415,9 @@ Ahora, cuando ejecutes la aplicación, deberías obtener algo parecido a la capt
 Enhorabuena!
 
 
-### Qué es lo siguiente?
+### ¿Qué es lo siguiente?
 
-En [Tutorial Parte 3](/java/javafx-8-tutorial-part3/) añadiremos más funcionalidad para añadir, borrar y editar contactos.
+En [Tutorial Parte 3](/java/javafx-8-tutorial-part3/) añadiremos la funcionalidad requerida para añadir, borrar y editar contactos.
 
 
 ##### Otros artículos que podrías encontrar de interés
