@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Tutorial JavaFX 8 - Part 2: Modelo y TableView"
+title: "Tutorial JavaFX 8 - Parte 2: Modelo y TableView"
 date: 2014-09-17 00:00
 updated: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part2

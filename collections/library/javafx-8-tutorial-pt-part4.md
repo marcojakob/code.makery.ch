@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 4: CSS Styling"
+title: "Tutorial JavaFX 8 - Parte 4: Estilos mediante CSS"
 date: 2014-09-10 00:00
 updated: 2014-09-10 00:00
 slug: javafx-8-tutorial/pt/part4

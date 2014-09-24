@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 5: Storing Data as XML"
+title: "Tutorial JavaFX 8 - Parte 5: Almacenamiento de datos con XML"
 date: 2014-09-10 00:00
 updated: 2014-09-10 00:00
 slug: javafx-8-tutorial/pt/part5
