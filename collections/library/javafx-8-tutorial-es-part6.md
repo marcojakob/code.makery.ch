@@ -2,7 +2,6 @@
 layout: article
 title: "Tutorial JavaFX 8 - Parte 6: Gráficos estadísticas"
 date: 2014-09-17 00:00
-updated: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part6
 canonical: /java/javafx-8-tutorial-part6/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part6.md
@@ -36,7 +35,7 @@ sidebars:
     link: /library/javafx-8-tutorial/es/part6/
     paging: 6
     active: true
-  - text: "Parte 7: Publicación con e(fx)clipse"
+  - text: "Parte 7: Despliegue"
     link: /library/javafx-8-tutorial/es/part7/
     paging: 7
 - header: Lenguajes
@@ -52,10 +51,6 @@ sidebars:
     icon-css: fa fa-fw fa-globe
     active: true
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page is beeing translated to Spanish. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
 
 ![Screenshot AddressApp Part 6](/assets/library/javafx-8-tutorial/part6/addressapp-part6.png)
 
@@ -276,7 +271,7 @@ Un buen sitio para obtener más información es el tutorial oficial de Oracle: [
 
 ### ¿Qué es lo siguiente?
 
-En la última parte del tutorial, [Part 7](/java/javafx-8-tutorial-part7/), vamos por fin a desplegar nuestra aplicación (es decir, la empaquetaremos y la haremos llegar a los usuarios).
+En la última parte del tutorial, [Part 7](/library/javafx-8-tutorial/es/part7/), vamos por fin a desplegar nuestra aplicación (es decir, la empaquetaremos y la haremos llegar a los usuarios).
 
 
 ##### Otros artículos que podrías encontrar de interés

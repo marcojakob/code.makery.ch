@@ -2,7 +2,6 @@
 layout: article
 title: "Tutorial JavaFX 8 - Parte 1: Scene Builder"
 date: 2014-09-17 00:00
-updated: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part1
 canonical: /java/javafx-8-tutorial-part1/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part1.md
@@ -36,7 +35,7 @@ sidebars:
   - text: "Parte 6: Gráficos estadísticos"
     link: /library/javafx-8-tutorial/es/part6/
     paging: 6
-  - text: "Parte 7: Publicación con e(fx)clipse"
+  - text: "Parte 7: Despliegue"
     link: /library/javafx-8-tutorial/es/part7/
     paging: 7
 - header: Lenguajes
@@ -52,10 +51,6 @@ sidebars:
     icon-css: fa fa-fw fa-globe
     active: true
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page is beeing translated to Spanish. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
 
 
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
@@ -336,7 +331,7 @@ Para resolverlo comprueba otra vez que no hayas escrito mal el nombre de tus arc
 
 ### ¿Qué es lo siguiente?
 
-En [Tutorial Parte 2](/library/javafx-8-tutorial/pt/part2/) añadiremos algunos datos y funcionalidad a nuestra aplicación de contactos.
+En [Tutorial Parte 2](/library/javafx-8-tutorial/es/part2/) añadiremos algunos datos y funcionalidad a nuestra aplicación de contactos.
 
 
 ##### Otros artículos que podrían interesarte

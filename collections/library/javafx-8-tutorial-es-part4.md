@@ -1,8 +1,7 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 4: CSS Styling"
+title: "JavaFX 8 Tutorial - Part 4: Hojas de estilo CSS"
 date: 2014-09-17 00:00
-updated: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part4
 canonical: /java/javafx-8-tutorial-part4/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part4.md
@@ -36,7 +35,7 @@ sidebars:
   - text: "Parte 6: Gráficos estadísticos"
     link: /library/javafx-8-tutorial/es/part6/
     paging: 6
-  - text: "Parte 7: Publicación con e(fx)clipse"
+  - text: "Parte 7: Despliegue"
     link: /library/javafx-8-tutorial/es/part7/
     paging: 7
 - header: Lenguajes
@@ -52,10 +51,6 @@ sidebars:
     icon-css: fa fa-fw fa-globe
     active: true
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page is beeing translated to Spanish. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
 
 ![Screenshot AddressApp Part 4](/assets/library/javafx-8-tutorial/part4/addressapp-part4.png)
 
@@ -357,7 +352,7 @@ También puedes añadir un icono a la escena que contiene la venta de edición d
 
 ### ¿Qué es lo siguiente?
 
-En [Tutorial Parte 5](/java/javafx-8-tutorial-part5/) añadiremos la capacidad de almacenar datos mediante XML.
+En [Tutorial Parte 5](/library/javafx-8-tutorial/es/part5/) añadiremos la capacidad de almacenar datos mediante XML.
 
 
 ##### Otros artículos que podrían resultarte de interés

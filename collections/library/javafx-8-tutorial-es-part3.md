@@ -2,7 +2,6 @@
 layout: article
 title: "Tutorial JavaFX 8 - Parte 3: Interacción con el usuario"
 date: 2014-09-17 00:00
-updated: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part3
 canonical: /java/javafx-8-tutorial-part3/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part3.md
@@ -36,7 +35,7 @@ sidebars:
   - text: "Parte 6: Gráficos estadísticos"
     link: /library/javafx-8-tutorial/es/part6/
     paging: 6
-  - text: "Parte 7: Publicación con e(fx)clipse"
+  - text: "Parte 7: Despliegue"
     link: /library/javafx-8-tutorial/es/part7/
     paging: 7
 - header: Lenguajes
@@ -53,10 +52,6 @@ sidebars:
     active: true
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page is beeing translated to Spanish. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
 ![Screenshot AddressApp Part 3](/assets/library/javafx-8-tutorial/part3/addressapp-part3.png)
 
 
@@ -64,7 +59,7 @@ sidebars:
 
 * **Respuesta a cambios en la selección** dentro de la tabla.
 * Añade funcionalidad de los botones **añadir**, **editar**, y **borrar**s.
-* Crear un ***diálogo emergente** (popup dialog) a medida para editar un contacto.
+* Crear un **diálogo emergente** (popup dialog) a medida para editar un contacto.
 * **Validación de la entrada del usuario**.
 
 
@@ -619,7 +614,7 @@ Espero que los conceptos y estructura de esta aplicación te permitan empezar tu
 
 ### Qué es lo siguiente?
 
-En [Tutorial Parte 4](/java/javafx-8-tutorial-part4/) introduciremos algo de diseño mediante hojas de estilo CSS.
+En [Tutorial Parte 4](/library/javafx-8-tutorial/es/part4/) introduciremos algo de diseño mediante hojas de estilo CSS.
 
 
 ##### Otros artículos que podrían resultarte de interés

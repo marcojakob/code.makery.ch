@@ -2,7 +2,6 @@
 layout: article
 title: "JavaFX 8 Tutorial"
 date: 2014-09-17 00:00
-updated: 2014-09-17 00:00
 slug: javafx-8-tutorial/es
 canonical: /java/javafx-8-tutorial-intro/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es.md
@@ -36,7 +35,7 @@ sidebars:
   - text: "Parte 6: Gráficos estadísticos"
     link: /library/javafx-8-tutorial/es/part6/
     paging: 6
-  - text: "Parte 7: Publicación con e(fx)clipse"
+  - text: "Parte 7: Despliegue"
     link: /library/javafx-8-tutorial/es/part7/
     paging: 7
 - header: Lenguajes
@@ -52,10 +51,6 @@ sidebars:
     icon-css: fa fa-fw fa-globe
     active: true
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page is beeing translated to Spanish. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
 
 JavaFX proporciona a los desarrolladores de Java una nueva plataforma gráfica.  JavaFX 2.0 se publicó en octubre del 2011 con la intención de reemplazar a Swing en la creación de nuevos interfaces gráficos de usario (IGU). Cuando empecé a enseñar JavaFX en 2011 era una tecnología muy incipiente todavía. No había libros sobre JavaFX que fueran **adecuados para estudiantes de programación noveles**, así es que empecé a escribir una serie de tutoriales muy detallados sobre JavaFX.
 
@@ -83,12 +78,13 @@ El tutorial te guía a lo largo del diseño, programación y publicación de una
 
 Después de completar esta serie de tutoriales deberías estar preparado para construir aplicaciones sofisticadas con JavaFX.
 
+
 ## Como usar este tutorial
 
 Hay dos formas de utilizarlo
 
-* **máximo-aprendizaje*** Creando tu propio proyecto JavaFX desde cero.
+* **máximo-aprendizaje** Creando tu propio proyecto JavaFX desde cero.
 * **máxima-rápidez** Importa el código fuente de una parte del tutorial en tu entorno de desarrollo (es un proyecto Eclipse, pero puedes usar otros entornos, como Netbeans, con ligeras modificaciones). Después revisa el tutorial para entender el código. Este enfoque también resulta útil si te quedas atascado en la creación de tu propio código.
 
-
 ¡ Espero que te diviertas y aprendas mucho ! Empieza en  [Part 1: Scene Builder](/library/javafx-8-tutorial/es/part1/).
+

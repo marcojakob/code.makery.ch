@@ -2,7 +2,6 @@
 layout: article
 title: "Tutorial JavaFX 8 - Parte 2: Modelo y TableView"
 date: 2014-09-17 00:00
-updated: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part2
 canonical: /java/javafx-8-tutorial-part2/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part2.md
@@ -36,7 +35,7 @@ sidebars:
   - text: "Parte 6: Gráficos estadísticos"
     link: /library/javafx-8-tutorial/es/part6/
     paging: 6
-  - text: "Parte 7: Publicación con e(fx)clipse"
+  - text: "Parte 7: Despliegue"
     link: /library/javafx-8-tutorial/es/part7/
     paging: 7
 - header: Lenguajes
@@ -52,10 +51,6 @@ sidebars:
     icon-css: fa fa-fw fa-globe
     active: true
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page is beeing translated to Spanish. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
 
 ![Screenshot AddressApp Part 2](/assets/library/javafx-8-tutorial/part2/addressapp-part2.png)
 
@@ -417,7 +412,7 @@ Enhorabuena!
 
 ### ¿Qué es lo siguiente?
 
-En [Tutorial Parte 3](/java/javafx-8-tutorial-part3/) añadiremos la funcionalidad requerida para añadir, borrar y editar contactos.
+En [Tutorial Parte 3](/library/javafx-8-tutorial/es/part3/) añadiremos la funcionalidad requerida para añadir, borrar y editar contactos.
 
 
 ##### Otros artículos que podrías encontrar de interés
