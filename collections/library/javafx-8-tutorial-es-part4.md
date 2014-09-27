@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 4: Hojas de estilo CSS"
+title: "Tutorial JavaFX 8 - Parte 4: Hojas de estilo CSS"
 date: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part4
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part4.md

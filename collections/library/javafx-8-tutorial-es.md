@@ -1,10 +1,10 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial"
+title: "Tutorial JavaFX 8"
 date: 2014-09-17 00:00
 slug: javafx-8-tutorial/es
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es.md
-description: "Este tutorial en siete partes  describe el diseño, programación y publicación de una aplicación de contactos con JavaFX."
+description: "Este tutorial en siete partes describe el diseño, programación y publicación de una aplicación de contactos con JavaFX."
 image: /assets/library/javafx-8-tutorial/addressapp.png
 published: true
 prettify: true

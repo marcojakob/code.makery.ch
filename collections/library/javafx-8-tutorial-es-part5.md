@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 5: Persistencia de datos con XML"
+title: "Tutorial JavaFX 8 - Parte 5: Persistencia de datos con XML"
 date: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part5
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part5.md
