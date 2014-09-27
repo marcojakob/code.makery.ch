@@ -38,6 +38,11 @@ sidebars:
   - text: "Parte 7: Despliegue"
     link: /library/javafx-8-tutorial/es/part7/
     paging: 7
+- header: "Código fuente"
+  body:
+  - text: Parte 3 proyecto Eclipse <em>(requiere al menos JDK 8u20)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-3.zip
+    icon-css: fa fa-fw fa-download
 - header: Lenguajes
   body:
   - text: English
