@@ -44,6 +44,7 @@ sidebars:
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-7.zip
     icon-css: fa fa-fw fa-download
 - header: Languages
+  languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-part7/

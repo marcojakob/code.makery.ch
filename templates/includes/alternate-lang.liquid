@@ -1,0 +1,8 @@
+{%- for sidebar in model.sidebars -%}
+  {%- if sidebar.languages -%}
+    <!-- Alternate Languages -->
+    {%- for item in sidebar.body -%}
+    <link rel="alternate" hreflang="{{ global.languageCodes[item.text] }}" href="{{ global.domain }}{{ item.link }}" />
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}

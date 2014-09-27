@@ -42,6 +42,7 @@ sidebars:
     link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
 - header: Languages
+  languages: true
   body:
   - text: English
     link: /library/greenfoot-kara/chapter2-solutions/

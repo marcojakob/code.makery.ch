@@ -2,9 +2,7 @@
 layout: article
 title: "Tutorial JavaFX 8 - Parte 1: Scene Builder"
 date: 2014-09-17 00:00
-updated: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part1
-canonical: /java/javafx-8-tutorial-part1/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part1.md
 description: "Este tutorial describe como crear y empezar un proyecto JavaFX con Eclipse."
 image: /assets/library/javafx-8-tutorial/part1/addressapp-part1.png
@@ -36,10 +34,16 @@ sidebars:
   - text: "Parte 6: Gráficos estadísticos"
     link: /library/javafx-8-tutorial/es/part6/
     paging: 6
-  - text: "Parte 7: Publicación con e(fx)clipse"
+  - text: "Parte 7: Despliegue"
     link: /library/javafx-8-tutorial/es/part7/
     paging: 7
+- header: "Código fuente"
+  body:
+  - text: Parte 1 proyecto Eclipse <em>(requiere al menos JDK 8u20)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
+    icon-css: fa fa-fw fa-download
 - header: Lenguajes
+  languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-part1/
@@ -53,14 +57,10 @@ sidebars:
     active: true
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page is beeing translated to Spanish. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
 
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
 
-### Temas en Parte 1
+## Contenidos en Parte 1
 
 * Familiarizándose con JavaFX
 * Crear y empezar un proyecto JavaFX
@@ -71,7 +71,7 @@ sidebars:
 *****
 
 
-### Prerequisitos
+## Prerequisitos
 
 * Última versión de  [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (includes **JavaFX 8**).
 * Eclipse 4.3 o superior con el plugin e(fx)clipse. La forma más sencilla de obtenerlo es descargarse la distribución preconfigurada desde [e(fx)clipse website](http://efxclipse.bestsolution.at/install.html#all-in-one). Como alternativa puedes usar un [sitio de actualización](http://www.eclipse.org/efxclipse/install.html) para tu instalación de Eclipse.
@@ -120,74 +120,73 @@ Borra el paquete *application* y su contenido si ha sido automáticamente creado
 
 ### Crea los paquetes
 
-Desde el principio vamos a seguir buenos principios de diseño de software. Algunos de estos principios se traducen en el uso de la arquitectura o patrón conocida como [**Modelo-Vista-Controlador** (MVC)](http://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador). Esta arquitectura promueve la división de nuestro código en tres apartados claramente definidos, uno por cada elemento de la arquitectura. En Java esta separación se traduce en la creación de tres paquetes separados.
+Desde el principio vamos a seguir buenos principios de diseño de software. Algunos de estos principios se traducen en el uso de la arquitectura denominada [**Modelo-Vista-Controlador** (MVC)](http://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador). Esta arquitectura promueve la división de nuestro código en tres apartados claramente definidos, uno por cada elemento de la arquitectura. En Java esta separación se logra mediante la creación de tres paquetes separados.
 
-Right-click on the src-folder, *New... | Package*:
+En el ratón hacemos clic derecho en la carpeta *src*, *New | Package*:
 
-* `ch.makery.address` - contains *most* controller classes (=business logic)
-* `ch.makery.address.model` - contains model classes
-* `ch.makery.address.view` - contains views 
+* `ch.makery.address` - contendrá la *mayoría* de clases de control (C)
+* `ch.makery.address.model` - contendrá las clases del modelo (M)
+* `ch.makery.address.view` - contendrá las vistas (V)
 
-**Note:** Our view package will also contain some controllers that are directly related to a single view. Let's call them **view-controllers**.
+**Nota:** Nuestro paquete dedicado a las vistas contendrá también algunos controladores dedicados exclusivamente a una vista. Les llamaremos **controladores-vista**.
 
 
 *****
 
 
-## Create the FXML Layout File
+## Crea el archivo FXML de diseño
 
-There are two ways to create the user interface. Either using an XML file or programming everything in Java. Looking around the internet you will encounter both. We will use XML (ending in .fxml) for most parts. I find it a cleaner way to keep the controller and view separated from each other. Further, we can use the graphical Scene Builder to edit our XML. That means we will not have to directly work with XML.
+Hay dos formas de crear la interfaz de usuario. Programándolo en Java o mediante un archivo XML. Si buscas en Internet encontrarás información relativa a ambos métodos. Aquí usaremos XML (archivo con la extensión .fxml) para casi todo. Encuentro más claro mantener el controlador y la vista separados entre sí. Además, podemos usar la herramienta de edición visual Scene Builder, la cual nos evita tener que trabajar directamente con el XML.
 
-Right-click on the view package and create a new *FXML Document* called `PersonOverview`.   
+Haz clic derecho el paquete *view* y crea un nuevo archivo FXML (*New | Other | FXML | New FXML Document*) llamado `PersonOverview`.   
 
 ![New FXML Document](/assets/library/javafx-8-tutorial/part1/new-fxml-document.png)
 
 ![New PersonOverview](/assets/library/javafx-8-tutorial/part1/new-person-overview.png)
 
 
-
 *****
 
 
-## Design with Scene Builder
+## Diseño mediante Scene Builder
 
 <div class="alert alert-warning">
-  **Note:** If you can't get it to work, download the source of this tutorial part and try it with the included fxml.
+  **Nota:** Si no puedes hacerlo funcionar, descarga las fuentes para esta parte del tutorial e inténtalo con el archivo fxml incluido.
 </div>
 
-Right-click on `PersonOverview.fxml` and choose *Open with Scene Builder*. Now you should see the Scene Builder with just an *AncherPane* (visible under Hierarchy on the left).
+Haz clic derecho sobre `PersonOverview.fxml` y elige *Open with Scene Builder*. Ahora deberías ver el Scene Builder con un *AnchorPane* (visible en la jerarquía de componentes (herramienta Hierarchy) situada a la izquierda).
 
-1. Select the *Anchor Pane* in your Hierarchy and adjust the size under Layout (right side):   
+1. Selecciona el *AnchorPane* en tu jerarquía y ajusta el tamaño en el apartado Layout (a la derecha):   
 ![Anchor Pane Size](/assets/library/javafx-8-tutorial/part1/anchor-pane-size.png)
 
-2. Add a *Split Pane (Horizontal Flow)* by dragging it from the Library into the main area. Right-click the *Split Pane* in the *Hierarchy* view and select *Fit to Parent*.   
+2. Añade un *SplitPane (Horizontal Flow)* arrastrándolo desde la librería (Library) al área principal de edición. Haz clic derecho sobre el *SplitPane* en la jerarquía y elige *Fit to Parent*.   
 ![Fit to Parent](/assets/library/javafx-8-tutorial/part1/fit-to-parent.png)
 
-3. Drag a *TableView* (under *Controls*) into the left side of the *SplitPane*. Select the TableView (not a Column) and set the following layout constraints to the TableView. Inside an *AnchorPane* you can always set anchors to the four borders ([more information on Layouts](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).   
+3. Arrastra un *TableView* (bajo *Controls*) al lado izquierdo del *SplitPane*. Selecciona la TableView (no una sola columna) y establece las siguientes restricciones de apariencia (Layout) para la TableView. Dentro de un *AnchorPane* siempre se pueden establecer anclajes (anchors) para los cuatro bordes ([más información sobre Layouts](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).   
 ![TableView Anchors](/assets/library/javafx-8-tutorial/part1/table-view-anchors.png)
 
-4. Go to the menu *Preview | Show Preview in Window* to see, whether it behaves right. Try resizing the window. The TableView should resize together with the window as it is anchored to the borders.
+4. Ve al menú *Preview | Show Preview in Window* para comprobar si se visualiza correctamente. Intenta cambiar el tamaño de la ventana. La TableView debería ajustar su tamaño al tamaño de la ventana, pues está "anclada" a sus bordes.
 
-5. Change the column text (under Properties) to "First Name" and "Last Name".   
+5. Cambia el texto de las columnas (bajo Properties) a "First Name" y "Last Name".   
 ![Column Texts](/assets/library/javafx-8-tutorial/part1/column-texts.png)
 
-6. Select the *TableView* choose *constrained-resize* for the *Column Resize Policy* (under Properties). This ensures that the colums will always take up all available space.   
+6. Selecciona la *TableView* y elige *constrained-resize* para la *Column Resize Policy* (en Properties). Esto asegura que las columnas usarán siempre todo el espacio que tengan disponible.   
 ![Column Resize Policy](/assets/library/javafx-8-tutorial/part1/column-resize-policy.png)
 
-7. Add a *Label* on the right side with the text "Person Details" (hint: use the search to find the *Label*). Adjust it's layout using anchors.   
+7. Añade una *Label* al lado derecho del *SplitPane* con el texto "Person Details" (truco: usa la búsqueda en la librería para encontrar el componente *Label*). Ajusta su apariencia usando anclajes.   
 ![Person Details Label](/assets/library/javafx-8-tutorial/part1/person-details-label.png)
 
-8. Add a *GridPane* on the right side, select it and adjust its layout using anchors (top, right and left).    
+8. Añade un GridPane* al lado derecho, selecciónalo y ajusta su apariencia usando anclajes (superior, derecho e izquierdo).    
 ![GridPane Layout](/assets/library/javafx-8-tutorial/part1/grid-pane-layout.png)
 
-9. Add the following labels to the cells.   
-*Note: To add a row to the GridPane select an existing row number (will turn yellow), right-click the row number and choose "Add Row".*   
+9. Añade las siguientes etiquetas (Label) a las celdas del *GridPane* .   
+*Nota: Para añadir una fila al GridPane selecciona un número de fila existente (se volverá de color amarillo), haz clic derecho sobre el número de fila y elige "Add Row".*   
 ![Add labels](/assets/library/javafx-8-tutorial/part1/add-labels.png)
 
-10. Add the three buttons at the bottom. Tip: Select all of them, right-click and call *Wrap In | HBox*. This groups them together. You might need to specify a *spacing* inside the HBox. Then, also set anchors (right and bottom) so they stay in the right place.   
+10. Añade 3 botones a la parte inferior. Truco: Selecciónalos todos, haz click derecho e invoca *Wrap In | HBox*. Esto los pondrá a los 3 juntos en un HBox. Podrías necesitar establecer un espaciado *spacing* dentro del HBox. Después, establece también anclajes (derecho e inferior) para que se mantengan en el lugar correcto.   
 ![Button Group](/assets/library/javafx-8-tutorial/part1/button-group.png)
 
-11. Now you should see something like the following. Use the *Preview* menu to test its resizing behaviour.   
+11. Ahora deberías ver algo parecido a lo siguiente. Usa el menú *Preview* para comprobar su comportamiento al cambiar el tamaño de la ventana.   
 ![Preview](/assets/library/javafx-8-tutorial/part1/scene-builder-preview.png)
 
 
@@ -195,48 +194,48 @@ Right-click on `PersonOverview.fxml` and choose *Open with Scene Builder*. Now y
 *****
 
 
-## Create the Main Application
+## Crea la aplicación principal
 
-We need another FXML for our root layout which will contain a menu bar and wraps the just created `PersonOverview.fxml`.
+Necesitamos otro archivo FXML para nuestra vista raíz, la cual contendrá una barra de menús y encapsulará la vista recién creada `PersonOverview.fxml`.
 
-1. Create another *FXML Document* inside the view package called `RootLayout.fxml`. This time, choose *BorderPane* as the root element.   
+1. Crea otro archivo FXML dentro del paquete view llamado `RootLayout.fxml`. Esta vez, elige *BorderPane* como elemento raíz..   
 ![New RootLayout](/assets/library/javafx-8-tutorial/part1/new-root-layout.png)
 
-2. Open the `RootLayout.fxml` in Scene Builder.
+2. Abre `RootLayout.fxml` en el Scene Builder.
 
-3. Resize the *BorderPane* with *Pref Width* set to 600 and *Pref Height* set to 400.   
+3. Cambia el tamaño del *BorderPane* con la propiedad *Pref Width* establecida en 600 y *Pref Height* en 400.   
 ![RootLayout Size](/assets/library/javafx-8-tutorial/part1/root-layout-size.png)
 
-4. Add a *MenuBar* into the TOP Slot. We will not implement the menu functionality at the moment.   
+4. Añade una *MenuBar* en la ranura superior del *BorderPane*. De momento no vamos a implementar la funcionalidad del menú.   
 ![MenuBar](/assets/library/javafx-8-tutorial/part1/menu-bar.png)
 
 
-### The JavaFX Main Class 
+### La clase principal en JavaFX 
 
-Now, we need to create the **main java class** that starts up our application with the `RootLayout.fxml` and adds the `PersonOverview.fxml` in the center. 
 
-1. Right-click on your project and choose *New | Other...* and choose *JavaFX Main Class*.   
+Ahroa necesitamos crear la **clase java principal**, la cual iniciará nuestra aplicación mediante  `RootLayout.fxml` y añadirá la vista `PersonOverview.fxml` en el centro. 
+
+1. Haz clic derecho en el proyecto y elige *New | Other | JavaFX | classes | JavaFX Main Class*.   
 ![New JavaFX Main Class](/assets/library/javafx-8-tutorial/part1/new-main-class.png)
 
-2. We'll call the class `MainApp` and put it in the controller package `ch.makery.address` (note: this is the parent package of the `view` and `model` subpackages).   
+2. Llama a esta clase `MainApp` y ponla en el paquete de controladores `ch.makery.address` (nota: este es el paquete padre de los paquetes `view` y `model`).   
 ![New JavaFX Main Class](/assets/library/javafx-8-tutorial/part1/new-main-class2.png)
 
+La clase generada (`MainApp.java`) extiende a la clase `Application` y contiene dos métodos. Esta es la estructura básica que necesitamos para ejecutar una Aplicación JavaFX. La parte más importante para nosotros es el método `start(Stage primaryStage)`. Este método es invocado automáticamente cuando la aplicación es lanzada desde el método `main`.
 
-The generated `MainApp.java` class extends from `Application` and contains two methods. This is the basic structure that we need to start a JavaFX Application. The most important part for us is the `start(Stage primaryStage)` method. It is automatically called when the application is `launched` from within the `main` method.
-
-As you see, the `start(...)` method receives a `Stage` as parameter. The following graphic illustrates the structure of every JavaFX application:
+Como puedes ver, el método `start(...)` tomo un `Stage` como parámetro. El gráfico siguiente muestra la estructura de cualquier aplicación JavaFX:
 
 ![New FXML Document](/assets/library/javafx-8-tutorial/part1/javafx-hierarchy.png)   
-*Image Source: http://www.oracle.com*
+*Fuente de la imagen: http://www.oracle.com*
 
-**It's like a theater play**: The `Stage` is the main container which is usually a `Window` with a border and the typical minimize, maximize and close buttons. Inside the `Stage` you add a `Scene` which can, of course, be switched out by another `Scene`. Inside the `Scene` the actual JavaFX nodes like `AnchorPane`, `TextBox`, etc. are added.
+**Es como una obra de teatro**: El `Stage` (escenario) es el contenedor principal, normalmente una ventana con borde y los típicos botones para maximizar, minimizar o cerrar la ventana. Dentro del `Stage` se puede añadir una `Scene` (escena), la cual puede cambiarse dinámicamente por otra `Scene`. Dentro de un `Scene` se añaden los nodos JavaFX, tales como `AnchorPane`, `TextBox`, etc. 
 
-For more information on this turn to [Working with the JavaFX Scene Graph](http://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm).
+Para tener más información puedes consultar [Working with the JavaFX Scene Graph](http://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm).
 
 
 *****
 
-Open `MainApp.java` and replace the code with the following:
+Abre el archivo `MainApp.java` y reemplaza todo su código con el código siguiente:
 
 <pre class="prettyprint lang-java">
 package ch.makery.address;
@@ -315,32 +314,32 @@ public class MainApp extends Application {
 }
 </pre>
 
-The various comments should give you some hints about what's going on.
+Los diferentes comentarios deben darte pistas sobre lo que hace cada parte del código. 
 
-If you run the application now, you should see something like the screenshot at the beginning of this post.
+Si ejecutas la aplicación ahjora, verás ago parecido a la captura de pantalla incluida al principio de este artículo.
 
 
-### Frequent Problems
+### Problemas frecuentes
 
-If JavaFX can't find the `fxml` file you speicified, you might get the following error message: 
+Si JavaFX no encuentra un archivo `fxml` puedes obtener el siguiente mensaje de error 
 
 `java.lang.IllegalStateException: Location is not set.`
 
-To solve this issue double check if you didn't misspell the name of your `fxml` files!
+Para resolverlo comprueba otra vez que no hayas escrito mal el nombre de tus archivos `fxml`.
 
 <div class="alert alert-warning">
-  If it still doesn't work, download the source of this tutorial part and try it with the included fxml.
+  Si todavía no te funciona, descárgate el código de esta parte del tutorial y pruébalo con el fxml proporcionado.
 </div>
 
 
 *****
 
-### What's Next?
+### ¿Qué es lo siguiente?
 
-In [Tutorial Part 2](/library/javafx-8-tutorial/pt/part2/) we will add some data and functionality to our AddressApp.
+En [Tutorial Parte 2](/library/javafx-8-tutorial/es/part2/) añadiremos algunos datos y funcionalidad a nuestra aplicación de contactos.
 
 
-##### Some other articles you might find interesting
+##### Otros artículos que podrían interesarte
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
