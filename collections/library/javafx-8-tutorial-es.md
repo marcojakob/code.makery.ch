@@ -88,3 +88,8 @@ Hay dos formas de utilizarlo
 
 ¡ Espero que te diviertas y aprendas mucho ! Empieza en  [Part 1: Scene Builder](/library/javafx-8-tutorial/es/part1/).
 
+
+
+<div class="alert alert-success">
+  <strong>Atribución:</strong> Este tutorial fue traducido a español por <a href="http://about.me/magomar" class="alert-link">Mario Gómez Martínez <i class="fa fa-trophy"></i></a>. ¡ Muchas gracias !
+</div>
