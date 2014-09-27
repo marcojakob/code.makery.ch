@@ -39,6 +39,7 @@ sidebars:
     link: /java/javafx-8-tutorial-part7/
     paging: 7
 - header: Languages
+  languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-intro/

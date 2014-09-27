@@ -3,7 +3,6 @@ layout: article
 title: "JavaFX 8 Tutorial - Part 4: Hojas de estilo CSS"
 date: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part4
-canonical: /java/javafx-8-tutorial-part4/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part4.md
 description: "En JavaFX puedes dar estilo al interfaz de usuario utilizando CSS. También añadiremos un icono de aplicación en esta parte del tutorial"
 image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png
@@ -44,6 +43,7 @@ sidebars:
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-4.zip
     icon-css: fa fa-fw fa-download
 - header: Lenguajes
+  languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-part4/

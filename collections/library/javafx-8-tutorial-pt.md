@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial"
+title: "Tutorial JavaFX 8"
 date: 2014-09-10 00:00
 updated: 2014-09-10 00:00
 slug: javafx-8-tutorial/pt
@@ -21,7 +21,7 @@ sidebars:
   - text: "Parte 1: Scene Builder"
     link: /library/javafx-8-tutorial/pt/part1/
     paging: 1
-  - text: "Parte 2: Model and TableView"
+  - text: "Parte 2: Modelo e TableView"
     link: /library/javafx-8-tutorial/pt/part2/
     paging: 2
   - text: "Parte 3: Interagindo com o usuário"
@@ -40,6 +40,7 @@ sidebars:
     link: /library/javafx-8-tutorial/pt/part7/
     paging: 7
 - header: Linguagens
+  languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-intro/

@@ -3,7 +3,6 @@ layout: article
 title: "Tutorial JavaFX 8 - Parte 6: Gráficos estadísticas"
 date: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part6
-canonical: /java/javafx-8-tutorial-part6/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part6.md
 description: "Aprende a crear un gráfico de barras en JavaFX."
 image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
@@ -44,6 +43,7 @@ sidebars:
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-6.zip
     icon-css: fa fa-fw fa-download
 - header: Lenguajes
+  languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-part6/

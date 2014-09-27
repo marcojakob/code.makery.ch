@@ -3,7 +3,6 @@ layout: article
 title: "JavaFX 8 Tutorial - Part 5: Persistencia de datos con XML"
 date: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part5
-canonical: /java/javafx-8-tutorial-part5/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part5.md
 description: "Almacena datos en XML con JAXB. Aprender a utilizar FileChooser y los menús de JavaFX."
 image: /assets/library/javafx-8-tutorial/part5/addressapp-part5.png
@@ -44,6 +43,7 @@ sidebars:
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-5.zip
     icon-css: fa fa-fw fa-download
 - header: Lenguajes
+  languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-part5/

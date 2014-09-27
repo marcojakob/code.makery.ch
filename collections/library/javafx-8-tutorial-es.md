@@ -3,7 +3,6 @@ layout: article
 title: "JavaFX 8 Tutorial"
 date: 2014-09-17 00:00
 slug: javafx-8-tutorial/es
-canonical: /java/javafx-8-tutorial-intro/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es.md
 description: "Este tutorial en siete partes  describe el diseño, programación y publicación de una aplicación de contactos con JavaFX."
 image: /assets/library/javafx-8-tutorial/addressapp.png
@@ -39,6 +38,7 @@ sidebars:
     link: /library/javafx-8-tutorial/es/part7/
     paging: 7
 - header: Lenguajes
+  languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-intro/

@@ -39,6 +39,7 @@ sidebars:
     link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
 - header: Langues
+  languages: true
   body:
   - text: English
     link: /library/greenfoot-kara/

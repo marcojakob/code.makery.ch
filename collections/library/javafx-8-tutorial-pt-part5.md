@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Tutorial JavaFX 8 - Parte 5: Almacenamiento de datos con XML"
+title: "Tutorial JavaFX 8 - Parte 5: Salvando dados como XML"
 date: 2014-09-10 00:00
 updated: 2014-09-10 00:00
 slug: javafx-8-tutorial/pt/part5
@@ -12,31 +12,31 @@ published: true
 prettify: true
 comments: false
 sidebars:
-- header: "Articles in this Series"
+- header: "Artigos nesta serie"
   body:
-  - text: "Introduction"
+  - text: "Introdução"
     link: /library/javafx-8-tutorial/pt/
     paging: Intro
-  - text: "Part 1: Scene Builder"
+  - text: "Parte 1: Scene Builder"
     link: /library/javafx-8-tutorial/pt/part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
+  - text: "Parte 2: Modelo e TableView"
     link: /library/javafx-8-tutorial/pt/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
+  - text: "Parte 3: Interagindo com o usuário"
     link: /library/javafx-8-tutorial/pt/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "Parte 4: Estilos usando CSS"
     link: /library/javafx-8-tutorial/pt/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
+  - text: "Parte 5: Salvando dados como XML"
     link: /library/javafx-8-tutorial/pt/part5/
     paging: 5
     active: true
-  - text: "Part 6: Statistics Chart"
+  - text: "Parte 6: Gráficos de Estatistica"
     link: /library/javafx-8-tutorial/pt/part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "Parte 7: Implantação"
     link: /library/javafx-8-tutorial/pt/part7/
     paging: 7
 - header: "Download Sources"
@@ -44,7 +44,8 @@ sidebars:
   - text: Part 5 as Eclipse Project <em>(requires at least JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-5.zip
     icon-css: fa fa-fw fa-download
-- header: Languages
+- header: Linguagens
+  languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-part5/

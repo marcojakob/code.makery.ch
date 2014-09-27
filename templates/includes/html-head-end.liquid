@@ -26,7 +26,11 @@
     {%- else -%}
     <link rel="canonical" href="{% include "util/domain-and-url" %}" />
     {%- endif -%}
+
+    {%- include "alternate-lang" %}
+    <!-- RSS Feed -->
     <link rel="alternate" type="application/rss+xml" href="/rss{% if mixture.route.tag %}-{{ mixture.route.tag }}{% endif %}" title="{{ global.title }} - RSS Feed">
+
     <meta name="description" content="{{ model.description }}">
 
     <!-- Twitter Card data -->

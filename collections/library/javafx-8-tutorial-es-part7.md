@@ -3,7 +3,6 @@ layout: article
 title: "Tutorial JavaFX 8 - Parte 7: Despliegue"
 date: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part7
-canonical: /java/javafx-8-tutorial-part7/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part7.md
 description: "Cómo desplegar una aplicación JavaFX como un paquete nativo. Crea un instalador para Windows, MacOS, o Linux."
 image: /assets/library/javafx-8-tutorial/part7/addressapp-macos.png
@@ -44,6 +43,7 @@ sidebars:
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-7.zip
     icon-css: fa fa-fw fa-download
 - header: Lenguajes
+  languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-part7/

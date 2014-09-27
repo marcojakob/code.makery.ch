@@ -3,7 +3,6 @@ layout: article
 title: "Tutorial JavaFX 8 - Parte 2: Modelo y TableView"
 date: 2014-09-17 00:00
 slug: javafx-8-tutorial/es/part2
-canonical: /java/javafx-8-tutorial-part2/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part2.md
 description: "Uso de un componente TableView para mostrar una lista (ObsevableList) de personas (Person)"
 image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
@@ -44,6 +43,7 @@ sidebars:
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-2.zip
     icon-css: fa fa-fw fa-download
 - header: Lenguajes
+  languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-part2/
