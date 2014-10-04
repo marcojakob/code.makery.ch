@@ -36,7 +36,7 @@ sidebars:
 - header: Downloads
   body:
   - text: scenarios-chapter-2-solutions.zip
-    link: https://github.com/marcojakob/greenfoot-kara/releases/download/2.1.0/scenarios-chapter-2-solutions.zip
+    link: https://github.com/marcojakob/greenfoot-kara/releases/download/v2.1.1/scenarios-chapter-2-solutions.zip
     icon-css: fa fa-fw fa-file-archive-o
   - text: Seite als Word-Datei
     link: /library/convert-web-page-to-word/de/
