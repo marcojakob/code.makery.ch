@@ -55,6 +55,9 @@ sidebars:
     link: /library/javafx-8-tutorial/es/part5/
     icon-css: fa fa-fw fa-globe
     active: true
+  - text: 中文（简体）
+    link: /library/javafx-8-tutorial/zh-cn/part5/
+    icon-css: fa fa-fw fa-globe
 ---
 
 ![Screenshot AddressApp Part 5](/assets/library/javafx-8-tutorial/part5/addressapp-part5.png)

@@ -1,55 +1,55 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 6: Statistics Chart"
-date: 2014-05-09 00:00
-updated: 2014-08-27 00:00
-slug: javafx-8-tutorial-part6
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part6.md
+title: "JavaFX 8 教程 - 第六部分: 统计图"
+date: 2014-10-08 00:00
+updated: 2014-10-08 00:00
+slug: javafx-8-tutorial/zh-cn/part6
+canonical: /java/javafx-8-tutorial-part6/
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part6.md
 description: "Learn how to create a JavaFX Bar Chart."
 image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Articles in this Series"
+- header: "系列文章"
   body:
-  - text: "Introduction"
-    link: /java/javafx-8-tutorial-intro
-    paging: Intro
-  - text: "Part 1: Scene Builder"
-    link: /java/javafx-8-tutorial-part1/
+  - text: "简介"
+    link: /library/javafx-8-tutorial/zh-cn/
+    paging: 简介
+  - text: "第一部分: Scene Builder"
+    link: /library/javafx-8-tutorial/zh-cn/part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
-    link: /java/javafx-8-tutorial-part2/
+  - text: "第二部分: Model 和 TableView"
+    link: /library/javafx-8-tutorial/zh-cn/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
-    link: /java/javafx-8-tutorial-part3/
+  - text: "第三部分: 与用户的交互"
+    link: /library/javafx-8-tutorial/zh-cn/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
-    link: /java/javafx-8-tutorial-part4/
+  - text: "第四部分: CSS 样式"
+    link: /library/javafx-8-tutorial/zh-cn/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-8-tutorial-part5/
+  - text: "第五部分: 将数据用 XML 格式存储"
+    link: /library/javafx-8-tutorial/zh-cn/part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
-    link: /java/javafx-8-tutorial-part6/
+  - text: "第六部分: 统计图"
+    link: /library/javafx-8-tutorial/zh-cn/part6/
     paging: 6
     active: true
-  - text: "Part 7: Deployment"
-    link: /java/javafx-8-tutorial-part7/
+  - text: "第七部分: 部署"
+    link: /library/javafx-8-tutorial/zh-cn/part7/
     paging: 7
 - header: "Download Sources"
   body:
   - text: Part 6 as Eclipse Project <em>(requires at least JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-6.zip
     icon-css: fa fa-fw fa-download
-- header: Languages
+- header: 语言
   languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-part6/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Português
     link: /library/javafx-8-tutorial/pt/part6/
     icon-css: fa fa-fw fa-globe
@@ -59,7 +59,12 @@ sidebars:
   - text: 中文（简体）
     link: /library/javafx-8-tutorial/zh-cn/part6/
     icon-css: fa fa-fw fa-globe
+    active: true
 ---
+
+<div class="alert alert-warning">
+  <i class="fa fa-language"></i> This page is beeing translated to Chinese (Simplified). If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
+</div>
 
 ![Screenshot AddressApp Part 6](/assets/library/javafx-8-tutorial/part6/addressapp-part6.png)
 
@@ -281,7 +286,7 @@ A good place for more information is the official Oracle tutorial on [Working wi
 
 ### What's Next?
 
-In the last tutorial [Part 7](/java/javafx-8-tutorial-part7/) we will finally deploy our application (i.e. package and deliver the app to our users).
+In the last tutorial [Part 7](/library/javafx-8-tutorial/zh-cn/part7/) we will finally deploy our application (i.e. package and deliver the app to our users).
 
 
 ##### Some other articles you might find interesting

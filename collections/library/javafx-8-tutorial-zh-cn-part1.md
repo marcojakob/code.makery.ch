@@ -1,50 +1,50 @@
 ---
 layout: article
-title: "Tutorial JavaFX 8 - Parte 1: Scene Builder"
-date: 2014-09-10 00:00
-updated: 2014-09-10 00:00
-slug: javafx-8-tutorial/pt/part1
+title: "JavaFX 8 教程 - 第一部分: Scene Builder"
+date: 2014-10-08 00:00
+updated: 2014-10-08 00:00
+slug: javafx-8-tutorial/zh-cn/part1
 canonical: /java/javafx-8-tutorial-part1/
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt-part1.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part1.md
 description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
 image: /assets/library/javafx-8-tutorial/part1/addressapp-part1.png
 published: true
 prettify: true
-comments: false
+comments: true
 sidebars:
-- header: "Artigos nesta serie"
+- header: "系列文章"
   body:
-  - text: "Introdução"
-    link: /library/javafx-8-tutorial/pt/
-    paging: Intro
-  - text: "Parte 1: Scene Builder"
-    link: /library/javafx-8-tutorial/pt/part1/
+  - text: "简介"
+    link: /library/javafx-8-tutorial/zh-cn/
+    paging: 简介
+  - text: "第一部分: Scene Builder"
+    link: /library/javafx-8-tutorial/zh-cn/part1/
     paging: 1
     active: true
-  - text: "Parte 2: Modelo e TableView"
-    link: /library/javafx-8-tutorial/pt/part2/
+  - text: "第二部分: Model 和 TableView"
+    link: /library/javafx-8-tutorial/zh-cn/part2/
     paging: 2
-  - text: "Parte 3: Interagindo com o usuário"
-    link: /library/javafx-8-tutorial/pt/part3/
+  - text: "第三部分: 与用户的交互"
+    link: /library/javafx-8-tutorial/zh-cn/part3/
     paging: 3
-  - text: "Parte 4: Estilos usando CSS"
-    link: /library/javafx-8-tutorial/pt/part4/
+  - text: "第四部分: CSS 样式"
+    link: /library/javafx-8-tutorial/zh-cn/part4/
     paging: 4
-  - text: "Parte 5: Salvando dados como XML"
-    link: /library/javafx-8-tutorial/pt/part5/
+  - text: "第五部分: 将数据用 XML 格式存储"
+    link: /library/javafx-8-tutorial/zh-cn/part5/
     paging: 5
-  - text: "Parte 6: Gráficos de Estatistica"
-    link: /library/javafx-8-tutorial/pt/part6/
+  - text: "第六部分: 统计图"
+    link: /library/javafx-8-tutorial/zh-cn/part6/
     paging: 6
-  - text: "Parte 7: Implantação"
-    link: /library/javafx-8-tutorial/pt/part7/
+  - text: "第七部分: 部署"
+    link: /library/javafx-8-tutorial/zh-cn/part7/
     paging: 7
 - header: "Download Sources"
   body:
   - text: Part 1 as Eclipse Project <em>(requires at least JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
     icon-css: fa fa-fw fa-download
-- header: Linguagens
+- header: 语言
   languages: true
   body:
   - text: English
@@ -53,19 +53,18 @@ sidebars:
   - text: Português
     link: /library/javafx-8-tutorial/pt/part1/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Español
     link: /library/javafx-8-tutorial/es/part1/
     icon-css: fa fa-fw fa-globe
   - text: 中文（简体）
     link: /library/javafx-8-tutorial/zh-cn/part1/
     icon-css: fa fa-fw fa-globe
+    active: true
 ---
 
 <div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page is beeing translated to Portuguese. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
+  <i class="fa fa-language"></i> This page is beeing translated to Chinese (Simplified). If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
 </div>
-
 
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
 
@@ -345,7 +344,7 @@ To solve this issue double check if you didn't misspell the name of your `fxml` 
 
 ### What's Next?
 
-In [Tutorial Part 2](/library/javafx-8-tutorial/pt/part2/) we will add some data and functionality to our AddressApp.
+In [Tutorial Part 2](/library/javafx-8-tutorial/zh-cn/part2/) we will add some data and functionality to our AddressApp.
 
 
 ##### Some other articles you might find interesting
