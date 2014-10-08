@@ -28,7 +28,7 @@ Wow, I'm really excited about the community contributions that were made to the 
 
 ## Want to Help Out?
 
-If you'd like to help out with any of the translations, it's very easy: just click on the **Edit on GitHub** link on any tutorial page. I've also written a small guide on [how to contribute](http://code.makery.ch/library/how-to-contribute/).
+If you'd like to help out with any of the translations, it's very easy: just click on the **Edit on GitHub** link on any tutorial page. I've also written a small guide on [how to contribute](/library/how-to-contribute/).
 
 Write a comment or drop me an email if you have any questions.
 
