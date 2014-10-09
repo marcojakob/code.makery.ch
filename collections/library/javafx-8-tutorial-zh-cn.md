@@ -6,7 +6,7 @@ updated: 2014-10-08 00:00
 slug: javafx-8-tutorial/zh-cn
 canonical: /java/javafx-8-tutorial-intro/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn.md
-description: "这 7 部分组成的教程将介绍一个用 JavaFX 编写的联系人程的设计，开发和部署的过程。"
+description: "这 7 部分组成的教程将介绍一个用 JavaFX 编写的联系人程的设计，开发与部署的过程。"
 image: /assets/library/javafx-8-tutorial/addressapp.png
 published: true
 prettify: true
@@ -18,25 +18,25 @@ sidebars:
     link: /library/javafx-8-tutorial/zh-cn/
     paging: 简介
     active: true
-  - text: "第一部分: Scene Builder"
+  - text: "第一部分：Scene Builder"
     link: /library/javafx-8-tutorial/zh-cn/part1/
     paging: 1
-  - text: "第二部分: Model 和 TableView"
+  - text: "第二部分：Model 和 TableView"
     link: /library/javafx-8-tutorial/zh-cn/part2/
     paging: 2
-  - text: "第三部分: 与用户的交互"
+  - text: "第三部分：与用户的交互"
     link: /library/javafx-8-tutorial/zh-cn/part3/
     paging: 3
-  - text: "第四部分: CSS 样式"
+  - text: "第四部分：CSS 样式"
     link: /library/javafx-8-tutorial/zh-cn/part4/
     paging: 4
-  - text: "第五部分: 将数据用 XML 格式存储"
+  - text: "第五部分：将数据用 XML 格式存储"
     link: /library/javafx-8-tutorial/zh-cn/part5/
     paging: 5
-  - text: "第六部分: 统计图"
+  - text: "第六部分：统计图"
     link: /library/javafx-8-tutorial/zh-cn/part6/
     paging: 6
-  - text: "第七部分: 部署"
+  - text: "第七部分：部署"
     link: /library/javafx-8-tutorial/zh-cn/part7/
     paging: 7
 - header: 语言
@@ -58,40 +58,40 @@ sidebars:
 ---
 
 <div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page is beeing translated to Chinese (Simplified). If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
+  <i class="fa fa-language"></i> This page is being translated to Chinese (Simplified). If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
 </div>
 
 
-Back in 2012 I wrote a very detailed [JavaFX 2 tutorial series](/java/javafx-2-tutorial-intro/) for my students. Many people all over the world have been reading the tutorial and gave very positive feedback. So I decided to **rewrite the JavaFX 2 tutorial for JavaFX 8** (read about what changed in [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)).
+早在 2012 我和我的学生们写了一个非常详细的 [JavaFX 2 系列教程](/java/javafx-2-tutorial-intro/)。世界各地的人们都已阅读了这个教程并给了非常积极的反馈。所以我决定 **为 JavaFX 8 改写 JavaFX 2 的教程** (阅读关于 JavaFX 8 的变化 [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)).
 
-This tutorial walks you through designing, programming and deploying an address application. This is how the final appllication will look like:
+这个教程将指导您设计，编写并部署一个联系人应用程序。应用程序最后将会是这个样子：
 
 ![Screenshot AddressApp](/assets/library/javafx-8-tutorial/addressapp.png)
 
 
-## What you will learn
+## 你将学到什么？
 
-* Creating and starting a JavaFX project
-* Using Scene Builder to design the user interface
-* Structuring an application with the Model View Controller (MVC) pattern
-* Using `ObservableLists` for automatically updating the user interface
-* Using `TableView` and reacting to selection changes in the table
-* Create a custom popup dialog to edit persons
-* Validating user input
-* Styling a JavaFX application with CSS
-* Persisting data as XML
-* Saving the last opened file path in user preferences
-* Creating a JavaFX chart for statistics
-* Deploying a JavaFX application as a native package
+* 创建并启动一个 JavaFX 项目。
+* 使用 Scene Builder 设计 UI 。
+* 构造一个 模型 - 视图 - 控制器 (MVC) 模式的应用程序。
+* 使用 `ObservableLists` 来自动更新用户界面。
+* 使用 `TableView` 来响应列表中的选择。
+* 创建一个 edit persons 的自定义弹出式对话框。
+* 验证用户输入。
+* 使用 CSS 样式化一个 JavaFX 应用程序。
+* 使用 XML 保存数据。
+* 在用户配置中保存最后一次打开文件的路径。
+* 创建 JavaFX 的统计图表。
+* 部署一个 JavaFX 到本机软件包。
 
-**This is quite a lot!** So, after you you've completed this tutorial series you should be ready to build sophisticated applications with JavaFX.
+**这是相当多的！** 所以，当你学习完这个教程后，你应该准备好使用 JavaFX 构建复杂的应用程序。
 
 
-## How to use this Tutorial
+## 如何使用这个教程？
 
-There are two ways to use this tutorial:
+这有两种使用本教程两种方法：
 
-* **learn-a-lot track:** Create your own JavaFX project from the ground up.
-* **fast track:** Import the source code for a tutorial part into your IDE (it's an Eclipse project, but you could use other IDEs like NetBeans with slight modifications). Then go through the tutorial to understand the code.
+* **最大化学习的通道：** 从头开始创建自己的 JavaFX 项目。
+* **快速通道：** 导入教程部分的源代码到你的 IDE（它是一个 Eclipse 项目，但是你可以稍作修改后使用其它的 IDE 例如 NetBeans 这样的)。然后再通过教程来理解代码。
 
-Now, I hope you'll have fun! Start with [Part 1: Scene Builder](/library/javafx-8-tutorial/zh-cn/part1/).
+现在，我希望你觉得有趣！开始 [第一部分：Scene Builder](/library/javafx-8-tutorial/zh-cn/part1/).

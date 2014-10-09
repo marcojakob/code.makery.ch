@@ -59,7 +59,7 @@ sidebars:
 
 Back in 2012 I wrote a very detailed [JavaFX 2 tutorial series](/java/javafx-2-tutorial-intro/) for my students. Many people all over the world have been reading the tutorial and gave very positive feedback. So I decided to **rewrite the JavaFX 2 tutorial for JavaFX 8** (read about what changed in [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)).
 
-This tutorial walks you through designing, programming and deploying an address application. This is how the final appllication will look like:
+This tutorial walks you through designing, programming and deploying an address application. This is how the final application will look like:
 
 ![Screenshot AddressApp](/assets/library/javafx-8-tutorial/addressapp.png)
 
@@ -68,7 +68,7 @@ This tutorial walks you through designing, programming and deploying an address 
 
 * Creating and starting a JavaFX project
 * Using Scene Builder to design the user interface
-* Structuring an application with the Model View Controller (MVC) pattern
+* Structuring an application with the Model-View-Controller (MVC) pattern
 * Using `ObservableLists` for automatically updating the user interface
 * Using `TableView` and reacting to selection changes in the table
 * Create a custom popup dialog to edit persons
