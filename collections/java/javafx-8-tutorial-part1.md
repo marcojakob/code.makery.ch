@@ -68,7 +68,7 @@ sidebars:
 * Getting to know JavaFX
 * Creating and starting a JavaFX Project
 * Using Scene Builder to design the user interface
-* Basic application structure using the Model View Controller (MVC) pattern
+* Basic application structure using the Model-View-Controller (MVC) pattern
 
 
 *****

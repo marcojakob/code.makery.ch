@@ -20,7 +20,7 @@ sidebars:
     icon-css: fa fa-fw fa-download
 ---
 
-There are a few options when you want to support drag and drop in your web application the most popular beeing jQuery UI [Draggable](http://jqueryui.com/draggable/) and [Droppable](http://jqueryui.com/droppable/). I didn't like the dependency on jQuery and wanted something that would also support dragging on touch screens.
+There are a few options when you want to support drag and drop in your web application the most popular being jQuery UI [Draggable](http://jqueryui.com/draggable/) and [Droppable](http://jqueryui.com/droppable/). I didn't like the dependency on jQuery and wanted something that would also support dragging on touch screens.
 
 My first attempt was to use the browser's native HTML5 Drag and Drop which you can find in my [Dart HTML5 Drag and Drop library](https://github.com/marcojakob/dart-html5-dnd). But **I've given up on HTML5 Drag and Drop** (and you should too)! You can read the details about [why I decided against HTML5 Drag and Drop](/blog/drag-and-drop-without-html5/).
 

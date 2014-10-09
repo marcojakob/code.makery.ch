@@ -55,7 +55,7 @@ The tutorial walks you through designing, programming and deploying an address a
 
 * Creating and starting a JavaFX project
 * Using Scene Builder to design the user interface
-* Structuring an application with the Model View Controller (MVC) pattern
+* Structuring an application with the Model-View-Controller (MVC) pattern
 * Using `ObservableLists` for automatically updating the user interface
 * Using `TableView` and reacting to selection changes in the table
 * Create a custom popup dialog to edit persons

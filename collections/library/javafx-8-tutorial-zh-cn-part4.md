@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "JavaFX 8 教程 - 第四部分: CSS 样式"
+title: "JavaFX 8 教程 - 第四部分：CSS 样式"
 date: 2014-10-08 00:00
 updated: 2014-10-08 00:00
 slug: javafx-8-tutorial/zh-cn/part4
@@ -17,26 +17,26 @@ sidebars:
   - text: "简介"
     link: /library/javafx-8-tutorial/zh-cn/
     paging: 简介
-  - text: "第一部分: Scene Builder"
+  - text: "第一部分：Scene Builder"
     link: /library/javafx-8-tutorial/zh-cn/part1/
     paging: 1
-  - text: "第二部分: Model 和 TableView"
+  - text: "第二部分：Model 和 TableView"
     link: /library/javafx-8-tutorial/zh-cn/part2/
     paging: 2
-  - text: "第三部分: 与用户的交互"
+  - text: "第三部分：与用户的交互"
     link: /library/javafx-8-tutorial/zh-cn/part3/
     paging: 3
-  - text: "第四部分: CSS 样式"
+  - text: "第四部分：CSS 样式"
     link: /library/javafx-8-tutorial/zh-cn/part4/
     paging: 4
     active: true
-  - text: "第五部分: 将数据用 XML 格式存储"
+  - text: "第五部分：将数据用 XML 格式存储"
     link: /library/javafx-8-tutorial/zh-cn/part5/
     paging: 5
-  - text: "第六部分: 统计图"
+  - text: "第六部分：统计图"
     link: /library/javafx-8-tutorial/zh-cn/part6/
     paging: 6
-  - text: "第七部分: 部署"
+  - text: "第七部分：部署"
     link: /library/javafx-8-tutorial/zh-cn/part7/
     paging: 7
 - header: "Download Sources"
@@ -63,7 +63,7 @@ sidebars:
 ---
 
 <div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page is beeing translated to Chinese (Simplified). If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
+  <i class="fa fa-language"></i> This page is being translated to Chinese (Simplified). If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
 </div>
 
 ![Screenshot AddressApp Part 4](/assets/library/javafx-8-tutorial/part4/addressapp-part4.png)

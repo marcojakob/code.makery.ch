@@ -63,7 +63,7 @@ sidebars:
 ---
 
 <div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page is beeing translated to Portuguese. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
+  <i class="fa fa-language"></i> This page is being translated to Portuguese. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
 </div>
 
 
@@ -74,7 +74,7 @@ sidebars:
 * Getting to know JavaFX
 * Creating and starting a JavaFX Project
 * Using Scene Builder to design the user interface
-* Basic application structure using the Model View Controller (MVC) pattern
+* Basic application structure using the Model-View-Controller (MVC) pattern
 
 
 *****
