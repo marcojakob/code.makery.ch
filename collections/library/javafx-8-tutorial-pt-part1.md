@@ -6,7 +6,7 @@ updated: 2014-09-10 00:00
 slug: javafx-8-tutorial/pt/part1
 canonical: /java/javafx-8-tutorial-part1/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt-part1.md
-description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
+description: "Este tutorial de sete partes aborda os processos de  desig, programação e immplantação de uma aplicação de cadastro de endereços feita com JavaFX."
 image: /assets/library/javafx-8-tutorial/part1/addressapp-part1.png
 published: true
 prettify: true
@@ -39,9 +39,9 @@ sidebars:
   - text: "Parte 7: Implantação"
     link: /library/javafx-8-tutorial/pt/part7/
     paging: 7
-- header: "Download Sources"
+- header: "Download de Códigos Fonte"
   body:
-  - text: Part 1 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+  - text: Parte 1 como um projeto Eclipse <em>(versão mínima requirida: JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
     icon-css: fa fa-fw fa-download
 - header: Linguagens
@@ -62,50 +62,46 @@ sidebars:
     icon-css: fa fa-fw fa-globe
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page is being translated to Portuguese. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
 
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
 
-### Topics in Part 1
+### Tópicos na Parte 1
 
-* Getting to know JavaFX
-* Creating and starting a JavaFX Project
-* Using Scene Builder to design the user interface
-* Basic application structure using the Model-View-Controller (MVC) pattern
+* Conhecendo o JavaFX
+* Criando e inicializando um projeto JavaFX
+* Utilizando o Scene Builder para modelar a interce com o usuário
+* Estrutura básica da aplicação utilizando o padrão Model-View-Controller (MVC)
 
 
 *****
 
 
-### Prerequisites
+### Pré-requisitos
 
-* Latest [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (includes **JavaFX 8**).
-* Eclipse 4.3 or greater with e(fx)clipse plugin. The easiest way is to download the preconfigured distro from the [e(fx)clipse website](http://efxclipse.bestsolution.at/install.html#all-in-one). As an alternative you can use an [update site](http://www.eclipse.org/efxclipse/install.html) for your Eclipse installation.
-* [Scene Builder 2.0](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684.html) or greater
+* Ultima versão [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (Que inclua o **JavaFX 8**).
+* Eclipse 4.3ou posterior  com o plugin  e(fx)clipse . A modo mais fácil é efetuar o download da distro pré-configurada da fonte: [e(fx)clipse website](http://efxclipse.bestsolution.at/install.html#all-in-one). Como alternativa você pode usar o: [update site](http://www.eclipse.org/efxclipse/install.html) para sua insalação do Eclipse.
+* [Scene Builder 2.0](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684.html) ou posterior.
 
 
-### Eclipse Configurations 
+### Configurações do Eclipse
 
-We need to tell Eclipse to use JDK 8 and also where it will find the Scene Builder:
+Nós precisamos configurar o Eclipse para usar o JDK 8, bem como onde ele ira encontrar o Scene Builder:
 
-1. Open the Eclipse Preferences and navigate to *Java | Installed JREs*.
+1. Abra a aba Preferences do Eclipse  e navegue até *Java | Installed JREs*.
 
-2. Click *Add...*, select *Standard VM* and choose the installation *Directory* of your JDK 8.
+2. Clique em *Add...*, selecione  *Standard VM* e a informe a *Pasta* onde se encontra o JDK 8.
 
-3. Remove the other JREs or JDKs so that the **JDK 8 becomes the default**.   
+3. Remova os outros JREs ou JDKs então o  **JDK 8 torna-se o padrão**.   
 ![Preferences JDK](/assets/library/javafx-8-tutorial/part1/preferences-jdk.png)
 
-4. Navigate to *Java | Compiler*. Set the **Compiler compliance level to 1.8**.   
+4. Navegue até *Java | Compiler*. Altere o **Compiler compliance level para 1.8**.   
 ![Preferences Compliance](/assets/library/javafx-8-tutorial/part1/preferences-compliance.png)
 
-5. Navigate to the *JavaFX* preferences. Specify the path to your Scene Builder executable.   
+5. Naviegue até preferences na aba *JavaFX* . Especifique o caminho até o executável do Scene Builder.   
 ![Preferences JavaFX](/assets/library/javafx-8-tutorial/part1/preferences-javafx.png)
 
 
-### Helpful Links
+### Links Úteis
 
 You might want to bookmark the following links:
 
