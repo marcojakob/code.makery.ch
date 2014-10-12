@@ -41,7 +41,7 @@ sidebars:
     paging: 7
 - header: "Download de Códigos Fonte"
   body:
-  - text: Parte 1 como um projeto Eclipse <em>(versão mínima requirida: JDK 8u20)</em>
+  - text: "Parte 1 como um projeto Eclipse <em>(versão mínima requirida: JDK 8u20)</em>"
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
     icon-css: fa fa-fw fa-download
 - header: Linguagens
