@@ -93,3 +93,13 @@ Há duas maneira de usar este tutorial:
 * **Modo rapido:** Importe o código fonte de uma parte do tutorial para sua IDE (é um projeto Eclipse, mas você pode usar outras IDEs como o NetBeans com algumas modificações). E depois ler o tutorial para entender o código.
 
 Espero que você se divirta! Começe com [Parte 1: Scene Builder](/library/javafx-8-tutorial/pt/part1/).
+
+
+<div class="alert alert-success">
+  <strong><i class="fa fa-trophy"></i> Atribuição:</strong> Traduções para este tutorial essa contribuição de 
+  <ul>
+    <li><a href="https://github.com/JulioDinis" class="alert-link">JulioDinis</a></li> 
+    <li><a href="https://github.com/RegiusK" class="alert-link">RegiusK</a></li>
+  </ul>
+  Muito obrigado!
+</div>
