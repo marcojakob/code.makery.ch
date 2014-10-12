@@ -6,7 +6,7 @@ updated: 2014-10-08 00:00
 slug: javafx-8-tutorial/zh-cn/part1
 canonical: /java/javafx-8-tutorial-part1/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part1.md
-description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
+description: "这 7 部分组成的教程将介绍一个用 JavaFX 编写的联系人程的设计，开发与部署的过程。"
 image: /assets/library/javafx-8-tutorial/part1/addressapp-part1.png
 published: true
 prettify: true
@@ -39,9 +39,9 @@ sidebars:
   - text: "第七部分：部署"
     link: /library/javafx-8-tutorial/zh-cn/part7/
     paging: 7
-- header: "Download Sources"
+- header: "下载源代码"
   body:
-  - text: Part 1 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+  - text: 第一部分为 Eclipse 项目 <em>（要求至少 JDK 8u20）</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
     icon-css: fa fa-fw fa-download
 - header: 语言
@@ -68,25 +68,25 @@ sidebars:
 
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
 
-### Topics in Part 1
+### 第一部分的主题
 
-* Getting to know JavaFX
-* Creating and starting a JavaFX Project
-* Using Scene Builder to design the user interface
+* 开始了解 JavaFX 。
+* 创建并运行一个 JavaFX 项目。
+* 使用 Scene Builder 来设计用户界面。
 * Basic application structure using the Model-View-Controller (MVC) pattern
 
 
 *****
 
 
-### Prerequisites
+### 前提条件
 
-* Latest [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (includes **JavaFX 8**).
-* Eclipse 4.3 or greater with e(fx)clipse plugin. The easiest way is to download the preconfigured distro from the [e(fx)clipse website](http://efxclipse.bestsolution.at/install.html#all-in-one). As an alternative you can use an [update site](http://www.eclipse.org/efxclipse/install.html) for your Eclipse installation.
-* [Scene Builder 2.0](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684.html) or greater
+* 最新的 [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) （包含 **JavaFX 8**）。
+* Eclipse 4.3 或更高版本与 e(fx)clipse 插件。最简单的方法是从 [e(fx)clipse 网站](http://efxclipse.bestsolution.at/install.html#all-in-one) 下载预先配置的发行版本。作为一种备选你可以使用一个 [update site](http://www.eclipse.org/efxclipse/install.html) 来给您的 Eclipse 安装。
+* [Scene Builder 2.0](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684.html) 或更高。
 
 
-### Eclipse Configurations 
+### Eclipse 配置
 
 We need to tell Eclipse to use JDK 8 and also where it will find the Scene Builder:
 
