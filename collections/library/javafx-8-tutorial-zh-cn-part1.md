@@ -6,7 +6,7 @@ updated: 2014-10-08 00:00
 slug: javafx-8-tutorial/zh-cn/part1
 canonical: /java/javafx-8-tutorial-part1/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part1.md
-description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
+description: "这 7 部分组成的教程将介绍一个用 JavaFX 编写的联系人程的设计，开发与部署的过程。"
 image: /assets/library/javafx-8-tutorial/part1/addressapp-part1.png
 published: true
 prettify: true
@@ -39,9 +39,9 @@ sidebars:
   - text: "第七部分：部署"
     link: /library/javafx-8-tutorial/zh-cn/part7/
     paging: 7
-- header: "Download Sources"
+- header: "下载源代码"
   body:
-  - text: Part 1 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+  - text: 第一部分为 Eclipse 项目 <em>（要求至少 JDK 8u20）</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
     icon-css: fa fa-fw fa-download
 - header: 语言
@@ -68,52 +68,52 @@ sidebars:
 
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
 
-### Topics in Part 1
+### 第一部分的主题
 
-* Getting to know JavaFX
-* Creating and starting a JavaFX Project
-* Using Scene Builder to design the user interface
-* Basic application structure using the Model-View-Controller (MVC) pattern
+* 开始了解 JavaFX 。
+* 创建并运行一个 JavaFX 项目。
+* 使用 Scene Builder 来设计用户界面。
+* 使用 模型 - 视图 - 控制器（MVC）模式 构造基础的应用。
 
 
 *****
 
 
-### Prerequisites
+### 前提条件
 
-* Latest [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (includes **JavaFX 8**).
-* Eclipse 4.3 or greater with e(fx)clipse plugin. The easiest way is to download the preconfigured distro from the [e(fx)clipse website](http://efxclipse.bestsolution.at/install.html#all-in-one). As an alternative you can use an [update site](http://www.eclipse.org/efxclipse/install.html) for your Eclipse installation.
-* [Scene Builder 2.0](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684.html) or greater
+* 最新的 [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) （包含 **JavaFX 8**）。
+* Eclipse 4.3 或更高版本与 e(fx)clipse 插件。最简单的方法是从 [e(fx)clipse 网站](http://efxclipse.bestsolution.at/install.html#all-in-one) 下载预先配置的发行版本。作为一种备选你可以使用一个 [update site](http://www.eclipse.org/efxclipse/install.html) 来给您的 Eclipse 安装。
+* [Scene Builder 2.0](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684.html) 或更高。
 
 
-### Eclipse Configurations 
+### Eclipse 配置
 
-We need to tell Eclipse to use JDK 8 and also where it will find the Scene Builder:
+我们需要告诉 Eclipse 使用 JDK 8 和在哪里找 Scene Builder：
 
-1. Open the Eclipse Preferences and navigate to *Java | Installed JREs*.
+1. 打开 Eclipse 的设置并导航至 *Java | Installed JREs* 。
 
-2. Click *Add...*, select *Standard VM* and choose the installation *Directory* of your JDK 8.
+2. 点击 *Add...*, 选择 *Standard VM* 并选择你安装 JDK 8 的 *Directory* 。
 
-3. Remove the other JREs or JDKs so that the **JDK 8 becomes the default**.   
+3. 移除其他的 JREs 或 JDKs 从而使 **JDK 8 成为默认**。
 ![Preferences JDK](/assets/library/javafx-8-tutorial/part1/preferences-jdk.png)
 
-4. Navigate to *Java | Compiler*. Set the **Compiler compliance level to 1.8**.   
+4. 导航至 *Java | Compiler* 。设置 **Compiler compliance level 到 1.8**。
 ![Preferences Compliance](/assets/library/javafx-8-tutorial/part1/preferences-compliance.png)
 
-5. Navigate to the *JavaFX* preferences. Specify the path to your Scene Builder executable.   
+5. 导航至 *JavaFX* 设置。指定你的 Scene Builder 可执行文件的路径。
 ![Preferences JavaFX](/assets/library/javafx-8-tutorial/part1/preferences-javafx.png)
 
 
-### Helpful Links
+### 帮助链接
 
-You might want to bookmark the following links:
+你可能会想收藏下面的链接：
 
-* [Java 8 API](http://docs.oracle.com/javase/8/docs/api/) - JavaDoc for the standard Java classes
-* [JavaFX 8 API](http://docs.oracle.com/javase/8/javafx/api/) - JavaDoc for JavaFX classes
-* [ControlsFX API](http://controlsfx.bitbucket.org/) - JavaDoc for the [ControlsFX project](http://fxexperience.com/controlsfx/) for additional JavaFX controls
-* [Oracle's JavaFX Tutorials](http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm) - Official JavaFX Tutorials by Oracle
+* [Java 8 API](http://docs.oracle.com/javase/8/docs/api/) - Java 标准类的文档。
+* [JavaFX 8 API](http://docs.oracle.com/javase/8/javafx/api/) - JavaFX 类的文档。
+* [ControlsFX API](http://controlsfx.bitbucket.org/) - [ControlsFX project](http://fxexperience.com/controlsfx/) 额外 JavaFX 控件的文档。
+* [Oracle's JavaFX Tutorials](http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm) - Oracle 的 JavaFX 官方教程。
 
-Now, let's get started!
+现在，让我们开始吧！
 
 
 *****
