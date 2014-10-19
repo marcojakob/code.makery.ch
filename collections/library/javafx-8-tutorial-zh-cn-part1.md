@@ -119,17 +119,17 @@ sidebars:
 *****
 
 
-## Create a new JavaFX Project
+## 创建一个新的 JavaFX 项目
 
-In Eclipse (with e(fx)clipse installed) go to *File | New | Other...* and choose *JavaFX Project*.   
-Specify the Name of the project (e.g. *AddressApp*) and click *Finish*.
+在 Eclipse（已安装 e(fx)clipse 的）中，点击 *File | New | Other...* 并选择 *JavaFX Project*。
+指定这个项目的名字（e.g. *AddressApp*）并点击 *Finish*。
 
-Remove the *application* package and its content if it was automatically created.
+如果 *application* 包被自动创建，那么删除它和它的内容。
 
 
-### Create the Packages
+### 创建包
 
-Right from the start we will follow good software design principles. One very important principle is that of [**Model-View-Controller** (MVC)](http://en.wikipedia.org/wiki/Model_View_Controller). According to this we divide our code into three units and create a package for each (Right-click on the src-folder, *New... | Package*):
+从一开始，我们将遵循良好的软件设计原则。One very important principle is that of [**Model-View-Controller** (MVC)](http://zh.wikipedia.org/wiki/Model_View_Controller). According to this we divide our code into three units and create a package for each (Right-click on the src-folder, *New... | Package*):
 
 * `ch.makery.address` - contains *most* controller classes (=business logic)
 * `ch.makery.address.model` - contains model classes
