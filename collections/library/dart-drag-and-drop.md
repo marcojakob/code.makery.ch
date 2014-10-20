@@ -140,7 +140,7 @@ You can use predefined or custom `Acceptor`s to determine which `Draggable`s are
 
 ### Nested Dropzones
 
-An Example of how to drag over nested `Dropzone`s.
+An example of how to drag over nested `Dropzone`s.
 
 *Note: If dropped on an inner [Dropzone] the outer [Dropzone] will also receive the drop event.*
 
@@ -153,6 +153,17 @@ An Example of how to drag over nested `Dropzone`s.
 
 ***
 
+
+
+### Sortable
+
+An example example to create basic sortable/rearranging behavior.
+
+<a href="http://marcojakob.github.io/dart-dnd/simple-sortable/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+
+#### Live demo
+
+<iframe src="http://marcojakob.github.io/dart-dnd/simple-sortable/" width="100%" height="450px"></iframe>
 
 
 
