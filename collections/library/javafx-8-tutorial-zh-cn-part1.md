@@ -129,23 +129,23 @@ sidebars:
 
 ### 创建包
 
-从一开始，我们将遵循良好的软件设计原则。One very important principle is that of [**Model-View-Controller** (MVC)](http://zh.wikipedia.org/wiki/Model_View_Controller). According to this we divide our code into three units and create a package for each (Right-click on the src-folder, *New... | Package*):
+从一开始，我们将遵循良好的软件设计原则。其中一个很重要的原则是[**模型 - 视图 - 控制器**（MVC）](http://zh.wikipedia.org/wiki/Model_View_Controller)。根据这一点，我们把代码划分为三个部分，并为每个都创建一个包（在 src 的文件夹上右键，点击 *New... | Package* ）：
 
-* `ch.makery.address` - contains *most* controller classes (=business logic)
-* `ch.makery.address.model` - contains model classes
-* `ch.makery.address.view` - contains views 
+* `ch.makery.address` - 包含 *大多数* 控制器类 （ = 业务逻辑）
+* `ch.makery.address.model` - 包含模型类
+* `ch.makery.address.view` - 包含视图
 
-**Note:** Our view package will also contain some controllers that are directly related to a single view. Let's call them **view-controllers**.
+**注:** Our view package will also contain some controllers that are directly related to 一个单一视图。我们姑且称之它们为 **视图 - 控制器**.
 
 
 *****
 
 
-## Create the FXML Layout File
+## 创建 FXML 布局文件
 
-There are two ways to create the user interface. Either using an XML file or programming everything in Java. Looking around the internet you will encounter both. We will use XML (ending in .fxml) for most parts. I find it a cleaner way to keep the controller and view separated from each other. Further, we can use the graphical Scene Builder to edit our XML. That means we will not have to directly work with XML.
+有两种方法来创建用户界面。Either using an XML file or programming everything in Java. Looking around the internet you will encounter both. 我们将使用 XML （末尾为 .fxml）在许多部分。I find it a cleaner way to keep the controller and view separated from each other. 此外，我们可以使用图形化的 Scene Builder 来编辑我们 XML。这意味着我们将不用直接编辑 XML。
 
-Right-click on the view package and create a new *FXML Document* called `PersonOverview`.   
+在 view 包上右键并创建一个名为 `PersonOverview` 的 *FXML Document*。
 
 ![New FXML Document](/assets/library/javafx-8-tutorial/part1/new-fxml-document.png)
 
