@@ -2,18 +2,18 @@
   "topics": [ "HTML-CSS", "Java", "JavaFX", "Dart" ],
   "items": [
     {
-      "title": "HTML & CSS (BETA, GERMAN ONLY)",
+      "title": "HTML & CSS",
       "link": "/library/html-css/",
       "image": "/assets/library/html-css/html-css.png",
-      "summary": "Course to learn HTML & CSS for beginners. <br><i>Note: This course is not yet finished and is currently <b>only available in German</b>.</i>",
+      "summary": "Course to learn HTML & CSS for beginners. <br><i>Note: This course is currently <b>only available in German</b>.</i>",
       "topics": [ "HTML-CSS" ],
       "languages": [ "Deutsch" ]
     },
     {
-      "title": "More HTML & CSS (BETA, GERMAN ONLY)",
+      "title": "More HTML & CSS",
       "link": "/library/more-html-css/",
       "image": "/assets/library/more-html-css/more-html-css.png",
-      "summary": "A collection of various topics around HTML & CSS. <br><i>Note: This course is not yet finished and is currently <b>only available in German</b>.</i>",
+      "summary": "A collection of various topics around HTML & CSS. <br><i>Note: This course is currently <b>only available in German</b>.</i>",
       "topics": [ "HTML-CSS" ],
       "languages": [ "Deutsch" ]
     },
