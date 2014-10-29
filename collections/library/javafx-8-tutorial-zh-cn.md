@@ -95,3 +95,12 @@ sidebars:
 * **快速通道：** 导入教程部分的源代码到你的 IDE（它是一个 Eclipse 项目，但是你可以稍作修改后使用其它的 IDE 例如 NetBeans 这样的)。然后再通过教程来理解代码。
 
 现在，我希望你觉得有趣！开始 [第一部分：Scene Builder](/library/javafx-8-tutorial/zh-cn/part1/).
+
+<div class="alert alert-success">
+  <strong><i class="fa fa-trophy"></i> Attribution:</strong> Chinese translations have been contributed by 
+  <ul>
+    <li><a href="https://github.com/KaiYuan-Guo" class="alert-link">KaiYuan Guo</a></li> 
+    <li><a href="https://github.com/linychuo" class="alert-link">LiYongchao</a></li>
+  </ul>
+  Thank you very much!
+</div>
