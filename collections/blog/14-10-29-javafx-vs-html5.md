@@ -3,7 +3,7 @@ layout: post
 title: JavaFX vs. HTML5
 date: 2014-10-29 00:00
 slug: javafx-vs-html5
-description: "Should you choose JavaFX or HTML5 for your next richt client application? This article can give you some criteria to make your choide."
+description: "Should you choose JavaFX or HTML5 for your next richt client application? This article can give you some criteria to make your choice."
 image: /assets/blog/14-10-29-javafx-vs-html5/javafx-vs-html5.png
 published: true
 prettify: true
