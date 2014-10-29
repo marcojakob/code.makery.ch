@@ -90,6 +90,9 @@ alert.showAndWait();
 
 ![JavaFX Exception Dialog](/assets/blog/14-10-28-javafx-dialogs-official/exception-dialog.png)
 
+There is not a complete Exception Dialog out of the box. But we can easily provide `TextArea` as expandable content.
+
+
 <pre class="prettyprint lang-java">
 Alert alert = new Alert(AlertType.ERROR);
 alert.setTitle("Exception Dialog");
@@ -196,7 +199,7 @@ if (result.isPresent()){
 result.ifPresent(name -> System.out.println("Your name: " + name));
 </pre>
 
-Note: The `result.isPresent()` will return `false` if the user cancelled the dialog.
+**Note:** The `result.isPresent()` will return `false` if the user cancelled the dialog.
 
 
 ### Choice Dialog
@@ -224,7 +227,7 @@ if (result.isPresent()){
 result.ifPresent(letter -> System.out.println("Your choice: " + letter));
 </pre>
 
-Note: The `result.isPresent()` will return `false` if the user didn't choose anything or cancelled the dialog.
+**Note:** The `result.isPresent()` will return `false` if the user didn't choose anything or cancelled the dialog.
 
 
 ## Custom Login Dialog
