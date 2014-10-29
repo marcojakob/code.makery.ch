@@ -21,28 +21,24 @@
     */
     -->
     <link href="/theme/css/style.min.css" rel="stylesheet" type="text/css" media="all" />
-    {%- if model.canonical -%}
-    <link rel="canonical" href="{{ global.domain }}{{ model.canonical }}" />
-    {%- else -%}
-    <link rel="canonical" href="{% include "util/domain-and-url" %}" />
-    {%- endif -%}
-
+    <link rel="canonical" href="{{ head_canonical }}" />
+  
     {%- include "alternate-lang" %}
     <!-- RSS Feed -->
-    <link rel="alternate" type="application/rss+xml" href="/rss{% if mixture.route.tag %}-{{ mixture.route.tag }}{% endif %}" title="{{ global.title }} - RSS Feed">
+    <link rel="alternate" type="application/rss+xml" href="/rss" title="{{ global.title }} - RSS Feed">
 
-    <meta name="description" content="{{ model.description }}">
+    <meta name="description" content="{{ head_description }}">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" value="summary">
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="{{ model.title }}" />
+    <meta property="og:title" content="{{ head_title }}" />
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="{{ model.description }}" />
+    <meta property="og:description" content="{{ head_description }}" />
     <meta property="og:url" content="{% include "util/domain-and-url" %}" />
-    {% if model.image %}
-    <meta property="og:image" content="{{ global.domain }}{{ model.image }}" />
+    {%- if head_image -%}
+    <meta property="og:image" content="{{ head_image }}" />
     {% endif %}
     {% if global.googleplus %}<link rel="author" href="https://plus.google.com/{{ global.googleplus }}"/>{% endif %}
     {% include "prettify-css" %}

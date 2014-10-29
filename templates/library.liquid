@@ -1,6 +1,10 @@
 {% layout "layout" %}
 
-{% block title %}Library - {{ global.title }}{% endblock %}
+{% block title %}Library {% if mixture.route.topic %}({{ mixture.route.topic | uri_decode }}) {% endif %}- {{ global.title }}{% endblock %}
+
+{% block canonical %}{{ global.domain }}/library/{% endblock %}
+
+{% block description %}Library {% if mixture.route.topic %}({{ mixture.route.topic | uri_decode }}) {% endif %}on {{ global.title }}{% endblock %}
 
 {% block content %}
 <div class="container container-restricted">

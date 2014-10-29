@@ -1,8 +1,21 @@
 <!doctype html>
+{%- capture head_title -%}
+  {%- block title %}{% endblock -%}
+{%- endcapture -%}
+{%- capture head_canonical -%}
+  {%- block canonical %}{% include "util/domain-and-url" %}{% endblock -%}
+{%- endcapture -%}
+{%- capture head_description -%}
+   {%- block description %}{% endblock -%}
+{%- endcapture -%}
+{%- capture head_image -%}
+  {%- block image %}{% endblock -%}
+{%- endcapture -%}
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{% block title %}{{ model.title }} - {{ global.title }}{% endblock %}</title>
+    <title>{{ head_title }}</title>
     {% block head_end %}{% include "html-head-end" %}{% endblock %}
   </head>
   <body>

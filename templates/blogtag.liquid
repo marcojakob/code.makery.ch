@@ -2,6 +2,8 @@
 
 {% block title %}Blog ({{ mixture.route.tag | uri_decode }}) - {{ global.title }}{% endblock %}
 
+{% block description %}Posts tagged {{ mixture.route.tag | uri_decode }} on {{ global.title }}{% endblock %}
+
 {% block content %}
 <div class="container container-restricted">
   {% include "navigation" %}

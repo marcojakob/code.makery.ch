@@ -1,1 +1,5 @@
-/{{ mixture.url }}/
+{%- if mixture.route.tag -%}
+/blog/tag/{{ mixture.route.tag }}/{%- elsif mixture.route.topic -%}
+/library/topic/{{ mixture.route.topic }}/{%- elsif mixture.url == "index" -%}
+{%- else -%}
+/{{ mixture.url }}/{%- endif -%}
