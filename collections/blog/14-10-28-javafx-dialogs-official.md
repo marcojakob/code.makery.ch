@@ -4,7 +4,7 @@ title: JavaFX Dialogs (official)
 date: 2014-10-28 00:00
 slug: javafx-dialogs-official
 description: "Examples of how to create simple popup Dialogs and Alerts in JavaFX."
-image: /assets/blog/14-04-18-javafx-8-dialogs/custom-dialog.png
+image: /assets/blog/14-10-28-javafx-dialogs-official/login-dialog.png
 published: true
 prettify: true
 comments: true
