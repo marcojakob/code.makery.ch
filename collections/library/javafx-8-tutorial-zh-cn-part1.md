@@ -128,24 +128,23 @@ sidebars:
 
 
 ### 创建包
+[**Model-View-Controller** (MVC)](http://zh.wikipedia.org/wiki/Model_View_Controller)是一个非常重要的软件设计原则。按照MVC模式可以将我们的应用程序划分成3个部分，然后为这每一部分建立自己的包 (在源代码文件夹上右键， 选择 新建 | 包):
 
-从一开始，我们将遵循良好的软件设计原则。One very important principle is that of [**Model-View-Controller** (MVC)](http://zh.wikipedia.org/wiki/Model_View_Controller). According to this we divide our code into three units and create a package for each (Right-click on the src-folder, *New... | Package*):
+* `ch.makery.address` - 放置所有的控制器类(也就是应用程序的业务逻辑)
+* `ch.makery.address.model` - 放置所有的模型类
+* `ch.makery.address.view` - 放置所有界面和控件类
 
-* `ch.makery.address` - contains *most* controller classes (=business logic)
-* `ch.makery.address.model` - contains model classes
-* `ch.makery.address.view` - contains views 
-
-**Note:** Our view package will also contain some controllers that are directly related to a single view. Let's call them **view-controllers**.
+**注意:** view包里可能会包含一些控制器类，它可以直接被单个的view引用，我们叫它 **视图-控制器**。
 
 
 *****
 
 
-## Create the FXML Layout File
+## 创建FXML布局文件
 
-There are two ways to create the user interface. Either using an XML file or programming everything in Java. Looking around the internet you will encounter both. We will use XML (ending in .fxml) for most parts. I find it a cleaner way to keep the controller and view separated from each other. Further, we can use the graphical Scene Builder to edit our XML. That means we will not have to directly work with XML.
+有两种方式来创建用户界面，一终是能过XML文件来定义，另外一种就是直接通过java代码来创建. 这两种方式你都可以在网上搜到.  我们这里将使用XML的方式来创建大部分的界面。因为这种方式将会更好的将你的业务逻辑和你的界面开来，以保持代码的简洁。在接下来的内容里，我们将会介绍使用Scene Builder(所见即所得)来编辑我们的XML布局文件，它可以避免我们直接去修改XML文件。
 
-Right-click on the view package and create a new *FXML Document* called `PersonOverview`.   
+在view包上右键创建一个新*FXML Document*，把它命名为`PersonOverview`。 
 
 ![New FXML Document](/assets/library/javafx-8-tutorial/part1/new-fxml-document.png)
 
@@ -156,15 +155,15 @@ Right-click on the view package and create a new *FXML Document* called `PersonO
 *****
 
 
-## Design with Scene Builder
+## 用Scene Builder来设计你的界面
 
 <div class="alert alert-warning">
-  **Note:** If you can't get it to work, download the source of this tutorial part and try it with the included fxml.
+  **注意:** 你可以下载这部分教程的源码，它里面已经包含了设计好的布局文件。
 </div>
 
-Right-click on `PersonOverview.fxml` and choose *Open with Scene Builder*. Now you should see the Scene Builder with just an *AncherPane* (visible under Hierarchy on the left).
+在`PersonOverview.fxml` 右键选择 *Open with Scene Builder*，那么你将会在打开的Scene Builder里面看到一个固定的界面设计区域(在整个界面的左边)。
 
-1. Select the *Anchor Pane* in your Hierarchy and adjust the size under Layout (right side):   
+1. 选中这个界面设计区域，你就可以在右边的属性设置栏中对它的尺寸进行修改:   
 ![Anchor Pane Size](/assets/library/javafx-8-tutorial/part1/anchor-pane-size.png)
 
 2. Add a *Split Pane (Horizontal Flow)* by dragging it from the Library into the main area. Right-click the *Split Pane* in the *Hierarchy* view and select *Fit to Parent*.   
