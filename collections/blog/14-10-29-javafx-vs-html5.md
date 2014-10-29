@@ -316,3 +316,6 @@ If you decide to go with HTML5 I recommend you try [Dart](https://www.dartlang.o
 ***
 
 I'm aware that the criteria we looked at are only a part of what might be relevant to your specific case. I'd be glad to hear your opinion on this article and what you think is missing from the discussion.
+
+
+<small><em>Images: JavaFX Island by [Planet JFX](http://jfx.wikia.com/wiki/JavaFX_Logo_-_Centigrade), HTML5 Guy by [Pete LePage](http://www.petelepage.com/blog/2011/11/html5-guy-gelaskin/)</em></small>
