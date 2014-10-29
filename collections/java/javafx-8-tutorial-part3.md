@@ -281,11 +281,10 @@ To ignore such an error is not very nice, of course. We should let the user know
 
 We'll add a popup dialog to inform the user. You'll need to **add a library** for the [Dialogs](/blog/javafx-8-dialogs/): 
 
-1. Download the latest **ControlsFX** zip file from the [ControlsFX Website](http://fxexperience.com/controlsfx/). (It is also available as Maven dependency if you prefer to use Maven.)   
+1. Download this [controlsfx-8.0.6_20.jar](https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/controlsfx-8.0.6_20.jar) (you could also get it from the [ControlsFX Website](http://fxexperience.com/controlsfx/)).   
 **Important: The ControlsFX must be version `8.0.6_20` or greater to work with `JDK 8u20` and above as there was a breaking change introduced in that version.**
-2. Inside the zip file you should find a `controlsfx-8.x.x.jar` file. Unzip that file to your computer (Eclipse does not accept files copied directly from a zip folder).
-3. Create a **lib** subfolder in the project and add the jar file to this folder.
-4. Add the library to your project's **classpath**: In Eclipse *right-click on the jar file* | *Build Path* | *Add to Build Path*. Now Eclipse knows about the library.
+2. Create a **lib** subfolder in the project and add the controlsfx-jar file to this folder.
+3. Add the library to your project's **classpath**: In Eclipse *right-click on the jar file* | *Build Path* | *Add to Build Path*. Now Eclipse knows about the library.
 
 ![ControlsFX Libaray](/assets/library/javafx-8-tutorial/part3/controlsfx-library.png)
 

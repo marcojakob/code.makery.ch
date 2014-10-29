@@ -275,11 +275,10 @@ Ignorar semejante error no es nada recomendable. Deberíamos hacerle saber al us
 
 Vamos a añadir un diálogo emergente para informar al usuario. Desafortunadamente no hay componentes para diálogos incluidos en JavaFX 8. Para evitar tener que crearlos manualmente podemos **añadir una librería** que ya los incluya ([Dialogs](/blog/javafx-8-dialogs/)): 
 
-1. Descarga la última versión de la librería **ControlsFX** desde [su página web](http://fxexperience.com/controlsfx/) como archivo zip. (También es posible incluirla como una depencia de Maven si lo prefieres)   
+1. Descarga este [controlsfx-8.0.6_20.jar](https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/controlsfx-8.0.6_20.jar) (también se puede obtener de la [página web de ControlsFX](http://fxexperience.com/controlsfx/)).   
 **Importante: La versión de ControlsFX debe ser la `8.0.6_20` o superior para que funcione con `JDK 8u20` debido a un cambio crítico en esa versión.**
-2. Dentro del archivo zip deberías encontrar el archivo `controlsfx-8.x.x.jar`, el cual tendrás que descomprimir a tu computadora (Eclipse no acepta librerías comprimidas en un zip).
-3. Crea una subcarpeta **lib** dentro del proyecto y coloca dentro del archivo jar.
-4. Añade la librería al **classpath** de tu proyecto: En Eclipse se puede hacer mediante *clic-derecho sobre el archivo jar* | *Build Path* | *Add to Build Path*. Ahora Eclipse ya sabe donde encontrar esa librería.
+2. Crea una subcarpeta **lib** dentro del proyecto y coloca dentro del archivo jar.
+3. Añade la librería al **classpath** de tu proyecto: En Eclipse se puede hacer mediante *clic-derecho sobre el archivo jar* | *Build Path* | *Add to Build Path*. Ahora Eclipse ya sabe donde encontrar esa librería.
 
 ![ControlsFX Libaray](/assets/library/javafx-8-tutorial/part3/controlsfx-library.png)
 
