@@ -1,55 +1,55 @@
 ---
 layout: article
-title: "JavaFX 8 教程 - 第一部分：Scene Builder"
-date: 2014-10-08 00:00
-updated: 2014-10-08 00:00
-slug: javafx-8-tutorial/zh-cn/part1
-canonical: /java/javafx-8-tutorial-part1/
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part1.md
-description: "这 7 部分组成的教程将介绍一个用 JavaFX 编写的联系人程的设计，开发与部署的过程。"
+title: "JavaFX 8 Tutorial - Part 1: Scene Builder"
+date: 2014-04-19 01:00
+updated: 2014-08-27 00:00
+slug: javafx-8-tutorial-part1
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part1.md
+description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
 image: /assets/library/javafx-8-tutorial/part1/addressapp-part1.png
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: "系列文章"
+- header: "Articles in this Series"
   body:
-  - text: "简介"
-    link: /library/javafx-8-tutorial/zh-cn/
-    paging: 简介
-  - text: "第一部分：Scene Builder"
-    link: /library/javafx-8-tutorial/zh-cn/part1/
+  - text: "Introduction"
+    link: /java/javafx-8-tutorial-intro
+    paging: Intro
+  - text: "Part 1: Scene Builder"
+    link: /java/javafx-8-tutorial-part1/
     paging: 1
     active: true
-  - text: "第二部分：Model 和 TableView"
-    link: /library/javafx-8-tutorial/zh-cn/part2/
+  - text: "Part 2: Model and TableView"
+    link: /java/javafx-8-tutorial-part2/
     paging: 2
-  - text: "第三部分：与用户的交互"
-    link: /library/javafx-8-tutorial/zh-cn/part3/
+  - text: "Part 3: Interacting with the User"
+    link: /java/javafx-8-tutorial-part3/
     paging: 3
-  - text: "第四部分：CSS 样式"
-    link: /library/javafx-8-tutorial/zh-cn/part4/
+  - text: "Part 4: CSS Styling"
+    link: /java/javafx-8-tutorial-part4/
     paging: 4
-  - text: "第五部分：将数据用 XML 格式存储"
-    link: /library/javafx-8-tutorial/zh-cn/part5/
+  - text: "Part 5: Storing Data as XML"
+    link: /java/javafx-8-tutorial-part5/
     paging: 5
-  - text: "第六部分：统计图"
-    link: /library/javafx-8-tutorial/zh-cn/part6/
+  - text: "Part 6: Statistics Chart"
+    link: /java/javafx-8-tutorial-part6/
     paging: 6
-  - text: "第七部分：部署"
-    link: /library/javafx-8-tutorial/zh-cn/part7/
+  - text: "Part 7: Deployment"
+    link: /java/javafx-8-tutorial-part7/
     paging: 7
-- header: "下载源代码"
+- header: "Download Sources"
   body:
-  - text: 第一部分为 Eclipse 项目 <em>（要求至少 JDK 8u20）</em>
+  - text: Part 1 as Eclipse Project <em>(requires at least JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
     icon-css: fa fa-fw fa-download
-- header: 语言
+- header: Languages
   languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-part1/
     icon-css: fa fa-fw fa-globe
+    active: true
   - text: Português
     link: /library/javafx-8-tutorial/pt/part1/
     icon-css: fa fa-fw fa-globe
@@ -59,92 +59,88 @@ sidebars:
   - text: 中文（简体）
     link: /library/javafx-8-tutorial/zh-cn/part1/
     icon-css: fa fa-fw fa-globe
-    active: true
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs translation to Chinese (Simplified). If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
 
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
 
-### 第一部分的主题
+### Topics in Part 1
 
-* 开始了解 JavaFX 。
-* 创建并运行一个 JavaFX 项目。
-* 使用 Scene Builder 来设计用户界面。
-* 使用 模型 - 视图 - 控制器（MVC）模式 构造基础的应用。
+* Getting to know JavaFX
+* Creating and starting a JavaFX Project
+* Using Scene Builder to design the user interface
+* Basic application structure using the Model-View-Controller (MVC) pattern
 
 
 *****
 
 
-### 你需要准备
+### Prerequisites
 
-* 最新的 [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) （包含 **JavaFX 8**）。
-* Eclipse 4.3 或更高版本与 e(fx)clipse 插件。最简单的方法是从 [e(fx)clipse 网站](http://efxclipse.bestsolution.at/install.html#all-in-one) 下载预先配置的发行版本。作为一种备选你可以使用一个 [update site](http://www.eclipse.org/efxclipse/install.html) 来给您的 Eclipse 安装。
-* [Scene Builder 2.0](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684.html) 或更高。
+* Latest [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (includes **JavaFX 8**).
+* Eclipse 4.3 or greater with e(fx)clipse plugin. The easiest way is to download the preconfigured distro from the [e(fx)clipse website](http://efxclipse.bestsolution.at/install.html#all-in-one). As an alternative you can use an [update site](http://www.eclipse.org/efxclipse/install.html) for your Eclipse installation.
+* [Scene Builder 2.0](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684.html) or greater
 
 
-### Eclipse 配置
+### Eclipse Configurations 
 
-配置Eclipse 所使用 JDK 和 Scene Builder：
+We need to tell Eclipse to use JDK 8 and also where it will find the Scene Builder:
 
-1. 打开 Eclipse 的设置并找到 *Java | Installed JREs* 。
+1. Open the Eclipse Preferences and navigate to *Java | Installed JREs*.
 
-2. 点击 *Add...*, 选择 *Standard VM* 并选择你安装 JDK 8 的 *Directory* 。
+2. Click *Add...*, select *Standard VM* and choose the installation *Directory* of your JDK 8.
 
-3. 移除其他的 JREs 或 JDKs 从而使 **JDK 8 成为默认**。
+3. Remove the other JREs or JDKs so that the **JDK 8 becomes the default**.   
 ![Preferences JDK](/assets/library/javafx-8-tutorial/part1/preferences-jdk.png)
 
-4. 在 *Java | Compiler* 中设置 **Compiler compliance level 到 1.8**。
+4. Navigate to *Java | Compiler*. Set the **Compiler compliance level to 1.8**.   
 ![Preferences Compliance](/assets/library/javafx-8-tutorial/part1/preferences-compliance.png)
 
-5. 在 *JavaFX* 中指定你的 Scene Builder 可执行文件的路径。
+5. Navigate to the *JavaFX* preferences. Specify the path to your Scene Builder executable.   
 ![Preferences JavaFX](/assets/library/javafx-8-tutorial/part1/preferences-javafx.png)
 
 
-### 帮助链接
+### Helpful Links
 
-你可能会想收藏下面的链接：
+You might want to bookmark the following links:
 
-* [Java 8 API](http://docs.oracle.com/javase/8/docs/api/) - Java 标准类的文档。
-* [JavaFX 8 API](http://docs.oracle.com/javase/8/javafx/api/) - JavaFX 类的文档。
-* [ControlsFX API](http://controlsfx.bitbucket.org/) - [ControlsFX project](http://fxexperience.com/controlsfx/) 额外 JavaFX 控件的文档。
-* [Oracle's JavaFX Tutorials](http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm) - Oracle 的 JavaFX 官方教程。
+* [Java 8 API](http://docs.oracle.com/javase/8/docs/api/) - JavaDoc for the standard Java classes
+* [JavaFX 8 API](http://docs.oracle.com/javase/8/javafx/api/) - JavaDoc for JavaFX classes
+* [ControlsFX API](http://controlsfx.bitbucket.org/) - JavaDoc for the [ControlsFX project](http://fxexperience.com/controlsfx/) for additional JavaFX controls
+* [Oracle's JavaFX Tutorials](http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm) - Official JavaFX Tutorials by Oracle
 
-一切就绪，让我们开始吧！
-
-
-*****
-
-
-## 创建一个新的 JavaFX 项目
-
-在 Eclipse（已安装 e(fx)clipse 的）中，点击 *File | New | Other...* 并选择 *JavaFX Project*。
-指定这个项目的名字（e.g. *AddressApp*）并点击 *Finish*。
-
-如果 *application* 包被自动创建，那么删除它和它的内容。
-
-
-### 创建包
-[**Model-View-Controller** (MVC)](http://zh.wikipedia.org/wiki/Model_View_Controller)是一个非常重要的软件设计原则。按照MVC模式可以将我们的应用程序划分成3个部分，然后为这每一部分建立自己的包 (在源代码文件夹上右键， 选择 新建 | 包):
-
-* `ch.makery.address` - 放置所有的控制器类(也就是应用程序的业务逻辑)
-* `ch.makery.address.model` - 放置所有的模型类
-* `ch.makery.address.view` - 放置所有界面和控件类
-
-**注意:** view包里可能会包含一些控制器类，它可以直接被单个的view引用，我们叫它 **视图-控制器**。
+Now, let's get started!
 
 
 *****
 
 
-## 创建FXML布局文件
+## Create a new JavaFX Project
 
-有两种方式来创建用户界面，一终是能过XML文件来定义，另外一种就是直接通过java代码来创建. 这两种方式你都可以在网上搜到.  我们这里将使用XML的方式来创建大部分的界面。因为这种方式将会更好的将你的业务逻辑和你的界面开来，以保持代码的简洁。在接下来的内容里，我们将会介绍使用Scene Builder(所见即所得)来编辑我们的XML布局文件，它可以避免我们直接去修改XML文件。
+In Eclipse (with e(fx)clipse installed) go to *File | New | Other...* and choose *JavaFX Project*.   
+Specify the Name of the project (e.g. *AddressApp*) and click *Finish*.
 
-在view包上右键创建一个新*FXML Document*，把它命名为`PersonOverview`。 
+Remove the *application* package and its content if it was automatically created.
+
+
+### Create the Packages
+
+Right from the start we will follow good software design principles. One very important principle is that of [**Model-View-Controller** (MVC)](http://en.wikipedia.org/wiki/Model_View_Controller). According to this we divide our code into three units and create a package for each (Right-click on the src-folder, *New... | Package*):
+
+* `ch.makery.address` - contains *most* controller classes (=business logic)
+* `ch.makery.address.model` - contains model classes
+* `ch.makery.address.view` - contains views 
+
+**Note:** Our view package will also contain some controllers that are directly related to a single view. Let's call them **view-controllers**.
+
+
+*****
+
+
+## Create the FXML Layout File
+
+There are two ways to create the user interface. Either using an XML file or programming everything in Java. Looking around the internet you will encounter both. We will use XML (ending in .fxml) for most parts. I find it a cleaner way to keep the controller and view separated from each other. Further, we can use the graphical Scene Builder to edit our XML. That means we will not have to directly work with XML.
+
+Right-click on the view package and create a new *FXML Document* called `PersonOverview`.   
 
 ![New FXML Document](/assets/library/javafx-8-tutorial/part1/new-fxml-document.png)
 
@@ -155,45 +151,45 @@ sidebars:
 *****
 
 
-## 用Scene Builder来设计你的界面
+## Design with Scene Builder
 
 <div class="alert alert-warning">
-  **注意:** 你可以下载这部分教程的源码，它里面已经包含了设计好的布局文件。
+  **Note:** If you can't get it to work, download the source of this tutorial part and try it with the included fxml.
 </div>
 
-在`PersonOverview.fxml` 右键选择 *Open with Scene Builder*，那么你将会在打开的Scene Builder里面看到一个固定的界面设计区域(在整个界面的左边)。
+Right-click on `PersonOverview.fxml` and choose *Open with Scene Builder*. Now you should see the Scene Builder with just an *AncherPane* (visible under Hierarchy on the left).
 
-1. 选中这个界面设计区域，你就可以在右边的属性设置栏中对它的尺寸进行修改:   
+1. Select the *Anchor Pane* in your Hierarchy and adjust the size under Layout (right side):   
 ![Anchor Pane Size](/assets/library/javafx-8-tutorial/part1/anchor-pane-size.png)
 
-2. 从Scene Builder的左边控件栏中拖拽一个 *Splite Pane(Horizontal Flow)* 到界面设计区域，在Builder的右边视图结构中选择刚添加的Pane，在弹出的右键菜单中选择 *Fit to Parent* 。   
+2. Add a *Split Pane (Horizontal Flow)* by dragging it from the Library into the main area. Right-click the *Split Pane* in the *Hierarchy* view and select *Fit to Parent*.   
 ![Fit to Parent](/assets/library/javafx-8-tutorial/part1/fit-to-parent.png)
 
-3. 同样从左边的控件栏中拖拽一个 *TableView* 到 *SplitePane* 的左边，选择这个TableView(而不是它的列)对它的布局进行设置，你可以在 *AnchorPane* 中对这个TableView四个边的外边距进行调节。([more information on Layouts](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).   
+3. Drag a *TableView* (under *Controls*) into the left side of the *SplitPane*. Select the TableView (not a Column) and set the following layout constraints to the TableView. Inside an *AnchorPane* you can always set anchors to the four borders ([more information on Layouts](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).   
 ![TableView Anchors](/assets/library/javafx-8-tutorial/part1/table-view-anchors.png)
 
-4. 点击菜单中的 *Preview | Show Preview in Window* 可以预览你设计好的界面，试着缩放预览的界面，你会发现TableView会随着窗口的缩放而变化。
+4. Go to the menu *Preview | Show Preview in Window* to see, whether it behaves right. Try resizing the window. The TableView should resize together with the window as it is anchored to the borders.
 
-5. 修改TableView中的列名字，"First Name" and "Last Name"，在右边面板中的属性设置项
+5. Change the column text (under Properties) to "First Name" and "Last Name".   
 ![Column Texts](/assets/library/javafx-8-tutorial/part1/column-texts.png)
 
-6. 选择这个 *TableView* ，在右边面板中将它的 *Column Resize Policy* 修改成 *constrained-resize* (同样是在属性设置项里面)。确保这个TableView的列能够铺满所有的可用空间。
+6. Select the *TableView* choose *constrained-resize* for the *Column Resize Policy* (under Properties). This ensures that the colums will always take up all available space.   
 ![Column Resize Policy](/assets/library/javafx-8-tutorial/part1/column-resize-policy.png)
 
-7. 添加一个 *Label* 到 *SplitePane*的右边部分，并设置它的显示文字为 "Person Details" (提示: 你可以通过搜索来找到 *Label* 这个控件)。 使用anchors来调节这个控件的布局位置。
+7. Add a *Label* on the right side with the text "Person Details" (hint: use the search to find the *Label*). Adjust it's layout using anchors.   
 ![Person Details Label](/assets/library/javafx-8-tutorial/part1/person-details-label.png)
 
-8. 再添加一个 *GridPane* *SplitePane*的右边部分, 使用anchors来调节这个控件的布局位置。    
+8. Add a *GridPane* on the right side, select it and adjust its layout using anchors (top, right and left).    
 ![GridPane Layout](/assets/library/javafx-8-tutorial/part1/grid-pane-layout.png)
 
-9. 按照下面的图添加多个 *Lables*到表格中去。
-*注意: 添加一个控件到已经存在的行里面去，你可在这行的行号上右键选择 "Add Row"。
+9. Add the following labels to the cells.   
+*Note: To add a row to the GridPane select an existing row number (will turn yellow), right-click the row number and choose "Add Row".*   
 ![Add labels](/assets/library/javafx-8-tutorial/part1/add-labels.png)
 
-10. 添加3个按钮到这个 *GridPane* 的下面。 小提示: 选择这3个按钮，右键 *Wrap In | HBox*，那么它们会被放置到一个HBox里面。 你可能需要对这个HBox指定一个 *spacing*,同时也需要设置它们的右边和下边的anchors   
+10. Add the three buttons at the bottom. Tip: Select all of them, right-click and call *Wrap In | HBox*. This groups them together. You might need to specify a *spacing* inside the HBox. Then, also set anchors (right and bottom) so they stay in the right place.   
 ![Button Group](/assets/library/javafx-8-tutorial/part1/button-group.png)
 
-11. 那么基本已经完成了界面的设计，你可以通过 *Preview* 来预览一下你设计的界面，同时缩放一下窗口来检验一下各个控件的位置是否正确。
+11. Now you should see something like the following. Use the *Preview* menu to test its resizing behaviour.   
 ![Preview](/assets/library/javafx-8-tutorial/part1/scene-builder-preview.png)
 
 
@@ -201,48 +197,48 @@ sidebars:
 *****
 
 
-## 创建主应用程序
+## Create the Main Application
 
-我们需要建立一个新的布局文件 `PersonOverview.fxml` 来做为主布局文件，它将包含一个菜单栏和你即将要显示的布局。
+We need another FXML for our root layout which will contain a menu bar and wraps the just created `PersonOverview.fxml`.
 
-1. 在view包里面创建一个新的 *FXML Document* 叫做 `RootLayout.fxml`, 这一次，选择 *BorderPane* 做为它的根节点
+1. Create another *FXML Document* inside the view package called `RootLayout.fxml`. This time, choose *BorderPane* as the root element.   
 ![New RootLayout](/assets/library/javafx-8-tutorial/part1/new-root-layout.png)
 
-2. 在Scene Builder中打开 `RootLayout.fxml`。
+2. Open the `RootLayout.fxml` in Scene Builder.
 
-3. 通过设置 *Pref Width* 为600和 *Pref Height* 为400来改变这个 *BorderPane*的尺寸。
+3. Resize the *BorderPane* with *Pref Width* set to 600 and *Pref Height* set to 400.   
 ![RootLayout Size](/assets/library/javafx-8-tutorial/part1/root-layout-size.png)
 
-4. 在最顶上添加一个 *MenuBar*，先不去给这个菜单添加任何的功能。
+4. Add a *MenuBar* into the TOP Slot. We will not implement the menu functionality at the moment.   
 ![MenuBar](/assets/library/javafx-8-tutorial/part1/menu-bar.png)
 
 
 ### The JavaFX Main Class 
 
-现在，我们需要创建一个 **main java class** 用来加载 `RootLayout.fxml` ，同时添加 `PersonOverview.fxml` 到*RootLayout.fxml*中去，这个main class将做为我们这个应用程序的入口。
+Now, we need to create the **main java class** that starts up our application with the `RootLayout.fxml` and adds the `PersonOverview.fxml` in the center. 
 
-1. 在工程上右键选择 *New | Other...*，然后选择 *JavaFX Main Class*。
+1. Right-click on your project and choose *New | Other...* and choose *JavaFX Main Class*.   
 ![New JavaFX Main Class](/assets/library/javafx-8-tutorial/part1/new-main-class.png)
 
-2. 将这个class命名为 `MainApp`，将它放置到controller包中，也就是上面建的 `ch.makery.address` (注意: 这个包下有两个子包，分别是`view` 和 `model`)。   
+2. We'll call the class `MainApp` and put it in the controller package `ch.makery.address` (note: this is the parent package of the `view` and `model` subpackages).   
 ![New JavaFX Main Class](/assets/library/javafx-8-tutorial/part1/new-main-class2.png)
 
 
-你可能注意到了IDE生成的 `MainApp.java` 继承自 `Application` 同时包含了两个方法， 这是一个JavaFX应用程序的最基本的代码结构，这里最重要的方法是 `start(Stage primaryStage)` ，它将会在应用程序运行时通过内部的 `main` 方法自动调用。
+The generated `MainApp.java` class extends from `Application` and contains two methods. This is the basic structure that we need to start a JavaFX Application. The most important part for us is the `start(Stage primaryStage)` method. It is automatically called when the application is `launched` from within the `main` method.
 
-正如你所看到的，这个`start(...)` 方法会接收一个 `Stage` 类型的参数，下面的图向你展示了一个JavaFX应用程序的基本结构。
+As you see, the `start(...)` method receives a `Stage` as parameter. The following graphic illustrates the structure of every JavaFX application:
 
 ![New FXML Document](/assets/library/javafx-8-tutorial/part1/javafx-hierarchy.png)   
 *Image Source: http://www.oracle.com*
 
-**一切看起来象是剧场里表演**: 这里的 `Stage` 是一个主容器，它就是我们通常所认为的窗口（有边，高和宽，还有关闭按钮）。在这个 `Stage` 里面，你可以放置一个 `Scene`，当然你可以切换别的 `Scene`，而在这个 `Scene` 里面，我们就可以放置各种各样的控件。
+**It's like a theater play**: The `Stage` is the main container which is usually a `Window` with a border and the typical minimize, maximize and close buttons. Inside the `Stage` you add a `Scene` which can, of course, be switched out by another `Scene`. Inside the `Scene` the actual JavaFX nodes like `AnchorPane`, `TextBox`, etc. are added.
 
-更详细的信息，你可以参考 [Working with the JavaFX Scene Graph](http://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm).
+For more information on this turn to [Working with the JavaFX Scene Graph](http://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm).
 
 
 *****
 
-打开 `MainApp.java`，将已有的代码替换成下面的代码:
+Open `MainApp.java` and replace the code with the following:
 
 <pre class="prettyprint lang-java">
 package ch.makery.address;
@@ -321,32 +317,32 @@ public class MainApp extends Application {
 }
 </pre>
 
-代码中的注释会给你一些小提示，注明代码的含义。
+The various comments should give you some hints about what's going on.
 
-如果你现在就运行这个程序，那么你将会看到和这篇文章开头所展示的图片那样的界面。
+If you run the application now, you should see something like the screenshot at the beginning of this post.
 
 
-### 你有可能遇见的问题
+### Frequent Problems
 
-如果你的应用程序找不到你所指定的 `fxml` 布局文件，那么系统会提示以下的错误： 
+If JavaFX can't find the `fxml` file you speicified, you might get the following error message: 
 
 `java.lang.IllegalStateException: Location is not set.`
 
-你可以检查一下你的 `fxml` 文件名是否拼写错误
+To solve this issue double check if you didn't misspell the name of your `fxml` files!
 
 <div class="alert alert-warning">
-  如果还是不能工作，请下载这篇教程所对应的源代码，然后将源代码中的fxml文件替换掉你的
+  If it still doesn't work, download the source of this tutorial part and try it with the included fxml.
 </div>
 
 
 *****
 
-### 接下来，做些什么?
+### What's Next?
 
-在 [Tutorial Part 2](/library/javafx-8-tutorial/zh-cn/part2/) 中，我们将会为这个应用程序添加一些功能。
+In [Tutorial Part 2](/java/javafx-8-tutorial-part2/) we will add some data and functionality to our AddressApp.
 
 
-##### 这些文章可能会对你有帮助
+##### Some other articles you might find interesting
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
