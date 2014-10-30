@@ -2,6 +2,7 @@
 layout: post
 title: JavaFX Dialogs (official)
 date: 2014-10-28 00:00
+udpated: 2014-10-29 00:00
 slug: javafx-dialogs-official
 description: "Examples of how to create simple popup Dialogs and Alerts in JavaFX."
 image: /assets/blog/14-10-28-javafx-dialogs-official/login-dialog.png
@@ -179,7 +180,7 @@ if (result.get() == buttonTypeOne){
 </pre>
 
 
-### Text Input Dialog
+## Text Input Dialog
 
 ![JavaFX Text Input Dialog](/assets/blog/14-10-28-javafx-dialogs-official/text-input-dialog.png)
 
@@ -202,7 +203,7 @@ result.ifPresent(name -> System.out.println("Your name: " + name));
 **Note:** The `result.isPresent()` will return `false` if the user cancelled the dialog.
 
 
-### Choice Dialog
+## Choice Dialog
 
 ![JavaFX Choice Dialog](/assets/blog/14-10-28-javafx-dialogs-official/choice-dialog.png)
 
@@ -290,4 +291,34 @@ Optional&lt;Pair&lt;String, String>> result = dialog.showAndWait();
 result.ifPresent(usernamePassword -> {
     System.out.println("Username=" + usernamePassword.getKey() + ", Password=" + usernamePassword.getValue());
 });
+</pre>
+
+
+## Styling the Dialogs
+
+### Custom Icon
+
+![Custom Dialog Icon](/assets/blog/14-10-28-javafx-dialogs-official/custom-icon.png)
+
+In the current version it's a bit cumbersome to get to the Dialog's `Stage` to be able to set its icon. Here is how:
+
+<pre class="prettyprint lang-java">
+// Get the Stage.
+Stage stage = (Stage) dialog.getDialogPane().getScene().getWindow();
+
+// Add a custom icon.
+stage.getIcons().add(new Image(this.getClass().getResource("login.png").toString()));
+</pre>
+
+Note: According to [this bug report](https://javafx-jira.kenai.com/browse/RT-38895) the final version of the JavaFX 8u40 Dialogs should use the same icon as the application that it is running from.
+
+
+### Minimal Decorations
+
+Another option is to remove the icon and use only minimal window decorations.
+
+![Minimal Decorations](/assets/blog/14-10-28-javafx-dialogs-official/minimal-decorations.png)
+
+<pre class="prettyprint lang-java">
+dialog.initStyle(StageStyle.UTILITY);
 </pre>
