@@ -310,7 +310,11 @@ Stage stage = (Stage) dialog.getDialogPane().getScene().getWindow();
 stage.getIcons().add(new Image(this.getClass().getResource("login.png").toString()));
 </pre>
 
-Note: According to [this bug report](https://javafx-jira.kenai.com/browse/RT-38895) the final version of the JavaFX 8u40 Dialogs should use the same icon as the application that it is running from.
+According to [this bug report](https://javafx-jira.kenai.com/browse/RT-38895) the final version of the JavaFX 8u40 Dialogs should use the same icon as the application that it is running from. In that case you would need to set its owner and the Dialog would get the owner's icon:
+
+<pre class="prettyprint lang-java">
+dialog.initOwner(otherStage);
+</pre>
 
 
 ### Minimal Decorations
