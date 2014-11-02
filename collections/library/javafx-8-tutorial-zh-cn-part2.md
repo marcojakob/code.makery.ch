@@ -69,18 +69,18 @@ sidebars:
 ![Screenshot AddressApp Part 2](/assets/library/javafx-8-tutorial/part2/addressapp-part2.png)
 
 
-## Topics in Part 2
+## 第二部分的主题
 
-* Creating a **model** class
-* Using the model class in an **ObservableList**
-* Show data in the **TableView** using **Controllers**
+* 创建一个 **模型** 类。
+* 在 **ObservableList** 使用模型类。
+* 使用 **Controllers** 在 **TableView** 上显示数据。
 
 
 *****
 
-## Create the Model Class
+## 创建 **模型** 类。
 
-We need a model class to hold information about the people in our address book. Add a new class to the model package (`ch.makery.address.model`) called `Person`. The `Person` class will have a few instance variables for the name, address and birthday. Add the following code to the class. I'll explain some JavaFX specifics after the code.
+我们需要一个模型类来保存联系人信息到我们的通讯录中。在模型包中 (`ch.makery.address.model`) 添加一个叫 `Person`的类。`Person` 类将会有一些变量，名字，地址和生日。将以下代码添加到类。在代码后，我将解释一些 JavaFX 的细节。
 
 
 ##### Person.java
@@ -117,7 +117,7 @@ public class Person {
 	public Person() {
 		this(null, null);
 	}
-	
+
 	/**
 	 * Constructor with some initial data.
 	 * 
@@ -127,14 +127,14 @@ public class Person {
 	public Person(String firstName, String lastName) {
 		this.firstName = new SimpleStringProperty(firstName);
 		this.lastName = new SimpleStringProperty(lastName);
-		
+
 		// Some initial dummy data, just for convenient testing.
 		this.street = new SimpleStringProperty("some street");
 		this.postalCode = new SimpleIntegerProperty(1234);
 		this.city = new SimpleStringProperty("some city");
 		this.birthday = new SimpleObjectProperty&lt;LocalDate&gt;(LocalDate.of(1999, 2, 21));
 	}
-	
+
 	public String getFirstName() {
 		return firstName.get();
 	}
@@ -142,7 +142,7 @@ public class Person {
 	public void setFirstName(String firstName) {
 		this.firstName.set(firstName);
 	}
-	
+
 	public StringProperty firstNameProperty() {
 		return firstName;
 	}
@@ -154,7 +154,7 @@ public class Person {
 	public void setLastName(String lastName) {
 		this.lastName.set(lastName);
 	}
-	
+
 	public StringProperty lastNameProperty() {
 		return lastName;
 	}
@@ -166,7 +166,7 @@ public class Person {
 	public void setStreet(String street) {
 		this.street.set(street);
 	}
-	
+
 	public StringProperty streetProperty() {
 		return street;
 	}
@@ -178,7 +178,7 @@ public class Person {
 	public void setPostalCode(int postalCode) {
 		this.postalCode.set(postalCode);
 	}
-	
+
 	public IntegerProperty postalCodeProperty() {
 		return postalCode;
 	}
@@ -190,7 +190,7 @@ public class Person {
 	public void setCity(String city) {
 		this.city.set(city);
 	}
-	
+
 	public StringProperty cityProperty() {
 		return city;
 	}
@@ -202,7 +202,7 @@ public class Person {
 	public void setBirthday(LocalDate birthday) {
 		this.birthday.set(birthday);
 	}
-	
+
 	public ObjectProperty&lt;LocalDate&gt; birthdayProperty() {
 		return birthday;
 	}
@@ -210,17 +210,17 @@ public class Person {
 </pre>
 
 
-### Explanations
+### 解释
 
-* With JavaFX it's common to use [`Properties`](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html) for all fields of a model class. A `Property` allow us, for example, to automatically be notified when the `lastName` or any other variable is changed. This helps us keep the view in sync with the data. To learn more about `Properties` read [Using JavaFX Properties and Binding](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm).
-* [`LocalDate`](http://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html), the type we're using for `birthday`, is part of the new [Date and Time API for JDK 8](http://docs.oracle.com/javase/tutorial/datetime/iso/).
+* With JavaFX it's common to use [`Properties`](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html) for all fields of a model class. A `Property` allow us, for example, to automatically be notified when the `lastName` or any other variable is changed. 这有助于我们保持视图与数据的同步，阅读 [Using JavaFX Properties and Binding](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm) 学习更多关于 `Properties` 的内容。
+* [`LocalDate`](http://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html), 我们使用了 `birthday` 类型, 这是一个新的部分在 [Date and Time API for JDK 8](http://docs.oracle.com/javase/tutorial/datetime/iso/).
 
 
 *****
 
-## A List of Persons
+## 人员列表
 
-The main Data that our application manages, is a bunch of persons. Let's create a list for `Person` objects inside the `MainApp` class. All other controller classes will later get access to that central list inside the `MainApp`. 
+The main Data that our application manages, is a bunch of persons.让我们在 `MainApp` 类里面创建一个 `Person` 对象的列表。稍后其他所有的控制器类将存取 `MainApp` 的核心列表。
 
 
 ### ObservableList
