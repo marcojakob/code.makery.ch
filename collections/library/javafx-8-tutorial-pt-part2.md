@@ -2,7 +2,7 @@
 layout: article
 title: "Tutorial JavaFX 8 - Parte 2: Modelo e TableView"
 date: 2014-09-10 00:00
-updated: 2014-09-10 00:00
+updated: 2014-11-06 00:00
 slug: javafx-8-tutorial/pt/part2
 canonical: /java/javafx-8-tutorial-part2/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt-part2.md

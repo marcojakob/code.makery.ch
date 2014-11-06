@@ -2,7 +2,7 @@
 layout: article
 title: "Tutorial JavaFX 8 - Parte 1: Scene Builder"
 date: 2014-09-10 00:00
-updated: 2014-09-12 00:00
+updated: 2014-11-06 00:00
 slug: javafx-8-tutorial/pt/part1
 canonical: /java/javafx-8-tutorial-part1/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt-part1.md
