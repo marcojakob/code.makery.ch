@@ -5,11 +5,7 @@ date: 2014-09-10 00:00
 updated: 2014-09-10 00:00
 slug: javafx-8-tutorial/pt/part2
 canonical: /java/javafx-8-tutorial-part2/
-github: 
-
-https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/
-
-javafx-8-tutorial-pt-part2.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt-part2.md
 description: "Use uma TableView JavaFX para mostrar uma ObservableList de Persons."
 image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
 published: true
@@ -45,12 +41,8 @@ sidebars:
     paging: 7
 - header: "Download Sources"
   body:
-  - text: "Parte 2 como um projeto Eclipse <em>(versão mínima requirida: JDK 
-
-8u20)</em>"
-    link: https://github.com/marcojakob/tutorial-javafx-
-
-8/releases/download/v1.0/addressapp-jfx8-part-2.zip
+  - text: "Parte 2 como um projeto Eclipse <em>(versão mínima requirida: JDK 8u20)</em>"
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-2.zip
     icon-css: fa fa-fw fa-download
 - header: Linguagens
   languages: true
@@ -70,18 +62,7 @@ sidebars:
     icon-css: fa fa-fw fa-globe
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs translation to Portuguese. 
-
-If you'd like to help out please read <a href="/library/how-to-contribute/" 
-
-class="alert-link">how to contribute</a>.
-</div>
-
-
-![Screenshot AddressApp Part 2](/assets/library/javafx-8-
-
-tutorial/part2/addressapp-part2.png)
+![Screenshot AddressApp Part 2](/assets/library/javafx-8-tutorial/part2/addressapp-part2.png)
 
 
 ## Tópicos na Parte 2
@@ -95,8 +76,7 @@ tutorial/part2/addressapp-part2.png)
 
 ## Criar a Classe Model
 
-Nós precisamos de uma classe model para guardar informação sobre as pessoas em nosso agenda. Adicione uma nova classe ao pacote model (`ch.makery.address.model`) chamado 
-`Person` (pessoa). A  classe `Person` (pessoa) terá um pouco de variáveis de instância para o nome, endereço e aniversário. Adicione o código seguinte à classe. Eu explicarei algumas coisas específicas do JAvaFX depois do código.
+Nós precisamos de uma classe model para guardar informação sobre as pessoas em nosso agenda. Adicione uma nova classe ao pacote model (`ch.makery.address.model`) chamado `Person` (pessoa). A  classe `Person` (pessoa) terá um pouco de variáveis de instância para o nome, endereço e aniversário. Adicione o código seguinte à classe. Eu explicarei algumas coisas específicas do JAvaFX depois do código.
 
 
 ##### Person.java
@@ -148,9 +128,7 @@ public class Person {
 		this.street = new SimpleStringProperty("some street");
 		this.postalCode = new SimpleIntegerProperty(1234);
 		this.city = new SimpleStringProperty("some city");
-		this.birthday = new SimpleObjectProperty&lt;LocalDate&gt;
-
-(LocalDate.of(1999, 2, 21));
+		this.birthday = new SimpleObjectProperty&lt;LocalDate&gt;(LocalDate.of(1999, 2, 21));
 	}
 	
 	public String getFirstName() {
@@ -230,10 +208,8 @@ public class Person {
 
 ###  Explicações
 
-* Com JavaFX  é comum o uso de [`Properties`] (propriedades) 
-(http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html) para todos os campos de uma classe model. Uma `Property` (propriedade) nos permite, por exemplo ser notificado automaticamente quando o `lastName` (sobrenome) ou qualquer outra variável seja mudada. Isso nos ajuda a manter a view sincronizada com os dados. PAra aprender mais sobre `Properties` leia [Usando Propriedades e Ligações de Propriedades no JavaFX]
-(http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm).
-* [`LocalDate`] (http://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html), o tipo que nós estamos usando para `birthday` (aniversário), é parte da nova [API Data e Hora (Date and Time API) para JDK 8](http://docs.oracle.com/javase/tutorial/datetime/iso/).
+* Com JavaFX  é comum o uso de [`Properties` (propriedades)](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html) para todos os campos de uma classe model. Uma `Property` (propriedade) nos permite, por exemplo ser notificado automaticamente quando o `lastName` (sobrenome) ou qualquer outra variável seja mudada. Isso nos ajuda a manter a view sincronizada com os dados. PAra aprender mais sobre `Properties` leia [Usando Propriedades e Ligações de Propriedades no JavaFX](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm).
+* [`LocalDate`](http://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html), o tipo que nós estamos usando para `birthday` (aniversário), é parte da nova [API Data e Hora (Date and Time API) para JDK 8](http://docs.oracle.com/javase/tutorial/datetime/iso/).
 
 
 *****
@@ -247,7 +223,7 @@ Os principais dados que nossa aplicação gerencia é um monte de pessoas. Vamos
 
 Nós estamos trabalhando com classes view JavaFX que precisam de ser informadas sobre quaisquer mudanças feitas à lsita de pessoas. Isto é importante, caso contrário a view não seria sincronizada com os dados. Para este propósito, JavaFX introduz algumas novas [classes de Coleção](http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm). 
 
-Para aquelas coleções, nós precisamos da `ObservableList`. Para criar uma nova ObservableList`, adicione o código seguinte ao começo da classe `MainApp`. Nós adicionaremos também um construtor que cria alguns dados de exemplo e um método getter público:
+Para aquelas coleções, nós precisamos da `ObservableList`. Para criar uma nova `ObservableList`, adicione o código seguinte ao começo da classe `MainApp`. Nós adicionaremos também um construtor que cria alguns dados de exemplo e um método getter público:
 
 
 ##### MainApp.java
@@ -259,9 +235,7 @@ Para aquelas coleções, nós precisamos da `ObservableList`. Para criar uma nov
 	/**
 	 * Os dados como uma observable list de Persons.
 	 */
-	private ObservableList&lt;Person&gt; personData = 
-
-FXCollections.observableArrayList();
+	private ObservableList&lt;Person&gt; personData = FXCollections.observableArrayList();
 
 	/**
 	 * Construtor
@@ -378,8 +352,7 @@ Agora este código provavelmente vai precisar de explicação.:
 
 * Todos os campos e métodos onde o arquivo fxml precisa de acesso devem ser anotados com `@FXML`. Na verdade, omente se eles forem private,  mas é melhor tê-los private e marcá-los com a anotação!
 * O método `initialize()` é chamado automaticamente após o arquivo fxml ter sido carregado. Nessa hora, todos os campos FXML já devem ter sido inicializados.
-* O método `setCellValueFactory(...)` que nós definimos nas colunas da tabela são usados para determinar qual campo dentro dos objetos de `Person` devem ser usados para determinda coluna. A seta `->` indica que nós estamos usando um recurso do Java 8 chamado *Lambdas*. (Outra opção seria usar uma [PropertyValueFactory]
-(http://docs.oracle.com/javase/8/javafx/api/), mas esta não é type-safe (segura por tipo)).
+* O método `setCellValueFactory(...)` que nós definimos nas colunas da tabela são usados para determinar qual campo dentro dos objetos de `Person` devem ser usados para determinda coluna. A seta `->` indica que nós estamos usando um recurso do Java 8 chamado *Lambdas*. (Outra opção seria usar uma [PropertyValueFactory](http://docs.oracle.com/javase/8/javafx/api/), mas esta não é type-safe (segura por tipo)).
 
 
 ### Conectando a MainApp com o PersonOverviewController
@@ -397,9 +370,7 @@ public void showPersonOverview() {
     try {
         // Carrega a person overview.
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(MainApp.class.getResource
-
-("view/PersonOverview.fxml"));
+        loader.setLocation(MainApp.class.getResource("view/PersonOverview.fxml"));
         AnchorPane personOverview = (AnchorPane) loader.load();
 
         // Define a person overview no centro do root layout.
@@ -426,18 +397,15 @@ Nós estamos quase lá. Mas uma pequena coisa está faltando: Nós não contamos
 
 1. Abra `PersonOverview.fxml` com o *SceneBuilder*.
 
-2. Abra o grupo *Controller* no lado direito e selecione `PersonOverviewController` como **controller class**.
+2. Abra o grupo *Controller* no lado direito e selecione `PersonOverviewController` como **controller class**.   
 ![Set Controller Class](/assets/library/javafx-8-tutorial/part2/set-controller-class.png)
 
-3. Selecione a `TableView` no grupo *Hierarchy* e escolha no grupo *Code* 
-o campo `personTable` como **fx:id**.   
-![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-
-
-tableview-fx-id.png)
+3. Selecione a `TableView` no grupo *Hierarchy* e escolha no grupo *Code* o campo `personTable` como **fx:id**.   
+![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png)
 
 4. Faça o mesmo para as colunas, selecione `firstNameColumn` e `lastNameColumn` como **fx:id** respectivamente.
 
-5. Para **cada label** nas segunda coluna, escolha o **fx:id** correspondente.
+5. Para **cada label** nas segunda coluna, escolha o **fx:id** correspondente.   
 ![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png)
 
 6. Importante: Volta ao Eclipse e **atualize (refresh) o projeto AddressApp inteiro project** (F5). Isso é necessário porque o Eclipse às vezes não sabe sobre mudanças que foram feitas dentro do Scene Builder.
