@@ -62,12 +62,6 @@ sidebars:
     icon-css: fa fa-fw fa-globe
 ---
 
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> Note: Some parts of this tutorial still need a translation to Porguguese. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
-
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
 
 ### Tópicos na Parte 1

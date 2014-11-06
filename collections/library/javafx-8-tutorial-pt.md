@@ -100,6 +100,7 @@ Espero que você se divirta! Começe com [Parte 1: Scene Builder](/library/javaf
   <ul>
     <li><a href="https://github.com/JulioDinis" class="alert-link">JulioDinis</a></li> 
     <li><a href="https://github.com/RegiusK" class="alert-link">RegiusK</a></li>
+    <li><a href="https://github.com/Shura16" class="alert-link">Shura16</a></li>
   </ul>
   Muito obrigado!
 </div>
