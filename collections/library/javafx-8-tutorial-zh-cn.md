@@ -4,7 +4,6 @@ title: "JavaFX 8 教程"
 date: 2014-10-08 00:00
 updated: 2014-10-20 00:00
 slug: javafx-8-tutorial/zh-cn
-canonical: /java/javafx-8-tutorial-intro/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn.md
 description: "这 7 部分组成的教程将介绍一个用 JavaFX 编写的联系人程的设计，开发与部署的过程。"
 image: /assets/library/javafx-8-tutorial/addressapp.png

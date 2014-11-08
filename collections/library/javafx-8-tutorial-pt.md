@@ -4,7 +4,6 @@ title: "Tutorial JavaFX 8"
 date: 2014-09-10 00:00
 updated: 2014-11-06 00:00
 slug: javafx-8-tutorial/pt
-canonical: /java/javafx-8-tutorial-intro/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt.md
 description: "Este Tutorial em sete partes orienta a criação, programação e a implantação de um aplicativo de endereços usando JavaFX."
 image: /assets/library/javafx-8-tutorial/addressapp.png

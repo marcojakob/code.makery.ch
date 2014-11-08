@@ -2,61 +2,61 @@
 layout: article
 title: "JavaFX 8 Tutorial - Parte 3: Interagindo com o Usuário"
 date: 2014-04-24 00:00
-updated: 2014-08-27 00:00
-slug: javafx-8-tutorial-part3
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part3.md
+updated: 2014-11-08 00:00
+slug: javafx-8-tutorial/pt/part3
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt-part3.md
 description: "Reagir às mudanças de seleção na TableView do JavaFX. Adicionar, editar e remover items da  tabela e validar entrada do usuário."
 image: /assets/library/javafx-8-tutorial/part3/addressapp-part3.png
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Articles in this Series"
+- header: "Artigos nesta serie"
   body:
-  - text: "Introduction"
-    link: /java/javafx-8-tutorial-intro
+  - text: "Introdução"
+    link: /library/javafx-8-tutorial/pt/
     paging: Intro
-  - text: "Part 1: Scene Builder"
-    link: /java/javafx-8-tutorial-part1/
+  - text: "Parte 1: Scene Builder"
+    link: /library/javafx-8-tutorial/pt/part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
-    link: /java/javafx-8-tutorial-part2/
+  - text: "Parte 2: Modelo e TableView"
+    link: /library/javafx-8-tutorial/pt/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
-    link: /java/javafx-8-tutorial-part3/
+  - text: "Parte 3: Interagindo com o usuário"
+    link: /library/javafx-8-tutorial/pt/part3/
     paging: 3
     active: true
-  - text: "Part 4: CSS Styling"
-    link: /java/javafx-8-tutorial-part4/
+  - text: "Parte 4: Estilos usando CSS"
+    link: /library/javafx-8-tutorial/pt/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-8-tutorial-part5/
+  - text: "Parte 5: Salvando dados como XML"
+    link: /library/javafx-8-tutorial/pt/part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
-    link: /java/javafx-8-tutorial-part6/
+  - text: "Parte 6: Gráficos de Estatistica"
+    link: /library/javafx-8-tutorial/pt/part6/
     paging: 6
-  - text: "Part 7: Deployment"
-    link: /java/javafx-8-tutorial-part7/
+  - text: "Parte 7: Implantação"
+    link: /library/javafx-8-tutorial/pt/part7/
     paging: 7
-- header: "Download Sources"
+- header: "Download de Códigos Fonte"
   body:
-  - text: Part 3 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+  - text: "Parte 3 como um projeto Eclipse <em>(versão mínima requirida: JDK 8u20)</em>"
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-3.zip
     icon-css: fa fa-fw fa-download
-- header: Languages
+- header: Linguagens
   languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-part3/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Português
     link: /library/javafx-8-tutorial/pt/part3/
     icon-css: fa fa-fw fa-globe
+    active: true
   - text: Español
     link: /library/javafx-8-tutorial/es/part3/
     icon-css: fa fa-fw fa-globe
-  - text: ??(??)
+  - text: 中文（简体）
     link: /library/javafx-8-tutorial/zh-cn/part3/
     icon-css: fa fa-fw fa-globe
 ---
@@ -531,8 +531,8 @@ Adicione um método para carregar e mostrar o `EditPersonDialog` dentro do nosso
 
 <pre class="prettyprint lang-java">
 /**
- * Abre uma janela para editar detalhes para a pessoa especificada. Se o usuário clicar OK,
- * as mudanças são salvasno objeto pessoa fornecido e retorna true.
+ * Abre uma janela para editar detalhes para a pessoa especificada. Se o usuário clicar
+ * OK, as mudanças são salvasno objeto pessoa fornecido e retorna true.
  * 
  * @param person O objeto pessoa a ser editado
  * @return true Se o usuário clicou OK,  caso contrário false.
@@ -624,7 +624,7 @@ Eu espero que os conceitos e estrutura desta aplicação vão levá-los a começ
 
 ### O Que Vem Depois?
 
-No [Tutorial Parte 4](/java/javafx-8-tutorial-part4/) nós adicionaremos alguma estilização CSS.
+No [Tutorial Parte 4](/library/javafx-8-tutorial/pt/part4/) nós adicionaremos alguma estilização CSS.
 
 
 ##### Alguns outros artigos que você deve achar interessante (em inglês)
