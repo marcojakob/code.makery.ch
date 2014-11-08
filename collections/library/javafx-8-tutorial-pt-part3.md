@@ -1,117 +1,113 @@
 ---
 layout: article
-title: "Tutorial JavaFX 8 - Parte 3: Interagindo com o usuário"
-date: 2014-09-10 00:00
-updated: 2014-09-10 00:00
-slug: javafx-8-tutorial/pt/part3
-canonical: /java/javafx-8-tutorial-part3/
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt-part3.md
-description: "React to selection changes in the JavaFX TableView. Add, edit and remove items from the table and validate user input."
+title: "JavaFX 8 Tutorial - Parte 3: Interagindo com o Usuário"
+date: 2014-04-24 00:00
+updated: 2014-08-27 00:00
+slug: javafx-8-tutorial-part3
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part3.md
+description: "Reagir às mudanças de seleção na TableView do JavaFX. Adicionar, editar e remover items da  tabela e validar entrada do usuário."
 image: /assets/library/javafx-8-tutorial/part3/addressapp-part3.png
 published: true
 prettify: true
-comments: false
+comments: true
 sidebars:
-- header: "Artigos nesta serie"
+- header: "Articles in this Series"
   body:
-  - text: "Introdução"
-    link: /library/javafx-8-tutorial/pt/
+  - text: "Introduction"
+    link: /java/javafx-8-tutorial-intro
     paging: Intro
-  - text: "Parte 1: Scene Builder"
-    link: /library/javafx-8-tutorial/pt/part1/
+  - text: "Part 1: Scene Builder"
+    link: /java/javafx-8-tutorial-part1/
     paging: 1
-  - text: "Parte 2: Modelo e TableView"
-    link: /library/javafx-8-tutorial/pt/part2/
+  - text: "Part 2: Model and TableView"
+    link: /java/javafx-8-tutorial-part2/
     paging: 2
-  - text: "Parte 3: Interagindo com o usuário"
-    link: /library/javafx-8-tutorial/pt/part3/
+  - text: "Part 3: Interacting with the User"
+    link: /java/javafx-8-tutorial-part3/
     paging: 3
     active: true
-  - text: "Parte 4: Estilos usando CSS"
-    link: /library/javafx-8-tutorial/pt/part4/
+  - text: "Part 4: CSS Styling"
+    link: /java/javafx-8-tutorial-part4/
     paging: 4
-  - text: "Parte 5: Salvando dados como XML"
-    link: /library/javafx-8-tutorial/pt/part5/
+  - text: "Part 5: Storing Data as XML"
+    link: /java/javafx-8-tutorial-part5/
     paging: 5
-  - text: "Parte 6: Gráficos de Estatistica"
-    link: /library/javafx-8-tutorial/pt/part6/
+  - text: "Part 6: Statistics Chart"
+    link: /java/javafx-8-tutorial-part6/
     paging: 6
-  - text: "Parte 7: Implantação"
-    link: /library/javafx-8-tutorial/pt/part7/
+  - text: "Part 7: Deployment"
+    link: /java/javafx-8-tutorial-part7/
     paging: 7
 - header: "Download Sources"
   body:
-  - text: "Parte 3 como um projeto Eclipse <em>(versão mínima requirida: JDK 8u20)</em>"
+  - text: Part 3 as Eclipse Project <em>(requires at least JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-3.zip
     icon-css: fa fa-fw fa-download
-- header: Linguagens
+- header: Languages
   languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-part3/
     icon-css: fa fa-fw fa-globe
+    active: true
   - text: Português
     link: /library/javafx-8-tutorial/pt/part3/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Español
     link: /library/javafx-8-tutorial/es/part3/
     icon-css: fa fa-fw fa-globe
-  - text: 中文（简体）
+  - text: ??(??)
     link: /library/javafx-8-tutorial/zh-cn/part3/
     icon-css: fa fa-fw fa-globe
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs translation to Portuguese. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
+**Update Aug 27, 2014:** *Agora usando JDK 8u20 e ControlsFX 8.0.6_20*
 
 ![Screenshot AddressApp Part 3](/assets/library/javafx-8-tutorial/part3/addressapp-part3.png)
 
 
-## Topics in Part 3
+## Tópicos na Parte 3
 
-* **React to selection changes** in the table.
-* Add functionality to the **add**, **edit**, and **remove** buttons.
-* Create a custom **popup dialog** to edit a person.
-* **Validate user input**.
+* **Reagir às mudanças de seleção** na tabela.
+* Adicionar funcionalidade aos botões de **add (adicionar)**, **edit (editar)**, e **remove (remover)**.
+* Criar uma **janela popup** customizada  para editar uma pessoa.
+* **Validar entrada do usuário**.
 
 
 *****
 
 
-## React to Table Selections
+## Reagir às Seleções de Tabela
 
-Obviousely, we haven't used the right side of our application, yet. The idea is to display the details about a person on the right side when the user selects a person in the table.
+Obviamente, nós ainda não usamos o lado direito da nossa aplicação. A idéia é mostrar os detalhes sobre uma pessoa no lado direito quando o usuário selecionar uma pessoa na tabela.
 
-First, let's add a new method inside `PersonOverviewController` that helps us fill the labels with the data from a single `Person`.
+Primeiro, vamos adicionar um novo método dentro de `PersonOverviewController` que nos ajuda a preencher as labels com os dados de uma única `Person`.
 
-Create a method called `showPersonDetails(Person person)`. Go trough all the labels and set the text using `setText(...)` with details from the person. If `null` is passed as parameter, all labels should be cleared.
+Crie um método chamado `showPersonDetails(Person person)`. Vá por todas as labels e defina o texto usando `setText(...)` com detalhes da pessoa. Se `null` é passado como parâmetro, todas as labels devem ser limpas.
 
 
 ##### PersonOverviewController.java
 
 <pre class="prettyprint lang-java">
 /**
- * Fills all text fields to show details about the person.
- * If the specified person is null, all text fields are cleared.
+ * PReenche todos os campos de texto para mostrar detalhes sobre a pessoa.
+ * Se a pessoa especificada for null, todos os campos de texto são limpos.
  * 
- * @param person the person or null
+ * @param person a pessoa ou null
  */
 private void showPersonDetails(Person person) {
     if (person != null) {
-        // Fill the labels with info from the person object.
+        // Preenche as labels com informações do objeto person.
         firstNameLabel.setText(person.getFirstName());
         lastNameLabel.setText(person.getLastName());
         streetLabel.setText(person.getStreet());
         postalCodeLabel.setText(Integer.toString(person.getPostalCode()));
         cityLabel.setText(person.getCity());
 
-        // TODO: We need a way to convert the birthday into a String! 
+        // TODO: Nós precisamos de uma maneira de converter o aniversário em um String! 
         // birthdayLabel.setText(...);
     } else {
-        // Person is null, remove all the text.
+        // Person é null, remove todo o texto.
         firstNameLabel.setText("");
         lastNameLabel.setText("");
         streetLabel.setText("");
@@ -123,11 +119,11 @@ private void showPersonDetails(Person person) {
 </pre>
 
 
-### Convert the Birthday Date to a String
+### Converter a Data de Aniversário em um String
 
-You will notice that we couldn't set the `birthday` into the `Label` because it is of type `LocalDate` and not a `String`. We need to format the date first.
+Você vai perceber que nós não poderíamos definir o `birthday` em uma `Label` porque ele é do tipo `LocalDate` e não uma `String`. Nós devemos formatar a data primeiro.
 
-We will use the conversion from `LocalDate` and `String` and vice versa in several places. It's good practice to create a helper class with `static` methods for this. We'll call it `DateUtil` and place it in a seperate package called `ch.makery.address.util`:
+Nós usaremos a conversão de `LocalDate` para `String` e vice versa em vários lugares. è uma boa prática criar uma classe helper (auxiliar) com métodos`static` para isso. Nós chamaremos ela de `DateUtil` e colocá-la em um pacote separado chamado `ch.makery.address.util`:
 
 
 ##### DateUtil.java
@@ -140,25 +136,25 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
 /**
- * Helper functions for handling dates.
+ * Funções auxiliares para lidar com datas.
  * 
  * @author Marco Jakob
  */
 public class DateUtil {
 	
-	/** The date pattern that is used for conversion. Change as you wish. */
+	/** O padrão usado para conversão. Mude como quiser. */
 	private static final String DATE_PATTERN = "dd.MM.yyyy";
 	
-	/** The date formatter. */
+	/** O formatador de data. */
 	private static final DateTimeFormatter DATE_FORMATTER = 
 			DateTimeFormatter.ofPattern(DATE_PATTERN);
 	
-	/**
-     * Returns the given date as a well formatted String. The above defined 
-     * {@link DateUtil#DATE_PATTERN} is used.
+    /**
+     * Retorna os dados como String formatado. O 
+     * {@link DateUtil#DATE_PATTERN}  (padrão de data) que é utilizado.
      * 
-     * @param date the date to be returned as a string
-     * @return formatted string
+     * @param date A data a ser retornada como String
+     * @return String formadado
      */
     public static String format(LocalDate date) {
         if (date == null) {
@@ -168,13 +164,13 @@ public class DateUtil {
     }
 
     /**
-     * Converts a String in the format of the defined {@link DateUtil#DATE_PATTERN} 
-     * to a {@link LocalDate} object.
+     * Converte um String no formato definido {@link DateUtil#DATE_PATTERN} 
+     * para um objeto {@link LocalDate}.
      * 
-     * Returns null if the String could not be converted.
+     * Retorna null se o String não puder se convertido.
      * 
-     * @param dateString the date as String
-     * @return the date object or null if it could not be converted
+     * @param dateString a data como String
+     * @return o objeto data ou null se não puder ser convertido
      */
     public static LocalDate parse(String dateString) {
         try {
@@ -185,40 +181,39 @@ public class DateUtil {
     }
 
     /**
-     * Checks the String whether it is a valid date.
+     * Checa se o String é uma data válida.
      * 
-     * @param dateString
-     * @return true if the String is a valid date
+     * @param dateString A data como String
+     * @return true se o String é uma data válida
      */
     public static boolean validDate(String dateString) {
-    	// Try to parse the String.
+    	// Tenta converter o String.
     	return DateUtil.parse(dateString) != null;
     }
 }
 </pre>
 
 <div class="alert alert-info">
-**Hint:** You can change the format of the date by changing the
-`DATE_PATTERN`. For all possible formats see <a class="alert-link" href="http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a>.
+**Dica:** Você pode mudar o formato da data mudando o `DATE_PATTERN`. Para todos os formatos possíveis veja (em inglês) <a class="alert-link" href="http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a>.
 </div>
 
 
-#### Use the DateUtil
+#### Usar o DateUtil
 
-Now we need to use our new `DateUtil` in the `showPersonDetails` method of `PersonOverviewController`. Replace the *TODO* we added with the following line:
+Agora nós precisamos usar nosso novo `DateUtil` no método `showPersonDetails` da classe `PersonOverviewController`. Substitua o *TODO* que nós colocamos pela linha seguinte:
 
 <pre class="prettyprint lang-java">
 birthdayLabel.setText(DateUtil.format(person.getBirthday()));
 </pre>
 
 
-### Listen for Table Selection Changes
+### Detectar Mundanças na Seleção da Tabela
 
-To get informed when the user selects a person in the person table, we need to *listen for changes*.
+Para ser informado quando o usuário selecionar uma pessoa na tabela de pessoas, nós devemos *detectar (listen) mudanças*.
 
-There is an interface in JavaFX called [`ChangeListener`](http://docs.oracle.com/javase/8/javafx/api/) with one method called `changed(...)`. The method has three parameters: `observable`, `oldValue`, and `newValue`.
+Existe uma interface no JavaFX chamada [`ChangeListener`](http://docs.oracle.com/javase/8/javafx/api/) com um método chamado `changed(...)`. O método tem três parâmetros: `observable`, `oldValue`, e `newValue`.
 
-We will create such a `ChangeListener` using a Java 8 *lambda expression*. Let's add a few lines to the `initialize()` method in `PersonOverviewController`. Now it looks like this:
+Nós vamos criar um `ChangeListener` usando uma *expressão lambda* do Java 8. Vamos adicionar algumas linhas ao método `initialize()` na classe `PersonOverviewController`. Agora ela está assim:
 
 
 ##### PersonOverviewController.java
@@ -226,42 +221,42 @@ We will create such a `ChangeListener` using a Java 8 *lambda expression*. Let's
 <pre class="prettyprint lang-java">
 @FXML
 private void initialize() {
-    // Initialize the person table with the two columns.
+    // Inicializa a tabela de pessoas com duas colunas.
     firstNameColumn.setCellValueFactory(
             cellData -> cellData.getValue().firstNameProperty());
     lastNameColumn.setCellValueFactory(
             cellData -> cellData.getValue().lastNameProperty());
 
-    // Clear person details.
+    // Limpa os detalhes da pessoa.
     showPersonDetails(null);
 
-    // Listen for selection changes and show the person details when changed.
+    // Detecta mudanças de seleção e mostra os detalhes da pessoa quando houver mudança.
     personTable.getSelectionModel().selectedItemProperty().addListener(
             (observable, oldValue, newValue) -> showPersonDetails(newValue));
 }
 </pre>
 
-With `showPersonDetails(null);` we reset the person details. 
+Com `showPersonDetails(null);` nós resetamos os detalhes da pessoa. 
 
-With `personTable.getSelectionModel...` we get the *selectedItemProperty* of the person table and add a listener to it. Whenever the user selects a person in the table, our *lambda expression* is executed. We take the newly selected person and pass it to the `showPersonDetails(...)` method.
+Com `personTable.getSelectionModel...` nós obtemos a *selectedItemProperty* da tabela de pessoas e adiciona um listener (detector) a ela. Sempre que o usuário selecionar uma pessoa na tabela, nossa *expressão lambda* é executada. Nós obtemos a pessoa selecionada recentemente e passamos para o método `showPersonDetails(...)`.
 
-Try to **run your application** at this point. Verify that when you select a person in the table, details about that person are displayed on the right.
+Tente **rodar sua aplicação** neste ponto. Verifique que quando você seleciona uma pessoa na tabela, detalhes saquela pessoa são mostrados à direita.
 
-If something doesn't work, you can compare your `PersonOverviewController` class with [PersonOverviewController.java](/assets/library/javafx-8-tutorial/part3/PersonOverviewController.java).
+Se algo não funcionar, você pode comprar sua classe `PersonOverviewController` com [PersonOverviewController.java](/assets/library/javafx-8-tutorial/part3/PersonOverviewController.java).
 
 
 *****
 
-## The Delete Button
+## O Botão Deletar
 
-Our user interface already contains a delete button but without any functionality. We can select the action for a button inside the *Scene Builder*. Any method inside our controller that is annotated with `@FXML` (or is public) is accessible by the *Scene Builder*. Thus, let's first add a delete method at the end of our `PersonOverviewController` class:
+Nossa interface de usuário já contém um botão de delete, mas sem nenhuma funcionalidade. Nós podemos selecionar a ação para um botão dentro do *Scene Builder*. Qualquer método dentro do nosso que for anotado com `@FXML` (ou for public) é acessível pelo *Scene Builder*. Assim, vamos primeiro adicionar um método delete ao fim de nossa classe `PersonOverviewController`:
 
 
 ##### PersonOverviewController.java
 
 <pre class="prettyprint lang-java">
 /**
- * Called when the user clicks on the delete button.
+ * Chamado quando o usuário clica no botão delete.
  */
 @FXML
 private void handleDeletePerson() {
@@ -270,36 +265,35 @@ private void handleDeletePerson() {
 }
 </pre>
 
-Now, open the `PersonOverview.fxml` file in *SceneBuilder*. Select the *Delete* button, open the *Code* group and choose `handleDeletePerson` in the dropdown of **On Action**.
+Agora, abra o arquivo `PersonOverview.fxml` no *SceneBuilder*. Selecione o botão *Delete*, abra o grupo *Code* e escolha `handleDeletePerson` no dropdown de **On Action**.
 
 ![On Action](/assets/library/javafx-8-tutorial/part3/handle-delete.png)
 
 
-### Error Handling
+### Lidando com Erros
 
-If you run the application at this point you should be able to delete selected persons from the table. But what happenes if you **click the delete button while no person is selected** in the table? 
+Se você rodar a aplicação neste ponto, você poderá deletar a pessoa selecionada da tabela. Mas o que acontece se você **clicar o botão delete enquanto nenhuma pessoa estiver selecionada** na tabela? 
 
-There will be an `ArrayIndexOutOfBoundsException` because it could not remove a person item at index `-1`. The index `-1` was returned by `getSelectedIndex()` - which means that there was no selection.
+Haverá uma `ArrayIndexOutOfBoundsException` porque ele não poderia remover uma pessoa no index (na posição) `-1`. O index (a posição) `-1` foi retornado pelo método `getSelectedIndex()` - que significa que há nenhuma seleção.
 
-To ignore such an error is not very nice, of course. We should let the user know that he/she must select a person before deleting. (Even better would be if we disabled the button so that the user doesn't even have the chance to do something wrong.)
+Ignorar tal erro não é muito legal, é claro. Nós deveríamos deixar o usuário saber que ele/ela deve selecionar uma pessoa antes de deletar. (Melhor seria se nós desabilitássemos o  botão, então o usuário não teria chance de fazer algo errado.)
 
-We'll add a popup dialog to inform the user. You'll need to **add a library** for the [Dialogs](/blog/javafx-8-dialogs/): 
+Nós adicionaremos uma janela de popup para informar o usuário. Você precisará **adicionar uma biblioteca** para o [Dialogs](/blog/javafx-8-dialogs/): 
 
-1. Download this [controlsfx-8.0.6_20.jar](https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/controlsfx-8.0.6_20.jar) (you could also get it from the [ControlsFX Website](http://fxexperience.com/controlsfx/)).   
-**Important: The ControlsFX must be version `8.0.6_20` or greater to work with `JDK 8u20` and above as there was a breaking change introduced in that version.**
-2. Create a **lib** subfolder in the project and add the controlsfx-jar file to this folder.
-3. Add the library to your project's **classpath**: In Eclipse *right-click on the jar file* | *Build Path* | *Add to Build Path*. Now Eclipse knows about the library.
-
+1. Baixe este [controlsfx-8.0.6_20.jar](https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/controlsfx-8.0.6_20.jar) (você poderia também obtê-lo do site[ControlsFX Website](http://fxexperience.com/controlsfx/)).   
+**Importante: O ControlsFX deve estar na versão `8.0.6_20` ou maior para trabalhar com o `JDK 8u20`, versões anteriores vão ter problemas de compatibilidade.**
+2. Crie uma subpasta **lib** no projeto e adicione o arquivo controlsfx-jar a esta pasta.
+3. Adcione a biblioteca ao **classpath** do seu projeto: No Eclipse *clique com o botão direito no arquivo* | *Build Path* | *Add to Build Path*. Agora o Eclipse sabe sobre a biblioteca.
 ![ControlsFX Libaray](/assets/library/javafx-8-tutorial/part3/controlsfx-library.png)
 
-With some changes made to the `handleDeletePerson()` method, we can show a simple popup dialog whenever the user pushes the delete button while no person is selected in the table:
+Com algumas mudanças feitas no método `handleDeletePerson()`, nós podemos mostrar uma janela simples de popup quando o usuário clicar no botão delete quando não houver uma pessoa selecionada na tabela:
 
 
 ##### PersonOverviewController.java
 
 <pre class="prettyprint lang-java">
 /**
- * Called when the user clicks on the delete button.
+ * Chamado quando o usuário clica no botão delete.
  */
 @FXML
 private void handleDeletePerson() {
@@ -307,18 +301,18 @@ private void handleDeletePerson() {
     if (selectedIndex >= 0) {
         personTable.getItems().remove(selectedIndex);
     } else {
-        // Nothing selected.
+        // Nada selecionado.
         Dialogs.create()
-            .title("No Selection")
-            .masthead("No Person Selected")
-            .message("Please select a person in the table.")
+            .title("Nenhuma seleção")
+            .masthead("Nenhuma Pessoa Selecionada")
+            .message("Por favor, selecione uma pessoa na tabela.")
             .showWarning();
     }
 }
 </pre>
 
 <div class="alert alert-info">
-For more examples on how to use Dialogs read <a class="alert-link" href="/blog/javafx-8-dialogs/">JavaFX 8 Dialogs</a>.
+Para mais exemplos sobre como usar Dialogs leia (em inglês) <a class="alert-link" href="/blog/javafx-8-dialogs/">JavaFX 8 Dialogs</a>.
 </div>
 
 
@@ -326,25 +320,25 @@ For more examples on how to use Dialogs read <a class="alert-link" href="/blog/j
 *****
 
 
-## The New and Edit Dialogs
+## Os Dialogs New (Novo) e Edit (Editar)
 
-The new and edit actions are a bit more work: We'll need a custom dialog (i.e. a new stage) with a form to ask the user for details about the person.
+As ações new (novo) e edit (editar)  são um pouco mais trabalhosas: Nós precisaremos de uma dialog customizada com um formulário para perguntar o usuário os detalhes da pessoa.
 
 
-### Design the Dialog
+### Desenhando o Dialog
 
-1. Create a new fxml file called `PersonEditDialog.fxml` inside the *view* package.   
+1. Crie um novo arquivo fxml chamado `PersonEditDialog.fxml` dentro do pacote *view*.   
 ![Create Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog1.png)
 
-2. Use a `GridPane`, `Label`s, `TextField`s and `Button`s to create a Dialog like the following:   
+2. Use um `GridPane`, `Label`s, `TextField`s e `Button`s para criar um Dialog como o seguinte:   
 ![Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog2.png)   
 
-*If you don't to do the work, you can download this [PersonEditDialog.fxml](/assets/library/javafx-8-tutorial/part3/PersonEditDialog.fxml).* 
+*Se você não quiser fazer o trabalho, você pode baixar este [PersonEditDialog.fxml](/assets/library/javafx-8-tutorial/part3/PersonEditDialog.fxml).* 
 
 
-### Create the Controller
+### Criar o Controller
 
-Create the controller for the Dialog as `PersonEditDialogController.java`:
+Crie o controller para o Dialog como `PersonEditDialogController.java`:
 
 ##### PersonEditDialogController.java
 
@@ -361,7 +355,7 @@ import ch.makery.address.model.Person;
 import ch.makery.address.util.DateUtil;
 
 /**
- * Dialog to edit details of a person.
+ * Dialog para editar detalhes de uma pessoa.
  * 
  * @author Marco Jakob
  */
@@ -386,15 +380,15 @@ public class PersonEditDialogController {
     private boolean okClicked = false;
 
     /**
-     * Initializes the controller class. This method is automatically called
-     * after the fxml file has been loaded.
+     * Inicializa a classe controlle. Este método é chamado automaticamente
+     * após o arquivo fxml ter sido carregado.
      */
     @FXML
     private void initialize() {
     }
 
     /**
-     * Sets the stage of this dialog.
+     * Define o palco deste dialog.
      * 
      * @param dialogStage
      */
@@ -403,7 +397,7 @@ public class PersonEditDialogController {
     }
 
     /**
-     * Sets the person to be edited in the dialog.
+     * Define a pessoa a ser editada no dialog.
      * 
      * @param person
      */
@@ -420,7 +414,7 @@ public class PersonEditDialogController {
     }
 
     /**
-     * Returns true if the user clicked OK, false otherwise.
+     * Retorna true se o usuário clicar OK,caso contrário false.
      * 
      * @return
      */
@@ -429,7 +423,7 @@ public class PersonEditDialogController {
     }
 
     /**
-     * Called when the user clicks ok.
+     * Chamado quando o usuário clica OK.
      */
     @FXML
     private void handleOk() {
@@ -447,7 +441,7 @@ public class PersonEditDialogController {
     }
 
     /**
-     * Called when the user clicks cancel.
+     * Chamado quando o usuário clica Cancel.
      */
     @FXML
     private void handleCancel() {
@@ -455,53 +449,53 @@ public class PersonEditDialogController {
     }
 
     /**
-     * Validates the user input in the text fields.
+     * Valida a entrada do usuário nos campos de texto.
      * 
-     * @return true if the input is valid
+     * @return true se a entrada é válida
      */
     private boolean isInputValid() {
         String errorMessage = "";
 
         if (firstNameField.getText() == null || firstNameField.getText().length() == 0) {
-            errorMessage += "No valid first name!\n"; 
+            errorMessage += "Nome inválido!\n"; 
         }
         if (lastNameField.getText() == null || lastNameField.getText().length() == 0) {
-            errorMessage += "No valid last name!\n"; 
+            errorMessage += "Sobrenome inválido!\n"; 
         }
         if (streetField.getText() == null || streetField.getText().length() == 0) {
-            errorMessage += "No valid street!\n"; 
+            errorMessage += "Rua inválida!\n"; 
         }
 
         if (postalCodeField.getText() == null || postalCodeField.getText().length() == 0) {
-            errorMessage += "No valid postal code!\n"; 
+            errorMessage += "Código Postal inválido!\n"; 
         } else {
-            // try to parse the postal code into an int.
+            // tenta converter o código postal em um int.
             try {
                 Integer.parseInt(postalCodeField.getText());
             } catch (NumberFormatException e) {
-                errorMessage += "No valid postal code (must be an integer)!\n"; 
+                errorMessage += "Código Postal inválido (deve ser um inteiro)!\n"; 
             }
         }
 
         if (cityField.getText() == null || cityField.getText().length() == 0) {
-            errorMessage += "No valid city!\n"; 
+            errorMessage += "Cidade inválida!\n"; 
         }
 
         if (birthdayField.getText() == null || birthdayField.getText().length() == 0) {
-            errorMessage += "No valid birthday!\n";
+            errorMessage += "Aniversário inválido!\n";
         } else {
             if (!DateUtil.validDate(birthdayField.getText())) {
-                errorMessage += "No valid birthday. Use the format dd.mm.yyyy!\n";
+                errorMessage += "Aniversário inválido. Use o formato dd.mm.yyyy!\n";
             }
         }
 
         if (errorMessage.length() == 0) {
             return true;
         } else {
-            // Show the error message.
+            // Mostra a mensagem de erro.
         	Dialogs.create()
-		        .title("Invalid Fields")
-		        .masthead("Please correct invalid fields")
+		        .title("Campos Inválidos")
+		        .masthead("Por favor, corrija os campos inválidos")
 		        .message(errorMessage)
 		        .showError();
             return false;
@@ -510,48 +504,47 @@ public class PersonEditDialogController {
 }
 </pre>
 
-A few things to note about this controller:
+Algumas coisas para notar sobre este controller:
 
-* The `setPerson(...)` method can be called from another class to set the person that is to be edited.
-* When the user clicks the OK butten, the `handleOk()` method is called. First, some validation is done by calling the `isInputValid()` method. Only if validation was successful, the person object is filled with the data that the user entered. Those changes will directly be applied to the person object that was passed to `setPerson(...)`!
-* The boolean `okClicked` is used so that the caller can determine whether the user clicked the OK or Cancel button.
-
-
-### Link View and Controller 
-
-With the View (FXML) and the controller created we need to link them together:
-
-1. Open the `PersonEditDialog.fxml`.
-2. In the *Controller* group on the left side select select the `PersonEditDialogController` as controller class.
-3. Set the **fx:id** of all `TextField`s to the corresponding field of the controller.
-4. Set the **onAction** of the two buttons to the corresponding handler method.
+* O método `setPerson(...)` pode ser chamado por outra classe para definir a pessoa a ser editada.
+* Quando o usuário clica o botão OK, o método `handleOk()` é chamado. Primeiro, alguma validação é feita pela chamada do método `isInputValid()`. Só se a validação tiver sucesso, o objeto pessoa é preenchido com os dados que o usuário inseriu. Aquelas mudanças serão aplicadas diretamente ao objeto da pessoa que foi passado para o método` setPerson(...)`!
+* O booleano `okClicked` é usado então o método chamador pode determinar se o usuário clicou no botão OK ou Cancel.
 
 
+### Ligar View e Controller 
 
-### Opening the Dialog
+Com a View (FXML) e o controller criado nós precisamos ligá-los:
 
-Add a method to load and display the edit person dialog inside our `MainApp`:   
+1. Abra o `PersonEditDialog.fxml`.
+2. No grupo *Controller* no lado esquerdo selecione o `PersonEditDialogController` como classe controller.
+3. Defina o **fx:id** de todos os `TextField`s para o campo correspondente do controller.
+4. Defina o **onAction** dos dois botões ao método handler correspondente.
+
+
+
+### Abrindo o Dialog
+
+Adicione um método para carregar e mostrar o `EditPersonDialog` dentro do nosso `MainApp`:   
 
 
 ##### MainApp.java
 
 <pre class="prettyprint lang-java">
 /**
- * Opens a dialog to edit details for the specified person. If the user
- * clicks OK, the changes are saved into the provided person object and true
- * is returned.
+ * Abre uma janela para editar detalhes para a pessoa especificada. Se o usuário clicar OK,
+ * as mudanças são salvasno objeto pessoa fornecido e retorna true.
  * 
- * @param person the person object to be edited
- * @return true if the user clicked OK, false otherwise.
+ * @param person O objeto pessoa a ser editado
+ * @return true Se o usuário clicou OK,  caso contrário false.
  */
 public boolean showPersonEditDialog(Person person) {
     try {
-        // Load the fxml file and create a new stage for the popup dialog.
+        // Carrega o arquivo fxml e cria um novo stage para a janela popup.
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(MainApp.class.getResource("view/PersonEditDialog.fxml"));
         AnchorPane page = (AnchorPane) loader.load();
 
-        // Create the dialog Stage.
+        // Cria o palco dialogStage.
         Stage dialogStage = new Stage();
         dialogStage.setTitle("Edit Person");
         dialogStage.initModality(Modality.WINDOW_MODAL);
@@ -559,12 +552,12 @@ public boolean showPersonEditDialog(Person person) {
         Scene scene = new Scene(page);
         dialogStage.setScene(scene);
 
-        // Set the person into the controller.
+        // Define a pessoa no controller.
         PersonEditDialogController controller = loader.getController();
         controller.setDialogStage(dialogStage);
         controller.setPerson(person);
 
-        // Show the dialog and wait until the user closes it
+        // Mostra a janela e espera até o usuário fechar.
         dialogStage.showAndWait();
 
         return controller.isOkClicked();
@@ -575,14 +568,14 @@ public boolean showPersonEditDialog(Person person) {
 }
 </pre>
 
-Add the following methods to the `PersonOverviewController`. Those methods will call the `showPersonEditDialog(...)` from the `MainApp` when the user clicks the *new* or *edit* button.   
+Adicione os seguitnes métodos ao `PersonOverviewController`. Esses métodos chamarão o `showPersonEditDialog(...)` do `MainApp` quando o usuário clicar os botões *new* ou *edit*.   
 
 ##### PersonOverviewController.java
 
 <pre class="prettyprint lang-java">
 /**
- * Called when the user clicks the new button. Opens a dialog to edit
- * details for a new person.
+ * Chamado quando o usuário clica no botão novo. Abre uma janela para editar
+ * detalhes da nova pessoa.
  */
 @FXML
 private void handleNewPerson() {
@@ -594,8 +587,8 @@ private void handleNewPerson() {
 }
 
 /**
- * Called when the user clicks the edit button. Opens a dialog to edit
- * details for the selected person.
+ * Chamado quando o usuário clica no botão edit. Abre a janela para editar
+ * detalhes da pessoa selecionada.
  */
 @FXML
 private void handleEditPerson() {
@@ -607,38 +600,37 @@ private void handleEditPerson() {
         }
 
     } else {
-        // Nothing selected.
+        // Nada seleciondo.
         Dialogs.create()
-            .title("No Selection")
-            .masthead("No Person Selected")
-            .message("Please select a person in the table.")
+            .title("Nenhuma seleção")
+            .masthead("Nenhuma Pessoa Selecionada")
+            .message("Por favor, selecione uma pessoa na tabela.")
             .showWarning();
     }
 }
 </pre>
 
-Open the `PersonOverview.fxml` file in Scene Builder. Choose the corresponding methods in *On Action* for the new and edit buttons.
+Abra o arquivo `PersonOverview.fxml` no Scene Builder. Escolha os métodos correspondentes em *On Action* para os botões new e edit.
 
 
 *****
 
-## Done!
+## Pronto!
 
-You should have a working *Address Application* by now. The application is able to add, edit, and delete persons. There is even some validation for the text fields to avoid bad user entries.
+Você deve ter uma *Aplicação de Endereços (Agenda)* agora. A aplicação pode adicionar, editar e deletar pessoas. Há também validação para os campos de texto para evitar más entradas do usuário.
 
-I hope the concepts and structure of this application will get you started with writing your own JavaFX application! Have fun.
-
-
-### What's Next?
-
-In [Tutorial Part 4](/library/javafx-8-tutorial/pt/part4/) we will add some CSS styling.
+Eu espero que os conceitos e estrutura desta aplicação vão levá-los a começar a escrever suas próprias aplicações JavaFX! Divirtam-se.
 
 
-##### Some other articles you might find interesting
+### O Que Vem Depois?
+
+No [Tutorial Parte 4](/java/javafx-8-tutorial-part4/) nós adicionaremos alguma estilização CSS.
+
+
+##### Alguns outros artigos que você deve achar interessante (em inglês)
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
-* [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
-* [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
-* [JavaFX TableView Cell Renderer](/blog/javafx-8-tableview-cell-renderer/)
-
+* [JavaFX Exemplos de Manipulação de Eventos](/blog/javafx-8-event-handling-examples/)
+* [JavaFX Filtrar e Ordenar TableView](/blog/javafx-8-tableview-sorting-filtering/)
+* [JavaFX Renderizador de Células TableView](/blog/javafx-8-tableview-cell-renderer/)
