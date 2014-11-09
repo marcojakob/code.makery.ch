@@ -2,8 +2,9 @@
 layout: post
 title: JavaFX Tutorial in Spanish, Chinese and Portuguese
 date: 2014-10-07 00:00
+updated: 2014-11-10 00:00
 slug: javafx-tutorial-spanish-chinese-portuguese
-description: ""
+description: "JavaFX Tutorial translated to Spanish, Porguguese, and Chinese."
 image: /assets/blog/14-10-07-javafx-tutorial-spanish-chinese-portuguese/translate.png
 published: true
 prettify: false
@@ -21,8 +22,8 @@ Wow, I'm really excited about the community contributions that were made to the 
 ## New Languages
 
 * [JavaFX 8 Tutorial in Spanish](/library/javafx-8-tutorial/es/) - 100% - by Mario Gómez Martínez 
-* [JavaFX 8 Tutorial in Portuguese](/library/javafx-8-tutorial/pt/) - 15% - by Julio Lima
-* [JavaFX 8 Tutorial in Chinese](/library/javafx-8-tutorial/zh-cn/) - just started - by KaiYuan-Guo
+* [JavaFX 8 Tutorial in Portuguese](/library/javafx-8-tutorial/pt/) - 50% - by Julio Lima, RegiusK, and João Antônio Cabral
+* [JavaFX 8 Tutorial in Chinese](/library/javafx-8-tutorial/zh-cn/) - 25% - by KaiYuan-Guo and LiYongchao
 * [GreenfootKara in French](/library/greenfoot-kara/fr/chapter1/) - 90% - by Christian Malen
 
 
