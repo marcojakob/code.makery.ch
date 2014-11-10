@@ -39,7 +39,7 @@ sidebars:
     link: /library/javafx-8-tutorial/pt/part7/
     paging: 7
     active: true
-- header: "Download Sources"
+- header: "Download de Códigos Fonte"
   body:
   - text: "Parte 7 como um projeto Eclipse <em>(versão mínima requirida: JDK 8u20)</em>"
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-7.zip
