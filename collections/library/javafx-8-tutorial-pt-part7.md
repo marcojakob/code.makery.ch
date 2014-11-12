@@ -69,36 +69,36 @@ sidebars:
 
 ![Screenshot AddressApp Part 7](/assets/library/javafx-8-tutorial/part7/addressapp-part7.png)
 
-I thought I'd write one last part of this tutorial series to show how to deploy (i.e. package and publish) the AddressApp.
+Eu pensei que deveria dedicar a última parte desta série de tutoriais para mostrar como realizar o deploy (i.e package e publicação) do AddressApp.
 
 
 *****
 
-## Topics in Part 7
+## Tópicos da Parte 7
 
-* Deploying our JavaFX application as **Native Package** with e(fx)clipse
-
-
-*****
-
-## What is Deployment
-
-Deplyoment is the process of packaging and delivering software to the user. This is a crucial part of software development since it's the first contact a user has with our software.
-
-Java advertises with the slogan **Write Once, Run Anywhere** to illustrate the *cross-platform* benefits of the Java language. Ideally, this means that our Java application can be run on any device equipped with a Java virtual machine (JVM).
-
-In the past, the user experience for installing a Java application hasn't always been smooth. If the user didn't have the required Java version on his system, he had to be directed to install it first. This lead to some difficulties, e.g. need for admin rights, compatibility issues between Java versions, etc.
-
-Fortunately, JavaFX provides a new deployment option called **Native Packaging** (also called Self-Contained Application Package). A native package is a bundle containing both your application code and the (platform-specific) Java Runtime. 
-
-The official JavaFX documentation by Oracle contains an extensive guide for all possible [JavaFX deployment options](http://docs.oracle.com/javafx/2/deployment/jfxpub-deployment.htm). 
-
-In this post I will show how to create a **Native Package** with Eclipse and the [**e(fx)clipse plugin**](http://www.eclipse.org/efxclipse/).
+* Utilizando o deploy em nossa aplicação JavaFX como um **Package Nativo** com e(fx)clipse
 
 
 *****
 
-## Create a Native Package
+## O que é Deploy
+
+Deploy é o processo de empacotamento (packaging) e entrega do  software ao usuário. Esta é uma parte crucial do desenvolvimento de software, pois é o primeiro contato entre o cliente e nosso software.
+
+Java enfatiza o slogan **Write Once, Run Anywhere** para ilustrar os beneficios da *Multiplataforma* da linguagem Java. Conceitualmente, isso significa que sua aplicação Java pode ser executado em qualquer dipositivo que possua uma Java virtual machine (JVM).
+
+No passado, a experiência do usuário em instalar uma aplicação Java não era tão simplificada . Se o usuário não tinha a versão do Java requirida em seu sistema,  ele primeiramente tinha que instala-la diretamentet. Isso gerava muitas dificuldades, como a necessidade do uso de previlégios de administrador, problemas de compatibilidade entre as versões do java, etc.
+
+Felizmente o JavaFX fornece uma nova opção de deploy, chamada **Native Packaging** (também chamada de Self-Contained Application Package). Um native package é um pacote que contém o código de sua aplicação juntamente com o Java Runtime (Específico para cada plataforma). 
+
+A documentação oficial do JavaFX mantida pela Oracle contém um guia completo para todas as formas de deploy [JavaFX deployment options](http://docs.oracle.com/javafx/2/deployment/jfxpub-deployment.htm). 
+
+Nesta publicação eu irei mostrar como criar um  **Native Package** com o Eclipse e o plugin e(fx)clipse [**e(fx)clipse plugin**](http://www.eclipse.org/efxclipse/).
+
+
+*****
+
+## Criando um Native Package
 
 The goal is to create a self-contained application in a single folder on the user's computer. Here is how it will look like for our AddressApp (on Windows):
 
