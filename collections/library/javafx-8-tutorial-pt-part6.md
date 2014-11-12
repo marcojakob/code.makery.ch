@@ -2,7 +2,7 @@
 layout: article
 title: "Tutorial JavaFX 8 - Parte 6: Gráficos de Estatistica"
 date: 2014-09-10 00:00
-updated: 2014-09-10 00:00
+updated: 2014-11-12 00:00
 slug: javafx-8-tutorial/pt/part6
 canonical: /java/javafx-8-tutorial-part6/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt-part6.md
@@ -61,11 +61,6 @@ sidebars:
     link: /library/javafx-8-tutorial/zh-cn/part6/
     icon-css: fa fa-fw fa-globe
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs translation to Portuguese. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
 
 ![Screenshot AddressApp Part 6](/assets/library/javafx-8-tutorial/part6/addressapp-part6.png)
 
