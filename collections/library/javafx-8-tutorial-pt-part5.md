@@ -2,7 +2,7 @@
 layout: article
 title: "Tutorial JavaFX 8 - Parte 5: Salvando dados como XML"
 date: 2014-09-10 00:00
-updated: 2014-09-10 00:00
+updated: 2014-11-12 00:00
 slug: javafx-8-tutorial/pt/part5
 canonical: /java/javafx-8-tutorial-part5/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt-part5.md
@@ -94,8 +94,8 @@ OS dois métodos seguitnes tomam conta de salvar e recuperar as Preferences (Pre
 <pre class="prettyprint lang-java">
 /**
  * Retorna o arquivo de preferências da pessoa, o último arquivo que foi aberto.
- * As preferências são lidas do registro específico do SO (Sistema Operacional). Se tais
- * prefêrencias não puderem  ser encontradas, ele retorna null.
+ * As preferências são lidas do registro específico do SO (Sistema Operacional). 
+ * Se tais prefêrencias não puderem  ser encontradas, ele retorna null.
  * 
  * @return
  */
@@ -166,7 +166,7 @@ PAra nosso modelo de dados simples é muito mais fácil usar XML. Nós usaremos 
 
 
 
-### UsandoJAXB
+### Usando JAXB
 
 JAXB já está incluso no JDK. Isso significa que nós não precisamos incluir qualquer biblioteca adicional.
 
@@ -250,8 +250,8 @@ public void loadPersonDataFromFile(File file) {
     } catch (Exception e) { // catches ANY exception
         Dialogs.create()
                 .title("Erro")
-                .masthead("Não foi possível carregar dados do arquivo:\n" + file.getPath())
-                .showException(e);
+                .masthead("Não foi possível carregar dados do arquivo:\n" 
+                          + file.getPath()).showException(e);
     }
 }
 
@@ -278,8 +278,8 @@ public void savePersonDataToFile(File file) {
         setPersonFilePath(file);
     } catch (Exception e) { // catches ANY exception
         Dialogs.create().title("Erro")
-                .masthead("Não foi possível salvar os dados do arquivo:\n" + file.getPath())
-                .showException(e);
+                .masthead("Não foi possível salvar os dados do arquivo:\n" 
+                          + file.getPath()).showException(e);
     }
 }
 </pre>
@@ -350,7 +350,8 @@ public class RootLayoutController {
     }
 
     /**
-     * Abre o FileChooser para permitir o usuário selecionar uma agenda para carregar.
+     * Abre o FileChooser para permitir o usuário selecionar uma agenda
+     * para carregar.
      */
     @FXML
     private void handleOpen() {
@@ -383,7 +384,8 @@ public class RootLayoutController {
     }
 
     /**
-     * Abre um FileChooser para permitir o usuário selecionar um arquivo para salvar.
+     * Abre um FileChooser para permitir o usuário selecionar um arquivo
+     * para salvar.
      */
     @FXML
     private void handleSaveAs() {
