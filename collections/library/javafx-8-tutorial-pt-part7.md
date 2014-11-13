@@ -2,7 +2,7 @@
 layout: article
 title: "Tutorial JavaFX 8 - Parte 7: Implantação"
 date: 2014-09-10 00:00
-updated: 2014-11-12 00:00
+updated: 2014-11-13 00:00
 slug: javafx-8-tutorial/pt/part7
 canonical: /java/javafx-8-tutorial-part7/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt-part7.md
@@ -61,11 +61,6 @@ sidebars:
     link: /library/javafx-8-tutorial/zh-cn/part7/
     icon-css: fa fa-fw fa-globe
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs translation to Portuguese. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
 
 ![Screenshot AddressApp Part 7](/assets/library/javafx-8-tutorial/part7/addressapp-part7.png)
 
@@ -262,8 +257,8 @@ Eu gosto de seu feedback, portanto sinta-se livre para comentar se tiver alguma 
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
-* [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
-* [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
-* [JavaFX TableView Cell Renderer](/blog/javafx-8-tableview-cell-renderer/)
+* [JavaFX Exemplos de Manipulação de Eventos](/blog/javafx-8-event-handling-examples/)
+* [JavaFX Filtrar e Ordenar TableView](/blog/javafx-8-tableview-sorting-filtering/)
+* [JavaFX Renderizador de Células TableView](/blog/javafx-8-tableview-cell-renderer/)
 
 

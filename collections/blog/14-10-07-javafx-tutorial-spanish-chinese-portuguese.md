@@ -43,7 +43,7 @@ Wow, I'm really excited about the community contributions that were made to the 
         <a href="/library/javafx-8-tutorial/pt/">JavaFX 8 Tutorial - Portuguese</a>
       <td>
         <div class="progress">
-          <div class="progress-bar" style="width: 75%;">75%</div>
+          <div class="progress-bar" style="width: 100%;">100%</div>
         </div>
       </td>
       <td>Julio Lima, RegiusK, and <br>João Antônio Cabral</td>
