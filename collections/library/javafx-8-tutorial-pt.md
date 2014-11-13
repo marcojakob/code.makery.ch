@@ -56,10 +56,6 @@ sidebars:
     icon-css: fa fa-fw fa-globe
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> Note: Some parts of this tutorial still need a translation to Porguguese. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
 Em 2012 eu criei um tutorial muito detalhado [JavaFX 2 tutorial series](/java/javafx-2-tutorial-intro/) para meus alunos. Muitas pessoas ao redor do mundo leram o tutorial e derem um feedback possitivo. Então eu decidi ** rescrever o tutorial de JavaFX 2 para JavaFX 8** (Leia sobre o que mudou em [Atualização para JavaFX 8 - Quais as novidades](/blog/update-to-javafx-8-whats-new/)).
 
 Este Tutorial em sete partes orienta a criação, programação e a implantação de um aplicativo de endereços. No fim nossa aplicação ficará como a da imagem:
