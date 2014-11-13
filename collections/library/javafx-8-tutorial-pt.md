@@ -82,7 +82,7 @@ Este Tutorial em sete partes orienta a criação, programação e a implantaçã
 * Criar gráfico JavaFX com estatísticas
 * Implementar um aplicativo JavaFX como um pacote nativo
 
-**São muitas coisas!** Assim, depois que você completar esta serie de tutoriais voceê estará pronto para criar aplicativos sofisticados com JavaFX.
+**São muitas coisas!** Assim, depois que você completar esta serie de tutoriais você estará pronto para criar aplicativos sofisticados com JavaFX.
 
 
 ## Como usar este tutorial
@@ -95,10 +95,10 @@ Espero que você se divirta! Começe com [Parte 1: Scene Builder](/library/javaf
 
 
 <div class="alert alert-success">
-  <strong><i class="fa fa-trophy"></i> Atribuição:</strong> Traduções para este tutorial essa contribuição de 
+  <strong><i class="fa fa-trophy"></i> Atribuição:</strong> Contribuiram para a tradução deste tutorial:
   <ul>
     <li><a href="https://github.com/JulioDinis" class="alert-link">JulioDinis</a></li> 
-    <li><a href="https://github.com/RegiusK" class="alert-link">RegiusK</a></li>
+    <li><a href="https://github.com/RegiusK" class="alert-link">Régius Andrei Kachimareck</a></li>
     <li><a href="https://github.com/Shura16" class="alert-link">João Antônio Cabral</a></li>
   </ul>
   Muito obrigado!
