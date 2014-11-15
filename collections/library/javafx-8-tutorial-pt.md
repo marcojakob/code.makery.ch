@@ -2,9 +2,8 @@
 layout: article
 title: "Tutorial JavaFX 8"
 date: 2014-09-10 00:00
-updated: 2014-09-10 00:00
+updated: 2014-11-06 00:00
 slug: javafx-8-tutorial/pt
-canonical: /java/javafx-8-tutorial-intro/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt.md
 description: "Este Tutorial em sete partes orienta a criação, programação e a implantação de um aplicativo de endereços usando JavaFX."
 image: /assets/library/javafx-8-tutorial/addressapp.png
@@ -57,10 +56,6 @@ sidebars:
     icon-css: fa fa-fw fa-globe
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> Note: Some parts of this tutorial still need a translation to Porguguese. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
 Em 2012 eu criei um tutorial muito detalhado [JavaFX 2 tutorial series](/java/javafx-2-tutorial-intro/) para meus alunos. Muitas pessoas ao redor do mundo leram o tutorial e derem um feedback possitivo. Então eu decidi ** rescrever o tutorial de JavaFX 2 para JavaFX 8** (Leia sobre o que mudou em [Atualização para JavaFX 8 - Quais as novidades](/blog/update-to-javafx-8-whats-new/)).
 
 Este Tutorial em sete partes orienta a criação, programação e a implantação de um aplicativo de endereços. No fim nossa aplicação ficará como a da imagem:
@@ -83,7 +78,7 @@ Este Tutorial em sete partes orienta a criação, programação e a implantaçã
 * Criar gráfico JavaFX com estatísticas
 * Implementar um aplicativo JavaFX como um pacote nativo
 
-**São muitas coisas!** Assim, depois que você completar esta serie de tutoriais voceê estará pronto para criar aplicativos sofisticados com JavaFX.
+**São muitas coisas!** Assim, depois que você completar esta serie de tutoriais você estará pronto para criar aplicativos sofisticados com JavaFX.
 
 
 ## Como usar este tutorial
@@ -96,10 +91,11 @@ Espero que você se divirta! Começe com [Parte 1: Scene Builder](/library/javaf
 
 
 <div class="alert alert-success">
-  <strong><i class="fa fa-trophy"></i> Atribuição:</strong> Traduções para este tutorial essa contribuição de 
+  <strong><i class="fa fa-trophy"></i> Atribuição:</strong> Contribuiram para a tradução deste tutorial:
   <ul>
     <li><a href="https://github.com/JulioDinis" class="alert-link">JulioDinis</a></li> 
-    <li><a href="https://github.com/RegiusK" class="alert-link">RegiusK</a></li>
+    <li><a href="https://github.com/RegiusK" class="alert-link">Régius Andrei Kachimareck</a></li>
+    <li><a href="https://github.com/Shura16" class="alert-link">João Antônio Cabral</a></li>
   </ul>
   Muito obrigado!
 </div>

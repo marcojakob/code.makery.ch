@@ -2,8 +2,9 @@
 layout: post
 title: JavaFX Tutorial in Spanish, Chinese and Portuguese
 date: 2014-10-07 00:00
+updated: 2014-11-10 00:00
 slug: javafx-tutorial-spanish-chinese-portuguese
-description: ""
+description: "JavaFX Tutorial translated to Spanish, Porguguese, and Chinese."
 image: /assets/blog/14-10-07-javafx-tutorial-spanish-chinese-portuguese/translate.png
 published: true
 prettify: false
@@ -18,12 +19,57 @@ tags:
 Wow, I'm really excited about the community contributions that were made to the tutorials! Some amazing people have helped improve the materials by **writing valuable comments** and some have even **provided a translation** for their language. Thank you very much, you're awesome!!
 
 
-## New Languages
-
-* [JavaFX 8 Tutorial in Spanish](/library/javafx-8-tutorial/es/) - 100% - by Mario Gómez Martínez 
-* [JavaFX 8 Tutorial in Portuguese](/library/javafx-8-tutorial/pt/) - 15% - by Julio Lima
-* [JavaFX 8 Tutorial in Chinese](/library/javafx-8-tutorial/zh-cn/) - just started - by KaiYuan-Guo
-* [GreenfootKara in French](/library/greenfoot-kara/fr/chapter1/) - 90% - by Christian Malen
+<table class="table">
+  <thead>
+    <tr>
+      <th>Tutorial</th>
+      <th>Progress</th>
+      <th>Contributors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href="/library/javafx-8-tutorial/es/">JavaFX 8 Tutorial - Spanish</a>
+      <td>
+        <div class="progress">
+          <div class="progress-bar" style="width: 100%;">100%</div>
+        </div>
+      </td>
+      <td>Mario Gómez Martínez</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="/library/javafx-8-tutorial/pt/">JavaFX 8 Tutorial - Portuguese</a>
+      <td>
+        <div class="progress">
+          <div class="progress-bar" style="width: 100%;">100%</div>
+        </div>
+      </td>
+      <td>Julio Lima, RegiusK, and <br>João Antônio Cabral</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="/library/javafx-8-tutorial/zh-cn/">JavaFX 8 Tutorial - Chinese</a>
+      <td>
+        <div class="progress">
+          <div class="progress-bar" style="width: 25%;">25%</div>
+        </div>
+      </td>
+      <td>KaiYuan-Guo and LiYongchao</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="/library/greenfoot-kara/fr/chapter1/">GreenfootKara - French</a>
+      <td>
+        <div class="progress">
+          <div class="progress-bar" style="width: 90%;">90%</div>
+        </div>
+      </td>
+      <td>Christian Malen</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ## Want to Help Out?

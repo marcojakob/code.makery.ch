@@ -2,7 +2,7 @@
 layout: post
 title: JavaFX Dialogs (official)
 date: 2014-10-28 00:00
-udpated: 2014-10-29 00:00
+udpated: 2014-11-07 00:00
 slug: javafx-dialogs-official
 description: "Examples of how to create simple popup Dialogs and Alerts in JavaFX."
 image: /assets/blog/14-10-28-javafx-dialogs-official/login-dialog.png
@@ -325,4 +325,24 @@ Another option is to remove the icon and use only minimal window decorations.
 
 <pre class="prettyprint lang-java">
 dialog.initStyle(StageStyle.UTILITY);
+</pre>
+
+
+## Other Options
+
+### Setting the Owner
+
+You can specify the owner `Window` for a dialog. If no owner or null is specified for the owner, it is a top-level, unowned dialog. 
+
+<pre class="prettyprint lang-java">
+dialog.initOwner(parentWindow);
+</pre>
+
+
+### Setting the Modality
+
+You can specify the modality for a dialog. The modality must be one of `Modality.NONE`, `Modality.WINDOW_MODAL`, or `Modality.APPLICATION_MODAL`.
+
+<pre class="prettyprint lang-java">
+dialog.initModality(Modality.NONE);
 </pre>

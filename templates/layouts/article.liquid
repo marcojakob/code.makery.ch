@@ -2,7 +2,7 @@
 {%- capture head_title %}{{ model.title }} - {{ global.title }}{% endcapture -%}
 {%- capture head_canonical -%}
   {%- if model.canonical -%}
-      {{ global.domain }}{{ model.canonical }}
+      {{- global.domain }}{{ model.canonical -}}
     {%- else -%}
       {%- include "util/domain-and-url" -%}
   {%- endif -%}
