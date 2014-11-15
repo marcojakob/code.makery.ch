@@ -158,13 +158,13 @@ sidebars:
 
 在`PersonOverview.fxml` 右键选择 *Open with Scene Builder*，那么你将会在打开的Scene Builder里面看到一个固定的界面设计区域(在整个界面的左边)。
 
-1. 选中这个界面设计区域，你就可以在右边的属性设置栏中对它的尺寸进行修改:   
+1. 选中这个界面设计区域，你就可以在右边的属性设置栏中对它的尺寸进行修改:
 ![Anchor Pane Size](/assets/library/javafx-8-tutorial/part1/anchor-pane-size.png)
 
-2. 从Scene Builder的左边控件栏中拖拽一个 *Splite Pane(Horizontal Flow)* 到界面设计区域，在Builder的右边视图结构中选择刚添加的Pane，在弹出的右键菜单中选择 *Fit to Parent* 。   
+2. 从Scene Builder的左边控件栏中拖拽一个 *Splite Pane(Horizontal Flow)* 到界面设计区域，在Builder的右边视图结构中选择刚添加的Pane，在弹出的右键菜单中选择 *Fit to Parent* 。
 ![Fit to Parent](/assets/library/javafx-8-tutorial/part1/fit-to-parent.png)
 
-3. 同样从左边的控件栏中拖拽一个 *TableView* 到 *SplitePane* 的左边，选择这个TableView(而不是它的列)对它的布局进行设置，你可以在 *AnchorPane* 中对这个TableView四个边的外边距进行调节。([more information on Layouts](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).   
+3. 同样从左边的控件栏中拖拽一个 *TableView* 到 *SplitePane* 的左边，选择这个TableView(而不是它的列)对它的布局进行设置，你可以在 *AnchorPane* 中对这个TableView四个边的外边距进行调节。([more information on Layouts](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).
 ![TableView Anchors](/assets/library/javafx-8-tutorial/part1/table-view-anchors.png)
 
 4. 点击菜单中的 *Preview | Show Preview in Window* 可以预览你设计好的界面，试着缩放预览的界面，你会发现TableView会随着窗口的缩放而变化。
@@ -178,14 +178,14 @@ sidebars:
 7. 添加一个 *Label* 到 *SplitePane*的右边部分，并设置它的显示文字为 "Person Details" (提示: 你可以通过搜索来找到 *Label* 这个控件)。 使用anchors来调节这个控件的布局位置。
 ![Person Details Label](/assets/library/javafx-8-tutorial/part1/person-details-label.png)
 
-8. 再添加一个 *GridPane* *SplitePane*的右边部分, 使用anchors来调节这个控件的布局位置。    
+8. 再添加一个 *GridPane* *SplitePane*的右边部分, 使用anchors来调节这个控件的布局位置。
 ![GridPane Layout](/assets/library/javafx-8-tutorial/part1/grid-pane-layout.png)
 
 9. 按照下面的图添加多个 *Lables*到表格中去。
-*注意: 添加一个控件到已经存在的行里面去，你可在这行的行号上右键选择 "Add Row"。
+10. *注意: 添加一个控件到已经存在的行里面去，你可在这行的行号上右键选择 "Add Row"。*
 ![Add labels](/assets/library/javafx-8-tutorial/part1/add-labels.png)
 
-10. 添加3个按钮到这个 *GridPane* 的下面。 小提示: 选择这3个按钮，右键 *Wrap In | HBox*，那么它们会被放置到一个HBox里面。 你可能需要对这个HBox指定一个 *spacing*,同时也需要设置它们的右边和下边的anchors   
+10. 添加3个按钮到这个 *GridPane* 的下面。 小提示: 选择这3个按钮，右键 *Wrap In | HBox*，那么它们会被放置到一个HBox里面。 你可能需要对这个HBox指定一个 *spacing*,同时也需要设置它们的右边和下边的anchors。
 ![Button Group](/assets/library/javafx-8-tutorial/part1/button-group.png)
 
 11. 那么基本已经完成了界面的设计，你可以通过 *Preview* 来预览一下你设计的界面，同时缩放一下窗口来检验一下各个控件的位置是否正确。
@@ -212,7 +212,7 @@ sidebars:
 ![MenuBar](/assets/library/javafx-8-tutorial/part1/menu-bar.png)
 
 
-### The JavaFX Main Class 
+### The JavaFX Main Class
 
 现在，我们需要创建一个 **main java class** 用来加载 `RootLayout.fxml` ，同时添加 `PersonOverview.fxml` 到*RootLayout.fxml*中去，这个main class将做为我们这个应用程序的入口。
 
