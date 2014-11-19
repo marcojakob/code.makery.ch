@@ -66,7 +66,7 @@ sidebars:
 ## Contenidos en Parte 3
 
 * **Respuesta a cambios en la selección** dentro de la tabla.
-* Añade funcionalidad de los botones **añadir**, **editar**, y **borrar**s.
+* Añade funcionalidad de los botones **añadir**, **editar**, y **borrar**.
 * Crear un **diálogo emergente** (popup dialog) a medida para editar un contacto.
 * **Validación de la entrada del usuario**.
 
@@ -76,11 +76,11 @@ sidebars:
 
 ## Respuesta a cambios en la selección de la Tabla
 
-Obviamente, todavía no hemos usado la parte derecha de la interfaz de nuestra aplicación. La idea es mostrar los detalles de una persona en ese lado cuando el usuario selecciona una persona en la tabla.
+Todavía no hemos usado la parte derecha de la interfaz de nuestra aplicación. La intención es usar esta parte para mostrar los detalles de la persona seleccionada por el usuario en la tabla.
 
-En primer lugar, añadamos un nuevo método dentro de `PersonOverviewController` que nos ayude a rellenar las etiquetas con los datos de una sola persona.
+En primer lugar vamos a añadir un nuevo método dentro de `PersonOverviewController` que nos ayude a rellenar las etiquetas con los datos de una sola persona.
 
-Crea un método llamado `showPersonDetails(Person person)`. Este método recorrerá todas las etiquetas y establecerá el texto usando `setText(...)` con detalles de la persona. Si en vez de una instancia de `Person` se pasa `null` entonces las etiquetas deben ser borradas.
+Crea un método llamado `showPersonDetails(Person person)`. Este método recorrerá todas las etiquetas y establecerá el texto con detalles de la persona usando `setText(...)` . Si en vez de una instancia de `Person` se pasa `null` entonces las etiquetas deben ser borradas.
 
 ##### PersonOverviewController.java
 
@@ -117,9 +117,9 @@ private void showPersonDetails(Person person) {
 
 ### Convierte la fecha de nacimiento en una cadena
 
-Te darás cuenta de que no podemos usar el atributo `birthday` directamente para establecer el valor de una `Label` porque no es de tipo `LocalDate`. Antes necesitamos convertirlo en una cadena o `String`.
+Te darás cuenta de que no podemos usar el atributo `birthday` directamente para establecer el valor de una `Label` porque se requiere un `String`, y `birthday` es de tipo `LocalDate`. Así pues necesitamos convertir `birthday` de `LocalDate` a `String`.
 
-Vamos a convertir entre `LocalDate` y `String` y viceversa en varios sitios. Una buena práctica es crear una clase auxiliar con métodos estáticos (`static`) para esta finalidad. Llamaremos a esta clase `DateUtil` y la ubicaremos una paquete separado denominado `ch.makery.address.util`:
+En la práctica vamos a necesitar convertir entre `LocalDate` y `String`  en varios sitios y en ambos sentidos. Una buena práctica es crear una clase auxiliar con métodos estáticos (`static`) para esta finalidad. Llamaremos a esta clase `DateUtil` y la ubicaremos una paquete separado denominado `ch.makery.address.util`:
 
 
 ##### DateUtil.java

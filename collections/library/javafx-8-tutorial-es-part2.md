@@ -273,7 +273,7 @@ Finalmente vamos a añadir datos a nuestra table. Para ello necesitaremos un con
 2. Añadiremos algunos atributos para acceder a la tabla y las etiquetas de la vista. Estos atributos irán precedidos por la anotación `@FXML`. Esto es necesario para que la vista tenga acceso a los atributos y métodos del controlador, incluso aunque sean privados. Una vez definida la vista en fxml, la aplicación se encargará de rellenar automáticamente estos atributos al cargar el fxml. Así pues, añade el código siguiente:
 
 <div class="alert alert-info">
-**Nota:** acuérdate siempre de importar **javafx**, NOT AWT o Swing!
+**Nota:** acuérdate siempre de importar **javafx**, NO AWT ó Swing!
 </div>
 
 
