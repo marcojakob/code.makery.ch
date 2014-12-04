@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 3: Interacting with the User"
+title: "Учебник по JavaFX 8 - Часть 3: Взаимодействие с пользователем"
 date: 2014-04-24 00:00
 updated: 2014-08-27 00:00
 slug: javafx-8-tutorial-part3
@@ -63,27 +63,27 @@ sidebars:
 
 **Update Aug 27, 2014:** *Now using JDK 8u20 and ControlsFX 8.0.6_20*
 
-![Screenshot AddressApp Part 3](/assets/library/javafx-8-tutorial/part3/addressapp-part3.png)
+![Учебник по JavaFX 8 - Часть 3: Взаимодействие с пользователем](http://code.makery.ch/assets/library/javafx-8-tutorial/part3/addressapp-part3.png "AdressApp")
 
 
-## Topics in Part 3
+## Часть 3: Содержание
 
-* **React to selection changes** in the table.
-* Add functionality to the **add**, **edit**, and **remove** buttons.
-* Create a custom **popup dialog** to edit a person.
-* **Validate user input**.
+* Реакция на выбор записей в таблице.
+* Добавление функциональности к кнопкам **add**, **edit** и **remove**.
+* Создание пользовательского диалогового окна для редактирование записей адресной книги.
+* Проверка пользовательского ввода.
 
 
 *****
 
 
-## React to Table Selections
+## Реакция на выбор записей в таблице
 
-Obviousely, we haven't used the right side of our application, yet. The idea is to display the details about a person on the right side when the user selects a person in the table.
+Пока мы еще не использовали правую часть нашего приложения. Идея заключается в том, чтобы при выборе записи в таблице отображать детали этой записи в правой части приложения. 
 
-First, let's add a new method inside `PersonOverviewController` that helps us fill the labels with the data from a single `Person`.
+Сначала давайте добавим новый метод в класс `PersonOverviewController` который поможет нам заполнять текстовые метки данными указанной записи.
 
-Create a method called `showPersonDetails(Person person)`. Go trough all the labels and set the text using `setText(...)` with details from the person. If `null` is passed as parameter, all labels should be cleared.
+Создайте метод `showPersonDetails(Person person)`. Пройдитесь по меткам и присвойте им соответствующие значения, взятые из переданной в параметре записи, используя метод `setText(...)`. Если в качестве параметра передается `null`, весь текст в метках должен быть очищен.
 
 
 ##### PersonOverviewController.java
@@ -119,11 +119,11 @@ private void showPersonDetails(Person person) {
 </pre>
 
 
-### Convert the Birthday Date to a String
+### Конвертация дня рождения в строку
 
-You will notice that we couldn't set the `birthday` into the `Label` because it is of type `LocalDate` and not a `String`. We need to format the date first.
+Обратите внимание, что мы не можем присвоить значение поля `birthday` тектовой метке, т.к. тип этого значения `LocalDate` а не `String`. Для того чтобы это сделать, нам надо переформатировать нашу дату рождения.
 
-We will use the conversion from `LocalDate` and `String` and vice versa in several places. It's good practice to create a helper class with `static` methods for this. We'll call it `DateUtil` and place it in a seperate package called `ch.makery.address.util`:
+Т.к. мы будем использовать конвертацию типа `LocalDate` в `String` и наоборот в нескольких местах, то хорошей практикой считается создание класса-помощника, содержащего статические методы для этой цели. Наш класс-помощник мы назовем `DateUtil` и разместим его в новый пакет `util`:
 
 
 ##### DateUtil.java
@@ -194,27 +194,27 @@ public class DateUtil {
 </pre>
 
 <div class="alert alert-info">
-**Hint:** You can change the format of the date by changing the
-`DATE_PATTERN`. For all possible formats see <a class="alert-link" href="http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a>.
+**Подсказка**: Вы можете изменить формат даты изменяя константу `DATE_PATTERN`. За всеми возможными форматами смотрите документацию к классу**[DateTimeFormatter](http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html)**
 </div>
 
 
-#### Use the DateUtil
 
-Now we need to use our new `DateUtil` in the `showPersonDetails` method of `PersonOverviewController`. Replace the *TODO* we added with the following line:
+#### Использование класса DateUtil
+
+Теперь нам необходимо использоавть наш новый класс `DateUtil` в методе `showPersonDetails` класса `PersonOverviewController`. Замените метку *TODO* следующей строкой:
 
 <pre class="prettyprint lang-java">
 birthdayLabel.setText(DateUtil.format(person.getBirthday()));
 </pre>
 
 
-### Listen for Table Selection Changes
+### Следим за изменением выбора записи в таблице
 
-To get informed when the user selects a person in the person table, we need to *listen for changes*.
+Для получения информации о том, что пользователь выбрал запись в таблице нам необходимо *прослушивать изменения*.
 
-There is an interface in JavaFX called [`ChangeListener`](http://docs.oracle.com/javase/8/javafx/api/) with one method called `changed(...)`. The method has three parameters: `observable`, `oldValue`, and `newValue`.
+Для этого в JavaFX существует интерфейс `ChangeListener` с одним методом `changed(...)`. Этот метод имеет три параметра: `observable`, `oldValue` и `newValue`.
 
-We will create such a `ChangeListener` using a Java 8 *lambda expression*. Let's add a few lines to the `initialize()` method in `PersonOverviewController`. Now it looks like this:
+Мы будем создавать интерфейс `ChangeListener` пользуясь *лямбда-выражениями* из Java 8. Давайте добавим несколько строчек кода к методу `initialize()` класса `PersonOverviewController`. Теперь наш метод выглядит так:
 
 
 ##### PersonOverviewController.java
@@ -237,20 +237,20 @@ private void initialize() {
 }
 </pre>
 
-With `showPersonDetails(null);` we reset the person details. 
+Если мы передаем `null` в параметр метода `showPersonDetails(...)`, то будут стерты все значения меток.
 
-With `personTable.getSelectionModel...` we get the *selectedItemProperty* of the person table and add a listener to it. Whenever the user selects a person in the table, our *lambda expression* is executed. We take the newly selected person and pass it to the `showPersonDetails(...)` method.
+В строке `personTable.getSelectionModel...` мы получаем *selectedItemProperty* таблицы и добавляем к нему слушателя. Когда пользователь выбирает запись в таблице выполняется наше лямбда-выражение. Мы берем только что выбранную запись и передаем ее в метод `showPersonDetails(...)`.
 
-Try to **run your application** at this point. Verify that when you select a person in the table, details about that person are displayed on the right.
+**Запустите свое приложение** и проверьте отображаются ли детали записи в правой части когда вы выбираете запись из таблицы.
 
-If something doesn't work, you can compare your `PersonOverviewController` class with [PersonOverviewController.java](/assets/library/javafx-8-tutorial/part3/PersonOverviewController.java).
+Если у вас что-то не работает, то вы можете сравнить свой класс `PersonOverviewController` с [PersonOverviewController.java](http://code.makery.ch/assets/library/javafx-8-tutorial/part3/PersonOverviewController.java "PersonOverviewController.java").
 
 
 *****
 
-## The Delete Button
+## Кнопка Delete
 
-Our user interface already contains a delete button but without any functionality. We can select the action for a button inside the *Scene Builder*. Any method inside our controller that is annotated with `@FXML` (or is public) is accessible by the *Scene Builder*. Thus, let's first add a delete method at the end of our `PersonOverviewController` class:
+В нашем интерфейсе пользователя есть кнопка **Delete**, но пока у нее нет функциональности. В приложении Scene Builder мы можем указать на то, какое действие будет выполняться при нажатии на эту кнопку. Любой метод внутри класса-контроллера помеченный аннотацией @FXML (или публичный) доступен приложению Scene Builder. Поэтому, давайте сперва добавим метод удаления записи в конец нашего класса `PersonOverviewController`, а потом уже назначим его в роли обработчика кнопки **Delete**.
 
 
 ##### PersonOverviewController.java
@@ -266,29 +266,29 @@ private void handleDeletePerson() {
 }
 </pre>
 
-Now, open the `PersonOverview.fxml` file in *SceneBuilder*. Select the *Delete* button, open the *Code* group and choose `handleDeletePerson` in the dropdown of **On Action**.
+Теперь откройте файл `PersonOverview.fxml` в приложении Scene Builder. Выберите кнопку **Delete**, откройте вкладку *Code* и проставьте метод `handleDeletePerson` в значение пункта *On Action*.  
 
-![On Action](/assets/library/javafx-8-tutorial/part3/handle-delete.png)
+![On Action](http://code.makery.ch/assets/library/javafx-8-tutorial/part3/handle-delete.png "Handle Delete")
 
 
-### Error Handling
+### Обработка ошибок
 
-If you run the application at this point you should be able to delete selected persons from the table. But what happenes if you **click the delete button while no person is selected** in the table? 
+Если вы сейчас запустите наше приложение, то вы сможете удалять выбранную запись из таблицы. Но что случится, когда вы нажмете кнопку **Delete**, а ни одна запись выбрана не будет?
 
-There will be an `ArrayIndexOutOfBoundsException` because it could not remove a person item at index `-1`. The index `-1` was returned by `getSelectedIndex()` - which means that there was no selection.
+Нам выбросит исключение `ArrayIndexOutOfBoundsException`, потому что мы не можем удалить запись с индексом `-1`. Индекс `-1` возвращается методом `getSelectedIndex()` когда в таблице не выделено ни одной ячейки.
 
-To ignore such an error is not very nice, of course. We should let the user know that he/she must select a person before deleting. (Even better would be if we disabled the button so that the user doesn't even have the chance to do something wrong.)
+Конечно, не очень хорошо игнорировать такую ошибку. Поэтому мы должны сообщить пользователю что он, перед тем как нажимать кнопку **Delete**, должен выбрать запись в таблице.
 
-We'll add a popup dialog to inform the user. You'll need to **add a library** for the [Dialogs](/blog/javafx-8-dialogs/): 
+Для оповещения пользователя мы будем показывать всплывающее диалоговое окно. Для этого вам нужно добавить стороннюю библиотеку ([Dialogs](http://code.makery.ch/blog/javafx-8-dialogs/ "Dialogs")):
 
-1. Download this [controlsfx-8.0.6_20.jar](https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/controlsfx-8.0.6_20.jar) (you could also get it from the [ControlsFX Website](http://fxexperience.com/controlsfx/)).   
-**Important: The ControlsFX must be version `8.0.6_20` or greater to work with `JDK 8u20` and above as there was a breaking change introduced in that version.**
-2. Create a **lib** subfolder in the project and add the controlsfx-jar file to this folder.
-3. Add the library to your project's **classpath**: In Eclipse *right-click on the jar file* | *Build Path* | *Add to Build Path*. Now Eclipse knows about the library.
+1. Скачайте этот файл [controlsfx-8.0.6\_20.jar](https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/controlsfx-8.0.6_20.jar "ControlsFX 8.0.6_20") (вы также можете его скачать с сайта [http://fxexperience.com/controlsfx/](http://fxexperience.com/controlsfx/));  
+**Важно: Версия библиотеки ControlFX должна быть не ниже `8.0.6\_20` работающая с `JDK 8u20` или выше, т.к. в этой версии были представлены критические изменения.**
+2. Создайте папку **lib** в корневой папке проекта и добавьте туда файл библиотеки `controlsfx-jar`;
+3. Подключите данную библиотеку в ваш проект: В среде разработки Eclipse кликните правой кнопкой мышки на jar-файл | Build Path | Add to Build Path. Теперь приложение Eclipse знает об этой библиотеке.  
 
-![ControlsFX Libaray](/assets/library/javafx-8-tutorial/part3/controlsfx-library.png)
+![ControlsFX Libaray](http://code.makery.ch/assets/library/javafx-8-tutorial/part3/controlsfx-library.png "ControlsFX Library")
 
-With some changes made to the `handleDeletePerson()` method, we can show a simple popup dialog whenever the user pushes the delete button while no person is selected in the table:
+Добавив некоторые изменения в метод `handleDeletePerson` мы можем показывать простое диалоговое окно когда пользователь нажимает на кнопку **Delete**, а в таблице ничего не выбрано:
 
 
 ##### PersonOverviewController.java
@@ -314,7 +314,7 @@ private void handleDeletePerson() {
 </pre>
 
 <div class="alert alert-info">
-For more examples on how to use Dialogs read <a class="alert-link" href="/blog/javafx-8-dialogs/">JavaFX 8 Dialogs</a>.
+Чтобы посмотреть дополнительные примеры использования Диалогов, читайте статью [Диалоги в JavaFX 8](http://code.makery.ch/blog/javafx-dialogs-official/)
 </div>
 
 
@@ -322,25 +322,25 @@ For more examples on how to use Dialogs read <a class="alert-link" href="/blog/j
 *****
 
 
-## The New and Edit Dialogs
+## Диалоги создания и редактирования записей
 
-The new and edit actions are a bit more work: We'll need a custom dialog (i.e. a new stage) with a form to ask the user for details about the person.
-
-
-### Design the Dialog
-
-1. Create a new fxml file called `PersonEditDialog.fxml` inside the *view* package.   
-![Create Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog1.png)
-
-2. Use a `GridPane`, `Label`s, `TextField`s and `Button`s to create a Dialog like the following:   
-![Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog2.png)   
-
-*If you don't to do the work, you can download this [PersonEditDialog.fxml](/assets/library/javafx-8-tutorial/part3/PersonEditDialog.fxml).* 
+Для реализации методов-обработчиков создания и редактирования записей нам потребуется потрудится немного больше. Нам необходимо создать новое пользовательское окно (сцену) с формой, содержащей поля для заполнения всех деталей записи.
 
 
-### Create the Controller
+### Дизайн Окна Редактирования
 
-Create the controller for the Dialog as `PersonEditDialogController.java`:
+1. Создайте новый fxml-файл `PersonEditDialog` внутри пакета `view`.  
+![Create Edit Dialog](http://code.makery.ch/assets/library/javafx-8-tutorial/part3/person-edit-dialog1.png "Person Edit Dialog")
+2. Используйте компоненты `GridPane`, `Label`, `TextField` и `Button` для создания окна редактирования, похожего на это:  
+![Edit Dialog](http://code.makery.ch/assets/library/javafx-8-tutorial/part3/person-edit-dialog2.png "Person Edit Dialog")
+
+
+*Если что-то не работает, вы можете скачайть [PersonEditDialog.fxml](http://code.makery.ch/assets/library/javafx-8-tutorial/part3/PersonEditDialog.fxml "PersonEditDialog.fxml").*
+
+
+### Создание Контроллера
+
+Создайте класс-контроллер `PersonEditDialogController.java`:
 
 ##### PersonEditDialogController.java
 
@@ -506,27 +506,27 @@ public class PersonEditDialogController {
 }
 </pre>
 
-A few things to note about this controller:
+Некоторые заметки по поводу этого контроллера:
 
-* The `setPerson(...)` method can be called from another class to set the person that is to be edited.
-* When the user clicks the OK butten, the `handleOk()` method is called. First, some validation is done by calling the `isInputValid()` method. Only if validation was successful, the person object is filled with the data that the user entered. Those changes will directly be applied to the person object that was passed to `setPerson(...)`!
-* The boolean `okClicked` is used so that the caller can determine whether the user clicked the OK or Cancel button.
-
-
-### Link View and Controller 
-
-With the View (FXML) and the controller created we need to link them together:
-
-1. Open the `PersonEditDialog.fxml`.
-2. In the *Controller* group on the left side select select the `PersonEditDialogController` as controller class.
-3. Set the **fx:id** of all `TextField`s to the corresponding field of the controller.
-4. Set the **onAction** of the two buttons to the corresponding handler method.
+* Метод `setPerson(...)` может быть вызван с другого класса для сохранения записи, которая была отредактирована;
+* Когда пользователь нажимает на кнопку **ОК**, то вызывается метод `handleOK()`. Сперва идет проверка введенных пользователем данных постредством вызова метода `isInputValid()`. Если проверка прошла успешно, идет заполнение записи теми данными, которые ввел пользователь. Эти изменения будут напрямую примняться к записи, принятой в методе `setPerson(...)`! 
+* Логическая переменная `okClicked` используется для определения того, какую из кнопок `ОК` или `Cancel` пользователь нажал.
 
 
+### Привязка класса-контроллера к fxml-файлу
 
-### Opening the Dialog
+Для работоспособности нашей программы мы должны связать вместе наш класс-контроллер с fxml-файлом. Для этого выполните следующие действия:
 
-Add a method to load and display the edit person dialog inside our `MainApp`:   
+1. Откройте файл `PersonEditDialog.fxml` в приложении Scene Builder;
+2. С левой стороны во вкладке *Controller* установите наш класс `PersonEditDialogController` как значение параметра *Сontroller Сlass*;
+3. Установине соответствующие значения параметра **fx:id** для всех компонентов `TextField`;
+4. Установите значение параметра **onAction** для наших кнопок и присвойте им соответствующие методы-обработчики.
+
+
+
+### Вызов диалога редактирования
+
+Добавьте метод для загрузки и отображения диалога редактирования записей в наш класс `MainApp`:
 
 
 ##### MainApp.java
@@ -571,7 +571,7 @@ public boolean showPersonEditDialog(Person person) {
 }
 </pre>
 
-Add the following methods to the `PersonOverviewController`. Those methods will call the `showPersonEditDialog(...)` from the `MainApp` when the user clicks the *new* or *edit* button.   
+Добавьте следующие методы в класс `PersonOverviewController`. Когда пользователь будет нажимать на кнопки `ОК` или `Cancel` эти методы будут вызывать метод `showPersonEditDialog(...)` из класса `MainApp`.
 
 ##### PersonOverviewController.java
 
@@ -613,28 +613,27 @@ private void handleEditPerson() {
 }
 </pre>
 
-Open the `PersonOverview.fxml` file in Scene Builder. Choose the corresponding methods in *On Action* for the new and edit buttons.
+Откройте `PersonOverview.fxml` в приложении Scene Builder и присвойте соответствующие методы-обработчики параметру *On Action* кнопок `OK` и `Cancel`.
 
 
 *****
 
-## Done!
+## Сделано!
 
-You should have a working *Address Application* by now. The application is able to add, edit, and delete persons. There is even some validation for the text fields to avoid bad user entries.
+Сейчас вы должны получить работающее приложение адресной книги. Приложение способно добавлять, редактировать и удалять записи. Также оно способно делать проверку пользовательского ввода.
 
-I hope the concepts and structure of this application will get you started with writing your own JavaFX application! Have fun.
-
-
-### What's Next?
-
-In [Tutorial Part 4](/java/javafx-8-tutorial-part4/) we will add some CSS styling.
+Я надеюсь, что концепция и структура даного приложения поможет вам начать писать свои собственные JavaFX-приложения! Удачи.
 
 
-##### Some other articles you might find interesting
+### Что дальше?
+
+В [4 Части Учебника](http://code.makery.ch/java/javafx-8-tutorial-part4/ "Tutorial Part 4") мы будем подключать CSS-стили к нашему приложению.
+
+
+##### Вам могут быть интересны также некоторые другие статьи
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
 * [JavaFX TableView Cell Renderer](/blog/javafx-8-tableview-cell-renderer/)
-
