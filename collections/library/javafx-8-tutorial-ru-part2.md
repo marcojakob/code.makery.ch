@@ -23,7 +23,7 @@ sidebars:
     link: /library/javafx-8-tutorial/ru/part2/
     paging: 2
     active: true
-  - text: "Часть 3: Interacting with the User"
+  - text: "Часть 3: Взаимодействие с пользователем"
     link: /library/javafx-8-tutorial/ru/part3/
     paging: 3
   - text: "Часть 4: CSS Styling"
