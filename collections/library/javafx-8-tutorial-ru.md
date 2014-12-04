@@ -17,10 +17,10 @@ sidebars:
     link: /library/javafx-8-tutorial/ru/
     paging: Intro
     active: true
-  - text: "Part 1: Scene Builder"
+  - text: "Часть 1: Scene Builder"
     link: /library/javafx-8-tutorial/ru/part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
+  - text: "Часть 2: Модель и компонент TableView"
     link: /library/javafx-8-tutorial/ru/part2/
     paging: 2
   - text: "Part 3: Interacting with the User"
