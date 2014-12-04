@@ -28,13 +28,13 @@ sidebars:
     link: /library/javafx-8-tutorial/ru/part4/
     paging: 4
     active: true
-  - text: "Часть 5: Storing Data as XML"
+  - text: "Часть 5: Хранение данных в XML"
     link: /library/javafx-8-tutorial/ru/part5/
     paging: 5
-  - text: "Часть 6: Statistics Chart"
+  - text: "Часть 6: Статистическая диаграмма"
     link: /library/javafx-8-tutorial/ru/part6/
     paging: 6
-  - text: "Часть 7: Deployment"
+  - text: "Часть 7: Развертывание"
     link: /library/javafx-8-tutorial/ru/part7/
     paging: 7
 - header: скачать исходники"
