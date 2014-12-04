@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Учебник по JavaFX 8 - Часть 4: Стилизация с помощью CSS"
+title: "JavaFX 8 Tutorial - Part 4: CSS Styling"
 date: 2014-04-25 00:00
 updated: 2014-08-27 00:00
 slug: javafx-8-tutorial-part4
@@ -61,52 +61,52 @@ sidebars:
     icon-css: fa fa-fw fa-globe
 ---
 
-![Screenshot AddressApp Part 4](http://code.makery.ch/assets/library/javafx-8-tutorial/part4/addressapp-part4.png "AddressApp Part4")
+![Screenshot AddressApp Part 4](/assets/library/javafx-8-tutorial/part4/addressapp-part4.png)
 
 
-## Часть 4: Содержание
+## Topics in Part 4
 
-- Стилизация с помощью каскадных таблиц стилей (CSS)
-- Добавление иконки приложения
+* **CSS Styling**
+* Adding an **Application Icon**
 
 
 
 *****
 
 
-## Стилизация с помощью CSS
+## CSS Styling 
 
-В JavaFX вы можете стилизировать свой интерфейс пользователя с помощью каскадных таблиц стилей (CSS). Это очень хорошо! Еще никогда не было так легко настроить внешний вид Java-приложения.
+In JavaFX you can style your user interface using Cascading Style Sheets (CSS). This is great! It's never been as easy to customize the appearance of a Java application.
 
-В этом учебнике мы создадим тему *DarkTheme*, вдохновленную Метро-дизайном из Windows 8. Используемые стили для кнопок базируются на статье [JMetro - Windows 8 Metro controls on Java](http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/), написанной Pedro Duque Vieira.
-
-
-### Знакомство с CSS
-
-Если вы хотите стилизировать ваше JavaFX-приложение, вы должны иметь начальное представление о CSS в целом. Хорошее место для старта - этот [учебник CSS](http://www.csstutorial.net/).
-
-Для получения специфической информации про использование CSS в JavaFX читайте это:
-
-* [Skinning JavaFX Applications with CSS](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/css_tutorial.htm) - учебник от Oracle
-* [JavaFX CSS Reference](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html) - официальный справочник
+In this tutorial we will create a *DarkTheme* inspired by the Windows 8 Metro design. The css for the buttons is based on the blog post [JMetro - Windows 8 Metro controls on Java](http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/) by Pedro Duque Vieira.
 
 
-### Стили, используемые в JavaFX по умолчанию
+### Getting Familiar with CSS
 
-Стиль, который используется в JavaFX по умолчанию хранится в файле `modena.css`. Этот css-файл можно найти в файле `jfxrt.jar`, расположенном в вашей Java-директории `/jdk1.8.x/jre/lib/ext/jfxrt.jar`.
+If you want to style your JavaFX application you should have a basic understanding of CSS in general. A good place to start is this [CSS tutorial](http://www.csstutorial.net/).
 
-Разархивируйте его и вы найдете `modena.css` в папке `com/sun/javafx/scene/control/skin/modena`.
+For more JavaFX specific information about CSS:
 
-Этот стиль всегда применяется для JavaFX-приложений по умолчанию. Добавляя пользовательские стили вы переопределяете стили из файла `modena.css`.
+* [Skinning JavaFX Applications with CSS](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/css_tutorial.htm) - Tutorial by Oracle
+* [JavaFX CSS Reference](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html) - Official Reference
+
+
+### Default JavaFX CSS
+
+The default source for CSS styles in JavaFX 8 is a file called **`modena.css`**. This css file can be found in the Java FX jar file `jfxrt.jar` located in your Java folder under `/jdk1.8.x/jre/lib/ext/jfxrt.jar`.
+
+Unzip the `jfxrt.jar`. You should find the `modena.css` under `com/sun/javafx/scene/control/skin/modena/`
+
+This default style sheet is always applied to a JavaFX application. By adding a custom style sheet we can override the default styles of the `modena.css`.   
 
 <div class="alert alert-info">
-**Намек:** Для того, чтобы знать какие стили вам надо переопределить, просмотрите этот файл.
+**Hint:** It helps to look at the default CSS file to see which styles you might need to override.
 </div>
 
 
-### Установка пользовательських стилей
+### Attaching CSS Style Sheets
 
-Добавьте файл `DarkTheme.css` в пакет `view`.
+Add the following CSS file called `DarkTheme.css` to the *view* package.
 
 
 ##### DarkTheme.css
@@ -257,79 +257,79 @@ sidebars:
 }
 </pre>
 
-Теперь нам надо присоединить эти стили к нашей сцене. Можно сделать это программно в коде Java, но мы для того, чтобы добавить стили в наши fxml-файлы будем использовать приложение Scene Builder:
+We now need to attach the CSS to our Scene. We could do this programmatically in Java code, but we'll use the Scene Builder to add it to our fxml files: 
 
 
-#### Присоединяем таблицы стилей к файлу RootLayout.fxml
+#### Attach CSS to RootLayout.fxml
 
-1. Откройте файл `RootLayout.fxml` в приложении Scene Builder.
+1. Open the file `RootLayout.fxml` in Scene Builder. 
 
-2. Выберите корневой контейнер `BorderPane` во вкладке *Hierarchy*, перейдите на вкладку *Properties* и укажите файл `DarkTheme.css` в роли таблиц стилей.  
-![DarkTheme for RootLayout](http://code.makery.ch/assets/library/javafx-8-tutorial/part4/darktheme-rootlayout.png "DarkTheme RootLayout")
-
-
-#### Присоединяем таблицы стилей к файлу PersonEditDialog.fxml
-
-1. Откройте файл `PersonEditDialog.fxml` в приложении Scene Builder. Выберите корневой контейнер `AnchorPane` во вкладке *Hierarchy*, перейдите на вкладку *Properties* и укажите файл `DarkTheme.css` в роли таблиц стилей.
-
-2. Фон остался белым, поэтому укажите для корневого компонента `AnchorPane` в классе стиля значение `background`.
-![Add Style Class](http://code.makery.ch/assets/library/javafx-8-tutorial/part4/darktheme-personeditdialog.png "DarkTheme Person Edit Dialog")
-
-3. Выберите кнопку *OK* и отметьте свойство *Default Button* в вкладке *Properties*. В результате изменется цвет кнопки и наша кнопка будет использоваться по умолчанию когда пользователь находясь в окне будет нажимать клавишу enter.
+2. Select the root `BorderPane` in the Hierarchy view. Under *Properties* group add the `DarkTheme.css` file as stylesheet.   
+![DarkTheme for RootLayout](/assets/library/javafx-8-tutorial/part4/darktheme-rootlayout.png)
 
 
-#### Присоединяем таблицы стилей к файлу PersonOverview.fxml
+#### Attach CSS to PersonEditDialog.fxml
 
-1. Откройте файл `PersonOverview.fxml` в приложении Scene Builder. Выберите корневой контейнер `AnchorPane` во вкладке *Hierarchy*, перейдите на вкладку *Properties* и укажите файл `DarkTheme.css` в роли таблиц стилей.
+1. Open the file `PersonEditDialog.fxml` in Scene Builder. Select the root `AnchorPane` and choose `DarkTheme.css` in the *Properties* group as stylesheet.
 
-2. Вы сражу должны увидеть некоторые изменения: цвет таблицы и кнопок стал черным. Все классы стилей `.table-view` и `.button` из файла `modena.css` применились к таблице и кнопкам. С того момента, как мы переопределили некоторые из стилей в нашем css-файле, новые стили применяются автоматически.
+2. The background is still white, so add the Style Class `background` to the root `AnchorPane`.   
+![Add Style Class](/assets/library/javafx-8-tutorial/part4/darktheme-personeditdialog.png)
 
-3. Возможно, вам потребуется изменить размер кнопок для того, чтобы отображался весь текст.
-
-4. Выберите правый компонент `AnchorPane` внутри компонента `SplitPane`.  
-![Background Style Select](http://code.makery.ch/assets/library/javafx-8-tutorial/part4/background-style-select.png)
-
-5. Перейдите на вкладку *Properties* и укажине в классе стиля значение `background`. Теперь фон станет черного цвета.  
-![Background Style](http://code.makery.ch/assets/library/javafx-8-tutorial/part4/background-style.png)
+3. Select the OK button and choose *Default Button* in the Properties View. This will change its color and make this the default button when the *enter* key is pressed by the user.
 
 
-#### Текстовые метки с другими стилями
+#### Attach CSS to PersonOverview.fxml
 
-Теперь все наши текстовые метки с правой стороны имеют одинаковый размер. Для дальнейшей стилизации тектсовых меток мы будем использовать уже определенные стили `.label-header` и `label-bright`.
+1. Open the file `PersonOverview.fxml` in Scene Builder. Select the root `AnchorPane` in the *Hierarchy* group. Under properties add the `DarkTheme.css` file as stylesheet.
 
-1. Выберите метку *Person Details* и добавьте в качестве класса стиля значение `label-header`.  
-![Label Header Style](http://code.makery.ch/assets/library/javafx-8-tutorial/part4/label-header-style.png)
+2. You should already see some changes now: The table and the buttons are black. All class styles `.table-view` and `.button` from `modena.css` apply to the table and buttons. Since we've redefined (and thus overridden) some of those styles in our custom CSS, the new styles are applied automatically.
 
-2. Для каждой метки в правой колонке (где отображаются актуальные данные наших записей) добавьте в качестве класса стиля значение `label-bright`.  
-![Label Bright Style](http://code.makery.ch/assets/library/javafx-8-tutorial/part4/label-bright-style.png "Label Bright Style")
+3. You might need to adjust the size of the buttons so that all text is displayed.
+
+4. Select the right `AnchorPane` that is inside the `SplitPane`.   
+![Background Style Select](/assets/library/javafx-8-tutorial/part4/background-style-select.png)   
+
+5. Go to the *Properties* group and select `background` as style class. The background should now turn black.   
+![Background Style](/assets/library/javafx-8-tutorial/part4/background-style.png)
+
+
+#### Labels with Different Style
+
+Right now, all the labels on the right side have the same size. There are already some styles defined in the css file called `.label-header` and `.label-bright` that we'll use to further style the labels.
+
+1. Select the *Person Details* label and add `label-header` as a Style Class.   
+![Label Header Style](/assets/library/javafx-8-tutorial/part4/label-header-style.png)
+
+2. To each label in the right column (where the actual person details are displayed), add the css Style Class `label-bright`.   
+![Label Bright Style](/assets/library/javafx-8-tutorial/part4/label-bright-style.png)
 
 
 *****
 
 
-## Добавляем иконку приложения
+## Adding an Application Icon
 
-На данный момент в нашем приложении в панели названия и панели задач используется иконка по умолчанию:
+Right now our application just has the default icon in the title bar and taks bar:
 
-![Default Icon](http://code.makery.ch/assets/library/javafx-8-tutorial/part4/default-app-icon.png "Default App Icon")
+![Default Icon](/assets/library/javafx-8-tutorial/part4/default-app-icon.png)
 
-С пользовательской иконкой наше приложение будет выглядеть красивее:
+It looks much nicer with a custom icon:
 
-![Custom Icon](http://code.makery.ch/assets/library/javafx-8-tutorial/part4/custom-app-icon.png)
-
-
-### Файл изображения
-
-Одно из возможных мест, где можно свободно скачать иконки - это [Icon Finder](http://www.iconfinder.com/ "Icon Finder"). Я загрузил малельнькую иконку [адресной книги](http://www.iconfinder.com/icondetails/86957/32/).
-
-Создайте папку **resources** внутри вашего проекта AddressApp, а в ней папку **images**. Поместите выбранную вами иконку в папку изображений. Ваша структура папок должна иметь такой вид:
-
-![Custom Icon File](http://code.makery.ch/assets/library/javafx-8-tutorial/part4/custom-icon-file.png "Custom Icon File")
+![Custom Icon](/assets/library/javafx-8-tutorial/part4/custom-app-icon.png)
 
 
-### Установка иконки в приложение
+### The Icon File
 
-Для установки выбранной иконки в наше приложение добавьте следующий код в метод `start(...)` в классе `MainApp.java`
+A possible place to get free icons is [Icon Finder](http://www.iconfinder.com). I downloaded a little [address book icon](http://www.iconfinder.com/icondetails/86957/32/).
+
+Create a (normal) folder inside your AddressApp project called **resources** and a subfolder called **images** in it. Put the icon of your choice inside the images folder. Your folder structure should look something like this now:
+
+![Custom Icon File](/assets/library/javafx-8-tutorial/part4/custom-icon-file.png)
+
+
+### Set Icon to Scene
+
+To set the icon for our scene add the following line to the `start(...)` method in `MainApp.java`
 
 
 ##### MainApp.java
@@ -354,18 +354,19 @@ public void start(Stage primaryStage) {
 }
 </pre>
 
-Вы также можете добавить иконку в окно редактирования адресной записи.
+You can also add an icon to the stage of the person edit dialog, of course.
 
 
-### Что дальше?
+### What's Next?
 
-В [5 Части Учебника](http://code.makery.ch/java/javafx-8-tutorial-part5/ "JavaFX Tutorial Part 5") мы добавим XML-хранилище для наших данных.
+In [Tutorial Part 5](/java/javafx-8-tutorial-part5/) we will add XML storage for our data.
 
 
-##### Вам могут быть интересны также некоторые другие статьи
+##### Some other articles you might find interesting
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
 * [JavaFX TableView Cell Renderer](/blog/javafx-8-tableview-cell-renderer/)
+
