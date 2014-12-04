@@ -23,7 +23,7 @@ sidebars:
   - text: "Часть 2: Модель и компонент TableView"
     link: /library/javafx-8-tutorial/ru/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
+  - text: "Часть 3: Взаимодействие с пользователем"
     link: /library/javafx-8-tutorial/ru/part3/
     paging: 3
   - text: "Part 4: CSS Styling"

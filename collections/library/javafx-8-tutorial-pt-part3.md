@@ -61,8 +61,6 @@ sidebars:
     icon-css: fa fa-fw fa-globe
 ---
 
-**Update Aug 27, 2014:** *Agora usando JDK 8u20 e ControlsFX 8.0.6_20*
-
 ![Screenshot AddressApp Part 3](/assets/library/javafx-8-tutorial/part3/addressapp-part3.png)
 
 
