@@ -5,7 +5,6 @@ date: 2014-04-19 00:00
 updated: 2014-12-04 00:00
 slug: javafx-8-tutorial/ru/part2
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part2.md
-description: "Use a JavaFX TableView to display an ObservableList of Persons."
 image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
 published: true
 prettify: true

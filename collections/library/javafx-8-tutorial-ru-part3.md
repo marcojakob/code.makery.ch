@@ -5,7 +5,6 @@ date: 2014-04-24 00:00
 updated: 2014-12-04 00:00
 slug: javafx-8-tutorial/ru/part3
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part3.md
-description: "React to selection changes in the JavaFX TableView. Add, edit and remove items from the table and validate user input."
 image: /assets/library/javafx-8-tutorial/part3/addressapp-part3.png
 published: true
 prettify: true

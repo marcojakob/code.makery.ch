@@ -53,6 +53,9 @@ sidebars:
   - text: 中文（简体）
     link: /library/javafx-8-tutorial/zh-cn/
     icon-css: fa fa-fw fa-globe
+  - text: Русский
+    link: /library/javafx-8-tutorial/ru/
+    icon-css: fa fa-fw fa-globe
 ---
 
 JavaFX proporciona a los desarrolladores de Java una nueva plataforma gráfica.  JavaFX 2.0 se publicó en octubre del 2011 con la intención de reemplazar a Swing en la creación de nuevos interfaces gráficos de usario (IGU). Cuando empecé a enseñar JavaFX en 2011 era una tecnología muy incipiente todavía. No había libros sobre JavaFX que fueran **adecuados para estudiantes de programación noveles**, así es que empecé a escribir una serie de tutoriales muy detallados sobre JavaFX.

@@ -60,6 +60,9 @@ sidebars:
     link: /library/javafx-8-tutorial/zh-cn/part5/
     icon-css: fa fa-fw fa-globe
     active: true
+  - text: Русский
+    link: /library/javafx-8-tutorial/ru/part5/
+    icon-css: fa fa-fw fa-globe
 ---
 
 <div class="alert alert-warning">

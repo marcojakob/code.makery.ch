@@ -1,50 +1,49 @@
 ---
 layout: article
-title: "JavaFX 8 教程 - 第六部分：统计图"
-date: 2014-10-08 00:00
-updated: 2014-10-08 00:00
-slug: javafx-8-tutorial/zh-cn/part6
+title: "Учебник по JavaFX 8 - Часть 6: Statistics Chart"
+date: 2014-05-09 00:00
+updated: 2014-12-04 00:00
+slug: javafx-8-tutorial/ru/part6
 canonical: /java/javafx-8-tutorial-part6/
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part6.md
-description: "Learn how to create a JavaFX Bar Chart."
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part6.md
 image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: "系列文章"
+- header: "Статьи в этой серии"
   body:
-  - text: "简介"
-    link: /library/javafx-8-tutorial/zh-cn/
-    paging: 简介
-  - text: "第一部分：Scene Builder"
-    link: /library/javafx-8-tutorial/zh-cn/part1/
+  - text: "введение"
+    link: /library/javafx-8-tutorial/ru/
+    paging: Intro
+  - text: "Часть 1: Scene Builder"
+    link: /library/javafx-8-tutorial/ru/part1/
     paging: 1
-  - text: "第二部分：Model 和 TableView"
-    link: /library/javafx-8-tutorial/zh-cn/part2/
+  - text: "Часть 2: Модель и компонент TableView"
+    link: /library/javafx-8-tutorial/ru/part2/
     paging: 2
-  - text: "第三部分：与用户的交互"
-    link: /library/javafx-8-tutorial/zh-cn/part3/
+  - text: "Часть 3: Взаимодействие с пользователем"
+    link: /library/javafx-8-tutorial/ru/part3/
     paging: 3
-  - text: "第四部分：CSS 样式"
-    link: /library/javafx-8-tutorial/zh-cn/part4/
+  - text: "Часть 4: Стилизация с помощью CSS"
+    link: /library/javafx-8-tutorial/ru/part4/
     paging: 4
-  - text: "第五部分：将数据用 XML 格式存储"
-    link: /library/javafx-8-tutorial/zh-cn/part5/
+  - text: "Часть 5: Storing Data as XML"
+    link: /library/javafx-8-tutorial/ru/part5/
     paging: 5
-  - text: "第六部分：统计图"
-    link: /library/javafx-8-tutorial/zh-cn/part6/
+  - text: "Часть 6: Statistics Chart"
+    link: /library/javafx-8-tutorial/ru/part6/
     paging: 6
     active: true
-  - text: "第七部分：部署"
-    link: /library/javafx-8-tutorial/zh-cn/part7/
+  - text: "Часть 7: Deployment"
+    link: /library/javafx-8-tutorial/ru/part7/
     paging: 7
-- header: "Download Sources"
+- header: скачать исходники"
   body:
-  - text: Part 6 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+  - text: Часть 6 как проект Eclipse <em>(Требуется хотя бы JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-6.zip
     icon-css: fa fa-fw fa-download
-- header: 语言
+- header: языки
   languages: true
   body:
   - text: English
@@ -59,15 +58,11 @@ sidebars:
   - text: 中文（简体）
     link: /library/javafx-8-tutorial/zh-cn/part6/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Русский
     link: /library/javafx-8-tutorial/ru/part6/
     icon-css: fa fa-fw fa-globe
+    active: true
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs translation to Chinese (Simplified). If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
 
 ![Screenshot AddressApp Part 6](/assets/library/javafx-8-tutorial/part6/addressapp-part6.png)
 
@@ -289,7 +284,7 @@ A good place for more information is the official Oracle tutorial on [Working wi
 
 ### What's Next?
 
-In the last tutorial [Part 7](/library/javafx-8-tutorial/zh-cn/part7/) we will finally deploy our application (i.e. package and deliver the app to our users).
+In the last tutorial [Part 7](/library/javafx-8-tutorial/ru/part7/) we will finally deploy our application (i.e. package and deliver the app to our users).
 
 
 ##### Some other articles you might find interesting
@@ -299,4 +294,3 @@ In the last tutorial [Part 7](/library/javafx-8-tutorial/zh-cn/part7/) we will f
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
 * [JavaFX TableView Cell Renderer](/blog/javafx-8-tableview-cell-renderer/)
-

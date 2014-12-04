@@ -1,55 +1,54 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 5: Storing Data as XML"
-date: 2014-04-25 01:00
-updated: 2014-08-27 00:00
-slug: javafx-8-tutorial-part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part5.md
-description: "Save data as XML with JAXB. Learn how to use the JavaFX FileChooser and the JavaFX Menu."
+title: "Учебник по JavaFX 8 - Часть 5: Storing Data as XML"
+date: 2014-04-25 00:00
+updated: 2014-12-04 00:00
+slug: javafx-8-tutorial/ru/part5
+canonical: /java/javafx-8-tutorial-part5/
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part5.md
 image: /assets/library/javafx-8-tutorial/part5/addressapp-part5.png
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Articles in this Series"
+- header: "Статьи в этой серии"
   body:
-  - text: "Introduction"
-    link: /java/javafx-8-tutorial-intro
+  - text: "введение"
+    link: /library/javafx-8-tutorial/ru/
     paging: Intro
-  - text: "Part 1: Scene Builder"
-    link: /java/javafx-8-tutorial-part1/
+  - text: "Часть 1: Scene Builder"
+    link: /library/javafx-8-tutorial/ru/part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
-    link: /java/javafx-8-tutorial-part2/
+  - text: "Часть 2: Модель и компонент TableView"
+    link: /library/javafx-8-tutorial/ru/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
-    link: /java/javafx-8-tutorial-part3/
+  - text: "Часть 3: Взаимодействие с пользователем"
+    link: /library/javafx-8-tutorial/ru/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
-    link: /java/javafx-8-tutorial-part4/
+  - text: "Часть 4: Стилизация с помощью CSS"
+    link: /library/javafx-8-tutorial/ru/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-8-tutorial-part5/
+  - text: "Часть 5: Storing Data as XML"
+    link: /library/javafx-8-tutorial/ru/part5/
     paging: 5
     active: true
-  - text: "Part 6: Statistics Chart"
-    link: /java/javafx-8-tutorial-part6/
+  - text: "Часть 6: Statistics Chart"
+    link: /library/javafx-8-tutorial/ru/part6/
     paging: 6
-  - text: "Part 7: Deployment"
-    link: /java/javafx-8-tutorial-part7/
+  - text: "Часть 7: Deployment"
+    link: /library/javafx-8-tutorial/ru/part7/
     paging: 7
-- header: "Download Sources"
+- header: скачать исходники"
   body:
-  - text: Part 5 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+  - text: Часть 5 как проект Eclipse <em>(Требуется хотя бы JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-5.zip
     icon-css: fa fa-fw fa-download
-- header: Languages
+- header: языки
   languages: true
   body:
   - text: English
     link: /java/javafx-8-tutorial-part5/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Português
     link: /library/javafx-8-tutorial/pt/part5/
     icon-css: fa fa-fw fa-globe
@@ -62,6 +61,7 @@ sidebars:
   - text: Русский
     link: /library/javafx-8-tutorial/ru/part5/
     icon-css: fa fa-fw fa-globe
+    active: true
 ---
 
 ![Screenshot AddressApp Part 5](/assets/library/javafx-8-tutorial/part5/addressapp-part5.png)
@@ -557,7 +557,7 @@ Let's see how it all works together:
 
 ### What's Next?
 
-In Tutorial [Part 6](/java/javafx-8-tutorial-part6/) we'll add a birthday statistics chart.
+In Tutorial [Part 6](/library/javafx-8-tutorial/ru/part6/) we'll add a birthday statistics chart.
 
 
 ##### Some other articles you might find interesting

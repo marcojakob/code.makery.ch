@@ -59,6 +59,9 @@ sidebars:
   - text: 中文（简体）
     link: /library/javafx-8-tutorial/zh-cn/part1/
     icon-css: fa fa-fw fa-globe
+  - text: Русский
+    link: /library/javafx-8-tutorial/ru/part1/
+    icon-css: fa fa-fw fa-globe
 ---
 
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
