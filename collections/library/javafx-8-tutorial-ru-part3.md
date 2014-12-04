@@ -26,7 +26,7 @@ sidebars:
     link: /library/javafx-8-tutorial/ru/part3/
     paging: 3
     active: true
-  - text: "Часть 4: CSS Styling"
+  - text: "Часть 4: Стилизация с помощью CSS"
     link: /library/javafx-8-tutorial/ru/part4/
     paging: 4
   - text: "Часть 5: Storing Data as XML"

@@ -26,16 +26,16 @@ sidebars:
   - text: "Часть 3: Взаимодействие с пользователем"
     link: /library/javafx-8-tutorial/ru/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "Часть 4: Стилизация с помощью CSS"
     link: /library/javafx-8-tutorial/ru/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
+  - text: "Часть 5: Storing Data as XML"
     link: /library/javafx-8-tutorial/ru/part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
+  - text: "Часть 6: Statistics Chart"
     link: /library/javafx-8-tutorial/ru/part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "Часть 7: Deployment"
     link: /library/javafx-8-tutorial/ru/part7/
     paging: 7
 - header: языки
