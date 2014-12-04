@@ -144,6 +144,7 @@ Schauen Sie sich empfohlene Schriftkombinationen von Google Fonts auf folgenden 
 * [Theme Armada](http://blog.themearmada.com/8-amazing-google-font-combinations/)
 * [Brian Gardner](http://briangardner.com/google-font-combinations/)
 * [Caleb McGuire](http://www.mrmcguire.com/10-useful-google-font-combinations-for-your-next-site/)
+* [Beautiful Web Type](http://hellohappy.org/beautiful-web-type/)
 * und weitere
 
 Als Beispiel wähle ich die Kombination von *Oswald* für Überschriften und *Lato* für den Text:
