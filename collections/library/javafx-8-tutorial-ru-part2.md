@@ -12,7 +12,7 @@ comments: true
 sidebars:
 - header: "Статьи в этой серии"
   body:
-  - text: "введение"
+  - text: "Введение"
     link: /library/javafx-8-tutorial/ru/
     paging: Intro
   - text: "Часть 1: Scene Builder"
@@ -37,12 +37,12 @@ sidebars:
   - text: "Часть 7: Развертывание"
     link: /library/javafx-8-tutorial/ru/part7/
     paging: 7
-- header: скачать исходники"
+- header: Скачать исходники
   body:
   - text: Часть 2 как проект Eclipse <em>(Требуется хотя бы JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-2.zip
     icon-css: fa fa-fw fa-download
-- header: языки
+- header: Языки
   languages: true
   body:
   - text: English

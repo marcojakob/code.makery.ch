@@ -12,7 +12,7 @@ comments: true
 sidebars:
 - header: "Статьи в этой серии"
   body:
-  - text: "введение"
+  - text: "Введение"
     link: /library/javafx-8-tutorial/ru/
     paging: Intro
     active: true
@@ -37,7 +37,7 @@ sidebars:
   - text: "Часть 7: Развертывание"
     link: /library/javafx-8-tutorial/ru/part7/
     paging: 7
-- header: языки
+- header: Языки
   languages: true
   body:
   - text: English
