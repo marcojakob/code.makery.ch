@@ -204,7 +204,7 @@ sidebars:
 Нам необходимо создать еще один файл fxml-разметки, в котором будет компонент *Menu Bar* и который будет служить оберткой для только что созданного `PersonOverview.fxml`.
 
 1. Создайте другой fxml-файл в том же пакете, что и предыдущий и назовите его `RootLayout.fxml`.  
-![[New RootLayout](/assets/library/javafx-8-tutorial/part1/new-root-layout.png "New Root Layout")
+![New RootLayout](/assets/library/javafx-8-tutorial/part1/new-root-layout.png "New Root Layout")
 
 2. Откройте файл `RootLayout.fxml` в приложении Scene Builder.
 
