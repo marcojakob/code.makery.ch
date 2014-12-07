@@ -4,7 +4,7 @@ title: "JavaFX 2 Tutorial - Part 1: Scene Builder"
 date: 2012-11-16 22:00
 updated: 2013-02-08 00:00
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-2-tutorial-part1.md
-description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
+description: "Learn how to set up a JavaFX project. This is part one of a seven-part tutorial about designing, programming and deploying an address application with JavaFX."
 published: true
 prettify: true
 comments: 

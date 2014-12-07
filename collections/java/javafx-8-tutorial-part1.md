@@ -5,7 +5,7 @@ date: 2014-04-19 01:00
 updated: 2014-08-27 00:00
 slug: javafx-8-tutorial-part1
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part1.md
-description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
+description: "Learn how to set up a JavaFX project. This is part one of a seven-part tutorial about designing, programming and deploying an address application with JavaFX."
 image: /assets/library/javafx-8-tutorial/part1/addressapp-part1.png
 published: true
 prettify: true
