@@ -5,6 +5,7 @@ date: 2014-04-25 00:00
 updated: 2014-12-04 00:00
 slug: javafx-8-tutorial/ru/part4
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part4.md
+description: "В JavaFX Вы можете изменять внешний вид приложения с помощью CSS. В этой части мы так же научимся добавлять иконку нашего приложения"
 image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png
 published: true
 prettify: true
