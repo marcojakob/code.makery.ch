@@ -97,6 +97,7 @@ sidebars:
   <strong><i class="fa fa-trophy"></i> Attribution:</strong> Russian translations have been contributed by 
   <ul>
     <li><a href="https://github.com/sobolevstp" class="alert-link">Sobolev Stepan</a></li> 
+    <li><a href="https://github.com/eugenedotru" class="alert-link">Evgen Ishchenko</a></li> 
   </ul>
   Thank you very much!
 </div>
