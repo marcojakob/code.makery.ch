@@ -5,6 +5,7 @@ date: 2014-04-24 00:00
 updated: 2014-12-04 00:00
 slug: javafx-8-tutorial/ru/part3
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part3.md
+description: "Реакция на выбор записей в JavaFX TableView. Добавление, редактирование и удаление элементов из таблицы, а так же проверка пользовательского ввода"
 image: /assets/library/javafx-8-tutorial/part3/addressapp-part3.png
 published: true
 prettify: true
