@@ -3,6 +3,7 @@ layout: article
 title: "Учебник по JavaFX 8"
 date: 2014-04-19 00:00
 updated: 2014-12-04 00:00
+description: "Этот учебник состоящий из семи частей, введет вас в проектирование, программирование и развертывание приложения Адресной книги, с помощью JavaFX"
 slug: javafx-8-tutorial/ru
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru.md
 image: /assets/library/javafx-8-tutorial/addressapp.png
