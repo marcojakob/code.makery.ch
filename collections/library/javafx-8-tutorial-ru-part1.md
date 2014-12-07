@@ -5,6 +5,7 @@ date: 2014-04-19 00:00
 updated: 2014-12-04 00:00
 slug: javafx-8-tutorial/ru/part1
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part1.md
+description: "Узнайте, как создать проект JavaFX. Это первая часть учебника по проектированию, программированию и развертыванию приложения Адресная книга с помощью JavaFX"
 image: /assets/library/javafx-8-tutorial/part1/addressapp-part1.png
 published: true
 prettify: true
