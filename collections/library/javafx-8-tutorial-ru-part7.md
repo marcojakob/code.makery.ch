@@ -6,6 +6,7 @@ updated: 2014-12-04 00:00
 slug: javafx-8-tutorial/ru/part7
 canonical: /java/javafx-8-tutorial-part7/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part7.md
+description: "Развертывание JavaFX приложения с помощью процесса нативной упаковки (native package). Создание инсталляционного пакета для Windows, Mac или Linux."
 image: /assets/library/javafx-8-tutorial/part7/addressapp-macos.png
 published: true
 prettify: true
