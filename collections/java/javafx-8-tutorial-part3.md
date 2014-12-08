@@ -273,6 +273,11 @@ Now, open the `PersonOverview.fxml` file in *SceneBuilder*. Select the *Delete* 
 
 ![On Action](/assets/library/javafx-8-tutorial/part3/handle-delete.png)
 
+<div class="alert alert-info">
+**Remember:** After making changes to an FXML file in Scene Builder you might need to refresh the project in Eclipse for the changes to be applied.
+</div>
+
+
 
 ### Error Handling
 
