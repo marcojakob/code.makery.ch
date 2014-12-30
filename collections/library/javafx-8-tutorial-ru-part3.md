@@ -62,6 +62,9 @@ sidebars:
     link: /library/javafx-8-tutorial/ru/part3/
     icon-css: fa fa-fw fa-globe
     active: true
+  - text: Bahasa Indonesia
+    link: /library/javafx-8-tutorial/id/part3/
+    icon-css: fa fa-fw fa-globe
 ---
 
 ![Учебник по JavaFX 8 - Часть 3: Взаимодействие с пользователем](/assets/library/javafx-8-tutorial/part3/addressapp-part3.png "AdressApp")

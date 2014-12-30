@@ -1,50 +1,50 @@
 ---
 layout: article
-title: "JavaFX 8 教程 - 第四部分：CSS 样式"
-date: 2014-10-08 00:00
-updated: 2014-10-08 00:00
-slug: javafx-8-tutorial/zh-cn/part4
+title: "JavaFX 8 Tutorial - Part 4: CSS Styling"
+date: 2014-04-25 00:00
+updated: 2014-08-27 00:00
+slug: javafx-8-tutorial/id/part4
 canonical: /java/javafx-8-tutorial-part4/
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part4.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id-part4.md
 description: "In JavaFX you can style your user interface using CSS. We'll also add an application icon in this tutorial part."
 image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: "系列文章"
+- header: "Articles in this Series"
   body:
-  - text: "简介"
-    link: /library/javafx-8-tutorial/zh-cn/
-    paging: 简介
-  - text: "第一部分：Scene Builder"
-    link: /library/javafx-8-tutorial/zh-cn/part1/
+  - text: "Introduction"
+    link: /library/javafx-8-tutorial/id/
+    paging: Intro
+  - text: "Part 1: Scene Builder"
+    link: /library/javafx-8-tutorial/id/part1/
     paging: 1
-  - text: "第二部分：Model 和 TableView"
-    link: /library/javafx-8-tutorial/zh-cn/part2/
+  - text: "Part 2: Model and TableView"
+    link: /library/javafx-8-tutorial/id/part2/
     paging: 2
-  - text: "第三部分：与用户的交互"
-    link: /library/javafx-8-tutorial/zh-cn/part3/
+  - text: "Part 3: Interacting with the User"
+    link: /library/javafx-8-tutorial/id/part3/
     paging: 3
-  - text: "第四部分：CSS 样式"
-    link: /library/javafx-8-tutorial/zh-cn/part4/
+  - text: "Part 4: CSS Styling"
+    link: /library/javafx-8-tutorial/id/part4/
     paging: 4
     active: true
-  - text: "第五部分：将数据用 XML 格式存储"
-    link: /library/javafx-8-tutorial/zh-cn/part5/
+  - text: "Part 5: Storing Data as XML"
+    link: /library/javafx-8-tutorial/id/part5/
     paging: 5
-  - text: "第六部分：统计图"
-    link: /library/javafx-8-tutorial/zh-cn/part6/
+  - text: "Part 6: Statistics Chart"
+    link: /library/javafx-8-tutorial/id/part6/
     paging: 6
-  - text: "第七部分：部署"
-    link: /library/javafx-8-tutorial/zh-cn/part7/
+  - text: "Part 7: Deployment"
+    link: /library/javafx-8-tutorial/id/part7/
     paging: 7
 - header: "Download Sources"
   body:
   - text: Part 4 as Eclipse Project <em>(requires at least JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-4.zip
     icon-css: fa fa-fw fa-download
-- header: 语言
+- header: Languages
   languages: true
   body:
   - text: English
@@ -59,17 +59,17 @@ sidebars:
   - text: 中文（简体）
     link: /library/javafx-8-tutorial/zh-cn/part4/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: Русский
     link: /library/javafx-8-tutorial/ru/part4/
     icon-css: fa fa-fw fa-globe
   - text: Bahasa Indonesia
     link: /library/javafx-8-tutorial/id/part4/
     icon-css: fa fa-fw fa-globe
+    active: true
 ---
 
 <div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs translation to Chinese (Simplified). If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
+  <i class="fa fa-language"></i> This page needs translation to Indonesian. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
 </div>
 
 ![Screenshot AddressApp Part 4](/assets/library/javafx-8-tutorial/part4/addressapp-part4.png)
@@ -370,7 +370,7 @@ You can also add an icon to the stage of the person edit dialog, of course.
 
 ### What's Next?
 
-In [Tutorial Part 5](/library/javafx-8-tutorial/zh-cn/part5/) we will add XML storage for our data.
+In [Tutorial Part 5](/library/javafx-8-tutorial/id/part5/) we will add XML storage for our data.
 
 
 ##### Some other articles you might find interesting

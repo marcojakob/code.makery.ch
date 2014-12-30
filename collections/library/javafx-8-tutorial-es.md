@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Tutorial JavaFX 8"
+title: "Tutorial JavaFX 8 (Español)"
 date: 2014-09-17 00:00
 slug: javafx-8-tutorial/es
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es.md
@@ -55,6 +55,9 @@ sidebars:
     icon-css: fa fa-fw fa-globe
   - text: Русский
     link: /library/javafx-8-tutorial/ru/
+    icon-css: fa fa-fw fa-globe
+  - text: Bahasa Indonesia
+    link: /library/javafx-8-tutorial/id/
     icon-css: fa fa-fw fa-globe
 ---
 

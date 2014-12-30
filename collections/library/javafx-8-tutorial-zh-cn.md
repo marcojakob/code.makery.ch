@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "JavaFX 8 教程"
+title: "JavaFX 8 教程 （中文）"
 date: 2014-10-08 00:00
 updated: 2014-10-20 00:00
 slug: javafx-8-tutorial/zh-cn
@@ -56,6 +56,9 @@ sidebars:
     active: true
   - text: Русский
     link: /library/javafx-8-tutorial/ru/
+    icon-css: fa fa-fw fa-globe
+  - text: Bahasa Indonesia
+    link: /library/javafx-8-tutorial/id/
     icon-css: fa fa-fw fa-globe
 ---
 

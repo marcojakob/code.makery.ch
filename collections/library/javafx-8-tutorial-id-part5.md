@@ -1,48 +1,50 @@
 ---
 layout: article
-title: "Tutorial JavaFX 8 - Parte 5: Persistencia de datos con XML"
-date: 2014-09-17 00:00
-slug: javafx-8-tutorial/es/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part5.md
-description: "Almacena datos en XML con JAXB. Aprender a utilizar FileChooser y los menús de JavaFX."
+title: "JavaFX 8 Tutorial - Part 5: Storing Data as XML"
+date: 2014-04-25 01:00
+updated: 2014-08-27 00:00
+slug: javafx-8-tutorial/id/part5
+canonical: /java/javafx-8-tutorial-part5/
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id-part5.md
+description: "Save data as XML with JAXB. Learn how to use the JavaFX FileChooser and the JavaFX Menu."
 image: /assets/library/javafx-8-tutorial/part5/addressapp-part5.png
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Artículos en esta serie"
+- header: "Articles in this Series"
   body:
-  - text: "Introducción"
-    link: /library/javafx-8-tutorial/es/
+  - text: "Introduction"
+    link: /library/javafx-8-tutorial/id/
     paging: Intro
-  - text: "Parte 1: Scene Builder"
-    link: /library/javafx-8-tutorial/es/part1/
+  - text: "Part 1: Scene Builder"
+    link: /library/javafx-8-tutorial/id/part1/
     paging: 1
-  - text: "Parte 2: Modelo y TableView"
-    link: /library/javafx-8-tutorial/es/part2/
+  - text: "Part 2: Model and TableView"
+    link: /library/javafx-8-tutorial/id/part2/
     paging: 2
-  - text: "Parte 3: Interacción con el usuario"
-    link: /library/javafx-8-tutorial/es/part3/
+  - text: "Part 3: Interacting with the User"
+    link: /library/javafx-8-tutorial/id/part3/
     paging: 3
-  - text: "Parte 4: Hojas de estilo CSS"
-    link: /library/javafx-8-tutorial/es/part4/
+  - text: "Part 4: CSS Styling"
+    link: /library/javafx-8-tutorial/id/part4/
     paging: 4
-  - text: "Parte 5: Persistencia de datos con XML"
-    link: /library/javafx-8-tutorial/es/part5/
+  - text: "Part 5: Storing Data as XML"
+    link: /library/javafx-8-tutorial/id/part5/
     paging: 5
     active: true
-  - text: "Parte 6: Gráficos estadísticos"
-    link: /library/javafx-8-tutorial/es/part6/
+  - text: "Part 6: Statistics Chart"
+    link: /library/javafx-8-tutorial/id/part6/
     paging: 6
-  - text: "Parte 7: Despliegue"
-    link: /library/javafx-8-tutorial/es/part7/
+  - text: "Part 7: Deployment"
+    link: /library/javafx-8-tutorial/id/part7/
     paging: 7
-- header: "Código fuente"
+- header: "Download Sources"
   body:
-  - text: Parte 5 proyecto Eclipse <em>(requiere al menos JDK 8u20)</em>
+  - text: Part 5 as Eclipse Project <em>(requires at least JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-5.zip
     icon-css: fa fa-fw fa-download
-- header: Lenguajes
+- header: Languages
   languages: true
   body:
   - text: English
@@ -54,7 +56,6 @@ sidebars:
   - text: Español
     link: /library/javafx-8-tutorial/es/part5/
     icon-css: fa fa-fw fa-globe
-    active: true
   - text: 中文（简体）
     link: /library/javafx-8-tutorial/zh-cn/part5/
     icon-css: fa fa-fw fa-globe
@@ -64,32 +65,37 @@ sidebars:
   - text: Bahasa Indonesia
     link: /library/javafx-8-tutorial/id/part5/
     icon-css: fa fa-fw fa-globe
+    active: true
 ---
+
+<div class="alert alert-warning">
+  <i class="fa fa-language"></i> This page needs translation to Indonesian. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
+</div>
 
 ![Screenshot AddressApp Part 5](/assets/library/javafx-8-tutorial/part5/addressapp-part5.png)
 
 
-## Contenidos en Parte 5
+## Topics in Part 5
 
-* **Persistencia de datos en XML**
-* Utilización de **FileChooser**
-* Utilización de **Menu**
-* Guardando la ruta al último archivo abierto en las **preferencias de usuario**
+* **Persisting data as XML**
+* Using the JavaFX **FileChooser**
+* Using the JavaFX **Menu**
+* Saving the last opened file path in **user preferences**
 
 
 
 *****
 
-Actualmente, los datos de nuestra aplicación de libreta de direcciones reside únicamente en memoria. Cada vez que cerramos la aplicación los datos se pierden. Así pues, ha llegado la hora de pensar en como guardar los datos de forma persistente.
+At the moment our address application's data only resides in memory. Every time we close the application, the data is lost. So it's about time to start thinking about persistently storing data.
 
 
-## Guardando preferencias del usuario
+## Saving User Preferences
 
-Java nos permite guardar cierta información mediante una clase llamada `Preferences`, pensada para guardar las preferencias de usuario de una aplicación. Dependiendo del sistema operativo, estas preferencias son guardadas en un sitio u otro (por ejemplo el registro de Windows).
+Java allows us to save some application state using a class called `Preferences`. Depending on the operating system, the `Preferences` are saved in different places (e.g. the registry file in Windows).
 
-No podemos usar un archivo de `Preferences` para guardar nuestra libreta de direcciones completa, pero nos sirve para guardar **información de estado muy simple**. Un ejemplo del tipo de cosas que podemos guardar en estas preferencias es **la ruta al último archivo abierto**. Con esta información podemos recuperar el último estado de la aplicación cuando el usuario vuelva a ejecutar la aplicación.
+We won't be able to use `Preferences` to store our entire address book. But it allows us to **save some simple application state**. One such thing is the **path to the last opened file**. With this information we could load the last application state whenever the user restarts the application.
 
-Los siguientes dos métodos se encargan de guardar y recuperar las `Preferences`. Añádelos al final de la clase `MainApp`:
+The following two methods take care of saving and retrieving Preferences. Add them to the end of your `MainApp` class:
 
 
 ##### MainApp.java
@@ -135,15 +141,15 @@ public void setPersonFilePath(File file) {
 </pre>
 
 
-## Persistencia de datos mediante XML
+## Persisting Data as XML
 
-### ¿Por qué XML?
+### Why XML?
 
-Una de las formas más habituales de almacenar datos es mediante una de base de datos. Las bases de datos típicamente contienen algún tipo de datos relacionales (tablas relacionadas mediante índices), mientras que los datos que tenemos que guardar. A este problema se le denomina *desadaptación de impedancias objeto-relacional* ([object-relational impedance mismatch](http://wikipedia.org/wiki/Object-relational_impedance_mismatch)). Cuesta bastante trabajo adaptar objetos a tablas de una base de datos relacional. Aunque existen algunas soluciones para ayudarnos a realizar esta adaptación (ej. [Hibernate](http://www.hibernate.org/), la más popular), todavía cuesta bastante trabajo de configuración. 
+One of the most common ways to persist data is using a database. Databases usually contain some kind of relational data (like tables) while the data we need to save are objects. This is called the [object-relational impedance mismatch](http://wikipedia.org/wiki/Object-relational_impedance_mismatch). It is quite some work to match objects to relational database tables. There are some frameworks that help with the matching (e.g. [Hibernate](http://www.hibernate.org/), the most popular one) but it still requires quite some work to set up.
 
-Para  nuestro sencillo modelo de datos es mucho más fácil usar XML. Usaremos una librería llamada [JAXB](https://jaxb.java.net/) (**J**ava **A**rchitecture for **X**ML **B**inding). Con apenas unas pocas líneas de código JAXB nos permitirá generar una salida en XML como esta:
+For our simple data model it's much easier to use XML. We'll use a library called [JAXB](https://jaxb.java.net/) (**J**ava **A**rchitecture for **X**ML **B**inding). With just a few lines of code JAXB will allow us to generate XML output like this:
 
-##### Ejemplo de salid en XML
+##### Example xml output
 
 <pre class="prettyprint lang-xml">
 &lt;persons&gt;
@@ -169,20 +175,20 @@ Para  nuestro sencillo modelo de datos es mucho más fácil usar XML. Usaremos u
 
 
 
-### Utilización de JAXB
+### Using JAXB
 
-JAXB viene incluido en el JDKm. Eso significa que no necesitamos añadir ninguna librería adicional.
+JAXB is already included in the JDK. That means we don't need to include any additional library.
 
-JAXB proporciona dos funcionalidades principales: la capacidad de convertir objectos Java en XML (**marshalling**), y a la inversa, la capacidad de convertir XML en objetos Java (**unmarshalling**).
+JAXB provides two main features: the ability to **marshal** Java objects into XML and to **unmarshal** XML back into Java objects.
 
-Para que JAXB sea capaz de hacer la conversión, necesitamos preparar nuestro modelo.
+For JAXB to be able to do the conversion, we need to prepare our model.
 
 
-#### Preparando el modelo para JAXB 
+#### Preparing the Model Class for JAXB 
 
-Los datos que queremos guardar se hallan en la variable `personData` dentro de la clase `MainApp`. JAXB requiere que la clase raíz (la que contenga a todo el árbol XML) sea anotada anotada con `@XmlRootElement`. Sin embargo `personData` es de clase `ObservableList`, que no se puede utilizar en JAXB. De ahí que necesitemos crear otra clase para contener nuestra lista de personas (`Person`) de cara a ser adaptada a XML por JAXB 
+Our data that we want to save resides in the `personData` variable inside our `MainApp` class. JAXB requires the top most class to be annotated with `@XmlRootElement`. `personData` is of class `ObservableList` and we can't put any annotations to `ObservableList`. So we need to create another class that is only used to hold our list of `Persons` for saving to XML. 
 
-La nueva clase que creamos se llama `PersonListWrapper` y la ponemos en el paquete `ch.makery.address.model`.
+The new class we create is called `PersonListWrapper` and is put into the `ch.makery.address.model` package.
 
 
 ##### PersonListWrapper.java
@@ -217,15 +223,15 @@ public class PersonListWrapper {
 }
 </pre>
 
-Fíjate en las dos anotaciones. 
+Notice the two annotations: 
 
-* `@XmlRootElement` define el nombre del elemento raíz del XML.
-* `@XmlElement` es un nombre opcional que podemos especificar para el elemento (usado en su representación XML).
+* `@XmlRootElement` defines the name of the root element.
+* `@XmlElement` is an optional name we can specify for the element.
 
 
-#### Leyendo y escribiendo datos con JAXB
+#### Reading and Writing Data with JAXB
 
-Haremos a nuestra clase `MainApp` responsable de leer y escribir los datos XML. Añade la siguiente pareja de métodos al final de la clase `MainApp.java`:
+We'll make our `MainApp` class responsible for reading and writing the person data. Add the following two methods to the end of `MainApp.java`:
 
 
 <pre class="prettyprint lang-java">
@@ -287,25 +293,25 @@ public void savePersonDataToFile(File file) {
 }
 </pre>
 
-Los métodos de escritura (marshalling) y lectura (unmarshalling) ya están listos. Ahora crearemos unas opciones de menú para poder utilizar esos métodos.
+The marshalling/unmarshalling is ready. Let's create the save/load menu to actually be able to use it.
 
 
-## Gestión de acciones de menú
+## Handling Menu Actions
 
-En nuestro `RootLayout.fxml` ya hay un menú, pero todavía no lo hemos utilizado. Antes de añadir acciones al menú crearemos todos los ítems del menú.
+In our `RootLayout.fxml` there is already a menu, but we haven't used it yet. Before we add action to the menu we'll first create all menu items.
 
-Abre ela rchivo `RootLayout.fxml` en Scene Builder y arrastra los ítems de menú necesarios desde la sección *library* a la barra de menús (componente `MenuBar` en la *hierarchy*). Crea los siguientes ítems: **New**, **Open...**, **Save**, **Save As...**, y **Exit**.
+Open the `RootLayout.fxml` file in Scene Builder and drag the necessary menu items from the *library* group to the `MenuBar` bar in the *hierarchy* group. Create a **New**, **Open...**, **Save**, **Save As...**, and **Exit** menu item.
 
 ![Add Menu Items](/assets/library/javafx-8-tutorial/part5/add-menu-items.png)
 
-Truco: Mediante el uso de la opción *Accelerator* en la vista *Properties* se pueden establecer atajos de teclado para lanzar las acciones asociadas a los ítems del menú.
+Hint: Using the *Accelerator* setting under the *Properties* group you can set shortcut keys to menu items.
 
 
-### Controlador para las acciones de menú: RootLayoutController
+### The RootLayoutController
 
-Para implementar las acciones del menú necesitaremos una nueva clase de control. Crea una nueva clase `RootLayoutController` dentro de `ch.makery.address.view`. 
+For handling menu actions we'll need a new controller class. Create a class `RootLayoutController` inside the controller package `ch.makery.address.view`. 
 
-Añade el siguiente contenido al controlador recién creado.
+Add the following content to the controller:
 
 
 ##### RootLayoutController.java
@@ -435,28 +441,28 @@ public class RootLayoutController {
 
 #### FileChooser
 
-Fíjate en los métodos que usan la clase `FileChooser` dentro de `RootLayoutController`. Primero, se crea una nueva instancia de la clase `FileChooser`. A continuación, se le añade un filtro de extensión para que sólo se muestren los archivos terminados en `.xml`. Finalmente, el objeto `FileChooser` se muestra justo encima de la escena principal.
+Take note of the methods that use the `FileChooser` class inside `RootLayoutController` above. First, a new object of the class `FileChooser` is created. Then, an extension filter is added so that only files ending in `.xml` are displayed. Finally, the file chooser is displayed on top of the primary stage.
 
-Si el usuario cierra la ventana del `FileChooser`sin escoger un archivo, se devuelve `null`. En otro caso, se obtiene el archivo seleccionado, y se lo podemos pasar al método `loadPersonDataFromFile(...)` o al método `savePersonDataToFile(...)` de la clase `MainApp`. 
+If the user closes the dialog without choosing a file, `null` is returned. Otherwise, we get the selected file and we can pass it to the `loadPersonDataFromFile(...)` or `savePersonDataToFile(...)` method of `MainApp`. 
 
 
-### Conectando el FXML con el controlador
+### Connecting the fxml View to the Controller
 
-1. Abre `RootLayout.fxml` en Scene Builder. En la sección *Controller* selecciona `RootLayoutController` como controlador. 
+1. Open `RootLayout.fxml` in Scene Builder. In the *Controller* group select the `RootLayoutController` as Controller class. 
 
-2. Vuelve a la sección *Hierarchy* y elige un ítem del menú. En el campo **On Action** de la sección *Code* debes tener como opciones todos los métodos disponibles en la clase de control. Elije el que corresponda a cada uno de los ítems del menú.   
+2. Go back to the *Hierarchy* group and select a menu item. In the *Code* group under **On Action** you should see a choice of all the available controller methods. Choose the corresponding method for each menu item.   
 ![Menu Actions](/assets/library/javafx-8-tutorial/part5/menu-actions.png)
 
-3. Repite el paso 2 para todos y cada uno de ls ítems del menú.
+3. Repeat the steps for every menu item.
 
-4. Cierra Scene Builder y refresca el proyecto (pulsa **Refresh (F5)** sobre la carpeta raíz de tu proyecto). Esto hará que Eclipse se entere de los cambios realizados en Scene Builder.
+4. Close Scene Builder and hit **Refresh (F5)** on your project's root folder. This will make Eclipse aware of the changes you made in Scene Builder.
 
 
-### Conectando la clase MainApp y el controlador RootLayoutController
+### Connecting the MainApp and RootLayoutController
 
-En varios sitios, el controlador `RootLayoutController` necesita una referencia a la clase `MainApp`. Todavía no hemos pasado esa referencia al `RootLayoutController`.
+In several places, the `RootLayoutController` needs a reference back to the `MainApp`. We haven't passed the reference to the `RootLayoutController` yet.
 
-Abre la clase `MainApp` y sustituye el método `initRootLayout()` por el código siguiente:
+Open the `MainApp` class and replace the `initRootLayout()` method with the following code:
 
 <pre class="prettyprint lang-java">
 /**
@@ -492,16 +498,16 @@ public void initRootLayout() {
 }
 </pre>
 
-Fíjate en los 2 cambios introducidos: Las líneas que *dan acceso a MainApp" y las últimas tres líneas para *cargar el último archivo abierto*.
+Notice the two changes: The lines that *give the controller access to the main app* and the last three lines to *load the last opened person file*.
 
 
-### Pruebas
+### Testing
 
-Si pruebas ahora tu aplicación deberías ser capaz de usar los menús para grabar los datos de los contactos en un archivo XML. 
+Doing a test drive of your application you should be able to use the menus to save the person data to a file. 
 
-Si abres el archivo XML resultante en un editor, notarás que la fecha de nacimiento no se guarda correctamente, aparece una etiqueta `<birthday/>` vacía. La razón es que JAXB no sabe como convertir `LocalDate` a XML. Debemos proporcionar un adaptador a medida para realizar esta conversión.
+When you open the `xml` file in an editor you will notice that the birthday is not saved correctly, it's an empty `<birthday/>` tag. The reason is that JAXB does not know how to convert the `LocalDate` to XML. We must provide a custom `LocalDateAdapter` to define this conversion.
 
-Dentro de `ch.makery.address.util` crea una nueva clase denominada `LocalDateAdapter` con el contenido siguiente:
+Create a new class inside `ch.makery.address.util` called `LocalDateAdapter` with the following content:
 
 ##### LocalDateAdapter.java
 
@@ -532,7 +538,7 @@ public class LocalDateAdapter extends XmlAdapter&lt;String, LocalDate> {
 }
 </pre>
 
-A continuación abre la clase `Person` y añade la siguiente anotación al método `getBirthday()`:
+Then open `Person.java` and add the following annotation to the `getBirthday()` method:
 
 <pre class="prettyprint lang-java">
 @XmlJavaTypeAdapter(LocalDateAdapter.class)
@@ -541,27 +547,28 @@ public LocalDate getBirthday() {
 }
 </pre>
 
-Ahora prueba a guardar los datos de nuevo y abre el archivo XML otra vez. Debería abrir automáticamente el último archivo abierto durante la ejecución previa.
+Now, test again. Try saving and loading the xml file. After a restart, it should automatically load the last used file.
 
 
 
-## Como funciona
-
-Ahora veamos como funciona todo junto
-
-1. La aplicación se inicia con la ejecución del método `main(...)` de la clase `MainApp`.
-2. El constructor `public MainApp()` es invocado y añade algunos datos de ejemplo.
-3. El método `start(...)` de la clase `MainApp` es invocado, el cual a su vez invoca a `initRootLayout()` para inicializar la vista principal utilizando el archivo `RootLayout.fxml`. El archivo FSML tiene información sobre qué controlador utilizar y enlaza la vista con su controlador `RootLayoutController`. 
-4. `MainApp` obtiene el controlador `RootLayoutController` del cargador FXML y le pasa a ese controlador una referencia a sí mismo. con esta referencia el controlador podrá después acceder a los métodos (públicos) de `MainApp`.
-5. Al final del método `initRootLayout()` se intenta obtener el *último archivo de direcciones abierto* desde las `Preferences`. Si existe esa información en `Preferences` entonces se leen los datos del XML. Estos datos sobreescribirán los datos de ejemplo generados en el constructor. 
+## How It Works
 
 
-### ¿Qué es lo siguiente?
+Let's see how it all works together:
 
-En [Tutorial Parte 6](/library/javafx-8-tutorial/es/part6/) añadiremos un gráfico con estadísticas de las fechas de nacimiento de la lista de personas.
+1. The application is started using the `main(...)` method inside `MainApp`.
+2. The constructor `public MainApp()` is called and adds some sample data.
+3. `MainApp`s `start(...)` method is called and calls `initRootLayout()` to initialize the root layout from `RootLayout.fxml`. The fxml file has the information about which controller to use and links the view to its `RootLayoutController`. 
+4. The `MainApp` gets the `RootLayoutController` from the fxml loader and passes a reference to itself to the controller. With this reference the controller can later access the (public) methods of `MainApp`.
+5. At the end of the `initRootLayout()` method we try to get the *last opened person file* from `Preferences`. If the `Preferences` know about such an XML file, we'll load the data from this XML file. This will apparently overwrite the sample data from the constructor. 
 
 
-##### Otros artículos que podrían resultarte de interés
+### What's Next?
+
+In Tutorial [Part 6](/library/javafx-8-tutorial/id/part6/) we'll add a birthday statistics chart.
+
+
+##### Some other articles you might find interesting
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)

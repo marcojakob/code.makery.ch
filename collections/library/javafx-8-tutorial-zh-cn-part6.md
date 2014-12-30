@@ -63,6 +63,9 @@ sidebars:
   - text: Русский
     link: /library/javafx-8-tutorial/ru/part6/
     icon-css: fa fa-fw fa-globe
+  - text: Bahasa Indonesia
+    link: /library/javafx-8-tutorial/id/part6/
+    icon-css: fa fa-fw fa-globe
 ---
 
 <div class="alert alert-warning">

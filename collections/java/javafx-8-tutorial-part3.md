@@ -62,6 +62,9 @@ sidebars:
   - text: Русский
     link: /library/javafx-8-tutorial/ru/part3/
     icon-css: fa fa-fw fa-globe
+  - text: Bahasa Indonesia
+    link: /library/javafx-8-tutorial/id/part3/
+    icon-css: fa fa-fw fa-globe
 ---
 
 **Update Aug 27, 2014:** *Now using JDK 8u20 and ControlsFX 8.0.6_20*

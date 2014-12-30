@@ -62,6 +62,9 @@ sidebars:
     link: /library/javafx-8-tutorial/ru/part6/
     icon-css: fa fa-fw fa-globe
     active: true
+  - text: Bahasa Indonesia
+    link: /library/javafx-8-tutorial/id/part6/
+    icon-css: fa fa-fw fa-globe
 ---
 
 ![Screenshot AddressApp Part 6](/assets/library/javafx-8-tutorial/part6/addressapp-part6.png)
