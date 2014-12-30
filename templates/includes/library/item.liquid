@@ -17,11 +17,28 @@
   </div>
     
   <div class="language-buttons">
+    <div class="hidden-xs">
     {% for language in item.languages -%}
     {% capture lang_url %}
       {%- if language != "English" -%}{{ global.languageCodes[language] }}/{% endif -%}
     {% endcapture %}
     <a href="{{ item.link }}{{ lang_url }}" class="btn btn-default btn-xs">{{ language }}</a>
     {% endfor -%}
+    </div>
+    
+    <div class="visible-xs-block">
+      <div class="btn-group">
+        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-globe"></i> Languages <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+          {% for language in item.languages -%}
+          {% capture lang_url %}
+            {%- if language != "English" -%}{{ global.languageCodes[language] }}/{% endif -%}
+          {% endcapture %}
+          <li><a href="{{ item.link }}{{ lang_url }}">{{ language }}</a></li>
+          {% endfor -%}
+        </ul>
+      </div>
+    </div>
   </div>
 </div>

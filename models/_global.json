@@ -15,7 +15,8 @@
     "Português": "pt",
     "Español": "es",
     "中文（简体）": "zh-cn",
-    "Русский": "ru"
+    "Русский": "ru",
+    "Bahasa Indonesia": "id"
   },
   "tags": [ "Dart", "HTML5", "Java", "JavaFX" ]
 }
