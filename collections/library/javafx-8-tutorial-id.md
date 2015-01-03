@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial (Bahasa Indonesia)"
+title: "Tutorial JavaFX 8 (Bahasa Indonesia)"
 date: 2014-04-19 00:00
 updated: 2014-08-27 00:00
 slug: javafx-8-tutorial/id
@@ -14,29 +14,29 @@ comments: true
 sidebars:
 - header: "Articles in this Series"
   body:
-  - text: "Introduction"
+  - text: "Pengenalan"
     link: /library/javafx-8-tutorial/id/
     paging: Intro
     active: true
-  - text: "Part 1: Scene Builder"
+  - text: "Bagian 1: Scene Builder"
     link: /library/javafx-8-tutorial/id/part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
+  - text: "Bagian 2: Model dan TableView"
     link: /library/javafx-8-tutorial/id/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
+  - text: "Bagian 3: Berinteraksi dengan pengguna"
     link: /library/javafx-8-tutorial/id/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "Bagian 4: Memberikan gaya dengan CSS"
     link: /library/javafx-8-tutorial/id/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
+  - text: "Bagian 5: Menyimpan data sebagai XML"
     link: /library/javafx-8-tutorial/id/part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
+  - text: "Bagian 6: Bagan Statistika"
     link: /library/javafx-8-tutorial/id/part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "Bagian 7: Penyebaran"
     link: /library/javafx-8-tutorial/id/part7/
     paging: 7
 - header: Languages
@@ -68,39 +68,39 @@ sidebars:
 </div>
 
 
-Back in 2012 I wrote a very detailed [JavaFX 2 tutorial series](/java/javafx-2-tutorial-intro/) for my students. Many people all over the world have been reading the tutorial and gave very positive feedback. So I decided to **rewrite the JavaFX 2 tutorial for JavaFX 8** (read about what changed in [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)).
+Pada 2012 saya telah menulis [Seri Tutorial JavaFX 2](/java/javafx-2-tutorial-intro/) yang terperinci untuk murid-muridku. Banyak orang dari penjuru dunia telah membaca tutorial ini dan memberi umpan balik yang positif. Lalu saya memutuskan **menulis ulang Tutorial JavaFX 2 untuk JavaFX 8** (baca perubahan di [Pembaharuan javaFX 8 - Apa yang baru)](/blog/update-to-javafx-8-whats-new/)).
 
-This tutorial walks you through designing, programming and deploying an address application. This is how the final application will look like:
+Tutorial ini menuntun anda melalui merancang, pemrograman dan menggunakan aplikasi alamat. Berikut adalah bentuk akhir aplikasi yang akan terlihat:
 
-![Screenshot AddressApp](/assets/library/javafx-8-tutorial/addressapp.png)
-
-
-## What you will learn
-
-* Creating and starting a JavaFX project
-* Using Scene Builder to design the user interface
-* Structuring an application with the Model-View-Controller (MVC) pattern
-* Using `ObservableLists` for automatically updating the user interface
-* Using `TableView` and reacting to selection changes in the table
-* Create a custom popup dialog to edit persons
-* Validating user input
-* Styling a JavaFX application with CSS
-* Persisting data as XML
-* Saving the last opened file path in user preferences
-* Creating a JavaFX chart for statistics
-* Deploying a JavaFX application as a native package
-
-**This is quite a lot!** So, after you you've completed this tutorial series you should be ready to build sophisticated applications with JavaFX.
+![Tangkapan Layar AddressApp](/assets/library/javafx-8-tutorial/addressapp.png)
 
 
-## How to use this Tutorial
+## Apa yang akan anda pelajari
 
-There are two ways to use this tutorial:
+* Membuat dan memulai proyek JavaFX
+* Menggunakan Scene Builder untuk mendesain antar muka pengguna
+* Strukturisasi sebuah aplikasi dengan pola Model-Tampilan-Pengendali (Model-View-Controller)
+* Menggunakan `ObservableLists`untuk secara otomatis memperbaharui antarmuka pengguna
+* Menggunakan `TableView` dan bereaksi terhadap perubahan seleksi pada tabel
+* Membuat dialog ubah sesuai munculan untuk memperbaharui persons
+* Validasi masukan pengguna
+* Memberi gaya pada aplikasi JavaFX dengan CSS
+* Memaksa data sebagai XML
+* Menyimpan alamat berkas terakhir dibuka didalam preferensi pengguna
+* Membuat bagan JavaFX untuk statistika
+* Penyebaran aplikasi JavaFX sebagai paket asli
 
-* **learn-a-lot track:** Create your own JavaFX project from the ground up.
-* **fast track:** Import the source code for a tutorial part into your IDE (it's an Eclipse project, but you could use other IDEs like NetBeans with slight modifications). Then go through the tutorial to understand the code.
+**Ini cukup banyak!**, jadi setelah kamu telah menyelesaikan seri tutorial-tutorial ini, kamu seharusnya telah siap untuk membangun aplikasi canggih dengan JavaFX.
 
-Now, I hope you'll have fun! Start with [Part 1: Scene Builder](/library/javafx-8-tutorial/id/part1/).
+
+## Bagaimana menggunakan tutorial ini
+
+Ada dua cara untuk menggunakan tutorial ini:
+
+* **Jalur pelajari lebih banyak:** Buat proyek JavaFX anda sendiri dari awal.
+* **Jalur cepat:** Impor source kode dari bagian tutorial ke IDE (ini merupakan proyek yang dibuat dengan Eclipse, tapi anda bisa menggunakan IDE lainnya seperti NetBeans dengan sedikit modifikasi). Kemudian melalui tutorial untuk memahami kode tersebut.
+
+Sekarang, saya harap anda akan bersenang-senang! dimulai dari [Bagian 1 : Scene Builder](/library/javafx-8-tutorial/id/part1/).
 
 <div class="alert alert-success">
   <strong><i class="fa fa-trophy"></i> Attribution:</strong> The Indonesian translation has been contributed by 
