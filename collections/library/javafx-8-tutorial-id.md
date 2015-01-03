@@ -68,7 +68,7 @@ sidebars:
 </div>
 
 
-Pada 2012 saya telah menulis [Seri Tutorial JavaFX 2](/java/javafx-2-tutorial-intro/) yang terperinci untuk murid-muridku. Banyak orang dari penjuru dunia telah membaca tutorial ini dan memberi umpan balik yang positif. Lalu saya memutuskan **menulis ulang Tutorial JavaFX 2 untuk JavaFX 8** (baca perubahan di [Pembaharuan javaFX 8 - Apa yang baru)](/blog/update-to-javafx-8-whats-new/)).
+Pada 2012 saya telah menulis [Seri Tutorial JavaFX 2](/java/javafx-2-tutorial-intro/) yang terperinci untuk murid-muridku. Banyak orang dari penjuru dunia telah membaca tutorial ini dan memberi umpan balik yang positif. Lalu saya memutuskan **menulis ulang Tutorial JavaFX 2 untuk JavaFX 8** (baca perubahan di [Pembaharuan javaFX 8 - Apa yang baru](/blog/update-to-javafx-8-whats-new/)).
 
 Tutorial ini menuntun anda melalui merancang, pemrograman dan menggunakan aplikasi alamat. Berikut adalah bentuk akhir aplikasi yang akan terlihat:
 
