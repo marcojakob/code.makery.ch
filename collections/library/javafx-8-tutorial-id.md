@@ -2,7 +2,7 @@
 layout: article
 title: "Tutorial JavaFX 8 (Bahasa Indonesia)"
 date: 2014-04-19 00:00
-updated: 2014-08-27 00:00
+updated: 2015-01-02 00:00
 slug: javafx-8-tutorial/id
 canonical: /java/javafx-8-tutorial-intro/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id.md
@@ -12,7 +12,7 @@ published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Articles in this Series"
+- header: "Seri artikel"
   body:
   - text: "Pengenalan"
     link: /library/javafx-8-tutorial/id/
@@ -39,7 +39,7 @@ sidebars:
   - text: "Bagian 7: Penyebaran"
     link: /library/javafx-8-tutorial/id/part7/
     paging: 7
-- header: Languages
+- header: Bahasa
   languages: true
   body:
   - text: English

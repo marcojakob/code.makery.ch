@@ -2,7 +2,7 @@
 layout: article
 title: "Tutorial JavaFX 8 - Bagian 1: Scene Builder"
 date: 2014-04-19 01:00
-updated: 2014-08-27 00:00
+updated: 2015-01-04 00:00
 slug: javafx-8-tutorial/id/part1
 canonical: /java/javafx-8-tutorial-part1/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id-part1.md
@@ -12,7 +12,7 @@ published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Articles in this Series"
+- header: "Seri artikel"
   body:
   - text: "Pengenalan"
     link: /library/javafx-8-tutorial/id/
@@ -39,12 +39,12 @@ sidebars:
   - text: "Bagian 7: Penyebaran"
     link: /library/javafx-8-tutorial/id/part7/
     paging: 7
-- header: "Download Sources"
+- header: "Unduh kode sumberb"
   body:
   - text: Part 1 as Eclipse Project <em>(requires at least JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
     icon-css: fa fa-fw fa-download
-- header: Languages
+- header: Bahasa
   languages: true
   body:
   - text: English

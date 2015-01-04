@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 2: Model and TableView"
+title: "Tutorial JavaFX 8 - Bagian 2: Model dan TableView"
 date: 2014-04-23 00:00
-updated: 2014-08-27 00:00
+updated: 2014-01-04 00:00
 slug: javafx-8-tutorial/id/part2
 canonical: /java/javafx-8-tutorial-part2/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id-part2.md
@@ -12,39 +12,39 @@ published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Articles in this Series"
+- header: "Seri artikel"
   body:
-  - text: "Introduction"
+  - text: "Pengenalan"
     link: /library/javafx-8-tutorial/id/
     paging: Intro
-  - text: "Part 1: Scene Builder"
+  - text: "Bagian 1: Scene Builder"
     link: /library/javafx-8-tutorial/id/part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
+  - text: "Bagian 2: Model dan TableView"
     link: /library/javafx-8-tutorial/id/part2/
     paging: 2
     active: true
-  - text: "Part 3: Interacting with the User"
+  - text: "Bagian 3: Berinteraksi dengan pengguna"
     link: /library/javafx-8-tutorial/id/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "Bagian 4: Memberikan gaya dengan CSS"
     link: /library/javafx-8-tutorial/id/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
+  - text: "Bagian 5: Menyimpan data sebagai XML"
     link: /library/javafx-8-tutorial/id/part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
+  - text: "Bagian 6: Bagan Statistika"
     link: /library/javafx-8-tutorial/id/part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "Bagian 7: Penyebaran"
     link: /library/javafx-8-tutorial/id/part7/
     paging: 7
-- header: "Download Sources"
+- header: "Unduh kode sumberb"
   body:
   - text: Part 2 as Eclipse Project <em>(requires at least JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-2.zip
     icon-css: fa fa-fw fa-download
-- header: Languages
+- header: Bahasa
   languages: true
   body:
   - text: English
@@ -68,25 +68,21 @@ sidebars:
     active: true
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs translation to Indonesian. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
-![Screenshot AddressApp Part 2](/assets/library/javafx-8-tutorial/part2/addressapp-part2.png)
+![Tangkapan AddressApp bagian 2](/assets/library/javafx-8-tutorial/part2/addressapp-part2.png)
 
 
-## Topics in Part 2
+## Pembahasan di bagian 2
 
-* Creating a **model** class
-* Using the model class in an **ObservableList**
-* Show data in the **TableView** using **Controllers**
+* Membuat kelas **model**
+* Menggunakan kelas model didalam **ObservableList**
+* Menampilkan data di **TableView** menggunakan **Controllers**
 
 
 *****
 
-## Create the Model Class
+## Membuat kelas model
 
-We need a model class to hold information about the people in our address book. Add a new class to the model package (`ch.makery.address.model`) called `Person`. The `Person` class will have a few instance variables for the name, address and birthday. Add the following code to the class. I'll explain some JavaFX specifics after the code.
+Kita perlu membuat sebuah kelas model untuk menampung informasi mengenai orang di buku alamat kita. Tambah sebuah kelas ke paket model  (`ch.makery.address.model`) bernama `Person`. Kelas `Person` akan mempunyai beberapa variable instansi untuk name, address, dan birthday. Tambah kode berikut ke kelas.
 
 
 ##### Person.java
@@ -216,24 +212,24 @@ public class Person {
 </pre>
 
 
-### Explanations
+### Penjelasan
 
-* With JavaFX it's common to use [`Properties`](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html) for all fields of a model class. A `Property` allow us, for example, to automatically be notified when the `lastName` or any other variable is changed. This helps us keep the view in sync with the data. To learn more about `Properties` read [Using JavaFX Properties and Binding](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm).
-* [`LocalDate`](http://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html), the type we're using for `birthday`, is part of the new [Date and Time API for JDK 8](http://docs.oracle.com/javase/tutorial/datetime/iso/).
+* Dengan JavaFX sangat lazim untuk menggunakan [`Properties`](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html) untuk semua bidang kelas model. Sebuah `Property` memungkinkan kita, sebagai contoh, otomatis di beritau ketika`lastName` atau variabel lainnya berubah. Ini membantu untuk menjaga tampilan sinkron dengan data. Untuk mempelajari lebih lanjut mengenai `Properties` baca [Using JavaFX Properties and Binding](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm).
+* [`LocalDate`](http://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html), tipe yang telah kita gunakan untuk `birthday`, adalah bagian dari [Date and Time API for JDK 8](http://docs.oracle.com/javase/tutorial/datetime/iso/).
 
 
 *****
 
-## A List of Persons
+## Daftar dari Persons
 
-The main Data that our application manages, is a bunch of persons. Let's create a list for `Person` objects inside the `MainApp` class. All other controller classes will later get access to that central list inside the `MainApp`. 
+Data utama yang dikelola aplikasi kta adalah orang. Mari buat daftar untuk object `Person` didalam kelas `MainApp`. Semua kelas kontrol akan dapat mengakses daftar utama didalam `MainApp`. 
 
 
 ### ObservableList
 
-We are working with JavaFX view classes that need to be informed about any changes made to the list of persons. This is important, since otherwise the view would not be in sync with the data. For this purpose, JavaFX introduces some new [Collection classes](http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm). 
+Kita berkerja dengan kelas tampilan JavaFx yang perlu di beritahukan tentang perubahan yang telah dibuat kepada daftar orang. Hal ini penting, jika tidak tampilan tidak akan sinkron dengan data. Untuk tujuan ini, JavaFX mengenalkan beberapa [Collection classes](http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm). 
 
-From those collections, we need the `ObservableList`. To create a new `ObservableList`, add the following code at the beginning of the `MainApp` class. We'll also add a constructor that creates some sample data and a public getter method:
+Dari koleksi-koleksi tersebut, kita memerlukan `ObservableList`. Untuk membuat `ObservableList`baru, tambah kan kode berikut pada awal kelas `MainApp`. Kita juga akan menambah pembangun yang membuat beberapa contoh data dan metode pengambil umum (public, getter).
 
 
 ##### MainApp.java
@@ -277,15 +273,15 @@ From those collections, we need the `ObservableList`. To create a new `Observabl
 
 *****
 
-## The PersonOverviewController ##
+## PersonOverviewController ##
 
-Now let's finally get some data into our table. We'll need a controller for our `PersonOverview.fxml`.
+Sekarang mari kita memberi data pada table. Kita perlu pengendali untuk `PersonOverview.fxml`.
 
-1. Create a normal class inside the **view** package called `PersonOverviewController.java`. (We must put it in the same package as the `PersonOverview.fxml`, otherwise the SceneBuilder won't find it - at least not in the current version).
-2. We'll add some instance variables that give us access to the table and the labels inside the view. The fields and some methods have a special `@FXML` annotation. This is necessary for the fxml file to have access to private fields and private methods. After we have everything set up in the fxml file, the application will automatically fill the variables when the fxml file is loaded. So let's add the following code:
+1. Buat kelas didalam paket **view** bernama `PersonOverviewController.java`. (Kita harus menaruh dipaket yang sama `PersonOverview.fxml`,jika tidak Scene Builder tidak akan bisa menemukannya, setidaknya tidak diversi saat ini).
+2. Kita akan menambah beberapa variable instansi yang memberikan akses ke pada table dan label didalam tampilan Bidang dan beberpa metode memiliki keterangan `@FXML` khusus. Hal ini diperlukan oleh berkas fxml  untuk dapat mengakses bidang pribadi dan metode pribadi. Setelah kita mengatur semuanya di berkas fxml, aplikasi akan secara otomatis mengisi variabel variabel ketika fxml telah dimuat. Jadi tambahkan kode berikut :
 
 <div class="alert alert-info">
-**Note:** Remember to always use the **javafx imports**, NOT awt or swing!
+**Catatan:** Ingat untuk selalu impor **javafx imports**, bukan awt atau swing!
 </div>
 
 
@@ -358,16 +354,16 @@ public class PersonOverviewController {
 </pre>
 
 
-Now this code will probably need some explaining:
+Penjelasan:
 
-* All fields and methods where the fxml file needs access must be annotated with `@FXML`. Actually, only if they are private, but it's better to have them private and mark them with the annotation!
-* The `initialize()` method is automatically called after the fxml file has been loaded. At this time, all the FXML fields should have been initialized already.
-* The `setCellValueFactory(...)` that we set on the table colums are used to determine which field inside the `Person` objects should be used for the particular column. The arrow `->` indicates that we're using a Java 8 feature called *Lambdas*. (Another option would be to use a [PropertyValueFactory](http://docs.oracle.com/javase/8/javafx/api/), but this is not type-safe).
+* Semua bidang dan metode dimana berkas fxml perlu akses, harus dikasi keterangan `@FXML`. Sebenarnya hanya jika mereka bersifat  pribadi (private), tetapi akan lebih baik jika mereka bersifat pribadi (private) dan tanda mereka dengan keterangan.
+* metode `initialize()` secara otomatis dipanggil setelah berkas fxml telah dimuat. Pada saat ini bidang-bidang FXML seharusnya sudah terinisialisasi.
+* metoda `setCellValueFactory(...)` yang telah kita atur pada kolom tabel digunakan untuk menjelaskan bidang didalam objek `Person` yang digunakan sebagai kolom. Tanda panah -> menunjukan bahwa kita menggunakan fitur Java * yang dinamakan *Lambdas*. (Pilihan lain dengan menggunakan [PropertyValueFactory](http://docs.oracle.com/javase/8/javafx/api/), tetapi ini bukan tipe aman).
 
 
-### Connecting MainApp with the PersonOverviewController
+### Menghubungkan MainApp dengan PersonOverviewController
 
-The `setMainApp(...)` method must be called by the `MainApp` class. This gives us a way to access the `MainApp` object and get the list of `Persons` and other things. Replace the `showPersonOverview()` method with the following. It contains two additional lines:
+Metode `setMainApp(...)` harus dipanggil oleh kelas `MainApp`. Ini memberi kita cara untuk mengakses objek `MainApp` dan mendapat daftar dari `Persons` dan hal lainya. Ganti metode `showPersonOverview()` dengan :
 
 
 ##### MainApp.java - new showPersonOverview() method
@@ -401,41 +397,41 @@ public void showPersonOverview() {
 *****
 
 
-## Hook the View to the Controller
+## Kaitkan Tampilan Ke Pengendali
 
-We're almost there! But one little thing is missing: We haven't told our `PersonOverview.fxml` file yet, which controller to use and which element should match to which field inside the controller.
+Kita hampir selesai, tapi satu hal terlewat, kita belum meberitahu `PersonOverview.fxml` kontroller mana yang digunakan dan elemen mana yang cocok dengan bidang didalam pengendali.
 
-1. Open `PersonOverview.fxml` with the *SceneBuilder*.
+1. Buka `PersonOverview.fxml` dengan *SceneBuilder*.
 
-2. Open the *Controller* group on the left side and select the `PersonOverviewController` as **controller class**.   
-![Set Controller Class](/assets/library/javafx-8-tutorial/part2/set-controller-class.png)
+2. Buka kelompok *Controller* pada sisi kiri dan pilih `PersonOverviewController` sebagai**controller class**.   
+![Atur kelas Controller](/assets/library/javafx-8-tutorial/part2/set-controller-class.png)
 
-3. Select the `TableView` in the *Hierarchy* group and choose in the *Code* group the `personTable` field as **fx:id**.   
-![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png)
+3. Pilih `TableView` di kelompok *Hierarchy* dan pilih *Code*, kelompokan bidang `personTable` sebagai **fx:id**.   
+![Atur TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png)
 
-4. Do the same for the columns and select `firstNameColumn` and `lastNameColumn` as **fx:id** respectively.
+4.Lakukan hal yang sama untuk kolom-kolom dan pilih `firstNameColumn` dan `lastNameColumn` sebagai masing-masing **fx:id**.
 
-5. For **each label** in the second column, choose the corresponding **fx:id**.   
+5. Untuk tiap label **each label** di kolom kedua, pilih **fx:id** yang sesuai.   
 ![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png)
 
-6. Important: Go back to Eclipse and **refresh the entire AddressApp project** (F5). This is necessary because Eclipse sometimes doesn't know about changes that were made inside the Scene Builder.
+6.  Penting: Pada Eclipse  **segarkan (F5) keseluruhan proyek AddressApp**. Ini diperlukan karena Eclipse terkadang tidak mengetahuiu adanya perubahan yang dibuat oleh Scene Builder.
 
 
 *****
 
-## Start the Application
+## Memulai Aplikasi
 
-When you start your application now, you should see something like the screenshot at the beginning of this blog post.   
+Ketika kamu memulai aplikasi saat ini, kamu seharusnya melihat tampilan tepat seperti hasil tangkapan layar di awal artikel ini.   
 
-Congratulations!
-
-
-### What's Next?
-
-In [Tutorial Part 3](/library/javafx-8-tutorial/id/part3/) we will add more functionality like adding, deleting and editing Persons.
+Selamat!
 
 
-##### Some other articles you might find interesting
+### Berikutnya?
+
+Di [Tutorial bagian 3](/library/javafx-8-tutorial/id/part3/) kita akan menambah lebih banyak fungsi seperti penambahan, menghapus, memperbaharui Persons.
+
+
+##### Beberapa artikel menarik lainnya
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
