@@ -4,7 +4,6 @@ title: "Tutorial JavaFX 8 - Bagian 1: Scene Builder"
 date: 2014-04-19 01:00
 updated: 2015-01-04 00:00
 slug: javafx-8-tutorial/id/part1
-canonical: /java/javafx-8-tutorial-part1/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id-part1.md
 description: "Learn how to set up a JavaFX project. This is part one of a seven-part tutorial about designing, programming and deploying an address application with JavaFX."
 image: /assets/library/javafx-8-tutorial/part1/addressapp-part1.png

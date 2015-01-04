@@ -4,7 +4,6 @@ title: "Tutorial JavaFX 8 (Bahasa Indonesia)"
 date: 2014-04-19 00:00
 updated: 2015-01-02 00:00
 slug: javafx-8-tutorial/id
-canonical: /java/javafx-8-tutorial-intro/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id.md
 description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
 image: /assets/library/javafx-8-tutorial/addressapp.png
