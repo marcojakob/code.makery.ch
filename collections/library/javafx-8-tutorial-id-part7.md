@@ -41,7 +41,7 @@ sidebars:
     active: true
 - header: "Unduh kode sumber"
   body:
-  - text: Part 7 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+  - text: Bagian 7 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-7.zip
     icon-css: fa fa-fw fa-download
 - header: Bahasa
