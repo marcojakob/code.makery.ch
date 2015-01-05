@@ -1,10 +1,9 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 4: CSS Styling"
+title: "Tutorial JavaFX 8 - Bagian 4: Memberikan gaya dengan CSS"
 date: 2014-04-25 00:00
-updated: 2014-08-27 00:00
+updated: 2015-01-05 00:00
 slug: javafx-8-tutorial/id/part4
-canonical: /java/javafx-8-tutorial-part4/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id-part4.md
 description: "In JavaFX you can style your user interface using CSS. We'll also add an application icon in this tutorial part."
 image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png
@@ -12,39 +11,39 @@ published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Articles in this Series"
+- header: "Seri Artikel"
   body:
-  - text: "Introduction"
+  - text: "Pengenalan"
     link: /library/javafx-8-tutorial/id/
     paging: Intro
-  - text: "Part 1: Scene Builder"
+  - text: "Bagian 1: Scene Builder"
     link: /library/javafx-8-tutorial/id/part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
+  - text: "Bagian 2: Model dan TableView"
     link: /library/javafx-8-tutorial/id/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
+  - text: "Bagian 3: Berinteraksi dengan pengguna"
     link: /library/javafx-8-tutorial/id/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "Bagian 4: Memberikan gaya dengan CSS"
     link: /library/javafx-8-tutorial/id/part4/
     paging: 4
     active: true
-  - text: "Part 5: Storing Data as XML"
+  - text: "Bagian 5: Menyimpan data sebagai XML"
     link: /library/javafx-8-tutorial/id/part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
+  - text: "Bagian 6: Bagan Statistika"
     link: /library/javafx-8-tutorial/id/part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "Bagian 7: Penyebaran"
     link: /library/javafx-8-tutorial/id/part7/
     paging: 7
-- header: "Download Sources"
+- header: "Unduh kode sumber"
   body:
-  - text: Part 4 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+  - text: Bagian 3 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-4.zip
     icon-css: fa fa-fw fa-download
-- header: Languages
+- header: Bahasa
   languages: true
   body:
   - text: English
@@ -68,56 +67,52 @@ sidebars:
     active: true
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs translation to Indonesian. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
-![Screenshot AddressApp Part 4](/assets/library/javafx-8-tutorial/part4/addressapp-part4.png)
+![Tangkapan layar AddressApp bagian 4](/assets/library/javafx-8-tutorial/part4/addressapp-part4.png)
 
 
-## Topics in Part 4
+## Pembahasan di bagian 4
 
-* **CSS Styling**
-* Adding an **Application Icon**
+* **Memberi gaya CSS**
+* Menambah **Ikon Aplikasi**
 
 
 
 *****
 
 
-## CSS Styling 
+## Memberi gaya CSS 
 
-In JavaFX you can style your user interface using Cascading Style Sheets (CSS). This is great! It's never been as easy to customize the appearance of a Java application.
+Di JavaFX anda bisa memberi gaya pada antarmuka pengguna menggunakan Cascading Style Sheet (CSS). Ini adalah hal yang sangat hebat, tidak pernah semudah ini untuk mengubah sesuaikan tampilan JavaFX.
 
-In this tutorial we will create a *DarkTheme* inspired by the Windows 8 Metro design. The css for the buttons is based on the blog post [JMetro - Windows 8 Metro controls on Java](http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/) by Pedro Duque Vieira.
-
-
-### Getting Familiar with CSS
-
-If you want to style your JavaFX application you should have a basic understanding of CSS in general. A good place to start is this [CSS tutorial](http://www.csstutorial.net/).
-
-For more JavaFX specific information about CSS:
-
-* [Skinning JavaFX Applications with CSS](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/css_tutorial.htm) - Tutorial by Oracle
-* [JavaFX CSS Reference](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html) - Official Reference
+Ditutorial ini kita akan membuat *DarkTheme* terinspirasi oleh desain Windows 8 Metro. Css untuk tombol berdasarkan [JMetro - Windows 8 Metro controls on Java](http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/) oleh Pedro Duque Vieira.
 
 
-### Default JavaFX CSS
+### Membuat Terbiasa dengan CSS
 
-The default source for CSS styles in JavaFX 8 is a file called **`modena.css`**. This css file can be found in the Java FX jar file `jfxrt.jar` located in your Java folder under `/jdk1.8.x/jre/lib/ext/jfxrt.jar`.
+Jika anda ingin memberi gaya pada aplikasi JavaFX anda seharusnya memiliki pengetahuan dasar mengenai CSS secara umum. Tempat yang bagus untuk memulainya adalah [CSS tutorial](http://www.csstutorial.net/).
 
-Unzip the `jfxrt.jar`. You should find the `modena.css` under `com/sun/javafx/scene/control/skin/modena/`
+Untuk lebih banyak informasi terkait CSS di JavaFX :
 
-This default style sheet is always applied to a JavaFX application. By adding a custom style sheet we can override the default styles of the `modena.css`.   
+* [Skinning JavaFX Applications with CSS](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/css_tutorial.htm) - Tutorial oleh Oracle
+* [JavaFX CSS Reference](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html) - Referensi Resmi
+
+
+### JavaFX CSS Baku
+
+Sumber CSS baku dalam JavaFX 8 di panggil **`modena.css`**. Berkas css ini dapat di temukan pada berkas `jfxrt.jar` bertempat di folder java yang berlokasi di `/jdk1.8.x/jre/lib/ext/jfxrt.jar`.
+
+Unzip the `jfxrt.jar`. Anda akan menemukan `modena.css` didalam `com/sun/javafx/scene/control/skin/modena/`
+
+Gaya baku ini selalu diterapkan ke aplikasi JavaFX. Dengan menambah CSS yang disesuaikan kita dapat mengesampingkan gaya baku dari `modena.css`.   
 
 <div class="alert alert-info">
-**Hint:** It helps to look at the default CSS file to see which styles you might need to override.
+**Petunjuk:** Akan membantu untuk melihat CSS baku, untuk melihat gaya mana yang perlu untuk dikesampingkan
 </div>
 
 
-### Attaching CSS Style Sheets
+### Melampirkan CSS
 
-Add the following CSS file called `DarkTheme.css` to the *view* package.
+Tambahkan CSS berikut yang bernama `DarkTheme.css`  kedalam paket *view*.
 
 
 ##### DarkTheme.css
@@ -268,79 +263,79 @@ Add the following CSS file called `DarkTheme.css` to the *view* package.
 }
 </pre>
 
-We now need to attach the CSS to our Scene. We could do this programmatically in Java code, but we'll use the Scene Builder to add it to our fxml files: 
+Kita sekarang perlu melampirkan CSS ke Scene. Kita dapat melakukan ini melalui kode, tetapi kita akan menggunakan Scene Builder untuk menambah ke berkas fxml: 
 
 
-#### Attach CSS to RootLayout.fxml
+#### Melampirkan CSS ke RootLayout.fxml
 
-1. Open the file `RootLayout.fxml` in Scene Builder. 
+1. Buka berkas `RootLayout.fxml` di Scene Builder. 
 
-2. Select the root `BorderPane` in the Hierarchy view. Under *Properties* group add the `DarkTheme.css` file as stylesheet.   
-![DarkTheme for RootLayout](/assets/library/javafx-8-tutorial/part4/darktheme-rootlayout.png)
-
-
-#### Attach CSS to PersonEditDialog.fxml
-
-1. Open the file `PersonEditDialog.fxml` in Scene Builder. Select the root `AnchorPane` and choose `DarkTheme.css` in the *Properties* group as stylesheet.
-
-2. The background is still white, so add the Style Class `background` to the root `AnchorPane`.   
-![Add Style Class](/assets/library/javafx-8-tutorial/part4/darktheme-personeditdialog.png)
-
-3. Select the OK button and choose *Default Button* in the Properties View. This will change its color and make this the default button when the *enter* key is pressed by the user.
+2. Pilih akar `BorderPane` di Hierarchy. Dibawah kelompok *Properties* tambah berkas `DarkTheme.css` file as stylesheet.   
+![DarkTheme untuk RootLayout](/assets/library/javafx-8-tutorial/part4/darktheme-rootlayout.png)
 
 
-#### Attach CSS to PersonOverview.fxml
+#### Lampirkan CSS ke PersonEditDialog.fxml
 
-1. Open the file `PersonOverview.fxml` in Scene Builder. Select the root `AnchorPane` in the *Hierarchy* group. Under properties add the `DarkTheme.css` file as stylesheet.
+1. Buka berkas `PersonEditDialog.fxml` di Scene Builder. Pilih akar `AnchorPane` dan pilih `DarkTheme.css` in the kelompok *Properties* sebagai stylesheet.
 
-2. You should already see some changes now: The table and the buttons are black. All class styles `.table-view` and `.button` from `modena.css` apply to the table and buttons. Since we've redefined (and thus overridden) some of those styles in our custom CSS, the new styles are applied automatically.
+2. atar belakang masih berwarna putih, jadi tambah kelas gaya `background` ke akar `AnchorPane`.   
+![Menambah kelas gaya](/assets/library/javafx-8-tutorial/part4/darktheme-personeditdialog.png)
 
-3. You might need to adjust the size of the buttons so that all text is displayed.
+3. Pilih tombol OK dan pilih *Default Button* di tampilan Properties. Ini akan merubah warnah dan membuat tombol baku ketika tombol *enter* ditekan oleh pengguna.
 
-4. Select the right `AnchorPane` that is inside the `SplitPane`.   
+
+#### Lampirkan CSS ke PersonOverview.fxml
+
+1. Buka berkas `PersonOverview.fxml` di Scene Builder. Pilih akar `AnchorPane` pada kelompok *Hierarchy*. Pada Properties tambahkan `DarkTheme.css` sebagai stylesheet.
+
+2. Anda seharusnay melihat beberapa perubahan saat ini. Tabel dan tombol berwarna hitam. Semua kelas gaya `.table-view` dan `.button` dari `modena.css` diterapkan ke tabel dan tombol. Karena kita telah mendefinisikan ulang (dan dengan demikian diganti) beberapa dari gaya di penyesuaian CSS kita, gaya baru akan diterapkan secara otomatis.
+
+3. Anda mungkin perlu menyesuaian ukuran dari tombol sehingga semua teks ditampilkan.
+
+4. Pilih `AnchorPane` yang tepat didalam `SplitPane`.   
 ![Background Style Select](/assets/library/javafx-8-tutorial/part4/background-style-select.png)   
 
-5. Go to the *Properties* group and select `background` as style class. The background should now turn black.   
+5. Pada keompok *Properties* pilih `background` sebagai kelas gaya. Latarbelakang akan berwarna hitam.   
 ![Background Style](/assets/library/javafx-8-tutorial/part4/background-style.png)
 
 
-#### Labels with Different Style
+#### Label dengan Gaya yang berbeda
 
-Right now, all the labels on the right side have the same size. There are already some styles defined in the css file called `.label-header` and `.label-bright` that we'll use to further style the labels.
+Saat ini semua label pada sisi kanan memliki ukuran yang sama. Sudah ada beberapa gaya yang didefinisikan dalam berkas CSS bernama`.label-header` dan `.label-bright` kita akan gunakan ini sebagai gaya.
 
-1. Select the *Person Details* label and add `label-header` as a Style Class.   
+1. Pilih label *Person Details* dan tambahkan `label-header` sebagai kelas gaya.   
 ![Label Header Style](/assets/library/javafx-8-tutorial/part4/label-header-style.png)
 
-2. To each label in the right column (where the actual person details are displayed), add the css Style Class `label-bright`.   
+2. Untuk tiap label di sisi kanan kolom (dimana rinncian person ditampilkan) tambah kelas gaya `label-bright`.   
 ![Label Bright Style](/assets/library/javafx-8-tutorial/part4/label-bright-style.png)
 
 
 *****
 
 
-## Adding an Application Icon
+## Menambah Ikon Aplikasi
 
-Right now our application just has the default icon in the title bar and taks bar:
+Saat ini aplikasi kita hanya memiliki ikon baku di palang judul dan palang tugas:
 
 ![Default Icon](/assets/library/javafx-8-tutorial/part4/default-app-icon.png)
 
-It looks much nicer with a custom icon:
+Akan lebih terlihat lebih baik jika memiliki ikon khusus:
 
 ![Custom Icon](/assets/library/javafx-8-tutorial/part4/custom-app-icon.png)
 
 
-### The Icon File
+### Berkas Ikon
 
-A possible place to get free icons is [Icon Finder](http://www.iconfinder.com). I downloaded a little [address book icon](http://www.iconfinder.com/icondetails/86957/32/).
+Tempat yang memungkinkan untuk mendapatkan ikon2 ada di  [Icon Finder](http://www.iconfinder.com). Saya telah mengunduhe [address book icon](http://www.iconfinder.com/icondetails/86957/32/).
 
-Create a (normal) folder inside your AddressApp project called **resources** and a subfolder called **images** in it. Put the icon of your choice inside the images folder. Your folder structure should look something like this now:
+Buat sebuah folder didalam proyek AddressApp bernama **resources** dan subfolder bernama **images**.Taruh ikon dalam images folder. Struktur folder anda akan terlihat seperti :
 
 ![Custom Icon File](/assets/library/javafx-8-tutorial/part4/custom-icon-file.png)
 
 
-### Set Icon to Scene
+### Atur Ikon Ke Scene
 
-To set the icon for our scene add the following line to the `start(...)` method in `MainApp.java`
+Untuk mengatur ikon pada scene, tambahkan baris berikut pada metode `start(...)` didalam `MainApp.java`
 
 
 ##### MainApp.java
@@ -349,7 +344,7 @@ To set the icon for our scene add the following line to the `start(...)` method 
 this.primaryStage.getIcons().add(new Image("file:resources/images/address_book_32.png"));
 </pre>
 
-The whole `start(...)` method should look something like this now:
+Keseluruhan metode `start(...)` terlihat seperti ini :
 
 <pre class="prettyprint lang-java">
 public void start(Stage primaryStage) {
@@ -365,19 +360,18 @@ public void start(Stage primaryStage) {
 }
 </pre>
 
-You can also add an icon to the stage of the person edit dialog, of course.
+Anda tentunya juga dapat menambah ikon pada stage dari  dialog pembaharuan person:
 
 
-### What's Next?
+### Berikutnya?
 
-In [Tutorial Part 5](/library/javafx-8-tutorial/id/part5/) we will add XML storage for our data.
+Didalam [Tutorial Bagian 5](/library/javafx-8-tutorial/id/part5/) kita akan menggunakan XML sebagai penyimpanan data.
 
 
-##### Some other articles you might find interesting
+##### Beberapa artikel menarik lainnya
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
 * [JavaFX TableView Cell Renderer](/blog/javafx-8-tableview-cell-renderer/)
-

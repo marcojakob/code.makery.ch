@@ -38,9 +38,9 @@ sidebars:
   - text: "Bagian 7: Penyebaran"
     link: /library/javafx-8-tutorial/id/part7/
     paging: 7
-- header: "Unduh kode sumberb"
+- header: "Unduh kode sumber"
   body:
-  - text: Part 1 as Eclipse Project <em>(requires at least JDK 8u20)</em>
+  - text: Bagian 1 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
     icon-css: fa fa-fw fa-download
 - header: Bahasa

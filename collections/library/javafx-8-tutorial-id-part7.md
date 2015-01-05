@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 7: Deployment"
+title: "Tutorial JavaFX 8 - Bagian 7: Penyebaran"
 date: 2014-05-10 00:00
 updated: 2014-08-30 00:00
 slug: javafx-8-tutorial/id/part7
@@ -12,39 +12,39 @@ published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Articles in this Series"
+- header: "Seri Artikel"
   body:
-  - text: "Introduction"
+  - text: "Pengenalan"
     link: /library/javafx-8-tutorial/id/
     paging: Intro
-  - text: "Part 1: Scene Builder"
+  - text: "Bagian 1: Scene Builder"
     link: /library/javafx-8-tutorial/id/part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
+  - text: "Bagian 2: Model dan TableView"
     link: /library/javafx-8-tutorial/id/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
+  - text: "Bagian 3: Berinteraksi dengan pengguna"
     link: /library/javafx-8-tutorial/id/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "Bagian 4: Memberikan gaya dengan CSS"
     link: /library/javafx-8-tutorial/id/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
+  - text: "Bagian 5: Menyimpan data sebagai XML"
     link: /library/javafx-8-tutorial/id/part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
+  - text: "Bagian 6: Bagan Statistika"
     link: /library/javafx-8-tutorial/id/part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "Bagian 7: Penyebaran"
     link: /library/javafx-8-tutorial/id/part7/
     paging: 7
     active: true
-- header: "Download Sources"
+- header: "Unduh kode sumber"
   body:
   - text: Part 7 as Eclipse Project <em>(requires at least JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-7.zip
     icon-css: fa fa-fw fa-download
-- header: Languages
+- header: Bahasa
   languages: true
   body:
   - text: English
