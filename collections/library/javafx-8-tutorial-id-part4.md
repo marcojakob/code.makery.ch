@@ -5,7 +5,7 @@ date: 2014-04-25 00:00
 updated: 2015-01-05 00:00
 slug: javafx-8-tutorial/id/part4
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id-part4.md
-description: "In JavaFX you can style your user interface using CSS. We'll also add an application icon in this tutorial part."
+description: "Di JavaFX anda bisa memberi gaya pada antarmuka pengguna menggunakan CSS. Jika juga akan memberikan ikon aplikasi pada tutorial ini."
 image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png
 published: true
 prettify: true
