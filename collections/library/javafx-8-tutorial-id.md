@@ -62,11 +62,6 @@ sidebars:
     active: true
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> Note: Some parts of this tutorial still need a translation to Indonesian. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
-
 Pada 2012 saya telah menulis [Seri Tutorial JavaFX 2](/java/javafx-2-tutorial-intro/) yang terperinci untuk murid-muridku. Banyak orang dari penjuru dunia telah membaca tutorial ini dan memberi umpan balik yang positif. Lalu saya memutuskan **menulis ulang Tutorial JavaFX 2 untuk JavaFX 8** (baca perubahan di [Pembaharuan javaFX 8 - Apa yang baru](/blog/update-to-javafx-8-whats-new/)).
 
 Tutorial ini menuntun anda melalui merancang, pemrograman dan menggunakan aplikasi alamat. Berikut adalah bentuk akhir aplikasi yang akan terlihat:

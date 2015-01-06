@@ -4,7 +4,6 @@ title: "Tutorial JavaFX 8 - Bagian 7: Penyebaran"
 date: 2014-05-10 00:00
 updated: 2015-01-05 00:00
 slug: javafx-8-tutorial/id/part7
-canonical: /java/javafx-8-tutorial-part7/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id-part7.md
 description: "Bagaimana untuk menyebarkan aplikasi JavaFX sebagai paket asli. Membuat pemasang untuk Windows, MacOS, dan Linux."
 image: /assets/library/javafx-8-tutorial/part7/addressapp-macos.png
