@@ -1,6 +1,6 @@
 {% layout "layout" %}
 
-{% block title %}Blog ({{ mixture.route.tag | uri_decode }}) - {{ global.title }}{% endblock %}
+{% block title %}Blog ({{ mixture.route.tag | uri_decode }}) | {{ global.title }}{% endblock %}
 
 {% block description %}Posts tagged {{ mixture.route.tag | uri_decode }} on {{ global.title }}{% endblock %}
 

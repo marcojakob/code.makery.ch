@@ -1,5 +1,5 @@
 <!doctype html>
-{%- capture head_title %}{{ model.title }} - {{ global.title }}{% endcapture -%}
+{%- capture head_title %}{{ model.title }} | {{ global.title }}{% endcapture -%}
 {%- capture head_canonical -%}
   {%- if model.canonical -%}
       {{- global.domain }}{{ model.canonical -}}
