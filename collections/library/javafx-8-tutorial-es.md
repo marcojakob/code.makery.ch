@@ -72,28 +72,28 @@ El tutorial te guía a lo largo del diseño, programación y publicación de una
 
 ## Lo que aprenderás
 
-* Creando un nuevo projecto JavaFX
-* Usando Scene Builder para diseñar la interfaz de usuario
-* Estructurando una aplicación con el patrón Modelo Vista Controlador (MVC)
-* Uso de `ObservableLists` para la actualización automática de la interfaz de usuario
-* Uso de `TableView` y respuesta a cambios de selección en la table
+* Creación de un nuevo projecto JavaFX
+* Uso de Scene Builder para diseñar la interfaz de usuario
+* Estructuración de una aplicación según el patrón MVC (Modelo, Vista, Controlador)
+* Uso de `ObservableList` para la actualización automática de la interfaz de usuario
+* Uso de `TableView` y respuesta a cambios de selección en la tabla
 * Creación de un diálogo personalizado para editar personas
-* Validando la entrada del usuario
-* Aplicando estilos mediante CSS
+* Validación de la entrada del usuario
+* Aplicación de estilos usando CSS
 * Persistencia de datos mediante XML
-* Guardando el último archivo abierto en las preferencias del usuario
-* Crenado un gráfico JavaFX para mostrar estadísticos
-* Publicación de una aplicación JavaFX nativa
+* Guardado del último archivo abierto en las preferencias de usuario
+* Creación de un gráfico JavaFX para mostrar estadísticas
+* Despliegue de una aplicación JavaFX nativa
 
-Después de completar esta serie de tutoriales deberías estar preparado para construir aplicaciones sofisticadas con JavaFX.
+Después de completar esta serie de tutoriales deberías estar preparado para desarrollar aplicaciones sofisticadas con JavaFX.
 
 
 ## Como usar este tutorial
 
 Hay dos formas de utilizarlo
 
-* **máximo-aprendizaje** Creando tu propio proyecto JavaFX desde cero.
-* **máxima-rápidez** Importa el código fuente de una parte del tutorial en tu entorno de desarrollo (es un proyecto Eclipse, pero puedes usar otros entornos, como Netbeans, con ligeras modificaciones). Después revisa el tutorial para entender el código. Este enfoque también resulta útil si te quedas atascado en la creación de tu propio código.
+* **máximo-aprendizaje**: Crea tu propio proyecto JavaFX desde cero.
+* **máxima-rápidez**: Importa el código fuente de una parte del tutorial en tu entorno de desarrollo favorito (es un proyecto Eclipse, pero puedes usar otros entornos, como Netbeans, con ligeras modificaciones). Después revisa el tutorial para entender el código. Este enfoque también resulta útil si te quedas atascado en la creación de tu propio código.
 
 ¡ Espero que te diviertas y aprendas mucho ! Empieza en  [Part 1: Scene Builder](/library/javafx-8-tutorial/es/part1/).
 
