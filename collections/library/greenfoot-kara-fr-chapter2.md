@@ -402,7 +402,7 @@ Ecrivez une méthode `oneStepUp()` afin que Kara monte une seule marche. Vous de
 
 #### <i class="fa fa-rocket"></i> TÂCHE 2.16 (difficile) : Kara garde forestier
 
-![Task 15](/assets/library/greenfoot-kara/chapter2/task15.png)
+![Task 16](/assets/library/greenfoot-kara/chapter2/task16.png)
 
 Kara doit garder la forêt. Elle doit marcher sans fin tout au tour de la forêt. Pour vous aider, vous pouvez dessiner un diagramme.
 

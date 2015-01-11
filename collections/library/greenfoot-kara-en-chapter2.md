@@ -407,7 +407,7 @@ Write a method `oneStepUp()` to make Kara climb a single step. You need to figur
 
 #### <i class="fa fa-rocket"></i> TASK 2.16 (difficult): Kara as Guard
 
-![Task 15](/assets/library/greenfoot-kara/chapter2/task15.png)
+![Task 16](/assets/library/greenfoot-kara/chapter2/task16.png)
 
 Kara wants to guard the forest. He is endlessly walking along outside the forest. 
 

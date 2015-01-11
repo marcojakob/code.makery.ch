@@ -403,7 +403,7 @@ Schreiben Sie eine Methode `oneStepUp()`, wo Sie Kara eine einzelne Stufe hochst
 
 #### <i class="fa fa-rocket"></i> AUFGABE 2.16 (difficult): Kara als Wächter
 
-![Aufgabe 15](/assets/library/greenfoot-kara/chapter2/task15.png)
+![Aufgabe 16](/assets/library/greenfoot-kara/chapter2/task16.png)
 
 Kara will einen Wald bewachen. Er soll endlos aussen am Waldrand entlang laufen. 
 
