@@ -106,6 +106,7 @@ sidebars:
   <ul>
     <li><a href="https://github.com/KaiYuan-Guo" class="alert-link">KaiYuan Guo</a></li> 
     <li><a href="https://github.com/linychuo" class="alert-link">LiYongchao</a></li>
+    <li><a href="https://github.com/fairjm" class="alert-link">Fairjm</a></li>
   </ul>
   Thank you very much!
 </div>
