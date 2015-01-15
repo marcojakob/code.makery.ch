@@ -217,7 +217,7 @@ public class Person {
 
 ### 解释
 
-* With JavaFX it's common to use [`Properties`](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html) for all fields of a model class. A `Property` allow us, for example, to automatically be notified when the `lastName` or any other variable is changed. 这有助于我们保持视图与数据的同步，阅读 [Using JavaFX Properties and Binding](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm) 学习更多关于 `Properties` 的内容。
+* 在JavaFX中,对一个模型类的所有属性使用 [`Properties`](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html)是很常见的. 一个 `Property` 允许我们, 打个比方, 当 `lastName` 或其他属性被改变时自动收到通知, 这有助于我们保持视图与数据的同步，阅读 [Using JavaFX Properties and Binding](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm) 学习更多关于 `Properties` 的内容。
 * [`LocalDate`](http://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html), 我们使用了 `birthday` 类型, 这是一个新的部分在 [Date and Time API for JDK 8](http://docs.oracle.com/javase/tutorial/datetime/iso/).
 
 
@@ -225,14 +225,15 @@ public class Person {
 
 ## 人员列表
 
-The main Data that our application manages, is a bunch of persons.让我们在 `MainApp` 类里面创建一个 `Person` 对象的列表。稍后其他所有的控制器类将存取 `MainApp` 的核心列表。
+我们的应用主要管理的数据是一群人的信息.让我们在 `MainApp` 类里面创建一个 `Person` 对象的列表。稍后其他所有的控制器类将存取 `MainApp` 的核心列表。
 
 
 ### ObservableList
 
-We are working with JavaFX view classes that need to be informed about any changes made to the list of persons. This is important, since otherwise the view would not be in sync with the data. For this purpose, JavaFX introduces some new [Collection classes](http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm). 
+我们处理JavaFX的view classes需要在人员列表发生任何改变时都被通知.
+这是很重要的,不然视图就会和数据不同步.为了达到这个目的,JavaFX引入了一些新的[集合类](http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm). 
 
-From those collections, we need the `ObservableList`. To create a new `ObservableList`, add the following code at the beginning of the `MainApp` class. We'll also add a constructor that creates some sample data and a public getter method:
+在这些集合中, 我们需要的是`ObservableList`. 将以下代码增加到`MainApp`类的开头去创建一个新的`ObservableList`. 我们也会增加一个构造器去创建一些样本数据和一个公共的getter方法:
 
 
 ##### MainApp.java
@@ -278,13 +279,13 @@ From those collections, we need the `ObservableList`. To create a new `Observabl
 
 ## The PersonOverviewController ##
 
-Now let's finally get some data into our table. We'll need a controller for our `PersonOverview.fxml`.
+现在我们终于要将数据加入到表格中了,我们需要一个控制器为了`PersonOverview.fxml`,.
 
-1. Create a normal class inside the **view** package called `PersonOverviewController.java`. (We must put it in the same package as the `PersonOverview.fxml`, otherwise the SceneBuilder won't find it - at least not in the current version).
-2. We'll add some instance variables that give us access to the table and the labels inside the view. The fields and some methods have a special `@FXML` annotation. This is necessary for the fxml file to have access to private fields and private methods. After we have everything set up in the fxml file, the application will automatically fill the variables when the fxml file is loaded. So let's add the following code:
+1. 在**view**包下创建一个名为 `PersonOverviewController.java`的普通java类(我们需要将这个类放在和`PersonOverview.fxml`相同的包下, 不然SceneBuilder会找不到它 - 至少在当前的版本).
+2. 我们需要增加一些实例变量来访问表格和在视图中的标签.这些属性和一些方法有一个特殊的 `@FXML` 注解. 这对于fxml文件访问私有属性和私有方法来说是必需的. 当将一切都在fxml文件中设置好之后, 应用程序会在fxml文件被载入时自动地填充这些变量. 让我们添加以下的代码:
 
 <div class="alert alert-info">
-**Note:** Remember to always use the **javafx imports**, NOT awt or swing!
+**Note:** 记住要使用 **javafx imports**, 而不是awt和swing!
 </div>
 
 
@@ -357,16 +358,16 @@ public class PersonOverviewController {
 </pre>
 
 
-Now this code will probably need some explaining:
+可能需要解释一下这段代码:
 
-* All fields and methods where the fxml file needs access must be annotated with `@FXML`. Actually, only if they are private, but it's better to have them private and mark them with the annotation!
-* The `initialize()` method is automatically called after the fxml file has been loaded. At this time, all the FXML fields should have been initialized already.
-* The `setCellValueFactory(...)` that we set on the table colums are used to determine which field inside the `Person` objects should be used for the particular column. The arrow `->` indicates that we're using a Java 8 feature called *Lambdas*. (Another option would be to use a [PropertyValueFactory](http://docs.oracle.com/javase/8/javafx/api/), but this is not type-safe).
+* 所有fxml文件需要访问的属性和方法必须加上 `@FXML` 注解.实际上,只有在私有的情况下才需要, 但是让它们保持私有并且用注解标记的方式更好!
+* `initialize()` 方法在fxml文件完成载入时被自动调用. 那时, 所有的FXML属性都应已被初始化.
+* 我们在表格列上使用`setCellValueFactory(...)` 来确定为特定列使用`Person`对象的某个属性. 箭头 `->` 表示我们在使用Java 8的 *Lambdas* 特性. (另一个选择是使用 [PropertyValueFactory](http://docs.oracle.com/javase/8/javafx/api/), 但它不是类型安全的).
 
 
-### Connecting MainApp with the PersonOverviewController
+### 连接 MainApp 和 PersonOverviewController
 
-The `setMainApp(...)` method must be called by the `MainApp` class. This gives us a way to access the `MainApp` object and get the list of `Persons` and other things. Replace the `showPersonOverview()` method with the following. It contains two additional lines:
+ `setMainApp(...)` 必须被 `MainApp` 类调用. 这让我们可以访问`MainApp`对象并得到`Persons`的列表和其他东西. 用以下代码替换`showPersonOverview()` 方法. 它包含了新增的两行:
 
 
 ##### MainApp.java - new showPersonOverview() method
@@ -400,41 +401,41 @@ public void showPersonOverview() {
 *****
 
 
-## Hook the View to the Controller
+## 将View与Controller挂钩
 
-We're almost there! But one little thing is missing: We haven't told our `PersonOverview.fxml` file yet, which controller to use and which element should match to which field inside the controller.
+我们快要完成了! 但是有件小事被遗漏了: 至今没有告诉 `PersonOverview.fxml`使用的是哪个控制器以及元素与控制器中的属性的对应关系.
 
-1. Open `PersonOverview.fxml` with the *SceneBuilder*.
+1. 使用*SceneBuilder* 打开 `PersonOverview.fxml`.
 
-2. Open the *Controller* group on the left side and select the `PersonOverviewController` as **controller class**.   
-![Set Controller Class](/assets/library/javafx-8-tutorial/part2/set-controller-class.png)
+2. 打开左边的 *Controller* 组选择`PersonOverviewController` 作为 **controller class**.   
+![Set Controller Class(设置控制器类)](/assets/library/javafx-8-tutorial/part2/set-controller-class.png)
 
-3. Select the `TableView` in the *Hierarchy* group and choose in the *Code* group the `personTable` field as **fx:id**.   
+3. 在 *Hierarchy* 组选择`TableView` 并选择 *Code* 组将 `personTable` 作为 **fx:id**.   
 ![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png)
 
-4. Do the same for the columns and select `firstNameColumn` and `lastNameColumn` as **fx:id** respectively.
+4. 对列做相同的事并且将 `firstNameColumn` and `lastNameColumn`分别作为 **fx:id** .
 
-5. For **each label** in the second column, choose the corresponding **fx:id**.   
+5. 对在第二列的 **each label** , 选择对应的 **fx:id**.   
 ![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png)
 
-6. Important: Go back to Eclipse and **refresh the entire AddressApp project** (F5). This is necessary because Eclipse sometimes doesn't know about changes that were made inside the Scene Builder.
+6. 重要事项: 回到eclipse并且 **refresh the entire AddressApp project** (F5). 这是必要的因为有时候eclipse并不知道在Scene Builder中作出的改变.
 
 
 *****
 
-## Start the Application
+## 启动应用程序
 
-When you start your application now, you should see something like the screenshot at the beginning of this blog post.   
+当你现在启动了你的应用,你应该看到了类似这篇博客开头的截图的程序界面.   
 
-Congratulations!
-
-
-### What's Next?
-
-In [Tutorial Part 3](/library/javafx-8-tutorial/zh-cn/part3/) we will add more functionality like adding, deleting and editing Persons.
+恭喜!
 
 
-##### Some other articles you might find interesting
+### 接下去做什么?
+
+在 [Tutorial Part 3](/library/javafx-8-tutorial/zh-cn/part3/) 我们将加入增加,删除和编辑人员的功能.
+
+
+##### 一些你可能感兴趣的其他文章
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
