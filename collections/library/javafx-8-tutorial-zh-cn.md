@@ -63,7 +63,7 @@ sidebars:
 ---
 
 <div class="alert alert-warning">
-  <i class="fa fa-language"></i> Note: Some parts of this tutorial still need a translation to Chinese (Simplified). If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
+  <i class="fa fa-language"></i> Note: Some parts of this tutorial ([Part 3](/library/javafx-8-tutorial/zh-cn/part3/) and [Part 4](/library/javafx-8-tutorial/zh-cn/part4/)) still need a translation to Chinese (Simplified). If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
 </div>
 
 
@@ -107,6 +107,7 @@ sidebars:
     <li><a href="https://github.com/KaiYuan-Guo" class="alert-link">KaiYuan Guo</a></li> 
     <li><a href="https://github.com/linychuo" class="alert-link">LiYongchao</a></li>
     <li><a href="https://github.com/fairjm" class="alert-link">Fairjm</a></li>
+    <li><a href="https://github.com/shfhp" class="alert-link">Haiping Fan</a></li>
   </ul>
   Thank you very much!
 </div>

@@ -2,9 +2,8 @@
 layout: article
 title: "JavaFX 8 教程 - 第六部分：统计图"
 date: 2014-10-08 00:00
-updated: 2014-10-08 00:00
+updated: 2015-01-16 00:00
 slug: javafx-8-tutorial/zh-cn/part6
-canonical: /java/javafx-8-tutorial-part6/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part6.md
 description: "Learn how to create a JavaFX Bar Chart."
 image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
@@ -39,7 +38,7 @@ sidebars:
   - text: "第七部分：部署"
     link: /library/javafx-8-tutorial/zh-cn/part7/
     paging: 7
-- header: "Download Sources"
+- header: "下载源代码"
   body:
   - text: Part 6 as Eclipse Project <em>(requires at least JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-6.zip
@@ -67,10 +66,6 @@ sidebars:
     link: /library/javafx-8-tutorial/id/part6/
     icon-css: fa fa-fw fa-globe
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs translation to Chinese (Simplified). If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
 
 ![Screenshot AddressApp Part 6](/assets/library/javafx-8-tutorial/part6/addressapp-part6.png)
 

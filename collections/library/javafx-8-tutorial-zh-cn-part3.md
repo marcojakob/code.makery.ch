@@ -39,7 +39,7 @@ sidebars:
   - text: "第七部分：部署"
     link: /library/javafx-8-tutorial/zh-cn/part7/
     paging: 7
-- header: "Download Sources"
+- header: "下载源代码"
   body:
   - text: Part 3 as Eclipse Project <em>(requires at least JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-3.zip

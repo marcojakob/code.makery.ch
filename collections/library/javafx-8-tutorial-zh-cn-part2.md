@@ -2,7 +2,7 @@
 layout: article
 title: "JavaFX 8 教程 - 第二部分：Model 和 TableView"
 date: 2014-10-08 00:00
-updated: 2014-10-08 00:00
+updated: 2015-01-15 00:00
 slug: javafx-8-tutorial/zh-cn/part2
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part2.md
 description: "Use a JavaFX TableView to display an ObservableList of Persons."
@@ -38,7 +38,7 @@ sidebars:
   - text: "第七部分：部署"
     link: /library/javafx-8-tutorial/zh-cn/part7/
     paging: 7
-- header: "Download Sources"
+- header: "下载源代码"
   body:
   - text: Part 2 as Eclipse Project <em>(requires at least JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-2.zip
