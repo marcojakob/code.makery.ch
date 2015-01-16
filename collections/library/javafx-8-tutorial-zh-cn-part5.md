@@ -75,27 +75,27 @@ sidebars:
 ![Screenshot AddressApp Part 5](/assets/library/javafx-8-tutorial/part5/addressapp-part5.png)
 
 
-## Topics in Part 5
+## 第5部分的主题
 
-* **Persisting data as XML**
-* Using the JavaFX **FileChooser**
-* Using the JavaFX **Menu**
-* Saving the last opened file path in **user preferences**
+* **持久化数据为XML**
+* 使用JavaFX的**FileChooser**
+* 使用JavaFX的**菜单**
+* 在**用户设置**中保存最后打开的文件路径。
 
 
 
 *****
 
-At the moment our address application's data only resides in memory. Every time we close the application, the data is lost. So it's about time to start thinking about persistently storing data.
+现在我们的地址应用程序的数据只保存在内存中。每次我们关闭应用程序，数据将丢失，因此是时候开始考虑持久化存储数据了。
 
 
-## Saving User Preferences
+## 保存用户设置
 
-Java allows us to save some application state using a class called `Preferences`. Depending on the operating system, the `Preferences` are saved in different places (e.g. the registry file in Windows).
+Java允许我们使用`Preferences`类保存一些应用状态。依赖于操作系统，`Perferences`保存在不同的地方（例如：Windows中的注册文件）。
 
-We won't be able to use `Preferences` to store our entire address book. But it allows us to **save some simple application state**. One such thing is the **path to the last opened file**. With this information we could load the last application state whenever the user restarts the application.
+我们不能使用`Preferences`来保存全部地址簿。但是它允许我们**保存一些简单的应用状态**。一件这样事情是**最后打开文件的路径**。使用这个信息，我们能加载最后应用的状态，不管用户什么时候重启应用程序。
 
-The following two methods take care of saving and retrieving Preferences. Add them to the end of your `MainApp` class:
+下面两个方法用于保存和检索Preference。添加它们到你的`MainApp`类的最后：
 
 
 ##### MainApp.java
@@ -141,15 +141,15 @@ public void setPersonFilePath(File file) {
 </pre>
 
 
-## Persisting Data as XML
+## 持久性数据到XML
 
-### Why XML?
+### 为什么是XML？
 
-One of the most common ways to persist data is using a database. Databases usually contain some kind of relational data (like tables) while the data we need to save are objects. This is called the [object-relational impedance mismatch](http://wikipedia.org/wiki/Object-relational_impedance_mismatch). It is quite some work to match objects to relational database tables. There are some frameworks that help with the matching (e.g. [Hibernate](http://www.hibernate.org/), the most popular one) but it still requires quite some work to set up.
+持久性数据的一种最常用的方法是使用数据库。数据库通常包含一些类型的关系数据（例如：表），当我们需要保存的数据是对象时。这称[object-relational impedance mismatch](http://wikipedia.org/wiki/Object-relational_impedance_mismatch)。匹配对象到关系型数据库表有很多工作要做。这里有一些框架帮助我们匹配（例如：[Hibernate](http://www.hibernate.org/)，最流行的一个）。但是它仍然需要相当多的设置工作。
 
-For our simple data model it's much easier to use XML. We'll use a library called [JAXB](https://jaxb.java.net/) (**J**ava **A**rchitecture for **X**ML **B**inding). With just a few lines of code JAXB will allow us to generate XML output like this:
+对于简单的数据模型，非常容易使用XML。我们使用称为[JAXB](https://jaxb.java.net/)（**J**ava **A**rchitecture for **X**ML **B**inding）的库。只需要几行代码，JAXB将允许我们生成XML输出，如下所示：
 
-##### Example xml output
+##### 示例XML输出
 
 <pre class="prettyprint lang-xml">
 &lt;persons&gt;
@@ -175,20 +175,20 @@ For our simple data model it's much easier to use XML. We'll use a library calle
 
 
 
-### Using JAXB
+### 使用JAXB
 
-JAXB is already included in the JDK. That means we don't need to include any additional library.
+JAXB已经包含在JDK中。这意味着我们不需要包含任何其它的库。
 
-JAXB provides two main features: the ability to **marshal** Java objects into XML and to **unmarshal** XML back into Java objects.
+JAXB提供两个主要特征：**编列(marshal)**Java对象到XML的能力，**反编列(unmarshal)**XML到Java对象。
 
-For JAXB to be able to do the conversion, we need to prepare our model.
+为了让JAXB能够做转换，我们需要准备我们的模型。
 
 
-#### Preparing the Model Class for JAXB 
+#### 准备JAXB的模型类 
 
-Our data that we want to save resides in the `personData` variable inside our `MainApp` class. JAXB requires the top most class to be annotated with `@XmlRootElement`. `personData` is of class `ObservableList` and we can't put any annotations to `ObservableList`. So we need to create another class that is only used to hold our list of `Persons` for saving to XML. 
+我们希望保持的数据位于`MainApp`类的`personData`变量中。JAXB要求使用`@XmlRootElement`注释作为最顶层的类。`personData`是`ObservableList`类，我们不能把任何注释放到`ObservableList`上。因此，我们需要创建另外一个类，它只用于保存`Person`列表，用于存储成XML文件。
 
-The new class we create is called `PersonListWrapper` and is put into the `ch.makery.address.model` package.
+创建的新类名为`PersonListWrapper`，把它放入到`ch.makery.address.model`包中。
 
 
 ##### PersonListWrapper.java
@@ -223,15 +223,15 @@ public class PersonListWrapper {
 }
 </pre>
 
-Notice the two annotations: 
+注意两个注释： 
 
-* `@XmlRootElement` defines the name of the root element.
-* `@XmlElement` is an optional name we can specify for the element.
+* `@XmlRootElement` 定义根元素的名称。
+* `@XmlElement` 一个可选的名称，用来指定元素。
 
 
-#### Reading and Writing Data with JAXB
+#### 使用JAXB读写数据
 
-We'll make our `MainApp` class responsible for reading and writing the person data. Add the following two methods to the end of `MainApp.java`:
+我们让`MainApp`类负责读写人员数据。添加下面两个方法到`MainApp.java`的最后：
 
 
 <pre class="prettyprint lang-java">
@@ -293,25 +293,25 @@ public void savePersonDataToFile(File file) {
 }
 </pre>
 
-The marshalling/unmarshalling is ready. Let's create the save/load menu to actually be able to use it.
+*编组和解组*已经准备好，让我们创建保存和加载的菜单实际的使用它。
 
 
-## Handling Menu Actions
+## 处理菜单响应
 
-In our `RootLayout.fxml` there is already a menu, but we haven't used it yet. Before we add action to the menu we'll first create all menu items.
+在我们`RootLayout.fxml`中，这里已经有一个菜单，但是我们没有使用它。在我们添加响应到菜单中之前，我们首先创建所有的菜单项。
 
-Open the `RootLayout.fxml` file in Scene Builder and drag the necessary menu items from the *library* group to the `MenuBar` bar in the *hierarchy* group. Create a **New**, **Open...**, **Save**, **Save As...**, and **Exit** menu item.
+在Scene Builder中打开`RootLayout.fxml`，从*library*组中拖曳必要的菜单到*Hierarchy*组的`MemuBar`中。创建**New**，**Open…**，**Save**，**Save As…**和**Exit**菜单项。
 
-![Add Menu Items](/assets/library/javafx-8-tutorial/part5/add-menu-items.png)
+![添加菜单项](/assets/library/javafx-8-tutorial/part5/add-menu-items.png)
 
-Hint: Using the *Accelerator* setting under the *Properties* group you can set shortcut keys to menu items.
+提示：使用*Properties*组下的*Accelerator*设置，你能设置菜单项的快捷键。
 
 
-### The RootLayoutController
+### RootLayoutController
 
-For handling menu actions we'll need a new controller class. Create a class `RootLayoutController` inside the controller package `ch.makery.address.view`. 
+为了处理菜单动作，我们需要创建一个新的控制器类。在控制器包`ch.makery.address.view`中创建一个类`RootLayoutController`。
 
-Add the following content to the controller:
+添加下面的内容到控制器中：
 
 
 ##### RootLayoutController.java
@@ -441,28 +441,27 @@ public class RootLayoutController {
 
 #### FileChooser
 
-Take note of the methods that use the `FileChooser` class inside `RootLayoutController` above. First, a new object of the class `FileChooser` is created. Then, an extension filter is added so that only files ending in `.xml` are displayed. Finally, the file chooser is displayed on top of the primary stage.
+注意在上面的`RootLayoutController`中使用`FileCooser`的方法。首先，创建新的`FileChooser`类对象的，然后，添加扩展名过滤器，以至于只显示以`.xml`结尾的文件。最后，文件选择器显示在主Stage的上面。
 
-If the user closes the dialog without choosing a file, `null` is returned. Otherwise, we get the selected file and we can pass it to the `loadPersonDataFromFile(...)` or `savePersonDataToFile(...)` method of `MainApp`. 
+如果用户没有选择一个文件关闭对话框，返回`null`。否则，我们获得选择的文件，我们能传递它到`MainApp`的`loadPersonDataFromFile(…)`或`savePersonDataToFile()`方法中。
+
+### 连接fxml视图到控制器
+
+1. 在Scene Builder中打开`RootLayout.fxml`。在*Controller*组中选择`RootLayoutController`作为控制器类。
+
+2. 回到*Hierarchy*组中，选择一个菜单项。在*Code*组中**On Action**下，应该看到所有可用控制器方法的选择。为每个菜单项选择响应的方法。  
+![菜单动作](/assets/library/javafx-8-tutorial/part5/menu-actions.png)
+
+3. 为每个菜单项重复第2步。
+
+4. 关闭Scene Builder，并且在项目的根目录上按下**刷新F5**。这让Eclipse知道在Scene Builder中所做的修改。
 
 
-### Connecting the fxml View to the Controller
+### 连接MainApp和RootLayoutController
 
-1. Open `RootLayout.fxml` in Scene Builder. In the *Controller* group select the `RootLayoutController` as Controller class. 
+在几个地方，`RootLayoutController`需要引用`MainApp`类。我们也没有传递一个`MainApp`的引用到`RootLayoutController`。
 
-2. Go back to the *Hierarchy* group and select a menu item. In the *Code* group under **On Action** you should see a choice of all the available controller methods. Choose the corresponding method for each menu item.   
-![Menu Actions](/assets/library/javafx-8-tutorial/part5/menu-actions.png)
-
-3. Repeat the steps for every menu item.
-
-4. Close Scene Builder and hit **Refresh (F5)** on your project's root folder. This will make Eclipse aware of the changes you made in Scene Builder.
-
-
-### Connecting the MainApp and RootLayoutController
-
-In several places, the `RootLayoutController` needs a reference back to the `MainApp`. We haven't passed the reference to the `RootLayoutController` yet.
-
-Open the `MainApp` class and replace the `initRootLayout()` method with the following code:
+打开`MainApp`类，使用下面的替代`initRootLayout()`方法：
 
 <pre class="prettyprint lang-java">
 /**
@@ -498,16 +497,16 @@ public void initRootLayout() {
 }
 </pre>
 
-Notice the two changes: The lines that *give the controller access to the main app* and the last three lines to *load the last opened person file*.
+注意两个修改：一行*给控制器访问MainApp*和最后三行*加载最新打开的人员文件*。
 
 
-### Testing
+### 测试
 
-Doing a test drive of your application you should be able to use the menus to save the person data to a file. 
+做应用程序的测试驱动，你应该能够使用菜单保存人员数据到文件中。
 
-When you open the `xml` file in an editor you will notice that the birthday is not saved correctly, it's an empty `<birthday/>` tag. The reason is that JAXB does not know how to convert the `LocalDate` to XML. We must provide a custom `LocalDateAdapter` to define this conversion.
+当你在编辑器中打开一个`xml`文件，你将注意到生日没有正确保存，这是一个空的`<birthday/>`标签。原因是JAXB不只奥如何转换`LocalDate`到XML。我们必须提供一个自定义的`LocalDateAdapter`定义这个转换。
 
-Create a new class inside `ch.makery.address.util` called `LocalDateAdapter` with the following content:
+在`ch.makery.address.util`中创建新的类，称为`LocalDateAdapter`，内容如下：
 
 ##### LocalDateAdapter.java
 
@@ -538,7 +537,7 @@ public class LocalDateAdapter extends XmlAdapter&lt;String, LocalDate> {
 }
 </pre>
 
-Then open `Person.java` and add the following annotation to the `getBirthday()` method:
+然后打开`Person.jar`，添加下面的注释到`getBirthday()`方法上：
 
 <pre class="prettyprint lang-java">
 @XmlJavaTypeAdapter(LocalDateAdapter.class)
@@ -547,28 +546,28 @@ public LocalDate getBirthday() {
 }
 </pre>
 
-Now, test again. Try saving and loading the xml file. After a restart, it should automatically load the last used file.
+现在，再次测试。试着保存和加载XML文件。在重启之后，它应该自动加载最后使用的文件。
 
 
 
-## How It Works
+## 它如何工作
 
 
-Let's see how it all works together:
+让我们看下它是如何一起工作的：
 
-1. The application is started using the `main(...)` method inside `MainApp`.
-2. The constructor `public MainApp()` is called and adds some sample data.
-3. `MainApp`s `start(...)` method is called and calls `initRootLayout()` to initialize the root layout from `RootLayout.fxml`. The fxml file has the information about which controller to use and links the view to its `RootLayoutController`. 
-4. The `MainApp` gets the `RootLayoutController` from the fxml loader and passes a reference to itself to the controller. With this reference the controller can later access the (public) methods of `MainApp`.
-5. At the end of the `initRootLayout()` method we try to get the *last opened person file* from `Preferences`. If the `Preferences` know about such an XML file, we'll load the data from this XML file. This will apparently overwrite the sample data from the constructor. 
-
-
-### What's Next?
-
-In Tutorial [Part 6](/library/javafx-8-tutorial/zh-cn/part6/) we'll add a birthday statistics chart.
+1. 应用程序使用`MainApp`中的`main(…)`方法启动。
+2. 调用`public MainApp()`构造函数添加一些样例数据。
+3. 调用`MainApp`的`start(…)`方法，调用`initRootLayout()`从`RootLayout.fxml`中初始化根布局。fxml文件有关于使用控制器的信息，连接视图到`RootLayoutController`。
+4. `MainApp`从fxml加载器中获取`RootLayoutController`，传递自己的引用到控制器中。使用这些引用，控制器随后可以访问`MainApp`的公开方法。
+5. 在`initRootLayout`方法结束，我们试着从`Perferences`中获取*最后打开的人员文件*。如果`Perferences`知道有这样一个XML文件，我们将从这个XML文件中加载数据。这显然会覆盖掉构造函数中的样例数据。
 
 
-##### Some other articles you might find interesting
+### 下一步是什么？
+
+在本教程的[第6部分](/library/javafx-8-tutorial/zh-cn/part6/)，我们添加一个*生日统计图表*。
+
+
+##### 一些其它你可能感兴趣的文章
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
