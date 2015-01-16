@@ -75,43 +75,43 @@ sidebars:
 ![Screenshot AddressApp Part 6](/assets/library/javafx-8-tutorial/part6/addressapp-part6.png)
 
 
-## Topics in Part 6
+## 第6部分的主题
 
-* Creating a **Statistics Chart** to display birthday distribution.
+* 创建一个**统计图**显示生日的分布。
 
 
 *****
 
-## Birthday Statistics
+## 生日统计
 
-All our people in the AddressApp have a birthday. Wouldn't it be nice to have some statistics about when our people celebrate their birthday.
+在AddressApp中所有人员都有生日。当我们人员庆祝他们生日的时候，如果有一些生日的统计不是会更好。
 
-We'll use a **Bar Chart** containing a bar for each month. Each bar shows how many people have their birthday in that particular month.
-
-
-## The Statistics FXML View
-
-1. We start by creating a `BirthdayStatistics.fxml` file inside our `ch.makery.address.view` package (*Right-click on package | New | other... | New FXML Document*).   
-![Birthday Statistics FXML](/assets/library/javafx-8-tutorial/part6/birthday-statistics-fxml.png)
-
-2. Open the `BirthdayStatistics.fxml` file in Scene Builder.
-
-3. Select the root `AnchorPane`. In the *Layout* group set the *Pref Width* to 620 and the *Pref Height* to 450.
-
-4. Add a `BarChart` to the `AnchorPane`.
-
-5. Right-click on the `BarChart` and select *Fit to Parent*.
-
-6. Save the fxml file, go to Eclipse and refresh the project.
-
-Before we'll come back to Scene Builder we'll first create the controller and wire everything up in our `MainApp`.
+我们使用**柱状图**，包含每个月的一个条形。每个条形显示在指定月份中有多少人需要过生日。
 
 
-## The Statistics Controller
+## 统计FXML视图
 
-In the view package `ch.makery.address.view` create a Java class called `BirthdayStatisticsController.java`.
+1. 在`ch.makery.address.view`包中我们开始创建一个`BirthdayStatistics.fxml`（*右击包|New|other..|New FXML Document*）
+![生日统计FXML](/assets/library/javafx-8-tutorial/part6/birthday-statistics-fxml.png)
 
-Let's first take a look at the entire controller class before I start explaining:
+2. 在Scene Builder中打开`BirthdayStatistics.fxml`文件。
+
+3. 选择根节点`AnchorPane`。在*Layout*组中设置*Pref Width*为620，*Pref Height*为450。
+
+4. 添加`BarChart`到`AnchorPane`中。
+
+5. 右击`BarChart`并且选择*Fit to Parent*。
+
+6. 保存fxml文件，进入到Eclipse中，F5刷新项目。
+
+在我们返回到Scene Builder之前，我们首先创建控制器，并且在我们的`MainApp`中准备好一切。
+
+
+## 统计控制器
+
+在view包 `ch.makery.address.view`中创建一个Java类，称为`BirthdayStatisticsController.java`。
+
+在开始解释之前，让我们看下整个控制器类。
 
 
 ##### BirthdayStatisticsController.java
@@ -188,42 +188,43 @@ public class BirthdayStatisticsController {
 </pre>
 
 
-#### How the Controller Works
+#### 控制器如何工作
 
-1. The controller will need access to two elements from our FXML file:
-   * The `barChar`: It has the type `String` and `Integer`. The `String` is used for the month on the x-axis and the `Integer` is used for the number of people in a specific month. 
-   * The `xAxis`: We'll use this to add the month Strings.   
+1.  控制器需要从FXML文件中访问两个元素:
 
-2. The `initialize()` method fills the x-axis with a list of all the months.
+   * `barChar`：它有`String`和`Integer`类型。`String`用于x轴上的月份，`Integer`用于指定月份中人员的数量。
+   * `xAxis`：我们使用它添加月字符串
 
-3. The `setPersonData(...)` method will be accessed by the `MainApp` class to set the person data. It loops through all persons and counts the birthdays per month. Then it adds `XYChart.Data` for every month to the data series. Each `XYChart.Data` object will represent one bar in the chart.
+2. `initialize()` 方法使用所有月的列表填充`x-axis`。
 
-
-*****
-
-## Connecting View and Controller
-
-1. Open `BirthdayStatistics.fxml` in Scene Builder.
-
-2. In the *Controller* group set `BirthdayStatisticsController` as controller.
-
-3. Select the `BarChart` and choose `barChart` as fx:id Property (in the *Code* group).
-
-4. Select the `CategoryAxis` and choose `xAxis` as fx:id Property.   
-![Category Axis](/assets/library/javafx-8-tutorial/part6/category-axis.png)
-
-5. You may add a title to the `BarChart` (in *Properties* group) for further styling.
-
+3. `setPersonData(…)`方法将由`MainApp`访问，设置人员数据。它遍历所有人员，统计出每个月生日的人数。然后它为每个月添加`XYChart.Data`到数据序列中。每个`XYChart.Data`对象在图表中表示一个条形。
 
 
 *****
 
+## 连接视图和控制器
 
-## Connecting the View/Controller with MainApp
+1. 在Scene Builder中打开`BirthdayStatistics.fxml`。
 
-We'll use the same mechanism for our *birthday statistics* that we used for the *edit person dialog*, a simple popup dialog.
+2. 在**Controller**组中设置`BirthdayStatisticsController`为控制器。
 
-Add the following method to your `MainApp` class:
+3. 选择`BarChart`，并且选择`barChar`作为fx:id属性（在*Code*组中）
+
+4. 选择`CategoryAxis`，并且选择`xAxis`作为fx:id属性。  
+![类别轴](/assets/library/javafx-8-tutorial/part6/category-axis.png)
+
+5. 你可以添加一个标题给`BarChar`（在*Properties*组中）进一步修饰。
+
+
+
+*****
+
+
+## 连接View/Controller和MainApp
+
+我们为*生日统计*使用与*编辑人员对话框*相同的机制，一个简单的弹出对话框。
+
+添加下面的方法到`MainApp`类中
 
 
 <pre class="prettyprint lang-java">
@@ -255,12 +256,12 @@ public void showBirthdayStatistics() {
 }
 </pre>
 
-Everything is set up, but we don't have anything that actually calls the new `showBirthdayStatistics()` method. Luckily we already have a menu in `RootLayout.fxml` that can be used for this purpose.
+一切设置完毕，但是我们没有任何东西实际上调用新的`showBirthdayStatistics()`方法。幸运的是我们已经在`RootLayout.fxml`中有一个菜单，它可以用于这个目的。
 
 
-### Show Birthday Statistics Menu
+### 显示生日统计菜单
 
-In your `RootLayoutController` add the following method which will handle user clicks on the *show birthday statistics* menu item: 
+在`RootLayoutController`中添加下面的方法，它将处理*显示生日统计*菜单项的用户点击。
 
 <pre class="prettyprint lang-java">
 /**
@@ -272,30 +273,30 @@ private void handleShowBirthdayStatistics() {
 }
 </pre>
 
-Now, open the `RootLayout.fxml` file with Scene Builder. Create the *Statistics* `Menu` with a *Show Statistics* `MenuItem`:
+现在，使用Scene Builder打开`RootLayout.fxml`文件。创建*Staticstic* `菜单`，带有一个*Show Statistcs* `MenuItem`:
 
-![Show Statistics Menu](/assets/library/javafx-8-tutorial/part6/show-statistics-menu.png)
+![Show Statistics菜单](/assets/library/javafx-8-tutorial/part6/show-statistics-menu.png)
 
-Select the *Show Statistics* `MenuItem` and choose `handleShowBirthdayStatistics` for `On Action` (in *Code* group)   
+选择*Show Statistics* `MenuItem`，并且选择`handleShowBirthdayStatistics`作为`On Action`（在*Code*组中）。  
 
 ![Show Statistics On Action](/assets/library/javafx-8-tutorial/part6/show-statistics-on-action.png)
 
-Go to Eclipse, refresh the project and **test it**.
+进入到Eclipse，刷新项目，**测试它**。
 
 
 *****
 
-## More Information on JavaFX Charts
+## JavaFX Chart的更多信息
 
-A good place for more information is the official Oracle tutorial on [Working with JavaFX Charts](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/charts.htm).
-
-
-### What's Next?
-
-In the last tutorial [Part 7](/library/javafx-8-tutorial/zh-cn/part7/) we will finally deploy our application (i.e. package and deliver the app to our users).
+更多信息的一个好地方是官方Oracle教程，[使用JavaFX Chart](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/charts.htm).
 
 
-##### Some other articles you might find interesting
+### 下一步做什么？
+
+在最后的教程[第7部分](/library/javafx-8-tutorial/zh-cn/part7/) 中，我们将最后部署我们的应用（例如：打包并且发布应用到我们的用户）
+
+
+##### 一些你可能感兴趣的其它文章
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
