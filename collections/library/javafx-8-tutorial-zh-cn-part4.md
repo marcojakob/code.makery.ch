@@ -75,49 +75,50 @@ sidebars:
 ![Screenshot AddressApp Part 4](/assets/library/javafx-8-tutorial/part4/addressapp-part4.png)
 
 
-## Topics in Part 4
+## 第4部分主题
 
-* **CSS Styling**
-* Adding an **Application Icon**
+* **CSS样式表**
+* 添加**应用程序图标**
 
 
 
 *****
 
 
-## CSS Styling 
+## CSS样式表 
 
-In JavaFX you can style your user interface using Cascading Style Sheets (CSS). This is great! It's never been as easy to customize the appearance of a Java application.
+在JavaFX中，你能使用层叠样式表修饰你的用户接口。这非常好！自定义Java应用界面从来不是件简单的事情。
 
-In this tutorial we will create a *DarkTheme* inspired by the Windows 8 Metro design. The css for the buttons is based on the blog post [JMetro - Windows 8 Metro controls on Java](http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/) by Pedro Duque Vieira.
-
-
-### Getting Familiar with CSS
-
-If you want to style your JavaFX application you should have a basic understanding of CSS in general. A good place to start is this [CSS tutorial](http://www.csstutorial.net/).
-
-For more JavaFX specific information about CSS:
-
-* [Skinning JavaFX Applications with CSS](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/css_tutorial.htm) - Tutorial by Oracle
-* [JavaFX CSS Reference](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html) - Official Reference
+在本教程中，我们将创建一个*DarkTheme*主题，灵感来自于Windows 8 Metro设计。按钮的CSS来至于Pedro Duque Vieia的博客[Java中JMetro-Windows 8 Metro控件](http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/)。
 
 
-### Default JavaFX CSS
+### 熟悉CSS
 
-The default source for CSS styles in JavaFX 8 is a file called **`modena.css`**. This css file can be found in the Java FX jar file `jfxrt.jar` located in your Java folder under `/jdk1.8.x/jre/lib/ext/jfxrt.jar`.
+如果你希望修饰你的JavaFX应用，通常你应该对CSS有一个基本的了解。一个好的起点是[CSS教程](http://www.csstutorial.net/).
 
-Unzip the `jfxrt.jar`. You should find the `modena.css` under `com/sun/javafx/scene/control/skin/modena/`
+关于CSS更多JavaFX指定信息:
 
-This default style sheet is always applied to a JavaFX application. By adding a custom style sheet we can override the default styles of the `modena.css`.   
+* [使用CSS换肤JavaFX应用](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/css_tutorial.htm) - Oracle教程
+* [JavaFX CSS参考](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html) - 官方
+
+
+### 缺省的JavaFX CSS
+
+在JavaFX 8中缺省的CSS风格源码是一个称为**`modena.css`**文件。该CSS文件可以在JavaFX jar文件`jfxrt.jar`中找到，它位于Java目录`/jdk1.8.x/jre/lib/ext/jfxrt.jar`。
+
+解压`jfxrt.jar`，你应该能在`com/sun/javafx/scene/control/skin/modena/`目录下找到`modena.css`。
+
+缺省的样式表总是应用到JavaFX应用上。通过添加自定义样式表，你能覆盖`modena.css`中缺省的样式。
+
 
 <div class="alert alert-info">
-**Hint:** It helps to look at the default CSS file to see which styles you might need to override.
+**提示**：查看缺省的CSS文件能够让你模板你需要覆盖掉那些样式。
 </div>
 
 
-### Attaching CSS Style Sheets
+### 添加CSS样式表
 
-Add the following CSS file called `DarkTheme.css` to the *view* package.
+添加下面的CSS文件`DarkTheme.css`到`view`包中。
 
 
 ##### DarkTheme.css
@@ -268,79 +269,82 @@ Add the following CSS file called `DarkTheme.css` to the *view* package.
 }
 </pre>
 
-We now need to attach the CSS to our Scene. We could do this programmatically in Java code, but we'll use the Scene Builder to add it to our fxml files: 
+现在我们需要把CSS添加到我们的场景中。我们能在Java代码中编程完成，但是我们将使用SceneBuilder来添加它到fxml文件中。
 
 
-#### Attach CSS to RootLayout.fxml
+#### 添加CSS到RootLayout.fxml
 
-1. Open the file `RootLayout.fxml` in Scene Builder. 
+1. 在Scene Builder中打开`RootLayout.fxml`
 
-2. Select the root `BorderPane` in the Hierarchy view. Under *Properties* group add the `DarkTheme.css` file as stylesheet.   
+2. 在*Hierarchy*视图中选择根节点`BorderPan`。在*Properties*组中添加`DarkTheme.css`作为样式表。
+
 ![DarkTheme for RootLayout](/assets/library/javafx-8-tutorial/part4/darktheme-rootlayout.png)
 
 
-#### Attach CSS to PersonEditDialog.fxml
+#### 添加CSS到PersonEditDialog.fxml
 
-1. Open the file `PersonEditDialog.fxml` in Scene Builder. Select the root `AnchorPane` and choose `DarkTheme.css` in the *Properties* group as stylesheet.
+1. 在Scene Builder中打开`PersonEditDialog.fxml`。选择根节点`AnchorPane`，并且在*Properties*组中选择`DarkTheme.css`作为样式表。
 
-2. The background is still white, so add the Style Class `background` to the root `AnchorPane`.   
+2. 背景仍然是白色的，因此添加样式类`background`到根节点`AnchorPane`。
+
 ![Add Style Class](/assets/library/javafx-8-tutorial/part4/darktheme-personeditdialog.png)
 
-3. Select the OK button and choose *Default Button* in the Properties View. This will change its color and make this the default button when the *enter* key is pressed by the user.
+3.  选择OK按钮，在*Properties*视图中选择*Default Button*单选框。这将修改它的颜色，当用户*输入*关键词时，使用它作为缺省的按钮。
 
 
-#### Attach CSS to PersonOverview.fxml
 
-1. Open the file `PersonOverview.fxml` in Scene Builder. Select the root `AnchorPane` in the *Hierarchy* group. Under properties add the `DarkTheme.css` file as stylesheet.
+#### 添加CSS到PersonOverview.fxml
 
-2. You should already see some changes now: The table and the buttons are black. All class styles `.table-view` and `.button` from `modena.css` apply to the table and buttons. Since we've redefined (and thus overridden) some of those styles in our custom CSS, the new styles are applied automatically.
+1. 在Scene Builder中打开文件`PersonOverview.fxml`。在*Hierarchy*组中选择根节点`AnchorPane`。在*Properties*下面添加`DarkTheme.css`文件作为样式表。
 
-3. You might need to adjust the size of the buttons so that all text is displayed.
+2. 你现在应该已经看到一些修改，表和按钮是黑色的。来自`modena.css`中所有类样式`.table-view`和`.button`应用到表和按钮。因为我们已经在自定义CSS中重定义（因此覆盖掉）一些样式。新的样式自动应用。
 
-4. Select the right `AnchorPane` that is inside the `SplitPane`.   
+3. 你可能需要调整按钮的大小，以便显示所有的文本。
+
+4. 选择`SplitPane`中右边的`AnchorPane`。
 ![Background Style Select](/assets/library/javafx-8-tutorial/part4/background-style-select.png)   
 
-5. Go to the *Properties* group and select `background` as style class. The background should now turn black.   
+5. 进入到*Properties*组，并且选择`background`作为样式表。背景现在应该变为黑色。
 ![Background Style](/assets/library/javafx-8-tutorial/part4/background-style.png)
 
 
-#### Labels with Different Style
+#### 使用不同样式的标签
 
-Right now, all the labels on the right side have the same size. There are already some styles defined in the css file called `.label-header` and `.label-bright` that we'll use to further style the labels.
+现在，在左边的所有的标签都有相同的大小。这里已经有一些样式定义在CSS文件中，称为`.label-header`和`.label-bright`。我们将使用更多样式的标签Label。
 
-1. Select the *Person Details* label and add `label-header` as a Style Class.   
+1. 选择*Person Detail*标签，添加`label-header`作为样式类。
 ![Label Header Style](/assets/library/javafx-8-tutorial/part4/label-header-style.png)
 
-2. To each label in the right column (where the actual person details are displayed), add the css Style Class `label-bright`.   
+2. 为了让右边栏的每个Label（显示实际人员的详情），添加CSS样式类`label-bright`。
 ![Label Bright Style](/assets/library/javafx-8-tutorial/part4/label-bright-style.png)
 
 
 *****
 
 
-## Adding an Application Icon
+## 添加应用图标
 
-Right now our application just has the default icon in the title bar and taks bar:
+现在，在标题栏和任务栏中，我们的应用只有一个缺省图标:
 
 ![Default Icon](/assets/library/javafx-8-tutorial/part4/default-app-icon.png)
 
-It looks much nicer with a custom icon:
+使用自定义图标看起来更好了。
 
 ![Custom Icon](/assets/library/javafx-8-tutorial/part4/custom-app-icon.png)
 
 
-### The Icon File
+### 图标文件
 
-A possible place to get free icons is [Icon Finder](http://www.iconfinder.com). I downloaded a little [address book icon](http://www.iconfinder.com/icondetails/86957/32/).
+获取图标的一个可能地方是[Icon Finder](http://www.iconfinder.com)。我下载了一个[地址本的图标](http://www.iconfinder.com/icondetails/86957/32/).
 
-Create a (normal) folder inside your AddressApp project called **resources** and a subfolder called **images** in it. Put the icon of your choice inside the images folder. Your folder structure should look something like this now:
+通常在你的AddressApp项目中创建一个目录称为**resources**，在它中子目录称为**images**。把你选择的图标放入到images目录中。现在，你的目录结构应该看上去如下所示：
 
 ![Custom Icon File](/assets/library/javafx-8-tutorial/part4/custom-icon-file.png)
 
 
-### Set Icon to Scene
+### 设置图标到场景
 
-To set the icon for our scene add the following line to the `start(...)` method in `MainApp.java`
+为了给你场景设置图标，添加下面一行到`MainApp.jar`的`start(…)`方法中。
 
 
 ##### MainApp.java
@@ -349,7 +353,7 @@ To set the icon for our scene add the following line to the `start(...)` method 
 this.primaryStage.getIcons().add(new Image("file:resources/images/address_book_32.png"));
 </pre>
 
-The whole `start(...)` method should look something like this now:
+现在，整个`start(…)`方法看上去应该是这样的。:
 
 <pre class="prettyprint lang-java">
 public void start(Stage primaryStage) {
@@ -365,15 +369,15 @@ public void start(Stage primaryStage) {
 }
 </pre>
 
-You can also add an icon to the stage of the person edit dialog, of course.
+当然，你也应该添加图标到人员编辑对话框的Stage中。
 
 
-### What's Next?
+### 下一步
 
-In [Tutorial Part 5](/library/javafx-8-tutorial/zh-cn/part5/) we will add XML storage for our data.
+在本教程的[第5部分](/library/javafx-8-tutorial/zh-cn/part5/)将为我们数据添加XML存储。
 
 
-##### Some other articles you might find interesting
+##### 你可能感兴趣的有些其他文章
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
