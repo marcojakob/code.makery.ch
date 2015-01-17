@@ -62,11 +62,6 @@ sidebars:
     icon-css: fa fa-fw fa-globe
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> Note: Some parts of this tutorial ([Part 3](/library/javafx-8-tutorial/zh-cn/part3/) and [Part 4](/library/javafx-8-tutorial/zh-cn/part4/)) still need a translation to Chinese (Simplified). If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
-
 早在 2012 我和我的学生们写了一个非常详细的 [JavaFX 2 系列教程](/java/javafx-2-tutorial-intro/)。世界各地的人们都已阅读了这个教程并给了非常积极的反馈。所以我决定 **为 JavaFX 8 改写 JavaFX 2 的教程** (阅读关于 JavaFX 8 的变化 [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)).
 
 这个教程将指导您设计，编写并部署一个联系人应用程序。应用程序最后将会是这个样子：

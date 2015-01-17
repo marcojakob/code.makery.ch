@@ -5,7 +5,7 @@ date: 2014-10-08 00:00
 updated: 2015-01-16 00:00
 slug: javafx-8-tutorial/zh-cn/part7
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part7.md
-description: "How to deploy a JavaFX application as native package. Create an installer for Windows, MacOS, or Linux."
+description: null
 image: /assets/library/javafx-8-tutorial/part7/addressapp-macos.png
 published: true
 prettify: true

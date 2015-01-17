@@ -5,7 +5,7 @@ date: 2014-10-08 00:00
 updated: 2015-01-16 00:00
 slug: javafx-8-tutorial/zh-cn/part5
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part5.md
-description: "Save data as XML with JAXB. Learn how to use the JavaFX FileChooser and the JavaFX Menu."
+description: null
 image: /assets/library/javafx-8-tutorial/part5/addressapp-part5.png
 published: true
 prettify: true

@@ -2,11 +2,10 @@
 layout: article
 title: "JavaFX 8 教程 - 第三部分：与用户的交互"
 date: 2014-10-08 00:00
-updated: 2014-10-08 00:00
+updated: 2015-01-15 00:00
 slug: javafx-8-tutorial/zh-cn/part3
-canonical: /java/javafx-8-tutorial-part3/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part3.md
-description: "React to selection changes in the JavaFX TableView. Add, edit and remove items from the table and validate user input."
+description: null
 image: /assets/library/javafx-8-tutorial/part3/addressapp-part3.png
 published: true
 prettify: true
@@ -67,12 +66,6 @@ sidebars:
     link: /library/javafx-8-tutorial/id/part3/
     icon-css: fa fa-fw fa-globe
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs translation to Chinese (Simplified). If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
-**Update Aug 27, 2014:** *Now using JDK 8u20 and ControlsFX 8.0.6_20*
 
 ![Screenshot AddressApp Part 3](/assets/library/javafx-8-tutorial/part3/addressapp-part3.png)
 

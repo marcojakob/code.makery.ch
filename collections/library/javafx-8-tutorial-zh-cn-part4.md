@@ -2,11 +2,10 @@
 layout: article
 title: "JavaFX 8 教程 - 第四部分：CSS 样式"
 date: 2014-10-08 00:00
-updated: 2014-10-08 00:00
+updated: 2015-01-17 00:00
 slug: javafx-8-tutorial/zh-cn/part4
-canonical: /java/javafx-8-tutorial-part4/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part4.md
-description: "In JavaFX you can style your user interface using CSS. We'll also add an application icon in this tutorial part."
+description: null
 image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png
 published: true
 prettify: true
@@ -67,10 +66,6 @@ sidebars:
     link: /library/javafx-8-tutorial/id/part4/
     icon-css: fa fa-fw fa-globe
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs translation to Chinese (Simplified). If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
 
 ![Screenshot AddressApp Part 4](/assets/library/javafx-8-tutorial/part4/addressapp-part4.png)
 

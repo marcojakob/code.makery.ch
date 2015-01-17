@@ -5,7 +5,7 @@ date: 2014-10-08 00:00
 updated: 2015-01-16 00:00
 slug: javafx-8-tutorial/zh-cn/part6
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part6.md
-description: "Learn how to create a JavaFX Bar Chart."
+description: null
 image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
 published: true
 prettify: true
