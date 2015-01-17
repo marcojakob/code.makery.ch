@@ -77,24 +77,24 @@ sidebars:
 ![Screenshot AddressApp Part 3](/assets/library/javafx-8-tutorial/part3/addressapp-part3.png)
 
 
-## Topics in Part 3
+## 第3部分的主题：
 
-* **React to selection changes** in the table.
-* Add functionality to the **add**, **edit**, and **remove** buttons.
-* Create a custom **popup dialog** to edit a person.
-* **Validate user input**.
+1. 在表中**反应选择的改变**（TableView中）。
+2. 增加**增加**，**编辑**和**删除**按钮的功能。
+3. 创建自定义**弹出对话框**编辑人员。
+4. **验证用户输入**。
 
 
 *****
 
 
-## React to Table Selections
+## 响应表的选择
 
-Obviousely, we haven't used the right side of our application, yet. The idea is to display the details about a person on the right side when the user selects a person in the table.
+显然，我们还没有使用应用程序的右边。想法是当用户选择表中的人员时，在右边显示人员的详情。
 
-First, let's add a new method inside `PersonOverviewController` that helps us fill the labels with the data from a single `Person`.
+首先，让我们在`PersonOverviewController`添加一个新的方法，帮助我们使用单个人员的数据填写标签。
 
-Create a method called `showPersonDetails(Person person)`. Go trough all the labels and set the text using `setText(...)` with details from the person. If `null` is passed as parameter, all labels should be cleared.
+创建方法`showPersonDetails(Person person)`。遍历所有标签，并且使用`setText(…)`方法设置标签的文本为个人的详情。如果null作为参数传递，所有的标签应该被清空。
 
 
 ##### PersonOverviewController.java
@@ -130,11 +130,11 @@ private void showPersonDetails(Person person) {
 </pre>
 
 
-### Convert the Birthday Date to a String
+### 转换生日日期为字符串
 
-You will notice that we couldn't set the `birthday` into the `Label` because it is of type `LocalDate` and not a `String`. We need to format the date first.
+你注意到我们没有设置`birthday`到标签中，因为它是`LocalDate`类型，不是`String`。我们首先需要格式化日期。
 
-We will use the conversion from `LocalDate` and `String` and vice versa in several places. It's good practice to create a helper class with `static` methods for this. We'll call it `DateUtil` and place it in a seperate package called `ch.makery.address.util`:
+在几个地方上我们使用`LocalDate`和`String`之间的转换。好的实践是创建一个带有`static`方法的帮助类。我们称它为`DateUtil`，并且把它放到单独的包中，称为`ch.makery.address.util`。
 
 
 ##### DateUtil.java
@@ -205,27 +205,26 @@ public class DateUtil {
 </pre>
 
 <div class="alert alert-info">
-**Hint:** You can change the format of the date by changing the
-`DATE_PATTERN`. For all possible formats see <a class="alert-link" href="http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a>.
+**提示**：你能通过改变`DATE_PATTERN`修改日期的格式。所有可能的格式参考 <a class="alert-link" href="http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a>.
 </div>
 
 
-#### Use the DateUtil
+#### 使用DateUtil
 
-Now we need to use our new `DateUtil` in the `showPersonDetails` method of `PersonOverviewController`. Replace the *TODO* we added with the following line:
+现在，我们需要在`PersonOverviewController`的`showPersonDetails`方法中使用我们新建的`DateUtil`。使用下面这样替代我们添加的`TODO`。
 
 <pre class="prettyprint lang-java">
 birthdayLabel.setText(DateUtil.format(person.getBirthday()));
 </pre>
 
 
-### Listen for Table Selection Changes
+### 监听表选择的改变
 
-To get informed when the user selects a person in the person table, we need to *listen for changes*.
+为了当用户在人员表中选择一个人时获得通知，我们需要**监听改变**。
 
-There is an interface in JavaFX called [`ChangeListener`](http://docs.oracle.com/javase/8/javafx/api/) with one method called `changed(...)`. The method has three parameters: `observable`, `oldValue`, and `newValue`.
+在JavaFX中有一个接口称为[`ChangeListener`](http://docs.oracle.com/javase/8/javafx/api/)，带有一个方法`changed()`。该方法有三个参数：`observable`, `oldValue`和`newValue`。
 
-We will create such a `ChangeListener` using a Java 8 *lambda expression*. Let's add a few lines to the `initialize()` method in `PersonOverviewController`. Now it looks like this:
+我们使用*Java 8 lambda*表达式创建这样一个`ChangeListener`。让我们添加一些行到`PersonOverviewController`的`initialize()`方法中。现在看起来是这样的。
 
 
 ##### PersonOverviewController.java
@@ -248,20 +247,21 @@ private void initialize() {
 }
 </pre>
 
-With `showPersonDetails(null);` we reset the person details. 
+使用`showPersonDetails(null)`，我们重设个人详情。
 
-With `personTable.getSelectionModel...` we get the *selectedItemProperty* of the person table and add a listener to it. Whenever the user selects a person in the table, our *lambda expression* is executed. We take the newly selected person and pass it to the `showPersonDetails(...)` method.
+使用`personTable.getSelectionModel...`，我们获得人员表的`selectedItemProperty`，并且添加监听。不管什么时候用户选择表中的人员，都会执行我们的`lambda`表达式。我们获取新选择的人员，并且把它传递给`showPersonDetails(...)`方法。
 
-Try to **run your application** at this point. Verify that when you select a person in the table, details about that person are displayed on the right.
+现在试着**运行你的应用程序**，验证当你选择表中的人员时，关于该人员的详情是否正确的显示。
 
-If something doesn't work, you can compare your `PersonOverviewController` class with [PersonOverviewController.java](/assets/library/javafx-8-tutorial/part3/PersonOverviewController.java).
+如果有些事情不能工作，你可以对比下[PersonOverviewController.java](/assets/library/javafx-8-tutorial/part3/PersonOverviewController.java)中的`PersonOverviewController`类
+
 
 
 *****
 
-## The Delete Button
+## 删除按钮
 
-Our user interface already contains a delete button but without any functionality. We can select the action for a button inside the *Scene Builder*. Any method inside our controller that is annotated with `@FXML` (or is public) is accessible by the *Scene Builder*. Thus, let's first add a delete method at the end of our `PersonOverviewController` class:
+我们的用户接口已经包含一个删除按钮，但是没有任何功能。我们能在*SceneBuilder*中的按钮上选择动作。在我们控制器中的任何使用`@FXML`（或者它是公用的）注释的方法都可以被*Scene Builder*访问。因此，让我们在`PersonOverviewController`类的最后添加一个删除方法。
 
 
 ##### PersonOverviewController.java
@@ -277,29 +277,29 @@ private void handleDeletePerson() {
 }
 </pre>
 
-Now, open the `PersonOverview.fxml` file in *SceneBuilder*. Select the *Delete* button, open the *Code* group and choose `handleDeletePerson` in the dropdown of **On Action**.
+现在，使用*SceneBuilder*打开`PersonOverview.fxml`文件，选择*Delete*按钮，打开*Code*组，在**On Actin**的下拉菜单中选择`handleDeletePerson`。
 
 ![On Action](/assets/library/javafx-8-tutorial/part3/handle-delete.png)
 
 
-### Error Handling
+### 错误处理
 
-If you run the application at this point you should be able to delete selected persons from the table. But what happenes if you **click the delete button while no person is selected** in the table? 
+如果你现在运行应用程序，你应该能够从表中删除选择的人员。但是，**当你没有在表中选择人员时点击删除按钮时会发生什么呢**。
 
-There will be an `ArrayIndexOutOfBoundsException` because it could not remove a person item at index `-1`. The index `-1` was returned by `getSelectedIndex()` - which means that there was no selection.
+这里有一个`ArrayIndexOutOfBoundsException`，因为它不能删除掉索引为-1人员项目。索引-1由`getSelectedIndex()`返回，它意味着你没有选择项目。
 
-To ignore such an error is not very nice, of course. We should let the user know that he/she must select a person before deleting. (Even better would be if we disabled the button so that the user doesn't even have the chance to do something wrong.)
+当然，忽略这种错误不是非常好。我们应该让用户知道在删除时必须选择一个人员。（更好的是我们应该禁用删除按钮，以便用户没有机会做错误的事情）。
 
-We'll add a popup dialog to inform the user. You'll need to **add a library** for the [Dialogs](/blog/javafx-8-dialogs/): 
+我们添加一个弹出对话框通知用户，你将需要**添加一个库*[Dialogs](/blog/javafx-8-dialogs/)：
 
-1. Download this [controlsfx-8.0.6_20.jar](https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/controlsfx-8.0.6_20.jar) (you could also get it from the [ControlsFX Website](http://fxexperience.com/controlsfx/)).   
-**Important: The ControlsFX must be version `8.0.6_20` or greater to work with `JDK 8u20` and above as there was a breaking change introduced in that version.**
-2. Create a **lib** subfolder in the project and add the controlsfx-jar file to this folder.
-3. Add the library to your project's **classpath**: In Eclipse *right-click on the jar file* | *Build Path* | *Add to Build Path*. Now Eclipse knows about the library.
+1. 下载[controlsfx-8.0.6_20.jar](https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/controlsfx-8.0.6_20.jar) （你也能从[ControlsFX Website](http://fxexperience.com/controlsfx/)中获取）。
+**重要：ControlsFX必须是8.0.6_20以上版本才能在`JDK8U20`以上版本工作。**
+2. 在项目中创建一个**lib**子目录，添加controlsf jar文件到该目录下。
+3. 添加库到你的项目**classpath**中。在Eclipse中*右击jar文件*|选择*Build Path*| *Add to Build Path*。现在Eclipse知道这个库了。
 
 ![ControlsFX Libaray](/assets/library/javafx-8-tutorial/part3/controlsfx-library.png)
 
-With some changes made to the `handleDeletePerson()` method, we can show a simple popup dialog whenever the user pushes the delete button while no person is selected in the table:
+对`handleDeletePerson()`方法做一些修改后，不管什么时候用户没有选择表中的人员时按下删除按钮，我们能显示一个简单的对话框。
 
 
 ##### PersonOverviewController.java
@@ -325,7 +325,7 @@ private void handleDeletePerson() {
 </pre>
 
 <div class="alert alert-info">
-For more examples on how to use Dialogs read <a class="alert-link" href="/blog/javafx-8-dialogs/">JavaFX 8 Dialogs</a>.
+更多如何使用Dialog的示例，请阅读<a class="alert-link" href="/blog/javafx-8-dialogs/">JavaFX 8 Dialogs</a>.
 </div>
 
 
@@ -333,25 +333,26 @@ For more examples on how to use Dialogs read <a class="alert-link" href="/blog/j
 *****
 
 
-## The New and Edit Dialogs
+## 新建和编辑对话框
 
-The new and edit actions are a bit more work: We'll need a custom dialog (i.e. a new stage) with a form to ask the user for details about the person.
+新建和编辑的动作有点工作：我们需要一个自定义带表单的对话框（例如：新的Stage），询问用户关于人员的详情。
 
 
-### Design the Dialog
 
-1. Create a new fxml file called `PersonEditDialog.fxml` inside the *view* package.   
+### 设计对话框
+
+1. 在*view*包中创建新的fxml文件，称为`PersonEditDialog.fxml`
 ![Create Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog1.png)
 
-2. Use a `GridPane`, `Label`s, `TextField`s and `Button`s to create a Dialog like the following:   
+2. 使用`GridPan`，`Label`，`TextField`和`Button`创建一个对话框，如下所示:   
 ![Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog2.png)   
 
-*If you don't to do the work, you can download this [PersonEditDialog.fxml](/assets/library/javafx-8-tutorial/part3/PersonEditDialog.fxml).* 
+*如果你不能完成工作，你能下载这个[PersonEditDialog.fxml](/assets/library/javafx-8-tutorial/part3/PersonEditDialog.fxml).* 
 
 
-### Create the Controller
+### 创建控制器
 
-Create the controller for the Dialog as `PersonEditDialogController.java`:
+为对话框创建控制器`PersonEditDialogController.java`:
 
 ##### PersonEditDialogController.java
 
@@ -517,27 +518,27 @@ public class PersonEditDialogController {
 }
 </pre>
 
-A few things to note about this controller:
+关于该控制器的一些事情应该注意：
 
-* The `setPerson(...)` method can be called from another class to set the person that is to be edited.
-* When the user clicks the OK butten, the `handleOk()` method is called. First, some validation is done by calling the `isInputValid()` method. Only if validation was successful, the person object is filled with the data that the user entered. Those changes will directly be applied to the person object that was passed to `setPerson(...)`!
-* The boolean `okClicked` is used so that the caller can determine whether the user clicked the OK or Cancel button.
-
-
-### Link View and Controller 
-
-With the View (FXML) and the controller created we need to link them together:
-
-1. Open the `PersonEditDialog.fxml`.
-2. In the *Controller* group on the left side select select the `PersonEditDialogController` as controller class.
-3. Set the **fx:id** of all `TextField`s to the corresponding field of the controller.
-4. Set the **onAction** of the two buttons to the corresponding handler method.
+1. `setPerson(…)`方法可以从其它类中调用，用来设置编辑的人员。
+2. 当用户点击OK按钮时，调用`handleOK()`方法。首先，通过调用`isInputValid()`方法做一些验证。只有验证成功，Person对象使用输入的数据填充。这些修改将直接应用到Person对象上，传递给`setPerson(…)`。
+3. 布尔值`okClicked`被使用，以便调用者决定用户是否点击OK或者Cancel按钮。
 
 
+### 连接视图和控制器
 
-### Opening the Dialog
+使用已经创建的视图（FXML）和控制器，需要连接到一起。
 
-Add a method to load and display the edit person dialog inside our `MainApp`:   
+1. 使用SceneBuilder打开`PersonEditDialog.fxml`文件
+2. 在左边的*Controller*组中选择`PersonEditDialogController`作为控制器类
+3. 设置所有**TextField**的`fx:id`到相应的控制器字段上。
+4. 设置两个按钮的**onAction**到相应的处理方法上。
+
+
+
+### 打开对话框
+
+在`MainApp`中添加一个方法加载和显示编辑人员的对话框。
 
 
 ##### MainApp.java
@@ -582,7 +583,7 @@ public boolean showPersonEditDialog(Person person) {
 }
 </pre>
 
-Add the following methods to the `PersonOverviewController`. Those methods will call the `showPersonEditDialog(...)` from the `MainApp` when the user clicks the *new* or *edit* button.   
+添加下面的方法到`PersonOverviewController`中。当用户按下*New*或*Edit*按钮时，这些方法将从`MainApp`中调用`showPersonEditDialog(...)`。
 
 ##### PersonOverviewController.java
 
@@ -624,24 +625,24 @@ private void handleEditPerson() {
 }
 </pre>
 
-Open the `PersonOverview.fxml` file in Scene Builder. Choose the corresponding methods in *On Action* for the new and edit buttons.
+在Scene Builder中打开`PersonOverview.fxml`文件，为New和Edit按钮的*On Action*中选择对应的方法。
 
 
 *****
 
-## Done!
+## 完成!
 
-You should have a working *Address Application* by now. The application is able to add, edit, and delete persons. There is even some validation for the text fields to avoid bad user entries.
+现在你应该有一个可以工作的*Address应用*。应用能够添加、编辑和删除人员。这里甚至有一些文本字段的验证避免坏的用户输入。
 
-I hope the concepts and structure of this application will get you started with writing your own JavaFX application! Have fun.
-
-
-### What's Next?
-
-In [Tutorial Part 4](/library/javafx-8-tutorial/zh-cn/part4/) we will add some CSS styling.
+我希望本应用的概念和结构让开始编写自己的JavaFX应用！玩的开心。
 
 
-##### Some other articles you might find interesting
+### 下一步是什么？
+
+在教程[第4部分](/library/javafx-8-tutorial/zh-cn/part4/)中将添加一些CSS样式表。
+
+
+##### 你可能有兴趣的一些其他文章
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
