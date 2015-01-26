@@ -3,6 +3,7 @@ layout: article
 title: "Convert Web Page to Word Document"
 date: 2014-07-07 00:00
 slug: convert-web-page-to-word
+description: "Convert any HTML web page to a Word docx file in 5 simple steps."
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/convert-web-page-to-word.md
 published: true
 comments: false

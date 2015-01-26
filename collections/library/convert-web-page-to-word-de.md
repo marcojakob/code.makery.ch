@@ -3,6 +3,7 @@ layout: article
 title: "Webseite nach Word umwandeln"
 date: 2014-07-07 00:00
 slug: convert-web-page-to-word/de
+description: "Mit diesen 5 Schritten können Sie eine beliebige Webseite in eine Word docx-Datei umwandeln."
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/convert-web-page-to-word-de.md
 published: true
 comments: false
@@ -18,7 +19,7 @@ sidebars:
     active: true
 ---
 
-Dies ist die beste Art, die gefunden habe, um eine HTML Seite in eine Word `docx` Datei zu konvertieren. Dies kann überall angewendet werden, wo eine Webseite als Word-Version benötigt wird. 
+Mit dieser Beschreibung können Sie eine beliebige Webseite in eine Word `docx`-Datei umwandeln. 
 
 
 ### 1. Webseite als HTML speichern
