@@ -18,6 +18,14 @@
       "languages": [ "Deutsch" ]
     },
     {
+      "title": "Hello Dart: Introduction to Programming",
+      "link": "/library/hello-dart/",
+      "image": "/assets/library/hello-dart/hello-dart.png",
+      "summary": "Hello Dart is a visual and playful introduction to programming with Dart. <br><i>Note: This course is currently <b>in beta and only available in German</b>.</i>",
+      "topics": [ "Dart" ],
+      "languages": [ "Deutsch" ]
+    },
+    {
       "title": "GreenfootKara",
       "link": "/library/greenfoot-kara/",
       "image": "/assets/library/greenfoot-kara/logo-large.png",
