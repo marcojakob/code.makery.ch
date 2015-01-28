@@ -4,7 +4,7 @@ title: "Hello Dart: Einführung in die Programmierung"
 date: 2015-01-21 00:00
 slug: hello-dart/de
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de.md
-description: "Hello Dart bietet eien visuelle und spielerische Einführung in die Programmierung. Von den Grundlagen bis zur professionellen Softwareentwicklung."
+description: "Hello Dart ist eine spielerische Einführung in die Programmierung. Lernen Sie die Grundlagen der Programmierung mit Dart."
 image: /assets/library/hello-dart/hello-dart.png
 published: true
 prettify: false
@@ -42,7 +42,7 @@ sidebars:
 
 ![Hello Dart](/assets/library/hello-dart/intro/screenshot.png)
 
-> `Hello Dart` ist eine spielerische Einführung in die Programmierung.
+> `Hello Dart` ist eine spielerische Einführung in die Programmierung mit Dart.
 
 
 Bisher war es kaum realistisch, als Programmieranfänger mobile oder webbasierte
@@ -103,6 +103,11 @@ Ein Spielcharakter, genannt `Player`, hat folgende Möglichkeiten:
       <td style="vertical-align:middle">`removeStar()`</td>
       <td style="vertical-align:middle">Der Spieler nimmt einen Stern weg.</td>
     </tr>
+    <tr>
+      <td style="vertical-align:middle">![Say](/assets/library/hello-dart/intro/say.png)</td>
+      <td style="vertical-align:middle; ">`say('Hello')`</td>
+      <td style="vertical-align:middle">Der Spieler sagt etwas in einer Sprechblase.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -119,9 +124,9 @@ Ein Spielcharakter, genannt `Player`, hat folgende Möglichkeiten:
   </thead>
   <tbody>
     <tr>
-      <td style="vertical-align:middle">![Field Front](/assets/library/hello-dart/intro/field-front.png)</td>
-      <td style="vertical-align:middle">`fieldFront()`</td>
-      <td style="vertical-align:middle">Der Spieler schaut nach, ob vor ihm ein Feld ist.</td>
+      <td style="vertical-align:middle">![Can Move](/assets/library/hello-dart/intro/can-move.png)</td>
+      <td style="vertical-align:middle">`canMove()`</td>
+      <td style="vertical-align:middle">Der Spieler schaut nach, ob er sich auf das nächste Feld bewegen kann.</td>
     </tr>
     <tr>
       <td style="vertical-align:middle">![Tree Front](/assets/library/hello-dart/intro/tree-front.png)</td>

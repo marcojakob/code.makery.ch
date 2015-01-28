@@ -34,17 +34,6 @@ sidebars:
   - text: "Teil 4: Funktionen"
     link: /library/hello-dart/de/part4/
     paging: 4
-- header: Links
-  body:
-  - text: Dart Editor Download
-    link: https://www.dartlang.org/tools/editor/
-    icon-css: fa fa-fw fa-download
-  - text: Hello Dart Szenarien
-    link: https://github.com/marcojakob/hello-dart/releases
-    icon-css: fa fa-fw fa-download
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
-    icon-css: fa fa-fw fa-file-word-o
 ---
 
 ## Weshalb Dart?

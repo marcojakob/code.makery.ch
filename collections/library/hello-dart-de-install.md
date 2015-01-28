@@ -4,7 +4,7 @@ title: "Hello Dart: Installation"
 date: 2015-01-26 00:00
 slug: hello-dart/de/install
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-install.md
-description: ""
+description: "Dart Editor installieren. Die Hello Dart Szenarien laden und ein erstes Dart Programm starten."
 image: /assets/library/hello-dart/hello-dart.png
 published: true
 prettify: true

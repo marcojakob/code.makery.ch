@@ -4,8 +4,8 @@ title: "Hello Dart - Teil 1: Erste Schritte"
 date: 2015-01-21 00:00
 slug: hello-dart/de/part1
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part1.md
-description: "Dart Editor installieren. Das Hello Dart Package hinzufügen und ein erstes Dart Programm starten."
-image: /assets/library/hello-dart/hello-dart.png
+description: "Die ersten Schritte im Programmieren mit Dart. Lernen Sie Klassen und Funktionen kennen und verstehen Sie, was die main-Funktion bewirkt."
+image: /assets/library/hello-dart/part1/around-tree.png
 published: true
 prettify: true
 comments: false
@@ -42,10 +42,11 @@ sidebars:
 
 In diesem ersten Teil wagen wir unsere ersten Schritte im Programmieren.  
 
+
 ### Voraussetzungen
 
 * Sie brauchen keine Vorkenntnisse im Programmieren, um mit `Hello Dart` zu starten!
-* Sie sollten aber den Dart Editor mit den `Hello Dart`-Szenarien installiert haben. Falls Sie das noch nicht gemacht haben, finden Sie hier eine [Installationsanleitung](/library/hello-dart/de/install/).
+* Sie müssen den Dart Editor mit den `Hello Dart`-Szenarien installiert haben. Falls Sie das noch nicht gemacht haben, finden Sie hier eine [Installationsanleitung](/library/hello-dart/de/install/).
 
 ***
 
@@ -74,14 +75,16 @@ In der [Einleitung](/library/hello-dart/de/) finden Sie alle Befehle, die ein Sp
 Klicken Sie auf das *Run*-Symbol ![Run](/assets/library/hello-dart/part1/run.png), um Ihr Programm zu testen.
 
 
-## Die `main()`-Funktion
+## `index.html` und die `main()`-Funktion
 
-Zuunterst in der Datei finden Sie die `main()`-Funktion. Diese steht nicht innerhalb einer Klassen und erfüllt eine spezielle Aufgabe: Sie ist der Einstiegspunkt in ein Dart-Programm. Jedes Dart-Programm muss deshalb genau eine `main()`-Funktion haben.
+Da wir unsere Programme in einem Webbrowser laufen lassen, brauchen wir immer eine `html`-Datei. In `index.html` finden Sie jeweils eine Angabe, dass das Script `my_player.dart` geladen werden soll. Damit der Browser weiss, wo das Dart-Programm beginnt, braucht es eine `main()`-Funktion. 
+
+Zuunterst in der Dart-Datei finden Sie die `main()`-Funktion. Jedes Dart-Programm muss genau eine `main()`-Funktion als Einstiegspunkt haben.
 
 In unserer `main()`-Funktion rufen wir die Funktion `createWorld(...)` auf. Diese Funktion ist Teil von `Hello Dart` und zeichnet die ganze Welt mit dem Spieler und den Feldern. Sobald alles parat ist wird automatisch unsere `start()`-Funktion aufgerufen und der Spieler beginnt sich zu bewegen.
 
 
-### Welt gestalten
+## Welt gestalten
 
 Die Szenarien von `Hello Dart` beinhalten zusätzliche Grafiken, die Sie nach Ihren Vorlieben einschalten können.
 
@@ -101,9 +104,9 @@ main() {
 }
 </pre>
 
-Für `character` können Sie innerhalb der Anführungszeichen die Werte `boy`, `catgirl`, `stargirl` oder `pinkgirl` verwenden.
+Für **character** können Sie innerhalb der Anführungszeichen die Werte `boy`, `catgirl`, `stargirl` oder `pinkgirl` verwenden.
 
-Für `field` sind die Werte `grass`, `stone`, `wood` oder `dirt` gültig.
+Für **field** sind die Werte `grass`, `stone`, `wood` oder `dirt` gültig.
 
 <div class="alert alert-info">
   <strong>Tipp:</strong> Um eine Änderung zu testen geht es am schnellsten, wenn man `Ctrl+S` (oder `⌘+S`) klickt zum Speichern und anschliessend im Browser `F5` (oder `⌘+R`) zum Aktualisieren.
@@ -114,7 +117,7 @@ Für `field` sind die Werte `grass`, `stone`, `wood` oder `dirt` gültig.
 
 Öffnen Sie `scenario1.03`. Wenn Sie das Szenario starten, dann sollten Sie eine Welt mit drei Bäumen und einem Stern sehen.
 
-Schreiben Sie ein Programm, welches Ihren Spieler auf dem angegebenen Weg zum Stern führt. Er muss dabei um die Bäume herumlaufen. Beim Stern angekommen, soll er den Stern entfernen.
+Schreiben Sie ein Programm, welches Ihren Spieler auf dem angegebenen Weg zum Stern führt. Er muss dabei um die Bäume herumlaufen. Beim Stern angekommen, soll er ihn entfernen.
 
 ![Around Tree](/assets/library/hello-dart/part1/around-tree.png)
 
