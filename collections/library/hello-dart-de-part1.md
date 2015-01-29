@@ -42,6 +42,8 @@ sidebars:
 
 In diesem ersten Teil wagen wir unsere ersten Schritte im Programmieren.  
 
+![Hello Dart](/assets/library/hello-dart/part1/hello.png)
+
 
 ### Voraussetzungen
 
