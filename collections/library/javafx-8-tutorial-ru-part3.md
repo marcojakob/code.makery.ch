@@ -575,7 +575,7 @@ public boolean showPersonEditDialog(Person person) {
 }
 </pre>
 
-Добавьте следующие методы в класс `PersonOverviewController`. Когда пользователь будет нажимать на кнопки `ОК` или `Cancel` эти методы будут вызывать метод `showPersonEditDialog(...)` из класса `MainApp`.
+Добавьте следующие методы в класс `PersonOverviewController`. Когда пользователь будет нажимать на кнопки `New` или `Edit` эти методы будут вызывать метод `showPersonEditDialog(...)` из класса `MainApp`.
 
 ##### PersonOverviewController.java
 
@@ -617,7 +617,7 @@ private void handleEditPerson() {
 }
 </pre>
 
-Откройте `PersonOverview.fxml` в приложении Scene Builder и присвойте соответствующие методы-обработчики параметру *On Action* кнопок `OK` и `Cancel`.
+Откройте `PersonOverview.fxml` в приложении Scene Builder и присвойте соответствующие методы-обработчики параметру *On Action* кнопок `New` и `Edit`.
 
 
 *****
