@@ -50,21 +50,18 @@
           </header>
           
           {%- if model.sidebars -%}
-          <div class="visible-xs-block visible-sm-block">
-            <aside>
-              {% include "article/sidebars-dropdown" %}
-            </aside>
-          </div>
+          <aside class="visible-xs-block visible-sm-block">
+            {% include "article/sidebars-dropdown" %}
+          </aside>
           {%- endif -%}
           
-          <section class="article-content">
+          <div class="article-content">
             {% block content %}{% endblock %}
-          </section>
+          </div>
           
           <hr>
           {% include "article/paging" %}
         </div>
-        
       </article>
       
       {% if model.comments %}
