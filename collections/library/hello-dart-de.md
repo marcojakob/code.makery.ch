@@ -16,10 +16,10 @@ sidebars:
     link: /library/hello-dart/de/
     paging: Einleitung
     active: true
-  - text: "Installation"
+  - text: "<em>Installation</em>"
     link: /library/hello-dart/de/install/
     icon-css: fa fa-fw fa-cog
-  - text: "Hintergrundinfos"
+  - text: "<em>Hintergrundinfos</em>"
     link: /library/hello-dart/de/background/
     icon-css: fa fa-fw fa-info
   - text: "Teil 1: Erste Schritte"

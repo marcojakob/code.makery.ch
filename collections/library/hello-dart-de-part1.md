@@ -15,6 +15,12 @@ sidebars:
   - text: "Einleitung"
     link: /library/hello-dart/de/
     paging: Einleitung
+  - text: "<em>Installation</em>"
+    link: /library/hello-dart/de/install/
+    icon-css: fa fa-fw fa-cog
+  - text: "<em>Hintergrundinfos</em>"
+    link: /library/hello-dart/de/background/
+    icon-css: fa fa-fw fa-info
   - text: "Teil 1: Erste Schritte"
     link: /library/hello-dart/de/part1/
     paging: 1
@@ -64,7 +70,7 @@ Betrachten wir einmal die **Klasse** `MyPlayer`. Zwischen den geschweiften Klamm
 Das Einzige, was im Moment in dieser Klasse steht ist `start()` und drei Anweisungen für die Bewegungen des Spielers. `start()` ist eine Funktion (wird manchmal auch Methode genannt). Darin können wir das Verhalten unseres Spieleres verändern.
 
 
-#### <i class="fa fa-rocket"></i> AUFGABE 1.01: First Steps
+#### <i class="fa fa-rocket mg-t"></i> AUFGABE 1.01: First Steps
 
 Ändern Sie die `start()`-Funktion so ab, dass der Spieler zuerst einen Schritt macht, dann einen Stern legt und schliesslich wieder einen Schritt macht.
 
@@ -93,7 +99,7 @@ Die Szenarien von `Hello Dart` beinhalten zusätzliche Grafiken, die Sie nach Ih
 ![Catgirl](/assets/library/hello-dart/part1/catgirl.png)
 
 
-#### <i class="fa fa-rocket"></i> AUFGABE 1.02: World Design
+#### <i class="fa fa-rocket mg-t"></i> AUFGABE 1.02: World Design
 
 Ändern Sie die `main()`-Funktion wie folgt ab:
 
@@ -111,11 +117,11 @@ Für **character** können Sie innerhalb der Anführungszeichen die Werte `boy`,
 Für **field** sind die Werte `grass`, `stone`, `wood` oder `dirt` gültig.
 
 <div class="alert alert-info">
-  <strong>Tipp:</strong> Um eine Änderung zu testen geht es am schnellsten, wenn man `Ctrl+S` (oder `⌘+S`) klickt zum Speichern und anschliessend im Browser `F5` (oder `⌘+R`) zum Aktualisieren.
+  <strong>Tipp:</strong> Um eine Änderung zu testen geht es am schnellsten, wenn man `Ctrl+S` (oder `⌘+S`) zum Speichern und anschliessend im Browser `F5` (oder `⌘+R`) zum Aktualisieren klickt.
 </div>
 
 
-#### <i class="fa fa-rocket"></i> AUFGABE 1.03: Around Tree
+#### <i class="fa fa-rocket mg-t"></i> AUFGABE 1.03: Around Tree
 
 Öffnen Sie `scenario1.03`. Wenn Sie das Szenario starten, dann sollten Sie eine Welt mit drei Bäumen und einem Stern sehen.
 
@@ -126,7 +132,7 @@ Schreiben Sie ein Programm, welches Ihren Spieler auf dem angegebenen Weg zum St
 
 ## Neue Funktionen
 
-#### <i class="fa fa-rocket"></i> AUFGABE 1.04: Around Tree with Method
+#### <i class="fa fa-rocket mg-t"></i> AUFGABE 1.04: Around Tree with Method
 
 Wenn Sie Aufgabe 1.03 korrekt gelöst haben, so wird Ihr Programm wahrscheinlich *drei gleiche Teile* enthalten, nämlich für das Herumgehen um jeden Baum. Dies können wir zur besseren Übersicht noch etwas erweitern, indem wir eine neue Funktion einführen. Unterhalb der schliessenden Klammer `}` von der `start()`-Funktion erstellen wir eine neue Funktion:
 

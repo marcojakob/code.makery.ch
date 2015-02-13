@@ -15,6 +15,12 @@ sidebars:
   - text: "Einleitung"
     link: /library/hello-dart/de/
     paging: Einleitung
+  - text: "<em>Installation</em>"
+    link: /library/hello-dart/de/install/
+    icon-css: fa fa-fw fa-cog
+  - text: "<em>Hintergrundinfos</em>"
+    link: /library/hello-dart/de/background/
+    icon-css: fa fa-fw fa-info
   - text: "Teil 1: Erste Schritte"
     link: /library/hello-dart/de/part1/
     paging: 1
@@ -40,7 +46,7 @@ sidebars:
     icon-css: fa fa-fw fa-file-word-o
 ---
 
-#### <i class="fa fa-check-square-o"></i> LÖSUNGEN AUFGABE 1.01
+#### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 1.01: First Steps
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -54,9 +60,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-***
-
-#### <i class="fa fa-check-square-o"></i> LÖSUNGEN AUFGABE 1.02
+#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 1.02: World Design
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -77,9 +81,7 @@ main() {
 </pre>
 
 
-***
-
-#### <i class="fa fa-check-square-o"></i> LÖSUNGEN AUFGABE 1.03
+#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 1.03 Around Tree
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -131,9 +133,7 @@ Kommentare schreibt man in den Quelltext als zusätzliche Informationen. Die Kom
   3. (selten) Längere Kommentare über mehrere Zeilen schliesst man mit `/*` und `*/` ein.
 
 
-***
-
-#### <i class="fa fa-check-square-o"></i> LÖSUNGEN AUFGABE 1.04
+#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 1.04: Around Tree with Method
 
 <pre class="prettyprint lang-java">
 class MyPlayer extends Player {
