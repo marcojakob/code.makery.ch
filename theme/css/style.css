@@ -4760,6 +4760,12 @@ ol.alpha-list,
 iframe {
   border: none; }
 
+.mg-t {
+  margin-top: 13px; }
+
+.mg-t-lg {
+  margin-top: 26px; }
+
 .ribbon {
   overflow: hidden;
   white-space: nowrap;

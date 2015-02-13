@@ -80,6 +80,16 @@ iframe {
   border: none;
 }
 
+// Medium top margin.
+.mg-t {
+  margin-top: ($line-height-computed / 2);
+}
+
+// Large top margin.
+.mg-t-lg {
+  margin-top: $line-height-computed;
+}
+  
 // 
 // Ribbon (http://unindented.org/articles/github-ribbon-using-css-transforms/)
 // ----------------------------------------------------------------------------
