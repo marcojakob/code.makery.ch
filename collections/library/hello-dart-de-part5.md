@@ -1,9 +1,9 @@
 ---
 layout: article
-title: "Hello Dart - Teil 4: Variablen"
+title: "Hello Dart - Teil 5: Funktionen"
 date: 2015-01-21 00:00
-slug: hello-dart/de/part4
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part4.md
+slug: hello-dart/de/part5
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part5.md
 description: ""
 image: /assets/library/hello-dart/hello-dart.png
 published: true
@@ -33,10 +33,10 @@ sidebars:
   - text: "Teil 4: Variablen"
     link: /library/hello-dart/de/part4/
     paging: 4
-    active: true
   - text: "Teil 5: Funktionen"
     link: /library/hello-dart/de/part5/
     paging: 5
+    active: true
 - header: Links
   body:
   - text: Seite als Word-Datei

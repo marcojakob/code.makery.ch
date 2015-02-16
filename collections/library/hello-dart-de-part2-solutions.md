@@ -24,15 +24,18 @@ sidebars:
   - text: "Teil 1: Erste Schritte"
     link: /library/hello-dart/de/part1/
     paging: 1
-  - text: "Teil 2: Programmfluss"
+  - text: "Teil 2: Schleifen"
     link: /library/hello-dart/de/part2/
     paging: 2
-  - text: "Teil 3: Variablen"
+  - text: "Teil 3: Bedingte Anweisungen"
     link: /library/hello-dart/de/part3/
     paging: 3
-  - text: "Teil 4: Funktionen"
+  - text: "Teil 4: Variablen"
     link: /library/hello-dart/de/part4/
     paging: 4
+  - text: "Teil 5: Funktionen"
+    link: /library/hello-dart/de/part5/
+    paging: 5
 - header: Lösungen
   body:
   - text: "Lösungen zu Teil 2"
@@ -90,18 +93,44 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 2.04: Conditionals
+#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 2.04: Afraid of Tunnel
 
-##### a.
+<pre class="prettyprint lang-dart">
+class MyPlayer extends Player {
 
-Nimmt den Stern weg, wenn es einen hat.
+  start() {
+    while (!treeLeft() || !treeRight()) {
+      move();
+    }
+    say('AHHHH! This looks very dark in here!');
+  }
+}
+</pre>
+
+Man könnte die `while`-Bedingung auch anders formulieren, zum Beispiel:
+
+<pre class="prettyprint lang-dart">
+while (!(treeLeft() &amp;&amp; treeRight())
+</pre>
 
 
-##### b.
+#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 2.05: Climbing Up
 
-Nimmt den Stern weg, wenn es einen hat und legt einen Stern hin, wenn es keinen hat (Invertieren).
+<pre class="prettyprint lang-dart">
+class MyPlayer extends Player {
 
+  start() {
+    while (treeFront()) {
+      oneStepUp();
+    }
+  }
 
-##### c.
-
-Nimmt den Stern weg, wenn links ein Baum steht.
+  /// Steigt eine Stufe nach oben.
+   oneStepUp() {
+    turnLeft();
+    move();
+    turnRight();
+    move();
+  }
+}
+</pre>

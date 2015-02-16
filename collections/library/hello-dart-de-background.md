@@ -25,15 +25,18 @@ sidebars:
   - text: "Teil 1: Erste Schritte"
     link: /library/hello-dart/de/part1/
     paging: 1
-  - text: "Teil 2: Programmfluss"
+  - text: "Teil 2: Schleifen"
     link: /library/hello-dart/de/part2/
     paging: 2
-  - text: "Teil 3: Variablen"
+  - text: "Teil 3: Bedingte Anweisungen"
     link: /library/hello-dart/de/part3/
     paging: 3
-  - text: "Teil 4: Funktionen"
+  - text: "Teil 4: Variablen"
     link: /library/hello-dart/de/part4/
     paging: 4
+  - text: "Teil 5: Funktionen"
+    link: /library/hello-dart/de/part5/
+    paging: 5
 ---
 
 ## Weshalb Dart?

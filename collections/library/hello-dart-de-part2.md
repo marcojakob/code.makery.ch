@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Hello Dart - Teil 2: Programmfluss"
+title: "Hello Dart - Teil 2: Schleifen"
 date: 2015-01-21 00:00
 slug: hello-dart/de/part2
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part2.md
@@ -24,16 +24,19 @@ sidebars:
   - text: "Teil 1: Erste Schritte"
     link: /library/hello-dart/de/part1/
     paging: 1
-  - text: "Teil 2: Programmfluss"
+  - text: "Teil 2: Schleifen"
     link: /library/hello-dart/de/part2/
     paging: 2
     active: true
-  - text: "Teil 3: Variablen"
+  - text: "Teil 3: Bedingte Anweisungen"
     link: /library/hello-dart/de/part3/
     paging: 3
-  - text: "Teil 4: Funktionen"
+  - text: "Teil 4: Variablen"
     link: /library/hello-dart/de/part4/
     paging: 4
+  - text: "Teil 5: Funktionen"
+    link: /library/hello-dart/de/part5/
+    paging: 5
 - header: Lösungen
   body:
   - text: "Lösungen zu Teil 2"
@@ -46,9 +49,7 @@ sidebars:
     icon-css: fa fa-fw fa-file-word-o
 ---
 
-Im letzten Teil haben wir gelernt, wie wir unserem Spieler eine Reihe von Anweisungen geben können. Anstatt jede Anweisung einzeln aufzuführen, können wir auch Anweisungen wiederholen lassen. Beim Programmieren nennt man solche Wiederholungen *Schleifen*.
-
-## Schleifen
+Im letzten Teil haben wir gelernt, wie wir unserem Spieler eine Reihe von Anweisungen geben können. Anstatt jede Anweisung einzeln aufzuführen, können wir auch Anweisungen wiederholen lassen. Beim Programmieren nennt man solche Wiederholungen **Schleifen**.
 
 Als erstes Beispiel für eine Schleife möchten wir Folgendes tun: 
 
@@ -74,7 +75,7 @@ Testen Sie dieses Programm, indem Sie die `while`-Schleife in die `start()`-Funk
 
 ## Logische Operatoren
 
-Unsere Sensor-Funktionen (siehe [Einleitung](/library/hello-dart/de/#sensoren)) antworten alle entweder mit `true` oder `false`, wenn man diese aufruft. Solche Werte nennt man einen [booleschen Wert](http://de.wikipedia.org/wiki/Boolesche_Variable).  
+Unsere Sensor-Funktionen (siehe [Einleitung](/library/hello-dart/de/#sensoren)) antworten alle entweder mit `true` oder `false`, wenn man diese aufruft. Einen solchen Wert, der entweder wahr oder falsch sein kann, nennt man [Boolean](http://de.wikipedia.org/wiki/Boolesche_Variable).  
 
 Boolesche Werte können mit Hilfe von logischen Operatoren auch kombiniert oder verändert werden. Die folgende Tabelle zeigt die drei wichtigsten logischen Operatoren in Dart:
 
@@ -128,80 +129,41 @@ Unser Spieler ist in einem Tunnel und möchte raus. Schreiben Sie ein Programm f
 Am Schluss soll er ausserdem einen Stern ablegen.
 
 
-## Bedingte Anweisungen
-
-Neben den Schleifen gibt es eine zweite Struktur, die sehr wichtig ist, um den Programmablauf zu steuern. Mit bedingten Anweisungen kann man angeben, in wann ein Block von Anweisungen ausgeführt werden soll und wann nicht.
-
-
-<pre class="prettyprint lang-dart">
-if (treeFront()) {    // Bedingung.
-  turnLeft();         // Block 1 wird ausgeführt, wenn Bedingung true ist.
-} else {
-  move();             // Block 2 wird ausgeführt, wenn Bedingung false ist.
-}
-</pre>
-
-**Hinweis: Der `else`-Teil (Block 2) kann weggelassen werden, wenn er nicht benötigt wird.**
-
-
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.04: Conditionals
-
-Beschreiben Sie mit Worten, was die folgenden Codebeispiele bewirken. Testen Sie diese anschliessend im `scenario2.04`. Damit die bedingten Anweisungen nicht nur einmal ausgeführt werden, sollten sie diese in die vorbereitete Schleife setzen.
-
-
-##### a.
-
-<pre class="prettyprint lang-dart">
-if (onStar()) {
-  removeStar();
-}
-move();
-</pre>
-
-
-##### b.
-
-<pre class="prettyprint lang-dart">
-if (onStar()) {
-  removeLeaf();
-} else {
-  putLeaf();
-}
-move();
-</pre>
-
-
-##### c.
-
-Bedingte Anweisungen können auch ineinander verschachtelt werden:
-
-<pre class="prettyprint lang-dart">
-if (treeLeft()) {
-  if (onStar()) {
-    removeStar();
-  }
-}
-move();
-</pre>
-
-
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.05: Star at Tree
-
-![Blatt beim Baum](/assets/library/hello-dart/part2/star-at-tree.png)
-
-Der Spieler soll geradeaus gehen und überall dort einen Stern legen, wo entweder links oder rechts ein Baum steht.
-
-Öffnen Sie das `scenario2.05` und schreiben Sie das Programm dazu.
-
-
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.06: Afraid of Tunnel
+#### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.04: Afraid of Tunnel
 
 ![Angst vor dem Tunnel](/assets/library/hello-dart/part2/afraid-of-tunnel.png)
 
-Der Spieler hat Angst vor Tunneln. Er soll auf jedem Feld überprüfen, ob es ein Tunneleingang ist (das heisst, ob es auf beiden Seiten Bäumen hat). Ist dies der Fall, so soll er in einer Sprechblase sagen, dass er Angst hat.
+Der Spieler hat Angst vor Tunneln. Er soll auf jedem Feld überprüfen, ob es ein Tunneleingang ist (das heisst, ob es auf beiden Seiten Bäumen hat). Ist dies der Fall, so soll er stehen bleiben und in einer Sprechblase sagen, dass er Angst hat.
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.07: Star Trak
+#### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.05: Climbing Up
+
+![Treppensteigen](/assets/library/hello-dart/part2/climbing-up.png)
+
+Der Spieler soll eine beliebig lange Treppe hochlaufen.
+
+Schreiben Sie eine Funktion `onStepUp()`, wo Sie den Spieler eine einzelne Stufe hochsteigen lassen. Überlegen Sie sich, wie Sie erkennen können, ob der Spieler noch eine Stufe steigen muss oder ob er zuoberst angekommen ist.
+
+
+## For-Schleifen
+
+Es gibt neben der `while`-Schleife eine weitere, sehr wichtige Art von Schleife: die `for`-Schleife:
+
+<pre class="prettyprint lang-dart">
+for (var i = 0; i &lt; 4; i++) {
+  move();
+}
+</pre>
+
+Bei diesem Beispiel wird ein Zähler `i` verwendet. Der Zähler wird zuerst auf `0` gesetzt. Danach wird bei jedem Schleifendurchgang geprüft, ob `i` kleiner ist als 4 und schliesslich wird `i` um eins erhöht. Das bedeutet, dass die `move()`-Anweisung in dieser Schleife vier mal ausgeführt wird.
+
+Sie werden der `for`-Schleife später immer wieder begegnen, auch zum Teil in etwas abgewandelter Form. Für den Moment reicht uns mal das Wissen, dass es sie gibt.
+
+
+## Wie weiter?
+
+Im [Teil 3](/library/hello-dart/de/part3/) lernen wir mit *bedingten Anweisungen* eine weitere Art kennen, unsere Programme zu steuern.
+
 
 ***
 
