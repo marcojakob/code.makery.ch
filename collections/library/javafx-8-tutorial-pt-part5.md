@@ -4,7 +4,6 @@ title: "Tutorial JavaFX 8 - Parte 5: Salvando dados como XML"
 date: 2014-09-10 00:00
 updated: 2014-11-12 00:00
 slug: javafx-8-tutorial/pt/part5
-canonical: /java/javafx-8-tutorial-part5/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt-part5.md
 description: "Salvar dados como XML com JAXB. Aprende como usar o FileChooser do JavaFX e o Menu do JavaFX."
 image: /assets/library/javafx-8-tutorial/part5/addressapp-part5.png

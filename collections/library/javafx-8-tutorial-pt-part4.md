@@ -4,7 +4,6 @@ title: "Tutorial JavaFX 8 - Parte 4: Estilos usando CSS"
 date: 2014-09-10 00:00
 updated: 2014-11-10 00:00
 slug: javafx-8-tutorial/pt/part4
-canonical: /java/javafx-8-tutorial-part4/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt-part4.md
 description: "No JavaFX você pode estilizar sua interface de usuário usando CSS. Nós também adicionaremos um ícone de aplicação nesta parte do tutorial."
 image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png

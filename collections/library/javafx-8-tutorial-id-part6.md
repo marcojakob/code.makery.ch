@@ -4,7 +4,6 @@ title: "Tutorial JavaFX 8 - Bagian 6: Bagan Statistika"
 date: 2014-05-09 00:00
 updated: 2015-01-05 00:00
 slug: javafx-8-tutorial/id/part6
-canonical: /java/javafx-8-tutorial-part6/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id-part6.md
 description: "Belajar bagaimana membuat bagan palang JavaFX."
 image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png

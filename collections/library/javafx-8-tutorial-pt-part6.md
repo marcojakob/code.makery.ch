@@ -4,7 +4,6 @@ title: "Tutorial JavaFX 8 - Parte 6: Gráficos de Estatistica"
 date: 2014-09-10 00:00
 updated: 2014-11-12 00:00
 slug: javafx-8-tutorial/pt/part6
-canonical: /java/javafx-8-tutorial-part6/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt-part6.md
 description: "Aprenda como criar um Gráfico de Barras JavaFX (JavaFX Bar Chart)."
 image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
