@@ -60,6 +60,9 @@ sidebars:
   - text: Bahasa Indonesia
     link: /library/javafx-8-tutorial/id/
     icon-css: fa fa-fw fa-globe
+  - text: Français
+    link: /library/javafx-8-tutorial/fr/
+    icon-css: fa fa-fw fa-globe
 ---
 
 В 2012 году я написал очень детальный [учебник по JavaFX 2](http://code.makery.ch/java/javafx-2-tutorial-intro/) для моих студентов. Многие люди с разных частей мира прочитали его и дали очень позитивные отзывы о данном материале. Поэтому я решил переписать этот учебник для новой версии JavaFX 8 (об изменениях вы можете почитать здесь - [Обновление до JavaFX 8 - Что Нового](http://code.makery.ch/blog/update-to-javafx-8-whats-new/ "Update to JavaFX 8 - What's New")).

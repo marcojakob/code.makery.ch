@@ -60,6 +60,9 @@ sidebars:
     link: /library/javafx-8-tutorial/id/
     icon-css: fa fa-fw fa-globe
     active: true
+  - text: Français
+    link: /library/javafx-8-tutorial/fr/
+    icon-css: fa fa-fw fa-globe
 ---
 
 Pada 2012 saya telah menulis [Seri Tutorial JavaFX 2](/java/javafx-2-tutorial-intro/) yang terperinci untuk murid-muridku. Banyak orang dari penjuru dunia telah membaca tutorial ini dan memberi umpan balik yang positif. Lalu saya memutuskan **menulis ulang Tutorial JavaFX 2 untuk JavaFX 8** (baca perubahan di [Pembaharuan javaFX 8 - Apa yang baru](/blog/update-to-javafx-8-whats-new/)).
