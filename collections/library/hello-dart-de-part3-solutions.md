@@ -193,7 +193,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.07: Foillow the Trail
+#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.07: Follow the Trail
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -231,6 +231,46 @@ class MyPlayer extends Player {
     turnLeft();
     turnLeft();
     move();
+  }
+}
+</pre>
+
+
+#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.08: Guard
+
+<pre class="prettyprint lang-dart">
+class MyPlayer extends Player {
+
+  start() {
+    while (true) {
+      makeOneStep();
+    }
+  }
+
+  makeOneStep() {
+    if (!treeRight()) {
+      // Kein Baum rechts --> gehe nach rechts.
+      turnRight();
+      move();
+    } else {
+      // Baum rechts.
+      if (!treeFront()) {
+        // Kein Baum vorne --> ein Schritt vorwärts.
+        move();
+      } else {
+        // Bäume rechts und vorne.
+        if (!treeLeft()) {
+          // Kein Baum links --> gehe nach links.
+          turnLeft();
+          move();
+        } else {
+          // Bäume rechts, vorne und links --> Sackgasse.
+          turnLeft();
+          turnLeft();
+          move();
+        }
+      }
+    }
   }
 }
 </pre>
