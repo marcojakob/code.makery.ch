@@ -37,6 +37,11 @@ sidebars:
   - text: "Teil 5: Funktionen"
     link: /library/hello-dart/de/part5/
     paging: 5
+- header: Lösungen
+  body:
+  - text: "Lösungen zu Teil 4"
+    link: /library/hello-dart/de/part4-solutions/
+    icon-css: fa fa-fw fa-check-square-o
 - header: Links
   body:
   - text: Seite als Word-Datei
@@ -93,13 +98,12 @@ Dann könnte man im obigen Programmbeispiel `while (i < anzahl)` schreiben.
 In Dart gibt es ein paar vordefinierte Datentypen. Mit Datentypen gibt man an, was in eine Variable gespeichert wird. Diese Angaben sind in Dart freiwillig. Das heisst, man kann alle Variablen einfach mit `var` deklarieren, wie wir es oben gemacht haben. Ich empfehle aber, meistens den Datentyp anzugeben, weil dies hilft, Fehler zu erkennen.
 
 <div class="alert alert-info">
-<strong>Merke:</strong> Alles, was in eine Variable gespeichert werden kann, wird in Dart als **Objekt** bezeichnet. Der Datentyp eines Objektes nennen wir eine **Klasse**. Klassen und Objekte sind die Grundelemente der <a class="alert-link" href="http://de.wikipedia.org/wiki/Objektorientierte_Programmierung">objektorientierten Programmierung</a>.
+  <strong>Merke:</strong> Alles, was in eine Variable gespeichert werden kann, wird in Dart als **Objekt** bezeichnet. Der Datentyp eines Objektes nennen wir eine **Klasse**. Klassen und Objekte sind die Grundelemente der <a class="alert-link" href="http://de.wikipedia.org/wiki/Objektorientierte_Programmierung">objektorientierten Programmierung</a>.
 </div>
 
 Später werden wir unsere eigenen Klassen erstellen. Jetzt schauen wir uns zuerst die Grunddatentypen von Dart an.
 
 *Für weitere Informationen zu den Grunddatentypen siehe [Dart Up and Running - Chapter 2: Built-in types](https://www.dartlang.org/docs/dart-up-and-running/ch02.html#built-in-types).*
-
 
 <table class="table table-bordered">
   <thead>
@@ -122,7 +126,7 @@ Später werden wir unsere eigenen Klassen erstellen. Jetzt schauen wir uns zuers
     </tr>
     <tr>
       <td>`String`</td>
-      <td>Text in einer beliebigen Länge. Text wird immer in zwischen einfache oder doppelte Anführungszeichen gestellt.</td>.
+      <td>Text in einer beliebigen Länge. Text wird immer in *zwischen einfache oder doppelte Anführungszeichen* gestellt.</td>.
       <td>`'Ich bin ein Text'` oder `"Ich bin auch ein Text"`</td>
     </tr>
     <tr>
@@ -140,42 +144,19 @@ Später werden wir unsere eigenen Klassen erstellen. Jetzt schauen wir uns zuers
       <td>In einer Map kann man Objekte speichern als *Schlüssel* und *Werte*.</td>
       <td>`{ 'schlüssel-1': 'wert-1', 'schlüssel-2': 'wert-2' }`</td>
     </tr>
-    
   </tbody>
 </table>
 
-
-### Wahrheitswerte
-
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>Typ</th>
-      <th>Wertebereich</th>
-      <th>Speicherbedarf</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>`boolean`</td>
-      <td>`true` oder `false`</td>
-      <td>1 bit</td>
-    </tr>
-  </tbody>
-</table>
-
-
-***
 
 ## Vergleichsoperatoren
 
-Folgende Operatoren können in Java für Vergleiche verwendet werden. Das Ergebnis ist jeweils ein boolean (entweder `true` oder `false`).
+Folgende Operatoren können in Dart für Vergleiche verwendet werden. Das Ergebnis ist jeweils ein `bool`, das heisst entweder `true` oder `false`.
 
 <table class="table table-bordered">
   <thead>
     <tr>
       <th>Operator</th>
-      <th>Bedeutung</th>
+      <th>Beschreibung</th>
       <th>Beispiel</th>
     </tr>
   </thead>
@@ -188,7 +169,7 @@ Folgende Operatoren können in Java für Vergleiche verwendet werden. Das Ergebn
     <tr>
       <td>`!=`</td>
       <td>ungleich</td>
-      <td>`k < 12`</td>
+      <td>`k != 12`</td>
     </tr>
     <tr>
       <td>`>`</td>
@@ -216,8 +197,6 @@ Folgende Operatoren können in Java für Vergleiche verwendet werden. Das Ergebn
 **Achtung:** Der Vergleich auf "Gleichheit" hat immer zwei Gleichheitszeichen `==`. Mit einem einzelnen Gleichheitszeichen `=` geschieht eine Zuweisung!
 
 
-***
-
 ## Arithmetische Operatoren
 
 Zur Berechnung können folgende arithmetische Operatoren verwendet werden:
@@ -226,7 +205,7 @@ Zur Berechnung können folgende arithmetische Operatoren verwendet werden:
   <thead>
     <tr>
       <th>Operator</th>
-      <th>Bedeutung</th>
+      <th>Beschreibung</th>
       <th>Beispiel</th>
     </tr>
   </thead>
@@ -262,22 +241,31 @@ Zur Berechnung können folgende arithmetische Operatoren verwendet werden:
 
 ***
 
-#### <i class="fa fa-rocket"></i> TASK 3.01: Kara zählt Kleeblätter
+#### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.01: Counting Stars
 
-![TASK 3.01](/assets/library/greenfoot-kara/chapter3/task01.png) 
+![Sternenspur](/assets/library/hello-dart/part4/counting-stars.png)
 
-Kara soll waagrecht von links nach rechts gehen bis zum Baum und dabei die Kleeblätter zählen.
+Der Spieler soll von links nach rechts gehen bis zum Baum und dabei die Sterne zählen.
 
 *Hinweise:*
 
-* Am Schluss können Sie das Resultat mit dem folgenden Befehl auf die "Konsole" schreiben: `System.out.println("Das Resultat ist: " + count);`
-* Text muss man in Anführungszeichen schreiben. Das Pluszeichen bewirkt, dass die variable `count` hinten angefügt wird.
-* *Gültigkeitsbereich von Variablen*: Variablen sind immer nur innerhalb des Blockes (zwischen den geschweiften Klammern) gültig, in welchem sie deklariert wurden. Man kann sie auch ausserhalb der Methoden deklarieren, dann gelten sie für die ganze Klasse. 
+1. Definieren und initialisieren Sie eine Variable, zum Beispiel mit   
+`int count = 0;`
+2. Schreiben Sie darunter eine Schleife, in der die Variable immer um eins erhöht wird:   
+`count = count + 1;`
+3. Die Variable sollte nur erhöht werden, wenn der Spieler auf einem Stern ist.
+4. Am Schluss soll der Spieler angeben, wie viele Sterne er gezählt hat. Mit `${count}` können wir die Variable in einen Text einfügen:   
+`say('Ich habe ${count} Sterne gefunden.');`
 
 
-#### <i class="fa fa-rocket"></i> TASK 3.02: Kara in a Box I
+<div class="alert alert-info">
+  <strong>Gültigkeitsbereich von Variablen:</strong> Variablen sind immer nur innerhalb des Blockes (zwischen den geschweiften Klammern) gültig, in welchem sie deklariert wurden. Man kann sie auch ausserhalb der Methoden deklarieren, dann gelten sie für die ganze Klasse.
+</div>
 
-![TASK 3.02](/assets/library/greenfoot-kara/chapter3/task02.png) 
+
+#### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.02: Invert
+
+![Sternenspur](/assets/library/hello-dart/part4/invert.jpg)
 
 Eine quadratische Fläche ist von Bäumen umrandet. Innerhalb der Fläche ist ein Muster aus Kleeblättern gelegt, das von Kara invertiert (= umgedreht) werden soll. Kara startet links oben in der Ecke mit Blick nach rechts.
 
