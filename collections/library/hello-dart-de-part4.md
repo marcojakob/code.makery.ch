@@ -245,7 +245,7 @@ Zur Berechnung können folgende arithmetische Operatoren verwendet werden:
 
 ![Sternenspur](/assets/library/hello-dart/part4/counting-stars.png)
 
-Der Spieler soll von links nach rechts gehen bis zum Baum und dabei die Sterne zählen.
+Der Spieler soll von links nach rechts gehen und dabei die Sterne zählen.
 
 *Hinweise:*
 
@@ -263,84 +263,49 @@ Der Spieler soll von links nach rechts gehen bis zum Baum und dabei die Sterne z
 </div>
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.02: Invert
+#### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.02: Cleaning Up
 
-![Sternenspur](/assets/library/hello-dart/part4/invert.jpg)
+![Aufräumen](/assets/library/hello-dart/part4/cleaning-up.png)
 
-Eine quadratische Fläche ist von Bäumen umrandet. Innerhalb der Fläche ist ein Muster aus Kleeblättern gelegt, das von Kara invertiert (= umgedreht) werden soll. Kara startet links oben in der Ecke mit Blick nach rechts.
+Der Spieler soll alle Sterne wegräumen.
 
 *Hinweise:*
 
-* Bei dieser Aufgabe ist es hilfreich, mit booleschen Variablen zu arbeiten, z.B.:
-  * Deklaration und Initilalisierung: `boolean goingRight = false;`
-  * Aus true wird false und umgekehrt: `goingRight = !goingRight;`
-  * Boolesche Variable als Bedingung: `if (goingRight)`
+1. Sie können den Baum verwenden, um herauszufinden, wann der Spiele am Ende angekommen ist mit einer Schleife `while (!treeFront()) {...}`.
+2. Entfernen Sie zuerst die Sterne auf der ersten Zeile.
+3. Drehen Sie am Rand und entfernen Sie die die Sterne auf der zweiten Zeile.
+4. Führen Sie nun eine `bool`-Variable ein, damit sich der Spieler merkt, in welche Richtung er läuft, zum Beispiel so:   
+`bool goingRight = true;`
+5. Mit dieser Variable können Sie nun herausfinden, ob der Spieler am rechten oder am linken Rand angekommen ist und entsprechend umdrehen muss. Ein `bool` kann wie folgt in einer Bedingung verwendet werden:   
+`if (goingRight) {...}`
+6. Denken Sie daran, die neue Richtung in die Variable zu setzen, sobald sich der Spieler dreht:   
+`goingRight = false;`
+7. *Verbesserung*: Damit der Code übersichtlicher wird, sollen Sie zwei Funktionen machen zum Umdrehen: `turnAroundRight()` und `turnAroundLeft()`.
 
 
+#### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.03: Inverting
 
-#### <i class="fa fa-rocket"></i> TASK 3.03: Kara in a Box II
+![Sternenspur](/assets/library/hello-dart/part4/inverting.png)
 
-![TASK 3.03](/assets/library/greenfoot-kara/chapter3/task03.png) 
-
-Eine quadratische Fläche ist von Bäumen umrandet. Innerhalb der Fläche soll ein schachbrettartiges Muster aus Kleeblättern von Kara gelegt werden. Kara startet links oben in der Ecke mit Blick nach rechts.
-
+Die Welt hat eine quadratische Fläche und am Schluss einen Baum. Innerhalb der Fläche ist ein Muster aus Sternen gelegt, das vom Spieler invertiert (=umgedreht) werden soll. Achten Sie darauf, dass Ihr Code übersichtlich bleibt und lagern Sie allenfalls Teile in eigene Funktionen aus.
 
 
-#### <i class="fa fa-rocket"></i> TASK 3.04 (schwierig): Die längste Baumreihe
+#### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.04: Chessboard
 
-![TASK 3.04](/assets/library/greenfoot-kara/chapter3/task04.png) 
+![Schachbrett](/assets/library/hello-dart/part4/chessboard.png)
 
-Auf der Wiese hat es verschiedene Baumreihen. Kara soll nun die Länge (in Anzahl Bäumen) der längsten Baumreihe ermitteln und auf die Konsole ausgeben. Zwischen d en Baumreihen ist immer mindestens ein Feld Platz. Auf dem letzten Feld liegt ein Kleeblatt.
-
-
-
-#### <i class="fa fa-rocket"></i> TASK 3.05 (sehr schwierig): Push Mushroom Through Tunnel
-
-![TASK 3.05](/assets/library/greenfoot-kara/chapter3/task05.png) 
-
-Die Welt von Kara hat zwei Boxen, welche durch einen Tunnel verbunden sind. In der Box links befindet sich Kara und ein Kleeblatt. In der Box rechts befindet sich ein Pilz. Kara soll nun auf die andere Seite gelangen, den Pilz finden und ihn auf die andere Seite schieben. Auf der anderen Seite angekommen soll der Pilz schliesslich auf das Kleeblatt geschoben werden.
-
-Sie können davon ausgehen, dass Kara immer oben links in der Ecke startet und das Kleeblatt sich unten links befindet. Der Pilz kann jedoch an einer beliebigen Stelle rechts vom Tunnel stehen.
-
-*Hints:*
-
-* Diese Aufgabe kann auch in Zusammenarbeit zu zweit gelöst werden. 
-* Dabei können die Teilprobleme untereinander aufgeteilt werden:
-  * Tunneleingang finden
-  * Pilz finden
-  * Pilz vor den Tunneleingang stossen
-  * Pilz auf das Kleeblatt stossen
+Die Welt hat eine quadratische Fläche und am Schluss einen Baum. Innerhalb der Fläche soll ein schachbrettartiges Muster aus Sternen gelegt werden.
 
 
+#### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.04 (schwierig): Tree Line
 
-***
+![Baumreihe](/assets/library/hello-dart/part4/tree-line.jpg)
 
-## Vertiefung zu Variablen
-
-Wir hatten bereits einen ersten Kontakt zu Variablen. Nun noch ein paar zusätzliche Bemerkungen zu den verschiedenen Typen:
-
-
-### Elementare Datentypen
-
-![Elementare Datentypen](/assets/library/greenfoot-kara/chapter3/elementary-types.png) 
-
-Elementare Datentypen sind wie Becher (im Speicher), wo der Wert direkt in eine Variable gespeichert wird.
-
-
-### Referenztypen
-
-![Referenztypen](/assets/library/greenfoot-kara/chapter3/reference-types.png) 
-
-Der Wert in `k` ist eine Referenz auf das Kara-Objekt. Mit dem Punktoperator (`k.`) kann `k` wie eine Fernbedienung auf das Kara-Objekt benutzt werden! 
-
-
-***
-
-***Credits:*** *[Ideen und Konzepte von Kara](http://www.swisseduc.ch/informatik/karatojava/) wurden entwickelt von Jürg Nievergelt, Werner Hartmann, Raimond Reichert et al. Einige Kara-Übungen basieren auf [Unterlagen von Horst Gierhardt](http://www.swisseduc.ch/informatik/karatojava/javakara/material/).*
+Auf der Wiese hat es verschiedene Baumreihen. Der Spieler soll nun die Länge (in Anzahl Bäumen) der längsten Baumreihe ermitteln und ausgeben. Zwischen den Baumreihen ist immer mindestens ein Feld Platz. Auf dem letzten Feld liegt ein Stern.
 
 
 ***
 
 ## Wie weiter?
 
-Fahren Sie weiter mit [Kapitel 4: Sokoban Spiel](/library/greenfoot-kara/de/chapter4/)
+Fahren Sie weiter mit [Teil 5: Methoden](/library/hello-dart/de/part5/)
