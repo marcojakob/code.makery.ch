@@ -1,10 +1,10 @@
 ---
 layout: article
-title: "Hello Dart - Teil 5: Funktionen"
+title: "Hello Dart - Lösungen Teil 5"
 date: 2015-01-21 00:00
-slug: hello-dart/de/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part5.md
-description: ""
+slug: hello-dart/de/part5-solutions
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part5-solutions.md
+description: "Lösungen zu Hello Dart Teil 5."
 image: /assets/library/hello-dart/hello-dart.png
 published: true
 prettify: true
@@ -36,12 +36,12 @@ sidebars:
   - text: "Teil 5: Funktionen"
     link: /library/hello-dart/de/part5/
     paging: 5
-    active: true
 - header: Lösungen
   body:
-  - text: "Lösungen zu Teil 5"
-    link: /library/hello-dart/de/part5-solutions/
+  - text: "Lösungen zu Teil 4"
+    link: /library/hello-dart/de/part4-solutions/
     icon-css: fa fa-fw fa-check-square-o
+    active: true
 - header: Links
   body:
   - text: Seite als Word-Datei
@@ -49,9 +49,23 @@ sidebars:
     icon-css: fa fa-fw fa-file-word-o
 ---
 
-*Es war einmal ein kleines Mädchen, das immer ein rotes Käppchen trug. Darum hiess es bei allen Leuten nur „Rotkäppchen". Eines Tages sagte die Mutter zu dem Kind: "Rotkäppchen, heute hat Deine Grossmutter Geburtstag. Back ihr doch ihren Lieblingskuchen, nimm eine Flasche vom guten alten Wein aus dem Keller, leg alles in einen Korb und geh sie besuchen."*
+#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 5.01: Counting Stars
 
-![Rotkäppchen](/assets/library/hello-dart/part5/red-riding-hood.jpg)   
-<small>*Image by [Russ Fagle](http://www.cafepress.com/redridinghood)*</small>
+<pre class="prettyprint lang-dart">
+class MyPlayer extends Player {
 
-**Helfen Sie Rotkäppchen beim Kuchenbacken! Lesen Sie dafür aber zuerst die Theorie aufmerksam durch.**
+  start() {
+    int count = 0;
+
+    while (canMove()) {
+      move();
+
+      if (onStar()) {
+        count = count + 1;
+      }
+    }
+
+    say('Ich habe ${count} Sterne gefunden.');
+  }
+}
+</pre>
