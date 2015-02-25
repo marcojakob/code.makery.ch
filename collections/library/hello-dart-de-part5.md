@@ -49,9 +49,15 @@ sidebars:
     icon-css: fa fa-fw fa-file-word-o
 ---
 
-*Es war einmal ein kleines Mädchen, das immer ein rotes Käppchen trug. Darum hiess es bei allen Leuten nur „Rotkäppchen". Eines Tages sagte die Mutter zu dem Kind: "Rotkäppchen, heute hat Deine Grossmutter Geburtstag. Back ihr doch ihren Lieblingskuchen, nimm eine Flasche vom guten alten Wein aus dem Keller, leg alles in einen Korb und geh sie besuchen."*
-
-![Rotkäppchen](/assets/library/hello-dart/part5/red-riding-hood.jpg)   
-<small>*Image by [Russ Fagle](http://www.cafepress.com/redridinghood)*</small>
-
-**Helfen Sie Rotkäppchen beim Kuchenbacken! Lesen Sie dafür aber zuerst die Theorie aufmerksam durch.**
+<div class="row">
+  <div class="col-sm-6">
+    <img alt="Rotkäppchen" src="/assets/library/hello-dart/part5/red-riding-hood.jpg"> 
+  </div>
+  <div class="col-sm-6">
+    <p>
+      <em>Es war einmal ein kleines Mädchen, das immer ein rotes Käppchen trug. Darum hiess es bei allen Leuten nur „Rotkäppchen". Eines Tages sagte die Mutter zu dem Kind: "Rotkäppchen, heute hat Deine Grossmutter Geburtstag. Back ihr doch ihren Lieblingskuchen, nimm eine Flasche vom guten alten Wein aus dem Keller, leg alles in einen Korb und geh sie besuchen."</em>
+    </p>
+    <p><strong>Helfen Sie Rotkäppchen beim Kuchenbacken! Lesen Sie dafür aber zuerst die Theorie aufmerksam durch.
+    </strong></p>
+  </div>
+</div>

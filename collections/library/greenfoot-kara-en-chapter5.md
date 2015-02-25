@@ -56,15 +56,19 @@ sidebars:
     icon-css: fa fa-fw fa-globe
 ---
 
-*Once upon a time, there was a little girl who always wore a red riding cloak. So everyone called her Little Red Riding Hood. One moning the mother said to the child: "Red Riding Hood, today is your grandmother's birthday.Bake her favorite cake, take a bottle of good old wine from the cellar, put everything in one basket, and go visit her."*
+<div class="row">
+  <div class="col-sm-6">
+    <img alt="Rotkäppchen" src="/assets/library/greenfoot-kara/chapter5/red-riding-hood.jpg">
+  </div>
+  <div class="col-sm-6">
+    <p>
+      <em>Once upon a time, there was a little girl who always wore a red riding cloak. So everyone called her Little Red Riding Hood. One moning the mother said to the child: "Red Riding Hood, today is your grandmother's birthday.Bake her favorite cake, take a bottle of good old wine from the cellar, put everything in one basket, and go visit her."</em>
+    </p>
+    <p><strong>Help Little Red Riding Hood bake a cake! Carefully read the theory first.
+    </strong></p>
+  </div>
+</div>
 
-![Red Riding Hood](/assets/library/greenfoot-kara/chapter5/red-riding-hood.jpg)   
-<small>*Image by [Russ Fagle](http://www.cafepress.com/redridinghood)*</small>
-
-**Help Little Red Riding Hood bake a cake! Carefully read the theory first.**
-
-
-***
 
 ## Method with Parameters
 
