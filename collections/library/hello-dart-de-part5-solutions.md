@@ -182,7 +182,7 @@ class MyPlayer extends Player {
   start() {
     drawRectangle(21, 4);
 
-    int candles = (howOldIsGrandma() / 10).round();
+    int candles = (howOldIsGrandma() / 10).toInt();
     drawCandles(candles);
   }
 
@@ -258,7 +258,7 @@ class MyPlayer extends Player {
 
   /// Your program.
   start() {
-    int layers = (howOldIsGrandma() / 10 - 5).round();
+    int layers = (howOldIsGrandma() / 10 - 5).toInt();
     drawLayers(layers);
   }
 
