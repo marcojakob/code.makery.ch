@@ -423,9 +423,11 @@ We're almost there! But one little thing is missing: We haven't told our `Person
 
 ## Start the Application
 
-When you start your application now, you should see something like the screenshot at the beginning of this blog post.   
+When you start your application now, you should see something like the screenshot at the beginning of this blog post. 
 
 Congratulations!
+
+*Note: The labels will not update when a person is selected, yet. We will program user interactions in the next part of the tutorial.*
 
 
 ### What's Next?

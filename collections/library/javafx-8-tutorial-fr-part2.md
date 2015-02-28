@@ -432,6 +432,8 @@ When you start your application now, you should see something like the screensho
 
 Congratulations!
 
+*Note: The labels will not update when a person is selected, yet. We will program user interactions in the next part of the tutorial.*
+
 
 ### What's Next?
 
