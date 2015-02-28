@@ -102,3 +102,11 @@ Il y a deux façons de l'utiliser :
 * **la version rapide:** Importez le code source dans votre IDE (c'est un projet Eclipse, mais vous devriez pouvoir utiliser d'autres IDEs comme NetBeans avec quelques petites modifications). Ensuite suivez le tutorial pour comprendre le code.
 
 Maintenant, j'espère que vous allez vous amuser ! Commencez avec la [Partie 1: le Scene Builder](/library/javafx-8-tutorial/fr/part1/).
+
+<div class="alert alert-success">
+  <strong><i class="fa fa-trophy"></i> Attribution:</strong> The French translation has been contributed by 
+  <ul>
+    <li><a href="https://github.com/chakram" class="alert-link">Chakram</a></li> 
+  </ul>
+  Thank you very much!
+</div>
