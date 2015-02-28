@@ -4,7 +4,6 @@ title: "JavaFX 8 Tutorial (Français)"
 date: 2014-04-19 00:00
 updated: 2015-02-18 00:00
 slug: javafx-8-tutorial/fr
-canonical: /java/javafx-8-tutorial-intro/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr.md
 description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
 image: /assets/library/javafx-8-tutorial/addressapp.png
@@ -67,7 +66,7 @@ sidebars:
 ---
 
 <div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs a French translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
+  <i class="fa fa-language"></i> Some parts of this tutorial still need a French translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
 </div>
 
 En 2012, J'ai écrit une [série de tutoriaux JavaFX 2 très détaillés](/java/javafx-2-tutorial-intro/) pour mes étudiants. De nombreuses personnes du monde entier les ont lus et les retours ont été très positifs. J'ai donc décidé de **réécrire le tutoriel JavaFX 2 pour JavaFX 8** (pour savoir ce qui a changé : [Mise à jour vers JavaFX 8 - Quoi de neuf](/blog/update-to-javafx-8-whats-new/)).
