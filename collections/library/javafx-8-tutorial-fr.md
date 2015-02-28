@@ -70,36 +70,36 @@ sidebars:
   <i class="fa fa-language"></i> This page needs a French translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
 </div>
 
-Back in 2012 I wrote a very detailed [JavaFX 2 tutorial series](/java/javafx-2-tutorial-intro/) for my students. Many people all over the world have been reading the tutorial and gave very positive feedback. So I decided to **rewrite the JavaFX 2 tutorial for JavaFX 8** (read about what changed in [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)).
+En 2012, J'ai écrit une [série de tutoriaux JavaFX 2 très détaillés](/java/javafx-2-tutorial-intro/) pour mes étudiants. De nombreuses personnes du monde entier les ont lus et les retours ont été très positifs. J'ai donc décidé de **réécrire le tutoriel JavaFX 2 pour JavaFX 8** (pour savoir ce qui a changé : [Mise à jour vers JavaFX 8 - Quoi de neuf](/blog/update-to-javafx-8-whats-new/)).
 
-This tutorial walks you through designing, programming and deploying an address application. This is how the final application will look like:
+Ce tutoriel vous guide pour les phases de design, de programmation et de déploiement d'une application de répertoire d'adresse. Voici à quoi ressemblera l'application :
 
 ![Screenshot AddressApp](/assets/library/javafx-8-tutorial/addressapp.png)
 
 
-## What you will learn
+## Ce que vous allez apprendre
 
-* Creating and starting a JavaFX project
-* Using Scene Builder to design the user interface
-* Structuring an application with the Model-View-Controller (MVC) pattern
-* Using `ObservableLists` for automatically updating the user interface
-* Using `TableView` and reacting to selection changes in the table
-* Create a custom popup dialog to edit persons
-* Validating user input
-* Styling a JavaFX application with CSS
-* Persisting data as XML
-* Saving the last opened file path in user preferences
-* Creating a JavaFX chart for statistics
-* Deploying a JavaFX application as a native package
+* Créer et lancer un projet JavaFX
+* Utiliser le Scene Builder pour dessiner l'interface utilisateur
+* Structurer une application suivant le schéma Modèle Vue Contrôleur (MVC)
+* Utiliser des `ObservableLists` pour mettre à jour automatiquement l'interface utilisateur
+* Utiliser une `TableView` et réagir au changements de sélection dans la table
+* Créer une fenêtre de dialogue popup pour éditer les données de personnes
+* Valider les entrées utilisateur
+* Personnaliser votre application JavaFX avec CSS
+* Gérer des données persistantes en XML
+* Sauvegarder le dernier répertoire ouvert dans les préférences utilisateurs
+* Créer un graphique JavaFX pour afficher des statistiques
+* Deployer une application JavaFX via un package natif
 
-**This is quite a lot!** So, after you you've completed this tutorial series you should be ready to build sophisticated applications with JavaFX.
+**C'est déjà beaucoup!** Donc, après être allé au bout de cette série de tutoriaux, vous devriez être prêt à coder des applications sophistiquées avec JavaFX.
 
 
-## How to use this Tutorial
+## Comment utiliser ce tutorial ?
 
-There are two ways to use this tutorial:
+Il y a deux façons de l'utiliser :
 
-* **learn-a-lot track:** Create your own JavaFX project from the ground up.
-* **fast track:** Import the source code for a tutorial part into your IDE (it's an Eclipse project, but you could use other IDEs like NetBeans with slight modifications). Then go through the tutorial to understand the code.
+* **la version apprendre-un-max:** Créez votre propre projet JavaFX en partant de zéro.
+* **la version rapide:** Importez le code source dans votre IDE (c'est un projet Eclipse, mais vous devriez pouvoir utiliser d'autres IDEs comme NetBeans avec quelques petites modifications). Ensuite suivez le tutorial pour comprendre le code.
 
-Now, I hope you'll have fun! Start with [Part 1: Scene Builder](/library/javafx-8-tutorial/fr/part1/).
+Maintenant, j'espère que vous allez vous amuser ! Commencez avec la [Partie 1: le Scene Builder](/library/javafx-8-tutorial/fr/part1/).
