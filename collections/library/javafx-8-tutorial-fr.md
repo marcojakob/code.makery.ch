@@ -5,7 +5,7 @@ date: 2014-04-19 00:00
 updated: 2015-02-18 00:00
 slug: javafx-8-tutorial/fr
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr.md
-description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
+description: "Les sept étapes de ce tutorial vous amèneront à découvrir tout à tour, le design, la programmation et enfin le déploiement d'une application de répertoire d'adresses."
 image: /assets/library/javafx-8-tutorial/addressapp.png
 published: true
 prettify: true
