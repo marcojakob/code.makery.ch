@@ -71,10 +71,6 @@ sidebars:
     active: true
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs a French translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
 ![Capture AddressApp Partie 7](/assets/library/javafx-8-tutorial/part7/addressapp-part7.png)
 
 J'ai pensé que je devais écrire une dernière partie pour conclure ce tutoriel, partie qui traiterait du déploiement de l'application AddressApp.
@@ -97,7 +93,7 @@ Java mettait souvent en avant le slogan **Write Once, Run Anywhere** (écrit une
 
 Par le passé, installer une application Java n'était jamais de tout repos. Si l'utilisateur ne disposait pas de la bonne version de Java sur son système, il devait se voir invité à l'installer préalablement. Cela amenait quelques difficultés comme, par exemple, la nécessité de disposer de droits administrateur, des problèmes de compatibilité entre versions de Java, etc.
 
-Heureusement, JavaFX propose une nouvelle option appelée **Packaging natif ** (aussi appelé Self-Contained Application Package). Un package natif regroupe en fait votre application ainsi que la machine virtuelle Java (qui, elle, est spécifique à une plateforme) . 
+Heureusement, JavaFX propose une nouvelle option appelée **Packaging natif ** (aussi appelé Self-Contained Application Package). Un package natif regroupe en fait votre application ainsi que la machine virtuelle Java (qui, elle, est spécifique à une plateforme). 
 
 La documentation JavaFX fournie par Oracle contient un guide assez complet pour toutes les [options de déploiement JavaFX](http://docs.oracle.com/javafx/2/deployment/jfxpub-deployment.htm) (en anglais). 
 
