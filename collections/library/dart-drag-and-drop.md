@@ -155,7 +155,6 @@ An example of how to drag over nested `Dropzone`s.
 ***
 
 
-
 ### Sortable
 
 An example example to create basic sortable/rearranging behavior.
@@ -167,7 +166,18 @@ An example example to create basic sortable/rearranging behavior.
 <iframe src="http://marcojakob.github.io/dart-dnd/simple-sortable/" width="100%" height="450px"></iframe>
 
 
+***
 
+
+### Shadow DOM
+
+Example how to use drag and drop in Shadow DOM with Polymer Web Components.
+
+<a href="http://marcojakob.github.io/dart-dnd/shadow-dom/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+
+#### Live demo
+
+<iframe src="http://marcojakob.github.io/dart-dnd/shadow-dom/" width="100%" height="520px"></iframe>
 
 
 
