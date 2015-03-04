@@ -309,3 +309,13 @@ Auf der Wiese hat es verschiedene Baumreihen. Der Spieler soll nun die Länge (i
 ## Wie weiter?
 
 Fahren Sie weiter mit [Teil 5: Methoden](/library/hello-dart/de/part5/)
+
+
+***
+
+*Quellen*<br>
+<em class="small">
+[Planet Cute](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html) Bilder stammen von Daniel Cook (Lostgarden.com), veröffentlicht unter [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/us/).<br>
+[Oleg Yadrov](https://www.linkedin.com/in/olegyadrov) hat die "Planet Cute" Bilder weiterentwickelt und sie mir zur Verfügung gestellt.<br>
+Einige Übungen in `Hello Dart` sind inspiriert von [Kara](http://www.swisseduc.ch/informatik/karatojava/). Kara wurde entwickelt von Jürg Nievergelt, Werner Hartmann, Raimond Reichert und anderen.
+</em>

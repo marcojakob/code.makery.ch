@@ -40,7 +40,7 @@ sidebars:
 - header: Links
   body:
   - text: Dart Editor Download
-    link: https://www.dartlang.org/tools/editor/
+    link: https://www.dartlang.org/tools/download.html
     icon-css: fa fa-fw fa-download
   - text: Hello Dart Szenarien
     link: https://github.com/marcojakob/hello-dart/releases
@@ -50,7 +50,10 @@ sidebars:
     icon-css: fa fa-fw fa-file-word-o
 ---
 
-Zum Programmieren von Dart brauchen wir den **Dart Editor** und die `Hello-Dart`-Szenarien.
+Zum Programmieren brauchen wir... 
+
+* den **Dart Editor** und 
+* die `Hello-Dart`-Szenarien.
 
 
 ## Dart Editor installieren
@@ -110,10 +113,10 @@ Zum Programmieren von Dart brauchen wir den **Dart Editor** und die `Hello-Dart`
 
 ## `Hello Dart` Szenarien öffnen
 
-1. Laden Sie unter [Hello Dart-Releases](https://github.com/marcojakob/hello-dart/releases) die aktuellste Version der Senarien herunter.  
+1. Laden Sie unter [Hello Dart-Releases](https://github.com/marcojakob/hello-dart/releases) die Zip-Datei `hello_dart_scenarios.zip` herunter (nehmen Sie die neuste Version).  
 2. Entpacken Sie die Zip-Datei.
-3. Im Dart Editor: Klicken Sie auf *File* | *Open Existing Folder...*. Wählen Sie dort den Ordner `hello-dart-scenarios` aus, den Sie vorher entpackt haben.
-4. Öffnen Sie im Unterordner `web/scenario1.01` die Datei `my_player.dart` mit einem Doppelklick.   
+3. Im Dart Editor: Klicken Sie auf *File* | *Open Existing Folder...*. Wählen Sie dort den Ordner `hello_dart_scenarios` aus, den Sie vorher entpackt haben.
+4. Öffnen Sie im Unterordner `web/part1/scenario1.01` die Datei `my_player.dart` mit einem Doppelklick.   
 <p>
 ![My Player](/assets/library/hello-dart/install/my-player.png)
 </p>
@@ -135,6 +138,5 @@ Im [Teil 1](/library/hello-dart/de/part1/) machen wir unsere ersten Schritte bei
 *Quellen*<br>
 <em class="small">
 [Planet Cute](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html) Bilder stammen von Daniel Cook (Lostgarden.com), veröffentlicht unter [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/us/).<br>
-[Oleg Yadrov](https://www.linkedin.com/in/olegyadrov) hat die "Planet Cute" Bilder weiterentwickelt und sie mir zur Verfügung gestellt.<br>
-Viele Übungen in `Hello Dart` sind inspiriert von [Kara](http://www.swisseduc.ch/informatik/karatojava/). Kara wurde entwickelt von Jürg Nievergelt, Werner Hartmann, Raimond Reichert und anderen.
+[Oleg Yadrov](https://www.linkedin.com/in/olegyadrov) hat die "Planet Cute" Bilder weiterentwickelt und sie mir zur Verfügung gestellt.
 </em>

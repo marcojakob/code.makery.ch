@@ -55,11 +55,16 @@ Ich veröffentliche das Material von `Hello Dart` unter der [Creative Commons At
 
 * Wenn Sie meine Unterlagen oder Programme verwenden, müssen Sie klar angeben, dass dieses Material von mir stammt. Die Angabe muss meinen Namen, einen Link zum Original und einen Link zur Lizenz enthalten. Es könnte etwa so aussehen, wie meine Quellenangaben für die Bilder unten an den Seiten.
 
+
+## Danksagung
+
+Herzlichen Dank an die [Hasler Stiftung](http://www.haslerstiftung.ch/) für die Mitfinanzierung des Unterrichtsmaterials zu `Hello Dart`.
+
+
 ---
 
 *Quellen*<br>
 <em class="small">
 [Planet Cute](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html) Bilder stammen von Daniel Cook (Lostgarden.com), veröffentlicht unter [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/us/).<br>
-[Oleg Yadrov](https://www.linkedin.com/in/olegyadrov) hat die "Planet Cute" Bilder weiterentwickelt und sie mir zur Verfügung gestellt.<br>
-Viele Übungen in `Hello Dart` sind inspiriert von [Kara](http://www.swisseduc.ch/informatik/karatojava/). Kara wurde entwickelt von Jürg Nievergelt, Werner Hartmann, Raimond Reichert und anderen.
+[Oleg Yadrov](https://www.linkedin.com/in/olegyadrov) hat die "Planet Cute" Bilder weiterentwickelt und sie mir zur Verfügung gestellt.
 </em>

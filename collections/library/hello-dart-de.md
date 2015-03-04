@@ -51,7 +51,7 @@ sidebars:
 Bisher war es kaum realistisch, als Programmieranfänger mobile oder webbasierte
 Applikationen zu entwickeln. Die Programmiersprache Dart bietet neue Möglichkeiten, wie solche Applikationen viel einfacher programmiert werden können.
 
-`Hello Dart` setzt keine Programmierkenntnisse voraus und führt Sie schrittweise durch die Grundlagen der Programmierung. Die spielerische Welt von `Hello Dart` veranschaulicht Ihre Programme. Bald werden sie aber aus den engen Regeln dieser Welt ausbrechen wollen, was auch das Ziel ist. Nach der Einführung mit `Hello Dart` werden wir bereits Programmierprojekte realisieren, wie sie in der professionellen Softwareentwicklung durchgeführt werden.
+`Hello Dart` setzt keine Programmierkenntnisse voraus und führt Sie schrittweise durch die Grundlagen der Programmierung. Die spielerische Welt von `Hello Dart` veranschaulicht Ihre Programme. Bald werden sie aber aus den engen Regeln dieser Welt ausbrechen wollen, was auch das Ziel ist. Nach der Einführung mit `Hello Dart` haben Sie eine gute Grundlage, um werden wir bereits Programmierprojekte realisieren, wie sie in der professionellen Softwareentwicklung durchgeführt werden.
 
 
 ## Die Welt
@@ -172,6 +172,5 @@ Falls Sie mehr darüber erfahren möchten, weshalb ich Dart und `Hello Dart` fü
 *Quellen*<br>
 <em class="small">
 [Planet Cute](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html) Bilder stammen von Daniel Cook (Lostgarden.com), veröffentlicht unter [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/us/).<br>
-[Oleg Yadrov](https://www.linkedin.com/in/olegyadrov) hat die "Planet Cute" Bilder weiterentwickelt und sie mir zur Verfügung gestellt.<br>
-Viele Übungen in `Hello Dart` sind inspiriert von [Kara](http://www.swisseduc.ch/informatik/karatojava/). Kara wurde entwickelt von Jürg Nievergelt, Werner Hartmann, Raimond Reichert und anderen.
+[Oleg Yadrov](https://www.linkedin.com/in/olegyadrov) hat die "Planet Cute" Bilder weiterentwickelt und sie mir zur Verfügung gestellt.
 </em>
