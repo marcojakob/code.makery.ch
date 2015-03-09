@@ -39,7 +39,7 @@ This is a basic example using some draggable documents and a trash as a dropzone
 #### Live demo 
 
 
-<iframe src="http://marcojakob.github.io/dart-dnd/basic/" width="100%" height="330px"></iframe>
+<iframe src="http://marcojakob.github.io/dart-dnd/basic/web/" width="100%" height="330px"></iframe>
 
 ***
 
@@ -52,7 +52,7 @@ An example with a custom image as drag avatar. The image is changed depending on
 
 #### Live demo
 
-<iframe src="http://marcojakob.github.io/dart-dnd/custom-avatar/" width="100%" height="330px"></iframe>
+<iframe src="http://marcojakob.github.io/dart-dnd/custom-avatar/web/" width="100%" height="330px"></iframe>
 
 ***
 
@@ -67,7 +67,7 @@ Even without a drag avatar and `Dropzone` this helps quite a lot as it unifies t
 
 #### Live demo
 
-<iframe src="http://marcojakob.github.io/dart-dnd/detection-only/" width="100%" height="300px"></iframe>
+<iframe src="http://marcojakob.github.io/dart-dnd/detection-only/web/" width="100%" height="300px"></iframe>
 
 ***
 
@@ -80,7 +80,7 @@ This example shows how to freely drag and position an element. Instead of using 
 
 #### Live demo
 
-<iframe src="http://marcojakob.github.io/dart-dnd/free-dragging/" width="100%" height="300px"></iframe>
+<iframe src="http://marcojakob.github.io/dart-dnd/free-dragging/web/" width="100%" height="300px"></iframe>
 
 ***
 
@@ -93,7 +93,7 @@ You can use any subelement of a draggable as a drag handle. If a handle is speci
 
 #### Live demo
 
-<iframe src="http://marcojakob.github.io/dart-dnd/handle/" width="100%" height="300px"></iframe>
+<iframe src="http://marcojakob.github.io/dart-dnd/handle/web/" width="100%" height="300px"></iframe>
 
 ***
 
@@ -106,7 +106,7 @@ Dragging can be prevented on specified elements. By default dragging is cancelle
 
 #### Live demo
 
-<iframe src="http://marcojakob.github.io/dart-dnd/cancel/" width="100%" height="400px"></iframe>
+<iframe src="http://marcojakob.github.io/dart-dnd/cancel/web/" width="100%" height="400px"></iframe>
 
 ***
 
@@ -121,7 +121,7 @@ Dragging can be constrained to horizontal or vertical only.
 
 #### Live demo
 
-<iframe src="http://marcojakob.github.io/dart-dnd/horizontal-only/" width="100%" height="200px"></iframe>
+<iframe src="http://marcojakob.github.io/dart-dnd/horizontal-only/web/" width="100%" height="200px"></iframe>
 
 ***
 
@@ -134,7 +134,7 @@ You can use predefined or custom `Acceptor`s to determine which `Draggable`s are
 
 #### Live demo
 
-<iframe src="http://marcojakob.github.io/dart-dnd/custom-acceptor/" width="100%" height="500px"></iframe>
+<iframe src="http://marcojakob.github.io/dart-dnd/custom-acceptor/web/" width="100%" height="500px"></iframe>
 
 ***
 
@@ -150,7 +150,7 @@ An example of how to drag over nested `Dropzone`s.
 
 #### Live demo
 
-<iframe src="http://marcojakob.github.io/dart-dnd/nested-dropzones/" width="100%" height="350px"></iframe>
+<iframe src="http://marcojakob.github.io/dart-dnd/nested-dropzones/web/" width="100%" height="350px"></iframe>
 
 ***
 
@@ -163,7 +163,7 @@ An example example to create basic sortable/rearranging behavior.
 
 #### Live demo
 
-<iframe src="http://marcojakob.github.io/dart-dnd/simple-sortable/" width="100%" height="450px"></iframe>
+<iframe src="http://marcojakob.github.io/dart-dnd/simple-sortable/web/" width="100%" height="450px"></iframe>
 
 
 ***
@@ -177,7 +177,7 @@ Example how to use drag and drop in Shadow DOM with Polymer Web Components.
 
 #### Live demo
 
-<iframe src="http://marcojakob.github.io/dart-dnd/shadow-dom/" width="100%" height="520px"></iframe>
+<iframe src="http://marcojakob.github.io/dart-dnd/shadow-dom/web/" width="100%" height="520px"></iframe>
 
 
 
