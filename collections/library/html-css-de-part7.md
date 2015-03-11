@@ -5,6 +5,7 @@ date: 2014-08-16 00:00
 slug: html-css/de/part7
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part7.md
 description: "Wie kann man noch mehr lernen über HTML & CSS."
+image: /assets/library/html-css/portfolio.png
 published: true
 prettify: true
 comments: true
@@ -45,6 +46,8 @@ In diesem letzten Teil zeige ich Ihnen Möglichkeiten auf, wie Sie Ihre Fähigke
 
 ## Mehr HTML & CSS
 
+<a href="/library/more-html-css/de/" class="btn btn-warning"><i class="fa fa-hand-o-right"></i> Mehr HTML &amp; CSS Tutorial</a>
+
 Die Serie [Mehr HTML & CSS](/library/more-html-css/de/) ist eine Sammlung von Anleitungen zu verschiedenen Themen rund um HTML & CSS. 
 
 Die Anleitungen bauen direkt auf den Kenntnissen aus diesem Tutorial auf. Es gibt dabei keine bestimmte Reihenfolge zwischen den einzelnen Teilen. Schauen Sie sich einfach die Themen an, welche Sie interessieren.
@@ -52,6 +55,11 @@ Die Anleitungen bauen direkt auf den Kenntnissen aus diesem Tutorial auf. Es gib
 
 ## Webapplikationen mit Dart
 
-Lernen Sie, dynamische Webapplikationen mit Dart zu entwickeln.
+<a href="/library/hello-dart/de/" class="btn btn-warning"><i class="fa fa-hand-o-right"></i> Hello Dart: Einführung in die Programmierung</a>
 
-... coming soon ...
+Lernen Sie, dynamische Webapplikationen mit Dart zu entwickeln. [Hello Dart](/library/hello-dart/de/) bietet eine Einführung, die keine Programmierkenntnisse voraussetzt.
+
+
+## Mehr kommt bald...
+
+Bald werden weitere Anleitungen zur Programmierung veröffentlicht. Wenn Sie informiert werden möchten, schreiben Sie sich für den [Newsletter](https://tinyletter.com/code-makery) ein.

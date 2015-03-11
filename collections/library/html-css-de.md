@@ -5,6 +5,7 @@ date: 2014-08-13 00:00
 slug: html-css/de
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de.md
 description: "Mit diesem Tutorial lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen sofort mit einer eigenen Webseite für Ihr Portfolio."
+image: /assets/library/html-css/portfolio.png
 published: true
 prettify: true
 comments: true

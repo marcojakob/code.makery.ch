@@ -5,6 +5,7 @@ date: 2014-08-13 00:00
 slug: html-css/de/part3
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part3.md
 description: "Lernen Sie, wie Sie mit CSS eine Webseite gestalten können."
+image: /assets/library/html-css/portfolio.png
 published: true
 prettify: true
 comments: true
@@ -394,7 +395,7 @@ Dann können wir diesen einen Titel im CSS ansprechen mit `.title`. Die CSS-Rege
 
 Wenn alles geklappt hat, dann sieht das Portfolio nun etwa so aus: 
 
-![Portfolio](/assets/library/html-css/part3/portfolio-de.png)
+![Portfolio](/assets/library/html-css/part3/portfolio-de.jpg)
 
 
 ***

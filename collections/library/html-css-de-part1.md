@@ -5,6 +5,7 @@ date: 2014-08-13 00:00
 slug: html-css/de/part1
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part1.md
 description: "Erstellen Sie Ihre erste Webseite. Hier lernen Sie die Tools und die Grundlagen von HTML & CSS kennen."
+image: /assets/library/html-css/portfolio.png
 published: true
 prettify: true
 comments: true
@@ -292,7 +293,7 @@ Der gesamte Code könnte nun etwa so aussehen (ich habe noch eine Unterüberschr
 
 So sieht im Moment mein Portfolio im Browser aus:
 
-![Portfolio](/assets/library/html-css/part1/portfolio-de.png)
+![Portfolio](/assets/library/html-css/part1/portfolio-de.jpg)
 
 
 ***
