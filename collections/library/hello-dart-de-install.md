@@ -8,20 +8,20 @@ description: "Dart Editor installieren. Die Hello Dart Szenarien laden und ein e
 image: /assets/library/hello-dart/hello-dart.png
 published: true
 prettify: true
-comments: false
+comments: true
 sidebars:
 - header: Artikel dieser Serie
   body:
   - text: "Einleitung"
     link: /library/hello-dart/de/
     paging: Einleitung
+  - text: "<em>Hintergrundinfos</em>"
+    link: /library/hello-dart/de/background/
+    icon-css: fa fa-fw fa-info
   - text: "<em>Installation</em>"
     link: /library/hello-dart/de/install/
     icon-css: fa fa-fw fa-cog
     active: true
-  - text: "<em>Hintergrundinfos</em>"
-    link: /library/hello-dart/de/background/
-    icon-css: fa fa-fw fa-info
   - text: "Teil 1: Erste Schritte"
     link: /library/hello-dart/de/part1/
     paging: 1

@@ -4,23 +4,23 @@ title: "Hello Dart - Teil 4: Variablen"
 date: 2015-01-21 00:00
 slug: hello-dart/de/part4
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part4.md
-description: ""
+description: "Mit Variablen können wir Daten speichern in Dart. Lernen Sie die verschiedenen Datentypen von Dart kennen."
 image: /assets/library/hello-dart/hello-dart.png
 published: true
 prettify: true
-comments: false
+comments: true
 sidebars:
 - header: Artikel dieser Serie
   body:
   - text: "Einleitung"
     link: /library/hello-dart/de/
     paging: Einleitung
-  - text: "<em>Installation</em>"
-    link: /library/hello-dart/de/install/
-    icon-css: fa fa-fw fa-cog
   - text: "<em>Hintergrundinfos</em>"
     link: /library/hello-dart/de/background/
     icon-css: fa fa-fw fa-info
+  - text: "<em>Installation</em>"
+    link: /library/hello-dart/de/install/
+    icon-css: fa fa-fw fa-cog
   - text: "Teil 1: Erste Schritte"
     link: /library/hello-dart/de/part1/
     paging: 1
@@ -126,7 +126,7 @@ Später werden wir unsere eigenen Klassen erstellen. Jetzt schauen wir uns zuers
     </tr>
     <tr>
       <td>`String`</td>
-      <td>Text in einer beliebigen Länge. Text wird immer in *zwischen einfache oder doppelte Anführungszeichen* gestellt.</td>.
+      <td>Text in einer beliebigen Länge. Text wird immer *zwischen einfache oder doppelte Anführungszeichen* gestellt.</td>
       <td>`'Ich bin ein Text'` oder `"Ich bin auch ein Text"`</td>
     </tr>
     <tr>

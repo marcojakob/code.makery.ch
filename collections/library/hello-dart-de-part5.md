@@ -4,23 +4,23 @@ title: "Hello Dart - Teil 5: Funktionen"
 date: 2015-01-21 00:00
 slug: hello-dart/de/part5
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part5.md
-description: ""
+description: "Wir erweitern unsere Kenntnisse über Funktionen und Methoden in Dart. Wir lernen, wie wir Funktionen mit Parametern und Rückgabewerten verwenden können."
 image: /assets/library/hello-dart/hello-dart.png
 published: true
 prettify: true
-comments: false
+comments: true
 sidebars:
 - header: Artikel dieser Serie
   body:
   - text: "Einleitung"
     link: /library/hello-dart/de/
     paging: Einleitung
-  - text: "<em>Installation</em>"
-    link: /library/hello-dart/de/install/
-    icon-css: fa fa-fw fa-cog
   - text: "<em>Hintergrundinfos</em>"
     link: /library/hello-dart/de/background/
     icon-css: fa fa-fw fa-info
+  - text: "<em>Installation</em>"
+    link: /library/hello-dart/de/install/
+    icon-css: fa fa-fw fa-cog
   - text: "Teil 1: Erste Schritte"
     link: /library/hello-dart/de/part1/
     paging: 1
@@ -188,7 +188,7 @@ Programmieren Sie eine Funktion `howOldIsGrandma()`, die das Alter der Grossmutt
 
 Herzliche Gratulation, Sie haben das Ende dieser Serie erreicht!
 
-Bald werden hier weitere Anleitungen zur Programmierung mit Dart veröffentlicht. Wenn Sie informiert werden möchten, schreiben Sie sich für den Newsletter ein.
+Bald werden hier weitere Anleitungen zur Programmierung mit Dart veröffentlicht. Wenn Sie informiert werden möchten, schreiben Sie sich für den [Newsletter](https://tinyletter.com/code-makery) ein.
 
 
 ### Feedback

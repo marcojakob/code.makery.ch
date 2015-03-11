@@ -4,23 +4,23 @@ title: "Hello Dart - Teil 3: Bedingte Anweisungen"
 date: 2015-01-21 00:00
 slug: hello-dart/de/part3
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part3.md
-description: ""
+description: "Lernen Sie den Programmablauf mit bedingten Anweisungen zu steuern. Zahlreiche Hello Dart Übungen helfen beim Verständnis."
 image: /assets/library/hello-dart/hello-dart.png
 published: true
 prettify: true
-comments: false
+comments: true
 sidebars:
 - header: Artikel dieser Serie
   body:
   - text: "Einleitung"
     link: /library/hello-dart/de/
     paging: Einleitung
-  - text: "<em>Installation</em>"
-    link: /library/hello-dart/de/install/
-    icon-css: fa fa-fw fa-cog
   - text: "<em>Hintergrundinfos</em>"
     link: /library/hello-dart/de/background/
     icon-css: fa fa-fw fa-info
+  - text: "<em>Installation</em>"
+    link: /library/hello-dart/de/install/
+    icon-css: fa fa-fw fa-cog
   - text: "Teil 1: Erste Schritte"
     link: /library/hello-dart/de/part1/
     paging: 1
