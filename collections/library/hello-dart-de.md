@@ -39,11 +39,7 @@ sidebars:
     paging: 5
 ---
 
-<div class="alert alert-warning">
-  <strong>BETA Version:</strong> `Hello Dart` befindet sich noch in der Testphase.
-</div>
-
-![Hello Dart](/assets/library/hello-dart/intro/screenshot.png)
+![Hello Dart](/assets/library/hello-dart/hello-dart-animation.gif)
 
 > `Hello Dart` ist eine spielerische Einführung in die Programmierung mit Dart.
 
