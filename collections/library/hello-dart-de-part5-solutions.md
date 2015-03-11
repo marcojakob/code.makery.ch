@@ -38,8 +38,8 @@ sidebars:
     paging: 5
 - header: Lösungen
   body:
-  - text: "Lösungen zu Teil 4"
-    link: /library/hello-dart/de/part4-solutions/
+  - text: "Lösungen zu Teil 5"
+    link: /library/hello-dart/de/part5-solutions/
     icon-css: fa fa-fw fa-check-square-o
     active: true
 - header: Links
