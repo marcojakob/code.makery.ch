@@ -92,3 +92,10 @@ Auch wenn wir später interaktive Webapplikationen entwickeln, werden wir dafür
 Viel Spass!
 
 
+***
+
+### Danksagung
+
+Herzlichen Dank an die [Hasler Stiftung](http://www.haslerstiftung.ch/) für ihren Beitrag zur Entwicklung des Unterrichtsmaterials.
+
+
