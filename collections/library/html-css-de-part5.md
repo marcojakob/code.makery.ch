@@ -40,7 +40,7 @@ sidebars:
 - header: Downloads
   body:
   - text: Portfolio Teil 5
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.3/portfolio-de-part5.zip
+    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.4/portfolio-de-part5.zip
     icon-css: fa fa-fw fa-file-archive-o
 ---
 
