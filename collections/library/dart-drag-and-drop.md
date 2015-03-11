@@ -34,7 +34,7 @@ Now, let's take a look at the new approach that is much more convenient to work 
 
 This is a basic example using some draggable documents and a trash as a dropzone.
 
-<a href="http://marcojakob.github.io/dart-dnd/basic/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="http://marcojakob.github.io/dart-dnd/basic/web/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo 
 
@@ -48,7 +48,7 @@ This is a basic example using some draggable documents and a trash as a dropzone
 
 An example with a custom image as drag avatar. The image is changed depending on the remaining distance to the trash.
 
-<a href="http://marcojakob.github.io/dart-dnd/custom-avatar/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="http://marcojakob.github.io/dart-dnd/custom-avatar/web/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
@@ -63,7 +63,7 @@ An example that uses only drag detection. Use this if you want to implement your
 
 Even without a drag avatar and `Dropzone` this helps quite a lot as it unifies touch and mouse dragging and provides convenient event streams. 
 
-<a href="http://marcojakob.github.io/dart-dnd/detection-only/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="http://marcojakob.github.io/dart-dnd/detection-only/web/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
@@ -76,7 +76,7 @@ Even without a drag avatar and `Dropzone` this helps quite a lot as it unifies t
 
 This example shows how to freely drag and position an element. Instead of using a clone for the drag avatar, the original element itself is dragged.
 
-<a href="http://marcojakob.github.io/dart-dnd/free-dragging/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="http://marcojakob.github.io/dart-dnd/free-dragging/web/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
@@ -89,7 +89,7 @@ This example shows how to freely drag and position an element. Instead of using 
 
 You can use any subelement of a draggable as a drag handle. If a handle is specified, dragging can only be started on the handle.
 
-<a href="http://marcojakob.github.io/dart-dnd/handle/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="http://marcojakob.github.io/dart-dnd/handle/web/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
@@ -102,7 +102,7 @@ You can use any subelement of a draggable as a drag handle. If a handle is speci
 
 Dragging can be prevented on specified elements. By default dragging is cancelled when the drag starts on form elements (`input`, `textarea`, `button`, `select`, and `option`).
 
-<a href="http://marcojakob.github.io/dart-dnd/cancel/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="http://marcojakob.github.io/dart-dnd/cancel/web/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
@@ -117,7 +117,7 @@ Dragging can be constrained to horizontal or vertical only.
 
 *A nice side effect: When a drag is constrained to either horizontal or vertical only, the other direction can be used for scrolling on touch devices.*
 
-<a href="http://marcojakob.github.io/dart-dnd/horizontal-only/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="http://marcojakob.github.io/dart-dnd/horizontal-only/web/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
@@ -130,7 +130,7 @@ Dragging can be constrained to horizontal or vertical only.
 
 You can use predefined or custom `Acceptor`s to determine which `Draggable`s are accepted by which `Dropzone`s.
 
-<a href="http://marcojakob.github.io/dart-dnd/custom-acceptor/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="http://marcojakob.github.io/dart-dnd/custom-acceptor/web/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
@@ -146,7 +146,7 @@ An example of how to drag over nested `Dropzone`s.
 *Note: If dropped on an inner [Dropzone] the outer [Dropzone] will also receive the drop event.*
 
 
-<a href="http://marcojakob.github.io/dart-dnd/nested-dropzones/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="http://marcojakob.github.io/dart-dnd/nested-dropzones/web/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
@@ -159,7 +159,7 @@ An example of how to drag over nested `Dropzone`s.
 
 An example example to create basic sortable/rearranging behavior.
 
-<a href="http://marcojakob.github.io/dart-dnd/simple-sortable/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="http://marcojakob.github.io/dart-dnd/simple-sortable/web/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
@@ -173,7 +173,7 @@ An example example to create basic sortable/rearranging behavior.
 
 Example how to use drag and drop in Shadow DOM with Polymer Web Components.
 
-<a href="http://marcojakob.github.io/dart-dnd/shadow-dom/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="http://marcojakob.github.io/dart-dnd/shadow-dom/web/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
