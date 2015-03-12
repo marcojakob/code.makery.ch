@@ -15,7 +15,7 @@ This blog moved from edu.makery.ch to code.makery.ch.
 ![code.makery](/assets/blog/14-03-28-moving-to-code-makery-ch/code-makery.png)
 
 #### Please update your links and RSS feeds to [code.makery.ch](http://code.makery.ch)   
-#### Or even better: Sign up to [receive updates by email](https://tinyletter.com/code-makery)
+#### Or even better: Sign up to [receive updates by email](https://tinyletter.com/codemakery)
 
 
 ## Why the Move?
@@ -37,4 +37,4 @@ I plan to update the `JavaFX 2` tutorials for `JavaFX 8` (which is quite some wo
 
 ## Stay in Touch
 
-I would love to get your feedback about the new design and the tutorials. If you would like me to inform you when new content is available, [sign up with your email here](https://tinyletter.com/code-makery).
+I would love to get your feedback about the new design and the tutorials. If you would like me to inform you when new content is available, [sign up with your email here](https://tinyletter.com/codemakery).
