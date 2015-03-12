@@ -4,7 +4,7 @@ title: "JavaFX 8 Tutorial - Part 7: Deployment"
 date: 2014-05-10 00:00
 updated: 2015-02-18 00:00
 slug: javafx-8-tutorial/fr/part7
-canonical: /java/javafx-8-tutorial-part7/
+canonical: /library/javafx-8-tutorial/part7/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part7.md
 description: "Comment déployer une application JavaFX avec un package natif. Créez  un fichier d'install pour Windows, MacOS, ou Linux."
 image: /assets/library/javafx-8-tutorial/part7/addressapp-macos.png
@@ -48,7 +48,7 @@ sidebars:
   languages: true
   body:
   - text: English
-    link: /java/javafx-8-tutorial-part7/
+    link: /library/javafx-8-tutorial/part7/
     icon-css: fa fa-fw fa-globe
   - text: Português
     link: /library/javafx-8-tutorial/pt/part7/
@@ -200,7 +200,7 @@ Trouvez le bloc `fx:resources id="appRes"` un peu plus bas dans le fichier. Ajou
 </pre>
 
 
-Le numéro de version n'a pas été ajouté à `fx:application` ce qui implique un numéro de version `1.0` par défaut (comme signalé par quelques personnes dans les commentaires). Pour corriger ça, ajoutez manuellement le numéro de version (Merci à Marc pour [la solution](http://code.makery.ch/java/javafx-8-tutorial-part7/#comment-1566725959)):
+Le numéro de version n'a pas été ajouté à `fx:application` ce qui implique un numéro de version `1.0` par défaut (comme signalé par quelques personnes dans les commentaires). Pour corriger ça, ajoutez manuellement le numéro de version (Merci à Marc pour [la solution](http://code.makery.ch/library/javafx-8-tutorial/part7/#comment-1566725959)):
 
 ##### build.xml - ajouter la "version"
 

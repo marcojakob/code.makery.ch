@@ -4,7 +4,7 @@ title: "JavaFX 8 Tutorial - Part 5: Storing Data as XML"
 date: 2014-04-25 01:00
 updated: 2015-02-18 00:00
 slug: javafx-8-tutorial/fr/part5
-canonical: /java/javafx-8-tutorial-part5/
+canonical: /library/javafx-8-tutorial/part5/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part5.md
 description: "Save data as XML with JAXB. Learn how to use the JavaFX FileChooser and the JavaFX Menu."
 image: /assets/library/javafx-8-tutorial/part5/addressapp-part5.png
@@ -48,7 +48,7 @@ sidebars:
   languages: true
   body:
   - text: English
-    link: /java/javafx-8-tutorial-part5/
+    link: /library/javafx-8-tutorial/part5/
     icon-css: fa fa-fw fa-globe
   - text: Português
     link: /library/javafx-8-tutorial/pt/part5/

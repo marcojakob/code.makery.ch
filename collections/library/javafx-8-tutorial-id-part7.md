@@ -47,7 +47,7 @@ sidebars:
   languages: true
   body:
   - text: English
-    link: /java/javafx-8-tutorial-part7/
+    link: /library/javafx-8-tutorial/part7/
     icon-css: fa fa-fw fa-globe
   - text: Português
     link: /library/javafx-8-tutorial/pt/part7/
@@ -199,7 +199,7 @@ Temukan blok `fx:resources id="appRes"` dibagian bawah dari berkas, tambah sebua
 </pre>
 
 
-Entah bagaimana, nomor versi tidak akan ditambah di `fx:application` yang membuat pemasang selalu baku ke versi `1.0` (seperti yang ditunjukan oleh beberpa orang di komentar). Untuk menyelasaikan ini, secara manual tambah nomor versi (terimakasih kepada Marc karena telah [memberitahukan](http://code.makery.ch/java/javafx-8-tutorial-part7/#comment-1566725959)):
+Entah bagaimana, nomor versi tidak akan ditambah di `fx:application` yang membuat pemasang selalu baku ke versi `1.0` (seperti yang ditunjukan oleh beberpa orang di komentar). Untuk menyelasaikan ini, secara manual tambah nomor versi (terimakasih kepada Marc karena telah [memberitahukan](http://code.makery.ch/library/javafx-8-tutorial/part7/#comment-1566725959)):
 
 ##### build.xml - add "version"
 

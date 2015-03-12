@@ -46,7 +46,7 @@ sidebars:
   languages: true
   body:
   - text: English
-    link: /java/javafx-8-tutorial-part1/
+    link: /library/javafx-8-tutorial/part1/
     icon-css: fa fa-fw fa-globe
   - text: Português
     link: /library/javafx-8-tutorial/pt/part1/

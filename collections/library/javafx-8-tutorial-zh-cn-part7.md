@@ -47,7 +47,7 @@ sidebars:
   languages: true
   body:
   - text: English
-    link: /java/javafx-8-tutorial-part7/
+    link: /library/javafx-8-tutorial/part7/
     icon-css: fa fa-fw fa-globe
   - text: Português
     link: /library/javafx-8-tutorial/pt/part7/
@@ -195,7 +195,7 @@ E(fx)clipse生成的`build/build.xml`文件（准备使用**Ant**执行）。我
 
 
 有时候，版本数不能添加到`fx:application`中，使得安装器总是缺省的版本`1.0`（在注释中很多人指出这个问题）。为了修复它，手动添加版本号（感谢Marc找到解决办法）。
-[解决](http://code.makery.ch/java/javafx-8-tutorial-part7/#comment-1566725959)):
+[解决](http://code.makery.ch/library/javafx-8-tutorial/part7/#comment-1566725959)):
 
 ##### build.xml - 添加 "version"
 

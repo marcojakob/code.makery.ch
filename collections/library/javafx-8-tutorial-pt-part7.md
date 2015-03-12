@@ -47,7 +47,7 @@ sidebars:
   languages: true
   body:
   - text: English
-    link: /java/javafx-8-tutorial-part7/
+    link: /library/javafx-8-tutorial/part7/
     icon-css: fa fa-fw fa-globe
   - text: Português
     link: /library/javafx-8-tutorial/pt/part7/
@@ -199,7 +199,7 @@ Encontre o campo `fx:resources id="appRes"` mais abaixo no arquivo. Adicione uma
 </pre>
 
 
-De alguma maneira, o número da versão não é adicionados ao `fx:application` o que faz o insalador sempre voltar para o padrão, que é `1.0` (como dito por algumas pessoas nos comentários). Para concertar isso devemos adicionar manualmente o número da versão (abrigado por isso Marc [finding out](http://code.makery.ch/java/javafx-8-tutorial-part7/#comment-1566725959)):
+De alguma maneira, o número da versão não é adicionados ao `fx:application` o que faz o insalador sempre voltar para o padrão, que é `1.0` (como dito por algumas pessoas nos comentários). Para concertar isso devemos adicionar manualmente o número da versão (abrigado por isso Marc [finding out](http://code.makery.ch/library/javafx-8-tutorial/part7/#comment-1566725959)):
 
 ##### build.xml - adicionar "version"
 

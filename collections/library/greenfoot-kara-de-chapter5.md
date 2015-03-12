@@ -200,7 +200,7 @@ Hier sind ein paar Möglichkeiten, wie Sie Ihr Programmierarbenteuer fortsetzen 
 
 * *Option 1:* Ein eigenes Projekt mit Greenfoot entwickeln
 * *Option 2:* Einführung in eine professionelle Entwicklungsumgebung wie Eclipse, Netbeans etc. (siehe [GameGridKara](/library/gamegrid-kara/de/))
-* *Option 3:* Einführung in [GUI-Programmierung mit JavaFX](/java/javafx-2-tutorial-intro/)
+* *Option 3:* Einführung in [GUI-Programmierung mit JavaFX](/library/javafx-8-tutorial/)
 
 
 ### Feedback

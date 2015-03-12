@@ -204,7 +204,7 @@ Here are some options of how you could continue with your programming adventure:
 
 * *Option 1:* Develop a custom project with [Greenfoot](http://www.greenfoot.org)
 * *Option 2:* Start using a professional development environment like Eclipse, Netbeans, etc. (see [GameGridKara](/library/gamegrid-kara/))
-* *Option 3:* Start [GUI-programming with JavaFX](/java/javafx-2-tutorial-intro/)
+* *Option 3:* Start [GUI-programming with JavaFX](/library/javafx-8-tutorial/)
 
 
 ### Feedback

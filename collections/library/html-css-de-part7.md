@@ -62,4 +62,4 @@ Lernen Sie, dynamische Webapplikationen mit Dart zu entwickeln. [Hello Dart](/li
 
 ## Mehr kommt bald...
 
-Bald werden weitere Anleitungen zur Programmierung veröffentlicht. Wenn Sie informiert werden möchten, schreiben Sie sich für den [Newsletter](https://tinyletter.com/code-makery) ein.
+Bald werden weitere Anleitungen zur Programmierung veröffentlicht. Wenn Sie informiert werden möchten, schreiben Sie sich für den [Newsletter](https://tinyletter.com/codemakery) ein.

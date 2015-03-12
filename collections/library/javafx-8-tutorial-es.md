@@ -41,7 +41,7 @@ sidebars:
   languages: true
   body:
   - text: English
-    link: /java/javafx-8-tutorial-intro/
+    link: /library/javafx-8-tutorial/
     icon-css: fa fa-fw fa-globe
   - text: Português
     link: /library/javafx-8-tutorial/pt/
@@ -66,11 +66,9 @@ sidebars:
 
 JavaFX proporciona a los desarrolladores de Java una nueva plataforma gráfica.  JavaFX 2.0 se publicó en octubre del 2011 con la intención de reemplazar a Swing en la creación de nuevos interfaces gráficos de usario (IGU). Cuando empecé a enseñar JavaFX en 2011 era una tecnología muy incipiente todavía. No había libros sobre JavaFX que fueran **adecuados para estudiantes de programación noveles**, así es que empecé a escribir una serie de tutoriales muy detallados sobre JavaFX.
 
-![JavaFX Logo](/assets/java/javafx-2-tutorial-intro/javafx-logo.png)
-
 El tutorial te guía a lo largo del diseño, programación y publicación de una aplicación de contactos (libreta de direcciones) mediante JavaFX. Este es el aspecto que tendrá la aplicación final:
 
-![Screenshot AddressApp Part 1](/assets/java/javafx-2-tutorial-intro/addressapp01.png)
+![Screenshot AddressApp](/assets/library/javafx-8-tutorial/addressapp.png)
 
 
 ## Lo que aprenderás

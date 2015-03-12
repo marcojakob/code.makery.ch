@@ -188,7 +188,7 @@ Programmieren Sie eine Funktion `howOldIsGrandma()`, die das Alter der Grossmutt
 
 Herzliche Gratulation, Sie haben das Ende dieser Serie erreicht!
 
-Bald werden hier weitere Anleitungen zur Programmierung mit Dart veröffentlicht. Wenn Sie informiert werden möchten, schreiben Sie sich für den [Newsletter](https://tinyletter.com/code-makery) ein.
+Bald werden hier weitere Anleitungen zur Programmierung mit Dart veröffentlicht. Wenn Sie informiert werden möchten, schreiben Sie sich für den [Newsletter](https://tinyletter.com/codemakery) ein.
 
 
 ### Feedback

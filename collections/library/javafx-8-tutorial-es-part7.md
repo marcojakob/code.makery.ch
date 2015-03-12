@@ -46,7 +46,7 @@ sidebars:
   languages: true
   body:
   - text: English
-    link: /java/javafx-8-tutorial-part7/
+    link: /library/javafx-8-tutorial/part7/
     icon-css: fa fa-fw fa-globe
   - text: Português
     link: /library/javafx-8-tutorial/pt/part7/
@@ -197,7 +197,7 @@ Encuentra el bloque `fx:resources id="appRes"` más abajo en el archivo y añade
 </pre>
 
 
-Por alguna razón el número de versión se añade a la aplicación  (propiedad `fx:application`) lo que hace que el instalador adopte siempre el valor por defecto`1.0` (tal y como han indicado varios comentarios). Para corregir esto, hay que añadir el número de versión de forma manual  (gracias a Marc por [descubrir como hacerlo](http://code.makery.ch/java/javafx-8-tutorial-part7/#comment-1566725959)):
+Por alguna razón el número de versión se añade a la aplicación  (propiedad `fx:application`) lo que hace que el instalador adopte siempre el valor por defecto`1.0` (tal y como han indicado varios comentarios). Para corregir esto, hay que añadir el número de versión de forma manual  (gracias a Marc por [descubrir como hacerlo](http://code.makery.ch/library/javafx-8-tutorial/part7/#comment-1566725959)):
 
 ##### build.xml - añade número de "version"
 

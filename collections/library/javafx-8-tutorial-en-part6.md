@@ -3,8 +3,8 @@ layout: article
 title: "JavaFX 8 Tutorial - Part 6: Statistics Chart"
 date: 2014-05-09 00:00
 updated: 2015-03-12 00:00
-slug: javafx-8-tutorial-part6
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part6.md
+slug: javafx-8-tutorial/part6
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-en-part6.md
 description: "Learn how to create a JavaFX Bar Chart."
 image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
 published: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "Articles in this Series"
   body:
   - text: "Introduction"
-    link: /java/javafx-8-tutorial-intro
+    link: /library/javafx-8-tutorial/
     paging: Intro
   - text: "Part 1: Scene Builder"
-    link: /java/javafx-8-tutorial-part1/
+    link: /library/javafx-8-tutorial/part1/
     paging: 1
   - text: "Part 2: Model and TableView"
-    link: /java/javafx-8-tutorial-part2/
+    link: /library/javafx-8-tutorial/part2/
     paging: 2
   - text: "Part 3: Interacting with the User"
-    link: /java/javafx-8-tutorial-part3/
+    link: /library/javafx-8-tutorial/part3/
     paging: 3
   - text: "Part 4: CSS Styling"
-    link: /java/javafx-8-tutorial-part4/
+    link: /library/javafx-8-tutorial/part4/
     paging: 4
   - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-8-tutorial-part5/
+    link: /library/javafx-8-tutorial/part5/
     paging: 5
   - text: "Part 6: Statistics Chart"
-    link: /java/javafx-8-tutorial-part6/
+    link: /library/javafx-8-tutorial/part6/
     paging: 6
     active: true
   - text: "Part 7: Deployment"
-    link: /java/javafx-8-tutorial-part7/
+    link: /library/javafx-8-tutorial/part7/
     paging: 7
 - header: "Download Sources"
   body:
@@ -47,7 +47,7 @@ sidebars:
   languages: true
   body:
   - text: English
-    link: /java/javafx-8-tutorial-part6/
+    link: /library/javafx-8-tutorial/part6/
     icon-css: fa fa-fw fa-globe
     active: true
   - text: Português
@@ -290,7 +290,7 @@ A good place for more information is the official Oracle tutorial on [Working wi
 
 ### What's Next?
 
-In the last tutorial [Part 7](/java/javafx-8-tutorial-part7/) we will finally deploy our application (i.e. package and deliver the app to our users).
+In the last tutorial [Part 7](/library/javafx-8-tutorial/part7/) we will finally deploy our application (i.e. package and deliver the app to our users).
 
 
 ##### Some other articles you might find interesting
