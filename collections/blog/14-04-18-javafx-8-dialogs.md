@@ -14,12 +14,12 @@ tags:
 - JavaFX
 ---
 
-<div class="alert alert-warning">
+<div class="alert alert-danger">
   <p>
-    **Soon Deprecated!** Please read the &rarr; <a class="alert-link" href="/blog/javafx-dialogs-official/">Article about the official JavaFX Dialogs</a>! 
+    **Deprecated!** Please read the &rarr; <a class="alert-link" href="/blog/javafx-dialogs-official/">Article about the official JavaFX Dialogs</a>! 
   </p>
   <p>
-    It was <a class="alert-link" href="http://fxexperience.com/2014/06/bringing-dialogs-to-javafx/">announced</a> that the Dialogs will finally be included in JavaFX. They will be part of the JDK version 8u40 which will be <a class="alert-link" href="http://openjdk.java.net/projects/jdk8u/releases/8u40.html">released in March 2015</a>. This means that the ControlsFX Dialogs described in this post will be deprecated!
+   With JDK version 8u40, the Dialogs were finally included in the official JavaFX. This means that the ControlsFX Dialogs described in this post will be deprecated!
   </p>
 </div>
 

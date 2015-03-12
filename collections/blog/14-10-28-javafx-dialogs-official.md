@@ -2,9 +2,9 @@
 layout: post
 title: JavaFX Dialogs (official)
 date: 2014-10-28 00:00
-udpated: 2014-11-07 00:00
+udpated: 2015-03-12 00:00
 slug: javafx-dialogs-official
-description: "Examples of how to create simple popup Dialogs and Alerts in JavaFX."
+description: "Examples of how to create simple popup Dialogs and Alerts in JavaFX. Official Dialogs were included in JDK 8u40."
 image: /assets/blog/14-10-28-javafx-dialogs-official/login-dialog.png
 published: true
 prettify: true
@@ -14,18 +14,16 @@ tags:
 - JavaFX
 ---
 
-JavaFX 8 (update 40) finally includes simple Dialogs and Alerts! I've been waiting for this since 2012! In the meantime I wrote about how to use Dialogs [in JavaFX 2](/blog/javafx-2-dialogs/) and later [in JavaFX 8 with ControlsFX](/blog/javafx-8-dialogs/).
+JavaFX 8u40 finally includes simple Dialogs and Alerts! I've been waiting for this since 2012! In the meantime I wrote about how to use Dialogs [in JavaFX 2](/blog/javafx-2-dialogs/) and later [in JavaFX 8 with ControlsFX](/blog/javafx-8-dialogs/).
 
-Now that they will be available in the official JDK, let's learn how to use them.
+Now that they are available in the official JDK, let's learn how to use them.
 
 
 ## Prerequisites
 
-To use the official JavaFX Dialogs you need JDK 8u40 or later. JDK 8u40 will be [released in March 2015](http://openjdk.java.net/projects/jdk8u/releases/8u40.html) but you can get an early access version on the following website:
+To use the official JavaFX Dialogs you need JDK 8u40 or later. 
 
-&rarr; [Download JDK 8u40](https://jdk8.java.net/download.html)
-
-*(In case you don't want to use the early access release, you can alternatively use the `openjfx-dialogs-1.x.x.jar` included in the [ControlsFX zip file](http://fxexperience.com/controlsfx/).)*
+&rarr; [Download JDK 8u40](http://www.oracle.com/technetwork/java/javase/downloads/index.html) or newer.
 
 
 ## Standard Dialogs
@@ -242,6 +240,8 @@ Here is an example of how to create a custom dialog with a login form:
 Dialog&lt;Pair&lt;String, String>> dialog = new Dialog&lt;>();
 dialog.setTitle("Login Dialog");
 dialog.setHeaderText("Look, a Custom Login Dialog");
+
+// Set the icon (must be included in the project).
 dialog.setGraphic(new ImageView(this.getClass().getResource("login.png").toString()));
 
 // Set the button types.
@@ -346,3 +346,14 @@ You can specify the modality for a dialog. The modality must be one of `Modality
 <pre class="prettyprint lang-java">
 dialog.initModality(Modality.NONE);
 </pre>
+
+
+## API Documentation
+
+For more information on the Dialogs have a look at the JavaFX API docs:
+
+* [Alert](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/Alert.html)
+* [Dialog](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/Dialog.html)
+* [TextInputDialog](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TextInputDialog.html)
+* [ChoiceDialog](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/ChoiceDialog.html)
+* [DialogPane](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/DialogPane.html)
