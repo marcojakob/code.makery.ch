@@ -11,31 +11,31 @@ published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Articles in this Series"
+- header: "Articoli in questa serie"
   body:
-  - text: "Introduction"
+  - text: "Introduzione"
     link: /java/javafx-8-tutorial-intro
     paging: Intro
     active: true
-  - text: "Part 1: Scene Builder"
+  - text: "Parte 1: Scene Builder"
     link: /java/javafx-8-tutorial-part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
+  - text: "Parte 2: Model and TableView"
     link: /java/javafx-8-tutorial-part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
+  - text: "Parte 3: Interazione con l'utente"
     link: /java/javafx-8-tutorial-part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "Parte 4: CSS Styling"
     link: /java/javafx-8-tutorial-part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
+  - text: "Parte 5: Conservazione dati come XML"
     link: /java/javafx-8-tutorial-part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
+  - text: "Parte 6: Grafico delle statistiche"
     link: /java/javafx-8-tutorial-part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "Parte 7: Deployment"
     link: /java/javafx-8-tutorial-part7/
     paging: 7
 - header: Languages
@@ -63,39 +63,42 @@ sidebars:
   - text: Français
     link: /library/javafx-8-tutorial/fr/
     icon-css: fa fa-fw fa-globe
+  - text: Italiano
+    link: /library/javafx-8-tutorial/it/
+    icon-css: fa fa-fw fa-globe
 ---
 
-
-Back in 2012 I wrote a very detailed [JavaFX 2 tutorial series](/java/javafx-2-tutorial-intro/) for my students. Many people all over the world have been reading the tutorial and gave very positive feedback. So I decided to **rewrite the JavaFX 2 tutorial for JavaFX 8** (read about what changed in [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)).
-
-This tutorial walks you through designing, programming and deploying an address application. This is how the final application will look like:
+Già nel 2012 avevo scritto una serie di dettagliati tutorial su [JavaFX 2](/java/javafx-2-tutorial-intro/) per i miei studenti. Molte persone in tutto il mondo hanno letto i tutorial dandomi feedback davvero positivi. Così ho deciso di **riscrivere il tutorial su JavaFX 2 per JavaFX 8** (leggi qualcosa sui cambiamenti in [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)).
+ 
+Questo tutorial ti guida nella progettazione, nella programmazione e nel "deploying" di una rubrica. Così apparirà l'applicazione finita:
 
 ![Screenshot AddressApp](/assets/library/javafx-8-tutorial/addressapp.png)
 
 
-## What you will learn
+##Cosa imparerai
 
-* Creating and starting a JavaFX project
-* Using Scene Builder to design the user interface
-* Structuring an application with the Model-View-Controller (MVC) pattern
-* Using `ObservableLists` for automatically updating the user interface
-* Using `TableView` and reacting to selection changes in the table
-* Create a custom popup dialog to edit persons
-* Validating user input
-* Styling a JavaFX application with CSS
-* Persisting data as XML
-* Saving the last opened file path in user preferences
-* Creating a JavaFX chart for statistics
-* Deploying a JavaFX application as a native package
+* Creazione e avviamento di un progetto JavaFX
+* Uso di Scene Builder per progettare l'interfaccia utente
+* Strutturazione di un'applicazione con il patter Model-View-Controller (MVC)
+* Uso di `ObservableLists` per l'aggiornamento automatico dell'interfaccia utente
+* Uso di `TableView` e reazioni alle variazioni di selezione nella tabella
+* Creazione di una finestra di dialogo personalizzata per la modifica dei dati delle persone
+* Validazione dell'input dell'utente
+* Stili di una applicazione JavaFX con i CSS
+* Persistanza dei dati come XML
+* Salvataggio dell'ultimo percorso di file aperto nelle preferenze dell'utente
+* Creazione di un grafico JavaFX per le statistiche
+* "Deployment" di una applicazione JavaFX come pacchetto nativo
 
-**This is quite a lot!** So, after you you've completed this tutorial series you should be ready to build sophisticated applications with JavaFX.
+**Non è poco** Così, dopo che completerai questa serie di tutorial, dovresti essere pronto per sviluppare applicazioni sofisticate con JavaFX. 
 
 
-## How to use this Tutorial
+## Come usare questo Tutorial
 
-There are two ways to use this tutorial:
+Ci sono due modi per usare questo tutorial:
 
-* **learn-a-lot track:** Create your own JavaFX project from the ground up.
-* **fast track:** Import the source code for a tutorial part into your IDE (it's an Eclipse project, but you could use other IDEs like NetBeans with slight modifications). Then go through the tutorial to understand the code.
+* **Metodo lento** Creare il proprio pregetto JavaFX partendo da zero
+* **Metedo veloce** Importare il codice sorgente per il tutorial nel proprio IDE (è un progetto Eclipse, ma è possibile usare altri IDE come NetBeans con piccole modifiche). Dopodichè usare il tutorial per capire il codice
 
-Now, I hope you'll have fun! Start with [Part 1: Scene Builder](/java/javafx-8-tutorial-part1/).
+
+Adesso spero che vi divertirete! Iniziamo con [Parte 1: Scene Builder](/java/javafx-8-tutorial-part1/).
