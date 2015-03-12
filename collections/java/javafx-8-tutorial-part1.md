@@ -2,7 +2,7 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 1: Scene Builder"
 date: 2014-04-19 01:00
-updated: 2014-08-27 00:00
+updated: 2015-03-12 00:00
 slug: javafx-8-tutorial-part1
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part1.md
 description: "Learn how to set up a JavaFX project. This is part one of a seven-part tutorial about designing, programming and deploying an address application with JavaFX."
@@ -40,8 +40,8 @@ sidebars:
     paging: 7
 - header: "Download Sources"
   body:
-  - text: Part 1 as Eclipse Project <em>(requires at least JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
+  - text: Part 1 as Eclipse Project <em>(requires at least JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-1.zip
     icon-css: fa fa-fw fa-download
 - header: Languages
   languages: true
@@ -86,8 +86,8 @@ sidebars:
 ### Prerequisites
 
 * Latest [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (includes **JavaFX 8**).
-* Eclipse 4.3 or greater with e(fx)clipse plugin. The easiest way is to download the preconfigured distro from the [e(fx)clipse website](http://efxclipse.bestsolution.at/install.html#all-in-one). As an alternative you can use an [update site](http://www.eclipse.org/efxclipse/install.html) for your Eclipse installation.
-* [Scene Builder 2.0](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684.html) or greater
+* Eclipse 4.4 or greater with e(fx)clipse plugin. The easiest way is to download the preconfigured distro from the [e(fx)clipse website](http://efxclipse.bestsolution.at/install.html#all-in-one). As an alternative you can use an [update site](http://www.eclipse.org/efxclipse/install.html) for your Eclipse installation.
+* [Scene Builder 8.0](http://gluonhq.com/products/downloads/) (provided by Gluon because [Oracle only ships it in source code form](http://www.oracle.com/technetwork/java/javase/downloads/sb2download-2177776.html)).
 
 
 ### Eclipse Configurations 
@@ -168,6 +168,8 @@ Right-click on the view package and create a new *FXML Document* called `PersonO
 
 Right-click on `PersonOverview.fxml` and choose *Open with Scene Builder*. Now you should see the Scene Builder with just an *AncherPane* (visible under Hierarchy on the left).
 
+(If Scene Builder does not open, go to *Window | Preferences | JavaFX* and set the correct path to your Scene Builder installation).
+
 1. Select the *Anchor Pane* in your Hierarchy and adjust the size under Layout (right side):   
 ![Anchor Pane Size](/assets/library/javafx-8-tutorial/part1/anchor-pane-size.png)
 
@@ -182,7 +184,7 @@ Right-click on `PersonOverview.fxml` and choose *Open with Scene Builder*. Now y
 5. Change the column text (under Properties) to "First Name" and "Last Name".   
 ![Column Texts](/assets/library/javafx-8-tutorial/part1/column-texts.png)
 
-6. Select the *TableView* choose *constrained-resize* for the *Column Resize Policy* (under Properties). This ensures that the colums will always take up all available space.   
+6. Select the *TableView* and choose *constrained-resize* for the *Column Resize Policy* (under Properties). This ensures that the colums will always take up all available space.   
 ![Column Resize Policy](/assets/library/javafx-8-tutorial/part1/column-resize-policy.png)
 
 7. Add a *Label* on the right side with the text "Person Details" (hint: use the search to find the *Label*). Adjust it's layout using anchors.   
@@ -195,7 +197,7 @@ Right-click on `PersonOverview.fxml` and choose *Open with Scene Builder*. Now y
 *Note: To add a row to the GridPane select an existing row number (will turn yellow), right-click the row number and choose "Add Row".*   
 ![Add labels](/assets/library/javafx-8-tutorial/part1/add-labels.png)
 
-10. Add the three buttons at the bottom. Tip: Select all of them, right-click and call *Wrap In | HBox*. This groups them together. You might need to specify a *spacing* inside the HBox. Then, also set anchors (right and bottom) so they stay in the right place.   
+10. Add a *ButtonBar* at the bottom. Add three buttons to the bar. Now, set anchors (right and bottom) to the *ButtonBar* so it stays in the right place.   
 ![Button Group](/assets/library/javafx-8-tutorial/part1/button-group.png)
 
 11. Now you should see something like the following. Use the *Preview* menu to test its resizing behaviour.   
@@ -333,7 +335,7 @@ If you run the application now, you should see something like the screenshot at 
 
 ### Frequent Problems
 
-If JavaFX can't find the `fxml` file you speicified, you might get the following error message: 
+If JavaFX can't find the `fxml` file you specified, you might get the following error message: 
 
 `java.lang.IllegalStateException: Location is not set.`
 
@@ -353,7 +355,7 @@ In [Tutorial Part 2](/java/javafx-8-tutorial-part2/) we will add some data and f
 
 ##### Some other articles you might find interesting
 
-* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)

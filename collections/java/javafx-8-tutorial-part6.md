@@ -2,7 +2,7 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 6: Statistics Chart"
 date: 2014-05-09 00:00
-updated: 2014-08-27 00:00
+updated: 2015-03-12 00:00
 slug: javafx-8-tutorial-part6
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part6.md
 description: "Learn how to create a JavaFX Bar Chart."
@@ -40,8 +40,8 @@ sidebars:
     paging: 7
 - header: "Download Sources"
   body:
-  - text: Part 6 as Eclipse Project <em>(requires at least JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-6.zip
+  - text: Part 6 as Eclipse Project <em>(requires at least JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-6.zip
     icon-css: fa fa-fw fa-download
 - header: Languages
   languages: true
@@ -295,7 +295,7 @@ In the last tutorial [Part 7](/java/javafx-8-tutorial-part7/) we will finally de
 
 ##### Some other articles you might find interesting
 
-* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)

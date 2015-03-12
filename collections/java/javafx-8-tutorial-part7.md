@@ -2,7 +2,7 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 7: Deployment"
 date: 2014-05-10 00:00
-updated: 2014-08-30 00:00
+updated: 2015-03-12 00:00
 slug: javafx-8-tutorial-part7
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-8-tutorial-part7.md
 description: "How to deploy a JavaFX application as native package. Create an installer for Windows, MacOS, or Linux."
@@ -40,8 +40,8 @@ sidebars:
     active: true
 - header: "Download Sources"
   body:
-  - text: Part 7 as Eclipse Project <em>(requires at least JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-7.zip
+  - text: Part 7 as Eclipse Project <em>(requires at least JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-7.zip
     icon-css: fa fa-fw fa-download
 - header: Languages
   languages: true
@@ -72,7 +72,7 @@ sidebars:
 
 ![Screenshot AddressApp Part 7](/assets/library/javafx-8-tutorial/part7/addressapp-part7.png)
 
-I thought I'd write one last part of this tutorial series to show how to deploy (i.e. package and publish) the AddressApp.
+I thought I'd write one last part of this tutorial series to show how to deploy (that means package and publish) the AddressApp.
 
 
 *****
@@ -126,7 +126,7 @@ The file `build.fxbuild` is used by e(fx)clipse to generate a file that will be 
 2. Fill out all the fields containing a star. *For MacOS: Do not use spaces in Application title as this seems to cause a problem.*    
 ![fxbuild settings](/assets/library/javafx-8-tutorial/part7/fxbuild-settings.png)
 
-3. As **Packaging Format** choose `exe` for Windows, `dmg` for MacOS, and `rpm` for Linux.
+3. As **Packaging Format** choose `exe` for Windows, `dmg` for MacOS, or `rpm` for Linux.
 
 4. Click on the link `Generate ant build.xml only` (found on the right side).   
 ![generate ant build](/assets/library/javafx-8-tutorial/part7/generate-ant-build.png)
@@ -141,17 +141,19 @@ We would like to have some nice icons for our installer:
 * [AddressApp.ico](/assets/library/javafx-8-tutorial/part7/AddressApp.ico) for the installer file icon
 * [AddressApp-setup-icon.bmp](/assets/library/javafx-8-tutorial/part7/AddressApp-setup-icon.bmp) for the installer splash screen icon
 * [AddressApp.icns](/assets/library/javafx-8-tutorial/part7/AddressApp.icns) for the mac installer icon
+* [AddressApp-volume.icns](/assets/library/javafx-8-tutorial/part7/AddressApp-volume.icns) for the mac desktop icon
 
 
 1. Create the following subfolders in the `build` folder:
   * `build/package/windows` (only used for windows)
-  * `build/package/macos` (only used for macos)
+  * `build/package/macosx` (only used for macos)
 2. Copy the corresponding icons from above into those subfolders. It should look something like this now:   
 ![Installer Icons](/assets/library/javafx-8-tutorial/part7/installer-icons.png)
 3. **Important**: The name of the icons must exactly match the **Application title** you specified in `build.fxbuild`:
   * `YourAppTitle.ico`
   * `YourAppTitle-setup-icon.bmp`
   * `YourAppTitle.icns`
+  * `YourAppTitle-volume.icns`
 
 
 ### Step 3 - Add Resources
@@ -224,7 +226,7 @@ With **Inno Setup** we can create a Windows Installer of our application as a si
 
 2. Tell Windows about the installation path to Inno Setup (e.g. `C:\Program Files (x86)\Inno Setup 5`). To do this add Inno Setup to the `Path` variable in your windows environment variables. If you don't know where to find it, read [How to set the path and environment variables in Windows](http://www.computerhope.com/issues/ch000549.htm).
 
-3. Restart Eclipse and continue with Step 5.
+3. Restart Eclipse and continue with Step 6.
 
 
 ### Step 5 (MAC) - MacOS dmg Installer
@@ -266,7 +268,7 @@ I appreciate any feedback. Feel free to write comments if you have any suggestio
 
 ##### Some other articles you might find interesting
 
-* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
