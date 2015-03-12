@@ -44,3 +44,9 @@ As of today, the JavaFX 8 Tutorial is **available in six languages and two are b
 The translated tutorials still need an update to reflect the changes described above. So, if you care about one of the languages and would like to help out, let me know.
 
 To see what has changed, you could take a look at [this commit](https://github.com/marcojakob/code.makery.ch/commit/f6b4a51b41957b753bfbfc8c1f637a6849ceeab5). Then, it's very simple: Just click on the **Edit on GitHub** link at to top of the page you would like to change and edit it online. If you're not familiar with GitHub, please read [how to contribute](/library/how-to-contribute/).
+
+
+## @codemakery on Twitter
+
+I've set up a new Twitter handle if you want to follow what's happening on code.makery: Follow [@codemakery on Twitter](https://twitter.com/codemakery).
+
