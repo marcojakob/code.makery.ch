@@ -9,7 +9,8 @@ description: "In JavaFX you can style your user interface using CSS. We'll also 
 image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png
 published: true
 prettify: true
-comments: true
+comments: 
+  identifier: /java/javafx-8-tutorial-part4/
 sidebars:
 - header: "Articles in this Series"
   body:

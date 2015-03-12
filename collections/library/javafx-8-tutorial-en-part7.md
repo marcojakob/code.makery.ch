@@ -9,7 +9,8 @@ description: "How to deploy a JavaFX application as native package. Create an in
 image: /assets/library/javafx-8-tutorial/part7/addressapp-macos.png
 published: true
 prettify: true
-comments: true
+comments: 
+  identifier: /java/javafx-8-tutorial-part7/
 sidebars:
 - header: "Articles in this Series"
   body:

@@ -9,7 +9,8 @@ description: "This seven-part tutorial walks through designing, programming and 
 image: /assets/library/javafx-8-tutorial/addressapp.png
 published: true
 prettify: true
-comments: true
+comments: 
+  identifier: /java/javafx-8-tutorial-intro/
 sidebars:
 - header: "Articles in this Series"
   body:

@@ -9,7 +9,8 @@ description: "Learn how to create a JavaFX Bar Chart."
 image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
 published: true
 prettify: true
-comments: true
+comments: 
+  identifier: /java/javafx-8-tutorial-part6/
 sidebars:
 - header: "Articles in this Series"
   body:

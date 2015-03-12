@@ -9,7 +9,8 @@ description: "Save data as XML with JAXB. Learn how to use the JavaFX FileChoose
 image: /assets/library/javafx-8-tutorial/part5/addressapp-part5.png
 published: true
 prettify: true
-comments: true
+comments: 
+  identifier: /java/javafx-8-tutorial-part5/
 sidebars:
 - header: "Articles in this Series"
   body:

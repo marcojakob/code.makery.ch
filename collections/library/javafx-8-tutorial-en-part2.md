@@ -9,7 +9,8 @@ description: "Use a JavaFX TableView to display an ObservableList of Persons."
 image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
 published: true
 prettify: true
-comments: true
+comments: 
+  identifier: /java/javafx-8-tutorial-part2/
 sidebars:
 - header: "Articles in this Series"
   body:

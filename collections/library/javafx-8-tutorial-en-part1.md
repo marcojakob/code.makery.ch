@@ -9,7 +9,8 @@ description: "Learn how to set up a JavaFX project. This is part one of a seven-
 image: /assets/library/javafx-8-tutorial/part1/addressapp-part1.png
 published: true
 prettify: true
-comments: true
+comments: 
+  identifier: /java/javafx-8-tutorial-part1/
 sidebars:
 - header: "Articles in this Series"
   body:

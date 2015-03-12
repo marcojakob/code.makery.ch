@@ -9,7 +9,8 @@ description: "React to selection changes in the JavaFX TableView. Add, edit and 
 image: /assets/library/javafx-8-tutorial/part3/addressapp-part3.png
 published: true
 prettify: true
-comments: true
+comments: 
+  identifier: /java/javafx-8-tutorial-part3/
 sidebars:
 - header: "Articles in this Series"
   body:
