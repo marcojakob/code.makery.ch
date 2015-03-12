@@ -3,7 +3,8 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 4: CSS Styling"
 date: 2012-11-26 13:00
 updated: 2013-02-08 00:00
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-2-tutorial-part4.md
+slug: javafx-2-tutorial/part4
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-2-tutorial/part4.md
 description: "In JavaFX you can style your user interface using CSS. We'll also add an application icon in this tutorial part."
 published: true
 prettify: true
@@ -14,29 +15,29 @@ sidebars:
 - header: "Articles in this Series"
   body:
   - text: "Introduction"
-    link: /java/javafx-2-tutorial-intro
+    link: /library/javafx-2-tutorial/
     paging: Intro
   - text: "Part 1: Scene Builder"
-    link: /java/javafx-2-tutorial-part1/
+    link: /library/javafx-2-tutorial/part1/
     paging: 1
   - text: "Part 2: Model and TableView"
-    link: /java/javafx-2-tutorial-part2/
+    link: /library/javafx-2-tutorial/part2/
     paging: 2
   - text: "Part 3: Interacting with the User"
-    link: /java/javafx-2-tutorial-part3/
+    link: /library/javafx-2-tutorial/part3/
     paging: 3
   - text: "Part 4: CSS Styling"
-    link: /java/javafx-2-tutorial-part4/
+    link: /library/javafx-2-tutorial/part4/
     paging: 4
     active: true
   - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-2-tutorial-part5/
+    link: /library/javafx-2-tutorial/part5/
     paging: 5
   - text: "Part 6: Statistics Chart"
-    link: /java/javafx-2-tutorial-part6/
+    link: /library/javafx-2-tutorial/part6/
     paging: 6
   - text: "Part 7: Deployment with e(fx)clipse"
-    link: /java/javafx-2-tutorial-part7/
+    link: /library/javafx-2-tutorial/part7/
     paging: 7
 - header: "Download Sources"
   body:
@@ -46,10 +47,10 @@ sidebars:
 ---
 
 <div class="alert alert-danger">
-  &rarr; UPDATED VERSION for Java 8 available: <a href="/java/javafx-8-tutorial-part4/" class="alert-link">JavaFX 8 Tutorial</a>
+  &rarr; UPDATED VERSION for Java 8 available: <a href="/library/javafx-8-tutorial/part4/" class="alert-link">JavaFX 8 Tutorial</a>
 </div>
 
-![Screenshot AddressApp Part 4](/assets/java/javafx-2-tutorial-part4/addressapp01.png)
+![Screenshot AddressApp Part 4](/assets/library/javafx-2-tutorial/part4/addressapp01.png)
 
 
 ## Topics in Part 4
@@ -244,7 +245,7 @@ Open the file `PersonEditDialog.fxml` in Scene Builder. Select the root `AnchorP
 
 The background is still white, so add the Style Class `background` to the root `AnchorPane`.
 
-![Add Style Class](/assets/java/javafx-2-tutorial-part4/addressapp02.png)
+![Add Style Class](/assets/library/javafx-2-tutorial/part4/addressapp02.png)
 
 Select the OK button and choose *Default Button* in the Properties View. This will change its color and make this the default button when the *enter* key is pressed by the user.
 
@@ -253,11 +254,11 @@ Select the OK button and choose *Default Button* in the Properties View. This wi
 
 Open the file `PersonOverview.fxml` in Scene Builder. Select the root `AnchorPane` in the Hierarchy view. Under properties add the `DarkTheme.css` file as stylesheet.
 
-![Add CSS](/assets/java/javafx-2-tutorial-part4/addressapp03.png)
+![Add CSS](/assets/library/javafx-2-tutorial/part4/addressapp03.png)
 
 You should already see some changes now: The table and the buttons are black. If you select a button and look at the CSS part in the Properties view you will see that there already is a default style class called `button`.
 
-![Button Style](/assets/java/javafx-2-tutorial-part4/addressapp04.png)
+![Button Style](/assets/library/javafx-2-tutorial/part4/addressapp04.png)
 
 All class styles `.button` from `caspian.css` apply to those buttons. Since we've redefined (and thus overridden) some of those styles in our custom CSS, the appearance of the buttons change automatically.
 
@@ -265,9 +266,9 @@ You might need to adjust the size of the buttons so that all text is displayed.
 
 Select the right `AnchorPane` that is inside the `SplitPane`. Go to the Properties view and use the plus (+) sign to add a Style Class. Select the `background` style class. The background should now turn black.
 
-![AnchorPane](/assets/java/javafx-2-tutorial-part4/addressapp05.png)
+![AnchorPane](/assets/library/javafx-2-tutorial/part4/addressapp05.png)
 
-![Background Style](/assets/java/javafx-2-tutorial-part4/addressapp06.png)
+![Background Style](/assets/library/javafx-2-tutorial/part4/addressapp06.png)
 
 If there is a white border around the table, select the `TableView` and choose 0 for all anchors in the Layout view. Now the table should take up all the left space.
 
@@ -278,7 +279,7 @@ Right now, all the labels on the right side have the same size. There are alread
 
 Select the *Person Details* label and add `label-header` as a Style Class.
 
-![](/assets/java/javafx-2-tutorial-part4/addressapp07.png)
+![](/assets/library/javafx-2-tutorial/part4/addressapp07.png)
 
 To each label in the right column (where the actual person details are displayed), add the css Style Class `label-bright`.
 
@@ -288,11 +289,11 @@ To each label in the right column (where the actual person details are displayed
 
 Right now our application just has the default icon in the title bar and taks bar:
 
-![Default Icon](/assets/java/javafx-2-tutorial-part4/addressapp08.png)
+![Default Icon](/assets/library/javafx-2-tutorial/part4/addressapp08.png)
 
 It looks much nicer with a custom icon:
 
-![Custom Icon](/assets/java/javafx-2-tutorial-part4/addressapp09.png)
+![Custom Icon](/assets/library/javafx-2-tutorial/part4/addressapp09.png)
 
 
 ### The Icon File
@@ -301,7 +302,7 @@ A possible place to get free icons is [Icon Finder](http://www.iconfinder.com). 
 
 Create a (normal) folder inside your AddressApp project called **resources** and a subfolder called **images** in it. Put the icon of your choice inside the images folder. Your folder structure should look something like this now:
 
-![Custom Icon File](/assets/java/javafx-2-tutorial-part4/addressapp10.png)
+![Custom Icon File](/assets/library/javafx-2-tutorial/part4/addressapp10.png)
 
 
 ### Set Icon to Scene
@@ -344,5 +345,5 @@ You can also add an icon to the stage of the person edit dialog, of course.
 
 
 ### What's Next? ###
-In [Tutorial Part 5](/java/javafx-2-tutorial-part5/) we will add XML storage for our data.
+In [Tutorial Part 5](/library/javafx-2-tutorial/part5/) we will add XML storage for our data.
 

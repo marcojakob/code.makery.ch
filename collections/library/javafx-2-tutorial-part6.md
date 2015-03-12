@@ -3,7 +3,8 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 6: Statistics Chart"
 date: 2012-12-04 12:00
 updated: 2013-02-08 00:00
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-2-tutorial-part6.md
+slug: javafx-2-tutorial/part6
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-2-tutorial/part6.md
 description: "Learn how to create a JavaFX Bar Chart."
 published: true
 prettify: true
@@ -14,29 +15,29 @@ sidebars:
 - header: "Articles in this Series"
   body:
   - text: "Introduction"
-    link: /java/javafx-2-tutorial-intro
+    link: /library/javafx-2-tutorial/
     paging: Intro
   - text: "Part 1: Scene Builder"
-    link: /java/javafx-2-tutorial-part1/
+    link: /library/javafx-2-tutorial/part1/
     paging: 1
   - text: "Part 2: Model and TableView"
-    link: /java/javafx-2-tutorial-part2/
+    link: /library/javafx-2-tutorial/part2/
     paging: 2
   - text: "Part 3: Interacting with the User"
-    link: /java/javafx-2-tutorial-part3/
+    link: /library/javafx-2-tutorial/part3/
     paging: 3
   - text: "Part 4: CSS Styling"
-    link: /java/javafx-2-tutorial-part4/
+    link: /library/javafx-2-tutorial/part4/
     paging: 4
   - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-2-tutorial-part5/
+    link: /library/javafx-2-tutorial/part5/
     paging: 5
   - text: "Part 6: Statistics Chart"
-    link: /java/javafx-2-tutorial-part6/
+    link: /library/javafx-2-tutorial/part6/
     paging: 6
     active: true
   - text: "Part 7: Deployment with e(fx)clipse"
-    link: /java/javafx-2-tutorial-part7/
+    link: /library/javafx-2-tutorial/part7/
     paging: 7
 - header: "Download Sources"
   body:
@@ -46,10 +47,10 @@ sidebars:
 ---
 
 <div class="alert alert-danger">
-  &rarr; UPDATED VERSION for Java 8 available: <a href="/java/javafx-8-tutorial-part6/" class="alert-link">JavaFX 8 Tutorial</a>
+  &rarr; UPDATED VERSION for Java 8 available: <a href="/library/javafx-8-tutorial/part6/" class="alert-link">JavaFX 8 Tutorial</a>
 </div>
 
-![Screenshot AddressApp Part 6](/assets/java/javafx-2-tutorial-part6/addressapp01.png)
+![Screenshot AddressApp Part 6](/assets/library/javafx-2-tutorial/part6/addressapp01.png)
 
 ## Topics in Part 6
 
@@ -251,7 +252,7 @@ Now, open the `RootLayout.fxml` file with Scene Builder.
 
 Select the *Show Statistics* `MenuItem` and choose `#handleShowBirthdayStatistics` for `On Action` (in Code view)   
 
-![On Action](/assets/java/javafx-2-tutorial-part6/addressapp02.png)
+![On Action](/assets/library/javafx-2-tutorial/part6/addressapp02.png)
 
 Go to Eclipse, refresh the project and **test it**.
 
@@ -264,5 +265,5 @@ A good place for more information is the official Oracle tutorial on [Using Java
 
 ### What's Next?
 
-In the last tutorial [Part 7](/java/javafx-2-tutorial-part7/) we will finally deploy our application (i.e. package and deliver the app to our users).
+In the last tutorial [Part 7](/library/javafx-2-tutorial/part7/) we will finally deploy our application (i.e. package and deliver the app to our users).
 

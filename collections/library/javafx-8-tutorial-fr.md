@@ -69,7 +69,7 @@ sidebars:
   <i class="fa fa-language"></i> Some parts of this tutorial still need a French translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
 </div>
 
-En 2012, J'ai écrit une [série de tutoriaux JavaFX 2 très détaillés](/java/javafx-2-tutorial-intro/) pour mes étudiants. De nombreuses personnes du monde entier les ont lus et les retours ont été très positifs. J'ai donc décidé de **réécrire le tutoriel JavaFX 2 pour JavaFX 8** (pour savoir ce qui a changé : [Mise à jour vers JavaFX 8 - Quoi de neuf](/blog/update-to-javafx-8-whats-new/)).
+En 2012, J'ai écrit une [série de tutoriaux JavaFX 2 très détaillés](/library/javafx-2-tutorial/) pour mes étudiants. De nombreuses personnes du monde entier les ont lus et les retours ont été très positifs. J'ai donc décidé de **réécrire le tutoriel JavaFX 2 pour JavaFX 8** (pour savoir ce qui a changé : [Mise à jour vers JavaFX 8 - Quoi de neuf](/blog/update-to-javafx-8-whats-new/)).
 
 Ce tutoriel vous guide pour les phases de design, de programmation et de déploiement d'une application de répertoire d'adresse. Voici à quoi ressemblera l'application :
 

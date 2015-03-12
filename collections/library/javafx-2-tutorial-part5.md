@@ -3,7 +3,8 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 5: Storing Data as XML"
 date: 2012-11-27 22:00
 updated: 2013-02-08 00:00
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-2-tutorial-part5.md
+slug: javafx-2-tutorial/part5
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-2-tutorial/part5.md
 description: "Save data as XML with XStream. Learn how to use the JavaFX FileChooser and the JavaFX Menu."
 published: true
 prettify: true
@@ -14,29 +15,29 @@ sidebars:
 - header: "Articles in this Series"
   body:
   - text: "Introduction"
-    link: /java/javafx-2-tutorial-intro
+    link: /library/javafx-2-tutorial/
     paging: Intro
   - text: "Part 1: Scene Builder"
-    link: /java/javafx-2-tutorial-part1/
+    link: /library/javafx-2-tutorial/part1/
     paging: 1
   - text: "Part 2: Model and TableView"
-    link: /java/javafx-2-tutorial-part2/
+    link: /library/javafx-2-tutorial/part2/
     paging: 2
   - text: "Part 3: Interacting with the User"
-    link: /java/javafx-2-tutorial-part3/
+    link: /library/javafx-2-tutorial/part3/
     paging: 3
   - text: "Part 4: CSS Styling"
-    link: /java/javafx-2-tutorial-part4/
+    link: /library/javafx-2-tutorial/part4/
     paging: 4
   - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-2-tutorial-part5/
+    link: /library/javafx-2-tutorial/part5/
     paging: 5
     active: true
   - text: "Part 6: Statistics Chart"
-    link: /java/javafx-2-tutorial-part6/
+    link: /library/javafx-2-tutorial/part6/
     paging: 6
   - text: "Part 7: Deployment with e(fx)clipse"
-    link: /java/javafx-2-tutorial-part7/
+    link: /library/javafx-2-tutorial/part7/
     paging: 7
 - header: "Download Sources"
   body:
@@ -46,10 +47,10 @@ sidebars:
 ---
 
 <div class="alert alert-danger">
-  &rarr; UPDATED VERSION for JDK 8 available: <a href="/java/javafx-8-tutorial-part5/" class="alert-link">JavaFX 8 Tutorial</a>
+  &rarr; UPDATED VERSION for JDK 8 available: <a href="/library/javafx-8-tutorial/part5/" class="alert-link">JavaFX 8 Tutorial</a>
 </div>
 
-![Screenshot AddressApp Part 5](/assets/java/javafx-2-tutorial-part5/addressapp01.png)
+![Screenshot AddressApp Part 5](/assets/library/javafx-2-tutorial/part5/addressapp01.png)
 
 
 ## Topics in Part 5
@@ -223,9 +224,9 @@ public class FileUtil {
 
 To use XStream we need three libraries. Add the following libraries to the project's *lib* folder and add them to the build path (right click on libraries).
 
-* [xstream-1.4.3.jar](/assets/java/javafx-2-tutorial-part5/xstream-1.4.3.jar) - XStream main library
-* [xmlpull-1.1.3.1.jar](/assets/java/javafx-2-tutorial-part5/xmlpull-1.1.3.1.jar) - XmlPull to detect available parsers 
-* [xpp3_min-1.1.4c.jar](/assets/java/javafx-2-tutorial-part5/xpp3_min-1.1.4c.jar) - Xpp3, a fast pull parser
+* [xstream-1.4.3.jar](/assets/library/javafx-2-tutorial/part5/xstream-1.4.3.jar) - XStream main library
+* [xmlpull-1.1.3.1.jar](/assets/library/javafx-2-tutorial/part5/xmlpull-1.1.3.1.jar) - XmlPull to detect available parsers 
+* [xpp3_min-1.1.4c.jar](/assets/library/javafx-2-tutorial/part5/xpp3_min-1.1.4c.jar) - Xpp3, a fast pull parser
 
 You can also download the three libraries from the [XStream download page](http://xstream.codehaus.org/download.html).
 
@@ -297,7 +298,7 @@ In our `RootLayout.fxml` there is already a menu, but we haven't used it yet. Be
 
 Open the `RootLayout.fxml` file in Scene Builder and drag the necessary menu items from the *library view* to the menu bar in the *hierarchy view*. Create a **New**, **Open...**, **Save**, **Save As...**, and **Exit** menu item. You may also use separators between some items.
 
-![RootLayout](/assets/java/javafx-2-tutorial-part5/addressapp02.png)
+![RootLayout](/assets/library/javafx-2-tutorial/part5/addressapp02.png)
 
 Hint: Using the *Accelerator* setting under properties you can set shortcut keys to menu items.
 
@@ -440,7 +441,7 @@ If the user closes the dialog without choosing a file, `null` is returned. Other
 1. Open `RootLayout.fxml` in Scene Builder. Select the root `BorderPane`. In the Code view select the `RootLayoutController` as Controller class. 
 
 2. Select each menu item in the Hierarchy view. In the Code view under *On Action* you should see a choice of all the `@FXML` methods of the controller. Choose the corresponding method for each menu item.   
-![On Action](/assets/java/javafx-2-tutorial-part5/addressapp03.png)
+![On Action](/assets/library/javafx-2-tutorial/part5/addressapp03.png)
 
 3. Close Scene Builder and hit **Refresh (F5)** on your project's root folder. This will make Eclipse aware of the changes you made in Scene Builder.
 
@@ -504,5 +505,5 @@ Let's see how it all works together:
 
 ### What's Next?
 
-In Tutorial [Part 6](/java/javafx-2-tutorial-part6/) we'll add a birthday statistics chart.
+In Tutorial [Part 6](/library/javafx-2-tutorial/part6/) we'll add a birthday statistics chart.
 

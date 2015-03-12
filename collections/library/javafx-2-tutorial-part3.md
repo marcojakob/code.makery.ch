@@ -3,7 +3,8 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 3: Interacting with the User"
 date: 2012-11-20 17:30
 updated: 2013-02-08 00:00
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-2-tutorial-part3.md
+slug: javafx-2-tutorial/part3
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-2-tutorial/part3.md
 description: "React to selection changes in the JavaFX TableView. Add, edit and remove items from the table and validate user input."
 published: true
 prettify: true
@@ -14,29 +15,29 @@ sidebars:
 - header: "Articles in this Series"
   body:
   - text: "Introduction"
-    link: /java/javafx-2-tutorial-intro
+    link: /library/javafx-2-tutorial/
     paging: Intro
   - text: "Part 1: Scene Builder"
-    link: /java/javafx-2-tutorial-part1/
+    link: /library/javafx-2-tutorial/part1/
     paging: 1
   - text: "Part 2: Model and TableView"
-    link: /java/javafx-2-tutorial-part2/
+    link: /library/javafx-2-tutorial/part2/
     paging: 2
   - text: "Part 3: Interacting with the User"
-    link: /java/javafx-2-tutorial-part3/
+    link: /library/javafx-2-tutorial/part3/
     paging: 3
     active: true
   - text: "Part 4: CSS Styling"
-    link: /java/javafx-2-tutorial-part4/
+    link: /library/javafx-2-tutorial/part4/
     paging: 4
   - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-2-tutorial-part5/
+    link: /library/javafx-2-tutorial/part5/
     paging: 5
   - text: "Part 6: Statistics Chart"
-    link: /java/javafx-2-tutorial-part6/
+    link: /library/javafx-2-tutorial/part6/
     paging: 6
   - text: "Part 7: Deployment with e(fx)clipse"
-    link: /java/javafx-2-tutorial-part7/
+    link: /library/javafx-2-tutorial/part7/
     paging: 7
 - header: "Download Sources"
   body:
@@ -46,10 +47,10 @@ sidebars:
 ---
 
 <div class="alert alert-danger">
-  &rarr; UPDATED VERSION for Java 8 available: <a href="/java/javafx-8-tutorial-part3/" class="alert-link">JavaFX 8 Tutorial</a>
+  &rarr; UPDATED VERSION for Java 8 available: <a href="/library/javafx-8-tutorial/part3/" class="alert-link">JavaFX 8 Tutorial</a>
 </div>
 
-![Screenshot AddressApp Part 3](/assets/java/javafx-2-tutorial-part3/addressapp01.png)
+![Screenshot AddressApp Part 3](/assets/library/javafx-2-tutorial/part3/addressapp01.png)
 
 
 ## Topics in Part 3
@@ -207,7 +208,7 @@ With `personTable.getSelectionModel...` we get the *selectedItemProperty* of the
 
 Try to **run your application** at this point. Verify that when you select a person in the table, details about that person are displayed on the right.
 
-If something doesn't work, you can compare your `PersonOverviewController` class with [PersonOverviewController.java](/assets/java/javafx-2-tutorial-part3/PersonOverviewController.java).
+If something doesn't work, you can compare your `PersonOverviewController` class with [PersonOverviewController.java](/assets/library/javafx-2-tutorial/part3/PersonOverviewController.java).
 
 * * * 
 
@@ -231,7 +232,7 @@ private void handleDeletePerson() {
 
 Now, open the `PersonOverview.fxml` file in *SceneBuilder*. Select the *Delete* button, open the *Code* view and choose `#handleDeletePerson` in the dropdown of **On Action**.
 
-![On Action](/assets/java/javafx-2-tutorial-part3/addressapp02.png)
+![On Action](/assets/library/javafx-2-tutorial/part3/addressapp02.png)
 
 
 ### Error Handling
@@ -282,8 +283,8 @@ The new and edit actions are a bit more work: We'll need a new custom dialog (a.
 
 1. Create a new fxml file called `PersonEditDialog.fxml` inside the view package.
 2. Use a `GridPane`, `Label`s, `TextField`s and `Button`s to create a Dialog like the following:   
-![Edit Dialog](/assets/java/javafx-2-tutorial-part3/addressapp03.png)   
-If you don't to do the work, you can download this [PersonEditDialog.fxml](/assets/java/javafx-2-tutorial-part3/PersonEditDialog.fxml). 
+![Edit Dialog](/assets/library/javafx-2-tutorial/part3/addressapp03.png)   
+If you don't to do the work, you can download this [PersonEditDialog.fxml](/assets/library/javafx-2-tutorial/part3/PersonEditDialog.fxml). 
 
 
 ### Create the Controller
@@ -581,5 +582,5 @@ I hope the concepts and structure of this application will get you started with 
 
 
 ### What's Next? ###
-In [Tutorial Part 4](/java/javafx-2-tutorial-part4/) we will add some CSS styling.
+In [Tutorial Part 4](/library/javafx-2-tutorial/part4/) we will add some CSS styling.
 

@@ -3,7 +3,8 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 7: Deployment with e(fx)clipse"
 date: 2012-12-18 01:00
 updated: 2013-05-22 00:00
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-2-tutorial-part7.md
+slug: javafx-2-tutorial/part7
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-2-tutorial/part7.md
 description: "How to deploy a JavaFX application as native package. Create an installer for Windows, MacOS, or Linux."
 published: true
 prettify: true
@@ -14,28 +15,28 @@ sidebars:
 - header: "Articles in this Series"
   body:
   - text: "Introduction"
-    link: /java/javafx-2-tutorial-intro
+    link: /library/javafx-2-tutorial/
     paging: Intro
   - text: "Part 1: Scene Builder"
-    link: /java/javafx-2-tutorial-part1/
+    link: /library/javafx-2-tutorial/part1/
     paging: 1
   - text: "Part 2: Model and TableView"
-    link: /java/javafx-2-tutorial-part2/
+    link: /library/javafx-2-tutorial/part2/
     paging: 2
   - text: "Part 3: Interacting with the User"
-    link: /java/javafx-2-tutorial-part3/
+    link: /library/javafx-2-tutorial/part3/
     paging: 3
   - text: "Part 4: CSS Styling"
-    link: /java/javafx-2-tutorial-part4/
+    link: /library/javafx-2-tutorial/part4/
     paging: 4
   - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-2-tutorial-part5/
+    link: /library/javafx-2-tutorial/part5/
     paging: 5
   - text: "Part 6: Statistics Chart"
-    link: /java/javafx-2-tutorial-part6/
+    link: /library/javafx-2-tutorial/part6/
     paging: 6
   - text: "Part 7: Deployment with e(fx)clipse"
-    link: /java/javafx-2-tutorial-part7/
+    link: /library/javafx-2-tutorial/part7/
     paging: 7
     active: true
 - header: "Download Sources"
@@ -46,14 +47,14 @@ sidebars:
 ---
 
 <div class="alert alert-danger">
-  &rarr; UPDATED VERSION for Java 8 available: <a href="/java/javafx-8-tutorial-part7/" class="alert-link">JavaFX 8 Tutorial</a>
+  &rarr; UPDATED VERSION for Java 8 available: <a href="/library/javafx-8-tutorial/part7/" class="alert-link">JavaFX 8 Tutorial</a>
 </div>
 
 *Update Feb 11th, 2013: New instructions for Deployment on Mac OS. Thank you Eskil for providing me with this information!*
 
 *Update May 22nd, 2013: Updated step 3 and step 4 for e(fx)clipse plugin version 0.8.1.*
 
-![Screenshot AddressApp Part 7](/assets/java/javafx-2-tutorial-part7/addressapp01.png)
+![Screenshot AddressApp Part 7](/assets/library/javafx-2-tutorial/part7/addressapp01.png)
 
 I thought I'd write one last part of this tutorial series to show how to deploy (i.e. package and publish) the AddressApp.
 
@@ -90,7 +91,7 @@ In this post I will show how to create a **Native Package** with with Eclipse an
 
 The goal is to create a self-contained application in a single folder on the user's computer. Here is how it will look like for our AddressApp (on Windows):
 
-![AddressApp Native Package](/assets/java/javafx-2-tutorial-part7/addressapp02.png)
+![AddressApp Native Package](/assets/library/javafx-2-tutorial/part7/addressapp02.png)
 
 The `app` folder contains our application data and the `runtime` folder contains the platform-specific Java runtime.
 
@@ -131,10 +132,10 @@ C:\Program Files\Java\jdk1.7.0_09\bin\javaw.exe
 
 We would like to have some nice icons for our installer:
 
-1. Download [AddressApp.ico](/assets/java/javafx-2-tutorial-part7/AddressApp.ico), [AddressApp-setup-icon.bmp](/assets/java/javafx-2-tutorial-part7/AddressApp-setup-icon.bmp) and [AddressApp.icns](/assets/java/javafx-2-tutorial-part7/AddressApp.icns).
+1. Download [AddressApp.ico](/assets/library/javafx-2-tutorial/part7/AddressApp.ico), [AddressApp-setup-icon.bmp](/assets/library/javafx-2-tutorial/part7/AddressApp-setup-icon.bmp) and [AddressApp.icns](/assets/library/javafx-2-tutorial/part7/AddressApp.icns).
 2. Copy the three icons to the project root of your AddressApp project in Eclipse.
 
-![Installer Icons](/assets/java/javafx-2-tutorial-part7/addressapp03.png)
+![Installer Icons](/assets/library/javafx-2-tutorial/part7/addressapp03.png)
 
 
 ### Step 3 - Edit build.fxbuild
@@ -143,7 +144,7 @@ The file `build.fxbuild` is used by e(fx)clipse to generate a file that will be 
 
 1. Open `build.fxbuild` from your project root.
 2. Fill out all the fields containing a star. *For MacOS: Do not use spaces in Application title as this seems to cause a problem.*    
-![build.fxbuild](/assets/java/javafx-2-tutorial-part7/addressapp04.png)
+![build.fxbuild](/assets/library/javafx-2-tutorial/part7/addressapp04.png)
 3. As **Packaging Format** choose `exe` for Windows, `dmg` for MacOS, and `rpm` for Linux.
 4. Click on the link `Generate ant build.xml only` (found on the right side).
 5. Verify that a new `build` folder and a file `build.xml` is created.
@@ -216,7 +217,7 @@ Find the following block further down in the file:
 
 ### Step 5 (WINDOWS) - Windows exe Installer
 
-![AddressApp on Windows](/assets/java/javafx-2-tutorial-part7/addressapp06.png)
+![AddressApp on Windows](/assets/library/javafx-2-tutorial/part7/addressapp06.png)
 
 With **Inno Setup** we can create a Windows Installer of our application as a single `.exe` file. The resulting `.exe` will perform a user level installation (no admin permissions required). A shortcut will be created (menu or desktop)
 
@@ -226,7 +227,7 @@ With **Inno Setup** we can create a Windows Installer of our application as a si
 
 ### Step 5 (MAC) - MacOS dmg Installer
 
-![AddressApp on Mac](/assets/java/javafx-2-tutorial-part7/addressapp07.png)
+![AddressApp on Mac](/assets/library/javafx-2-tutorial/part7/addressapp07.png)
 
 To create a Mac OS `dmg` drag-and-drop installer, no additional tool is required.
 
@@ -240,7 +241,7 @@ For other packaging options (`msi` for windows, `rpm` for Linux) see this native
 ### Step 6 - Run build.xml ###
 As a final step, we run the `build.xml` with Ant: *Right-click* on the `build.xml` file | *Run As* | *Ant Build*.
 
-![Run Ant Build](/assets/java/javafx-2-tutorial-part7/addressapp08.png)
+![Run Ant Build](/assets/library/javafx-2-tutorial/part7/addressapp08.png)
 
 The building **will take a while** (about 1 minute on my computer).
 

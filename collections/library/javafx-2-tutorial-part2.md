@@ -3,7 +3,8 @@ layout: article
 title: "JavaFX 2 Tutorial - Part 2: Model and TableView"
 date: 2012-11-17 00:30
 updated: 2013-02-08 00:00
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/java/javafx-2-tutorial-part2.md
+slug: javafx-2-tutorial/part2
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-2-tutorial/part2.md
 description: "Use a JavaFX TableView to display an ObservableList of Persons."
 prettify: true
 published: true
@@ -14,29 +15,29 @@ sidebars:
 - header: "Articles in this Series"
   body:
   - text: "Introduction"
-    link: /java/javafx-2-tutorial-intro
+    link: /library/javafx-2-tutorial/
     paging: Intro
   - text: "Part 1: Scene Builder"
-    link: /java/javafx-2-tutorial-part1/
+    link: /library/javafx-2-tutorial/part1/
     paging: 1
   - text: "Part 2: Model and TableView"
-    link: /java/javafx-2-tutorial-part2/
+    link: /library/javafx-2-tutorial/part2/
     paging: 2
     active: true
   - text: "Part 3: Interacting with the User"
-    link: /java/javafx-2-tutorial-part3/
+    link: /library/javafx-2-tutorial/part3/
     paging: 3
   - text: "Part 4: CSS Styling"
-    link: /java/javafx-2-tutorial-part4/
+    link: /library/javafx-2-tutorial/part4/
     paging: 4
   - text: "Part 5: Storing Data as XML"
-    link: /java/javafx-2-tutorial-part5/
+    link: /library/javafx-2-tutorial/part5/
     paging: 5
   - text: "Part 6: Statistics Chart"
-    link: /java/javafx-2-tutorial-part6/
+    link: /library/javafx-2-tutorial/part6/
     paging: 6
   - text: "Part 7: Deployment with e(fx)clipse"
-    link: /java/javafx-2-tutorial-part7/
+    link: /library/javafx-2-tutorial/part7/
     paging: 7
 - header: "Download Sources"
   body:
@@ -46,10 +47,10 @@ sidebars:
 ---
 
 <div class="alert alert-danger">
-  &rarr; UPDATED VERSION for Java 8 available: <a href="/java/javafx-8-tutorial-part2/" class="alert-link">JavaFX 8 Tutorial</a>
+  &rarr; UPDATED VERSION for Java 8 available: <a href="/library/javafx-8-tutorial/part2/" class="alert-link">JavaFX 8 Tutorial</a>
 </div>
 
-![Screenshot AddressApp Part 2](/assets/java/javafx-2-tutorial-part2/addressapp01.png)
+![Screenshot AddressApp Part 2](/assets/library/javafx-2-tutorial/part2/addressapp01.png)
 
 ## Topics in Part 2
 
@@ -324,10 +325,10 @@ We're almost there! But one little thing is missing: We haven't told our `Person
 1. Open `PersonOverview.fxml` with the Scene Builder.
 2. Select the topmost *AnchorPane* in the Hierarchy.
 3. Open *Code* on the right side and select the `PersonOverviewController` as **controller class**.   
-![Set Controller Class](/assets/java/javafx-2-tutorial-part2/addressapp02.png)
+![Set Controller Class](/assets/library/javafx-2-tutorial/part2/addressapp02.png)
 
 4. Select the TableView and choose under Properties the `personTable` field as **fx:id**.   
-![Set fx:id](/assets/java/javafx-2-tutorial-part2/addressapp03.png)
+![Set fx:id](/assets/library/javafx-2-tutorial/part2/addressapp03.png)
 
 5. Do the same for the columns and select `firstNameColumn` and `lastNameColumn` respectively.
 6. For each label in the second column, choose the corresponding **fx:id**.
@@ -344,4 +345,4 @@ Congratulations!
 
 ### What's Next?
 
-In [Tutorial Part 3](/java/javafx-2-tutorial-part3/) we will add more functionality like adding, deleting and editing Persons.
+In [Tutorial Part 3](/library/javafx-2-tutorial/part3/) we will add more functionality like adding, deleting and editing Persons.

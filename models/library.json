@@ -51,8 +51,8 @@
     },
     {
       "title": "JavaFX 2 Tutorial",
-      "link": "/java/javafx-2-tutorial-intro/",
-      "image": "/assets/java/addressapp.png",
+      "link": "/library/javafx-2-tutorial/",
+      "image": "/assets/library/javafx-2-tutorial/addressapp.png",
       "summary": "Seven-part tutorial series for learning JavaFX from the ground up.",
       "topics": [ "JavaFX" ],
       "languages": [ "English" ]

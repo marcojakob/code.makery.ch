@@ -67,7 +67,7 @@ sidebars:
 ---
 
 
-Back in 2012 I wrote a very detailed [JavaFX 2 tutorial series](/java/javafx-2-tutorial-intro/) for my students. Many people all over the world have been reading the tutorial and gave very positive feedback. So I decided to **rewrite the JavaFX 2 tutorial for JavaFX 8** (read about what changed in [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)).
+Back in 2012 I wrote a very detailed [JavaFX 2 tutorial series](/library/javafx-2-tutorial/) for my students. Many people all over the world have been reading the tutorial and gave very positive feedback. So I decided to **rewrite the JavaFX 2 tutorial for JavaFX 8** (read about what changed in [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)).
 
 This tutorial walks you through designing, programming and deploying an address application. This is how the final application will look like:
 
