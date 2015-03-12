@@ -33,7 +33,7 @@ You can **download** a `jar` with my modified version and the stylesheet that go
 
 ## Integrating the Date Picker with AddressApp
 
-I'll show how you can use the `DatePicker` by integrating it with our **AddressApp** example. You can download the full AddressApp example from the [AddressApp Tutorial Part 7](/java/javafx-2-tutorial-part7/).
+I'll show how you can use the `DatePicker` by integrating it with our **AddressApp** example. You can download the full AddressApp example from the [AddressApp Tutorial Part 7](/library/javafx-2-tutorial/part7/).
 
 
 ### Add the Library and CSS

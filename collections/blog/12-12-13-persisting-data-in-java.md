@@ -15,7 +15,7 @@ Almost every application will need some way to persistently store data. There ar
 
 ![Floppy](/assets/blog/12-12-13-persisting-data-in-java/floppy.png)
 
-Some of the techniques (Preferences, XML and reading/writing Files) described here were already used in the [JavaFX 2 Tutorial Part 5](/java/javafx-2-tutorial-part5/). 
+Some of the techniques (Preferences, XML and reading/writing Files) described here were already used in the [JavaFX 2 Tutorial Part 5](/library/javafx-2-tutorial/part5/). 
 
 
 * * *
@@ -26,7 +26,7 @@ With the class [`Preferences`](http://docs.oracle.com/javase/7/docs/api/index.ht
 
 Depending on the operating system, the `Preferences` are saved in different places (e.g. the registry file in Windows).
 
-* `Preferences` example in [JavaFX 2 Tutorial Part 5](/java/javafx-2-tutorial-part5/).
+* `Preferences` example in [JavaFX 2 Tutorial Part 5](/library/javafx-2-tutorial/part5/).
 * Instructions in *German* in the book [Java ist auch eine Insel](http://openbook.galileocomputing.de/javainsel/javainsel_11_009.html#dodtp29221705-11a7-4fe0-8f23-bfb46d58ff59)
 
 
@@ -36,7 +36,7 @@ Depending on the operating system, the `Preferences` are saved in different plac
 
 There are various possibilities to load and save a file in Java.
 
-* An example is the `FileUtil` helper class in [JavaFX 2 Tutorial Part 5](/java/javafx-2-tutorial-part5).
+* An example is the `FileUtil` helper class in [JavaFX 2 Tutorial Part 5](/library/javafx-2-tutorial/part5).
 * The official Java [File I/O Tutorial](http://docs.oracle.com/javase/tutorial/essential/io/fileio.html).
 
 Simple text files can directly be saved to the disk. You construct a String (from objects) and save it using the means described above. But if you later want to read from the text files and use the information in your application, you might have some difficulties. You would have to manually parse the elements from one big unstructured String. Then, to get objects again, you would have to create new objects and fill them with the information from the String.
@@ -50,7 +50,7 @@ That's why it helps to save data in some structured form like XML.
 
 XStream is a simple library to serialize objects to XML and back again. Serializing means that, given an object (which may contain a reference to other objects), XStream will create a single XML-String representing this object(s). The XML-String can then be saved to a file. XStream will later accept this XML-String to reproduce the object(s) again.
 
-* XML example in [JavaFX 2 Tutorial Part 5](/java/javafx-2-tutorial-part5/).
+* XML example in [JavaFX 2 Tutorial Part 5](/library/javafx-2-tutorial/part5/).
 * Official [XStream Website](http://xstream.codehaus.org/) with a good [Two Minute Tutorial](http://xstream.codehaus.org/tutorial.html).
 
 When data gets more complex then a database instead of XML is appropriate.

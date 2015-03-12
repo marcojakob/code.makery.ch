@@ -19,13 +19,13 @@ I had discovered Dart as my new favourite programming language so I set out to g
 
 The resulting [HTML5 drag and drop library](https://github.com/marcojakob/dart-html5-dnd) wasn't all too bad and it did actually work quite well. I received feedback of people using it, some created issues and some even contributed bug fixes.
 
-There were some problems that just couldn't be solved (see below). And with all the strange and changing browser quirks it was just a pain to maintain.
+But there were some problems that just couldn't be solved (see below). And with all the strange and changing browser quirks it was just a pain to maintain.
 
 
 ## New Drag and Drop Library
 
 
-But, there's hope. I've started again and created a [new Dart drag and drop library](/library/dart-drag-and-drop/) just without the HTML5 and it's much better! 
+Wait, there's hope. I've started again and created a [new Dart drag and drop library](/library/dart-drag-and-drop/) just without the HTML5 - and it's much better! 
 
 <a href="/library/dart-drag-and-drop/" class="btn btn-default">&rarr; New Library</a>
 

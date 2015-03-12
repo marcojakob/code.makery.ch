@@ -33,4 +33,4 @@ public void saveAsPng() {
 }
 </pre>
 
-Note: You could test this code with our **AddressApp** example (see download in [AddressApp Tutorial Part 7](/java/javafx-2-tutorial-part7/)). Just add the `saveAsPng()` method to the `BirthdayStatisticsController` class and call the method through some action (e.g. a new button).
+Note: You could test this code with our **AddressApp** example (see download in [AddressApp Tutorial Part 7](/library/javafx-2-tutorial/part7/)). Just add the `saveAsPng()` method to the `BirthdayStatisticsController` class and call the method through some action (e.g. a new button).
