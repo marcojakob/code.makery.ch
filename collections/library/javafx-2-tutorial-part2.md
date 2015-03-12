@@ -4,7 +4,7 @@ title: "JavaFX 2 Tutorial - Part 2: Model and TableView"
 date: 2012-11-17 00:30
 updated: 2013-02-08 00:00
 slug: javafx-2-tutorial/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-2-tutorial/part2.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-2-tutorial-part2.md
 description: "Use a JavaFX TableView to display an ObservableList of Persons."
 prettify: true
 published: true

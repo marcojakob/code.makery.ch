@@ -132,7 +132,7 @@ sidebars:
 
 
 ### 创建包
-[**Model-View-Controller** (MVC)](http://zh.wikipedia.org/wiki/Model_View_Controller)是一个非常重要的软件设计原则。按照MVC模式可以将我们的应用程序划分成3个部分，然后为这每一部分建立自己的包 (在源代码文件夹上右键， 选择 新建 | 包):
+[**Model-View-Controller** (MVC)](http://zh.wikipedia.org/wiki/MVC)是一个非常重要的软件设计原则。按照MVC模式可以将我们的应用程序划分成3个部分，然后为这每一部分建立自己的包 (在源代码文件夹上右键， 选择 新建 | 包):
 
 * `ch.makery.address` - 放置所有的控制器类(也就是应用程序的业务逻辑)
 * `ch.makery.address.model` - 放置所有的模型类

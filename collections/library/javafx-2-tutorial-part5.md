@@ -4,7 +4,7 @@ title: "JavaFX 2 Tutorial - Part 5: Storing Data as XML"
 date: 2012-11-27 22:00
 updated: 2013-02-08 00:00
 slug: javafx-2-tutorial/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-2-tutorial/part5.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-2-tutorial-part5.md
 description: "Save data as XML with XStream. Learn how to use the JavaFX FileChooser and the JavaFX Menu."
 published: true
 prettify: true

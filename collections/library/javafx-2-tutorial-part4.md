@@ -4,7 +4,7 @@ title: "JavaFX 2 Tutorial - Part 4: CSS Styling"
 date: 2012-11-26 13:00
 updated: 2013-02-08 00:00
 slug: javafx-2-tutorial/part4
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-2-tutorial/part4.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-2-tutorial-part4.md
 description: "In JavaFX you can style your user interface using CSS. We'll also add an application icon in this tutorial part."
 published: true
 prettify: true

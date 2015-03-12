@@ -4,7 +4,7 @@ title: "JavaFX 2 Tutorial - Part 6: Statistics Chart"
 date: 2012-12-04 12:00
 updated: 2013-02-08 00:00
 slug: javafx-2-tutorial/part6
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-2-tutorial/part6.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-2-tutorial-part6.md
 description: "Learn how to create a JavaFX Bar Chart."
 published: true
 prettify: true
