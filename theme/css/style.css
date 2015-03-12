@@ -4719,6 +4719,119 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+/*
+ * Social Buttons for Bootstrap
+ *
+ * Copyright 2013-2014 Panayiotis Lipiridis
+ * Licensed under the MIT License
+ *
+ * https://github.com/lipis/bootstrap-social
+ */
+.btn-social, .btn-social-icon {
+  position: relative;
+  padding-left: 50px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .btn-social > :first-child, .btn-social-icon > :first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 38px;
+    line-height: 40px;
+    font-size: 1.6em;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.2); }
+  .btn-social.btn-lg, .btn-group-lg > .btn-social.btn, .btn-group-lg > .btn.btn-social-icon, .btn-lg.btn-social-icon {
+    padding-left: 68px; }
+    .btn-social.btn-lg :first-child, .btn-group-lg > .btn-social.btn :first-child, .btn-group-lg > .btn.btn-social-icon :first-child, .btn-lg.btn-social-icon :first-child {
+      line-height: 52px;
+      width: 52px;
+      font-size: 1.8em; }
+  .btn-social.btn-sm, .btn-group-sm > .btn-social.btn, .btn-group-sm > .btn.btn-social-icon, .btn-sm.btn-social-icon {
+    padding-left: 41px; }
+    .btn-social.btn-sm :first-child, .btn-group-sm > .btn-social.btn :first-child, .btn-group-sm > .btn.btn-social-icon :first-child, .btn-sm.btn-social-icon :first-child {
+      line-height: 32px;
+      width: 31px;
+      font-size: 1.4em; }
+  .btn-social.btn-xs, .btn-group-xs > .btn-social.btn, .btn-group-xs > .btn.btn-social-icon, .btn-xs.btn-social-icon {
+    padding-left: 32px; }
+    .btn-social.btn-xs :first-child, .btn-group-xs > .btn-social.btn :first-child, .btn-group-xs > .btn.btn-social-icon :first-child, .btn-xs.btn-social-icon :first-child {
+      line-height: 25px;
+      width: 22px;
+      font-size: 1.2em; }
+
+.btn-social-icon {
+  height: 40px;
+  width: 40px;
+  padding: 0; }
+  .btn-social-icon :first-child {
+    border: none;
+    text-align: center;
+    width: 100% !important; }
+  .btn-social-icon.btn-lg, .btn-group-lg > .btn-social-icon.btn {
+    height: 52px;
+    width: 52px;
+    padding-left: 0;
+    padding-right: 0; }
+  .btn-social-icon.btn-sm, .btn-group-sm > .btn-social-icon.btn {
+    height: 33px;
+    width: 33px;
+    padding-left: 0;
+    padding-right: 0; }
+  .btn-social-icon.btn-xs, .btn-group-xs > .btn-social-icon.btn {
+    height: 24px;
+    width: 24px;
+    padding-left: 0;
+    padding-right: 0; }
+
+.btn-github {
+  color: #fff;
+  background-color: #777777;
+  border-color: rgba(0, 0, 0, 0.15); }
+  .btn-github:hover, .btn-github:focus, .btn-github:active {
+    color: #fff;
+    background-color: #444444;
+    border-color: rgba(0, 0, 0, 0.15); }
+
+.btn-googleplus {
+  color: #fff;
+  background-color: #777777;
+  border-color: rgba(0, 0, 0, 0.15); }
+  .btn-googleplus:hover, .btn-googleplus:focus, .btn-googleplus:active {
+    color: #fff;
+    background-color: #dd4b39;
+    border-color: rgba(0, 0, 0, 0.15); }
+
+.btn-twitter {
+  color: #fff;
+  background-color: #777777;
+  border-color: rgba(0, 0, 0, 0.15); }
+  .btn-twitter:hover, .btn-twitter:focus, .btn-twitter:active {
+    color: #fff;
+    background-color: #55acee;
+    border-color: rgba(0, 0, 0, 0.15); }
+
+.btn-rss {
+  color: #fff;
+  background-color: #777777;
+  border-color: rgba(0, 0, 0, 0.15); }
+  .btn-rss:hover, .btn-rss:focus, .btn-rss:active {
+    color: #fff;
+    background-color: #ff6600;
+    border-color: rgba(0, 0, 0, 0.15); }
+
+.btn-mail {
+  color: #fff;
+  background-color: #777777;
+  border-color: rgba(0, 0, 0, 0.15); }
+  .btn-mail:hover, .btn-mail:focus, .btn-mail:active {
+    color: #fff;
+    background-color: #428bca;
+    border-color: rgba(0, 0, 0, 0.15); }
+
 a.black-link, a.gray-link, a.main-link {
   text-decoration: none; }
 a.black-link {
