@@ -186,19 +186,12 @@ sidebars:
   - text: Source of Examples
     link: /assets/mycollection/my-example-article/some-sources.zip
     icon-css: fa fa-fw fa-download
-- header: Languages
-  languages: true
-  body:
-  - text: English
-    link: /mycollection/my-example-article1/
-    icon-css: fa fa-fw fa-globe
-    active: true
-  - text: Português
-    link: /mycollection/my-example-article1/pt/
-    icon-css: fa fa-fw fa-globe
-  - text: Español
-    link: /mycollection/my-example-article1/es/
-    icon-css: fa fa-fw fa-globe
+languages: 
+  header: Languages
+  collection: mycollection
+  item: my-example-article1
+  part: part1
+  active: en
 css:
 - /assets/blog/14-05-03-my-example-post-1/some-custom-css.css
 javascript: 
@@ -220,7 +213,7 @@ For a description of most items see blog post description above. Here are the it
     * `link`: The href of this item.
     * `paging`: If set, the item is used for a paging element at the bottom of the website. The value is the text displayed for the paging element.
     * `icon-css`: Adds tag for a font icon, e.g. `<i class="fa fa-fw fa-info"></i>`
-  * `languages`: (optional) If set to true, an [alternate hreflang](https://support.google.com/webmasters/answer/189077?hl=en) is added as link element to the HTML header for every language.
+* `languages`: (optional) If set, a sidebar for languages and an [alternate hreflang](https://support.google.com/webmasters/answer/189077?hl=en) is added as link element to the HTML header for every language.
   
 
 #### Filename
