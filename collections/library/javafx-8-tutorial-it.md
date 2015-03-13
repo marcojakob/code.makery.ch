@@ -5,7 +5,7 @@ date: 2014-04-19 00:00
 updated: 2015-03-12 00:00
 slug: javafx-8-tutorial/it
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-it.md
-description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
+description: "Questo tutorial in sette parti, guida nella progettazione, nella programmazione e nel deploying di una applicazione rubrica con JavaFX."
 image: /assets/library/javafx-8-tutorial/addressapp.png
 published: true
 prettify: true
@@ -79,7 +79,7 @@ Questo tutorial ti guida nella progettazione, nella programmazione e nel "deploy
 
 Ci sono due modi per usare questo tutorial:
 
-* **Metodo lento** Creare il proprio pregetto JavaFX partendo da zero
+* **Metodo approfondito** Creare il proprio pregetto JavaFX partendo da zero
 * **Metedo veloce** Importare il codice sorgente per il tutorial nel proprio IDE (è un progetto Eclipse, ma è possibile usare altri IDE come NetBeans con piccole modifiche). Dopodichè usare il tutorial per capire il codice
 
 
