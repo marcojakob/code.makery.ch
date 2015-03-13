@@ -13,13 +13,12 @@ sidebars:
   - text: "Introduction"
     link: /library/greenfoot-kara/fr/
     paging: Intro
+  - text: "Background Info"
+    link: /library/greenfoot-kara/fr/background/
+    icon-css: fa fa-fw fa-info
   - text: "Chapitre 1: Premiers Pas"
     link: /library/greenfoot-kara/fr/chapter1/
     paging: 1
-  - text: "Solutions Chapitre 1"
-    link: /library/greenfoot-kara/fr/chapter1-solutions/
-    icon-css: fa fa-fw fa-check-square-o
-    active: true
   - text: "Chapitre 2: Ordinogramme"
     link: /library/greenfoot-kara/fr/chapter2/
     paging: 2
@@ -32,6 +31,12 @@ sidebars:
   - text: "Chapitre 5: Méthodes"
     link: /library/greenfoot-kara/fr/chapter5/
     paging: 5
+- header: Solutions
+  body:
+  - text: "Solutions Chapitre 1"
+    link: /library/greenfoot-kara/fr/chapter1-solutions/
+    icon-css: fa fa-fw fa-check-square-o
+    active: true
 - header: Downloads
   body:
   - text: scenarios-chapter-1-solutions.zip
@@ -40,19 +45,12 @@ sidebars:
   - text: Page as Word File
     link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
-- header: Languages
-  languages: true
-  body:
-  - text: English
-    link: /library/greenfoot-kara/chapter1-solutions/
-    icon-css: fa fa-fw fa-globe
-  - text: Deutsch
-    link: /library/greenfoot-kara/de/chapter1-solutions/
-    icon-css: fa fa-fw fa-globe
-  - text: Français
-    link: /library/greenfoot-kara/fr/chapter1-solutions/
-    icon-css: fa fa-fw fa-globe
-    active: true
+languages: 
+  header: Langues
+  collection: library
+  item: greenfoot-kara
+  part: chapter1-solutions
+  active: fr
 ---
 
 <div class="alert alert-warning">

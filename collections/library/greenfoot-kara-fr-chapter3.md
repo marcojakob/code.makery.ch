@@ -13,6 +13,9 @@ sidebars:
   - text: "Introduction"
     link: /library/greenfoot-kara/fr/
     paging: Intro
+  - text: "Background Info"
+    link: /library/greenfoot-kara/fr/background/
+    icon-css: fa fa-fw fa-info
   - text: "Chapitre 1: Premiers Pas"
     link: /library/greenfoot-kara/fr/chapter1/
     paging: 1
@@ -23,15 +26,17 @@ sidebars:
     link: /library/greenfoot-kara/fr/chapter3/
     paging: 3
     active: true
-  - text: "Solutions Chapitre 3"
-    link: /library/greenfoot-kara/fr/chapter3-solutions/
-    icon-css: fa fa-fw fa-check-square-o
   - text: "Chapitre 4: Jeu Sokoban"
     link: /library/greenfoot-kara/fr/chapter4/
     paging: 4
   - text: "Chapitre 5: Méthodes"
     link: /library/greenfoot-kara/fr/chapter5/
     paging: 5
+- header: Solutions
+  body:
+  - text: "Solutions Chapitre 3"
+    link: /library/greenfoot-kara/fr/chapter3-solutions/
+    icon-css: fa fa-fw fa-check-square-o
 - header: Downloads
   body:
   - text: scenarios-chapter-3.zip
@@ -40,19 +45,12 @@ sidebars:
   - text: Page as Word File
     link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
-- header: Languages
-  languages: true
-  body:
-  - text: English
-    link: /library/greenfoot-kara/chapter3/
-    icon-css: fa fa-fw fa-globe
-  - text: Deutsch
-    link: /library/greenfoot-kara/de/chapter3/
-    icon-css: fa fa-fw fa-globe
-  - text: Français
-    link: /library/greenfoot-kara/fr/chapter3/
-    icon-css: fa fa-fw fa-globe
-    active: true
+languages: 
+  header: Langues
+  collection: library
+  item: greenfoot-kara
+  part: chapter3
+  active: fr
 ---
 
 Au chapitre précédent, nous avons appris à répéter certaines actions tant qu'une condition est remplie. Maintenant notre objectif est de réaliser que :

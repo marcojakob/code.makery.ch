@@ -43,31 +43,12 @@ sidebars:
   - text: Bagian 3 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u20)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-3.zip
     icon-css: fa fa-fw fa-download
-- header: Bahasa
-  languages: true
-  body:
-  - text: English
-    link: /library/javafx-8-tutorial/part3/
-    icon-css: fa fa-fw fa-globe
-  - text: Português
-    link: /library/javafx-8-tutorial/pt/part3/
-    icon-css: fa fa-fw fa-globe
-  - text: Español
-    link: /library/javafx-8-tutorial/es/part3/
-    icon-css: fa fa-fw fa-globe
-  - text: 中文（简体）
-    link: /library/javafx-8-tutorial/zh-cn/part3/
-    icon-css: fa fa-fw fa-globe
-  - text: Русский
-    link: /library/javafx-8-tutorial/ru/part3/
-    icon-css: fa fa-fw fa-globe
-  - text: Bahasa Indonesia
-    link: /library/javafx-8-tutorial/id/part3/
-    icon-css: fa fa-fw fa-globe
-    active: true
-  - text: Français
-    link: /library/javafx-8-tutorial/fr/part3/
-    icon-css: fa fa-fw fa-globe
+languages: 
+  header: Bahasa
+  collection: library
+  item: javafx-8-tutorial
+  part: part3
+  active: id
 ---
 
 ![Tangkapan layar AddressApp bagian 3](/assets/library/javafx-8-tutorial/part3/addressapp-part3.png)

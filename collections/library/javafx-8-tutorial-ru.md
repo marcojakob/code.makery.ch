@@ -38,31 +38,12 @@ sidebars:
   - text: "Часть 7: Развертывание"
     link: /library/javafx-8-tutorial/ru/part7/
     paging: 7
-- header: Языки
-  languages: true
-  body:
-  - text: English
-    link: /library/javafx-8-tutorial/
-    icon-css: fa fa-fw fa-globe
-  - text: Português
-    link: /library/javafx-8-tutorial/pt/
-    icon-css: fa fa-fw fa-globe
-  - text: Español
-    link: /library/javafx-8-tutorial/es/
-    icon-css: fa fa-fw fa-globe
-  - text: 中文（简体）
-    link: /library/javafx-8-tutorial/zh-cn/
-    icon-css: fa fa-fw fa-globe
-  - text: Русский
-    link: /library/javafx-8-tutorial/ru/
-    icon-css: fa fa-fw fa-globe
-    active: true
-  - text: Bahasa Indonesia
-    link: /library/javafx-8-tutorial/id/
-    icon-css: fa fa-fw fa-globe
-  - text: Français
-    link: /library/javafx-8-tutorial/fr/
-    icon-css: fa fa-fw fa-globe
+languages: 
+  header: Языки
+  collection: library
+  item: javafx-8-tutorial
+  part: 
+  active: ru
 ---
 
 В 2012 году я написал очень детальный [учебник по JavaFX 2](http://code.makery.ch/library/javafx-2-tutorial/) для моих студентов. Многие люди с разных частей мира прочитали его и дали очень позитивные отзывы о данном материале. Поэтому я решил переписать этот учебник для новой версии JavaFX 8 (об изменениях вы можете почитать здесь - [Обновление до JavaFX 8 - Что Нового](http://code.makery.ch/blog/update-to-javafx-8-whats-new/ "Update to JavaFX 8 - What's New")).

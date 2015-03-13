@@ -38,31 +38,12 @@ sidebars:
   - text: "Parte 7: Implantação"
     link: /library/javafx-8-tutorial/pt/part7/
     paging: 7
-- header: Linguagens
-  languages: true
-  body:
-  - text: English
-    link: /library/javafx-8-tutorial/
-    icon-css: fa fa-fw fa-globe
-  - text: Português
-    link: /library/javafx-8-tutorial/pt/
-    icon-css: fa fa-fw fa-globe
-    active: true
-  - text: Español
-    link: /library/javafx-8-tutorial/es/
-    icon-css: fa fa-fw fa-globe
-  - text: 中文（简体）
-    link: /library/javafx-8-tutorial/zh-cn/
-    icon-css: fa fa-fw fa-globe
-  - text: Русский
-    link: /library/javafx-8-tutorial/ru/
-    icon-css: fa fa-fw fa-globe
-  - text: Bahasa Indonesia
-    link: /library/javafx-8-tutorial/id/
-    icon-css: fa fa-fw fa-globe
-  - text: Français
-    link: /library/javafx-8-tutorial/fr/
-    icon-css: fa fa-fw fa-globe
+languages: 
+  header: Linguagens
+  collection: library
+  item: javafx-8-tutorial
+  part: 
+  active: pt
 ---
 
 Em 2012 eu criei um tutorial muito detalhado [JavaFX 2 tutorial series](/library/javafx-2-tutorial/) para meus alunos. Muitas pessoas ao redor do mundo leram o tutorial e derem um feedback possitivo. Então eu decidi ** rescrever o tutorial de JavaFX 2 para JavaFX 8** (Leia sobre o que mudou em [Atualização para JavaFX 8 - Quais as novidades](/blog/update-to-javafx-8-whats-new/)).

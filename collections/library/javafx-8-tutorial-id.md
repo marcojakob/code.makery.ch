@@ -38,31 +38,12 @@ sidebars:
   - text: "Bagian 7: Penyebaran"
     link: /library/javafx-8-tutorial/id/part7/
     paging: 7
-- header: Bahasa
-  languages: true
-  body:
-  - text: English
-    link: /library/javafx-8-tutorial/
-    icon-css: fa fa-fw fa-globe
-  - text: Português
-    link: /library/javafx-8-tutorial/pt/
-    icon-css: fa fa-fw fa-globe
-  - text: Español
-    link: /library/javafx-8-tutorial/es/
-    icon-css: fa fa-fw fa-globe
-  - text: 中文（简体）
-    link: /library/javafx-8-tutorial/zh-cn/
-    icon-css: fa fa-fw fa-globe
-  - text: Русский
-    link: /library/javafx-8-tutorial/ru/
-    icon-css: fa fa-fw fa-globe
-  - text: Bahasa Indonesia
-    link: /library/javafx-8-tutorial/id/
-    icon-css: fa fa-fw fa-globe
-    active: true
-  - text: Français
-    link: /library/javafx-8-tutorial/fr/
-    icon-css: fa fa-fw fa-globe
+languages: 
+  header: Bahasa
+  collection: library
+  item: javafx-8-tutorial
+  part:
+  active: id
 ---
 
 Pada 2012 saya telah menulis [Seri Tutorial JavaFX 2](/library/javafx-2-tutorial/) yang terperinci untuk murid-muridku. Banyak orang dari penjuru dunia telah membaca tutorial ini dan memberi umpan balik yang positif. Lalu saya memutuskan **menulis ulang Tutorial JavaFX 2 untuk JavaFX 8** (baca perubahan di [Pembaharuan javaFX 8 - Apa yang baru](/blog/update-to-javafx-8-whats-new/)).

@@ -38,31 +38,12 @@ sidebars:
   - text: "Part 7: Deployment"
     link: /library/javafx-8-tutorial/fr/part7/
     paging: 7
-- header: Languages
-  languages: true
-  body:
-  - text: English
-    link: /library/javafx-8-tutorial/
-    icon-css: fa fa-fw fa-globe
-  - text: Português
-    link: /library/javafx-8-tutorial/pt/
-    icon-css: fa fa-fw fa-globe
-  - text: Español
-    link: /library/javafx-8-tutorial/es/
-    icon-css: fa fa-fw fa-globe
-  - text: 中文（简体）
-    link: /library/javafx-8-tutorial/zh-cn/
-    icon-css: fa fa-fw fa-globe
-  - text: Русский
-    link: /library/javafx-8-tutorial/ru/
-    icon-css: fa fa-fw fa-globe
-  - text: Bahasa Indonesia
-    link: /library/javafx-8-tutorial/id/
-    icon-css: fa fa-fw fa-globe
-  - text: Français
-    link: /library/javafx-8-tutorial/fr/
-    icon-css: fa fa-fw fa-globe
-    active: true
+languages: 
+  header: Langues
+  collection: library
+  item: javafx-8-tutorial
+  part:
+  active: fr
 ---
 
 <div class="alert alert-warning">

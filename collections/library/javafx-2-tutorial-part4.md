@@ -298,7 +298,7 @@ It looks much nicer with a custom icon:
 
 ### The Icon File
 
-A possible place to get free icons is [Icon Finder](http://www.iconfinder.com). I downloaded a little [address book icon](http://www.iconfinder.com/icondetails/86957/32/).
+A possible place to get free icons is [Icon Finder](http://www.iconfinder.com). I downloaded a little [address book icon](https://www.iconfinder.com/icons/86957/address_book_icon#size=32).
 
 Create a (normal) folder inside your AddressApp project called **resources** and a subfolder called **images** in it. Put the icon of your choice inside the images folder. Your folder structure should look something like this now:
 

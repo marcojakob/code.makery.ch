@@ -1,10 +1,10 @@
 ---
 layout: article
-title: "HTML & CSS Tutorial"
+title: "HTML & CSS Tutorial (Deutsch)"
 date: 2014-08-13 00:00
 slug: html-css/de
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de.md
-description: "Mit diesem Tutorial lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen sofort mit einer eigenen Webseite für Ihr Portfolio."
+description: "Mit dieser Anleitung lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen sofort mit einer eigenen Webseite für Ihr Portfolio."
 image: /assets/library/html-css/portfolio.png
 published: true
 prettify: true
@@ -39,7 +39,7 @@ sidebars:
     paging: 7
 ---
 
-Mit diesem Tutorial lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen **sofort mit einem Projekt**, anstatt zuerst langweilige Theorie abzuhandeln.
+Mit dieser Anleitung lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen **sofort mit einem Projekt**, anstatt zuerst langweilige Theorie abzuhandeln.
 
 Die Theorie wird erklärt, sobald sie für das Projekt benötigt wird. Sie werden damit sehr schnell eine solide Grundlage für die Webentwicklung erhalten. Ich werde Sie auf verschiedene Unterlagen hinweisen, so dass Sie später beliebige Bereiche vertiefen können.
 

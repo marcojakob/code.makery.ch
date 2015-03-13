@@ -34,10 +34,11 @@
       {%- endif -%}
       
       <article class="row">
-        {%- if model.sidebars -%}
+        {%- if model.sidebars or model.languages -%}
         <aside class="col-md-3">
           <div class="visible-md-block visible-lg-block">
           {% include "article/sidebars" %}
+          {% include "article/languages" %}
           </div>
         </aside>
         <div class="col-md-9">
@@ -49,9 +50,10 @@
             {% include "article/date" %}
           </header>
           
-          {%- if model.sidebars -%}
+          {%- if model.sidebars or model.languages -%}
           <aside class="visible-xs-block visible-sm-block">
             {% include "article/sidebars-dropdown" %}
+            {% include "article/languages-dropdown" %}
           </aside>
           {%- endif -%}
           
@@ -66,7 +68,7 @@
       
       {% if model.comments %}
       <section class="row">
-        {%- if model.sidebars -%}
+        {%- if model.sidebars or model.languages -%}
         <div class="col-md-offset-3 col-md-9">
         {%- else -%}
         <div class="col-md-offset-1 col-md-10">
@@ -77,7 +79,7 @@
       </section>
       {% endif %}
     </div>
-    
+        
     {% include "footer" %}
     
     {% include "html-body-end" %}

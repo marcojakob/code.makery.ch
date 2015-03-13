@@ -15,8 +15,8 @@ sidebars:
     link: /library/greenfoot-kara/
     paging: Intro
     active: true
-  - text: "Teacher's Info"
-    link: /library/greenfoot-kara/teachers-info/
+  - text: "Background Info"
+    link: /library/greenfoot-kara/background/
     icon-css: fa fa-fw fa-info
   - text: "Chapter 1: First Steps"
     link: /library/greenfoot-kara/chapter1/
@@ -38,19 +38,12 @@ sidebars:
   - text: Page as Word File
     link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
-- header: Languages
-  languages: true
-  body:
-  - text: English
-    link: /library/greenfoot-kara/
-    icon-css: fa fa-fw fa-globe
-    active: true
-  - text: Deutsch
-    link: /library/greenfoot-kara/de/
-    icon-css: fa fa-fw fa-globe
-  - text: Français
-    link: /library/greenfoot-kara/fr/
-    icon-css: fa fa-fw fa-globe
+languages: 
+  header: Languages
+  collection: library
+  item: greenfoot-kara
+  part: 
+  active: en
 ---
 
 > `GreenfootKara` is a visual and interactive introduction to programming based on the [Greenfoot IDE](http://www.greenfoot.org). It combines the proven concept of the mini-world `Kara` with `Greenfoot`'s flexibility and ease of use.
@@ -101,5 +94,5 @@ Download and install [Greenfoot](http://www.greenfoot.org/download). After the i
 
 To jump right in go to [Chapter 1: First Steps](/library/greenfoot-kara/chapter1/).
 
-To get more background about `GreenfootKara` and its design decisions visit [Teacher's Info](/library/greenfoot-kara/teachers-info/) (is especially recommmended for teachers).
+To get more background about `GreenfootKara` and its design decisions visit [Background Info](/library/greenfoot-kara/background/) (is especially recommmended for teachers).
 

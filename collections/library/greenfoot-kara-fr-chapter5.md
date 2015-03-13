@@ -14,6 +14,9 @@ sidebars:
   - text: "Introduction"
     link: /library/greenfoot-kara/fr/
     paging: Intro
+  - text: "Background Info"
+    link: /library/greenfoot-kara/fr/background/
+    icon-css: fa fa-fw fa-info
   - text: "Chapitre 1: Premiers Pas"
     link: /library/greenfoot-kara/fr/chapter1/
     paging: 1
@@ -30,6 +33,8 @@ sidebars:
     link: /library/greenfoot-kara/fr/chapter5/
     paging: 5
     active: true
+- header: Solutions
+  body:
   - text: "Solutions Chapitre 5"
     link: /library/greenfoot-kara/fr/chapter5-solutions/
     icon-css: fa fa-fw fa-check-square-o
@@ -41,19 +46,12 @@ sidebars:
   - text: Page as Word File
     link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
-- header: Languages
-  languages: true
-  body:
-  - text: English
-    link: /library/greenfoot-kara/chapter5/
-    icon-css: fa fa-fw fa-globe
-  - text: Deutsch
-    link: /library/greenfoot-kara/de/chapter5/
-    icon-css: fa fa-fw fa-globe
-  - text: Français
-    link: /library/greenfoot-kara/fr/chapter5/
-    icon-css: fa fa-fw fa-globe
-    active: true
+languages: 
+  header: Langues
+  collection: library
+  item: greenfoot-kara
+  part: chapter5
+  active: fr
 ---
 
 <div class="alert alert-warning">

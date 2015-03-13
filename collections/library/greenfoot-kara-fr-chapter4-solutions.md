@@ -13,6 +13,9 @@ sidebars:
   - text: "Introduction"
     link: /library/greenfoot-kara/fr/
     paging: Intro
+  - text: "Background Info"
+    link: /library/greenfoot-kara/fr/background/
+    icon-css: fa fa-fw fa-info
   - text: "Chapitre 1: Premiers Pas"
     link: /library/greenfoot-kara/fr/chapter1/
     paging: 1
@@ -25,13 +28,15 @@ sidebars:
   - text: "Chapitre 4: Jeu Sokoban"
     link: /library/greenfoot-kara/fr/chapter4/
     paging: 4
+  - text: "Chapitre 5: Méthodes"
+    link: /library/greenfoot-kara/fr/chapter5/
+    paging: 5
+- header: Solutions
+  body:
   - text: "Solutions Chapitre 4"
     link: /library/greenfoot-kara/fr/chapter4-solutions/
     icon-css: fa fa-fw fa-check-square-o
     active: true
-  - text: "Chapitre 5: Méthodes"
-    link: /library/greenfoot-kara/fr/chapter5/
-    paging: 5
 - header: Downloads
   body:
   - text: scenarios-chapter-4-solutions.zip
@@ -40,19 +45,12 @@ sidebars:
   - text: Page as Word File
     link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
-- header: Languages
-  languages: true
-  body:
-  - text: English
-    link: /library/greenfoot-kara/chapter4-solutions/
-    icon-css: fa fa-fw fa-globe
-  - text: Deutsch
-    link: /library/greenfoot-kara/de/chapter4-solutions/
-    icon-css: fa fa-fw fa-globe
-  - text: Français
-    link: /library/greenfoot-kara/fr/chapter4-solutions/
-    icon-css: fa fa-fw fa-globe
-    active: true
+languages: 
+  header: Langues
+  collection: library
+  item: greenfoot-kara
+  part: chapter4-solutions
+  active: fr
 ---
 
 #### <i class="fa fa-check-square-o"></i> SOLUTION TASK 4.01 to 4.09

@@ -18,7 +18,7 @@
         <div class="list-group">
           <a href="/{{ mixture.url }}/" class="list-group-item{% unless mixture.route.topic %} active{% endunless %}">All Topics</a>
           
-          {%- for topic in model.topics -%}
+          {%- for topic in global.libraryTopics -%}
           {%- assign topic_downcase = topic | downcase -%}
           <a href="/{{ mixture.url }}/topic/{{ topic_downcase }}/" class="list-group-item{% if mixture.route.topic == topic_downcase %} active{% endif %}">
             <i class="fa fa-fw fa-circle topic-{{ topic_downcase }}"></i> {{ topic }}</a>
@@ -39,12 +39,12 @@
     </div>
     
     <div class="col-sm-9">
-    {%- for item in model.items -%}
+    {%- for item in global.library -%}
       {%- comment -%}Test if item should be shown.{%- endcomment -%}
       {%- if mixture.route.topic -%}
         {%- comment -%}Test if current topic matches.{%- endcomment -%}
         {%- assign show_item = false -%}
-        {%- for topic in item.topics -%}
+        {%- for topic in item[1].topics -%}
           {%- assign topic_downcase = topic | downcase -%}
           {%- if mixture.route.topic == topic_downcase -%}
             {%- assign show_item = true -%}

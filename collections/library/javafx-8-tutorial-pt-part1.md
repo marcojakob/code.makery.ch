@@ -43,31 +43,12 @@ sidebars:
   - text: "Parte 1 como um projeto Eclipse <em>(versão mínima requirida: JDK 8u20)</em>"
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
     icon-css: fa fa-fw fa-download
-- header: Linguagens
-  languages: true
-  body:
-  - text: English
-    link: /library/javafx-8-tutorial/part1/
-    icon-css: fa fa-fw fa-globe
-  - text: Português
-    link: /library/javafx-8-tutorial/pt/part1/
-    icon-css: fa fa-fw fa-globe
-    active: true
-  - text: Español
-    link: /library/javafx-8-tutorial/es/part1/
-    icon-css: fa fa-fw fa-globe
-  - text: 中文（简体）
-    link: /library/javafx-8-tutorial/zh-cn/part1/
-    icon-css: fa fa-fw fa-globe
-  - text: Русский
-    link: /library/javafx-8-tutorial/ru/part1/
-    icon-css: fa fa-fw fa-globe
-  - text: Bahasa Indonesia
-    link: /library/javafx-8-tutorial/id/part1/
-    icon-css: fa fa-fw fa-globe
-  - text: Français
-    link: /library/javafx-8-tutorial/fr/part1/
-    icon-css: fa fa-fw fa-globe
+languages: 
+  header: Linguagens
+  collection: library
+  item: javafx-8-tutorial
+  part: part1
+  active: pt
 ---
 
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)

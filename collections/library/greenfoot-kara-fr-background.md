@@ -1,9 +1,9 @@
 ---
 layout: article
-title: "GreenfootKara - Teacher's Info"
+title: "GreenfootKara - Background Info"
 date: 2014-07-10 00:00
-slug: greenfoot-kara/fr/teachers-info
-canonical: /library/greenfoot-kara/teachers-info/
+slug: greenfoot-kara/fr/background
+canonical: /library/greenfoot-kara/background/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/greenfoot-kara-fr-teachers-info.md
 published: true
 prettify: true
@@ -14,8 +14,8 @@ sidebars:
   - text: "Introduction"
     link: /library/greenfoot-kara/fr/
     paging: Intro
-  - text: "Teacher's Info"
-    link: /library/greenfoot-kara/fr/teachers-info/
+  - text: "Background Info"
+    link: /library/greenfoot-kara/fr/background/
     icon-css: fa fa-fw fa-info
     active: true
   - text: "Chapitre 1: Premiers Pas"
@@ -41,19 +41,12 @@ sidebars:
   - text: Page as Word File
     link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
-- header: Languages
-  languages: true
-  body:
-  - text: English
-    link: /library/greenfoot-kara/teachers-info/
-    icon-css: fa fa-fw fa-globe
-  - text: Deutsch
-    link: /library/greenfoot-kara/de/teachers-info/
-    icon-css: fa fa-fw fa-globe
-  - text: Français
-    link: /library/greenfoot-kara/fr/teachers-info/
-    icon-css: fa fa-fw fa-globe
-    active: true
+languages: 
+  header: Langues
+  collection: library
+  item: greenfoot-kara
+  part: background
+  active: fr
 ---
 
 <div class="alert alert-warning">

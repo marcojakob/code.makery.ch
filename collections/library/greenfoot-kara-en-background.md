@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "GreenfootKara - Teacher's Info"
+title: "GreenfootKara - Background Info"
 date: 2012-10-03 00:00
-slug: greenfoot-kara/teachers-info
+slug: greenfoot-kara/background
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/greenfoot-kara-en-teachers-info.md
 published: true
 prettify: true
@@ -13,8 +13,8 @@ sidebars:
   - text: "Introduction"
     link: /library/greenfoot-kara/
     paging: Intro
-  - text: "Teacher's Info"
-    link: /library/greenfoot-kara/teachers-info/
+  - text: "Background Info"
+    link: /library/greenfoot-kara/background/
     icon-css: fa fa-fw fa-info
     active: true
   - text: "Chapter 1: First Steps"
@@ -40,19 +40,12 @@ sidebars:
   - text: Page as Word File
     link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
-- header: Languages
-  languages: true
-  body:
-  - text: English
-    link: /library/greenfoot-kara/teachers-info/
-    icon-css: fa fa-fw fa-globe
-    active: true
-  - text: Deutsch
-    link: /library/greenfoot-kara/de/teachers-info/
-    icon-css: fa fa-fw fa-globe
-  - text: Français
-    link: /library/greenfoot-kara/fr/teachers-info/
-    icon-css: fa fa-fw fa-globe
+languages: 
+  header: Languages
+  collection: library
+  item: greenfoot-kara
+  part: background
+  active: en
 ---
 
 In this article you will find background information on how to work with `GreenfootKara`. This might be especially helpful if you are a teacher.

@@ -9,14 +9,84 @@
   "googleplus": "+MarcoJakob7",
   "twitter": "codemakery",
   "languageCodes": {
-    "English": "en",
-    "Deutsch": "de",
-    "Français": "fr",
-    "Português": "pt",
-    "Español": "es",
-    "中文（简体）": "zh-cn",
-    "Русский": "ru",
-    "Bahasa Indonesia": "id"
+    "de": "Deutsch",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "id": "Bahasa Indonesia",
+    "it": "Italiano",
+    "pt": "Português",
+    "ru": "Русский",
+    "zh-cn": "中文（简体）"
   },
-  "tags": [ "Dart", "HTML5", "Java", "JavaFX" ]
+  
+  "tags": [ "Dart", "HTML5", "Java", "JavaFX" ],
+  
+  "libraryTopics": [ "HTML-CSS", "Java", "JavaFX", "Dart" ],
+  
+  "library": {
+    "html-css": {
+      "title": "HTML & CSS",
+      "image": "/assets/library/html-css/html-css.png",
+      "summary": "Course to learn HTML & CSS for beginners. <br><i>Note: This course is currently <b>only available in German</b>.</i>",
+      "topics": [ "HTML-CSS" ],
+      "languages": [ "de" ]
+    },
+    "more-html-css": {
+      "title": "More HTML & CSS",
+      "image": "/assets/library/more-html-css/more-html-css.png",
+      "summary": "A collection of various topics around HTML & CSS. <br><i>Note: This course is currently <b>only available in German</b>.</i>",
+      "topics": [ "HTML-CSS" ],
+      "languages": [ "de" ]
+    },
+    "hello-dart": {
+      "title": "Hello Dart: Introduction to Programming",
+      "image": "/assets/library/hello-dart/hello-dart.png",
+      "summary": "Hello Dart is a visual and playful introduction to programming with Dart. <br><i>Note: This course is currently <b>in beta and only available in German</b>.</i>",
+      "topics": [ "Dart" ],
+      "languages": [ "de" ]
+    },
+    "greenfoot-kara": {
+      "title": "GreenfootKara",
+      "image": "/assets/library/greenfoot-kara/logo-large.png",
+      "summary": "GreenfootKara is a visual and interactive introduction to programming based on the <b>Greenfoot IDE</b>. An entire beginners course of 16-20 lessons.",
+      "topics": [ "Java" ],
+      "languages": [ "en", "de", "fr" ]
+    },
+    "gamegrid-kara": {
+      "title": "GameGridKara",
+      "image": "/assets/library/gamegrid-kara/logo-large.png",
+      "summary": "GameGridKara is an introduction to programming with the mini-world Kara. All scenarios can be used in <b>any IDE like Eclipse, Netbeans or BlueJ</b>.",
+      "topics": [ "Java" ],
+      "languages": [ "en", "de" ]
+    },
+    "javafx-8-tutorial": {
+      "title": "JavaFX 8 Tutorial",
+      "image": "/assets/library/javafx-8-tutorial/addressapp-javafx8.png",
+      "summary": "Seven-part tutorial series for learning JavaFX from the ground up. Uses the new Java 8 and JavaFX 8 features.",
+      "topics": [ "JavaFX" ],
+      "languages": [ "en", "es", "fr", "id", "pt", "ru", "zh-cn" ]
+    },
+    "javafx-2-tutorial": {
+      "title": "JavaFX 2 Tutorial",
+      "image": "/assets/library/javafx-2-tutorial/addressapp.png",
+      "summary": "Seven-part tutorial series for learning JavaFX from the ground up.",
+      "topics": [ "JavaFX" ],
+      "languages": [ "en" ]
+    },
+    "dart-drag-and-drop": {
+      "title": "Dart Drag and Drop",
+      "image": "/assets/library/dart-drag-and-drop/dnd-screenshot.png",
+      "summary": "Drag and Drop for Dart web apps with mouse and touch support.",
+      "topics": [ "Dart" ],
+      "languages": [ "en" ]
+    },
+    "dart-event-bus": {
+      "title": "Dart Event Bus",
+      "image": "/assets/library/dart-event-bus/event-bus-small.png",
+      "summary": "An Event Bus library for Dart for decoupling applications.",
+      "topics": [ "Dart" ],
+      "languages": [ "en" ]
+    }
+  }
 }

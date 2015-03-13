@@ -15,8 +15,8 @@ sidebars:
     link: /library/greenfoot-kara/de/
     paging: Intro
     active: true
-  - text: "Hinweise für Lehrpersonen"
-    link: /library/greenfoot-kara/de/teachers-info/
+  - text: "Hintergrundinfos"
+    link: /library/greenfoot-kara/de/background/
     icon-css: fa fa-fw fa-info
   - text: "Kapitel 1: Erste Schritte"
     link: /library/greenfoot-kara/de/chapter1/
@@ -38,19 +38,12 @@ sidebars:
   - text: Seite als Word-Datei
     link: /library/convert-web-page-to-word/de/
     icon-css: fa fa-fw fa-file-word-o
-- header: Sprachen
-  languages: true
-  body:
-  - text: English
-    link: /library/greenfoot-kara/
-    icon-css: fa fa-fw fa-globe
-  - text: Deutsch
-    link: /library/greenfoot-kara/de/
-    icon-css: fa fa-fw fa-globe
-    active: true
-  - text: Français
-    link: /library/greenfoot-kara/fr/
-    icon-css: fa fa-fw fa-globe
+languages: 
+  header: Sprachen
+  collection: library
+  item: greenfoot-kara
+  part: 
+  active: de
 ---
 
 > `GreenfootKara` ist eine visuelle und interaktive Einführung in die Programmierung. Es basiert auf der [Greenfoot IDE](http://www.greenfoot.org) und kombiniert das bewährte Konzept von [Kara](http://www.swisseduc.ch/informatik/karatojava/) mit der Flexibilität und Bedienerfreundlichkeit von Greenfoot.
@@ -101,5 +94,5 @@ Laden Sie [Greenfoot](http://www.greenfoot.org/download) herunter und installier
 
 Um gleich loszulegen, gehen Sie zu [Kapitel 1: Erste Schritte](/library/greenfoot-kara/de/chapter1/).
 
-Um mehr Hintergrundinformationen zu erhalten über `GreenfootKara` lesen Sie die [Hinweise für Lehrpersonen](/library/greenfoot-kara/de/teachers-info/).
+Um mehr Hintergrundinformationen zu erhalten über `GreenfootKara` lesen Sie die [Hintergrundinfos](/library/greenfoot-kara/de/background/).
 

@@ -38,31 +38,12 @@ sidebars:
   - text: "第七部分：部署"
     link: /library/javafx-8-tutorial/zh-cn/part7/
     paging: 7
-- header: 语言
-  languages: true
-  body:
-  - text: English
-    link: /library/javafx-8-tutorial/
-    icon-css: fa fa-fw fa-globe
-  - text: Português
-    link: /library/javafx-8-tutorial/pt/
-    icon-css: fa fa-fw fa-globe
-  - text: Español
-    link: /library/javafx-8-tutorial/es/
-    icon-css: fa fa-fw fa-globe
-  - text: 中文（简体）
-    link: /library/javafx-8-tutorial/zh-cn/
-    icon-css: fa fa-fw fa-globe
-    active: true
-  - text: Русский
-    link: /library/javafx-8-tutorial/ru/
-    icon-css: fa fa-fw fa-globe
-  - text: Bahasa Indonesia
-    link: /library/javafx-8-tutorial/id/
-    icon-css: fa fa-fw fa-globe
-  - text: Français
-    link: /library/javafx-8-tutorial/fr/
-    icon-css: fa fa-fw fa-globe
+languages: 
+  header: 语言
+  collection: library
+  item: javafx-8-tutorial
+  part:
+  active: zh-cn
 ---
 
 早在 2012 我和我的学生们写了一个非常详细的 [JavaFX 2 系列教程](/library/javafx-2-tutorial/)。世界各地的人们都已阅读了这个教程并给了非常积极的反馈。所以我决定 **为 JavaFX 8 改写 JavaFX 2 的教程** (阅读关于 JavaFX 8 的变化 [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)).

@@ -14,6 +14,9 @@ sidebars:
   - text: "Introduction"
     link: /library/greenfoot-kara/
     paging: Intro
+  - text: "Background Info"
+    link: /library/greenfoot-kara/background/
+    icon-css: fa fa-fw fa-info
   - text: "Chapter 1: First Steps"
     link: /library/greenfoot-kara/chapter1/
     paging: 1
@@ -24,15 +27,17 @@ sidebars:
     link: /library/greenfoot-kara/chapter3/
     paging: 3
     active: true
-  - text: "Solutions Chapter 3"
-    link: /library/greenfoot-kara/chapter3-solutions/
-    icon-css: fa fa-fw fa-check-square-o
   - text: "Chapter 4: Sokoban Game"
     link: /library/greenfoot-kara/chapter4/
     paging: 4
   - text: "Chapter 5: Methods"
     link: /library/greenfoot-kara/chapter5/
     paging: 5
+- header: Solutions
+  body:
+  - text: "Solutions Chapter 3"
+    link: /library/greenfoot-kara/chapter3-solutions/
+    icon-css: fa fa-fw fa-check-square-o
 - header: Downloads
   body:
   - text: scenarios-chapter-3.zip
@@ -41,19 +46,12 @@ sidebars:
   - text: Page as Word File
     link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
-- header: Languages
-  languages: true
-  body:
-  - text: English
-    link: /library/greenfoot-kara/chapter3/
-    icon-css: fa fa-fw fa-globe
-    active: true
-  - text: Deutsch
-    link: /library/greenfoot-kara/de/chapter3/
-    icon-css: fa fa-fw fa-globe
-  - text: Français
-    link: /library/greenfoot-kara/fr/chapter3/
-    icon-css: fa fa-fw fa-globe
+languages: 
+  header: Languages
+  collection: library
+  item: greenfoot-kara
+  part: chapter3
+  active: en
 ---
 
 In the last chapter we have learned to repeat certain events while a condition is met. Now we want to do the following:

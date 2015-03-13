@@ -1,0 +1,15 @@
+{%- if model.languages -%}
+<div class="btn-group sidebar-dropdown">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">{{ model.languages.header }} <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    {%- for lang_code in global[model.languages.collection][model.languages.item].languages -%}
+      {%- capture link_lang %}{% if lang_code != "en" %}{{ lang_code }}/{% endif %}{% endcapture -%}
+      {%- capture link_part %}{% if model.languages.part %}{{ model.languages.part }}/{% endif %}{% endcapture -%}
+      <li class="{% if lang_code == model.languages.active %} active{% endif %}">
+        <a href="/{{ model.languages.collection }}/{{ model.languages.item }}/{{ link_lang }}{{ link_part }}"><i class="fa fa-fw fa-globe"></i> {{ global.languageCodes[lang_code] }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>
+{%- endif -%}

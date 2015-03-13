@@ -1,28 +1,27 @@
+{%- capture link %}/library/{{ item[0] }}/{% endcapture -%}
 <div class="library-panel">
-  <a class="panel-link" href="{{ item.link }}">
+  <a class="panel-link" href="{{ link }}">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title">{{ item.title }}</h4>
+        <h4 class="panel-title">{{ item[1].title }}</h4>
       </div>
       <div class="panel-body">
-        <img src="{{ item.image }}" class="img-rounded">
-        <p class="small">{{ item.summary }}</p>
+        <img src="{{ item[1].image }}" class="img-rounded">
+        <p class="small">{{ item[1].summary }}</p>
       </div>
     </div>
   </a>
   <div class="topic-labels">
-    {% for topic in item.topics -%}
+    {% for topic in item[1].topics -%}
     <a href="/{{ mixture.url }}/topic/{{ topic | downcase }}/" class="label label-topic-{{ topic | downcase }}">{{ topic }}</a>
     {% endfor -%}
   </div>
     
   <div class="language-buttons">
     <div class="hidden-xs">
-    {% for language in item.languages -%}
-    {% capture lang_url %}
-      {%- if language != "English" -%}{{ global.languageCodes[language] }}/{% endif -%}
-    {% endcapture %}
-    <a href="{{ item.link }}{{ lang_url }}" class="btn btn-default btn-xs">{{ language }}</a>
+    {% for lang_code in item[1].languages -%}
+    {% capture lang_url %}{% if lang_code != "en" %}{{ lang_code }}/{% endif %}{% endcapture %}
+    <a href="{{ link }}{{ lang_url }}" class="btn btn-default btn-xs">{{ global.languageCodes[lang_code] }}</a>
     {% endfor -%}
     </div>
     
@@ -31,11 +30,9 @@
         <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-globe"></i> Languages <span class="caret"></span>
         </button>
         <ul class="dropdown-menu dropdown-menu-right" role="menu">
-          {% for language in item.languages -%}
-          {% capture lang_url %}
-            {%- if language != "English" -%}{{ global.languageCodes[language] }}/{% endif -%}
-          {% endcapture %}
-          <li><a href="{{ item.link }}{{ lang_url }}">{{ language }}</a></li>
+          {% for lang_code in item[1].languages -%}
+          {% capture lang_url %}{% if lang_code != "en" %}{{ lang_code }}/{% endif %}{% endcapture %}
+          <li><a href="{{ link }}{{ lang_url }}">{{ global.languageCodes[lang_code] }}</a></li>
           {% endfor -%}
         </ul>
       </div>
