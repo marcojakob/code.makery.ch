@@ -4,7 +4,6 @@ title: "JavaFX 8 Tutorial - Part 1: Scene Builder"
 date: 2014-04-19 01:00
 updated: 2015-03-12 00:00
 slug: javafx-8-tutorial/it/part1
-canonical: /library/javafx-8-tutorial/part1/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-it-part1.md
 description: "Impariamo come impostare un progetto JavaFX. Questo tutorial in sette parti, guida nella progettazione, nella programmazione e nel deploying di una applicazione rubrica con JavaFX."
 image: /assets/library/javafx-8-tutorial/part1/addressapp-part1.png
@@ -41,7 +40,7 @@ sidebars:
     paging: 7
 - header: "Download Sources"
   body:
-  - text: Part 1 as Eclipse Project <em>(requires at least JDK 8u40)</em>
+  - text: Parte 1 come progetto Eclipse <em>(requires at least JDK 8u40)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-1.zip
     icon-css: fa fa-fw fa-download
 languages: 
@@ -52,10 +51,6 @@ languages:
   active: it
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs an Italian translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
 
 ### Argomenti nella parte 1
@@ -64,7 +59,6 @@ languages:
 * Creare ed eseguire un progetto JavaFX 
 * Usare Scene Builder per progettare l'interfaccia utente
 * Struttura base dell'applicazione usando il pattern Model-View-Controller (MVC) 
-
 
 
 *****
@@ -162,7 +156,7 @@ Tasto destro su `PersonOverview.fxml` e click su *Open with Scene Builder*. Ades
 2. Aggiungere un *Split Pane (Horizontal Flow)* trascinandolo dalla Library nella area principale. Tasto destro su *Split Pane* nella vista *Hierarchy* e selezionare *Fit to Parent*.  
 ![Fit to Parent](/assets/library/javafx-8-tutorial/part1/fit-to-parent.png)
 
-3. Trascinare una *TableView* (sotto *Controls*) nella parte sinistra dello *SplitPane*. Selezionare la TableView (non la colonna) e impostare il seguente "layout constraints" per la TableView. All'interno di un *AnchorPane* è sempre possibile impostare gli  anchors per i quattro bordi (Più informazioni sui Layouts](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).   
+3. Trascinare una *TableView* (sotto *Controls*) nella parte sinistra dello *SplitPane*. Selezionare la TableView (non la colonna) e impostare il seguente "layout constraints" per la TableView. All'interno di un *AnchorPane* è sempre possibile impostare gli  anchors per i quattro bordi ([Più informazioni sui Layouts](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).   
 ![TableView Anchors](/assets/library/javafx-8-tutorial/part1/table-view-anchors.png)
 
 4. Andare al menù *Preview | Show Preview in Window* per vedere come si comporta. Provare a ridemensionare la finestra. La TableView dovrebbe ridimensionarsi insieme alla finestra come fosse ancorata ai bordi.
