@@ -2,7 +2,7 @@
 layout: article
 title: "Tutorial JavaFX 8 - Bagian 3: Interaksi pengguna"
 date: 2014-04-24 00:00
-updated: 2014-01-05 00:00
+updated: 2015-03-12 00:00
 slug: javafx-8-tutorial/id/part3
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id-part3.md
 description: "Bereaksi terhadap perubahan seleksi pada TableView. Menambah, memperbaharui, dan menghapus bulir-bulir dari table dan juga memvalidasi masukan pengguna."
@@ -40,8 +40,8 @@ sidebars:
     paging: 7
 - header: "Unduh kode sumber"
   body:
-  - text: Bagian 3 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-3.zip
+  - text: Bagian 3 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-3.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Bahasa
@@ -274,13 +274,6 @@ Tentu saja mengabaikan kesalahan seperti ini tidak bagus. Kita harus membiarkan 
 
 Kita akan menambah dialog munculan untuk memberitahu pengguna. Anda akan perlu **menambah pustaka** untuk [Dialogs](/blog/javafx-8-dialogs/): 
 
-1. Unduh [controlsfx-8.0.6_20.jar](https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/controlsfx-8.0.6_20.jar) (anda juga dapat langung mengunduh di [ControlsFX Website](http://fxexperience.com/controlsfx/)).   
-**Penting: The ControlsFX harus versi `8.0.6_20` atau lebih tinggi agar dapat bekerja dengan `JDK 8u20`, sebagaimana telah ada perubahan bersar yang telah dikenalkan pada versi tersebut.**
-2. Buat subfolder **lib** dalam proyek dan tambahkan berkas controlsfx-jar ke folder ini.
-3. Tambah pustaka untuk **classpath**: proyek anda: di Eclipse klik kanan pada berkas  *Build Path* | *Add to Build Path*. Sekarang Eclipse tau dimana letak pustaka ini.
-
-![Pustaka ControlsFX](/assets/library/javafx-8-tutorial/part3/controlsfx-library.png)
-
 Dengan beberapa perubahan pada metode `handleDeletePerson()`, kita bisa menampilkan dialog munculan sederhana ketika pengguna tekan tombol hapus saat tidak ada persoon terpilih pada tabel:
 
 
@@ -298,16 +291,19 @@ private void handleDeletePerson() {
     } else {
         // Nothing selected.
         Dialogs.create()
-            .title("No Selection")
-            .masthead("No Person Selected")
-            .message("Please select a person in the table.")
-            .showWarning();
+        Alert alert = new Alert(AlertType.WARNING);
+	alert.initOwner(mainApp.getPrimaryStage());
+	alert.setTitle("No Selection");
+	alert.setHeaderText("No Person Selected");
+	alert.setContentText("Please select a person in the table.");
+
+	alert.showAndWait();
     }
 }
 </pre>
 
 <div class="alert alert-info">
-Untuk lebih banyak contoh bagaimana menggunakan DIalogs baca <a class="alert-link" href="/blog/javafx-8-dialogs/">JavaFX 8 Dialogs</a>.
+Untuk lebih banyak contoh bagaimana menggunakan Dialogs baca <a class="alert-link" href="/blog/javafx-8-dialogs-official/">JavaFX 8 Dialogs</a>.
 </div>
 
 
@@ -341,6 +337,8 @@ Buat Pengendali untuk Dialog sebagai `PersonEditDialogController.java`:
 package ch.makery.address.view;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -489,10 +487,13 @@ public class PersonEditDialogController {
         } else {
             // Show the error message.
         	Dialogs.create()
-		        .title("Invalid Fields")
-		        .masthead("Please correct invalid fields")
-		        .message(errorMessage)
-		        .showError();
+		        Alert alert = new Alert(AlertType.ERROR);
+		        alert.initOwner(dialogStage);
+		        alert.setTitle("Invalid Fields");
+		        alert.setHeaderText("Please correct invalid fields");
+		        alert.setContentText(errorMessage);
+		        
+		        alert.showAndWait();
             return false;
         }
     }
@@ -598,10 +599,13 @@ private void handleEditPerson() {
     } else {
         // Nothing selected.
         Dialogs.create()
-            .title("No Selection")
-            .masthead("No Person Selected")
-            .message("Please select a person in the table.")
-            .showWarning();
+            Alert alert = new Alert(AlertType.WARNING);
+            alert.initOwner(mainApp.getPrimaryStage());
+            alert.setTitle("No Selection");
+            alert.setHeaderText("No Person Selected");
+            alert.setContentText("Please select a person in the table.");
+            
+            alert.showAndWait();
     }
 }
 </pre>
@@ -625,7 +629,7 @@ Saya harap konsep dan struktur dari aplikasi ini akan dapat membuat anda menulis
 
 ##### Beberapa artikel menarik lainnya
 
-* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (official)](/blog/javafx-8-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
