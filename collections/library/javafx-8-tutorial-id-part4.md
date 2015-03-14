@@ -40,8 +40,8 @@ sidebars:
     paging: 7
 - header: "Unduh kode sumber"
   body:
-  - text: Bagian 3 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-4.zip
+  - text: Bagian 3 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8u40-part-4.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Bahasa
@@ -310,7 +310,7 @@ Akan lebih terlihat lebih baik jika memiliki ikon khusus:
 
 ### Berkas Ikon
 
-Tempat yang memungkinkan untuk mendapatkan ikon2 ada di  [Icon Finder](http://www.iconfinder.com). Saya telah mengunduhe [address book icon](http://www.iconfinder.com/icondetails/86957/32/).
+Tempat yang memungkinkan untuk mendapatkan ikon2 ada di  [Icon Finder](http://www.iconfinder.com). Saya telah mengunduhe [address book icon](https://www.iconfinder.com/icons/86957/address_book_icon#size=32).
 
 Buat sebuah folder didalam proyek AddressApp bernama **resources** dan subfolder bernama **images**.Taruh ikon dalam images folder. Struktur folder anda akan terlihat seperti :
 
@@ -354,7 +354,7 @@ Didalam [Tutorial Bagian 5](/library/javafx-8-tutorial/id/part5/) kita akan meng
 
 ##### Beberapa artikel menarik lainnya
 
-* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (official)](/blog/javafx-8-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
