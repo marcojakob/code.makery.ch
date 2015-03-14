@@ -2,7 +2,7 @@
 layout: article
 title: "Tutorial JavaFX 8 (Bahasa Indonesia)"
 date: 2014-04-19 00:00
-updated: 2015-01-02 00:00
+updated: 2015-03-12 00:00
 slug: javafx-8-tutorial/id
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id.md
 description: "Tujuh bagian tutorial ini mencakup mendesain, memprogram, dan penyebaran aplikasi alamat dengan JavaFX."
