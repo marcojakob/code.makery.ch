@@ -303,7 +303,7 @@ private void handleDeletePerson() {
 </pre>
 
 <div class="alert alert-info">
-Untuk lebih banyak contoh bagaimana menggunakan Dialogs baca <a class="alert-link" href="/blog/javafx-8-dialogs-official/">JavaFX 8 Dialogs</a>.
+Untuk lebih banyak contoh bagaimana menggunakan Dialogs baca <a class="alert-link" href="/blog/javafx-dialogs-official/">JavaFX 8 Dialogs</a>.
 </div>
 
 
@@ -629,7 +629,7 @@ Saya harap konsep dan struktur dari aplikasi ini akan dapat membuat anda menulis
 
 ##### Beberapa artikel menarik lainnya
 
-* [JavaFX Dialogs (official)](/blog/javafx-8-dialogs-official/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)

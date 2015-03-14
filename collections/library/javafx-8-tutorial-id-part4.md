@@ -40,8 +40,8 @@ sidebars:
     paging: 7
 - header: "Unduh kode sumber"
   body:
-  - text: Bagian 3 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8u40-part-4.zip
+  - text: Bagian 4 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-4.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Bahasa
@@ -354,7 +354,7 @@ Didalam [Tutorial Bagian 5](/library/javafx-8-tutorial/id/part5/) kita akan meng
 
 ##### Beberapa artikel menarik lainnya
 
-* [JavaFX Dialogs (official)](/blog/javafx-8-dialogs-official/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)

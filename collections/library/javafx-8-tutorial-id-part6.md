@@ -276,7 +276,7 @@ Di tutorial terakhir [Bagian 7](/library/javafx-8-tutorial/id/part7/) kita akan 
 
 ##### Beberapa artikel menarik lainnya
 
-* [JavaFX Dialogs (official)](/blog/javafx-8-dialogs-official/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
