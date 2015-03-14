@@ -40,8 +40,8 @@ sidebars:
     paging: 7
 - header: "Unduh kode sumber"
   body:
-  - text: Bagian 5 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-5.zip
+  - text: Bagian 5 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-5.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Bahasa
@@ -236,10 +236,12 @@ public void loadPersonDataFromFile(File file) {
         setPersonFilePath(file);
 
     } catch (Exception e) { // catches ANY exception
-        Dialogs.create()
-                .title("Error")
-                .masthead("Could not load data from file:\n" + file.getPath())
-                .showException(e);
+        Alert alert = new Alert(AlertType.ERROR);
+        alert.setTitle("Error");
+        alert.setHeaderText("Could not load data");
+        alert.setContentText("Could not load data from file:\n" + file.getPath());
+        
+        alert.showAndWait();
     }
 }
 
@@ -265,9 +267,12 @@ public void savePersonDataToFile(File file) {
         // Save the file path to the registry.
         setPersonFilePath(file);
     } catch (Exception e) { // catches ANY exception
-        Dialogs.create().title("Error")
-                .masthead("Could not save data to file:\n" + file.getPath())
-                .showException(e);
+        Alert alert = new Alert(AlertType.ERROR);
+        alert.setTitle("Error");
+        alert.setHeaderText("Could not save data");
+        alert.setContentText("Could not save data to file:\n" + file.getPath());
+        
+        alert.showAndWait();
     }
 }
 </pre>
@@ -301,6 +306,8 @@ package ch.makery.address.view;
 import java.io.File;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.stage.FileChooser;
 
 import org.controlsfx.dialog.Dialogs;
@@ -400,11 +407,11 @@ public class RootLayoutController {
      */
     @FXML
     private void handleAbout() {
-		Dialogs.create()
-	        .title("AddressApp")
-	        .masthead("About")
-	        .message("Author: Marco Jakob\nWebsite: http://code.makery.ch")
-	        .showInformation();
+		Alert alert = new Alert(AlertType.INFORMATION);
+	        alert.setTitle("AddressApp");
+	        alert.setHeaderText("About");
+	        alert.setContentText("Author: Marco Jakob\nWebsite: http://code.makery.ch");
+	        alert.showAndWait();
     }
 
     /**
@@ -549,7 +556,7 @@ Pada Tutorial [Bagian 6](/library/javafx-8-tutorial/id/part6/) kita akan menamba
 
 ##### Beberapa artikel menarik lainnya
 
-* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (official)](/blog/javafx-8-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
