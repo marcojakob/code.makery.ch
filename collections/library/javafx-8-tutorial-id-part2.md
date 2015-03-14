@@ -2,7 +2,7 @@
 layout: article
 title: "Tutorial JavaFX 8 - Bagian 2: Model dan TableView"
 date: 2014-04-23 00:00
-updated: 2014-01-04 00:00
+updated: 2015-03-12 00:00
 slug: javafx-8-tutorial/id/part2
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id-part2.md
 description: "Gunakan TableView JavaFXUse untuk menampilkan ObservableList dari Persons."
@@ -40,8 +40,8 @@ sidebars:
     paging: 7
 - header: "Unduh kode sumber"
   body:
-  - text: Bagian 2 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-2.zip
+  - text: Bagian 2 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Bahasa
@@ -260,13 +260,21 @@ Dari koleksi-koleksi tersebut, kita memerlukan `ObservableList`. Untuk membuat `
 
 Sekarang mari kita memberi data pada table. Kita perlu pengendali untuk `PersonOverview.fxml`.
 
-1. Buat kelas didalam paket **view** bernama `PersonOverviewController.java`. (Kita harus menaruh dipaket yang sama `PersonOverview.fxml`,jika tidak Scene Builder tidak akan bisa menemukannya, setidaknya tidak diversi saat ini).
+1. Buat kelas didalam paket **view** bernama `PersonOverviewController.java`. (Kita harus menaruh dipaket yang sama `PersonOverview.fxml`,jika tidak Scene Builder tidak akan bisa menemukannya).
 2. Kita akan menambah beberapa variable instansi yang memberikan akses ke pada table dan label didalam tampilan Bidang dan beberpa metode memiliki keterangan `@FXML` khusus. Hal ini diperlukan oleh berkas fxml  untuk dapat mengakses bidang pribadi dan metode pribadi. Setelah kita mengatur semuanya di berkas fxml, aplikasi akan secara otomatis mengisi variabel variabel ketika fxml telah dimuat. Jadi tambahkan kode berikut :
 
 <div class="alert alert-info">
-**Catatan:** Ingat untuk selalu impor **javafx imports**, bukan awt atau swing!
+  <p>
+    Kita hanya menggunakan nilai `StringProperty` untuk tabel kolom didalam contoh ini. Ketika anda ingin menggunakan `IntegerProperty` atau `DoubleProperty`, `setCellValueFactory(...)` harus mempunyai tambahan `asObject()`:
+  </p>
+  <p>
+  <pre>myIntegerColumn.setCellValueFactory(cellData -> 
+      cellData.getValue().myIntegerProperty().<mark>asObject()</mark>);</pre>
+  </p>
+  <p>
+    Ini sangat diperlukan karena keputusan desain buruk dari JavaFX (lihat <a href="https://community.oracle.com/thread/2575601">diskusi</a>).
+  </p>
 </div>
-
 
 ##### PersonOverviewController.java
 
@@ -365,9 +373,9 @@ public void showPersonOverview() {
         // Set person overview into the center of root layout.
         rootLayout.setCenter(personOverview);
 
-        // Give the controller access to the main app.
+        <mark> // Give the controller access to the main app.
         PersonOverviewController controller = loader.getController();
-        controller.setMainApp(this);
+        controller.setMainApp(this);</mark>
 
     } catch (IOException e) {
         e.printStackTrace();
@@ -416,7 +424,7 @@ Di [Tutorial bagian 3](/library/javafx-8-tutorial/id/part3/) kita akan menambah 
 
 ##### Beberapa artikel menarik lainnya
 
-* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (official)](/blog/javafx-8-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
