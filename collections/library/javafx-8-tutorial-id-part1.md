@@ -2,7 +2,7 @@
 layout: article
 title: "Tutorial JavaFX 8 - Bagian 1: Scene Builder"
 date: 2014-04-19 01:00
-updated: 2015-01-04 00:00
+updated: 2015-03-12 00:00
 slug: javafx-8-tutorial/id/part1
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id-part1.md
 description: "Belajar untuk mengatur proyek JavaFX. Bagian ini merupakan salah satu dari tujuh tutorial yang membahas tentang mendesain, memprogram dan penyebarang aplikasi alamat dengan JavaFX."
@@ -40,8 +40,8 @@ sidebars:
     paging: 7
 - header: "Unduh kode sumber"
   body:
-  - text: Bagian 1 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
+  - text: Bagian 1 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-1.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Bahasa
@@ -67,8 +67,8 @@ languages:
 ### Prasyarat
 
 * [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) terbaru (termasuk **JavaFX 8**).
-* Eclipse 4.3 atau lebih besar dengan e(fx)clipse plugin. Eclipse 4.3 atau lebih besar dengan e(fx)clipse plugin dar [website e(fx)clipse](http://efxclipse.bestsolution.at/install.html#all-in-one). Sebagai alternatif bisa menggunakan [situs pembaharuan](http://www.eclipse.org/efxclipse/install.html) untuk instalasi Eclipse.
-* [Scene Builder 2.0](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684.html) atau yang lebih baru.
+* Eclipse 4.4 atau lebih besar dengan e(fx)clipse plugin. Eclipse 4.3 atau lebih besar dengan e(fx)clipse plugin dar [website e(fx)clipse](http://efxclipse.bestsolution.at/install.html#all-in-one). Sebagai alternatif bisa menggunakan [situs pembaharuan](http://www.eclipse.org/efxclipse/install.html) untuk instalasi Eclipse.
+* [Scene Builder 8.0](http://gluonhq.com/products/downloads/) (provided by Gluon because [Oracle hanya memberikan ini dalam bentuk code](http://www.oracle.com/technetwork/java/javase/downloads/sb2download-2177776.html)).
 
 
 ### Konfigurasi Eclipse 
@@ -147,6 +147,8 @@ Klik kanan pada paket ch.makery.address.view dan buat berkas baru bernama `Perso
   **Note:** Jika anda tidak berhasil mengikuti, unduh kode sumber dari bagian-bagian tutorial ini, dan cobalah dengan fxml yang telah disertakan.
 </div>
 
+(jika Scene builder tidak dapat terbuka, pergi ke "Window | Prefrences | JavaFX" dan atur 
+
 Klik kanan pada `PersonOverview.fxml` dan pilih *Open with Scene Builder*. Sekarang anda seharusnya melihat Scene Builder dengan sebuah *AncherPane* (terlihat di bawah Hierarchy pada sisi kiri).
 
 1. Pilih *Anchor Pane* di Hierarchy adan sesuaikan ukuran di bawah pada Layout (pada sisi kanan):   
@@ -177,7 +179,7 @@ Klik kanan pada `PersonOverview.fxml` dan pilih *Open with Scene Builder*. Sekar
 *Catatan: Untuk menambah pada GridPane pilih sebuah baris(akan berwarna kuning), klik kanan dan pilih "Add Row".*   
 ![Tambah Label-Lbael](/assets/library/javafx-8-tutorial/part1/add-labels.png)
 
-10. Tambah 3 tombol pada bawah. Tip: Pilih semua, klik kanan dan panggil *Wrap In | HBox*. Ini akan mengelompokan mereka bersama. Anda mungkin perlu menetapkan *spacing* didalam HBox. Lalu, atur jangkar (kanan dan bawah) jadi merekaakan tetap berada di tempat yang tepat.   
+10. Tambah sebuah *ButtonBar* di bawah, lalu tambah 3 tombol pada bar. Sekarang, atur jangkar (kanan dan bawah) pada *ButtonBar* sehingga itu tetap pada tempat yang tepat.   
 ![Kelompok Button](/assets/library/javafx-8-tutorial/part1/button-group.png)
 
 11. Sekarang anda seharusnya melihat sesuatu seperti berikut. Gunakan menu *Preview* untuk mencoba perilaku perubahan ukuran.
@@ -336,7 +338,7 @@ Di [Tutorial bagian 2](/library/javafx-8-tutorial/id/part2/) kita akan menambah 
 
 ##### Beberapa artikel menarik lainnya
 
-* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (resmi)](/blog/javafx-8-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
