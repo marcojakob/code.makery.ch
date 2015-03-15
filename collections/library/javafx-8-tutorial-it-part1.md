@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 1: Scene Builder"
+title: "JavaFX 8 Tutorial - Parte 1: Scene Builder"
 date: 2014-04-19 01:00
 updated: 2015-03-12 00:00
 slug: javafx-8-tutorial/it/part1
@@ -216,13 +216,12 @@ Adesso abbiamo bisogno di creare la **main java class** che avvia la nostra appl
 
 
 La classe `MainApp.java` generata è estesa da `Application` e contiene due metodi. Questa è la struttura base di cui abbiamo bisogno per avviare una applicazione JavaFX. La parte più importante è il metodo `start(Stage primaryStage)`. Questo è automaticamente chiamato quando l'applicazione viene `lanciata` dall'interno del metodo `main`.
-
-come puoi vedere, il metodo `start(...)` riceve uno `Stage` come parametro. Il seguente grafico illustra la struttura di ogni applicazione JavaFX:
+Come puoi vedere, il metodo `start(...)` riceve uno `Stage` come parametro. Il seguente grafico illustra la struttura di ogni applicazione JavaFX:
 
 ![New FXML Document](/assets/library/javafx-8-tutorial/part1/javafx-hierarchy.png)   
 *Image Source: http://www.oracle.com*
 
-**E' come uno spettacolo teatrale**:`Stage` è un il contenitore principale, di solito un finistra `Window` con dei bordi e i tipici pulsanti per minimizzare, massimizzare e chiudere. All'interno di `Stage` si aggiunge una `Scene` che può, naturalmente, avvicendarsi ad un'altra. All'interno della `Scene` gli effettivi nodi JAvaFX come `AnchorPane`, `TextBox`, etc. vengono aggiunti.
+**E' come uno spettacolo teatrale**:`Stage` è un il contenitore principale, di solito un finistra `Window` con dei bordi e i tipici pulsanti per minimizzare, massimizzare e chiudere. All'interno di `Stage` si aggiunge una `Scene` che può, naturalmente, avvicendarsi ad un'altra. All'interno della `Scene` gli effettivi nodi JavaFX come `AnchorPane`, `TextBox`, etc. vengono aggiunti.
 
 Per ulteriori informazioni [Working with the JavaFX Scene Graph](http://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm).
 
