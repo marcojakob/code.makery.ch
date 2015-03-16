@@ -10,7 +10,7 @@ prettify: false
 comments: true
 tags:
 - Dart
-- HTML5
+- Web
 ---
 
 I gave up on HTML5 drag and drop! A step I should have made a long time ago. Even though I read some reports of people struggling with it (like the [HTML5 drag and drop disaster](http://www.quirksmode.org/blog/archives/2009/09/the_html5_drag.html) article) I thought I could takle it and make it work for the most recent browsers. That was at the beginning of last year. 

@@ -9,7 +9,7 @@ published: true
 prettify: true
 comments: true
 tags:
-- HTML5
+- Web
 - Java
 - JavaFX
 ---

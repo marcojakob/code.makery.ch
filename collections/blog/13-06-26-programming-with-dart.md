@@ -9,7 +9,7 @@ prettify: true
 comments: true
 tags:
 - Dart
-- HTML5
+- Web
 ---
 
 <p class="text-center" >

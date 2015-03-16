@@ -10,7 +10,7 @@ prettify: true
 comments: true
 tags:
 - Dart
-- HTML5
+- Web
 ---
 
 <div class="alert alert-info">
