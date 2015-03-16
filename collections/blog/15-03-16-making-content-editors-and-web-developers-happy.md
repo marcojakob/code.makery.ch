@@ -3,7 +3,7 @@ layout: post
 title: "Making Content Editors and Web Developers Happy Again"
 date: 2015-03-16 00:00
 slug: making-content-editors-and-web-developers-happy
-description: ""
+description: "How to create a Static CMS that combines the advantages of a static site generator and a web-based CMS."
 image: /assets/blog/15-03-16-making-content-editors-and-web-developers-happy/static-cms-workflow.png
 published: true
 prettify: true
@@ -21,25 +21,25 @@ In this article I would like to share my ideas how such a **Static CMS** could b
 
 ## Static Websites
 
-In the old days, the web would just be a bunch of HTML files laying on servers. Whenever someone would visit a website, a server would just send the requested HTML file over the wire. Today, we still receive HTML files from the servers but there is much more going on behind the scenes on most servers. 
+In the old days, the web would basically be a bunch of HTML files on servers. Whenever someone would visit a website, a server would just send the requested HTML file over the wire. Today, we still receive HTML files from the servers but there is much more going on behind the scenes. 
 
-The majority of the web is now powered by database-driven websites. Databases are great for online editing and collaboration. But it also means that every time a website is accessed, the server has to get the data from the database and run it through some template until it can be served. This is a process uses server memory and processing power (=money), slows down the website and introduces vulnerability. But most of all it introduces complexity for developers and removes the joy of creating websites.
+The majority of the web is now powered by database-driven websites. Databases are great for online editing and collaboration. But it also means that every time a website is accessed, the server has to get the data from the database and run it through the template engine until it can be served. This is a process that uses server memory and processing power (=money), slows down the website and introduces vulnerability. But most of all it creates complexity for developers and removes the joy of creating websites.
 
-For most sites this complexity of regenerating the page on each request is completely unnecessary. After all, most websites only change when the content editor or the designer makes a change. So, let's go back to static, but it's a different static than we had in the early days. With **static site generators** we can create almost any website of any size we want. And it makes the web fun again.   
+For most sites this complexity of regenerating the page on each request is completely unnecessary. After all, most websites only change when the content editor or the designer make a change. So, let's go back to static, but it's a different static than we had in the early days. With **static site generators** we can create almost any website of any size we want. And it makes the web fun again.   
 
 * **Speed.** The website is pre-generated HTML and ready to be served. That's as fast as it can possibly be.
 * **Reliable and Scalable.** Because there is no database the website can easily be served from multiple servers all around the world through [content delivery networks](http://en.wikipedia.org/wiki/Content_delivery_network). If one server goes down, traffic just goes somewhere else.
 * **Secure.** Malware is a [major issue](http://www.smashingmagazine.com/2012/10/09/four-malware-infections-wordpress/) for database-driven websites. No database, no php or server scripts means there is no way to inject malware in static websites.
 * **Maintainable.** No server maintenance or server updates are needed.
 * **Cost.** It's very cheap to host and scale a static website.
-* **Simple and Fun.** The simplicity of static websites fit in my brain and I feel I know what's going on. It's a joy for a developer to work with the simple core of the web.
+* **Simple and Fun.** The simplicity of static websites fit in my brain and I feel I know what's going on. It's a joy for a developer to work with the fundamental elements of the web.
 
 
 ## The Content
 
 The most valuable part of a website usually is its content. I want my content to be in a format that can be used in various contexts. The content should stay readable even years from now and should be easy to convert to other formats.
 
-Databases make me nervous. They are very complex systems that store my precious data in some format I don't really understand. If some day the database stops working I might have a lot of trouble getting my data out of the system. Things change quickly and I don't want to depend on some strange database export tool to migrate my data to the next system.
+**Databases make me nervous.** They are very complex systems that store my precious data in some format I don't really understand. If some day the database stops working I might have a lot of trouble getting my data out of the system. Things change quickly and I don't want to depend on some strange database export tool to migrate my data to the next system.
 
 Text-based file formats have been gaining a lot of popularity, Markdown probably beeing the most prominent. Most static site generators support Markdown (I'm also writing this post in Markdown). I love it and it makes data simple again. It's also very easy to create backups or version the data so that we can revert any changes. 
 
@@ -48,7 +48,7 @@ Text-based file formats have been gaining a lot of popularity, Markdown probably
 
 **Markdownify everything?** I believe we need just a little bit more. Most static generators use a [YAML](http://en.wikipedia.org/wiki/YAML) front-matter in every file for meta-data like *title*, *date*, and *author* followed by the Markdown content. For more **complex content** this might still not be enough because we might need **multiple content sections** instead of just one per file.
 
-Instead of using YAML only for the meta-data, we could use it also for the content. This allows us define multiple content sections. While we're at it I would strongly suggest to use [TOML](https://github.com/toml-lang/toml) instead of YAML.
+Instead of using YAML only for the meta-data, we could use it also for the content. This allows us to define multiple content sections. While we're at it I would strongly suggest to use [TOML](https://github.com/toml-lang/toml) as an alternative to YAML.
 
 Here is an example of how such a TOML file could look like. It is a *product page for a book*. In it you will see three markdown sections: `book_description`, `product_details`, and `customer_reviews`.
 
@@ -150,9 +150,9 @@ Here is the basic workflow:
 
 ## Tools
 
-There is one platform I would like to point out that provides an *all-in-one* solution for what I described above. It's called [Webhook](http://www.webhook.com/). If you haven't seen it I recommend you check it out! I really like webhook but in my opinion they integrate too much which leads to problems: There are so many parts it is difficult to to understand what it actually does. And I can't (easily) exchange individual parts. For example, I would love to use their web-based CMS but I would rather want to use another static generator than the one that is built in. And I might also not want to host my site on their infrastructure.
+There is one platform I would like to point out that provides an *all-in-one* solution for what I described above (except it's not file-based). It's called [Webhook](http://www.webhook.com/). If you haven't seen it I recommend you check it out! I really like Webhook but in my opinion they integrate too much which leads to problems: There are so many parts that it is difficult to understand what it actually does. And I can't (easily) exchange individual components. For example, I would love to use their web-based CMS but I would rather want to use another static generator than the one that is built in. And I also might not want to host my site on their infrastructure.
 
-In the following I will present tools for each individual component. This is highly opinionated and most of those components may be replaced by other tools (as they likely will over time anyways). 
+In the following I will present tools for each individual component. This is highly opinionated and most of those components may be replaced by other tools (as they likely will over time, anyways). 
 
 
 ### Static Site Generator
@@ -168,9 +168,9 @@ Hugo has (almost) everything we need. I only have a few wishes that are mostly a
 
 **Allow content with non-MD extensions:** The setup for complex content as described above is already possible with Hugo. But, the `.md` extension doesn't really make sense if the content file only contains TOML. When issue [#147](https://github.com/spf13/hugo/issues/147) will be fixed, Non-MD files will be accepted in the content folder. We would need to make sure that the `.toml` files would also be processed like `.md` files.
 
-**Assets in the content directory:** I'm desperately waiting for Issue [#147](https://github.com/spf13/hugo/issues/147) to be fixed. This would allow us to place content like images to be placed next to the `MD/TOML` file. I would love to have a subfolder for each page that bundles all assets for a page together! This would greatly simplify things for the CMS.
+**Assets in the content directory:** I'm desperately waiting for Issue [#147](https://github.com/spf13/hugo/issues/147) to be fixed. This would allow us to place content like images next to the `MD/TOML` file. I would love to have a subfolder for each page that bundles all assets for a page together! This would greatly simplify things for the CMS.
 
-**Dynamic image resizing:** Ideally, the *content editor* would not need to worry about the image sizes but would just upload it to the content folder. Hugo would then pick up the image and resize it, based on the size in the template. We would need to find a good place for the resized images to be stored so that they don't need to be recreated every time.
+**Dynamic image resizing:** Ideally, the *content editor* would not need to worry about the image sizes but would just upload it to the content folder. Hugo would then pick up the image and resize it, based on the size defined in the template. We would need to figure out a good place for the resized images to be stored so that they don't need to be recreated every time.
 
 
 ### File Storage
@@ -187,11 +187,11 @@ Although, an interactive web based editor is is already beeing [discussed](http:
 There are some File-Based CMS systems but none of them are complete:
 
 * [prose.io](http://prose.io/): This is the closest to what we would need. It is missing a way of reading `TOML` config files and displaying a corresponding form with fields. It has something similar for `YAML`, but it's too basic.
-* [Kirby](http://getkirby.com/): Nice. They store the [media files](http://getkirby.com/docs/content/media) directly in the page folder. It has a way to define *content types* called [Blueprints](http://getkirby.com/docs/panel/blueprints). I don't like their custom [file format for content](http://getkirby.com/docs/content/adding-content) - I'd rather use `TOML` which is well defined and has good parsers. It's written in PHP.
-* [Statamic](http://statamic.com/): Similar to Kirby. Also provides a way to define the *content types* in so called [Fieldsets](http://statamic.com/learn/control-panel/fields-and-fieldsets) 
+* [Kirby](http://getkirby.com/): Nice. They store the [media files](http://getkirby.com/docs/content/media) directly in the page folder. It has a way to define *content types* called [Blueprints](http://getkirby.com/docs/panel/blueprints). I don't like their custom [file format for content](http://getkirby.com/docs/content/adding-content) - I'd rather use `TOML` which is well defined and has good parsers.
+* [Statamic](http://statamic.com/): Similar to Kirby. Also provides a way to define the *content types* in so called [Fieldsets](http://statamic.com/learn/control-panel/fields-and-fieldsets) .
 * [PicoCMS](http://picocms.org/): Open Source but missing a lot of features (and documentation!).
-* [Grav](http://learn.getgrav.org/content/modular): It says it is a CMS, but it doesn't have a CMS interface, that means you have to edit the markdown files directly. But it has an interesting feature called [modular pages](http://learn.getgrav.org/content/modular) that lets you build a complex page from mutliple markdown files.
-* [Automad](http://automad.org/): An interesting way to show a [GUI for file-based CMS](http://automad.org/features#Graphical_User_Interface)
+* [Grav](http://learn.getgrav.org/content/modular): It says it is a CMS, but it doesn't have a CMS interface. That means you have to edit the Markdown files directly. But it has an interesting feature called [modular pages](http://learn.getgrav.org/content/modular) that lets you build a complex page from mutliple markdown files.
+* [Automad](http://automad.org/): An interesting way to show a [GUI for file-based CMS](http://automad.org/features#Graphical_User_Interface).
 
 
 ### Deployment Platform
@@ -208,14 +208,12 @@ If more features are needed I would use a platform like [DivShot](https://divsho
 
 ## Summary
 
-I tried to show how the best aspects of **static site generators** and **file-based CMS** could be combined:
+I tried to show how the best aspects of **static site generators** and **file-based CMS** could be combined to create a **Static CMS**:
 
-1. All content is stored in `TOML` text files that have a well-defined structure.
-2. The structure (content types) are also defined as `TOML`. The CMS picks up the content types and shows a nice form where the *content editor* can write the content.
-3. The *develper* works with the static generator (Hugo) and sets up templates, themes and the content types.
-4. Whenever the *content editor* or *developer* commits a change (to GitHub), the site is automatically rebuilt by the deployment server.
-
-For me this would be the "perfect" solution for almost all of my websites: 
-All content is nicely structured in files. They are simple text files and can be versioned and provide easy backup and migration possibilities. The **content editor is happy** because he has a nice CMS. The **developer is happy** because he can work with Hugo. And **everybody is happy** because the served website is static with all its benefits (speed, security, reliability, etc.).
-
-We're not that far away from an awesome way to build websites, IMO. All content is nicely structured in files. They are simple text files and can be versioned and provide easy backup and migration possibilities. The **content editor is happy** because he has a nice CMS. The **developer is happy** because he can work with Hugo. And **everybody is happy** because the served website is static with all its benefits (speed, security, reliability, etc.). 
+1. All content is stored in `TOML` files that have a well-defined structure. It is in simple text files that can be versioned and provides easy backup and migration posibilities.
+2. The structure (content types) are also defined as `TOML`. The CMS picks up the content types and shows a nice form where the *content editor* can write the content.   
+&rarr; **the content editor is happy :-)**
+3. The *develper* works with his favorite static site generator (Hugo, for example) and sets up templates, themes and the content types.   
+&rarr; **the developer is happy :-)**
+4. Whenever the *content editor* or *developer* commits a change (to GitHub), the site is automatically rebuilt. The served website is static with all its benefits (speed, security, reliability, etc.).   
+&rarr; **everybody is happy :-)**
