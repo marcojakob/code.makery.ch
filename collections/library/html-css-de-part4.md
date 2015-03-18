@@ -2,6 +2,7 @@
 layout: article
 title: "HTML & CSS Tutorial - Teil 4: Entwicklertools im Browser"
 date: 2014-08-13 00:00
+updated: 2015-03-18 00:00
 slug: html-css/de/part4
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part4.md
 description: "Lernen Sie die Entwicklertools im Browser kennen (Chrome Developer Tools)."

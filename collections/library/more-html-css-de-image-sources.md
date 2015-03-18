@@ -42,20 +42,6 @@ sidebars:
     link: /library/more-html-css/de/javascript-bootstrap/
     paging: 7
     icon-css: fa fa-fw fa-code
-- header: Gratis Bilder
-  body:
-  - text: "Stock photos"
-    link: https://medium.com/@dustin/stock-photos-that-dont-suck-62ae4bcbe01b
-    icon-css: fa fa-fw fa-image
-  - text: "Free, High-Res Images"
-    link: http://www.labnol.org/internet/find-free-images/24990/
-    icon-css: fa fa-fw fa-image
-  - text: "Pixabay"
-    link: http://pixabay.com/
-    icon-css: fa fa-fw fa-image
-  - text: "Iconfinder"
-    link: https://www.iconfinder.com/
-    icon-css: fa fa-fw fa-image
 ---
 
 Beim Kopieren von Bildern aus dem Internet sollte man vorsichtig sein. Grundsätzlich gehören die Bilder dem Autor und dürfen nicht auf einer eigenen Website verwendet werden. Wenn man solche Bilder verwendet läuft man Gefahr, Ärger wegen des Urheberrechts zu bekommen.

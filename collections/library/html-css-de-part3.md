@@ -2,6 +2,7 @@
 layout: article
 title: "HTML & CSS Tutorial - Teil 3: Einführung in CSS"
 date: 2014-08-13 00:00
+updated: 2015-03-18 00:00
 slug: html-css/de/part3
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part3.md
 description: "Lernen Sie, wie Sie mit CSS eine Webseite gestalten können."

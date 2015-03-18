@@ -2,6 +2,7 @@
 layout: article
 title: "HTML & CSS Tutorial - Teil 1: Unsere erste Webseite"
 date: 2014-08-13 00:00
+updated: 2015-03-18 00:00
 slug: html-css/de/part1
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part1.md
 description: "Erstellen Sie Ihre erste Webseite. Hier lernen Sie die Tools und die Grundlagen von HTML & CSS kennen."

@@ -42,11 +42,6 @@ sidebars:
     link: /library/more-html-css/de/javascript-bootstrap/
     paging: 7
     icon-css: fa fa-fw fa-code
-- header: Downloads
-  body:
-  - text: Portfolio mit Layout
-    link: https://github.com/marcojakob/tutorial-more-html-css/releases/download/v0.1/portfolio-de-website-layout.zip
-    icon-css: fa fa-fw fa-file-archive-o
 ---
 
 Standardmässig werden HTML-Elemente auf zwei Arten angeordnet:

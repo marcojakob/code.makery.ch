@@ -2,6 +2,7 @@
 layout: article
 title: "HTML & CSS Tutorial - Nächste Schritte"
 date: 2014-08-16 00:00
+updated: 2015-03-18 00:00
 slug: html-css/de/next
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-next.md
 description: "Wie kann man noch mehr lernen über HTML & CSS."
