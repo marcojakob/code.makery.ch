@@ -4,6 +4,7 @@ title: "Bilder mit Bootstrap verwenden"
 date: 2015-03-18 00:00
 slug: more-html-css/de/image-bootstrap
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-image-bootstrap.md
+description: "Lernen Sie wie Bilder mit Bootstrap verwendet werden können. Bilder automatisch auf die Bildschirmgrösse anpassen, Bilder ausrichten, etc."
 published: true
 prettify: true
 comments: true

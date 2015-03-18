@@ -4,6 +4,7 @@ title: "JavaScript mit Bootstrap"
 date: 2015-03-18 00:00
 slug: more-html-css/de/javascript-bootstrap
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-javascript-bootstrap.md
+description: "Lernen Sie, wie die das Bootstra-JavaScript in eine Webseite integriert werden kann. Mit einem Beispiel zur Bootstrap Navigation."
 published: true
 prettify: true
 comments: true

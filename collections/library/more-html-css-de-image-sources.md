@@ -4,6 +4,7 @@ title: "Kostenlose Bilder"
 date: 2015-03-18 00:00
 slug: more-html-css/de/image-sources
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-image-sources.md
+description: "Eine Anleitung zum Finden und Verwenden von Bildern aus dem Internet. Links zu gratis Bilddatenbanken."
 published: true
 prettify: true
 comments: true

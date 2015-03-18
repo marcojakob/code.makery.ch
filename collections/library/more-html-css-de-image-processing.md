@@ -4,6 +4,7 @@ title: "Bilder gestalten"
 date: 2015-03-18 00:00
 slug: more-html-css/de/image-processing
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-image-processing.md
+description: "Eine Liste mit Links zu Bildbearbeitungsprogrammen. Grafikprogramme zum Installieren und Online Grafikprogramme."
 published: true
 prettify: true
 comments: true

@@ -4,6 +4,7 @@ title: "Icons auf Website verwenden"
 date: 2014-08-20 00:00
 slug: more-html-css/de/icons
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-icons.md
+description: "Icons mit Icon Fonts auf einer Webseite einbinden. Links zu verschiedenen Bibliotheken für Icons."
 published: true
 prettify: true
 comments: true

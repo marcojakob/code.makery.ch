@@ -4,6 +4,7 @@ title: "Website-Layout"
 date: 2014-08-16 00:00
 slug: more-html-css/de/website-layout
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-website-layout.md
+description: "Lernen Sie, wie Elemente auf Webseiten angeordnet werden können. Enthält Beispiele mit dem Bootstrap Raster."
 published: true
 prettify: true
 comments: true

@@ -4,6 +4,7 @@ title: "Mehr HTML & CSS"
 date: 2014-08-16 00:00
 slug: more-html-css/de
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de.md
+description: "Lernen Sie mehr über HTML und CSS. Hier finden Sie Anleitungen zu Website-Layout, Bilder, Bootstrap und mehr."
 published: true
 prettify: true
 comments: true

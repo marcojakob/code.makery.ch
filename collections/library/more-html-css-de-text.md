@@ -4,6 +4,7 @@ title: "Textformatierung mit HTML & CSS"
 date: 2014-08-25 00:00
 slug: more-html-css/de/text
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-text.md
+description: "Lernen Sie die typografischen Möglichkeiten von HTML und CSS kennen. Enthält Beispiele, wie Texte mit Bootstrap formatiert werden können."
 published: true
 prettify: true
 comments: true
