@@ -1,9 +1,9 @@
 ---
 layout: article
-title: "Mehr HTML & CSS: Bilder"
-date: 2014-08-22 00:00
-slug: more-html-css/de/images
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-images.md
+title: "Bilder mit Bootstrap verwenden"
+date: 2015-03-18 00:00
+slug: more-html-css/de/image-bootstrap
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-image-bootstrap.md
 published: true
 prettify: true
 comments: true
@@ -16,16 +16,32 @@ sidebars:
   - text: "Website-Layout"
     link: /library/more-html-css/de/website-layout/
     paging: 1
+    icon-css: fa fa-fw fa-th-large
   - text: "Icons"
     link: /library/more-html-css/de/icons/
     paging: 2
-  - text: "Bilder"
-    link: /library/more-html-css/de/images/
+    icon-css: fa fa-fw fa-flag
+  - text: "Bilder mit Bootstrap"
+    link: /library/more-html-css/de/image-bootstrap/
+    icon-css: fa fa-fw fa-image
     paging: 3
     active: true
+  - text: "Bilder gestalten"
+    link: /library/more-html-css/de/image-processing/
+    icon-css: fa fa-fw fa-image
+    paging: 4
+  - text: "Kostenlose Bilder"
+    link: /library/more-html-css/de/image-sources/
+    icon-css: fa fa-fw fa-image
+    paging: 5
   - text: "Textformatierung"
     link: /library/more-html-css/de/text/
-    paging: 4
+    paging: 6
+    icon-css: fa fa-fw fa-font
+  - text: "JavaScript mit Bootstrap"
+    link: /library/more-html-css/de/javascript-bootstrap/
+    paging: 7
+    icon-css: fa fa-fw fa-code
 ---
 
 In diesem Teil lernen Sie ein paar Tricks mit Bildern:
@@ -33,9 +49,6 @@ In diesem Teil lernen Sie ein paar Tricks mit Bildern:
 * [Responsive Bilder](#responsive-bilder) - passen sich auf Bildschirmgrösse an
 * [Bilder ausrichten](#bilder-ausrichten) - zentrieren, links, rechts
 * [Bilder mit Konturen](#bilder-mit-konturen) - Ecken abrunden, etc.
-* [Gute Bildquellen](#gute-bildquellen) - hier finden Sie gute Bilder
-
-
 
 Für die meisten Beispiele wird [Bootstrap 3](http://holdirbootstrap.de/) verwendet.
 
@@ -83,7 +96,7 @@ Bootstrap 3 bietet hierzu eine CSS-Klasse `img-responsive`, welche Bilder automa
 
 Mit der CSS-Klasse `center-block` können Sie mit Bootstrap 3 Bilder zentrieren (siehe auch [center](http://holdirbootstrap.de/css/#helper-classes-center) in der Bootstrap Dokumentation):
 
-<img src="/assets/library/more-html-css/images/center-block.png" class="center-block">
+<img src="/assets/library/more-html-css/image-bootstrap/center-block.png" class="center-block">
 
 
 ##### Bild zentrieren
@@ -108,7 +121,7 @@ Bilder können nach links und nach rechts ausgerichtet werden. Der Text fliesst 
 &lt;img src="..." alt="..." class="pull-left">
 </pre>
 
-![Links ausrichten](/assets/library/more-html-css/images/pull-left.png)
+![Links ausrichten](/assets/library/more-html-css/image-bootstrap/pull-left.png)
 
 
 ##### Rechts ausrichten
@@ -117,7 +130,7 @@ Bilder können nach links und nach rechts ausgerichtet werden. Der Text fliesst 
 &lt;img src="..." alt="..." class="pull-right">
 </pre>
 
-![Rechts ausrichten](/assets/library/more-html-css/images/pull-right.png)
+![Rechts ausrichten](/assets/library/more-html-css/image-bootstrap/pull-right.png)
 
 
 #### Neue Zeile
@@ -132,7 +145,7 @@ Beim Ausrichten nach links oder rechts werden alle nachfolgenden Elemente neben 
 &lt;p>Dieser Text ist unter dem Bild.&lt;/p>
 </pre>
 
-![Clearfix](/assets/library/more-html-css/images/clearfix.png)
+![Clearfix](/assets/library/more-html-css/image-bootstrap/clearfix.png)
 
 
 #### Abstand neben dem Bild
@@ -161,7 +174,7 @@ Im CSS definieren wir jetzt den Abstand.
 }
 </pre> 
 
-![Abstand](/assets/library/more-html-css/images/margin.png)
+![Abstand](/assets/library/more-html-css/image-bootstrap/margin.png)
 
 Neben `margin-right` gibt es natürlich `margin-top`, `margin-bottom` und `margin-left`.
 
@@ -170,7 +183,7 @@ Neben `margin-right` gibt es natürlich `margin-top`, `margin-bottom` und `margi
 
 Bootstrap 3 bietet Möglichkeiten, um Bilder ganz einfach auf einer Webseite zu gestalten. Sie können die Ecken abrunden, einen Kreis ausschneiden oder einen dezenten Rahmen hinzufügen:
 
-![Bilder mit Konturen](/assets/library/more-html-css/images/image-shapes.png)
+![Bilder mit Konturen](/assets/library/more-html-css/image-bootstrap/image-shapes.png)
 
 Mit den folgenden drei CSS-Klassen können Sie Ihren Bildern solche Konturen hinzufügen (weitere Infos unter [Bilder-Konturen](http://holdirbootstrap.de/css/#images-shapes) in der Bootstrap Dokumentation):
 
@@ -184,28 +197,9 @@ Mit den folgenden drei CSS-Klassen können Sie Ihren Bildern solche Konturen hin
 </pre>
 
 
-## Gute Bildquellen
+## Andere Artikel zu Bilder
 
-Es gibt viele Quellen für Bilder im Internet, aber solche, die gute Bilder frei zur Verfügung stellen sind manchmal schwer zu finden. Hier sind ein paar, die ich empfehlen kann:
+Folgende Artikel zu Bilder könnte Sie auch interessieren:
 
-* [Stock photos that don't suck](https://medium.com/@dustin/stock-photos-that-dont-suck-62ae4bcbe01b) - eine Liste von Webseiten mit den besten gratis Fotos
-* [The Best Places to Find Free, High-Res Images for your Website](http://www.labnol.org/internet/find-free-images/24990/) - eine weitere Liste mit den besten Webseiten für gratis Bilder mit hoher Auflösung
-* [Iconfinder](https://www.iconfinder.com/) - Viele frei verfügbare Icons (Achtung: je nach Lizenz muss der Author genannt werden)
-
-
-## Tools für die Bildbearbeitung
-
-### Grafikprogramme zum Installieren
-
-* [Photoshop](http://www.adobe.com/products/photoshop.html) - professionell, teuer
-* [Photoshop Elements](http://www.adobe.com/products/photoshop-elements.html) - kleiner Bruder von Photoshop
-* [GIMP](http://www.gimp.org/) - beste Gratis-Alternative
-* [Paint.net](http://www.getpaint.net/) - auch gratis, aber einfacher als GIMP
-* [Inkscape](http://www.inkscape.org/) - ein Gratis-Programm für **Vektorgrafiken**
-
-
-### Grafikprogramme Online
-
-* [PIXLR Editor](http://pixlr.com/editor/) - beste online Bildbearbeitung
-* [PIXLR Express](http://pixlr.com/express/) - schnelle Effekte und Filter für Fotos
-* [iPiccy](http://ipiccy.com/)
+* [Bilder gestalten](/library/more-html-css/de/image-processing/)
+* [Kostenlose Bilder](/library/more-html-css/de/image-sources/)

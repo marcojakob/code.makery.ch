@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Mehr HTML & CSS: Icons"
+title: "Icons auf Website verwenden"
 date: 2014-08-20 00:00
 slug: more-html-css/de/icons
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-icons.md
@@ -16,16 +16,32 @@ sidebars:
   - text: "Website-Layout"
     link: /library/more-html-css/de/website-layout/
     paging: 1
+    icon-css: fa fa-fw fa-th-large
   - text: "Icons"
     link: /library/more-html-css/de/icons/
     paging: 2
+    icon-css: fa fa-fw fa-flag
     active: true
-  - text: "Bilder"
-    link: /library/more-html-css/de/images/
+  - text: "Bilder mit Bootstrap"
+    link: /library/more-html-css/de/image-bootstrap/
+    icon-css: fa fa-fw fa-image
     paging: 3
+  - text: "Bilder gestalten"
+    link: /library/more-html-css/de/image-processing/
+    icon-css: fa fa-fw fa-image
+    paging: 4
+  - text: "Kostenlose Bilder"
+    link: /library/more-html-css/de/image-sources/
+    icon-css: fa fa-fw fa-image
+    paging: 5
   - text: "Textformatierung"
     link: /library/more-html-css/de/text/
-    paging: 4
+    paging: 6
+    icon-css: fa fa-fw fa-font
+  - text: "JavaScript mit Bootstrap"
+    link: /library/more-html-css/de/javascript-bootstrap/
+    paging: 7
+    icon-css: fa fa-fw fa-code
 ---
 
 Icons in eine Webseite einzufügen ist nicht schwer. Aber wenn man Texte und Icons kombiniert (z.B. für einen Button) oder wenn die Icons in der Grösse veränderbar sein sollen, dann wird es schwierig.
@@ -71,7 +87,7 @@ Eine der bekanntesten frei verfügbaren Icon Fonts ist [Font Awesome](http://fon
 Um [Font Awesome zu integrieren](http://fontawesome.io/get-started/) steht wie für Bootstrap auch ein CDN-Link zur Verfügung. Damit muss gar nichts heruntergeladen werden, sondern wir können einfach einen Link zum CSS in den `<head>`-Bereich unserer HTML-Datei einfügen:
 
 <pre class="prettyprint lang-html">
-&lt;link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </pre>
 
 **Hinweis:** *Schauen Sie auf [Font Awesome](http://fontawesome.io/get-started/) nach, welches der aktuelle Link mit der neusten Versionsnummer ist.*
@@ -92,4 +108,5 @@ Schauen Sie sich die [Beispiele auf Font Awesome](http://fontawesome.io/examples
 * Eine Liste von [12 kostenlosen Icon Fonts](http://t3n.de/news/10-kostenlose-icon-fonts-450651/).
 * Auf [IcoMoon](https://icomoon.io/) gibt es eine App, um eine eigene Icon Font zusammen zu stellen.
 * [Fontello](http://fontello.com/) ist ein weiterer Generator, um eigene Icon Fonts zu erstellen.
+* [Iconfinder](https://www.iconfinder.com/) - Viele frei verfügbare Icons (Achtung: je nach Lizenz muss der Author genannt werden)
 

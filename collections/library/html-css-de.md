@@ -34,8 +34,8 @@ sidebars:
   - text: "Teil 6: Bootstrap Framework verwenden"
     link: /library/html-css/de/part6/
     paging: 6
-  - text: "Teil 7: Wie weiter?"
-    link: /library/html-css/de/part7/
+  - text: "Nächste Schritte"
+    link: /library/html-css/de/next/
     paging: 7
 ---
 
@@ -85,9 +85,9 @@ Viele oder manchmal sogar die Mehrheit der Zugriffe auf Webseiten erfolgen heute
 Auch wenn wir später interaktive Webapplikationen entwickeln, werden wir dafür sorgen, dass diese auf mobilen Geräten laufen!
 
 
-***
+## Auf geht's
 
-&rarr; Also, beginnen Sie Ihre Reise mit [Teil 1: Unsere erste Webseite](/library/html-css/de/part1/).
+&rarr; Beginnen Sie Ihre Reise mit [Teil 1: Unsere erste Webseite](/library/html-css/de/part1/).
 
 Viel Spass!
 
@@ -98,4 +98,8 @@ Viel Spass!
 
 Herzlichen Dank an die [Hasler Stiftung](http://www.haslerstiftung.ch/) für ihren Beitrag zur Entwicklung des Unterrichtsmaterials.
 
+*Quellen*<br>
+<em class="small">
+[Planet Cute](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html) Bild stammt von Daniel Cook (Lostgarden.com), veröffentlicht unter [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/us/).
+</em>
 

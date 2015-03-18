@@ -17,15 +17,31 @@ sidebars:
   - text: "Website-Layout"
     link: /library/more-html-css/de/website-layout/
     paging: 1
+    icon-css: fa fa-fw fa-th-large
   - text: "Icons"
     link: /library/more-html-css/de/icons/
     paging: 2
-  - text: "Bilder"
-    link: /library/more-html-css/de/images/
+    icon-css: fa fa-fw fa-flag
+  - text: "Bilder mit Bootstrap"
+    link: /library/more-html-css/de/image-bootstrap/
+    icon-css: fa fa-fw fa-image
     paging: 3
+  - text: "Bilder gestalten"
+    link: /library/more-html-css/de/image-processing/
+    icon-css: fa fa-fw fa-image
+    paging: 4
+  - text: "Kostenlose Bilder"
+    link: /library/more-html-css/de/image-sources/
+    icon-css: fa fa-fw fa-image
+    paging: 5
   - text: "Textformatierung"
     link: /library/more-html-css/de/text/
-    paging: 4
+    paging: 6
+    icon-css: fa fa-fw fa-font
+  - text: "JavaScript mit Bootstrap"
+    link: /library/more-html-css/de/javascript-bootstrap/
+    paging: 7
+    icon-css: fa fa-fw fa-code
 ---
 
 Diese Serie ist eine Sammlung von Anleitungen zu verschiedenen Themen rund um HTML & CSS.
@@ -34,7 +50,14 @@ Die Anleitungen bauen direkt auf den Kenntnissen aus dem [HTML & CSS Tutorial](/
 
 Es gibt keine bestimmte Reihenfolge zwischen den einzelnen Teilen. Schauen Sie sich einfach die Themen an, welche Sie interessieren.
 
-<!--
+<!-- MORE IDEAS
+
+
+## Logomakr
+
+* http://logomakr.com/
+* https://www.youtube.com/watch?v=mFnKu3-n-HI#t=5905
+
 
 ## Bootstrap
 

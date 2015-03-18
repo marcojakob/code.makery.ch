@@ -34,8 +34,8 @@ sidebars:
     link: /library/html-css/de/part6/
     paging: 6
     active: true
-  - text: "Teil 7: Wie weiter?"
-    link: /library/html-css/de/part7/
+  - text: "Nächste Schritte"
+    link: /library/html-css/de/next/
     paging: 7
 - header: Downloads
   body:
@@ -93,13 +93,11 @@ So sollte Ihr `head`-Bereich nun etwa aussehen (evtl. mit einer neueren Versions
 <pre class="prettyprint lang-html">
 &lt;head>
   &lt;meta charset="utf-8">
-  <mark>&lt;link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"></mark>
+  <mark>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></mark>
   &lt;link rel="stylesheet" href="main.css">
   &lt;title>Web Portfolio von Marco&lt;/title>
 &lt;/head>
 </pre>
-
-**Wichtig:** *Fügen Sie, wie im Code oben, beim Link zum Bootstrap-CSS ein `http:` vorne dran. Ansonsten gibt es Probleme, wenn man die Webseite auf dem eigenen Computer aufrufen möchte ([hier](http://www.paulirish.com/2010/the-protocol-relative-url/) können Sie lesen weshalb).*
 
 
 ### Wie funktioniert Bootstrap?
@@ -248,7 +246,7 @@ Mit einer `meta`-Information im `head`-Bereich können wir den mobilen Browsern 
 &lt;head>
   &lt;meta charset="utf-8">
   <mark>&lt;meta name="viewport" content="width=device-width, initial-scale=1"></mark>
-  &lt;link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   &lt;link rel="stylesheet" href="main.css">
   &lt;title>Web Portfolio von Marco&lt;/title>
 &lt;/head>
@@ -261,6 +259,10 @@ Nun sollte es etwa so aussehen:
 Bootstrap wurde so entworfen, dass es auf [mobilen Bilschirmen gut funktioniert](http://holdirbootstrap.de/css/#overview-mobile). Im Screenshot oben sehen Sie, wie die Navigation automatisch untereinander angezeigt wird, sobald die Bildschirmbreite zu klein wird. Dies können Sie auch ausprobieren, indem Sie einfach das Browserfenster verkleinern.
 
 Ein Webdesign, welches auf die Bildschirmgrösse reagiert, nennt man [Responsive Webdesign](http://de.wikipedia.org/wiki/Responsive_Webdesign).
+
+<div class="alert alert-warning">
+  <strong>Hinweis:</strong> Bootstrap kann die Navigation auch automatisch zusammenklappen in ein Menu. Dafür müssen aber zusätzliche JavaScript-Dateien eingebunden werden. Im Artikel <a class="alert-link" href="/library/more-html-css/de/javascript-bootstrap/">JavaScript mit Bootstrap</a> erkläre ich, wie Sie eine solche Navigation programmieren können.  
+</div>
 
 
 ## Bootstrap und Navigation auf allen Seiten
@@ -275,7 +277,7 @@ Mit kleinen Anpassung können wir den Code aus der Startseite in alle anderen Se
 Kopieren Sie aus dem `head`-Bereich der Startseite die Zeile mit dem `viewport` und die Zeile mit dem Bootstrap CSS und fügen Sie diese in alle anderen Seiten ein:
 <pre class="prettyprint lang-html">
   &lt;meta name="viewport" content="width=device-width, initial-scale=1">
-  &lt;link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 </pre>
 
 

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Mehr HTML & CSS: Website-Layout"
+title: "Website-Layout"
 date: 2014-08-16 00:00
 slug: more-html-css/de/website-layout
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-website-layout.md
@@ -16,16 +16,32 @@ sidebars:
   - text: "Website-Layout"
     link: /library/more-html-css/de/website-layout/
     paging: 1
+    icon-css: fa fa-fw fa-th-large
     active: true
   - text: "Icons"
     link: /library/more-html-css/de/icons/
     paging: 2
-  - text: "Bilder"
-    link: /library/more-html-css/de/images/
+    icon-css: fa fa-fw fa-flag
+  - text: "Bilder mit Bootstrap"
+    link: /library/more-html-css/de/image-bootstrap/
+    icon-css: fa fa-fw fa-image
     paging: 3
+  - text: "Bilder gestalten"
+    link: /library/more-html-css/de/image-processing/
+    icon-css: fa fa-fw fa-image
+    paging: 4
+  - text: "Kostenlose Bilder"
+    link: /library/more-html-css/de/image-sources/
+    icon-css: fa fa-fw fa-image
+    paging: 5
   - text: "Textformatierung"
     link: /library/more-html-css/de/text/
-    paging: 4
+    paging: 6
+    icon-css: fa fa-fw fa-font
+  - text: "JavaScript mit Bootstrap"
+    link: /library/more-html-css/de/javascript-bootstrap/
+    paging: 7
+    icon-css: fa fa-fw fa-code
 - header: Downloads
   body:
   - text: Portfolio mit Layout

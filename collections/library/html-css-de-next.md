@@ -1,9 +1,9 @@
 ---
 layout: article
-title: "HTML & CSS Tutorial - Teil 7: Wie weiter?"
+title: "HTML & CSS Tutorial - Nächste Schritte"
 date: 2014-08-16 00:00
-slug: html-css/de/part7
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part7.md
+slug: html-css/de/next
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-next.md
 description: "Wie kann man noch mehr lernen über HTML & CSS."
 image: /assets/library/html-css/portfolio.png
 published: true
@@ -33,8 +33,8 @@ sidebars:
   - text: "Teil 6: Bootstrap Framework verwenden"
     link: /library/html-css/de/part6/
     paging: 6
-  - text: "Teil 7: Wie weiter?"
-    link: /library/html-css/de/part7/
+  - text: "Nächste Schritte"
+    link: /library/html-css/de/next/
     paging: 7
     active: true
 ---

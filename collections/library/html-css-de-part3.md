@@ -34,8 +34,8 @@ sidebars:
   - text: "Teil 6: Bootstrap Framework verwenden"
     link: /library/html-css/de/part6/
     paging: 6
-  - text: "Teil 7: Wie weiter?"
-    link: /library/html-css/de/part7/
+  - text: "Nächste Schritte"
+    link: /library/html-css/de/next/
     paging: 7
 - header: Downloads
   body:
@@ -350,7 +350,7 @@ p {
 Eine andere Möglichkeit ist die Angabe in **Prozent**. Prozentangaben stehen immer im Verhältnis zu einem übergeordneten Element. Wenn also im folgenden Beispiel das übergeordnete Element von `h2` die ganze Bildschirmbreite umfasst, dann bedeutet das, dass `h2` nun 60% davon breit sein wird.
 
 <pre class="prettyprint lang-css">
-h2 {
+p {
   width: 60%;
 }
 </pre>
@@ -360,7 +360,7 @@ Eine weitere beliebte Art für die Grössenangabe sind `em`. Ein `em` ist immer 
 Als Beispiel: Wenn ein Element eine Schriftgrösse von `20px` hat und eine Breite von `5em`, dann wäre die Breite des Elementes `100px`.
 
 <pre class="prettyprint lang-css">
-h2 {
+p {
   font-size: 20px;
   width: 5em;
 }

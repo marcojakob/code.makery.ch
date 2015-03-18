@@ -34,8 +34,8 @@ sidebars:
   - text: "Teil 6: Bootstrap Framework verwenden"
     link: /library/html-css/de/part6/
     paging: 6
-  - text: "Teil 7: Wie weiter?"
-    link: /library/html-css/de/part7/
+  - text: "Nächste Schritte"
+    link: /library/html-css/de/next/
     paging: 7
 ---
 
