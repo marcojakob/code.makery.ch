@@ -42,7 +42,14 @@
     "hello-dart": {
       "title": "Hello Dart: Introduction to Programming",
       "image": "/assets/library/hello-dart/hello-dart.png",
-      "summary": "Hello Dart is a visual and playful introduction to programming with Dart. <br><i>Note: This course is currently <b>in beta and only available in German</b>.</i>",
+      "summary": "Hello Dart is a visual and playful introduction to programming with Dart. <br><i>Note: This course is currently <b>only available in German</b>.</i>",
+      "topics": [ "Dart" ],
+      "languages": [ "de" ]
+    },
+    "dart-kanban": {
+      "title": "Dart Kanban: Build your Task Manager",
+      "image": "/assets/library/dart-kanban/dart-kanban.png",
+      "summary": "Tutorial about how to build a Kanban-Style Todo Board with Dart. <br><i>Note: This course is currently <b>only available in German</b>.</i>",
       "topics": [ "Dart" ],
       "languages": [ "de" ]
     },
