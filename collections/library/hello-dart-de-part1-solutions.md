@@ -136,7 +136,7 @@ Kommentare schreibt man in den Quelltext als zusätzliche Informationen. Die Kom
   3. (selten) Längere Kommentare über mehrere Zeilen schliesst man mit `/*` und `*/` ein.
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 1.04: Around Tree with Method
+#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 1.04: Around Tree with Function
 
 <pre class="prettyprint lang-java">
 class MyPlayer extends Player {

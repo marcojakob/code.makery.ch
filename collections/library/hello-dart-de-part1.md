@@ -135,7 +135,7 @@ Schreiben Sie ein Programm, welches Ihren Spieler auf dem angegebenen Weg zum St
 
 ## Neue Funktionen
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 1.04: Around Tree with Method
+#### <i class="fa fa-rocket mg-t"></i> AUFGABE 1.04: Around Tree with Function
 
 Wenn Sie Aufgabe 1.03 korrekt gelöst haben, so wird Ihr Programm wahrscheinlich *drei gleiche Teile* enthalten, nämlich für das Herumgehen um jeden Baum. Dies können wir zur besseren Übersicht noch etwas erweitern, indem wir eine neue Funktion einführen. Unterhalb der schliessenden Klammer `}` von der `start()`-Funktion erstellen wir eine neue Funktion:
 
