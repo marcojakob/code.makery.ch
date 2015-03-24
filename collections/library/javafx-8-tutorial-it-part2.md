@@ -4,7 +4,6 @@ title: "JavaFX 8 Tutorial - Parte 2: Model and TableView"
 date: 2014-04-23 00:00
 updated: 2015-03-12 00:00
 slug: javafx-8-tutorial/it/part2
-canonical: /library/javafx-8-tutorial/part2/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-it-part2.md
 description: "Uso della TabletView JavaFX per visualizzare una  ObservableList di Persons."
 image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
@@ -41,7 +40,7 @@ sidebars:
     paging: 7
 - header: "Download Sources"
   body:
-  - text: Part 2 as Eclipse Project <em>(requires at least JDK 8u40)</em>
+  - text: Parte 2 come progetto Eclipse <em>(requires at least JDK 8u40)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip
     icon-css: fa fa-fw fa-download
 languages: 
