@@ -23,6 +23,18 @@ sidebars:
     link: /library/dart-kanban/de/part1/
     paging: 1
     active: true
+  - text: "Teil 2: "
+    link: /library/dart-kanban/de/part2/
+    paging: 2
+  - text: "Teil 3: "
+    link: /library/dart-kanban/de/part3/
+    paging: 3
+  - text: "Teil 4: "
+    link: /library/dart-kanban/de/part4/
+    paging: 4
+  - text: "Teil 5: "
+    link: /library/dart-kanban/de/part5/
+    paging: 5
 ---
 
 Es gibt grundsätzlich zwei Arten von Dart-Programmen:
@@ -34,6 +46,8 @@ Es gibt grundsätzlich zwei Arten von Dart-Programmen:
 ### Kommandozeilenprogramme
 
 Kommandozeilenprogramme brauchen bloss eine `.dart`-Datei mit dem Dart-Programm. Dieses Programm kann dann im Dart Editor mit dem Run-Knopf ![Run](/assets/library/dart-kanban/part1/run.png) gestartet werden. Alternativ kann ein solches Programm auch mit der Dart VM aus dem Ordner `dart-sdk/bin` ausgeführt werden.
+
+![Dart Kommandozeile](/assets/library/dart-kanban/part1/command-line.png)
 
 Wir werden uns an dieser Stelle nicht näher mit Kommandozeilenprogramme beschäftigen. Diese werden für Programme verwendet ohne grafische Benutzeroberfläche (z.B. auf einem Server). Bei Interesse gibt es hier eine [Anleitung für Kommandozeilenprogramme](https://www.dartlang.org/docs/tutorials/cmdline/).
 
@@ -111,7 +125,7 @@ import 'dart:html';
 
 void main() {
   Element subtitle = querySelector('#subtitle');
-  subtitle.text = 'by Marco';
+  subtitle.text = 'von Marco';
 }
 </pre>
 
@@ -132,12 +146,12 @@ Die Funktion `querySelector()` stammt aus der importierten `dart:html` Bibliothe
 
 Wir speichern das Untertitel-Element in eine Variable. Mit dem **Punkt-Operator** können wir auf Eigenschaften zugreifen und diese verändern. 
 
-Mit dem Gleichheits-Zeichen (`=`) setzen wir den Text auf den String-Wert `'by Marco'`.
+Mit dem Gleichheits-Zeichen (`=`) setzen wir den Text auf den String-Wert `'von Marco'`.
 
 <div class="alert alert-info">
     <strong>Alternative:</strong> Wir könnten die zwei Schritte in unserem Programm auch auf einer Zeile zusammenfassen. Damit bräuchten wir keine Variable.
 <pre class="prettyprint lang-dart">
-querySelector('#subtitle').text = 'by Marco';
+querySelector('#subtitle').text = 'von Marco';
 </pre>
 </div>
 
@@ -145,7 +159,7 @@ querySelector('#subtitle').text = 'by Marco';
 
 Selektieren Sie nun die `index.html` und klicken Sie auf den Run-Knopf ![Run](/assets/library/dart-kanban/part1/run.png). Der Dart Editor öffnet Chromium und lädt die `index.html` darin. Der Dart-Code sorgt dafür, dass der Untertitel gesetzt wird, wie im folgenden Screenshot.
 
-![Erster Start](/assets/library/dart-kanban/part1/first-run.png)
+![Erster Start](/assets/library/dart-kanban/part1/first-run-de.png)
 
 
 

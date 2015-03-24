@@ -25,6 +25,10 @@ sidebars:
     paging: 1
 ---
 
+*Falls Sie den Dart Editor bereits installiert haben, können Sie diesen Teil überspringen.*
+
+
+## Dart Editor herunterladen
 
 1. Laden Sie den [Dart Editor hier](https://www.dartlang.org/tools/download.html) herunter.
 2. Entpacken Sie das Zip mit dem Dart Editor auf Ihre Festplatte.
