@@ -346,7 +346,7 @@ Adesso questo codice ha probabilmente bisogno di alune spiegazioni:
 
 <div class="alert alert-info">
   <p>
-    In questo esempio stiamo usando solo un valore `StringProperty` per le colonne. Quando si vuole usare un `IntegerProperty` o un `DoubleProperty`, `setCellValueFactory(...)` deve vare anche un `asObject()`:
+    In questo esempio stiamo usando solo un valore `StringProperty` per le colonne. Quando si vuole usare un `IntegerProperty` o un `DoubleProperty`, `setCellValueFactory(...)` deve avere anche un `asObject()`:
   </p>
   <p>
   <pre>myIntegerColumn.setCellValueFactory(cellData -> 
