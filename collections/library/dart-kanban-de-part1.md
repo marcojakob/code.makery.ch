@@ -19,22 +19,27 @@ sidebars:
     link: /library/dart-kanban/de/install/
     icon-css: fa fa-fw fa-cog
     paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Webapplikation erstellen"
+  - text: "Teil 1: Webapp erstellen"
     link: /library/dart-kanban/de/part1/
     paging: 1
     active: true
-  - text: "Teil 2: "
+  - text: "Teil 2: HTML vorbereiten"
     link: /library/dart-kanban/de/part2/
     paging: 2
-  - text: "Teil 3: "
+  - text: "Teil 3: Element hinzufügen"
     link: /library/dart-kanban/de/part3/
     paging: 3
-  - text: "Teil 4: "
+  - text: "Teil 4: Element verschieben"
     link: /library/dart-kanban/de/part4/
     paging: 4
-  - text: "Teil 5: "
+  - text: "Teil 5: Veröffentlichen"
     link: /library/dart-kanban/de/part5/
     paging: 5
+- header: "Source Code"
+  body:
+  - text: Beispielcode auf GitHub
+    link: https://github.com/marcojakob/tutorial-dart-kanban
+    icon-css: fa fa-fw fa-github
 ---
 
 Es gibt grundsätzlich zwei Arten von Dart-Programmen:
@@ -99,7 +104,7 @@ Die Datei `web/index.html` ist die Datei, die vom Browser geladen wird und die G
     &lt;/div>
 
     &lt;script type="application/dart" src="main.dart">&lt;/script>
-    &lt;script data-pub-inline src="packages/browser/dart.js">&lt;/script>
+    &lt;script src="packages/browser/dart.js">&lt;/script>
   &lt;/body>
 &lt;/html>
 </pre>
@@ -154,6 +159,7 @@ Mit dem Gleichheits-Zeichen (`=`) setzen wir den Text auf den String-Wert `'von 
 querySelector('#subtitle').text = 'von Marco';
 </pre>
 </div>
+
 
 ## Die Webapplikation starten
 
