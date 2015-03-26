@@ -47,4 +47,9 @@ li.L3,
 li.L5,
 li.L7,
 li.L9 { background: #eee }
+
+/* Highlighting lines */
+mark {
+  background-color: lemonchiffon;
+}
 /*# sourceMappingURL=prettify.css.map */

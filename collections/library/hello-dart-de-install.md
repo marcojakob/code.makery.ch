@@ -58,7 +58,7 @@ Zum Programmieren brauchen wir...
 
 ## Dart Editor installieren
 
-1. [Laden Sie den Dart Editor herunter](https://www.dartlang.org/tools/download.html)
+1. Laden Sie den [Dart Editor hier](https://www.dartlang.org/tools/download.html) herunter.
 2. Entpacken Sie das Zip mit dem Dart Editor auf Ihre Festplatte.
 
 <div class="alert alert-info">
