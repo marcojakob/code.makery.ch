@@ -7,6 +7,26 @@
 {% block content %}
 <div class="container container-restricted">
   {% include "navigation" %}
-  <h2 class="text-center">Learning paths coming soon... <i class="fa fa-coffee"></i></h2>
+  <h2 class="text-center"><i class="fa fa-code-fork fa-flip-vertical"></i> Learning Paths</h2>
+  
+  <p class="text-center">
+    Learning paths guide you through a specific topic.
+  </p>
+  
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Web App Development</h3>
+      <p>Learn to code dynamic web applications using HTML, CSS, and Dart.</p>
+      <a href="/paths/web-app/" class="btn btn-warning">Web App Development Path</a>
+    </div>
+    
+    <div class="col-sm-6">
+      <h3>Java Development</h3>
+      <p>Learn to code Java and JavaFX applications.</p>
+      <a href="/paths/java/" class="btn btn-warning">Java Development Path</a>
+    </div>
+  </div>
 </div>
+
+{%- assign js_dropdown = true -%}
 {% endblock %}

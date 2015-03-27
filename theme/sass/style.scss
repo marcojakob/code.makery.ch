@@ -393,11 +393,19 @@ iframe {
     }
   }
   
-  .topic-labels {
+  .topic-label-container {
     position: absolute;
     top: 5px;
     right: 15px;
     font-family: $font-family-sans-serif;
+  }
+  
+  .part-label-container {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-family: $font-family-sans-serif;
+    color: $topic-java;
   }
   
   .language-buttons {
@@ -408,8 +416,6 @@ iframe {
     font-family: $font-family-sans-serif;
   }
 }
-
-
 
 
 // Topic Colors
@@ -444,4 +450,9 @@ iframe {
 
 .label-topic-html-css {
   @include label-variant($topic-html-css);
+}
+
+// Part Label
+.label-part {
+  @include label-variant($main-color);
 }

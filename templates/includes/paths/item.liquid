@@ -11,10 +11,8 @@
       </div>
     </div>
   </a>
-  <div class="topic-label-container">
-    {% for topic in item.topics -%}
-    <a href="/{{ mixture.url }}/topic/{{ topic | downcase }}/" class="label label-topic-{{ topic | downcase }}">{{ topic }}</a>
-    {% endfor -%}
+  <div class="part-label-container">
+    <span class="label label-part">{{ item.parts }} Part{% if item.parts > 1 %}s{% endif %}</span>
   </div>
     
   <div class="language-buttons">

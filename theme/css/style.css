@@ -5074,11 +5074,17 @@ iframe {
       text-decoration: none; }
       .library-panel .panel-link:hover > div, .library-panel .panel-link:focus > div {
         border-color: #adadad; }
-  .library-panel .topic-labels {
+  .library-panel .topic-label-container {
     position: absolute;
     top: 5px;
     right: 15px;
     font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .library-panel .part-label-container {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #9c27b0; }
   .library-panel .language-buttons {
     position: absolute;
     bottom: 15px;
@@ -5117,4 +5123,9 @@ iframe {
   background-color: #5677fc; }
   .label-topic-html-css[href]:hover, .label-topic-html-css[href]:focus {
     background-color: #244ffb; }
+
+.label-part {
+  background-color: #8ba644; }
+  .label-part[href]:hover, .label-part[href]:focus {
+    background-color: #6d8235; }
 /*# sourceMappingURL=style.css.map */
