@@ -37,7 +37,8 @@ sidebars:
     active: true
   - text: "Nächste Schritte"
     link: /library/html-css/de/next/
-    paging: 7
+    icon-css: fa fa-fw fa-flag-checkered
+    paging: <i class="fa fa-flag-checkered"></i>
 - header: Downloads
   body:
   - text: Portfolio Teil 6
@@ -329,5 +330,7 @@ Nun ist es wichtig, dass Sie alle Seiten aufrufen und die **Links sorgfältig te
 Schauen Sie als nächstes Ihren Code an und stellen Sie sicher, dass das **HTML schön aufgeräumt** ist. Immer, wenn ein HTML-Tag geöffnet wird, dann sollte die nächste Zeile eingerückt werden. Das schliessende Tag wird dann wieder nach links gerückt.
 
 
+## Wie weiter?
 
+Erfahren Sie die [nächsten Schritte](/library/html-css/de/next/).
 

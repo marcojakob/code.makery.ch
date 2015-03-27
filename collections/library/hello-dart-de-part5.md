@@ -15,12 +15,14 @@ sidebars:
   - text: "Einleitung"
     link: /library/hello-dart/de/
     paging: Einleitung
-  - text: "<em>Hintergrundinfos</em>"
+  - text: "Hintergrundinfos"
     link: /library/hello-dart/de/background/
     icon-css: fa fa-fw fa-info
-  - text: "<em>Installation</em>"
+    paging: <i class="fa fa-info"></i>
+  - text: "Installation"
     link: /library/hello-dart/de/install/
     icon-css: fa fa-fw fa-cog
+    paging: <i class="fa fa-cog"></i>
   - text: "Teil 1: Erste Schritte"
     link: /library/hello-dart/de/part1/
     paging: 1
@@ -37,6 +39,10 @@ sidebars:
     link: /library/hello-dart/de/part5/
     paging: 5
     active: true
+  - text: "Nächste Schritte"
+    link: /library/hello-dart/de/next/
+    icon-css: fa fa-fw fa-flag-checkered
+    paging: <i class="fa fa-flag-checkered"></i>
 - header: Lösungen
   body:
   - text: "Lösungen zu Teil 5"
@@ -186,16 +192,7 @@ Programmieren Sie eine Funktion `howOldIsGrandma()`, die das Alter der Grossmutt
 
 ## Ende ... und wie weiter?
 
-Herzliche Gratulation, Sie haben das Ende dieser Serie erreicht!
-
-Bald werden hier weitere Anleitungen zur Programmierung mit Dart veröffentlicht. Wenn Sie informiert werden möchten, schreiben Sie sich für den [Newsletter](https://tinyletter.com/codemakery) ein.
-
-
-### Feedback
-
-Ich freue mich von Ihnen zu hören. Schreiben Sie einen Kommentar, wenn Sie die Serie glücklich beendet haben oder auch, wenn Sie Verbesserungsvorschläge haben. <a href="#disqus_thread"><i class="fa fa-comment-o"></i></a>
-
-<i class="fa fa-beer"></i> Marco
+Erfahren Sie die [nächsten Schritte](/library/hello-dart/de/next/).
 
 
 ***

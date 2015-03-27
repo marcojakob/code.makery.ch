@@ -8,7 +8,7 @@ github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/lib
 description: "Wie kann man noch mehr lernen über HTML & CSS."
 image: /assets/library/html-css/portfolio.png
 published: true
-prettify: true
+prettify: false
 comments: true
 sidebars:
 - header: Artikel dieser Serie
@@ -36,7 +36,8 @@ sidebars:
     paging: 6
   - text: "Nächste Schritte"
     link: /library/html-css/de/next/
-    paging: 7
+    icon-css: fa fa-fw fa-flag-checkered
+    paging: <i class="fa fa-flag-checkered"></i>
     active: true
 ---
 

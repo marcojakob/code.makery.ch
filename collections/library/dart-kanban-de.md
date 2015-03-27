@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Dart Kanban: Die bessere Todo-Liste"
+title: "Dart Kanban - Die bessere Todo-Liste"
 date: 2015-03-23 00:00
 slug: dart-kanban/de
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-kanban-de.md
@@ -35,6 +35,10 @@ sidebars:
   - text: "Teil 5: Veröffentlichen"
     link: /library/dart-kanban/de/part5/
     paging: 5
+  - text: "Nächste Schritte"
+    link: /library/dart-kanban/de/next/
+    icon-css: fa fa-fw fa-flag-checkered
+    paging: <i class="fa fa-flag-checkered"></i>
 - header: "Source Code"
   body:
   - text: Beispielcode auf GitHub

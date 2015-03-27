@@ -15,13 +15,15 @@ sidebars:
   - text: "Einleitung"
     link: /library/hello-dart/de/
     paging: Einleitung
-  - text: "<em>Hintergrundinfos</em>"
+  - text: "Hintergrundinfos"
     link: /library/hello-dart/de/background/
     icon-css: fa fa-fw fa-info
+    paging: <i class="fa fa-info"></i>
     active: true
-  - text: "<em>Installation</em>"
+  - text: "Installation"
     link: /library/hello-dart/de/install/
     icon-css: fa fa-fw fa-cog
+    paging: <i class="fa fa-cog"></i>
   - text: "Teil 1: Erste Schritte"
     link: /library/hello-dart/de/part1/
     paging: 1
@@ -37,6 +39,10 @@ sidebars:
   - text: "Teil 5: Funktionen"
     link: /library/hello-dart/de/part5/
     paging: 5
+  - text: "Nächste Schritte"
+    link: /library/hello-dart/de/next/
+    icon-css: fa fa-fw fa-flag-checkered
+    paging: <i class="fa fa-flag-checkered"></i>
 ---
 
 Auf dieser Seite erkläre ich, weshalb ich so begeistert bin von [Dart](https://www.dartlang.org) und ich diese Programmiersprache für Programmieranfänger wie auch für professionelle Programmierer empfehle.

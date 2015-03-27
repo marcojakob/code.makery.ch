@@ -35,6 +35,10 @@ sidebars:
   - text: "Teil 5: Veröffentlichen"
     link: /library/dart-kanban/de/part5/
     paging: 5
+  - text: "Nächste Schritte"
+    link: /library/dart-kanban/de/next/
+    icon-css: fa fa-fw fa-flag-checkered
+    paging: <i class="fa fa-flag-checkered"></i>
 - header: "Source Code"
   body:
   - text: Beispielcode auf GitHub

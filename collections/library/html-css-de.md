@@ -37,7 +37,8 @@ sidebars:
     paging: 6
   - text: "Nächste Schritte"
     link: /library/html-css/de/next/
-    paging: 7
+    icon-css: fa fa-fw fa-flag-checkered
+    paging: <i class="fa fa-flag-checkered"></i>
 ---
 
 Mit dieser Anleitung lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen **sofort mit einem Projekt**, anstatt zuerst langweilige Theorie abzuhandeln.

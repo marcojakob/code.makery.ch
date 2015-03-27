@@ -37,7 +37,8 @@ sidebars:
     paging: 6
   - text: "Nächste Schritte"
     link: /library/html-css/de/next/
-    paging: 7
+    icon-css: fa fa-fw fa-flag-checkered
+    paging: <i class="fa fa-flag-checkered"></i>
 ---
 
 

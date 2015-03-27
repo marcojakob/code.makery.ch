@@ -16,12 +16,14 @@ sidebars:
     link: /library/hello-dart/de/
     paging: Einleitung
     active: true
-  - text: "<em>Hintergrundinfos</em>"
+  - text: "Hintergrundinfos"
     link: /library/hello-dart/de/background/
     icon-css: fa fa-fw fa-info
-  - text: "<em>Installation</em>"
+    paging: <i class="fa fa-info"></i>
+  - text: "Installation"
     link: /library/hello-dart/de/install/
     icon-css: fa fa-fw fa-cog
+    paging: <i class="fa fa-cog"></i>
   - text: "Teil 1: Erste Schritte"
     link: /library/hello-dart/de/part1/
     paging: 1
@@ -37,6 +39,10 @@ sidebars:
   - text: "Teil 5: Funktionen"
     link: /library/hello-dart/de/part5/
     paging: 5
+  - text: "Nächste Schritte"
+    link: /library/hello-dart/de/next/
+    icon-css: fa fa-fw fa-flag-checkered
+    paging: <i class="fa fa-flag-checkered"></i>
 ---
 
 ![Hello Dart](/assets/library/hello-dart/hello-dart-animation.gif)
