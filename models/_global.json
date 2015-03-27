@@ -48,7 +48,7 @@
     },
     "dart-kanban": {
       "title": "Dart Kanban: Build your Task Manager",
-      "image": "/assets/library/dart-kanban/dart-kanban.png",
+      "image": "/assets/library/dart-kanban/dart-kanban-small.png",
       "summary": "Tutorial about how to build a Kanban-Style Todo Board with Dart. <br><i>Note: This course is currently <b>only available in German</b>.</i>",
       "topics": [ "Dart" ],
       "languages": [ "de" ]

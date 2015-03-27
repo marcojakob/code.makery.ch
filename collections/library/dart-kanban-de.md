@@ -4,11 +4,11 @@ title: "Dart Kanban: Die bessere Todo-Liste"
 date: 2015-03-23 00:00
 slug: dart-kanban/de
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-kanban-de.md
-description: ""
+description: "Lernen Sie Dart Programmieren. Wir erstellen ein interaktives Kanban Board als Dart Webapplikation. Anleitung vom Dart installieren bis zur Veröffentlichung auf einem Webserver."
 image: /assets/library/dart-kanban/dart-kanban.png
 published: true
 prettify: false
-comments: false
+comments: true
 sidebars:
 - header: Artikel dieser Serie
   body:

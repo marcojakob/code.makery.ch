@@ -4,11 +4,11 @@ title: "Dart Kanban - Teil 3: Elemente hinzufügen"
 date: 2015-03-23 00:00
 slug: dart-kanban/de/part3
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-kanban-de-part3.md
-description: ""
+description: "Mit Dart neue HTML-Elemente hinzufügen. Auf Events vom Benutzer reagieren. Lernen, wie man mit der HTML-Bibliothek von Dart arbeitet."
 image: /assets/library/dart-kanban/dart-kanban.png
 published: true
 prettify: true
-comments: false
+comments: true
 sidebars:
 - header: Artikel dieser Serie
   body:

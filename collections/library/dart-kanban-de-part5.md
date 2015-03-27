@@ -4,11 +4,11 @@ title: "Dart Kanban - Teil 5: Veröffentlichen"
 date: 2015-03-23 00:00
 slug: dart-kanban/de/part5
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-kanban-de-part5.md
-description: ""
+description: "Die Dart Applikation nach JavaScript übersetzen. Den generierten Build-Ordner auf einem Webserver veröffentlichen."
 image: /assets/library/dart-kanban/dart-kanban.png
 published: true
 prettify: true
-comments: false
+comments: true
 sidebars:
 - header: Artikel dieser Serie
   body:
@@ -68,9 +68,9 @@ environment:
   sdk: '>=1.0.0 &lt;2.0.0'
 dependencies:
   browser: any
-  dart_to_js_script_rewriter: any
+<mark>  dart_to_js_script_rewriter: any
 transformers:
-- dart_to_js_script_rewriter
+- dart_to_js_script_rewriter</mark>
 </pre>
 
 Der `dart_to_js_script_rewriter` wird in unserem HTML den Link auf die Dart-Datei erstezen mit einem Link auf die neu generierte JavaScript-Datei.
@@ -111,16 +111,6 @@ Im [HTML & CSS Tutorial Teil 2](/library/html-css/de/part2/) habe ich verschiede
 #### BitBalloon
 
 Speziell empfehlen kann ich [BitBalloon](https://www.bitballoon.com), da es kaum eine einfachere Möglichkeit gibt für Hosting: Einfach die Dateien per Drag-and-Drop in den (Chrome) Browser ziehen und schon ist die Seite live. Dies funktioniert sogar ohne Login!
-
-**Achtung:** Eine kleine Änderung müssen wir allerdings bei unserer HTML-Datei vornehmen, damit Dart-Programme mit BitBalloon funktionieren. BitBalloon optimiert nämlich das Laden von allen Script-Dateien und gibt jeder Datei einen eigenen Speicherort. Das führt dazu, dass unser Dart-Programm die dazugehörige JavaScript-Datei nicht mehr findet.
-
-Mit einem Attribut können wir BitBalloon mitteilen, dass es das Script nicht verschieben soll. Öffnen Sie dazu die `index.html`-Datei und fügen Sie wie folgt ein `data-dont-bundle="true"` zum Dart-Script hinzu. 
-
-<pre class="prettyprint lang-html">
-&lt;script type="application/dart" src="main.dart" <mark>data-dont-bundle="true"</mark>>&lt;/script>
-</pre>
-
-Dann können Sie wiederum `Pub Build` aufrufen, damit der `build`-Ordner nochmals neu erstellt wird. Jetzt können Sie den ganzen Ordner `build/web` packen und auf BitBalloon kopieren. Damit ist Ihr Dart-Programm schon live.
 
 
 #### Andere Hostinganbieter

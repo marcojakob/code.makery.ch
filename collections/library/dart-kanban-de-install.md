@@ -4,11 +4,11 @@ title: "Dart Editor installieren"
 date: 2015-03-23 00:00
 slug: dart-kanban/de/install
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-kanban-de-install.md
-description: ""
+description: "Dart Editor installieren und starten. Was enthält die Installation?"
 image: /assets/library/dart-kanban/dart-kanban.png
 published: true
 prettify: false
-comments: false
+comments: true
 sidebars:
 - header: Artikel dieser Serie
   body:

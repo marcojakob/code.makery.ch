@@ -4,11 +4,11 @@ title: "Dart Kanban - Teil 2: HTML vorbereiten"
 date: 2015-03-23 00:00
 slug: dart-kanban/de/part2
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-kanban-de-part2.md
-description: ""
+description: "Das Kanban Board in der HTML-Datei vorbereiten. Drei Spalten mit dem Bootstrap-Raster erstellen."
 image: /assets/library/dart-kanban/dart-kanban.png
 published: true
 prettify: true
-comments: false
+comments: true
 sidebars:
 - header: Artikel dieser Serie
   body:

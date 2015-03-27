@@ -4,11 +4,11 @@ title: "Dart Kanban - Teil 1: Webapplikation erstellen"
 date: 2015-03-23 00:00
 slug: dart-kanban/de/part1
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-kanban-de-part1.md
-description: ""
+description: "Eine erste Webapplikation mit Dart erstellen. Dart mit HTML verknüpfen und ein HTML-Element mit Dart verändern."
 image: /assets/library/dart-kanban/dart-kanban.png
 published: true
 prettify: true
-comments: false
+comments: true
 sidebars:
 - header: Artikel dieser Serie
   body:

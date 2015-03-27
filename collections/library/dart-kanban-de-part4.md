@@ -4,11 +4,11 @@ title: "Dart Kanban - Teil 4: Elemente verschieben"
 date: 2015-03-23 00:00
 slug: dart-kanban/de/part4
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-kanban-de-part4.md
-description: ""
+description: "Mit Dart HTML-Elemente verschieben und löschen. Auf Klick-Events reagieren."
 image: /assets/library/dart-kanban/dart-kanban.png
 published: true
 prettify: true
-comments: false
+comments: true
 sidebars:
 - header: Artikel dieser Serie
   body:
