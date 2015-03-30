@@ -46,14 +46,14 @@ sidebars:
     icon-css: fa fa-fw fa-github
 ---
 
-Unser Ziel ist eine dymanische Webapplikation: Der Benutzer soll direkt Änderungen vornehmen können. Es gibt aber auch Teile unserer Webapplikation, die statisch sind und sich somit nicht verändern werden (wie zum Beispiel der Titel "Kanban Board").
+Unser Ziel ist eine **dymanische Webapplikation**: Der Benutzer soll direkt Änderungen vornehmen können. Es gibt aber auch Teile unserer Webapplikation, die statisch sind und sich somit nicht verändern werden (wie zum Beispiel der Titel "Kanban Board").
 
 Es wäre zwar möglich, alles HTML, auch das statische, aus dem Dart-Code heraus zu generieren. Meistens ist es aber einfacher, gewisse Teile in der HTML-Datei bereits zu definieren. Wir werden deshalb die ganze Grundstruktur vom Kanban Board im HTML vorbereiten.
 
 
 ## Textfeld und Knopf
 
-Zuerst erstellen wir ein Textfeld (Input) und einen Knopf (Button). Öffnen Sie `index.html` und fügen Sie den folgenden Code nach dem Titel wie folgt ein:
+Zuerst erstellen wir ein Textfeld (Input) und einen Knopf (Button). Öffnen Sie die `index.html` und ergänzen Sie ihren Code mit dem gelb markierten Zeilen.
 
 <pre class="prettyprint lang-html">
 &lt;div class="page-header">
@@ -63,6 +63,8 @@ Zuerst erstellen wir ein Textfeld (Input) und einen Knopf (Button). Öffnen Sie 
 <mark>&lt;input id="todo-input" type="text" class="form-control" placeholder="Was soll erledigt werden?">
 &lt;button id="todo-button" type="button" class="btn btn-primary">Hinzufügen&lt;/button></mark>
 </pre>
+
+*Achten Sie darauf, dass Sie die zwei Code-Zeilen an der richtigen Stelle einfügen.*
 
 
 ### Styling
@@ -158,10 +160,16 @@ Der fertige Code in `index.html` sieht mit den drei Spalten wie folgt aus:
 
 #### Erklärungen
 
-* Das Layout enthält eine Zeile mit Klasse `row` und für Spalten mit Klasse `col-sm-4`. Bootstrap sorgt dafür, dass die Spalten bei kleinen Bildschirmen untereinander angezeigt werden.
-* In jeder Spaltenüberschrift verwenden wir ein Icon. Die [Glyphicons](http://holdirbootstrap.de/komponenten/#glyphicons) sind bei Bootstrap automatisch dabei.
-* Jede Spalte enthält ein `div`-Element mit der Klasse `list-group`. Dies sind [Bootstrap-Listengruppen](http://holdirbootstrap.de/komponenten/#list-group). Darin werden wir die einzelen Todo-Elemente auflisten.
-* Die erste Listengruppe enthält bereits ein Beispielelement mit dem Text *"Mein erstes Todo"*. 
+Das Layout enthält eine Zeile mit Klasse `row` und für Spalten mit Klasse `col-sm-4`. Bootstrap sorgt dafür, dass die Spalten bei kleinen Bildschirmen untereinander angezeigt werden.
+
+In jeder Spaltenüberschrift verwenden wir ein Icon. Die [Glyphicons](http://holdirbootstrap.de/komponenten/#glyphicons) sind bei Bootstrap automatisch dabei.
+
+Jede Spalte enthält ein `div`-Element mit der Klasse `list-group`. Dies sind [Bootstrap-Listengruppen](http://holdirbootstrap.de/komponenten/#list-group). Darin werden wir die einzelen Todo-Elemente auflisten.
+
+Die erste Listengruppe enthält bereits ein Beispielelement mit dem Text *"Mein erstes Todo"*. 
+
+
+### Testen
 
 Wenn Sie das Programm jetzt starten, sollte es wie folgt aussehen. Testen Sie auch, wie es aussieht, wenn sie das Browser-Fenster ganz schmal machen.
 
@@ -172,5 +180,5 @@ Wenn Sie das Programm jetzt starten, sollte es wie folgt aussehen. Testen Sie au
 
 Wir könnten natürlich im HTML-Code weitere Todo-Elemente in die drei Spalten einfügen. Aber das Ziel ist offensichtlich, dass dies dynamisch möglich ist. Das heisst, dass man neue Elemente mit dem Textfeld und dem Knopf hinzufügen kann.
 
-So etwas ist mit reinem HTML nicht möglich. Im [nächsten Teil](/library/dart-kanban/de/part3/) lernen wir, wie wir neue Elemente mit Dart dynamisch hinzufügen können.
+So etwas ist mit reinem HTML nicht möglich. Im [Teil 3](/library/dart-kanban/de/part3/) lernen wir, wie wir neue Elemente mit Dart dynamisch hinzufügen können.
 

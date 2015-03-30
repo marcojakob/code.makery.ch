@@ -127,11 +127,15 @@ void addTodoItem(Event e) {
 
 #### Erklärungen
 
-* Mit `void addTodoItem(Event e)` wird die Funktion definiert. `void` bedeutet, dass diese Funktion keinen Wert zurückliefert. Wir wollen einfach eine Aktion ausführen, nämlich, dass ein neues Todo-Element hinzugefügt wird.
-* In der nächsten Zeile wird ein neues `<a>`-Element (`AnchorElement`) erstellt.
-* Jedes `<a>`-Element braucht einen Link. Da wir aber nirgendwo hinspringen wollen bei einem Klick, setzen wir den Link auf ein `#`. 
-* Mit `todoInput.value` holen wir den Wert aus dem Textfeld und setzen ihn gleich in unser neues Todo-Element.
-* Damit die Elemente schön dargestellt werden, fügen wir die Bootstrap-Klasse `list-group-item` hinzu.
+Mit `void addTodoItem(Event e)` wird die Funktion definiert. `void` bedeutet, dass diese Funktion keinen Wert zurückliefert. Wir wollen einfach eine Aktion ausführen, nämlich, dass ein neues Todo-Element hinzugefügt wird.
+
+In der nächsten Zeile wird ein neues `<a>`-Element (`AnchorElement`) erstellt.
+
+Jedes `<a>`-Element braucht einen Link. Da wir aber nirgendwo hinspringen wollen bei einem Klick, setzen wir den Link auf ein `#`. 
+
+Mit `todoInput.value` holen wir den Wert aus dem Textfeld und setzen ihn gleich in unser neues Todo-Element.
+
+Damit die Elemente schön dargestellt werden, fügen wir die Bootstrap-Klasse `list-group-item` hinzu.
 
 
 ##### Kind-Elemente

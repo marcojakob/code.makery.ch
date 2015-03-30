@@ -46,7 +46,7 @@ sidebars:
     icon-css: fa fa-fw fa-github
 ---
 
-Im letzten Teil haben wir gelernt, wie wir neue Todos zu unserer Liste hinzufügen können. Damit das Kanban Board auch voll funktioniert, müssen die Todos aus der *Todo*-Spalte in die beiden anderen Spalten *Doing* und *Done* verschoben werden können. 
+Im vorherigen Teil haben wir gelernt, wie wir neue Todos zu unserer Liste hinzufügen können. Damit das Kanban Board auch voll funktioniert, müssen die Todos aus der *Todo*-Spalte in die beiden anderen Spalten *Doing* und *Done* verschoben werden können. 
 
 
 ## HTML-Elemente verschieben und löschen
@@ -114,7 +114,7 @@ Mit dieser Zeile wird bei jedem neuen Todo-Element gleich ein Klick-Event-Listen
 
 ## Abschliessen und Testen
 
-Nun können Sie das Programm testen indem Sie ein neues Todo hinzufügen und diese dann anklicken. Es sollte jeweils in die nächste Liste verschoben und am Schluss gelöscht werden.
+Nun können Sie das Programm testen indem Sie ein neues Todo hinzufügen und dieses dann anklicken. Es sollte jeweils in die nächste Liste verschoben und am Schluss gelöscht werden.
 
 Wahrscheinlich werden Sie feststellen, dass das Element, welches wir als Beispiel direkt in die HTML-Datei geschrieben haben, nicht auf Klicks reagiert. Der Grund ist, dass wir nur bei den neuen Elementen einen Klick-Event-Listener hinzufügen, jedoch nicht bei den bestehenden Elementen.
 
@@ -127,7 +127,7 @@ Wahrscheinlich werden Sie feststellen, dass das Element, welches wir als Beispie
 
 ## Wie weiter?
 
-Im [letzten Teil](/library/dart-kanban/de/part5/) schauen wir an, wie wir unser Kanban Board von Dart nach JavaScript übersetzen können. Dann können wir es schliesslich auf einen Webserver laden und veröffentlichen.
+Im [Teil 5](/library/dart-kanban/de/part5/) schauen wir an, wie wir unser Kanban Board von Dart nach JavaScript übersetzen können. Dann können wir es schliesslich auf einen Webserver laden und veröffentlichen.
 
 
 
