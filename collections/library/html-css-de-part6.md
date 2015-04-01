@@ -44,6 +44,12 @@ sidebars:
   - text: Portfolio Teil 6
     link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.4/portfolio-de-part6.zip
     icon-css: fa fa-fw fa-file-archive-o
+languages: 
+  header: Sprachen
+  collection: library
+  item: html-css
+  part: part6
+  active: de
 ---
 
 Bis hierhin haben wir alles HTML und CSS von Grund auf selber programmiert. Unser Projekt, das *Web Portfolio*, hat bereits einige HTML-Seiten mit etwas Inhalt, eine noch unfertige Navigation und etwas Styling.

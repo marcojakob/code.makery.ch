@@ -39,6 +39,12 @@ sidebars:
     link: /library/html-css/de/next/
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
+languages: 
+  header: Sprachen
+  collection: library
+  item: html-css
+  part: part4
+  active: de
 ---
 
 

@@ -39,6 +39,12 @@ sidebars:
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
     active: true
+languages: 
+  header: Sprachen
+  collection: library
+  item: html-css
+  part: next
+  active: de
 ---
 
 Wow, das ist schon eine rechte Leistung, wenn Sie bis hier durchgehalten und Ihr Portfolio-Projekt mit diesem Tutorial erstellt haben!

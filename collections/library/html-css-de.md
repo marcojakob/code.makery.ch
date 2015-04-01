@@ -39,6 +39,12 @@ sidebars:
     link: /library/html-css/de/next/
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
+languages: 
+  header: Sprachen
+  collection: library
+  item: html-css
+  part:
+  active: de
 ---
 
 Mit dieser Anleitung lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen **sofort mit einem Projekt**, anstatt zuerst langweilige Theorie abzuhandeln.

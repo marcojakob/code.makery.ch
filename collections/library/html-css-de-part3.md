@@ -44,6 +44,12 @@ sidebars:
   - text: Portfolio Teil 3
     link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.4/portfolio-de-part3.zip
     icon-css: fa fa-fw fa-file-archive-o
+languages: 
+  header: Sprachen
+  collection: library
+  item: html-css
+  part: part3
+  active: de
 ---
 
 Vorhin haben Sie eine erste Webseite erstellt und veröffentlicht. Zugegeben, die Webseite hat noch wenig Inhalt und sieht nicht besonders ansprechend aus. Das wollen wir jetzt ändern. In diesem Teil lernen Sie, wie Sie mit CSS die Seite gestalten können. Später, im [Teil 5](/library/html-css/de/part5/) werden wir mit der Hilfe von einem Framework noch mehr Style in die Webseite bringen. 

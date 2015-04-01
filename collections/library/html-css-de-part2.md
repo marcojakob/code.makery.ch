@@ -39,6 +39,12 @@ sidebars:
     link: /library/html-css/de/next/
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
+languages: 
+  header: Sprachen
+  collection: library
+  item: html-css
+  part: part2
+  active: de
 ---
 
 Im ersten Teil haben wir unsere erste Webseite erstellt. Es wäre ja schade, wenn diese Webseite nur auf unserem Computer liegt und sie gar nie von jemand anderem angeschaut werden kann. Deshalb werden wir jetzt die Webseite gleich live ins Internet stellen. 

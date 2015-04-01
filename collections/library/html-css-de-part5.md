@@ -44,6 +44,12 @@ sidebars:
   - text: Portfolio Teil 5
     link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.4/portfolio-de-part5.zip
     icon-css: fa fa-fw fa-file-archive-o
+languages: 
+  header: Sprachen
+  collection: library
+  item: html-css
+  part: part5
+  active: de
 ---
 
 Unser Portfolio hat bis hierhin nur eine Startseite. Die meisten *Websites* (gemeint ist damit der ganze Webauftritt) haben natürlich mehr als nur eine Seite. In diesem Teil werden wir weitere Seiten erstellen und eine Navigation einfügen, damit die Besucher zwischen den verschiedenen Seiten wechseln können.

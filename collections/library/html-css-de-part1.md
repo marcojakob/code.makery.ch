@@ -44,6 +44,12 @@ sidebars:
   - text: Portfolio Teil 1
     link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.4/portfolio-de-part1.zip
     icon-css: fa fa-fw fa-file-archive-o
+languages: 
+  header: Sprachen
+  collection: library
+  item: html-css
+  part: part1
+  active: de
 ---
 
 Wir legen gleich los und erstellen unsere erste Webseite. 
@@ -119,7 +125,7 @@ Zum Anzeigen der Seite klicken Sie auf den *Blitz* am rechten Rand (Live-Vorscha
 Falls die Seite **nicht angezeigt wird**: Suchen Sie die `index.html`-Datei auf Ihrem Computer und öffnen Sie diese mit Chrome oder einem anderen Browser.
 </p>
 <p>
-Falls die Seite **nicht aktualisiert wird** bei Änderungen: Klicken Sie im Browser die Taste `F5` oder `cmd+r`.
+Falls die Seite **nicht aktualisiert wird** bei Änderungen: Speichern Sie alle Dateien und klicken Sie im Browser die Taste `F5` oder `cmd+r`.
 </p>
 </div>
 
@@ -128,7 +134,7 @@ Falls die Seite **nicht aktualisiert wird** bei Änderungen: Klicken Sie im Brow
 
 ### Richtiges Einrücken
 
-Damit Sie die Übersicht behalten ist es wichtig, dass Sie die Zeilen immer korrekt mit der **Tabulator-Taste** einrücken. Die Standardeinstellung in Brackets ist meist, dass ein Tabulator 4 Leerzeichen lang ist. Dies ist etwas lang. Ich empfehle deshalb, dass Sie die Einstellung am unteren Rand von Brackets auf `Leerzeichen: 2` ändern:
+Damit Sie die Übersicht behalten ist es wichtig, dass Sie die Zeilen immer korrekt mit der **Tabulator-Taste** einrücken. Die Standardeinstellung in Brackets ist meist, dass ein Tabulator 4 Leerzeichen lang ist. Dies ist etwas lang. Ich empfehle deshalb, dass Sie die Einstellung am unteren Rand von Brackets auf `Leerzeichen: 2` ändern.
 
 ![Brackets Leerzeichen](/assets/library/html-css/part1/brackets-spaces-de.png)
 
@@ -170,7 +176,7 @@ Das abgebildete `a`-Element enthält ein `href`-Attribut (kurz für "Hypertext R
 
 ## Grundgerüst einer HTML-Seite
 
-Die Element `<html>` und `<body>` haben wir bereits kennen gelernt. Die Grundstruktur einer HTML-Seite beinhaltet aber üblicherweise noch ein paar weitere Elemente. Übernehmen Sie für Ihre Webseite den folgenden Code. Anschliessend werden wir ihn besprechen:
+Die Elemente `<html>` und `<body>` haben wir bereits kennen gelernt. Die Grundstruktur einer HTML-Seite beinhaltet aber üblicherweise noch ein paar weitere Elemente. Übernehmen Sie für Ihre Webseite den folgenden Code. Anschliessend werden wir ihn besprechen.
 
 
 ##### HTML Grundgerüst
