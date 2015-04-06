@@ -41,7 +41,7 @@ The most valuable part of a website usually is its content. I want my content to
 
 **Databases make me nervous.** They are very complex systems that store my precious data in some format I don't really understand. If some day the database stops working I might have a lot of trouble getting my data out of the system. Things change quickly and I don't want to depend on some strange database export tool to migrate my data to the next system.
 
-Text-based file formats have been gaining a lot of popularity, Markdown probably beeing the most prominent. Most static site generators support Markdown (I'm also writing this post in Markdown). I love it and it makes data simple again. It's also very easy to create backups or version the data so that we can revert any changes. 
+Text-based file formats have been gaining a lot of popularity, Markdown probably being the most prominent. Most static site generators support Markdown (I'm also writing this post in Markdown). I love it and it makes data simple again. It's also very easy to create backups or version the data so that we can revert any changes. 
 
 
 ### Complex Content
@@ -182,7 +182,7 @@ The obvious choice for storing the files is [GitHub](https://github.com). It  is
 
 The CMS is currently the biggest missing piece in our setup.
 
-Although, an interactive web based editor is is already beeing [discussed](http://discuss.gohugo.io/t/web-based-editor/155/18) and is on the [Hugo Roadmap](http://gohugo.io/meta/roadmap/), I don't know if it is such a good idea to include this in Hugo. I think it would be better to **keep the CMS and website generation separate**.
+Although, an interactive web based editor is is already being [discussed](http://discuss.gohugo.io/t/web-based-editor/155/18) and is on the [Hugo Roadmap](http://gohugo.io/meta/roadmap/), I don't know if it is such a good idea to include this in Hugo. I think it would be better to **keep the CMS and website generation separate**.
 
 There are some File-Based CMS systems but none of them are complete:
 
