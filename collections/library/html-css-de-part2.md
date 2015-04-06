@@ -50,7 +50,7 @@ languages:
 Im ersten Teil haben wir unsere erste Webseite erstellt. Es wäre ja schade, wenn diese Webseite nur auf unserem Computer liegt und sie gar nie von jemand anderem angeschaut werden kann. Deshalb werden wir jetzt die Webseite gleich live ins Internet stellen. 
 
 <div class="alert alert-info">
-**Keine Angst:** Sie können die Webseite später jederzeit ändern oder löschen. Sie müssen auch nicht befürchten, dass sofort viele Besucher Ihre Webseite anschauen werden. Denn solange Sie niemandem einen Link auf die Seite schicken oder den Link irgendwo veröffentlichen, wird wohl kaum jemand einfach auf Ihre Seite stossen.
+**Hinweis:** Sie werden nicht von Beginn weg viele Besucher auf Ihrer Webseite haben. Denn solange Sie niemandem einen Link auf die Seite schicken oder den Link irgendwo veröffentlichen, wird kaum jemand einfach auf Ihre Seite stossen.
 </div>
 
 
@@ -90,13 +90,13 @@ Es gibt zahlreiche Dienste, wo wir Speicherplatz auf einem Server mieten können
 
 2. Selektieren Sie den Ordner in Drive und wählen Sie *Freigeben*. Ändern Sie die Zugriff auf *"Öffentlich im Web"*. 
 
-3. Öffnen Sie den Ordner in Drive und laden Sie alle Webseitendateien (index.html, Bilder, CSS, etc.) in den Ordner hoch.
+3. Öffnen Sie den Ordner in Drive und überprüfen Sie, ob alle Webseitendateien (index.html, Bilder, CSS, etc.) enthalten sind.
 
-4. Kopieren Sie die Zeichen nach `#folders` in der Adresszeile Ihres Browsers.   
+4. Kopieren Sie die Zeichen nach `#folders/` in der Adresszeile Ihres Browsers.   
 ![Google Drive Zeichen Kopieren](/assets/library/html-css/part2/google-drive-copy-string.png)
 
 5. Geben Sie in der Addresszeile Ihres Browsers `http://googledrive.com/host/` und anschliessend die kopierten Zeichen ein.
-![Google Drive Hosting Addresse](/assets/library/html-css/part2/google-drive-host-address.png)
+![Google Drive Hosting Adresse](/assets/library/html-css/part2/google-drive-host-address.png)
 
 Unter diesem Link kann nun jeder Ihre Webseite aufrufen.
 

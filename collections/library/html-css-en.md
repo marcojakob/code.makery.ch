@@ -46,14 +46,14 @@ languages:
   active: en
 ---
 
-In this tutorial you will learn the basics of HTML and CSS to be able to create your own web projects. Instead of working trough rather boring theory we will immediately **start with a project**.
+In this tutorial you will learn the basics of HTML and CSS to be able to create your own web projects. Instead of working through rather boring theory you will immediately **start with a project**.
 
 The necessary theory will be explained as soon as it is necessary for our project. This way you will quickly gain a solid foundation for web development. In various places I will provide links to other resources that dig deeper in specific subjects.
 
 
 ## The Project
 
-The project we will build step-by-step is your personal **web portfolio**. The portfolio contains a start page, a blog, a page to show off your future web projects, and a contacts page.
+The project you will build step-by-step is your personal **web portfolio**. The portfolio contains a start page, a blog, a page to show off your future web projects, and a contacts page.
 
 
 <img src="/assets/library/html-css/portfolio.png" alt="Portfolio" class="img-thumbnail">
@@ -88,7 +88,7 @@ Once you have completed this HTML and CSS tutorial, you can start learning Dart 
 
 ## Mobile
 
-A lot, or sometimes even more than half of all website access today is done through mobile devices like smartphones or tables. Therefore, it is essential that our website looks great on small displays. We will take certainly take care of this in this tutorial. 
+A lot, or sometimes even more than half of all website access today is done through mobile devices like smartphones or tables. Therefore, it is essential that our website looks great on small displays. We will certainly take care of this in this tutorial. 
 
 Even in subsequent tutorials where we'll develop interactive web applications, we will make sure they run on mobile devices!
 

@@ -56,12 +56,12 @@ Let's dive right in and create our first web page.
 
 ## Our Tools
 
-For web development, we need two programs: an <abbr data-toggle="tooltip" title="Normal text editor or a Code-Editor">editor</abbr> to create the files for the website and a <abbr data-toggle="tooltip" title="For example, Internet Explorer, Firefox, Safari, or Chrome">browser</abbr> to view and test our website.
+For web development, you need two programs: an <abbr data-toggle="tooltip" title="Normal text editor or a Code-Editor">editor</abbr> to create the files for the website and a <abbr data-toggle="tooltip" title="For example, Internet Explorer, Firefox, Safari, or Chrome">browser</abbr> to view and test your website.
 
 
 ### Editor
 
-For creating web pages a normal text editor would be sufficient. But there are editors that greatly simplify our work in programming. Therefore, I recommend that you use with a modern code editor.
+For creating web pages a normal text editor would be sufficient. But there are editors that greatly simplify your programming work. Therefore, I recommend that you use with a modern code editor.
 
 ![Brackets Editor](/assets/library/html-css/part1/brackets-editor-screenshot.png)
 
@@ -71,12 +71,12 @@ My current favorite among the many editors is [Brackets](http://brackets.io/) (f
 <a href="http://brackets.io" target="_blank">![Brackets Editor Logo](/assets/library/html-css/part1/brackets-editor-logo.jpg)
 </a>
 
-Also, legen Sie los und installieren Sie einen Editor. Wenn Sie nicht wissen welchen, nehmen Sie [Brackets](http://brackets.io).
+Go ahead and install an editor. If you do not know which one use [Brackets](http://brackets.io) for now.
 
 
 ### Browser
 
-Our website should of course run in all major browsers (Internet Explorer, Firefox, Chrome and Safari). However, for web development I recommend you use [Chrome](https://www.google.com/chrome/browser/). Chrome includes very useful tools for developers which we will use often. In addition, Chrome is best supported by the Brackets editor so that changes in the editor are immediately visible in Chrome (via live reload).
+Our website should of course run in all major browsers (Internet Explorer, Firefox, Chrome and Safari). However, for web development I recommend you use [Chrome](https://www.google.com/chrome/browser/). Chrome includes very useful tools for developers which you will use often. In addition, Chrome is best supported by the Brackets editor so that changes in the editor are immediately visible in Chrome (via live reload).
 
 <a href="https://www.google.com/chrome/browser/" target="_blank">![Chrome Logo](/assets/library/html-css/part1/chrome-logo.png)</a>
 
@@ -85,7 +85,7 @@ If you do not have Chrome on your computer, you can [install it here]((https://w
 
 ## Creating an HTML Document
 
-Equipped with editor and browser we create the first HTML document for our website:
+Equipped with editor and browser, create the first HTML document for your website:
 
 1. Create a folder on your computer for your project. Name the folder *Portfolio*, for example.
 
@@ -101,7 +101,7 @@ Equipped with editor and browser we create the first HTML document for our websi
 ![New File](/assets/library/html-css/part1/new-file-de.png)
 </p>
 
-5. Now we have a very simple, blank text file named `index.html`.
+5. Now you have a very simple, blank text file named `index.html`.
 <p>
 ![index.html](/assets/library/html-css/part1/new-index-file-de.png)
 </p>
@@ -109,18 +109,18 @@ Equipped with editor and browser we create the first HTML document for our websi
 
 ### Why index.html?
 
-How you could probably assume, the name `index.html` has a special meaning. If a website address is called, for example, `http://code.makery.ch`, the `index.html` file is automatically displayed first, which is in this case `http://code.makery.ch/index.html`. For us, the first `index.html` will become our home page.
+How you could probably assume, the name `index.html` has a special meaning. If a website address is called, for example, `http://code.makery.ch`, the `index.html` file is automatically displayed first, which is in this case `http://code.makery.ch/index.html`. For us, the first `index.html` will become your home page.
 
 
 ### Viewing and Refreshing
 
-Now we will fill the document with content. Tap on the following lines. As a text, you can choose any course something.
+Now you can fill the document with content. Tap on the following lines. As a text, you can choose any course something.
 
 Nun wollen wir das Dokument mit Inhalt füllen. Write the following lines in your HTML file. 
 
 ![HTML Structure](/assets/library/html-css/part1/first-website-de.png)
 
-To view the page, click the *flash* on the right edge (Live Preview). If Bracket finds the Chrome browser, the page is now displayed and whenever we make changes, they are automatically updated.
+To view the page, click the *flash* on the right edge (Live Preview). If Bracket finds the Chrome browser, the page is now displayed and whenever you make changes, they are automatically updated.
 
 <div class="alert alert-info">
 <p>
@@ -212,7 +212,7 @@ The elements `<html>` and `<body>` we have already seen. But the basic structure
   
 <div class="alert alert-info">
 <p>
-**Tip 1:** Kepp this HTML basic structure handy. We will use it for any new HTML page! 
+**Tip 1:** Keep this HTML basic structure handy. You can use it for any new HTML page! 
 </p>
 <p>
 **Tip 2:** Use the keyboard shortcut `Ctrl+S` to save the current file. 
@@ -222,7 +222,7 @@ The elements `<html>` and `<body>` we have already seen. But the basic structure
 </p>
 </div>
 
-With these basic HTML elements we are well prepared to bring our website to a new level. First, let's add an image so that the home page of our portfolio looks a bit more interesting.
+With these basic HTML elements you are well prepared to bring your website to a new level. First, let's add an image so that the home page of your portfolio looks a bit more interesting.
 
 
 ## Inserting an Image
@@ -236,13 +236,13 @@ To insert an image we use the `<img>` element. The following example will insert
 The `<img>` element only has one opening but no closing tag. It contains a `src` and an `alt` attribute. The `src` attribute specifies the <abbr data-toggle="tooltip" title="Uniform Resource Locator">URL</abbr>, that is the location and file name of the image. The `alt` attribute is an "alternative text", which describes the content of the image. This text is used by search engines and if for some reason the image can not be displayed, for example with a screen reader for the blind.
 
 
-### Relative or Absolute URLs
+### Relative and Absolute URLs
 
 URLs are used for the `src` attribute of images and also for the` href` attribute of links. The URL specifies the "address" of some file is (for example another web page or an image). Depending on the location of the file, either a *relative* or *absolute* URL must be used.
 
 If a file **is part of the same web site**, then a ***relative URL*** is used. As we have seen in the example above, this is only the name of the file.
 
-A *relative URL* always *relative* to the current HTML page. If the target file is located in another folder, this must be taken into account. If the image from the example above were in a subfolder called `images`, the *relative URL* would be `images/marco.jpg`. If the file is in a parent folder we can reach this folder with `../`. The URL for the image in this case would be `../marco.jpg`.
+A *relative URL* always *relative* to the current HTML page. If the target file is located in another folder, this must be taken into account. If the image from the example above were in a subfolder called `images`, the *relative URL* would be `images/marco.jpg`. If the file is in a parent folder you can reach this folder with `../`. The URL for the image in this case would be `../marco.jpg`.
 
 If the file is located **on an other website**, an ***absolut URL*** is used. Absolute URL's contain the entire domain name and path. An example would be `http://code.makery.ch/images/marco.jpg`.
 
@@ -294,8 +294,7 @@ All of your code could now look something like this (I added a subheading and so
     
     &lt;p>Nice to have you stop by my page.&lt;/p>
     
-    &lt;p>Please have a look around. In the blog section I document my experiences in programming. You may also look at my web projects. Have Fun.
-    &lt;/p>
+    &lt;p>Please have a look around. In the blog section I document my experiences in programming. You may also look at my web projects. Have Fun.&lt;/p>
     
     &lt;img src="marco.jpg" alt="Picture of me">
 
@@ -309,7 +308,7 @@ That's how the portfolio currently looks like in the browser:
 ![Portfolio](/assets/library/html-css/part1/portfolio-de.jpg)
 
 
-***
+## What's next?
 
 &rarr; In the next section you will learn how to publish your website on the internet. Continue with [Part 2: Publishing Your Website](/library/html-css/part2/)
 

@@ -52,7 +52,7 @@ languages:
   active: de
 ---
 
-Vorhin haben Sie eine erste Webseite erstellt und veröffentlicht. Zugegeben, die Webseite hat noch wenig Inhalt und sieht nicht besonders ansprechend aus. Das wollen wir jetzt ändern. In diesem Teil lernen Sie, wie Sie mit CSS die Seite gestalten können. Später, im [Teil 5](/library/html-css/de/part5/) werden wir mit der Hilfe von einem Framework noch mehr Style in die Webseite bringen. 
+Vorhin haben Sie eine erste Webseite erstellt und veröffentlicht. Zugegeben, die Webseite hat noch wenig Inhalt und sieht nicht besonders ansprechend aus. Das wollen wir jetzt ändern. In diesem Teil lernen Sie, wie Sie mit CSS die Seite gestalten können. In einem späteren Teil werden wir mit Hilfe vom Bootstrap Framework noch mehr Style in die Webseite bringen. 
 
 
 ## Struktur und Style
@@ -64,7 +64,7 @@ Die Aufteilung von Struktur und Style hat viele Vorteile, wie wir noch sehen wer
 
 ## Eine CSS-Datei einbinden
 
-Eine CSS-Datei ist eine ganz normale Textdatei mit der Endung `.css`, die wir mit der HTML-Datei verknüpfen werden:
+Eine CSS-Datei ist eine ganz normale Textdatei mit der Endung `.css`, die wir mit der HTML-Datei verknüpfen werden.
 
 Erstellen Sie also in Ihrem *Portfolio*-Ordner eine **neue Datei**. Wir geben der Datei den Namen `main.css`.
 
@@ -145,9 +145,9 @@ Bei den *Hex-Codes* stehen die ersten beiden Ziffern für den Rotanteil, die mit
 
 ### Mit Farbcodes arbeiten
 
-Das Ausdrücken von Farben mit Hexadezimalzahlen ist sehr beliebt, da man damit sehr viele Farbkombinationen ausdrücken kann (über 16.7 Millionen). Es ist aber etwas schwierig mit ihnen zu arbeiten. Meistens braucht man deshalb einen Farbwähler.
+Das Ausdrücken von Farben mit Hexadezimalzahlen ist sehr beliebt, da man damit sehr viele Farbkombinationen dartsellen kann (über 16.7 Millionen). Es ist aber etwas schwierig mit ihnen zu arbeiten. Meistens braucht man deshalb einen Farbwähler.
 
-Falls Sie als Editor den [Brackets](http://brackets.io/) verwenden, können Sie den Farbwähler gleich in der CSS-Datei aufrufen. Klicken Sie dazu mit der rechten Maustaste auf den Farbcode und wählen *Schnell bearbeiten*. Oder drücken Sie die Tastenkombination `Ctrl+E`.
+Falls Sie als Editor den [Brackets](http://brackets.io/) verwenden, können Sie den Farbwähler gleich in der CSS-Datei aufrufen. Klicken Sie dazu mit der rechten Maustaste auf den Farbcode und wählen **Schnell bearbeiten** oder drücken Sie die Tastenkombination `Ctrl+E`.
 
 ![Schnell bearbeiten](/assets/library/html-css/part3/quick-edit-de.png)
 
@@ -182,7 +182,7 @@ Dazu gibt es verschiedene Hilfen, die das finden einer Farbpalette erleichtern. 
 ##### Generatoren zum Erstellen von Farbpaletten
 
 * [Kuler](https://kuler.adobe.com) - eine Farbregel definieren, am Regler mit dem kleinen Pfeil ziehen und schon hat man fünf Farben, die zusammen passen.
-* [Paletton](http://www.paletton.com) - ein ausgeklügleter Regler zum Finden von Farbpaletten.
+* [Paletton](http://www.paletton.com) - ein ausgeklügelter Regler zum Finden von Farbpaletten.
 * [Colourco.de](http://colourco.de/) - ein weiterer, praktischer Paletten-Generator
 
 
@@ -190,7 +190,7 @@ Dazu gibt es verschiedene Hilfen, die das finden einer Farbpalette erleichtern. 
 
 Sie haben nun bereits gesehen, wie CSS-Regeln die Farbe eines HTML-Elementes verändern können. Nun schauen wir uns etwas genauer an, wie CSS-Regeln aufgebaut sind werden.
 
-Eine CSS-Regel besteht aus drei Elementen, einem *Selektor*, einer *Eigenschaft* und einem *Wert*:
+Eine CSS-Regel besteht aus drei Elementen, einem *Selektor*, einer *Eigenschaft* und einem *Wert*.
 
 
 ![CSS-Regel](/assets/library/html-css/part3/css-rule-de.png)
@@ -210,7 +210,7 @@ Selektoren geben an, auf welches HTML-Element eine CSS-Regel angewandt werden so
 ### Typselektor
 
 Der Typselektor wird angewandt auf alle Elemente mit dem entsprechenden Tag. 
-Wenn wir als Beispiel alle `p`-Elemente ansprechen wollten, würde dies so aussehen:
+Wenn wir als Beispiel alle `p`-Elemente ansprechen wollten, würde dies so aussehen.
 
 
 ##### CSS
@@ -234,7 +234,7 @@ p {
 
 Klassenselektoren werden sehr häufig verwendet. Dazu fügt man dem HTML-Element ein Attribut `class` hinzu und gibt ihm einen beliebigen Wert. In CSS kann man nun alle Elemente ansprechen, die das gleiche `class`-Attribut haben. Man macht dies mit einem **Punkt**, gefolgt vom `class`-Attribut.
 
-Im folgenden Beispiel gilt der Klassenselektor für alle Elemente, welche ein `class`-Attribut mit dem Wert `highlight` haben:
+Im folgenden Beispiel gilt der Klassenselektor für alle Elemente, welche ein `class`-Attribut mit dem Wert `highlight` haben.
 
 
 ##### CSS
@@ -263,7 +263,7 @@ Der ID-Selektor ist sehr ähnlich wie der Klassenselektor. Er wird auf alle HTML
 
 Der wichtige Unterschied zum Klassenselektor besteht darin, dass ID-Selektoren **nur einmal** pro HTML-Seite vorkommen sollten, während eine Klasse für beliebig viele Elemente verwendet werden kann.
 
-Im folgenden Beispiel gilt der ID-Selektor für das Element, welches ein `id`-Attribut mit dem Wert `navigation` besitzt:
+Im folgenden Beispiel gilt der ID-Selektor für das Element, welches ein `id`-Attribut mit dem Wert `navigation` besitzt.
 
 
 ##### CSS
@@ -310,7 +310,7 @@ p a {
 Der Nachkommenselektor `p a` wählt alle `a`-Elemente aus, die irgendwo innerhalb eines `p`-Elementes vorkommen. In unserem Beispiel würde die CSS-Regel auf *Meine Webseite* zutreffen, jedoch nicht auf *Example Webseite*. 
 
 <div class="alert alert-info">
-**Wichtig:** Das `a`-Element muss nicht unbedingt direkt dem `p`-Element untergeordnet sein. Der Nachkommenselektor trifft auf irgend ein *Nachkomme* zu. Für den anderen Fall gibt es den Kindselektor (`>`), auf den ich jedoch hier nicht eingehen werde.
+**Hinweis:** Das `a`-Element muss nicht unbedingt direkt dem `p`-Element untergeordnet sein. Der Nachkommenselektor trifft auf irgend ein *Nachkomme* zu. Für den anderen Fall gibt es den Kindselektor (`>`), auf den ich jedoch hier nicht eingehen werde.
 </div>
 
 
@@ -355,7 +355,7 @@ p {
 }
 </pre>
 
-Eine andere Möglichkeit ist die Angabe in **Prozent**. Prozentangaben stehen immer im Verhältnis zu einem übergeordneten Element. Wenn also im folgenden Beispiel das übergeordnete Element von `h2` die ganze Bildschirmbreite umfasst, dann bedeutet das, dass `h2` nun 60% davon breit sein wird.
+Eine andere Möglichkeit ist die Angabe in **Prozent**. Prozentangaben stehen immer im Verhältnis zu einem übergeordneten Element. Wenn also im folgenden Beispiel das übergeordnete Element von `p` die ganze Bildschirmbreite umfasst, dann bedeutet das, dass `p` nun 60% davon breit sein wird.
 
 <pre class="prettyprint lang-css">
 p {
