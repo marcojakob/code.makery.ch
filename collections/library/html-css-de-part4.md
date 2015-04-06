@@ -85,7 +85,7 @@ Darunter sehen Sie ein buntes Rechteck. Dieses zeigt die Grösse, Abstände und 
 
 Jetzt kommt aber das Spannende: Wir können live im Browser die Styles verändern oder deaktivieren und auch das HTML editieren! Wenn Sie zum Beispiel auf das Farbquadrat von `background-color` klicken, können Sie eine andere Hintergrundfarbe auswählen oder Sie können einen anderen Wert für `padding` eingeben.  
 
-Auch das HTML lässt sich verändern, indem Sie mit der rechten Maustaste auf ein Element im *DevTools*-Fenster klicken und *Edit...* auswählen.
+Das HTML lässt sich verändern, indem Sie mit der rechten Maustaste auf ein Element im *DevTools*-Fenster klicken und *Edit...* auswählen.
 
 So können wir sehr einfach experimentieren. Die Änderungen sind jedoch **nur temporär**, das heisst, sobald wir die Seite neu laden, ist der ursprüngliche Zustand wieder hergestellt.
 
@@ -100,8 +100,6 @@ Bei grösseren Webseiten können die *Styles* recht lang werden. Dort kommt es d
 
 
 ## Weitere Möglichkeiten von DevTools
-
-Wir werden *DevTools* immer mal wieder verwenden. Es gibt noch viele weitere Funktionien von *DevTools*. Sie können 
 
 Es gibt noch viele weiter Möglichkeiten, um mit *DevTools* zu arbeite. Wenn Sie mehr darüber wissen möchten, lesen Sie die [DevTools Dokumentation](https://developer.chrome.com/devtools/index).
 
