@@ -29,12 +29,15 @@ sidebars:
     link: /library/html-css/de/part4/
     paging: 4
     active: true
-  - text: "Teil 5: Navigieren zwischen Seiten"
+  - text: "Teil 5: Blog und weitere Seiten"
     link: /library/html-css/de/part5/
     paging: 5
-  - text: "Teil 6: Bootstrap Framework verwenden"
+  - text: "Teil 6: Navigation"
     link: /library/html-css/de/part6/
     paging: 6
+  - text: "Teil 7: Bootstrap Framework"
+    link: /library/html-css/de/part7/
+    paging: 7
   - text: "Nächste Schritte"
     link: /library/html-css/de/next/
     icon-css: fa fa-fw fa-flag-checkered

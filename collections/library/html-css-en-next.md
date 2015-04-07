@@ -1,53 +1,52 @@
 ---
 layout: article
 title: "HTML & CSS Tutorial - Nächste Schritte"
-date: 2014-08-16 00:00
-updated: 2015-03-18 00:00
-slug: html-css/de/next
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-next.md
+date: 2015-04-01 00:00
+slug: html-css/next
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-next.md
 description: "Wie kann man noch mehr lernen über HTML & CSS."
 image: /assets/library/html-css/portfolio.png
 published: true
 prettify: false
 comments: true
 sidebars:
-- header: Artikel dieser Serie
+- header: Articles in this Series
   body:
-  - text: "Einleitung"
-    link: /library/html-css/de/
+  - text: "Introduction"
+    link: /library/html-css/
     paging: Intro
-  - text: "Teil 1: Unsere erste Webseite"
-    link: /library/html-css/de/part1/
+  - text: "Part 1: Your First Website"
+    link: /library/html-css/part1/
     paging: 1
-  - text: "Teil 2: Webseite veröffentlichen"
-    link: /library/html-css/de/part2/
+  - text: "Part 2: Publishing Your Website"
+    link: /library/html-css/part2/
     paging: 2
-  - text: "Teil 3: Einführung in CSS"
-    link: /library/html-css/de/part3/
+  - text: "Part 3: Introduction to CSS"
+    link: /library/html-css/part3/
     paging: 3
-  - text: "Teil 4: Entwicklertools im Browser"
-    link: /library/html-css/de/part4/
+  - text: "Part 4: Development Tools in the Browser"
+    link: /library/html-css/part4/
     paging: 4
-  - text: "Teil 5: Blog und weitere Seiten"
-    link: /library/html-css/de/part5/
+  - text: "Part 5: Blog and Other Pages"
+    link: /library/html-css/part5/
     paging: 5
-  - text: "Teil 6: Navigation"
-    link: /library/html-css/de/part6/
+  - text: "Part 6: Navigation"
+    link: /library/html-css/part6/
     paging: 6
-  - text: "Teil 7: Bootstrap Framework"
-    link: /library/html-css/de/part7/
+  - text: "Part 7: Bootstrap Framework"
+    link: /library/html-css/part7/
     paging: 7
-  - text: "Nächste Schritte"
-    link: /library/html-css/de/next/
+  - text: "Next Steps"
+    link: /library/html-css/next/
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
     active: true
 languages: 
-  header: Sprachen
+  header: Languages
   collection: library
   item: html-css
   part: next
-  active: de
+  active: en
 ---
 
 Wow, das ist schon eine rechte Leistung, wenn Sie bis hier durchgehalten und Ihr Portfolio-Projekt mit diesem Tutorial erstellt haben!

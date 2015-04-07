@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "HTML & CSS Tutorial - Teil 4: Development Tools in the Browser"
+title: "HTML & CSS Tutorial - Part 4: Development Tools in the Browser"
 date: 2015-04-01 00:00
 slug: html-css/part4
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part4.md
@@ -28,12 +28,15 @@ sidebars:
     link: /library/html-css/part4/
     paging: 4
     active: true
-  - text: "Part 5: Navigating Between Pages"
+  - text: "Part 5: Blog and Other Pages"
     link: /library/html-css/part5/
     paging: 5
-  - text: "Part 6: Using the Bootstrap Framework"
+  - text: "Part 6: Navigation"
     link: /library/html-css/part6/
     paging: 6
+  - text: "Part 7: Bootstrap Framework"
+    link: /library/html-css/part7/
+    paging: 7
   - text: "Next Steps"
     link: /library/html-css/next/
     icon-css: fa fa-fw fa-flag-checkered

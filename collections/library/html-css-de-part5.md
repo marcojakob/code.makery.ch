@@ -1,11 +1,11 @@
 ---
 layout: article
-title: "HTML & CSS Tutorial - Teil 5: Navigieren zwischen Seiten"
+title: "HTML & CSS Tutorial - Teil 5: Blog und weitere Seiten"
 date: 2014-08-13 00:00
 updated: 2015-03-18 00:00
 slug: html-css/de/part5
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part5.md
-description: "Lernen Sie, wie man eine Navigation für die Website erstellt."
+description: "Erstellen Sie eine Dateistruktur für mehrere Webseiten. Lernen Sie eine Struktur für einen Blog aufzustellen."
 image: /assets/library/html-css/portfolio.png
 published: true
 prettify: true
@@ -28,13 +28,16 @@ sidebars:
   - text: "Teil 4: Entwicklertools im Browser"
     link: /library/html-css/de/part4/
     paging: 4
-  - text: "Teil 5: Navigieren zwischen Seiten"
+  - text: "Teil 5: Blog und weitere Seiten"
     link: /library/html-css/de/part5/
     paging: 5
     active: true
-  - text: "Teil 6: Bootstrap Framework verwenden"
+  - text: "Teil 6: Navigation"
     link: /library/html-css/de/part6/
     paging: 6
+  - text: "Teil 7: Bootstrap Framework"
+    link: /library/html-css/de/part7/
+    paging: 7
   - text: "Nächste Schritte"
     link: /library/html-css/de/next/
     icon-css: fa fa-fw fa-flag-checkered
@@ -52,7 +55,7 @@ languages:
   active: de
 ---
 
-Unser Portfolio hat bis hierhin nur eine Startseite. Die meisten *Websites* (gemeint ist damit der ganze Webauftritt) haben natürlich mehr als nur eine Seite. In diesem Teil werden wir weitere Seiten erstellen und eine Navigation einfügen, damit die Besucher zwischen den verschiedenen Seiten wechseln können.
+Unser Portfolio hat bis hierhin nur eine Startseite. Die meisten *Websites* (gemeint ist damit der ganze Webauftritt) haben natürlich mehr als nur eine Seite. In diesem Teil werden wir weitere Seiten erstellen.
 
 
 ## Neue Seiten erstellen
@@ -70,7 +73,7 @@ Eine neue Seite zu erstellen ist einfach. Am besten kopieren Sie die bisherige `
 </div>
 
 
-### Seite für den Blog
+## Seite für den Blog
 
 Erstellen Sie einen Unterordner in Ihrem *Portfolio*-Ordner namens `blog`. Kopieren Sie die Datei `index.html` in diesen Unterordner. Nun sollte Ihre Dateistruktur so aussehen:
 
@@ -122,17 +125,15 @@ Jetzt passen wir noch den Titel und Inhalt an:
 Im HTML-Code oben sehen Sie ein neues Element mit den Tags `<!--` und `-->`. Mit diesen Tags können wir in HTML einen **Kommentar** hinschreiben. Kommentare sind nur für uns als Programmierer gedacht und werden vom Browser ignoriert.
 
 
-#### Blogeintrag als Unterseite
+### Blogeintrag als Unterseite
 
-Der Blog braucht natürlich noch Einträge. Wir erstellen für jeden Blogeintrag eine eigen HTML-Unterseite. Erstellen Sie einen Unterordner innerhalb des `blog`-Ordners mit dem Namen `2014-08-02-erster-eintrag`. Kopieren Sie die Datei `blog/index.html` in diesen Ordner hinein.
+Der Blog braucht natürlich noch Einträge. Wir erstellen für jeden Blogeintrag eine eigen HTML-Unterseite. Erstellen Sie einen Unterordner innerhalb des `blog`-Ordners mit dem Namen `erster-eintrag`. Kopieren Sie die Datei `blog/index.html` in diesen Ordner hinein.
 
 ![Blogeintrag](/assets/library/html-css/part5/blog-entry-subfolder-de.png)
 
-Die Zahlenkombination `2014-08-02` ist das Datum in umgekehrter Reihenfolge, also der 2. August 2014. Man könnte natürlich irgend einen Namen vergeben, aber wenn man das Datum so in den Dateinamen integriert, dann hat man automatisch eine chronologische Sortierung der Dateien oder Ordner. Dies gibt uns eine bessere Übersicht, wenn wir später viele Blogeinträge haben.
-
 Im Blogeintrag ändern wir den Inhalt wie folgt ab:
 
-##### blog/2014-08-02-erster-eintrag/index.html - Erster Blogeintrag
+##### blog/erster-eintrag/index.html - Erster Blogeintrag
 
 <pre class="prettyprint lang-html">
 &lt;!DOCTYPE html>
@@ -158,7 +159,7 @@ Im Blogeintrag ändern wir den Inhalt wie folgt ab:
 Auch hier ist ein neues HTML-Element enthalten (`hr`). Sie werden mit ausprobieren oder einer Internetsuche schnell herausfinden, was es bewirkt.
 
 
-#### Legen Sie los mit Blogeinträgen!
+### Legen Sie los mit Blogeinträgen!
 
 Ich empfehle Ihnen, dass Sie sofort damit anfangen, Blogeinträge zu schreiben. Sie könnten an jedem Tag, an dem Sie etwas Neues über Programmieren gelernt haben, einen kurzen Eintrag dazu schreiben. Ich notiere hier ein paar Gedanken, die Sie zu mögliche Inhalten inspirieren könnten:
 
@@ -174,7 +175,7 @@ Mit solchen Blogeinträgen werden Sie beim Lernen von Programmierung viel schnel
 1. Sie werden sich bewusst, was Sie gelernt haben &rarr; mehr Motivation!
 2. Sie können später in ihrer persönlichen Dokumentation etwas nachschlagen, z.B. Links zu hilfreichen Seiten.
 3. Sie üben beim Schreiben der Einträge gleich die gelernten HTML-Elemente und CSS-Regeln.
-4. Wenn wir später anschauen, wie man Webseiten veröffentlicht, dann können Sie Ihren Blog auch anderen zugänglich machen. So können Sie Ihr Wissen mit anderen Teilen oder jemanden einladen, Ihnen bei einem Problem zu helfen.
+4. Wenn Sie Ihre Website veröffentlichen, dann können Sie Ihren Blog auch anderen zugänglich machen. So können Sie Ihr Wissen mit anderen Teilen oder jemanden einladen, Ihnen bei einem Problem zu helfen.
 5. Falls Sie Ihr Portfolio veröffentlichen, würde mich das sehr interessieren. Schreiben Sie dann irgendwo einen Kommentar mit dem Link!
 
 *Also, warten Sie nicht und legen Sie los. Es lohnt sich!*
@@ -183,14 +184,14 @@ Mit solchen Blogeinträgen werden Sie beim Lernen von Programmierung viel schnel
 **Hinweis:** Erstellen Sie für jeden Blogeintrag einen eigenen Unterordner (mit einer `index.html`-Seite). So haben Sie eine gute Ordnung und können Bilder oder andere Dateien für den Blogeintrag im Unterordner ablegen.
 </div>
 
-##### Zweiter Blogeintrag
+#### Zweiter Blogeintrag
 
 ![Blogeintrag 2](/assets/library/html-css/part5/blog-entry-subfolder2-de.png)
 
 
-### Seite für Projekte
+## Seite für Projekte
 
-Wenn wir später verschiedene Webapplikationen programmieren, wäre es natürlich nützlich, dafür eine separate Seite zu haben. Wir bereiten schon mal eine Seite für unsere Projekte vor, jedoch noch ohne Inhalt.
+Wenn wir später verschiedene Webseiten und Webapplikationen programmieren, wäre es natürlich nützlich, eine separate Seite zu haben, wo wir diese aufführen könnten. Wir bereiten schon mal eine Seite für unsere Projekte vor, jedoch noch ohne Inhalt.
 
 Gehen Sie wie oben beim Blog vor und erstellen Sie einen Unterordner `projekte` mit einer Datei `index.html`:
 
@@ -216,13 +217,14 @@ Gehen Sie wie oben beim Blog vor und erstellen Sie einen Unterordner `projekte` 
 </pre>
 
 
-### Seite für Kontakt
+## Seite für Kontakt
 
 Als letzte Hauptseite fügen wir eine Seite mit Kontaktinformationen hinzu. Erstellen Sie einen Unterordner `kontakt` mit einer Datei `index.html`.
 
 <div class="alert alert-danger">
 **Wichtig:** *Überlegen Sie sich gut, welche Informationen Sie öffentlich machen wollen! Geben Sie zum Beispiel **nicht Ihre Haupt-E-Mail-Adresse an**, denn es kann sein, dass Sie nachher auf diese Adresse Spamnachrichten erhalten.*
 </div>
+
 
 ##### kontakt/index.html
 
@@ -256,160 +258,9 @@ Nun haben wir bereits fünf HTML-Seiten:
 
 ![Alle Dateien](/assets/library/html-css/part5/all-files-de.png)
 
-Was natürlich fehlt, ist eine Navigation, so dass man einfach zwischen diesen Seiten hin und her wechseln kann. Das nehmen wir gleich als nächstes in Angriff.
 
+## Wie weiter?
 
-## Navigation
+Was natürlich fehlt, ist eine Navigation, so dass man einfach zwischen diesen Seiten hin und her wechseln kann. 
 
-Eine Navigation besteht eigentlich aus ganz normalen Links zu anderen Seiten. Wir beginnen mit einer ganz einfachen Variante und werden diese dann laufend verbessern, bis wir eine schöne und komplette Navigation auf allen Seiten haben.
-
-Zuerst werden wir die Navigation nur für unsere Startseite programmieren. Erst am Schluss werden wir diese dann in alle anderen Seiten hinein kopieren.
-
-
-### Navigation mit Links
-
-Öffnen Sie `index.html` von der Startseite. 
-
-Mit einfachen Links können wir von der Startseite auf die anderen Seiten springen. Die Navigation kommt im `body`-Teil noch vor dem Titel. Fügen Sie also folgende vier Links zwischen `body`-Tag und dem Titel ein:
-
-##### index.html
-
-<pre class="prettyprint lang-html">
-&lt;body>
-  <mark>&lt;a href="./">Home&lt;/a></mark>
-  <mark>&lt;a href="blog/">Blog&lt;/a></mark>
-  <mark>&lt;a href="projekte/">Projekte&lt;/a></mark>
-  <mark>&lt;a href="kontakt/">Kontakt&lt;/a></mark>
-
-  &lt;h1 class="title">Web Portfolio von Marco&lt;/h1>
-</pre>
-
-<div class="alert alert-info">
-**Hinweis:** Der Link zu `./` verweist auf das aktuelle Verzeichnis. Mehr dazu im Abschnitt <a class="alert-link" href="/library/html-css/de/part1/#relative-und-absolute-urls">relative und absolute URLs</a>.
-</div>
-
-Und so sieht die Navigation nun aus:
-
-![Navigation mit Links](/assets/library/html-css/part5/navigation-links-de.png)
-
-Überprüfen Sie, ob die Links auch wirklich funktionieren und Sie zur gewollten Seite bringen.
-
-<div class="alert alert-info">
-<p>
-**Hinweis:** Wenn Sie die Seite als Datei direkt im Browser öffnen (ohne die *Live-Vorschau* vom Brackets-Editor), dann werden die Links nicht ganz korrekt funktionieren. Der Grund ist, dass das Dateisystem einfach den Ordnerinhalt anzeigt und nicht automatisch `index.html` öffnet. Sie müssen dann manuell auf `index.html` klicken. 
-</p>
-<p>
-Sobald Sie aber die Seite auf einem Server veröffentlichen, sollten die Links ganz normal funktionieren.
-</p>
-</div>
-
-Im Moment ist unsere Navigation einfach eine Aneinanderreihung von Links. Meistens verwendet man für eine Navigation aber eine HTML-Liste von Links. Mit einer Liste werden die Navigationselemente entweder horizontal oder vertikal zusammen gruppiert und können so später besser formatiert werden. 
-
-Wir lernen nun, wie man in HTML Listen erstellen kann.
-
-
-## Listen
-
-Es gibt viele Situationen, in denen man Listen verwendet. In HTML gibt es drei verschiedene Arten von Listen: **ungeordnete Listen**, **geordnete Listen** und **Definitionslisten**. Definitionslisten werden nicht so häufig verwendet. Deshalb werden wir uns hier nur die ersten beiden genauer anschauen.
-
-
-### Ungeordnete Listen
-
-Eine ungeordnete Liste ist ganz einfach eine Liste von Einträgen, bei welchen die Reihenfolge beliebig ist. Ungeordnete Listen werden in HTML mit dem Element `<ul>` erstellt (steht für *unordered list*). Für jeden Eintrag in der Liste braucht es innerhalb des `<ul>`-Elements ein `<li>`-Element (steht für *list item*).
-
-Hier ein Beispiel einer Todo-Liste:
-
-<pre class="prettyprint lang-html">
-&lt;ul>
-  &lt;li>Einkaufen&lt;/li>
-  &lt;li>Katze füttern&lt;/li>
-  &lt;li>Grossmutter besuchen&lt;/li>
-&lt;/ul>
-</pre>
-
-Das Resultat sieht dann so aus:
-
-<div class="panel panel-default">
-  <div class="panel-body">
-      <ul style="margin-bottom: 0">
-        <li>Einkaufen</li>
-        <li>Katze füttern</li>
-        <li>Grossmutter besuchen</li>
-      </ul>
-  </div>
-</div>
-
-
-### Geordnete Listen
-
-Bei geordneten ist die Reihenfolge entscheidend und wird deshalb nummeriert. In HTML sieht sie sehr ähnlich aus wie die ungeordnete Liste: Anstelle des `<ul>`-Elementes wird ein `<ol>`-Element verwendet (steht für *ordered list*).
-
-Ein typisches Beispiel für eine geordnete Liste ist die Zubereitung in einem Rezept:
-
-<pre class="prettyprint lang-html">
-&lt;ol>
-  &lt;li>Eier aufschlagen, salzen und mit einer Gabel leicht verschlagen.&lt;/li>
-  &lt;li>Milch darunter mischen.&lt;/li>
-  &lt;li>Butter in einer Pfanne schmelzen und die Eimischung hineingeben.&lt;/li>
-  &lt;li>Wenn es cremig ist, vom Herd nehmen und mit Schnittlauch bestreuen.&lt;/li>
-&lt;/ol>
-</pre>
-
-Das Resultat sieht so aus:
-
-<div class="panel panel-default">
-  <div class="panel-body">
-    <ol style="margin-bottom: 0">
-      <li>Eier aufschlagen, salzen und mit einer Gabel leicht verschlagen.</li>
-      <li>Milch darunter mischen.</li>
-      <li>Butter in einer Pfanne schmelzen und die Eimischung hineingeben.</li>
-      <li>Wenn es cremig ist, vom Herd nehmen und mit Schnittlauch bestreuen.</li>
-    </ol>
-  </div>
-</div>
-
-
-### Navigation als Liste
-
-Wir werden die Navigation von unserem Portfolio nun als ungeordnete Liste programmieren.
-
-Die Links unserer Navigation werden also alle verpackt in `<li>`-Elemente, welche innerhalb eines `<ol>`-Elements liegen:
-
-<pre class="prettyprint lang-html">
-&lt;ul>
-  &lt;li>&lt;a href="./">Home&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="blog/">Blog&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="projekte/">Projekte&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="kontakt/">Kontakt&lt;/a>&lt;/li>
-&lt;/ul>
-</pre>
-
-Im nächsten Teil sehen wir, wie die Navigation horizontal dargestellt und schön formatiert werden kann. Sobald die Navigation fertig gestellt ist, werden wir sie auch in allen anderen Seiten einfügen.
-
-
-### Blogeinträge als Liste
-
-Auf unserer Blog-Seite hatten wir noch etwas Platz gelassen, wo wir unserer Blogeinträge auflisten können. Da wir nun wissen, wie Listen in HTML erstellt werden, können wir die Blogeinträge angeben.
-
-Öffnen Sie die Blog-Seite `blog/index.html`. Fügen Sie unterhalb der Überschrift "Blogeinträge" eine Liste mit Blogeinträgen ein:
-
-##### blog/index.html
-
-<pre class="prettyprint lang-html">
-&lt;h2>Blogeinträge&lt;/h2>
-
-&lt;!-- Hier kommt eine Liste mit allen Blogeinträgen. -->
-&lt;ul>
-  &lt;li>Weitere Einträge folgen...&lt;/li>
-  &lt;li>&lt;a href="2014-08-02-erster-eintrag/">Erster Eintrag&lt;/a>&lt;/li>
-&lt;/ul>
-</pre>
-
-<div class="alert alert-info">
-**Hinweis:** *Blogeinträge werden meist in umgekehrter Reihenfolge aufgelistet, so dass der letzte Eintrag zuoberst in der Liste erscheint.*
-</div>
-
-
-***
-
-&rarr; Fahren Sie weiter mit [Teil 6: Bootstrap Framework verwenden](/library/html-css/de/part6/).
+&rarr; Das nehmen wir gleich in Angriff im [Teil 6: Navigieren zwischen Seiten](/library/html-css/de/part6/).
