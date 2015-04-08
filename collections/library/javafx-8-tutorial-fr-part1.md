@@ -163,28 +163,28 @@ Faites un clic droit sur `PersonOverview.fxml` et puis cliquez sur *Open with Sc
 3. Faites glisser un *TableView* (depuis la liste *Controls* sur la gauche) et amenez-le dans la partie de gauche du *SplitPane*. Sélectionnez la TableView (pas la colonne mais le tableau) et définissez la contrainte du TableView comme suit. Dans un *AnchorPane*, vous pouvez toujours définir les ancres sur les quatres bords ([plus d'information dans la partie relative aux Layouts](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).   
 ![TableView Anchors](/assets/library/javafx-8-tutorial/part1/table-view-anchors.png)
 
-4. Go to the menu *Preview | Show Preview in Window* to see, whether it behaves right. Try resizing the window. The TableView should resize together with the window as it is anchored to the borders.
+4. Allez dans le menu *Preview | Show Preview in Window* pour voir si la fenêtre s'affiche comme vous le voulez. Essayez de la rediensionner ! Le TableView devrait être redimensionné en même temps que la fenêtre parce qu'il est ancré aux bordures. 
 
-5. Change the column text (under Properties) to "First Name" and "Last Name".   
+5. Modifiez l'entête des colonnes (dans les propriétés) ! Nommez-les "First Name" et "Last Name" !  
 ![Column Texts](/assets/library/javafx-8-tutorial/part1/column-texts.png)
 
-6. Select the *TableView* choose *constrained-resize* for the *Column Resize Policy* (under Properties). This ensures that the colums will always take up all available space.   
+6. Sélectionnez le *TableView* et définissez *constrained-resize* sous *Column Resize Policy* (dans les propriétés). Ceci spécifie que la colonne prendra tout l'espace disponible.    
 ![Column Resize Policy](/assets/library/javafx-8-tutorial/part1/column-resize-policy.png)
 
-7. Add a *Label* on the right side with the text "Person Details" (hint: use the search to find the *Label*). Adjust it's layout using anchors.   
+7. Ajoutez un *Label* sur le côté droit dont le texte sera "Person Details" (suggestion : utilisez la recherche pour retrouver le *Label*). Ajustez le layout en utilisant les ancres. 
 ![Person Details Label](/assets/library/javafx-8-tutorial/part1/person-details-label.png)
 
-8. Add a *GridPane* on the right side, select it and adjust its layout using anchors (top, right and left).    
+8. Ajoutez un *GridPane* sur le côté droit, sélectionnez-le puis ajuster son layout en utilisant les ancres (top, right et left) !     
 ![GridPane Layout](/assets/library/javafx-8-tutorial/part1/grid-pane-layout.png)
 
-9. Add the following labels to the cells.   
-*Note: To add a row to the GridPane select an existing row number (will turn yellow), right-click the row number and choose "Add Row".*   
+9. Ajoutez le étiquettes suivantes dans les cellules !   
+*Note : pour ajouter une ligne dans le GridPane, sélectionnez l'index d'un ligne existante (elle deviendra jaune) puis faites un clic droit sur l'index et sélectionnez "Add Row".*   
 ![Add labels](/assets/library/javafx-8-tutorial/part1/add-labels.png)
 
-10. Add the three buttons at the bottom. Tip: Select all of them, right-click and call *Wrap In | HBox*. This groups them together. You might need to specify a *spacing* inside the HBox. Then, also set anchors (right and bottom) so they stay in the right place.   
+10. Ajoutez les trois boutons en bas ! Astuce : sélectionnez-les tous puis faites un clic droit et exécutez *Wrap In | HBox*! Ceci les rassemble. Vous aurez peut-être besoin de spécifier un *spacing* (espacement) dans le HBox. Après, définissez encore les ancres pour qu'ils restent à leur place soit en bas et à droite.   
 ![Button Group](/assets/library/javafx-8-tutorial/part1/button-group.png)
 
-11. Now you should see something like the following. Use the *Preview* menu to test its resizing behaviour.   
+11. Maintenant, vous devriez voir quelque chose ressemblant à l'image ci-dessous. Utilisez le menu *Preview* pour tester le comportement après redimensionnement.  
 ![Preview](/assets/library/javafx-8-tutorial/part1/scene-builder-preview.png)
 
 
@@ -192,34 +192,34 @@ Faites un clic droit sur `PersonOverview.fxml` et puis cliquez sur *Open with Sc
 *****
 
 
-## Create the Main Application
+## Créer l'application principale
 
-We need another FXML for our root layout which will contain a menu bar and wraps the just created `PersonOverview.fxml`.
+Vous avez besoin d'un autre fichier FXML pour la disposition de base. Celle-ci contiendra une barre de menu et encapsulera le `PersonOverview.fxml` que nous venons de créer. 
 
-1. Create another *FXML Document* inside the view package called `RootLayout.fxml`. This time, choose *BorderPane* as the root element.   
+1. Créez un autre *FXML Document* dans le package view appelé `RootLayout.fxml`. Cette fois, choisissez *BorderPane* comme élément racine.   
 ![New RootLayout](/assets/library/javafx-8-tutorial/part1/new-root-layout.png)
 
-2. Open the `RootLayout.fxml` in Scene Builder.
+2. Ouvrez le fichier `RootLayout.fxml` dans l'application Scene Builder ! 
 
-3. Resize the *BorderPane* with *Pref Width* set to 600 and *Pref Height* set to 400.   
+3. Redimensionnez le *BorderPane* de sorte que la largeur préférée (*Pref Width*) soit à 600 et la hauteur préférée (*Pref Height*) à 400.   
 ![RootLayout Size](/assets/library/javafx-8-tutorial/part1/root-layout-size.png)
 
-4. Add a *MenuBar* into the TOP Slot. We will not implement the menu functionality at the moment.   
+4. Ajoutez une *MenuBar* dans le slot supérieure (TOP). Nous n'implémenterons pas les fonctionnalités du menu pour l'instant.    
 ![MenuBar](/assets/library/javafx-8-tutorial/part1/menu-bar.png)
 
 
-### The JavaFX Main Class 
+### La classe principale de JavaFX 
 
-Now, we need to create the **main java class** that starts up our application with the `RootLayout.fxml` and adds the `PersonOverview.fxml` in the center. 
+Maintenant vous devez créer la classe principale (**main java class**) qui démarrera notre application avec le fichier `RootLayout.fxml` et ajoutera la `PersonOverview.fxml` au centre. 
 
-1. Right-click on your project and choose *New | Other...* and choose *JavaFX Main Class*.   
+1. Faites un clic droit dans votre projet puis cliquez sur *New | Other...* et enfin sur *JavaFX Main Class*.   
 ![New JavaFX Main Class](/assets/library/javafx-8-tutorial/part1/new-main-class.png)
 
-2. We'll call the class `MainApp` and put it in the controller package `ch.makery.address` (note: this is the parent package of the `view` and `model` subpackages).   
+2. Nous nommerons la classe `MainApp` et nous la placerons dans le package contrôleur `ch.makery.address` (note : c'est le package parent des sous-paquets `view` et `model`).   
 ![New JavaFX Main Class](/assets/library/javafx-8-tutorial/part1/new-main-class2.png)
 
 
-The generated `MainApp.java` class extends from `Application` and contains two methods. This is the basic structure that we need to start a JavaFX Application. The most important part for us is the `start(Stage primaryStage)` method. It is automatically called when the application is `launched` from within the `main` method.
+La classe `MainApp.java` générée hérite de la classe `Application` et contient deux méthodes. C'est la structure basique dont nous avons besoin pour démarrer une application JavaFX. La partie la plus importante pour nous est la méthode `start(Stage primaryStage)`. Cette méthode est automatiquement appelée lorsque l'application est `démarrée` avec la méthode `main`.
 
 As you see, the `start(...)` method receives a `Stage` as parameter. The following graphic illustrates the structure of every JavaFX application:
 
