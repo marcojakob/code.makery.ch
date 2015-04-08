@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "HTML & CSS Tutorial - Part 2: Publishing Your Website"
-date: 2015-04-01 00:00
+date: 2015-04-08 00:00
 slug: html-css/part2
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part2.md
 description: "Learn to publish a website live in the internet. Compare different hosting possibilities like BitBalloon, Dropbox, Google Drive, and GitHub Pages."
@@ -49,7 +49,7 @@ languages:
   active: en
 ---
 
-In the previous part you have created your first web site. It would be a pity if this website only stays on your computer and could never be looked at by anyone else. Therefore, we will now learn how to publish our website live in the internet.
+In the previous part you have created your first web site. It would be a pity if this website only stays on your computer and could never be looked at by anyone else. Therefore, we will now learn how to publish our website live on the internet.
 
 <div class="alert alert-info">
 **Note:** There will not be many visitors on your website right from the start. Unless you tell people about the address of your site they will probably not find it.
@@ -58,7 +58,7 @@ In the previous part you have created your first web site. It would be a pity if
 
 ## Hosting
 
-What do you need that our website can be viewed on the Internet? You need a **server** where your website is stored and an **address** (URL) so that your website can be found on the server.
+What do we need that our website can be viewed on the Internet? We need a **server** where our website is stored and an **address** (URL) so that our website can be found on the server.
 
 There are numerous services where you can rent server space. Such a service is called [Webhosting](http://en.wikipedia.org/wiki/Web_hosting_service). We will look at a few options for (free) hosting. If this is your first website, I recommend that you start with **BitBalloon**.
 
@@ -69,9 +69,9 @@ There are numerous services where you can rent server space. Such a service is c
 
 [BitBalloon](https://www.bitballoon.com/) is a wonderfully simple service which I highly recommend. Here's how you can use it.
 
-1. Subscribe on the [Bitballoon website](https://www.bitballoon.com/). Click on *Sign Up* and then choose *Sign in Using Persona*. Then enter your e-mail address and a password.
+1. Subscribe on the [Bitballoon website](https://www.bitballoon.com/). Click on *Sign Up* and then choose *Sign in Using Persona*. Then enter your email address and a password.
 
-2. Once you are logged in, you can simply drag your entire web folder (your Portfolio folder) in the space provided.   
+2. Once you are logged in, you can simply drag your entire web folder (your Portfolio folder) in the provided space.   
 ![BitBalloon drag and drop](/assets/library/html-css/part2/bitballoon-drag-and-drop.png)
 
 3. Hard to believe, but that's it. Once the page has been uploaded a URL is generated for you which points to your site. Click this URL and check whether the page is displayed correctly.
@@ -92,12 +92,12 @@ There are numerous services where you can rent server space. Such a service is c
 
 2. Select the folder on Drive and choose **Share**. Click on **Advanced** and change the access to **Public on the web**.
 
-3. Open the folder in Drive and verify that all website file have been uploaded (index.html, image, CSS, etc.).
+3. Open the folder in Drive and verify that all website files have been uploaded (index.html, images, etc.).
 
 4. Copy the characters that follow after `#folders/` in the address bar of your browser. This is the ID of your folder.   
 ![Google Drive Copy Characters](/assets/library/html-css/part2/google-drive-copy-string.png)
 
-5. In your browser, enter `http://googledrive.com/host/` followed by the characters you copied in the last step.   
+5. In your browser, enter `http://googledrive.com/host/` followed by the characters you've copied in the last step.   
 ![Google Drive Hosting Address](/assets/library/html-css/part2/google-drive-host-address.png)
 
 Anyone you send this link will be able to access your website.
@@ -107,14 +107,14 @@ Anyone you send this link will be able to access your website.
 
 ![Dropbox Logo](/assets/library/html-css/part2/dropbox-logo.png)
 
-You can also use [Dropbox](https://www.dropbox.com/) as a hosting server. For this to work additional service are required for forwarding website requests. Two possible services are [Pancake.io](https://pancake.io/) or [DropPages](http://droppages.com/).
+You can also use [Dropbox](https://www.dropbox.com/) as a hosting server. For this to work an additional service is required for forwarding website requests. Two possible services are [Pancake.io](https://pancake.io/) or [DropPages](http://droppages.com/).
 
 
 ### Hosting on GitHub
 
 ![GitHub Logo](/assets/library/html-css/part2/github-logo.jpg)
 
-If you already have some experience with programming then GitHub is a great way for web site hosting. GitHub is a platform to facilitate cooperation among programmers and also offers hosting for web pages on [GitHub Pages](https://pages.github.com/). GitHub Pages provides more options (for example with your own domain name link), but it requires skills in working with [Git](http://de.wikipedia.org/wiki/Git).
+If you already have some experience with programming then GitHub is a great way for web site hosting. GitHub is a platform to facilitate collaboration among programmers and also offers free hosting for web pages on [GitHub Pages](https://pages.github.com/). GitHub Pages provides more options (for example, you can use your custom domain), but it requires skills in working with [Git](http://de.wikipedia.org/wiki/Git).
 
 
 ***
@@ -123,7 +123,7 @@ If you already have some experience with programming then GitHub is a great way 
 
 Depending on the hosting you chose, the URL for your website might be quite long. There are simple services for shortening your URL.
 
-Shorened URL's could also be entered on a mobile phone. Some services also create a [QR-Code](http://de.wikipedia.org/wiki/QR-Code).
+Shortened URLs could also be entered on a mobile phone. Some services also create a [QR-Code](http://de.wikipedia.org/wiki/QR-Code).
 
 Here is a list of a few URL shorteners:
 
@@ -141,5 +141,8 @@ Otherwise, there are numerous web hosting and registrar services. It's worth it 
 
 ## What's next?
 
-&rarr; In the next part we will upgrade our site with some styling. Continue with [Part 3: Introduction to CSS](/library/html-css/part3/).
+In the next part we will upgrade our site with some styling. 
+
+&rarr; Continue with [Part 3: Introduction to CSS](/library/html-css/part3/).
+
 

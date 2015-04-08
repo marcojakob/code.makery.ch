@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "HTML & CSS Tutorial - Part 3: Introduction to CSS"
-date: 2015-04-01 00:00
+date: 2015-04-08 00:00
 slug: html-css/part3
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part3.md
 description: "Learn how to style websites with CSS. "
@@ -54,11 +54,11 @@ languages:
   active: en
 ---
 
-In the previous part we have created and published our first website. I admit, the website has very little content and does not look particularly appealing. We want to change this now. In this part you will learn how you can use CSS to style the page. In a later part we will add more style to our website with the help of a framework called Bootstrap.
+In the previous part we have created and published our first website. I admit, the website has very little content and doesn't yet look particularly appealing. We want to change this now. In this part you will learn how you can use CSS to style the page. In a later part we will add more style to our website with the help of a framework called Bootstrap.
 
 
 ## Structure and Style
-s
+
 Just as a reminder: <abbr data-toggle="tooltip" title="Hypertext Markup Language">HTML</abbr> describes the structure of a web page while <abbr data-toggle="tooltip" title="Cascading Style Sheet">CSS</abbr> defines the visual appearance.
 
 Separating structure and style has many advantages, as we shall see. It is not mandatory, but usually it is better to also write HTML and CSS in separate files.
@@ -96,7 +96,7 @@ Insert this element in your `<head>` block. Now your code should look like the f
     
     &lt;h2>Welcome!&lt;/h2>
     
-    &lt;p>Nice to have you stop by my page.&lt;/p>
+    &lt;p>Thanks for stopping by.&lt;/p>
     
     &lt;p>Please have a look around. In the blog section I document my experiences in programming. You may also look at my web projects. Have Fun.&lt;/p>
     
@@ -160,7 +160,7 @@ This immediately displays a color picker where you can easily choose a color. Yo
 
 ### Online Color Pickers
 
-If you do not have a color picker integrated in your editor, you can refer to numerous online color selectors:
+If you do not have a color picker integrated in your editor, you can turn to numerous online color selectors:
 
 * [HTML Color Codes](http://html-color-codes.info/)
 * [ColorPicker](http://www.colorpicker.com/)
@@ -169,7 +169,7 @@ If you do not have a color picker integrated in your editor, you can refer to nu
 
 ### Online Color Palettes
 
-In most cases you'll need more than just one color for you website. You'll need a color palette. With just a simple color picker it is quite difficult to pick colors that work well together.
+In most cases you'll need more than just one color for your website. You'll need a color palette. With just a simple color picker it is quite difficult to pick colors that work well together.
 
 There are several tools that make finding a color palette easier. Here are a few examples:
 
@@ -185,7 +185,7 @@ There are several tools that make finding a color palette easier. Here are a few
 
 * [Kuler](https://kuler.adobe.com) - define a color rule, pull the knob with the small arrow and you've got five colors that fit together
 * [Paletton](http://www.paletton.com) - a sophisticated controller for finding color palettes
-* [Colourco.de](http://colourco.de/) - another practical pallet generator
+* [Colourco.de](http://colourco.de/) - another practical palette generator
 
 
 ## CSS Rules
@@ -210,7 +210,7 @@ Selectors indicate which HTML elements a CSS rule is applied to.
 
 ### Type Selectors
 
-The type selector targets all elements with a specific HTML tag. If we wanted to address all `p` elements as an example, this would look like this:
+The type selector targets all elements with a specific HTML tag. If we wanted to address all `p` elements, as an example, this would look like the following:
 
 
 ##### CSS
@@ -232,11 +232,11 @@ p {
 
 ### Class Selectors
 
-Class selectors are used very frequently. They are a bit more specific than type selectors, as they target a particulr group of elements rather than all elements of one type.
+Class selectors are used very frequently. They are a bit more specific than type selectors, as they target a particular group of elements rather than all elements of one type.
 
 To use class selectors add a `class` attribute to an element and give it an arbitrary value. In CSS, you can now address all elements that have the same `class` attribute. Classes are denoted by a **leading period**, followed by the `class` value. 
 
-In the following example, the class selector targets all elements that have a `class` attribute with the value` highlight`.
+In the following example, the class selector targets all elements that have a `class` attribute with the value `highlight`.
 
 
 ##### CSS
@@ -256,16 +256,16 @@ In the following example, the class selector targets all elements that have a `c
 &lt;p class="highlight new">...&lt;/p>
 </pre>
 
-In this HTML, the CSS rule would be applied to the first and third `p` element. As you can see, it is also possible for an item to have multiple classes (`highlight` and `new`), separated by a space.
+In this HTML, the CSS rule would be applied to the first and third `p` elements. As you can see, it is also possible for an item to have multiple classes (`highlight` and `new`), separated by a space.
 
 
 ### ID Selectors
 
-Id selectors are very similar to class selectors. They select all HTML elements with an attribute `id` with a specific value. Ids are denoted by a **leading Instead of a **leading hash** sign (`#`), followed by the `id` attribute value. 
+Id selectors are very similar to class selectors. They select all HTML elements with an attribute `id` with a specific value. Ids are denoted by a **leading hash** sign (`#`), followed by the `id` attribute value. 
 
-The important difference to class selectors is that ID selectors **should occur only once** per HTML page, while a class can be used for any number of elements.
+The important difference to class selectors is that ID selectors **should occur only once** per HTML page, while a class may be used for any number of elements.
 
-In the following example, the ID selector selects the element that has the `id` attribute with value `navigation`.
+In the following example, the ID selector selects the element that has an `id` attribute with value `navigation`.
 
 
 ##### CSS
@@ -289,7 +289,7 @@ In the following example, the ID selector selects the element that has the `id` 
 
 With a descendant selector you can select descendants of a matching element. 
 
-Let's look at an example before I get into a little more detail.
+Let's look at an example before we get into a little more detail.
 
 
 ##### CSS
@@ -312,15 +312,15 @@ p a {
 The descendant selector `p a` selects all `a` elements that occur anywhere within a `p` element. In our example, the CSS rule would apply to *My Website*, but not to the *Example Website*.
 
 <div class="alert alert-info">
-  <strong>Note:</strong> The `a` element does not necessarily have be a direct child of the `p` element. The descendent selector applies to *any descendant*. For the other case, there would be a child selector (`>`), which we will not discuss in detail here.
+  **Note:** The `a` element in the example above does not necessarily have be a direct child of the `p` element. The descendent selector applies to *any descendant*. For the other case, there would be a child selector (`>`), which we will not discuss in detail here.
 </div>
 
 
 ## CSS Properties
 
-CSS rules determine how HTML elements should be displayed. There are many properties that can be defined in CSS. Two of them we have already seem, `background-color` and `color`.
+CSS rules determine how HTML elements should be displayed. There are many properties that can be defined in CSS. Two of them we have already seen, `background-color` and `color`.
 
-I not explain more of the many CSS properties here. But I want to show you how to learn more CSS knowledge yourselves. It makes more sense when you learn them in the moment where you actually have a specific need for them. There are two scenarios on how to proceed.
+I will not explain more of the many CSS properties here. But I want to show how you can learn more CSS knowledge by yourselves. It makes more sense when you learn them when you actually have a specific need for them. There are two scenarios on how to proceed.
 
 
 #### Case 1: You see a CSS property that you do not know ...
@@ -333,7 +333,7 @@ padding: 5px;
 
 Use `CSS padding` as your search term. Do not settle only for the first search result but open the first 5 or more. Then decide on which website you want to read the details.
 
-Also try to apply this rule to the `h2` element in your portfolio project.
+Try to apply this CSS rule to the `h2` element in your portfolio project.
 
 
 #### Case 2: You want to change something but you do not know the CSS property ...
@@ -347,7 +347,7 @@ An example: Let's say you want to change the text size. In this case use `text s
 
 We have already seen a few CSS values: For example, hexadecimal values like `#ffffff` or size specifications like `5px`. Depending on the CSS property you must sometimes use specific words such as `left` or `right` for text alignment, for example.
 
-One of the most frequently used CSS values are size specifications. Therefore, we look at them in more detail.
+One of the most frequently used CSS values are size specifications. Therefore, we'll look at them in more detail.
 
 Often the size is defined in **pixels**, which is abbreviated as `px`.
 
@@ -357,7 +357,7 @@ p {
 }
 </pre>
 
-Another possibility is to indicate sizes in **percent**. Percentages are always relative to a parent element. If, in the following example, the parent of `p` spans the whole width of the screen, `p` will be 60% of that width.
+Another possibility is to indicate sizes in **percentages**. Percentages are always relative to a parent element. If, in the following example, the parent of `p` spans the whole width of the screen, `p` will be 60% of that width.
 
 <pre class="prettyprint lang-css">
 p {
@@ -389,7 +389,7 @@ h1 {
 
 The problem with this is that **all** `h1` elements on our entire website will be enlarged. But if we only want to enlarge the first heading, we should better use a **class selector**.
 
-To do this we add a class attribute to the `h1` element in HTML. We can assign any value for that class, I choose the value `title`.
+To do this we add a class attribute to the `h1` element in HTML. We can assign any value for that class, I chose the value `title`.
 
 <pre class="prettyprint lang-html">
 &lt;h1 class="title">Web Portfolio of Marco&lt;/h1>

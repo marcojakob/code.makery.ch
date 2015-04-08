@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "HTML & CSS Tutorial - Part 7: Bootstrap Framework"
-date: 2015-04-01 00:00
+date: 2015-04-08 00:00
 slug: html-css/part7
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part7.md
 description: "Learn to use the Bootstrap Framework in your website."
@@ -58,14 +58,14 @@ So far we have programmed all HTML and CSS from scratch. Our *web portfolio* pro
 
 To manually evolve our project to a complete and modern web presence would mean a **large amount of work**! Here is a list of some important tasks that we would have to deal with (do not worry, there is a solution!):
 
-* Customize font and font size for all headings and sections.
+* Customize font and font sizes for all headings and sections.
 * Beautifully design buttons, text boxes, etc. (the browser defaults look a bit outdated).
-* Define margins and position elements on the page position (very difficult).
-* Define a consistent style for all different browsers to show about the same thing.
-* Optimize the web pages for different screen sizes (mobile, tablet and desktop)
+* Define margins and position elements on the page (very difficult).
+* Define a consistent style for all different browsers so they show about the same thing.
+* Optimize the web pages for different screen sizes (mobile, tablet and desktop).
 * And more...
 
-Fortunately we are not alone with these tasks - this applies more or less to all web designers. Since it hardly makes sense for all to solve the same tasks over and over again, so-called *frameworks* were developed that make this job a lot easier.
+Fortunately, we are not alone with these tasks &ndash; this applies more or less to all web designers. Since it hardly makes sense for all to solve the same tasks over and over again, so-called *frameworks* were developed that make this job a lot easier.
 
 ![Bootstrap Logo](/assets/library/html-css/part7/bootstrap-logo.png)
 
@@ -135,20 +135,20 @@ Our `h1` title already has a `class` attribute. If we want to center this item, 
 &lt;h1 class="title text-center">Web Portfolio of Marco&lt;/h1>
 </pre>
 
-But what if we want to center a bigger part of our website? Since it would be tedious if we had to add a `text-center` for each element. It is thus possible that we can add it to a parent element. Many CSS rules are automatically passed on to all sub-elements.
+But what if we want to center a bigger part of our website? It would be tedious if we had to add a `text-center` for each element. It is thus possible that we can add it to a parent element. Many CSS rules are automatically passed on to all sub-elements.
 
-We could even add a `text-center` class to the `body` element. This would center everything on our page. If you just want to center a part of the page, it is common to use a `div` element.
+We could even add a `text-center` class to the `body` element. This would center everything on our page. If you just want to center a part of the page, it is common to use a `<div>` element.
 
 
 ## div Elements
 
-With the `<div>` element other elements are grouped into a block. With Bootstrap `div` elements are used quite often to apply styles to an entire section of the page.
+With the `<div>` element other elements are grouped into a block. With Bootstrap `<div>` elements are used quite often to apply styles to an entire section of the page.
 
-An essential CSS class in Bootstrap is `container`. The `container` automatically adjusts its content to the width of the page and guarantees a reasonable margin to the edges. You should always have a `div` element with the` container` class in your page. Read the [description for containers](http://getbootstrap.com/css/#overview-container) on the bootstrap website.
+An essential CSS class in Bootstrap is `container`. The `container` automatically adjusts its content to the width of the page and guarantees a reasonable margin to the edges. You should always have a `<div>` element with the` container` class in your page. Read the Bootstrap documentation for a [description of containers](http://getbootstrap.com/css/#overview-container).
 
-We will now pack the main content of our home page between a `<div class=" container">` and the closing `</ div>`. (We will deal with the navigation separately below.)
+We will now pack the main content of our home page between a `<div class="container">` and the closing `</div>`. (We will deal with the navigation separately below.)
 
-The `body` part of your page should look like this (pay attention to indentation of elements so that your code stays readable):
+The `<body>` part of your page should look like this (pay attention to indentation of elements so that your code stays readable):
 
 
 ##### index.html
@@ -167,7 +167,7 @@ The `body` part of your page should look like this (pay attention to indentation
 
     &lt;h2>Welcome!&lt;/h2>
 
-    &lt;p>Nice to have you stop by my page.&lt;/p>
+    &lt;p>Thanks for stopping by.&lt;/p>
 
     &lt;p>Please have a look around. In the blog section I document my experiences in programming. You may also look at my web projects. Have Fun.&lt;/p>
 
@@ -178,14 +178,12 @@ The `body` part of your page should look like this (pay attention to indentation
 &lt;/body>
 </pre>
 
-The browser always displays `div` elements **on a new line**. Such elements, because they claim all available width, are called [block elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements).
+The browser always displays `<div>` elements **on a new line**. Such elements, because they claim all available width, are called [block elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements).
 
 
 ## span Elements
 
-In contrast to `<div>` elements, a `<span>` element does not start on a new line. A `span` element is only as wide as its content. Such elements are called [inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente) because they embed within a line.
-
-Im Gegensatz zu `<div>`-Elementen beginnt ein `<span>`-Element nicht auf einer neuen Zeile. Ein `span`-Element ist nur so breit. Man nennt solche Elemente auch [Inline-Elemente](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente).  
+In contrast to `<div>` elements, a `<span>` element does not start on a new line. A `<span>` element is only as wide as its content. Such elements are called [inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente).
 
 Here is an example of how we could use a `span` element:
 
@@ -196,17 +194,17 @@ I would like to &lt;span class="text-warning">highlight those words&lt;/span>.
 
 ## Navigation with Bootstrap
 
-Finally, we want to make the navigation more beautiful with the help of Bootstrap. In the Bootstrap documentation a [Navbar](http://getbootstrap.com/components/#navbar) is described. However, the example is very complex and includes menus, text boxes and buttons. We'll implement a slightly simpler version.
+Finally, we want to make the navigation more beautiful with the help of Bootstrap. In the Bootstrap documentation a [Navbar](http://getbootstrap.com/components/#navbar) is described. However, the example is very complex and includes menus, text boxes and buttons. We'll implement a simpler version.
 
 Program the following steps. I recommend you test what happens after every step.
 
-1. Insert the the two classes `nav` and `navbar-nav` to the `ul` element in your navigation.   
+1. Insert the two classes `nav` and `navbar-nav` to the `ul` element in your navigation.   
 `<ul class="nav navbar-nav">`
 
-2. Surround the entire navigation with a new `div` with the `container` class. This has the effect that the distances from the edges are the same as in our main content. Do not forget the closing `</div>` tag after the navigation code.   
+2. Surround the entire navigation with a new `<div>` with the `container` class. This has the effect that the distances from the edges are the same as in our main content. Do not forget the closing `</div>` tag after the navigation code.   
 `<div class="container">`
 
-3. Surround it all with yet another `div`. This time we will need the three classes `navbar`, `navbar-default`, and `navbar-static-top`. Those classes ensure that the navigation is displayed at the top of the screen. Don't forget the closing `</div>` tag.      
+3. Surround it all with yet another `<div>`. This time we will need the three classes `navbar`, `navbar-default`, and `navbar-static-top`. Those classes ensure that the navigation is displayed at the top of the screen. Don't forget the closing `</div>` tag.      
 `<div class="navbar navbar-default navbar-static-top">`
 
 4. In the `<li>` element of our home, insert a class called `active`. This has the effect that the *Home* link is highlighted. This tells the visitor about the currently active page.   
@@ -246,13 +244,13 @@ To activate the alternative style, replace the `navbar-default` class with `navb
 
 ## Optimizing for Mobile
 
-With Bootstrap and the new navigation the website looks already quite appealing in a desktop browser. Now try opening it on a mobile phone (you will need to [publish it online](/library/html-css/part2/) to do this).
+With Bootstrap and the new navigation the website looks already quite appealing in a desktop browser. Try opening it on a mobile phone (you will need to [publish it online](/library/html-css/part2/) to do this).
 
 You will notice that the page either doesn't fit the screen or the navigation is displayed too small.
 
 ![Mobile without Viewport](/assets/library/html-css/part7/mobile-without-viewport-de.png)
 
-With a `meta` info inside the `head` we can tell the mobile browsers to properly scale the page.
+With a `meta` info inside `head` we can tell the mobile browsers to properly scale the page.
 
 <pre class="prettyprint lang-html">
 &lt;head>
@@ -273,15 +271,15 @@ Bootstrap was designed so that it [works well on mobile screens](http://getboots
 Web design that is optimized for different screen sizes is called [responsive web design](http://en.wikipedia.org/wiki/Responsive_web_design).
 
 <div class="alert alert-warning">
-  **Note:** Bootstrap is capable of automatically collapsing the menu into a menu button. But this requires an additional JavaScript files. In the <a class="alert-link" href="/library/more-html-css/javascript-bootstrap/">JavaScript with Bootstrap</a> article I explain how you can program such a navigations.
+  **Note:** Bootstrap is capable of automatically collapsing the menu into a menu button. But this requires additional JavaScript files. In the <a class="alert-link" href="/library/more-html-css/javascript-bootstrap/">JavaScript with Bootstrap</a> article I explain how you can program such navigations.
 </div>
 
 
-## Bootstrap and Navigation on all Pages
+## Bootstrap and Navigation in all Pages
 
-So far, we have inserted Bootstrap and the navigation only on our home page. The goal, of course, is that they are included on all pages.
+So far, we have inserted Bootstrap and the navigation only in our home page. The goal, of course, is that they are included in all pages.
 
-With small adjustment we can copy the code from the home page to all other pages (blog, blog entries, contact, etc.).
+With small adjustments we can copy the code from the home page to all other pages (blog, blog entries, contact, etc.).
 
 
 #### 1. Insert Viewport and Bootstrap CSS
@@ -319,7 +317,7 @@ Copy the entire navigation of the home page and paste it into all the other page
 
 #### 3. Insert Container div
 
-When you open some pages in the browser you will notice that the margins are not correct. To fix this we need the entire content (everything below the navigation) to be surrounded by a `div`. This `div` must have the `container` class. Put containers in all the pages that don't have it yet.
+When you open some pages in the browser you will notice that the margins are not correct. To fix this we need the entire content (everything below the navigation) to be surrounded by a `<div>`. This `<div>` must have the `container` class. Put containers in all the pages that don't have it yet.
 
 <pre class="prettyprint lang-html">
 [... navigation ...]

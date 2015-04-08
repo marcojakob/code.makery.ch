@@ -180,11 +180,12 @@ Mit solchen Blogeinträgen werden Sie beim Lernen von Programmierung viel schnel
 
 *Also, warten Sie nicht und legen Sie los. Es lohnt sich!*
 
-<div class="alert alert-info">
-**Hinweis:** Erstellen Sie für jeden Blogeintrag einen eigenen Unterordner (mit einer `index.html`-Seite). So haben Sie eine gute Ordnung und können Bilder oder andere Dateien für den Blogeintrag im Unterordner ablegen.
-</div>
 
 #### Zweiter Blogeintrag
+
+<div class="alert alert-info">
+  **Hinweis:** Erstellen Sie für jeden Blogeintrag einen eigenen Unterordner (mit einer `index.html`-Seite). So haben Sie eine gute Ordnung und können Bilder oder andere Dateien für den Blogeintrag im Unterordner ablegen.
+</div>
 
 ![Blogeintrag 2](/assets/library/html-css/part5/blog-entry-subfolder2-de.png)
 

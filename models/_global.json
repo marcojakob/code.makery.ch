@@ -32,7 +32,7 @@
       "summary": "Course to learn HTML & CSS for beginners. <br><i>Note: This course is currently <b>only available in German</b>.</i>",
       "topics": [ "HTML-CSS" ],
       "languages": [ "en", "de" ],
-      "parts": 6
+      "parts": 7
     },
     "more-html-css": {
       "slug": "more-html-css",

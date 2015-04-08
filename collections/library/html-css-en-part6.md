@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "HTML & CSS Tutorial - Part 6: Navigation"
-date: 2015-04-01 00:00
+date: 2015-04-08 00:00
 slug: html-css/part6
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part6.md
 description: "Learn how to create a navigation for your website."
@@ -81,33 +81,33 @@ With simple links we can jump from our home page to other pages. The navigation 
 </pre>
 
 <div class="alert alert-info">
-  **Note:** The link to `./` refers to the current directory. More info about this can be found in the section about <a class="alert-link" href="/library/html-css/part1#relative-and-absolute-urls">relative and absolute URL's</a>.
+  **Note:** The link to `./` refers to the current directory. More info about this can be found in the section <a class="alert-link" href="/library/html-css/part1#relative-and-absolute-urls">relative and absolute URLs</a>.
 </div>
 
 Our navigation should now look as follows:
 
 ![Navigation with Links](/assets/library/html-css/part6/navigation-links-de.png)
 
-Verify that the links actually work and lead you to the desired page.
+Verify that the links actually work and that they lead you to the desired page.
 
 <div class="alert alert-info">
   <p>**Note:** If you open the page as a file directly in the browser (without Bracket's *Live Preview*) the links might not work quite right. The reason is that the file system simply displays the folder contents and not automatically opens `index.html`. You will have to manually click on `index.html`.</p>
   <p>As soon as you publish the site on a server, the links should work as normal.</p>
 </div>
 
-At the moment our navigation is simply a series of links. Mostly, in HTML, a list of links is used for navigations. With an HTML list elements can be grouped together horizontally or vertically which With a list of the navigation elements are either horizontally or vertically grouped together which will simplify it's syling.
+At the moment our navigation is simply a series of links. Mostly, in HTML, a list of links is used for navigations. With an HTML list elements can be grouped together horizontally or vertically which will simplify their syling.
 
 Let's learn how to create HTML lists.
 
 
 ## Lists
 
-There are many situations in which we use lists. In HTML, there are three different types of lists, **unordered lists**, **ordered lists**, and **description lists**. Description lists are not used often. Therefore, we will only look at the first two in more detail.
+There are many situations in which we use lists. In HTML, there are three different types of lists: **unordered lists**, **ordered lists**, and **description lists**. Description lists are not used often. Therefore, we will only look at the first two in more detail.
 
 
 ### Unordered Lists
 
-An unordered list is simply a list of entries, in which the order is arbitrary. Unordered lists are created in HTML with the element `<ul>` (stands for unordered list). For each entry in the list a `<li>` (list item) element is needed within the `<ul>` element.
+An unordered list is simply a list of entries in which the order is arbitrary. Unordered lists are created in HTML with the element `<ul>` (stands for unordered list). For each entry in the list a `<li>` (list item) element is needed within the `<ul>` element.
 
 Here is an example of a typical todo list:
 
@@ -123,11 +123,11 @@ The result looks like this:
 
 <div class="panel panel-default">
   <div class="panel-body">
-      <ul style="margin-bottom: 0">
-        <li>Shopping</li>
-        <li>Feeding the cat</li>
-        <li>Visit grandmother</li>
-      </ul>
+    <ul style="margin-bottom: 0">
+      <li>Shopping</li>
+      <li>Feeding the cat</li>
+      <li>Visit grandmother</li>
+    </ul>
   </div>
 </div>
 
@@ -183,7 +183,7 @@ In the final part of this tutorial we will see how the navigation can be display
 
 On our blog page we had put a comment where we wanted to list our blog entries. Now that we know how lists are created in HTML, we can list the blog entries.
 
-Open the blog page `blog/index.html`. Below the "Blog Posts" heading insert the list of entries as follows.
+Open the blog page `blog/index.html`. Below the "Blog Entries" heading insert the list of entries as follows.
 
 
 ##### blog/index.html

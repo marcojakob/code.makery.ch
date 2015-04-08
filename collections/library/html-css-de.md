@@ -82,7 +82,7 @@ Die beiden Sprachen, HTML und CSS, sind unabhängig voneinander und sollten auch
 
 ## Webseite oder Webapplikation
 
-Mit HTML und CSS lassen sich sehr komplexe Webseiten entwickeln. Diese Webseiten werden jedoch **statisch** sein, was bedeutet, dass Besucher die Seiten zwar anschauen können aber sie können nicht damit interagieren können. 
+Mit HTML und CSS lassen sich sehr komplexe Webseiten entwickeln. Diese Webseiten werden jedoch **statisch** sein, was bedeutet, dass Besucher die Seiten zwar anschauen können aber sie können nicht damit interagieren können (ausser durch das Klicken auf Links). 
 
 Um **dynamische** Webseiten zu programmieren, welche interaktiv sind, braucht man eine weitere Programmiersprache, wie zum Beispiel JavaScript oder Dart. Damit lassen sich ganze *Webapplikationen* entwickeln, wo ein Besucher zum Beispiel Berechnungen durchführen, ein Spiel spielen oder Chatfunktionen benutzen kann. 
 

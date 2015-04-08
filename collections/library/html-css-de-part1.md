@@ -207,7 +207,7 @@ Die Elemente `<html>` und `<body>` haben wir bereits kennen gelernt. Die Grundst
   * Innerhalb vom `<head>` sollte eine Angabe stehen über den Zeichensatz: `<meta charset="utf-8">`. Wenn Sie den Zeichensatz nicht angeben, kann es vorkommen, dass zum Beispiel die Umlaute ä, ö und ü falsch angezeigt werden. Vielleicht haben Sie gemerkt, dass das `<meta>` Element kein schliessendes Tag besitzt. Es gibt ein paar <abbr data-toggle="tooltip" title="Wichtigste Elemente ohne schliessende Tags: <br>, <img>, <meta>, <hr>, <link>, <input>">Elemente ohne schliessende Tags</abbr>, sie sind aber die Ausnahme.
   * Weiter steht dort meist das Titelelement `<title>`. Der Titel wird in der Titelleiste oben im Browserfenster angezeigt.
 * Alles innerhalb des `<body>`-Elements wird im Hauptbereich des Browsers angezeigt.
-  * Ein `<h1>`-Element bezeichnet die Hauptüberschrift. Untergeordnete Überschriften können mit `<h2>`, `<h3>`, ... erstellt werden.
+  * Ein `<h1>`-Element bezeichnet die Hauptüberschrift. Untergeordnete Überschriften können mit `<h2>`, `<h3>`, `<h4>`, `<h5>` und `<h6>` erstellt werden.
   * Alles, was zwischen `<p>` und `</p>` steht ist ein Textabsatz (auch **P**aragraph genannt).
 * Nach jedem öffnenden Tag wird das nächste Element eingerückt (mit Tabulator oder zwei Leerschlägen) für eine bessere Übersicht. Dies sollten Sie sich unbedingt auch angewöhnen.
 

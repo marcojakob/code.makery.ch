@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "HTML & CSS Tutorial - Part 5: Blog and Other Pages"
-date: 2015-04-01 00:00
+date: 2015-04-08 00:00
 slug: html-css/part5
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part5.md
 description: "Create a file structure with multiple web pages, including a structure for writing blog posts."
@@ -61,7 +61,7 @@ Our portfolio thus far only has a home page. Most websites have more than one pa
 
 We'll create three new pages: One page for our own **blog**, one for **projects**, and one for **contact information**.
 
-These three sites represent our "main pages". We must keep in mind that we might later want to add additional sub-pages. For example, there will be a sub-page for every blog entry. To have a nice structure it makes sense to create **subfolders for each of our pages**.
+These three sites represent our "main pages". We must keep in mind that we might later want to add additional sub-pages. For example, there will be a sub-page for every blog entry. To have a nice structure it makes sense to create **subfolders for each page**.
 
 Every subfolder will get its own `index.html` file that is automatically displayed when the folder is opened in the browser.
 
@@ -69,7 +69,7 @@ To create a new page is easy. It is best to copy the previous `index.html` so yo
 
 
 <div class="alert alert-info">
-  <strong>Important:</strong> Make sure that you don't use any special characters or spaces when naming sub-folders and files. As a best practice you should only use standard lowercase letters. You may separate multiple words with a dash (`-`).
+  **Important:** Make sure that you don't use any special characters or spaces when naming sub-folders and files. As a best practice you should only use standard, lowercase letters. You may separate multiple words with a dash (`-`).
 </div>
 
 
@@ -79,14 +79,14 @@ Create a subfolder in your *portfolio* folder named `blog`. Copy the `index.html
 
 ![Blog Subfolder](/assets/library/html-css/part5/blog-subfolder.png)
 
-Open the copied file `blog/index.html` in your browser (if you use the Brackets editor, click on the flash *Live Preview* flash). You will notice two things do not work:
+Open the copied file `blog/index.html` in your browser (if you use the Brackets editor, click on the *Live Preview* flash). You will notice that two things do not work:
 
 1. The image is not displayed.
 2. The colors defined in the CSS are not applied.
 
-Since we are in a subfolder, now no longer correct URL (or path called). Thus, the image would appear that we need for the `src` attribute instead of` `../ marco.jpg` now marco.jpg` specify. But probably we will not again the same image on the blog page. So you can remove the entire `img` element.
+Since we are in a subfolder, the path to the files are not correct. For the image to appear we would need to use `../marco.jpg` instead of `marco.jpg` in the `src` attribute. But probably you will not want the same image on the blog page. So you can remove the entire `img` element.
 
-In **CSS** it is common to define CSS rules **for the entire project**. Thus it is important that we reference the same CSS file in the blog page. We achieve this by changing the URL from `main.css` to `../ main.css`. The following shows the entire `link` element:
+In **CSS** it is common to define CSS rules **for the entire project**. Thus it is important that we reference the same CSS file in the blog page. We achieve this by changing the URL from `main.css` to `../main.css`. The following shows the entire `link` element:
 
 
 ##### blog/index.html
@@ -97,7 +97,7 @@ In **CSS** it is common to define CSS rules **for the entire project**. Thus it 
 
 This change should cause the styling from our CSS to also be applied to the blog page.
 
-Next we change the title and content:
+Next we change the title and content.
 
 
 ##### blog/index.html - Blog Overview
@@ -114,7 +114,7 @@ Next we change the title and content:
   &lt;body>
     &lt;h1 class="title">Blog&lt;/h1>
     
-    &lt;p>I write about everything I encounter while learning web programming.&lt;/p>
+    &lt;p>I write about things I encounter while learning web programming.&lt;/p>
 
     &lt;h2>Blog Entries&lt;/h2>
     
@@ -124,18 +124,18 @@ Next we change the title and content:
 &lt;/html>
 </pre>
 
-In the HTML code above you can see a new item with the tags `<!--` And `-->`. Between these tags we can write a **comment** in HTML. Comments are intended to be read only for us programmers and are ignored by the browser.
+In the HTML code above you can see some special tags: `<!--` and `-->`. Between these tags we can write a **comment** in HTML. Comments are intended to be read only for us programmers and are ignored by the browser.
 
 
 ### Blog Entry as Sub-Page
 
-Our blog needs some entries. We create a separate HTML page for each blog entry. Create a subfolder within the `blog` folder with the name`first-entry`. Use your file explorer to copy the file `blog/index.html` into the new subfolder.
+Our blog needs some entries. We create a separate HTML page for each blog entry. Create a subfolder within the `blog` folder with the name `first-entry`. Use your file explorer to copy the file `blog/index.html` into the new subfolder.
 
 ![Blog Entry](/assets/library/html-css/part5/blog-entry-subfolder-de.png)
 
 Open the blog entry and change the content as follows:
 
-##### blog/first-entry/index.html - First Blog Entry
+##### blog/first-entry/index.html
 
 <pre class="prettyprint lang-html">
 &lt;!DOCTYPE html>
@@ -163,7 +163,7 @@ Here I've included a new HTML element (`hr`). You will easily find out what it d
 
 ### Get started with your blog entries!
 
-I recommend that you immediately start to write your blog entries. You could write a short entry every time you learned something new about programming. For inspiration I list a few things that you could write about:
+I recommend that you immediately start to write your own blog entries. You could write a short entry every time you learned something new about programming. For inspiration I list a few things that you could write about:
 
 * What did I learn today?
    * Insert screenshots
@@ -174,7 +174,7 @@ I recommend that you immediately start to write your blog entries. You could wri
 
 With such blog entries you will advance much faster in mastering programming. This is why:
 
-1. You will be aware of what you have learned &rarr; more motivation!
+1. You will be aware of what you have learned &rarr; higher motivation!
 2. You can look up things in your personal documentation, for example links to helpful sites.
 3. You will practice HTML and CSS while writing the entries.
 4. If you publish your website online you can make your blog accessible to others. This enables you to share your knowledge or to ask someone to help you with a problem.
@@ -182,12 +182,12 @@ With such blog entries you will advance much faster in mastering programming. Th
 
 *Do not wait too lang and get started right away. It is worth it!*
 
-<div class="alert alert-info">
-  <strong>Hint:</strong> Create subfolder for each blog post (with an `index.html` page). This will give you a nice order where you can put pictures and other files for blog entries into separate subfolders.
-</div>
-
 
 #### Second Blog Entry
+
+<div class="alert alert-info">
+  **Hint:** Create a subfolder for each blog post (with an `index.html` page). This will give you a nice order where you can put pictures and other files for blog entries into separate subfolders.
+</div>
 
 ![Blog Entry 2](/assets/library/html-css/part5/blog-entry-subfolder2-de.png)
 
@@ -225,7 +225,7 @@ Proceed as we did for the blog page above and create a subfolder `projects` with
 The last of our main pages is a contact page. Create a subfolder `contact` with a file` index.html`.
 
 <div class="alert alert-danger">
-  <strong>Important:</strong> *Carefully consider what information you want to make public! For example, **do not publish your primary email address**, because you might receive some spam messages.*
+  **Important:** Carefully consider what information you want to make public! For example, **do not publish your primary email address**, because you might receive some spam messages.
 </div>
 
 
@@ -255,7 +255,7 @@ The last of our main pages is a contact page. Create a subfolder `contact` with 
 &lt;/html>
 </pre>
 
-In the address you see a new item: `<br>`. It causes a line break. Also note the special link with `mailto:` and the email address. This link opens the standard email program and creates a new email with prefilled address.
+In the address you'll find a new item: `<br>`. It causes a line break. Also note the special link with `mailto:` and the email address. This link opens the standard email program and creates a new email with prefilled address.
 
 Now we already have five HTML pages.
 
