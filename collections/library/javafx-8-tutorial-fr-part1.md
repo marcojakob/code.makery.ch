@@ -84,7 +84,7 @@ ous devons paramètrer Eclipse pour qu'il utilise le JDK 8 et qu'il sache où tr
 
 2. Cliquez sur le bouton *Add...* pour ajoutez le JDK 8 puis sur *Standard VM* et sélectionnez le *dossier* contenant le JDK 8. 
 
-3. Supprimez les autres JREs et JDKs afin que le **JDK 8 devienne le JDK par défaut (default) !**.   
+3. Supprimez les autres JREs et JDKs afin que le **JDK 8 devienne le JDK par défaut (default)** !    
 ![Preferences JDK](/assets/library/javafx-8-tutorial/part1/preferences-jdk.png)
 
 4. Sélectionnez la partie *Java | Compiler*. Définissez la **Compiler compliance level à 1.8** !    
@@ -226,7 +226,7 @@ Comme vous le voyez, la méthode `start(...)` reçoit un objet `Stage` aen param
 ![New FXML Document](/assets/library/javafx-8-tutorial/part1/javafx-hierarchy.png)   
 *Image provenant de : http://www.oracle.com*
 
-**C'est comme une pièce de théâtre** : l'objet `Stage` est le conteneur principal qui est habituellement une `fenêtre` avec des bordures et qui a les boutons habituels pour minimiser, maximiser et fermer. Dans le `Stage`, vous ajoutez une `Scene` qui peut, bien sûr, être échangé avec un autre object `Scene`. Sont ajoutés dans la `Scene` les noeuds JavaFX actuels comme `AnchorPane`, `TextBox`, etc. 
+**C'est comme une pièce de théâtre** : l'objet `Stage` est le conteneur principal qui est habituellement une `fenêtre` avec des bordures et qui a les boutons habituels pour minimiser, maximiser et fermer. Dans le `Stage`, vous ajoutez une `Scene` qui peut, bien sûr, être échangée avec un autre object `Scene`. Sont ajoutés dans la `Scene` les noeuds JavaFX actuels comme `AnchorPane`, `TextBox`, etc. 
 
 Pour plus d'informations à ce sujet, voir [Working with the JavaFX Scene Graph](http://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm).
 
