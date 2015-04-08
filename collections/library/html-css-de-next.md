@@ -52,7 +52,7 @@ languages:
 
 Wow, das ist schon eine rechte Leistung, wenn Sie bis hier durchgehalten und Ihr Portfolio-Projekt mit diesem Tutorial erstellt haben!
 
-In diesem letzten Teil zeige ich Ihnen Möglichkeiten auf, wie Sie Ihre Fähigkeiten als Webprogrammierer weiter entwickeln können.
+Hier zeige ich Ihnen Möglichkeiten auf, wie Sie Ihre Fähigkeiten als Webprogrammierer weiter entwickeln können.
 
 
 ## Mehr HTML & CSS

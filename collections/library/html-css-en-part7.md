@@ -91,11 +91,11 @@ Now let's integrate the Bootstrap CSS in our HTML pages.
 
 1. Open the [Bootstrap website](http://getbootstrap.com/getting-started/). You will find that there are several ways to download Bootstrap. Instead of downloading Bootstrap we will use the **Bootstrap CDN**. We only need to specify the location of the CSS file in our HTML. It will then be downloaded directly from the *CDN* servers every time our website is accessed. *CDN* servers are servers that are located all over the world so that they can deliver a file very quickly.
 
-2. Kopieren Sie also vom Abschnitt *Bootstrap-CDN* die erste Zeile mit dem `link`-Element.
+2. From the *Bootstrap CDN* section copy the first line with the `link` element.
 
-3. Fügen Sie das `link`-Element in ihre HTML-Seiten ein. Wichtig ist, dass Sie es oberhalb von unserem `link`-Element für die `main.css`-Datei einfügen. Dadurch hat unser `main.css` eine höhere Wichtigkeit. Das bedeutet, dass wir CSS-Regeln aus dem Bootstrap-CSS mit unseren eigenen Regeln überschreiben können.
+3. Insert the `link` element into your HTML pages. It is important that you place the reference to the Bootstrap CSS **above** the `link` element of the `main.css` file. This enables us to override CSS rules from the Bootstrap CSS in our own CSS.
 
-So sollte Ihr `head`-Bereich nun etwa aussehen (evtl. mit einer neueren Versionsnummer von Bootstrap):
+That's how your `head` section should look like (possibly with a newer version number of Bootstrap):
 
 
 ##### index.html
@@ -105,50 +105,50 @@ So sollte Ihr `head`-Bereich nun etwa aussehen (evtl. mit einer neueren Versions
   &lt;meta charset="utf-8">
   <mark>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></mark>
   &lt;link rel="stylesheet" href="main.css">
-  &lt;title>Web Portfolio von Marco&lt;/title>
+  &lt;title>Web Portfolio of Marco&lt;/title>
 &lt;/head>
 </pre>
 
 
-### Wie funktioniert Bootstrap?
+### How does Bootstrap Work?
 
-Manche *Styles* aus dem Bootstrap-CSS werden direkt auf HTML-Elemente angewandt. Schauen wir uns zum Beispiel einen Link in *Chrome DevTools* an, sehen wir, wie im Bootstrap-CSS die Link-Farbe geändert wird und mit `text-decoration` der Unterstrich entfernt wird:
+Some styles from the Bootstrap CSS are applied directly to HTML elements. If we look, for example, at a link in *Chrome DevTools*, we see how through the Bootstrap CSS the link color was changed and the underscore was removed with `text-decoration`.
 
-![Bootstrap Link-Farbe](/assets/library/html-css/part6/bootstrap-link-color.png)
+![Bootstrap Link Color](/assets/library/html-css/part7/bootstrap-link-color.png)
 
-Viele Bootstrap-Styles werden aber erst aktiviert, wenn man eine entsprechende **CSS-Klasse** hinzufügt. 
+Such styling is automatically applied. But a lot of Bootstrap styles require that we add specific **CSS classes** to elements, as we will see next.
 
 
-### Bootstrap Klassen verwenden
+### Using Bootstrap Classes
 
-Als Beispiel schauen wir uns an, wie mit Bootstrap die Textausrichtung geändert werden kann. In der Bootstrap-Dokumentation unter [Ausrichtungsklassen](http://holdirbootstrap.de/css/#type-alignment) finden Sie eine kurze Anleitung zur Textausrichtung. 
+As an example, let's look at how the text alignment can be changed using Bootstrap. In the Bootstrap documentation under [Alignment classes](http://getbootstrap.com/css/#type-alignment) you can find instructions on text alignment.
 
-Wenn wir also zum Beispiel den `h2`-Titel zentrieren möchten, müssten wir die Klasse `text-center` hinzufügen:
-
-<pre class="prettyprint lang-html">
-&lt;h2 class="text-center">Willkommen!&lt;/h2>
-</pre>
-
-Unser `h1`-Titel hat bereits ein `class`-Attribut. Wenn wir auch diesen Titel zentrieren möchten, können wir das `text-center` als zweite Klasse hinzufügen. **Mehrere CSS-Klassen werden immer durch Leerschläge getrennt**:
+Let's say we want to center the `h2` title. We can do this by adding the `text-center` class as follows:
 
 <pre class="prettyprint lang-html">
-&lt;h1 class="title text-center">Web Portfolio von Marco&lt;/h1>
+&lt;h2 class="text-center">Welcome!&lt;/h2>
 </pre>
 
-Was aber, wenn wir einen grösseren Teil unserer Webseite zentrieren möchten? Da wäre es recht mühsam, wenn wir bei jedem Element einzeln ein `text-center` hinzufügen müssten. Es ist deshalb möglich, dass man auf einem übergeordneten Element eine Klasse hinzufügt. Viele CSS-Regeln können so auf alle Unterelemente weitervererbt werden.
+Our `h1` title already has a `class` attribute. If we want to center this item, we can add `text-center` as a second class. **Multiple CSS classes are always separated by blank spaces**.
 
-Wir könnten sogar auf dem `body`-Element eine `text-center`-Klasse hinzufügen. Damit wird gleich alles zentriert. Wenn man aber nur einen Teil zentrieren möchte, verwendet man oft sogenannte `div`-Elemente.
+<pre class="prettyprint lang-html">
+&lt;h1 class="title text-center">Web Portfolio of Marco&lt;/h1>
+</pre>
+
+But what if we want to center a bigger part of our website? Since it would be tedious if we had to add a `text-center` for each element. It is thus possible that we can add it to a parent element. Many CSS rules are automatically passed on to all sub-elements.
+
+We could even add a `text-center` class to the `body` element. This would center everything on our page. If you just want to center a part of the page, it is common to use a `div` element.
 
 
-## div-Elemente
+## div Elements
 
-Mit dem `<div>`-Element werden Elemente zu einem Block gruppiert. Für Bootstrap werden wir `div`-Elemente recht oft verwenden, um Styles auf einen ganzen Abschnitt der Seite anzuwenden.
+With the `<div>` element other elements are grouped into a block. With Bootstrap `div` elements are used quite often to apply styles to an entire section of the page.
 
-Eine zentrale CSS-Klasse in Bootstrap ist `container`. Der `container` passt den Inhalt automatisch an die Seitenbreite an und sorgt für einen sinnvollen Abstand zum Rand. Sie sollten auf Ihrer Bootstrap-Seite immer ein `div`-Element mit der `container`-Klasse haben. Lesen Sie die [Beschreibung von Container](http://holdirbootstrap.de/css/#overview-container) auf der Bootstrap-Webseite.
+An essential CSS class in Bootstrap is `container`. The `container` automatically adjusts its content to the width of the page and guarantees a reasonable margin to the edges. You should always have a `div` element with the` container` class in your page. Read the [description for containers](http://getbootstrap.com/css/#overview-container) on the bootstrap website.
 
-Wir packen nun den Hauptinhalt unserer Startseite zwischen ein `<div class="container">` und `</div>`. (Um die Navigation werden wir uns weiter unten noch speziell kümmern.)
+We will now pack the main content of our home page between a `<div class=" container">` and the closing `</ div>`. (We will deal with the navigation separately below.)
 
-Der `body`-Teil Ihrer Hauptseite sollte nun wie folgt aussehen (achten Sie auf sauberes Einrücken der Elemente, damit der Code übersichtlich bleibt):
+The `body` part of your page should look like this (pay attention to indentation of elements so that your code stays readable):
 
 
 ##### index.html
@@ -158,59 +158,61 @@ Der `body`-Teil Ihrer Hauptseite sollte nun wie folgt aussehen (achten Sie auf s
   &lt;ul>
     &lt;li>&lt;a href="./">Home&lt;/a>&lt;/li>
     &lt;li>&lt;a href="blog/">Blog&lt;/a>&lt;/li>
-    &lt;li>&lt;a href="projekte/">Projekte&lt;/a>&lt;/li>
-    &lt;li>&lt;a href="kontakt/">Kontakt&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="projects/">Projects&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="contact/">Contact&lt;/a>&lt;/li>
   &lt;/ul>
 
   <mark>&lt;div class="container"></mark>
-    &lt;h1 class="title">Web Portfolio von Marco&lt;/h1>
+    &lt;h1 class="title">Web Portfolio of Marco&lt;/h1>
 
-    &lt;h2>Willkommen!&lt;/h2>
+    &lt;h2>Welcome!&lt;/h2>
 
-    &lt;p>Schön, dass Sie auf meiner Seite vorbeischauen.&lt;/p>
+    &lt;p>Nice to have you stop by my page.&lt;/p>
 
-    &lt;p>Sie können sich ruhig etwas umsehen. Im Blog dokumentiere ich meine Erfahrungen beim Programmieren. Daneben können Sie auch meine Webprojekte anschauen. Viel Spass.&lt;/p>
+    &lt;p>Please have a look around. In the blog section I document my experiences in programming. You may also look at my web projects. Have Fun.&lt;/p>
 
-    &lt;img src="marco.jpg" alt="Foto von mir">
+    &lt;img src="marco.jpg" alt="Picture of me">
 
     &lt;p>Marco :-)&lt;/p>
   <mark>&lt;/div></mark>
 &lt;/body>
 </pre>
 
-Im Browser beginnen die `div`-Elemente **immer auf einer neuen Zeile**. Weil sie die ganze verfügbare Breite in Anspruch nehmen nennt man solche Elemente auch [Block-Elemente](https://developer.mozilla.org/de/docs/Web/HTML/Block-level_elemente).
+The browser always displays `div` elements **on a new line**. Such elements, because they claim all available width, are called [block elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements).
 
 
-## span-Elemente
+## span Elements
 
-Im Gegensatz zu `<div>`-Elementen beginnt ein `<span>`-Element nicht auf einer neuen Zeile. Ein `span`-Element ist nur so breit. Man nennt solche Elemente auch [Inline-Elemente](https://developer.mozilla.org/de/docs/Web/HTML/Inline_elemente), weil sie sich innerhalb einer Zeile einbetten.  
+In contrast to `<div>` elements, a `<span>` element does not start on a new line. A `span` element is only as wide as its content. Such elements are called [inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente) because they embed within a line.
 
-Hier ein Beispiel, wie man ein `span`-Element einsetzen könnte: 
+Im Gegensatz zu `<div>`-Elementen beginnt ein `<span>`-Element nicht auf einer neuen Zeile. Ein `span`-Element ist nur so breit. Man nennt solche Elemente auch [Inline-Elemente](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente).  
+
+Here is an example of how we could use a `span` element:
 
 <pre class="prettyprint lang-html">
-Ich möchte &lt;span class="text-warning">diese Worte&lt;/span> besonders hervorheben. 
+I would like to &lt;span class="text-warning">highlight those words&lt;/span>.
 </pre>
 
 
-## Navigation mit Bootstrap
+## Navigation with Bootstrap
 
-Nun wollen wir endlich die Navigation schöner gestalten mit der Hilfe von Bootstrap. In der Bootstrap-Dokumentation wird eine [Navbar](http://holdirbootstrap.de/komponenten/#navbar) beschrieben. Das Beispiel dort ist jedoch sehr komplex und beinhaltet Menus, Textfelder und Knöpfe. Wir wählen eine etwas einfachere Variante.
+Finally, we want to make the navigation more beautiful with the help of Bootstrap. In the Bootstrap documentation a [Navbar](http://getbootstrap.com/components/#navbar) is described. However, the example is very complex and includes menus, text boxes and buttons. We'll implement a slightly simpler version.
 
-Programmieren sie die folgenden Schritte. Am besten probieren Sie nach jedem Schritt aus, was die Auswirkungen sind.
+Program the following steps. I recommend you test what happens after every step.
 
-1. Fügen Sie dem `ul`-Element Ihrer Navigation die zwei Klassen `nav` und `navbar-nav` hinzu:   
+1. Insert the the two classes `nav` and `navbar-nav` to the `ul` element in your navigation.   
 `<ul class="nav navbar-nav">`
 
-2. Packen Sie die gesamte Navigation in ein `div` mit der Klasse `container`. Dies bewirkt, dass die Abstände vom Rand gleich sind wie bei unserem Hauptinhalt. Vergessen Sie nicht das schliessende Tag `</div>`.   
+2. Surround the entire navigation with a new `div` with the `container` class. This has the effect that the distances from the edges are the same as in our main content. Do not forget the closing `</div>` tag after the navigation code.   
 `<div class="container">`
 
-3. Umgeben Sie das Ganze mit einem weiteren `div`. Diesmal brauchen wir die drei Klassen `navbar`, `navbar-default` und `navbar-static-top`. Diese Klassen bewirken, dass ein Balken oben am Rand dargestellt wird. Vergessen Sie auch hier nicht das schliessende Tag `</div>`.   
+3. Surround it all with yet another `div`. This time we will need the three classes `navbar`, `navbar-default`, and `navbar-static-top`. Those classes ensure that the navigation is displayed at the top of the screen. Don't forget the closing `</div>` tag.      
 `<div class="navbar navbar-default navbar-static-top">`
 
-4. Fügen Sie beim `li`-Elemente von *Home* eine Klasse `active` hinzu. Dies bewirkt, dass der *Home*-Link speziell hervorgehoben wird. Damit merkt der Besucher, auf welcher Seite er sich im Moment befindet.   
+4. In the `<li>` element of our home, insert a class called `active`. This has the effect that the *Home* link is highlighted. This tells the visitor about the currently active page.   
 `<li class="active"><a href="./">Home</a></li>`
 
-So sieht der Code für die Navigation nun aus (achten Sie auf korrektes Einrücken!):
+This is how the complete code will look like after the previous steps (pay attention to correct indentation!):
 
 
 ##### index.html
@@ -221,36 +223,36 @@ So sieht der Code für die Navigation nun aus (achten Sie auf korrektes Einrück
     &lt;ul <mark>class="nav navbar-nav"></mark>
       &lt;li <mark>class="active"</mark>>&lt;a href="./">Home&lt;/a>&lt;/li>
       &lt;li>&lt;a href="blog/">Blog&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="projekte/">Projekte&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="kontakt/">Kontakt&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="projects/">Projects&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="contact/">Contact&lt;/a>&lt;/li>
     &lt;/ul>
   <mark>&lt;/div></mark>
 <mark>&lt;/div></mark>
 </pre>
 
-Und so wird es dargestellt:
+And this is how it looks like:
 
-![Navbar](/assets/library/html-css/part6/navbar-default-de.png)
-
-
-### Dunkle Variante
-
-Es gibt eine zweite Variante der Bootstrap-Navigation:
-
-![Navbar Inverse](/assets/library/html-css/part6/navbar-inverse-de.png)
-
-Um diese zu aktivieren, ändern Sie die Klasse `navbar-default` in `navbar-inverse` um.
+![Navbar](/assets/library/html-css/part7/navbar-default-de.png)
 
 
-## Optimieren für Mobile
+### Dark Version
 
-Mit Bootstrap und der Navigation sieht die Webseite in einem Desktop-Browser schon recht ansprechend aus. Versuchen Sie mal, die Webseite auf einem Mobiltelefon aufzurufen (dazu müssen Sie die Seite [veröffentlichen](/library/html-css/de/part2/)).
+There is an alternative to the gray navigation:
 
-Sie werden feststellen, dass die Seite entweder abgeschnitten oder die Navigation viel zu klein dargestellt wird:
+![Navbar Inverse](/assets/library/html-css/part7/navbar-inverse-de.png)
 
-![Mobile ohne Viewport](/assets/library/html-css/part6/mobile-without-viewport-de.png)
+To activate the alternative style, replace the `navbar-default` class with `navbar-inverse`.
 
-Mit einer `meta`-Information im `head`-Bereich können wir den mobilen Browsern mitteilen, dass sie die Seite vernünftig anzeigen sollen:
+
+## Optimizing for Mobile
+
+With Bootstrap and the new navigation the website looks already quite appealing in a desktop browser. Now try opening it on a mobile phone (you will need to [publish it online](/library/html-css/part2/) to do this).
+
+You will notice that the page either doesn't fit the screen or the navigation is displayed too small.
+
+![Mobile without Viewport](/assets/library/html-css/part7/mobile-without-viewport-de.png)
+
+With a `meta` info inside the `head` we can tell the mobile browsers to properly scale the page.
 
 <pre class="prettyprint lang-html">
 &lt;head>
@@ -258,42 +260,43 @@ Mit einer `meta`-Information im `head`-Bereich können wir den mobilen Browsern 
   <mark>&lt;meta name="viewport" content="width=device-width, initial-scale=1"></mark>
   &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   &lt;link rel="stylesheet" href="main.css">
-  &lt;title>Web Portfolio von Marco&lt;/title>
+  &lt;title>Web Portfolio of Marco&lt;/title>
 &lt;/head>
 </pre>
 
-Nun sollte es etwa so aussehen:
+It should now look something like this:
 
-![Mobile mit Viewport](/assets/library/html-css/part6/mobile-with-viewport-de.png)
+![Mobile with Viewport](/assets/library/html-css/part7/mobile-with-viewport-de.png)
 
-Bootstrap wurde so entworfen, dass es auf [mobilen Bilschirmen gut funktioniert](http://holdirbootstrap.de/css/#overview-mobile). Im Screenshot oben sehen Sie, wie die Navigation automatisch untereinander angezeigt wird, sobald die Bildschirmbreite zu klein wird. Dies können Sie auch ausprobieren, indem Sie einfach das Browserfenster verkleinern.
+Bootstrap was designed so that it [works well on mobile screens](http://getbootstrap.com/css/#overview-mobile). In the screenshot above you can see how the navigation is automatically displayed vertically when the width of the screen is too small. If you're not using a mobile phone you can also simulate this by simply resizing your browser window.
 
-Ein Webdesign, welches auf die Bildschirmgrösse reagiert, nennt man [Responsive Webdesign](http://de.wikipedia.org/wiki/Responsive_Webdesign).
+Web design that is optimized for different screen sizes is called [responsive web design](http://en.wikipedia.org/wiki/Responsive_web_design).
 
 <div class="alert alert-warning">
-  <strong>Hinweis:</strong> Bootstrap kann die Navigation auch automatisch zusammenklappen in ein Menu. Dafür müssen aber zusätzliche JavaScript-Dateien eingebunden werden. Im Artikel <a class="alert-link" href="/library/more-html-css/de/javascript-bootstrap/">JavaScript mit Bootstrap</a> erkläre ich, wie Sie eine solche Navigation programmieren können.  
+  **Note:** Bootstrap is capable of automatically collapsing the menu into a menu button. But this requires an additional JavaScript files. In the <a class="alert-link" href="/library/more-html-css/javascript-bootstrap/">JavaScript with Bootstrap</a> article I explain how you can program such a navigations.
 </div>
 
 
-## Bootstrap und Navigation auf allen Seiten
+## Bootstrap and Navigation on all Pages
 
-Bis jetzt haben wir Bootstrap und die Navigation nur auf unserer Startseite eingefügt. Das Ziel ist natürlich, dass diese auf allen Seiten eingebunden sind.
+So far, we have inserted Bootstrap and the navigation only on our home page. The goal, of course, is that they are included on all pages.
 
-Mit kleinen Anpassung können wir den Code aus der Startseite in alle anderen Seiten (Blog, Blogeinträge, Kontakt, etc.) kopieren:
+With small adjustment we can copy the code from the home page to all other pages (blog, blog entries, contact, etc.).
 
 
-#### 1. Viewport und Bootstrap-CSS einfügen
+#### 1. Insert Viewport and Bootstrap CSS
 
-Kopieren Sie aus dem `head`-Bereich der Startseite die Zeile mit dem `viewport` und die Zeile mit dem Bootstrap CSS und fügen Sie diese in alle anderen Seiten ein:
+Copy the line with the `viewport` and the line with the Bootstrap CSS from the `head` area of the home page and paste it in all other sites.
+
 <pre class="prettyprint lang-html">
   &lt;meta name="viewport" content="width=device-width, initial-scale=1">
   &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 </pre>
 
 
-#### 2. Navigation einfügen
+#### 2. Insert Navigation
 
-Kopieren Sie den gesamten Navigationsbereich aus der Startseite und fügen Sie diese in alle anderen Seiten ein. Achten Sie darauf, dass Sie jeweils beim aktuellen `li`-Element die `active`-Klasse hinzufügen:   
+Copy the entire navigation of the home page and paste it into all the other pages. Make sure that you add the `active` class to the current `li` element.
 
 <pre class="prettyprint lang-html">
 &lt;div class="navbar navbar-default navbar-static-top">
@@ -301,44 +304,40 @@ Kopieren Sie den gesamten Navigationsbereich aus der Startseite und fügen Sie d
     &lt;ul class="nav navbar-nav">
       &lt;li>&lt;a <mark>href="../"</mark>>Home&lt;/a>&lt;/li>
       &lt;li <mark>class="active"</mark>>&lt;a <mark>href="../blog/"</mark>>Blog&lt;/a>&lt;/li>
-      &lt;li>&lt;a <mark>href="../projekte/"</mark>>Projekte&lt;/a>&lt;/li>
-      &lt;li>&lt;a <mark>href="../kontakt/"</mark>>Kontakt&lt;/a>&lt;/li>
+      &lt;li>&lt;a <mark>href="../projects/"</mark>>Projects&lt;/a>&lt;/li>
+      &lt;li>&lt;a <mark>href="../contact/"</mark>>Contact&lt;/a>&lt;/li>
     &lt;/ul>
   &lt;/div>
 &lt;/div>
 </pre>
 
 <div class="alert alert-info">
-<p>
-**Achtung:** Links im Unterverzeichnis müssen mit `../` ergänzt werden, damit sie auf das übergeordnete Verzeichnis zeigen.
-</p>
-<p>
-Da die Blogeinträge noch ein Unterverzeichnis tiefer liegen, müssen die Links dort `../../` enthalten, um auf das oberste Verzeichnis zu zeigen.
-</p>
+  <p>**Remember:** Links in subfolders must be prefixed with `../` to point to the parent folder.</p>
+  <p>Because the blog entries are in a sub-subfolder the links must be prefixed with `../../` to point to the root folder.</p>
 </div>
 
 
-#### 3. Container-div einfügen
+#### 3. Insert Container div
 
-Wenn Sie die Unterseiten im Browser öffnen, werden Sie merken, dass die Seitenränder noch nicht korrekt sind. Um das zu korrigieren, müssen wir den gesamten Inhalt (alles unterhalb der Navigation) mit einem `div` umgeben. Dieses `div` muss die Klasse `container` haben. Korrigieren Sie das in allen Unterseiten: 
+When you open some pages in the browser you will notice that the margins are not correct. To fix this we need the entire content (everything below the navigation) to be surrounded by a `div`. This `div` must have the `container` class. Put containers in all the pages that don't have it yet.
 
 <pre class="prettyprint lang-html">
-[... Navigation ...]
+[... navigation ...]
 
 <mark>&lt;div class="container"></mark>
-  [... Seiteninhalt ...]
+  [... content ...]
 <mark>&lt;/div></mark>
 </pre>
 
 
-#### 4. Testen
+#### 4. Testing and Cleanup
 
-Nun ist es wichtig, dass Sie alle Seiten aufrufen und die **Links sorgfältig testen**!
+It's very important that you navigate through all pages and carefully **test all the links**!
 
-Schauen Sie als nächstes Ihren Code an und stellen Sie sicher, dass das **HTML schön aufgeräumt** ist. Immer, wenn ein HTML-Tag geöffnet wird, dann sollte die nächste Zeile eingerückt werden. Das schliessende Tag wird dann wieder nach links gerückt.
+Then look at your code and make sure that the HTML is **clean**. Each time an HTML tag is opened the next line should be indented. The closing tag is then moved to the left again.
 
 
-## Wie weiter?
+## What's next?
 
-Erfahren Sie die [nächsten Schritte](/library/html-css/de/next/).
+&rarr; Read about the [Next Steps](/library/html-css/next/).
 

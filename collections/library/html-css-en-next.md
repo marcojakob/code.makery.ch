@@ -1,10 +1,10 @@
 ---
 layout: article
-title: "HTML & CSS Tutorial - Nächste Schritte"
+title: "HTML & CSS Tutorial - Next Steps"
 date: 2015-04-01 00:00
 slug: html-css/next
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-next.md
-description: "Wie kann man noch mehr lernen über HTML & CSS."
+description: "How can you learn even more about HTML & CSS. Learn how to build your own web applications."
 image: /assets/library/html-css/portfolio.png
 published: true
 prettify: false
@@ -49,27 +49,20 @@ languages:
   active: en
 ---
 
-Wow, das ist schon eine rechte Leistung, wenn Sie bis hier durchgehalten und Ihr Portfolio-Projekt mit diesem Tutorial erstellt haben!
+Wow, that's quite an achievement when you made it all the way through the tutorial and created your own portfolio project!
 
-In diesem letzten Teil zeige ich Ihnen Möglichkeiten auf, wie Sie Ihre Fähigkeiten als Webprogrammierer weiter entwickeln können.
-
-
-## Mehr HTML & CSS
-
-<a href="/library/more-html-css/de/" class="btn btn-warning"><i class="fa fa-hand-o-right"></i> Mehr HTML &amp; CSS Tutorial</a>
-
-Die Serie [Mehr HTML & CSS](/library/more-html-css/de/) ist eine Sammlung von Anleitungen zu verschiedenen Themen rund um HTML & CSS. 
-
-Die Anleitungen bauen direkt auf den Kenntnissen aus diesem Tutorial auf. Es gibt dabei keine bestimmte Reihenfolge zwischen den einzelnen Teilen. Schauen Sie sich einfach die Themen an, welche Sie interessieren.
+I will show you some ways on how you can further develop your skills as a web programmer.
 
 
-## Webapplikationen mit Dart
+## More HTML & CSS
 
-<a href="/library/hello-dart/de/" class="btn btn-warning"><i class="fa fa-hand-o-right"></i> Hello Dart: Einführung in die Programmierung</a>
+<a href="/library/more-html-css/" class="btn btn-warning"><i class="fa fa-hand-o-right"></i> More HTML &amp; CSS Tutorial</a>
 
-Lernen Sie, dynamische Webapplikationen mit Dart zu entwickeln. [Hello Dart](/library/hello-dart/de/) bietet eine Einführung, die keine Programmierkenntnisse voraussetzt.
+The [More HTML & CSS](/library/more-html-css/) series is a collection of instructions on various topics related to HTML and CSS. Just look at the topics that you are interested in.
 
 
-## Mehr kommt bald...
+## Web Applications with Dart
 
-Bald werden weitere Anleitungen zur Programmierung veröffentlicht. Wenn Sie informiert werden möchten, schreiben Sie sich für den [Newsletter](https://tinyletter.com/codemakery) ein.
+<a href="/library/hello-dart/" class="btn btn-warning"><i class="fa fa-hand-o-right"></i> Hello Dart: Introduction to Programming</a>
+
+Learn to program dynamic web applications in Dart. [Hello Dart](/library/hello-dart/) offers an introduction that does not require any experience in programming.

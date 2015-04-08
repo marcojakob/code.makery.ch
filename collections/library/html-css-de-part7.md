@@ -184,7 +184,7 @@ Im Browser beginnen die `div`-Elemente **immer auf einer neuen Zeile**. Weil sie
 
 ## span-Elemente
 
-Im Gegensatz zu `<div>`-Elementen beginnt ein `<span>`-Element nicht auf einer neuen Zeile. Ein `span`-Element ist nur so breit. Man nennt solche Elemente auch [Inline-Elemente](https://developer.mozilla.org/de/docs/Web/HTML/Inline_elemente), weil sie sich innerhalb einer Zeile einbetten.  
+Im Gegensatz zu `<div>`-Elementen beginnt ein `<span>`-Element nicht auf einer neuen Zeile. Ein `span`-Element ist nur so breit wie sein Inhalt. Man nennt solche Elemente auch [Inline-Elemente](https://developer.mozilla.org/de/docs/Web/HTML/Inline_elemente), weil sie sich innerhalb einer Zeile einbetten.  
 
 Hier ein Beispiel, wie man ein `span`-Element einsetzen könnte: 
 
@@ -341,5 +341,5 @@ Schauen Sie als nächstes Ihren Code an und stellen Sie sicher, dass das **HTML 
 
 ## Wie weiter?
 
-Erfahren Sie die [nächsten Schritte](/library/html-css/de/next/).
+&rarr; Erfahren Sie die [nächsten Schritte](/library/html-css/de/next/).
 
