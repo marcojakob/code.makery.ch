@@ -219,21 +219,21 @@ Maintenant vous devez créer la classe principale (**main java class**) qui dém
 ![New JavaFX Main Class](/assets/library/javafx-8-tutorial/part1/new-main-class2.png)
 
 
-La classe `MainApp.java` générée hérite de la classe `Application` et contient deux méthodes. C'est la structure basique dont nous avons besoin pour démarrer une application JavaFX. La partie la plus importante pour nous est la méthode `start(Stage primaryStage)`. Cette méthode est automatiquement appelée lorsque l'application est `démarrée` avec la méthode `main`.
+La classe `MainApp.java` générée hérite de la classe `Application` et contient deux méthodes. C'est la structure basique dont nous avons besoin pour démarrer une application JavaFX. La partie la plus importante pour nous est la méthode `start(Stage primaryStage)`. Cette méthode est automatiquement appelée lors du lancement de l'application (`launch`) avec la méthode `main`.
 
-As you see, the `start(...)` method receives a `Stage` as parameter. The following graphic illustrates the structure of every JavaFX application:
+Comme vous le voyez, la méthode `start(...)` reçoit un objet `Stage` aen paramètre. Le diagramme suivant montre la structure de toutes les applications JavaFX : 
 
 ![New FXML Document](/assets/library/javafx-8-tutorial/part1/javafx-hierarchy.png)   
-*Image Source: http://www.oracle.com*
+*Image provenant de : http://www.oracle.com*
 
-**It's like a theater play**: The `Stage` is the main container which is usually a `Window` with a border and the typical minimize, maximize and close buttons. Inside the `Stage` you add a `Scene` which can, of course, be switched out by another `Scene`. Inside the `Scene` the actual JavaFX nodes like `AnchorPane`, `TextBox`, etc. are added.
+**C'est comme une pièce de théâtre** : l'objet `Stage` est le conteneur principal qui est habituellement une `fenêtre` avec des bordures et qui a les boutons habituels pour minimiser, maximiser et fermer. Dans le `Stage`, vous ajoutez une `Scene` qui peut, bien sûr, être échangé avec un autre object `Scene`. Sont ajoutés dans la `Scene` les noeuds JavaFX actuels comme `AnchorPane`, `TextBox`, etc. 
 
-For more information on this turn to [Working with the JavaFX Scene Graph](http://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm).
+Pour plus d'informations à ce sujet, voir [Working with the JavaFX Scene Graph](http://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm).
 
 
 *****
 
-Open `MainApp.java` and replace the code with the following:
+Ouvrez `MainApp.java` et remplacez le code par celui-ci : 
 
 <pre class="prettyprint lang-java">
 package ch.makery.address;
@@ -312,32 +312,31 @@ public class MainApp extends Application {
 }
 </pre>
 
-The various comments should give you some hints about what's going on.
+Les commentaires épars devraient vous donner quelques indices concernant ce qu'il se passe. 
 
-If you run the application now, you should see something like the screenshot at the beginning of this post.
+Si vous exécutez l'application maintenant, vous devriez voir quelque chose ressemblant à la capture d'écran figurant au début de ce post. 
 
+### Problèmes fréquents 
 
-### Frequent Problems
-
-If JavaFX can't find the `fxml` file you speicified, you might get the following error message: 
+Lorsque JavaFX ne peut pas trouver le fichier `fxml` que vous avez spécifié, vous devriez voir le message d'erreur suivant : 
 
 `java.lang.IllegalStateException: Location is not set.`
 
-To solve this issue double check if you didn't misspell the name of your `fxml` files!
+Pour résoudre ce problème, vérifiez une seconde fois le chemin du fichier `fxml` ! 
 
 <div class="alert alert-warning">
-  If it still doesn't work, download the source of this tutorial part and try it with the included fxml.
+  Si cela ne fonctionne toujours pas, téléchargez la source de cette partie du tutoriel et essayez avec le fichier fxml inclu ! 
 </div>
 
 
 *****
 
-### What's Next?
+### Qu'est-ce qui suit ? 
 
-In [Tutorial Part 2](/library/javafx-8-tutorial/fr/part2/) we will add some data and functionality to our AddressApp.
+Dans la  [partie 2 du tutoriel](/library/javafx-8-tutorial/fr/part2/), vous allez ajouter des données et des fonctionnalités à notre AddressApp.
 
 
-##### Some other articles you might find interesting
+##### Voici quelques autres articles qui pourraient vous intéresser : 
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
