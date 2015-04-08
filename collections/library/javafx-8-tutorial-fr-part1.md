@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Tutoriel JavaFX 8 - partie 1 : Scene Builder"
+title: "Tutoriel JavaFX 8 - partie 1 : le Scene Builder"
 date: 2014-04-19 01:00
 updated: 2015-02-18 00:00
 slug: javafx-8-tutorial/fr/part1
@@ -12,36 +12,36 @@ published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Articles dans cette série"
+- header: "Les Articles de ce tutoriel"
   body:
   - text: "Introduction"
     link: /library/javafx-8-tutorial/fr/
     paging: Intro
-  - text: "Partie 1 : Scene Builder"
+  - text: "Partie 1: Le Scene Builder"
     link: /library/javafx-8-tutorial/fr/part1/
     paging: 1
     active: true
-  - text: "Part 2: Model and TableView"
+  - text: "Partie 2: Modèle et TableView"
     link: /library/javafx-8-tutorial/fr/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
+  - text: "Partie 3: Interaction avec l'utilisateur"
     link: /library/javafx-8-tutorial/fr/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "Partie 4: Style CSS"
     link: /library/javafx-8-tutorial/fr/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
+  - text: "Partie 5: Stockage de données en XML"
     link: /library/javafx-8-tutorial/fr/part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
+  - text: "Partie 6: Graphiques Statistiques"
     link: /library/javafx-8-tutorial/fr/part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "Partie 7: Deploiement"
     link: /library/javafx-8-tutorial/fr/part7/
     paging: 7
 - header: "Téléchargez les sources"
   body:
-  - text: Projet Eclipse relatif à la partie 1 <em>(requires at least JDK 8u20)</em>
+  - text: Projet Eclipse relatif à la partie 1 <em>(JDK 8u20 requis au minimum)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
     icon-css: fa fa-fw fa-download
 languages: 
