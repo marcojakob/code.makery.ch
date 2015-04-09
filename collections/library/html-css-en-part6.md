@@ -43,8 +43,8 @@ sidebars:
     paging: <i class="fa fa-flag-checkered"></i>
 - header: Downloads
   body:
-  - text: Portfolio Teil 6
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.4/portfolio-de-part6.zip
+  - text: Portfolio Part 6
+    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part6.zip
     icon-css: fa fa-fw fa-file-archive-o
 languages: 
   header: Languages
@@ -86,7 +86,7 @@ With simple links we can jump from our home page to other pages. The navigation 
 
 Our navigation should now look as follows:
 
-![Navigation with Links](/assets/library/html-css/part6/navigation-links-de.png)
+![Navigation with Links](/assets/library/html-css/part6/navigation-links.png)
 
 Verify that the links actually work and that they lead you to the desired page.
 
@@ -171,8 +171,8 @@ The links of our navigation are put in `<li>` elements that themselves are withn
 &lt;ul>
   &lt;li>&lt;a href="./">Home&lt;/a>&lt;/li>
   &lt;li>&lt;a href="blog/">Blog&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="projekte/">Projects&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="kontakt/">Contact&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="projects/">Projects&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="contact/">Contact&lt;/a>&lt;/li>
 &lt;/ul>
 </pre>
 

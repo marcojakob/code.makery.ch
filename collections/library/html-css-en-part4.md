@@ -61,7 +61,7 @@ Most browsers have a "hidden" tool that allows us to look behind the scenes of a
 
 Let's try this in our portfolio website. You should now see the following window:
 
-![Open DevTools](/assets/library/html-css/part4/open-devtools-de.png)
+![Open DevTools](/assets/library/html-css/part4/open-devtools.png)
 
 <div class="alert alert-info">
   **Hint:** If you're using the Brackets editor it's best to deactivate the *Live Preview* and to reload the website in the browser. Otherwise, you will see some additional ids in the code that were added by Brackets.
@@ -74,7 +74,7 @@ With *DevTools* we can easily examine individual elements on our website.
 
 Take the example of the `h2` element: Right-click on the "Welcome" title and choose *Inspect Element*. This opens *DevTools* and jumps to the `h2` element.
 
-![DevTools h2 Element](/assets/library/html-css/part4/devtools-h2-de.png)
+![DevTools h2 Element](/assets/library/html-css/part4/devtools-h2.png)
 
 On the right side you can see the styles that are applied to the `h2` element. You should see the colors that we have defined in `main.css`. Below the `main.css` rules you can see an area for the `user agent stylesheet` rules. These are the default rules that are applied to `h2` elements by the browser.
 
@@ -96,7 +96,7 @@ With *DevTools* we can investigate any web page and change it temporarily. Make 
 
 For larger websites, styles can get quite long. There will be multiple CSS rules that override each other. You can see an example of this with our `h1` title element. The font size, which we have defined, overrides the standard font size of the browser. Therefore, this is crossed out.
 
-![CSS Overwrite](/assets/library/html-css/part4/css-overwrite-de.png)
+![CSS Overwrite](/assets/library/html-css/part4/css-overwrite.png)
 
 
 ## Other DevTools Features

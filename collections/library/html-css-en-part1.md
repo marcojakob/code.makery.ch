@@ -43,8 +43,8 @@ sidebars:
     paging: <i class="fa fa-flag-checkered"></i>
 - header: Downloads
   body:
-  - text: Portfolio Teil 1
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.4/portfolio-de-part1.zip
+  - text: Portfolio Part 1
+    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part1.zip
     icon-css: fa fa-fw fa-file-archive-o
 languages: 
   header: Languages
@@ -95,17 +95,17 @@ Equipped with editor and browser, let's create the first HTML document for our w
 
 3. Open the **File** menu and select **Open Folder ...**. Browse for the folder you created and open it.
 <p>
-![Open Folder](/assets/library/html-css/part1/open-folder-de.png)
+![Open Folder](/assets/library/html-css/part1/open-folder.png)
 </p>
 
 4. Right-click below the folder and select **New File**. Name the file `index.html`.
 <p>
-![New File](/assets/library/html-css/part1/new-file-de.png)
+![New File](/assets/library/html-css/part1/new-file.png)
 </p>
 
 5. Now you have a blank text file named `index.html`.
 <p>
-![index.html](/assets/library/html-css/part1/new-index-file-de.png)
+![index.html](/assets/library/html-css/part1/new-index-file.png)
 </p>
 
 
@@ -138,7 +138,7 @@ If the page is **not updated automatically**: Save all files and click `F5` or `
 
 In order to keep your code clean, it is important that you correctly indent the lines with the **tab key**. The default in Brackets is usually a tab size of 4 spaces. I find this a bit long. I recommend that you change the setting at the bottom of Brackets to `Spaces: 2`.
 
-![Brackets Spaces](/assets/library/html-css/part1/brackets-spaces-de.png)
+![Brackets Spaces](/assets/library/html-css/part1/brackets-spaces.png)
 
 **Important:** Pay close attention to the example code and indent accordingly. It is important that you develop clean programming habits from the very beginning!
 
@@ -167,7 +167,7 @@ Attributes declare additional information for an item. Attributes are part of th
 
 As an example, let's look at the HTML element for a link. It is probably one of the most important elements &mdash; what would the internet be without links?
 
-![HTML Element](/assets/library/html-css/part1/html-element-attribute-de.png)
+![HTML Element](/assets/library/html-css/part1/html-element-attribute.png)
 
 The `<a>` element above includes an `href` attribute (short for "hypertext reference") with the value `http://code.makery.ch`. The browser knows that it must show the link as [My Website](http://code.makery.ch).
 
@@ -295,7 +295,7 @@ All of your code could now look something like this (I've added a subheading and
 
 That's how the portfolio currently looks like in the browser:
 
-![Portfolio](/assets/library/html-css/part1/portfolio-de.jpg)
+![Portfolio](/assets/library/html-css/part1/portfolio.jpg)
 
 
 ## What's next?

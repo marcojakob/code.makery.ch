@@ -6,7 +6,7 @@ updated: 2015-03-18 00:00
 slug: html-css/de/part4
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part4.md
 description: "Lernen Sie die Entwicklertools im Browser kennen (Chrome Developer Tools)."
-image: /assets/library/html-css/portfolio.png
+image: /assets/library/html-css/portfolio-de.png
 published: true
 prettify: true
 comments: true

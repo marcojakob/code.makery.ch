@@ -6,7 +6,7 @@ updated: 2015-03-18 00:00
 slug: html-css/de/part7
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part7.md
 description: "Lernen Sie das Bootstrap-Framework für Ihre Webseite einzusetzen."
-image: /assets/library/html-css/portfolio.png
+image: /assets/library/html-css/portfolio-de.png
 published: true
 prettify: true
 comments: true
@@ -45,7 +45,7 @@ sidebars:
 - header: Downloads
   body:
   - text: Portfolio Teil 7
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.4/portfolio-de-part7.zip
+    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part7.zip
     icon-css: fa fa-fw fa-file-archive-o
 languages: 
   header: Sprachen

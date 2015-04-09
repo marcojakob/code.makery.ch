@@ -6,7 +6,7 @@ updated: 2015-03-18 00:00
 slug: html-css/de/part5
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part5.md
 description: "Erstellen Sie eine Dateistruktur für mehrere Webseiten. Lernen Sie eine Struktur für einen Blog aufzustellen."
-image: /assets/library/html-css/portfolio.png
+image: /assets/library/html-css/portfolio-de.png
 published: true
 prettify: true
 comments: true
@@ -45,7 +45,7 @@ sidebars:
 - header: Downloads
   body:
   - text: Portfolio Teil 5
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.4/portfolio-de-part5.zip
+    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part5.zip
     icon-css: fa fa-fw fa-file-archive-o
 languages: 
   header: Sprachen

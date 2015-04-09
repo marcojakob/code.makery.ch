@@ -6,7 +6,7 @@ updated: 2015-03-18 00:00
 slug: html-css/de/part3
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part3.md
 description: "Lernen Sie, wie Sie mit CSS eine Webseite gestalten können."
-image: /assets/library/html-css/portfolio.png
+image: /assets/library/html-css/portfolio-de.png
 published: true
 prettify: true
 comments: true
@@ -45,7 +45,7 @@ sidebars:
 - header: Downloads
   body:
   - text: Portfolio Teil 3
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.4/portfolio-de-part3.zip
+    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part3.zip
     icon-css: fa fa-fw fa-file-archive-o
 languages: 
   header: Sprachen
@@ -156,7 +156,7 @@ Falls Sie als Editor den [Brackets](http://brackets.io/) verwenden, können Sie 
 
 Dann erscheint sofort ein Farbwähler, wo man bequem die Farbe auswählen kann. Sie können mit den drei Knöpfen auch zwischen den verschiedenen Notationsformen umschalten.
 
-![Farbwähler](/assets/library/html-css/part3/color-chooser-de.png)
+![Farbwähler](/assets/library/html-css/part3/color-chooser.png)
 
 
 ### Online Farbwähler

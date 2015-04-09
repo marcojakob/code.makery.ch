@@ -6,7 +6,7 @@ updated: 2015-03-18 00:00
 slug: html-css/de/next
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-next.md
 description: "Wie kann man noch mehr lernen über HTML & CSS."
-image: /assets/library/html-css/portfolio.png
+image: /assets/library/html-css/portfolio-de.png
 published: true
 prettify: false
 comments: true

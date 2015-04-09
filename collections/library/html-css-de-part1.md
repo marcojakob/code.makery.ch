@@ -6,7 +6,7 @@ updated: 2015-03-18 00:00
 slug: html-css/de/part1
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part1.md
 description: "Erstellen Sie Ihre erste Webseite. Hier lernen Sie die Tools und die Grundlagen von HTML & CSS kennen."
-image: /assets/library/html-css/portfolio.png
+image: /assets/library/html-css/portfolio-de.png
 published: true
 prettify: true
 comments: true
@@ -45,7 +45,7 @@ sidebars:
 - header: Downloads
   body:
   - text: Portfolio Teil 1
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.4/portfolio-de-part1.zip
+    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part1.zip
     icon-css: fa fa-fw fa-file-archive-o
 languages: 
   header: Sprachen

@@ -43,8 +43,8 @@ sidebars:
     paging: <i class="fa fa-flag-checkered"></i>
 - header: Downloads
   body:
-  - text: Portfolio Teil 7
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.4/portfolio-de-part7.zip
+  - text: Portfolio Part 7
+    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part7.zip
     icon-css: fa fa-fw fa-file-archive-o
 languages: 
   header: Languages
@@ -71,7 +71,7 @@ Fortunately, we are not alone with these tasks &ndash; this applies more or less
 
 The best known of these frameworks is **Bootstrap**, developed by Twitter. The *Bootstrap framework* is a tremendous help for us as web developers. Step-by-step we will discover what we can do with *Bootstrap*. Here is some taste of the effect *Bootstrap* could have on the styling of our project:
 
-![Bootstrap Effect](/assets/library/html-css/part7/bootstrap-effect-de.png)
+![Bootstrap Effect](/assets/library/html-css/part7/bootstrap-effect.png)
 
 With *Bootstrap* the elements don't only look better, they are also  consistent across different browsers.
 
@@ -230,14 +230,14 @@ This is how the complete code will look like after the previous steps (pay atten
 
 And this is how it looks like:
 
-![Navbar](/assets/library/html-css/part7/navbar-default-de.png)
+![Navbar](/assets/library/html-css/part7/navbar-default.png)
 
 
 ### Dark Version
 
 There is an alternative to the gray navigation:
 
-![Navbar Inverse](/assets/library/html-css/part7/navbar-inverse-de.png)
+![Navbar Inverse](/assets/library/html-css/part7/navbar-inverse.png)
 
 To activate the alternative style, replace the `navbar-default` class with `navbar-inverse`.
 
@@ -248,7 +248,7 @@ With Bootstrap and the new navigation the website looks already quite appealing 
 
 You will notice that the page either doesn't fit the screen or the navigation is displayed too small.
 
-![Mobile without Viewport](/assets/library/html-css/part7/mobile-without-viewport-de.png)
+![Mobile without Viewport](/assets/library/html-css/part7/mobile-without-viewport.png)
 
 With a `meta` info inside `head` we can tell the mobile browsers to properly scale the page.
 
@@ -264,7 +264,7 @@ With a `meta` info inside `head` we can tell the mobile browsers to properly sca
 
 It should now look something like this:
 
-![Mobile with Viewport](/assets/library/html-css/part7/mobile-with-viewport-de.png)
+![Mobile with Viewport](/assets/library/html-css/part7/mobile-with-viewport.png)
 
 Bootstrap was designed so that it [works well on mobile screens](http://getbootstrap.com/css/#overview-mobile). In the screenshot above you can see how the navigation is automatically displayed vertically when the width of the screen is too small. If you're not using a mobile phone you can also simulate this by simply resizing your browser window.
 

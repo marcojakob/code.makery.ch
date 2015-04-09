@@ -43,8 +43,8 @@ sidebars:
     paging: <i class="fa fa-flag-checkered"></i>
 - header: Downloads
   body:
-  - text: Portfolio Teil 5
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.4/portfolio-de-part5.zip
+  - text: Portfolio Part 5
+    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part5.zip
     icon-css: fa fa-fw fa-file-archive-o
 languages: 
   header: Languages
@@ -131,7 +131,7 @@ In the HTML code above you can see some special tags: `<!--` and `-->`. Between 
 
 Our blog needs some entries. We create a separate HTML page for each blog entry. Create a subfolder within the `blog` folder with the name `first-entry`. Use your file explorer to copy the file `blog/index.html` into the new subfolder.
 
-![Blog Entry](/assets/library/html-css/part5/blog-entry-subfolder-de.png)
+![Blog Entry](/assets/library/html-css/part5/blog-entry-subfolder.png)
 
 Open the blog entry and change the content as follows:
 
@@ -189,7 +189,7 @@ With such blog entries you will advance much faster in mastering programming. Th
   **Hint:** Create a subfolder for each blog post (with an `index.html` page). This will give you a nice order where you can put pictures and other files for blog entries into separate subfolders.
 </div>
 
-![Blog Entry 2](/assets/library/html-css/part5/blog-entry-subfolder2-de.png)
+![Blog Entry 2](/assets/library/html-css/part5/blog-entry-subfolder2.png)
 
 
 ## Projects Page
@@ -259,7 +259,7 @@ In the address you'll find a new item: `<br>`. It causes a line break. Also note
 
 Now we already have five HTML pages.
 
-![All Files](/assets/library/html-css/part5/all-files-de.png)
+![All Files](/assets/library/html-css/part5/all-files.png)
 
 
 ## What's next?

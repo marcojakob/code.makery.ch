@@ -43,8 +43,8 @@ sidebars:
     paging: <i class="fa fa-flag-checkered"></i>
 - header: Downloads
   body:
-  - text: Portfolio Teil 3
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v0.4/portfolio-de-part3.zip
+  - text: Portfolio Part 3
+    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part3.zip
     icon-css: fa fa-fw fa-file-archive-o
 languages: 
   header: Languages
@@ -70,7 +70,7 @@ A CSS file is an ordinary text file with the extension `.css`. We will link to t
 
 Create a **New File** in your *Portfolio* folder. Name the new file `main.css`.
 
-![New CSS File](/assets/library/html-css/part3/new-css-file-de.png)
+![New CSS File](/assets/library/html-css/part3/new-css-file.png)
 
 Now open your `index.html` and add a `<link>` element inside the `<head>` element. With the `<link>` element, we tell the HTML page to load the CSS file:
 
@@ -98,7 +98,7 @@ Insert this element in your `<head>` block. Now your code should look like the f
     
     &lt;p>Thanks for stopping by.&lt;/p>
     
-    &lt;p>Please have a look around. In the blog section I document my experiences in programming. You may also look at my web projects. Have Fun.&lt;/p>
+    &lt;p>Please have a look around. In the blog section I document my experiences in programming. You may also look at my web projects. Have fun.&lt;/p>
     
     &lt;img src="marco.jpg" alt="Picture of me">
 
@@ -130,7 +130,7 @@ h2 {
 
 The result should look like this:
 
-![Changed Color](/assets/library/html-css/part3/changed-color-de.png)
+![Changed Color](/assets/library/html-css/part3/changed-color.png)
 
 
 ## Color Codes
@@ -151,11 +151,11 @@ Expressing colors with hexadecimal values is very popular because with it you ca
 
 If you are using the [Brackets](http://brackets.io/) editor, you can open a color picker right in your CSS file: Right-click on the color code and select **Quick Edit** or press `Ctrl+E`.
 
-![Quick Edit](/assets/library/html-css/part3/quick-edit-de.png)
+![Quick Edit](/assets/library/html-css/part3/quick-edit.png)
 
 This immediately displays a color picker where you can easily choose a color. You can even switch between the various notations with the three buttons at the bottom.
 
-![Color Chooser](/assets/library/html-css/part3/color-chooser-de.png)
+![Color Chooser](/assets/library/html-css/part3/color-chooser.png)
 
 
 ### Online Color Pickers
@@ -194,7 +194,7 @@ You have already seen how CSS rules can change the color of an HTML element. Let
 
 A CSS rule consists of three elements, a *selector*, a *property*, and a *value*.
 
-![CSS-Regel](/assets/library/html-css/part3/css-rule-de.png)
+![CSS-Regel](/assets/library/html-css/part3/css-rule.png)
 
 This rule states that all `<h2>` elements should get a background color of `#607d8b`.
 
@@ -405,7 +405,7 @@ Now we can target this title in CSS with `.title`. The CSS rule looks like the f
 
 If all goes well the portfolio now looks like this:
 
-![Portfolio](/assets/library/html-css/part3/portfolio-de.jpg)
+![Portfolio](/assets/library/html-css/part3/portfolio.jpg)
 
 
 ## What's next?
