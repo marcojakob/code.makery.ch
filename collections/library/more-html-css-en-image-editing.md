@@ -3,7 +3,7 @@ layout: article
 title: "More HTML & CSS: Image Editing"
 date: 2015-04-09 00:00
 slug: more-html-css/image-editing
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-en-image-processing.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-en-image-editing.md
 description: "A list of links to image editing programs. Graphic tools and online graphics programs."
 published: true
 prettify: true

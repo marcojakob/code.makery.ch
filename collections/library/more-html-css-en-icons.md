@@ -3,7 +3,7 @@ layout: article
 title: "More HTML & CSS: Icons"
 date: 2015-04-09 00:00
 slug: more-html-css/icons
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-en-website-layout.md
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-en-icons.md
 description: "Learn how to layout elements on web pages using the bootstrap grid."
 published: true
 prettify: true
