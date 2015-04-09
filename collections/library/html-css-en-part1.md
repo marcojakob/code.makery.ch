@@ -82,7 +82,7 @@ Our website should, of course, run in all major browsers (Internet Explorer, Fir
 
 <a href="https://www.google.com/chrome/browser/" target="_blank">![Chrome Logo](/assets/library/html-css/part1/chrome-logo.png)</a>
 
-If you do not have Chrome on your computer, you can [install it here]((https://www.google.com/chrome/browser/).
+If you do not have Chrome on your computer, you can [install it here](https://www.google.com/chrome/browser/).
 
 
 ## Creating an HTML Document

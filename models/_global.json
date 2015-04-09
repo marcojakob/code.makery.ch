@@ -40,7 +40,7 @@
       "image": "/assets/library/more-html-css/more-html-css.png",
       "summary": "A collection of various topics around HTML & CSS. <br><i>Note: This course is currently <b>only available in German</b>.</i>",
       "topics": [ "HTML-CSS" ],
-      "languages": [ "de" ],
+      "languages": [ "en", "de" ],
       "parts": 7
     },
     "hello-dart": {

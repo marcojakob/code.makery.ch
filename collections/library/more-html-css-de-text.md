@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Textformatierung mit HTML & CSS"
+title: "Mehr HTML & CSS: Textformatierung"
 date: 2014-08-25 00:00
 slug: more-html-css/de/text
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-text.md
@@ -14,7 +14,7 @@ sidebars:
   - text: "Einleitung"
     link: /library/more-html-css/de/
     paging: Intro
-  - text: "Website-Layout"
+  - text: "Website-Layout mit Bootstrap"
     link: /library/more-html-css/de/website-layout/
     paging: 1
     icon-css: fa fa-fw fa-th-large
@@ -27,7 +27,7 @@ sidebars:
     icon-css: fa fa-fw fa-image
     paging: 3
   - text: "Bilder gestalten"
-    link: /library/more-html-css/de/image-processing/
+    link: /library/more-html-css/de/image-editing/
     icon-css: fa fa-fw fa-image
     paging: 4
   - text: "Kostenlose Bilder"
@@ -43,6 +43,17 @@ sidebars:
     link: /library/more-html-css/de/javascript-bootstrap/
     paging: 7
     icon-css: fa fa-fw fa-code
+- header: Links
+  body:
+  - text: HTML & CSS Tutorial
+    link: /library/html-css/de/
+    icon-css: fa fa-fw fa-external-link
+languages:
+  header: Sprachen
+  collection: library
+  item: more-html-css
+  part: text
+  active: de
 ---
 
 In diesem Teile lernen Sie Möglichkeiten kennen, wie Sie mit HTML und CSS Texte gestalten können.
@@ -50,7 +61,7 @@ In diesem Teile lernen Sie Möglichkeiten kennen, wie Sie mit HTML und CSS Texte
 Wenn Sie [Bootstrap 3](http://holdirbootstrap.de/) verwenden, dann wird die Textformatierung viel einfacher. Bootstrap kümmert sich darum, dass die Texte und Textabstände typografisch korrekt und einheitlich angezeigt werden.
 
 <div class="alert alert-warning">
-Falls Sie Bootstrap in Ihrem Projekt noch nicht integriert haben, lesen Sie zuerst den Teil über <a href="/library/html-css/de/part6/" class="alert-link">Bootstrap Framework verwenden</a> aus dem HTML & CSS Tutorial.
+Falls Sie Bootstrap in Ihrem Projekt noch nicht integriert haben, lesen Sie zuerst den Teil über <a href="/library/html-css/de/part7/" class="alert-link">Bootstrap Framework verwenden</a> aus dem HTML &amp; CSS Tutorial.
 </div>
 
 Das Meiste wird bereits unter [Typografie](http://holdirbootstrap.de/css/#type) in der Bootstrap Dokumentation erklärt. Deshalb werde ich nur auf die wichtigsten Textformatierungen eingehen. Schliesslich zeige ich auf, wie Sie die Standardschrift von Bootstrap verändern können.
@@ -125,7 +136,7 @@ body {
 
 Standardmässig gibt es nur wenige Schriftarten, die auf allen Systemen (Windows, Mac, Linux, Tablets, Smartphones, etc.) verfügbar sind.
 
-Man diese Schriftarten *Web Safe Fonts*. [CSS Font Stack](http://cssfontstack.com/) ist eine der vielen Webseiten, welche diese Schriftarten auflisten. Falls Sie eine solche Schriftart verwenden, denken Sie daran, dass Sie immer mehrere Schriftarten angeben. [CSS Font Stack](http://cssfontstack.com/) bietet für jede Schrift eine empfohlene Liste von ähnlichen Schriftarten, einen sogenannten *Font Stack*.
+Man nennt diese Schriftarten *Web Safe Fonts*. [CSS Font Stack](http://cssfontstack.com/) ist eine der vielen Webseiten, welche diese Schriftarten auflisten. Falls Sie eine solche Schriftart verwenden, denken Sie daran, dass Sie immer mehrere Schriftarten angeben. [CSS Font Stack](http://cssfontstack.com/) bietet für jede Schrift eine empfohlene Liste von ähnlichen Schriftarten, einen sogenannten *Font Stack*.
 
 
 ### Eigene Schriftarten einbetten

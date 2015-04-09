@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Bilder mit Bootstrap verwenden"
+title: "Mehr HTML & CSS: Bilder mit Bootstrap verwenden"
 date: 2015-03-18 00:00
 slug: more-html-css/de/image-bootstrap
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-image-bootstrap.md
@@ -14,7 +14,7 @@ sidebars:
   - text: "Einleitung"
     link: /library/more-html-css/de/
     paging: Intro
-  - text: "Website-Layout"
+  - text: "Website-Layout mit Bootstrap"
     link: /library/more-html-css/de/website-layout/
     paging: 1
     icon-css: fa fa-fw fa-th-large
@@ -28,7 +28,7 @@ sidebars:
     paging: 3
     active: true
   - text: "Bilder gestalten"
-    link: /library/more-html-css/de/image-processing/
+    link: /library/more-html-css/de/image-editing/
     icon-css: fa fa-fw fa-image
     paging: 4
   - text: "Kostenlose Bilder"
@@ -43,6 +43,17 @@ sidebars:
     link: /library/more-html-css/de/javascript-bootstrap/
     paging: 7
     icon-css: fa fa-fw fa-code
+- header: Links
+  body:
+  - text: HTML & CSS Tutorial
+    link: /library/html-css/de/
+    icon-css: fa fa-fw fa-external-link
+languages:
+  header: Sprachen
+  collection: library
+  item: more-html-css
+  part: image-bootstrap
+  active: de
 ---
 
 In diesem Teil lernen Sie ein paar Tricks mit Bildern:
@@ -54,7 +65,7 @@ In diesem Teil lernen Sie ein paar Tricks mit Bildern:
 Für die meisten Beispiele wird [Bootstrap 3](http://holdirbootstrap.de/) verwendet.
 
 <div class="alert alert-warning">
-Falls Sie Bootstrap in Ihrem Projekt noch nicht integriert haben, lesen Sie zuerst den Teil über <a href="/library/html-css/de/part6/" class="alert-link">Bootstrap Framework verwenden</a> aus dem HTML & CSS Tutorial.
+Falls Sie Bootstrap in Ihrem Projekt noch nicht integriert haben, lesen Sie zuerst den Teil über <a href="/library/html-css/de/part7/" class="alert-link">Bootstrap Framework verwenden</a> aus dem HTML &lt; CSS Tutorial.
 </div>
 
 Bilder in eine Webseite einbinden gelingt am einfachsten wie folgt:
@@ -68,9 +79,7 @@ Bilder in eine Webseite einbinden gelingt am einfachsten wie folgt:
 
 Damit hat das Bild eine fixe Grösse. Man kann das Bild zwar verkleinern oder vergrössern mit einer CSS-Regel wie `width: 200px;`, aber das ist oft nicht sinnvoll. Man versucht nämlich immer die Downloadgrösse der Webseite zu optimieren. Wenn man also ein Bild mit 400px-Breite herunterlädt und es dann immer auf 200px verkleinert, dann ist das nicht optimal. Deshalb sollte man schauen, dass das **Bild immer die optimale Grösse hat**.
 
-<div class="alert alert-info">
-**Merke:** Ein Bild sollte nicht grösser sein als es im Browser dargestellt wird. Ansonsten lädt man ein unnötig grosses Bild herunter.
-</div>
+**Seitenbemerkung:** Es gibt Situationen, wo hochaufgelöste Bilder erwünscht sind, zum Beispiel für die Darstellung auf Retina-Displays. Wenn Sie diesen Zusatzaufwand für solche Geräte machen wollen, dann sollten Sie dafür eine JavaScript Bibliothek wie [retina.js](http://imulus.github.io/retinajs/) verwenden.
 
 
 ## Responsive Bilder
@@ -85,10 +94,6 @@ Bootstrap 3 bietet hierzu eine CSS-Klasse `img-responsive`, welche Bilder automa
 <pre class="prettyprint lang-html">
 &lt;img src="mein-bild.png" alt="Mein Bild" class="img-responsive" >
 </pre>
-
-<div class="alert alert-info">
-**Merke:** Die CSS-Klasse `img-responsive` sollten Sie bei Ihren Bildern hinzufügen, damit diese auf kleinen Bildschirmen automatisch angepasst werden.
-</div>
 
 
 ## Bilder ausrichten
@@ -134,7 +139,7 @@ Bilder können nach links und nach rechts ausgerichtet werden. Der Text fliesst 
 ![Rechts ausrichten](/assets/library/more-html-css/image-bootstrap/pull-right.png)
 
 
-#### Neue Zeile
+#### Neue Zeile (Clearfix)
 
 Beim Ausrichten nach links oder rechts werden alle nachfolgenden Elemente neben dem  Bild dargestellt. Falls man in einer neuen Zeile beginnen möchte, muss man die `clearfix`-Klasse verwenden. Diese Klasse wird meistens auf ein übergeordnetes `<div>`-Element angewendet (mehr Infos zu [clearfix](http://holdirbootstrap.de/css/#helper-classes-clearfix) in der Bootstrap Dokumentation):
 
@@ -146,7 +151,7 @@ Beim Ausrichten nach links oder rechts werden alle nachfolgenden Elemente neben 
 &lt;p>Dieser Text ist unter dem Bild.&lt;/p>
 </pre>
 
-![Clearfix](/assets/library/more-html-css/image-bootstrap/clearfix.png)
+![Clearfix](/assets/library/more-html-css/image-bootstrap/clearfix-de.png)
 
 
 #### Abstand neben dem Bild
@@ -202,5 +207,5 @@ Mit den folgenden drei CSS-Klassen können Sie Ihren Bildern solche Konturen hin
 
 Folgende Artikel zu Bilder könnte Sie auch interessieren:
 
-* [Bilder gestalten](/library/more-html-css/de/image-processing/)
+* [Bilder gestalten](/library/more-html-css/de/image-editing/)
 * [Kostenlose Bilder](/library/more-html-css/de/image-sources/)

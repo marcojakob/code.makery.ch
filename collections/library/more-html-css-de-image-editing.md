@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "Bilder gestalten"
+title: "Mehr HTML & CSS: Bilder gestalten"
 date: 2015-03-18 00:00
-slug: more-html-css/de/image-processing
+slug: more-html-css/de/image-editing
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-image-processing.md
 description: "Eine Liste mit Links zu Bildbearbeitungsprogrammen. Grafikprogramme zum Installieren und Online Grafikprogramme."
 published: true
@@ -14,7 +14,7 @@ sidebars:
   - text: "Einleitung"
     link: /library/more-html-css/de/
     paging: Intro
-  - text: "Website-Layout"
+  - text: "Website-Layout mit Bootstrap"
     link: /library/more-html-css/de/website-layout/
     paging: 1
     icon-css: fa fa-fw fa-th-large
@@ -27,7 +27,7 @@ sidebars:
     icon-css: fa fa-fw fa-image
     paging: 3
   - text: "Bilder gestalten"
-    link: /library/more-html-css/de/image-processing/
+    link: /library/more-html-css/de/image-editing/
     icon-css: fa fa-fw fa-image
     paging: 4
     active: true
@@ -43,6 +43,17 @@ sidebars:
     link: /library/more-html-css/de/javascript-bootstrap/
     paging: 7
     icon-css: fa fa-fw fa-code
+- header: Links
+  body:
+  - text: HTML & CSS Tutorial
+    link: /library/html-css/de/
+    icon-css: fa fa-fw fa-external-link
+languages:
+  header: Sprachen
+  collection: library
+  item: more-html-css
+  part: image-editing
+  active: de
 ---
 
 Es gibt zahlreiche Programme zur Bildbearbeitung. Eine Liste mit Links finden Sie unten.

@@ -15,7 +15,7 @@ sidebars:
     link: /library/more-html-css/de/
     paging: Intro
     active: true
-  - text: "Website-Layout"
+  - text: "Website-Layout mit Bootstrap"
     link: /library/more-html-css/de/website-layout/
     paging: 1
     icon-css: fa fa-fw fa-th-large
@@ -28,7 +28,7 @@ sidebars:
     icon-css: fa fa-fw fa-image
     paging: 3
   - text: "Bilder gestalten"
-    link: /library/more-html-css/de/image-processing/
+    link: /library/more-html-css/de/image-editing/
     icon-css: fa fa-fw fa-image
     paging: 4
   - text: "Kostenlose Bilder"
@@ -43,52 +43,25 @@ sidebars:
     link: /library/more-html-css/de/javascript-bootstrap/
     paging: 7
     icon-css: fa fa-fw fa-code
+- header: Links
+  body:
+  - text: HTML & CSS Tutorial
+    link: /library/html-css/de/
+    icon-css: fa fa-fw fa-external-link
+languages:
+  header: Sprachen
+  collection: library
+  item: more-html-css
+  part:
+  active: de
 ---
 
 Diese Serie ist eine Sammlung von Anleitungen zu verschiedenen Themen rund um HTML & CSS.
 
 Die Anleitungen bauen direkt auf den Kenntnissen aus dem [HTML & CSS Tutorial](/library/html-css/de/) auf. 
 
+<a href="/library/html-css/de/" class="btn btn-warning"><i class="fa fa-hand-o-right"></i> HTML &amp; CSS Tutorial</a>
+
 Es gibt keine bestimmte Reihenfolge zwischen den einzelnen Teilen. Schauen Sie sich einfach die Themen an, welche Sie interessieren.
 
-<!-- MORE IDEAS
-
-
-## Logomakr
-
-* http://logomakr.com/
-* https://www.youtube.com/watch?v=mFnKu3-n-HI#t=5905
-
-
-## Bootstrap
-
-* Formularelemente: Buttons, Checkbox, Radio-Button, Inputs, Textarea
-
-
-## HTML
-
-* Special Characters: 
-  * http://learn.shayhowe.com/html-css/getting-to-know-html/#practice-1
-  * http://copypastecharacter.com/
-  * Buch S. 199
-* Tables?
-
-
-## More CSS
-
-http://learn.shayhowe.com/html-css/getting-to-know-css/
-Buch S. 244 ff.
-
-* The Cascade
-* Specificity
-* Common properties
-* Float
-* Ränder (padding, margin, border), Buch S. 306 ff.
-
-
-## Vorgehensweise/Arbeitsablauf zum erstellen einer Webseite
-
-* Buch S. 458ff.
-* Wireframes: http://gomockingbird.com, http://lovelycharts.com
-
--->
+&rarr; Ein guter Startpunkt ist das [Website-Layout mit Bootstrap](/library/more-html-css/de/website-layout/).

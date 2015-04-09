@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Kostenlose Bilder"
+title: "Mehr HTML & CSS: Kostenlose Bilder"
 date: 2015-03-18 00:00
 slug: more-html-css/de/image-sources
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-image-sources.md
@@ -14,7 +14,7 @@ sidebars:
   - text: "Einleitung"
     link: /library/more-html-css/de/
     paging: Intro
-  - text: "Website-Layout"
+  - text: "Website-Layout mit Bootstrap"
     link: /library/more-html-css/de/website-layout/
     paging: 1
     icon-css: fa fa-fw fa-th-large
@@ -27,7 +27,7 @@ sidebars:
     icon-css: fa fa-fw fa-image
     paging: 3
   - text: "Bilder gestalten"
-    link: /library/more-html-css/de/image-processing/
+    link: /library/more-html-css/de/image-editing/
     icon-css: fa fa-fw fa-image
     paging: 4
   - text: "Kostenlose Bilder"
@@ -43,6 +43,17 @@ sidebars:
     link: /library/more-html-css/de/javascript-bootstrap/
     paging: 7
     icon-css: fa fa-fw fa-code
+- header: Links
+  body:
+  - text: HTML & CSS Tutorial
+    link: /library/html-css/de/
+    icon-css: fa fa-fw fa-external-link
+languages:
+  header: Sprachen
+  collection: library
+  item: more-html-css
+  part: image-sources
+  active: de
 ---
 
 Beim Kopieren von Bildern aus dem Internet sollte man vorsichtig sein. Grundsätzlich gehören die Bilder dem Autor und dürfen nicht auf einer eigenen Website verwendet werden. Wenn man solche Bilder verwendet läuft man Gefahr, Ärger wegen des Urheberrechts zu bekommen.

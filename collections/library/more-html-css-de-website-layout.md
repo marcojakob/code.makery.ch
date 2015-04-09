@@ -1,10 +1,10 @@
 ---
 layout: article
-title: "Website-Layout"
+title: "Mehr HTML & CSS: Website-Layout mit Bootstrap"
 date: 2014-08-16 00:00
 slug: more-html-css/de/website-layout
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-website-layout.md
-description: "Lernen Sie, wie Elemente auf Webseiten angeordnet werden können. Enthält Beispiele mit dem Bootstrap Raster."
+description: "Lernen Sie, wie Elemente auf Webseiten angeordnet werden können mit dem Bootstrap Raster."
 published: true
 prettify: true
 comments: true
@@ -14,7 +14,7 @@ sidebars:
   - text: "Einleitung"
     link: /library/more-html-css/de/
     paging: Intro
-  - text: "Website-Layout"
+  - text: "Website-Layout mit Bootstrap"
     link: /library/more-html-css/de/website-layout/
     paging: 1
     icon-css: fa fa-fw fa-th-large
@@ -28,7 +28,7 @@ sidebars:
     icon-css: fa fa-fw fa-image
     paging: 3
   - text: "Bilder gestalten"
-    link: /library/more-html-css/de/image-processing/
+    link: /library/more-html-css/de/image-editing/
     icon-css: fa fa-fw fa-image
     paging: 4
   - text: "Kostenlose Bilder"
@@ -43,6 +43,17 @@ sidebars:
     link: /library/more-html-css/de/javascript-bootstrap/
     paging: 7
     icon-css: fa fa-fw fa-code
+- header: Links
+  body:
+  - text: HTML & CSS Tutorial
+    link: /library/html-css/de/
+    icon-css: fa fa-fw fa-external-link
+languages:
+  header: Sprachen
+  collection: library
+  item: more-html-css
+  part: website-layout
+  active: de
 ---
 
 Standardmässig werden HTML-Elemente auf zwei Arten angeordnet:
@@ -73,7 +84,7 @@ Zusätzlich wird das Layout in Bootstrap automatisch auf die Bilschirmgrösse an
 ## Das Bootstrap Raster
 
 <div class="alert alert-warning">
-Falls Sie Bootstrap in Ihrem Projekt noch nicht integriert haben, lesen Sie zuerst den Teil über <a href="/library/html-css/de/part6/" class="alert-link">Bootstrap Framework verwenden</a> aus dem HTML & CSS Tutorial.
+Falls Sie Bootstrap in Ihrem Projekt noch nicht integriert haben, lesen Sie zuerst den Teil über <a href="/library/html-css/de/part7/" class="alert-link">Bootstrap Framework verwenden</a> aus dem HTML &amp; CSS Tutorial.
 </div>
 
 Bootstrap beinhaltet ein **12-spaltiges Rastersystem** für das Layout (siehe [Dokumentation des Bootstrap-Rasters](http://holdirbootstrap.de/css/#grid)). Ein Raster kann man sich vorstellen, wie eine unsichtbare Tabelle mit zwölf Spalten:
@@ -119,10 +130,10 @@ Im HTML-Code würde dieses Layout wie folgt aussehen:
 
 Eine Spaltenangabe beinhaltet immer in der Mitte eine Angabe über die Bildschirmgrösse. Es gibt die folgenden vier Bildschirmgrössen:
 
-* `col-xs` - Spalte für Extra-Small-Geräte (Smartphones)
-* `col-sm` - Spalte für Small-Geräte (Tablets)
-* `col-md` - Spalte für Medium-Geräte (kleiner Desktop)
-* `col-lg` - Spalte für Large-Geräte (grosser Desktop)
+* `col-xs` - Spalte für Extra-Small-Geräte (Smartphones, schmaler als 768px)
+* `col-sm` - Spalte für Small-Geräte (Tablets, breiter als 768px)
+* `col-md` - Spalte für Medium-Geräte (Desktops, breiter als 992px)
+* `col-lg` - Spalte für Large-Geräte (grosse Desktops, breiter als 1200px)
 
 Die Angabe `col-sm-4` aus unserem Beispiel oben bedeutet also, dass ungefähr ab der Grösse eines Tablets eine Spalte der Breite 4 dargestellt wird. 
 
@@ -178,7 +189,8 @@ Im [HTML & CSS Tutorial](/library/html-css/de/) haben wir ein Portfolio entwicke
       &lt;h2>Blogeinträge&lt;/h2>
       &lt;ul>
         &lt;li>Weitere Einträge folgen...&lt;/li>
-        &lt;li>&lt;a href="2014-08-02-erster-eintrag/">Erster Eintrag&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="zweiter-eintrag/">Zweiter Eintrag&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="erster-eintrag/">Erster Eintrag&lt;/a>&lt;/li>
       &lt;/ul>
     &lt;/div>
 
@@ -211,9 +223,4 @@ Im [HTML & CSS Tutorial](/library/html-css/de/) haben wir ein Portfolio entwicke
 
 Lesen Sie den Abschnitt über das [Raster-System](http://holdirbootstrap.de/css/#grid) in der Bootstrap Dokumentation.
 
-Eine ausführliche Erklärung, wie das Raster-System funktioniert, finden Sie in [The Subtle Magic Behind Why the Bootstrap 3 Grid Works](http://www.helloerik.com/the-subtle-magic-behind-why-the-bootstrap-3-grid-works). 
-
-
-
-
-
+Eine ausführliche Erklärung, wie das Raster-System funktioniert, finden Sie in [The Subtle Magic Behind Why the Bootstrap 3 Grid Works](http://www.helloerik.com/the-subtle-magic-behind-why-the-bootstrap-3-grid-works).

@@ -59,7 +59,7 @@ Die Theorie wird erklärt, sobald sie für das Projekt benötigt wird. Sie werde
 
 Das Projekt, welches wir Schritt-für-Schritt erarbeiten, ist Ihr persönliches **Web Portfolio**. Dieses Portfolio beinhaltet eine Startseite, einen Blog, eine Seite für Ihre zukünftigen Webprojekte und eine Kontaktseite.
 
-<img src="/assets/library/html-css/portfolio.png" alt="Portfolio" class="img-thumbnail">
+<img src="/assets/library/html-css/portfolio-de.png" alt="Portfolio" class="img-thumbnail">
 
 
 ## Grundidee

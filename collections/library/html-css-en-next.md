@@ -63,6 +63,10 @@ The [More HTML & CSS](/library/more-html-css/) series is a collection of instruc
 
 ## Web Applications with Dart
 
+<div class="alert alert-info">
+  Web Applications with Dart will soon be available in English (it's German only at the moment). To be informed when it's available, register for the <a href="https://tinyletter.com/codemakery" class="alert-link">sign up for the Newsletter</a>.
+</div>
+
 <a href="/library/hello-dart/" class="btn btn-warning"><i class="fa fa-hand-o-right"></i> Hello Dart: Introduction to Programming</a>
 
 Learn to program dynamic web applications in Dart. [Hello Dart](/library/hello-dart/) offers an introduction that does not require any experience in programming.

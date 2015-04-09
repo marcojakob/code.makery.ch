@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Icons auf Website verwenden"
+title: "Mehr HTML & CSS: Icons auf Website verwenden"
 date: 2014-08-20 00:00
 slug: more-html-css/de/icons
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-icons.md
@@ -14,7 +14,7 @@ sidebars:
   - text: "Einleitung"
     link: /library/more-html-css/de/
     paging: Intro
-  - text: "Website-Layout"
+  - text: "Website-Layout mit Bootstrap"
     link: /library/more-html-css/de/website-layout/
     paging: 1
     icon-css: fa fa-fw fa-th-large
@@ -28,7 +28,7 @@ sidebars:
     icon-css: fa fa-fw fa-image
     paging: 3
   - text: "Bilder gestalten"
-    link: /library/more-html-css/de/image-processing/
+    link: /library/more-html-css/de/image-editing/
     icon-css: fa fa-fw fa-image
     paging: 4
   - text: "Kostenlose Bilder"
@@ -43,6 +43,17 @@ sidebars:
     link: /library/more-html-css/de/javascript-bootstrap/
     paging: 7
     icon-css: fa fa-fw fa-code
+- header: Links
+  body:
+  - text: HTML & CSS Tutorial
+    link: /library/html-css/de/
+    icon-css: fa fa-fw fa-external-link
+languages:
+  header: Sprachen
+  collection: library
+  item: more-html-css
+  part: icons
+  active: de
 ---
 
 Icons in eine Webseite einzufügen ist nicht schwer. Aber wenn man Texte und Icons kombiniert (z.B. für einen Button) oder wenn die Icons in der Grösse veränderbar sein sollen, dann wird es schwierig.
@@ -83,7 +94,7 @@ Dieses `span` kann nun irgendwo eigenfügt werden. Zum Beispiel in den Titel ein
 
 ## Font Awesome
 
-Eine der bekanntesten frei verfügbaren Icon Fonts ist [Font Awesome](http://fontawesome.io/). Font Awesome kommt mit über 400 Icons.
+Eine der bekanntesten frei verfügbaren Icon Fonts ist [Font Awesome](http://fontawesome.io/). Font Awesome kommt mit über 500 Icons.
 
 Um [Font Awesome zu integrieren](http://fontawesome.io/get-started/) steht wie für Bootstrap auch ein CDN-Link zur Verfügung. Damit muss gar nichts heruntergeladen werden, sondern wir können einfach einen Link zum CSS in den `<head>`-Bereich unserer HTML-Datei einfügen:
 
