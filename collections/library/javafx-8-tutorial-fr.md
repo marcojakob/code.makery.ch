@@ -88,6 +88,7 @@ Maintenant, j'espère que vous allez vous amuser ! Commencez avec la [Partie 1: 
   <strong><i class="fa fa-trophy"></i> Attribution:</strong> The French translation has been contributed by 
   <ul>
     <li><a href="https://github.com/chakram" class="alert-link">Chakram</a></li> 
+    <li><a href="https://github.com/Davidmue" class="alert-link">David Müller</a></li> 
   </ul>
   Thank you very much!
 </div>

@@ -2,11 +2,10 @@
 layout: article
 title: "Tutoriel JavaFX 8 - partie 1 : le Scene Builder"
 date: 2014-04-19 01:00
-updated: 2015-02-18 00:00
+updated: 2015-04-10 00:00
 slug: javafx-8-tutorial/fr/part1
-canonical: /library/javafx-8-tutorial/part1/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part1.md
-description: "Apprenez comment créer un projet JavaFX. Cette page fait partie d'un tutoriel de sept pages relatif à la conception, la programmation et le déploiment d'une application type carnet d'adresses avec JavaFX. "
+description: "Apprenez comment créer un projet JavaFX. Cette page fait partie d'un tutoriel de sept pages relatif à la conception, la programmation et le déploiment d'une application type carnet d'adresses avec JavaFX."
 image: /assets/library/javafx-8-tutorial/part1/addressapp-part1.png
 published: true
 prettify: true
@@ -51,10 +50,6 @@ languages:
   part: part1
   active: fr
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page still needs a French translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
 
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
 
