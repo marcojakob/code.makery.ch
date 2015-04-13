@@ -87,7 +87,7 @@ Currently, the only thing that is in this class is `start()` and three instructi
 
 #### <i class="fa fa-rocket mg-t"></i> TASK 1.01: First Steps
 
-Change the `start()` function so that the player first makes a step, then places a star and finally takes another step.
+Change the `start()` function so that the player first makes a step, then places a star, and finally takes another step.
 
 In the [introduction](/library/hello-dart/) you will find all commands a player can execute.
 
@@ -100,25 +100,23 @@ Click the *run* button ![Run](/assets/library/hello-dart/part1/run.png) to test 
 
 ## `index.html` and the `main()` Function
 
-As we let our programs run in a web browser, we always need an `html` file. In `index.html` you will find an instruction for the browser to load the `my_player.dart` script. For the browser to know where the Dart program starts, a `main()` function is needed.
+As we let our programs run in a web browser, we always need an `html` file. In `index.html` you will find an declaration for the browser to load the `my_player.dart` script. For the browser to know where this Dart program starts, a `main()` function is needed.
 
-At the bottom of the Dart file you will find the `main()` function. Each Dart program must have  shall include the `main ()` function have as an entry point exactly.
+At the bottom of the Dart file you will find the `main()` function. Each Dart program must have exactly one `main()` function as entry point.
 
-Zuunterst in der Dart-Datei finden Sie die `main()`-Funktion. Jedes Dart-Programm muss genau eine `main()`-Funktion als Einstiegspunkt haben.
-
-In unserer `main()`-Funktion rufen wir die Funktion `createWorld(...)` auf. Diese Funktion ist Teil von `Hello Dart` und zeichnet die ganze Welt mit dem Spieler und den Feldern. Sobald alles parat ist wird automatisch unsere `start()`-Funktion aufgerufen und der Spieler beginnt sich zu bewegen.
+In our `main()`, we call the `createWorld(...)` function. This function is part of `Hello Dart` and builds the whole world with the player and the fields. As soon as everything is ready, our `start()` function is automatically called and the player starts to move.
 
 
-## Welt gestalten
+## Design the World
 
-Die Szenarien von `Hello Dart` beinhalten zusätzliche Grafiken, die Sie nach Ihren Vorlieben einschalten können.
+The scenarios of `Hello Dart` include additional graphics that you can turn on if you want.
 
 ![Catgirl](/assets/library/hello-dart/part1/catgirl.png)
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 1.02: World Design
+#### <i class="fa fa-rocket mg-t"></i> TASK 1.02: World Design
 
-Ändern Sie die `main()`-Funktion wie folgt ab:
+Change the `main()` function as follows:
 
 <pre class="prettyprint lang-dart">
 main() {
@@ -129,29 +127,29 @@ main() {
 }
 </pre>
 
-Für **character** können Sie innerhalb der Anführungszeichen die Werte `boy`, `catgirl`, `stargirl` oder `pinkgirl` verwenden.
+For **character** you can define values in quotes. Valid values are `boy`, `catgirl`, `stargirl`, or `pinkgirl`.
 
-Für **field** sind die Werte `grass`, `stone`, `wood` oder `dirt` gültig.
+For **field** you can use the values `grass`, `stone`, `wood`, or `dirt`.
 
 <div class="alert alert-info">
-  <strong>Tipp:</strong> Um eine Änderung zu testen geht es am schnellsten, wenn man `Ctrl+S` (oder `⌘+S`) zum Speichern und anschliessend im Browser `F5` (oder `⌘+R`) zum Aktualisieren klickt.
+  **Hint:** To test a change it's fastest if you click `Ctrl+S` (or `⌘+S`) to save the file in the Dar Editor and then click `F5` (or `⌘+R`) to refresh the browser.
 </div>
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 1.03: Around Tree
+#### <i class="fa fa-rocket mg-t"></i> TASK 1.03: Around Tree
 
-Öffnen Sie `scenario1.03`. Wenn Sie das Szenario starten, dann sollten Sie eine Welt mit drei Bäumen und einem Stern sehen.
+Open `scenario1.03`. If you start the scenario you should see a world with three trees and one star.
 
-Schreiben Sie ein Programm, welches Ihren Spieler auf dem angegebenen Weg zum Stern führt. Er muss dabei um die Bäume herumlaufen. Beim Stern angekommen, soll er ihn entfernen.
+Write a program that makes your player move on the specified path to the star. He must move around the trees. Arriving on the star, he should remove it.
 
 ![Around Tree](/assets/library/hello-dart/part1/around-tree.png)
 
 
-## Neue Funktionen
+## New Functions
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 1.04: Around Tree with Function
+#### <i class="fa fa-rocket mg-t"></i> TASK 1.04: Around Tree with Function
 
-Wenn Sie Aufgabe 1.03 korrekt gelöst haben, so wird Ihr Programm wahrscheinlich *drei gleiche Teile* enthalten, nämlich für das Herumgehen um jeden Baum. Dies können wir zur besseren Übersicht noch etwas erweitern, indem wir eine neue Funktion einführen. Unterhalb der schliessenden Klammer `}` von der `start()`-Funktion erstellen wir eine neue Funktion:
+If you've solved task 1.03 correctly, your program will probably have *three equal parts*, namely for walking aroud every tree. We can improve this by introducing a new function so we don't need to repeat the same sequence. Add the following function below the closing brace `}` from the `start()` function:
 
 <pre class="prettyprint lang-dart">
 goAroundTree() {
@@ -159,15 +157,15 @@ goAroundTree() {
 }
 </pre>
 
-Schreiben Sie zwischen die geschweiften Klammern der Funktion die Befehle, die es braucht, um um den Baum zu kommen.
+Write between the curly braces the sequence of commands that are needed to go around one tree.
 
-Benutzen Sie nun innerhalb der `start()`-Funktion die Funktion `goAroundTree()` für jeden der drei Bäume.
+Now, use the new `goAroundTree()` function in your `start()` function for each of the three trees.
 
 ***
 
-*Quellen*<br>
+*Credits*<br>
 <em class="small">
-[Planet Cute](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html) Bilder stammen von Daniel Cook (Lostgarden.com), veröffentlicht unter [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/us/).<br>
-[Oleg Yadrov](https://www.linkedin.com/in/olegyadrov) hat die "Planet Cute" Bilder weiterentwickelt und sie mir zur Verfügung gestellt.<br>
-Einige Übungen in `Hello Dart` sind inspiriert von [Kara](http://www.swisseduc.ch/informatik/karatojava/). Kara wurde entwickelt von Jürg Nievergelt, Werner Hartmann, Raimond Reichert und anderen.
+  [Planet Cute](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html) images by Daniel Cook (Lostgarden.com), published under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/us/).<br>
+[Oleg Yadrov](https://www.linkedin.com/in/olegyadrov) improved the "Planet Cute" images and was so kind to let me use them.<br>
+Some exercises in `Hello Dart`were inspired by [Kara](http://www.swisseduc.ch/compscience/karatojava/javakara/). Kara was developed by Jürg Nievergelt, Werner Hartmann, Raimond Reichert et. al.
 </em>

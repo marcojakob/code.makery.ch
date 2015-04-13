@@ -61,7 +61,7 @@ languages:
   active: en
 ---
 
-#### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 1.01: First Steps
+#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 1.01: First Steps
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -75,7 +75,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 1.02: World Design
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 1.02: World Design
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -96,7 +96,7 @@ main() {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 1.03 Around Tree
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 1.03 Around Tree
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -139,16 +139,18 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### Erklärungen
+#### Explanations
 
-Die **Kommentare** im Quelltext wurden weggelassen (= der Text, welcher im Dart-Editor hellblau dargestellt wird).   
-Kommentare schreibt man in den Quelltext als zusätzliche Informationen. Die Kommentare sind nur für Menschen und werden vom Computer ignoriert. Es gibt mehrere Möglichkeiten, um Kommentare in den Quelltext zu schreiben:
-  1. Einfache Kommentare mit zwei Schrägstrichen `//` (nach den Strichen gilt der Rest der Zeile als Kommentar).
-  2. Kommentare für Funktionen und Klassen werden mit drei Schrägstrichen `///` eingeleitet.
-  3. (selten) Längere Kommentare über mehrere Zeilen schliesst man mit `/*` und `*/` ein.
+The **comments** in the source code have been omitted (that is the text that is displayed in light blue in the Dart Editor).
+
+Comments in the source code are written for additional information. Comments are intended only for humans and are ignored by the computer. There are several ways to write comments in the source code:
+
+1. Simple comments with a double slash `//` (everything between the slashes and the end of line is a comment).
+2. Comments for functions and classes are written with a tripple slash `///`.
+3. (Rarely used) Longer comments over multiple lines that start with `/*` and end with `*/`.
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 1.04: Around Tree with Function
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 1.04: Around Tree with Function
 
 <pre class="prettyprint lang-java">
 class MyPlayer extends Player {
@@ -175,7 +177,7 @@ class MyPlayer extends Player {
 }
 </pre>
 
-#### Erklärungen
+#### Explanations
 
-1. Zur besseren Übersicht und um zu vermeiden, dass wir dreimal den gleichen Code schreiben müssen, haben wir eine neue Funktion `goAroundTree()` eingeführt. 
-2. Hinter jeder Funktion steht das Klammerpaar `()`, was bedeutet, dass dieser Funktion keine Parameter übergeben werden. Später werden wir Funktionen mit Parametern kennen lernen.
+1. For a better overview and to avoid that we have to write the same code three times, we have introduced a new function called `goAroundTree()`.
+2. After each function is a set of parentheses `()`, which means that no parameters are passed to this function. Later we will learn about functions with parameters.
