@@ -1,64 +1,64 @@
 ---
 layout: article
-title: "Hello Dart - Teil 3: Bedingte Anweisungen"
-date: 2015-01-21 00:00
-slug: hello-dart/de/part3
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part3.md
-description: "Lernen Sie den Programmablauf mit bedingten Anweisungen zu steuern. Zahlreiche Hello Dart Übungen helfen beim Verständnis."
+title: "Hello Dart - Part 3: Conditionals"
+date: 2015-04-18 00:00
+slug: hello-dart/part3
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-en-part3.md
+description: "Learn to control the program flow with conditional statements. Numerous Hello Dart exercises will help you understand it."
 image: /assets/library/hello-dart/hello-dart.png
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: Artikel dieser Serie
+- header: Articles in this Series
   body:
-  - text: "Einleitung"
-    link: /library/hello-dart/de/
-    paging: Einleitung
-  - text: "Hintergrundinfos"
-    link: /library/hello-dart/de/background/
+  - text: "Introduction"
+    link: /library/hello-dart/
+    paging: Intro
+  - text: "Background Infos"
+    link: /library/hello-dart/background/
     icon-css: fa fa-fw fa-info
     paging: <i class="fa fa-info"></i>
   - text: "Installation"
-    link: /library/hello-dart/de/install/
+    link: /library/hello-dart/install/
     icon-css: fa fa-fw fa-cog
     paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Erste Schritte"
-    link: /library/hello-dart/de/part1/
+  - text: "Part 1: First Steps"
+    link: /library/hello-dart/part1/
     paging: 1
-  - text: "Teil 2: Schleifen"
-    link: /library/hello-dart/de/part2/
+  - text: "Part 2: Loops"
+    link: /library/hello-dart/part2/
     paging: 2
-  - text: "Teil 3: Bedingte Anweisungen"
-    link: /library/hello-dart/de/part3/
+  - text: "Part 3: Conditionals"
+    link: /library/hello-dart/part3/
     paging: 3
     active: true
-  - text: "Teil 4: Variablen"
-    link: /library/hello-dart/de/part4/
+  - text: "Part 4: Variables"
+    link: /library/hello-dart/part4/
     paging: 4
-  - text: "Teil 5: Funktionen"
-    link: /library/hello-dart/de/part5/
+  - text: "Part 5: Functions"
+    link: /library/hello-dart/part5/
     paging: 5
-  - text: "Nächste Schritte"
-    link: /library/hello-dart/de/next/
+  - text: "Next Steps"
+    link: /library/hello-dart/next/
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
-- header: Lösungen
+- header: Solutions
   body:
-  - text: "Lösungen zu Teil 3"
-    link: /library/hello-dart/de/part3-solutions/
+  - text: "Solutions Part 3"
+    link: /library/hello-dart/part3-solutions/
     icon-css: fa fa-fw fa-check-square-o
 - header: Links
   body:
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
+  - text: Page as Word File
+    link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
 languages:
-  header: Sprachen
+  header: Languages
   collection: library
   item: hello-dart
   part: part3
-  active: de
+  active: en
 ---
 
 Neben Schleifen gibt es eine zweite Struktur, die sehr wichtig ist, um den Programmablauf zu steuern. Mit **bedingten Anweisungen** kann man angeben, wann ein Block von Anweisungen ausgeführt werden soll und wann nicht.

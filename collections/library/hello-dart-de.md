@@ -43,6 +43,12 @@ sidebars:
     link: /library/hello-dart/de/next/
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
+languages:
+  header: Sprachen
+  collection: library
+  item: hello-dart
+  part:
+  active: de
 ---
 
 ![Hello Dart](/assets/library/hello-dart/hello-dart-animation.gif)
@@ -50,10 +56,9 @@ sidebars:
 > `Hello Dart` ist eine spielerische Einführung in die Programmierung mit Dart.
 
 
-Bisher war es kaum realistisch, als Programmieranfänger mobile oder webbasierte
-Applikationen zu entwickeln. Die Programmiersprache Dart bietet neue Möglichkeiten, wie solche Applikationen viel einfacher programmiert werden können.
+Bisher war es kaum realistisch, als Programmieranfänger mobile oder webbasierte Applikationen zu entwickeln. Die Programmiersprache Dart bietet neue Möglichkeiten, wie solche Applikationen viel einfacher programmiert werden können.
 
-`Hello Dart` setzt keine Programmierkenntnisse voraus und führt Sie schrittweise durch die Grundlagen der Programmierung. Die spielerische Welt von `Hello Dart` veranschaulicht Ihre Programme. Bald werden Sie aber aus den engen Regeln dieser Welt ausbrechen wollen, was auch das Ziel ist. Nach der Einführung mit `Hello Dart` haben Sie eine gute Grundlage, um schon bald eigene Web-Programmierprojekte zu realisieren.
+`Hello Dart` führt Sie schrittweise durch die Grundlagen der Programmierung. Es werden keine Programmierkenntnisse vorausgesetzt. Die spielerische Welt von `Hello Dart` veranschaulicht Ihre Programme. Bald werden Sie aber aus den engen Regeln dieser Welt ausbrechen wollen, was auch das Ziel ist. Nach der Einführung mit `Hello Dart` haben Sie eine gute Grundlage, um schon bald eigene Web-Programmierprojekte zu realisieren.
 
 <div class="alert alert-info">
 Lesen Sie unter <a class="alert-link" href="/library/hello-dart/de/background/">Hintegrundinfos</a>, warum ich Dart im Moment als optimale Sprache für Web und Mobile Apps sehe, die sich sowohl für Einsteiger wie auch für professionelle Softwareentwickler eignet.

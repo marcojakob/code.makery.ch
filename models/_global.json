@@ -47,9 +47,9 @@
       "slug": "hello-dart",
       "title": "Hello Dart: Introduction to Programming",
       "image": "/assets/library/hello-dart/hello-dart.png",
-      "summary": "Hello Dart is a visual and playful introduction to programming with Dart. <br><i>Note: This course is currently <b>only available in German</b>.</i>",
+      "summary": "Hello Dart is a visual and playful introduction to programming with Dart.",
       "topics": [ "Dart" ],
-      "languages": [ "de" ],
+      "languages": [ "en", "de" ],
       "parts": 5
     },
     "dart-kanban": {

@@ -1,54 +1,54 @@
 ---
 layout: article
-title: "Hello Dart - Nächste Schritte"
-date: 2015-01-21 00:00
-slug: hello-dart/de/next
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-next.md
-description: "Wie kann man noch mehr lernen über Webprogrammierung."
+title: "Hello Dart - Next Steps"
+date: 2015-04-18 00:00
+slug: hello-dart/next
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-en-next.md
+description: "How can you learn even more about web programming after you've completed the Hello Dart tutorial."
 image: /assets/library/hello-dart/hello-dart.png
 published: true
 prettify: false
 comments: true
 sidebars:
-- header: Artikel dieser Serie
+- header: Articles in this Series
   body:
-  - text: "Einleitung"
-    link: /library/hello-dart/de/
-    paging: Einleitung
-  - text: "Hintergrundinfos"
-    link: /library/hello-dart/de/background/
+  - text: "Introduction"
+    link: /library/hello-dart/
+    paging: Intro
+  - text: "Background Infos"
+    link: /library/hello-dart/background/
     icon-css: fa fa-fw fa-info
     paging: <i class="fa fa-info"></i>
   - text: "Installation"
-    link: /library/hello-dart/de/install/
+    link: /library/hello-dart/install/
     icon-css: fa fa-fw fa-cog
     paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Erste Schritte"
-    link: /library/hello-dart/de/part1/
+  - text: "Part 1: First Steps"
+    link: /library/hello-dart/part1/
     paging: 1
-  - text: "Teil 2: Schleifen"
-    link: /library/hello-dart/de/part2/
+  - text: "Part 2: Loops"
+    link: /library/hello-dart/part2/
     paging: 2
-  - text: "Teil 3: Bedingte Anweisungen"
-    link: /library/hello-dart/de/part3/
+  - text: "Part 3: Conditionals"
+    link: /library/hello-dart/part3/
     paging: 3
-  - text: "Teil 4: Variablen"
-    link: /library/hello-dart/de/part4/
+  - text: "Part 4: Variables"
+    link: /library/hello-dart/part4/
     paging: 4
-  - text: "Teil 5: Funktionen"
-    link: /library/hello-dart/de/part5/
+  - text: "Part 5: Functions"
+    link: /library/hello-dart/part5/
     paging: 5
-  - text: "Nächste Schritte"
-    link: /library/hello-dart/de/next/
+  - text: "Next Steps"
+    link: /library/hello-dart/next/
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
     active: true
 languages:
-  header: Sprachen
+  header: Languages
   collection: library
   item: hello-dart
   part: next
-  active: de
+  active: en
 ---
 
 

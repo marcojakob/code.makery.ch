@@ -1,106 +1,108 @@
 ---
 layout: article
-title: "Hello Dart - Teil 1: Erste Schritte"
-date: 2015-01-21 00:00
-slug: hello-dart/de/part1
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part1.md
-description: "Die ersten Schritte im Programmieren mit Dart. Lernen Sie Klassen und Funktionen kennen und verstehen Sie, was die main-Funktion bewirkt."
+title: "Hello Dart - Part 1: First Steps"
+date: 2015-04-18 00:00
+slug: hello-dart/part1
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-en-part1.md
+description: "The first steps in programming with Dart. Get to know classes and functions and understand what the main function is for."
 image: /assets/library/hello-dart/part1/around-tree.png
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: Artikel dieser Serie
+- header: Articles in this Series
   body:
-  - text: "Einleitung"
-    link: /library/hello-dart/de/
-    paging: Einleitung
-  - text: "Hintergrundinfos"
-    link: /library/hello-dart/de/background/
+  - text: "Introduction"
+    link: /library/hello-dart/
+    paging: Intro
+  - text: "Background Infos"
+    link: /library/hello-dart/background/
     icon-css: fa fa-fw fa-info
     paging: <i class="fa fa-info"></i>
   - text: "Installation"
-    link: /library/hello-dart/de/install/
+    link: /library/hello-dart/install/
     icon-css: fa fa-fw fa-cog
     paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Erste Schritte"
-    link: /library/hello-dart/de/part1/
+  - text: "Part 1: First Steps"
+    link: /library/hello-dart/part1/
     paging: 1
     active: true
-  - text: "Teil 2: Schleifen"
-    link: /library/hello-dart/de/part2/
+  - text: "Part 2: Loops"
+    link: /library/hello-dart/part2/
     paging: 2
-  - text: "Teil 3: Bedingte Anweisungen"
-    link: /library/hello-dart/de/part3/
+  - text: "Part 3: Conditionals"
+    link: /library/hello-dart/part3/
     paging: 3
-  - text: "Teil 4: Variablen"
-    link: /library/hello-dart/de/part4/
+  - text: "Part 4: Variables"
+    link: /library/hello-dart/part4/
     paging: 4
-  - text: "Teil 5: Funktionen"
-    link: /library/hello-dart/de/part5/
+  - text: "Part 5: Functions"
+    link: /library/hello-dart/part5/
     paging: 5
-  - text: "Nächste Schritte"
-    link: /library/hello-dart/de/next/
+  - text: "Next Steps"
+    link: /library/hello-dart/next/
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
-- header: Lösungen
+- header: Solutions
   body:
-  - text: "Lösungen zu Teil 1"
-    link: /library/hello-dart/de/part1-solutions/
+  - text: "Solutions Part 1"
+    link: /library/hello-dart/part1-solutions/
     icon-css: fa fa-fw fa-check-square-o
 - header: Links
   body:
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
+  - text: Page as Word File
+    link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
 languages:
-  header: Sprachen
+  header: Languages
   collection: library
   item: hello-dart
   part: part1
-  active: de
+  active: en
 ---
 
-In diesem ersten Teil wagen wir unsere ersten Schritte im Programmieren.  
+In this part we will take our first steps in programming.
 
 ![Hello Dart](/assets/library/hello-dart/part1/hello.png)
 
 
-### Voraussetzungen
+### Prerequisites
 
-* Sie brauchen keine Vorkenntnisse im Programmieren, um mit `Hello Dart` zu starten!
-* Sie müssen den Dart Editor mit den `Hello Dart`-Szenarien installiert haben. Falls Sie das noch nicht gemacht haben, finden Sie hier eine [Installationsanleitung](/library/hello-dart/de/install/).
+* You need no prior knowledge of programming to start with `Hello Dart`!
+* You must have the Dart Editor with the `Hello Dart` scenarios installed. If you don't have it yet, please go through the [installation instructions](/library/hello-dart/install/).
 
 ***
 
 
-## Die Klasse `MyPlayer`
+## The `MyPlayer` Class
 
-Öffnen Sie die Datei `my_player.dart` aus dem Ordner `scenario1.01`.
+Open the file `my_player.dart` from the folder `scenario1.01`.
 
 ![My Player](/assets/library/hello-dart/part1/my-player.png)
 
-Betrachten wir einmal die **Klasse** `MyPlayer`. Zwischen den geschweiften Klammern `{` und `}` werden die Eigenschaften und das Verhalten unseres Spielers definiert. 
+Let's have a look at the `MyPlayer` **class**. Attributes and behavior of our player are defined between the curly braces `{` and `}`.
 
-Das Einzige, was im Moment in dieser Klasse steht ist `start()` und drei Anweisungen für die Bewegungen des Spielers. `start()` ist eine Funktion (wird manchmal auch *Methode* genannt). Darin können wir das Verhalten unseres Spieleres verändern.
+Currently, the only thing that is in this class is `start()` and three instructions to move the player. `start()` is a function (functions are sometimes also called *methods*). In this function we can change the behavior of the player.
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 1.01: First Steps
+#### <i class="fa fa-rocket mg-t"></i> TASK 1.01: First Steps
 
-Ändern Sie die `start()`-Funktion so ab, dass der Spieler zuerst einen Schritt macht, dann einen Stern legt und schliesslich wieder einen Schritt macht.
+Change the `start()` function so that the player first makes a step, then places a star and finally takes another step.
 
-In der [Einleitung](/library/hello-dart/de/) finden Sie alle Befehle, die ein Spieler ausführen kann.
+In the [introduction](/library/hello-dart/) you will find all commands a player can execute.
 
 <div class="alert alert-info">
-  <strong>Beachten Sie:</strong> Nach jedem Befehl muss ein Strichpunkt `;` stehen. 
+  **Note:** After every command you must place a semicolon `;`.
 </div>
 
-Klicken Sie auf das *Run*-Symbol ![Run](/assets/library/hello-dart/part1/run.png), um Ihr Programm zu testen.
+Click the *run* button ![Run](/assets/library/hello-dart/part1/run.png) to test your program.
 
 
-## `index.html` und die `main()`-Funktion
+## `index.html` and the `main()` Function
 
-Da wir unsere Programme in einem Webbrowser laufen lassen, brauchen wir immer eine `html`-Datei. In `index.html` finden Sie jeweils eine Angabe, dass das Script `my_player.dart` geladen werden soll. Damit der Browser weiss, wo das Dart-Programm beginnt, braucht es eine `main()`-Funktion. 
+As we let our programs run in a web browser, we always need an `html` file. In `index.html` you will find an instruction for the browser to load the `my_player.dart` script. For the browser to know where the Dart program starts, a `main()` function is needed.
+
+At the bottom of the Dart file you will find the `main()` function. Each Dart program must have  shall include the `main ()` function have as an entry point exactly.
 
 Zuunterst in der Dart-Datei finden Sie die `main()`-Funktion. Jedes Dart-Programm muss genau eine `main()`-Funktion als Einstiegspunkt haben.
 
