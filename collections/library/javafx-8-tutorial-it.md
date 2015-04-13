@@ -89,6 +89,7 @@ Adesso spero che vi divertirete! Iniziamo con [Parte 1: Scene Builder](/library/
   <strong><i class="fa fa-trophy"></i> Attribution:</strong> The italian translation has been contributed by 
   <ul>
     <li><a href="https://github.com/ksclero" class="alert-link">Ettore Stani</a></li> 
+    <li><a href="https://github.com/Mistra" class="alert-link">Giulio Mistrangelo</a></li> 
   </ul>
   Thank you very much!
 </div>

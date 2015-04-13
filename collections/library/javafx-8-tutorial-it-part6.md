@@ -4,7 +4,6 @@ title: "JavaFX 8 Tutorial - Parte 6: Grafico delle Statistiche"
 date: 2014-05-09 00:00
 updated: 2015-03-12 00:00
 slug: javafx-8-tutorial/it/part6
-canonical: /library/javafx-8-tutorial/part6/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-it-part6.md
 description: "Learn how to create a JavaFX Bar Chart."
 image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
@@ -273,7 +272,7 @@ Un buon posto per ulteriori informazioni è il tutorial ufficiale della Oracle a
 
 ### Cosa viene dopo?
 
-Nell'ultimo tutorial [Parte 7](/library/javafx-8-tutorial/part7/) finalmente ci occuperemo della distribuzione (i.e. pacchettizzare e distribuire la nostra app agli utenti).
+Nell'ultimo tutorial [Parte 7](/library/javafx-8-tutorial/it/part7/) finalmente ci occuperemo della distribuzione (i.e. pacchettizzare e distribuire la nostra app agli utenti).
 
 
 ##### Qualche altro articolo che potresti trovare interessante
