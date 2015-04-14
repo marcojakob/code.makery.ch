@@ -138,7 +138,7 @@ class MyPlayer extends Player {
   }
 
   /// Steigt eine Stufe nach oben.
-   oneStepUp() {
+  oneStepUp() {
     turnLeft();
     move();
     turnRight();

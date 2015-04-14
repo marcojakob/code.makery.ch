@@ -61,24 +61,24 @@ languages:
   active: en
 ---
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.01: Conditionals
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.01: Conditionals
 
 ##### a.
 
-Nimmt den Stern weg, wenn es einen hat.
+Removes a star if there is one.
 
 
 ##### b.
 
-Nimmt den Stern weg, wenn es einen hat und legt einen Stern hin, wenn es keinen hat (Invertieren).
+Removes a star if there is one, puts down a star if there is none. This means the star pattern is inverted.
 
 
 ##### c.
 
-Nimmt den Stern weg, wenn links ein Baum steht.
+Removes the star if there is a tree on the left.
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.02: Star Track
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.02: Star Track
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -96,7 +96,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.03: Star at Tree
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.03: Star at Tree
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -113,7 +113,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.04: Around Tree II
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.04: Around Tree II
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -144,7 +144,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.05: Round Trip
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.05: Round Trip
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -170,7 +170,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.06: Around Tree III
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.06: Around Tree III
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -205,7 +205,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.07: Follow the Trail
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.07: Follow the Trail
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -219,26 +219,26 @@ class MyPlayer extends Player {
     removeStar();
   }
 
-  /// Funktion, um den nächsten Stern zu finden.
+  /// Function to find the next star.
   findNextLeaf() {
-    // Erst mal vorne schauen.
+    // First look in the front.
     move();
     if (!onStar()) {
 
-      // Kein Stern vorne, also zurück und links schauen.
+      // No star in front, get back and try on the left.
       turnAndGoBack();
       turnRight();
       move();
       if (!onStar()) {
 
-        // Links ist auch kein Stern; dann muss er rechts liegen.
+        // No star on the left, it must be on the right.
         turnAndGoBack();
         move();
       }
     }
   }
 
-  /// Funktion, um einen Schritt zurück zu gehen.
+  /// Function to go back one step.
   turnAndGoBack() {
     turnLeft();
     turnLeft();
@@ -248,7 +248,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.08: Guard
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.08: Guard
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -261,22 +261,22 @@ class MyPlayer extends Player {
 
   makeOneStep() {
     if (!treeRight()) {
-      // Kein Baum rechts --> gehe nach rechts.
+      // No tree right --> go to the right.
       turnRight();
       move();
     } else {
-      // Baum rechts.
+      // There is a tree on the right.
       if (!treeFront()) {
-        // Kein Baum vorne --> ein Schritt vorwärts.
+        // No tree in front --> make step forward.
         move();
       } else {
         // Bäume rechts und vorne.
         if (!treeLeft()) {
-          // Kein Baum links --> gehe nach links.
+          // No tree left --> go to the left.
           turnLeft();
           move();
         } else {
-          // Bäume rechts, vorne und links --> Sackgasse.
+          // Trees right, in front, and left --> dead end.
           turnLeft();
           turnLeft();
           move();

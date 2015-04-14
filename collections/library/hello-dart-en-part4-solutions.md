@@ -61,7 +61,7 @@ languages:
   active: en
 ---
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 4.01: Counting Stars
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 4.01: Counting Stars
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -77,13 +77,13 @@ class MyPlayer extends Player {
       }
     }
 
-    say('Ich habe ${count} Sterne gefunden.');
+    say('I have found ${count} stars.');
   }
 }
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 4.02: Cleaning Up
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 4.02: Cleaning Up
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -97,31 +97,31 @@ class MyPlayer extends Player {
       if (canMove()) {
         move();
       } else {
-        // Wir sind an einem Rand.
+        // We are at a border.
         if (goingRight) {
-          // Wir sind am rechten Rand und drehen um.
+          // We are at the right border and turn around.
           turnAroundRight();
           goingRight = false;
         } else {
-          // Wir sind am linken Rand und drehen um.
+          // We are at the left border and turn around.
           turnAroundLeft();
           goingRight = true;
         }
       }
     }
 
-    // Entferne den letzten Stern.
+    // Remove the last star.
     removeStar();
   }
 
-  /// Umdrehen am rechten Rand.
+  /// Turn around at the right border.
   turnAroundRight() {
     turnRight();
     move();
     turnRight();
   }
 
-  /// Umdrehen am linken Rand.
+  /// Turn around at the left border.
   turnAroundLeft() {
     turnLeft();
     move();
@@ -131,7 +131,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 4.03: Inverting
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 4.03: Inverting
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -145,38 +145,38 @@ class MyPlayer extends Player {
       if (canMove()) {
         move();
       } else {
-        // Wir sind an einem Rand.
+        // We are at a border.
         if (goingRight) {
-          // Wir sind am rechten Rand und drehen um.
+          // We at the right border and turn around.
           turnAroundRight();
           goingRight = false;
         } else {
-          // Wir sind am linken Rand und drehen um.
+          // We are at the left border and turn around.
           turnAroundLeft();
           goingRight = true;
         }
       }
     }
 
-    // Das letzte Feld invertieren.
+    // Invert the last field.
     invertField();
   }
 
-  /// Umdrehen am rechten Rand.
+  /// Turn around at the right border.
   turnAroundRight() {
     turnRight();
     move();
     turnRight();
   }
 
-  /// Umdrehen am linken Rand.
+  /// Turn around at the left border.
   turnAroundLeft() {
     turnLeft();
     move();
     turnLeft();
   }
 
-  /// Ein einzelnes Feld invertieren.
+  /// Invert a single field.
   invertField() {
     if (onStar()) {
       removeStar();
@@ -188,7 +188,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 4.04: Tree Line
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 4.04: Tree Line
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -205,35 +205,35 @@ class MyPlayer extends Player {
       }
     }
 
-    say('Die längste Baumreihe ist ${longestRow} Bäume lang.');
+    say('The longest tree line is ${longestRow} trees long.');
   }
 
-  /// Geht einer Baumreihe entlang und zählt die Bäume.
+  /// Walks along a tree line and counts the trees.
   countRow() {
     int currentRow = 0;
 
     turnLeft();
 
     while (treeRight())  {
-      // Den Zähler für die aktuelle Zeile um eins erhöhen.
+      // Increment the counter for the row by one.
       currentRow++;
       move();
     }
 
-    // Gehe um die Baumreihe herum.
+    // Go around the tree line.
     turnRight();
     move();
     move();
     turnRight();
 
-    // Gehe zurück nach unten.
+    // Go back down.
     while (canMove()) {
       move();
     }
 
     turnLeft();
 
-    // Teste, ob die aktuelle zeile länger ist als alle bisherigen.
+    // Test if the current tree line is longer than the previous lines.
     if (currentRow > longestRow) {
       longestRow = currentRow;
     }

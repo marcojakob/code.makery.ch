@@ -61,7 +61,7 @@ languages:
   active: en
 ---
 
-#### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 2.01: Loop
+#### <i class="fa fa-check-square-o"></i> SOLUTION TASK 2.01: Loop
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -75,7 +75,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 2.02: Loop Star
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 2.02: Loop Star
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -89,7 +89,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 2.03: Leaving the Tunnel
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 2.03: Leaving the Tunnel
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -105,7 +105,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 2.04: Afraid of Tunnel
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 2.04: Afraid of Tunnel
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -119,14 +119,14 @@ class MyPlayer extends Player {
 }
 </pre>
 
-Man könnte die `while`-Bedingung auch anders formulieren, zum Beispiel:
+We could also write the `while` condition as follows:
 
 <pre class="prettyprint lang-dart">
 while (!(treeLeft() &amp;&amp; treeRight())
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 2.05: Climbing Up
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 2.05: Climbing Up
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -137,8 +137,8 @@ class MyPlayer extends Player {
     }
   }
 
-  /// Steigt eine Stufe nach oben.
-   oneStepUp() {
+  /// Climbes one step.
+  oneStepUp() {
     turnLeft();
     move();
     turnRight();

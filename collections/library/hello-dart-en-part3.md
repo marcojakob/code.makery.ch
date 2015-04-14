@@ -61,23 +61,24 @@ languages:
   active: en
 ---
 
-Neben Schleifen gibt es eine zweite Struktur, die sehr wichtig ist, um den Programmablauf zu steuern. Mit **bedingten Anweisungen** kann man angeben, wann ein Block von Anweisungen ausgeführt werden soll und wann nicht.
-
+In addition to loops there is a second structure, which is very important to control the program flow. With **conditional statements** we can specify if a block of statements should be executed or not.
 
 <pre class="prettyprint lang-dart">
-if (treeFront()) {  // Bedingung.
-  turnLeft();       // Block 1 wird ausgeführt, wenn Bedingung zutrifft (=true).
+if (treeFront()) {  // Condition.
+  turnLeft();       // Block 1, executed if the condition is true.
 } else {
-  move();           // Block 2 wird ausgeführt, wenn Bedingung nicht zutrifft (=false).
+  move();           // Block 2, executed if the condition is false.
 }
 </pre>
 
-**Hinweis: Der `else`-Teil (Block 2) kann weggelassen werden, wenn er nicht benötigt wird.**
+<div class="alert alert-info">
+  **Note:** The `else` part (block 2) may be omitted if it is not needed.
+</div>
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.01: Conditionals
+#### <i class="fa fa-rocket mg-t"></i> TASK 3.01: Conditionals
 
-Beschreiben Sie mit Worten, was die folgenden Codebeispiele bewirken. Testen Sie diese anschliessend im `scenario3.01`. Damit die bedingten Anweisungen nicht nur einmal ausgeführt werden, sollten Sie diese in die vorbereitete Schleife setzen.
+Describe in words the effect of the following code examples. Then test them in `scenario3.01`. For the conditional statements to be executed more than once you should put them into the loop that is already in the scenario.
 
 
 ##### a.
@@ -104,7 +105,7 @@ move();
 
 ##### c.
 
-Bedingte Anweisungen können auch ineinander verschachtelt werden:
+Conditional statements may be nested:
 
 <pre class="prettyprint lang-dart">
 if (treeLeft()) {
@@ -115,29 +116,29 @@ if (treeLeft()) {
 move();
 </pre>
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.02: Star Track
+#### <i class="fa fa-rocket mg-t"></i> TASK 3.02: Star Track
 
-![Sternenspur](/assets/library/hello-dart/part3/star-track.png)
+![Star Track](/assets/library/hello-dart/part3/star-track.png)
 
-Der Spieler soll vorwärts laufen und dabei überall einen Stern legen, wo keiner ist. Achten Sie am Schluss darauf, dass auch auf dem letzten Feld noch ein Stern liegt.
+The player is to move forward and always put a star where there is none. Make sure that he also puts a star on the last field.
 
-Öffnen Sie das `scenario3.02` und schreiben Sie das Programm dazu.
-
-
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.03: Star at Tree
-
-![Stern beim Baum](/assets/library/hello-dart/part3/star-at-tree.png)
-
-Der Spieler soll geradeaus gehen und überall dort einen Stern legen, wo entweder links oder rechts ein Baum steht.
-
-Beachten Sie, dass Sie, wie bei den Schleifen erklärt, auch hier die *Logischen Operatoren* `&&`, `||` und `!` verwenden können.
+Open the `scenario3.02` and write the program.
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.04: Around Tree II
+#### <i class="fa fa-rocket mg-t"></i> TASK 3.03: Star at Tree
 
-![Um Baum herum A](/assets/library/hello-dart/part3/around-tree-a.png)
+![Star at Tree](/assets/library/hello-dart/part3/star-at-tree.png)
 
-Um die Bäume herum laufen kennen wir bereits aus dem Teil 1. Wir haben es dort wie folgt gelöst:
+Let the player go straight ahaid and put a leaf anywhere where there is a tree on his left or right or on both sides.
+
+Note that you can use the *logical operators* `&&`, `||`, and `!` in the same way we did in loops.
+
+
+#### <i class="fa fa-rocket mg-t"></i> TASK 3.04: Around Tree II
+
+![Around Tree A](/assets/library/hello-dart/part3/around-tree-a.png)
+
+How to walk around trees we already know from the first part. We had solved it like this:
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -164,61 +165,61 @@ class MyPlayer extends Player {
 }
 </pre>
 
-Dieses Programm funktioniert ganz gut, solange die Welt mit den Bäumen immer genau gleich aussieht. Sobald ein Baum verschoben wird, gibt es Probleme.
+This program works very well as long as the world and trees looks exactly the same. Once a tree is moved, like in the following example, the program will fail.
 
-![Um Baum herum B](/assets/library/hello-dart/part3/around-tree-b.png)
+![Around Tree B](/assets/library/hello-dart/part3/around-tree-b.png)
 
-Das `scenario3.04` hat drei Varianten. Öffnen Sie dieses Szenario und ändern Sie in der `main()`-Funktion den Text `scenario-a.txt` in `scenario-b.txt` um. Testen Sie nun, was passiert, wenn Sie das Programm wie oben dargestellt starten.
+The `scenario3.04` has three variants. Open this scenario and in the `main()` function change the text `scenario-a.txt` to `scenario-b.txt`. Now test what happens when you start the program in the alternate world.
 
-Sie kennen nun etliche Möglichkeiten, wie Sie mit Hilfe von Sensor-Methoden auf Umstände reagieren können. Versuchen Sie nun das Programm so abzuändern, dass unser Spieler den Stern in allen Welten mit folgenden Eigenschaften erreicht:
+By now you know various ways you can respond to circumstances with the help of sensor methods. Try to change the program so that your player reaches the star in all worlds with the following properties:
 
-* Der Stern liegt immer gerade vor ihm. Er muss also um die Bäume herumlaufen.
-* Es stehen nie zwei Bäume nebeneinander.
-
-
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.05: Round Trip
-
-![Rundgang](/assets/library/hello-dart/part3/round-trip.png)
-
-Der Spieler geht in einem Rundgang auf die Suche nach einem Stern (und liest diesen auf). Jedes Feld im Rundgang hat genau zwei freie benachbarte Felder. Eines liegt immer hinter dem Spieler; von diesem Feld aus ist er auf das aktuelle Feld gekommen.
-
-Laden Sie das `scenario3.05` und schreiben Sie ein Programm dazu. Testen Sie das Programm in **allen drei Welten**.
-
-*Tipp: Schreiben Sie zuerst eine Schleife, die stoppt, sobald der Spieler auf einem Stern ist. Stellen Sie sich dann vor, was nach jedem einzelnen durchgang durch die Schleife geschehen soll.*
+* The star is always right in front of the player. He must walk around the trees to get to the star.
+* There are never two trees standing next to each other.
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.06: Around Tree III
+#### <i class="fa fa-rocket mg-t"></i> TASK 3.05: Round Trip
 
-![Um Baum herum III](/assets/library/hello-dart/part3/around-tree-iii.png)
+![Round Trip](/assets/library/hello-dart/part3/round-trip.png)
 
-Dies ist die ähnliche Übung wie die Aufgabe 3.04: Der Spieler soll den Stern finden, der geradeaus vor ihm liegt. Nun können aber eine beliebige Anzahl Bäume hintereinander stehen.
+The player makes a round trip in search of a star (and removes it). Each field in the tour has exactly two empty adjacent fields. One is always behind the player which is the field the player came from.
 
-Laden Sie das `scenario3.06` und verbessern Sie die Methode `goAroundTree()` so, dass der Spieler um mehrere Bäume herumgehen kann. Testen Sie Ihr Programm in allen vorgegebenen Welten (a, b, c und d).
+Open the `scenario3.05` and write a program for it. Test your program in **all three worlds**, `scenario-a.txt`, `scenario-b.txt`, and `scenario-c.txt`.
+
+*Hint: First write a loop that stops when the player is on a star. Then imagine what must happen after every step through the loop.*
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.07 (schwierig): Follow the Trail
+#### <i class="fa fa-rocket mg-t"></i> TASK 3.06: Around Tree III
+
+![Around Tree III](/assets/library/hello-dart/part3/around-tree-iii.png)
+
+This is a similar exercise as task 3.04: The player has to find the star that lies before him. Now, however, any number of trees may stand next to each other.
+
+Load the `scenario3.06` und improve the `goAroundTree()` method so that the player can go around multiple trees. Test your program in all the available worlds (a, b, c, and d).
+
+
+#### <i class="fa fa-rocket mg-t"></i> TASK 3.07 (difficult): Follow the Trail
 
 ![Rundgang](/assets/library/hello-dart/part3/follow-the-trail.png)
 
-Der Spieler soll einer Spur von Sternen folgen und diese jeweils auflesen. Vor den Bäumen soll er anhalten.
+The player has to follow a trail of stars and pick them up. Before the trees he should stop.
 
-*Wichtig: Schreiben Sie zur besseren Übersicht für gewisse Programmteile eigene Methoden.*
-
-
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.08 (schwierig): Guard
-
-![Wächter](/assets/library/hello-dart/part3/guard.png)
-
-Der Spieler soll einen Wald bewachen voller Sterne. Er soll aussen am Waldrand entlang laufen.
-
-Beginnen Sie mit einem einzelnen Rundgang um den Wald. Anschliessend können Sie mit einer Endlosschleife `while(true)` den Spieler mehrere Rundgänge machen lassen.
-
-Testen Sie Ihr Programm auch in der zweiten Welt.
+*Important: Write new methods for specific parts of your program. This greatly improves the clarity of your program.*
 
 
-## Wie weiter?
+#### <i class="fa fa-rocket mg-t"></i> TASK 3.08 (difficult): Guard
 
-Lernen Sie im [Teil 4](/library/hello-dart/de/part4/), wie wir mit Variablen etwas speichern können.
+![Guard](/assets/library/hello-dart/part3/guard.png)
+
+The player is to guard a forest full of stars. He should walk along the outer edge of the forest.
+
+Start with a single walk around the forest. Then you can let the player make multiple rounds with an infinite loop `while (true)`.
+
+Also test your program in the second world that is available.
+
+
+## What's next?
+
+&rarr; Continue with [Part 4: Variables](/library/hello-dart/part4/)
 
 
 ***

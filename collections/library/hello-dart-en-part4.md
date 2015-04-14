@@ -61,16 +61,16 @@ languages:
   active: en
 ---
 
-Mit Schleifen haben wir gelernt, bestimmte Ereignisse zu wiederholen, solange eine Bedingung erfüllt ist. Nun möchten wir aber folgendes tun:
+With loops we have learned to repeat certain events while a condition is met. Now we want to do the following:
 
-*Der Spieler soll eine Spur von fünf Sternen legen.*
+*The player is to lay a trail of five stars.*
 
-![Fünf Sterne](/assets/library/hello-dart/part4/five-stars.png)
+![Five Stars](/assets/library/hello-dart/part4/five-stars.png)
 
-Dies wäre natürlich recht einfach, wenn wir `putStar()` und `move()` fünfmal aufrufen, jedoch wenig elegant. Schöner wäre es, wenn unser Spieler mitzählt, wie viele Sterne er bereits abgelegt hat. Damit der Spieler zählen kann, braucht er ein "Gedächtnis", d.h. konkret einen Speicher. Beim Programmieren sind die Speicherplätze durch Variablen ansprechbar.
+This would, of course, be quite easy if we simple called `putStar()` and `move()` five times. But this is not very elegant. It would be nice if the player would count how many stars he has already placed. To do so, the player will need a "brain", that means some kind of memory. Memory in programming can be used through the use of variables.
 
 
-## Zählen mit Variablen
+## Counting with Variables
 
 <pre class="prettyprint lang-dart">
 var i;
@@ -85,166 +85,171 @@ while (i &lt; 5) {
 </pre>
 
 
-#### Erklärungen
+#### Explanations
 
-1. Mit `var i;` wird Speicherplatz für eine Variable mit dem Namen `i` reserviert. Man sagt: Die **Variable i wird deklariert**.
-2. Durch `i = 0;` wird der Variable `i` der Wert `0` zugewiesen. Da es die erste Wertzuweisung für die Variable ist, sagt man auch: Die **Variable i wird initialisiert**.
-3. Deklaration und Initialisierung werden meistens zusammengefasst wie folgt:   
-`var i = 0;`
-4. Für die Bedingung `i < 5` wird der Vergleichsoperator `<` benutzt (weitere Vergleichsoperatoren siehe Tabelle weiter unten).
-5. Bei der Zuweisung `i = i + 1;` muss man zuerst den rechten Teil anschauen. Es bedeutet: "Nimm den aktuellen Wert von i, addiere 1 dazu und speichere den neuen Wert wieder unter dem Namen i ab."
+1. With `var i;` we reserve space for a variable named `i`. We say: The **variable i is declared**.
+2. With `i = 0;` the variable `i` is assigned a value of `0`. Since it is the first assignment for the variable, we also say: The **variable i is initialized**.
+3. Mostly, declaring and initializing a variable is done in a single step:   
+`int i = 0;`
+4. For the condition `i < 5`, the comparison operator `<` means less than (more comparison operators see tables below).
+5. For the assignment `i = i + 1`, we must first look at the right part. It means: "Take the current value of i, add 1 to it and save the new value again under the name i."
 
 
-#### Weitere Hinweise zu Variablen
+#### More Information about Variables
 
-* Es ist möglich, eine Variable mit einem endgültigen, unveränderlichen Wert zu versehen, d.h. sie zu einer Konstanten zu machen:   
+* It is possible to create a variable with an unchangeable value, that means making it into a constant:   
 `const anzahl = 5;`   
-Dann könnte man im obigen Programmbeispiel `while (i < anzahl)` schreiben.
-* Variablen schreibt man mit einem Kleinbuchstaben, wie die Methodennamen.
+With this constant we could change the condition in the program above to   
+`while (i < anzahl)`.
+* Variables always start with a lower case letter, just like function names.
 
 
 ***
 
-## Datentypen in Dart
+## Data Types in Dart
 
-In Dart gibt es ein paar vordefinierte Datentypen. Mit Datentypen gibt man an, was in eine Variable gespeichert wird. Diese Angaben sind in Dart freiwillig. Das heisst, man kann alle Variablen einfach mit `var` deklarieren, wie wir es oben gemacht haben. Ich empfehle aber, meistens den Datentyp anzugeben, weil dies hilft, Fehler zu erkennen.
+In Dart there are a few pre-defined data types. With data types we can specify what type of data we intend to store in a variable. This information is optional Dart. This means that we could declare all variables with the generic `var`, as we did above. But I recommend that you specify the data type most of the time. This helps to detect errors early as Dart will tell you when you try to put the wrong type of data into a variable.
+
 
 <div class="alert alert-info">
-  <strong>Merke:</strong> Alles, was in eine Variable gespeichert werden kann, wird in Dart als **Objekt** bezeichnet. Der Datentyp eines Objektes nennen wir eine **Klasse**. Klassen und Objekte sind die Grundelemente der <a class="alert-link" href="http://de.wikipedia.org/wiki/Objektorientierte_Programmierung">objektorientierten Programmierung</a>.
+  **Note:** Anything that can be stored in a variable in Dart is called an **object**. The data type of an object is called a **class**. Classes and Objects are the basic building blocks of <a class="alert-link" href="http://en.wikipedia.org/wiki/Object-oriented_programming">object-oriented programming</a>.
 </div>
 
-Später werden wir unsere eigenen Klassen erstellen. Jetzt schauen wir uns zuerst die Grunddatentypen von Dart an.
+Later, we will create our own classes. Let's have a look at the basic data types of Dart.
 
-*Für weitere Informationen zu den Grunddatentypen siehe [Dart Up and Running - Chapter 2: Built-in types](https://www.dartlang.org/docs/dart-up-and-running/ch02.html#built-in-types).*
+*For more information about the basic data types of Dart see [Dart Up and Running - Chapter 2: Built-in types](https://www.dartlang.org/docs/dart-up-and-running/ch02.html#built-in-types).*
 
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th>Typ</th>
-      <th>Beschreibung</th>
-      <th>Beispiel</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Example</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>`int`</td>
-      <td>Ganze Zahlen</td>
+      <td>Integer values</td>
       <td>`1`, `2`, `-1233123`</td>
     </tr>
     <tr>
       <td>`double`</td>
-      <td>Fliesskommazahlen</td>
+      <td>Floating-point numbers</td>
       <td>`0.5`, `-333.234`</td>
     </tr>
     <tr>
       <td>`String`</td>
-      <td>Text in einer beliebigen Länge. Text wird immer *zwischen einfache oder doppelte Anführungszeichen* gestellt.</td>
-      <td>`'Ich bin ein Text'` oder `"Ich bin auch ein Text"`</td>
+      <td>Text of arbitrary length. Either *singel or double quotes* can be used to create a string.</td>
+      <td>`'I am a text'` or `"I am also a text"`</td>
     </tr>
     <tr>
       <td>`bool`</td>
-      <td>Ein Boolean ist ein Wahrheitswert, der entweder *wahr* oder *falsch* sein kann.</td>
-      <td>`true` oder `false`</td>
+      <td>A boolean is a logic value that can either be *true* or *false*.</td>
+      <td>`true` or `false`</td>
     </tr>
     <tr>
       <td>`List`</td>
-      <td>Eine Sammlung von Objekten. Wird manchmal auch *Array* genannt.</td>
+      <td>A collection of objects. Lists are sometimes also called *arrays*.</td>
       <td>`[1, 2, 3]`</td>
     </tr>
     <tr>
       <td>`Map`</td>
-      <td>In einer Map kann man Objekte speichern als *Schlüssel* und *Werte*.</td>
-      <td>`{ 'schlüssel-1': 'wert-1', 'schlüssel-2': 'wert-2' }`</td>
+      <td>A map is an object that associates *keys* and *values*.</td>
+      <td>`{ 'key-1': 'value-1', 'key-2': 'value-2' }`</td>
     </tr>
   </tbody>
 </table>
 
 
-## Vergleichsoperatoren
+## Comparison Operators
 
-Folgende Operatoren können in Dart für Vergleiche verwendet werden. Das Ergebnis ist jeweils ein `bool`, das heisst entweder `true` oder `false`.
+The following operators can be used for comparisons in Dart. The result of each expression is always a `bool`, that means it is either `true` or `false`. 
 
 <table class="table table-bordered">
   <thead>
     <tr>
       <th>Operator</th>
-      <th>Beschreibung</th>
-      <th>Beispiel</th>
+      <th>Description</th>
+      <th>Example</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>`==`</td>
-      <td>gleich</td>
+      <td>equal</td>
       <td>`k == 2`</td>
     </tr>
     <tr>
       <td>`!=`</td>
-      <td>ungleich</td>
+      <td>unequal</td>
       <td>`k != 12`</td>
     </tr>
     <tr>
       <td>`>`</td>
-      <td>grösser als</td>
+      <td>greater than</td>
       <td>`k > 67`</td>
     </tr>
     <tr>
       <td>`<`</td>
-      <td>kleiner als</td>
+      <td>less than</td>
       <td>`k < 12`</td>
     </tr>
     <tr>
       <td>`>=`</td>
-      <td>grösser als oder gleich</td>
+      <td>greater than or equal to</td>
       <td>`k >= 45`</td>
     </tr>
     <tr>
       <td>`<=`</td>
-      <td>kleiner als oder gleich</td>
+      <td>less than or equal to</td>
       <td>`k <= 23`</td>
     </tr>
   </tbody>
 </table>
 
-**Achtung:** Der Vergleich auf "Gleichheit" hat immer zwei Gleichheitszeichen `==`. Mit einem einzelnen Gleichheitszeichen `=` geschieht eine Zuweisung!
+<div class="alert alert-info">
+  **Note:** The equality operator always has two equal signs `==`. A single equal sign `=` is used for assignments to variables!
+</div>
 
 
-## Arithmetische Operatoren
+## Arithmetic Operators
 
-Zur Berechnung können folgende arithmetische Operatoren verwendet werden:
+For calculations we use the following arithmetic operators.
+
 
 <table class="table table-bordered">
   <thead>
     <tr>
       <th>Operator</th>
-      <th>Beschreibung</th>
-      <th>Beispiel</th>
+      <th>Description</th>
+      <th>Example</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>`+`</td>
-      <td>Addition</td>
+      <td>Add</td>
       <td>`h = w + 34`</td>
     </tr>
     <tr>
       <td>`-`</td>
-      <td>Subtraktion</td>
+      <td>Subtract</td>
       <td>`y = 3.4 – t`</td>
     </tr>
     <tr>
       <td>`*`</td>
-      <td>Multiplikation</td>
+      <td>Multiply</td>
       <td>`z = h * 3.56`</td>
     </tr>
     <tr>
       <td>`/`</td>
-      <td>Division</td>
+      <td>Divide</td>
       <td>`d = m / v`</td>
     </tr>
     <tr>
       <td>`%`</td>
-      <td>Modulo (liefert den Rest der Division)</td>
+      <td>Modulo (the remainder of an integer division)</td>
       <td>`count = w % 2`</td>
     </tr>
   </tbody>
@@ -253,74 +258,72 @@ Zur Berechnung können folgende arithmetische Operatoren verwendet werden:
 
 ***
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.01: Counting Stars
+#### <i class="fa fa-rocket mg-t"></i> TASK 4.01: Counting Stars
 
-![Sternenspur](/assets/library/hello-dart/part4/counting-stars.png)
+![Counting Stars](/assets/library/hello-dart/part4/counting-stars.png)
 
-Der Spieler soll von links nach rechts gehen und dabei die Sterne zählen.
+The player is to move from the left to the right and count all the stars.
 
-*Hinweise:*
+*Hints:*
 
-1. Definieren und initialisieren Sie eine Variable, zum Beispiel mit   
+1. Define and initialize a variable, for example like      
 `int count = 0;`
-2. Schreiben Sie darunter eine Schleife, in der die Variable immer um eins erhöht wird:   
+2. Below it write a loop that increments the variable by one:   
 `count = count + 1;`
-3. Die Variable sollte nur erhöht werden, wenn der Spieler auf einem Stern ist.
-4. Am Schluss soll der Spieler angeben, wie viele Sterne er gezählt hat. Mit `${count}` können wir die Variable in einen Text einfügen:   
-`say('Ich habe ${count} Sterne gefunden.');`
+3. The variable should only be incremented when the player is on a star.
+4. At the end the player should tell us how many stars he counted. With `${count}` we can include a variable inside a text:   
+`say('I have found ${count} stars.');`
 
 
 <div class="alert alert-info">
-  <strong>Gültigkeitsbereich von Variablen:</strong> Variablen sind immer nur innerhalb des Blockes (zwischen den geschweiften Klammern) gültig, in welchem sie deklariert wurden. Man kann sie auch ausserhalb der Methoden deklarieren, dann gelten sie für die ganze Klasse.
+  **The Scope of Variables:** Variables are only valid within the block (curly braces) in which they are declared. They can also be declared outside the functions. Those variables are then available inside an entire class or, if declared outside any class, they are globally available.
 </div>
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.02: Cleaning Up
+#### <i class="fa fa-rocket mg-t"></i> TASK 4.02: Cleaning Up
 
-![Aufräumen](/assets/library/hello-dart/part4/cleaning-up.png)
+![Cleaning Up](/assets/library/hello-dart/part4/cleaning-up.png)
 
-Der Spieler soll alle Sterne wegräumen.
+The player is to remove all the stars.
 
-*Hinweise:*
+*Hints:*
 
-1. Sie können den Baum verwenden, um herauszufinden, wann der Spiele am Ende angekommen ist mit einer Schleife `while (!treeFront()) {...}`.
-2. Entfernen Sie zuerst die Sterne auf der ersten Zeile.
-3. Drehen Sie am Rand und entfernen Sie die die Sterne auf der zweiten Zeile.
-4. Führen Sie nun eine `bool`-Variable ein, damit sich der Spieler merkt, in welche Richtung er läuft, zum Beispiel so:   
+1. You can use the tree to find out when the player is at the end with a `while (!treeFront()) {...}` loop.
+2. First remove the stars in the first row.
+3. Turn at the border and remove the stars of the second line.
+4. Now introduce a `bool` variable, so that the player can remember in which direction he is facing, for example like the following:   
 `bool goingRight = true;`
-5. Mit dieser Variable können Sie nun herausfinden, ob der Spieler am rechten oder am linken Rand angekommen ist und entsprechend umdrehen muss. Ein `bool` kann wie folgt in einer Bedingung verwendet werden:   
+5. With the help of this variable you can now find out if the player reaches the left or the right border and turn accordingly. A `bool` can be included in a condition as follows:   
 `if (goingRight) {...}`
-6. Denken Sie daran, die neue Richtung in die Variable zu setzen, sobald sich der Spieler dreht:   
+6. Remember to save the new direction to the variable whenever the player turns:   
 `goingRight = false;`
-7. *Verbesserung*: Damit der Code übersichtlicher wird, sollen Sie zwei Funktionen machen zum Umdrehen: `turnAroundRight()` und `turnAroundLeft()`.
+7. *Improvement*: To make the code more readable you could create two functions for turning around: `turnAroundRight()` and `turnAroundLeft()`.
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.03: Inverting
+#### <i class="fa fa-rocket mg-t"></i> TASK 4.03: Inverting
 
-![Sternenspur](/assets/library/hello-dart/part4/inverting.png)
+![Inverting](/assets/library/hello-dart/part4/inverting.png)
 
-Die Welt hat eine quadratische Fläche und am Schluss einen Baum. Innerhalb der Fläche ist ein Muster aus Sternen gelegt, das vom Spieler invertiert (=umgedreht) werden soll. Achten Sie darauf, dass Ihr Code übersichtlich bleibt und lagern Sie allenfalls Teile in eigene Funktionen aus.
-
-
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.04: Chessboard
-
-![Schachbrett](/assets/library/hello-dart/part4/chessboard.png)
-
-Die Welt hat eine quadratische Fläche und am Schluss einen Baum. Innerhalb der Fläche soll ein schachbrettartiges Muster aus Sternen gelegt werden.
+The world is a square and has a tree at the end. Within the world there is a pattern of stars that is to be inverted by the player. Make sure that your code stays clear by extracting parts into their own functions.
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.04 (schwierig): Tree Line
+#### <i class="fa fa-rocket mg-t"></i> TASK 4.04: Chessboard
 
-![Baumreihe](/assets/library/hello-dart/part4/tree-line.jpg)
+![Chessboard](/assets/library/hello-dart/part4/chessboard.png)
 
-Auf der Wiese hat es verschiedene Baumreihen. Der Spieler soll nun die Länge (in Anzahl Bäumen) der längsten Baumreihe ermitteln und ausgeben. Zwischen den Baumreihen ist immer mindestens ein Feld Platz. Auf dem letzten Feld liegt ein Stern.
+The world is a square and has a tree at the end. The player is to create a chessboard pattern with stars. 
 
 
-***
+#### <i class="fa fa-rocket mg-t"></i> TASK 4.04 (difficult): Tree Line
 
-## Wie weiter?
+![Tree Line](/assets/library/hello-dart/part4/tree-line.jpg)
 
-Fahren Sie weiter mit [Teil 5: Methoden](/library/hello-dart/de/part5/)
+In this world there are several rows of trees. The player is to determine the length (in number of trees) of the longest line of trees and report the result. Between the rows of trees is always at least one empty row. A star marks the end of the world.
+
+
+## What's next?
+
+&rarr; Continue with [Part 5: Functions](/library/hello-dart/part5/)
 
 
 ***
