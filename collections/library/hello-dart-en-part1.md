@@ -161,6 +161,11 @@ Write between the curly braces the sequence of commands that are needed to go ar
 
 Now, use the new `goAroundTree()` function in your `start()` function for each of the three trees.
 
+
+## What's next?
+
+&rarr; Continue with [Part 2: Loops](/library/hello-dart/part2/)
+
 ***
 
 *Credits*<br>

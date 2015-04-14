@@ -60,7 +60,7 @@ Previously, it was hardly realistic to program mobile or web-based applications.
 `Hello Dart` guides you through the basics of programming. No prior programming knowledge is required. The playful world of `Hello Dart` visualizes the execution of your programs. Soon you will want to break out of the limiting rules of the `Hello Dart` world, which is intended. After the introduction with `Hello Dart` you will have a good foundation to soon realize your own web projects.
 
 <div class="alert alert-info">
-  Read <a class="alert-link" href="/library/hello-dart/background/">background infos</a> to learn why I see Dart as the ideal language for beginners and professionals to program web and mobile apps.
+  Read <a class="alert-link" href="/library/hello-dart/background/">Background Infos</a> to learn why I see Dart as the ideal language for beginners and professionals to program web and mobile apps.
 </div>
 
 

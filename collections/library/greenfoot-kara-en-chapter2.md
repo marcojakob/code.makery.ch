@@ -396,7 +396,7 @@ This is a similar exercise as in task 6: Kara must find a leaf that lies ahead o
 
 ![Task 15](/assets/library/greenfoot-kara/chapter2/task15.png)
 
-Kara shall climb arbitraryily long stairs.
+Kara shall climb arbitrarily long stairs.
 
 Write a method `oneStepUp()` to make Kara climb a single step. You need to figure out how Kara knows if he still has to climb a step or if he's reached the top.
 

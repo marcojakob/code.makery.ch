@@ -161,6 +161,12 @@ Schreiben Sie zwischen die geschweiften Klammern der Funktion die Befehle, die e
 
 Benutzen Sie nun innerhalb der `start()`-Funktion die Funktion `goAroundTree()` für jeden der drei Bäume.
 
+
+## Wie weiter?
+
+&rarr; Fahren Sie weiter mit [Teil 2: Schleifen](/library/hello-dart/de/part2/).
+
+
 ***
 
 *Quellen*<br>

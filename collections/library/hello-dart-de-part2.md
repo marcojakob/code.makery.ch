@@ -122,7 +122,21 @@ Boolesche Werte können mit Hilfe von logischen Operatoren auch kombiniert oder 
   </tbody>
 </table>
 
-Ein Beispiel in Dart würde wie folgt aussehen:
+Ein Beispiel in Dart könnte wie folgt aussehen:
+
+<pre class="prettyprint lang-dart">
+if (treeLeft() && onStar()) {
+  // Mache etwas ...
+}
+</pre>
+
+oder auch kombiniert:
+
+<pre class="prettyprint lang-dart">
+if (treeLeft() && !treeRight()) {
+  // Mache etwas ...
+}
+</pre>
 
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.02: Loop Star
@@ -154,12 +168,12 @@ Der Spieler hat Angst vor Tunneln. Er soll auf jedem Feld überprüfen, ob es ei
 
 Der Spieler soll eine beliebig lange Treppe hochlaufen.
 
-Schreiben Sie eine Funktion `onStepUp()`, wo Sie den Spieler eine einzelne Stufe hochsteigen lassen. Überlegen Sie sich, wie Sie erkennen können, ob der Spieler noch eine Stufe steigen muss oder ob er zuoberst angekommen ist.
+Schreiben Sie eine Funktion `oneStepUp()`, wo Sie den Spieler eine einzelne Stufe hochsteigen lassen. Überlegen Sie sich, wie Sie erkennen können, ob der Spieler noch eine Stufe steigen muss oder ob er zuoberst angekommen ist.
 
 
 ## For-Schleifen
 
-Es gibt neben der `while`-Schleife eine weitere, sehr wichtige Art von Schleife: die `for`-Schleife:
+Es gibt neben der `while`-Schleife eine weitere, sehr wichtige Art von Schleife: die `for`-Schleife.
 
 <pre class="prettyprint lang-dart">
 for (var i = 0; i &lt; 4; i++) {
@@ -167,14 +181,14 @@ for (var i = 0; i &lt; 4; i++) {
 }
 </pre>
 
-Bei diesem Beispiel wird ein Zähler `i` verwendet. Der Zähler wird zuerst auf `0` gesetzt. Danach wird bei jedem Schleifendurchgang geprüft, ob `i` kleiner ist als 4 und schliesslich wird `i` um eins erhöht. Das bedeutet, dass die `move()`-Anweisung in dieser Schleife vier mal ausgeführt wird.
+Bei diesem Beispiel wird ein Zähler `i` verwendet. Der Zähler wird zuerst auf `0` gesetzt. Danach wird bei jedem Schleifendurchgang geprüft, ob `i` kleiner ist als `4` und schliesslich wird `i` um eins erhöht. Das bedeutet, dass die `move()`-Anweisung in dieser Schleife vier mal ausgeführt wird.
 
 Sie werden der `for`-Schleife später immer wieder begegnen, auch zum Teil in etwas abgewandelter Form. Für den Moment reicht uns mal das Wissen, dass es sie gibt.
 
 
 ## Wie weiter?
 
-Im [Teil 3](/library/hello-dart/de/part3/) lernen wir mit *bedingten Anweisungen* eine weitere Art kennen, unsere Programme zu steuern.
+&rarr; Im [Teil 3](/library/hello-dart/de/part3/) lernen wir mit *bedingten Anweisungen* eine weitere Art kennen, unsere Programme zu steuern.
 
 
 ***

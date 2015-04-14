@@ -61,18 +61,18 @@ languages:
   active: en
 ---
 
-Im letzten Teil haben wir gelernt, wie wir unserem Spieler eine Reihe von Anweisungen geben können. Anstatt jede Anweisung einzeln aufzuführen, können wir auch Anweisungen wiederholen lassen. Beim Programmieren nennt man solche Wiederholungen **Schleifen**.
+In the last part, we learned how we can give our player a set of instructions. Instead of listing each and every statement, we can also repeat instructions. In programming such repetitions are called **loops**.
 
-Als erstes Beispiel für eine Schleife möchten wir Folgendes tun: 
+As a first example of a loop, we will do the following:
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.01: Loop
+#### <i class="fa fa-rocket mg-t"></i> TASK 2.01: Loop
 
-![Schleife](/assets/library/hello-dart/part2/loop.png)
+![Loop](/assets/library/hello-dart/part2/loop.png)
 
-Der Spieler soll sich solange vorwärts bewegen, bis er nicht mehr weiter kann.
+The player should move forward until he can't move any more.
 
-In Dart können wir das wie folgt ausdrücken:
+In Dart we can express this as follows:
 
 <pre class="prettyprint lang-dart">
 while (canMove()) {
@@ -80,86 +80,101 @@ while (canMove()) {
 }
 </pre>
 
-Mit `while` wird etwas solange wiederholt, wie die Bedingung in der Klammer zutrifft. Wenn eine Bedingung zutrifft, dann ist sie `true` (=wahr). Sobald der Spieler am Rand ankommt, dann meldet die Sensor-Funktion `canMove()` den Wert `false` (=falsch) zurück und der Spieler hört auf, sich zu bewegen.
+The `while` loop is repeated as long as the condition in the paranthesis returns `true`. Once the player arrives at the edge, the sensor function `canMove()` will return `false` and the player stops moving.
 
-Testen Sie dieses Programm, indem Sie die `while`-Schleife in die `start()`-Funktion von `scenario2.01` hinein schreiben.
+Test the program by adding the above `while` loop to the `start()` function of `scenario2.01`.
 
 
-## Logische Operatoren
+## Logical Operators
 
-Unsere Sensor-Funktionen (siehe [Einleitung](/library/hello-dart/de/#sensoren)) antworten alle entweder mit `true` oder `false`, wenn man diese aufruft. Einen solchen Wert, der entweder wahr oder falsch sein kann, nennt man [Boolean](http://de.wikipedia.org/wiki/Boolesche_Variable).  
+Our sensor functions (see [Introduction](/library/hello-dart/#sensors)) all respond with either `true` or `false` when you call them. A data type that can either be true or false is called a [Boolean](http://en.wikipedia.org/wiki/Boolean_data_type).
 
-Boolesche Werte können mit Hilfe von logischen Operatoren auch kombiniert oder verändert werden. Die folgende Tabelle zeigt die drei wichtigsten logischen Operatoren in Dart:
+Boolean values can also be combined or changed by means of logical operators. The following table shows the three most important logical operators in Dart:
 
 <table class="table">
   <thead>
     <tr>
       <th>Operator</th>
-      <th>Beschreibung</th>
-      <th>Beispiel</th>
+      <th>Description</th>
+      <th>Example</th>
       <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>`&&`</td>
-      <td>und</td>
+      <td>and</td>
       <td>`treeFront() && onStar()`</td>
-      <td>Ist erfüllt (true), wenn beide Aussagen erfüllt sind, das heisst wenn der Spieler vor einem Baum **und** auf einem Stern steht.</td>
+      <td>Is true if both expressions are true, that means if the player is facing a tree **and** is on a star.</td>
     </tr>
     <tr>
       <td>`||`</td>
-      <td>oder</td>
+      <td>or</td>
       <td>`treeFront() || onStar()`</td>
-      <td>Ist dann erfüllt (true), wenn entweder die eine **oder** die andere Aussage oder beide erfüllt sind.</td>
+      <td>Is true if either the first **or** the second expression, or both are true.</td>
     </tr>
     <tr>
       <td>`!`</td>
-      <td>nicht</td>
+      <td>not</td>
       <td>`!treeFront()`</td>
-      <td>Ändert einen Ausdruck von true in false und umgekehrt. Diese Aussage wäre also dann erfüllt (true), wenn der Spieler **nicht** vor einem Baum steht.</td>
+      <td>Changes the expression from true to false and vice versa. This expression would return true if the player is **not** facing a tree.</td>
     </tr>
   </tbody>
 </table>
 
-Ein Beispiel in Dart würde wie folgt aussehen:
+An example in Dart could look like this:
+
+<pre class="prettyprint lang-dart">
+if (treeLeft() && onStar()) {
+  // Do something ...
+}
+</pre>
+
+or combined:
+
+<pre class="prettyprint lang-dart">
+if (treeLeft() && !treeRight()) {
+  // Do something ...
+}
+</pre>
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.02: Loop Star
+#### <i class="fa fa-rocket mg-t"></i> TASK 2.02: Loop Star
 
-![Schleife mit Stern](/assets/library/hello-dart/part2/loop-star.png)
+![Loop Star](/assets/library/hello-dart/part2/loop-star.png)
 
-Öffnen Sie das `scenario2.02` und programmieren Sie den Spieler mit einer Schleife so, dass er vorwärts läuft, bis er auf dem Stern steht. 
-
-
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.03: Leaving the Tunnel
-
-![Tunnel verlassen](/assets/library/hello-dart/part2/leaving-the-tunnel.png)
-
-Unser Spieler ist in einem Tunnel und möchte raus. Schreiben Sie ein Programm für `scenario2.03`, bei dem der Spieler aus dem Tunnel hinaus läuft und stehen bleibt, sobald auf einer der beiden Seiten kein Baum mehr steht.
-
-Am Schluss soll er ausserdem einen Stern ablegen.
+Open the `scenario 2.02` and program the player with a loop so that he runs forward until he stands on the star.
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.04: Afraid of Tunnel
+#### <i class="fa fa-rocket mg-t"></i> TASK 2.03: Leaving the Tunnel
 
-![Angst vor dem Tunnel](/assets/library/hello-dart/part2/afraid-of-tunnel.png)
+![Leaving the Tunnel](/assets/library/hello-dart/part2/leaving-the-tunnel.png)
 
-Der Spieler hat Angst vor Tunneln. Er soll auf jedem Feld überprüfen, ob es ein Tunneleingang ist (das heisst, ob es auf beiden Seiten Bäumen hat). Ist dies der Fall, so soll er stehen bleiben und in einer Sprechblase sagen, dass er Angst hat.
+Our player is in a tunnel and wants to get out. Write a program for `scenario2.03` where the player walks out of the tunnel and stops as soon as there is no tree on one of the sides.
 
-
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.05: Climbing Up
-
-![Treppensteigen](/assets/library/hello-dart/part2/climbing-up.png)
-
-Der Spieler soll eine beliebig lange Treppe hochlaufen.
-
-Schreiben Sie eine Funktion `onStepUp()`, wo Sie den Spieler eine einzelne Stufe hochsteigen lassen. Überlegen Sie sich, wie Sie erkennen können, ob der Spieler noch eine Stufe steigen muss oder ob er zuoberst angekommen ist.
+At the end he should also put down a star.
 
 
-## For-Schleifen
+#### <i class="fa fa-rocket mg-t"></i> TASK 2.04: Afraid of Tunnel
 
-Es gibt neben der `while`-Schleife eine weitere, sehr wichtige Art von Schleife: die `for`-Schleife:
+![Afraid of Tunnel](/assets/library/hello-dart/part2/afraid-of-tunnel.png)
+
+The player is afraid of tunnels. He should look on every field if it is a tunnel entrance (that is, whether it has trees on both sides). If this is the case, then he should stop and say that he is afraid in a speech bubble.
+
+
+#### <i class="fa fa-rocket mg-t"></i> TASK 2.05: Climbing Up
+
+![Climbing Up](/assets/library/hello-dart/part2/climbing-up.png)
+
+The player must climb arbitraily long stairs.
+
+Write a function called `oneStepUp()` to make the player climb a single step. You'll need to figure out how the player knows if he still has to climb a step or if he's arrived at the top.
+
+
+
+## For Loops
+
+In addition to the `while` loop there is an other very important type of loop, the `for` loop.
 
 <pre class="prettyprint lang-dart">
 for (var i = 0; i &lt; 4; i++) {
@@ -167,21 +182,21 @@ for (var i = 0; i &lt; 4; i++) {
 }
 </pre>
 
-Bei diesem Beispiel wird ein Zähler `i` verwendet. Der Zähler wird zuerst auf `0` gesetzt. Danach wird bei jedem Schleifendurchgang geprüft, ob `i` kleiner ist als 4 und schliesslich wird `i` um eins erhöht. Das bedeutet, dass die `move()`-Anweisung in dieser Schleife vier mal ausgeführt wird.
+In this example, a counter `i` is used. The counter is first set to `0`. At every loop cycle the program checks if `i` is smaller than `4` and increments `i` by one. This means that the `move()` statement is executed four times in this loop.
 
-Sie werden der `for`-Schleife später immer wieder begegnen, auch zum Teil in etwas abgewandelter Form. Für den Moment reicht uns mal das Wissen, dass es sie gibt.
+You will encounter the `for` loop a lot, in various forms. For the moment it is enough for us to know that it exists.
 
 
-## Wie weiter?
+## What's next?
 
-Im [Teil 3](/library/hello-dart/de/part3/) lernen wir mit *bedingten Anweisungen* eine weitere Art kennen, unsere Programme zu steuern.
+&rarr; Continue with [Part 3: Conditionals](/library/hello-dart/part3/)
 
 
 ***
 
-*Quellen*<br>
+*Credits*<br>
 <em class="small">
-[Planet Cute](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html) Bilder stammen von Daniel Cook (Lostgarden.com), veröffentlicht unter [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/us/).<br>
-[Oleg Yadrov](https://www.linkedin.com/in/olegyadrov) hat die "Planet Cute" Bilder weiterentwickelt und sie mir zur Verfügung gestellt.<br>
-Einige Übungen in `Hello Dart` sind inspiriert von [Kara](http://www.swisseduc.ch/informatik/karatojava/). Kara wurde entwickelt von Jürg Nievergelt, Werner Hartmann, Raimond Reichert und anderen.
+  [Planet Cute](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html) images by Daniel Cook (Lostgarden.com), published under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/us/).<br>
+[Oleg Yadrov](https://www.linkedin.com/in/olegyadrov) improved the "Planet Cute" images and was so kind to let me use them.<br>
+Some exercises in `Hello Dart`were inspired by [Kara](http://www.swisseduc.ch/compscience/karatojava/javakara/). Kara was developed by Jürg Nievergelt, Werner Hartmann, Raimond Reichert et. al.
 </em>
