@@ -2,6 +2,7 @@
 layout: post
 title: JavaFX 8 TableView Sorting and Filtering
 date: 2014-04-30 00:00
+updated: 2015-04-15 00:00
 slug: javafx-8-tableview-sorting-filtering
 description: "The JavaFX 8 SortedList and FilteredList allow easy sorting and filtering of data in a TableView." 
 image: /assets/blog/14-04-30-javafx-8-tableview-sorting-filtering/tableview-sorting-filtering.png
@@ -118,9 +119,9 @@ public class PersonTableController {
 				// Compare first name and last name of every person with filter text.
 				String lowerCaseFilter = newValue.toLowerCase();
 				
-				if (person.getFirstName().toLowerCase().indexOf(lowerCaseFilter) != -1) {
+				if (person.getFirstName().toLowerCase().contains(lowerCaseFilter)) {
 					return true; // Filter matches first name.
-				} else if (person.getLastName().toLowerCase().indexOf(lowerCaseFilter) != -1) {
+				} else if (person.getLastName().toLowerCase().contains(lowerCaseFilter)) {
 					return true; // Filter matches last name.
 				}
 				return false; // Does not match.
