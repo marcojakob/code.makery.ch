@@ -2,7 +2,7 @@
 layout: article
 title: "Tutoriel JavaFX 8 (Français)"
 date: 2014-04-19 00:00
-updated: 2015-02-18 00:00
+updated: 2015-04-15 00:00
 slug: javafx-8-tutorial/fr
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr.md
 description: "Les sept étapes de ce tutorial vous amèneront à découvrir tout à tour, le design, la programmation et enfin le déploiement d'une application de répertoire d'adresses."
@@ -11,31 +11,31 @@ published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Les Articles de ce tutoriel"
+- header: "Les articles dans ce tutoriel"
   body:
   - text: "Introduction"
     link: /library/javafx-8-tutorial/fr/
     paging: Intro
     active: true
-  - text: "Partie 1: Le Scene Builder"
+  - text: "Partie 1 : le Scene Builder"
     link: /library/javafx-8-tutorial/fr/part1/
     paging: 1
-  - text: "Partie 2: Modèle et TableView"
+  - text: "Partie 2 : modèle et TableView"
     link: /library/javafx-8-tutorial/fr/part2/
     paging: 2
-  - text: "Partie 3: Interaction avec l'utilisateur"
+  - text: "Partie 3 : interaction avec l'utilisateur"
     link: /library/javafx-8-tutorial/fr/part3/
     paging: 3
-  - text: "Partie 4: Style CSS"
+  - text: "Partie 4 : style CSS"
     link: /library/javafx-8-tutorial/fr/part4/
     paging: 4
-  - text: "Partie 5: Stockage de données en XML"
+  - text: "Partie 5 : stockage de données en XML"
     link: /library/javafx-8-tutorial/fr/part5/
     paging: 5
-  - text: "Partie 6: Graphiques Statistiques"
+  - text: "Partie 6 : statistiques graphiques"
     link: /library/javafx-8-tutorial/fr/part6/
     paging: 6
-  - text: "Partie 7: Deploiement"
+  - text: "Partie 7 : déploiement"
     link: /library/javafx-8-tutorial/fr/part7/
     paging: 7
 languages: 

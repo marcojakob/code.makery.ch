@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 4: CSS Styling"
+title: "Tutoriel JavaFX 8 - partie 4 : style CSS"
 date: 2014-04-25 00:00
-updated: 2015-02-18 00:00
+updated: 2015-04-15 00:00
 slug: javafx-8-tutorial/fr/part4
 canonical: /library/javafx-8-tutorial/part4/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part4.md
@@ -12,37 +12,37 @@ published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Articles in this Series"
+- header: "Les articles dans ce tutoriel"
   body:
   - text: "Introduction"
     link: /library/javafx-8-tutorial/fr/
     paging: Intro
-  - text: "Part 1: Scene Builder"
+  - text: "Partie 1 : le Scene Builder"
     link: /library/javafx-8-tutorial/fr/part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
+  - text: "Partie 2 : modèle et TableView"
     link: /library/javafx-8-tutorial/fr/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
+  - text: "Partie 3 : interaction avec l'utilisateur"
     link: /library/javafx-8-tutorial/fr/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "Partie 4 : style CSS"
     link: /library/javafx-8-tutorial/fr/part4/
     paging: 4
     active: true
-  - text: "Part 5: Storing Data as XML"
+  - text: "Partie 5 : stockage de données en XML"
     link: /library/javafx-8-tutorial/fr/part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
+  - text: "Partie 6 : statistiques graphiques"
     link: /library/javafx-8-tutorial/fr/part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "Partie 7 : déploiement"
     link: /library/javafx-8-tutorial/fr/part7/
     paging: 7
-- header: "Download Sources"
+- header: "Téléchargez les sources"
   body:
-  - text: Part 4 as Eclipse Project <em>(requires at least JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-4.zip
+  - text: Projet Eclipse relatif à la partie 4 <em>(JDK 8u40 requis au minimum)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-4.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Langues
@@ -315,7 +315,7 @@ It looks much nicer with a custom icon:
 
 ### The Icon File
 
-A possible place to get free icons is [Icon Finder](http://www.iconfinder.com). I downloaded a little [address book icon](http://www.iconfinder.com/icondetails/86957/32/).
+A possible place to get free icons is [Icon Finder](http://www.iconfinder.com). I downloaded a little [address book icon](https://www.iconfinder.com/icons/86957/address_book_icon#size=32).
 
 Create a (normal) folder inside your AddressApp project called **resources** and a subfolder called **images** in it. Put the icon of your choice inside the images folder. Your folder structure should look something like this now:
 
@@ -359,7 +359,7 @@ In [Tutorial Part 5](/library/javafx-8-tutorial/fr/part5/) we will add XML stora
 
 ##### Some other articles you might find interesting
 
-* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)

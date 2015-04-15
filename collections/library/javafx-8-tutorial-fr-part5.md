@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 5: Storing Data as XML"
+title: "Tutoriel JavaFX 8 - partie 5 : stockage de données en XML"
 date: 2014-04-25 01:00
-updated: 2015-02-18 00:00
+updated: 2015-04-15 00:00
 slug: javafx-8-tutorial/fr/part5
 canonical: /library/javafx-8-tutorial/part5/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part5.md
@@ -14,35 +14,37 @@ comments: true
 sidebars:
 - header: "Articles in this Series"
   body:
+- header: "Les articles dans ce tutoriel"
+  body:
   - text: "Introduction"
     link: /library/javafx-8-tutorial/fr/
     paging: Intro
-  - text: "Part 1: Scene Builder"
+  - text: "Partie 1 : le Scene Builder"
     link: /library/javafx-8-tutorial/fr/part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
+  - text: "Partie 2 : modèle et TableView"
     link: /library/javafx-8-tutorial/fr/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
+  - text: "Partie 3 : interaction avec l'utilisateur"
     link: /library/javafx-8-tutorial/fr/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "Partie 4 : style CSS"
     link: /library/javafx-8-tutorial/fr/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
+  - text: "Partie 5 : stockage de données en XML"
     link: /library/javafx-8-tutorial/fr/part5/
     paging: 5
     active: true
-  - text: "Part 6: Statistics Chart"
+  - text: "Partie 6 : statistiques graphiques"
     link: /library/javafx-8-tutorial/fr/part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "Partie 7 : déploiement"
     link: /library/javafx-8-tutorial/fr/part7/
     paging: 7
-- header: "Download Sources"
+- header: "Téléchargez les sources"
   body:
-  - text: Part 5 as Eclipse Project <em>(requires at least JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-5.zip
+  - text: Projet Eclipse relatif à la partie 5 <em>(JDK 8u40 requis au minimum)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-5.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Langues
@@ -241,10 +243,12 @@ public void loadPersonDataFromFile(File file) {
         setPersonFilePath(file);
 
     } catch (Exception e) { // catches ANY exception
-        Dialogs.create()
-                .title("Error")
-                .masthead("Could not load data from file:\n" + file.getPath())
-                .showException(e);
+        Alert alert = new Alert(AlertType.ERROR);
+        alert.setTitle("Error");
+        alert.setHeaderText("Could not load data");
+        alert.setContentText("Could not load data from file:\n" + file.getPath());
+
+        alert.showAndWait();
     }
 }
 
@@ -270,9 +274,12 @@ public void savePersonDataToFile(File file) {
         // Save the file path to the registry.
         setPersonFilePath(file);
     } catch (Exception e) { // catches ANY exception
-        Dialogs.create().title("Error")
-                .masthead("Could not save data to file:\n" + file.getPath())
-                .showException(e);
+        Alert alert = new Alert(AlertType.ERROR);
+        alert.setTitle("Error");
+        alert.setHeaderText("Could not save data");
+        alert.setContentText("Could not save data to file:\n" + file.getPath());
+
+        alert.showAndWait();
     }
 }
 </pre>
@@ -306,10 +313,9 @@ package ch.makery.address.view;
 import java.io.File;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.stage.FileChooser;
-
-import org.controlsfx.dialog.Dialogs;
-
 import ch.makery.address.MainApp;
 
 /**
@@ -405,11 +411,12 @@ public class RootLayoutController {
      */
     @FXML
     private void handleAbout() {
-		Dialogs.create()
-	        .title("AddressApp")
-	        .masthead("About")
-	        .message("Author: Marco Jakob\nWebsite: http://code.makery.ch")
-	        .showInformation();
+    	Alert alert = new Alert(AlertType.INFORMATION);
+    	alert.setTitle("AddressApp");
+    	alert.setHeaderText("About");
+    	alert.setContentText("Author: Marco Jakob\nWebsite: http://code.makery.ch");
+
+    	alert.showAndWait();
     }
 
     /**
@@ -554,7 +561,7 @@ In Tutorial [Part 6](/library/javafx-8-tutorial/fr/part6/) we'll add a birthday 
 
 ##### Some other articles you might find interesting
 
-* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)

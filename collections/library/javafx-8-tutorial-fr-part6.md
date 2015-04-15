@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 6: Statistics Chart"
+title: "Tutoriel JavaFX 8 - partie 6 : statistiques graphiques"
 date: 2014-05-09 00:00
-updated: 2015-02-18 00:00
+updated: 2015-04-15 00:00
 slug: javafx-8-tutorial/fr/part6
 canonical: /library/javafx-8-tutorial/part6/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part6.md
@@ -12,37 +12,37 @@ published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Articles in this Series"
+- header: "Les articles dans ce tutoriel"
   body:
   - text: "Introduction"
     link: /library/javafx-8-tutorial/fr/
     paging: Intro
-  - text: "Part 1: Scene Builder"
+  - text: "Partie 1 : le Scene Builder"
     link: /library/javafx-8-tutorial/fr/part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
+  - text: "Partie 2 : modèle et TableView"
     link: /library/javafx-8-tutorial/fr/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
+  - text: "Partie 3 : interaction avec l'utilisateur"
     link: /library/javafx-8-tutorial/fr/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "Partie 4 : style CSS"
     link: /library/javafx-8-tutorial/fr/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
+  - text: "Partie 5 : stockage de données en XML"
     link: /library/javafx-8-tutorial/fr/part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
+  - text: "Partie 6 : statistiques graphiques"
     link: /library/javafx-8-tutorial/fr/part6/
     paging: 6
     active: true
-  - text: "Part 7: Deployment"
+  - text: "Partie 7 : déploiement"
     link: /library/javafx-8-tutorial/fr/part7/
     paging: 7
-- header: "Download Sources"
+- header: "Téléchargez les sources"
   body:
-  - text: Part 6 as Eclipse Project <em>(requires at least JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-6.zip
+  - text: Projet Eclipse relatif à la partie 6 <em>(JDK 8u40 requis au minimum)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-6.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Langues
@@ -281,7 +281,7 @@ In the last tutorial [Part 7](/library/javafx-8-tutorial/fr/part7/) we will fina
 
 ##### Some other articles you might find interesting
 
-* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)

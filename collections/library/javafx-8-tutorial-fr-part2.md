@@ -4,7 +4,6 @@ title: "Tutoriel JavaFX 8 - partie 2 : Modèle et TableView"
 date: 2014-04-23 00:00
 updated: 2015-04-15 00:00
 slug: javafx-8-tutorial/fr/part2
-canonical: /library/javafx-8-tutorial/part2/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part2.md
 description: "Utiliser un contrôle JavaFX TableView pour afficher une ObservableList de personnes."
 image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
@@ -41,8 +40,8 @@ sidebars:
     paging: 7
 - header: "Téléchargez les sources"
   body:
-  - text: Projet Eclipse relatif à la partie 2 <em>(JDK 8u20 requis au minimum)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-2.zip
+  - text: Projet Eclipse relatif à la partie 2 <em>(JDK 8u40 requis au minimum)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Langues
@@ -261,7 +260,7 @@ Nous avons besoin de l'`ObservableList` fournit par les collections. Pour créer
 
 Maintenant intégrons finalement les données dans notre tableau ! Nous aurons besoin d'un contrôleur pour notre `PersonOverview.fxml`. 
 
-1. Créez une classe normale dans le package **view** nommé `PersonOverviewController.java`. (On doit le mettre dans le même package que `PersonOverview.fxml`, sans cela le SceneBuilder ne le trouvera pas - en tout cas pas la version courante). 
+1. Créez une classe normale dans le package **view** nommé `PersonOverviewController.java`. (On doit le mettre dans le même package que `PersonOverview.fxml`, sans cela le SceneBuilder ne le trouvera pas). 
 2. Nous allons ajouter quelques variables qui nous donneront accès au tableau et aux étiquettes de l'affichage. Les champs et quelques méthodes ont une annotation spéciale `@FXML`. Ceci est nécessaire au fichier fxml pour accéder aux champs et aux méthodes privées. Après avoir tout préparé dans le fichier fxml, l'application remplira automatiquement les variables lors du chargement du fxml. Ajoutons le code suivant : 
 
 <div class="alert alert-info">
@@ -344,6 +343,19 @@ Ce code nécessitera probablement quelques explications :
 * La méthode `initialize()` est appelée automatiquement après le chargement du fichier fxml. À ce moment, tous les champs devraient déjà être initialisés. 
 * Les `setCellValueFactory(...)` que nous assignons aux colonnes du tableau sont utilisés pour déterminer quel champ dans les objets `Person` devraient être utilisés pour une colonne particulière. La flèche `->` indique que nous utilisons une fonctionnalité de Java 8 nommée fonctions *Lambdas*. (Une autre approche est possible en utilisant une [PropertyValueFactory](http://docs.oracle.com/javase/8/javafx/api/) mais ce n'est type-safe). 
 
+<div class="alert alert-info">
+  <p>
+    We're only using `StringProperty` values for our table columns in this example. When you want to use `IntegerProperty` or `DoubleProperty`, the `setCellValueFactory(...)` must have an additional `asObject()`:
+  </p>
+  <p>
+  <pre>myIntegerColumn.setCellValueFactory(cellData -> 
+      cellData.getValue().myIntegerProperty().<mark>asObject()</mark>);</pre>
+  </p>
+  <p>
+    This is necessary because of a bad design decision of JavaFX (see <a href="https://community.oracle.com/thread/2575601">this discussion</a>).
+  </p>
+</div>
+
 
 ### Connexion de MainApp avec le PersonOverviewController
 
@@ -366,9 +378,9 @@ public void showPersonOverview() {
         // Set person overview into the center of root layout.
         rootLayout.setCenter(personOverview);
 
-        // Give the controller access to the main app.
+        <mark>// Give the controller access to the main app.
         PersonOverviewController controller = loader.getController();
-        controller.setMainApp(this);
+        controller.setMainApp(this);</mark>
 
     } catch (IOException e) {
         e.printStackTrace();
@@ -419,7 +431,7 @@ Dans la [Partie 3 du tutoriel](/library/javafx-8-tutorial/fr/part3/), nous allon
 
 ##### Voici quelques articles qui pourraient aussi vous intéresser : 
 
-* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)

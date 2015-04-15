@@ -1,10 +1,9 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 7: Deployment"
+title: "Tutoriel JavaFX 8 - partie 7 : déploiement"
 date: 2014-05-10 00:00
-updated: 2015-02-18 00:00
+updated: 2015-04-15 00:00
 slug: javafx-8-tutorial/fr/part7
-canonical: /library/javafx-8-tutorial/part7/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part7.md
 description: "Comment déployer une application JavaFX avec un package natif. Créez  un fichier d'install pour Windows, MacOS, ou Linux."
 image: /assets/library/javafx-8-tutorial/part7/addressapp-macos.png
@@ -12,37 +11,37 @@ published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Articles in this Series"
+- header: "Les articles dans ce tutoriel"
   body:
   - text: "Introduction"
     link: /library/javafx-8-tutorial/fr/
     paging: Intro
-  - text: "Part 1: Scene Builder"
+  - text: "Partie 1 : le Scene Builder"
     link: /library/javafx-8-tutorial/fr/part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
+  - text: "Partie 2 : modèle et TableView"
     link: /library/javafx-8-tutorial/fr/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
+  - text: "Partie 3 : interaction avec l'utilisateur"
     link: /library/javafx-8-tutorial/fr/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "Partie 4 : style CSS"
     link: /library/javafx-8-tutorial/fr/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
+  - text: "Partie 5 : stockage de données en XML"
     link: /library/javafx-8-tutorial/fr/part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
+  - text: "Partie 6 : statistiques graphiques"
     link: /library/javafx-8-tutorial/fr/part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "Partie 7 : déploiement"
     link: /library/javafx-8-tutorial/fr/part7/
     paging: 7
     active: true
-- header: "Download Sources"
+- header: "Téléchargez les sources"
   body:
-  - text: Part 7 as Eclipse Project <em>(requires at least JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-7.zip
+  - text: Projet Eclipse relatif à la partie 7 <em>(JDK 8u40 requis au minimum)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-7.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Langues
@@ -123,17 +122,20 @@ Nous souhaitons avoir de belles icônes pour notre install:
 * [AddressApp.ico](/assets/library/javafx-8-tutorial/part7/AddressApp.ico) pour l'icône du fichier d'install
 * [AddressApp-setup-icon.bmp](/assets/library/javafx-8-tutorial/part7/AddressApp-setup-icon.bmp) pour le splash screen de l'install
 * [AddressApp.icns](/assets/library/javafx-8-tutorial/part7/AddressApp.icns) pour l'icône de l'install sous mac
+* [AddressApp-volume.icns](/assets/library/javafx-8-tutorial/part7/AddressApp-volume.icns) pour l'icône de desktop sous mac
+
 
 
 1. Créez les sous-répertoires suivants dans le répertoire `build`:
   * `build/package/windows` (utilisé seulement pour windows)
-  * `build/package/macos` (utilisé seulement pour macos)
+  * `build/package/macosx` (utilisé seulement pour macos)
 2. Copiez les icônes correspondantes (celles mentionnées ci-dessus) dans ces sous-répertoires. Cela devrait ressembler à quelque chose comme ça maintenant:   
 ![Installer Icons](/assets/library/javafx-8-tutorial/part7/installer-icons.png)
 3. **Important**: Le nom des icônes doit parfaitement coller à l'**Application title** que vous avez spécifié dans votre `build.fxbuild`:
   * `YourAppTitle.ico`
   * `YourAppTitle-setup-icon.bmp`
   * `YourAppTitle.icns`
+  * `YourAppTitle-volume.icns`
 
 
 ### Etape 3 - Ajouter les ressources
@@ -206,7 +208,7 @@ Avec **Inno Setup** nous pouvons créer un install pour Windows de notre applica
 
 2. Indiquez à Windows le chemin d'installation d'Inno Setup (par exemple `C:\Program Files (x86)\Inno Setup 5`). Pour cela, ajoutez le `Path` d'Inno Setup aux variables d'environnement de windows. Si vous ne savez pas comment faire, lisez ce tutoriel (en anglais) : [How to set the path and environment variables in Windows](http://www.computerhope.com/issues/ch000549.htm).
 
-3. Redémarrez Eclipse et continuez avec l'étape 5.
+3. Redémarrez Eclipse et continuez avec l'étape 6.
 
 
 ### Etape 5 (MAC) - Install MacOS en .dmg
@@ -248,7 +250,7 @@ Tout retour sera le bienvenu. N'hésitez pas à écrire un commentaire si vous a
 
 ##### D'autres articles que vous pourriez trouver intéressants :
 
-* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)

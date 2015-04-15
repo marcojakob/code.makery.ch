@@ -2,7 +2,7 @@
 layout: article
 title: "Tutoriel JavaFX 8 - partie 1 : le Scene Builder"
 date: 2014-04-19 01:00
-updated: 2015-04-10 00:00
+updated: 2015-04-15 00:00
 slug: javafx-8-tutorial/fr/part1
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part1.md
 description: "Apprenez comment créer un projet JavaFX. Cette page fait partie d'un tutoriel de sept pages relatif à la conception, la programmation et le déploiment d'une application type carnet d'adresses avec JavaFX."
@@ -11,37 +11,37 @@ published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Les Articles de ce tutoriel"
+- header: "Les articles dans ce tutoriel"
   body:
   - text: "Introduction"
     link: /library/javafx-8-tutorial/fr/
     paging: Intro
-  - text: "Partie 1: Le Scene Builder"
+  - text: "Partie 1 : le Scene Builder"
     link: /library/javafx-8-tutorial/fr/part1/
     paging: 1
     active: true
-  - text: "Partie 2: Modèle et TableView"
+  - text: "Partie 2 : modèle et TableView"
     link: /library/javafx-8-tutorial/fr/part2/
     paging: 2
-  - text: "Partie 3: Interaction avec l'utilisateur"
+  - text: "Partie 3 : interaction avec l'utilisateur"
     link: /library/javafx-8-tutorial/fr/part3/
     paging: 3
-  - text: "Partie 4: Style CSS"
+  - text: "Partie 4 : style CSS"
     link: /library/javafx-8-tutorial/fr/part4/
     paging: 4
-  - text: "Partie 5: Stockage de données en XML"
+  - text: "Partie 5 : stockage de données en XML"
     link: /library/javafx-8-tutorial/fr/part5/
     paging: 5
-  - text: "Partie 6: Graphiques Statistiques"
+  - text: "Partie 6 : statistiques graphiques"
     link: /library/javafx-8-tutorial/fr/part6/
     paging: 6
-  - text: "Partie 7: Deploiement"
+  - text: "Partie 7 : déploiement"
     link: /library/javafx-8-tutorial/fr/part7/
     paging: 7
 - header: "Téléchargez les sources"
   body:
-  - text: Projet Eclipse relatif à la partie 1 <em>(JDK 8u20 requis au minimum)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
+  - text: Projet Eclipse relatif à la partie 1 <em>(JDK 8u40 requis au minimum)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-1.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Langues
@@ -67,8 +67,8 @@ languages:
 ### Prérequis
 
 * le dernier [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (qui inclu **JavaFX 8**).
-* Eclipse 4.3 ou supérieur avec le plugin e(fx)clipse. La façon la plus simple est de télécharger la distribution préconfigurée de le site de [e(fx)clipse](http://efxclipse.bestsolution.at/install.html#all-in-one). Une autre façon de faire consiste à utiliser le [site de mise à jour](http://www.eclipse.org/efxclipse/install.html) pour votre installation d'Eclipse. 
-* [Scene Builder 2.0](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684.html) ou supérieur
+* Eclipse 4.4 ou supérieur avec le plugin e(fx)clipse. La façon la plus simple est de télécharger la distribution préconfigurée de le site de [e(fx)clipse](http://efxclipse.bestsolution.at/install.html#all-in-one). Une autre façon de faire consiste à utiliser le [site de mise à jour](http://www.eclipse.org/efxclipse/install.html) pour votre installation d'Eclipse. 
+* [Scene Builder 8.0](http://gluonhq.com/products/downloads/) (provided by Gluon because [Oracle only ships it in source code form](http://www.oracle.com/technetwork/java/javase/downloads/sb2download-2177776.html)).
 
 
 ### Configuration d'Eclipse 
@@ -333,7 +333,7 @@ Dans la  [partie 2 du tutoriel](/library/javafx-8-tutorial/fr/part2/), vous alle
 
 ##### Voici quelques autres articles qui pourraient vous intéresser : 
 
-* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
