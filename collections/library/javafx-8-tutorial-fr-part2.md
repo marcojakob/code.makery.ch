@@ -217,7 +217,7 @@ La donnée principale gérée par notre application est un ensemble de personnes
 
 Nous travaillons avec les classes d'affichages JavaFX qui ont besoin d'être informées de tous les changements faits sur la liste des gens. C'est important sans quoi l'affichage ne sera pas synchronisé avec les données. A cette fin, JavaFX introduit quelques nouvelles [classes de collections](http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm). 
 
-Nous avons besoin de l'`ObservableList` fournit par les collections. Pour créer une nouvelles `ObservableList`, ajoutez le code suivant au début de la classe `MainApp`. Nous ajouterons aussi un constructeur qui créera quelques données à titre d'exemple et qui aura un getteur public : 
+Nous avons besoin de l'`ObservableList` fournit par les collections. Pour créer une nouvelle `ObservableList`, ajoutez le code suivant au début de la classe `MainApp`. Nous ajouterons aussi un constructeur qui créera quelques données à titre d'exemple et qui aura un getteur public : 
 
 
 ##### MainApp.java
@@ -266,7 +266,7 @@ Nous avons besoin de l'`ObservableList` fournit par les collections. Pour créer
 Maintenant intégrons finalement les données dans notre tableau ! Nous aurons besoin d'un contrôleur pour notre `PersonOverview.fxml`. 
 
 1. Créez une classe normale dans le package **view** nommé `PersonOverviewController.java`. (On doit le mettre dans le même package que `PersonOverview.fxml`, sans cela le SceneBuilder ne le trouvera pas - en tout cas pas la version courante). 
-2. Nous allons ajouter quelques variables qui nous donnerons accès au tableau et aux étiquettes de l'affichage. Les champs et quelques méthodes ont une annotation spéciale `@FXML`. Ceci est nécessaire au fichier fxml pour accéder aux champs et aux méthodes privées. Après avoir tout préparé dans le fichier fxml, l'application remplira automatiquement les variables lors du chargement du fxml. Ajoutons le code suivant : 
+2. Nous allons ajouter quelques variables qui nous donneront accès au tableau et aux étiquettes de l'affichage. Les champs et quelques méthodes ont une annotation spéciale `@FXML`. Ceci est nécessaire au fichier fxml pour accéder aux champs et aux méthodes privées. Après avoir tout préparé dans le fichier fxml, l'application remplira automatiquement les variables lors du chargement du fxml. Ajoutons le code suivant : 
 
 <div class="alert alert-info">
 **Note : ** rappelez-vous de toujours utiliser les **imports javafx**, PAS awt ou swing ! 
@@ -346,7 +346,7 @@ Ce code nécessitera probablement quelques explications :
 
 * Tous les champs et toutes les méthodes auxquelles le fichier fxml aura besoin d'accéder devront être annotées avec `@FXML`. En fait seulement ceux et celles qui sont privées mais c'est bien mieux de les spécifier private et de les annoter ! 
 * La méthode `initialize()` est appelée automatiquement après le chargement du fichier fxml. À ce moment, tous les champs devraient déjà être initialisés. 
-* Les `setCellValueFactory(...)` que nous assignons aux colonnes du tableau sont utilisées pour déterminer quel champ dans les objets `Person` devraient être utilisés pour une colonne particulière. La flèche `->` indique que nous utilisons une fonctionnalité de Java 8 nommée fonctions *Lambdas*. (Une autre approche est possible en utilisant une [PropertyValueFactory](http://docs.oracle.com/javase/8/javafx/api/) mais ce n'est type-safe). 
+* Les `setCellValueFactory(...)` que nous assignons aux colonnes du tableau sont utilisés pour déterminer quel champ dans les objets `Person` devraient être utilisés pour une colonne particulière. La flèche `->` indique que nous utilisons une fonctionnalité de Java 8 nommée fonctions *Lambdas*. (Une autre approche est possible en utilisant une [PropertyValueFactory](http://docs.oracle.com/javase/8/javafx/api/) mais ce n'est type-safe). 
 
 
 ### Connexion de MainApp avec le PersonOverviewController
@@ -402,12 +402,12 @@ Nous y sommes persque ! Mais une petite chose manque encore : pour l'instant nou
 5. Sélectionnez le champ **fx:id** correspondant pour **chaque étiquette** dans la deuxième colonne ! 
 ![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png)
 
-6. Important : retournez dans Eclipse, **raffraîchissez le projet complet** AddressApp (F5). C'est nécessaire car    Eclipse n'a pas connaissance des changements faits dans Scene Builder ! 
+6. Important : retournez dans Eclipse, **raffraîchissez le projet complet** AddressApp (F5). C'est nécessaire car    Eclipse n'a pas connaissance des changements faits dans le Scene Builder ! 
 
 
 *****
 
-## Démarrez l'application
+## Démarrer l'application
 
 Si vous démarrez votre application maintenant vous devriez voir quelque chose comme la capture d'écran au début de ce post.    
 
