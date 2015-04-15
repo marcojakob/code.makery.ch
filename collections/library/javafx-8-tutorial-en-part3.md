@@ -273,8 +273,6 @@ There will be an `ArrayIndexOutOfBoundsException` because it could not remove a 
 
 To ignore such an error is not very nice, of course. We should let the user know that he/she must select a person before deleting. (Even better would be if we disabled the button so that the user doesn't even have the chance to do something wrong.)
 
-We'll add a popup dialog to inform the user.
-
 With some changes made to the `handleDeletePerson()` method, we can show a simple popup dialog whenever the user pushes the delete button while no person is selected in the table:
 
 
