@@ -41,8 +41,8 @@ sidebars:
     paging: 7
 - header: "Téléchargez les sources"
   body:
-  - text: Projet Eclipse relatif à la partie 2 <em>(JDK 8u20 requis au minimum)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-2.zip
+  - text: Projet Eclipse relatif à la partie 2 <em>(JDK 8u40 requis au minimum)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Langues
@@ -347,6 +347,20 @@ Ce code nécessitera probablement quelques explications :
 * Tous les champs et toutes les méthodes auxquelles le fichier fxml aura besoin d'accéder devront être annotées avec `@FXML`. En fait seulement ceux et celles qui sont privées mais c'est bien mieux de les spécifier private et de les annoter ! 
 * La méthode `initialize()` est appelée automatiquement après le chargement du fichier fxml. À ce moment, tous les champs devraient déjà être initialisés. 
 * Les `setCellValueFactory(...)` que nous assignons aux colonnes du tableau sont utilisés pour déterminer quel champ dans les objets `Person` devraient être utilisés pour une colonne particulière. La flèche `->` indique que nous utilisons une fonctionnalité de Java 8 nommée fonctions *Lambdas*. (Une autre approche est possible en utilisant une [PropertyValueFactory](http://docs.oracle.com/javase/8/javafx/api/) mais ce n'est type-safe). 
+ 
+
+<div class="alert alert-info">
+  <p>
+    Nous n'utilisons que les valeurs `StringProperty` pour les colonnes de notre tableau dans cet exemple. Si vous voulez utiliser une `IntegerProperty` ou `DoubleProperty`, la méthode `setCellValueFactory(...)` doit avoir un `asObject()` en plus :
+  </p>
+  <p>
+  <pre>myIntegerColumn.setCellValueFactory(cellData -> 
+      cellData.getValue().myIntegerProperty().<mark>asObject()</mark>);</pre>
+  </p>
+  <p>
+    Ceci est nécessaire à cause d'une mauvaise décision de conception de JavaFX (voir la discussion <a href="https://community.oracle.com/thread/2575601"></a>). 
+  </p>
+</div>
 
 
 ### Connexion de MainApp avec le PersonOverviewController
@@ -370,9 +384,9 @@ public void showPersonOverview() {
         // Set person overview into the center of root layout.
         rootLayout.setCenter(personOverview);
 
-        // Give the controller access to the main app.
+<mark>        // Give the controller access to the main app.
         PersonOverviewController controller = loader.getController();
-        controller.setMainApp(this);
+        controller.setMainApp(this);</mark>
 
     } catch (IOException e) {
         e.printStackTrace();
@@ -424,6 +438,7 @@ Dans la [Partie 3 du tutoriel](/library/javafx-8-tutorial/fr/part3/), nous allon
 ##### Voici quelques articles qui pourraient aussi vous intéresser : 
 
 * [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
