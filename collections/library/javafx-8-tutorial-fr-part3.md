@@ -185,8 +185,8 @@ public class DateUtil {
 </pre>
 
 <div class="alert alert-info">
-**Hint:** You can change the format of the date by changing the
-`DATE_PATTERN`. For all possible formats see <a class="alert-link" href="http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a>.
+**Astuce:** Vous pouvez changer le format de la date en changeant le
+`DATE_PATTERN`. Pour tous les formats possibles voir <a class="alert-link" href="http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a>.
 </div>
 
 
