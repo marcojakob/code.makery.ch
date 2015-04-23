@@ -65,7 +65,6 @@ languages:
 * Ajouter les fonctionnalités aux boutons **add**, **edit** et **remove**.
 * Créer une **fenêtre de dialogue** personnalisée pour éditer une personne.
 * **Valider les entrées de l'utilisateur**.
-* **Validate user input**.
 
 
 *****
@@ -616,12 +615,12 @@ You should have a working *Address Application* by now. The application is able 
 I hope the concepts and structure of this application will get you started with writing your own JavaFX application! Have fun.
 
 
-### What's Next?
+### Et après ?
 
-In [Tutorial Part 4](/library/javafx-8-tutorial/fr/part4/) we will add some CSS styling.
+Dans le [Tutorial Part 4](/library/javafx-8-tutorial/fr/part4/) nous allons ajouter quelques styles CSS.
 
 
-##### Some other articles you might find interesting
+##### Voici quelques articles qui pourraient aussi vous intéresser :
 
 * [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
