@@ -61,23 +61,23 @@ languages:
 
 ## Topics in Part 3
 
-* **React to selection changes** in the table.
-* Add functionality to the **add**, **edit**, and **remove** buttons.
-* Create a custom **popup dialog** to edit a person.
+* **Réagir aux changements de sélections** dans le tableau.
+* Ajouter les fonctionnalités aux boutons **add**, **edit** et **remove**.
+* Créer une **fenêtre de dialogue** personnalisée pour éditer une personne.
+* **Valider les entrées de l'utilisateur**.
 * **Validate user input**.
 
 
 *****
 
 
-## React to Table Selections
+## Réagir aux sélections dans le tableau
 
-Obviousely, we haven't used the right side of our application, yet. The idea is to display the details about a person on the right side when the user selects a person in the table.
+Évidemment, nous n'avons pas utilisé la droite de notre application, pour l'instant. L'idée est de montrer les détails d'une personne sur le côté juste quand l'utilisateur sélectionne une personne dans la liste.
 
-First, let's add a new method inside `PersonOverviewController` that helps us fill the labels with the data from a single `Person`.
+Premièrement, ajoutons une nouvelle méthode dans `PersonOverviewController` qui nous aidera à remplir les labels avec les données d'une `Person`
 
-Create a method called `showPersonDetails(Person person)`. Go trough all the labels and set the text using `setText(...)` with details from the person. If `null` is passed as parameter, all labels should be cleared.
-
+Créons une méthode appelée `showPersonDetails(Person person)`. Parcourons tous les labels et définissons le texte en utilisant `setText(...)` avec les détails de la personne. Si `null` est passé en paramètre, tous les labels devront être réinitialisés.
 
 ##### PersonOverviewController.java
 
@@ -111,13 +111,12 @@ private void showPersonDetails(Person person) {
 }
 </pre>
 
+### Convertir Birthday Date en un String
 
-### Convert the Birthday Date to a String
 
-You will notice that we couldn't set the `birthday` into the `Label` because it is of type `LocalDate` and not a `String`. We need to format the date first.
+Vous aurez remarqué que nous pouvons mettre `birthday` dans le `Label` car il est du type `LocalDate` et non un `String`. Nous devons d'abord formater la date.
 
-We will use the conversion from `LocalDate` and `String` and vice versa in several places. It's good practice to create a helper class with `static` methods for this. We'll call it `DateUtil` and place it in a seperate package called `ch.makery.address.util`:
-
+Nous allons utiliser la conversion à partir de `LocalDate` et `String` et vice-versa en plusieurs endroits du code. C'est un bon exercice de créer une classe auxiliaire avec une méthode `static` pour cela. Nous allons l'appeler `DateUtil` et la placer dans un package séparé appelé `ch.makery.address.util`:
 
 ##### DateUtil.java
 
@@ -192,9 +191,9 @@ public class DateUtil {
 </div>
 
 
-#### Use the DateUtil
+#### Utiliser le DateUtil
 
-Now we need to use our new `DateUtil` in the `showPersonDetails` method of `PersonOverviewController`. Replace the *TODO* we added with the following line:
+Maintenant nous devons utiliser notre tout nouveau `DateUtil` dans la méthode `showPersonDetails` de `PersonOverviewController`. Remplaçons le *TODO* que nous avions ajouté par la ligne suivante:
 
 <pre class="prettyprint lang-java">
 birthdayLabel.setText(DateUtil.format(person.getBirthday()));
@@ -241,7 +240,7 @@ If something doesn't work, you can compare your `PersonOverviewController` class
 
 *****
 
-## The Delete Button
+## Le boutton Delete
 
 Our user interface already contains a delete button but without any functionality. We can select the action for a button inside the *Scene Builder*. Any method inside our controller that is annotated with `@FXML` (or is public) is accessible by the *Scene Builder*. Thus, let's first add a delete method at the end of our `PersonOverviewController` class:
 
@@ -326,7 +325,7 @@ The new and edit actions are a bit more work: We'll need a custom dialog (that m
 ![Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog2.png)   
 
 
-### Create the Controller
+### Créer le Controller
 
 Create the controller for the Dialog as `PersonEditDialogController.java`:
 
