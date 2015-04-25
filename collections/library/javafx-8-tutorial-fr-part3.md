@@ -53,7 +53,7 @@ languages:
 ---
 
 <div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs a French translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
+  <i class="fa fa-language"></i> Part of this page needs a French translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
 </div>
 
 ![Screenshot AddressApp Part 3](/assets/library/javafx-8-tutorial/part3/addressapp-part3.png)
