@@ -353,21 +353,7 @@ Ce code nécessitera probablement quelques explications :
       cellData.getValue().myIntegerProperty().<mark>asObject()</mark>);</pre>
   </p>
   <p>
-    Ceci est nécessaire à cause d'une mauvaise décision de conception de JavaFX (voir la discussion <a href="https://community.oracle.com/thread/2575601"></a>). 
-  </p>
-</div>
-
-<div class="alert alert-info">
-  <p>
-    Nous utilisons uniquement des valeurs `StringProperty` pour nos colonnes du tableau dans cet exemple.
-    Quand vous voulez utiliser un `IntegerProperty` ou `DoubleProperty`, le `setCellValueFactory(...)` doit avoir un `asObject()` supplémentaire:
-  </p>
-  <p>
-  <pre>myIntegerColumn.setCellValueFactory(cellData -> 
-      cellData.getValue().myIntegerProperty().<mark>asObject()</mark>);</pre>
-  </p>
-  <p>
-     Cela est nécessaire à cause d'un mauvais choix de design de JavaFX  (voir <a href="https://community.oracle.com/thread/2575601">cette discussion</a>).
+    Ceci est nécessaire à cause d'une mauvaise décision de conception de JavaFX (voir <a href="https://community.oracle.com/thread/2575601">cette discussion</a>). 
   </p>
 </div>
 
