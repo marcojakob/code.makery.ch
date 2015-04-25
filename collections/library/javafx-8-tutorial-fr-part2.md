@@ -359,14 +359,15 @@ Ce code nécessitera probablement quelques explications :
 
 <div class="alert alert-info">
   <p>
-    We're only using `StringProperty` values for our table columns in this example. When you want to use `IntegerProperty` or `DoubleProperty`, the `setCellValueFactory(...)` must have an additional `asObject()`:
+    Nous utilisons uniquement des valeurs `StringProperty` pour nos colonnes du tableau dans cet exemple.
+    Quand vous voulez utiliser un `IntegerProperty` ou `DoubleProperty`, le `setCellValueFactory(...)` doit avoir un `asObject()` supplémentaire:
   </p>
   <p>
   <pre>myIntegerColumn.setCellValueFactory(cellData -> 
       cellData.getValue().myIntegerProperty().<mark>asObject()</mark>);</pre>
   </p>
   <p>
-    This is necessary because of a bad design decision of JavaFX (see <a href="https://community.oracle.com/thread/2575601">this discussion</a>).
+     Cela est nécessaire à cause d'un mauvais choix de design de JavaFX  (voir <a href="https://community.oracle.com/thread/2575601">cette discussion</a>).
   </p>
 </div>
 
