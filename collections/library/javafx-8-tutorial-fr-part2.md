@@ -342,6 +342,20 @@ Ce code nécessitera probablement quelques explications :
 * Tous les champs et toutes les méthodes auxquelles le fichier fxml aura besoin d'accéder devront être annotées avec `@FXML`. En fait seulement ceux et celles qui sont privées mais c'est bien mieux de les spécifier private et de les annoter ! 
 * La méthode `initialize()` est appelée automatiquement après le chargement du fichier fxml. À ce moment, tous les champs devraient déjà être initialisés. 
 * Les `setCellValueFactory(...)` que nous assignons aux colonnes du tableau sont utilisés pour déterminer quel champ dans les objets `Person` devraient être utilisés pour une colonne particulière. La flèche `->` indique que nous utilisons une fonctionnalité de Java 8 nommée fonctions *Lambdas*. (Une autre approche est possible en utilisant une [PropertyValueFactory](http://docs.oracle.com/javase/8/javafx/api/) mais ce n'est type-safe). 
+ 
+
+<div class="alert alert-info">
+  <p>
+    Nous n'utilisons que les valeurs `StringProperty` pour les colonnes de notre tableau dans cet exemple. Si vous voulez utiliser une `IntegerProperty` ou `DoubleProperty`, la méthode `setCellValueFactory(...)` doit avoir un `asObject()` en plus :
+  </p>
+  <p>
+  <pre>myIntegerColumn.setCellValueFactory(cellData -> 
+      cellData.getValue().myIntegerProperty().<mark>asObject()</mark>);</pre>
+  </p>
+  <p>
+    Ceci est nécessaire à cause d'une mauvaise décision de conception de JavaFX (voir la discussion <a href="https://community.oracle.com/thread/2575601"></a>). 
+  </p>
+</div>
 
 <div class="alert alert-info">
   <p>
@@ -378,7 +392,7 @@ public void showPersonOverview() {
         // Set person overview into the center of root layout.
         rootLayout.setCenter(personOverview);
 
-        <mark>// Give the controller access to the main app.
+<mark>        // Give the controller access to the main app.
         PersonOverviewController controller = loader.getController();
         controller.setMainApp(this);</mark>
 
