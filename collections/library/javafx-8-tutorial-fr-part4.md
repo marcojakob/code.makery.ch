@@ -4,7 +4,6 @@ title: "Tutoriel JavaFX 8 - partie 4 : style CSS"
 date: 2014-04-25 00:00
 updated: 2015-04-15 00:00
 slug: javafx-8-tutorial/fr/part4
-canonical: /library/javafx-8-tutorial/part4/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part4.md
 description: "Avec JavaFX vous pouvez appliquer un style CSS à votre interface utilisateur. Nous allons aussi ajouter une icône à l'application dans cette partie du tutoriel."
 image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png
@@ -51,10 +50,6 @@ languages:
   part: part4
   active: fr
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs a French translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
 
 ![Screenshot AddressApp Part 4](/assets/library/javafx-8-tutorial/part4/addressapp-part4.png)
 
@@ -267,7 +262,7 @@ Nous devons maintenant appliquer le CSS à notre Scene. Nous aurions pu le faire
 
 1. Ouvrez le fichier `PersonEditDialog.fxml` avec Scene Builder ! Sélectionnez la racine `AnchorPane` et définissez `DarkTheme.css` dans le groupe *Properties* en tant que feuille de style. 
 
-2. Le fond est encore blanc, ajoutez encore la classe de style `background` à la racine `AnchorPane` ! 
+2. Le fond est encore blanc, ajoutez encore la classe de style `background` à la racine `AnchorPane` !    
 ![Add Style Class](/assets/library/javafx-8-tutorial/part4/darktheme-personeditdialog.png)
 
 3. Sélectionnez le bouton OK et définissez *Default Button* dans la partie des Properties ! Ceci modifiera sa couleur et le définira en tant que bouton par défaut (le bouton actionné lorsque l'utilisateur clique sur *ENTRÉE*). 
@@ -292,7 +287,7 @@ Nous devons maintenant appliquer le CSS à notre Scene. Nous aurions pu le faire
 
 À cette étape, tous les labels sur le côté droit ont la même taille. Il y a déjà quelques styles définis dans le fichier css nommés `.label-header` et `.label-bright` que nous utiliserons plus tard pour styliser les étiquettes. 
 
-1. Sélectionnez l'étiquette *Person Details* et ajoutez `label-header` comme classe de style. 
+1. Sélectionnez l'étiquette *Person Details* et ajoutez `label-header` comme classe de style.   
 ![Label Header Style](/assets/library/javafx-8-tutorial/part4/label-header-style.png)
 
 2. Pour chaque label dans la colonne de droite (où sont affichés les détails de la personnes actuelle), ajoutez la classe de style `label-bright` !    
