@@ -6,7 +6,7 @@ updated: 2015-04-15 00:00
 slug: javafx-8-tutorial/fr/part4
 canonical: /library/javafx-8-tutorial/part4/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part4.md
-description: "In JavaFX you can style your user interface using CSS. We'll also add an application icon in this tutorial part."
+description: "Avec JavaFX vous pouvez appliquer un style CSS à votre interface utilisateur. Nous allons aussi ajouter une icône à l'application dans cette partie du tutoriel."
 image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png
 published: true
 prettify: true
@@ -59,49 +59,49 @@ languages:
 ![Screenshot AddressApp Part 4](/assets/library/javafx-8-tutorial/part4/addressapp-part4.png)
 
 
-## Topics in Part 4
+## Sujets dans la parties 4
 
-* **CSS Styling**
-* Adding an **Application Icon**
+* **Appliquer un style CSS**
+* Ajouter une **icône à l'application**
 
 
 
 *****
 
 
-## CSS Styling 
+## Appliquer un style CSS 
 
-In JavaFX you can style your user interface using Cascading Style Sheets (CSS). This is great! It's never been as easy to customize the appearance of a Java application.
+Avec JavaFX vous pouvez appliquer un style en utilisant les Cascading Style Sheets (CSS). C'est grandiose ! Cela n'a jamais été aussi simple de personnaliser l'apparence d'une application Java. 
 
-In this tutorial we will create a *DarkTheme* inspired by the Windows 8 Metro design. The css for the buttons is based on the blog post [JMetro - Windows 8 Metro controls on Java](http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/) by Pedro Duque Vieira.
-
-
-### Getting Familiar with CSS
-
-If you want to style your JavaFX application you should have a basic understanding of CSS in general. A good place to start is this [CSS tutorial](http://www.csstutorial.net/).
-
-For more JavaFX specific information about CSS:
-
-* [Skinning JavaFX Applications with CSS](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/css_tutorial.htm) - Tutorial by Oracle
-* [JavaFX CSS Reference](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html) - Official Reference
+Dans ce tutoriel, nous allons créer un *DarkTheme* inspiré par le design de Windows 8 Metro. Le style CSS des boutons est basé sur le post du blog [JMetro - Windows 8 Metro controls on Java](http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/) de Pedro Duque Vieira.
 
 
-### Default JavaFX CSS
+### Faire connaissance avec CSS
 
-The default source for CSS styles in JavaFX 8 is a file called **`modena.css`**. This css file can be found in the Java FX jar file `jfxrt.jar` located in your Java folder under `/jdk1.8.x/jre/lib/ext/jfxrt.jar`.
+Si vous voulez styliser votre application JavaFX vous devriez avoir une compréhension basique de CSS en général. Il y a un bon [tutoriel CSS](http://www.csstutorial.net/) ici pour débuter. 
 
-Unzip the `jfxrt.jar`. You should find the `modena.css` under `com/sun/javafx/scene/control/skin/modena/`
+Pour plus d'informations plus spécifiques au sujet de CSS: 
 
-This default style sheet is always applied to a JavaFX application. By adding a custom style sheet we can override the default styles of the `modena.css`.   
+* [Skinning JavaFX Applications with CSS](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/css_tutorial.htm) - Tutoriel d'Oracle
+* [JavaFX CSS Reference](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html) - Réference officielle
+
+
+### Style CSS par défaut de JavaFX 
+
+La source du style CSS appliqué par défaut dans JavaFX 8 est appellée **`modena.css`**. Ce fichier CSS peut être trouvé dans le fichier `jfxrt.jar`situé dans le dossier Java sous `/jdk1.8.x/jre/lib/ext/jfxrt.jar`. 
+
+Dézippez le `jfxrt.jar` ! vous devriez trouver le fichier `modena.css` dans `com/sun/javafx/scene/control/skin/modena/`
+
+Cette feuille de style est toujours appliquée par défaut à l'application JavaFX. En ajoutant une feuille de style personnalisée nous pouvons surcharger les styles `modena.css` appliqués par défaut. 
 
 <div class="alert alert-info">
-**Hint:** It helps to look at the default CSS file to see which styles you might need to override.
+**Astuce:** Consulter le fichier des styles par défaut vous aide à identifier les styles que vous devriez peut-être surcharger. 
 </div>
 
 
-### Attaching CSS Style Sheets
+### Appliquer des feuilles de style CSS
 
-Add the following CSS file called `DarkTheme.css` to the *view* package.
+Ajoutez la feuille de style CSS suivante nommée `DarkTheme.css` dans le package *view* !
 
 
 ##### DarkTheme.css
@@ -252,28 +252,28 @@ Add the following CSS file called `DarkTheme.css` to the *view* package.
 }
 </pre>
 
-We now need to attach the CSS to our Scene. We could do this programmatically in Java code, but we'll use the Scene Builder to add it to our fxml files: 
+Nous devons maintenant appliquer le CSS à notre Scene. Nous aurions pu le faire en programmant du code Java mais nous allons utiliser le Scene Builder pour l'ajouter à nos fichiers *.fxml : 
 
 
-#### Attach CSS to RootLayout.fxml
+#### Appliquer le CSS à RootLayout.fxml
 
-1. Open the file `RootLayout.fxml` in Scene Builder. 
+1. Ouvrez le fichier `RootLayout.fxml` avec Scene Builder ! 
 
-2. Select the root `BorderPane` in the Hierarchy view. Under *Properties* group add the `DarkTheme.css` file as stylesheet.   
+2. Sélectionnez la racine `BorderPane` dans l'affichage Hierarchy ! Puis ajoutez le fichier `DarkTheme.css` dans le groupe *Properties* sous Stylesheets (feuilles de styles) !    
 ![DarkTheme for RootLayout](/assets/library/javafx-8-tutorial/part4/darktheme-rootlayout.png)
 
 
-#### Attach CSS to PersonEditDialog.fxml
+#### Appliquer le CSS à PersonEditDialog.fxml
 
-1. Open the file `PersonEditDialog.fxml` in Scene Builder. Select the root `AnchorPane` and choose `DarkTheme.css` in the *Properties* group as stylesheet.
+1. Ouvrez le fichier `PersonEditDialog.fxml` avec Scene Builder ! Sélectionnez la racine `AnchorPane` et définissez `DarkTheme.css` dans le groupe *Properties* en tant que feuille de style. 
 
-2. The background is still white, so add the Style Class `background` to the root `AnchorPane`.   
+2. Le fond est encore blanc, ajoutez encore la classe de style `background` à la racine `AnchorPane` ! 
 ![Add Style Class](/assets/library/javafx-8-tutorial/part4/darktheme-personeditdialog.png)
 
-3. Select the OK button and choose *Default Button* in the Properties View. This will change its color and make this the default button when the *enter* key is pressed by the user.
+3. Sélectionnez le bouton OK et définissez *Default Button* dans la partie des Properties ! Ceci modifiera sa couleur et le définira en tant que bouton par défaut (le bouton actionné lorsque l'utilisateur clique sur *ENTRÉE*). 
 
 
-#### Attach CSS to PersonOverview.fxml
+#### Appliquer le CSS à PersonOverview.fxml
 
 1. Open the file `PersonOverview.fxml` in Scene Builder. Select the root `AnchorPane` in the *Hierarchy* group. Under properties add the `DarkTheme.css` file as stylesheet.
 
