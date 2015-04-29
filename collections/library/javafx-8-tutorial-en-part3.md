@@ -504,7 +504,7 @@ A few things to note about this controller:
 With the View (FXML) and the controller created we need to link them together:
 
 1. Open the `PersonEditDialog.fxml`.
-2. In the *Controller* group on the left side select select the `PersonEditDialogController` as controller class.
+2. In the *Controller* group on the left side select the `PersonEditDialogController` as controller class.
 3. Set the **fx:id** of all `TextField`s to the corresponding field of the controller.
 4. Set the **onAction** of the two buttons to the corresponding handler method.
 
