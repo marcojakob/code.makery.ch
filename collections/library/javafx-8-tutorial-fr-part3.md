@@ -4,7 +4,6 @@ title: "Tutoriel JavaFX 8 - partie 3 : interaction avec l'utilisateur"
 date: 2014-04-24 00:00
 updated: 2015-04-15 00:00
 slug: javafx-8-tutorial/fr/part3
-canonical: /library/javafx-8-tutorial/part3/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part3.md
 description: "React to selection changes in the JavaFX TableView. Add, edit and remove items from the table and validate user input."
 image: /assets/library/javafx-8-tutorial/part3/addressapp-part3.png
@@ -51,10 +50,6 @@ languages:
   part: part3
   active: fr
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> Part of this page needs a French translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
 
 ![Screenshot AddressApp Part 3](/assets/library/javafx-8-tutorial/part3/addressapp-part3.png)
 
