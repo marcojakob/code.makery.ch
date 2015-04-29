@@ -6,13 +6,13 @@ updated: 2015-04-15 00:00
 slug: javafx-8-tutorial/fr/part5
 canonical: /library/javafx-8-tutorial/part5/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part5.md
-description: "Save data as XML with JAXB. Learn how to use the JavaFX FileChooser and the JavaFX Menu."
+description: "Enregistrer les données en XML avec JAXB. Apprenez comment utiliser le FileChooser et le menu de JavaFX."
 image: /assets/library/javafx-8-tutorial/part5/addressapp-part5.png
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Articles in this Series"
+- header: "Articles dans ces séries"
   body:
 - header: "Les articles dans ce tutoriel"
   body:
@@ -61,27 +61,27 @@ languages:
 ![Screenshot AddressApp Part 5](/assets/library/javafx-8-tutorial/part5/addressapp-part5.png)
 
 
-## Topics in Part 5
+## Sujets dans la partie 5
 
-* **Persisting data as XML**
-* Using the JavaFX **FileChooser**
-* Using the JavaFX **Menu**
-* Saving the last opened file path in **user preferences**
+* **Données persistantes en XML**
+* Utiliser le **FileChooser** de JavaFX
+* Utiliser le **Menu** de JavaFX
+* Enregistrer le chemin du dernier fichier utilisé dans les **préférences utilisateur**
 
 
 
 *****
 
-At the moment our address application's data only resides in memory. Every time we close the application, the data is lost. So it's about time to start thinking about persistently storing data.
+Pour l'instant, les données de notre application carnet d'adresses résident seulement dans la mémoire vive. Les données sont perdues à chaque fois que nous refermons l'application ! Il est temps de penser à sauvegarder de manière persistante. 
 
 
-## Saving User Preferences
+## Enregistrer les préférences utilisateur
 
-Java allows us to save some application state using a class called `Preferences`. Depending on the operating system, the `Preferences` are saved in different places (e.g. the registry file in Windows).
+Java nous permet d'enregistrer l'état de l'application par le biais d'une classe nommée `Preferences`. Les `Préférences` sont enregistrées dans des endroits différents selon l'OS (p. ex. la base de registre sous Windows). 
 
-We won't be able to use `Preferences` to store our entire address book. But it allows us to **save some simple application state**. One such thing is the **path to the last opened file**. With this information we could load the last application state whenever the user restarts the application.
+Nous ne pourrons pas utiliser les `Préférences` pour sauvegarder tout le carnet d'adresses. Mais elles vont nous permettre d'**enregistrer des états simples de l'application**. Le **chemin du dernier fichier ouvert** fait partie de tout cela. Avec cette information nous pourrons recharger le dernier état de l'application quand l'utilisateur redémarrera l'applicaton. 
 
-The following two methods take care of saving and retrieving Preferences. Add them to the end of your `MainApp` class:
+Les deux méthodes ci-dessous s'occupent d'enregistrer et de lire les préférences. Ajoutez-les à la fin de votre classe `MainApp` ! 
 
 
 ##### MainApp.java
@@ -127,15 +127,15 @@ public void setPersonFilePath(File file) {
 </pre>
 
 
-## Persisting Data as XML
+## Données persistantes en XML
 
-### Why XML?
+### Pourquoi XML?
 
-One of the most common ways to persist data is using a database. Databases usually contain some kind of relational data (like tables) while the data we need to save are objects. This is called the [object-relational impedance mismatch](http://wikipedia.org/wiki/Object-relational_impedance_mismatch). It is quite some work to match objects to relational database tables. There are some frameworks that help with the matching (e.g. [Hibernate](http://www.hibernate.org/), the most popular one) but it still requires quite some work to set up.
+Une des façons habituelles de rendre les données persistantes consiste à utiliser une base de données. Les bases de données contiennent des données typées relationnel (dans les tables) or les données que nous voulons enregistrer sont des objets. C'est appelé l'[object-relational impedance mismatch](http://wikipedia.org/wiki/Object-relational_impedance_mismatch). C'est beaucoup de travail de faire correspondre les objets aux tables des bases de données relationelles. Il existe des frameworks qui facilitent la mise en correspondance (p. ex. [Hibernate](http://www.hibernate.org/), le plus populaire) mais il requiert tout de même du travail de mise en place. 
 
-For our simple data model it's much easier to use XML. We'll use a library called [JAXB](https://jaxb.java.net/) (**J**ava **A**rchitecture for **X**ML **B**inding). With just a few lines of code JAXB will allow us to generate XML output like this:
+Pour notre modèle de données basique, c'est plus facile d'utiliser le XML. Nous utiliserons une librairie nommée [JAXB](https://jaxb.java.net/) (**J**ava **A**rchitecture for **X**ML **B**inding). JAXB va nous permettre de générer du XML avec quelques lignes de code seulement comme ceci :   
 
-##### Example xml output
+##### Exemple de texte formatté en xml
 
 <pre class="prettyprint lang-xml">
 &lt;persons&gt;
@@ -161,18 +161,18 @@ For our simple data model it's much easier to use XML. We'll use a library calle
 
 
 
-### Using JAXB
+### Utiliser JAXB
 
-JAXB is already included in the JDK. That means we don't need to include any additional library.
+JAXB est déjà inclu dans le JDK. Cela signifie que nous n'avons pas besoin d'inclure une librairie supplémentaire. 
 
-JAXB provides two main features: the ability to **marshal** Java objects into XML and to **unmarshal** XML back into Java objects.
+JAXB fournit deux fonctionalités principales : la capacité de faire correspondre (**marshal**) des objets Java en code XML et vice et versa (**unmarshal**). 
 
-For JAXB to be able to do the conversion, we need to prepare our model.
+Pour que JAXB soit capable de faire la conversion, nous devons préparer notre modèle. 
 
 
-#### Preparing the Model Class for JAXB 
+#### Préparer la classe modèle pour JAXB 
 
-Our data that we want to save resides in the `personData` variable inside our `MainApp` class. JAXB requires the top most class to be annotated with `@XmlRootElement`. `personData` is of class `ObservableList` and we can't put any annotations to `ObservableList`. So we need to create another class that is only used to hold our list of `Persons` for saving to XML. 
+Nos données que nous voulons enregistrer résident dans la variable `personData` dans notre classe `MainApp`. JAXB requiert que nous annotions la classe racine avec `@XmlRootElement`. `personData` est une classe de type `ObservableList` et nous ne pouvons pas ajouter d'annotations à `ObservableList`. Nous devons donc créer une autre classe qui est utilisée seulement pour contenir notre liste de `Persons` en vue de l'enregistrer en XML. 
 
 The new class we create is called `PersonListWrapper` and is put into the `ch.makery.address.model` package.
 
