@@ -61,7 +61,7 @@ languages:
 
 ## Sujets dans la parties 4
 
-* **Appliquer un style CSS**
+* Appliquer un **style CSS**
 * Ajouter une **icône à l'application**
 
 
@@ -73,7 +73,7 @@ languages:
 
 Avec JavaFX vous pouvez appliquer un style en utilisant les Cascading Style Sheets (CSS). C'est grandiose ! Cela n'a jamais été aussi simple de personnaliser l'apparence d'une application Java. 
 
-Dans ce tutoriel, nous allons créer un *DarkTheme* inspiré par le design de Windows 8 Metro. Le style CSS des boutons est basé sur le post du blog [JMetro - Windows 8 Metro controls on Java](http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/) de Pedro Duque Vieira.
+Dans ce tutoriel, nous allons créer un *DarkTheme* (thème sombre) inspiré par le design de Windows 8 Metro. Le style CSS des boutons est basé sur le post du blog [JMetro - Windows 8 Metro controls on Java](http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/) de Pedro Duque Vieira.
 
 
 ### Faire connaissance avec CSS
@@ -82,8 +82,8 @@ Si vous voulez styliser votre application JavaFX vous devriez avoir une compréh
 
 Pour plus d'informations plus spécifiques au sujet de CSS: 
 
-* [Skinning JavaFX Applications with CSS](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/css_tutorial.htm) - Tutoriel d'Oracle
-* [JavaFX CSS Reference](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html) - Réference officielle
+* [Changer l'apparence des applications JavaFX avec CSS](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/css_tutorial.htm) - Tutoriel d'Oracle
+* [Références CSS pour JavaFX](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html) - Réference officielle
 
 
 ### Style CSS par défaut de JavaFX 
@@ -284,7 +284,7 @@ Nous devons maintenant appliquer le CSS à notre Scene. Nous aurions pu le faire
 4. Sélectionnez l'`AnchorPane` sur la droite, celui qui est dans le `SplitPane` !    
 ![Background Style Select](/assets/library/javafx-8-tutorial/part4/background-style-select.png)   
 
-5. Regardez de le groupe *Properties* et sélectionnez `background` comme classe de style. Le fond devrait maintenant devenir noir.   
+5. Regardez ce qu'il y a dans le groupe *Properties*. Sélectionnez `background` comme classe de style. Le fond devrait maintenant devenir noir. 
 ![Background Style](/assets/library/javafx-8-tutorial/part4/background-style.png)
 
 
@@ -295,7 +295,7 @@ Nous devons maintenant appliquer le CSS à notre Scene. Nous aurions pu le faire
 1. Sélectionnez l'étiquette *Person Details* et ajoutez `label-header` comme classe de style. 
 ![Label Header Style](/assets/library/javafx-8-tutorial/part4/label-header-style.png)
 
-2. Pour chaque label dans la colonne de droite (où sont affichés les détails de la personnes actuelle), ajoutez la classe de style `label-bright` ! 
+2. Pour chaque label dans la colonne de droite (où sont affichés les détails de la personnes actuelle), ajoutez la classe de style `label-bright` !    
 ![Label Bright Style](/assets/library/javafx-8-tutorial/part4/label-bright-style.png)
 
 
