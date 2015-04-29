@@ -174,7 +174,7 @@ Pour que JAXB soit capable de faire la conversion, nous devons préparer notre m
 
 Nos données que nous voulons enregistrer résident dans la variable `personData` dans notre classe `MainApp`. JAXB requiert que nous annotions la classe racine avec `@XmlRootElement`. `personData` est une classe de type `ObservableList` et nous ne pouvons pas ajouter d'annotations à `ObservableList`. Nous devons donc créer une autre classe qui est utilisée seulement pour contenir notre liste de `Persons` en vue de l'enregistrer en XML. 
 
-The new class we create is called `PersonListWrapper` and is put into the `ch.makery.address.model` package.
+La nouvelle classe que nous créons est appelée `PersonListWrapper` et elle est insérée dans le package `ch.makery.address.model`. 
 
 
 ##### PersonListWrapper.java
@@ -209,15 +209,15 @@ public class PersonListWrapper {
 }
 </pre>
 
-Notice the two annotations: 
+Remarquez les deux annotations : 
 
-* `@XmlRootElement` defines the name of the root element.
-* `@XmlElement` is an optional name we can specify for the element.
+* `@XmlRootElement` définit le nom de l'élément racine.
+* `@XmlElement` est un nom optionel que nous pouvons spécifier pour l'élément. 
 
 
-#### Reading and Writing Data with JAXB
+#### Lire et écrire des données avec JAXB
 
-We'll make our `MainApp` class responsible for reading and writing the person data. Add the following two methods to the end of `MainApp.java`:
+Nous allons rendre notre classe `MainApp` responsable pour la lecture et l'écriture des données relatives aux personnes. Ajoutez les deux méthodes suivantes à la fin de `MainApp.java` : 
 
 
 <pre class="prettyprint lang-java">
@@ -284,25 +284,25 @@ public void savePersonDataToFile(File file) {
 }
 </pre>
 
-The marshalling/unmarshalling is ready. Let's create the save/load menu to actually be able to use it.
+La mise en correspondance (marshalling/unmarshalling) est prête. Maintenant créons le menu save/load pour être réellement capable de l'utiliser. 
 
 
-## Handling Menu Actions
+## Gérer les actions des menus
 
-In our `RootLayout.fxml` there is already a menu, but we haven't used it yet. Before we add action to the menu we'll first create all menu items.
+Dans notre `RootLayout.fxml` il y a déjà un menu mais nous ne l'avons pas encore utilisé. Avant d'ajouter des actions au menu nous allons commencer par créer tous les éléments du menu. 
 
-Open the `RootLayout.fxml` file in Scene Builder and drag the necessary menu items from the *library* group to the `MenuBar` bar in the *hierarchy* group. Create a **New**, **Open...**, **Save**, **Save As...**, and **Exit** menu item.
+Ouvrez le fichier `RootLayout.fxml` dans Scene Builder puis faites un drag and drop depuis le groupe *library* pour ajouter les éléments menus à la `MenuBar` dans le groupe *hierarchy*. Créez un menu **New**, **Open...**, **Save**, **Save As...**, et **Exit** ! 
 
 ![Add Menu Items](/assets/library/javafx-8-tutorial/part5/add-menu-items.png)
 
-Hint: Using the *Accelerator* setting under the *Properties* group you can set shortcut keys to menu items.
+Astuce : Utilisez le paramètre *Accelerator* dans le groupe des *Properties* pour ajouter des raccourcis clavier aux éléments du menu ! 
 
 
-### The RootLayoutController
+### Le RootLayoutController
 
-For handling menu actions we'll need a new controller class. Create a class `RootLayoutController` inside the controller package `ch.makery.address.view`. 
+Nous allons avoir besoin d'une nouvelle classe contrôleur pour gérer les actions du menu. Créez une classe `RootLayoutController` dans le package contrôleur `ch.makery.address.view` ! 
 
-Add the following content to the controller:
+Ajoutez le contenu suivant au contrôleur : 
 
 
 ##### RootLayoutController.java
@@ -430,30 +430,30 @@ public class RootLayoutController {
 </pre>
 
 
-#### FileChooser
+#### La boîte de dialogue FileChooser
 
-Take note of the methods that use the `FileChooser` class inside `RootLayoutController` above. First, a new object of the class `FileChooser` is created. Then, an extension filter is added so that only files ending in `.xml` are displayed. Finally, the file chooser is displayed on top of the primary stage.
+Remarquez les méthodes que la classe `FileChooser` utilise dans le `RootLayoutController` ci-dessus ! D'abord un nouvel objet de la classe `FileChooser` est créé. Puis un filtre d'extension est ajouté de telle manière que seuls sont affichés les fichiers dont l'extension est `.xml`. À la fin, le file chooser (la boîte de dialogue pour sélectionner le/les fichiers) est affiché au dessu du stage (affichage principal). 
 
-If the user closes the dialog without choosing a file, `null` is returned. Otherwise, we get the selected file and we can pass it to the `loadPersonDataFromFile(...)` or `savePersonDataToFile(...)` method of `MainApp`. 
+La valeur `null` est renvoyée lorsque l'utilisateur referme la boîte de dialogue sans choisir de fichier. Dans l'autre cas nous avons le fichier sélectionné et nous pouvons le passer à la méthode `loadPersonDataFromFile(...)` ou `savePersonDataToFile(...)` de `MainApp`. 
 
 
-### Connecting the fxml View to the Controller
+### Connecter la vue fxml au contrôleur
 
-1. Open `RootLayout.fxml` in Scene Builder. In the *Controller* group select the `RootLayoutController` as Controller class. 
+1. Ouvrez le fichier `RootLayout.fxml` dans Scene Builder ! Sélectionnez le `RootLayoutController` comme classe contrôleur dans le groupe *Controller* ! 
 
-2. Go back to the *Hierarchy* group and select a menu item. In the *Code* group under **On Action** you should see a choice of all the available controller methods. Choose the corresponding method for each menu item.   
+2. Retournez dans le groupe *Hierarchy* et sélectionnez un élément menu. Dans le groupe *Code* sous **On Action** vous devriez voir un choix de toutes les méthodes contrôleur disponibles. Sélectionnez la méthode correspondante pour chaque élément du menu ! 
 ![Menu Actions](/assets/library/javafx-8-tutorial/part5/menu-actions.png)
 
-3. Repeat the steps for every menu item.
+3. Répétez ces étapes pour tous les éléments du menu ! 
 
-4. Close Scene Builder and hit **Refresh (F5)** on your project's root folder. This will make Eclipse aware of the changes you made in Scene Builder.
+4. Refermez Scene Builder et tapez **F5 pour raffraîchir** le dossier racine de votre projet étant sélectionné. Ceci rendra Eclipse conscient des changements que vous avez faits dans Scene Builder. 
 
 
-### Connecting the MainApp and RootLayoutController
+### Connecter la MainApp et le RootLayoutController
 
-In several places, the `RootLayoutController` needs a reference back to the `MainApp`. We haven't passed the reference to the `RootLayoutController` yet.
+À plusieurs endroits, le `RootLayoutController` a besoin d'une référence sur `MainApp`. Nous n'avons pas passer la référence au `RootLayoutController` pour l'instant. 
 
-Open the `MainApp` class and replace the `initRootLayout()` method with the following code:
+Ouvrez la classe `MainApp` et remplacez la méthode `initRootLayout()` par le code suivant : 
 
 <pre class="prettyprint lang-java">
 /**
@@ -489,16 +489,16 @@ public void initRootLayout() {
 }
 </pre>
 
-Notice the two changes: The lines that *give the controller access to the main app* and the last three lines to *load the last opened person file*.
+Remarquez les deux modifications : Les lignes qui *donnent accès au contrôleur à la main app* et les trois dernières lignes pour *charger (load) le dernier fichier de la personne*. 
 
 
-### Testing
+### Tester
 
-Doing a test drive of your application you should be able to use the menus to save the person data to a file. 
+En faisant un essai avec votre application, vous devriez pouvoir utiliser les menus pour enregistrer les données des personnes dans un fichier.  
 
-When you open the `xml` file in an editor you will notice that the birthday is not saved correctly, it's an empty `<birthday/>` tag. The reason is that JAXB does not know how to convert the `LocalDate` to XML. We must provide a custom `LocalDateAdapter` to define this conversion.
+Lorsque vous ouvrez le fichier `xml` dans un éditeur vous remarquerez que la date de naissance n'est pas enregistrée correctement. C'est un tag vide `<birthday/>`. La raison à cela est que JAXB ne connait pas comment convertir la `LocalDate` en XML. Nous devons fournir un `LocalDateAdapter` personnalisé pour définir cette conversion. 
 
-Create a new class inside `ch.makery.address.util` called `LocalDateAdapter` with the following content:
+Créez une nouvelle classe dans `ch.makery.address.util` nommée `LocalDateAdapter` avec le contenu suivant : 
 
 ##### LocalDateAdapter.java
 
@@ -529,7 +529,7 @@ public class LocalDateAdapter extends XmlAdapter&lt;String, LocalDate> {
 }
 </pre>
 
-Then open `Person.java` and add the following annotation to the `getBirthday()` method:
+Ensuite ouvrez `Person.java` et ajoutez l'annotation suivante à la méthode `getBirthday()` : 
 
 <pre class="prettyprint lang-java">
 @XmlJavaTypeAdapter(LocalDateAdapter.class)
@@ -538,31 +538,31 @@ public LocalDate getBirthday() {
 }
 </pre>
 
-Now, test again. Try saving and loading the xml file. After a restart, it should automatically load the last used file.
+Maintenant testez encore une fois ! Essayez d'enregistrer et de charger le fichier xml. Après un redémarrage, le dernier fichier utilisé devrait être automatiquement chargé.  
 
 
 
-## How It Works
+## Comment ça fonctionne ? 
 
 
-Let's see how it all works together:
+Voyons maintenant comment tout cela s'articule : 
 
-1. The application is started using the `main(...)` method inside `MainApp`.
-2. The constructor `public MainApp()` is called and adds some sample data.
-3. `MainApp`s `start(...)` method is called and calls `initRootLayout()` to initialize the root layout from `RootLayout.fxml`. The fxml file has the information about which controller to use and links the view to its `RootLayoutController`. 
-4. The `MainApp` gets the `RootLayoutController` from the fxml loader and passes a reference to itself to the controller. With this reference the controller can later access the (public) methods of `MainApp`.
-5. At the end of the `initRootLayout()` method we try to get the *last opened person file* from `Preferences`. If the `Preferences` know about such an XML file, we'll load the data from this XML file. This will apparently overwrite the sample data from the constructor. 
-
-
-### What's Next?
-
-In Tutorial [Part 6](/library/javafx-8-tutorial/fr/part6/) we'll add a birthday statistics chart.
+1. L'application et démarrée en utilisant la méthode `main(...)` de `MainApp`. 
+2. Le constructor `public MainApp()` est appelé et ajoute quelques données test. 
+3. La méthode `start(...)` de `MainApp` est appelée est appelle `initRootLayout()` pour initialiser le layout racine de `RootLayout.fxml`. Le fichier fxml a l'information pour faire correspondre le contrôleur et lie l'affichage à son `RootLayoutController`. 
+4. La `MainApp` reçoit le `RootLayoutController` du chargeur fxml et passe une référence à elle-même au contrôleur. Avec cette référence, le contrôleur peut accéder plus tard aux méthodes (publiques) de `MainApp`.
+5. À la fin de la méthode `initRootLayout()` nous essayons d'obtenir des `Preferences` le *dernier fichier de personne ouvert*. Si les `Preferences` ont connaissance d'un tel fichier XML, nous chargerons les données depuis ce fichier XML. Visiblement, cela écrasera les données test du constructeur. 
 
 
-##### Some other articles you might find interesting
+### Et ensuite ?
 
-* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
-* [JavaFX Date Picker](/blog/javafx-8-date-picker/)
-* [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
-* [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
-* [JavaFX TableView Cell Renderer](/blog/javafx-8-tableview-cell-renderer/)
+Dans la [Partie 6](/library/javafx-8-tutorial/fr/part6/) du tutoriel, nous allons ajouter un graphique illustrant les statistiques des dates de naissance. 
+
+
+##### Voici quelques autres article qui pourraient vous intéresser
+
+* [JavaFX - Boîtes de dialogue (officiel)](/blog/javafx-dialogs-official/)
+* [JavaFX - Date Picker](/blog/javafx-8-date-picker/)
+* [JavaFX - Exemple de gestion d'événements](/blog/javafx-8-event-handling-examples/)
+* [JavaFX - Trier et filtrer des TableView](/blog/javafx-8-tableview-sorting-filtering/)
+* [JavaFX - Rendu des cellules TableView](/blog/javafx-8-tableview-cell-renderer/)
