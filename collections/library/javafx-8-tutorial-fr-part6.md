@@ -4,9 +4,8 @@ title: "Tutoriel JavaFX 8 - partie 6 : statistiques graphiques"
 date: 2014-05-09 00:00
 updated: 2015-04-15 00:00
 slug: javafx-8-tutorial/fr/part6
-canonical: /library/javafx-8-tutorial/part6/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part6.md
-description: "Learn how to create a JavaFX Bar Chart."
+description: "Apprenez à créer un JavaFX Bar Chart."
 image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
 published: true
 prettify: true

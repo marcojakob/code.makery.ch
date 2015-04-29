@@ -171,7 +171,7 @@ public class BirthdayStatisticsController {
 #### How the Controller Works
 
 1. The controller will need access to two elements from our FXML file:
-   * The `barChar`: It has the type `String` and `Integer`. The `String` is used for the month on the x-axis and the `Integer` is used for the number of people in a specific month. 
+   * The `barChart`: It has the type `String` and `Integer`. The `String` is used for the month on the x-axis and the `Integer` is used for the number of people in a specific month. 
    * The `xAxis`: We'll use this to add the month Strings.   
 
 2. The `initialize()` method fills the x-axis with a list of all the months.
