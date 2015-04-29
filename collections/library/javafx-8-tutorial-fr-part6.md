@@ -52,50 +52,46 @@ languages:
   active: fr
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs a French translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
 ![Screenshot AddressApp Part 6](/assets/library/javafx-8-tutorial/part6/addressapp-part6.png)
 
 
-## Topics in Part 6
+## Sujet dans la partie 6
 
-* Creating a **Statistics Chart** to display birthday distribution.
+* Création d'un **graphique** pour afficher la distribution des anniversaires.
 
 
 *****
 
-## Birthday Statistics
+## Statistiques des anniversaires
 
-All our people in the AddressApp have a birthday. Wouldn't it be nice to have some statistics about when our people celebrate their birthday.
+Toutes les personnes dans AddressApp ont un anniversaire. Ne serait-il pas génial d'avoir quelques statistiques concernant le moment où ces personnes célèbrent leur anniversaire.
 
-We'll use a **Bar Chart** containing a bar for each month. Each bar shows how many people have their birthday in that particular month.
+Nous allons utiliser un **Bar Chart** (histogramme) contenant une barre pour chaque mois. Chacune des barres montre combien de personnes fêtent leur anniversaire pour ce mois.
 
 
-## The Statistics FXML View
+## La vue statistiques FXML
 
-1. We start by creating a `BirthdayStatistics.fxml` file inside our `ch.makery.address.view` package (*Right-click on package | New | other... | New FXML Document*).   
+1. Nous commençons pas créer un fichier `BirthdayStatistics.fxml` à l'intérieur de notre package `ch.makery.address.view` (*Clique droit sur package | New | other... | New FXML Document*).
 ![Birthday Statistics FXML](/assets/library/javafx-8-tutorial/part6/birthday-statistics-fxml.png)
 
-2. Open the `BirthdayStatistics.fxml` file in Scene Builder.
+2. Ouvrez le fichier `BirthdayStatistics.fxml` dans Scene Builder.
 
-3. Select the root `AnchorPane`. In the *Layout* group set the *Pref Width* to 620 and the *Pref Height* to 450.
+3. Sélectionnez le tout premier `AnchorPane`. Dans la catégorie *Layout* définissez *Pref Width* à 620 et *Pref Height* à 450.
 
-4. Add a `BarChart` to the `AnchorPane`.
+4. Ajoutez un `BarChart` à l'`AnchorPane`.
 
-5. Right-click on the `BarChart` and select *Fit to Parent*.
+5. Clique droit sur le `BarChart` et sélectionner *Fit to Parent*.
 
-6. Save the fxml file, go to Eclipse and refresh the project.
+6. Sauvegardez le fichier fxml et allez sur Eclipse pour rafraîchir le projet. 
 
-Before we'll come back to Scene Builder we'll first create the controller and wire everything up in our `MainApp`.
+Avant de revenir sur Scene Builder nous devons tout d'abord créer le contrôleur et connecter le tout dans `MainApp`.
 
 
-## The Statistics Controller
+## Le contrôleur de la vue sur les statistiques
 
-In the view package `ch.makery.address.view` create a Java class called `BirthdayStatisticsController.java`.
+Dans le package view `ch.makery.address.view` créez une classe Java appelée `BirthdayStatisticsController.java`.
 
-Let's first take a look at the entire controller class before I start explaining:
+Jetons d'abord un coup d'oeil à l'ensemble de la classe contrôleur avant que je commence à expliquer:
 
 
 ##### BirthdayStatisticsController.java
@@ -172,42 +168,42 @@ public class BirthdayStatisticsController {
 </pre>
 
 
-#### How the Controller Works
+#### Comment le contrôleur fonctionne
 
-1. The controller will need access to two elements from our FXML file:
-   * The `barChar`: It has the type `String` and `Integer`. The `String` is used for the month on the x-axis and the `Integer` is used for the number of people in a specific month. 
-   * The `xAxis`: We'll use this to add the month Strings.   
+1. Le contrôleur a besoin d'un accès a deux éléments de notre fichier FXML:
+  * Le `barChart`: Il possède les types `String` et `Integer`. Le `String` est utilisé pour les mois dans l'axe des abscisses et l'`Integer` pour le nombre de personnes célébrant leur anniversaire pour les mois respectifs.
+  * `xAxis`: Nous allons l'utiliser pour ajouter les Strings mois.
 
-2. The `initialize()` method fills the x-axis with a list of all the months.
+2. La méthode `initialize()` remplit l'axe des abscisses avec la liste de tous les mois.
 
-3. The `setPersonData(...)` method will be accessed by the `MainApp` class to set the person data. It loops through all persons and counts the birthdays per month. Then it adds `XYChart.Data` for every month to the data series. Each `XYChart.Data` object will represent one bar in the chart.
+3. La méthode `setPersonData(...)` sera accessible par la classe `MainApp` pour définir les données des personnes. Elle boucle à travers la liste des personnes et compte les anniversaires par mois. Ensuite, elle ajoute `XYChart.Data` pour tous les mois à la série de données. Chaque objet `XYChart.Data` représente une barre du graphique.
 
 
 *****
 
-## Connecting View and Controller
+## Connexion entre la vue et le contrôleur
 
-1. Open `BirthdayStatistics.fxml` in Scene Builder.
+1. Ouvrez `BirthdayStatistics.fxml` dans Scene Builder.
 
-2. In the *Controller* group set `BirthdayStatisticsController` as controller.
+2. Dans le groupe *Controller* définissez `BirthdayStatisticsController` comment étant le contrôleur.
 
-3. Select the `BarChart` and choose `barChart` as fx:id Property (in the *Code* group).
+3. Sélectionnez le `BarChart` et choisissez `barChart` comme propriété fx:id (dans le groupe *Code*).
 
-4. Select the `CategoryAxis` and choose `xAxis` as fx:id Property.   
+4. Sélectionnez `CategoryAxis` et choisissez `xAxis` comme propriété fx:id.
 ![Category Axis](/assets/library/javafx-8-tutorial/part6/category-axis.png)
 
-5. You may add a title to the `BarChart` (in *Properties* group) for further styling.
+5. Vous pouvez ajouter un titre au `BarChart` (dans le groupe *Properties*) pour plus de style.
 
 
 
 *****
 
 
-## Connecting the View/Controller with MainApp
+## Connexion Vue/Contrôleur avec MainApp
 
-We'll use the same mechanism for our *birthday statistics* that we used for the *edit person dialog*, a simple popup dialog.
+Nous allons utiliser le même mécanisme pour la partie *Statistque des anniversaires* que celui utilisé pour la partie *Dialogue d'édition de personne*, une boîte de dialogue popup simple.
 
-Add the following method to your `MainApp` class:
+Ajoutez la méthode suivante à votre classe `MainApp`:
 
 
 <pre class="prettyprint lang-java">
@@ -239,12 +235,12 @@ public void showBirthdayStatistics() {
 }
 </pre>
 
-Everything is set up, but we don't have anything that actually calls the new `showBirthdayStatistics()` method. Luckily we already have a menu in `RootLayout.fxml` that can be used for this purpose.
+Tout est prêt, seulement nous n'avons rien qui appelle la nouvelle méthode `showBirthdayStatistics()`. Heureusement, nous avons déjà un menu dans le fichier `RootLayout.fxml` qui peut être utilisé à cette fin.
 
 
-### Show Birthday Statistics Menu
+### Affichage des statistiques d'anniversaires dans le menu
 
-In your `RootLayoutController` add the following method which will handle user clicks on the *show birthday statistics* menu item: 
+Dans votre `RootLayoutController` ajouter la méthode suivante qui va gérer le clique d'un utilisateur sur le menu item *Show Statistics*:
 
 <pre class="prettyprint lang-java">
 /**
@@ -256,30 +252,30 @@ private void handleShowBirthdayStatistics() {
 }
 </pre>
 
-Now, open the `RootLayout.fxml` file with Scene Builder. Create the *Statistics* `Menu` with a *Show Statistics* `MenuItem`:
+Maintenant, ouvrez le fichier `RootLayout.fxml` avec Scene Builder. Créer un menu *Statistics* avec le `MenuItem` *Show Statistics*:
 
 ![Show Statistics Menu](/assets/library/javafx-8-tutorial/part6/show-statistics-menu.png)
 
-Select the *Show Statistics* `MenuItem` and choose `handleShowBirthdayStatistics` for `On Action` (in *Code* group)   
+Sélectionnez le `MenuItem` *Show Statistics* et choisissez `handleShowBirthdayStatistics` dans la propriété `On Action` (Dans le groupe *Code*)
 
 ![Show Statistics On Action](/assets/library/javafx-8-tutorial/part6/show-statistics-on-action.png)
 
-Go to Eclipse, refresh the project and **test it**.
+Allez sur Eclipse, rafraîchissez le projet et **testez le**.
 
 
 *****
 
-## More Information on JavaFX Charts
+## Plus d'informations sur les graphiques JavaFX
 
-A good place for more information is the official Oracle tutorial on [Working with JavaFX Charts](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/charts.htm).
-
-
-### What's Next?
-
-In the last tutorial [Part 7](/library/javafx-8-tutorial/fr/part7/) we will finally deploy our application (i.e. package and deliver the app to our users).
+Un bon endroit pour obtenir plus d'informations est le tutoriel officiel d'Oracle: [Working with JavaFX Charts](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/charts.htm).
 
 
-##### Some other articles you might find interesting
+### Et après?
+
+Dans le dernier tutoriel [Partie 7](/library/javafx-8-tutorial/fr/part7/) nous allons enfin déployer notre application (c'est à dire empaqueter et délivrer l'application à l'utilisateur).
+
+
+##### Voici quelques articles qui pourraient aussi vous intéresser :
 
 * [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
