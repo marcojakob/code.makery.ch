@@ -11,8 +11,6 @@ published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Articles dans ces séries"
-  body:
 - header: "Les articles dans ce tutoriel"
   body:
   - text: "Introduction"
