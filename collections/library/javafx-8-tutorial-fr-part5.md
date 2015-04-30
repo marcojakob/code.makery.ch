@@ -4,7 +4,6 @@ title: "Tutoriel JavaFX 8 - partie 5 : stockage de données en XML"
 date: 2014-04-25 01:00
 updated: 2015-04-15 00:00
 slug: javafx-8-tutorial/fr/part5
-canonical: /library/javafx-8-tutorial/part5/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part5.md
 description: "Enregistrer les données en XML avec JAXB. Apprenez comment utiliser le FileChooser et le menu de JavaFX."
 image: /assets/library/javafx-8-tutorial/part5/addressapp-part5.png
@@ -53,10 +52,6 @@ languages:
   part: part5
   active: fr
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs a French translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
 
 ![Screenshot AddressApp Part 5](/assets/library/javafx-8-tutorial/part5/addressapp-part5.png)
 
@@ -441,7 +436,7 @@ La valeur `null` est renvoyée lorsque l'utilisateur referme la boîte de dialog
 
 1. Ouvrez le fichier `RootLayout.fxml` dans Scene Builder ! Sélectionnez le `RootLayoutController` comme classe contrôleur dans le groupe *Controller* ! 
 
-2. Retournez dans le groupe *Hierarchy* et sélectionnez un élément menu. Dans le groupe *Code* sous **On Action** vous devriez voir un choix de toutes les méthodes contrôleur disponibles. Sélectionnez la méthode correspondante pour chaque élément du menu ! 
+2. Retournez dans le groupe *Hierarchy* et sélectionnez un élément menu. Dans le groupe *Code* sous **On Action** vous devriez voir un choix de toutes les méthodes contrôleur disponibles. Sélectionnez la méthode correspondante pour chaque élément du menu !   
 ![Menu Actions](/assets/library/javafx-8-tutorial/part5/menu-actions.png)
 
 3. Répétez ces étapes pour tous les éléments du menu ! 
