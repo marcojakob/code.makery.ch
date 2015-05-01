@@ -51,9 +51,9 @@ languages:
 
 > `Hello Dart` is a playful introduction to programming with Dart.
 
-Previously, it was hardly realistic to program mobile or web-based applications. The Dart programming language provides how such applications can be programmed much easier.
+Previously, it was hardly realistic to program mobile or web-based applications. The Dart programming language provides a solution how such applications can be programmed much easier.
 
-`Hello Dart` guides you through the basics of programming. No prior programming knowledge is required. The playful world of `Hello Dart` visualizes the execution of your programs. Soon you will want to break out of the limiting rules of the `Hello Dart` world, which is intended. After the introduction with `Hello Dart` you will have a good foundation to soon realize your own web projects.
+`Hello Dart` guides you through the basics of programming. No prior programming knowledge is required. The playful world of `Hello Dart` visualizes the execution of your programs. Soon you will want to break out of the limiting rules of the `Hello Dart` world, which is intended. After the introduction with `Hello Dart` you will have a good foundation to start realizing your own web projects.
 
 <!--
 <div class="alert alert-info">
