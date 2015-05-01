@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Mehr HTML & CSS"
+title: "Mehr HTML & CSS (Deutsch)"
 date: 2014-08-16 00:00
 slug: more-html-css/de
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de.md

@@ -43,6 +43,12 @@ sidebars:
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
     active: true
+languages:
+  header: Sprachen
+  collection: library
+  item: hello-dart
+  part: next
+  active: de
 ---
 
 
@@ -51,9 +57,9 @@ Herzliche Gratulation, Sie haben das Ende dieser Serie erreicht! Hier erfahren S
 
 ### Dart Kanban - Die bessere Todo-Liste
 
-<a href="/library/dart-kanban/de/" class="btn btn-warning"><i class="fa fa-hand-o-right"></i> Dart Kanban - Die bessere Todo-Liste</a>
-
 Lernen Sie eine interaktive Webapplikation zu erstellen. Wir programmieren ein interaktives Kanban Board. 
+
+<a href="/library/dart-kanban/de/" class="btn btn-warning"><i class="fa fa-hand-o-right"></i> Dart Kanban - Die bessere Todo-Liste</a>
 
 
 ### Mehr kommt bald...

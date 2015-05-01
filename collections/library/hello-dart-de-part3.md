@@ -53,6 +53,12 @@ sidebars:
   - text: Seite als Word-Datei
     link: /library/convert-web-page-to-word/de/
     icon-css: fa fa-fw fa-file-word-o
+languages:
+  header: Sprachen
+  collection: library
+  item: hello-dart
+  part: part3
+  active: de
 ---
 
 Neben Schleifen gibt es eine zweite Struktur, die sehr wichtig ist, um den Programmablauf zu steuern. Mit **bedingten Anweisungen** kann man angeben, wann ein Block von Anweisungen ausgeführt werden soll und wann nicht.
@@ -66,7 +72,9 @@ if (treeFront()) {  // Bedingung.
 }
 </pre>
 
-**Hinweis: Der `else`-Teil (Block 2) kann weggelassen werden, wenn er nicht benötigt wird.**
+<div class="alert alert-info">
+  **Hinweis:** Der `else`-Teil (Block 2) kann weggelassen werden, wenn er nicht benötigt wird.
+</div>
 
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.01: Conditionals
@@ -176,7 +184,7 @@ Sie kennen nun etliche Möglichkeiten, wie Sie mit Hilfe von Sensor-Methoden auf
 
 Der Spieler geht in einem Rundgang auf die Suche nach einem Stern (und liest diesen auf). Jedes Feld im Rundgang hat genau zwei freie benachbarte Felder. Eines liegt immer hinter dem Spieler; von diesem Feld aus ist er auf das aktuelle Feld gekommen.
 
-Laden Sie das `scenario3.05` und schreiben Sie ein Programm dazu. Testen Sie das Programm in **allen drei Welten**.
+Laden Sie das `scenario3.05` und schreiben Sie ein Programm dazu. Testen Sie das Programm in **allen drei Welten**, `scenario-a.txt`, `scenario-b.txt` und `scenario-c.txt`.
 
 *Tipp: Schreiben Sie zuerst eine Schleife, die stoppt, sobald der Spieler auf einem Stern ist. Stellen Sie sich dann vor, was nach jedem einzelnen durchgang durch die Schleife geschehen soll.*
 
@@ -205,7 +213,7 @@ Der Spieler soll einer Spur von Sternen folgen und diese jeweils auflesen. Vor d
 
 Der Spieler soll einen Wald bewachen voller Sterne. Er soll aussen am Waldrand entlang laufen.
 
-Beginnen Sie mit einem einzelnen Rundgang um den Wald. Anschliessend können Sie mit einer Endlosschleife `while(true)` den Spieler mehrere Rundgänge machen lassen.
+Beginnen Sie mit einem einzelnen Rundgang um den Wald. Anschliessend können Sie mit einer Endlosschleife `while (true)` den Spieler mehrere Rundgänge machen lassen.
 
 Testen Sie Ihr Programm auch in der zweiten Welt.
 

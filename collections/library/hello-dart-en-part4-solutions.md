@@ -1,67 +1,63 @@
 ---
 layout: article
-title: "Hello Dart - Lösungen Teil 4"
-date: 2015-01-21 00:00
-slug: hello-dart/de/part4-solutions
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part4-solutions.md
-description: "Lösungen zu Hello Dart Teil 4."
+title: "Hello Dart - Solutions Part 4"
+date: 2015-05-01 00:00
+slug: hello-dart/part4-solutions
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-en-part4-solutions.md
+description: "Solutions for Hello Dart Part 4."
 image: /assets/library/hello-dart/hello-dart.png
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: Artikel dieser Serie
+- header: Articles in this Series
   body:
-  - text: "Einleitung"
-    link: /library/hello-dart/de/
-    paging: Einleitung
-  - text: "Hintergrundinfos"
-    link: /library/hello-dart/de/background/
-    icon-css: fa fa-fw fa-info
-    paging: <i class="fa fa-info"></i>
+  - text: "Introduction"
+    link: /library/hello-dart/
+    paging: Intro
   - text: "Installation"
-    link: /library/hello-dart/de/install/
+    link: /library/hello-dart/install/
     icon-css: fa fa-fw fa-cog
     paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Erste Schritte"
-    link: /library/hello-dart/de/part1/
+  - text: "Part 1: First Steps"
+    link: /library/hello-dart/part1/
     paging: 1
-  - text: "Teil 2: Schleifen"
-    link: /library/hello-dart/de/part2/
+  - text: "Part 2: Loops"
+    link: /library/hello-dart/part2/
     paging: 2
-  - text: "Teil 3: Bedingte Anweisungen"
-    link: /library/hello-dart/de/part3/
+  - text: "Part 3: Conditionals"
+    link: /library/hello-dart/part3/
     paging: 3
-  - text: "Teil 4: Variablen"
-    link: /library/hello-dart/de/part4/
+  - text: "Part 4: Variables"
+    link: /library/hello-dart/part4/
     paging: 4
-  - text: "Teil 5: Funktionen"
-    link: /library/hello-dart/de/part5/
+  - text: "Part 5: Functions"
+    link: /library/hello-dart/part5/
     paging: 5
-  - text: "Nächste Schritte"
-    link: /library/hello-dart/de/next/
+  - text: "Next Steps"
+    link: /library/hello-dart/next/
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
-- header: Lösungen
+- header: Solutions
   body:
-  - text: "Lösungen zu Teil 4"
-    link: /library/hello-dart/de/part4-solutions/
+  - text: "Solutions Part 4"
+    link: /library/hello-dart/part4-solutions/
     icon-css: fa fa-fw fa-check-square-o
     active: true
 - header: Links
   body:
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
+  - text: Page as Word File
+    link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
 languages:
-  header: Sprachen
+  header: Languages
   collection: library
   item: hello-dart
   part: part4-solutions
-  active: de
+  active: en
 ---
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 4.01: Counting Stars
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 4.01: Counting Stars
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -77,13 +73,13 @@ class MyPlayer extends Player {
       }
     }
 
-    say('Ich habe ${count} Sterne gefunden.');
+    say('I have found ${count} stars.');
   }
 }
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 4.02: Cleaning Up
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 4.02: Cleaning Up
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -97,31 +93,31 @@ class MyPlayer extends Player {
       if (canMove()) {
         move();
       } else {
-        // Wir sind an einem Rand.
+        // We are at a border.
         if (goingRight) {
-          // Wir sind am rechten Rand und drehen um.
+          // We are at the right border and turn around.
           turnAroundRight();
           goingRight = false;
         } else {
-          // Wir sind am linken Rand und drehen um.
+          // We are at the left border and turn around.
           turnAroundLeft();
           goingRight = true;
         }
       }
     }
 
-    // Entferne den letzten Stern.
+    // Remove the last star.
     removeStar();
   }
 
-  /// Umdrehen am rechten Rand.
+  /// Turn around at the right border.
   turnAroundRight() {
     turnRight();
     move();
     turnRight();
   }
 
-  /// Umdrehen am linken Rand.
+  /// Turn around at the left border.
   turnAroundLeft() {
     turnLeft();
     move();
@@ -131,7 +127,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 4.03: Inverting
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 4.03: Inverting
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -145,38 +141,38 @@ class MyPlayer extends Player {
       if (canMove()) {
         move();
       } else {
-        // Wir sind an einem Rand.
+        // We are at a border.
         if (goingRight) {
-          // Wir sind am rechten Rand und drehen um.
+          // We at the right border and turn around.
           turnAroundRight();
           goingRight = false;
         } else {
-          // Wir sind am linken Rand und drehen um.
+          // We are at the left border and turn around.
           turnAroundLeft();
           goingRight = true;
         }
       }
     }
 
-    // Das letzte Feld invertieren.
+    // Invert the last field.
     invertField();
   }
 
-  /// Umdrehen am rechten Rand.
+  /// Turn around at the right border.
   turnAroundRight() {
     turnRight();
     move();
     turnRight();
   }
 
-  /// Umdrehen am linken Rand.
+  /// Turn around at the left border.
   turnAroundLeft() {
     turnLeft();
     move();
     turnLeft();
   }
 
-  /// Ein einzelnes Feld invertieren.
+  /// Invert a single field.
   invertField() {
     if (onStar()) {
       removeStar();
@@ -188,7 +184,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 4.04: Tree Line
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 4.04: Tree Line
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -205,35 +201,35 @@ class MyPlayer extends Player {
       }
     }
 
-    say('Die längste Baumreihe ist ${longestRow} Bäume lang.');
+    say('The longest tree line is ${longestRow} trees long.');
   }
 
-  /// Geht einer Baumreihe entlang und zählt die Bäume.
+  /// Walks along a tree line and counts the trees.
   countRow() {
     int currentRow = 0;
 
     turnLeft();
 
     while (treeRight())  {
-      // Den Zähler für die aktuelle Zeile um eins erhöhen.
+      // Increment the counter for the row by one.
       currentRow++;
       move();
     }
 
-    // Gehe um die Baumreihe herum.
+    // Go around the tree line.
     turnRight();
     move();
     move();
     turnRight();
 
-    // Gehe zurück nach unten.
+    // Go back down.
     while (canMove()) {
       move();
     }
 
     turnLeft();
 
-    // Teste, ob die aktuelle zeile länger ist als alle bisherigen.
+    // Test if the current tree line is longer than the previous lines.
     if (currentRow > longestRow) {
       longestRow = currentRow;
     }

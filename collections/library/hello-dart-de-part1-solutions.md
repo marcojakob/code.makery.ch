@@ -53,6 +53,12 @@ sidebars:
   - text: Seite als Word-Datei
     link: /library/convert-web-page-to-word/de/
     icon-css: fa fa-fw fa-file-word-o
+languages:
+  header: Sprachen
+  collection: library
+  item: hello-dart
+  part: part1-solutions
+  active: de
 ---
 
 #### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 1.01: First Steps

@@ -60,7 +60,7 @@ languages:
   </div>
   <div class="col-sm-6">
     <p>
-      <em>Once upon a time, there was a little girl who always wore a red riding cloak. So everyone called her Little Red Riding Hood. One moning the mother said to the child: "Red Riding Hood, today is your grandmother's birthday.Bake her favorite cake, take a bottle of good old wine from the cellar, put everything in one basket, and go visit her."</em>
+      <em>Once upon a time, there was a little girl who always wore a red riding cloak. So everyone called her Little Red Riding Hood. One moning the mother said to the child: "Red Riding Hood, today is your grandmother's birthday. Bake her favorite cake, take a bottle of good old wine from the cellar, put everything in one basket, and go visit her."</em>
     </p>
     <p><strong>Help Little Red Riding Hood bake a cake! Carefully read the theory first.
     </strong></p>
@@ -121,8 +121,8 @@ Kara rotates by 180 degrees.
 2. `public void multiMove(int steps)`   
 Kara takes the number of steps in the current direction (see example in theory section above).
 
-3. public void putLeafs(int count)`   
-Kara puts the specified number of leafs. The first one he places at the current position, the other fol-lowing in his line of sight.
+3. `public void putLeafs(int count)`   
+Kara puts the specified number of leafs. The first one he places at the current position, the other following in his line of sight.
 
 
 #### <i class="fa fa-rocket"></i> TASK 5.01: Baking a Cake

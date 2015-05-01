@@ -53,6 +53,12 @@ sidebars:
   - text: Seite als Word-Datei
     link: /library/convert-web-page-to-word/de/
     icon-css: fa fa-fw fa-file-word-o
+languages:
+  header: Sprachen
+  collection: library
+  item: hello-dart
+  part: part4
+  active: de
 ---
 
 Mit Schleifen haben wir gelernt, bestimmte Ereignisse zu wiederholen, solange eine Bedingung erfüllt ist. Nun möchten wir aber folgendes tun:
@@ -101,7 +107,7 @@ Dann könnte man im obigen Programmbeispiel `while (i < anzahl)` schreiben.
 
 ## Datentypen in Dart
 
-In Dart gibt es ein paar vordefinierte Datentypen. Mit Datentypen gibt man an, was in eine Variable gespeichert wird. Diese Angaben sind in Dart freiwillig. Das heisst, man kann alle Variablen einfach mit `var` deklarieren, wie wir es oben gemacht haben. Ich empfehle aber, meistens den Datentyp anzugeben, weil dies hilft, Fehler zu erkennen.
+In Dart gibt es ein paar vordefinierte Datentypen. Mit Datentypen gibt man an, was in eine Variable gespeichert wird. Diese Angaben sind in Dart freiwillig. Das heisst, man kann alle Variablen einfach mit `var` deklarieren, wie wir es oben gemacht haben. Ich empfehle aber, meistens den Datentyp anzugeben. Dies hilft Fehler früh zu erkennen, da Dart Hinweise geben wird, wenn wir versuchen einen falschen Datentyp in eine Variable zu speichern.
 
 <div class="alert alert-info">
   <strong>Merke:</strong> Alles, was in eine Variable gespeichert werden kann, wird in Dart als **Objekt** bezeichnet. Der Datentyp eines Objektes nennen wir eine **Klasse**. Klassen und Objekte sind die Grundelemente der <a class="alert-link" href="http://de.wikipedia.org/wiki/Objektorientierte_Programmierung">objektorientierten Programmierung</a>.
@@ -265,7 +271,7 @@ Der Spieler soll von links nach rechts gehen und dabei die Sterne zählen.
 
 
 <div class="alert alert-info">
-  <strong>Gültigkeitsbereich von Variablen:</strong> Variablen sind immer nur innerhalb des Blockes (zwischen den geschweiften Klammern) gültig, in welchem sie deklariert wurden. Man kann sie auch ausserhalb der Methoden deklarieren, dann gelten sie für die ganze Klasse.
+  **Gültigkeitsbereich von Variablen:** Variablen sind immer nur innerhalb des Blockes (zwischen den geschweiften Klammern) gültig, in welchem sie deklariert wurden. Man kann sie auch ausserhalb der Funktionen deklarieren. Dann sind sie in der ganzen Klasse verfügbar, oder, falls sie sogar ausserhalb einer Klasse deklariert werden, sind sie überall verfügbar.
 </div>
 
 
@@ -277,21 +283,21 @@ Der Spieler soll alle Sterne wegräumen.
 
 *Hinweise:*
 
-1. Sie können den Baum verwenden, um herauszufinden, wann der Spiele am Ende angekommen ist mit einer Schleife `while (!treeFront()) {...}`.
+1. Sie können den Baum verwenden, um herauszufinden, wann der Spieler am Ende angekommen ist mit einer Schleife `while (!treeFront()) {...}`.
 2. Entfernen Sie zuerst die Sterne auf der ersten Zeile.
-3. Drehen Sie am Rand und entfernen Sie die die Sterne auf der zweiten Zeile.
+3. Drehen Sie am Rand und entfernen Sie die Sterne auf der zweiten Zeile.
 4. Führen Sie nun eine `bool`-Variable ein, damit sich der Spieler merkt, in welche Richtung er läuft, zum Beispiel so:   
 `bool goingRight = true;`
 5. Mit dieser Variable können Sie nun herausfinden, ob der Spieler am rechten oder am linken Rand angekommen ist und entsprechend umdrehen muss. Ein `bool` kann wie folgt in einer Bedingung verwendet werden:   
 `if (goingRight) {...}`
 6. Denken Sie daran, die neue Richtung in die Variable zu setzen, sobald sich der Spieler dreht:   
 `goingRight = false;`
-7. *Verbesserung*: Damit der Code übersichtlicher wird, sollen Sie zwei Funktionen machen zum Umdrehen: `turnAroundRight()` und `turnAroundLeft()`.
+7. *Verbesserung*: Damit der Code übersichtlicher wird, könnten Sie zwei Funktionen machen zum Umdrehen: `turnAroundRight()` und `turnAroundLeft()`.
 
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.03: Inverting
 
-![Sternenspur](/assets/library/hello-dart/part4/inverting.png)
+![Invertieren](/assets/library/hello-dart/part4/inverting.png)
 
 Die Welt hat eine quadratische Fläche und am Schluss einen Baum. Innerhalb der Fläche ist ein Muster aus Sternen gelegt, das vom Spieler invertiert (=umgedreht) werden soll. Achten Sie darauf, dass Ihr Code übersichtlich bleibt und lagern Sie allenfalls Teile in eigene Funktionen aus.
 
@@ -307,14 +313,14 @@ Die Welt hat eine quadratische Fläche und am Schluss einen Baum. Innerhalb der 
 
 ![Baumreihe](/assets/library/hello-dart/part4/tree-line.jpg)
 
-Auf der Wiese hat es verschiedene Baumreihen. Der Spieler soll nun die Länge (in Anzahl Bäumen) der längsten Baumreihe ermitteln und ausgeben. Zwischen den Baumreihen ist immer mindestens ein Feld Platz. Auf dem letzten Feld liegt ein Stern.
+In dieser Welt hat es verschiedene Baumreihen. Der Spieler soll nun die Länge (in Anzahl Bäumen) der längsten Baumreihe ermitteln und ausgeben. Zwischen den Baumreihen ist immer mindestens ein Feld Platz. Auf dem letzten Feld liegt ein Stern.
 
 
 ***
 
 ## Wie weiter?
 
-Fahren Sie weiter mit [Teil 5: Methoden](/library/hello-dart/de/part5/)
+Fahren Sie weiter mit [Teil 5: Funktionen](/library/hello-dart/de/part5/)
 
 
 ***

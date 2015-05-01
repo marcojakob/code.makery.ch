@@ -1,84 +1,80 @@
 ---
 layout: article
-title: "Hello Dart - Lösungen Teil 3"
-date: 2015-01-21 00:00
-slug: hello-dart/de/part3-solutions
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part3-solutions.md
-description: "Lösungen zu Hello Dart Teil 3."
+title: "Hello Dart - Solutions Part 3"
+date: 2015-05-01 00:00
+slug: hello-dart/part3-solutions
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-en-part3-solutions.md
+description: "Solutions for Hello Dart Part 3."
 image: /assets/library/hello-dart/hello-dart.png
 published: true
 prettify: true
 comments: true
 sidebars:
-- header: Artikel dieser Serie
+- header: Articles in this Series
   body:
-  - text: "Einleitung"
-    link: /library/hello-dart/de/
-    paging: Einleitung
-  - text: "Hintergrundinfos"
-    link: /library/hello-dart/de/background/
-    icon-css: fa fa-fw fa-info
-    paging: <i class="fa fa-info"></i>
+  - text: "Introduction"
+    link: /library/hello-dart/
+    paging: Intro
   - text: "Installation"
-    link: /library/hello-dart/de/install/
+    link: /library/hello-dart/install/
     icon-css: fa fa-fw fa-cog
     paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Erste Schritte"
-    link: /library/hello-dart/de/part1/
+  - text: "Part 1: First Steps"
+    link: /library/hello-dart/part1/
     paging: 1
-  - text: "Teil 2: Schleifen"
-    link: /library/hello-dart/de/part2/
+  - text: "Part 2: Loops"
+    link: /library/hello-dart/part2/
     paging: 2
-  - text: "Teil 3: Bedingte Anweisungen"
-    link: /library/hello-dart/de/part3/
+  - text: "Part 3: Conditionals"
+    link: /library/hello-dart/part3/
     paging: 3
-  - text: "Teil 4: Variablen"
-    link: /library/hello-dart/de/part4/
+  - text: "Part 4: Variables"
+    link: /library/hello-dart/part4/
     paging: 4
-  - text: "Teil 5: Funktionen"
-    link: /library/hello-dart/de/part5/
+  - text: "Part 5: Functions"
+    link: /library/hello-dart/part5/
     paging: 5
-  - text: "Nächste Schritte"
-    link: /library/hello-dart/de/next/
+  - text: "Next Steps"
+    link: /library/hello-dart/next/
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
-- header: Lösungen
+- header: Solutions
   body:
-  - text: "Lösungen zu Teil 3"
-    link: /library/hello-dart/de/part3-solutions/
+  - text: "Solutions Part 3"
+    link: /library/hello-dart/part3-solutions/
     icon-css: fa fa-fw fa-check-square-o
     active: true
 - header: Links
   body:
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
+  - text: Page as Word File
+    link: /library/convert-web-page-to-word/
     icon-css: fa fa-fw fa-file-word-o
 languages:
-  header: Sprachen
+  header: Languages
   collection: library
   item: hello-dart
   part: part3-solutions
-  active: de
+  active: en
 ---
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.01: Conditionals
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.01: Conditionals
 
 ##### a.
 
-Nimmt den Stern weg, wenn es einen hat.
+Removes a star if there is one.
 
 
 ##### b.
 
-Nimmt den Stern weg, wenn es einen hat und legt einen Stern hin, wenn es keinen hat (Invertieren).
+Removes a star if there is one, puts down a star if there is none. This means the star pattern is inverted.
 
 
 ##### c.
 
-Nimmt den Stern weg, wenn links ein Baum steht.
+Removes the star if there is a tree on the left.
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.02: Star Track
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.02: Star Track
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -96,7 +92,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.03: Star at Tree
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.03: Star at Tree
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -113,7 +109,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.04: Around Tree II
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.04: Around Tree II
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -144,7 +140,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.05: Round Trip
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.05: Round Trip
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -170,7 +166,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.06: Around Tree III
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.06: Around Tree III
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -205,7 +201,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.07: Follow the Trail
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.07: Follow the Trail
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -219,26 +215,26 @@ class MyPlayer extends Player {
     removeStar();
   }
 
-  /// Funktion, um den nächsten Stern zu finden.
+  /// Function to find the next star.
   findNextLeaf() {
-    // Erst mal vorne schauen.
+    // First look in the front.
     move();
     if (!onStar()) {
 
-      // Kein Stern vorne, also zurück und links schauen.
+      // No star in front, get back and try on the left.
       turnAndGoBack();
       turnRight();
       move();
       if (!onStar()) {
 
-        // Links ist auch kein Stern; dann muss er rechts liegen.
+        // No star on the left, it must be on the right.
         turnAndGoBack();
         move();
       }
     }
   }
 
-  /// Funktion, um einen Schritt zurück zu gehen.
+  /// Function to go back one step.
   turnAndGoBack() {
     turnLeft();
     turnLeft();
@@ -248,7 +244,7 @@ class MyPlayer extends Player {
 </pre>
 
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.08: Guard
+#### <i class="fa fa-check-square-o mg-t-lg"></i> SOLUTION TASK 3.08: Guard
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {
@@ -261,22 +257,22 @@ class MyPlayer extends Player {
 
   makeOneStep() {
     if (!treeRight()) {
-      // Kein Baum rechts --> gehe nach rechts.
+      // No tree right --> go to the right.
       turnRight();
       move();
     } else {
-      // Baum rechts.
+      // There is a tree on the right.
       if (!treeFront()) {
-        // Kein Baum vorne --> ein Schritt vorwärts.
+        // No tree in front --> make step forward.
         move();
       } else {
         // Bäume rechts und vorne.
         if (!treeLeft()) {
-          // Kein Baum links --> gehe nach links.
+          // No tree left --> go to the left.
           turnLeft();
           move();
         } else {
-          // Bäume rechts, vorne und links --> Sackgasse.
+          // Trees right, in front, and left --> dead end.
           turnLeft();
           turnLeft();
           move();

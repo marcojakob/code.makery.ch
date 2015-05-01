@@ -54,12 +54,18 @@ sidebars:
   - text: Seite als Word-Datei
     link: /library/convert-web-page-to-word/de/
     icon-css: fa fa-fw fa-file-word-o
+languages:
+  header: Sprachen
+  collection: library
+  item: hello-dart
+  part: install
+  active: de
 ---
 
 Zum Programmieren brauchen wir... 
 
 * den **Dart Editor** und 
-* die `Hello-Dart`-Szenarien.
+* die `Hello Dart`-Szenarien.
 
 
 ## Dart Editor installieren
@@ -68,7 +74,7 @@ Zum Programmieren brauchen wir...
 2. Entpacken Sie das Zip mit dem Dart Editor auf Ihre Festplatte.
 
 <div class="alert alert-info">
-  <strong>Hinweis:</strong> Dart Editor benötigt Java in der Version 6 oder höher. Falls Sie noch keine Java Runtime installiert haben, laden Sie diese herunter und installieren Sie sie. Bei anderen Problemen mit der Installation, suchen Sie unter <a href="https://www.dartlang.org/tools/editor/troubleshoot.html" class="alert-link">Troubleshoot</a> nach einer Lösung.
+  <strong>Hinweis:</strong> Dart Editor benötigt Java in der Version 6 oder höher. Falls nötig, laden Sie die [Java Runtime](http://www.oracle.com/technetwork/java/javase/downloads/) herunter. Bei anderen Problemen mit der Installation, suchen Sie unter <a href="https://www.dartlang.org/tools/editor/troubleshoot.html" class="alert-link">Troubleshoot</a> nach einer Lösung.
 </div>
 
 

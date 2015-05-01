@@ -53,6 +53,12 @@ sidebars:
   - text: Seite als Word-Datei
     link: /library/convert-web-page-to-word/de/
     icon-css: fa fa-fw fa-file-word-o
+languages:
+  header: Sprachen
+  collection: library
+  item: hello-dart
+  part: part5
+  active: de
 ---
 
 <div class="row">

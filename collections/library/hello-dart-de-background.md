@@ -43,6 +43,12 @@ sidebars:
     link: /library/hello-dart/de/next/
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
+languages:
+  header: Sprachen
+  collection: library
+  item: hello-dart
+  part: background
+  active: de
 ---
 
 Auf dieser Seite erkläre ich, weshalb ich so begeistert bin von [Dart](https://www.dartlang.org) und ich diese Programmiersprache für Programmieranfänger wie auch für professionelle Programmierer empfehle.

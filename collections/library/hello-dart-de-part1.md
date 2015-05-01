@@ -53,6 +53,12 @@ sidebars:
   - text: Seite als Word-Datei
     link: /library/convert-web-page-to-word/de/
     icon-css: fa fa-fw fa-file-word-o
+languages:
+  header: Sprachen
+  collection: library
+  item: hello-dart
+  part: part1
+  active: de
 ---
 
 In diesem ersten Teil wagen wir unsere ersten Schritte im Programmieren.  
@@ -76,7 +82,7 @@ In diesem ersten Teil wagen wir unsere ersten Schritte im Programmieren.
 
 Betrachten wir einmal die **Klasse** `MyPlayer`. Zwischen den geschweiften Klammern `{` und `}` werden die Eigenschaften und das Verhalten unseres Spielers definiert. 
 
-Das Einzige, was im Moment in dieser Klasse steht ist `start()` und drei Anweisungen für die Bewegungen des Spielers. `start()` ist eine Funktion (wird manchmal auch Methode genannt). Darin können wir das Verhalten unseres Spieleres verändern.
+Das Einzige, was im Moment in dieser Klasse steht ist `start()` und drei Anweisungen für die Bewegungen des Spielers. `start()` ist eine Funktion (wird manchmal auch *Methode* genannt). Darin können wir das Verhalten unseres Spieleres verändern.
 
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 1.01: First Steps
@@ -154,6 +160,12 @@ goAroundTree() {
 Schreiben Sie zwischen die geschweiften Klammern der Funktion die Befehle, die es braucht, um um den Baum zu kommen.
 
 Benutzen Sie nun innerhalb der `start()`-Funktion die Funktion `goAroundTree()` für jeden der drei Bäume.
+
+
+## Wie weiter?
+
+&rarr; Fahren Sie weiter mit [Teil 2: Schleifen](/library/hello-dart/de/part2/).
+
 
 ***
 

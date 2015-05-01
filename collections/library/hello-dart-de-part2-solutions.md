@@ -53,6 +53,12 @@ sidebars:
   - text: Seite als Word-Datei
     link: /library/convert-web-page-to-word/de/
     icon-css: fa fa-fw fa-file-word-o
+languages:
+  header: Sprachen
+  collection: library
+  item: hello-dart
+  part: part2-solutions
+  active: de
 ---
 
 #### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 2.01: Loop
@@ -132,7 +138,7 @@ class MyPlayer extends Player {
   }
 
   /// Steigt eine Stufe nach oben.
-   oneStepUp() {
+  oneStepUp() {
     turnLeft();
     move();
     turnRight();
