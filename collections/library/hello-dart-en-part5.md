@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Hello Dart - Part 5: Functions"
-date: 2015-04-18 00:00
+date: 2015-05-01 00:00
 slug: hello-dart/part5
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-en-part5.md
 description: "We expanding our knowledge about functions and methods in Dart. We will learn about functions with parameters and return values."
@@ -15,10 +15,6 @@ sidebars:
   - text: "Introduction"
     link: /library/hello-dart/
     paging: Intro
-  - text: "Background Infos"
-    link: /library/hello-dart/background/
-    icon-css: fa fa-fw fa-info
-    paging: <i class="fa fa-info"></i>
   - text: "Installation"
     link: /library/hello-dart/install/
     icon-css: fa fa-fw fa-cog
@@ -67,17 +63,16 @@ languages:
   </div>
   <div class="col-sm-6">
     <p>
-      <em>Es war einmal ein kleines Mädchen, das immer ein rotes Käppchen trug. Darum hiess es bei allen Leuten nur „Rotkäppchen". Eines Tages sagte die Mutter zu dem Kind: "Rotkäppchen, heute hat Deine Grossmutter Geburtstag. Back ihr doch ihren Lieblingskuchen, nimm eine Flasche vom guten alten Wein aus dem Keller, leg alles in einen Korb und geh sie besuchen."</em>
+      <em>Once upon a time, there was a little girl who always wore a red riding cloak. So everyone called her Little Red Riding Hood. One moning the mother said to the child: "Red Riding Hood, today is your grandmother's birthday. Bake her favorite cake, take a bottle of good old wine from the cellar, put everything in one basket, and go visit her."</em>
     </p>
-    <p><strong>Helfen Sie Rotkäppchen beim Kuchenbacken! Gleichzeitig erweitern wir dabei unsere Kenntnisse über Funktionen.
-    </strong></p>
+    <p><strong>Help Little Red Riding Hood bake a cake! Doing this you will expand your knowledge about functions.</strong></p>
   </div>
 </div>
 
 
-## Funktionen mit Parametern
+## Functions with Parameters
 
-Über Parameter können einer Funktion Werte übergeben werden. So kann man bei folgender Funktion angeben, wie viele Schritte der Spieler gehen soll:
+With parameters, values can be passed to a function. In the following function you can specify how many steps the player should take:
 
 <pre class="prettyprint lang-java">
 multiMove(int steps) {
@@ -91,68 +86,68 @@ multiMove(int steps) {
 }
 </pre>
 
-Um z.B. 5 Schritte zu gehen, wird beim Aufruf der Funktion der Wert 5 in der Klammer angegeben:
+To go 5 steps just put the number 5 between the parentheses:
 
 <pre class="prettyprint lang-java">
 multiMove(5);
 </pre>
 
-Um eine Funktion mit mehreren Parametern aufzurufen, werden die Werte durch Kommas getrennt.
+To invoke a function with multiple parameters, the values are separated by commas.
 
 <pre class="prettyprint lang-java">
 drawRectangle(21, 4);
 </pre>
 
 
-#### Erklärungen
+#### Explanations
 
-1. Bei den bisherigen Programmen war es eher lästig, die Funktionen immer mit einem Klammerpaar `()` zu versehen. Nun wird klar, dass die bisher eingesetzten Funktionen nur Spezialfälle darstellten, bei denen kein Parameter übergeben wird.
-2. In der Klammer wird der Parameter (hier `steps`) mit einem Typ angegeben (hier `int`). Mehrere Parameter werden durch Kommas getrennt. Beispiel:    
+1. In previous programs it was rather cumbersome to always write the parentheses `()` for each function. Now it is clear that the previously used functions were merely cases where no parameter was passed.
+2. Inside the parentheses of a function declaration, the parameter (in this case `steps`) is specified with a type (here `int`). Multiple parameters are separated by commas as seen in this example:
 <pre class="prettyprint lang-java">
 public void drawRectangle(int width, int height)
 </pre>
-3. Beim Aufruf einer Funktion wird der Wert in die Variable (hier `width` und `height`) kopiert.
+3. When such a function is called, the values are copied into the variables (in this case into `width` and `height`).
 
 <div class="alert alert-info">
-  <strong>Wichtig:</strong> Wenn Funktionen innerhalb einer Klasse stehen (was meist der Fall ist), dann werden diese oft auch <strong>Methoden</strong> genannt!
+  **Importent:** Functions that are defined inside a class (which is usually the case) are also called **Methods**.
 </div>
 
 
-### Kuchen backen
+### Baking a Cake
 
-Wir wollen nun mit unserem Spieler für die Grossmutter einen Geburtstagskuchen "backen". Der Kuchen wird aus Sternen bestehen.
+We will now use our player to "bake" a birthday cake for the grandmother. The cake will be made of stars.
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 5.01: Baking a Cake
+#### <i class="fa fa-rocket mg-t"></i> TASK 5.01: Baking a Cake
 
 ![Baking a Cake](/assets/library/hello-dart/part5/baking-a-cake.jpg) 
 
-Als Vorbereitung für das Backen sollen folgende Methoden zur Verfügung gestellt werden:
+In preparation for baking, the following methods should be provided:
 
 1. `turnAround()`   
-Dreht den Spieler um 180 Grad.
+Rotates the player by 180 degrees.
 
 2. `multiMove(int steps)`   
-Der Spieler geht die Anzahl Schritte (steps) in die aktuelle Blickrichtung (siehe Beispiel im Theorieteil oben).
+The player takes the number of steps in the current direction (see example in the theory section above).
 
 3. `putStars(int count)`   
-Der Spieler legt die Anzahl (count) Sterne. Der erste Stern legt er an der aktuellen Position, die weiteren fortgesetzt in seine Blickrichtung.
+The player puts the specified number of stars. The first one he places at the current position, the other following in his line of sight.
 
-Der Spieler soll mit Sternen ein Rechteck zeichnen, welches den Kuchen symbolisiert. 
+The player is to draw a rectangle with stars symbolizing the cake. 
 
-Der Spieler startet in der Ecke unten links. Der Spieler soll nicht nur eine fixe Grösse eines Rechteckes zeichnen können, sondern ein Rechteck mit variabler Breite und Höhe! Der Funktionsaufruf `drawRectangle(21, 4)` soll demnach ein Rechteck mit der Breite 21 und der Höhe 4 erzeugen.
+The player starts in the lower left corner and looks to the right. The player should be able to make a rectangle with variable width and height! The function call `drawRectangle(21, 4)` should therefore create a rectangle with a width of 31 and height of 4.
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 5.02: Candles on Cake
+#### <i class="fa fa-rocket mg-t"></i> TASK 5.02: Candles on Cake
 
 ![Candles on Cake](/assets/library/hello-dart/part5/candles-on-cake.jpg) 
 
-Damit unser Kuchen auch wie ein Geburtstagskuchen aussieht, braucht er natürlich noch ein paar Kerzen. Erweitern Sie Ihr Programm um eine zusätzliche Funktion `drawCandles(int count)`, welche die angegebene Anzahl Kerzen auf den Kuchen setzt. 
+To make the cake look like a birthday cake it needs a few candles, of course. Extend your program with an additional method `drawCandles(int count)` which sets the specified number of candles on the cake.
 
 
-## Funktionen mit Rückgabewerten
+## Function with Return Values
 
-Über den Rückgabewert kann eine Funktion einen Wert als Ergebnis zurückliefern. So errechnet die folgende Funktion die angegebenen Zahl mal zwei und gibt das Resultat zurück:
+A function can return a value as a result. The following function will multiply the specified `number` by two and return the result:
 
 <pre class="prettyprint lang-java">
 int twoTimes(int number) {
@@ -161,44 +156,46 @@ int twoTimes(int number) {
 </pre>
 
 
-Das Resultat kann entweder in eine Variable gespeichert oder direkt wie folgt verwendet werden:
+The result can either be stored in a variable or directly be used as follows:
 
 <pre class="prettyprint lang-java">
 multiMove(twoTimes(4));
 </pre>
 
 
-#### Erklärungen
+#### Explanations
 
-1. Der Typ des Rückgabewerts (hier `int`) wird vor dem Namen der Funktion angegeben. Wenn die Funktion keinen Rückgabewert enthält, wird das meist mit `void` ausgedrückt.
-2. Die Rückgabe eines Wertes in einer Funktion geschieht mit `return`, gefolgt vom Wert.
+1. The type of the return value (in this case `int`) is specified before the name of the function. If the function does not return a value, we write `void`.
+2. To return a value we write `return` followed by the value.
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 5.03: Candles for Age
+#### <i class="fa fa-rocket mg-t"></i> TASK 5.03: Candles for Age
 
-Wir möchten der Grossmutter **für jedes Jahrzehnt eine Kerze** auf den Kuchen stecken. Da Rotkäppchen nicht genau weiss, wie alt die Grossmutter wird, muss es zuerst ihre Mutter fragen.
+We want to put on the cake a **candle for every decade** of grandmother's age. As Little Red Riding Hood does not know exactly how old her grandmother is, she must first ask her mother.
 
-Programmieren Sie eine Funktion `howOldIsGrandma()`, die das Alter der Grossmutter zurückgibt. Mit Hilfe dieser Funktion soll dann für jedes Jahrzehnt eine Kerze auf dem Kuchen platziert werden.
+Program a function called `howOldIsGrandma()` that returns the age. With the help of this function the rest of the program should place a candle on the cake for every decade.
 
 <div class="alert alert-info">
-  <strong>Hinweis:</strong> Bei der Division von zwei Zahlen entsteht in Dart immer ein `double`. Damit wir wieder einen `int` erhalten, können wir die Funktion `toInt()` oder `round()` verwenden.<br>Beispiel: `(5 / 3).toInt()`   
+  **Note:** The division of two numbers in Dart always results in a `double`. To get an `int` again, we can use the `toInt()` or `round()` functions. <br> Example: `(5 / 3).toInt()`
 </div>
 
 
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 5.04 (schwierig): Layered Cake
+#### <i class="fa fa-rocket mg-t"></i> TASK 5.04 (difficult): Layered Cake
 
 ![Candles on Cake](/assets/library/hello-dart/part5/layered-cake.jpg) 
 
-"Backen" Sie mit unserem Spieler eine Torte mit einer Schicht für jedes Jahrzehnt, das die Grossmutter über 50 ist. Jede Schicht soll zwei Zeilen haben und soll auf beiden Seiten um zwei Sternen nach innen gerückt sein. 
+Let the player "bake" a layered cake for the grandmother. The player should add a layer for every decade that the grandmother is over 50. Each layer should have two lines and should be indented on both sides by two stars.
+
 
 
 ***
 
-## Ende ... und wie weiter?
+## What's next?
 
-Erfahren Sie die [nächsten Schritte](/library/hello-dart/de/next/).
+
+Learn about the [next steps](/library/hello-dart/next/).
 
 
 ***

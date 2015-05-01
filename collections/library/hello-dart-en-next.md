@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Hello Dart - Next Steps"
-date: 2015-04-18 00:00
+date: 2015-05-01 00:00
 slug: hello-dart/next
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-en-next.md
 description: "How can you learn even more about web programming after you've completed the Hello Dart tutorial."
@@ -15,10 +15,6 @@ sidebars:
   - text: "Introduction"
     link: /library/hello-dart/
     paging: Intro
-  - text: "Background Infos"
-    link: /library/hello-dart/background/
-    icon-css: fa fa-fw fa-info
-    paging: <i class="fa fa-info"></i>
   - text: "Installation"
     link: /library/hello-dart/install/
     icon-css: fa fa-fw fa-cog
@@ -52,23 +48,25 @@ languages:
 ---
 
 
-Herzliche Gratulation, Sie haben das Ende dieser Serie erreicht! Hier erfahren Sie, wie es weiter gehen könnte.
+Congratulations, you've reached the end of this series! Here are some options of how you could continue with your programming adventure.
 
 
-### Dart Kanban - Die bessere Todo-Liste
+### Dart Kanban - A better Todo List
 
-<a href="/library/dart-kanban/de/" class="btn btn-warning"><i class="fa fa-hand-o-right"></i> Dart Kanban - Die bessere Todo-Liste</a>
+*currently in German only*
 
-Lernen Sie eine interaktive Webapplikation zu erstellen. Wir programmieren ein interaktives Kanban Board. 
+Learn to create an interactive web application. We will program an interactive Kanban board.
+
+<a href="/library/dart-kanban/de/" class="btn btn-warning"><i class="fa fa-hand-o-right"></i> Dart Kanban - A better Todo List</a>
 
 
-### Mehr kommt bald...
+### More coming soon...
 
-Bald werden weitere Anleitungen zur Programmierung veröffentlicht. Wenn Sie informiert werden möchten, schreiben Sie sich für den [Newsletter](https://tinyletter.com/codemakery) ein.
+I plan to translate the *Dart Kanban* tutorial to English and publish more programming tutorials soon. If you want to get informed when they are released, register for the [newsletter](https://tinyletter.com/codemakery).
 
 
 ### Feedback
 
-Ich freue mich von Ihnen zu hören. Schreiben Sie einen Kommentar, wenn Sie die Serie glücklich beendet haben oder auch, wenn Sie Verbesserungsvorschläge haben. <a href="#disqus_thread"><i class="fa fa-comment-o"></i></a>
+I would love to hear from you. Write a comment if you've successfully completed the tutorial and also if you have any suggestions about how the tutorial could be improved. <a href="#disqus_thread"><i class="fa fa-comment-o"></i></a>
 
 <i class="fa fa-beer"></i> Marco

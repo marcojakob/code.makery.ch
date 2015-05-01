@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Hello Dart: Einführung in die Programmierung"
+title: "Hello Dart: Einführung in die Programmierung (Deutsch)"
 date: 2015-01-21 00:00
 slug: hello-dart/de
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de.md

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Hello Dart - Part 1: First Steps"
-date: 2015-04-18 00:00
+date: 2015-05-01 00:00
 slug: hello-dart/part1
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-en-part1.md
 description: "The first steps in programming with Dart. Get to know classes and functions and understand what the main function is for."
@@ -15,10 +15,6 @@ sidebars:
   - text: "Introduction"
     link: /library/hello-dart/
     paging: Intro
-  - text: "Background Infos"
-    link: /library/hello-dart/background/
-    icon-css: fa fa-fw fa-info
-    paging: <i class="fa fa-info"></i>
   - text: "Installation"
     link: /library/hello-dart/install/
     icon-css: fa fa-fw fa-cog

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Hello Dart: Introduction to Programming"
-date: 2015-04-18 00:00
+date: 2015-05-01 00:00
 slug: hello-dart
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-en.md
 description: "Hello Dart is a playful introduction to programming. Learn the basics of programming with the awesome Dart language."
@@ -16,10 +16,6 @@ sidebars:
     link: /library/hello-dart/
     paging: Intro
     active: true
-  - text: "Background Infos"
-    link: /library/hello-dart/background/
-    icon-css: fa fa-fw fa-info
-    paging: <i class="fa fa-info"></i>
   - text: "Installation"
     link: /library/hello-dart/install/
     icon-css: fa fa-fw fa-cog

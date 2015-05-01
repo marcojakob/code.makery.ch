@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Dart Kanban - Die bessere Todo-Liste"
+title: "Dart Kanban - Die bessere Todo-Liste (Deutsch)"
 date: 2015-03-23 00:00
 slug: dart-kanban/de
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-kanban-de.md
