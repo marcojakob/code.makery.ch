@@ -17,6 +17,7 @@
     "it": "Italiano",
     "pt": "Português",
     "ru": "Русский",
+    "tr": "Türkçe",
     "zh-cn": "中文（简体）"
   },
   
@@ -84,7 +85,7 @@
       "image": "/assets/library/javafx-8-tutorial/addressapp-javafx8.png",
       "summary": "Seven-part tutorial series for learning JavaFX from the ground up. Uses the new Java 8 and JavaFX 8 features.",
       "topics": [ "JavaFX" ],
-      "languages": [ "en", "es", "fr", "id", "it", "pt", "ru", "zh-cn" ],
+      "languages": [ "en", "es", "fr", "id", "it", "pt", "ru", "tr", "zh-cn" ],
       "parts": 7
     },
     "javafx-2-tutorial": {
