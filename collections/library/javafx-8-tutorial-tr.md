@@ -15,7 +15,7 @@ sidebars:
 - header: "Konudaki Başlıklar"
   body:
   - text: "Giriş"
-    link: /library/javafx-8-tutorial/
+    link: /library/javafx-8-tutorial/tr
     paging: Giriş
     active: true
   - text: "Bölüm 1: Scene Builder"
