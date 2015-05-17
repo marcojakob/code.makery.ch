@@ -39,7 +39,7 @@ sidebars:
     link: /library/javafx-8-tutorial/tr/part7/
     paging: 7
 languages: 
-  header: Languages
+  header: Diller
   collection: library
   item: javafx-8-tutorial
   part: 
