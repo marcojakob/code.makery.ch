@@ -19,25 +19,25 @@ sidebars:
     paging: Giriş
     active: true
   - text: "Bölüm 1: Scene Builder"
-    link: /library/javafx-8-tutorial/part1/
+    link: /library/javafx-8-tutorial/tr/part1/
     paging: 1
   - text: "Bölüm 2: Model ve TableView"
-    link: /library/javafx-8-tutorial/part2/
+    link: /library/javafx-8-tutorial/tr/part2/
     paging: 2
   - text: "Bölüm 3: Kullanıcıyla Etkileşim"
-    link: /library/javafx-8-tutorial/part3/
+    link: /library/javafx-8-tutorial/tr/part3/
     paging: 3
   - text: "Bölüm 4: CSS Biçimlendirme"
-    link: /library/javafx-8-tutorial/part4/
+    link: /library/javafx-8-tutorial/tr/part4/
     paging: 4
   - text: "Bölüm 5: XML Olarak Veri Depolama"
-    link: /library/javafx-8-tutorial/part5/
+    link: /library/javafx-8-tutorial/tr/part5/
     paging: 5
   - text: "Bölüm 6: İstatistik Grafikleri"
-    link: /library/javafx-8-tutorial/part6/
+    link: /library/javafx-8-tutorial/tr/part6/
     paging: 6
   - text: "Bölüm 7: Dağıtım"
-    link: /library/javafx-8-tutorial/part7/
+    link: /library/javafx-8-tutorial/tr/part7/
     paging: 7
 languages: 
   header: Languages
@@ -47,7 +47,7 @@ languages:
   active: tr
 ---
 
-Bu eğitim size JavaFX ile hazırlanmış bir adres uygulamasının tasarım, programlama ve dağıtım adımlarının nasıl yapıldığını öğretecek. Bittiğinde ise şu şekilde gözükecek:
+Bu eğitim size JavaFX ile hazırlanmış bir adres uygulamasının tasarım, programlama ve dağıtım adımlarının nasıl yapıldığını öğretecek. Tamamlandığında ise şu şekilde bir uygulama hazırlamış olacağız:
 
 ![Screenshot AddressApp](/assets/library/javafx-8-tutorial/addressapp.png)
 
