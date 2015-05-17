@@ -12,7 +12,7 @@ published: true
 prettify: true
 comments: true
 sidebars:
-- header: "Bu Yazı Dizisindeki Başlıklar"
+- header: "Konudaki Başlıklar"
   body:
   - text: "Giriş"
     link: /library/javafx-8-tutorial/
@@ -47,7 +47,7 @@ languages:
   active: tr
 ---
 
-Bu eğitim size JavaFX ile hazırlanmış bir adres uygulamasının tasarım, programlama ve dağıtım adımlarının nasıl yapıldığını öğretecek. Tamamlandığında ise şu şekilde bir uygulama hazırlamış olacağız:
+Bu eğitim size **JavaFX** ile hazırlanmış bir adres uygulamasının tasarım, programlama ve dağıtım adımlarının nasıl yapıldığını öğretecek. Tamamlandığında ise şu şekilde bir uygulama hazırlamış olacağız:
 
 ![Screenshot AddressApp](/assets/library/javafx-8-tutorial/addressapp.png)
 
