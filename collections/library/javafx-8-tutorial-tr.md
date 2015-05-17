@@ -4,7 +4,6 @@ title: "JavaFX 8 Tutorial (Türkçe)"
 date: 2014-04-19 00:00
 updated: 2015-05-16 00:00
 slug: javafx-8-tutorial/tr
-canonical: /library/javafx-8-tutorial/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-tr.md
 description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
 image: /assets/library/javafx-8-tutorial/addressapp.png
@@ -77,3 +76,11 @@ Bunu yapmanın iki yolu var:
 * **Hızlıca göz gezdirerek:** Kaynak kodu IDE'nizde açın. Sonra da kodu anlamaya çalışın. ( Eclipse projesi fakat diğer IDE'lerde de ufak ayarlamalarla açılabilir)
 
 Umarım eğlenirsiniz! Şununla başlayın [Bölüm 1: Scene Builder](/library/javafx-8-tutorial/tr/part1/).
+
+<div class="alert alert-success">
+  <strong><i class="fa fa-trophy"></i> Attribution:</strong> Turkish translations have been contributed by 
+  <ul>
+    <li><a href="https://github.com/alperenkirimer" class="alert-link">Alperen Kırımer</a></li> 
+  </ul>
+  Thank you very much!
+</div>
