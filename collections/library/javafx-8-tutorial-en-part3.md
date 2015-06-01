@@ -68,7 +68,7 @@ languages:
 
 ## React to Table Selections
 
-Obviousely, we haven't used the right side of our application, yet. The idea is to display the details about a person on the right side when the user selects a person in the table.
+Obviously, we haven't used the right side of our application, yet. The idea is to display the details about a person on the right side when the user selects a person in the table.
 
 First, let's add a new method inside `PersonOverviewController` that helps us fill the labels with the data from a single `Person`.
 
