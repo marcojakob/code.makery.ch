@@ -165,7 +165,7 @@ For Java developers it is quite a large step until they will be able to design r
 
 #### HTML5
 
-HTML5 is here to stay. But for an business application of significant size you will need to rely on third-party frameworks, tools and maybe even languages. Just a quick, more-or-less random selection of choices you will likely encounter:
+HTML5 is here to stay. But for a business application of significant size you will need to rely on third-party frameworks, tools and maybe even languages. Just a quick, more-or-less random selection of choices you will likely encounter:
 
 <table class="table">
   <tr>
@@ -237,7 +237,7 @@ The promise of Java is "write once, run anywhere". But we've all had problems wi
 
 JavaFX has come to solve this problem through a new deployment option called [Self-Contained Application Packaging](http://docs.oracle.com/javafx/2/deployment/self-contained-packaging.htm): This bundles the native Java runtime together with your application code so you can always be sure about the Java version. It's even possible to do an installation without admin rights.
 
-Of course, there are some coveats like the bigger download-size and that you have to build a bundle for every target platform (Windows, Linux, and Mac). The hardest part is probably to figure out a good way to deploy application updates. Currently, there is no built-in support for auto-updates but this may be included in the future. In the meantime have a look at the comments on the [Feature Request for Auto-Update](https://javafx-jira.kenai.com/browse/RT-22211) which includes a discussion about some alternate mechanisms.
+Of course, there are some caveats like the bigger download-size and that you have to build a bundle for every target platform (Windows, Linux, and Mac). The hardest part is probably to figure out a good way to deploy application updates. Currently, there is no built-in support for auto-updates but this may be included in the future. In the meantime have a look at the comments on the [Feature Request for Auto-Update](https://javafx-jira.kenai.com/browse/RT-22211) which includes a discussion about some alternate mechanisms.
 
 
 #### HTML5
