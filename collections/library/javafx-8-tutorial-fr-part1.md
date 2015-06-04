@@ -68,7 +68,7 @@ languages:
 
 * le dernier [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (qui inclu **JavaFX 8**).
 * Eclipse 4.4 ou supérieur avec le plugin e(fx)clipse. Le plus simple est de télécharger la distribution préconfigurée depuis le site [e(fx)clipse](http://efxclipse.bestsolution.at/install.html#all-in-one). Une autre façon de faire consiste à utiliser le [site de mise à jour](http://www.eclipse.org/efxclipse/install.html) pour votre installation d'Eclipse. 
-* [Scene Builder 8.0](http://gluonhq.com/products/downloads/) (fourni par Gluon car [Oracle le distribue seulement sous la forme de code source](http://www.oracle.com/technetwork/java/javase/downloads/sb2download-2177776.html)).
+* [Scene Builder 8.0](http://gluonhq.com/products/scene-builder/) (fourni par Gluon car [Oracle le distribue seulement sous la forme de code source](http://www.oracle.com/technetwork/java/javase/downloads/sb2download-2177776.html)).
 
 
 ### Configuration d'Eclipse 

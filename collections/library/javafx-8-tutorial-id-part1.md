@@ -68,7 +68,7 @@ languages:
 
 * [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) terbaru (termasuk **JavaFX 8**).
 * Eclipse 4.4 atau lebih besar dengan e(fx)clipse plugin. Eclipse 4.3 atau lebih besar dengan e(fx)clipse plugin dar [website e(fx)clipse](http://efxclipse.bestsolution.at/install.html#all-in-one). Sebagai alternatif bisa menggunakan [situs pembaharuan](http://www.eclipse.org/efxclipse/install.html) untuk instalasi Eclipse.
-* [Scene Builder 8.0](http://gluonhq.com/products/downloads/) (provided by Gluon because [Oracle hanya memberikan ini dalam bentuk code](http://www.oracle.com/technetwork/java/javase/downloads/sb2download-2177776.html)).
+* [Scene Builder 8.0](http://gluonhq.com/products/scene-builder/) (provided by Gluon because [Oracle hanya memberikan ini dalam bentuk code](http://www.oracle.com/technetwork/java/javase/downloads/sb2download-2177776.html)).
 
 
 ### Konfigurasi Eclipse 

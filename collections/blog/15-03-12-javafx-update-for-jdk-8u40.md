@@ -26,7 +26,7 @@ I've updated the entire [JavaFX 8 Tutorial](/library/javafx-8-tutorial/) for JDK
 
 * Use the new Dialogs instead of the deprecated ControlsFX Dialogs (see this  [article about the official JavaFX Dialogs](/blog/javafx-dialogs-official/)).
 * Create a new release for the [source code of all tutorial parts](https://github.com/marcojakob/tutorial-javafx-8/releases/tag/v1.1).
-* New download links for [Scene Builder](http://gluonhq.com/products/downloads/) (provided by Gluon).
+* New download links for [Scene Builder](http://gluonhq.com/products/scene-builder/) (provided by Gluon).
 * Correct some typos and misleading texts.
 
 *Here is the [commit with all tutorial changes](https://github.com/marcojakob/code.makery.ch/commit/f6b4a51b41957b753bfbfc8c1f637a6849ceeab5).* 
