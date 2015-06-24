@@ -297,10 +297,8 @@ private void handleDeletePerson() {
 ### Дизайн вікна редагування
 
 1. Створіть новий fxml файл під назвою `PersonEditDialog` всередині пакету `view`.
-
 ![Create Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog1.png "Person Edit Dialog")
-
-2. Використовуйте компоненти `GridPane`, `Label`, `TextField` і `Button` для створення вікна редагування, схожого на це:
+2. Використовуйте компоненти `GridPane`, `Label`, `TextField` і `Button` для створення подібного вікна редагування:
 
 ![Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog2.png "Person Edit Dialog")
 
