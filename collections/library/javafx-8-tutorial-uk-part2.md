@@ -384,7 +384,7 @@ public void showPersonOverview() {
 2. Відкрийте вкладку *Controller* зліва на панелі *Document* та виберіть клас `PersonControllerOverview` в якості класу-контролера (можете скористатись випадаючим списком справа).
 ![Set Controller Class](/assets/library/javafx-8-tutorial/part2/set-controller-class.png "Set Controller Class")
 
-3. Виберіть компонент `TableView` на вкладці *Hierarchy*, перейдіть на вкладку *Code* та, нарешті, встановіть значення `personTable` для поля **fx:id**.
+3. Виберіть компонент `TableView` на вкладці *Hierarchy*, перейдіть на вкладку *Code* та, нарешті, встановіть значення `personTable` для поля **fx:id** (також можете скористатись випадаючим списком справа).
 ![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png "Set TableView fx:id")
 
 4. Зробіть те ж саме для колонок таблиці і встановіть значення властивості **fx:id** `firstNameColumn` і `secondNameColumn`, відповідно.
