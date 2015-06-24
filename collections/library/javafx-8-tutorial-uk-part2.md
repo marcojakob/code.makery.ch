@@ -381,15 +381,15 @@ public void showPersonOverview() {
 
 1. Відкрийте файл `PersonOverview.fxml` в додатку *Scene Builder*.
 
-2. Відкрийте вкладку *Controller* зліва на панелі *Document* і виберіть клас `PersonControllerOverview` як клас-контролер.
+2. Відкрийте вкладку *Controller* зліва на панелі *Document* та виберіть клас `PersonControllerOverview` в якості класу-контролера (можете скористатись випадаючим списком справа).
 ![Set Controller Class](/assets/library/javafx-8-tutorial/part2/set-controller-class.png "Set Controller Class")
 
-3. Виберіть компонент `TableView` на вкладці *Hierarchy*, перейдіть на вкладку *Code* і встановіть значення `personTable` полю **fx:id**.
+3. Виберіть компонент `TableView` на вкладці *Hierarchy*, перейдіть на вкладку *Code* та, нарешті, встановіть значення `personTable` для поля **fx:id**.
 ![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png "Set TableView fx:id")
 
 4. Зробіть те ж саме для колонок таблиці і встановіть значення властивості **fx:id** `firstNameColumn` і `secondNameColumn`, відповідно.
 
-5. Для **кожної текстової мітки** у другій колонці компонента *GridPane* також встановіть відповідні значення **fx:id**.
+5. Для **кожної текстової мітки** (`Label`) у другій колонці компонента *GridPane* також встановіть відповідні значення **fx:id** (на вкладці *Code*).
 ![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png "Set Label fx:id")
 
 6. Важливо: збережіть файл `PersonOverview.fxml`, а потім поверніться в середовище розробки Eclipse і **поновіть весь проект** (F5). Це необхідно для того, щоб додаток Eclipse визначив ті зміни, які ми зробили в додатку Scene Builder.
