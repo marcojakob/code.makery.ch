@@ -2,7 +2,7 @@
 layout: article
 title: "Підручник з JavaFX 8 - Частина 3: Взаємодія з користувачем"
 date: 2014-04-24 00:00
-updated: 2014-12-04 00:00
+updated: 2015-06-25 00:00
 slug: javafx-8-tutorial/uk/part3
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-uk-part3.md
 description: "Реакція на вибір записів у JavaFX TableView. Додавання, редагування та видалення елементів з таблиці, а також перевірка вводу користувача"
@@ -25,7 +25,7 @@ sidebars:
   - text: "Частина 3: Взаємодія з користувачем"
     link: /library/javafx-8-tutorial/uk/part3/
     paging: 3
-	active: true
+    active: true
   - text: "Частина 4: Стилізація за допомогою CSS"
     link: /library/javafx-8-tutorial/uk/part4/
     paging: 4
@@ -40,8 +40,8 @@ sidebars:
     paging: 7
 - header: Скачати вихідний код
   body:
-  - text: Частина 3 як проект Eclipse <em>(Необхідно хоча б JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-3.zip
+  - text: Частина 3 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-3.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Мови
@@ -298,8 +298,7 @@ private void handleDeletePerson() {
 
 1. Створіть новий fxml файл під назвою `PersonEditDialog` всередині пакету `view`.
 ![Create Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog1.png "Person Edit Dialog")
-2. Використовуйте компоненти `GridPane`, `Label`, `TextField` і `Button` для створення подібного вікна редагування:
-
+2. Використовуйте компоненти `GridPane`, `Label`, `TextField` і `Button` для створення подібного вікна редагування:   
 ![Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog2.png "Person Edit Dialog")
 
 *Якщо щось не працює, ви можете скачати [PersonEditDialog.fxml](/assets/library/javafx-8-tutorial/part3/PersonEditDialog.fxml "PersonEditDialog.fxml").*
@@ -314,11 +313,10 @@ private void handleDeletePerson() {
 package ch.makery.address.view;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
-import org.controlsfx.dialog.Dialogs;
-
 import ch.makery.address.model.Person;
 import ch.makery.address.util.DateUtil;
 
@@ -341,6 +339,7 @@ public class PersonEditDialogController {
     private TextField cityField;
     @FXML
     private TextField birthdayField;
+
 
     private Stage dialogStage;
     private Person person;
@@ -460,11 +459,14 @@ public class PersonEditDialogController {
             return true;
         } else {
             // Show the error message.
-        	Dialogs.create()
-		        .title("Invalid Fields")
-		        .masthead("Please correct invalid fields")
-		        .message(errorMessage)
-		        .showError();
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.initOwner(dialogStage);
+            alert.setTitle("Invalid Fields");
+            alert.setHeaderText("Please correct invalid fields");
+            alert.setContentText(errorMessage);
+            
+            alert.showAndWait();
+            
             return false;
         }
     }
@@ -592,7 +594,7 @@ private void handleEditPerson() {
 
 ##### Вам можуть бути цікаві також деякі інші статті
 
-* [JavaFX Dialogs (official)](blog/javafx-dialogs-official/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)

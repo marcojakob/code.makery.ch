@@ -2,7 +2,7 @@
 layout: article
 title: "Підручник з JavaFX 8 - Частина 2: Модель та компонент TableView"
 date: 2014-04-19 00:00
-updated: 2014-12-04 00:00
+updated: 2015-06-25 00:00
 slug: javafx-8-tutorial/uk/part2
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-uk-part2.md
 description: "Використовуйте JavaFX TableView для відображення списку персон з ObservableList"
@@ -22,7 +22,7 @@ sidebars:
   - text: "Частина 2: Модель та компонент TableView"
     link: /library/javafx-8-tutorial/uk/part2/
     paging: 2
-	active: true
+    active: true
   - text: "Частина 3: Взаємодія з користувачем"
     link: /library/javafx-8-tutorial/uk/part3/
     paging: 3
@@ -40,8 +40,8 @@ sidebars:
     paging: 7
 - header: Скачати вихідний код
   body:
-  - text: Частина 2 як проект Eclipse <em>(Необхідно хоча б JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-2.zip
+  - text: Частина 2 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Мови
@@ -381,15 +381,15 @@ public void showPersonOverview() {
 
 1. Відкрийте файл `PersonOverview.fxml` в додатку *Scene Builder*.
 
-2. Відкрийте вкладку *Controller* зліва на панелі *Document* та виберіть клас `PersonControllerOverview` в якості класу-контролера (можете скористатись випадаючим списком справа).
+2. Відкрийте вкладку *Controller* зліва на панелі *Document* та виберіть клас `PersonControllerOverview` в якості класу-контролера (можете скористатись випадаючим списком справа).   
 ![Set Controller Class](/assets/library/javafx-8-tutorial/part2/set-controller-class.png "Set Controller Class")
 
-3. Виберіть компонент `TableView` на вкладці *Hierarchy*, перейдіть на вкладку *Code* та, нарешті, встановіть значення `personTable` для поля **fx:id** (також можете скористатись випадаючим списком справа).
+3. Виберіть компонент `TableView` на вкладці *Hierarchy*, перейдіть на вкладку *Code* та, нарешті, встановіть значення `personTable` для поля **fx:id** (також можете скористатись випадаючим списком справа).   
 ![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png "Set TableView fx:id")
 
 4. Зробіть те ж саме для колонок таблиці і встановіть значення властивості **fx:id** `firstNameColumn` і `secondNameColumn`, відповідно.
 
-5. Для **кожної текстової мітки** (`Label`) у другій колонці компонента *GridPane* також встановіть відповідні значення **fx:id** (на вкладці *Code*).
+5. Для **кожної текстової мітки** (`Label`) у другій колонці компонента *GridPane* також встановіть відповідні значення **fx:id** (на вкладці *Code*).   
 ![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png "Set Label fx:id")
 
 6. Важливо: збережіть файл `PersonOverview.fxml`, а потім поверніться в середовище розробки Eclipse і **поновіть весь проект** (F5). Це необхідно для того, щоб додаток Eclipse визначив ті зміни, які ми зробили в додатку Scene Builder.
@@ -410,7 +410,7 @@ public void showPersonOverview() {
 
 ##### Вам можуть бути цікаві також деякі інші статті
 
-* [JavaFX Dialogs (official)](blog/javafx-dialogs-official/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)

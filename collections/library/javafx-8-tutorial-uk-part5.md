@@ -2,7 +2,7 @@
 layout: article
 title: "Підручник з JavaFX 8 - Частина 5: Збереження даних в XML"
 date: 2014-04-25 00:00
-updated: 2014-12-04 00:00
+updated: 2015-06-25 00:00
 slug: javafx-8-tutorial/uk/part5
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-uk-part5.md
 description: "Збереження даних в XML за допомогою JAXB. Вчимося використовувати JavaFX компоненти FileChooser та Menu"
@@ -31,7 +31,7 @@ sidebars:
   - text: "Частина 5: Збереження даних в XML"
     link: /library/javafx-8-tutorial/uk/part5/
     paging: 5
-	active: true
+    active: true
   - text: "Частина 6: Статистична діаграма"
     link: /library/javafx-8-tutorial/uk/part6/
     paging: 6
@@ -40,8 +40,8 @@ sidebars:
     paging: 7
 - header: Скачати вихідний код
   body:
-  - text: Частина 5 як проект Eclipse <em>(Необхідно хоча б JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-5.zip
+  - text: Частина 5 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-5.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Мови
@@ -416,7 +416,7 @@ public class RootLayoutController {
 
 1. Відкрийте файл `RootLayout.fxml` в додатку Scene Builder. На вкладці *Controller* в якості класу-контролера виберіть значення `RootLayoutController`.
 
-2. Перейдіть на вкладку *Hierarchy* і виберіть пункт меню. У вкладці *Code* в якості значень властивості *On Action* ви зможете побачити всі доступні методи обраного класу-контролера. Виберіть той метод з перечислених у випадаючому списку справа, який відповідає цьому пункту меню.
+2. Перейдіть на вкладку *Hierarchy* і виберіть пункт меню. У вкладці *Code* в якості значень властивості *On Action* ви зможете побачити всі доступні методи обраного класу-контролера. Виберіть той метод з перечислених у випадаючому списку справа, який відповідає цьому пункту меню.   
 ![Menu Actions](/assets/library/javafx-8-tutorial/part5/menu-actions.png)
 
 3. Повторіть попередній крок для кожного пункту меню.
@@ -529,7 +529,7 @@ public LocalDate getBirthday() {
 
 ##### Вам можуть бути цікаві також деякі інші статті
 
-* [JavaFX Dialogs (official)](blog/javafx-dialogs-official/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)

@@ -2,7 +2,7 @@
 layout: article
 title: "Підручник з JavaFX 8 - Частина 6: Статистична діаграма"
 date: 2014-05-09 00:00
-updated: 2014-12-04 00:00
+updated: 2015-06-25 00:00
 slug: javafx-8-tutorial/uk/part6
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-uk-part6.md
 description: "Вчимося створювати стовпчикову діаграму в JavaFX"
@@ -34,14 +34,14 @@ sidebars:
   - text: "Частина 6: Статистична діаграма"
     link: /library/javafx-8-tutorial/uk/part6/
     paging: 6
-	active: true
+    active: true
   - text: "Частина 7: Розгортання"
     link: /library/javafx-8-tutorial/uk/part7/
     paging: 7
 - header: Скачати вихідний код
   body:
-  - text: Частина 6 як проект Eclipse <em>(Необхідно хоча б JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-6.zip
+  - text: Частина 6 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-6.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Мови
@@ -261,7 +261,7 @@ private void handleShowBirthdayStatistics() {
 
 ##### Вам можуть бути цікаві також деякі інші статті
 
-* [JavaFX Dialogs (official)](blog/javafx-dialogs-official/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)

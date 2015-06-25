@@ -2,7 +2,7 @@
 layout: article
 title: "Підручник з JavaFX 8 - Частина 1: Scene Builder"
 date: 2014-04-19 00:00
-updated: 2014-12-04 00:00
+updated: 2015-06-25 00:00
 slug: javafx-8-tutorial/uk/part1
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-uk-part1.md
 description: "Дізнайтесь, як створити проект JavaFX. Це перша частина підручника з проектування, програмування та розгортання додатку Адресна книга за допомогою JavaFX"
@@ -19,7 +19,7 @@ sidebars:
   - text: "Частина 1: Scene Builder"
     link: /library/javafx-8-tutorial/uk/part1/
     paging: 1
-	active: true
+    active: true
   - text: "Частина 2: Модель та компонент TableView"
     link: /library/javafx-8-tutorial/uk/part2/
     paging: 2
@@ -40,8 +40,8 @@ sidebars:
     paging: 7
 - header: Скачати вихідний код
   body:
-  - text: Частина 1 як проект Eclipse <em>(Необхідно хоча б JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
+  - text: Частина 1 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-1.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Мови
@@ -317,7 +317,7 @@ public class MainApp extends Application {
 
 ##### Вам можуть бути цікаві також деякі інші статті
 
-* [JavaFX Dialogs (official)](blog/javafx-dialogs-official/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)

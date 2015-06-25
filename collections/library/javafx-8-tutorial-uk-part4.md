@@ -2,7 +2,7 @@
 layout: article
 title: "Підручник з JavaFX 8 - Частина 4: Стилізація за допомогою CSS"
 date: 2014-04-25 00:00
-updated: 2014-12-04 00:00
+updated: 2015-06-25 00:00
 slug: javafx-8-tutorial/uk/part4
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-uk-part4.md
 description: "В JavaFX ви можете змінювати зовнішній вигляд додатку за допомогою CSS. В цій частині ми також навчимося додавати іконку нашого додатку"
@@ -28,7 +28,7 @@ sidebars:
   - text: "Частина 4: Стилізація за допомогою CSS"
     link: /library/javafx-8-tutorial/uk/part4/
     paging: 4
-	active: true
+    active: true
   - text: "Частина 5: Збереження даних в XML"
     link: /library/javafx-8-tutorial/uk/part5/
     paging: 5
@@ -40,8 +40,8 @@ sidebars:
     paging: 7
 - header: Скачати вихідний код
   body:
-  - text: Частина 4 як проект Eclipse <em>(Необхідно хоча б JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-4.zip
+  - text: Частина 4 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-4.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Мови
@@ -245,16 +245,14 @@ languages:
 
 1. Відкрийте файл `RootLayout.fxml` в додатку Scene Builder.
 
-2. Виберіть кореневий контейнер `BorderPane` на вкладці *Hierarchy*, перейдіть на вкладку *Properties* і вкажіть файл `DarkTheme.css` в ролі таблиць стилів.
-
+2. Виберіть кореневий контейнер `BorderPane` на вкладці *Hierarchy*, перейдіть на вкладку *Properties* і вкажіть файл `DarkTheme.css` в ролі таблиць стилів.   
 ![DarkTheme for RootLayout](/assets/library/javafx-8-tutorial/part4/darktheme-rootlayout.png "DarkTheme RootLayout")
 
 #### Приєднуємо таблиці стилів до файлу PersonEditDialog.fxml
 
 1. Відкрийте файл `PersonEditDialog.fxml` в додатку Scene Builder. Виберіть кореневий контейнер `AnchorPane` у вкладці *Hierarchy*, перейдіть на вкладку *Properties* і вкажіть файл `DarkTheme.css` в ролі таблиць стилів.
 
-2. Фон залишився білим, тому вкажіть для кореневого компонента `AnchorPane` в класі стилю значення `background`.
-
+2. Фон залишився білим, тому вкажіть для кореневого компонента `AnchorPane` в класі стилю значення `background`.   
 ![Add Style Class](/assets/library/javafx-8-tutorial/part4/darktheme-personeditdialog.png "DarkTheme Person Edit Dialog")
 
 3. Виберіть кнопку *OK* і встановіть властивість *Default Button* у вкладці *Properties*. В результаті зміниться її колір і кнопка буде використовуватися за замовчуванням, коли користувач, перебуваючи у вікні, натисне клавішу enter.
@@ -280,8 +278,7 @@ languages:
 1. Виберіть мітку *Person Details* і додайте в якості класу стилю значення `label-header`.
 ![Label Header Style](/assets/library/javafx-8-tutorial/part4/label-header-style.png)
 
-2. Для кожної мітки в правій колонці (де будуть відображатись дані наших записів) додайте як клас стилю значення `label-bright`. 
-
+2. Для кожної мітки в правій колонці (де будуть відображатись дані наших записів) додайте як клас стилю значення `label-bright`.   
 ![Label Bright Style](/assets/library/javafx-8-tutorial/part4/label-bright-style.png "Label Bright Style")
 
 *****
@@ -298,7 +295,7 @@ languages:
 
 ### Файл зображення
 
-Одне з можливих місць, де можна вільно завантажити іконки - це [Icon Finder](http://www.iconfinder.com/ "Icon Finder"). Я завантажив маленьку іконку [адресної книги](http://www.iconfinder.com/icondetails/86957/32/).
+Одне з можливих місць, де можна вільно завантажити іконки - це [Icon Finder](http://www.iconfinder.com/ "Icon Finder"). Я завантажив маленьку іконку [адресної книги](https://www.iconfinder.com/icons/86957/address_book_icon#size=32).
 
 Створіть папку **resources** всередині вашого проекту AddressApp, а в ній папку **images**. Помістіть обрану вами іконку в папку зображень. Ваша структура папок повинна мати такий вигляд:
 
@@ -338,7 +335,7 @@ public void start(Stage primaryStage) {
 
 ##### Вам можуть бути цікаві також деякі інші статті
 
-* [JavaFX Dialogs (official)](blog/javafx-dialogs-official/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)

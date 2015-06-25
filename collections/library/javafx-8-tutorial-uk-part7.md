@@ -2,7 +2,7 @@
 layout: article
 title: "Підручник з JavaFX 8 - Частина 7: Розгортання"
 date: 2014-05-10 00:00
-updated: 2014-12-04 00:00
+updated: 2015-06-25 00:00
 slug: javafx-8-tutorial/uk/part7
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-uk-part7.md
 description: "Розгортання JavaFX додатку з упаковки, що залежить від платформи (native package). Створення інсталяційниого пакета для Windows, Mac чи Linux"
@@ -16,7 +16,6 @@ sidebars:
   - text: "Вступ"
     link: /library/javafx-8-tutorial/uk/
     paging: Intro
-    active: true
   - text: "Частина 1: Scene Builder"
     link: /library/javafx-8-tutorial/uk/part1/
     paging: 1
@@ -41,8 +40,8 @@ sidebars:
     active: true
 - header: Скачати вихідний код
   body:
-  - text: Частина 7 як проект Eclipse <em>(Необхідно хоча б JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-7.zip
+  - text: Частина 7 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>
+    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-7.zip
     icon-css: fa fa-fw fa-download
 languages: 
   header: Мови
@@ -118,10 +117,11 @@ Java рекламується під слоганом **"Написано одн
 * [AddressApp.ico](/assets/library/javafx-8-tutorial/part7/AddressApp.ico) для іконки інсталяційного файлу
 * [AddressApp-setup-icon.bmp](/assets/library/javafx-8-tutorial/part7/AddressApp-setup-icon.bmp) для екрану привітання інсталятора
 * [AddressApp.icns](/assets/library/javafx-8-tutorial/part7/AddressApp.icns) - для інсталятора під MacOS
+* [AddressApp-volume.icns](/assets/library/javafx-8-tutorial/part7/AddressApp-volume.icns) для інсталятора під MacOS
  
 1. Створіть наступні піддиректорії в папці `build`:
   * `build/package/windows` (використовується лише в Windows)
-  * `build/package/macos` (використовується лише в MacOS)
+  * `build/package/macosx` (використовується лише в MacOS)
   
 2. Скопіюйте відповідні іконки з приведених посилань та розмістіть їх в призначені для них папки. В результаті це повинно виглядати так:  
 ![Installer Icons](/assets/library/javafx-8-tutorial/part7/installer-icons.png)
@@ -130,6 +130,7 @@ Java рекламується під слоганом **"Написано одн
 	* `YourAppTitle.ico`
 	* `YourAppTitle-setup-icon.bmp`
 	* `YourAppTitle.icns`
+    * `YourAppTitle-volume.icns`
 
 ### Крок 3 - Додаємо ресурси
 
@@ -137,7 +138,6 @@ Java рекламується під слоганом **"Написано одн
 
 1. Створіть піддиректорію `dist` в папці `build`:
 	* `build/dist`
-	
 2. Скопіюйте папку `resources` (яка містить іконки для нашого додатку) в `build/dist`.  
 ![Build Resources](/assets/library/javafx-8-tutorial/part7/build-resources.png)
 
@@ -197,7 +197,7 @@ Java рекламується під слоганом **"Написано одн
 
 2. Вкажіть шлях до Windows, Inno Setup (наприклад, `C:\Program Files (x86)\Inno Setup 5`). Для цього, додайте Inno Setup до змінної `Path` в ваших змінних оточення. Якщо ви не знаєте де їх знайти, почитайте [як встановити шляхи та змінні оточення в Windows](http://www.computerhope.com/issues/ch000549.htm).
 
-3. Перевантажте додаток Eclipse, та продовжуйте з кроку 5.
+3. Перевантажте додаток Eclipse, та продовжуйте з кроку 6.
 
 ### Крок 5 - dmg інсталятор для MacOS
 
@@ -233,7 +233,7 @@ Java рекламується під слоганом **"Написано одн
 
 ##### Вам можуть бути цікаві також деякі інші статті
 
-* [JavaFX Dialogs (official)](blog/javafx-dialogs-official/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
