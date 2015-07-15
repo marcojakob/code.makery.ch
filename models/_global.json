@@ -12,6 +12,7 @@
     "de": "Deutsch",
     "en": "English",
     "es": "Español",
+    "fa": "فارسی",
     "fr": "Français",
     "id": "Bahasa Indonesia",
     "it": "Italiano",
@@ -86,7 +87,7 @@
       "image": "/assets/library/javafx-8-tutorial/addressapp-javafx8.png",
       "summary": "Seven-part tutorial series for learning JavaFX.",
       "topics": [ "JavaFX" ],
-      "languages": [ "en", "es", "fr", "id", "it", "pt", "ru", "tr", "uk", "zh-cn" ],
+      "languages": [ "en", "es", "fa", "fr", "id", "it", "pt", "ru", "tr", "uk", "zh-cn" ],
       "parts": 7
     },
     "javafx-2-tutorial": {

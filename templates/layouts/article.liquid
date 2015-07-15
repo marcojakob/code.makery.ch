@@ -20,7 +20,7 @@
   <body {% include "prettify-onload" %}>
     {% include "header" %}
     
-    <div class="container article-container">
+    <div {% if model.rtl %}dir="rtl"{% endif %} class="container article-container">
       {% include "navigation" %}
       
       {%- if model.github -%}
