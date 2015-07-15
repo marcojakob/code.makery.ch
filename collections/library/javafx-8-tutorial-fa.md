@@ -77,3 +77,11 @@ languages:
 * **روش سریع:** سورس کد آموزش مربوطه رو دانلود کنید و اونو توی IDE مورد نظر خودتون باز کنید, بعد آموزش‌ رو بخونید تا کد رو متوجه بشید.
 
 امیدوارم بهتون کلی خوش بگذره!از [قسمت اول: Scene Builder](/library/javafx-8-tutorial/fa/part1/) شروع کنید.
+
+<div dir="ltr" class="alert alert-success">
+  <strong><i class="fa fa-trophy"></i> Attribution:</strong> The Persian translation has been contributed by 
+  <ul>
+    <li><a href="https://github.com/yasharne" class="alert-link">Yashar Nesabian</a></li> 
+  </ul>
+  Thank you very much!
+</div>
