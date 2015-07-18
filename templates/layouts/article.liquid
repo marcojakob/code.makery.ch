@@ -20,7 +20,7 @@
   <body {% include "prettify-onload" %}>
     {% include "header" %}
     
-    <div {% if model.rtl %}dir="rtl"{% endif %} class="container article-container">
+    <div class="container article-container">
       {% include "navigation" %}
       
       {%- if model.github -%}
@@ -33,7 +33,7 @@
       </div>
       {%- endif -%}
       
-      <article class="row">
+      <article class="row"{% if model.rtl %} dir="rtl"{% endif %}>
         {%- if model.sidebars or model.languages -%}
         <aside class="col-md-3">
           <div class="visible-md-block visible-lg-block">
