@@ -58,7 +58,7 @@ Wenn `GreenfootKara` in der Schule eingesetzt wird, wird die Bearbeitung des ges
 * *1 Lektion:* Installation von Greenfoot, Projekte starten
 * *3 Lektionen:* Kara kennen lernen, mit der Maus Objekte erstellen und Methoden ausführen, Quelltext lesen, erstes Programm schreiben (Kapitel 1)
 * *3-4 Lektionen:* Flussdiagramme, Kontrollstrukturen (Bedingungen und Schleifen), Boolean und logische Operatoren (Kapitel 2)
-* *3-4 Variablen, Datentypen und Operatoren, Struktur einer Klasse, verschachtelte Anweisungen (Kapitel 3)
+* *3-4 Lektionen:* Variablen, Datentypen und Operatoren, Struktur einer Klasse, verschachtelte Anweisungen (Kapitel 3)
 * *3-4 Lektionen:* Spiel programmieren, Keyboard Input, Strings vergleichen, Javadoc lesen, eigene ASCII Levels designen, eigenes Szenario auf Greenfoot Webseite veröffentlichen (Kapitel 4)
 * *3 lessons:* Eigene Methoden mit Parametern und Rückgabewerten, Repetition (Kapitel 5)
 
