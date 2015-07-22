@@ -226,7 +226,6 @@ languages:
 
 **این مثل یه نمایش تئاتر میمونه:** `Stage` ظرف اصلی هست که معمولا یه پنجره (`Window`) هست با حاشیه (border) و شامل دکمه های minimize, maximize و close. داخل `Stage` شما `Scene` (صحنه) اضافه میکنید که البته میتونه با یک `Scene` دیگه تعویض بشه. داخل `Scene` گره‌های JavaFX مثل `AnchorPane`, `TextBox` و غیره افزوده میشن. 
 
-For more information on this turn to [Working with the JavaFX Scene Graph](http://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm).
 برای اطلاعات بیشتر در این مورد به صفحه [کار کردن با JavaFX Scene Graph](http://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm) رجوع کنید.
 
 
