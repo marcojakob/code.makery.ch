@@ -261,7 +261,7 @@ From those collections, we need the `ObservableList`. To create a new `Observabl
 
 Now let's finally get some data into our table. We'll need a controller for our `PersonOverview.fxml`.
 
-1. Create a normal class inside the **view** package called `PersonOverviewController.java`. (We must put it in the same package as the `PersonOverview.fxml`, otherwise the SceneBuilder won't find it.
+1. Create a normal class inside the **view** package called `PersonOverviewController.java`. (We must put it in the same package as the `PersonOverview.fxml`, otherwise the SceneBuilder won't find it.)
 2. We'll add some instance variables that give us access to the table and the labels inside the view. The fields and some methods have a special `@FXML` annotation. This is necessary for the fxml file to have access to private fields and private methods. After we have everything set up in the fxml file, the application will automatically fill the variables when the fxml file is loaded. So let's add the following code:
 
 <div class="alert alert-info">
