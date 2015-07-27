@@ -226,14 +226,14 @@ Avec `showPersonDetails(null);` nous réinitialisons les détails de la personne
 
 Avec `personTable.getSelectionModel...` nous obtenons la *selectedItemProperty* de la table de personnes et lui ajoutons un listener. Chaque fois que l'utilisateur sélectionne une personne dans la table, notre *expression lambda* est exécutée.  Nous prenons la personne nouvellement sélectionnée pour la transmettre à la méthode `showPersonDetails(...)`.
 
-Essayez de **lancer l'application** à ce stade. Verifiez que lorsque vous sélectionnez une personne dans la table, les détails de celle-ci soient affichés à droite.
+Essayez de **lancer l'application** à ce stade. Vérifiez que lorsque vous sélectionnez une personne dans la table, les détails de celle-ci soient affichés à droite.
 
 Si quelque chose ne fonctionne pas, vous pouvez comparer votre classe `PersonOverviewController` avec [PersonOverviewController.java](/assets/library/javafx-8-tutorial/part3/PersonOverviewController.java).
 
 
 *****
 
-## Le boutton Delete
+## Le bouton Delete
 
 Notre interface utilisateur contient déjà un bouton de suppression mais sans aucune fonctionnalité. Nous pouvons choisir l'action d'un bouton à l'intérieur du *Scene Builder *. 
 Toute méthode dans notre contrôleur qui est annotée avec `@ FXML` (ou est publique) est accessible par le *Scene Builder*. Ainsi, nous allons ajouter d'abord une méthode de suppression à la fin de notre classe `PersonOverviewController`:
@@ -267,9 +267,9 @@ Si vous lancez l'application à ce stade, vous devriez être capable de supprime
 
 Il y aura un `ArrayIndexOutOfBoundsException` parce qu'il ne pouvait pas enlever un objet  personne à l'index `-1`. L'index `-1` a été retourné par `getSelectedIndex()` - ce qui signifie qu'il n'y avait pas de sélection.
 
-Ignorer de telles erreurs n'est pas très recommendable. Nous devrions laisser l'utilisateur savoir qu'il ou elle doit sélectionner une personne avant d'appuyer sur le bouton supprimer. (Il serait encore mieux de désactiver le bouton de sorte que l'utilisateur n'ait même pas la chance de faire quelque chose de mal.)
+Ignorer de telles erreurs n'est pas très recommandable. Nous devrions laisser l'utilisateur savoir qu'il ou elle doit sélectionner une personne avant d'appuyer sur le bouton supprimer. (Il serait encore mieux de désactiver le bouton de sorte que l'utilisateur n'ait même pas la chance de faire quelque chose de mal.)
 
-Après quelques modifications apportées à la méthode `handleDeletePerson()`, nous pouvons afficher une simple boîte de dialogue, chaque fois que l'utilisateur appuira sur le button supprimer sans aucune personne sélectionnée au préalable dans la table:
+Après quelques modifications apportées à la méthode `handleDeletePerson()`, nous pouvons afficher une simple boîte de dialogue, chaque fois que l'utilisateur appuiera sur le bouton supprimer sans aucune personne sélectionnée au préalable dans la table:
 
 
 ##### PersonOverviewController.java
@@ -502,7 +502,7 @@ Avec la vue (FXML) et le contrôleur enfin créés, nous avons besoin de les lie
 1. Ouvrez le fichier `PersonEditDialog.fxml`.
 2. Dans le groupe *Controller* à gauche sélectionnez `PersonEditDialogController` comme classe contrôleur.
 3. Définissez les **fx:id** de tous les `TextField` avec les champs du contrôleur correspondant.
-4. Définissez les **onAction** des deux buttons aux méthodes handler correspondantes.
+4. Définissez les **onAction** des deux boutons aux méthodes handler correspondantes.
 
 
 ### Ouvrir la boîte de dialogue
