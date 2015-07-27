@@ -198,7 +198,7 @@ birthdayLabel.setText(DateUtil.format(person.getBirthday()));
 
 Pour être informé quand l'utilisateur sélectionne une personne dans la tableau correspondant, nous avons besoin *d'écouter les changements*.
 
-Il y a une interface dans JavaFX appelée [`ChangeListener`](http://docs.oracle.com/javase/8/javafx/api/) comprenant une méthode nommé `changed(...)`. Cette méthode possède trois paramètres: `observable`, `oldValue`, and `newValue`.
+Il y a une interface dans JavaFX appelée [`ChangeListener`](http://docs.oracle.com/javase/8/javafx/api/) comprenant une méthode nommé `changed(...)`. Cette méthode possède trois paramètres: `observable`, `oldValue`, et `newValue`.
 
 Nous allons créer un `ChangeListener` via les *expressions lambda* introduite dans Java 8. Ajoutons quelques lignes à la méthode `initialize()`dans la class `PersonOverviewController`. Cela ressemble maintenant à ceci:
 
@@ -309,12 +309,12 @@ Pour plus d'exemples sur comment utiliser les boîtes de dialogue, lisez mon art
 Les actions Nouveau et Editer demandent un peu plus de travail. Nous allons avoir besoin d'une boîte de dialogue modifiée (ce qui veut dire un nouveau `Stage`) avec un formulaire pour demander à l'utilisateur des détails à propos d'une personne.
 
 
-### Conception de la boîte de dialgoue
+### Conception de la boîte de dialogue
 
 1. Créer un nouveau fichier fxml appelé `PersonEditDialog.fxml` à l'intérieur du package *view*. 
 ![Create Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog1.png)
 
-2. Utilisez un `GridPane`, des `Label`, des `TextField` et des `Button` pour créer une boîte de dialgoue comme suit:
+2. Utilisez un `GridPane`, des `Label`, des `TextField` et des `Button` pour créer une boîte de dialogue comme suit:
 ![Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog2.png)
 
 
@@ -505,7 +505,7 @@ Avec la vue (FXML) et le contrôleur enfin créés, nous avons besoin de les lie
 4. Définissez les **onAction** des deux buttons aux méthodes handler correspondantes.
 
 
-### Ouvrir la boîte de dialgoue
+### Ouvrir la boîte de dialogue
 
 Ajoutez une méthode pour charger et afficher la boîte de dialogue d'édition de personnes dans notre `MainApp`:
 
@@ -552,7 +552,7 @@ public boolean showPersonEditDialog(Person person) {
 }
 </pre>
 
-Ajoutez les méthodes suivantes à la classe `PersonOverviewController`. Ces méthodes vont appeller `showPersonEditDialog(...)`  de `MainApp` lorsque l'utilisateur clique sur les bouttons *Nouveau* ou *Editer*.
+Ajoutez les méthodes suivantes à la classe `PersonOverviewController`. Ces méthodes vont appeler `showPersonEditDialog(...)`  de `MainApp` lorsque l'utilisateur clique sur les boutons *Nouveau* ou *Editer*.
 
 
 ##### PersonOverviewController.java
@@ -604,9 +604,9 @@ Ouvrez le fichier `PersonOverview.fxml` dans Scene Builder. Choisissez les méth
 
 ## Terminé !
 
-Vous devriez avoir une *application d'adresses* fonctionnelle dorénavant. L'application est capable d'ajouter, d'éditer et de supprimer des personnes. Il y a même quelques validations pour les champs de text pour éviter les mauvaises manipulations des utilisateurs.
+Vous devriez avoir une *application d'adresses* fonctionnelle dorénavant. L'application est capable d'ajouter, d'éditer et de supprimer des personnes. Il y a même quelques validations pour les champs textes pour éviter les mauvaises manipulations des utilisateurs.
 
-J'espère que les conceptes et la structure de cette application vous permettra de bien démarrer la rédaction de votre propre application! Amusez-vous bien.
+J'espère que les concepts et la structure de cette application vous permettra de bien démarrer la rédaction de votre propre application! Amusez-vous bien.
 
 
 ### Et après ?
