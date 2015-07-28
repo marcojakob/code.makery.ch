@@ -5,7 +5,7 @@ date: 2014-04-19 00:00
 updated: 2015-07-28 00:00
 slug: javafx-8-tutorial/fa/part2
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fa-part2.md
-description: "Use a JavaFX TableView to display an ObservableList of Persons."
+description: "استفاده از قابلیت JavaFX به نام TableView برای نشان دادن یک  ObservableList از افراد."
 image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
 published: true
 prettify: true
@@ -201,7 +201,7 @@ public class Person {
 
 ### توضیحات
 
-* در JavaFX معمولا از [`Properties`] (http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html) برای همه فیلدهای کلاس الگو استفاده میشه. یک `Property` به ما اجازه میده به طور خودکار از تغییرات متغییرها مثل `LastName` آگاه بشیم. این قابلیت به ما این اجازه رو میده که نمای برنامه همگام با داده باشه. برای اطلاعات بیشتر درمورد `Propertise` به [Using JavaFX Propertise and Binding](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm) رجوع کنید.
+* در JavaFX معمولا از [`Properties`](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html) برای همه فیلدهای کلاس الگو استفاده میشه. یک `Property` به ما اجازه میده به طور خودکار از تغییرات متغییرها مثل `LastName` آگاه بشیم. این قابلیت به ما این اجازه رو میده که نمای برنامه همگام با داده باشه. برای اطلاعات بیشتر درمورد `Propertise` به [Using JavaFX Propertise and Binding](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm) رجوع کنید.
 * [`LocalDate`](http://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html) گونه‌ای که برای `birthday` استفاده میکنیم, قسمتی از [API تاریخ و زمان برای JDK8](http://docs.oracle.com/javase/tutorial/datetime/iso/) هست.
 
 
