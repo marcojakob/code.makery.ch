@@ -198,7 +198,7 @@ birthdayLabel.setText(DateUtil.format(person.getBirthday()));
 
 Pour être informé quand l'utilisateur sélectionne une personne dans la tableau correspondant, nous avons besoin *d'écouter les changements*.
 
-Il y a une interface dans JavaFX appelée [`ChangeListener`](http://docs.oracle.com/javase/8/javafx/api/) comprenant une méthode nommé `changed(...)`. Cette méthode possède trois paramètres: `observable`, `oldValue`, and `newValue`.
+Il y a une interface dans JavaFX appelée [`ChangeListener`](http://docs.oracle.com/javase/8/javafx/api/) comprenant une méthode nommé `changed(...)`. Cette méthode possède trois paramètres: `observable`, `oldValue`, et `newValue`.
 
 Nous allons créer un `ChangeListener` via les *expressions lambda* introduite dans Java 8. Ajoutons quelques lignes à la méthode `initialize()`dans la class `PersonOverviewController`. Cela ressemble maintenant à ceci:
 
@@ -226,14 +226,14 @@ Avec `showPersonDetails(null);` nous réinitialisons les détails de la personne
 
 Avec `personTable.getSelectionModel...` nous obtenons la *selectedItemProperty* de la table de personnes et lui ajoutons un listener. Chaque fois que l'utilisateur sélectionne une personne dans la table, notre *expression lambda* est exécutée.  Nous prenons la personne nouvellement sélectionnée pour la transmettre à la méthode `showPersonDetails(...)`.
 
-Essayez de **lancer l'application** à ce stade. Verifiez que lorsque vous sélectionnez une personne dans la table, les détails de celle-ci soient affichés à droite.
+Essayez de **lancer l'application** à ce stade. Vérifiez que lorsque vous sélectionnez une personne dans la table, les détails de celle-ci soient affichés à droite.
 
 Si quelque chose ne fonctionne pas, vous pouvez comparer votre classe `PersonOverviewController` avec [PersonOverviewController.java](/assets/library/javafx-8-tutorial/part3/PersonOverviewController.java).
 
 
 *****
 
-## Le boutton Delete
+## Le bouton Delete
 
 Notre interface utilisateur contient déjà un bouton de suppression mais sans aucune fonctionnalité. Nous pouvons choisir l'action d'un bouton à l'intérieur du *Scene Builder *. 
 Toute méthode dans notre contrôleur qui est annotée avec `@ FXML` (ou est publique) est accessible par le *Scene Builder*. Ainsi, nous allons ajouter d'abord une méthode de suppression à la fin de notre classe `PersonOverviewController`:
@@ -267,9 +267,9 @@ Si vous lancez l'application à ce stade, vous devriez être capable de supprime
 
 Il y aura un `ArrayIndexOutOfBoundsException` parce qu'il ne pouvait pas enlever un objet  personne à l'index `-1`. L'index `-1` a été retourné par `getSelectedIndex()` - ce qui signifie qu'il n'y avait pas de sélection.
 
-Ignorer de telles erreurs n'est pas très recommendable. Nous devrions laisser l'utilisateur savoir qu'il ou elle doit sélectionner une personne avant d'appuyer sur le bouton supprimer. (Il serait encore mieux de désactiver le bouton de sorte que l'utilisateur n'ait même pas la chance de faire quelque chose de mal.)
+Ignorer de telles erreurs n'est pas très recommandable. Nous devrions laisser l'utilisateur savoir qu'il ou elle doit sélectionner une personne avant d'appuyer sur le bouton supprimer. (Il serait encore mieux de désactiver le bouton de sorte que l'utilisateur n'ait même pas la chance de faire quelque chose de mal.)
 
-Après quelques modifications apportées à la méthode `handleDeletePerson()`, nous pouvons afficher une simple boîte de dialogue, chaque fois que l'utilisateur appuira sur le button supprimer sans aucune personne sélectionnée au préalable dans la table:
+Après quelques modifications apportées à la méthode `handleDeletePerson()`, nous pouvons afficher une simple boîte de dialogue, chaque fois que l'utilisateur appuiera sur le bouton supprimer sans aucune personne sélectionnée au préalable dans la table:
 
 
 ##### PersonOverviewController.java
@@ -309,12 +309,12 @@ Pour plus d'exemples sur comment utiliser les boîtes de dialogue, lisez mon art
 Les actions Nouveau et Editer demandent un peu plus de travail. Nous allons avoir besoin d'une boîte de dialogue modifiée (ce qui veut dire un nouveau `Stage`) avec un formulaire pour demander à l'utilisateur des détails à propos d'une personne.
 
 
-### Conception de la boîte de dialgoue
+### Conception de la boîte de dialogue
 
 1. Créer un nouveau fichier fxml appelé `PersonEditDialog.fxml` à l'intérieur du package *view*. 
 ![Create Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog1.png)
 
-2. Utilisez un `GridPane`, des `Label`, des `TextField` et des `Button` pour créer une boîte de dialgoue comme suit:
+2. Utilisez un `GridPane`, des `Label`, des `TextField` et des `Button` pour créer une boîte de dialogue comme suit:
 ![Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog2.png)
 
 
@@ -502,10 +502,10 @@ Avec la vue (FXML) et le contrôleur enfin créés, nous avons besoin de les lie
 1. Ouvrez le fichier `PersonEditDialog.fxml`.
 2. Dans le groupe *Controller* à gauche sélectionnez `PersonEditDialogController` comme classe contrôleur.
 3. Définissez les **fx:id** de tous les `TextField` avec les champs du contrôleur correspondant.
-4. Définissez les **onAction** des deux buttons aux méthodes handler correspondantes.
+4. Définissez les **onAction** des deux boutons aux méthodes handler correspondantes.
 
 
-### Ouvrir la boîte de dialgoue
+### Ouvrir la boîte de dialogue
 
 Ajoutez une méthode pour charger et afficher la boîte de dialogue d'édition de personnes dans notre `MainApp`:
 
@@ -552,7 +552,7 @@ public boolean showPersonEditDialog(Person person) {
 }
 </pre>
 
-Ajoutez les méthodes suivantes à la classe `PersonOverviewController`. Ces méthodes vont appeller `showPersonEditDialog(...)`  de `MainApp` lorsque l'utilisateur clique sur les bouttons *Nouveau* ou *Editer*.
+Ajoutez les méthodes suivantes à la classe `PersonOverviewController`. Ces méthodes vont appeler `showPersonEditDialog(...)`  de `MainApp` lorsque l'utilisateur clique sur les boutons *Nouveau* ou *Editer*.
 
 
 ##### PersonOverviewController.java
@@ -604,9 +604,9 @@ Ouvrez le fichier `PersonOverview.fxml` dans Scene Builder. Choisissez les méth
 
 ## Terminé !
 
-Vous devriez avoir une *application d'adresses* fonctionnelle dorénavant. L'application est capable d'ajouter, d'éditer et de supprimer des personnes. Il y a même quelques validations pour les champs de text pour éviter les mauvaises manipulations des utilisateurs.
+Vous devriez avoir une *application d'adresses* fonctionnelle dorénavant. L'application est capable d'ajouter, d'éditer et de supprimer des personnes. Il y a même quelques validations pour les champs textes pour éviter les mauvaises manipulations des utilisateurs.
 
-J'espère que les conceptes et la structure de cette application vous permettra de bien démarrer la rédaction de votre propre application! Amusez-vous bien.
+J'espère que les concepts et la structure de cette application vous permettra de bien démarrer la rédaction de votre propre application! Amusez-vous bien.
 
 
 ### Et après ?
