@@ -2,16 +2,15 @@
 layout: article
 title : "آموزش JavaFX 8 - قسمت دوم: مدل و TableView"
 date: 2014-04-19 00:00
-updated: 2015-07-15 00:00
+updated: 2015-07-28 00:00
 slug: javafx-8-tutorial/fa/part2
-canonical: /library/javafx-8-tutorial/part2/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fa-part2.md
 description: "Use a JavaFX TableView to display an ObservableList of Persons."
 image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
 published: true
 prettify: true
 comments: true
-rtl: false
+rtl: true
 sidebars:
 - header: "مباحث این سری"
   body:
@@ -75,7 +74,7 @@ languages:
 
 ##### Person.java
 
-<pre class="prettyprint lang-java">
+<pre class="prettyprint lang-java" dir="ltr">
 package ch.makery.address.model;
 
 import java.time.LocalDate;
@@ -215,14 +214,14 @@ public class Person {
 
 ### ObservableList
 
-ما داریم با کلاس‌های نمای JavaFX کار میکنیم که نیاز دارند از هر تغییری که توی لیست افراد به وجود میاد آگاه بشن. این خیلی مهمه! چون در غیر این صورت نما با داده همگام نمیمونه. برای این منظور, JavaFX چندتا [Collection classes] (http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm) معرفی کرده.
+ما داریم با کلاس‌های نمای JavaFX کار میکنیم که نیاز دارند از هر تغییری که توی لیست افراد به وجود میاد آگاه بشن. این خیلی مهمه! چون در غیر این صورت نما با داده همگام نمیمونه. برای این منظور, JavaFX چندتا [Collection classes](http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm) معرفی کرده.
 
 از اون کلکسیون ما به `ObservableList` نیاز داریم, برای ساختن `ObservableList` جدید, قطعه کد زیرو به ابتدای کلاس `MainApp` اضافه کنید. ما همچنین یک سازنده (constructor) برای ساختن چند داده نمونه و متدهای دریافت کننده (getter methods) به برنامه اضافه میکنیم:
 
 
 ##### MainApp.java
 
-<pre class="prettyprint lang-java">
+<pre class="prettyprint lang-java" dir="ltr">
 
     // ... AFTER THE OTHER VARIABLES ...
 
@@ -275,7 +274,7 @@ public class Person {
 
 ##### PersonOverviewController.java
 
-<pre class="prettyprint lang-java">
+<pre class="prettyprint lang-java" dir="ltr">
 package ch.makery.address.view;
 
 import javafx.fxml.FXML;
@@ -374,7 +373,7 @@ public class PersonOverviewController {
 
 ##### MainApp.java - new showPersonOverview() method
 
-<pre class="prettyprint lang-java">
+<pre class="prettyprint lang-java" dir="ltr">
 /**
  * Shows the person overview inside the root layout.
  */
@@ -409,10 +408,10 @@ public void showPersonOverview() {
 
 1. اول `PersonOverview.fxml` رو با *SceneBuilder* باز کنید. 
 
-2. *Controller* که در سمت چپ هست رو باز کنید و `PersonOverviewController` رو به عنوان **controller class** انتخاب کنبد. 
+2. *Controller* که در سمت چپ هست رو باز کنید و `PersonOverviewController` رو به عنوان **controller class** انتخاب کنبد.   
 ![Set Controller Class](/assets/library/javafx-8-tutorial/part2/set-controller-class.png)
 
-3. `TableView` رو از قسمت *Hierarchy* انتخاب کنید و تو قسمت *Code* در سمت راست, `personTable` رو به عنوان **fx:id** انتخاب کنید.
+3. `TableView` رو از قسمت *Hierarchy* انتخاب کنید و تو قسمت *Code* در سمت راست, `personTable` رو به عنوان **fx:id** انتخاب کنید.   
 ![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png)
 
 4. همین کارو برای ستون‌ها انجام بدید و `firstNameColumn` و `lastNameColumn` رو به عنوان **fx:id** انتخاب کنید.
@@ -436,7 +435,7 @@ public void showPersonOverview() {
 
 ### بعدش چه اتفاقی میوفته؟
 
-در [آموزش قسمت سوم](/library/javafx-8-tutorial/part3/) ما بعضی قابلیت‌ها مثل اضافه کردن شخص جدید, پاک کردن و به روز رسانی یک شخص رو به برنامه اضافه میکنیم. 
+در [آموزش قسمت سوم](/library/javafx-8-tutorial/fa/part3/) ما بعضی قابلیت‌ها مثل اضافه کردن شخص جدید, پاک کردن و به روز رسانی یک شخص رو به برنامه اضافه میکنیم. 
 
 
 ##### بعضی از مطالب که ممکنه در این زمینه مفید باشن
