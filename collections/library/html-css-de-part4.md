@@ -104,7 +104,7 @@ Bei grösseren Webseiten können die *Styles* recht lang werden. Dort kommt es d
 
 ## Weitere Möglichkeiten von DevTools
 
-Es gibt noch viele weiter Möglichkeiten, um mit *DevTools* zu arbeite. Wenn Sie mehr darüber wissen möchten, lesen Sie die [DevTools Dokumentation](https://developer.chrome.com/devtools/index).
+Es gibt noch viele weiter Möglichkeiten, um mit *DevTools* zu arbeiten. Wenn Sie mehr darüber wissen möchten, lesen Sie die [DevTools Dokumentation](https://developer.chrome.com/devtools/index).
 
 Ausserdem gibt es einen sehr guten [DevTools Online-Kurs](http://discover-devtools.codeschool.com/), welcher gratis zur Verfügung steht. 
 
