@@ -209,14 +209,14 @@ class MyPlayer extends Player {
   start() {
     while (!treeFront()) {
       removeStar();
-      findNextLeaf();
+      findNextStar();
     }
 
     removeStar();
   }
 
   /// Function to find the next star.
-  findNextLeaf() {
+  findNextStar() {
     // First look in the front.
     move();
     if (!onStar()) {

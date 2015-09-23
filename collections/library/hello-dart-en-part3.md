@@ -91,9 +91,9 @@ move();
 
 <pre class="prettyprint lang-dart">
 if (onStar()) {
-  removeLeaf();
+  removeStar();
 } else {
-  putLeaf();
+  putStar();
 }
 move();
 </pre>
@@ -125,7 +125,7 @@ Open the `scenario3.02` and write the program.
 
 ![Star at Tree](/assets/library/hello-dart/part3/star-at-tree.png)
 
-Let the player go straight ahaid and put a leaf anywhere where there is a tree on his left or right or on both sides.
+Let the player go straight ahaid and put a star anywhere where there is a tree on his left or right or on both sides.
 
 Note that you can use the *logical operators* `&&`, `||`, and `!` in the same way we did in loops.
 

@@ -96,9 +96,9 @@ move();
 
 <pre class="prettyprint lang-dart">
 if (onStar()) {
-  removeLeaf();
+  removeStar();
 } else {
-  putLeaf();
+  putStar();
 }
 move();
 </pre>
