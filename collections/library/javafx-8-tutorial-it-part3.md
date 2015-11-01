@@ -2,7 +2,7 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 3: Interacting with the User"
 date: 2014-04-24 00:00
-updated: 2015-03-12 00:00
+updated: 2015-11-01 00:00
 slug: javafx-8-tutorial/it/part3
 canonical: /library/javafx-8-tutorial/part3/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-it-part3.md
@@ -51,10 +51,6 @@ languages:
   part: part3
   active: it
 ---
-
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs an Italian translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
 
 ![Screenshot AddressApp Part 3](/assets/library/javafx-8-tutorial/part3/addressapp-part3.png)
 
@@ -620,7 +616,7 @@ Spero che i concetti e la struttura di questa applicazione di permetteranno di c
 
 ### Qual'è il prossimo?
 
-Nella [Parte 4 del tutorial](/library/javafx-8-tutorial/part4/) aggiungeremo alcuni CSS per lo stile.
+Nella [Parte 4 del tutorial](/library/javafx-8-tutorial/it/part4/) aggiungeremo alcuni CSS per lo stile.
 
 
 ##### Alcuni articoli che potresti trovare interessanti
