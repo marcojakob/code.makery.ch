@@ -90,7 +90,7 @@ Adesso spero che vi divertirete! Iniziamo con [Parte 1: Scene Builder](/library/
   <ul>
     <li><a href="https://github.com/ksclero" class="alert-link">Ettore Stani</a></li> 
     <li><a href="https://github.com/Mistra" class="alert-link">Giulio Mistrangelo</a></li> 
-    <li><a href="https://github.com/Zikoel" class="alert-link">Elia</a></li> 
+    <li><a href="https://github.com/Zikoel" class="alert-link">Elia Mazzuoli</a></li> 
   </ul>
   Thank you very much!
 </div>
