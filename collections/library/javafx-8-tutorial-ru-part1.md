@@ -51,7 +51,7 @@ languages:
   active: ru
 ---
 
-![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png "AdressApp")
+![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png "AddressApp")
 
 ### Часть 1: Содержание
 
@@ -107,7 +107,7 @@ languages:
 ## Создание нового JavaFX-проекта
 
 Перейдите в приложение Eclipse и нажмите *File | New | Other...* и выберите *JavaFX Project*.
-Укажите имя проекта (например, AdressApp) и нажмите *Finish*. 
+Укажите имя проекта (например, AddressApp) и нажмите *Finish*. 
 
 Если приложение Eclipse автоматически создало начальные файлы и пакеты, то удалите их.
 
@@ -116,9 +116,9 @@ languages:
 
 С самого начала мы будем следовать хорошим принципам проектирования ПО. Один из них - это патерн MVC. Опираясь на этот паттерн мы разбиваем код нашего приложения на три части и создаем для каждой свой пакет (правык клик на папке src, *New... | Package*):
 
-* `ch.makery.adress` - содержит *большинство* классов-контроллеров (Controller) (= бизнес логики);
-* `ch.makery.adress.model` - содержит классы Модели (Model);
-* `ch.makery.adress.view` - содержит классы Вида (View).
+* `ch.makery.address` - содержит *большинство* классов-контроллеров (Controller) (= бизнес логики);
+* `ch.makery.address.model` - содержит классы Модели (Model);
+* `ch.makery.address.view` - содержит классы Вида (View).
 
 **Заметка:** Внутри пакета Вид также содержатся некоторые классы-контроллеры, которые непосредственно связаны с одним видом. Давайте назовем их виды-контроллеры (**view-controllers**).
 
