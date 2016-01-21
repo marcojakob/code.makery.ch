@@ -200,7 +200,7 @@ public class BirthdayStatisticsController {
 
 ## Connexion Vue/Contrôleur avec MainApp
 
-Nous allons utiliser le même mécanisme pour la partie *Statistque des anniversaires* que celui utilisé pour la partie *Dialogue d'édition de personne*, une boîte de dialogue popup simple.
+Nous allons utiliser le même mécanisme pour la partie *Statistique des anniversaires* que celui utilisé pour la partie *Dialogue d'édition de personne*, une boîte de dialogue popup simple.
 
 Ajoutez la méthode suivante à votre classe `MainApp`:
 
