@@ -52,113 +52,109 @@ languages:
   active: it
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs an Italian translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
 ![Screenshot AddressApp Part 7](/assets/library/javafx-8-tutorial/part7/addressapp-part7.png)
 
-I thought I'd write one last part of this tutorial series to show how to deploy (that means package and publish) the AddressApp.
+Nelle parti fionali di questa serie di tutorial mostreremo come effettuare il deploy (ovver come comporre il package e come distribuirlo) della nostra AddressApp.
 
 
 *****
 
-## Topics in Part 7
+## Argomenti nella sezione 7
 
-* Deploying our JavaFX application as **Native Package** with e(fx)clipse
-
-
-*****
-
-## What is Deployment
-
-Deplyoment is the process of packaging and delivering software to the user. This is a crucial part of software development since it's the first contact a user has with our software.
-
-Java advertises with the slogan **Write Once, Run Anywhere** to illustrate the *cross-platform* benefits of the Java language. Ideally, this means that our Java application can be run on any device equipped with a Java virtual machine (JVM).
-
-In the past, the user experience for installing a Java application hasn't always been smooth. If the user didn't have the required Java version on his system, he had to be directed to install it first. This lead to some difficulties, e.g. need for admin rights, compatibility issues between Java versions, etc.
-
-Fortunately, JavaFX provides a new deployment option called **Native Packaging** (also called Self-Contained Application Package). A native package is a bundle containing both your application code and the (platform-specific) Java Runtime. 
-
-The official JavaFX documentation by Oracle contains an extensive guide for all possible [JavaFX deployment options](http://docs.oracle.com/javafx/2/deployment/jfxpub-deployment.htm). 
-
-In this post I will show how to create a **Native Package** with Eclipse and the [**e(fx)clipse plugin**](http://www.eclipse.org/efxclipse/).
+* Distribuire la nostra applivazione  JavaFX come un **Package Nativo** con e(fx)clipse
 
 
 *****
 
-## Create a Native Package
+## Cos'è il Deployment
 
-The goal is to create a self-contained application in a single folder on the user's computer. Here is how it will look like for our AddressApp (on Windows):
+Il deplyoment è il processo di impacchettare e ditribuire agli utenti il software sviluppato. Si tratta di una parte cruciale del processo di sviluppo del software poichè costituisce il primo contatto che gli utenti avranno con il nostro sofware.
+
+Java viene pubblicizzato con lo slogan **Write Once, Run Anywhere** (scrivi una volta, esegui ovunque) per illustrare i benefici *multi-piattaforma* del linguaggio Java. Idealmente questo significa che la nostra applicazione Java puà essere eseguita su qualsiasi dispositivo equipaggiato con una Java virtual machine (JVM).
+
+In passato, la user experience per l'installazione di applicazioni Java non sempre filava liscio. Se l'utente non disponeva della versione richiesta di Java sul proprio sistema, veniva prima indirizzato sull'installazione. Questo conduceva ad alcune difficoltà, ad esempio la necessità di disporre di diritti di amministrazione, problemi di compatibilità tra le versioni di Java ecc.
+
+Fortunatamente, JavaFX fornisce una nuova opzione di deploy chiamata **Package Nativo** (nota anche come Self-Contained Application Package).Un package nativo raggruppa sia il codice dell'applicazione sia l'ambiente di runtime Java specifico per la piattaforma di destinazione. 
+
+La documentazione JavaFX di Oracle contiene una guida esaustiva per tutte le possibili [opzioni di deploy JavaFX](http://docs.oracle.com/javafx/2/deployment/jfxpub-deployment.htm). 
+
+In questo posto vi mostrerò come creare un **Package Nativo** con eclipse e il [**plugin e(fx)clipse **](http://www.eclipse.org/efxclipse/).
+
+
+*****
+
+## Creare un Package Nativo
+
+L'obiettivo è di creare una applicazione auto-consistente in una singola cartella sul computer dell'utente. Ecco questo come apparirà per la nostra appliazione AddressApp (su Windows):
 
 ![AddressApp Native Package](/assets/library/javafx-8-tutorial/part7/native-package.png)
 
-The `app` folder contains our application data and the `runtime` folder contains the platform-specific Java runtime.
+La cartella `app` contiene i dati della nostra applicazione mentre la cartella `runtime` contiene l'ambiente Java di runtime specifico.
 
-To make it even more comfortable for the user, we'll provide an installer:
+Per rendere il tutto ancora più semplice per l'utente, forniremo un installer:
 
-* A `exe` file installer on windows
-* A `dmg` (drag and drop) installer for MacOS.
+* Un installe per windows sotto forma di file `exe`
+* Un installer (drag and drop) per MacOS sotto forma di `dmg` (drag and drop)
 
-The e(fx)clipse plugin will help us generate the native package and installer.
+Il plugin e(fx)clipse ci aiuterà a generare il package nativo e l'installer.
 
 
-### Step 1 - Edit build.fxbuild
+### Passo 1 - Editare build.fxbuild
 
-The file `build.fxbuild` is used by e(fx)clipse to generate a file that will be used by the Ant build tool. (If you don't have a `build.fxbuild` file, create a new *Java FX Project* in Eclipse and copy the generated file.)
+Il file `build.fxbuild` viene utilizzato da e(fx)clipse per generare un file che verrà utilizzato dal tool Ant. (Se il file non esiste ancora`build.fxbuild` , create un nuovo *Java FX Project* in Eclipse e copiate il file generato.)
 
-1. Open `build.fxbuild` from your project root.
+1. Aprite il file `build.fxbuild` dalla cartella root del progetto.
 
-2. Fill out all the fields containing a star. *For MacOS: Do not use spaces in Application title as this seems to cause a problem.*    
+2. Compilate tutti i campi contenenti un asterisco. *Per MacOS: Non utilizzare spazi nel titolo dell'applicaione dato che potrebbero causare problemi.*    
 ![fxbuild settings](/assets/library/javafx-8-tutorial/part7/fxbuild-settings.png)
 
-3. As **Packaging Format** choose `exe` for Windows, `dmg` for MacOS, or `rpm` for Linux.
+3. Come **Packaging Format** scegliete `exe` per Windows, `dmg` per MacOS, oppure `rpm` per Linux.
 
-4. Click on the link `Generate ant build.xml only` (found on the right side).   
+4. Clickate sul link `Generate ant build.xml only` (che so trova sul lato destro). 
 ![generate ant build](/assets/library/javafx-8-tutorial/part7/generate-ant-build.png)
 
-5. Verify that a new `build` folder and a file `build.xml` is created.
+5. Verificate che la nuova cartella `build` e il file `build.xml` siano stati creati.
 
 
-### Step 2 - Add Installer Icons
+### Passo 2 - Aggiungere le incone dell' Installer
 
-We would like to have some nice icons for our installer:
+Vorremo avere delle icone carine per il nostro installer:
 
-* [AddressApp.ico](/assets/library/javafx-8-tutorial/part7/AddressApp.ico) for the installer file icon
-* [AddressApp-setup-icon.bmp](/assets/library/javafx-8-tutorial/part7/AddressApp-setup-icon.bmp) for the installer splash screen icon
-* [AddressApp.icns](/assets/library/javafx-8-tutorial/part7/AddressApp.icns) for the mac installer icon
-* [AddressApp-volume.icns](/assets/library/javafx-8-tutorial/part7/AddressApp-volume.icns) for the mac desktop icon
+* [AddressApp.ico](/assets/library/javafx-8-tutorial/part7/AddressApp.ico) per l'icona del file dell'installer
+* [AddressApp-setup-icon.bmp](/assets/library/javafx-8-tutorial/part7/AddressApp-setup-icon.bmp) per l'icona splash screen dell'installer
+* [AddressApp.icns](/assets/library/javafx-8-tutorial/part7/AddressApp.icns) per l'icona dell'installer per Mac
+* [AddressApp-volume.icns](/assets/library/javafx-8-tutorial/part7/AddressApp-volume.icns) per l'icona desktop Mac
 
 
-1. Create the following subfolders in the `build` folder:
-  * `build/package/windows` (only used for windows)
-  * `build/package/macosx` (only used for macos)
-2. Copy the corresponding icons from above into those subfolders. It should look something like this now:   
+1. Create le seguenti sotto-cartelle nella cartella  `build`:
+  * `build/package/windows` (utilizzata solo per windows)
+  * `build/package/macosx` (utilizzata solo per macos)
+2. Copia le icone corrispondenti sopra dentro le sottocartelle. Adesso dovrebbe apparire così:   
 ![Installer Icons](/assets/library/javafx-8-tutorial/part7/installer-icons.png)
-3. **Important**: The name of the icons must exactly match the **Application title** you specified in `build.fxbuild`:
+3. **Important**: Il nome delle icone deve corrispondere esattamente al campo **Application title** che avete specificato nel file `build.fxbuild`:
   * `YourAppTitle.ico`
   * `YourAppTitle-setup-icon.bmp`
   * `YourAppTitle.icns`
   * `YourAppTitle-volume.icns`
 
 
-### Step 3 - Add Resources
+### Passo 3 - Aggiungere il contenuto della cartella Resources
 
-Our `resources` folder isn't copied automatically. We must manually add it to the build directory:
+La nostra cartella `resources` non viene copiata automaticamnte. Dobbiamo aggiungerla manualmente alla cartella build:
 
-1. Create the following subfolder in the `build` folder:
+1. Create la seguente sotto-cartella dentro `build`:
   * `build/dist`   
-2. Copy the `resources` folder (containing our application images) into `build/dist`.    
+2. Copiate la cartella `resources`(contenente le immagini della vostra applicazione) dentro `build/dist`.    
 ![Build Resources](/assets/library/javafx-8-tutorial/part7/build-resources.png)
 
 
-### Step 4 - Edit build.xml to include icons
+### Passo 4 - Editare build.xml per includere le icone
 
-E(fx)clipse has generated a file `build/build.xml` which is ready to be executed by **Ant**. Our installer icons and resource images just won't work. 
+E(fx)clipse ha generato un  file `build/build.xml` che è pronto per essere dato in pasto al tool **Ant**, ma le icone e le risorse del nostro installer non funzionerebbero. 
 
-As e(fx)clipse can't be told (yet?) to include additional resources like our `resources` folder and the few installer icons we've added above, we have to manually edit the `build.xml`:
+Dato che non è possibile (per il momento) istruire e(fx)clipse per includere risorse addizionali alla nostra cartella `resources` e le icone degli installer che abbiamo aggiunto sopra, dobbiamo modificare manualmente il file `build.xml`:
 
-Open `build.xml` and find the path `fxant`. Add one line for the `${basedir}` (will make our installer icons available):
+Aprite `build.xml` e cercate l'elemento `fxant`. Aggiungete una riga per la `${basedir}` (ciò renderà disponibile le icone degli installer):
 
 
 ##### build.xml - add "basedir"
@@ -174,7 +170,7 @@ Open `build.xml` and find the path `fxant`. Add one line for the `${basedir}` (w
 </pre>    
 
 
-Find the block `fx:resources id="appRes"` further down in the file. Add one line for our `resources`:
+Cercate il blocco `fx:resources id="appRes"` più in basso nel file, e aggiungete la riga per le `resources`:
 
 ##### build.xml - add "resources"
 
@@ -187,7 +183,7 @@ Find the block `fx:resources id="appRes"` further down in the file. Add one line
 </pre>
 
 
-Somehow, the version number doesn't get added in the `fx:application` which makes the installer always default to version `1.0` (as pointed out by a few people in the comments). To fix this, manually add the version number (thanks Marc for [finding out](http://code.makery.ch/library/javafx-8-tutorial/part7/#comment-1566725959)):
+Per qualche motivo il numero di versione non viene aggiunto  in `fx:application`, pertanto l'installer apparirà sempre con la versione di default `1.0` (come puntualizzato da alcune persone nei commenti). Per sistemre la cosa, aggiungete manualmente il numero di versione (grazie a Marc per [la segnalazione](http://code.makery.ch/library/javafx-8-tutorial/part7/#comment-1566725959)):
 
 ##### build.xml - add "version"
 
@@ -199,60 +195,60 @@ Somehow, the version number doesn't get added in the `fx:application` which make
 />
 </pre>
 
-We could already run the `build.xml` as an Ant build at this point. This would generate a runnable jar file of the project. But we want to go a step further and create a nice installer.
+A questo punto potremmo già lanciare il  `build.xml` con Ant. Questo genererebbe il jar eseguibile del progetto. Ma vogliamo fare un passo avanti e creare un pratico installer.
 
 
-### Step 5 (WINDOWS) - Windows exe Installer
+### Passo 5 (WINDOWS) - Installer 'exe' per Windows
 
-![AddressApp on Windows](/assets/library/javafx-8-tutorial/part7/addressapp-windows.png)
+![AddressApp su Windows](/assets/library/javafx-8-tutorial/part7/addressapp-windows.png)
 
-With **Inno Setup** we can create a Windows Installer of our application as a single `.exe` file. The resulting `.exe` will perform a user level installation (no admin permissions required). Also a shortcut will be created (menu or desktop).
+Con **Inno Setup** possiamo creare un Installer Windows della nostra applicazione come un singolo file`.exe`. Il risultante `.exe` eseguirà una installazione con i permessi dell'utente (non sono richiesti i privilegi di amministratore). Inoltre verrà creato un collegamento (nel menù o sul desktop).
 
-1. Download [Inno Setup 5 or later](http://www.jrsoftware.org/isdl.php). Install Inno Setup on your computer. Our Ant script will use it to automatically generate the installer.
+1. Scaricate [Inno Setup 5 o superiore](http://www.jrsoftware.org/isdl.php). Installate Inno Setup sul vostro computer. Il nostro script Ant script lo utilizzerà automaticamente per generare l'installer.
 
-2. Tell Windows about the installation path to Inno Setup (e.g. `C:\Program Files (x86)\Inno Setup 5`). To do this add Inno Setup to the `Path` variable in your windows environment variables. If you don't know where to find it, read [How to set the path and environment variables in Windows](http://www.computerhope.com/issues/ch000549.htm).
+2. Istruite Windows sul path di installazione di Inno Setup (ad es. `C:\Program Files (x86)\Inno Setup 5`). Per farlo, aggiungete Inno Setup alla variabile `Path` tra le variabilidi ambiente di Windows. Se non sapete dove si trova, potete leggere [How to set the path and environment variables in Windows](http://www.computerhope.com/issues/ch000549.htm).
 
-3. Restart Eclipse and continue with Step 6.
-
-
-### Step 5 (MAC) - MacOS dmg Installer
-
-![AddressApp on Mac](/assets/library/javafx-8-tutorial/part7/addressapp-macos.png)
-
-To create a Mac OS `dmg` drag-and-drop installer, no additional tool is required.
-
-Note: For the installer image to work it must have exactly the same name as the application.
+3. Riavviate  Eclipse e continuate con il passo 6.
 
 
-### Step 5 (LINUX etc.) - Linux rpm Installer
+### Passo 5 (MAC) - MacOS dmg Installer
 
-For other packaging options (`msi` for windows, `rpm` for Linux) see this native packaging [blog post](https://blogs.oracle.com/talkingjavadeployment/entry/native_packaging_for_javafx) or this [oracle documentation](http://docs.oracle.com/javafx/2/deployment/self-contained-packaging.htm#A1324980).
+![AddressApp su Mac](/assets/library/javafx-8-tutorial/part7/addressapp-macos.png)
+
+Per creare un installer drag-and-drop `dmg` per Mac OS, non è richiesto nessun ulteriore tool.
+
+Nota: per fare in modo che l'immagine dell'installer funzioni il nome dell'applicazione e quello dell'immagine devono coincidere.
 
 
-### Step 6 - Run build.xml
+### Passo 5 (LINUX etc.) - Linux rpm Installer
 
-As a final step, we run the `build.xml` with Ant: *Right-click* on the `build.xml` file | *Run As* | *Ant Build*.
+Par altro opzioni del  package (`msi` per windows, `rpm` per Linux) consultate questo [blog post sui package nativi](https://blogs.oracle.com/talkingjavadeployment/entry/native_packaging_for_javafx) oppure la [documentazione oracle ](http://docs.oracle.com/javafx/2/deployment/self-contained-packaging.htm#A1324980).
+
+
+### Passo 6 - Lanciare il build.xml
+
+Il passo finale consiste nell'eseguire il `build.xml` con Ant: *Right-click* sul file `build.xml` | *Run As* | *Ant Build*.
 
 ![Run Ant Build](/assets/library/javafx-8-tutorial/part7/run-ant-build.png)
 
-The building **will take a while** (about 1 minute on my computer).
+Il building **ci impiegherà un pò** (circa un minuto sul mio pc).
 
-If everything was successful, you should find the native bundle in the folder `build/deploy/bundles`. This is how the windows version looks like:
+Se va tutto a buon fine, dovreste trovare il bundle in formato nativo nella cartella `build/deploy/bundles`. Questo è come dovrebbe apparire nella versione per Windows:
 
 ![Deployed File](/assets/library/javafx-8-tutorial/part7/deployed-file.png)
 
 
-The file `AddressApp-1.0.exe` can be used as a single file to install the application. This installer will copy the bundle to `C:/Users/[yourname]/AppData/Local/AddressApp`.
+Il file `AddressApp-1.0.exe` può essere utilizzato per installare l'applicazione. L'installer copierà il bundle in `C:/Users/[yourname]/AppData/Local/AddressApp`.
 
 
-### What's Next?
+### Cosa c'è dopo?
 
-I hope this tutorial was a help for you to get started with JavaFX and you'll be able to write your own JavaFX project from here.
+Spero che questo tutorial vi sia stato d'aiuto per iniziare con JavaFX e che sarete in grado di scrivere il vostro progetto JavaFX a partire da adesso.
 
-I appreciate any feedback. Feel free to write comments if you have any suggestions or if something was unclear.
+Ogni feedback sarà apprezzato. Sentitevi liberidi lasciare commento se avete dei suggerimnto o se qualcosa non vi è chiaro.
 
 
-##### Some other articles you might find interesting
+##### Qualche altro articolo che potreste trovare interessante
 
 * [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
