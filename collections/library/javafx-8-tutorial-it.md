@@ -46,10 +46,6 @@ languages:
   active: it
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> Some parts of this tutorial still need an Italian translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
 Già nel 2012 avevo scritto una serie di dettagliati tutorial su [JavaFX 2](/java/javafx-2-tutorial-intro/) per i miei studenti. Molte persone in tutto il mondo hanno letto i tutorial dandomi feedback davvero positivi. Così ho deciso di **riscrivere il tutorial su JavaFX 2 per JavaFX 8** (leggi qualcosa sui cambiamenti in [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)).
  
 Questo tutorial ti guida nella progettazione, nella programmazione e nel "deploying" di una rubrica. Così apparirà l'applicazione finita:
@@ -91,6 +87,7 @@ Adesso spero che vi divertirete! Iniziamo con [Parte 1: Scene Builder](/library/
     <li><a href="https://github.com/ksclero" class="alert-link">Ettore Stani</a></li> 
     <li><a href="https://github.com/Mistra" class="alert-link">Giulio Mistrangelo</a></li> 
     <li><a href="https://github.com/Zikoel" class="alert-link">Elia Mazzuoli</a></li> 
+    <li><a href="https://github.com/luigimartin" class="alert-link">Luigi Martin Petrella</a></li> 
   </ul>
   Thank you very much!
 </div>

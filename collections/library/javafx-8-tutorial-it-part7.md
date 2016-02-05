@@ -2,7 +2,7 @@
 layout: article
 title: "JavaFX 8 Tutorial - Part 7: Deployment"
 date: 2014-05-10 00:00
-updated: 2015-03-12 00:00
+updated: 2016-02-05 00:00
 slug: javafx-8-tutorial/it/part7
 canonical: /library/javafx-8-tutorial/part7/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-it-part7.md
