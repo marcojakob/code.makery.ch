@@ -290,11 +290,13 @@ private void handleDeletePerson() {
         personTable.getItems().remove(selectedIndex);
     } else {
         // Nada selecionado.
-        Dialogs.create()
-            .title("Nenhuma seleção")
-            .masthead("Nenhuma Pessoa Selecionada")
-            .message("Por favor, selecione uma pessoa na tabela.")
-            .showWarning();
+      
+	Alert alert = new Alert(AlertType.WARNING);
+        	alert.setTitle("Nenhuma seleção");
+        	alert.setHeaderText("Nenhuma Pessoa Selecionada");
+        	alert.setContentText("Por favor, selecione uma pessoa na tabela.");
+
+        	alert.showAndWait();
     }
 }
 </pre>
@@ -337,7 +339,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import org.controlsfx.dialog.Dialogs;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 
 import ch.makery.address.model.Person;
 import ch.makery.address.util.DateUtil;
@@ -481,11 +484,12 @@ public class PersonEditDialogController {
             return true;
         } else {
             // Mostra a mensagem de erro.
-        	Dialogs.create()
-		        .title("Campos Inválidos")
-		        .masthead("Por favor, corrija os campos inválidos")
-		        .message(errorMessage)
-		        .showError();
+        	Alert alert = new Alert(AlertType.ERROR);
+            	      alert.setTitle("Campos Inválidos");
+            	      alert.setHeaderText("Por favor, corrija os campos inválidos");
+            	      alert.setContentText(errorMessage);
+                alert.showAndWait();
+                
             return false;
         }
     }
@@ -589,11 +593,11 @@ private void handleEditPerson() {
 
     } else {
         // Nada seleciondo.
-        Dialogs.create()
-            .title("Nenhuma seleção")
-            .masthead("Nenhuma Pessoa Selecionada")
-            .message("Por favor, selecione uma pessoa na tabela.")
-            .showWarning();
+        Alert alert = new Alert(AlertType.WARNING);
+        	alert.setTitle("Nenhuma seleção");
+        	alert.setHeaderText("Nenhuma Pessoa Selecionada");
+        	alert.setContentText("Por favor, selecione uma pessoa na tabela.");
+        	alert.showAndWait();
     }
 }
 </pre>
