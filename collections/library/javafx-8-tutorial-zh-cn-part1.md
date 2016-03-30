@@ -154,7 +154,7 @@ languages:
 2. 从Scene Builder的左边控件栏中拖拽一个 *Splite Pane(Horizontal Flow)* 到界面设计区域，在Builder的右边视图结构中选择刚添加的Pane，在弹出的右键菜单中选择 *Fit to Parent* 。
 ![Fit to Parent](/assets/library/javafx-8-tutorial/part1/fit-to-parent.png)
 
-3. 同样从左边的控件栏中拖拽一个 *TableView* 到 *SplitePane* 的左边，选择这个TableView(而不是它的列)对它的布局进行设置，你可以在 *AnchorPane* 中对这个TableView四个边的外边距进行调节。([more information on Layouts](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).
+3. 同样从左边的控件栏中拖拽一个 *TableView* 到 *SplitPane* 的左边，选择这个TableView(而不是它的列)对它的布局进行设置，你可以在 *AnchorPane* 中对这个TableView四个边的外边距进行调节。([more information on Layouts](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).
 ![TableView Anchors](/assets/library/javafx-8-tutorial/part1/table-view-anchors.png)
 
 4. 点击菜单中的 *Preview | Show Preview in Window* 可以预览你设计好的界面，试着缩放预览的界面，你会发现TableView会随着窗口的缩放而变化。
@@ -188,7 +188,7 @@ languages:
 
 ## 创建主应用程序
 
-我们需要建立一个新的布局文件 `PersonOverview.fxml` 来做为主布局文件，它将包含一个菜单栏和你即将要显示的布局。
+我们需要建立一个新的布局文件 `RootLayout.fxml` 来做为主布局文件，它将包含一个菜单栏和你即将要显示的布局。
 
 1. 在view包里面创建一个新的 *FXML Document* 叫做 `RootLayout.fxml`, 这一次，选择 *BorderPane* 做为它的根节点
 ![New RootLayout](/assets/library/javafx-8-tutorial/part1/new-root-layout.png)
