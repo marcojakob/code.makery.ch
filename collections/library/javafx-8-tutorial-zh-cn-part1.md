@@ -188,7 +188,7 @@ languages:
 
 ## 创建主应用程序
 
-我们需要建立一个新的布局文件 `PersonOverview.fxml` 来做为主布局文件，它将包含一个菜单栏和你即将要显示的布局。
+我们还需要新建一个*FXML*文件来做为主布局文件，它将包含菜单栏并存放我们之前创建的布局文件 `PersonOverview.fxml` 。
 
 1. 在view包里面创建一个新的 *FXML Document* 叫做 `RootLayout.fxml`, 这一次，选择 *BorderPane* 做为它的根节点
 ![New RootLayout](/assets/library/javafx-8-tutorial/part1/new-root-layout.png)
