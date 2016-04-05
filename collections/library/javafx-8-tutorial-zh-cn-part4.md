@@ -255,7 +255,7 @@ languages:
 
 1. 在Scene Builder中打开`RootLayout.fxml`
 
-2. 在*Hierarchy*视图中选择根节点`BorderPan`。在*Properties*组中添加`DarkTheme.css`作为样式表。
+2. 在*Hierarchy*视图中选择根节点`BorderPane`。在*Properties*组中添加`DarkTheme.css`作为样式表。
 
 ![DarkTheme for RootLayout](/assets/library/javafx-8-tutorial/part4/darktheme-rootlayout.png)
 
@@ -294,7 +294,7 @@ languages:
 1. 选择*Person Detail*标签，添加`label-header`作为样式类。
 ![Label Header Style](/assets/library/javafx-8-tutorial/part4/label-header-style.png)
 
-2. 为了让右边栏的每个Label（显示实际人员的详情），添加CSS样式类`label-bright`。
+2. 给右边一列的每个Label（显示人员详情的那列）添加CSS样式类`label-bright`。
 ![Label Bright Style](/assets/library/javafx-8-tutorial/part4/label-bright-style.png)
 
 
