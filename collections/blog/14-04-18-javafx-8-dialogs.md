@@ -302,7 +302,7 @@ service.start();
 
 ## Custom Dialogs
 
-Using the [lower-level API](http://controlsfx.bitbucket.org/org/controlsfx/dialog/Dialog.html) of ControlsFX you can create custom dialogs.
+Using the lower-level API of ControlsFX you can create custom dialogs.
 
 Here is an example of how to create a login form:
 
@@ -355,11 +355,3 @@ public void start(Stage stage) {
 
     dlg.show();
 </pre>
-
-
-## Further Information
-
-**The javadoc documentation of ControlsFX is very good!** Look up the following pages for further info about Dialogs:
-
-* [ControlsFX Dialogs](http://controlsfx.bitbucket.org/org/controlsfx/dialog/Dialogs.html)
-* [ControlsFX Dialog](http://controlsfx.bitbucket.org/org/controlsfx/dialog/Dialog.html) - lower-level API for custom dialogs
