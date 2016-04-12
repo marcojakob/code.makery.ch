@@ -68,9 +68,9 @@ Nelle parti fionali di questa serie di tutorial mostreremo come effettuare il de
 
 ## Cos'è il Deployment
 
-Il deplyoment è il processo di impacchettare e ditribuire agli utenti il software sviluppato. Si tratta di una parte cruciale del processo di sviluppo del software poichè costituisce il primo contatto che gli utenti avranno con il nostro sofware.
+Il deplyoment è il processo di impacchettamento e distribuzione verso gli utenti del software che abbiamo sviluppato. Si tratta di una parte cruciale del processo di sviluppo poichè costituisce il primo contatto che gli utenti avranno con il nostro software.
 
-Java viene pubblicizzato con lo slogan **Write Once, Run Anywhere** (scrivi una volta, esegui ovunque) per illustrare i benefici *multi-piattaforma* del linguaggio Java. Idealmente questo significa che la nostra applicazione Java puà essere eseguita su qualsiasi dispositivo equipaggiato con una Java virtual machine (JVM).
+Java viene pubblicizzato con lo slogan **Write Once, Run Anywhere** (scrivi una volta, esegui ovunque) per illustrare i benefici *multi-piattaforma* del linguaggio Java. Idealmente questo significa che la nostra applicazione Java puà essere eseguita su qualsiasi dispositivo equipaggiato con una Java Virtual Machine (JVM).
 
 In passato, la user experience per l'installazione di applicazioni Java non sempre filava liscio. Se l'utente non disponeva della versione richiesta di Java sul proprio sistema, veniva prima indirizzato sull'installazione. Questo conduceva ad alcune difficoltà, ad esempio la necessità di disporre di diritti di amministrazione, problemi di compatibilità tra le versioni di Java ecc.
 
@@ -78,22 +78,22 @@ Fortunatamente, JavaFX fornisce una nuova opzione di deploy chiamata **Package N
 
 La documentazione JavaFX di Oracle contiene una guida esaustiva per tutte le possibili [opzioni di deploy JavaFX](http://docs.oracle.com/javafx/2/deployment/jfxpub-deployment.htm). 
 
-In questo posto vi mostrerò come creare un **Package Nativo** con eclipse e il [**plugin e(fx)clipse **](http://www.eclipse.org/efxclipse/).
+In questo post vi mostrerò come creare un **Package Nativo** con eclipse e il [**plugin e(fx)clipse **](http://www.eclipse.org/efxclipse/).
 
 
 *****
 
 ## Creare un Package Nativo
 
-L'obiettivo è di creare una applicazione auto-consistente in una singola cartella sul computer dell'utente. Ecco questo come apparirà per la nostra appliazione AddressApp (su Windows):
+L'obiettivo è di creare una applicazione auto-consistente in una singola cartella sul computer dell'utente. Ecco come questo apparirà per la nostra appliazione AddressApp (su Windows):
 
 ![AddressApp Native Package](/assets/library/javafx-8-tutorial/part7/native-package.png)
 
-La cartella `app` contiene i dati della nostra applicazione mentre la cartella `runtime` contiene l'ambiente Java di runtime specifico.
+La cartella `app` contiene i dati della nostra applicazione mentre la cartella `runtime` contiene lo specifico ambiente Java di runtime.
 
 Per rendere il tutto ancora più semplice per l'utente, forniremo un installer:
 
-* Un installe per windows sotto forma di file `exe`
+* Un installer per windows sotto forma di file `exe`
 * Un installer (drag and drop) per MacOS sotto forma di `dmg` (drag and drop)
 
 Il plugin e(fx)clipse ci aiuterà a generare il package nativo e l'installer.
@@ -129,9 +129,9 @@ Vorremo avere delle icone carine per il nostro installer:
 1. Create le seguenti sotto-cartelle nella cartella  `build`:
   * `build/package/windows` (utilizzata solo per windows)
   * `build/package/macosx` (utilizzata solo per macos)
-2. Copia le icone corrispondenti sopra dentro le sottocartelle. Adesso dovrebbe apparire così:   
+2. Copiate le icone sopra dentro le sottocartelle corrispondenti. Adesso dovrebbe apparire così:   
 ![Installer Icons](/assets/library/javafx-8-tutorial/part7/installer-icons.png)
-3. **Important**: Il nome delle icone deve corrispondere esattamente al campo **Application title** che avete specificato nel file `build.fxbuild`:
+3. **Importante**: Il nome delle icone deve corrispondere esattamente al campo **Application title** che avete specificato nel file `build.fxbuild`:
   * `YourAppTitle.ico`
   * `YourAppTitle-setup-icon.bmp`
   * `YourAppTitle.icns`
@@ -154,7 +154,7 @@ E(fx)clipse ha generato un  file `build/build.xml` che è pronto per essere dato
 
 Dato che non è possibile (per il momento) istruire e(fx)clipse per includere risorse addizionali alla nostra cartella `resources` e le icone degli installer che abbiamo aggiunto sopra, dobbiamo modificare manualmente il file `build.xml`:
 
-Aprite `build.xml` e cercate l'elemento `fxant`. Aggiungete una riga per la `${basedir}` (ciò renderà disponibile le icone degli installer):
+Aprite `build.xml` e cercate l'elemento `fxant`. Aggiungete una riga per la `${basedir}` (ciò renderà disponibili le icone degli installer):
 
 
 ##### build.xml - add "basedir"
@@ -245,7 +245,7 @@ Il file `AddressApp-1.0.exe` può essere utilizzato per installare l'applicazion
 
 Spero che questo tutorial vi sia stato d'aiuto per iniziare con JavaFX e che sarete in grado di scrivere il vostro progetto JavaFX a partire da adesso.
 
-Ogni feedback sarà apprezzato. Sentitevi liberidi lasciare commento se avete dei suggerimnto o se qualcosa non vi è chiaro.
+Ogni feedback sarà apprezzato. Sentitevi liberi di lasciare un commento se avete dei suggerimenti o se qualcosa non vi è chiaro.
 
 
 ##### Qualche altro articolo che potreste trovare interessante
