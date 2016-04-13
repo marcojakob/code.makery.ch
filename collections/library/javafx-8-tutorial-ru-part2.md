@@ -392,7 +392,7 @@ public void showPersonOverview() {
 3. Выберите компонент `TableView` на вкладке *Hierarchy*, перейдите на вкладку *Code* и установите значение `personTable` полю **fx:id**.  
 ![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png "Set TableView fx:id")
 
-4. Сделайте то же самое для колонок таблицы и установите значения свойства **fx:id** `firstNameColumn` и `secondNameColumn` соответствено.
+4. Сделайте то же самое для колонок таблицы и установите значения свойства **fx:id** `firstNameColumn` и `lastNameColumn` соответствено.
 
 5. Для каждой метки во второй колонке компонента GridPane также установите соответствующие значения **fx:id**.  
 ![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png "Set Label fx:id")
