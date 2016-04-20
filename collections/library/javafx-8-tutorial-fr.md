@@ -85,7 +85,7 @@ Maintenant, j'espère que vous allez vous amuser ! Commencez avec la [Partie 1: 
   <ul>
     <li><a href="https://github.com/chakram" class="alert-link">Chakram</a></li> 
     <li><a href="https://github.com/Davidmue" class="alert-link">David Müller</a></li> 
-    <li><a href="https://github.com/Nashka" class="alert-link">Mathieu Dejean-Servieres</a></li> 
+    <li><a href="https://github.com/mdejeans" class="alert-link">Mathieu Dejean-Servieres</a></li> 
     <li><a href="https://github.com/Kynarth" class="alert-link">Nicolas Belouin</a></li> 
   </ul>
   Thank you very much!
