@@ -1,8 +1,8 @@
----
+﻿---
 layout: article
 title: "Учебник по JavaFX 8 - Часть 5: Хранение данных в XML"
 date: 2014-04-25 00:00
-updated: 2014-12-04 00:00
+updated: 2016-22-04 00:00
 slug: javafx-8-tutorial/ru/part5
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part5.md
 description: "Сохранение данных в XML с помощью JAXB. Учимся использовать JavaFX-компоненты FileChooser и Menu."
@@ -35,7 +35,7 @@ sidebars:
   - text: "Часть 6: Статистическая диаграмма"
     link: /library/javafx-8-tutorial/ru/part6/
     paging: 6
-  - text: "Часть 7: Развертывание"
+  - text: "Часть 7: Развёртывание"
     link: /library/javafx-8-tutorial/ru/part7/
     paging: 7
 - header: Скачать исходники
@@ -59,20 +59,20 @@ languages:
 * **Хранение данных в XML**
 * Использование компонента JavaFX **FileChooser**
 * Использование компонента JavaFX **Menu**
-* Сохранение пути к последнему открытому файлу в пользовательских настройках
+* Сохранение в пользовательских настройках пути к последнему открытому файлу
 
 
 
 *****
 
-На данный момент наше приложение умеет хранить данные только в памяти. Каждый раз, когда мы закрываем приложение наши данные теряются. Поэтому настало время подумать о постоянном хранении данных.
+На данный момент наше приложение может хранить данные только в памяти. Каждый раз, когда мы закрываем адресную книгу, все данные теряются. Поэтому настало время подумать о постоянном хранении данных.
 
 
 ## Сохранение пользовательских настроек
 
-Java позволяет нам хранить некоторые данные о состоянии приложения в классе `Preferences`. В зависимости от операционной системы, класс `Preferences` записывает данные в разные места (например, в файл регистра в ОС Windows).
+Java позволяет хранить некоторые данные о состоянии приложения в классе `Preferences`. В зависимости от операционной системы, класс `Preferences` пишет данные в разные места (например, в файл реестра Windows).
 
-Мы не можем использовать класс `Preferences` для хранения всей нашей записной книжки. Но мы можем сохранить там некоторые настройки приложения, например, путь к последнему открытому файлу. Имея эти данные, мы сможем восстанавливать состояние нашего приложения после перезагрузки.
+Мы не можем использовать класс `Preferences` для хранения всей записной книжки. Но мы можем сохранить в нём некоторые настройки приложения, например, путь к последнему открытому файлу. Имея эти данные, мы сможем после перезапуска восстанавливать состояние нашего приложения.
 
 Следующие два метода обеспечивают сохранение и восстановление настроек нашего приложения. Добавьте их в конец класса `MainApp`:
 
@@ -124,7 +124,7 @@ public void setPersonFilePath(File file) {
 
 ### Почему именно XML?
 
-Использование баз данных является одним из наиболее распостраненных способов хранения данных. Пока наши данные, которые мы должны хранить, являются объектами, базы данных содержат их в виде реляционных данных (например, таблиц). Это называется [object-relational impedance mismatch](http://wikipedia.org/wiki/Object-relational_impedance_mismatch). Но для того, чтобы привести наши объектные данные в соответствие с реалицяонными таблицами требуется выполнить дополнительную работу. Существуют фреймворки, которые помогают приводить наши объектные данные в соответствие с реляционной базой данных ([Hibernate](http://www.hibernate.org/) - один из наиболее популярных), но чтобы начать их использовать, также необходимо проделать дополнительную работу на настройку.
+Использование баз данных это один из наиболее распространённых способов хранения данных. Пока наши данные, которые мы должны хранить, являются объектами, базы данных содержат их в виде реляционных данных (например, таблиц). Это называется [объектно-реляционное рассогласование импендансов](http://wikipedia.org/wiki/Object-relational_impedance_mismatch). Но для того, чтобы привести наши объектные данные в соответствие с реляционными таблицами, требуется выполнить дополнительную работу. Существуют фреймворки, которые помогают приводить наши объектные данные в соответствие с реляционной базой данных ([Hibernate](http://www.hibernate.org/) - один из наиболее популярных), но чтобы начать их использовать, также необходимо проделать дополнительную работу и настройку.
 
 Для нашего простого приложения намного легче хранить данные в виде XML. Для этого мы будем использовать библиотеку [JAXB](https://jaxb.java.net/ "JAXB Homepage") (**J**ava **A**rchitechture for **X**ML **B**inding). Написав всего несколько строк кода, JAXB позволит нам сгенерировать такой исходный XML-файл:
 
@@ -156,16 +156,16 @@ public void setPersonFilePath(File file) {
 
 ### Использование JAXB
 
-Библиотека JAXB изначально включена в JDK. Это значит, что никаких дополнительных библиотек нам подключать не придется.
+Библиотека JAXB изначально включена в JDK. Это значит, что нам не придётся подключать никаких дополнительных библиотек.
 
 JAXB предоставляет две основные функции: способность к **маршаллированию** Java-объектов в XML и обратную **демаршализацию** с xml-файла в Java-объекты.
 
-Для того, чтобы JAXB предоставила возможность такой конвертации, нам необходимо подготовить нашу модель.
+Для того, чтобы с помощью JAXB можно было выполнять подобные преобразования, нам необходимо подготовить нашу модель.
 
 
 #### Подготовка класса-модели для JAXB
 
-Данные, которые мы хотим сохранить находятся в переменной `personData` в классе `MainApp`. JAXB требует пометить аннотацией `@XmlRootElement` внешний класс наших данных (только класс, поле этой аннотацией пометить нельзя). Тип переменной `personData` является `ObservableList`, на который мы не можем поставить аннотацию. Поэтому, для того, чтобы решить эту проблему нам необходимо создать класс-обертку, который будет содержать только нашу коллекцию записей, и на который мы поставим аннотацию `@XmlRootElement`.
+В переменной `personData` класса `MainApp` находятся данные, которые мы хотим сохранять. JAXB требует пометить внешний класс наших данных аннотацией `@XmlRootElement` (только класс, поле этой аннотацией пометить нельзя). Типом переменной `personData` является `ObservableList`, его мы не можем отметить аннотацией. Для того, чтобы разрешить эту ситуацию, необходимо создать класс-обёртку, который будет содержать только нашу коллекцию записей, и на который мы поставим аннотацию `@XmlRootElement`.
 
 Создайте в пакете `model` новый класс `PersonListWrapper`.
 
@@ -189,23 +189,23 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name = "persons")
 public class PersonListWrapper {
 
-	private List&lt;Person> persons;
+    private List<Person> persons;
 
-	@XmlElement(name = "person")
-	public List&lt;Person> getPersons() {
-		return persons;
-	}
+    @XmlElement(name = "person")
+    public List<Person> getPersons() {
+        return persons;
+    }
 
-	public void setPersons(List&lt;Person> persons) {
-		this.persons = persons;
-	}
+    public void setPersons(List<Person> persons) {
+        this.persons = persons;
+    }
 }
 </pre>
 
 Обратите внимание на две аннотации:
 
 * `@XmlRootElement` определяет имя корневого элемента.
-* `@XmlElement` оппределяет имя элемента, которое нам указывать необязательно.
+* `@XmlElement` определяет имя элемента, которое нам указывать необязательно.
 
 
 #### Чтение и запись данных с помощью JAXB
@@ -236,13 +236,15 @@ public void loadPersonDataFromFile(File file) {
         setPersonFilePath(file);
 
     } catch (Exception e) { // catches ANY exception
-        Dialogs.create()
-                .title("Error")
-                .masthead("Could not load data from file:\n" + file.getPath())
-                .showException(e);
+        Alert alert = new Alert(AlertType.ERROR);
+        alert.setTitle("Error");
+        alert.setHeaderText("Could not load data");
+        alert.setContentText("Could not load data from file:\n" + file.getPath());
+
+        alert.showAndWait();
     }
 }
-	
+
 /**
  * Saves the current person data to the specified file.
  * 
@@ -265,32 +267,35 @@ public void savePersonDataToFile(File file) {
         // Save the file path to the registry.
         setPersonFilePath(file);
     } catch (Exception e) { // catches ANY exception
-        Dialogs.create().title("Error")
-                .masthead("Could not save data to file:\n" + file.getPath())
-                .showException(e);
+        Alert alert = new Alert(AlertType.ERROR);
+        alert.setTitle("Error");
+        alert.setHeaderText("Could not save data");
+        alert.setContentText("Could not save data to file:\n" + file.getPath());
+
+        alert.showAndWait();
     }
 }
 </pre>
 
-Возможность маршаллинга и демаршализации готовы. Теперь давайте создадим пункты меню "*Сохранить*" и "*Загрузить*" для того, чтобы использовать данные возможности. 
+Маршаллинг и демаршализация готовы. Теперь для того, чтобы использовать данные возможности, давайте создадим пункты меню "*Сохранить*" и "*Загрузить*". 
 
 
 ## Обработка действий меню
 
-Мы уже создавали меню в файле `RootLayout.fxml`, которое пока еще не использовали. Перед тем, как мы добавим поведение нашему меню, давайте создадим все необходимые нам пункты.
+Мы уже создавали меню в файле `RootLayout.fxml`, но пока не использовали его. Перед тем, как мы добавим поведение нашему меню, давайте создадим в нём все необходимые нам пункты.
 
-Откройте файл `RootLayout.fxml` в приложении Scene Builder и перенесите необходимое количество пунктов меню из вкладки *Library* на вкладку *Hierarchy*. Создайте следующие пункты меню:  **New**, **Open...**, **Save**, **Save as...** и **Exit**.
+Откройте файл `RootLayout.fxml` в приложении Scene Builder и перенесите необходимое количество пунктов меню (MenuItem) из вкладки *Library* на вкладку *Hierarchy*. Создайте следующие пункты меню:  **New**, **Open...**, **Save**, **Save as...** и **Exit**.
 
 ![Add Menu Items](/assets/library/javafx-8-tutorial/part5/add-menu-items.png)
 
-Подсказка: Используйте свойство *Accelerator* в вкладке *Properties* для установки горячих клавиш на пункты меню.
+Подсказка: Используйте свойство *Accelerator* в вкладке *Properties* для установки на пункты меню горячих клавиш.
 
 
 ### Класс RootLayoutController
 
-Для обработки поведения меню нам необходимо новый класс-контроллер. Создайте класс `RootLayoutController` в пакете `ch.makery.address.view`.
+Для обработки поведения меню нам необходим ещё один класс-контроллер. Создайте класс `RootLayoutController` в пакете `ch.makery.address.view`.
 
-Добавьте к классу-контроллеру следующее содержание:
+Добавьте новому классу-контроллеру следующее содержание:
 
 
 ##### RootLayoutController.java
@@ -301,10 +306,9 @@ package ch.makery.address.view;
 import java.io.File;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.stage.FileChooser;
-
-import org.controlsfx.dialog.Dialogs;
-
 import ch.makery.address.MainApp;
 
 /**
@@ -376,35 +380,36 @@ public class RootLayoutController {
      */
     @FXML
     private void handleSaveAs() {
-		FileChooser fileChooser = new FileChooser();
+        FileChooser fileChooser = new FileChooser();
 
-		// Set extension filter
-		FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter(
-				"XML files (*.xml)", "*.xml");
-		fileChooser.getExtensionFilters().add(extFilter);
+        // Set extension filter
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter(
+                "XML files (*.xml)", "*.xml");
+        fileChooser.getExtensionFilters().add(extFilter);
 
-		// Show save file dialog
-		File file = fileChooser.showSaveDialog(mainApp.getPrimaryStage());
+        // Show save file dialog
+        File file = fileChooser.showSaveDialog(mainApp.getPrimaryStage());
 
-		if (file != null) {
-			// Make sure it has the correct extension
-			if (!file.getPath().endsWith(".xml")) {
-				file = new File(file.getPath() + ".xml");
-			}
-			mainApp.savePersonDataToFile(file);
-		}
-	}
+        if (file != null) {
+            // Make sure it has the correct extension
+            if (!file.getPath().endsWith(".xml")) {
+                file = new File(file.getPath() + ".xml");
+            }
+            mainApp.savePersonDataToFile(file);
+        }
+    }
 
     /**
      * Opens an about dialog.
      */
     @FXML
     private void handleAbout() {
-		Dialogs.create()
-	        .title("AddressApp")
-	        .masthead("About")
-	        .message("Author: Marco Jakob\nWebsite: http://code.makery.ch")
-	        .showInformation();
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle("AddressApp");
+        alert.setHeaderText("About");
+        alert.setContentText("Author: Marco Jakob\nWebsite: http://code.makery.ch");
+
+        alert.showAndWait();
     }
 
     /**
@@ -420,26 +425,26 @@ public class RootLayoutController {
 
 #### Компонент FileChooser
 
-Обратите внимание на методы, которые используют компонент `FileChooser` в классе `RootLayoutController`. Сперва мы создаем новый экземпляр класса `FileChooser`. Потом мы применяем фильтр расширешия и при выборе файлов будут показываться только те, которые имеют расширение `.xml`. Ну и наконец, мы отображаем данный компонент поверх нашей *PrimaryStage*.
+Обратите внимание на методы в классе `RootLayoutController`, которые используют компонент `FileChooser`. Сперва мы создаём новый экземпляр класса `FileChooser`. Потом применяем фильтр расширения - при выборе файлов будут показываться только те, которые имеют расширение `.xml`. Ну и наконец, мы отображаем данный компонент поверх *PrimaryStage*.
 
-Если пользователь закрывает диалог выбора файлов не выбрав ни никакого файла, тогда возвращается `null`. В противном случае мы берем выбранный файл и передаем его внутрь метода `loadPersonDataFromFile(...)` или `savePersonDataToFile(...)`, которые находятся в классе `MainApp.`
+Если пользователь закрывает диалог выбора файлов не выбрав ни никакого файла, то возвращается `null`. В противном случае мы берём выбранный файл и передаём его в методы `loadPersonDataFromFile(...)` или `savePersonDataToFile(...)`, которые находятся в классе `MainApp.`
 
 
-### Соединение fxml-файла с классом-контроллером
+### Связывание fxml-файла с классом-контроллером
 
 1. Откройте файл `RootLayout.fxml` в приложении Scene Builder. На вкладке *Controller* в качестве класса-контроллера выберите значение `RootLayoutController`.
 
-2. Перейдите на вкладку *Hierarchy* и выберите пункт меню. Во вкладке *Code* в качестве значений свойства *On Action* вы сможете увидеть все доступные методы выбранного класса-контроллера. Выберите метод, соответствующий данному пункту меню.  
+2. Перейдите на вкладку *Hierarchy* и выберите пункт меню. Во вкладке *Code* в качестве значений свойства *On Action* вы можете увидеть все доступные методы выбранного класса-контроллера. Выберите метод, соответствующий данному пункту меню.  
 ![Menu Actions](/assets/library/javafx-8-tutorial/part5/menu-actions.png)
 
 3. Повторите предыдущий шаг для каждого пункта меню.
 
-4. Закройте приложение Scene Builder и оновите ваш проект (нажмите **Refresh (F5)** на корневой папке вашего проекта). Это позволит среде разработки Eclipse увидеть сделанные вами изменения в приложении Scene Builder.
+4. Закройте приложение Scene Builder и обновите проект (нажмите **Refresh (F5)** на корневой папке вашего проекта). Это позволит среде разработки Eclipse "увидеть" изменения, сделанные вами в приложении Scene Builder.
 
 
-### Соединение основного класса с классом RootLayoutController
+### Связывание основного класса с классом RootLayoutController
 
-В некоторых местах кода класс `RootLayoutController` требует ссылку на класс `MainApp`. Пока мы эту ссылку еще не передали.
+В некоторых местах кода класс `RootLayoutController` требует ссылку на класс `MainApp`. Пока мы эту ссылку ещё не передали.
 
 Откройте класс `MainApp` и замените метод `initRootLayout()` следующим кодом:
 
@@ -482,11 +487,11 @@ public void initRootLayout() {
 
 ### Тестирование
 
-Устроив тест-драйв вашему приложению убедитесь, что вы способны использовать меню для сохранения записей адресов в файл.
+Устроив небольшой тест-драйв вашему приложению убедитесь, что вы уже можете использовать меню для сохранения в файл адресных данных.
 
-Когда вы откроете `xml`-файл в редакторе, то вместо значения дня рождения вы увидите пустой тег `<birthday/>`. Дело в том, что JAXB не знает как сконвертировать тип `LocalDate` в XML. Поэтому мы должны предоставить собственный класс `LocalDateAdapter` и определить процесс конвертации вручную.
+Когда вы откроете `xml`-файл в редакторе, то вместо значения дня рождения увидите пустой тег `<birthday/>`. Дело в том, что JAXB не знает как преобразовать в XML тип `LocalDate`. Мы должны предоставить собственный класс `LocalDateAdapter` и вручную определить процесс преобразования.
 
-Создайте новый класс `LocalDateAdapter` внутри пакета `ch.makery.address.util` и скопируйте туда следующий код:
+Внутри пакета `ch.makery.address.util` создайте новый класс `LocalDateAdapter` и скопируйте туда следующий код:
 
 ##### LocalDateAdapter.java
 
@@ -503,19 +508,20 @@ import javax.xml.bind.annotation.adapters.XmlAdapter;
  * 
  * @author Marco Jakob
  */
-public class LocalDateAdapter extends XmlAdapter&lt;String, LocalDate> {
+public class LocalDateAdapter extends XmlAdapter<String, LocalDate> {
 
-	@Override
-	public LocalDate unmarshal(String v) throws Exception {
-		return LocalDate.parse(v);
-	}
+    @Override
+    public LocalDate unmarshal(String v) throws Exception {
+        return LocalDate.parse(v);
+    }
 
-	@Override
-	public String marshal(LocalDate v) throws Exception {
-		return v.toString();
-	}
+    @Override
+    public String marshal(LocalDate v) throws Exception {
+        return v.toString();
+    }
 }
 </pre>
+
 
 Потом откройте класс `Person.java` и добавьте к методу `getBirthday()` следующую аннотацию:
 
@@ -526,29 +532,29 @@ public LocalDate getBirthday() {
 }
 </pre>
 
-Теперь протестируйте приложение еще раз. Попытайтесь сохранить и загрузить xml-файл с данными. После перезапуска, приложение должно автоматически загрузить последний открытый файл.
+Теперь протестируйте приложение ещё раз. Попытайтесь сохранить и загрузить xml-файл с данными. После перезапуска, приложение должно автоматически загрузить последний открытый файл.
 
 
 
 ## Как это работает
 
 
-Давайте посмотрим как все это работает вместе:
+Давайте посмотрим как всё это работает вместе:
 
 1. Приложение запускается через метод `main(...)` из класса `MainApp`.
-2. Вызывается конструктор `public MainApp()` и добавляет некоторые тестовые данные.
-3. Дальше запускается метод `start(...)` в классе `MainApp` и вызывает метод `initRootLayout()` для инициализации корневой разметки с файла `RootLayout.fxml`. Файл fxml владеет информацией о том, какой контроллер использовать и связывает представление с `RootLayoutController`'ом.
-4. Класс `MainApp` получает ссылку на `RootLayoutController` с fxml-загрузчика и передает этому контроллеру ссылку на себя. С этой ссылкой контроллер потом сможет иметь доступ к публичным методам класса `MainApp`.
-5. В конце метода `initRootLayout` мы пытаемся вытянуть путь к последнему открытому файлу записей с настроек `Preferences`. Если настройки знают о таком файле, то мы загружаем с него данные. Эта процедура перезапишет наши тестовые данные, которые мы загружали в конструкторе. 
+2. Вызывается конструктор `public MainApp()` и добавляются некоторые тестовые данные.
+3. Дальше в классе `MainApp` запускается метод `start(...)`, который вызывает метод `initRootLayout()` для инициализации корневой разметки из файла `RootLayout.fxml`. Файл fxml уже знает, какой контроллер следует использовать и связывает представление с `RootLayoutController`'ом.
+4. Класс `MainApp` из fxml-загрузчика получает ссылку на `RootLayoutController` и передаёт этому контроллеру ссылку на самого себя. Потом, имея эту ссылку, контроллер может обращаться к публичным методам класса `MainApp`.
+5. В конце метода `initRootLayout` мы стараемся из настроек `Preferences` получить путь к последнему открытому файлу записей. Если этот файл в настройках описан, то мы загружаем из него данные. Эта процедура перезапишет тестовые данные, которые мы загружали в конструкторе. 
 
 
 ### Что дальше?
 
-В [6 Части Учебника](/library/javafx-8-tutorial/ru/part6/ "Tutorial Part 6") мы добавим статистический график дней рождений.
+В [6-й части учебника](/library/javafx-8-tutorial/ru/part6/ "Tutorial Part 6") мы добавим статистический график дней рождений.
 
 
 ##### Вам могут быть интересны также некоторые другие статьи
-* [JavaFX Dialogs](/blog/javafx-8-dialogs/)
+* [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
 * [JavaFX Date Picker](/blog/javafx-8-date-picker/)
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
