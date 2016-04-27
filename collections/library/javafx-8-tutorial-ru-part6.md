@@ -5,7 +5,7 @@ date: 2014-05-09 00:00
 updated: 2016-26-04 00:00
 slug: javafx-8-tutorial/ru/part6
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part6.md
-description: "Учимся создавать столбцовую диаграмму в JavaFX."
+description: "Учимся в JavaFX создавать столбцовую диаграмму."
 image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
 published: true
 prettify: true
@@ -56,14 +56,14 @@ languages:
 
 ## Часть 6: Содержание
 
-* Создание статистической диаграммы для показа распределения дней рождений.
+* Создание статистической диаграммы для показа распределения дней рождений по месяцам.
 
 
 *****
 
 ## Статистика дней рождений
 
-Все люди в нашем приложении AddressApp имеют дни рождения. Было бы неплохо видеть некоторую статистику о том, когда они празднуют свои дни рождения.
+Каждый адресат в нашем приложении AddressApp имеет свой день рождения. Было бы неплохо видеть некоторую статистику о том, когда они празднуют свои дни рождения.
 
 Мы будем использовать столбцовую диаграмму, один столбец будет символизировать один месяц. Каждый столбец будет показывать, сколько дней рождений приходится на его месяц.
 
@@ -75,7 +75,7 @@ languages:
 
 2. Откройте файл `BirthdayStatistics.fxml` в приложении Scene Builder.
 
-3. Выберите корневой компонент `AnchorPane`. Во вкладке *Layout* установите значение *Pref Width* на 620, а *Pref Height* на 450.
+3. Выберите корневой компонент `AnchorPane`. Во вкладке *Layout* установите значение *Pref Width* в 620, а *Pref Height* в 450.
 
 4. Добавьте на панель `AnchorPane` компонент `BarChart`.
 
@@ -112,7 +112,7 @@ import javafx.scene.chart.XYChart;
 import ch.makery.address.model.Person;
 
 /**
- * The controller for the birthday statistics view.
+ * Контроллер для представления статистики дней рождений.
  * 
  * @author Marco Jakob
  */
@@ -127,27 +127,27 @@ public class BirthdayStatisticsController {
     private ObservableList<String> monthNames = FXCollections.observableArrayList();
 
     /**
-     * Initializes the controller class. This method is automatically called
-     * after the fxml file has been loaded.
+     * Инициализирует класс-контроллер. Этот метод вызывается автоматически
+     * после того, как fxml-файл был загружен.
      */
     @FXML
     private void initialize() {
-        // Get an array with the English month names.
+        // Получаем массив с английскими именами месяцев.
         String[] months = DateFormatSymbols.getInstance(Locale.ENGLISH).getMonths();
-        // Convert it to a list and add it to our ObservableList of months.
+        // Преобразуем его в список и добавляем в наш ObservableList месяцев.
         monthNames.addAll(Arrays.asList(months));
 
-        // Assign the month names as categories for the horizontal axis.
+        // Назначаем имена месяцев категориями для горизонтальной оси.
         xAxis.setCategories(monthNames);
     }
 
     /**
-     * Sets the persons to show the statistics for.
+     * Задаёт адресатов, о которых будет показана статистика.
      * 
      * @param persons
      */
     public void setPersonData(List<Person> persons) {
-        // Count the number of people having their birthday in a specific month.
+        // Считаем адресатов, имеющих дни рождения в указанном месяце.
         int[] monthCounter = new int[12];
         for (Person p : persons) {
             int month = p.getBirthday().getMonthValue() - 1;
@@ -156,7 +156,8 @@ public class BirthdayStatisticsController {
 
         XYChart.Series<String, Integer> series = new XYChart.Series<>();
 
-        // Create a XYChart.Data object for each month. Add it to the series.
+        // Создаём объект XYChart.Data для каждого месяца.
+        // Добавляем его в серии.
         for (int i = 0; i < monthCounter.length; i++) {
             series.getData().add(new XYChart.Data<>(monthNames.get(i), monthCounter[i]));
         }
@@ -169,20 +170,20 @@ public class BirthdayStatisticsController {
 
 #### Как работает этот контроллер
 
-1. Контроллеру необходим доступ к двум элементам из нашего fxml-файла:
-    * Поле `barChart` использует типы данных `String` и `Integer`. Тип данных `String` отображает название месяцев на оси X, а тип данных `Integer` - количество записей в конкретном месяце.
+1. Контроллеру нужен доступ к двум элементам из нашего fxml-файла:
+    * `barChart` использует типы данных `String` и `Integer`. Тип данных `String` отображает название месяцев на оси X, а тип данных `Integer` - количество записей в конкретном месяце.
     * Ось `xAxis` мы используем для добавления названий месяцев.
 
 2. Метод `initialize()` заполняет ось X строковыми значениями названий всех месяцев.
 
-3. Метод `setPersonData(...)` будет доступен классу `MainApp` для передачи данных о людях. Он проходится по всем записям и подсчитывает количество дней рождений в каждом месяце. Потом он добавляет `XYChart.Data` для каждого месяца в серию данных `XYChart.Series`. Каждый объект `XYChart.Data` будет представлять один столбец на диаграмме.
+3. Метод `setPersonData(...)` будет доступен классу `MainApp` для передачи данных об адресатах. Он проходится по всем адресатам и подсчитывает количество дней рождений в каждом месяце. Потом он добавляет `XYChart.Data` для каждого месяца в серию данных `XYChart.Series`. Каждый объект `XYChart.Data` будет представлять один столбец диаграммы.
 
 
 *****
 
-## Соединяем Представление и Контроллер
+## Соединяем представление и контроллер
 
-1. Откройте файл `BirthdayStatistics.fxml` в приложении Scene Builder.
+1. В приложении Scene Builder откройте файл `BirthdayStatistics.fxml`.
 
 2. Во вкладке *Controller* установите в качестве контроллера `BirthdayStatisticsController`.
 
@@ -198,20 +199,20 @@ public class BirthdayStatisticsController {
 *****
 
 
-## Соединяем представление/контроллер с основным классом MainApp
+## Соединяем представление/контроллер с классом MainApp
 
-Для отображения статистики дней рождений мы будем использовать тот же механизм, что использовали для отображения окна редактирования записи.
+Для отображения статистики дней рождений мы будем использовать тот же механизм, что ранее использовали для отображения окна редактирования данных об адресатах.
 
 Добавьте следующий метод в класс `MainApp`:
 
 
 <pre class="prettyprint lang-java">
 /**
- * Opens a dialog to show birthday statistics.
+ * Открывает диалоговое окно для вывода статистики дней рождений.
  */
 public void showBirthdayStatistics() {
     try {
-        // Load the fxml file and create a new stage for the popup.
+        // Загружает fxml-файл и создаёт новую сцену для всплывающего окна.
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(MainApp.class.getResource("view/BirthdayStatistics.fxml"));
         AnchorPane page = (AnchorPane) loader.load();
@@ -222,7 +223,7 @@ public void showBirthdayStatistics() {
         Scene scene = new Scene(page);
         dialogStage.setScene(scene);
 
-        // Set the persons into the controller.
+        // Передаёт адресатов в контроллер.
         BirthdayStatisticsController controller = loader.getController();
         controller.setPersonData(personData);
 
@@ -234,16 +235,16 @@ public void showBirthdayStatistics() {
 }
 </pre>
 
-Всё готово. Но пока наш метод `showBirthdayStatistics()` нигде не вызывается. К счастью, в разметке `RootLayout.fxml` у нас есть меню, которое может быть использовано для этих целей.
+Всё готово. Правда, пока метод `showBirthdayStatistics()` нигде не вызывается. К счастью, в разметке `RootLayout.fxml` у нас есть меню, которое может быть использовано для этих целей.
 
 
 ### Отображаем меню статистики
 
-В класс `RootLayoutController` добавьте метод, который будет обрабатывать нажатие на пункте меню *Show Birthday Statistics*:
+В класс `RootLayoutController` добавьте метод, который будет обрабатывать нажатие пункта меню *Show Birthday Statistics*:
 
 <pre class="prettyprint lang-java">
 /**
- * Opens the birthday statistics.
+ * Открывает статистику дней рождений.
  */
 @FXML
 private void handleShowBirthdayStatistics() {
@@ -251,11 +252,11 @@ private void handleShowBirthdayStatistics() {
 }
 </pre>
 
-Теперь откройте файл `RootLayout.fxml` в приложении *Scene Builder* и создайте меню *Statistics* с пунктом меню *Show Statistics*:
+Теперь в приложении *Scene Builder* откройте файл `RootLayout.fxml` и создайте меню *Statistics* с единственным пунктом меню *Show Statistics*:
 
 ![Show Statistics Menu](/assets/library/javafx-8-tutorial/part6/show-statistics-menu.png)
 
-Выберите пункт меню *Show Statistics* и в качестве значения свойства `On Action` выберите метод `handleShowBirthdayStatistics`.
+Выберите пункт меню *Show Statistics* и в качестве значения свойства `On Action` установите метод `handleShowBirthdayStatistics`.
 
 ![Show Statistics On Action](/assets/library/javafx-8-tutorial/part6/show-statistics-on-action.png)
 
@@ -271,7 +272,7 @@ private void handleShowBirthdayStatistics() {
 
 ### Что дальше?
 
-В последней, [7-й части учебника](/library/javafx-8-tutorial/ru/part7/) мы наконец развернём наше приложение (т.е. упакуем и доставим приложение нашим пользователям).
+В последней, [7-й части учебника](/library/javafx-8-tutorial/ru/part7/) мы наконец развернём наше приложение (то есть, упакуем и доставим приложение нашим пользователям).
 
 
 ##### Вам могут быть интересны также некоторые другие статьи

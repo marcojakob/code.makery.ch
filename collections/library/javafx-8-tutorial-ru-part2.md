@@ -5,7 +5,7 @@ date: 2014-04-19 00:00
 updated: 2016-21-04 00:00
 slug: javafx-8-tutorial/ru/part2
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part2.md
-description: "Используйте JavaFX TableView для отображения списка персон из ObservableList"
+description: "Используйте JavaFX TableView для отображения списка людей из ObservableList"
 image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
 published: true
 prettify: true
@@ -65,7 +65,7 @@ languages:
 
 ## Создание класса-модели
 
-Класс-модель нам необходим для хранения в нашей адресной книге информации о людях. Добавьте класс `Person.java` в пакет `ch.makery.address.model`. В нем будет несколько переменных для хранения имени, адреса и дня рождения. Добавьте следующий код в этот класс.
+Класс-модель необходим для хранения в нашей будущей адресной книге информации об адресатах. Добавьте класс `Person.java` в пакет `ch.makery.address.model`. В нём будет несколько переменных для хранения информации об имени, адресе и дне рождения. Добавьте в этот класс следующий код.
 
 
 ##### Person.java
@@ -83,7 +83,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 /**
- * Model class for a Person.
+ * Класс-модель для адресата (Person).
  *
  * @author Marco Jakob
  */
@@ -97,14 +97,14 @@ public class Person {
 	private final ObjectProperty&lt;LocalDate&gt; birthday;
 
 	/**
-	 * Default constructor.
+	 * Конструктор по умолчанию.
 	 */
 	public Person() {
 		this(null, null);
 	}
 	
 	/**
-	 * Constructor with some initial data.
+	 * Конструктор с некоторыми начальными данными.
 	 * 
 	 * @param firstName
 	 * @param lastName
@@ -113,10 +113,10 @@ public class Person {
 		this.firstName = new SimpleStringProperty(firstName);
 		this.lastName = new SimpleStringProperty(lastName);
 		
-		// Some initial dummy data, just for convenient testing.
-		this.street = new SimpleStringProperty("some street");
+		// Какие-то фиктивные начальные данные для удобства тестирования.
+		this.street = new SimpleStringProperty("какая-то улица");
 		this.postalCode = new SimpleIntegerProperty(1234);
-		this.city = new SimpleStringProperty("some city");
+		this.city = new SimpleStringProperty("какой-то город");
 		this.birthday = new SimpleObjectProperty&lt;LocalDate&gt;(LocalDate.of(1999, 2, 21));
 	}
 	
@@ -197,40 +197,40 @@ public class Person {
 
 ### Объяснение
 
-* В JavaFX для всех полей класса-модели предпочтительно использовать [`Properties`](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html. `Property` позволяет нам получать автоматические уведомления при любых изменениях переменных, таких как `lastName` или других. Это позволяет поддерживать синхронность отображения и данных. Для более детального изучения `Properties` можно прочесть статью [Using JavaFX Properties and Binding](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm "Using JavaFX Properties and Binding");
+* В JavaFX для всех полей класса-модели предпочтительно использовать [`Properties`](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html. `Property` позволяет нам получать автоматические уведомления при любых изменениях переменных, таких как `lastName` или любых других. Это позволяет поддерживать синхронность представления и данных. Для более детального изучения `Properties` можно прочесть статью [Using JavaFX Properties and Binding](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm "Using JavaFX Properties and Binding");
 - Класс [`LocalDate`](http://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html), тип которого мы выбрали для нашей переменной `birthday`, это часть нового [Date and Time API для JDK 8](http://docs.oracle.com/javase/tutorial/datetime/iso/ "Date and Time API for JDK 8").
 
 
 *****
 
-## Список записей
+## Список людей
 
-Основные данные, которыми оперирует наше приложение - это группа экземпляров класса `Person`. Давайте внутри класса `MainApp.java` создадим список объектов класса `Person`. Все остальные классы-контроллеры позже получат доступ к этой центральной коллекции внутри класса `MainApp.java`.
+Основные данные, которыми оперирует наше приложение - это группа экземпляров класса `Person`. Давайте создадим в классе `MainApp.java` список объектов класса `Person`. Все остальные классы-контроллеры позже получат доступ к этому центральному списку внутри этого класса.
 
 
 ### Список ObservableList
 
-Мы работаем с классами-представлениями JavaFX, которые необходимо информировать при любых изменениях в в списке людей. Это важно, потому как, не будь этого, мы бы не смогли синхронизировать отображение данных с самими данными, которые у нас имеются. Для этой цели в JavaFX были введены некоторые новые [классы коллекций](http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm "Collection classes").
+Мы работаем с классами-представлениями JavaFX, которые необходимо информировать при любых изменениях в списке адресатов. Это важно, потому что, не будь этого, мы бы не смогли синхронизировать представление данных с самими данными. Для этой цели в JavaFX были введены некоторые новые [классы коллекций](http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm "Collection classes").
 
-Из этих классов нам понадобится класс `ObservableList`. Для создания экземпляра данного класса добавьте приведенный код в начало `MainApp.java`. Мы так же добавим в код конструктор, который будет создавать некоторые демонстрационный данные и метод-геттер с публичным модификатором доступа:
+Из этих классов нам понадобится класс `ObservableList`. Для создания экземпляра данного класса добавьте приведённый код в начало `MainApp.java`. Мы так же добавим в код конструктор, который будет создавать некоторые демонстрационный данные и метод-геттер с публичным модификатором доступа:
 
 
 ##### MainApp.java
 
 <pre class="prettyprint lang-java">
 
-    // ... AFTER THE OTHER VARIABLES ...
+    // ... ПОСЛЕ ДРУГИХ ПЕРЕМЕННЫХ ...
 
 	/**
-	 * The data as an observable list of Persons.
+	 * Данные, в виде наблюдаемого списка адресатов.
 	 */
 	private ObservableList&lt;Person&gt; personData = FXCollections.observableArrayList();
 
 	/**
-	 * Constructor
+	 * Конструктор
 	 */
 	public MainApp() {
-		// Add some sample data
+		// В качестве образца добавляем некоторые данные
 		personData.add(new Person("Hans", "Muster"));
 		personData.add(new Person("Ruth", "Mueller"));
 		personData.add(new Person("Heinz", "Kurz"));
@@ -243,14 +243,14 @@ public class Person {
 	}
   
 	/**
-	 * Returns the data as an observable list of Persons. 
+	 * Возвращает данные в виде наблюдаемого списка адресатов.
 	 * @return
 	 */
 	public ObservableList&lt;Person&gt; getPersonData() {
 		return personData;
 	}
   
-    // ... THE REST OF THE CLASS ...
+    // ... ОСТАЛЬНАЯ ЧАСТЬ КЛАССА ...
 </pre>
 
 
@@ -258,13 +258,13 @@ public class Person {
 
 ## Класс PersonOverviewController
 
-Теперь мы отобразим в нашей таблице некоторые данные. Для этого необходимо создать класс-контроллер для нашего `PersonOverview.fxml`.
+Теперь мы отобразим в нашей таблице некоторые данные. Для этого необходимо создать класс-контроллер для представления `PersonOverview.fxml`.
 
-1. Создайте новый класс внутри пакета `view` и назовите его `PersonOverviewController.java`. (Мы должны разместить наш класс-контроллер в том же пакете, где находится файл разметки `PersonOverview.fxml`, иначе Scene Builder не сможет его найти.)
-2. Для того, чтобы внутри нашего окна получить доступ к таблице и меткам, мы определим некоторые переменные. Эти переменные и некоторые методы имеют специальную аннотацию `@FXML`. Она необходима для того, чтобы fxml-файл имел доступ к приватным полям и методам. После этого мы настроим наш fxml-файл так, что при его загрузке приложение автоматически заполняло эти переменные данными. Итак, давайте добавим следующий код в наш класс:
+1. Создайте новый класс внутри пакета `view` и назовите его `PersonOverviewController.java`. (Мы должны разместить этот класс-контроллер в том же пакете, где находится файл разметки `PersonOverview.fxml`, иначе Scene Builder не сможет его найти.)
+2. Для того, чтобы получить доступ к таблице и меткам представления, мы определим некоторые переменные. Эти переменные и некоторые методы имеют специальную аннотацию `@FXML`. Она необходима для того, чтобы fxml-файл имел доступ к приватным полям и методам. После этого мы настроим наш fxml-файл так, что при его загрузке приложение автоматически заполняло эти переменные данными. Итак, давайте добавим следующий код в наш класс:
 
 <div class="alert alert-info">
-**Заметка**: При импорте пакетов всегда используйте пакет ***javafx***, а НЕ *awt* или *swing*!
+**Примечание**: При импорте пакетов всегда используйте пакет ***javafx***, а НЕ *awt* или *swing*!
 </div>
 
 
@@ -301,36 +301,36 @@ public class PersonOverviewController {
     @FXML
     private Label birthdayLabel;
 
-    // Reference to the main application.
+    // Ссылка на главное приложение.
     private MainApp mainApp;
 
     /**
-     * The constructor.
-     * The constructor is called before the initialize() method.
+     * Конструктор.
+     * Конструктор вызывается раньше метода initialize().
      */
     public PersonOverviewController() {
     }
 
     /**
-     * Initializes the controller class. This method is automatically called
-     * after the fxml file has been loaded.
+     * Инициализация класса-контроллера. Этот метод вызывается автоматически
+     * после того, как fxml-файл будет загружен.
      */
     @FXML
     private void initialize() {
-    	// Initialize the person table with the two columns.
+    	// Инициализация таблицы адресатов с двумя столбцами.
         firstNameColumn.setCellValueFactory(cellData -> cellData.getValue().firstNameProperty());
         lastNameColumn.setCellValueFactory(cellData -> cellData.getValue().lastNameProperty());
     }
 
     /**
-     * Is called by the main application to give a reference back to itself.
+     * Вызывается главным приложением, которое даёт на себя ссылку.
      * 
      * @param mainApp
      */
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
 
-        // Add observable list data to the table
+        // Добавление в таблицу данных из наблюдаемого списка
         personTable.setItems(mainApp.getPersonData());
     }
 }
@@ -366,19 +366,19 @@ public class PersonOverviewController {
 
 <pre class="prettyprint lang-java">
 /**
- * Shows the person overview inside the root layout.
+ * Показывает в корневом макете сведения об адресатах.
  */
 public void showPersonOverview() {
     try {
-        // Load person overview.
+        // Загружаем сведения об адресатах.
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(MainApp.class.getResource("view/PersonOverview.fxml"));
         AnchorPane personOverview = (AnchorPane) loader.load();
 
-        // Set person overview into the center of root layout.
+        // Помещаем сведения об адресатах в центр корневого макета.
         rootLayout.setCenter(personOverview);
 
-<mark>        // Give the controller access to the main app.
+<mark>        // Даём контроллеру доступ к главному приложению.
         PersonOverviewController controller = loader.getController();
         controller.setMainApp(this);</mark>
 
@@ -395,7 +395,7 @@ public void showPersonOverview() {
 
 ## Привязка класса-контроллера к fxml-файлу
 
-Данная часть учебника близится к своему завершению! Но мы пропустили одну маленькую деталь: мы не указали файлу `PersonOverview.fxml`, какой контроллер он должен использовать, а так же не указали соответствие между элементами представления и полями внутри класса-контроллера. Для этого:
+Данная часть учебника близится к своему завершению, однако мы пропустили одну маленькую деталь! Мы не сказали файлу `PersonOverview.fxml`, какой контроллер он должен использовать, а так же не указали соответствие между элементами представления и полями внутри класса-контроллера. Для этого:
 
 1. Откройте файл `PersonOverview.fxml` в приложении *Scene Builder*.
 
@@ -417,11 +417,11 @@ public void showPersonOverview() {
 
 ## Запуск приложения
 
-После запуска приложения мы должны будете увидеть что-то похожее на то, что изображено на картинке в начале данной статьи.
+После запуска приложения мы должны увидеть что-то похожее на то, что изображено на картинке в начале данной статьи.
 
 Поздравляю!
 
-*Примечание: пока ещё при выборе человека метки обновляться не будут. Взаимодействие с пользователем мы будем программировать в следующей части учебника.*
+*Примечание: пока ещё при выборе конкретного адресата у нас не обновляются метки. Взаимодействие с пользователем мы будем программировать в следующей части учебника.*
 
 
 ### Что дальше?

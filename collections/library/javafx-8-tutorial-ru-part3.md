@@ -5,7 +5,7 @@ date: 2014-04-24 00:00
 updated: 2016-21-04 00:00
 slug: javafx-8-tutorial/ru/part3
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part3.md
-description: "Реакция на выбор записей в JavaFX TableView. Добавление, редактирование и удаление элементов из таблицы, а так же проверка пользовательского ввода"
+description: "Реакция на выбор записей в JavaFX TableView. Добавление, изменение и удаление элементов из таблицы, а так же проверка пользовательского ввода"
 image: /assets/library/javafx-8-tutorial/part3/addressapp-part3.png
 published: true
 prettify: true
@@ -58,46 +58,46 @@ languages:
 
 ## Часть 3: Содержание
 
-* Реакция на выбор записей в таблице.
-* Добавление функциональности к кнопкам **add**, **edit** и **remove**.
-* Создание пользовательского диалогового окна для редактирование записей адресной книги.
+* Реакция на выбор адресатов в таблице.
+* Добавление функциональности кнопкам **add**, **edit** и **remove**.
+* Создание диалогового окна для изменения информации об адресатах.
 * Проверка пользовательского ввода.
 
 
 *****
 
 
-## Реакция на выбор записей в таблице
+## Реакция на выбор адресатов в таблице
 
-Пока мы ещё не использовали правую часть нашего приложения. Идея заключается в том, чтобы при выборе записи в таблице, в правой части приложения отображать детали этой записи. 
+Пока мы ещё не использовали правую часть нашего приложения. Идея заключается в том, чтобы при выборе адресата в таблице, в правой части приложения отображать дополнительную информацию об этом адресате. 
 
-Сначала давайте добавим новый метод в класс `PersonOverviewController` который поможет нам заполнять текстовые метки данными указанной записи.
+Сначала давайте добавим новый метод в класс `PersonOverviewController`. Он поможет нам заполнять текстовые метки данными указанного адресата (`Person`).
 
-Создайте метод `showPersonDetails(Person person)`. Его код проходится по меткам, и, используя метод `setText(...)`, присваивает им соответствующие значения, взятые из переданной в параметре записи Person. Если в качестве параметра передаётся `null`, то весь текст в метках будет очищен.
+Создайте метод `showPersonDetails(Person person)`. Его код проходится по меткам, и, используя метод `setText(...)`, присваивает им соответствующие значения, взятые из переданного в параметре объекта Person. Если в качестве параметра передаётся `null`, то весь текст в метках будет очищен.
 
 
 ##### PersonOverviewController.java
 
 <pre class="prettyprint lang-java">
 /**
- * Fills all text fields to show details about the person.
- * If the specified person is null, all text fields are cleared.
+ * Заполняет все текстовые поля, отображая подробности об адресате.
+ * Если указанный адресат = null, то все текстовые поля очищаются.
  * 
- * @param person the person or null
+ * @param person — адресат типа Person или null
  */
 private void showPersonDetails(Person person) {
     if (person != null) {
-        // Fill the labels with info from the person object.
+        // Заполняем метки информацией из объекта person.
         firstNameLabel.setText(person.getFirstName());
         lastNameLabel.setText(person.getLastName());
         streetLabel.setText(person.getStreet());
         postalCodeLabel.setText(Integer.toString(person.getPostalCode()));
         cityLabel.setText(person.getCity());
 
-        // TODO: We need a way to convert the birthday into a String! 
+        // TODO: Нам нужен способ для перевода дня рождения в тип String! 
         // birthdayLabel.setText(...);
     } else {
-        // Person is null, remove all the text.
+        // Если Person = null, то убираем весь текст.
         firstNameLabel.setText("");
         lastNameLabel.setText("");
         streetLabel.setText("");
@@ -111,9 +111,9 @@ private void showPersonDetails(Person person) {
 
 ### Преобразование дня рождения в строку
 
-Обратите внимание, что мы не можем присвоить значение поля `birthday` текстовой метке, т.к. тип этого значения `LocalDate` а не `String`. Для того чтобы это сделать, нам надо переформатировать нашу дату рождения.
+Обратите внимание, что мы просто так не можем присвоить текстовой метке значение поля `birthday`, так как тип его значения `LocalDate` а не `String`. Для того чтобы это сделать, нам надо сначала отформатировать дату.
 
-Т.к. мы будем использовать конвертацию типа `LocalDate` в `String` и обратно в нескольких местах, то хорошей практикой считается создание для этой цели класса-помощника, содержащего статические методы. Наш класс-помощник мы назовем `DateUtil` и разместим его в новом пакете `util`:
+Мы будем преобразовывать тип `LocalDate` в тип `String` и обратно в нескольких местах программы, поэтому, хорошей практикой считается создание для этой цели вспомогательного класса, содержащего статические методы. Этот вспомогательный класс мы назовем `DateUtil` и разместим его в новом пакете `ch.makery.address.util`:
 
 
 ##### DateUtil.java
@@ -126,25 +126,25 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
 /**
- * Helper functions for handling dates.
+ * Вспомогательные функции для работы с датами.
  * 
  * @author Marco Jakob
  */
 public class DateUtil {
 	
-	/** The date pattern that is used for conversion. Change as you wish. */
+	/** Шаблон даты, используемый для преобразования. Можно поменять на свой. */
 	private static final String DATE_PATTERN = "dd.MM.yyyy";
 	
-	/** The date formatter. */
+	/** Форматировщик даты. */
 	private static final DateTimeFormatter DATE_FORMATTER = 
 			DateTimeFormatter.ofPattern(DATE_PATTERN);
 	
 	/**
-     * Returns the given date as a well formatted String. The above defined 
-     * {@link DateUtil#DATE_PATTERN} is used.
+     * Возвращает полученную дату в виде хорошо отформатированной строки.
+     * Используется определённый выше {@link DateUtil#DATE_PATTERN}.
      * 
-     * @param date the date to be returned as a string
-     * @return formatted string
+     * @param date - дата, которая будет возвращена в виде строки
+     * @return отформатированную строку
      */
     public static String format(LocalDate date) {
         if (date == null) {
@@ -154,13 +154,13 @@ public class DateUtil {
     }
 
     /**
-     * Converts a String in the format of the defined {@link DateUtil#DATE_PATTERN} 
-     * to a {@link LocalDate} object.
+     * Преобразует строку, которая отформатирована по правилам
+     * шаблона {@link DateUtil#DATE_PATTERN} в объект {@link LocalDate}.
      * 
-     * Returns null if the String could not be converted.
+     * Возвращает null, если строка не может быть преобразована.
      * 
-     * @param dateString the date as String
-     * @return the date object or null if it could not be converted
+     * @param dateString - дата в виде String
+     * @return объект даты или null, если строка не может быть преобразована
      */
     public static LocalDate parse(String dateString) {
         try {
@@ -171,40 +171,40 @@ public class DateUtil {
     }
 
     /**
-     * Checks the String whether it is a valid date.
+     * Проверяет, является ли строка корректной датой.
      * 
      * @param dateString
-     * @return true if the String is a valid date
+     * @return true, если строка является корректной датой
      */
     public static boolean validDate(String dateString) {
-    	// Try to parse the String.
+    	// Пытаемся разобрать строку.
     	return DateUtil.parse(dateString) != null;
     }
 }
 </pre>
 
 <div class="alert alert-info">
-**Подсказка**: изменяя константу `DATE_PATTERN` можно поменять формат даты. Все возможные форматы описаны в документации к классу [DateTimeFormatter](http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html)
+**Подсказка**: формат даты можно поменять, просто изменив константу `DATE_PATTERN`. Все возможные форматы описаны в документации к классу [DateTimeFormatter](http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html)
 </div>
 
 
 
 #### Использование класса DateUtil
 
-Теперь нам необходимо использовать наш новый класс `DateUtil` в методе `showPersonDetails` класса `PersonOverviewController`. Замените метку *TODO* следующей строкой:
+Теперь мы можем использовать наш новый класс `DateUtil` в методе `showPersonDetails` класса `PersonOverviewController`. Замените комментарий *TODO* следующей строкой:
 
 <pre class="prettyprint lang-java">
 birthdayLabel.setText(DateUtil.format(person.getBirthday()));
 </pre>
 
 
-### Слежка за выбором записи в таблице
+### Наблюдение за выбором адресатов в таблице
 
-Для получения информации о том, что пользователь выбрал запись в таблице нам необходимо *прослушивать изменения*.
+Чтобы знать о том, что пользователь выбрал определённую запись в таблице, нам необходимо *прослушивать изменения*.
 
-Для этого в JavaFX существует интерфейс `ChangeListener` с единственным методом `changed(...)`. Этот метод принимает три параметра: `observable`, `oldValue` и `newValue`.
+Для этого в JavaFX существует интерфейс `ChangeListener` с единственным методом `changed(...)`. Этот метод имеет три параметра: `observable`, `oldValue` и `newValue`.
 
-Мы будем создавать интерфейс `ChangeListener` с помощью *лямбда-выражений* из Java 8. Давайте добавим несколько строчек кода к методу `initialize()` класса `PersonOverviewController`. Теперь наш метод выглядит так:
+Мы будем реализовывать интерфейс `ChangeListener` с помощью *лямбда-выражений* из Java 8. Давайте добавим несколько строчек кода к методу `initialize()` класса `PersonOverviewController`. Теперь этот метод выглядит так:
 
 
 ##### PersonOverviewController.java
@@ -212,26 +212,27 @@ birthdayLabel.setText(DateUtil.format(person.getBirthday()));
 <pre class="prettyprint lang-java">
 @FXML
 private void initialize() {
-    // Initialize the person table with the two columns.
+    // Инициализация таблицы адресатов с двумя столбцами.
     firstNameColumn.setCellValueFactory(
             cellData -> cellData.getValue().firstNameProperty());
     lastNameColumn.setCellValueFactory(
             cellData -> cellData.getValue().lastNameProperty());
 
-    // Clear person details.
+    // Очистка дополнительной информации об адресате.
     showPersonDetails(null);
 
-    // Listen for selection changes and show the person details when changed.
+    // Слушаем изменения выбора, и при изменении отображаем
+    // дополнительную информацию об адресате.
     personTable.getSelectionModel().selectedItemProperty().addListener(
             (observable, oldValue, newValue) -> showPersonDetails(newValue));
 }
 </pre>
 
-Если мы передаем в параметр метода `showPersonDetails(...)` значение `null`, то все значения меток будут стёрты.
+Если мы передаём в параметр метода `showPersonDetails(...)` значение `null`, то все значения меток будут стёрты.
 
 В строке `personTable.getSelectionModel...` мы получаем *selectedItemProperty* таблицы и добавляем к нему слушателя. Когда пользователь выбирает запись в таблице, выполняется наше лямбда-выражение. Мы берём только что выбранную запись и передаём её в метод `showPersonDetails(...)`.
 
-**Запустите свое приложение** и проверьте отображаются ли детали записи в правой части когда вы выбираете запись из таблицы.
+**Запустите свое приложение** и проверьте, отображаются ли детали адресата в правой части, когда в таблице выбирается определённый адресат.
 
 Если у вас что-то не работает, то вы можете сравнить свой класс `PersonOverviewController` с [PersonOverviewController.java](/assets/library/javafx-8-tutorial/part3/PersonOverviewController.java "PersonOverviewController.java").
 
@@ -240,14 +241,14 @@ private void initialize() {
 
 ## Кнопка Delete
 
-В нашем интерфейсе пользователя есть кнопка **Delete**, но она пока не имеет функциональности. В приложении Scene Builder мы можем задать действие, которое будет выполняться при нажатии на эту кнопку. Любой метод внутри класса-контроллера помеченный аннотацией @FXML (или публичный) доступен приложению Scene Builder. Поэтому, давайте сперва добавим метод удаления записи в конец нашего класса `PersonOverviewController`, а потом уже назначим его обработчиком кнопки **Delete**.
+В нашем пользовательским интерфейсе есть кнопка **Delete**, но пока она не работает. В приложении Scene Builder мы можем задать действие, которое будет выполняться при нажатии на эту кнопку. Любой метод внутри класса-контроллера, помеченный аннотацией @FXML (или публичный), доступен Scene Builder. Поэтому, давайте сперва добавим в конец класса `PersonOverviewController` метод удаления адресата, а уже потом назначим его обработчиком кнопки **Delete**.
 
 
 ##### PersonOverviewController.java
 
 <pre class="prettyprint lang-java">
 /**
- * Called when the user clicks on the delete button.
+ * Вызывается, когда пользователь кликает по кнопке удаления.
  */
 @FXML
 private void handleDeletePerson() {
@@ -256,31 +257,31 @@ private void handleDeletePerson() {
 }
 </pre>
 
-Теперь откройте файл `PersonOverview.fxml` в приложении Scene Builder. Выберите кнопку **Delete**, откройте вкладку *Code* и проставьте метод `handleDeletePerson` в значение пункта *On Action*.  
+Теперь в приложении Scene Builder откройте файл `PersonOverview.fxml`. Выберите кнопку **Delete**, откройте вкладку *Code* и укажите метод `handleDeletePerson` в значение пункта *On Action*.  
 
 ![On Action](/assets/library/javafx-8-tutorial/part3/handle-delete.png "Handle Delete")
 
 
 <div class="alert alert-info">
-**Помните:** После редактирования файла FXML в Scene Builder, чтобы изменения вступили в силу, вам может понадобится обновить проект в Eclipse.
+**Помните:** После изменения FXML-файла в Scene Builder, для того, чтобы изменения вступили в силу, вам может понадобится обновить проект в Eclipse.
 </div>
 
 ### Обработка ошибок
 
-Если вы сейчас запустите наше приложение, то уже сможете удалять выбранную запись из таблицы. Но что случится, когда вы нажмете кнопку **Delete**, а ни одна запись выбрана не будет?
+Если вы сейчас запустите приложение, то уже сможете удалять выбранных адресатов из таблицы. Но что произойдёт, если не будет выбран ни один адресат, а вы нажмёте кнопку **Delete**,?
 
-Вылетит исключение `ArrayIndexOutOfBoundsException`, потому что мы не можем удалить запись с индексом `-1`. Значение `-1` возвращается методом `getSelectedIndex()` когда в таблице не выделено ни одной ячейки.
+Вылетит исключение `ArrayIndexOutOfBoundsException`, потому что не получится удалить адресата с индексом `-1`. Значение `-1` возвращается методом `getSelectedIndex()`, когда в таблице ничего не выделено.
 
-Конечно, будет неправильно игнорировать такую ошибку. Поэтому мы должны сообщить пользователю что он, перед тем как нажимать кнопку **Delete**, должен выбрать запись в таблице.
+Естественно, игнорировать эту ошибку будет некрасиво. Мы должны сообщать пользователю о том, что он, перед тем как нажимать кнопку **Delete**, должен выбрать запись в таблице. (Ещё лучше совсем деактивировать кнопку, чтобы у пользователя не было соблазна сделать что-то не так).
 
-Добавим некоторые изменения в метод `handleDeletePerson`. Теперь, когда пользователь нажимает на кнопку **Delete**, а в таблице ничего не выбрано, он увидит простое диалоговое окно:
+Добавим в метод `handleDeletePerson` некоторые изменения. Теперь, когда пользователь нажимает на кнопку **Delete**, а в таблице ничего не выбрано, он увидит простое диалоговое окно:
 
 
 ##### PersonOverviewController.java
 
 <pre class="prettyprint lang-java">
 /**
- * Called when the user clicks on the delete button.
+ * Вызывается, когда пользователь кликает по кнопке удаления.
  */
 @FXML
 private void handleDeletePerson() {
@@ -288,7 +289,7 @@ private void handleDeletePerson() {
     if (selectedIndex >= 0) {
         personTable.getItems().remove(selectedIndex);
     } else {
-        // Nothing selected.
+        // Ничего не выбрано.
         Alert alert = new Alert(AlertType.WARNING);
         alert.initOwner(mainApp.getPrimaryStage());
         alert.setTitle("No Selection");
@@ -309,14 +310,14 @@ private void handleDeletePerson() {
 *****
 
 
-## Диалоги создания и редактирования записей
+## Диалоги создания и изменения адресатов
 
-Для реализации методов-обработчиков создания и редактирования записей нам надо будет потрудится немного больше. Необходимо создать новое пользовательское окно (то есть сцену) с формой, содержащей поля для заполнения всех деталей записи.
+Для реализации методов-обработчиков создания и изменения адресатов нам придётся  потрудится несколько больше. Необходимо создать новое пользовательское окно (то есть сцену) с формой, содержащей поля для заполнения всей необходимой информации об адресате.
 
 
-### Дизайн Окна Редактирования
+### Дизайн окна редактирования
 
-1. Создайте новый fxml-файл `PersonEditDialog` внутри пакета `view`.  
+1. Внутри пакета `view` создайте новый fxml-файл `PersonEditDialog`.  
 ![Create Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog1.png "Person Edit Dialog")
 2. Используйте компоненты `GridPane`, `Label`, `TextField` и `Button` для создания окна редактирования, похожего на это:  
 ![Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog2.png "Person Edit Dialog")
@@ -325,9 +326,9 @@ private void handleDeletePerson() {
 *Если что-то не работает, вы можете скачать [PersonEditDialog.fxml](/assets/library/javafx-8-tutorial/part3/PersonEditDialog.fxml "PersonEditDialog.fxml").*
 
 
-### Создание Контроллера
+### Создание контроллера
 
-Создайте класс-контроллер `PersonEditDialogController.java`:
+Создайте класс-контроллер для нового окна - `PersonEditDialogController.java`:
 
 ##### PersonEditDialogController.java
 
@@ -343,7 +344,7 @@ import ch.makery.address.model.Person;
 import ch.makery.address.util.DateUtil;
 
 /**
- * Dialog to edit details of a person.
+ * Окно для изменения информации об адресате.
  * 
  * @author Marco Jakob
  */
@@ -368,15 +369,15 @@ public class PersonEditDialogController {
     private boolean okClicked = false;
 
     /**
-     * Initializes the controller class. This method is automatically called
-     * after the fxml file has been loaded.
+     * Инициализирует класс-контроллер. Этот метод вызывается автоматически
+     * после того, как fxml-файл будет загружен.
      */
     @FXML
     private void initialize() {
     }
 
     /**
-     * Sets the stage of this dialog.
+     * Устанавливает сцену для этого окна.
      * 
      * @param dialogStage
      */
@@ -385,7 +386,7 @@ public class PersonEditDialogController {
     }
 
     /**
-     * Sets the person to be edited in the dialog.
+     * Задаёт адресата, информацию о котором будем менять.
      * 
      * @param person
      */
@@ -402,7 +403,7 @@ public class PersonEditDialogController {
     }
 
     /**
-     * Returns true if the user clicked OK, false otherwise.
+     * Returns true, если пользователь кликнул OK, в другом случае false.
      * 
      * @return
      */
@@ -411,7 +412,7 @@ public class PersonEditDialogController {
     }
 
     /**
-     * Called when the user clicks ok.
+     * Вызывается, когда пользователь кликнул по кнопке OK.
      */
     @FXML
     private void handleOk() {
@@ -429,7 +430,7 @@ public class PersonEditDialogController {
     }
 
     /**
-     * Called when the user clicks cancel.
+     * Вызывается, когда пользователь кликнул по кнопке Cancel.
      */
     @FXML
     private void handleCancel() {
@@ -437,9 +438,9 @@ public class PersonEditDialogController {
     }
 
     /**
-     * Validates the user input in the text fields.
+     * Проверяет пользовательский ввод в текстовых полях.
      * 
-     * @return true if the input is valid
+     * @return true, если пользовательский ввод корректен
      */
     private boolean isInputValid() {
         String errorMessage = "";
@@ -457,7 +458,7 @@ public class PersonEditDialogController {
         if (postalCodeField.getText() == null || postalCodeField.getText().length() == 0) {
             errorMessage += "No valid postal code!\n"; 
         } else {
-            // try to parse the postal code into an int.
+            // пытаемся преобразовать почтовый код в int.
             try {
                 Integer.parseInt(postalCodeField.getText());
             } catch (NumberFormatException e) {
@@ -480,7 +481,7 @@ public class PersonEditDialogController {
         if (errorMessage.length() == 0) {
             return true;
         } else {
-            // Show the error message.
+            // Показываем сообщение об ошибке.
             Alert alert = new Alert(AlertType.ERROR);
             alert.initOwner(dialogStage);
             alert.setTitle("Invalid Fields");
@@ -495,10 +496,10 @@ public class PersonEditDialogController {
 }
 </pre>
 
-Некоторые заметки по поводу этого контроллера:
+Кое-какие заметки по поводу этого контроллера:
 
-* Для сохранения записи, которая была отредактирована, метод `setPerson(...)` может быть вызван из другого класса;
-* Когда пользователь нажимает на кнопку **ОК**, то вызывается метод `handleOK()`. Сперва идёт проверка введённых пользователем данных посредством вызова метода `isInputValid()`. Если проверка прошла успешно, то происходит заполнение записи данными, которые ввёл пользователь. Эти изменения будут напрямую применяться к записи, которая является аргументом метода `setPerson(...)`! 
+* Для указания адресата, данные которого должны быть изменены, метод `setPerson(...)` может быть вызван из другого класса;
+* Когда пользователь нажимает на кнопку **ОК**, то вызывается метод `handleOK()`. Первым делом данные, введённые пользователем, проверяются в методе `isInputValid()`. Если проверка прошла успешно, то объект адресата заполняется данными, которые ввёл пользователь. Эти изменения будут напрямую применяться к объекту адресата, который был передан в качестве аргумента метода `setPerson(...)`! 
 * Логическая переменная `okClicked` служит для определения того, какую из двух кнопок, `ОК` или `Cancel` нажал пользователь.
 
 
@@ -507,36 +508,37 @@ public class PersonEditDialogController {
 Теперь мы должны связать наш класс-контроллер с fxml-файлом. Для этого выполните следующие действия:
 
 1. Откройте файл `PersonEditDialog.fxml` в Scene Builder;
-2. С левой стороны во вкладке *Controller* установите наш класс `PersonEditDialogController` как значение параметра *Сontroller Сlass*;
-3. Установине соответствующие значения параметра **fx:id** для всех компонентов `TextField`;
+2. С левой стороны во вкладке *Controller* установите наш класс `PersonEditDialogController` в качестве значения параметра *Сontroller Сlass*;
+3. Установите соответствующие значения **fx:id** для всех компонентов `TextField`;
 4. В значениях параметров **onAction** для наших кнопок укажите соответствующие методы-обработчики.
 
 
 
 ### Вызов диалога редактирования
 
-Добавьте в наш класс `MainApp` метод для загрузки и отображения диалога редактирования записей:
+Добавьте в класс `MainApp` метод для загрузки и отображения диалога редактирования записей:
 
 
 ##### MainApp.java
 
 <pre class="prettyprint lang-java">
 /**
- * Opens a dialog to edit details for the specified person. If the user
- * clicks OK, the changes are saved into the provided person object and true
- * is returned.
+ * Открывает диалоговое окно для изменения деталей указанного адресата.
+ * Если пользователь кликнул OK, то изменения сохраняются в предоставленном
+ * объекте адресата и возвращается значение true.
  * 
- * @param person the person object to be edited
- * @return true if the user clicked OK, false otherwise.
+ * @param person - объект адресата, который надо изменить
+ * @return true, если пользователь кликнул OK, в противном случае false.
  */
 public boolean showPersonEditDialog(Person person) {
     try {
-        // Load the fxml file and create a new stage for the popup dialog.
+        // Загружаем fxml-файл и создаём новую сцену
+        // для всплывающего диалогового окна.
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(MainApp.class.getResource("view/PersonEditDialog.fxml"));
         AnchorPane page = (AnchorPane) loader.load();
 
-        // Create the dialog Stage.
+        // Создаём диалоговое окно Stage.
         Stage dialogStage = new Stage();
         dialogStage.setTitle("Edit Person");
         dialogStage.initModality(Modality.WINDOW_MODAL);
@@ -544,12 +546,12 @@ public boolean showPersonEditDialog(Person person) {
         Scene scene = new Scene(page);
         dialogStage.setScene(scene);
 
-        // Set the person into the controller.
+        // Передаём адресата в контроллер.
         PersonEditDialogController controller = loader.getController();
         controller.setDialogStage(dialogStage);
         controller.setPerson(person);
 
-        // Show the dialog and wait until the user closes it
+        // Отображаем диалоговое окно и ждём, пока пользователь его не закроет
         dialogStage.showAndWait();
 
         return controller.isOkClicked();
@@ -566,8 +568,8 @@ public boolean showPersonEditDialog(Person person) {
 
 <pre class="prettyprint lang-java">
 /**
- * Called when the user clicks the new button. Opens a dialog to edit
- * details for a new person.
+ * Вызывается, когда пользователь кликает по кнопке New...
+ * Открывает диалоговое окно с дополнительной информацией нового адресата.
  */
 @FXML
 private void handleNewPerson() {
@@ -579,8 +581,8 @@ private void handleNewPerson() {
 }
 
 /**
- * Called when the user clicks the edit button. Opens a dialog to edit
- * details for the selected person.
+ * Вызывается, когда пользователь кликает по кнопка Edit...
+ * Открывает диалоговое окно для изменения выбранного адресата.
  */
 @FXML
 private void handleEditPerson() {
@@ -592,7 +594,7 @@ private void handleEditPerson() {
         }
 
     } else {
-        // Nothing selected.
+        // Ничего не выбрано.
         Alert alert = new Alert(AlertType.WARNING);
         alert.initOwner(mainApp.getPrimaryStage());
         alert.setTitle("No Selection");
@@ -604,16 +606,16 @@ private void handleEditPerson() {
 }
 </pre>
 
-Откройте `PersonOverview.fxml` в приложении Scene Builder и присвойте соответствующие методы-обработчики параметру *On Action* для кнопок `New...` и `Edit...`.
+В приложении Scene Builder откройте представление `PersonOverview.fxml` и для кнопок `New...` и `Edit...` задайте соответствующие методы-обработчики в параметре *On Action* .
 
 
 *****
 
-## Сделано!
+## Готово!
 
-Сейчас вы должны получить работающее приложение адресной книги. Оно позволяет добавлять, редактировать и удалять записи. Также приложение осуществляет проверку пользовательского ввода.
+Сейчас у вас должно быть работающее приложение адресной книги. Оно позволяет добавлять, изменять и удалять адресатов. Это приложение так же осуществляет проверку всего, что вводит пользователь.
 
-Я надеюсь, что концепция и структура данного приложения поможет вам начать писать свои собственные приложения JavaFX! Удачи.
+Я надеюсь, что идея и структура данного приложения поможет вам начать писать свои собственные приложения JavaFX! Удачи.
 
 
 ### Что дальше?
