@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: "Учебник по JavaFX 8 (Русский)"
 date: 2014-04-19 00:00

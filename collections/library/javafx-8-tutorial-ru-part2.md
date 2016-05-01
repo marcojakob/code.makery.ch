@@ -1,8 +1,8 @@
-﻿---
+---
 layout: article
 title: "Учебник по JavaFX 8 - Часть 2: Модель и компонент TableView"
 date: 2014-04-19 00:00
-updated: 2016-21-04 00:00
+updated: 2016-04-21 00:00
 slug: javafx-8-tutorial/ru/part2
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part2.md
 description: "Используйте JavaFX TableView для отображения списка людей из ObservableList"

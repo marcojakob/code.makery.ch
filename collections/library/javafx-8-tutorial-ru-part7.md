@@ -1,8 +1,8 @@
-﻿---
+---
 layout: article
 title: "Учебник по JavaFX 8 - Часть 7: Развёртывание"
 date: 2014-05-10 00:00
-updated: 2016-26-04 00:00
+updated: 2016-04-26 00:00
 slug: javafx-8-tutorial/ru/part7
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part7.md
 description: "Развёртывание приложения JavaFX как нативного пакета (native package). Создание инсталляторов для Windows, Mac и Linux."

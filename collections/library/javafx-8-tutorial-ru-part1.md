@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: "Учебник по JavaFX 8 - Часть 1: Scene Builder"
 date: 2014-04-19 00:00

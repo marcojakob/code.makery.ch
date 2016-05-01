@@ -1,8 +1,8 @@
-﻿---
+---
 layout: article
 title: "Учебник по JavaFX 8 - Часть 4: Стилизация с помощью CSS"
 date: 2014-04-25 00:00
-updated: 2016-21-04 00:00
+updated: 2016-04-21 00:00
 slug: javafx-8-tutorial/ru/part4
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part4.md
 description: "В JavaFX с помощью CSS можно изменять внешний вид приложений. В этой части мы так же научимся добавлять к нашему приложению иконку"

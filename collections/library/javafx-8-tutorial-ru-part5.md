@@ -1,8 +1,8 @@
-﻿---
+---
 layout: article
 title: "Учебник по JavaFX 8 - Часть 5: Хранение данных в XML"
 date: 2014-04-25 00:00
-updated: 2016-22-04 00:00
+updated: 2016-04-22 00:00
 slug: javafx-8-tutorial/ru/part5
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part5.md
 description: "Сохранение данных в XML с помощью JAXB. Учимся использовать JavaFX-компоненты FileChooser и Menu."

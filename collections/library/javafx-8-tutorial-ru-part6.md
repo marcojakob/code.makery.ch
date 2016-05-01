@@ -1,8 +1,8 @@
-﻿---
+---
 layout: article
 title: "Учебник по JavaFX 8 - Часть 6: Статистическая диаграмма"
 date: 2014-05-09 00:00
-updated: 2016-26-04 00:00
+updated: 2016-04-26 00:00
 slug: javafx-8-tutorial/ru/part6
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part6.md
 description: "Учимся в JavaFX создавать столбцовую диаграмму."
