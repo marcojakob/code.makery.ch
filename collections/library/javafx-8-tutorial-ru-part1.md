@@ -68,7 +68,7 @@ languages:
 
 * Последняя [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html "Java JDK") (включающая в себя **JavaFX 8**);
 * Среда разработки Eclipse версии 4.4 или выше с установленным плагином e(fx)lipse. Уже настроенную версию Eclipse можно скачать с сайта e(fx)lipse. Или использовать [сайт обновлений](http://www.eclipse.org/efxclipse/install.html "eclipse update site"), если Eclipse уже установлена.
-* Приложение [Scene Builder](http://gluonhq.com/open-source/scene-builder/#download "Scene Builder") версии 8.0 или новее. Сейчас оно предоставляется Gluon, потому как [Oracle теперь распространяет его только в виде исходного кода](http://www.oracle.com/technetwork/java/javase/downloads/sb2download-2177776.html). *Предыдущая версия [Scene Builder 2.0](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684.html "Scene Builder").
+* Приложение [Scene Builder](http://gluonhq.com/open-source/scene-builder/#download "Scene Builder") версии 8.0 или новее. Сейчас оно предоставляется Gluon, потому как [Oracle теперь распространяет его только в виде исходного кода](http://www.oracle.com/technetwork/java/javase/downloads/sb2download-2177776.html). *Предыдущая версия [Scene Builder 2.0](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684.html "Scene Builder")*.
 
 
 ### Настройка среды разработки Eclipse
