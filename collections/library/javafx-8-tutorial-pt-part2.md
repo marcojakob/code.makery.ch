@@ -65,7 +65,7 @@ languages:
 
 ## Criar a Classe Model
 
-Nós precisamos de uma classe model para guardar informação sobre as pessoas em nosso agenda. Adicione uma nova classe ao pacote model (`ch.makery.address.model`) chamado `Person` (pessoa). A  classe `Person` (pessoa) terá um pouco de variáveis de instância para o nome, endereço e aniversário. Adicione o código seguinte à classe. Eu explicarei algumas coisas específicas do JAvaFX depois do código.
+Nós precisamos de uma classe model para guardar informação sobre as pessoas na nossa agenda. Adicione uma nova classe ao pacote model (`ch.makery.address.model`) chamado `Person` (pessoa). A  classe `Person` (pessoa) terá um pouco de variáveis de instância para o nome, endereço e aniversário. Adicione o código seguinte à classe. Eu explicarei algumas coisas específicas do JAvaFX depois do código.
 
 
 ##### Person.java
@@ -197,7 +197,7 @@ public class Person {
 
 ###  Explicações
 
-* Com JavaFX  é comum o uso de [`Properties` (propriedades)](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html) para todos os campos de uma classe model. Uma `Property` (propriedade) nos permite, por exemplo ser notificado automaticamente quando o `lastName` (sobrenome) ou qualquer outra variável seja mudada. Isso nos ajuda a manter a view sincronizada com os dados. PAra aprender mais sobre `Properties` leia [Usando Propriedades e Ligações de Propriedades no JavaFX](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm).
+* Com JavaFX  é comum o uso de [`Properties` (propriedades)](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html) para todos os campos de uma classe model. Uma `Property` (propriedade) nos permite, por exemplo ser notificado automaticamente quando o `lastName` (sobrenome) ou qualquer outra variável seja mudada. Isso nos ajuda a manter a view sincronizada com os dados. Para aprender mais sobre `Properties` leia [Usando Propriedades e Ligações de Propriedades no JavaFX](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm).
 * [`LocalDate`](http://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html), o tipo que nós estamos usando para `birthday` (aniversário), é parte da nova [API Data e Hora (Date and Time API) para JDK 8](http://docs.oracle.com/javase/tutorial/datetime/iso/).
 
 
@@ -210,7 +210,7 @@ Os principais dados que nossa aplicação gerencia é um monte de pessoas. Vamos
 
 ### ObservableList
 
-Nós estamos trabalhando com classes view JavaFX que precisam de ser informadas sobre quaisquer mudanças feitas à lsita de pessoas. Isto é importante, caso contrário a view não seria sincronizada com os dados. Para este propósito, JavaFX introduz algumas novas [classes de Coleção](http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm). 
+Nós estamos trabalhando com classes view JavaFX que precisam de ser informadas sobre quaisquer mudanças feitas à lista de pessoas. Isto é importante, caso contrário a view não seria sincronizada com os dados. Para este propósito, JavaFX introduz algumas novas [classes de Coleção](http://docs.oracle.com/javase/8/javafx/collections-tutorial/collections.htm). 
 
 Para aquelas coleções, nós precisamos da `ObservableList`. Para criar uma nova `ObservableList`, adicione o código seguinte ao começo da classe `MainApp`. Nós adicionaremos também um construtor que cria alguns dados de exemplo e um método getter público:
 
