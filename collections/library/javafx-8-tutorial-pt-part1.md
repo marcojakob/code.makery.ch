@@ -267,7 +267,7 @@ public class MainApp extends Application {
             loader.setLocation(MainApp.class.getResource("view/RootLayout.fxml"));
             rootLayout = (BorderPane) loader.load();
             
-            // Mostra a scene (cena) contendo oroot layout.
+            // Mostra a scene (cena) contendo o root layout.
             Scene scene = new Scene(rootLayout);
             primaryStage.setScene(scene);
             primaryStage.show();
