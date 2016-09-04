@@ -86,6 +86,7 @@ Espero que você se divirta! Começe com [Parte 1: Scene Builder](/library/javaf
     <li><a href="https://github.com/JulioDinis" class="alert-link">JulioDinis</a></li> 
     <li><a href="https://github.com/RegiusK" class="alert-link">Régius Andrei Kachimareck</a></li>
     <li><a href="https://github.com/Shura16" class="alert-link">João Antônio Cabral</a></li>
+    <li><a href="https://github.com/alexaleluia12" class="alert-link">Alex Aleluia</a></li>
   </ul>
   Muito obrigado!
 </div>
