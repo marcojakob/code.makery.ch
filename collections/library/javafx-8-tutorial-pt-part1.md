@@ -128,7 +128,7 @@ Bem no começo, nós seguiremos os Design Patterns (Padrões de Design) para des
 
 ## Criar o Arquivo de Layout FXML
 
-Existem duas maneiras de criar a interface de usuário. Usando um arquivo XML ou programando tudo em Java. Pesquisando na internet você encontrará ambas formas. Nós usaremos XML (terminando em .fxml) para a maioria das partes. Eu acho que esta é uma maneira mais clara de manter o controller e a view separados entre si. Além disso, nós podemos usar o editor gráfico Scene Builder para editar nosso XML. Isso significa que nós nãotemos que trabalhar diretamente com XML.
+Existem duas maneiras de criar a interface de usuário. Usando um arquivo XML ou programando tudo em Java. Pesquisando na internet você encontrará ambas formas. Nós usaremos XML (terminando em .fxml) para a maioria das partes. Eu acho que esta é uma maneira mais clara de manter o controller e a view separados entre si. Além disso, nós podemos usar o editor gráfico Scene Builder para editar nosso XML. Isso significa que nós não temos que trabalhar diretamente com XML.
 
 Clique com o botão direito no pacote view e crie um novo *FXML Document* chamado `PersonOverview`.
 
@@ -158,7 +158,7 @@ Clique com o botão direito em `PersonOverview.fxml` e escolha *Open with Scene 
 3.  Arraste uma *TableView* (em *Controls*) para dentro do lado esquerdo do *SplitPane*. Selecione a TableView (não uma Column) e defina a seguinte restrição de layout (layout constraints) à TableView. Dentro de um *AnchorPane* você pode sempre definir âncoras (anchors) para as quatro bordas ([mais informação sobre Layouts (em inglês)](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).   
 ![TableView Anchors](/assets/library/javafx-8-tutorial/part1/table-view-anchors.png)
 
-4. Vá ao menu *Preview | Show Preview in Window* para ver, se ele se comporta coretamente. Tente redimensionar a janela. A TableView deve redimensionar junto com a jaanela como ela foi ancorada às bordas.
+4. Vá ao menu *Preview | Show Preview in Window* para ver, se ele se comporta coretamente. Tente redimensionar a janela. A TableView deve redimensionar junto com a janela como ela foi ancorada às bordas.
 
 5. Mude o texto da coluna (em Properties) para "First Name" e "Last Name".   
 ![Column Texts](/assets/library/javafx-8-tutorial/part1/column-texts.png)
@@ -267,7 +267,7 @@ public class MainApp extends Application {
             loader.setLocation(MainApp.class.getResource("view/RootLayout.fxml"));
             rootLayout = (BorderPane) loader.load();
             
-            // Mostra a scene (cena) contendo oroot layout.
+            // Mostra a scene (cena) contendo o root layout.
             Scene scene = new Scene(rootLayout);
             primaryStage.setScene(scene);
             primaryStage.show();

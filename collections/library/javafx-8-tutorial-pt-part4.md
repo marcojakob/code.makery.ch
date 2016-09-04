@@ -75,7 +75,7 @@ Neste tutorial nós criaremos um *DarkTheme* inspirado pelo design Windows 8 Met
 
 Se você quer estilziar sua aplicação JavaFX você deve ter um endetendimento básico de CSS em geral. Um bom lugar para começar é este (em inglês) [CSS tutorial](http://www.csstutorial.net/).
 
-PAra mais informações sobre CSS específico para JavaFX (em inglês):
+Para mais informações sobre CSS específico para JavaFX (em inglês):
 
 * [Skinning JavaFX Applications with CSS](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/css_tutorial.htm) - Tutorial by Oracle
 * [JavaFX CSS Reference](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html) - Official Reference
@@ -319,7 +319,7 @@ Crie uma pasta (normal) dentro do seu projeto AddressApp chamado **resources** e
 
 ### Definir o Ícone na Scene (Cena)
 
-Para definir o ícno para nossa scene (cena) adicione o código seguinte ao método `start(...)` na `MainApp.java`
+Para definir o ícone para nossa scene (cena) adicione o código seguinte ao método `start(...)` na `MainApp.java`
 
 
 ##### MainApp.java

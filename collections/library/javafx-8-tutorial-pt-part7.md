@@ -127,7 +127,7 @@ Gostaríamos de ter alguns icones legais para o nosso instalador:
 1. Crie as seguintes subpastas no diretório `build`:
   * `build/package/windows` (Usado apenas no windows)
   * `build/package/macos` (Usado apenas no  macos)
-2. Copy the corresponding icons from above into those subfolders. It should look something like this now:   
+2. Copie os ícones correspondes acima aos respectivos sub-diretorios. Deve parecer assim agora:
 ![Installer Icons](/assets/library/javafx-8-tutorial/part7/installer-icons.png)
 3. **Importante**: O nome dos ícones deve corresponder exatamente ao **Título da aplicação** (Application title) que você especificou no `build.fxbuild`:
   * `YourAppTitle.ico`
