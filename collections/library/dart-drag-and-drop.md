@@ -36,7 +36,7 @@ This is a basic example using some draggable documents and a trash as a dropzone
 
 <a href="http://marcojakob.github.io/dart-dnd/basic/web/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
-#### Live demo 
+#### Live demo
 
 
 <iframe src="http://marcojakob.github.io/dart-dnd/basic/web/" width="100%" height="330px"></iframe>
@@ -61,7 +61,7 @@ An example with a custom image as drag avatar. The image is changed depending on
 
 An example that uses only drag detection. Use this if you want to implement your own custom dragging behavior.
 
-Even without a drag avatar and `Dropzone` this helps quite a lot as it unifies touch and mouse dragging and provides convenient event streams. 
+Even without a drag avatar and `Dropzone` this helps quite a lot as it unifies touch and mouse dragging and provides convenient event streams.
 
 <a href="http://marcojakob.github.io/dart-dnd/detection-only/web/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
@@ -113,7 +113,7 @@ Dragging can be prevented on specified elements. By default dragging is cancelle
 
 ### Constrain to Horizontal or Vertical Axis
 
-Dragging can be constrained to horizontal or vertical only. 
+Dragging can be constrained to horizontal or vertical only.
 
 *A nice side effect: When a drag is constrained to either horizontal or vertical only, the other direction can be used for scrolling on touch devices.*
 
@@ -164,20 +164,3 @@ An example example to create basic sortable/rearranging behavior.
 #### Live demo
 
 <iframe src="http://marcojakob.github.io/dart-dnd/simple-sortable/web/" width="100%" height="450px"></iframe>
-
-
-***
-
-
-### Shadow DOM
-
-Example how to use drag and drop in Shadow DOM with Polymer Web Components.
-
-<a href="http://marcojakob.github.io/dart-dnd/shadow-dom/web/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
-
-#### Live demo
-
-<iframe src="http://marcojakob.github.io/dart-dnd/shadow-dom/web/" width="100%" height="520px"></iframe>
-
-
-
