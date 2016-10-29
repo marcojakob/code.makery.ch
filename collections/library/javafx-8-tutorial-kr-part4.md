@@ -3,48 +3,47 @@ layout: article
 title: "JavaFX 8 튜토리얼 - 4부: CSS 꾸미기"
 date: 2014-04-25 00:00
 updated: 2014-08-27 00:00
-slug: javafx-8-tutorial/part4
+slug: javafx-8-tutorial/kr/part4
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part4.md
 description: "여러분은 JavaFX에서 CSS로 사용자 인터페이스를 꾸밀 수 있습니다. 우리는 또 튜토리얼 4부에서 애플리케이션 아이콘을 추가해 볼 겁니다."
 image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png
 published: true
 prettify: true
-comments: 
-  identifier: /java/javafx-8-tutorial-part4/
+comments: true
 sidebars:
 - header: "차례"
   body:
   - text: "소개"
-    link: /library/javafx-8-tutorial/
+    link: /library/javafx-8-tutorial/kr/
     paging: Intro
   - text: "1부: Scene Builder"
-    link: /library/javafx-8-tutorial/part1/
+    link: /library/javafx-8-tutorial/kr/part1/
     paging: 1
   - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-8-tutorial/part2/
+    link: /library/javafx-8-tutorial/kr/part2/
     paging: 2
   - text: "3부: 사용자 상호작용"
-    link: /library/javafx-8-tutorial/part3/
+    link: /library/javafx-8-tutorial/kr/part3/
     paging: 3
   - text: "4부: CSS 꾸미기"
-    link: /library/javafx-8-tutorial/part4/
+    link: /library/javafx-8-tutorial/kr/part4/
     paging: 4
     active: true
   - text: "5부: XML로 데이터 저장하기"
-    link: /library/javafx-8-tutorial/part5/
+    link: /library/javafx-8-tutorial/kr/part5/
     paging: 5
   - text: "6부: 통계 차트"
-    link: /library/javafx-8-tutorial/part6/
+    link: /library/javafx-8-tutorial/kr/part6/
     paging: 6
   - text: "7부: 배포"
-    link: /library/javafx-8-tutorial/part7/
+    link: /library/javafx-8-tutorial/kr/part7/
     paging: 7
 - header: "소스 코드 다운로드"
   body:
   - text: 4부 Eclipse 프로젝트 <em>(JDK 8u40 이상 필요)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-4.zip
     icon-css: fa fa-fw fa-download
-languages: 
+languages:
   header: 언어
   collection: library
   item: javafx-8-tutorial
@@ -95,7 +94,7 @@ JavaFX 8의 디폴트 CSS 스타일은 **`modena.css`**라고 부르는 파일�
 </div>
 
 
-### CSS 스타일 시트 
+### CSS 스타일 시트
 
 다음 내용을 `DarkTheme.css` 라는 CSS 파일에 넣어서 *view* 패키지에 추가하세요.
 
@@ -144,10 +143,10 @@ JavaFX 8의 디폴트 CSS 스타일은 **`modena.css`**라고 부르는 파일�
     -fx-size: 35;
     -fx-border-width: 0 0 1 0;
     -fx-background-color: transparent;
-    -fx-border-color: 
+    -fx-border-color:
         transparent
         transparent
-        derive(-fx-base, 80%) 
+        derive(-fx-base, 80%)
         transparent;
     -fx-border-insets: 0 10 1 0;
 }
@@ -197,7 +196,7 @@ JavaFX 8의 디폴트 CSS 스타일은 **`modena.css`**라고 부르는 파일�
     -fx-font-family: "Segoe UI Semibold";
 }
 
-/* 
+/*
  * Metro style Push Button
  * Author: Pedro Duque Vieira
  * http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/
@@ -348,7 +347,7 @@ public void start(Stage primaryStage) {
 
 ### 다음 할 일은?
 
-[튜토리얼 5부](/library/javafx-8-tutorial/part5/)에서는 데이터를 유지하기 위해 XML 스토리지를 추가할 겁니다.
+[튜토리얼 5부](/library/javafx-8-tutorial/kr/part5/)에서는 데이터를 유지하기 위해 XML 스토리지를 추가할 겁니다.
 
 
 ##### 흥미로운 자료들
@@ -358,4 +357,3 @@ public void start(Stage primaryStage) {
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
 * [JavaFX TableView Cell Renderer](/blog/javafx-8-tableview-cell-renderer/)
-

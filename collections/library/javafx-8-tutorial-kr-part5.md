@@ -3,48 +3,47 @@ layout: article
 title: "JavaFX 8 튜토리얼 - 5부: XML로 데이터 저장하기"
 date: 2014-04-25 01:00
 updated: 2015-03-12 00:00
-slug: javafx-8-tutorial/part5
+slug: javafx-8-tutorial/kr/part5
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part5.md
 description: "JAXB를 이용해서 데이터를 XML로 저장합니다. JavaFX FileChooser와 JavaFX Menu 사용 방법을 배웁니다."
 image: /assets/library/javafx-8-tutorial/part5/addressapp-part5.png
 published: true
 prettify: true
-comments: 
-  identifier: /java/javafx-8-tutorial-part5/
+comments: true
 sidebars:
 - header: "차례"
   body:
   - text: "소개"
-    link: /library/javafx-8-tutorial/
+    link: /library/javafx-8-tutorial/kr/
     paging: Intro
   - text: "1부: Scene Builder"
-    link: /library/javafx-8-tutorial/part1/
+    link: /library/javafx-8-tutorial/kr/part1/
     paging: 1
   - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-8-tutorial/part2/
+    link: /library/javafx-8-tutorial/kr/part2/
     paging: 2
   - text: "3부: 사용자 상호작용"
-    link: /library/javafx-8-tutorial/part3/
+    link: /library/javafx-8-tutorial/kr/part3/
     paging: 3
   - text: "4부: CSS 꾸미기"
-    link: /library/javafx-8-tutorial/part4/
+    link: /library/javafx-8-tutorial/kr/part4/
     paging: 4
   - text: "5부: XML로 데이터 저장하기"
-    link: /library/javafx-8-tutorial/part5/
+    link: /library/javafx-8-tutorial/kr/part5/
     paging: 5
     active: true
   - text: "6부: 통계 차트"
-    link: /library/javafx-8-tutorial/part6/
+    link: /library/javafx-8-tutorial/kr/part6/
     paging: 6
   - text: "7부: 배포"
-    link: /library/javafx-8-tutorial/part7/
+    link: /library/javafx-8-tutorial/kr/part7/
     paging: 7
 - header: "소스 코드 다운로드"
   body:
   - text: 5부 Eclipse 프로젝트 <em>(JDK 8u40 이상 필요)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-5.zip
     icon-css: fa fa-fw fa-download
-languages: 
+languages:
   header: 언어
   collection: library
   item: javafx-8-tutorial
@@ -84,7 +83,7 @@ Java는 애플리케이션의 상태를 `Preferences` 라고 하는 클래스를
  * 연락처 파일 환경설정을 반환한다.
  * 즉 파일은 마지막으로 열린 것이고, 환경설정은 OS 특정 레지스트리로부터 읽는다.
  * 만일 preference를 찾지 못하면 null을 반환한다.
- * 
+ *
  * @return
  */
 public File getPersonFilePath() {
@@ -99,7 +98,7 @@ public File getPersonFilePath() {
 
 /**
  * 현재 불러온 파일의 경로를 설정한다. 이 경로는 OS 특정 레지스트리에 저장된다.
- * 
+ *
  * @param file the file or null to remove the path
  */
 public void setPersonFilePath(File file) {
@@ -181,7 +180,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  * 연락처 리스트를 감싸는 헬퍼 클래스이다.
  * XML로 저장하는 데 사용된다.
- * 
+ *
  * @author Marco Jakob
  */
 @XmlRootElement(name = "persons")
@@ -214,7 +213,7 @@ public class PersonListWrapper {
 <pre class="prettyprint lang-java">
 /**
  * 지정한 파일로부터 연락처 데이터를 가져온다. 현재 연락처 데이터로 대체된다.
- * 
+ *
  * @param file
  */
 public void loadPersonDataFromFile(File file) {
@@ -244,7 +243,7 @@ public void loadPersonDataFromFile(File file) {
 
 /**
  * 현재 연락처 데이터를 지정한 파일에 저장한다.
- * 
+ *
  * @param file
  */
 public void savePersonDataToFile(File file) {
@@ -310,7 +309,7 @@ import ch.makery.address.MainApp;
 
 /**
  * 상위 레이아웃에 대한 컨트롤러이다. 상위 레이아웃은 메뉴바와 JavaFX 엘리먼트가 들어갈 공간을 포함한 기본적인 레이아웃을 제공한다.
- * 
+ *
  * @author Marco Jakob
  */
 public class RootLayoutController {
@@ -320,7 +319,7 @@ public class RootLayoutController {
 
     /**
      * 참조를 다시 유지하기 위해 메인 애플리케이션이 호출한다.
-     * 
+     *
      * @param mainApp
      */
     public void setMainApp(MainApp mainApp) {
@@ -359,7 +358,7 @@ public class RootLayoutController {
     /**
      * 현재 열려 있는 파일에 저장한다.
      * 만일 열려 있는 파일이 없으면 "save as" 다이얼로그를 보여준다.
-     * 
+     *
      */
     @FXML
     private void handleSave() {
@@ -500,7 +499,7 @@ import javax.xml.bind.annotation.adapters.XmlAdapter;
 /**
  * LocalDate와 ISO 8601 간 변환을 하는 JAXB 어댑터
  * String은 '2012-12-03' 같은 날짜를 나타낸다.
- * 
+ *
  * @author Marco Jakob
  */
 public class LocalDateAdapter extends XmlAdapter&lt;String, LocalDate> {
@@ -539,12 +538,12 @@ public LocalDate getBirthday() {
 2. 생성자인 `public MainApp()`이 호출되어 샘플 데이터를 넣습니다.
 3. `MainApp`의 `start(...)` 메서드가 호출되고 `RootLayout.fxml`의 상위 레이아웃을 초기화하기 위해 `initRootLayout()`을 호출합니다. FXML 파일은 어느 컨트롤러가 뷰에 사용되고 연결되는지 정보를 가집니다.
 4. `MainApp`은 FXML Loader로부터 `RootLayoutController`를 가져와서 자기 자신에 대한 참조를 컨트롤러로 전달합니다. 컨트롤러는 이 참조를 가지고 나중에 `MainApp`의 public 메서드를 이용할 수 있습니다.
-5. `initRootLayout()` 메서드의 맨 끝에서 우리는 `Preferences`로부터 *마지막으로 열었던 연락처 파일*을 가져옵니다. 만일 `Preferences`가 XML 파일에 대해 알면 이 파일로부터 데이터를 가져옵니다. 이는 생성자의 샘플 데이터를 덮어쓰게 됩니다.
+5. `initRootLayout()` 메서드의 맨 끝에서 우리는 `Preferences`로부터 *마지막으로 열었던 연락처 파일* 을 가져옵니다. 만일 `Preferences`가 XML 파일에 대해 알면 이 파일로부터 데이터를 가져옵니다. 이는 생성자의 샘플 데이터를 덮어쓰게 됩니다.
 
 
 ### 다음 할 일은?
 
-[튜토리얼 6부](/library/javafx-8-tutorial/part6/)에서는 생일 통계 차트를 추가할 겁니다.
+[튜토리얼 6부](/library/javafx-8-tutorial/kr/part6/)에서는 생일 통계 차트를 추가할 겁니다.
 
 
 ##### 흥미로운 자료들

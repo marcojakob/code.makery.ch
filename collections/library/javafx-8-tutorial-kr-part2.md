@@ -3,48 +3,47 @@ layout: article
 title: "JavaFX 8 튜토리얼 - 2부: Model 그리고 TableView"
 date: 2014-04-23 00:00
 updated: 2015-03-12 00:00
-slug: javafx-8-tutorial/part2
+slug: javafx-8-tutorial/kr/part2
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part2.md
 description: "JavaFX TableView를 사용해서 연락처의 ObservableList를 보여줍니다."
 image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
 published: true
 prettify: true
-comments: 
-  identifier: /java/javafx-8-tutorial-part2/
+comments: true
 sidebars:
 - header: "차례"
   body:
   - text: "소개"
-    link: /library/javafx-8-tutorial/
+    link: /library/javafx-8-tutorial/kr/
     paging: Intro
   - text: "1부: Scene Builder"
-    link: /library/javafx-8-tutorial/part1/
+    link: /library/javafx-8-tutorial/kr/part1/
     paging: 1
   - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-8-tutorial/part2/
+    link: /library/javafx-8-tutorial/kr/part2/
     paging: 2
     active: true
   - text: "3부: 사용자 상호작용"
-    link: /library/javafx-8-tutorial/part3/
+    link: /library/javafx-8-tutorial/kr/part3/
     paging: 3
   - text: "4부: CSS 꾸미기"
-    link: /library/javafx-8-tutorial/part4/
+    link: /library/javafx-8-tutorial/kr/part4/
     paging: 4
   - text: "5부: XML로 데이터 저장하기"
-    link: /library/javafx-8-tutorial/part5/
+    link: /library/javafx-8-tutorial/kr/part5/
     paging: 5
   - text: "6부: 통계 차트"
-    link: /library/javafx-8-tutorial/part6/
+    link: /library/javafx-8-tutorial/kr/part6/
     paging: 6
   - text: "7부: 배포"
-    link: /library/javafx-8-tutorial/part7/
+    link: /library/javafx-8-tutorial/kr/part7/
     paging: 7
 - header: "소스 코드 다운로드"
   body:
   - text: 2부 Eclipse 프로젝트 <em>(JDK 8u40 이상 필요)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip
     icon-css: fa fa-fw fa-download
-languages: 
+languages:
   header: 언어
   collection: library
   item: javafx-8-tutorial
@@ -103,24 +102,24 @@ public class Person {
 	public Person() {
 		this(null, null);
 	}
-	
+
 	/**
 	 * 데이터를 초기화하는 생성자
-	 * 
+	 *
 	 * @param firstName
 	 * @param lastName
 	 */
 	public Person(String firstName, String lastName) {
 		this.firstName = new SimpleStringProperty(firstName);
 		this.lastName = new SimpleStringProperty(lastName);
-		
+
 		// 테스트를 위해 초기화하는 더미 데이터
 		this.street = new SimpleStringProperty("some street");
 		this.postalCode = new SimpleIntegerProperty(1234);
 		this.city = new SimpleStringProperty("some city");
 		this.birthday = new SimpleObjectProperty&lt;LocalDate&gt;(LocalDate.of(1999, 2, 21));
 	}
-	
+
 	public String getFirstName() {
 		return firstName.get();
 	}
@@ -128,7 +127,7 @@ public class Person {
 	public void setFirstName(String firstName) {
 		this.firstName.set(firstName);
 	}
-	
+
 	public StringProperty firstNameProperty() {
 		return firstName;
 	}
@@ -140,7 +139,7 @@ public class Person {
 	public void setLastName(String lastName) {
 		this.lastName.set(lastName);
 	}
-	
+
 	public StringProperty lastNameProperty() {
 		return lastName;
 	}
@@ -152,7 +151,7 @@ public class Person {
 	public void setStreet(String street) {
 		this.street.set(street);
 	}
-	
+
 	public StringProperty streetProperty() {
 		return street;
 	}
@@ -164,7 +163,7 @@ public class Person {
 	public void setPostalCode(int postalCode) {
 		this.postalCode.set(postalCode);
 	}
-	
+
 	public IntegerProperty postalCodeProperty() {
 		return postalCode;
 	}
@@ -176,7 +175,7 @@ public class Person {
 	public void setCity(String city) {
 		this.city.set(city);
 	}
-	
+
 	public StringProperty cityProperty() {
 		return city;
 	}
@@ -188,7 +187,7 @@ public class Person {
 	public void setBirthday(LocalDate birthday) {
 		this.birthday.set(birthday);
 	}
-	
+
 	public ObjectProperty&lt;LocalDate&gt; birthdayProperty() {
 		return birthday;
 	}
@@ -242,7 +241,7 @@ public class Person {
 		personData.add(new Person("Stefan", "Meier"));
 		personData.add(new Person("Martin", "Mueller"));
 	}
-  
+
 	/**
 	 * 연락처에 대한 observable 리스트를 반환한다.
 	 * @return
@@ -250,7 +249,7 @@ public class Person {
 	public ObservableList&lt;Person&gt; getPersonData() {
 		return personData;
 	}
-  
+
     // ... 클래스의 나머지 부분 ...
 </pre>
 
@@ -325,7 +324,7 @@ public class PersonOverviewController {
 
     /**
      * 참조를 다시 유지하기 위해 메인 애플리케이션이 호출한다.
-     * 
+     *
      * @param mainApp
      */
     public void setMainApp(MainApp mainApp) {
@@ -350,7 +349,7 @@ public class PersonOverviewController {
     이 예제에서는 테이블 열에 대해 `StringProperty` 값을 사용하고 있습니다. `IntegerProperty`나 `DoubleProperty`가 필요하다면 `setCellValueFactory(...)`는 반드시 추가로 `asObject()`를 이용해야 합니다:
   </p>
   <p>
-  <pre>myIntegerColumn.setCellValueFactory(cellData -> 
+  <pre>myIntegerColumn.setCellValueFactory(cellData ->
       cellData.getValue().myIntegerProperty().<mark>asObject()</mark>);</pre>
   </p>
   <p>
@@ -378,7 +377,7 @@ public void showPersonOverview() {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(MainApp.class.getResource("view/PersonOverview.fxml"));
         AnchorPane personOverview = (AnchorPane) loader.load();
-        
+
         // 연락처 요약을 상위 레이아웃 가운데로 설정한다.
         rootLayout.setCenter(personOverview);
 
@@ -430,7 +429,7 @@ public void showPersonOverview() {
 
 ### 다음 할 일은?
 
-[튜토리얼 3부](/library/javafx-8-tutorial/part3/)에서는 연락처를 추가, 삭제 그리고 변경하는 기능을 추가할 겁니다.
+[튜토리얼 3부](/library/javafx-8-tutorial/kr/part3/)에서는 연락처를 추가, 삭제 그리고 변경하는 기능을 추가할 겁니다.
 
 
 ##### 흥미로운 자료들

@@ -3,41 +3,40 @@ layout: article
 title: "JavaFX 8 튜토리얼 - 1부: Scene Builder"
 date: 2014-04-19 01:00
 updated: 2015-03-12 00:00
-slug: javafx-8-tutorial/part1
+slug: javafx-8-tutorial/kr/part1
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part1.md
-description: "JavaFX 프로젝트를 만드는 방법을 배웁니다. 이 문서는 JavaFX로 주소록 애플리케이션을 디자인, 프로그래밍, 배포하는 7부로 구성된 튜토리얼 중 1부입니다.
+description: "JavaFX 프로젝트를 만드는 방법을 배웁니다. 이 문서는 JavaFX로 주소록 애플리케이션을 디자인, 프로그래밍, 배포하는 7부로 구성된 튜토리얼 중 1부입니다."
 image: /assets/library/javafx-8-tutorial/part1/addressapp-part1.png
 published: true
 prettify: true
-comments:
-  identifier: /java/javafx-8-tutorial-part1/
+comments: true
 sidebars:
 - header: "차례"
   body:
   - text: "소개"
-    link: /library/javafx-8-tutorial/
+    link: /library/javafx-8-tutorial/kr/
     paging: Intro
   - text: "1부: Scene Builder"
-    link: /library/javafx-8-tutorial/part1/
+    link: /library/javafx-8-tutorial/kr/part1/
     paging: 1
     active: true
   - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-8-tutorial/part2/
+    link: /library/javafx-8-tutorial/kr/part2/
     paging: 2
   - text: "3부: 사용자 상호작용"
-    link: /library/javafx-8-tutorial/part3/
+    link: /library/javafx-8-tutorial/kr/part3/
     paging: 3
   - text: "4부: CSS 꾸미기"
-    link: /library/javafx-8-tutorial/part4/
+    link: /library/javafx-8-tutorial/kr/part4/
     paging: 4
   - text: "5부: XML로 데이터 저장하기"
-    link: /library/javafx-8-tutorial/part5/
+    link: /library/javafx-8-tutorial/kr/part5/
     paging: 5
   - text: "6부: 통계 차트"
-    link: /library/javafx-8-tutorial/part6/
+    link: /library/javafx-8-tutorial/kr/part6/
     paging: 6
   - text: "7부: 배포"
-    link: /library/javafx-8-tutorial/part7/
+    link: /library/javafx-8-tutorial/kr/part7/
     paging: 7
 - header: "소스 코드 다운로드"
   body:
@@ -332,7 +331,7 @@ public class MainApp extends Application {
 
 ### 다음 할 일은?
 
-[튜토리얼 2부](/library/javafx-8-tutorial/part2/)에서는 우리 애플리케이션에 데이터와 기능을 몇 가지 추가해 볼 겁니다.
+[튜토리얼 2부](/library/javafx-8-tutorial/kr/part2/)에서는 우리 애플리케이션에 데이터와 기능을 몇 가지 추가해 볼 겁니다.
 
 
 ##### 흥미로운 자료들

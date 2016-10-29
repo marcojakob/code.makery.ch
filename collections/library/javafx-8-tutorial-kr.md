@@ -14,35 +14,35 @@ sidebars:
 - header: "차례"
   body:
   - text: "소개"
-    link: /library/javafx-8-tutorial/
+    link: /library/javafx-8-tutorial/kr/
     paging: Intro
     active: true
   - text: "1부: Scene Builder"
-    link: /library/javafx-8-tutorial/part1/
+    link: /library/javafx-8-tutorial/kr/part1/
     paging: 1
   - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-8-tutorial/part2/
+    link: /library/javafx-8-tutorial/kr/part2/
     paging: 2
   - text: "3부: 사용자 상호작용"
-    link: /library/javafx-8-tutorial/part3/
+    link: /library/javafx-8-tutorial/kr/part3/
     paging: 3
   - text: "4부: CSS 꾸미기"
-    link: /library/javafx-8-tutorial/part4/
+    link: /library/javafx-8-tutorial/kr/part4/
     paging: 4
   - text: "5부: XML로 데이터 저장하기"
-    link: /library/javafx-8-tutorial/part5/
+    link: /library/javafx-8-tutorial/kr/part5/
     paging: 5
   - text: "6부: 통계 차트"
-    link: /library/javafx-8-tutorial/part6/
+    link: /library/javafx-8-tutorial/kr/part6/
     paging: 6
   - text: "7부: 배포"
-    link: /library/javafx-8-tutorial/part7/
+    link: /library/javafx-8-tutorial/kr/part7/
     paging: 7
-languages: 
+languages:
   header: 언어
   collection: library
   item: javafx-8-tutorial
-  part: 
+  part:
   active: kr
 ---
 
@@ -79,13 +79,13 @@ languages:
 * **많이 배우기 코스:** 프로젝트를 처음부터 끝까지 다시 만듭니다.
 * **빠른 코스:** 튜토리얼 소스 코드를 여러분의 IDE (기본적으로 Eclipse 프로젝트지만 NetBeans 같은 다른 IDE도 사용할 수 있습니다)에서 불러옵니다. 그 다음에는 튜토리얼을 따라 코드를 이해합니다.
 
-이제 즐겁게 배우길 바랍니다! [1부: Scene Builder](/library/javafx-8-tutorial/part1/)부터 시작하세요.
+이제 즐겁게 배우길 바랍니다! [1부: Scene Builder](/library/javafx-8-tutorial/kr/part1/)부터 시작하세요.
 
 
 <div class="alert alert-success">
-  <strong><i class="fa fa-trophy"></i> Attribution:</strong> Korean translations have been contributed by 
+  <strong><i class="fa fa-trophy"></i> Attribution:</strong> Korean translations have been contributed by
   <ul>
-    <li><a href="https://github.com/olgi3rd" class="alert-link">Olgierd Everac</a></li> 
+    <li><a href="https://github.com/olgi3rd" class="alert-link">Olgierd Everac</a></li>
   </ul>
   감사합니다!
 </div>

@@ -3,48 +3,47 @@ layout: article
 title: "JavaFX 8 튜토리얼 - 3부: 사용자 상호작용"
 date: 2014-04-24 00:00
 updated: 2015-03-12 00:00
-slug: javafx-8-tutorial/part3
+slug: javafx-8-tutorial/kr/part3
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part3.md
 description: "JavaFX TableView 선택에 반응하게 만듭니다. 테이블에 추가, 변경 그리고 삭제하고, 사용자 입력을 검사합니다."
 image: /assets/library/javafx-8-tutorial/part3/addressapp-part3.png
 published: true
 prettify: true
-comments: 
-  identifier: /java/javafx-8-tutorial-part3/
+comments: true
 sidebars:
 - header: "차례"
   body:
   - text: "소개"
-    link: /library/javafx-8-tutorial/
+    link: /library/javafx-8-tutorial/kr/
     paging: Intro
   - text: "1부: Scene Builder"
-    link: /library/javafx-8-tutorial/part1/
+    link: /library/javafx-8-tutorial/kr/part1/
     paging: 1
   - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-8-tutorial/part2/
+    link: /library/javafx-8-tutorial/kr/part2/
     paging: 2
   - text: "3부: 사용자 상호작용"
-    link: /library/javafx-8-tutorial/part3/
+    link: /library/javafx-8-tutorial/kr/part3/
     paging: 3
     active: true
   - text: "4부: CSS 꾸미기"
-    link: /library/javafx-8-tutorial/part4/
+    link: /library/javafx-8-tutorial/kr/part4/
     paging: 4
   - text: "5부: XML로 데이터 저장하기"
-    link: /library/javafx-8-tutorial/part5/
+    link: /library/javafx-8-tutorial/kr/part5/
     paging: 5
   - text: "6부: 통계 차트"
-    link: /library/javafx-8-tutorial/part6/
+    link: /library/javafx-8-tutorial/kr/part6/
     paging: 6
   - text: "7부: 배포"
-    link: /library/javafx-8-tutorial/part7/
+    link: /library/javafx-8-tutorial/kr/part7/
     paging: 7
 - header: "소스 코드 다운로드"
   body:
   - text: 3부 Eclipse 프로젝트 <em>(JDK 8u40 이상 필요)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-3.zip
     icon-css: fa fa-fw fa-download
-languages: 
+languages:
   header: 언어
   collection: library
   item: javafx-8-tutorial
@@ -80,7 +79,7 @@ languages:
 /**
  * 연락처의 자세한 정보를 보여주기 위해 모든 텍스트 필드를 채운다.
  * 만일 person이 null이면 모든 텍스트 필드가 지워진다.
- * 
+ *
  * @param person the person or null
  */
 private void showPersonDetails(Person person) {
@@ -125,22 +124,22 @@ import java.time.format.DateTimeParseException;
 
 /**
  * 날짜를 제어하는 헬퍼 함수들
- * 
+ *
  * @author Marco Jakob
  */
 public class DateUtil {
-	
+
 	/** 변환에 사용되는 날짜 패턴이다. 원하는 대로 바꿔도 좋다. */
 	private static final String DATE_PATTERN = "dd.MM.yyyy";
-	
+
 	/** 날짜 변환기 */
-	private static final DateTimeFormatter DATE_FORMATTER = 
+	private static final DateTimeFormatter DATE_FORMATTER =
 			DateTimeFormatter.ofPattern(DATE_PATTERN);
-	
+
 	/**
      * 주어진 날짜를 String 타입으로 반환한다. 위에서 정의한
      * {@link DateUtil#DATE_PATTERN}이 사용된다.
-     * 
+     *
      * @param date the date to be returned as a string
      * @return formatted string
      */
@@ -154,9 +153,9 @@ public class DateUtil {
     /**
      * String을 {@link DateUtil#DATE_PATTERN}에 정의한 대로
      * {@link LocalDate} 객체로 변환한다.
-     * 
+     *
      * String이 변환되지 않으면 null을 반환한다.
-     * 
+     *
      * @param dateString the date as String
      * @return the date object or null if it could not be converted
      */
@@ -170,7 +169,7 @@ public class DateUtil {
 
     /**
      * 유효한 날짜인지 검사한다.
-     * 
+     *
      * @param dateString
      * @return true if the String is a valid date
      */
@@ -339,7 +338,7 @@ import ch.makery.address.util.DateUtil;
 
 /**
  * 연락처 정보를 변경하는 다이얼로그
- * 
+ *
  * @author Marco Jakob
  */
 public class PersonEditDialogController {
@@ -372,7 +371,7 @@ public class PersonEditDialogController {
 
     /**
      * 이 다이얼로그의 스테이지를 설정한다.
-     * 
+     *
      * @param dialogStage
      */
     public void setDialogStage(Stage dialogStage) {
@@ -381,7 +380,7 @@ public class PersonEditDialogController {
 
     /**
      * 다이얼로그에서 변경될 연락처를 설정한다.
-     * 
+     *
      * @param person
      */
     public void setPerson(Person person) {
@@ -398,7 +397,7 @@ public class PersonEditDialogController {
 
     /**
      * 사용자가 OK를 클릭하면 true를, 그 외에는 false를 반환한다.
-     * 
+     *
      * @return
      */
     public boolean isOkClicked() {
@@ -433,35 +432,35 @@ public class PersonEditDialogController {
 
     /**
      * 텍스트 필드로 사용자 입력을 검사한다.
-     * 
+     *
      * @return true if the input is valid
      */
     private boolean isInputValid() {
         String errorMessage = "";
 
         if (firstNameField.getText() == null || firstNameField.getText().length() == 0) {
-            errorMessage += "No valid first name!\n"; 
+            errorMessage += "No valid first name!\n";
         }
         if (lastNameField.getText() == null || lastNameField.getText().length() == 0) {
-            errorMessage += "No valid last name!\n"; 
+            errorMessage += "No valid last name!\n";
         }
         if (streetField.getText() == null || streetField.getText().length() == 0) {
-            errorMessage += "No valid street!\n"; 
+            errorMessage += "No valid street!\n";
         }
 
         if (postalCodeField.getText() == null || postalCodeField.getText().length() == 0) {
-            errorMessage += "No valid postal code!\n"; 
+            errorMessage += "No valid postal code!\n";
         } else {
             // 우편 번호를 int 타입으로 변환한다.
             try {
                 Integer.parseInt(postalCodeField.getText());
             } catch (NumberFormatException e) {
-                errorMessage += "No valid postal code (must be an integer)!\n"; 
+                errorMessage += "No valid postal code (must be an integer)!\n";
             }
         }
 
         if (cityField.getText() == null || cityField.getText().length() == 0) {
-            errorMessage += "No valid city!\n"; 
+            errorMessage += "No valid city!\n";
         }
 
         if (birthdayField.getText() == null || birthdayField.getText().length() == 0) {
@@ -481,9 +480,9 @@ public class PersonEditDialogController {
             alert.setTitle("Invalid Fields");
             alert.setHeaderText("Please correct invalid fields");
             alert.setContentText(errorMessage);
-            
+
             alert.showAndWait();
-            
+
             return false;
         }
     }
@@ -520,7 +519,7 @@ public class PersonEditDialogController {
 /**
  * person의 자세한 정보를 변경하기 위해 다이얼로그를 연다.
  * 만일 사용자가 OK를 클릭하면 주어진 person에 내용을 저장한 후 true를 반환한다.
- * 
+ *
  * @param person the person object to be edited
  * @return true if the user clicked OK, false otherwise.
  */
@@ -606,14 +605,14 @@ Scene Builder로 `PersonOverview.fxml` 파일을 열어서 new와 edit 버튼의
 
 ## 끝!
 
-지금쯤이면 *주소록 애플리케이션*이 잘 동작해야 합니다. 연락처를 추가, 변경 그리고 삭제할 수 있어야 합니다. 게다가 연락처가 잘못되는 경우를 피하기 위해 텍스트 필드를 검사합니다.
+지금쯤이면 *주소록 애플리케이션* 이 잘 동작해야 합니다. 연락처를 추가, 변경 그리고 삭제할 수 있어야 합니다. 게다가 연락처가 잘못되는 경우를 피하기 위해 텍스트 필드를 검사합니다.
 
 이 애플리케이션의 개념과 구조가 여러분만의 JavaFX 애플리케이션 개발을 시작하게 도움이 됐으면 좋겠습니다! 즐기세요.
 
 
 ### 다음 할 일은?
 
-[튜토리얼 4부](/library/javafx-8-tutorial/part4/)에서는 CSS 스타일을 추가합니다.
+[튜토리얼 4부](/library/javafx-8-tutorial/kr/part4/)에서는 CSS 스타일을 추가합니다.
 
 
 ##### 흥미로운 자료들
@@ -623,4 +622,3 @@ Scene Builder로 `PersonOverview.fxml` 파일을 열어서 new와 edit 버튼의
 * [JavaFX Event Handling Examples](/blog/javafx-8-event-handling-examples/)
 * [JavaFX TableView Sorting and Filtering](/blog/javafx-8-tableview-sorting-filtering/)
 * [JavaFX TableView Cell Renderer](/blog/javafx-8-tableview-cell-renderer/)
-
