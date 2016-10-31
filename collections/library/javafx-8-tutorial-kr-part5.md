@@ -1,8 +1,7 @@
 ---
 layout: article
 title: "JavaFX 8 튜토리얼 - 5부: XML로 데이터 저장하기"
-date: 2014-04-25 01:00
-updated: 2015-03-12 00:00
+date: 2016-10-30 00:00
 slug: javafx-8-tutorial/kr/part5
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part5.md
 description: "JAXB를 이용해서 데이터를 XML로 저장합니다. JavaFX FileChooser와 JavaFX Menu 사용 방법을 배웁니다."

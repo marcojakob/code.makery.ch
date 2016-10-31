@@ -1,8 +1,7 @@
 ---
 layout: article
 title: "JavaFX 8 튜토리얼 - 7부: 배포"
-date: 2014-05-10 00:00
-updated: 2015-03-12 00:00
+date: 2016-10-30 00:00
 slug: javafx-8-tutorial/kr/part7
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part7.md
 description: "JavaFX 애플리케이션을 네이티브 패키지로 배포하는 방법을 배웁니다. Windows, MacOS, 또는 Linux 인스톨러를 만듭니다."

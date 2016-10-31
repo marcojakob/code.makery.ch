@@ -1,8 +1,7 @@
 ---
 layout: article
 title: "JavaFX 8 튜토리얼 - 1부: Scene Builder"
-date: 2014-04-19 01:00
-updated: 2015-03-12 00:00
+date: 2016-10-30 00:00
 slug: javafx-8-tutorial/kr/part1
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part1.md
 description: "JavaFX 프로젝트를 만드는 방법을 배웁니다. 이 문서는 JavaFX로 주소록 애플리케이션을 디자인, 프로그래밍, 배포하는 7부로 구성된 튜토리얼 중 1부입니다."

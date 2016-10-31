@@ -1,8 +1,7 @@
 ---
 layout: article
 title: "JavaFX 8 튜토리얼"
-date: 2014-04-19 00:00
-updated: 2015-03-12 00:00
+date: 2016-10-30 00:00
 slug: javafx-8-tutorial/kr
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr.md
 description: "이 튜토리얼은 7부에 걸쳐 JavaFX로 주소록 애플리케이션을 디자인, 프로그래밍, 배포하는 방법을 차근차근 설명합니다."

@@ -1,8 +1,7 @@
 ---
 layout: article
 title: "JavaFX 8 튜토리얼 - 3부: 사용자 상호작용"
-date: 2014-04-24 00:00
-updated: 2015-03-12 00:00
+date: 2016-10-30 00:00
 slug: javafx-8-tutorial/kr/part3
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part3.md
 description: "JavaFX TableView 선택에 반응하게 만듭니다. 테이블에 추가, 변경 그리고 삭제하고, 사용자 입력을 검사합니다."

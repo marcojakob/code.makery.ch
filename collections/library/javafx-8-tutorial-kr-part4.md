@@ -1,8 +1,7 @@
 ---
 layout: article
 title: "JavaFX 8 튜토리얼 - 4부: CSS 꾸미기"
-date: 2014-04-25 00:00
-updated: 2014-08-27 00:00
+date: 2016-10-30 00:00
 slug: javafx-8-tutorial/kr/part4
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part4.md
 description: "여러분은 JavaFX에서 CSS로 사용자 인터페이스를 꾸밀 수 있습니다. 우리는 또 튜토리얼 4부에서 애플리케이션 아이콘을 추가해 볼 겁니다."
