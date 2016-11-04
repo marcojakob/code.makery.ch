@@ -2,6 +2,7 @@
 layout: article
 title: "JavaFX 8 튜토리얼 - 2부: Model 그리고 TableView"
 date: 2016-10-30 00:00
+updated: 2016-11-04 00:00
 slug: javafx-8-tutorial/kr/part2
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part2.md
 description: "JavaFX TableView를 사용해서 연락처의 ObservableList를 보여줍니다."
