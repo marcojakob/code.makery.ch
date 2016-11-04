@@ -56,7 +56,7 @@ languages:
 ### 주제
 
 * JavaFX 알아보기
-* JavaFX 프로젝트를 만들기
+* JavaFX 프로젝트 만들기
 * Scene Builder로 사용자 인터페이스 디자인하기
 * 모델-뷰-컨트롤러(MVC, Model-View-Controller) 패턴으로 애플리케이션을 구조적으로 만들기
 
@@ -107,7 +107,7 @@ Eclipse가 JDK 8과 Scene Builder를 사용할 수 있게 해야 합니다:
 ## JavaFX 프로젝트 만들기
 
 e(fx)clipse를 설치하고 나서 Eclipse에서 *File | New | Other...*, *JavaFX Project*를 고릅니다.
-프로젝트 이름 (예: *AddressApp*)을 작성한 다음, *Finish*를 클릭합니다.
+프로젝트 이름(예: *AddressApp*)을 작성한 다음, *Finish*를 클릭합니다.
 
 자동으로 생성되는 *application* 패키지가 있다면 삭제하세요.
 
@@ -116,7 +116,7 @@ e(fx)clipse를 설치하고 나서 Eclipse에서 *File | New | Other...*, *JavaF
 
 시작부터 우리는 좋은 소프트웨어 디자인 원칙을 따를 겁니다. 가장 중요한 원칙이  [**모델-뷰-컨트롤러**](https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8D%B8-%EB%B7%B0-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC)입니다. 이에 따라 우리의 코드를 세 단위로 나누고 각 패키지를 만듭니다 (src 디렉토리에서 마우스 오른쪽 클릭 후 *New... | Package* 선택):
 
-* `ch.makery.address` - 컨트롤러 클래스의 *대부분* (=비즈니스 로직)
+* `ch.makery.address` - 컨트롤러 클래스의 *대부분* (= 비즈니스 로직)
 * `ch.makery.address.model` - 모델 클래스
 * `ch.makery.address.view` - 뷰
 
