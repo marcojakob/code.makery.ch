@@ -2,7 +2,7 @@
 layout: article
 title: "HTML & CSS Tutorial - Teil 2: Webseite veröffentlichen"
 date: 2014-08-13 00:00
-updated: 2015-03-18 00:00
+updated: 2016-11-10 00:00
 slug: html-css/de/part2
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part2.md
 description: "Lernen Sie, wie man eine Webseite live im Internet veröffentlicht."
@@ -42,7 +42,7 @@ sidebars:
     link: /library/html-css/de/next/
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
-languages: 
+languages:
   header: Sprachen
   collection: library
   item: html-css
@@ -50,7 +50,7 @@ languages:
   active: de
 ---
 
-Im ersten Teil haben wir unsere erste Webseite erstellt. Es wäre ja schade, wenn diese Webseite nur auf unserem Computer liegt und sie gar nie von jemand anderem angeschaut werden kann. Deshalb werden wir jetzt die Webseite gleich live ins Internet stellen. 
+Im ersten Teil haben wir unsere erste Webseite erstellt. Es wäre ja schade, wenn diese Webseite nur auf unserem Computer liegt und sie gar nie von jemand anderem angeschaut werden kann. Deshalb werden wir jetzt die Webseite gleich live ins Internet stellen.
 
 <div class="alert alert-info">
 **Hinweis:** Sie werden nicht von Beginn weg viele Besucher auf Ihrer Webseite haben. Denn solange Sie niemandem einen Link auf die Seite schicken oder den Link irgendwo veröffentlichen, wird kaum jemand einfach auf Ihre Seite stossen.
@@ -83,34 +83,6 @@ Es gibt zahlreiche Dienste, wo wir Speicherplatz auf einem Server mieten können
 5. Für Updates: Sobald Sie eine neue Version Ihrer Webseite veröffentlichen möchten, ziehen Sie den Ordner einfach erneut in das Feld mit dem Text ***Drag & Drop to Update your Site***.
 
 
-### Hosting auf Google Drive
-
-![Google Drive Logo](/assets/library/html-css/part2/google-drive-logo.png)
-
-[Google Drive](https://drive.google.com/) eignet sich auch als *hosting*-Server. Der Nachteil ist, dass Sie eine sehr lange URL erhalten werden. So funktioniert es:
-
-1. Laden Sie Ihren Ordner mit der Webseite auf Google Drive hoch.
-
-2. Selektieren Sie den Ordner in Drive und wählen Sie *Freigeben*. Ändern Sie die Zugriff auf *"Öffentlich im Web"*. 
-
-3. Öffnen Sie den Ordner in Drive und überprüfen Sie, ob alle Webseitendateien (index.html, Bilder, CSS, etc.) enthalten sind.
-
-4. Kopieren Sie die Zeichen nach `#folders/` in der Adresszeile Ihres Browsers.   
-![Google Drive Zeichen Kopieren](/assets/library/html-css/part2/google-drive-copy-string.png)
-
-5. Geben Sie in der Addresszeile Ihres Browsers `http://googledrive.com/host/` und anschliessend die kopierten Zeichen ein.
-![Google Drive Hosting Adresse](/assets/library/html-css/part2/google-drive-host-address.png)
-
-Unter diesem Link kann nun jeder Ihre Webseite aufrufen.
-
-
-### Hosting auf Dropbox
-
-![Dropbox Logo](/assets/library/html-css/part2/dropbox-logo.png)
-
-Man kann auch [Dropbox](https://www.dropbox.com/) als *hosting*-Server verwenden. Damit dies funktioniert, braucht man jedoch einen zusätzlichen Dienst, welcher die Webseitenanfragen weiter leitet. Zwei mögliche Dienste sind [Pancake.io](https://pancake.io/) oder [DropPages](http://droppages.com/).
-
-
 ### Hosting auf GitHub
 
 ![GitHub Logo](/assets/library/html-css/part2/github-logo.jpg)
@@ -119,19 +91,6 @@ Wenn Sie schon etwas Erfahrung mit Programmieren haben, dann ist auch [GitHub](h
 
 
 ***
-
-## URL verkürzen
-
-Je nach Hosting, das Sie gewählt haben, ist die URL für Ihre Webseite recht lang. Dafür gibt es ganz einfache Dienste, mit welchen Sie eine URL verkürzen können. 
-
-Mit verkürzten URLs wird es auch vorstellbar, dass man diese zum Beispiel auf einem Mobiltelefon eingeben kann. Manche Dienste erstellen auch gleich einen [QR-Code](http://de.wikipedia.org/wiki/QR-Code).
-
-Hier ist eine Liste von ein paar URL-Shortener:
-
-* [Goo.gl](https://goo.gl/) (inkl. QR-Code, wenn man auf *Details* klickt)
-* [bit.ly](https://bitly.com/)
-* [Tiny.cc](http://tiny.cc/)
-
 
 ## Eigene Domain
 
@@ -143,4 +102,3 @@ Ansonsten gibt es zahlreiche Webhosting- und Registrar-Dienste. Es lohnt sich ei
 ***
 
 &rarr; Im nächsten Teil geht es darum, der Webseite etwas Style einzuhauchen. Weiter geht's also mit [Teil 3: Einführung in CSS](/library/html-css/de/part3/).
-

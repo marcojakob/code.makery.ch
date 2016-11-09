@@ -2,6 +2,7 @@
 layout: article
 title: "HTML & CSS Tutorial - Part 2: Publishing Your Website"
 date: 2015-04-08 00:00
+updated: 2016-11-10 00:00
 slug: html-css/part2
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part2.md
 description: "Learn to publish a website live in the internet. Compare different hosting possibilities like BitBalloon, Dropbox, Google Drive, and GitHub Pages."
@@ -41,7 +42,7 @@ sidebars:
     link: /library/html-css/next/
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
-languages: 
+languages:
   header: Languages
   collection: library
   item: html-css
@@ -82,34 +83,6 @@ There are numerous services where you can rent server space. Such a service is c
 5. For Updates: When you want to release a new version of your website, simply drag the folder into the box with the text **Drag & Drop to Update your Site**.
 
 
-### Hosting on Google Drive
-
-![Google Drive Logo](/assets/library/html-css/part2/google-drive-logo.png)
-
-[Google Drive](https://drive.google.com/) may also be used as hosting service. The disadvantage is that you will get a very long URL. Here is how it works.
-
-1. Upload your website folder to Google Drive.
-
-2. Select the folder on Drive and choose **Share**. Click on **Advanced** and change the access to **Public on the web**.
-
-3. Open the folder in Drive and verify that all website files have been uploaded (index.html, images, etc.).
-
-4. Copy the characters that follow after `#folders/` in the address bar of your browser. This is the ID of your folder.   
-![Google Drive Copy Characters](/assets/library/html-css/part2/google-drive-copy-string.png)
-
-5. In your browser, enter `http://googledrive.com/host/` followed by the characters you've copied in the last step.   
-![Google Drive Hosting Address](/assets/library/html-css/part2/google-drive-host-address.png)
-
-Anyone you send this link will be able to access your website.
-
-
-### Hosting on Dropbox
-
-![Dropbox Logo](/assets/library/html-css/part2/dropbox-logo.png)
-
-You can also use [Dropbox](https://www.dropbox.com/) as a hosting server. For this to work an additional service is required for forwarding website requests. Two possible services are [Pancake.io](https://pancake.io/) or [DropPages](http://droppages.com/).
-
-
 ### Hosting on GitHub
 
 ![GitHub Logo](/assets/library/html-css/part2/github-logo.jpg)
@@ -118,19 +91,6 @@ If you already have some experience with programming then GitHub is a great way 
 
 
 ***
-
-## URL Shorteners
-
-Depending on the hosting you chose, the URL for your website might be quite long. There are simple services for shortening your URL.
-
-Shortened URLs could also be entered on a mobile phone. Some services also create a [QR-Code](http://de.wikipedia.org/wiki/QR-Code).
-
-Here is a list of a few URL shorteners:
-
-* [Goo.gl](https://goo.gl/) (includes a QR-Code under *Details*)
-* [bit.ly](https://bitly.com/)
-* [Tiny.cc](http://tiny.cc/)
-
 
 ## Your Own Domain Name
 
@@ -141,8 +101,6 @@ Otherwise, there are numerous web hosting and registrar services. It's worth it 
 
 ## What's next?
 
-In the next part we will upgrade our site with some styling. 
+In the next part we will upgrade our site with some styling.
 
 &rarr; Continue with [Part 3: Introduction to CSS](/library/html-css/part3/).
-
-
