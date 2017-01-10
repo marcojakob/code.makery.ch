@@ -20,14 +20,14 @@
     "pt": "Português",
     "ru": "Русский",
     "tr": "Türkçe",
-	"uk": "Українська",
+	  "uk": "Українська",
     "zh-cn": "中文（简体）"
   },
-  
+
   "tags": [ "Dart", "Web", "Java", "JavaFX" ],
-  
+
   "libraryTopics": [ "HTML-CSS", "Java", "JavaFX", "Dart" ],
-  
+
   "library": {
     "html-css": {
       "slug": "html-css",

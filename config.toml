@@ -1,0 +1,55 @@
+baseurl = "https://code.makery.ch"
+languageCode = "en"
+title = "code.makery.ch - learning how to code"
+pluralizeListTitles = false
+preserveTaxonomyNames = true
+removePathAccents = true
+enableRobotsTXT = true
+
+[params]
+  author = "Marco Jakob"
+  analyticsId = "UA-34917397-3"
+  disqusShortname = "codemakery"
+  googleplus = "+MarcoJakob7"
+  twitter = "codemakery"
+
+[taxonomies]
+  tag = "tags"             # Used for the blog
+  category = "categories"  # Used for events
+
+[permalinks]
+  blog-tag = "/blog/tag/:title/"
+
+[[menu.main]]
+  name = "Community"
+  pre = "<i class='fa fa-users'></i>"
+  weight = 3
+  url = "/ueber/"
+
+  [[menu.main]]
+    name = "Grundsätze"
+    weight = 3
+    parent = "Community"
+    url = "/grundsaetze/"
+
+  [[menu.main]]
+    name = "Finanzen"
+    weight = 5
+    parent = "Community"
+    url = "/finanzen/"
+
+[[menu.main]]
+  name = "Räume"
+  pre = "<i class='fa fa-calendar-check-o'></i>"
+  weight = 4
+  url = "/raeume/"
+
+[[menu.main]]
+  name = "Events"
+  weight = 5
+  url = "/events/"
+
+[[menu.main]]
+  name = "Blog"
+  weight = 6
+  url = "/blog/"

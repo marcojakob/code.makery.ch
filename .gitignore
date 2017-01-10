@@ -1,4 +1,5 @@
-/converted-html
+/public
+/dist
 .githubsettings
 .DS_Store
 .pid_debug
