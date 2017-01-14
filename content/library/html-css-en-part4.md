@@ -41,7 +41,7 @@ sidebars:
     link: /library/html-css/next/
     icon-css: fa fa-fw fa-flag-checkered
     paging: <i class="fa fa-flag-checkered"></i>
-languages: 
+languages:
   header: Languages
   collection: library
   item: html-css
@@ -62,10 +62,6 @@ Most browsers have a "hidden" tool that allows us to look behind the scenes of a
 Let's try this in our portfolio website. You should now see the following window:
 
 ![Open DevTools](/assets/library/html-css/part4/open-devtools.png)
-
-<div class="alert alert-info">
-  **Hint:** If you're using the Brackets editor it's best to deactivate the *Live Preview* and to reload the website in the browser. Otherwise, you will see some additional ids in the code that were added by Brackets.
-</div>
 
 
 ## Inspecting an Element
