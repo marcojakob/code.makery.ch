@@ -46,7 +46,7 @@ sidebars:
   - text: Portfolio Part 1
     link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part1.zip
     icon-css: fa fa-fw fa-file-archive-o
-languages: 
+languages:
   header: Languages
   collection: library
   item: html-css
@@ -66,19 +66,37 @@ For web development, you need two programs: an <abbr data-toggle="tooltip" title
 
 For creating web pages, a normal text editor would be sufficient. But there are editors that greatly simplify your work as a programmer. Therefore, I recommend that you use a modern code editor.
 
-![Brackets Editor](/assets/library/html-css/part1/brackets-editor-screenshot.png)
+![Atom Editor](/assets/library/html-css/part1/atom-editor-screenshot.png)
 
-My current favorite among the many editors is [Brackets](http://brackets.io/) (free from Adobe). You may use an editor of your choice but I will occasionally refer to some functions of Brackets. Good alternatives to Brackets are be [Atom](http://atom.io) or the slightly older but very good [Notepad++](http://notepad-plus-plus.org/).
+My current favorite among the many editors is [Atom](https://atom.io/) (free). You may use an editor of your choice but I will occasionally refer to some functions of Atom. Good alternatives to Atom are [Brackets](http://brackets.io) or the slightly older but very good [Notepad++](http://notepad-plus-plus.org/).
 
-<a href="http://brackets.io" target="_blank">![Brackets Editor Logo](/assets/library/html-css/part1/brackets-editor-logo.jpg)
+<a href="https://atom.io" target="_blank">![Atom Editor Logo](/assets/library/html-css/part1/atom-editor-logo.jpg)
 </a>
 
-Go ahead and install an editor. If you do not know which one, use [Brackets](http://brackets.io) for now.
+Go ahead and install an editor. If you do not know which one, use [Atom](https://atom.io) for now.
 
+
+#### Atom Editor Packages
+
+While we're at it we'll install two Atom packages that will give superpowers to our editor: [atom-live-server](https://atom.io/packages/atom-live-server) and [color-picker](https://atom.io/packages/color-picker).
+
+1. Open Atom.
+2. Open the **File** menu and select **Settings**.
+<p>
+![Open Settings](/assets/library/html-css/part1/open-settings.png)
+</p>
+3. Go to **Install**, enter *atom-live-server* in the search bar, hit enter and install the **atom-live-server** package.
+<p>
+![Install Live Server Package](/assets/library/html-css/part1/install-live-server-package.png)
+</p>
+4. Now enter *color-picker* in the search bar and also install the **color-picker** package.
+<p>
+![Install Color Picker Package](/assets/library/html-css/part1/install-color-picker-package.png)
+</p>
 
 ### Browser
 
-Our website should, of course, run in all major browsers (Internet Explorer, Firefox, Chrome and Safari). However, for web development I recommend you use [Chrome](https://www.google.com/chrome/browser/). Chrome includes very useful tools for developers which you will use often. In addition, Chrome is best supported by the Brackets editor so that changes in the editor are immediately visible in Chrome (via *Live Reload*).
+Our website should, of course, run in all major browsers (Internet Explorer, Firefox, Chrome and Safari). However, for web development I recommend you use [Chrome](https://www.google.com/chrome/browser/). Chrome includes very useful tools for developers which you will use often.
 
 <a href="https://www.google.com/chrome/browser/" target="_blank">![Chrome Logo](/assets/library/html-css/part1/chrome-logo.png)</a>
 
@@ -91,7 +109,7 @@ Equipped with editor and browser, let's create the first HTML document for our w
 
 1. Create a folder on your computer for your project. Name the folder *Portfolio* (or anything you want).
 
-2. Open Brackets (or your code editor of choice).
+2. Open Atom (or your code editor of choice).
 
 3. Open the **File** menu and select **Open Folder ...**. Browse for the folder you created and open it.
 <p>
@@ -118,16 +136,15 @@ You could probably assume, the name `index.html` does have special meaning. If a
 
 Now you can fill the document with content. Type the following lines in your HTML.
 
-![HTML Structure](/assets/library/html-css/part1/first-website-de.png)
+![HTML Structure](/assets/library/html-css/part1/first-website.png)
 
-To view the page, click the *flash* on the right border of Brackets (Live Preview). If Brackets finds the Chrome browser, the page is now displayed and whenever you make changes, they are automatically updated.
+To view the page, we'll use the **live-server** package that we installed above. Open the **Packages** menu, choose **Live Server** and click on one of the ports. A browser window should open up and show your first website. Now, whenever you save any changes they are automatically updated by the live server.
+
+![Start Live Server](/assets/library/html-css/part1/start-live-server.png)
 
 <div class="alert alert-info">
 <p>
-If the **page does not appear**: Locate the `index.html` file on your computer and open it in Chrome or in another browser.
-</p>
-<p>
-If the page is **not updated automatically**: Save all files and click `F5` or `cmd+R` in the browser. 
+If the page is **not updated automatically**: Save all files and click `F5` or `cmd+R` in the browser.
 </p>
 </div>
 
@@ -136,11 +153,7 @@ If the page is **not updated automatically**: Save all files and click `F5` or `
 
 ### Indentation
 
-In order to keep your code clean, it is important that you correctly indent the lines with the **tab key**. The default in Brackets is usually a tab size of 4 spaces. I find this a bit long. I recommend that you change the setting at the bottom of Brackets to `Spaces: 2`.
-
-![Brackets Spaces](/assets/library/html-css/part1/brackets-spaces.png)
-
-**Important:** Pay close attention to the example code and indent accordingly. It is important that you develop clean programming habits from the very beginning!
+In order to keep your code clean, it is important that you correctly indent the lines with the **tab key**. Pay close attention to the example code and indent accordingly. It is important that you develop clean programming habits from the very beginning!
 
 <div class="alert alert-info">
   <p>**Tip 1:** Use `Shift+Tab` keys to move indentation to the left.</p>
@@ -205,7 +218,7 @@ We have already seen the two elements `<html>` and `<body>`. But the basic struc
   * A `<h1>` defines the main heading. Sub headings can be created with `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>`.
   * Text between `<p>` and`</p>` is a paragraph.
 * After each opening tag, the next element should be indented (with a tab or two spaces) for better overview. Make sure you follow this habit.
-  
+
 <div class="alert alert-info">
   <p>**Tip 1:** Keep this basic HTML structure handy. You can use it for any new HTML page! </p>
   <p>**Tip 2:** Use the keyboard shortcut `Ctrl+S` to save the current file.</p>
@@ -246,7 +259,7 @@ If the file is located **on another website**, an ***absolut URL*** must be used
     <li>Two dots (`..`) refer to the parent directory.</li>
   </ul>
 </div>
- 
+
 
 ##### Examples of Relative and Absolute URLs
 
@@ -279,13 +292,13 @@ All of your code could now look something like this (I've added a subheading and
   &lt;/head>
   &lt;body>
     &lt;h1>Web Portfolio of Marco&lt;/h1>
-    
+
     &lt;h2>Welcome!&lt;/h2>
-    
+
     &lt;p>Thanks for stopping by.&lt;/p>
-    
+
     &lt;p>Please have a look around. In the blog section I document my experiences in programming. You may also look at my web projects. Have Fun.&lt;/p>
-    
+
     &lt;img src="marco.jpg" alt="Picture of me">
 
     &lt;p>Marco :-)&lt;/p>
@@ -301,5 +314,3 @@ That's how the portfolio currently looks like in the browser:
 ## What's next?
 
 &rarr; In the next section you will learn how to publish your website on the internet. Continue with [Part 2: Publishing Your Website](/library/html-css/part2/)
-
-
