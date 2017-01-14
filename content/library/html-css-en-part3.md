@@ -46,7 +46,7 @@ sidebars:
   - text: Portfolio Part 3
     link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part3.zip
     icon-css: fa fa-fw fa-file-archive-o
-languages: 
+languages:
   header: Languages
   collection: library
   item: html-css
@@ -93,13 +93,13 @@ Insert this element in your `<head>` block. Now your code should look like the f
   &lt;/head>
   &lt;body>
     &lt;h1>Web Portfolio of Marco&lt;/h1>
-    
+
     &lt;h2>Welcome!&lt;/h2>
-    
+
     &lt;p>Thanks for stopping by.&lt;/p>
-    
+
     &lt;p>Please have a look around. In the blog section I document my experiences in programming. You may also look at my web projects. Have fun.&lt;/p>
-    
+
     &lt;img src="marco.jpg" alt="Picture of me">
 
     &lt;p>Marco :-)&lt;/p>
@@ -149,13 +149,13 @@ In the *Hex* notation, the first two characters represent the red channel, the m
 
 Expressing colors with hexadecimal values is very popular because with it you can represent a huge amout of color combinations (over 16.7 million). However, it is somewhat difficult to work with them. In most cases, you will need a color picker.
 
-If you are using the [Brackets](http://brackets.io/) editor, you can open a color picker right in your CSS file: Right-click on the color code and select **Quick Edit** or press `Ctrl+E`.
+If you are using the [Atom](https://atom.io/) editor and have the [color-picker](https://atom.io/packages/color-picker) package installed, you can open a color picker right in your CSS file: Right-click on the color code and select **Color Picker**.
 
-![Quick Edit](/assets/library/html-css/part3/quick-edit.png)
+![Open Color Picker](/assets/library/html-css/part3/color-picker-open.png)
 
-This immediately displays a color picker where you can easily choose a color. You can even switch between the various notations with the three buttons at the bottom.
+This immediately displays a color picker where you can easily choose a color. You can even switch between the various notations with the buttons at the bottom.
 
-![Color Chooser](/assets/library/html-css/part3/color-chooser.png)
+![Color Picker](/assets/library/html-css/part3/color-picker-select.png)
 
 
 ### Online Color Pickers
@@ -234,7 +234,7 @@ p {
 
 Class selectors are used very frequently. They are a bit more specific than type selectors, as they target a particular group of elements rather than all elements of one type.
 
-To use class selectors add a `class` attribute to an element and give it an arbitrary value. In CSS, you can now address all elements that have the same `class` attribute. Classes are denoted by a **leading period**, followed by the `class` value. 
+To use class selectors add a `class` attribute to an element and give it an arbitrary value. In CSS, you can now address all elements that have the same `class` attribute. Classes are denoted by a **leading period**, followed by the `class` value.
 
 In the following example, the class selector targets all elements that have a `class` attribute with the value `highlight`.
 
@@ -261,7 +261,7 @@ In this HTML, the CSS rule would be applied to the first and third `p` elements.
 
 ### ID Selectors
 
-Id selectors are very similar to class selectors. They select all HTML elements with an attribute `id` with a specific value. Ids are denoted by a **leading hash** sign (`#`), followed by the `id` attribute value. 
+Id selectors are very similar to class selectors. They select all HTML elements with an attribute `id` with a specific value. Ids are denoted by a **leading hash** sign (`#`), followed by the `id` attribute value.
 
 The important difference to class selectors is that ID selectors **should occur only once** per HTML page, while a class may be used for any number of elements.
 
@@ -287,7 +287,7 @@ In the following example, the ID selector selects the element that has an `id` a
 
 ### Descendant Selectors
 
-With a descendant selector you can select descendants of a matching element. 
+With a descendant selector you can select descendants of a matching element.
 
 Let's look at an example before we get into a little more detail.
 
