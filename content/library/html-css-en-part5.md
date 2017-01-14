@@ -46,7 +46,7 @@ sidebars:
   - text: Portfolio Part 5
     link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part5.zip
     icon-css: fa fa-fw fa-file-archive-o
-languages: 
+languages:
   header: Languages
   collection: library
   item: html-css
@@ -79,7 +79,7 @@ Create a subfolder in your *portfolio* folder named `blog`. Copy the `index.html
 
 ![Blog Subfolder](/assets/library/html-css/part5/blog-subfolder.png)
 
-Open the copied file `blog/index.html` in your browser (if you use the Brackets editor, click on the *Live Preview* flash). You will notice that two things do not work:
+Open the copied file `blog/index.html` in your browser. You will notice that two things do not work:
 
 1. The image is not displayed.
 2. The colors defined in the CSS are not applied.
@@ -113,13 +113,13 @@ Next we change the title and content.
   &lt;/head>
   &lt;body>
     &lt;h1 class="title">Blog&lt;/h1>
-    
+
     &lt;p>I write about things I encounter while learning web programming.&lt;/p>
 
     &lt;h2>Blog Entries&lt;/h2>
-    
+
     &lt;!-- Here will be a list of all the blog entries. -->
-    
+
   &lt;/body>
 &lt;/html>
 </pre>
@@ -149,11 +149,11 @@ Open the blog entry and change the content as follows:
   &lt;body>
     &lt;h1 class="title">First Entry&lt;/h1>
     &lt;p>April 7, 2015&lt;/p>
-    
+
     &lt;hr>
 
     &lt;p>This is my very first blog entry.&lt;/p>
-    
+
   &lt;/body>
 &lt;/html>
 </pre>
@@ -212,7 +212,7 @@ Proceed as we did for the blog page above and create a subfolder `projects` with
   &lt;/head>
   &lt;body>
     &lt;h1 class="title">Projects&lt;/h1>
-    
+
     &lt;p>Here you will soon find my web projects.&lt;/p>
 
   &lt;/body>
@@ -242,11 +242,11 @@ The last of our main pages is a contact page. Create a subfolder `contact` with 
   &lt;/head>
   &lt;body>
     &lt;h1 class="title">Contact&lt;/h1>
-    
+
     &lt;p>
       You can contact me by email: &lt;a href="mailto:spammails@gmx.ch">spammails@gmx.ch&lt;/a>
     &lt;/p>
-    
+
     &lt;p>
       Marco Jakob&lt;br>
       Switzerland
@@ -264,8 +264,6 @@ Now we already have five HTML pages.
 
 ## What's next?
 
-What's missing is a navigation so we can easily switch between our pages. 
+What's missing is a navigation so we can easily switch between our pages.
 
 &rarr; That's what we'll takle in [Part 6: Navigation](/library/html-css/part6/).
-
-
