@@ -46,7 +46,7 @@ sidebars:
   - text: Portfolio Part 6
     link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part6.zip
     icon-css: fa fa-fw fa-file-archive-o
-languages: 
+languages:
   header: Languages
   collection: library
   item: html-css
@@ -91,7 +91,7 @@ Our navigation should now look as follows:
 Verify that the links actually work and that they lead you to the desired page.
 
 <div class="alert alert-info">
-  <p>**Note:** If you open the page as a file directly in the browser (without Bracket's *Live Preview*) the links might not work quite right. The reason is that the file system simply displays the folder contents and not automatically opens `index.html`. You will have to manually click on `index.html`.</p>
+  <p>**Note:** If you open the page as a file directly in the browser (without the *Live Server*) the links might not work quite right. The reason is that the file system simply displays the folder contents and not automatically opens `index.html`. You will have to manually click on `index.html`.</p>
   <p>As soon as you publish the site on a server, the links should work as normal.</p>
 </div>
 
