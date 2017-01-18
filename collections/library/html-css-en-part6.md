@@ -72,10 +72,10 @@ With simple links we can jump from our home page to other pages. The navigation 
 
 <pre class="prettyprint lang-html">
 &lt;body>
-  <mark>&lt;a href="./">Home&lt;/a></mark>
-  <mark>&lt;a href="blog/">Blog&lt;/a></mark>
-  <mark>&lt;a href="projects/">Projects&lt;/a></mark>
-  <mark>&lt;a href="contact/">Contact&lt;/a></mark>
+  <mark>&lt;a href="/">Home&lt;/a></mark>
+  <mark>&lt;a href="/blog">Blog&lt;/a></mark>
+  <mark>&lt;a href="/projects">Projects&lt;/a></mark>
+  <mark>&lt;a href="/contact">Contact&lt;/a></mark>
 
   &lt;h1 class="title">Web Portfolio of Marco&lt;/h1>
 </pre>
@@ -169,10 +169,10 @@ The links of our navigation are put in `<li>` elements that themselves are withn
 
 <pre class="prettyprint lang-html">
 &lt;ul>
-  &lt;li>&lt;a href="./">Home&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="blog/">Blog&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="projects/">Projects&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="contact/">Contact&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="/">Home&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="/blog">Blog&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="/projects">Projects&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="/contact">Contact&lt;/a>&lt;/li>
 &lt;/ul>
 </pre>
 
