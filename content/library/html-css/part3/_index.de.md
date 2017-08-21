@@ -1,66 +1,25 @@
----
-layout: article
-title: "HTML & CSS Tutorial - Teil 3: Einführung in CSS"
-date: 2014-08-13 00:00
-updated: 2015-03-18 00:00
-slug: html-css/de/part3
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part3.md
-description: "Lernen Sie, wie Sie mit CSS eine Webseite gestalten können."
-image: /assets/library/html-css/portfolio-de.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/html-css/de/
-    paging: Intro
-  - text: "Teil 1: Unsere erste Webseite"
-    link: /library/html-css/de/part1/
-    paging: 1
-  - text: "Teil 2: Webseite veröffentlichen"
-    link: /library/html-css/de/part2/
-    paging: 2
-  - text: "Teil 3: Einführung in CSS"
-    link: /library/html-css/de/part3/
-    paging: 3
-    active: true
-  - text: "Teil 4: Entwicklertools im Browser"
-    link: /library/html-css/de/part4/
-    paging: 4
-  - text: "Teil 5: Blog und weitere Seiten"
-    link: /library/html-css/de/part5/
-    paging: 5
-  - text: "Teil 6: Navigation"
-    link: /library/html-css/de/part6/
-    paging: 6
-  - text: "Teil 7: Bootstrap Framework"
-    link: /library/html-css/de/part7/
-    paging: 7
-  - text: "Nächste Schritte"
-    link: /library/html-css/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Downloads
-  body:
-  - text: Portfolio Teil 3
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part3.zip
-    icon-css: fa fa-fw fa-file-archive-o
-languages: 
-  header: Sprachen
-  collection: library
-  item: html-css
-  part: part3
-  active: de
----
++++
+title = "Teil 3: Einführung in CSS"
+date = "2014-08-13"
+updated = "2015-03-18"
+github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part3.md"
+description = "Lernen Sie, wie Sie mit CSS eine Webseite gestalten können."
+image = "/library/html-css/portfolio-de.png"
+prettify = true
+comments = true
+aliases = [
+  "/library/html-css/de/part3/"
+]
+weight = 3
+paging = "3"
++++
 
-Vorhin haben Sie eine erste Webseite erstellt und veröffentlicht. Zugegeben, die Webseite hat noch wenig Inhalt und sieht nicht besonders ansprechend aus. Das wollen wir jetzt ändern. In diesem Teil lernen Sie, wie Sie mit CSS die Seite gestalten können. In einem späteren Teil werden wir mit Hilfe vom Bootstrap Framework noch mehr Style in die Webseite bringen. 
+Vorhin haben Sie eine erste Webseite erstellt und veröffentlicht. Zugegeben, die Webseite hat noch wenig Inhalt und sieht nicht besonders ansprechend aus. Das wollen wir jetzt ändern. In diesem Teil lernen Sie, wie Sie mit CSS die Seite gestalten können. In einem späteren Teil werden wir mit Hilfe vom Bootstrap Framework noch mehr Style in die Webseite bringen.
 
 
 ## Struktur und Style
 
-Nochmals zur Erinnerung: <abbr data-toggle="tooltip" title="Hypertext Markup Language">HTML</abbr> beschreibt die Struktur einer Webseite während <abbr data-toggle="tooltip" title="Cascading Style Sheet">CSS</abbr> die visuelle Erscheinung definiert. 
+Nochmals zur Erinnerung: <abbr data-toggle="tooltip" title="Hypertext Markup Language">HTML</abbr> beschreibt die Struktur einer Webseite während <abbr data-toggle="tooltip" title="Cascading Style Sheet">CSS</abbr> die visuelle Erscheinung definiert.
 
 Die Aufteilung von Struktur und Style hat viele Vorteile, wie wir noch sehen werden. Es ist nicht zwingend, aber meistens schreibt man HTML und CSS auch in separate Dateien.
 
@@ -71,7 +30,7 @@ Eine CSS-Datei ist eine ganz normale Textdatei mit der Endung `.css`, die wir mi
 
 Erstellen Sie also in Ihrem *Portfolio*-Ordner eine **neue Datei**. Wir geben der Datei den Namen `main.css`.
 
-![Neue CSS-Datei](/assets/library/html-css/part3/new-css-file-de.png)
+![Neue CSS-Datei](/library/html-css/part3/new-css-file-de.png)
 
 Nun wechseln wir zur `index.html`-Datei und fügen innerhalb des `<head>`-Elements ein `<link>`-Element hinzu. Mit dem `<link>`-Element können wir der HTML-Seite mitteilen, dass sie die CSS-Datei laden soll:
 
@@ -95,13 +54,13 @@ Fügen Sie dieses Element im `<head>`-Bereich ein. Dann sollte Ihr Code etwa so 
   &lt;/head>
   &lt;body>
     &lt;h1>Web Portfolio von Marco&lt;/h1>
-    
+
     &lt;h2>Willkommen!&lt;/h2>
-    
+
     &lt;p>Schön, dass Sie auf meiner Seite vorbeischauen.&lt;/p>
-    
+
     &lt;p>Sie können sich ruhig etwas umsehen. Im Blog dokumentiere ich meine Erfahrungen beim Programmieren. Daneben können Sie auch meine Webprojekte anschauen. Viel Spass.&lt;/p>
-    
+
     &lt;img src="marco.jpg" alt="Foto von mir">
 
     &lt;p>Marco :-)&lt;/p>
@@ -131,7 +90,7 @@ h2 {
 
 Das Resultat sollte etwa so aussehen:
 
-![Geänderte Farben](/assets/library/html-css/part3/changed-color-de.png)
+![Geänderte Farben](/library/html-css/part3/changed-color-de.png)
 
 
 ## Farbcodes
@@ -152,11 +111,11 @@ Das Ausdrücken von Farben mit Hexadezimalzahlen ist sehr beliebt, da man damit 
 
 Falls Sie als Editor den [Brackets](http://brackets.io/) verwenden, können Sie den Farbwähler gleich in der CSS-Datei aufrufen. Klicken Sie dazu mit der rechten Maustaste auf den Farbcode und wählen **Schnell bearbeiten** oder drücken Sie die Tastenkombination `Ctrl+E`.
 
-![Schnell bearbeiten](/assets/library/html-css/part3/quick-edit-de.png)
+![Schnell bearbeiten](/library/html-css/part3/quick-edit-de.png)
 
 Dann erscheint sofort ein Farbwähler, wo man bequem die Farbe auswählen kann. Sie können mit den drei Knöpfen auch zwischen den verschiedenen Notationsformen umschalten.
 
-![Farbwähler](/assets/library/html-css/part3/color-chooser.png)
+![Farbwähler](/library/html-css/part3/color-chooser.png)
 
 
 ### Online Farbwähler
@@ -196,14 +155,14 @@ Sie haben nun bereits gesehen, wie CSS-Regeln die Farbe eines HTML-Elementes ver
 Eine CSS-Regel besteht aus drei Elementen, einem *Selektor*, einer *Eigenschaft* und einem *Wert*.
 
 
-![CSS-Regel](/assets/library/html-css/part3/css-rule-de.png)
+![CSS-Regel](/library/html-css/part3/css-rule-de.png)
 
 Diese Regel besagt, dass alle `<h2>`-Elemente eine Hintergrundfarbe von `#607d8b` erhalten sollen.
 
 
 ## CSS-Selektoren
 
-Selektoren geben an, auf welches HTML-Element eine CSS-Regel angewandt werden soll. 
+Selektoren geben an, auf welches HTML-Element eine CSS-Regel angewandt werden soll.
 
 <div class="alert alert-info">
 **Hinweis:** Wir werden hier nur die wichtigsten Selektoren kennen lernen. Damit kommt man schon sehr weit. Für eine ausführlichere Übersicht suchen Sie im Internet nach "CSS Selektoren".
@@ -212,7 +171,7 @@ Selektoren geben an, auf welches HTML-Element eine CSS-Regel angewandt werden so
 
 ### Typselektor
 
-Der Typselektor wird angewandt auf alle Elemente mit dem entsprechenden Tag. 
+Der Typselektor wird angewandt auf alle Elemente mit dem entsprechenden Tag.
 Wenn wir als Beispiel alle `p`-Elemente ansprechen wollten, würde dies so aussehen.
 
 
@@ -310,7 +269,7 @@ p a {
 &lt;a href="http://www.example.com">Example Webseite&lt;/a>
 </pre>
 
-Der Nachkommenselektor `p a` wählt alle `a`-Elemente aus, die irgendwo innerhalb eines `p`-Elementes vorkommen. In unserem Beispiel würde die CSS-Regel auf *Meine Webseite* zutreffen, jedoch nicht auf *Example Webseite*. 
+Der Nachkommenselektor `p a` wählt alle `a`-Elemente aus, die irgendwo innerhalb eines `p`-Elementes vorkommen. In unserem Beispiel würde die CSS-Regel auf *Meine Webseite* zutreffen, jedoch nicht auf *Example Webseite*.
 
 <div class="alert alert-info">
 **Hinweis:** Das `a`-Element muss nicht unbedingt direkt dem `p`-Element untergeordnet sein. Der Nachkommenselektor trifft auf irgend ein *Nachkomme* zu. Für den anderen Fall gibt es den Kindselektor (`>`), auf den ich jedoch hier nicht eingehen werde.
@@ -404,9 +363,9 @@ Dann können wir diesen einen Titel im CSS ansprechen mit `.title`. Die CSS-Rege
 }
 </pre>
 
-Wenn alles geklappt hat, dann sieht das Portfolio nun etwa so aus: 
+Wenn alles geklappt hat, dann sieht das Portfolio nun etwa so aus:
 
-![Portfolio](/assets/library/html-css/part3/portfolio-de.jpg)
+![Portfolio](/library/html-css/part3/portfolio-de.jpg)
 
 
 ***

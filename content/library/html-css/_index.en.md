@@ -3,10 +3,12 @@ title = "HTML & CSS Tutorial"
 date = "2015-04-08"
 github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en.md"
 description = "Learn the basics of HTML and CSS in this tutorial to create your own web projects. We immediately start with a practical example of building your own portfolio website."
-image = "/assets/library/html-css/portfolio.png"
+image = "portfolio.png"
 published = true
 prettify = true
 comments = true
+weight = 7
+paging = "Intro"
 +++
 
 In this tutorial you will learn the basics of HTML and CSS to create your own web projects. Instead of working through rather boring theory we will immediately **start with a project**.
@@ -19,7 +21,7 @@ The theory will be explained as soon as it is necessary for our project. This wa
 The project we will build is a personal **web portfolio**. The portfolio contains a start page, a blog, a page to show off your future web projects, and a contact page.
 
 
-<img src="/assets/library/html-css/portfolio.png" alt="Portfolio" class="img-thumbnail">
+<img src="portfolio.png" alt="Portfolio" class="img-thumbnail">
 
 
 ## Basic Concept
@@ -36,7 +38,7 @@ The basic concept of this tutorial is to get you started with web programming an
 Both languages, HTML and CSS, are independent and should be saved in separate files.
 
 <div class="alert alert-info">
-  **Remember:** HTML provides the content while CSS defines the styling of the content.
+  <strong>Remember:</strong> HTML provides the content while CSS defines the styling of the content.
 </div>
 
 

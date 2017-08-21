@@ -1,54 +1,18 @@
----
-layout: article
-title: "HTML & CSS Tutorial - Teil 2: Webseite veröffentlichen"
-date: 2014-08-13 00:00
-updated: 2016-11-10 00:00
-slug: html-css/de/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part2.md
-description: "Lernen Sie, wie man eine Webseite live im Internet veröffentlicht."
-image: /assets/library/html-css/portfolio-de.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/html-css/de/
-    paging: Intro
-  - text: "Teil 1: Unsere erste Webseite"
-    link: /library/html-css/de/part1/
-    paging: 1
-  - text: "Teil 2: Webseite veröffentlichen"
-    link: /library/html-css/de/part2/
-    paging: 2
-    active: true
-  - text: "Teil 3: Einführung in CSS"
-    link: /library/html-css/de/part3/
-    paging: 3
-  - text: "Teil 4: Entwicklertools im Browser"
-    link: /library/html-css/de/part4/
-    paging: 4
-  - text: "Teil 5: Blog und weitere Seiten"
-    link: /library/html-css/de/part5/
-    paging: 5
-  - text: "Teil 6: Navigation"
-    link: /library/html-css/de/part6/
-    paging: 6
-  - text: "Teil 7: Bootstrap Framework"
-    link: /library/html-css/de/part7/
-    paging: 7
-  - text: "Nächste Schritte"
-    link: /library/html-css/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-languages:
-  header: Sprachen
-  collection: library
-  item: html-css
-  part: part2
-  active: de
----
++++
+title = "Teil 2: Webseite veröffentlichen"
+date = "2014-08-13"
+updated = "2016-11-10"
+github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part2.md"
+description = "Lernen Sie, wie man eine Webseite live im Internet veröffentlicht."
+image = "/library/html-css/portfolio-de.png"
+prettify =  true
+comments =  true
+aliases = [
+  "/library/html-css/de/part2/"
+]
+weight = 2
+paging = "2"
++++
 
 Im ersten Teil haben wir unsere erste Webseite erstellt. Es wäre ja schade, wenn diese Webseite nur auf unserem Computer liegt und sie gar nie von jemand anderem angeschaut werden kann. Deshalb werden wir jetzt die Webseite gleich live ins Internet stellen.
 
@@ -66,26 +30,26 @@ Es gibt zahlreiche Dienste, wo wir Speicherplatz auf einem Server mieten können
 
 ### Hosting auf BitBalloon
 
-![BitBalloon Logo](/assets/library/html-css/part2/bitballoon-logo.png)
+![BitBalloon Logo](/library/html-css/part2/bitballoon-logo.png)
 
 [BitBalloon](https://www.bitballoon.com/) ist ein wunderbar einfacher Dienst, den ich sehr empfehlen kann. So geht es:
 
 1. Melden Sie sich an auf der [Bitballoon Webseite](https://www.bitballoon.com/). Klicken Sie dazu auf *Sign Up* und anschliessend auf *Sign in Using Persona*. Anschliessen geben Sie Ihre E-Mail-Adresse und ein Passwort ein.
 
-2. Sobald Sie angemeldet sind können Sie einfach Ihren gesamten Webseitenordner (Ihren Portfolio-Ordner) in den dafür vorgesehenen Bereich ziehen:   
-![BitBalloon drag and drop](/assets/library/html-css/part2/bitballoon-drag-and-drop.png)
+2. Sobald Sie angemeldet sind können Sie einfach Ihren gesamten Webseitenordner (Ihren Portfolio-Ordner) in den dafür vorgesehenen Bereich ziehen:
+![BitBalloon drag and drop](/library/html-css/part2/bitballoon-drag-and-drop.png)
 
 3. Kaum zu glauben, aber das war's schon. Sobald die Seite hochgeladen ist, wurde für Sie eine URL generiert, unter welcher Ihre Seite aufgerufen werden kann. Klicken Sie auf diese URL und überprüfen Sie, ob die Seite korrekt angezeigt wird.
 
-4. Um Ihre URL etwas zu verkürzen können Sie auf ***Edit name*** klicken und einen beliebigen Namen eingeben.   
-![BitBalloon veröffentlicht](/assets/library/html-css/part2/bitballoon-published.png)
+4. Um Ihre URL etwas zu verkürzen können Sie auf ***Edit name*** klicken und einen beliebigen Namen eingeben.
+![BitBalloon veröffentlicht](/library/html-css/part2/bitballoon-published.png)
 
 5. Für Updates: Sobald Sie eine neue Version Ihrer Webseite veröffentlichen möchten, ziehen Sie den Ordner einfach erneut in das Feld mit dem Text ***Drag & Drop to Update your Site***.
 
 
 ### Hosting auf GitHub
 
-![GitHub Logo](/assets/library/html-css/part2/github-logo.jpg)
+![GitHub Logo](/library/html-css/part2/github-logo.jpg)
 
 Wenn Sie schon etwas Erfahrung mit Programmieren haben, dann ist auch [GitHub](https://github.com) eine gute Möglichkeit für Webseiten-Hosting. GitHub ist eine Plattform, um die Zusammenarbeit unter Programmierern zu erleichtern und bietet darüber hinaus auf [GitHub Pages](https://pages.github.com/) Hosting für Webseiten an. GitHub Pages bietet mehr Optionen (z.B. mit eigenem Domainnamen verknüpfen), aber es erfordert Kenntnisse im Arbeiten mit [Git](http://de.wikipedia.org/wiki/Git).
 

@@ -1,54 +1,15 @@
----
-layout: article
-title: "HTML & CSS Tutorial - Part 2: Publishing Your Website"
-date: 2015-04-08 00:00
-updated: 2016-11-10 00:00
-slug: html-css/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part2.md
-description: "Learn to publish a website live in the internet. Compare different hosting possibilities like BitBalloon, Dropbox, Google Drive, and GitHub Pages."
-image: /assets/library/html-css/portfolio.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Articles in this Series
-  body:
-  - text: "Introduction"
-    link: /library/html-css/
-    paging: Intro
-  - text: "Part 1: Your First Website"
-    link: /library/html-css/part1/
-    paging: 1
-  - text: "Part 2: Publishing Your Website"
-    link: /library/html-css/part2/
-    paging: 2
-    active: true
-  - text: "Part 3: Introduction to CSS"
-    link: /library/html-css/part3/
-    paging: 3
-  - text: "Part 4: Development Tools in the Browser"
-    link: /library/html-css/part4/
-    paging: 4
-  - text: "Part 5: Blog and Other Pages"
-    link: /library/html-css/part5/
-    paging: 5
-  - text: "Part 6: Navigation"
-    link: /library/html-css/part6/
-    paging: 6
-  - text: "Part 7: Bootstrap Framework"
-    link: /library/html-css/part7/
-    paging: 7
-  - text: "Next Steps"
-    link: /library/html-css/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-languages:
-  header: Languages
-  collection: library
-  item: html-css
-  part: part2
-  active: en
----
++++
+title = "HTML & CSS Tutorial - Part 2: Publishing Your Website"
+date = "2015-04-08"
+updated = "2016-11-10"
+github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part2.md"
+description = "Learn to publish a website live in the internet. Compare different hosting possibilities like BitBalloon, Dropbox, Google Drive, and GitHub Pages."
+image = "/assets/library/html-css/portfolio.png"
+prettify = true
+comments = true
+weight = 2
+paging = "2"
++++
 
 In the previous part you have created your first web site. It would be a pity if this website only stays on your computer and could never be looked at by anyone else. Therefore, we will now learn how to publish our website live on the internet.
 
@@ -72,12 +33,12 @@ There are numerous services where you can rent server space. Such a service is c
 
 1. Subscribe on the [Bitballoon website](https://www.bitballoon.com/). Click on *Sign Up* and then choose *Sign in Using Persona*. Then enter your email address and a password.
 
-2. Once you are logged in, you can simply drag your entire web folder (your Portfolio folder) in the provided space.   
+2. Once you are logged in, you can simply drag your entire web folder (your Portfolio folder) in the provided space.
 ![BitBalloon drag and drop](/assets/library/html-css/part2/bitballoon-drag-and-drop.png)
 
 3. Hard to believe, but that's it. Once the page has been uploaded a URL is generated for you which points to your site. Click this URL and check whether the page is displayed correctly.
 
-4. To shorten your URL you can click on **Edit name** and enter an arbitrary name.   
+4. To shorten your URL you can click on **Edit name** and enter an arbitrary name.
 ![BitBalloon veröffentlicht](/assets/library/html-css/part2/bitballoon-published.png)
 
 5. For Updates: When you want to release a new version of your website, simply drag the folder into the box with the text **Drag & Drop to Update your Site**.

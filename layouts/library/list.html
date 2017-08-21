@@ -1,0 +1,148 @@
+{{ define "head_includes" }}
+
+{{ if .Params.css }}
+  <link href="{{ .Params.css }}" rel="stylesheet" type="text/css" />
+{{ end }}
+
+
+{{ end }}
+
+
+
+{{ define "main" }}
+<div class="container article-container">
+  <!-- {% include "navigation" %} -->
+
+  {{ if .Params.github }}
+  <div class="row">
+    <div class="col-md-12">
+      <div class="github-edit">
+        <a href="{{ .Params.github }}">Edit on GitHub</a>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+
+  <article class="row"{{ if .Params.rtl }} dir="rtl"{{ end }}>
+
+    {{ $sect := (.Site.GetPage "section" "library/html-css") }}
+
+    <aside class="col-md-3">
+      <div class="visible-md-block visible-lg-block">
+        <div class="panel panel-default sidebar">
+          <div class="panel-heading">
+            <h4 class="panel-title">Artikel dieser Serie</h4>
+          </div>
+
+          <div class="list-group">
+            <a href="{{ $sect.RelPermalink }}" class="list-group-item">
+              {{ $sect.Title }}</a>
+            {{ range $sect.Sections }}
+              <a href="{{ .RelPermalink }}" class="list-group-item">
+                {{ .Title }}</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="col-md-9">
+      <header class="article-header">
+        <h1 class="article-title">{{ .Title }}</h1>
+      </header>
+
+      <aside class="visible-xs-block visible-sm-block">
+        <div class="btn-group sidebar-dropdown">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Artikel dieser Serie <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="{{ $sect.RelPermalink }}" class="list-group-item">
+              {{ $sect.Title }}</a></li>
+            {{ range $sect.Sections }}
+              <li><a href="{{ .RelPermalink }}" class="list-group-item">
+                {{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </aside>
+
+      <div class="article-content">
+        {{ .Content }}
+      </div>
+
+      <hr>
+
+      <nav>
+        <div class="article-paging">
+          <ul class="pagination">
+            <li><a href="{{ $sect.RelPermalink }}"  data-toggle="tooltip" title="{{ $sect.Title }}">
+              {{ $sect.Params.paging }}</a></li>
+              {{ range $sect.Sections }}
+                <li><a href="{{ .RelPermalink }}"  data-toggle="tooltip" title="{{ .Title }}">
+                  {{ .Params.paging }}</a></li>
+              {{ end }}
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </article>
+
+
+    {{/*
+    {{- if model.sidebars or model.languages -%}
+    <aside class="col-md-3">
+      <div class="visible-md-block visible-lg-block">
+      {% include "article/sidebars" %}
+      {% include "article/languages" %}
+      </div>
+    </aside>
+    <div class="col-md-9">
+    {%- else -%}
+    <div class="col-md-offset-1 col-md-10">
+    {%- endif -%}
+      <header class="article-header">
+        <h1 class="article-title">{{ .Title }}</h1>
+        {% include "article/date" %}
+      </header>
+
+      {%- if model.sidebars or model.languages -%}
+      <aside class="visible-xs-block visible-sm-block">
+        {% include "article/sidebars-dropdown" %}
+        {% include "article/languages-dropdown" %}
+      </aside>
+      {%- endif -%}
+
+      <div class="article-content">
+        {% block content %}{% endblock %}
+      </div>
+
+      <hr>
+      {% include "article/paging" %}
+    </div>
+  </article>
+
+  {% if model.comments %}
+  <section class="row">
+    {%- if model.sidebars or model.languages -%}
+    <div class="col-md-offset-3 col-md-9">
+    {%- else -%}
+    <div class="col-md-offset-1 col-md-10">
+    {%- endif -%}
+      <h2>Comments</h2>
+      <div id="disqus_thread"></div>
+    </div>
+  </section>
+  {% endif %}
+</div>
+ */}}
+
+{{ end }}
+
+
+
+{{ define "body_includes" }}
+{{ if .Params.prettify }}
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&amp;lang=dart"></script>
+{{ end }}
+{{ end }}

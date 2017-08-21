@@ -1,58 +1,14 @@
----
-layout: article
-title: "HTML & CSS Tutorial - Part 1: Your First Website"
-date: 2015-04-08 00:00
-slug: html-css/part1
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part1.md
-description: "Create your first website. Get to know the programming tools and learn the basics of HTML and CSS."
-image: /assets/library/html-css/portfolio.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Articles in this Series
-  body:
-  - text: "Introduction"
-    link: /library/html-css/
-    paging: Intro
-  - text: "Part 1: Your First Website"
-    link: /library/html-css/part1/
-    paging: 1
-    active: true
-  - text: "Part 2: Publishing Your Website"
-    link: /library/html-css/part2/
-    paging: 2
-  - text: "Part 3: Introduction to CSS"
-    link: /library/html-css/part3/
-    paging: 3
-  - text: "Part 4: Development Tools in the Browser"
-    link: /library/html-css/part4/
-    paging: 4
-  - text: "Part 5: Blog and Other Pages"
-    link: /library/html-css/part5/
-    paging: 5
-  - text: "Part 6: Navigation"
-    link: /library/html-css/part6/
-    paging: 6
-  - text: "Part 7: Bootstrap Framework"
-    link: /library/html-css/part7/
-    paging: 7
-  - text: "Next Steps"
-    link: /library/html-css/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Downloads
-  body:
-  - text: Portfolio Part 1
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part1.zip
-    icon-css: fa fa-fw fa-file-archive-o
-languages:
-  header: Languages
-  collection: library
-  item: html-css
-  part: part1
-  active: en
----
++++
+title = "HTML & CSS Tutorial - Part 1: Your First Website"
+date = "2015-04-08"
+github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part1.md"
+description = "Create your first website. Get to know the programming tools and learn the basics of HTML and CSS."
+image = "/assets/library/html-css/portfolio.png"
+prettify = true
+comments = true
+weight = 1
+paging = "1"
++++
 
 Let's dive right in and create our first web page.
 

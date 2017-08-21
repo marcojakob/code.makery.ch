@@ -1,58 +1,14 @@
----
-layout: article
-title: "HTML & CSS Tutorial - Part 7: Bootstrap Framework"
-date: 2015-04-08 00:00
-slug: html-css/part7
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part7.md
-description: "Learn to use the Bootstrap Framework in your website."
-image: /assets/library/html-css/portfolio.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Articles in this Series
-  body:
-  - text: "Introduction"
-    link: /library/html-css/
-    paging: Intro
-  - text: "Part 1: Your First Website"
-    link: /library/html-css/part1/
-    paging: 1
-  - text: "Part 2: Publishing Your Website"
-    link: /library/html-css/part2/
-    paging: 2
-  - text: "Part 3: Introduction to CSS"
-    link: /library/html-css/part3/
-    paging: 3
-  - text: "Part 4: Development Tools in the Browser"
-    link: /library/html-css/part4/
-    paging: 4
-  - text: "Part 5: Blog and Other Pages"
-    link: /library/html-css/part5/
-    paging: 5
-  - text: "Part 6: Navigation"
-    link: /library/html-css/part6/
-    paging: 6
-  - text: "Part 7: Bootstrap Framework"
-    link: /library/html-css/part7/
-    paging: 7
-    active: true
-  - text: "Next Steps"
-    link: /library/html-css/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Downloads
-  body:
-  - text: Portfolio Part 7
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part7.zip
-    icon-css: fa fa-fw fa-file-archive-o
-languages: 
-  header: Languages
-  collection: library
-  item: html-css
-  part: part7
-  active: en
----
++++
+title = "HTML & CSS Tutorial - Part 7: Bootstrap Framework"
+date = "2015-04-08"
+github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part7.md"
+description = "Learn to use the Bootstrap Framework in your website."
+image = "/assets/library/html-css/portfolio.png"
+prettify = true
+comments = true
+weight = 7
+paging = "7"
++++
 
 So far we have programmed all HTML and CSS from scratch. Our *web portfolio* project already has a few HTML pages with some content, a navigation and some styling.
 
@@ -198,16 +154,16 @@ Finally, we want to make the navigation more beautiful with the help of Bootstra
 
 Program the following steps. I recommend you test what happens after every step.
 
-1. Insert the two classes `nav` and `navbar-nav` to the `ul` element in your navigation.   
+1. Insert the two classes `nav` and `navbar-nav` to the `ul` element in your navigation.
 `<ul class="nav navbar-nav">`
 
-2. Surround the entire navigation with a new `<div>` with the `container` class. This has the effect that the distances from the edges are the same as in our main content. Do not forget the closing `</div>` tag after the navigation code.   
+2. Surround the entire navigation with a new `<div>` with the `container` class. This has the effect that the distances from the edges are the same as in our main content. Do not forget the closing `</div>` tag after the navigation code.
 `<div class="container">`
 
-3. Surround it all with yet another `<div>`. This time we will need the three classes `navbar`, `navbar-default`, and `navbar-static-top`. Those classes ensure that the navigation is displayed at the top of the screen. Don't forget the closing `</div>` tag.      
+3. Surround it all with yet another `<div>`. This time we will need the three classes `navbar`, `navbar-default`, and `navbar-static-top`. Those classes ensure that the navigation is displayed at the top of the screen. Don't forget the closing `</div>` tag.
 `<div class="navbar navbar-default navbar-static-top">`
 
-4. In the `<li>` element of our home, insert a class called `active`. This has the effect that the *Home* link is highlighted. This tells the visitor about the currently active page.   
+4. In the `<li>` element of our home, insert a class called `active`. This has the effect that the *Home* link is highlighted. This tells the visitor about the currently active page.
 `<li class="active"><a href="./">Home</a></li>`
 
 This is how the complete code will look like after the previous steps (pay attention to correct indentation!):
@@ -338,4 +294,3 @@ Then look at your code and make sure that the HTML is **clean**. Each time an HT
 ## What's next?
 
 &rarr; Read about the [Next Steps](/library/html-css/next/).
-

@@ -1,5 +1,5 @@
 baseurl = "https://code.makery.ch"
-title = "code.makery.ch - learning how to code"
+title = "code.makery.ch"
 pluralizeListTitles = false
 preserveTaxonomyNames = true
 removePathAccents = true
@@ -8,6 +8,7 @@ enableRobotsTXT = true
 defaultContentLanguage = "en"
 
 [params]
+  intro = "Learning how to code."
   author = "Marco Jakob"
   email = "info@makery.ch"
   analyticsId = "UA-34917397-3"

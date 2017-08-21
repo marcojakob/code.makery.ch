@@ -1,68 +1,27 @@
----
-layout: article
-title: "HTML & CSS Tutorial - Teil 5: Blog und weitere Seiten"
-date: 2014-08-13 00:00
-updated: 2015-03-18 00:00
-slug: html-css/de/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part5.md
-description: "Erstellen Sie eine Dateistruktur für mehrere Webseiten. Lernen Sie eine Struktur für einen Blog aufzustellen."
-image: /assets/library/html-css/portfolio-de.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/html-css/de/
-    paging: Intro
-  - text: "Teil 1: Unsere erste Webseite"
-    link: /library/html-css/de/part1/
-    paging: 1
-  - text: "Teil 2: Webseite veröffentlichen"
-    link: /library/html-css/de/part2/
-    paging: 2
-  - text: "Teil 3: Einführung in CSS"
-    link: /library/html-css/de/part3/
-    paging: 3
-  - text: "Teil 4: Entwicklertools im Browser"
-    link: /library/html-css/de/part4/
-    paging: 4
-  - text: "Teil 5: Blog und weitere Seiten"
-    link: /library/html-css/de/part5/
-    paging: 5
-    active: true
-  - text: "Teil 6: Navigation"
-    link: /library/html-css/de/part6/
-    paging: 6
-  - text: "Teil 7: Bootstrap Framework"
-    link: /library/html-css/de/part7/
-    paging: 7
-  - text: "Nächste Schritte"
-    link: /library/html-css/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Downloads
-  body:
-  - text: Portfolio Teil 5
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part5.zip
-    icon-css: fa fa-fw fa-file-archive-o
-languages: 
-  header: Sprachen
-  collection: library
-  item: html-css
-  part: part5
-  active: de
----
++++
+title = "Teil 5: Blog und weitere Seiten"
+date = "2014-08-13"
+updated = "2015-03-18"
+github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part5.md"
+description = "Erstellen Sie eine Dateistruktur für mehrere Webseiten. Lernen Sie eine Struktur für einen Blog aufzustellen."
+image = "/library/html-css/portfolio-de.png"
+prettify = true
+comments = true
+aliases = [
+  "/library/html-css/de/part5/"
+]
+weight = 5
+paging = "5"
++++
 
 Unser Portfolio hat bis hierhin nur eine Startseite. Die meisten *Websites* (gemeint ist damit der ganze Webauftritt) haben natürlich mehr als nur eine Seite. In diesem Teil werden wir weitere Seiten erstellen.
 
 
 ## Neue Seiten erstellen
 
-Wir erstellen drei neue Seiten: Eine Seite für unseren eigenen **Blog**, eine für **Projekte** und eine für **Kontaktinformationen**. 
+Wir erstellen drei neue Seiten: Eine Seite für unseren eigenen **Blog**, eine für **Projekte** und eine für **Kontaktinformationen**.
 
-Diese drei Seiten stellen unsere "Hauptseiten" dar. Das heisst, dass wir daran denken müssen, dass jeweils weitere Unterseiten dazukommen könnten. So wird es zum Beispiel im Blog später für jeden Blogeintrag eine eigenen Unterseite geben. Aus diesem Grund werden wir für diese drei Seiten **je einen eigenen Unterordner** erstellen. Das gibt uns eine gute Ordnung. 
+Diese drei Seiten stellen unsere "Hauptseiten" dar. Das heisst, dass wir daran denken müssen, dass jeweils weitere Unterseiten dazukommen könnten. So wird es zum Beispiel im Blog später für jeden Blogeintrag eine eigenen Unterseite geben. Aus diesem Grund werden wir für diese drei Seiten **je einen eigenen Unterordner** erstellen. Das gibt uns eine gute Ordnung.
 
 Damit bei einem Aufruf des Unterordners die jeweilige Hauptseite automatisch als erstes angezeigt wird, nennen wir alle Hauptseiten `index.html`.
 
@@ -77,7 +36,7 @@ Eine neue Seite zu erstellen ist einfach. Am besten kopieren Sie die bisherige `
 
 Erstellen Sie einen Unterordner in Ihrem *Portfolio*-Ordner namens `blog`. Kopieren Sie die Datei `index.html` in diesen Unterordner. Nun sollte Ihre Dateistruktur so aussehen:
 
-![Blog Unterordner](/assets/library/html-css/part5/blog-subfolder.png)
+![Blog Unterordner](/library/html-css/part5/blog-subfolder.png)
 
 Öffnen Sie nun die kopierte Datei `blog/index.html` in Ihrem Browser (wenn Sie den Brackets-Editor verwenden, klicken Sie auf den Blitz für die *Live-Vorschau*). Nun werden Sie merken, dass zwei Dinge nicht funktionieren:
 
@@ -111,13 +70,13 @@ Jetzt passen wir noch den Titel und Inhalt an:
   &lt;/head>
   &lt;body>
     &lt;h1 class="title">Blog&lt;/h1>
-    
+
     &lt;p>Hier schreibe ich über alles, was mir beim Lernen von Webprogrammierung begegnet.&lt;/p>
 
     &lt;h2>Blogeinträge&lt;/h2>
-    
+
     &lt;!-- Hier kommt eine Liste mit allen Blogeinträgen. -->
-    
+
   &lt;/body>
 &lt;/html>
 </pre>
@@ -129,7 +88,7 @@ Im HTML-Code oben sehen Sie ein neues Element mit den Tags `<!--` und `-->`. Mit
 
 Der Blog braucht natürlich noch Einträge. Wir erstellen für jeden Blogeintrag eine eigen HTML-Unterseite. Erstellen Sie einen Unterordner innerhalb des `blog`-Ordners mit dem Namen `erster-eintrag`. Kopieren Sie die Datei `blog/index.html` in diesen Ordner hinein.
 
-![Blogeintrag](/assets/library/html-css/part5/blog-entry-subfolder-de.png)
+![Blogeintrag](/library/html-css/part5/blog-entry-subfolder-de.png)
 
 Im Blogeintrag ändern wir den Inhalt wie folgt ab:
 
@@ -147,11 +106,11 @@ Im Blogeintrag ändern wir den Inhalt wie folgt ab:
   &lt;body>
     &lt;h1 class="title">Erster Eintrag&lt;/h1>
     &lt;p>02. August 2014&lt;/p>
-    
+
     &lt;hr>
 
     &lt;p>Dies ist mein erster Eintrag im Blog.&lt;/p>
-    
+
   &lt;/body>
 &lt;/html>
 </pre>
@@ -187,7 +146,7 @@ Mit solchen Blogeinträgen werden Sie beim Lernen von Programmierung viel schnel
   **Hinweis:** Erstellen Sie für jeden Blogeintrag einen eigenen Unterordner (mit einer `index.html`-Seite). So haben Sie eine gute Ordnung und können Bilder oder andere Dateien für den Blogeintrag im Unterordner ablegen.
 </div>
 
-![Blogeintrag 2](/assets/library/html-css/part5/blog-entry-subfolder2-de.png)
+![Blogeintrag 2](/library/html-css/part5/blog-entry-subfolder2-de.png)
 
 
 ## Seite für Projekte
@@ -210,7 +169,7 @@ Gehen Sie wie oben beim Blog vor und erstellen Sie einen Unterordner `projekte` 
   &lt;/head>
   &lt;body>
     &lt;h1 class="title">Projekte&lt;/h1>
-    
+
     &lt;p>Hier finden Sie später meine Webprojekte.&lt;/p>
 
   &lt;/body>
@@ -240,11 +199,11 @@ Als letzte Hauptseite fügen wir eine Seite mit Kontaktinformationen hinzu. Erst
   &lt;/head>
   &lt;body>
     &lt;h1 class="title">Kontakt&lt;/h1>
-    
+
     &lt;p>
       Sie können mich kontaktieren per Mail: &lt;a href="mailto:spammails@gmx.ch">spammails@gmx.ch&lt;/a>
     &lt;/p>
-    
+
     &lt;p>
       Marco Jakob&lt;br>
       Schweiz
@@ -257,11 +216,11 @@ Bei der Adresse sehen Sie ein neues Element: `<br>`. Es bewirkt einen Zeilenumbr
 
 Nun haben wir bereits fünf HTML-Seiten:
 
-![Alle Dateien](/assets/library/html-css/part5/all-files-de.png)
+![Alle Dateien](/library/html-css/part5/all-files-de.png)
 
 
 ## Wie weiter?
 
-Was natürlich fehlt, ist eine Navigation, so dass man einfach zwischen diesen Seiten hin und her wechseln kann. 
+Was natürlich fehlt, ist eine Navigation, so dass man einfach zwischen diesen Seiten hin und her wechseln kann.
 
 &rarr; Das nehmen wir gleich in Angriff im [Teil 6: Navigieren zwischen Seiten](/library/html-css/de/part6/).

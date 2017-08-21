@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ .Language }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="{{ .Site.Params.keywords }}">
     <!--
     /**
      * @license
@@ -29,7 +30,11 @@
     <link href="/css/style.min.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="canonical" href="{{ block "canonical" . }}{{ .Permalink }}{{ end }}" />
 
-    <!-- {%- include "alternate-lang" %} -->
+    <!-- Alternate Languages -->
+    {{ range .Translations }}
+    <link rel="alternate" hreflang="{{ .Language }}" href="{{ .Permalink }}" />
+    {{ end}}
+
     <!-- RSS Feed -->
     <link rel="alternate" type="application/rss+xml" href="/rss" title="{{ .Site.Title }} - RSS Feed">
 
@@ -57,19 +62,31 @@
     {{ if .Site.Params.googlePlus }}
     <link rel="author" href="https://plus.google.com/{{ .Site.Params.googlePlus }}"/>
     {{ end }}
-    <!-- {% include "prettify-css" %} -->
-    <!-- {% include "custom-css" %} -->
-    <!-- {% include "analytics-js" %} -->
+
+    {{ partial "analytics_js.html" . }}
+
+    {{ block "head_includes" . }}{{ end }}
   </head>
+
+
   <body>
+    <header class="site-header container">
+      <h1 class="site-title">
+        <a href="/"><span class="main-text">code</span>.makery</a>
+      </h1>
+      <div class="site-intro">
+        <p>{{ .Site.Params.intro }}</p>
+      </div>
 
-    <!-- {% include "header" %} -->
+      <div class="ribbon">
+        <a href="https://tinyletter.com/codemakery" title="Get Updates">Subscribe to <i class="fa fa-envelope-o"></i> Updates </a>
+      </div>
+    </header>
 
-    <!-- {% block content %}{% endblock %} -->
     {{ block "main" . }}{{ end }}
 
-    <!-- {% include "footer" %} -->
+    {{ partial "footer.html" . }}
 
-    <!-- {% include "html-body-end" %} -->
+    {{ block "body_includes" . }}{{ end }}
   </body>
 </html>

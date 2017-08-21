@@ -4,10 +4,15 @@ date = "2014-08-13"
 updated = "2015-03-18"
 github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de.md"
 description = "Mit dieser Anleitung lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen sofort mit einer eigenen Webseite für Ihr Portfolio."
-image = "/assets/library/html-css/portfolio-de.png"
+image = "portfolio-de.png"
 published = true
 prettify = true
 comments = true
+aliases = [
+  "/library/html-css/de/"
+]
+weight = 7
+paging = "Intro"
 +++
 
 Mit dieser Anleitung lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen **sofort mit einem Projekt**, anstatt zuerst langweilige Theorie abzuhandeln.
@@ -19,7 +24,7 @@ Die Theorie wird erklärt, sobald sie für das Projekt benötigt wird. Sie werde
 
 Das Projekt, welches wir Schritt-für-Schritt erarbeiten, ist Ihr persönliches **Web Portfolio**. Dieses Portfolio beinhaltet eine Startseite, einen Blog, eine Seite für Ihre zukünftigen Webprojekte und eine Kontaktseite.
 
-<img src="/assets/library/html-css/portfolio-de.png" alt="Portfolio" class="img-thumbnail">
+<img src="/library/html-css/portfolio-de.png" alt="Portfolio" class="img-thumbnail">
 
 
 ## Grundidee
@@ -36,7 +41,7 @@ Die Grundidee dieses Tutorials ist, dass Sie einen Einstieg in die Webprogrammie
 Die beiden Sprachen, HTML und CSS, sind unabhängig voneinander und sollten auch in unterschiedlichen Dateien gespeichert werden.
 
 <div class="alert alert-info">
-**Merke:** HTML gibt den Inhalt einer Webseite an während CSS das Aussehen dieses Inhalts definiert.
+<strong>Merke:</strong> HTML gibt den Inhalt einer Webseite an während CSS das Aussehen dieses Inhalts definiert.
 </div>
 
 
@@ -58,7 +63,7 @@ Auch wenn wir später interaktive Webapplikationen entwickeln, werden wir dafür
 
 ## Auf geht's
 
-&rarr; Beginnen Sie Ihre Reise mit [Teil 1: Unsere erste Webseite](/library/html-css/de/part1/).
+&rarr; Beginnen Sie Ihre Reise mit [Teil 1: Unsere erste Webseite](/de/library/html-css/part1/).
 
 Viel Spass!
 

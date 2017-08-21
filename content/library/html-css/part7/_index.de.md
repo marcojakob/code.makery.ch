@@ -1,59 +1,18 @@
----
-layout: article
-title: "HTML & CSS Tutorial - Teil 7: Bootstrap Framework verwenden"
-date: 2014-08-13 00:00
-updated: 2015-03-18 00:00
-slug: html-css/de/part7
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part7.md
-description: "Lernen Sie das Bootstrap-Framework für Ihre Webseite einzusetzen."
-image: /assets/library/html-css/portfolio-de.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/html-css/de/
-    paging: Intro
-  - text: "Teil 1: Unsere erste Webseite"
-    link: /library/html-css/de/part1/
-    paging: 1
-  - text: "Teil 2: Webseite veröffentlichen"
-    link: /library/html-css/de/part2/
-    paging: 2
-  - text: "Teil 3: Einführung in CSS"
-    link: /library/html-css/de/part3/
-    paging: 3
-  - text: "Teil 4: Entwicklertools im Browser"
-    link: /library/html-css/de/part4/
-    paging: 4
-  - text: "Teil 5: Blog und weitere Seiten"
-    link: /library/html-css/de/part5/
-    paging: 5
-  - text: "Teil 6: Navigation"
-    link: /library/html-css/de/part6/
-    paging: 6
-  - text: "Teil 7: Bootstrap Framework"
-    link: /library/html-css/de/part7/
-    paging: 7
-    active: true
-  - text: "Nächste Schritte"
-    link: /library/html-css/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Downloads
-  body:
-  - text: Portfolio Teil 7
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part7.zip
-    icon-css: fa fa-fw fa-file-archive-o
-languages: 
-  header: Sprachen
-  collection: library
-  item: html-css
-  part: part7
-  active: de
----
++++
+title = "Bootstrap Framework verwenden"
+date = "2014-08-13"
+updated = "2015-03-18"
+github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part7.md"
+description = "Lernen Sie das Bootstrap-Framework für Ihre Webseite einzusetzen."
+image = "/library/html-css/portfolio-de.png"
+prettify = true
+comments = true
+aliases = [
+  "/library/html-css/de/part7/"
+]
+weight = 7
+paging = "7"
++++
 
 Bis hierhin haben wir alles HTML und CSS von Grund auf selber programmiert. Unser Projekt, das *Web Portfolio*, hat bereits einige HTML-Seiten mit etwas Inhalt, eine noch unfertige Navigation und etwas Styling.
 
@@ -68,11 +27,11 @@ Ganz von Hand unser Projekt zu einem kompletten und modernen Webauftritt weiter 
 
 Zum Glück sind wir nicht alleine mit diesen Aufgaben - dies betrifft mehr oder weniger alle Webdesigner. Da es kaum sinnvoll ist, wenn alle immer wieder die gleichen Aufgaben lösen, sind sogenannte *Frameworks* entstanden, die diese Arbeit viel einfacher machen.
 
-![Bootstrap Logo](/assets/library/html-css/part7/bootstrap-logo.png)
+![Bootstrap Logo](/library/html-css/part7/bootstrap-logo.png)
 
 Das bekannteste dieser *Frameworks* heisst ***Bootstrap*** und wurde von Twitter entwickelt. Das *Bootstrap-Framework* ist eine enorme erleichtert für uns als Webentwickler. Wir werden Schritt-für-Schritt entdecken, was wir mit *Bootstrap* tun können. Hier aber schon mal eine Kostprobe, welche Auswirkungen *Bootstrap* auf unser Projekt haben kann:
 
-![Bootstrap Effekt](/assets/library/html-css/part7/bootstrap-effect-de.png)
+![Bootstrap Effekt](/library/html-css/part7/bootstrap-effect-de.png)
 
 Mit *Bootstrap* sehen die Elemente nicht nur besser aus, sondern sie werden auch in allen Browsern praktisch gleich dargestellt.
 
@@ -90,7 +49,7 @@ Der wichtigste Teil von Bootstrap besteht aus einem grossen CSS. Für etwas komp
 
 Nun wollen wir das Bootstrap-CSS in unsere HTML-Seiten einbinden:
 
-1. Öffnen Sie die [Bootstrap-Webseite](http://holdirbootstrap.de/los-gehts/). Sie sehen dort, dass es mehrere Möglichkeiten gibt, Bootstrap herunterzuladen. Wir wählen die Variante über das *Bootstrap-CDN*. Damit müssen wir eigentlich gar nichts herunterladen, sondern nur im HTML angeben, wo die zusätzliche CSS-Datei liegt. Sie wird dann bei jedem Aufruf unserer Webseite direkt von den *CDN*-Servern heruntergeladen. *CDN*-Server sind Server, die über die ganze Welt verteilt sind, damit sie eine Datei sehr schnell ausliefern können. 
+1. Öffnen Sie die [Bootstrap-Webseite](http://holdirbootstrap.de/los-gehts/). Sie sehen dort, dass es mehrere Möglichkeiten gibt, Bootstrap herunterzuladen. Wir wählen die Variante über das *Bootstrap-CDN*. Damit müssen wir eigentlich gar nichts herunterladen, sondern nur im HTML angeben, wo die zusätzliche CSS-Datei liegt. Sie wird dann bei jedem Aufruf unserer Webseite direkt von den *CDN*-Servern heruntergeladen. *CDN*-Server sind Server, die über die ganze Welt verteilt sind, damit sie eine Datei sehr schnell ausliefern können.
 
 2. Kopieren Sie also vom Abschnitt *Bootstrap-CDN* die erste Zeile mit dem `link`-Element.
 
@@ -115,14 +74,14 @@ So sollte Ihr `head`-Bereich nun etwa aussehen (evtl. mit einer neueren Versions
 
 Manche *Styles* aus dem Bootstrap-CSS werden direkt auf HTML-Elemente angewandt. Schauen wir uns zum Beispiel einen Link in *Chrome DevTools* an, sehen wir, wie im Bootstrap-CSS die Link-Farbe geändert wird und mit `text-decoration` der Unterstrich entfernt wird:
 
-![Bootstrap Link-Farbe](/assets/library/html-css/part7/bootstrap-link-color.png)
+![Bootstrap Link-Farbe](/library/html-css/part7/bootstrap-link-color.png)
 
-Viele Bootstrap-Styles werden aber erst aktiviert, wenn man eine entsprechende **CSS-Klasse** hinzufügt. 
+Viele Bootstrap-Styles werden aber erst aktiviert, wenn man eine entsprechende **CSS-Klasse** hinzufügt.
 
 
 ### Bootstrap Klassen verwenden
 
-Als Beispiel schauen wir uns an, wie mit Bootstrap die Textausrichtung geändert werden kann. In der Bootstrap-Dokumentation unter [Ausrichtungsklassen](http://holdirbootstrap.de/css/#type-alignment) finden Sie eine kurze Anleitung zur Textausrichtung. 
+Als Beispiel schauen wir uns an, wie mit Bootstrap die Textausrichtung geändert werden kann. In der Bootstrap-Dokumentation unter [Ausrichtungsklassen](http://holdirbootstrap.de/css/#type-alignment) finden Sie eine kurze Anleitung zur Textausrichtung.
 
 Wenn wir also zum Beispiel den `h2`-Titel zentrieren möchten, müssten wir die Klasse `text-center` hinzufügen:
 
@@ -184,12 +143,12 @@ Im Browser beginnen die `div`-Elemente **immer auf einer neuen Zeile**. Weil sie
 
 ## span-Elemente
 
-Im Gegensatz zu `<div>`-Elementen beginnt ein `<span>`-Element nicht auf einer neuen Zeile. Ein `span`-Element ist nur so breit wie sein Inhalt. Man nennt solche Elemente auch [Inline-Elemente](https://developer.mozilla.org/de/docs/Web/HTML/Inline_elemente), weil sie sich innerhalb einer Zeile einbetten.  
+Im Gegensatz zu `<div>`-Elementen beginnt ein `<span>`-Element nicht auf einer neuen Zeile. Ein `span`-Element ist nur so breit wie sein Inhalt. Man nennt solche Elemente auch [Inline-Elemente](https://developer.mozilla.org/de/docs/Web/HTML/Inline_elemente), weil sie sich innerhalb einer Zeile einbetten.
 
-Hier ein Beispiel, wie man ein `span`-Element einsetzen könnte: 
+Hier ein Beispiel, wie man ein `span`-Element einsetzen könnte:
 
 <pre class="prettyprint lang-html">
-Ich möchte &lt;span class="text-warning">diese Worte&lt;/span> besonders hervorheben. 
+Ich möchte &lt;span class="text-warning">diese Worte&lt;/span> besonders hervorheben.
 </pre>
 
 
@@ -199,16 +158,16 @@ Nun wollen wir endlich die Navigation schöner gestalten mit der Hilfe von Boots
 
 Programmieren sie die folgenden Schritte. Am besten probieren Sie nach jedem Schritt aus, was die Auswirkungen sind.
 
-1. Fügen Sie dem `ul`-Element Ihrer Navigation die zwei Klassen `nav` und `navbar-nav` hinzu:   
+1. Fügen Sie dem `ul`-Element Ihrer Navigation die zwei Klassen `nav` und `navbar-nav` hinzu:
 `<ul class="nav navbar-nav">`
 
-2. Packen Sie die gesamte Navigation in ein `div` mit der Klasse `container`. Dies bewirkt, dass die Abstände vom Rand gleich sind wie bei unserem Hauptinhalt. Vergessen Sie nicht das schliessende Tag `</div>`.   
+2. Packen Sie die gesamte Navigation in ein `div` mit der Klasse `container`. Dies bewirkt, dass die Abstände vom Rand gleich sind wie bei unserem Hauptinhalt. Vergessen Sie nicht das schliessende Tag `</div>`.
 `<div class="container">`
 
-3. Umgeben Sie das Ganze mit einem weiteren `div`. Diesmal brauchen wir die drei Klassen `navbar`, `navbar-default` und `navbar-static-top`. Diese Klassen bewirken, dass ein Balken oben am Rand dargestellt wird. Vergessen Sie auch hier nicht das schliessende Tag `</div>`.   
+3. Umgeben Sie das Ganze mit einem weiteren `div`. Diesmal brauchen wir die drei Klassen `navbar`, `navbar-default` und `navbar-static-top`. Diese Klassen bewirken, dass ein Balken oben am Rand dargestellt wird. Vergessen Sie auch hier nicht das schliessende Tag `</div>`.
 `<div class="navbar navbar-default navbar-static-top">`
 
-4. Fügen Sie beim `li`-Elemente von *Home* eine Klasse `active` hinzu. Dies bewirkt, dass der *Home*-Link speziell hervorgehoben wird. Damit merkt der Besucher, auf welcher Seite er sich im Moment befindet.   
+4. Fügen Sie beim `li`-Elemente von *Home* eine Klasse `active` hinzu. Dies bewirkt, dass der *Home*-Link speziell hervorgehoben wird. Damit merkt der Besucher, auf welcher Seite er sich im Moment befindet.
 `<li class="active"><a href="./">Home</a></li>`
 
 So sieht der Code für die Navigation nun aus (achten Sie auf korrektes Einrücken!):
@@ -231,14 +190,14 @@ So sieht der Code für die Navigation nun aus (achten Sie auf korrektes Einrück
 
 Und so wird es dargestellt:
 
-![Navbar](/assets/library/html-css/part7/navbar-default-de.png)
+![Navbar](/library/html-css/part7/navbar-default-de.png)
 
 
 ### Dunkle Variante
 
 Es gibt eine zweite Variante der Bootstrap-Navigation:
 
-![Navbar Inverse](/assets/library/html-css/part7/navbar-inverse-de.png)
+![Navbar Inverse](/library/html-css/part7/navbar-inverse-de.png)
 
 Um diese zu aktivieren, ändern Sie die Klasse `navbar-default` in `navbar-inverse` um.
 
@@ -249,7 +208,7 @@ Mit Bootstrap und der Navigation sieht die Webseite in einem Desktop-Browser sch
 
 Sie werden feststellen, dass die Seite entweder abgeschnitten oder die Navigation viel zu klein dargestellt wird:
 
-![Mobile ohne Viewport](/assets/library/html-css/part7/mobile-without-viewport-de.png)
+![Mobile ohne Viewport](/library/html-css/part7/mobile-without-viewport-de.png)
 
 Mit einer `meta`-Information im `head`-Bereich können wir den mobilen Browsern mitteilen, dass sie die Seite vernünftig anzeigen sollen:
 
@@ -265,14 +224,14 @@ Mit einer `meta`-Information im `head`-Bereich können wir den mobilen Browsern 
 
 Nun sollte es etwa so aussehen:
 
-![Mobile mit Viewport](/assets/library/html-css/part7/mobile-with-viewport-de.png)
+![Mobile mit Viewport](/library/html-css/part7/mobile-with-viewport-de.png)
 
 Bootstrap wurde so entworfen, dass es auf [mobilen Bilschirmen gut funktioniert](http://holdirbootstrap.de/css/#overview-mobile). Im Screenshot oben sehen Sie, wie die Navigation automatisch untereinander angezeigt wird, sobald die Bildschirmbreite zu klein wird. Dies können Sie auch ausprobieren, indem Sie einfach das Browserfenster verkleinern.
 
 Ein Webdesign, welches auf die Bildschirmgrösse reagiert, nennt man [Responsive Webdesign](http://de.wikipedia.org/wiki/Responsive_Webdesign).
 
 <div class="alert alert-warning">
-  <strong>Hinweis:</strong> Bootstrap kann die Navigation auch automatisch zusammenklappen in ein Menu. Dafür müssen aber zusätzliche JavaScript-Dateien eingebunden werden. Im Artikel <a class="alert-link" href="/library/more-html-css/de/javascript-bootstrap/">JavaScript mit Bootstrap</a> erkläre ich, wie Sie eine solche Navigation programmieren können.  
+  <strong>Hinweis:</strong> Bootstrap kann die Navigation auch automatisch zusammenklappen in ein Menu. Dafür müssen aber zusätzliche JavaScript-Dateien eingebunden werden. Im Artikel <a class="alert-link" href="/library/more-html-css/de/javascript-bootstrap/">JavaScript mit Bootstrap</a> erkläre ich, wie Sie eine solche Navigation programmieren können.
 </div>
 
 
@@ -294,7 +253,7 @@ Kopieren Sie aus dem `head`-Bereich der Startseite die Zeile mit dem `viewport` 
 
 #### 2. Navigation einfügen
 
-Kopieren Sie den gesamten Navigationsbereich aus der Startseite und fügen Sie diese in alle anderen Seiten ein. Achten Sie darauf, dass Sie jeweils beim aktuellen `li`-Element die `active`-Klasse hinzufügen:   
+Kopieren Sie den gesamten Navigationsbereich aus der Startseite und fügen Sie diese in alle anderen Seiten ein. Achten Sie darauf, dass Sie jeweils beim aktuellen `li`-Element die `active`-Klasse hinzufügen:
 
 <pre class="prettyprint lang-html">
 &lt;div class="navbar navbar-default navbar-static-top">
@@ -321,7 +280,7 @@ Da die Blogeinträge noch ein Unterverzeichnis tiefer liegen, müssen die Links 
 
 #### 3. Container-div einfügen
 
-Wenn Sie die Unterseiten im Browser öffnen, werden Sie merken, dass die Seitenränder noch nicht korrekt sind. Um das zu korrigieren, müssen wir den gesamten Inhalt (alles unterhalb der Navigation) mit einem `div` umgeben. Dieses `div` muss die Klasse `container` haben. Korrigieren Sie das in allen Unterseiten: 
+Wenn Sie die Unterseiten im Browser öffnen, werden Sie merken, dass die Seitenränder noch nicht korrekt sind. Um das zu korrigieren, müssen wir den gesamten Inhalt (alles unterhalb der Navigation) mit einem `div` umgeben. Dieses `div` muss die Klasse `container` haben. Korrigieren Sie das in allen Unterseiten:
 
 <pre class="prettyprint lang-html">
 [... Navigation ...]
@@ -342,4 +301,3 @@ Schauen Sie als nächstes Ihren Code an und stellen Sie sicher, dass das **HTML 
 ## Wie weiter?
 
 &rarr; Erfahren Sie die [nächsten Schritte](/library/html-css/de/next/).
-

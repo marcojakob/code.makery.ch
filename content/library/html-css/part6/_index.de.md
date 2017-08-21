@@ -1,59 +1,18 @@
----
-layout: article
-title: "HTML & CSS Tutorial - Teil 6: Navigation"
-date: 2014-08-13 00:00
-updated: 2015-03-18 00:00
-slug: html-css/de/part6
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part6.md
-description: "Lernen Sie, wie man eine Navigation für die Website erstellt."
-image: /assets/library/html-css/portfolio-de.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/html-css/de/
-    paging: Intro
-  - text: "Teil 1: Unsere erste Webseite"
-    link: /library/html-css/de/part1/
-    paging: 1
-  - text: "Teil 2: Webseite veröffentlichen"
-    link: /library/html-css/de/part2/
-    paging: 2
-  - text: "Teil 3: Einführung in CSS"
-    link: /library/html-css/de/part3/
-    paging: 3
-  - text: "Teil 4: Entwicklertools im Browser"
-    link: /library/html-css/de/part4/
-    paging: 4
-  - text: "Teil 5: Blog und weitere Seiten"
-    link: /library/html-css/de/part5/
-    paging: 5
-  - text: "Teil 6: Navigation"
-    link: /library/html-css/de/part6/
-    paging: 6
-    active: true
-  - text: "Teil 7: Bootstrap Framework"
-    link: /library/html-css/de/part7/
-    paging: 7
-  - text: "Nächste Schritte"
-    link: /library/html-css/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Downloads
-  body:
-  - text: Portfolio Teil 6
-    link: https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part6.zip
-    icon-css: fa fa-fw fa-file-archive-o
-languages: 
-  header: Sprachen
-  collection: library
-  item: html-css
-  part: part6
-  active: de
----
++++
+title = "Teil 6: Navigation"
+date = "2014-08-13"
+updated = "2015-03-18"
+github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part6.md"
+description = "Lernen Sie, wie man eine Navigation für die Website erstellt."
+image = "/library/html-css/portfolio-de.png"
+prettify = true
+comments = true
+aliases = [
+  "/library/html-css/de/part6/"
+]
+weight = 6
+paging = "6"
++++
 
 In diesem Teil werden wir eine Navigation einfügen, damit die Besucher zwischen den verschiedenen Seiten wechseln können.
 
@@ -64,7 +23,7 @@ Zuerst werden wir die Navigation nur für unsere Startseite programmieren. Erst 
 
 ## Navigation mit Links
 
-Öffnen Sie `index.html` von der Startseite. 
+Öffnen Sie `index.html` von der Startseite.
 
 Mit einfachen Links können wir von der Startseite auf die anderen Seiten springen. Die Navigation kommt im `body`-Teil noch vor dem Titel. Fügen Sie also folgende vier Links zwischen `body`-Tag und dem Titel ein:
 
@@ -87,7 +46,7 @@ Mit einfachen Links können wir von der Startseite auf die anderen Seiten spring
 
 Und so sieht die Navigation nun aus:
 
-![Navigation mit Links](/assets/library/html-css/part6/navigation-links-de.png)
+![Navigation mit Links](/library/html-css/part6/navigation-links-de.png)
 
 Überprüfen Sie, ob die Links auch wirklich funktionieren und Sie zur gewollten Seite bringen.
 
@@ -96,7 +55,7 @@ Und so sieht die Navigation nun aus:
   <p>Sobald Sie aber die Seite auf einem Server veröffentlichen, sollten die Links ganz normal funktionieren.</p>
 </div>
 
-Im Moment ist unsere Navigation einfach eine Aneinanderreihung von Links. Meistens verwendet man für eine Navigation aber eine HTML-Liste von Links. Mit einer Liste werden die Navigationselemente entweder horizontal oder vertikal zusammen gruppiert und können so später besser formatiert werden. 
+Im Moment ist unsere Navigation einfach eine Aneinanderreihung von Links. Meistens verwendet man für eine Navigation aber eine HTML-Liste von Links. Mit einer Liste werden die Navigationselemente entweder horizontal oder vertikal zusammen gruppiert und können so später besser formatiert werden.
 
 Wir lernen nun, wie man in HTML Listen erstellen kann.
 

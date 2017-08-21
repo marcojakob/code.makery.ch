@@ -1,53 +1,14 @@
----
-layout: article
-title: "HTML & CSS Tutorial - Part 4: Development Tools in the Browser"
-date: 2015-04-08 00:00
-slug: html-css/part4
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part4.md
-description: "Learn how to use the developer tools in the browser (Chrome Developer Tools (Chrome Developer Tools)."
-image: /assets/library/html-css/portfolio.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Articles in this Series
-  body:
-  - text: "Introduction"
-    link: /library/html-css/
-    paging: Intro
-  - text: "Part 1: Your First Website"
-    link: /library/html-css/part1/
-    paging: 1
-  - text: "Part 2: Publishing Your Website"
-    link: /library/html-css/part2/
-    paging: 2
-  - text: "Part 3: Introduction to CSS"
-    link: /library/html-css/part3/
-    paging: 3
-  - text: "Part 4: Development Tools in the Browser"
-    link: /library/html-css/part4/
-    paging: 4
-    active: true
-  - text: "Part 5: Blog and Other Pages"
-    link: /library/html-css/part5/
-    paging: 5
-  - text: "Part 6: Navigation"
-    link: /library/html-css/part6/
-    paging: 6
-  - text: "Part 7: Bootstrap Framework"
-    link: /library/html-css/part7/
-    paging: 7
-  - text: "Next Steps"
-    link: /library/html-css/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-languages:
-  header: Languages
-  collection: library
-  item: html-css
-  part: part4
-  active: en
----
++++
+title = "HTML & CSS Tutorial - Part 4: Development Tools in the Browser"
+date = "2015-04-08"
+github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part4.md"
+description = "Learn how to use the developer tools in the browser (Chrome Developer Tools (Chrome Developer Tools)."
+image = "/assets/library/html-css/portfolio.png"
+prettify = true
+comments = true
+weight = 4
+paging = "4"
++++
 
 Most browsers have a "hidden" tool that allows us to look behind the scenes of a website. This is extremely helpful, either to examine our own website or to take inspirations from other websites. Currently, Chrome has the most complete tool, called **Chrome Developer Tools** (abbreviated **DevTools**).
 
