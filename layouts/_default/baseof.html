@@ -29,35 +29,47 @@
     <link href="/css/style.min.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="canonical" href="{{ block "canonical" . }}{{ .Permalink }}{{ end }}" />
 
-    {%- include "alternate-lang" %}
+    <!-- {%- include "alternate-lang" %} -->
     <!-- RSS Feed -->
-    <link rel="alternate" type="application/rss+xml" href="/rss" title="{{ global.title }} - RSS Feed">
+    <link rel="alternate" type="application/rss+xml" href="/rss" title="{{ .Site.Title }} - RSS Feed">
 
-    <meta name="description" content="{{ head_description }}">
+    <meta name="description" content="{{ .Description }}">
+    <meta name="author" content="{{ .Site.Params.author }}" >
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" value="summary">
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="{{ head_title }}" />
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="{{ head_description }}" />
-    <meta property="og:url" content="{% include "util/domain-and-url" %}" />
-    {%- if head_image -%}
-    <meta property="og:image" content="{{ head_image }}" />
-    {% endif %}
-    {% if global.googleplus %}<link rel="author" href="https://plus.google.com/{{ global.googleplus }}"/>{% endif %}
-    {% include "prettify-css" %}
-    {% include "custom-css" %}
-    {% include "analytics-js" %}
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
+    <meta property="og:description" content="{{ .Description }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    {{ if .Params.image -}}
+      {{ if (hasPrefix .Params.image "http") -}}
+      <meta property="og:image" content="{{ .Params.image }}" />
+      {{ else }}
+      <meta property="og:image" content="{{ .Permalink }}{{ .Params.image }}" />
+      {{ end }}
+    {{ else -}}
+    <meta property="og:image" content="{{ .Site.BaseURL }}images/logo-164x164.png" />
+    {{ end }}
+
+    {{ if .Site.Params.googlePlus }}
+    <link rel="author" href="https://plus.google.com/{{ .Site.Params.googlePlus }}"/>
+    {{ end }}
+    <!-- {% include "prettify-css" %} -->
+    <!-- {% include "custom-css" %} -->
+    <!-- {% include "analytics-js" %} -->
   </head>
   <body>
-    {% include "header" %}
 
-    {% block content %}{% endblock %}
+    <!-- {% include "header" %} -->
 
-    {% include "footer" %}
+    <!-- {% block content %}{% endblock %} -->
+    {{ block "main" . }}{{ end }}
 
-    {% include "html-body-end" %}
+    <!-- {% include "footer" %} -->
+
+    <!-- {% include "html-body-end" %} -->
   </body>
 </html>

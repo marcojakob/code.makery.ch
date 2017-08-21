@@ -1,53 +1,13 @@
----
-layout: article
-title: "HTML & CSS Tutorial"
-date: 2015-04-08 00:00
-slug: html-css
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en.md
-description: "Learn the basics of HTML and CSS in this tutorial to create your own web projects. We immediately start with a practical example of building your own portfolio website."
-image: /assets/library/html-css/portfolio.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Articles in this Series
-  body:
-  - text: "Introduction"
-    link: /library/html-css/
-    paging: Intro
-    active: true
-  - text: "Part 1: Your First Website"
-    link: /library/html-css/part1/
-    paging: 1
-  - text: "Part 2: Publishing Your Website"
-    link: /library/html-css/part2/
-    paging: 2
-  - text: "Part 3: Introduction to CSS"
-    link: /library/html-css/part3/
-    paging: 3
-  - text: "Part 4: Development Tools in the Browser"
-    link: /library/html-css/part4/
-    paging: 4
-  - text: "Part 5: Blog and Other Pages"
-    link: /library/html-css/part5/
-    paging: 5
-  - text: "Part 6: Navigation"
-    link: /library/html-css/part6/
-    paging: 6
-  - text: "Part 7: Bootstrap Framework"
-    link: /library/html-css/part7/
-    paging: 7
-  - text: "Next Steps"
-    link: /library/html-css/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-languages: 
-  header: Languages
-  collection: library
-  item: html-css
-  part: 
-  active: en
----
++++
+title = "HTML & CSS Tutorial"
+date = "2015-04-08"
+github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en.md"
+description = "Learn the basics of HTML and CSS in this tutorial to create your own web projects. We immediately start with a practical example of building your own portfolio website."
+image = "/assets/library/html-css/portfolio.png"
+published = true
+prettify = true
+comments = true
++++
 
 In this tutorial you will learn the basics of HTML and CSS to create your own web projects. Instead of working through rather boring theory we will immediately **start with a project**.
 
@@ -91,7 +51,7 @@ Once you have completed this HTML and CSS tutorial, you can start learning Dart 
 
 ## Mobile
 
-Today, a large portion of website access is done through mobile devices like smartphones or tables. Therefore, it is essential that our website looks great on small displays. We will certainly take care of this during this tutorial. 
+Today, a large portion of website access is done through mobile devices like smartphones or tables. Therefore, it is essential that our website looks great on small displays. We will certainly take care of this during this tutorial.
 
 Even in subsequent tutorials where we'll develop interactive web applications, we will make sure they run well on mobile devices!
 
@@ -109,4 +69,3 @@ Have fun!
 <em class="small">
 The [Planet Cute](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html) image was created by Daniel Cook (Lostgarden.com), published under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/us/).
 </em>
-
