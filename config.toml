@@ -1,55 +1,59 @@
 baseurl = "https://code.makery.ch"
-languageCode = "en"
 title = "code.makery.ch - learning how to code"
 pluralizeListTitles = false
 preserveTaxonomyNames = true
 removePathAccents = true
 enableRobotsTXT = true
 
+defaultContentLanguage = "en"
+
 [params]
   author = "Marco Jakob"
+  email = "info@makery.ch"
   analyticsId = "UA-34917397-3"
   disqusShortname = "codemakery"
-  googleplus = "+MarcoJakob7"
+  googlePlus = "+MarcoJakob7"
   twitter = "codemakery"
-
-[taxonomies]
-  tag = "tags"             # Used for the blog
-  category = "categories"  # Used for events
 
 [permalinks]
   blog-tag = "/blog/tag/:title/"
 
-[[menu.main]]
-  name = "Community"
-  pre = "<i class='fa fa-users'></i>"
-  weight = 3
-  url = "/ueber/"
+[Languages]
+[Languages.en]
+  title = "English"
 
-  [[menu.main]]
-    name = "Grundsätze"
-    weight = 3
-    parent = "Community"
-    url = "/grundsaetze/"
+[Languages.de]
+  title = "Deutsch"
 
-  [[menu.main]]
-    name = "Finanzen"
-    weight = 5
-    parent = "Community"
-    url = "/finanzen/"
+[Languages.es]
+  title = "Español"
 
-[[menu.main]]
-  name = "Räume"
-  pre = "<i class='fa fa-calendar-check-o'></i>"
-  weight = 4
-  url = "/raeume/"
+[Languages.fa]
+  title = "فارسی"
 
-[[menu.main]]
-  name = "Events"
-  weight = 5
-  url = "/events/"
+[Languages.fr]
+  title = "Français"
 
-[[menu.main]]
-  name = "Blog"
-  weight = 6
-  url = "/blog/"
+[Languages.id]
+  title = "Bahasa Indonesia"
+
+[Languages.it]
+  title = "Italiano"
+
+[Languages.kr]
+  title = "한국어"
+
+[Languages.pt]
+  title = "Português"
+
+[Languages.ru]
+  title = "Русский"
+
+[Languages.tr]
+  title = "Türkçe"
+
+[Languages.uk]
+  title = "Українська"
+
+[Languages.zh-cn]
+  title = "中文（简体）"

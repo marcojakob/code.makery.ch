@@ -12,7 +12,7 @@
 // Black links without text decorations.
 a {
   &.black-link,
-  &.gray-link, 
+  &.gray-link,
   &.main-link {
     text-decoration: none;
   }
@@ -20,17 +20,17 @@ a {
   &.black-link {
     color: $text-color;
   }
-  
+
   &.gray-link {
     color: $gray-light;
   }
-  
+
   &.main-link {
     color: $main-color;
   }
-  
+
   &:hover.black-link,
-  &:focus.black-link, 
+  &:focus.black-link,
   &:hover.gray-link,
   &:focus.gray-link,
   &:hover.main-link,
@@ -51,7 +51,7 @@ img {
 
 // Code blocks
 pre {
-  font-size: $font-size-code-block; 
+  font-size: $font-size-code-block;
 }
 
 // Ordered lists
@@ -91,8 +91,8 @@ iframe {
 .mg-t-lg {
   margin-top: $line-height-computed;
 }
-  
-// 
+
+//
 // Ribbon (http://unindented.org/articles/github-ribbon-using-css-transforms/)
 // ----------------------------------------------------------------------------
 .ribbon {
@@ -120,7 +120,7 @@ iframe {
   text-align: center;
   text-decoration: none;
   text-shadow: 0 0 5px #444;
-  
+
   &:before,
   &:after {
     content: '';
@@ -177,13 +177,13 @@ iframe {
   background: #fbfbfb;
   font-size: $font-size-small;
   color: $gray-light;
-  
+
   form {
-    margin-bottom: ($line-height-computed / 2); 
+    margin-bottom: ($line-height-computed / 2);
   }
-  
+
   .form-control {
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
   }
 }
 
@@ -209,14 +209,14 @@ iframe {
     border-top: rgba(0,0,0,0.1) 1px solid;
     margin: 0;
     line-height: 1.3em;
-    
+
     a {
       display: block;
       padding:10px 0;
       background:transparent;
     }
   }
-  
+
   @media (min-width: $grid-float-breakpoint) {
     font-family: 'PT Sans';
     font-weight: 700;
@@ -241,8 +241,8 @@ iframe {
         border-bottom: 0;
         padding: 10px 30px;
       }
-      
-      a:hover,  
+
+      a:hover,
       a:focus {
         color: $link-color;
       }
@@ -263,7 +263,7 @@ iframe {
   font-family: $font-family-sans-serif;
   margin-top: 1em;
   margin-right: 5px;
-  
+
   button {
     font-weight: bold;
     background-color: $panel-default-heading-bg;
@@ -277,12 +277,12 @@ iframe {
 .paging {
   position: relative;
   text-align: center;
-  
+
   .previous {
     position: absolute;
     left: 0;
   }
-  
+
   .next {
     position: absolute;
     right: 0;
@@ -301,12 +301,12 @@ iframe {
 // Home page (index.html)
 // -------------------------------
 .home-featured {
-  margin-top: 70px; 
+  margin-top: 70px;
 }
 
 .home-recent {
   margin-top: 70px;
-  
+
   h3,
   h4 {
     font-weight: normal;
@@ -317,7 +317,7 @@ iframe {
 // Articles and Blog posts
 // -------------------------------
 .post-container {
-  max-width: 750px; 
+  max-width: 750px;
 }
 
 .post-header {
@@ -326,7 +326,7 @@ iframe {
 }
 
 .article-title {
-  margin-top: 0; 
+  margin-top: 0;
 }
 
 .article-date,
@@ -347,13 +347,13 @@ iframe {
 }
 
 .article-paging {
-  text-align: center; 
+  text-align: center;
   margin-top: 2em;
 }
 
 .github-edit {
   position: absolute;
-  top: -24px; 
+  top: -24px;
   right: 15px;
   font-size: 15px;
 }
@@ -365,8 +365,8 @@ iframe {
 
 // Panels
 .library-panel {
-  position: relative; 
-  
+  position: relative;
+
   .panel-body {
     img {
       float: left;
@@ -377,7 +377,7 @@ iframe {
       margin-bottom: 24px;
     }
   }
-  
+
   // Entire panel as a link
   .panel-link {
     color: inherit;
@@ -392,14 +392,14 @@ iframe {
       }
     }
   }
-  
+
   .topic-label-container {
     position: absolute;
     top: 5px;
     right: 15px;
     font-family: $font-family-sans-serif;
   }
-  
+
   .part-label-container {
     position: absolute;
     top: 5px;
@@ -407,7 +407,7 @@ iframe {
     font-family: $font-family-sans-serif;
     color: $topic-java;
   }
-  
+
   .language-buttons {
     position: absolute;
     bottom: 15px;
@@ -420,19 +420,19 @@ iframe {
 
 // Topic Colors
 .topic-java {
-  color: $topic-java; 
+  color: $topic-java;
 }
 
 .topic-javafx {
-  color: $topic-javafx; 
+  color: $topic-javafx;
 }
 
 .topic-dart {
-  color: $topic-dart; 
+  color: $topic-dart;
 }
 
 .topic-html-css {
-  color: $topic-html-css; 
+  color: $topic-html-css;
 }
 
 // Topic Labels
