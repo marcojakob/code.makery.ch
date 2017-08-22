@@ -19,7 +19,7 @@ Wir legen gleich los und erstellen unsere erste Webseite.
 
 ## Unsere Tools
 
-Für die Webentwicklung brauchen wir zwei Programme: einen <abbr data-toggle="tooltip" title="Normaler Texteditor oder einen Code-Editor">Editor</abbr>, um die Dateien für die Webseite zu erstellen und einen <abbr data-toggle="tooltip" title="z.B. Internet Explorer, Firefox, Safari oder Chrome">Browser</abbr>, um unsere Webseite anzuzeigen und zu testen.
+Für die Webentwicklung brauchen wir zwei Programme: einen <abbr data-toggle="tooltip" title="Normaler Texteditor oder einen Code-Editor">Editor</abbr>, um die Dateien für die Webseite zu erstellen und einen <abbr data-toggle="tooltip" title="z.B. Internet Explorer, Edge, Firefox, Safari oder Chrome">Browser</abbr>, um unsere Webseite anzuzeigen und zu testen.
 
 
 ### Editor
@@ -163,7 +163,7 @@ Die Elemente `<html>` und `<body>` haben wir bereits kennen gelernt. Die Grundst
 * Setzen Sie `<!DOCTYPE html>` immer an die erste Stelle. Es sagt dem Browser, welcher Dokumententyp verwendet wird.
 * Das `<html>`-Tag bezeichnet den Start und `</html>` das Ende des Dokumentes.
 * Das `<head>`-Element beinhaltet zusätzliche Informationen über die Seite. Im Gegensatz zum `<body>`-Element werden diese Informationen nicht im Hauptbereich des Browsers angezeigt.
-  * Innerhalb vom `<head>` sollte eine Angabe stehen über den Zeichensatz: `<meta charset="utf-8">`. Wenn Sie den Zeichensatz nicht angeben, kann es vorkommen, dass zum Beispiel die Umlaute ä, ö und ü falsch angezeigt werden. Vielleicht haben Sie gemerkt, dass das `<meta>` Element kein schliessendes Tag besitzt. Es gibt ein paar <abbr data-toggle="tooltip" title="Wichtigste Elemente ohne schliessende Tags: <br>, <img>, <meta>, <hr>, <link>, <input>">Elemente ohne schliessende Tags</abbr>, sie sind aber die Ausnahme.
+  * Innerhalb vom `<head>` sollte eine Angabe stehen über den Zeichensatz: `<meta charset="utf-8">`. Wenn Sie den Zeichensatz nicht angeben, kann es vorkommen, dass zum Beispiel die Umlaute ä, ö und ü falsch angezeigt werden. Vielleicht haben Sie gemerkt, dass das `<meta>` Element kein schliessendes Tag besitzt. Es gibt ein paar Elemente ohne schliessende Tags (`<br>`, `<img>`, etc.), sie sind aber die Ausnahme.
   * Weiter steht dort meist das Titelelement `<title>`. Der Titel wird in der Titelleiste oben im Browserfenster angezeigt.
 * Alles innerhalb des `<body>`-Elements wird im Hauptbereich des Browsers angezeigt.
   * Ein `<h1>`-Element bezeichnet die Hauptüberschrift. Untergeordnete Überschriften können mit `<h2>`, `<h3>`, `<h4>`, `<h5>` und `<h6>` erstellt werden.
@@ -175,10 +175,10 @@ Die Elemente `<html>` und `<body>` haben wir bereits kennen gelernt. Die Grundst
 <strong>Tipp 1:</strong> Halten Sie das HTML Grundgerüst stets griffbereit. Wir werden es für jede neue HTML-Seite verwenden!
 </p>
 <p>
-<strong>Tipp 2:</strong> Verwenden Sie die Tastenkombination `Ctrl+S` zum Speichern.
+<strong>Tipp 2:</strong> Verwenden Sie die Tastenkombination <code>Ctrl+S</code> zum Speichern.
 </p>
 <p>
-<strong>Tipp 3:</strong> Verwenden Sie die Tastenkombination `Ctrl+Z` für Rückgängig.
+<strong>Tipp 3:</strong> Verwenden Sie die Tastenkombination <code>Ctrl+Z</code> für Rückgängig.
 </p>
 </div>
 
@@ -193,7 +193,7 @@ Um ein Bild einzufügen verwenden wir das `<img>`-Element. Das folgende Beispiel
 &lt;img src="marco.jpg" alt="Foto von mir">
 </pre>
 
-Das `<img>`-Element hat nur ein öffnendes aber kein schliessendes Tag. Es enthält ein `src`- und ein `alt`-Attribut. Mit dem `src`-Attribut wird die <abbr data-toggle="tooltip" title="Uniform Resource Locator">URL</abbr>, d.h. der Ort und Name des Bildes angegeben. Das `alt`-Attribut ist ein "alternativer Text", der den Inhalt des Bildes beschreibt. Dieser Text wird von Suchmaschinen verwendet oder wenn aus irgend einem Grund das Bild nicht angezeigt werden kann, z.B. bei einem Screenreader für Blinde.
+Das `<img>`-Element hat nur ein öffnendes aber kein schliessendes Tag. Es enthält ein `src`- und ein `alt`-Attribut. Mit dem `src`-Attribut wird die URL, d.h. der Ort und Name des Bildes angegeben. Das `alt`-Attribut ist ein "alternativer Text", der den Inhalt des Bildes beschreibt. Dieser Text wird von Suchmaschinen verwendet oder wenn aus irgend einem Grund das Bild nicht angezeigt werden kann, z.B. bei einem Screenreader für Blinde.
 
 
 ### Relative und absolute URLs
@@ -209,25 +209,11 @@ Wenn die Datei **auf einer anderen Internetseite** liegt, dann wird eine ***abso
 <div class="alert alert-info">
   <strong>Merken Sie sich zu URLs:</strong>
   <ul>
-    <li>Mit Angabe von `http://` ist eine URL absolut.</li>
-    <li>Ohne Angabe von `http://` ist eine URL relativ zur aktuellen Webseite.</li>
-    <li>Ein Punkt (`.`) verweist auf das aktuelle Verzeichnis.</li>
-    <li>Zwei Punkte (`..`) verweist auf das übergeordnete Verzeichnis.</li>
+    <li>Im gleichen Ordner verwenden wir den direkten Dateinamen, z.B. <code>marco.jpg</code>.</li>
+    <li>Zwei Punkte (<code>..</code>) verweist auf das übergeordnete Verzeichnis.</li>
+    <li>Wenn wir beim Hauptordner starten möchten, dann setzen wir ein <code>/</code> vorne hin, z.B. <code>/marco.jpg</code>.</li>
   </ul>
 </div>
-
-
-##### Beispiele für relative und absolute URLs
-
-<pre class="prettyprint lang-html">
-&lt;!-- Relative URLs -->
-&lt;a href="bildergalerie.html">Bildergalerie&lt;/a>
-&lt;a href="blog/mein-erster-eintrag.html">Mein Erster Blogeintrag&lt;/a>
-&lt;a href="../bildergalerie.html">Zurück zur Bildergalerie&lt;/a>
-
-&lt;!-- Absolute URL -->
-&lt;a href="http://www.mein-super-kollege.ch/blog.html">Blog eines Kollegen&lt;/a>
-</pre>
 
 
 ### Das Portfolio mit Bild

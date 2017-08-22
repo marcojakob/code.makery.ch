@@ -38,7 +38,7 @@ Nun wechseln wir zur `index.html`-Datei und fügen innerhalb des `<head>`-Elemen
 ##### Link von HTML zur CSS-Datei
 
 <pre class="prettyprint lang-html">
-&lt;link rel="stylesheet" href="main.css">
+&lt;link rel="stylesheet" href="/main.css">
 </pre>
 
 Fügen Sie dieses Element im `<head>`-Bereich ein. Dann sollte Ihr Code etwa so aussehen:
@@ -49,7 +49,7 @@ Fügen Sie dieses Element im `<head>`-Bereich ein. Dann sollte Ihr Code etwa so 
 &lt;html>
   &lt;head>
     &lt;meta charset="utf-8">
-    <mark>&lt;link rel="stylesheet" href="main.css"></mark>
+    <mark>&lt;link rel="stylesheet" href="/main.css"></mark>
     &lt;title>Web Portfolio von Marco&lt;/title>
   &lt;/head>
   &lt;body>
@@ -69,7 +69,7 @@ Fügen Sie dieses Element im `<head>`-Bereich ein. Dann sollte Ihr Code etwa so 
 </pre>
 
 <div class="alert alert-info">
-**Wichtig:** Damit das CSS gefunden wird, muss das `href`-Attribut genau auf die Datei verweisen. Das heisst auch, falls die Datei in einem Unterordner liegen würde, müsste dieser auch angegeben werden, also zum Beispiel `href="unterordner/main.css"`. Mehr dazu siehe unter <a class="alert-link" href="/library/html-css/de/part1/#relative-und-absolute-urls">relative und absolute URLs</a>.
+<strong>Wichtig:</strong> Damit das CSS gefunden wird, muss das <code>href</code>-Attribut genau auf die Datei verweisen. Wir haben nur eine <code>main.css</code> und diese liegt in unserem Hauptordner. Mit dem führenden <code>/</code> gelangen wir von überall her, auch von Unterordnern, zum Hauptordner und erreichen so unter <code>href="/main.css"</code> immer unsere CSS-Datei. Mehr dazu siehe unter <a class="alert-link" href="/library/html-css/de/part1/#relative-und-absolute-urls">relative und absolute URLs</a>.
 </div>
 
 
@@ -165,7 +165,7 @@ Diese Regel besagt, dass alle `<h2>`-Elemente eine Hintergrundfarbe von `#607d8b
 Selektoren geben an, auf welches HTML-Element eine CSS-Regel angewandt werden soll.
 
 <div class="alert alert-info">
-**Hinweis:** Wir werden hier nur die wichtigsten Selektoren kennen lernen. Damit kommt man schon sehr weit. Für eine ausführlichere Übersicht suchen Sie im Internet nach "CSS Selektoren".
+<strong>Hinweis:</strong> Wir werden hier nur die wichtigsten Selektoren kennen lernen. Damit kommt man schon sehr weit. Für eine ausführlichere Übersicht suchen Sie im Internet nach "CSS Selektoren".
 </div>
 
 
@@ -269,10 +269,10 @@ p a {
 &lt;a href="http://www.example.com">Example Webseite&lt;/a>
 </pre>
 
-Der Nachkommenselektor `p a` wählt alle `a`-Elemente aus, die irgendwo innerhalb eines `p`-Elementes vorkommen. In unserem Beispiel würde die CSS-Regel auf *Meine Webseite* zutreffen, jedoch nicht auf *Example Webseite*.
+Der Nachkommenselektor `p a` wählt alle `a`-Elemente aus, die irgendwo innerhalb eines `p`-Elementes vorkommen. In unserem Beispiel würde die CSS-Regel auf <em>Meine Webseite</em> zutreffen, jedoch nicht auf <em>Example Webseite</em>.
 
 <div class="alert alert-info">
-**Hinweis:** Das `a`-Element muss nicht unbedingt direkt dem `p`-Element untergeordnet sein. Der Nachkommenselektor trifft auf irgend ein *Nachkomme* zu. Für den anderen Fall gibt es den Kindselektor (`>`), auf den ich jedoch hier nicht eingehen werde.
+<strong>Hinweis:</strong> Das `a`-Element muss nicht unbedingt direkt dem `p`-Element untergeordnet sein. Der Nachkommenselektor trifft auf irgend ein <em>Nachkomme</em> zu. Für den anderen Fall gibt es den Kindselektor (`>`), auf den ich jedoch hier nicht eingehen werde.
 </div>
 
 

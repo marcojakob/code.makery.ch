@@ -1,5 +1,5 @@
 +++
-title = "Bootstrap Framework verwenden"
+title = "Teil 7: Bootstrap Framework verwenden"
 date = "2014-08-13"
 updated = "2015-03-18"
 github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part7.md"
@@ -63,8 +63,8 @@ So sollte Ihr `head`-Bereich nun etwa aussehen (evtl. mit einer neueren Versions
 <pre class="prettyprint lang-html">
 &lt;head>
   &lt;meta charset="utf-8">
-  <mark>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></mark>
-  &lt;link rel="stylesheet" href="main.css">
+  <mark>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></mark>
+  &lt;link rel="stylesheet" href="/main.css">
   &lt;title>Web Portfolio von Marco&lt;/title>
 &lt;/head>
 </pre>
@@ -116,10 +116,10 @@ Der `body`-Teil Ihrer Hauptseite sollte nun wie folgt aussehen (achten Sie auf s
 <pre class="prettyprint lang-html">
 &lt;body>
   &lt;ul>
-    &lt;li>&lt;a href="./">Home&lt;/a>&lt;/li>
-    &lt;li>&lt;a href="blog/">Blog&lt;/a>&lt;/li>
-    &lt;li>&lt;a href="projekte/">Projekte&lt;/a>&lt;/li>
-    &lt;li>&lt;a href="kontakt/">Kontakt&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="/">Home&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="/blog/">Blog&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="/projekte/">Projekte&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="/kontakt/">Kontakt&lt;/a>&lt;/li>
   &lt;/ul>
 
   <mark>&lt;div class="container"></mark>
@@ -179,10 +179,10 @@ So sieht der Code für die Navigation nun aus (achten Sie auf korrektes Einrück
 <mark>&lt;div class="navbar navbar-default navbar-static-top"></mark>
   <mark>&lt;div class="container"></mark>
     &lt;ul <mark>class="nav navbar-nav"></mark>
-      &lt;li <mark>class="active"</mark>>&lt;a href="./">Home&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="blog/">Blog&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="projekte/">Projekte&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="kontakt/">Kontakt&lt;/a>&lt;/li>
+      &lt;li <mark>class="active"</mark>>&lt;a href="/">Home&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="/blog/">Blog&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="/projekte/">Projekte&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="/kontakt/">Kontakt&lt;/a>&lt;/li>
     &lt;/ul>
   <mark>&lt;/div></mark>
 <mark>&lt;/div></mark>
@@ -216,7 +216,7 @@ Mit einer `meta`-Information im `head`-Bereich können wir den mobilen Browsern 
 &lt;head>
   &lt;meta charset="utf-8">
   <mark>&lt;meta name="viewport" content="width=device-width, initial-scale=1"></mark>
-  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   &lt;link rel="stylesheet" href="main.css">
   &lt;title>Web Portfolio von Marco&lt;/title>
 &lt;/head>
@@ -247,7 +247,7 @@ Mit kleinen Anpassung können wir den Code aus der Startseite in alle anderen Se
 Kopieren Sie aus dem `head`-Bereich der Startseite die Zeile mit dem `viewport` und die Zeile mit dem Bootstrap CSS und fügen Sie diese in alle anderen Seiten ein:
 <pre class="prettyprint lang-html">
   &lt;meta name="viewport" content="width=device-width, initial-scale=1">
-  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </pre>
 
 
@@ -259,10 +259,10 @@ Kopieren Sie den gesamten Navigationsbereich aus der Startseite und fügen Sie d
 &lt;div class="navbar navbar-default navbar-static-top">
   &lt;div class="container">
     &lt;ul class="nav navbar-nav">
-      &lt;li>&lt;a <mark>href="../"</mark>>Home&lt;/a>&lt;/li>
-      &lt;li <mark>class="active"</mark>>&lt;a <mark>href="../blog/"</mark>>Blog&lt;/a>&lt;/li>
-      &lt;li>&lt;a <mark>href="../projekte/"</mark>>Projekte&lt;/a>&lt;/li>
-      &lt;li>&lt;a <mark>href="../kontakt/"</mark>>Kontakt&lt;/a>&lt;/li>
+      &lt;li>&lt;a <mark>href="/"</mark>>Home&lt;/a>&lt;/li>
+      &lt;li <mark>class="active"</mark>>&lt;a <mark>href="/blog/"</mark>>Blog&lt;/a>&lt;/li>
+      &lt;li>&lt;a <mark>href="/projekte/"</mark>>Projekte&lt;/a>&lt;/li>
+      &lt;li>&lt;a <mark>href="/kontakt/"</mark>>Kontakt&lt;/a>&lt;/li>
     &lt;/ul>
   &lt;/div>
 &lt;/div>

@@ -45,12 +45,12 @@ Erstellen Sie einen Unterordner in Ihrem *Portfolio*-Ordner namens `blog`. Kopie
 
 Da wir uns in einem Unterordner befinden, stimmt jetzt die URL (oder auch Pfad genannt) nicht mehr. Damit das Bild angezeigt würde, müssten wir für das `src`-Attribut anstatt `marco.jpg` nun `../marco.jpg` angeben. Aber wahrscheinlich wollen wir nicht schon wieder das gleiche Bild auf der Blogseite. Also können Sie das gesamte `img`-Element entfernen.
 
-Beim **CSS** ist es üblich, dass man die Regeln jeweils **für das gesamte Projekt** definiert. So ist es wichtig, dass wir die gleiche CSS-Datei auch in der Blogseite verwenden können. Dies erreichen wir, indem wir die URL ändern von `main.css` auf `../main.css`. So sieht jetzt das gesamte `link`-Element aus:
+Beim **CSS** ist es üblich, dass man die Regeln jeweils **für das gesamte Projekt** definiert. So ist es wichtig, dass wir die gleiche CSS-Datei auch in der Blogseite verwenden können. Dies erreichen wir, indem wir die URL ändern von `main.css` auf `/main.css`. Mit dem `/` springen wir in den Hauptordner zurück - egal, in welchem Unterordner wir uns gerade befinden. So sieht jetzt das gesamte link-Element aus:
 
 ##### blog/index.html
 
 <pre class="prettyprint lang-html">
-&lt;link rel="stylesheet" href="../main.css">
+&lt;link rel="stylesheet" href="/main.css">
 </pre>
 
 Diese Änderung sollte dazu führen, dass das Styling vom CSS auch für die Blogseite übernommen wird.
@@ -65,7 +65,7 @@ Jetzt passen wir noch den Titel und Inhalt an:
 &lt;html>
   &lt;head>
     &lt;meta charset="utf-8">
-    &lt;link rel="stylesheet" href="../main.css">
+    &lt;link rel="stylesheet" href="/main.css">
     &lt;title>Blog - Web Portfolio von Marco&lt;/title>
   &lt;/head>
   &lt;body>
@@ -100,7 +100,7 @@ Im Blogeintrag ändern wir den Inhalt wie folgt ab:
 &lt;html>
   &lt;head>
     &lt;meta charset="utf-8">
-    &lt;link rel="stylesheet" href="../../main.css">
+    &lt;link rel="stylesheet" href="/main.css">
     &lt;title>Erster Eintrag - Web Portfolio von Marco&lt;/title>
   &lt;/head>
   &lt;body>
@@ -164,7 +164,7 @@ Gehen Sie wie oben beim Blog vor und erstellen Sie einen Unterordner `projekte` 
 &lt;html>
   &lt;head>
     &lt;meta charset="utf-8">
-    &lt;link rel="stylesheet" href="../main.css">
+    &lt;link rel="stylesheet" href="/main.css">
     &lt;title>Projekte - Web Portfolio von Marco&lt;/title>
   &lt;/head>
   &lt;body>
@@ -194,7 +194,7 @@ Als letzte Hauptseite fügen wir eine Seite mit Kontaktinformationen hinzu. Erst
 &lt;html>
   &lt;head>
     &lt;meta charset="utf-8">
-    &lt;link rel="stylesheet" href="../main.css">
+    &lt;link rel="stylesheet" href="/main.css">
     &lt;title>Kontakt - Web Portfolio von Marco&lt;/title>
   &lt;/head>
   &lt;body>

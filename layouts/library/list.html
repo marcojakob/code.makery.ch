@@ -35,10 +35,10 @@
           </div>
 
           <div class="list-group">
-            <a href="{{ $sect.RelPermalink }}" class="list-group-item">
+            <a href="{{ $sect.RelPermalink }}" class="list-group-item{{ if eq .RelPermalink $sect.RelPermalink }} active{{ end }}">
               {{ $sect.Title }}</a>
             {{ range $sect.Sections }}
-              <a href="{{ .RelPermalink }}" class="list-group-item">
+              <a href="{{ .RelPermalink }}" class="list-group-item{{ if .InSection $ }} active{{ end }}">
                 {{ .Title }}</a>
             {{ end }}
           </div>
@@ -75,10 +75,10 @@
       <nav>
         <div class="article-paging">
           <ul class="pagination">
-            <li><a href="{{ $sect.RelPermalink }}"  data-toggle="tooltip" title="{{ $sect.Title }}">
+            <li{{ if eq .RelPermalink $sect.RelPermalink }} class="active"{{ end }}><a href="{{ $sect.RelPermalink }}" data-toggle="tooltip" title="{{ $sect.Title }}">
               {{ $sect.Params.paging }}</a></li>
               {{ range $sect.Sections }}
-                <li><a href="{{ .RelPermalink }}"  data-toggle="tooltip" title="{{ .Title }}">
+                <li{{ if .InSection $ }} class="active"{{ end }}><a href="{{ .RelPermalink }}" data-toggle="tooltip" title="{{ .Title }}">
                   {{ .Params.paging }}</a></li>
               {{ end }}
             </li>

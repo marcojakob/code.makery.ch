@@ -17,7 +17,7 @@ paging = "2"
 Im ersten Teil haben wir unsere erste Webseite erstellt. Es wäre ja schade, wenn diese Webseite nur auf unserem Computer liegt und sie gar nie von jemand anderem angeschaut werden kann. Deshalb werden wir jetzt die Webseite gleich live ins Internet stellen.
 
 <div class="alert alert-info">
-**Hinweis:** Sie werden nicht von Beginn weg viele Besucher auf Ihrer Webseite haben. Denn solange Sie niemandem einen Link auf die Seite schicken oder den Link irgendwo veröffentlichen, wird kaum jemand einfach auf Ihre Seite stossen.
+<strong>Hinweis:</strong> Sie werden nicht von Beginn weg viele Besucher auf Ihrer Webseite haben. Denn solange Sie niemandem einen Link auf die Seite schicken oder den Link irgendwo veröffentlichen, wird kaum jemand einfach auf Ihre Seite stossen.
 </div>
 
 
@@ -45,6 +45,15 @@ Es gibt zahlreiche Dienste, wo wir Speicherplatz auf einem Server mieten können
 ![BitBalloon veröffentlicht](/library/html-css/part2/bitballoon-published.png)
 
 5. Für Updates: Sobald Sie eine neue Version Ihrer Webseite veröffentlichen möchten, ziehen Sie den Ordner einfach erneut in das Feld mit dem Text ***Drag & Drop to Update your Site***.
+
+
+### Hosting auf Netlify
+
+![Netlify Logo](/library/html-css/part2/netlify-logo.png)
+
+[Netlify](https://www.netlify.com) ist von den gleichen Machern wie BitBalloon. Es ist aber die professionelle Variante. Auch Netlify unterstützt das einfache Hochladen der Website per Drag and Drop, hat aber noch weit mehr Funktionen.
+
+Mit Netlify ist es möglich, eine Website unter dem eigenen Domainnamen gratis(!) zu hosten. Das einzige, was man bezahlen muss, ist die Reservation eines Domainnamens bei einem Domainanbieter.
 
 
 ### Hosting auf GitHub

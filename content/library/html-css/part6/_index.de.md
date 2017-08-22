@@ -32,16 +32,16 @@ Mit einfachen Links können wir von der Startseite auf die anderen Seiten spring
 
 <pre class="prettyprint lang-html">
 &lt;body>
-  <mark>&lt;a href="./">Home&lt;/a></mark>
-  <mark>&lt;a href="blog/">Blog&lt;/a></mark>
-  <mark>&lt;a href="projekte/">Projekte&lt;/a></mark>
-  <mark>&lt;a href="kontakt/">Kontakt&lt;/a></mark>
+  <mark>&lt;a href="/">Home&lt;/a></mark>
+  <mark>&lt;a href="/blog/">Blog&lt;/a></mark>
+  <mark>&lt;a href="/projekte/">Projekte&lt;/a></mark>
+  <mark>&lt;a href="/kontakt/">Kontakt&lt;/a></mark>
 
   &lt;h1 class="title">Web Portfolio von Marco&lt;/h1>
 </pre>
 
 <div class="alert alert-info">
-**Hinweis:** Der Link zu `./` verweist auf das aktuelle Verzeichnis. Mehr dazu im Abschnitt <a class="alert-link" href="/library/html-css/de/part1/#relative-und-absolute-urls">relative und absolute URLs</a>.
+**Hinweis:** Der Link zu `/` verweist auf das Hauptverzeichnis. Mehr dazu im Abschnitt <a class="alert-link" href="/library/html-css/de/part1/#relative-und-absolute-urls">relative und absolute URLs</a>.
 </div>
 
 Und so sieht die Navigation nun aus:
@@ -129,10 +129,10 @@ Die Links unserer Navigation werden also alle verpackt in `<li>`-Elemente, welch
 
 <pre class="prettyprint lang-html">
 &lt;ul>
-  &lt;li>&lt;a href="./">Home&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="blog/">Blog&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="projekte/">Projekte&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="kontakt/">Kontakt&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="/">Home&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="/blog/">Blog&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="/projekte/">Projekte&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="/kontakt/">Kontakt&lt;/a>&lt;/li>
 &lt;/ul>
 </pre>
 
@@ -153,12 +153,12 @@ Auf unserer Blog-Seite hatten wir noch etwas Platz gelassen, wo wir unserer Blog
 &lt;!-- Hier kommt eine Liste mit allen Blogeinträgen. -->
 &lt;ul>
   &lt;li>Weitere Einträge folgen...&lt;/li>
-  &lt;li>&lt;a href="2014-08-02-erster-eintrag/">Erster Eintrag&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="01-erster-eintrag/">Erster Eintrag&lt;/a>&lt;/li>
 &lt;/ul>
 </pre>
 
 <div class="alert alert-info">
-**Hinweis:** *Blogeinträge werden meist in umgekehrter Reihenfolge aufgelistet, so dass der letzte Eintrag zuoberst in der Liste erscheint.*
+<strong>Hinweis:</strong> </em>Blogeinträge werden meist in umgekehrter Reihenfolge aufgelistet, so dass der letzte Eintrag zuoberst in der Liste erscheint.</em>
 </div>
 
 
