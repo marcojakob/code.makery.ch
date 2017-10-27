@@ -84,3 +84,11 @@ This tutorial walks you through designing, programming and deploying an address 
 * **fast track:** قم بنسخ الكود مساشرة الى بيءة التطوسر التي تستعملها (المشاريع هي مشاريع Eclips, لكن يمكن استعمالها في بيئات أخرى مثل NetBeans مع تغييرات بسيطة). ثم عد الى الدورة لتفهم الكود.
 
 الان, أرجوا أن تستمتع! ابدأ ب [الجزء الأول: Scene Builder](/library/javafx-8-tutorial/ar/part1/).
+
+<div class="alert alert-success">
+  <strong><i class="fa fa-trophy"></i> Attribution:</strong> The Arabic translation has been contributed by 
+  <ul>
+    <li><a href="https://github.com/Mohamed-SM" class="alert-link">Mohamed-SM</a></li>  
+  </ul>
+  Thank you very much!
+</div>
