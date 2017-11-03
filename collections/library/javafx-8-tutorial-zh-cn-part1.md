@@ -95,7 +95,7 @@ languages:
 
 * [Java 8 API](http://docs.oracle.com/javase/8/docs/api/) - Java 标准类的文档。
 * [JavaFX 8 API](http://docs.oracle.com/javase/8/javafx/api/) - JavaFX 类的文档。
-* [ControlsFX API](http://controlsfx.bitbucket.org/) - [ControlsFX project](http://fxexperience.com/controlsfx/) 额外 JavaFX 控件的文档。
+* [ControlsFX API](https://controlsfx.bitbucket.io/) - [ControlsFX project](http://fxexperience.com/controlsfx/) 额外 JavaFX 控件的文档。
 * [Oracle's JavaFX Tutorials](http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm) - Oracle 的 JavaFX 官方教程。
 
 一切就绪，让我们开始吧！

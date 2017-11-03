@@ -96,7 +96,7 @@ languages:
 
 * [Java 8 API](http://docs.oracle.com/javase/8/docs/api/) - JavaDoc برای کلاس‌های استاندارد جاوا
 * [JavaFX 8 API](http://docs.oracle.com/javase/8/javafx/api/) - JavaDoc برای کلاس‌های JavaFX
-* [ControlsFX API](http://controlsfx.bitbucket.org/) - JavaDoc برای [پروژه ControlsFX](http://fxexperience.com/controlsfx/) برای کنترل های اضافه تر.
+* [ControlsFX API](https://controlsfx.bitbucket.io/) - JavaDoc برای [پروژه ControlsFX](http://fxexperience.com/controlsfx/) برای کنترل های اضافه تر.
 * [Oracle's JavaFX Tutorials](http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm) - آموزش‌های رسمی توسط Oracle.
 
 حالا بیاین شروع کنیم!

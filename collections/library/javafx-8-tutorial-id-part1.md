@@ -95,7 +95,7 @@ Anda mungkin ingin menandai tautan berikut:
 
 * [Java 8 API](http://docs.oracle.com/javase/8/docs/api/) - JavaDoc kelas-kelas baku java
 * [JavaFX 8 API](http://docs.oracle.com/javase/8/javafx/api/) - JavaDoc untuk kelas-kelas JavaFX
-* [ControlsFX API](http://controlsfx.bitbucket.org/) - JavaDoc untuk kontrol-kontrol tambahan JavaFX [ControlsFX project](http://fxexperience.com/controlsfx/)
+* [ControlsFX API](https://controlsfx.bitbucket.io/) - JavaDoc untuk kontrol-kontrol tambahan JavaFX [ControlsFX project](http://fxexperience.com/controlsfx/)
 * [Oracle's JavaFX Tutorials](http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm) - Tutorial resmi JavaFX oleh Oracle
 
 Sekarang, mari kita mulai!

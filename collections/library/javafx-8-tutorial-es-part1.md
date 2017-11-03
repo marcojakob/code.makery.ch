@@ -95,7 +95,7 @@ Te podría interesar mantener los siguientes enlaces:
 
 * [Java 8 API](http://docs.oracle.com/javase/8/docs/api/) - Documentación (JavaDoc) de las clases estándar de Java
 * [JavaFX 8 API](http://docs.oracle.com/javase/8/javafx/api/) - Documentación de las clases JavaFX
-* [ControlsFX API](http://controlsfx.bitbucket.org/) - Documentación para el proyecto [ControlsFX](http://fxexperience.com/controlsfx/), el cual ofrece controles JavaFX adicionales
+* [ControlsFX API](https://controlsfx.bitbucket.io/) - Documentación para el proyecto [ControlsFX](http://fxexperience.com/controlsfx/), el cual ofrece controles JavaFX adicionales
 * [Oracle's JavaFX Tutorials](http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm) - Tutoriales oficiales de Oracle sobre JavaFX
 
 ¡Y ahora, manos a la obra!

@@ -95,7 +95,7 @@ Eclipse가 JDK 8과 Scene Builder를 사용할 수 있게 해야 합니다:
 
 * [Java 8 API](http://docs.oracle.com/javase/8/docs/api/) - 표준 Java 클래스의 JavaDoc
 * [JavaFX 8 API](http://docs.oracle.com/javase/8/javafx/api/) - JavaFX 클래스의 JavaDoc
-* [ControlsFX API](http://controlsfx.bitbucket.org/) - 추가 JavaFX 컨트롤을 제공하는 [ControlsFX project](http://fxexperience.com/controlsfx/)의 JavaDoc
+* [ControlsFX API](https://controlsfx.bitbucket.io/) - 추가 JavaFX 컨트롤을 제공하는 [ControlsFX project](http://fxexperience.com/controlsfx/)의 JavaDoc
 * [Oracle's JavaFX Tutorials](http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm) - Oracle 공식 JavaFX 튜토리얼
 
 이제 시작해 봅시다!

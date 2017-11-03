@@ -95,7 +95,7 @@ languages:
 
 * [Java 8 API](http://docs.oracle.com/javase/8/docs/api/) - документация по стандартным классам Java;
 * [JavaFX 8 API](http://docs.oracle.com/javase/8/javafx/api/) - документация по классам JavaFX;
-* [ControlsFX API](http://controlsfx.bitbucket.org/) - документация по дополнительным элементам JavaFX [из проекта ControlsFX](http://fxexperience.com/controlsfx/);
+* [ControlsFX API](https://controlsfx.bitbucket.io/) - документация по дополнительным элементам JavaFX [из проекта ControlsFX](http://fxexperience.com/controlsfx/);
 * [Oracle's JavaFX Tutorials](http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm) - официальный учебник по JavaFX от Oracle.
 
 Ну что же, давайте приступим к изучению!
