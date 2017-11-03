@@ -95,7 +95,7 @@ Você pode querer colocar os links seguintes nos favoritos (em inglês):
 
 * [Java 8 API](http://docs.oracle.com/javase/8/docs/api/) - JavaDoc para classes Java padrão
 * [JavaFX 8 API](http://docs.oracle.com/javase/8/javafx/api/) - JavaDoc para classes JavaFX
-* [ControlsFX API](http://controlsfx.bitbucket.org/) - JavaDoc para o [Projeto ControlsFX](http://fxexperience.com/controlsfx/) para controles JavaFX adicionais
+* [ControlsFX API](https://controlsfx.bitbucket.io/) - JavaDoc para o [Projeto ControlsFX](http://fxexperience.com/controlsfx/) para controles JavaFX adicionais
 * [Oracle's JavaFX Tutorials](http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm) - Tutoriais Oficiais JavaFX da Oracle
 
 Agora vamos começar!
