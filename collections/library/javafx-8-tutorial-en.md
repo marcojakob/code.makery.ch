@@ -1,83 +1,83 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial"
+title: "دروس JavaFX 8"
 date: 2014-04-19 00:00
 updated: 2015-03-12 00:00
 slug: javafx-8-tutorial
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-en.md
-description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
+description: "تأخذك هذه الاقسام السبعة عبر تصميم وبرمجة وتوزيع تطبيق عناوين باستخدام JavaFX."
 image: /assets/library/javafx-8-tutorial/addressapp.png
 published: true
 prettify: true
-comments: 
-  identifier: /java/javafx-8-tutorial-intro/
+comments: true
+rtl: true
 sidebars:
-- header: "Articles in this Series"
+- header: "المقالات بهذه السلسلة"
   body:
-  - text: "Introduction"
+  - text: "مقدمة"
     link: /library/javafx-8-tutorial/
     paging: Intro
     active: true
-  - text: "Part 1: Scene Builder"
+  - text: "القسم 1: باني المشهد"
     link: /library/javafx-8-tutorial/part1/
     paging: 1
-  - text: "Part 2: Model and TableView"
+  - text: "القسم 2: النموذج وعارض الجدول"
     link: /library/javafx-8-tutorial/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
+  - text: "القسم 3: التفاعل مع المستخدم"
     link: /library/javafx-8-tutorial/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "القسم 3: انماط CSS"
     link: /library/javafx-8-tutorial/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
+  - text: "القسم 5: تخزين البيانات كملفات XML"
     link: /library/javafx-8-tutorial/part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
+  - text: "القسم 6: المخططات الاحصائية"
     link: /library/javafx-8-tutorial/part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "القسم 7: التوزيع"
     link: /library/javafx-8-tutorial/part7/
     paging: 7
 languages: 
-  header: Languages
+  header: اللغات
   collection: library
   item: javafx-8-tutorial
   part: 
-  active: en
+  active: ar
 ---
 
 
-Back in 2012 I wrote a very detailed [JavaFX 2 tutorial series](/library/javafx-2-tutorial/) for my students. Many people all over the world have been reading the tutorial and gave very positive feedback. So I decided to **rewrite the JavaFX 2 tutorial for JavaFX 8** (read about what changed in [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)).
+بالعودة الي 2012 فقد كتبت [سلسلة تدريبات متكاملة عن جافا اف اكس 2](/library/javafx-2-tutorial/) لطلابي. وقد قراءها العديد من الاشخاص حول العالم وقاموا بالتعليق عليها. لذا قررت اعادة كتابتها **لجافا اف اكس 8**( لمعرفة التعديلات من [التحديث الي JavaFX 8 - ما الجديد](/blog/update-to-javafx-8-whats-new/)).
 
-This tutorial walks you through designing, programming and deploying an address application. This is how the final application will look like:
+سيأخذك هذا التمرين عبر عملية تصميم وبرمجة ونشر تطبيق عناوين. وهذا هو الشكل النهائي للتطبيق:
 
 ![Screenshot AddressApp](/assets/library/javafx-8-tutorial/addressapp.png)
 
 
-## What you will learn
+## ما الذي ستتعلمه
 
-* Creating and starting a JavaFX project
-* Using Scene Builder to design the user interface
-* Structuring an application with the Model-View-Controller (MVC) pattern
-* Using `ObservableLists` for automatically updating the user interface
-* Using `TableView` and reacting to selection changes in the table
-* Create a custom popup dialog to edit persons
-* Validating user input
-* Styling a JavaFX application with CSS
-* Persisting data as XML
-* Saving the last opened file path in user preferences
-* Creating a JavaFX chart for statistics
-* Deploying a JavaFX application as a native package
+* انشاء وبدء تطبيق جافا اف اكس
+* استخدام باني المشهد لتصميم واجهة المستخدم الرسومية
+* هيكلة التطبيق بنمط نموذج - عرض - متحكم (MVC)
+* استخدام لائحة مراقبة `ObservableLists` للتحديث التلقائي لواجهة المستخدم
+* استخدام عارض الجدول `TableView` والاستجابة لتغير التحديد في الجدول
+* انشاء صندوق حوار قافز مخصص لتعديل الاشخاص
+* التحقق من مدخلات المستخدم
+* تنميط تطبيق JavaFX باستخدام CSS
+* الحفاظ علي البيانات بصيغة XML
+* حفظ مسار اخر ملف مفتوح في تفضيلات المستخدم
+* انشاء مخطط جافا اف اكس للاحصاءات
+* نشر تطبيق جافا اف اكس كحزمة اصلية native package
 
-**This is quite a lot!** So, after you you've completed this tutorial series you should be ready to build sophisticated applications with JavaFX.
+**اليس هذا كثير!**  لكن بعد الانتهاء من هذا التمرين ستصبح مستعدا لانشاء تطبيقات جافا اف اكس
 
 
-## How to use this Tutorial
+## كيف تستخدم هذه الدروس
 
-There are two ways to use this tutorial:
+توجد طريقتين لاستخدام هذه الدروس:
 
-* **learn-a-lot track:** Create your own JavaFX project from the ground up.
-* **fast track:** Import the source code for a tutorial part into your IDE (it's an Eclipse project, but you could use other IDEs like NetBeans with slight modifications). Then go through the tutorial to understand the code.
+* **تعلم الكثير من المسارات:** انشاء تطبيق جافا اف اكس الخاص بك
+* **مسارات سريعة:** تستورد الشفرة المصدرية للدروس في بئية التطوير المتكاملة خاصتك (وهي عبارة عن مشاريع اكلبس لكن يمكنك استخدام بيئة التطوير التي تحبها مثل نت بينز او خلافها). ثم تواصل الدرس لفهم الاكواد.
 
-Now, I hope you'll have fun! Start with [Part 1: Scene Builder](/library/javafx-8-tutorial/part1/).
+الان اتمني ان تستمتع بهذه الدروس وننتقل الي [القسم 1: باني المشهد](/library/javafx-8-tutorial/part1/).
