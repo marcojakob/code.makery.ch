@@ -198,7 +198,7 @@ public class Person {
 ### 解释
 
 * 在JavaFX中,对一个模型类的所有属性使用 [`Properties`](http://docs.oracle.com/javase/8/javafx/api/javafx/beans/property/Property.html)是很常见的. 一个 `Property` 允许我们, 打个比方, 当 `lastName` 或其他属性被改变时自动收到通知, 这有助于我们保持视图与数据的同步，阅读 [Using JavaFX Properties and Binding](http://docs.oracle.com/javase/8/javafx/properties-binding-tutorial/binding.htm) 学习更多关于 `Properties` 的内容。
-* [`LocalDate`](http://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html), 我们使用了 `birthday` 类型, 这是一个新的部分在 [Date and Time API for JDK 8](http://docs.oracle.com/javase/tutorial/datetime/iso/).
+* `birthday`, 我们使用了 [`LocalDate`](http://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html) 类型, 这在 [Date and Time API for JDK 8](http://docs.oracle.com/javase/tutorial/datetime/iso/) 中是一个新的部分.
 
 
 *****
