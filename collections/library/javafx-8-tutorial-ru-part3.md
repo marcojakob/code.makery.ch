@@ -618,11 +618,6 @@ private void handleEditPerson() {
 Я надеюсь, что идея и структура данного приложения поможет вам начать писать свои собственные приложения JavaFX! Удачи.
 
 
-### Что дальше?
-
-В [4-й части учебника](/library/javafx-8-tutorial/ru/part4/ "Tutorial Part 4") мы будем подключать к нашему приложению CSS-стили.
-
-
 ##### Вам могут быть интересны также некоторые другие статьи
 
 * [JavaFX Dialogs (official)](/blog/javafx-dialogs-official/)
