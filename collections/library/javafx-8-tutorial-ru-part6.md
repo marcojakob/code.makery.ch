@@ -119,12 +119,12 @@ import ch.makery.address.model.Person;
 public class BirthdayStatisticsController {
 
     @FXML
-    private BarChart<String, Integer> barChart;
+    private BarChart&lt;String, Integer> barChart;
 
     @FXML
     private CategoryAxis xAxis;
 
-    private ObservableList<String> monthNames = FXCollections.observableArrayList();
+    private ObservableList&lt;String> monthNames = FXCollections.observableArrayList();
 
     /**
      * Инициализирует класс-контроллер. Этот метод вызывается автоматически
@@ -146,7 +146,7 @@ public class BirthdayStatisticsController {
      * 
      * @param persons
      */
-    public void setPersonData(List<Person> persons) {
+    public void setPersonData(List&lt;Person> persons) {
         // Считаем адресатов, имеющих дни рождения в указанном месяце.
         int[] monthCounter = new int[12];
         for (Person p : persons) {
@@ -154,7 +154,7 @@ public class BirthdayStatisticsController {
             monthCounter[month]++;
         }
 
-        XYChart.Series<String, Integer> series = new XYChart.Series<>();
+        XYChart.Series&lt;String, Integer> series = new XYChart.Series<>();
 
         // Создаём объект XYChart.Data для каждого месяца.
         // Добавляем его в серии.
