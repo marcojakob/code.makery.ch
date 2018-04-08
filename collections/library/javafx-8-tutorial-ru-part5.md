@@ -189,14 +189,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name = "persons")
 public class PersonListWrapper {
 
-    private List<Person> persons;
+    private List&lt;Person> persons;
 
     @XmlElement(name = "person")
-    public List<Person> getPersons() {
+    public List&lt;Person> getPersons() {
         return persons;
     }
 
-    public void setPersons(List<Person> persons) {
+    public void setPersons(List&lt;Person> persons) {
         this.persons = persons;
     }
 }
@@ -510,7 +510,7 @@ import javax.xml.bind.annotation.adapters.XmlAdapter;
  * 
  * @author Marco Jakob
  */
-public class LocalDateAdapter extends XmlAdapter<String, LocalDate> {
+public class LocalDateAdapter extends XmlAdapter&lt;String, LocalDate> {
 
     @Override
     public LocalDate unmarshal(String v) throws Exception {
