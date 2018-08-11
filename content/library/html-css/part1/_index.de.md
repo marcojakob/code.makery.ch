@@ -2,16 +2,21 @@
 title = "Teil 1: Unsere erste Webseite"
 date = "2014-08-13"
 updated = "2015-03-18"
-github =  "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part1.md"
+github =  "https://github.com/marcojakob/code.makery.ch/edit/master/content/library/html-css/part1/_index.de.md"
 description = "Erstellen Sie Ihre erste Webseite. Hier lernen Sie die Tools und die Grundlagen von HTML & CSS kennen."
 image = "/library/html-css/portfolio-de.png"
 prettify = true
 comments = true
-aliases = [
-  "/library/html-css/de/part1/"
-]
+aliases = [ "/library/html-css/de/part1/" ]
 weight = 1
 paging = "1"
+
+[[sidebars]]
+header = "Downloads"
+  [[sidebars.items]]
+  text = "Portfolio Teil 1"
+  link = "https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part1.zip"
+  iconCss = "fa fa-fw fa-download"
 +++
 
 Wir legen gleich los und erstellen unsere erste Webseite.

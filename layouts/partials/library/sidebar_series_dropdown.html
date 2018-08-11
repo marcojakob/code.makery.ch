@@ -4,10 +4,10 @@
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">{{ i18n "libraryArticlesInThisSeries" }} <span class="caret"></span>
     </button>
     <ul class="dropdown-menu" role="menu">
-      <li><a href="{{ $series.RelPermalink }}" class="list-group-item">
+      <li><a href="{{ $series.RelPermalink }}">
         {{ $series.Title }}</a></li>
       {{ range $series.Sections }}
-        <li><a href="{{ .RelPermalink }}" class="list-group-item">
+        <li><a href="{{ .RelPermalink }}">
           {{ .Title }}</a></li>
       {{ end }}
     </ul>

@@ -1,0 +1,15 @@
+{{ range .Params.sidebars  }}
+<div class="panel panel-default sidebar">
+  <div class="panel-heading">
+    <h4 class="panel-title">{{ .header }}</h4>
+  </div>
+
+  <div class="list-group">
+    {{ range .items }}
+      <a href="{{ .link }}" class="list-group-item">
+        {{ if .iconCss }}<i class="{{ .iconCss }}"></i>{{ end }} {{ .text }}
+      </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

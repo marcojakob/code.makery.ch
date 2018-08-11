@@ -22,25 +22,33 @@
 
     {{ if eq (lower .Parent.Name) "library" }}
       {{ .Scratch.Set "series" . }}
+      {{ .Scratch.Set "seriesOverview" true }}
     {{ else }}
       {{ .Scratch.Set "series" .Parent  }}
     {{ end }}
     {{ $series := .Scratch.Get "series" }}
+    {{ $seriesOverview := .Scratch.Get "seriesOverview" }}
 
     <aside class="col-md-3">
       <div class="visible-md-block visible-lg-block">
         {{ partial "library/sidebar_series.html" . }}
+        {{ partial "library/sidebar_custom.html" . }}
         {{ partial "library/sidebar_languages.html" . }}
       </div>
     </aside>
 
     <div class="col-md-9">
       <header class="article-header">
+        {{ if not $seriesOverview }}
+        <a href="{{ $series.RelPermalink }}" class="black-link"><i class="fa fa-folder-open-o"></i> {{ $series.Title }}</a>
+        {{ end }}
         <h1 class="article-title">{{ .Title }}</h1>
       </header>
 
       <aside class="visible-xs-block visible-sm-block">
         {{ partial "library/sidebar_series_dropdown.html" . }}
+        {{ partial "library/sidebar_custom_dropdown.html" . }}
+        {{ partial "library/sidebar_languages_dropdown.html" . }}
       </aside>
 
       <div class="article-content">
@@ -54,60 +62,24 @@
   </article>
 
 
-    {{/*
-    {{- if model.sidebars or model.languages -%}
-    <aside class="col-md-3">
-      <div class="visible-md-block visible-lg-block">
-      {% include "article/sidebars" %}
-      {% include "article/languages" %}
-      </div>
-    </aside>
-    <div class="col-md-9">
-    {%- else -%}
-    <div class="col-md-offset-1 col-md-10">
-    {%- endif -%}
-      <header class="article-header">
-        <h1 class="article-title">{{ .Title }}</h1>
-        {% include "article/date" %}
-      </header>
-
-      {%- if model.sidebars or model.languages -%}
-      <aside class="visible-xs-block visible-sm-block">
-        {% include "article/sidebars-dropdown" %}
-        {% include "article/languages-dropdown" %}
-      </aside>
-      {%- endif -%}
-
-      <div class="article-content">
-        {% block content %}{% endblock %}
-      </div>
-
-      <hr>
-      {% include "article/paging" %}
-    </div>
-  </article>
-
-  {% if model.comments %}
+  {{ if .Params.comments }}
   <section class="row">
-    {%- if model.sidebars or model.languages -%}
     <div class="col-md-offset-3 col-md-9">
-    {%- else -%}
-    <div class="col-md-offset-1 col-md-10">
-    {%- endif -%}
       <h2>Comments</h2>
       <div id="disqus_thread"></div>
     </div>
   </section>
-  {% endif %}
+  {{ end }}
 </div>
- */}}
-
 {{ end }}
 
 
 
 {{ define "body_includes" }}
 {{ if .Params.prettify }}
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap-init-tooltips.min.js"></script>
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&amp;lang=dart"></script>
 {{ end }}
 {{ end }}
