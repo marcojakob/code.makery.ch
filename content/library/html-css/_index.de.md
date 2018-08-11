@@ -1,16 +1,12 @@
 +++
 title = "HTML & CSS Tutorial (Deutsch)"
-date = "2014-08-13"
-updated = "2015-03-18"
-github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de.md"
+date = "2018-08-11"
+github = "https://github.com/marcojakob/code.makery.ch/edit/master/content/library/html-css/_index.de.md"
 description = "Mit dieser Anleitung lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen sofort mit einer eigenen Webseite für Ihr Portfolio."
-image = "portfolio-de.png"
-published = true
+image = "portfolio.de.png"
 prettify = true
 comments = true
-aliases = [
-  "/library/html-css/de/"
-]
+aliases = [ "/library/html-css/de/" ]
 weight = 7
 paging = "Intro"
 +++
@@ -24,7 +20,7 @@ Die Theorie wird erklärt, sobald sie für das Projekt benötigt wird. Sie werde
 
 Das Projekt, welches wir Schritt-für-Schritt erarbeiten, ist Ihr persönliches **Web Portfolio**. Dieses Portfolio beinhaltet eine Startseite, einen Blog, eine Seite für Ihre zukünftigen Webprojekte und eine Kontaktseite.
 
-<img src="/library/html-css/portfolio-de.png" alt="Portfolio" class="img-thumbnail">
+<img src="portfolio.de.png" alt="Portfolio" class="img-thumbnail">
 
 
 ## Grundidee
@@ -69,10 +65,6 @@ Viel Spass!
 
 
 ***
-
-### Danksagung
-
-Herzlichen Dank an die [Hasler Stiftung](http://www.haslerstiftung.ch/) für ihren Beitrag zur Entwicklung des Unterrichtsmaterials.
 
 *Quellen*<br>
 <em class="small">

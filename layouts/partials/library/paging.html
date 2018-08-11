@@ -1,0 +1,14 @@
+{{ $series := .Scratch.Get "series" }}
+<nav>
+    <div class="article-paging">
+      <ul class="pagination">
+        <li{{ if eq .RelPermalink $series.RelPermalink }} class="active"{{ end }}><a href="{{ $series.RelPermalink }}" data-toggle="tooltip" title="{{ $series.Title }}">
+          {{ $series.Params.paging }}</a></li>
+          {{ range $series.Sections }}
+            <li{{ if .InSection $ }} class="active"{{ end }}><a href="{{ .RelPermalink }}" data-toggle="tooltip" title="{{ .Title }}">
+              {{ .Params.paging }}</a></li>
+          {{ end }}
+        </li>
+      </ul>
+    </div>
+  </nav>

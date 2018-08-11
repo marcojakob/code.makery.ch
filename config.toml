@@ -19,42 +19,42 @@ defaultContentLanguage = "en"
 [permalinks]
   blog-tag = "/blog/tag/:title/"
 
-[Languages]
-[Languages.en]
+[languages]
+[languages.en]
   title = "English"
 
-[Languages.de]
+[languages.de]
   title = "Deutsch"
 
-[Languages.es]
+[languages.es]
   title = "Español"
 
-[Languages.fa]
+[languages.fa]
   title = "فارسی"
 
-[Languages.fr]
+[languages.fr]
   title = "Français"
 
-[Languages.id]
+[languages.id]
   title = "Bahasa Indonesia"
 
-[Languages.it]
+[languages.it]
   title = "Italiano"
 
-[Languages.kr]
+[languages.kr]
   title = "한국어"
 
-[Languages.pt]
+[languages.pt]
   title = "Português"
 
-[Languages.ru]
+[languages.ru]
   title = "Русский"
 
-[Languages.tr]
+[languages.tr]
   title = "Türkçe"
 
-[Languages.uk]
+[languages.uk]
   title = "Українська"
 
-[Languages.zh-cn]
+[languages.zh-cn]
   title = "中文（简体）"

@@ -1,0 +1,15 @@
+{{ $series := .Scratch.Get "series" }}
+{{ if gt (len $series.Sections) 0  }}
+<div class="btn-group sidebar-dropdown">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">{{ i18n "libraryArticlesInThisSeries" }} <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="{{ $series.RelPermalink }}" class="list-group-item">
+        {{ $series.Title }}</a></li>
+      {{ range $series.Sections }}
+        <li><a href="{{ .RelPermalink }}" class="list-group-item">
+          {{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}

@@ -1,0 +1,17 @@
+{{ $series := .Scratch.Get "series" }}
+{{ if gt (len $series.Sections) 0  }}
+<div class="panel panel-default sidebar">
+    <div class="panel-heading">
+      <h4 class="panel-title">{{ i18n "libraryArticlesInThisSeries" }}</h4>
+    </div>
+
+    <div class="list-group">
+      <a href="{{ $series.RelPermalink }}" class="list-group-item{{ if eq .RelPermalink $series.RelPermalink }} active{{ end }}">
+        {{ $series.Title }}</a>
+      {{ range $series.Sections }}
+        <a href="{{ .RelPermalink }}" class="list-group-item{{ if .InSection $ }} active{{ end }}">
+          {{ .Title }}</a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}

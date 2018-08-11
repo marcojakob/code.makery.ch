@@ -27,8 +27,9 @@
      * © 2014 MyFonts Inc
     */
     -->
-    <link href="/css/style.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="canonical" href="{{ block "canonical" . }}{{ .Permalink }}{{ end }}" />
+    {{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $style := resources.Get "sass/style.scss" | resources.ToCSS $options }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
 
     <!-- Alternate Languages -->
     {{ range .Translations }}
@@ -70,18 +71,7 @@
 
 
   <body>
-    <header class="site-header container">
-      <h1 class="site-title">
-        <a href="/"><span class="main-text">code</span>.makery</a>
-      </h1>
-      <div class="site-intro">
-        <p>{{ .Site.Params.intro }}</p>
-      </div>
-
-      <div class="ribbon">
-        <a href="https://tinyletter.com/codemakery" title="Get Updates">Subscribe to <i class="fa fa-envelope-o"></i> Updates </a>
-      </div>
-    </header>
+    {{ partial "header.html" . }}
 
     {{ block "main" . }}{{ end }}
 

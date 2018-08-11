@@ -1,17 +1,12 @@
 {{ define "head_includes" }}
-
-{{ if .Params.css }}
-  <link href="{{ .Params.css }}" rel="stylesheet" type="text/css" />
+  {{ if .Params.css }}
+    <link href="{{ .Params.css }}" rel="stylesheet" type="text/css" />
+  {{ end }}
 {{ end }}
-
-
-{{ end }}
-
-
 
 {{ define "main" }}
 <div class="container article-container">
-  <!-- {% include "navigation" %} -->
+  {{ partial "navigation.html" . }}
 
   {{ if .Params.github }}
   <div class="row">
@@ -25,24 +20,17 @@
 
   <article class="row"{{ if .Params.rtl }} dir="rtl"{{ end }}>
 
-    {{ $sect := (.Site.GetPage "section" "library/html-css") }}
+    {{ if eq (lower .Parent.Name) "library" }}
+      {{ .Scratch.Set "series" . }}
+    {{ else }}
+      {{ .Scratch.Set "series" .Parent  }}
+    {{ end }}
+    {{ $series := .Scratch.Get "series" }}
 
     <aside class="col-md-3">
       <div class="visible-md-block visible-lg-block">
-        <div class="panel panel-default sidebar">
-          <div class="panel-heading">
-            <h4 class="panel-title">Artikel dieser Serie</h4>
-          </div>
-
-          <div class="list-group">
-            <a href="{{ $sect.RelPermalink }}" class="list-group-item{{ if eq .RelPermalink $sect.RelPermalink }} active{{ end }}">
-              {{ $sect.Title }}</a>
-            {{ range $sect.Sections }}
-              <a href="{{ .RelPermalink }}" class="list-group-item{{ if .InSection $ }} active{{ end }}">
-                {{ .Title }}</a>
-            {{ end }}
-          </div>
-        </div>
+        {{ partial "library/sidebar_series.html" . }}
+        {{ partial "library/sidebar_languages.html" . }}
       </div>
     </aside>
 
@@ -52,18 +40,7 @@
       </header>
 
       <aside class="visible-xs-block visible-sm-block">
-        <div class="btn-group sidebar-dropdown">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Artikel dieser Serie <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="{{ $sect.RelPermalink }}" class="list-group-item">
-              {{ $sect.Title }}</a></li>
-            {{ range $sect.Sections }}
-              <li><a href="{{ .RelPermalink }}" class="list-group-item">
-                {{ .Title }}</a></li>
-            {{ end }}
-          </ul>
-        </div>
+        {{ partial "library/sidebar_series_dropdown.html" . }}
       </aside>
 
       <div class="article-content">
@@ -72,19 +49,7 @@
 
       <hr>
 
-      <nav>
-        <div class="article-paging">
-          <ul class="pagination">
-            <li{{ if eq .RelPermalink $sect.RelPermalink }} class="active"{{ end }}><a href="{{ $sect.RelPermalink }}" data-toggle="tooltip" title="{{ $sect.Title }}">
-              {{ $sect.Params.paging }}</a></li>
-              {{ range $sect.Sections }}
-                <li{{ if .InSection $ }} class="active"{{ end }}><a href="{{ .RelPermalink }}" data-toggle="tooltip" title="{{ .Title }}">
-                  {{ .Params.paging }}</a></li>
-              {{ end }}
-            </li>
-          </ul>
-        </div>
-      </nav>
+      {{ partial "library/paging.html" . }}
     </div>
   </article>
 
