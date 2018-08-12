@@ -22,11 +22,11 @@ For web development, you need two programs: an <abbr data-toggle="tooltip" title
 
 For creating web pages, a normal text editor would be sufficient. But there are editors that greatly simplify your work as a programmer. Therefore, I recommend that you use a modern code editor.
 
-![Atom Editor](/assets/library/html-css/part1/atom-editor-screenshot.png)
+![Atom Editor](atom-editor-screenshot.png)
 
 My current favorite among the many editors is [Atom](https://atom.io/) (free). You may use an editor of your choice but I will occasionally refer to some functions of Atom. Good alternatives to Atom are [Brackets](http://brackets.io) or the slightly older but very good [Notepad++](http://notepad-plus-plus.org/).
 
-<a href="https://atom.io" target="_blank">![Atom Editor Logo](/assets/library/html-css/part1/atom-editor-logo.jpg)
+<a href="https://atom.io" target="_blank">![Atom Editor Logo](atom-editor-logo.jpg)
 </a>
 
 Go ahead and install an editor. If you do not know which one, use [Atom](https://atom.io) for now.
@@ -39,22 +39,22 @@ While we're at it we'll install two Atom packages that will give superpowers to 
 1. Open Atom.
 2. Open the **File** menu and select **Settings**.
 <p>
-![Open Settings](/assets/library/html-css/part1/open-settings.png)
+![Open Settings](open-settings.png)
 </p>
 3. Go to **Install**, enter *atom-live-server* in the search bar, hit enter and install the **atom-live-server** package.
 <p>
-![Install Live Server Package](/assets/library/html-css/part1/install-live-server-package.png)
+![Install Live Server Package](install-live-server-package.png)
 </p>
 4. Now enter *color-picker* in the search bar and also install the **color-picker** package.
 <p>
-![Install Color Picker Package](/assets/library/html-css/part1/install-color-picker-package.png)
+![Install Color Picker Package](install-color-picker-package.png)
 </p>
 
 ### Browser
 
 Our website should, of course, run in all major browsers (Internet Explorer, Firefox, Chrome and Safari). However, for web development I recommend you use [Chrome](https://www.google.com/chrome/browser/). Chrome includes very useful tools for developers which you will use often.
 
-<a href="https://www.google.com/chrome/browser/" target="_blank">![Chrome Logo](/assets/library/html-css/part1/chrome-logo.png)</a>
+<a href="https://www.google.com/chrome/browser/" target="_blank">![Chrome Logo](chrome-logo.png)</a>
 
 If you do not have Chrome on your computer, you can [install it here](https://www.google.com/chrome/browser/).
 
@@ -69,17 +69,17 @@ Equipped with editor and browser, let's create the first HTML document for our w
 
 3. Open the **File** menu and select **Open Folder ...**. Browse for the folder you created and open it.
 <p>
-![Open Folder](/assets/library/html-css/part1/open-folder.png)
+![Open Folder](open-folder.png)
 </p>
 
 4. Right-click below the folder and select **New File**. Name the file `index.html`.
 <p>
-![New File](/assets/library/html-css/part1/new-file.png)
+![New File](new-file.png)
 </p>
 
 5. Now you have a blank text file named `index.html`.
 <p>
-![index.html](/assets/library/html-css/part1/new-index-file.png)
+![index.html](new-index-file.png)
 </p>
 
 
@@ -92,11 +92,11 @@ You could probably assume, the name `index.html` does have special meaning. If a
 
 Now you can fill the document with content. Type the following lines in your HTML.
 
-![HTML Structure](/assets/library/html-css/part1/first-website.png)
+![HTML Structure](first-website.png)
 
 To view the page, we'll use the **live-server** package that we installed above. Open the **Packages** menu, choose **Live Server** and click on one of the ports. A browser window should open up and show your first website. Now, whenever you save any changes they are automatically updated by the live server.
 
-![Start Live Server](/assets/library/html-css/part1/start-live-server.png)
+![Start Live Server](start-live-server.png)
 
 <div class="alert alert-info">
 <p>
@@ -136,7 +136,7 @@ Attributes declare additional information for an item. Attributes are part of th
 
 As an example, let's look at the HTML element for a link. It is probably one of the most important elements &mdash; what would the internet be without links?
 
-![HTML Element](/assets/library/html-css/part1/html-element-attribute.png)
+![HTML Element](html-element-attribute.png)
 
 The `<a>` element above includes an `href` attribute (short for "hypertext reference") with the value `http://code.makery.ch`. The browser knows that it must show the link as [My Website](http://code.makery.ch).
 
@@ -264,7 +264,7 @@ All of your code could now look something like this (I've added a subheading and
 
 That's how the portfolio currently looks like in the browser:
 
-![Portfolio](/assets/library/html-css/part1/portfolio.jpg)
+![Portfolio](portfolio.jpg)
 
 
 ## What's next?
