@@ -7,7 +7,7 @@
     {{ $currentLang := .Lang }}
     {{ range .AllTranslations }}
     <a href="{{ .RelPermalink }}" class="list-group-item{{ if eq .Lang $currentLang  }} active{{ end }}">
-      <i class="fa fa-fw fa-globe"></i> {{ .Language.Title }}
+      <i class="fa fa-fw fa-globe"></i> {{ .Language.LanguageName }}
     </a>
     {{ end }}
   </div>

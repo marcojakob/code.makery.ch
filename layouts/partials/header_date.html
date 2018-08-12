@@ -1,0 +1,14 @@
+<time class="article-date" datetime="{{ .Date.Format "2006-01-02" | safeHTML }}">
+  {{ if eq .Lang "de" }}
+    {{ .Date.Day }}.{{ .Date.Month }}.{{ .Date.Year }} 
+  {{ else }}
+    {{ .Date.Day }}.{{ .Date.Month }}.{{ .Date.Year }} 
+  {{ end }}
+<br>
+  {{ .Params.updated }} <br>
+  {{ .Params.Date }} <br>
+
+  {{ if .Params.updated }}
+  • Updated {{ (time .Params.updated).Day }}.{{ (time .Params.updated).Month }}.{{ (time .Params.updated).Year }} 
+  {{ end }}
+</time>

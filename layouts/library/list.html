@@ -1,34 +1,34 @@
+{{ define "variables" -}}
+  {{ if eq (lower .Parent.Name) "library" -}}
+    {{ .Scratch.Set "isSeriesIndex" true -}}
+    {{ .Scratch.Set "series" . -}}
+    {{ .Scratch.Set "title" (print .Title " | " .Site.Title) -}}
+    {{ else -}}
+    {{ .Scratch.Set "isSeriesIndex" false -}}
+    {{ .Scratch.Set "series" .Parent -}}
+    {{ .Scratch.Set "title" (print .Title " | " .Parent.Title " | " .Site.Title) -}}
+  {{ end -}}
+{{ end -}}
+
 {{ define "head_includes" }}
-  {{ if .Params.css }}
-    <link href="{{ .Params.css }}" rel="stylesheet" type="text/css" />
-  {{ end }}
+  {{ partial "custom_css.html" . }}
 {{ end }}
 
 {{ define "main" }}
 <div class="container article-container">
   {{ partial "navigation.html" . }}
 
-  {{ if .Params.github }}
+  {{ with .Params.github }}
   <div class="row">
     <div class="col-md-12">
       <div class="github-edit">
-        <a href="{{ .Params.github }}">Edit on GitHub</a>
+        <a href="{{ . }}">Edit on GitHub</a>
       </div>
     </div>
   </div>
   {{ end }}
 
   <article class="row"{{ if .Params.rtl }} dir="rtl"{{ end }}>
-
-    {{ if eq (lower .Parent.Name) "library" }}
-      {{ .Scratch.Set "series" . }}
-      {{ .Scratch.Set "seriesOverview" true }}
-    {{ else }}
-      {{ .Scratch.Set "series" .Parent  }}
-    {{ end }}
-    {{ $series := .Scratch.Get "series" }}
-    {{ $seriesOverview := .Scratch.Get "seriesOverview" }}
-
     <aside class="col-md-3">
       <div class="visible-md-block visible-lg-block">
         {{ partial "library/sidebar_series.html" . }}
@@ -39,10 +39,11 @@
 
     <div class="col-md-9">
       <header class="article-header">
-        {{ if not $seriesOverview }}
-        <a href="{{ $series.RelPermalink }}" class="black-link"><i class="fa fa-folder-open-o"></i> {{ $series.Title }}</a>
+        {{ if not (.Scratch.Get "isSeriesIndex") }}
+        <a href="{{ (.Scratch.Get "series").RelPermalink }}" class="black-link"><i class="fa fa-folder-open-o"></i> {{ (.Scratch.Get "series").Title }}</a>
         {{ end }}
         <h1 class="article-title">{{ .Title }}</h1>
+        {{ partial "header_date.html" . }}
       </header>
 
       <aside class="visible-xs-block visible-sm-block">
@@ -82,4 +83,6 @@
   <script type="text/javascript" src="/js/bootstrap-init-tooltips.min.js"></script>
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&amp;lang=dart"></script>
 {{ end }}
+{{ partial "disqus_js.html" . }}
+{{ partial "custom_js.html" . }}
 {{ end }}

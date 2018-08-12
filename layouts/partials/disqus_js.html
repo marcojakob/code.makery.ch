@@ -1,32 +1,34 @@
+{{ if .Params.comments }}
+  {{ if .Params.commentsShortname }}
+    {{ $.Scratch.Set "disqusShortname" .Params.commentsShortname }}
+  {{ else }}
+    {{ $.Scratch.Set "disqusShortname" $.Site.Params.disqusShortname }}
+  {{ end }}
 
-{% if model.comments -%}
-  {% if model.comments.shortname -%}
-    {% assign shortname = model.comments.shortname -%}
-  {% else -%}
-    {% assign shortname = global.disqusShortname -%}
-  {% endif -%}
-  {% if model.comments.identifier -%}
-    {% assign identifier = model.comments.identifier -%}
-  {% else -%}
-    {% capture identifier %}{% include "util/url" %}{% endcapture -%}
-  {% endif -%}
-  {% if model.comments.url -%}
-    {% assign url = model.comments.url -%}
-  {% else -%}
-    {% capture url %}{% include "util/domain-and-url" %}{% endcapture -%}
-  {% endif -%}
-  {% if model.comments.title -%}
-    {% assign title = model.comments.title | remove: "'" -%}
-  {% else -%}
-    {% assign title = model.title | remove: "'" -%}
-  {% endif -%}
+  {{ if .Params.commentsIdentifier }}
+    {{ $.Scratch.Set "disqusIdentifier" .Params.commentsIdentifier }}
+  {{ else }}
+    {{ $.Scratch.Set "disqusIdentifier" $.RelPermalink }}
+  {{ end }}
+
+  {{ if .Params.commentsUrl }}
+    {{ $.Scratch.Set "disqusUrl" .Params.commentsUrl }}
+  {{ else }}
+    {{ $.Scratch.Set "disqusUrl" $.Permalink }}
+  {{ end }}
+
+  {{ if .Params.commentsTitle }}
+    {{ $.Scratch.Set "disqusTitle" (replace .Params.commentsTitle "'" "") }}
+  {{ else }}
+    {{ $.Scratch.Set "disqusTitle" (replace $.Title "'" "") }}
+  {{ end }}
 
   <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = '{{ shortname }}'; // Required - the forum shortname
-    var disqus_identifier = '{{ identifier }}';
-    var disqus_url = '{{ url }}';
-    var disqus_title = '{{ title }}';
+    var disqus_shortname = '{{ $.Scratch.Get "disqusShortname" }}'; // Required - the forum shortname
+    var disqus_identifier = '{{ $.Scratch.Get "disqusIdentifier" }}';
+    var disqus_url = '{{ $.Scratch.Get "disqusUrl" }}';
+    var disqus_title = '{{ $.Scratch.Get "disqusTitle" }}';
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
@@ -35,4 +37,4 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
   </script>
-{% endif %}
+{{ end }}

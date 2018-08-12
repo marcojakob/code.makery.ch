@@ -1,5 +1,5 @@
 +++
-title = "Teil 5: Blog und weitere Seiten"
+title = "HTML & CSS Tutorial - Teil 5: Blog und weitere Seiten"
 date = "2014-08-13"
 updated = "2015-03-18"
 github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part5.md"

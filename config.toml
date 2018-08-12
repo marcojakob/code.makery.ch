@@ -21,40 +21,40 @@ defaultContentLanguage = "en"
 
 [languages]
 [languages.en]
-  title = "English"
+  languageName = "English"
 
 [languages.de]
-  title = "Deutsch"
+  languageName = "Deutsch"
 
 [languages.es]
-  title = "Español"
+  languageName = "Español"
 
 [languages.fa]
-  title = "فارسی"
+  languageName = "فارسی"
 
 [languages.fr]
-  title = "Français"
+  languageName = "Français"
 
 [languages.id]
-  title = "Bahasa Indonesia"
+  languageName = "Bahasa Indonesia"
 
 [languages.it]
-  title = "Italiano"
+  languageName = "Italiano"
 
 [languages.kr]
-  title = "한국어"
+  languageName = "한국어"
 
 [languages.pt]
-  title = "Português"
+  languageName = "Português"
 
 [languages.ru]
-  title = "Русский"
+  languageName = "Русский"
 
 [languages.tr]
-  title = "Türkçe"
+  languageName = "Türkçe"
 
 [languages.uk]
-  title = "Українська"
+  languageName = "Українська"
 
 [languages.zh-cn]
-  title = "中文（简体）"
+  languageName = "中文（简体）"

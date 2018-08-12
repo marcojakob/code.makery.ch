@@ -1,9 +1,13 @@
+{{ block "variables" . -}}
+{{ .Scratch.Set "title" (print .Title " | " .Site.Title) -}}
+{{ end -}}
+
 <!doctype html>
 <html lang="{{ .Language }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <title>{{ .Scratch.Get "title" }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="{{ .Site.Params.keywords }}">
     <!--
@@ -37,7 +41,7 @@
     {{ end}}
 
     <!-- RSS Feed -->
-    <link rel="alternate" type="application/rss+xml" href="/rss" title="{{ .Site.Title }} - RSS Feed">
+    <link rel="alternate" type="application/rss+xml" href="/rss" title="{{ .Scratch.Get "title" }} - RSS Feed">
 
     <meta name="description" content="{{ .Description }}">
     <meta name="author" content="{{ .Site.Params.author }}" >
@@ -47,7 +51,7 @@
 
     <!-- Open Graph data -->
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
+    <meta property="og:title" content="{{ .Scratch.Get "title" }}" />
     <meta property="og:description" content="{{ .Description }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     {{ if .Params.image -}}
