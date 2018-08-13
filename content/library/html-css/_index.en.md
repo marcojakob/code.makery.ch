@@ -1,13 +1,16 @@
 +++
-title = "HTML & CSS Tutorial"
+title = "HTML & CSS Tutorial (NEW VERSION)"
 date = 2015-04-08
 description = "Learn the basics of HTML and CSS in this tutorial to create your own web projects. We immediately start with a practical example of building your own portfolio website."
 image = "portfolio.png"
 prettify = true
 comments = true
-weight = 7
 sidebarName = "Introduction"
 pagingName = "Intro"
+topics = [ "HTML-CSS" ]
+weight = 1
+overviewImage = "thumbnail.png"
+overviewDescription = "Course to learn HTML & CSS from the beginning."
 +++
 
 In this tutorial you will learn the basics of HTML and CSS to create your own web projects. Instead of working through rather boring theory we will immediately **start with a project**.

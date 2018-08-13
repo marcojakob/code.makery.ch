@@ -19,45 +19,62 @@ defaultContentLanguage = "en"
   twitter = "codemakery"
   github = "https://github.com/marcojakob/code.makery.ch"
 
+[taxonomies]
+  topic = "topics"
+  tag = "tags"
+
 [permalinks]
-  blog-tag = "/blog/tag/:title/"
+  topics = "/library/topics/:slug/"
 
 [languages]
 [languages.en]
   languageName = "English"
+  weight = 1
 
 [languages.de]
   languageName = "Deutsch"
+  weight = 2
 
 [languages.es]
   languageName = "Español"
+  weight = 3
 
 [languages.fa]
   languageName = "فارسی"
+  weight = 4
 
 [languages.fr]
   languageName = "Français"
+  weight = 5
 
 [languages.id]
   languageName = "Bahasa Indonesia"
+  weight = 6
 
 [languages.it]
   languageName = "Italiano"
+  weight = 7
 
 [languages.kr]
   languageName = "한국어"
+  weight = 8
 
 [languages.pt]
   languageName = "Português"
+  weight = 9
 
 [languages.ru]
   languageName = "Русский"
+  weight = 10
 
 [languages.tr]
   languageName = "Türkçe"
+  weight = 11
 
 [languages.uk]
   languageName = "Українська"
+  weight = 12
 
 [languages.zh-cn]
   languageName = "中文（简体）"
+  weight = 13

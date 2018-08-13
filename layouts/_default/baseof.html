@@ -1,5 +1,6 @@
 {{ block "variables" . -}}
 {{ .Scratch.Set "title" (print .Title " | " .Site.Title) -}}
+{{ .Scratch.Set "canonical" "" -}}
 {{ end -}}
 
 <!doctype html>
@@ -34,6 +35,10 @@
     {{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
     {{ $style := resources.Get "sass/style.scss" | resources.ToCSS $options }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+    {{ if .Scratch.Get "canonical" }}
+    <link rel="canonical" href="{{ .Scratch.Get "canonical" }}" />
+    {{ end }}
 
     <!-- Alternate Languages -->
     {{ range .Translations }}
@@ -81,6 +86,9 @@
 
     {{ partial "footer.html" . }}
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    
     {{ block "body_includes" . }}{{ end }}
   </body>
 </html>

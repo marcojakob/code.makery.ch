@@ -2,8 +2,8 @@
   <ul>
     <li><a class="{{ if eq .RelPermalink .LanguagePrefix }}main-link{{ else }}black-link{{ end }}" href="/">Home</a></li>
     <li><a class="{{ if hasPrefix .RelPermalink (print .LanguagePrefix "/library/") }}main-link{{ else }}black-link{{ end }}" href="/library/">Library</a></li>
-    <li><a class="{{ if hasPrefix .RelPermalink (print .LanguagePrefix "/paths/") }}main-link{{ else }}black-link{{ end }}" href="/paths/">Paths</a></li>
+    <!-- <li><a class="{{ if hasPrefix .RelPermalink (print .LanguagePrefix "/paths/") }}main-link{{ else }}black-link{{ end }}" href="/paths/">Paths</a></li>
     <li><a class="{{ if hasPrefix .RelPermalink (print .LanguagePrefix "/blog/") }}main-link{{ else }}black-link{{ end }}" href="/blog/">Blog</a></li>
-    <li><a class="{{ if hasPrefix .RelPermalink (print .LanguagePrefix "/about/") }}main-link{{ else }}black-link{{ end }}" href="/about/">About</a></li>
+    <li><a class="{{ if hasPrefix .RelPermalink (print .LanguagePrefix "/about/") }}main-link{{ else }}black-link{{ end }}" href="/about/">About</a></li> -->
   </ul>
 </nav>

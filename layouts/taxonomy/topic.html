@@ -1,0 +1,23 @@
+{{ define "variables" -}}
+  {{ .Scratch.Set "title" (print .Title " | " .Site.Title) -}}
+
+  {{/* Set canonical path so that all the topic sub-paths point to the same path. */}}
+  {{ .Scratch.Set "canonical" (print .Site.BaseURL "library/") -}}
+{{ end -}}
+
+
+{{ define "main" }}
+<div class="container container-restricted">
+  {{ partial "navigation.html" . }}
+  
+  <h2 class="text-center"><i class="fa fa-book"></i> Library</h2>
+  
+  <p class="text-center">
+    This is the complete catalog of available tutorials. <br>
+    If you'd like some guidance through learning a specific topic, try out <a href="/paths/">Learning Paths</a>.
+  </p>
+  
+  {{ $allTopics := $.Site.GetPage "taxonomyTerm" "topics" }}
+  {{ partial "library/overview.html" (dict "Page" . "Items" .Pages "Topics" $allTopics.Pages)}}
+</div>
+{{ end }}

@@ -1,13 +1,14 @@
 +++
-title = "HTML & CSS Tutorial"
+title = "HTML & CSS Tutorial (NEUE VERSION)"
 date = 2018-08-11
 updated = 2018-08-12
 description = "Mit dieser Anleitung lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen sofort mit einer eigenen Webseite für Ihr Portfolio."
 image = "portfolio.de.png"
 prettify = true
 comments = true
-aliases = [ "/library/html-css/de/" ]
-weight = 7
+aliases = [ 
+  "/library/html-css/de/" 
+]
 sidebarName = "Einleitung"
 pagingName = "Intro"
 +++
