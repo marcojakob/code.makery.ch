@@ -1,7 +1,6 @@
 +++
 title = "HTML & CSS Tutorial - Part 6: Navigation"
-date = "2015-04-08"
-github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part6.md"
+date = 2015-04-08
 description = "Learn how to create a navigation for your website."
 image = "/assets/library/html-css/portfolio.png"
 prettify = true

@@ -1,7 +1,6 @@
 +++
 title = "HTML & CSS Tutorial - Part 5: Blog and Other Pages"
-date = "2015-04-08"
-github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part5.md"
+date = 2015-04-08
 description = "Create a file structure with multiple web pages, including a structure for writing blog posts."
 image = "/assets/library/html-css/portfolio.png"
 prettify = true

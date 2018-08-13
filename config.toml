@@ -15,6 +15,7 @@ defaultContentLanguage = "en"
   disqusShortname = "codemakery"
   googlePlus = "+MarcoJakob7"
   twitter = "codemakery"
+  github = "https://github.com/marcojakob/code.makery.ch"
 
 [permalinks]
   blog-tag = "/blog/tag/:title/"

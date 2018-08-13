@@ -1,8 +1,7 @@
 +++
 title = "HTML & CSS Tutorial - Teil 4: Entwicklertools im Browser"
-date = "2014-08-13"
-updated = "2015-03-18"
-github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part4.md"
+date = 2014-08-13
+updated = 2015-03-18
 description = "Lernen Sie die Entwicklertools im Browser kennen (Chrome Developer Tools)."
 image = "/library/html-css/portfolio-de.png"
 prettify = true

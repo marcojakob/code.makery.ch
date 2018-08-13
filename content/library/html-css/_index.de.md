@@ -1,14 +1,15 @@
 +++
 title = "HTML & CSS Tutorial"
-date = "2018-08-11"
-github = "https://github.com/marcojakob/code.makery.ch/edit/master/content/library/html-css/_index.de.md"
+date = 2018-08-11
+updated = 2018-08-12
 description = "Mit dieser Anleitung lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen sofort mit einer eigenen Webseite für Ihr Portfolio."
 image = "portfolio.de.png"
 prettify = true
 comments = true
 aliases = [ "/library/html-css/de/" ]
 weight = 7
-paging = "Intro"
+sidebar_name = "Einleitung"
+paging_name = "Intro"
 +++
 
 Mit dieser Anleitung lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen **sofort mit einem Projekt**, anstatt zuerst langweilige Theorie abzuhandeln.

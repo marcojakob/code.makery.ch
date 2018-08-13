@@ -1,8 +1,7 @@
 +++
 title = "HTML & CSS Tutorial - Teil 2: Webseite veröffentlichen"
-date = "2014-08-13"
-updated = "2016-11-10"
-github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-part2.md"
+date = 2014-08-13
+updated = 2016-11-10
 description = "Lernen Sie, wie man eine Webseite live im Internet veröffentlicht."
 image = "/library/html-css/portfolio-de.png"
 prettify =  true

@@ -2,13 +2,18 @@
 <nav>
     <div class="article-paging">
       <ul class="pagination">
-        <li{{ if eq .RelPermalink $series.RelPermalink }} class="active"{{ end }}><a href="{{ $series.RelPermalink }}" data-toggle="tooltip" title="{{ $series.Title }}">
-          {{ $series.Params.paging }}</a></li>
-          {{ range $series.Sections }}
-            <li{{ if .InSection $ }} class="active"{{ end }}><a href="{{ .RelPermalink }}" data-toggle="tooltip" title="{{ .Title }}">
-              {{ .Params.paging }}</a></li>
-          {{ end }}
+        <li{{ if eq .RelPermalink $series.RelPermalink }} class="active"{{ end }}>
+          <a href="{{ $series.RelPermalink }}" data-toggle="tooltip" title="{{ $series.Title }}">
+          {{ $series.Params.pagingname | default $series.Title }}
+          </a>
         </li>
+        {{ range $i, $el := $series.Sections }}
+        <li{{ if $el.InSection $ }} class="active"{{ end }}>
+          <a href="{{ $el.RelPermalink }}" data-toggle="tooltip" title="{{ $el.Title }}">
+            {{ $el.Params.pagingname | default (add $i 1) }}
+          </a>
+        </li>
+        {{ end }}
       </ul>
     </div>
   </nav>

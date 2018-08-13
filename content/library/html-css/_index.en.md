@@ -1,13 +1,13 @@
 +++
 title = "HTML & CSS Tutorial"
-date = "2015-04-08"
-github = "https://github.com/marcojakob/code.makery.ch/edit/master/content/library/html-css/_index.md"
+date = 2015-04-08
 description = "Learn the basics of HTML and CSS in this tutorial to create your own web projects. We immediately start with a practical example of building your own portfolio website."
 image = "portfolio.png"
 prettify = true
 comments = true
 weight = 7
-paging = "Intro"
+sidebarName = "Introduction"
+pagingName = "Intro"
 +++
 
 In this tutorial you will learn the basics of HTML and CSS to create your own web projects. Instead of working through rather boring theory we will immediately **start with a project**.

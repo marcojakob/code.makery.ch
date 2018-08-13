@@ -1,8 +1,6 @@
 +++
 title = "Teil 1: Unsere erste Webseite"
 date = 2018-08-10
-updated = 2018-08-11
-github =  "https://github.com/marcojakob/code.makery.ch/edit/master/content/library/html-css/part1/_index.de.md"
 description = "Erstellen Sie Ihre erste Webseite. Hier lernen Sie die Tools und die Grundlagen von HTML & CSS kennen."
 image = "portfolio.de.png"
 prettify = true

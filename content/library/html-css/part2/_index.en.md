@@ -1,8 +1,7 @@
 +++
 title = "HTML & CSS Tutorial - Part 2: Publishing Your Website"
-date = "2015-04-08"
-updated = "2016-11-10"
-github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part2.md"
+date = 2015-04-08
+updated = 2016-11-10
 description = "Learn to publish a website live in the internet. Compare different hosting possibilities like BitBalloon, Dropbox, Google Drive, and GitHub Pages."
 image = "/assets/library/html-css/portfolio.png"
 prettify = true

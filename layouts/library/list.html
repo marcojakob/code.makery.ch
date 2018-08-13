@@ -18,15 +18,7 @@
 <div class="container article-container">
   {{ partial "navigation.html" . }}
 
-  {{ with .Params.github }}
-  <div class="row">
-    <div class="col-md-12">
-      <div class="github-edit">
-        <a href="{{ . }}">Edit on GitHub</a>
-      </div>
-    </div>
-  </div>
-  {{ end }}
+  {{ partial "header_github.html" . }}
 
   <article class="row"{{ if .Params.rtl }} dir="rtl"{{ end }}>
     <aside class="col-md-3">
@@ -40,7 +32,7 @@
     <div class="col-md-9">
       <header class="article-header">
         {{ if not (.Scratch.Get "isSeriesIndex") }}
-        <a href="{{ (.Scratch.Get "series").RelPermalink }}" class="black-link"><i class="fa fa-folder-open-o"></i> {{ (.Scratch.Get "series").Title }}</a>
+        <a href="{{ (.Scratch.Get "series").RelPermalink }}" class="black-link"><i class="fa fa-fw fa-folder-open-o"></i> {{ (.Scratch.Get "series").Title }}</a>
         {{ end }}
         <h1 class="article-title">{{ .Title }}</h1>
         {{ partial "header_date.html" . }}

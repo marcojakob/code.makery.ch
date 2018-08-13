@@ -1,7 +1,6 @@
 +++
 title = "HTML & CSS Tutorial - Part 7: Bootstrap Framework"
-date = "2015-04-08"
-github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-part7.md"
+date = 2015-04-08
 description = "Learn to use the Bootstrap Framework in your website."
 image = "/assets/library/html-css/portfolio.png"
 prettify = true

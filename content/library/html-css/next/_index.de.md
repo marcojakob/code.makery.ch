@@ -1,8 +1,7 @@
 +++
 title = "Nächste Schritte"
-date = "2014-08-16"
-updated = "2015-03-18"
-github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-de-next.md"
+date = 2014-08-16
+updated = 2015-03-18
 description = "Wie kann man noch mehr lernen über HTML & CSS."
 image = "portfolio-de.png"
 prettify = false

@@ -1,7 +1,6 @@
 +++
 title = "HTML & CSS Tutorial - Next Steps"
-date = "2015-04-08"
-github = "https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/html-css-en-next.md"
+date = 2015-04-08
 description = "How can you learn even more about HTML & CSS. Learn how to build your own web applications."
 image = "/assets/library/html-css/portfolio.png"
 prettify = false
