@@ -6,13 +6,13 @@
     <ul class="dropdown-menu" role="menu">
       <li{{ if eq .RelPermalink $series.RelPermalink }} class="active"{{ end }}>
         <a href="{{ $series.RelPermalink }}">
-          {{ $series.Params.sidebarname | default $series.Title }}
+          {{ $series.Param "sidebarName" | default $series.Title }}
         </a>
       </li>
       {{ range $series.Sections }}
       <li{{ if .InSection $ }} class="active"{{ end }}>
         <a href="{{ .RelPermalink }}">
-          {{ .Params.sidebarname | default .Title }}
+          {{ .Param "sidebarName" | default .Title }}
         </a>
       </li>
       {{ end }}
