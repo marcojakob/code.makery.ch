@@ -3,14 +3,14 @@ title = "Nächste Schritte"
 date = 2014-08-16
 updated = 2015-03-18
 description = "Wie kann man noch mehr lernen über HTML & CSS."
-image = "portfolio-de.png"
+image = "portfolio.de.png"
 prettify = false
 comments = true
 aliases = [
   "/library/html-css/de/next/"
 ]
 weight = 8
-paging = "Next"
+pagingName = "Next"
 +++
 
 Wow, das ist schon eine rechte Leistung, wenn Sie bis hier durchgehalten und Ihr Portfolio-Projekt mit diesem Tutorial erstellt haben!

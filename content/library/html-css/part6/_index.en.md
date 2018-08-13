@@ -1,12 +1,11 @@
 +++
-title = "HTML & CSS Tutorial - Part 6: Navigation"
+title = "Part 6: Navigation"
 date = 2015-04-08
 description = "Learn how to create a navigation for your website."
-image = "/assets/library/html-css/portfolio.png"
+image = "portfolio.png"
 prettify = true
 comments = true
 weight = 6
-paging = "6"
 +++
 
 In this part we will create a navigation so that visitors can switch between the pages.
@@ -41,7 +40,7 @@ With simple links we can jump from our home page to other pages. The navigation 
 
 Our navigation should now look as follows:
 
-![Navigation with Links](/assets/library/html-css/part6/navigation-links.png)
+![Navigation with Links](navigation-links.png)
 
 Verify that the links actually work and that they lead you to the desired page.
 

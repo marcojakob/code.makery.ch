@@ -1,12 +1,12 @@
 +++
-title = "HTML & CSS Tutorial - Next Steps"
+title = "Next Steps"
 date = 2015-04-08
 description = "How can you learn even more about HTML & CSS. Learn how to build your own web applications."
-image = "/assets/library/html-css/portfolio.png"
+image = "portfolio.png"
 prettify = false
 comments = true
 weight = 8
-paging = "Next"
+pagingName = "Next"
 +++
 
 Wow, that's quite an achievement when you made it all the way through the tutorial and created your own portfolio project!

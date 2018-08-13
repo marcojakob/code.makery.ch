@@ -1,16 +1,15 @@
 +++
-title = "HTML & CSS Tutorial - Teil 3: Einführung in CSS"
+title = "Teil 3: Einführung in CSS"
 date = 2014-08-13
 updated = 2015-03-18
 description = "Lernen Sie, wie Sie mit CSS eine Webseite gestalten können."
-image = "/library/html-css/portfolio-de.png"
+image = "portfolio.de.png"
 prettify = true
 comments = true
 aliases = [
   "/library/html-css/de/part3/"
 ]
 weight = 3
-paging = "3"
 +++
 
 Vorhin haben Sie eine erste Webseite erstellt und veröffentlicht. Zugegeben, die Webseite hat noch wenig Inhalt und sieht nicht besonders ansprechend aus. Das wollen wir jetzt ändern. In diesem Teil lernen Sie, wie Sie mit CSS die Seite gestalten können. In einem späteren Teil werden wir mit Hilfe vom Bootstrap Framework noch mehr Style in die Webseite bringen.
@@ -29,7 +28,7 @@ Eine CSS-Datei ist eine ganz normale Textdatei mit der Endung `.css`, die wir mi
 
 Erstellen Sie also in Ihrem *Portfolio*-Ordner eine **neue Datei**. Wir geben der Datei den Namen `main.css`.
 
-![Neue CSS-Datei](/library/html-css/part3/new-css-file-de.png)
+![Neue CSS-Datei](new-css-file.de.png)
 
 Nun wechseln wir zur `index.html`-Datei und fügen innerhalb des `<head>`-Elements ein `<link>`-Element hinzu. Mit dem `<link>`-Element können wir der HTML-Seite mitteilen, dass sie die CSS-Datei laden soll:
 
@@ -68,7 +67,7 @@ Fügen Sie dieses Element im `<head>`-Bereich ein. Dann sollte Ihr Code etwa so 
 </pre>
 
 <div class="alert alert-info">
-<strong>Wichtig:</strong> Damit das CSS gefunden wird, muss das <code>href</code>-Attribut genau auf die Datei verweisen. Wir haben nur eine <code>main.css</code> und diese liegt in unserem Hauptordner. Mit dem führenden <code>/</code> gelangen wir von überall her, auch von Unterordnern, zum Hauptordner und erreichen so unter <code>href="/main.css"</code> immer unsere CSS-Datei. Mehr dazu siehe unter <a class="alert-link" href="/library/html-css/de/part1/#relative-und-absolute-urls">relative und absolute URLs</a>.
+<strong>Wichtig:</strong> Damit das CSS gefunden wird, muss das <code>href</code>-Attribut genau auf die Datei verweisen. Wir haben nur eine <code>main.css</code> und diese liegt in unserem Hauptordner. Mit dem führenden <code>/</code> gelangen wir von überall her, auch von Unterordnern, zum Hauptordner und erreichen so unter <code>href="/main.css"</code> immer unsere CSS-Datei. Mehr dazu siehe unter <a class="alert-link" href="/de/library/html-css/part1/#relative-und-absolute-urls">relative und absolute URLs</a>.
 </div>
 
 
@@ -89,7 +88,7 @@ h2 {
 
 Das Resultat sollte etwa so aussehen:
 
-![Geänderte Farben](/library/html-css/part3/changed-color-de.png)
+![Geänderte Farben](changed-color.de.png)
 
 
 ## Farbcodes
@@ -110,11 +109,11 @@ Das Ausdrücken von Farben mit Hexadezimalzahlen ist sehr beliebt, da man damit 
 
 Falls Sie als Editor den [Brackets](http://brackets.io/) verwenden, können Sie den Farbwähler gleich in der CSS-Datei aufrufen. Klicken Sie dazu mit der rechten Maustaste auf den Farbcode und wählen **Schnell bearbeiten** oder drücken Sie die Tastenkombination `Ctrl+E`.
 
-![Schnell bearbeiten](/library/html-css/part3/quick-edit-de.png)
+![Schnell bearbeiten](quick-edit.de.png)
 
 Dann erscheint sofort ein Farbwähler, wo man bequem die Farbe auswählen kann. Sie können mit den drei Knöpfen auch zwischen den verschiedenen Notationsformen umschalten.
 
-![Farbwähler](/library/html-css/part3/color-chooser.png)
+![Farbwähler](color-chooser.png)
 
 
 ### Online Farbwähler
@@ -154,7 +153,7 @@ Sie haben nun bereits gesehen, wie CSS-Regeln die Farbe eines HTML-Elementes ver
 Eine CSS-Regel besteht aus drei Elementen, einem *Selektor*, einer *Eigenschaft* und einem *Wert*.
 
 
-![CSS-Regel](/library/html-css/part3/css-rule-de.png)
+![CSS-Regel](css-rule.de.png)
 
 Diese Regel besagt, dass alle `<h2>`-Elemente eine Hintergrundfarbe von `#607d8b` erhalten sollen.
 
@@ -364,7 +363,7 @@ Dann können wir diesen einen Titel im CSS ansprechen mit `.title`. Die CSS-Rege
 
 Wenn alles geklappt hat, dann sieht das Portfolio nun etwa so aus:
 
-![Portfolio](/library/html-css/part3/portfolio-de.jpg)
+![Portfolio](portfolio.de.jpg)
 
 
 ***

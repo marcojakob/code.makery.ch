@@ -1,12 +1,11 @@
 +++
-title = "HTML & CSS Tutorial - Part 1: Your First Website"
+title = "Part 1: Your First Website"
 date = 2015-04-08
 description = "Create your first website. Get to know the programming tools and learn the basics of HTML and CSS."
-image = "/assets/library/html-css/portfolio.png"
+image = "portfolio.png"
 prettify = true
 comments = true
 weight = 1
-paging = "1"
 +++
 
 Let's dive right in and create our first web page.

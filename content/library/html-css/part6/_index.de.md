@@ -1,16 +1,15 @@
 +++
-title = "HTML & CSS Tutorial - Teil 6: Navigation"
+title = "Teil 6: Navigation"
 date = 2014-08-13
 updated = 2015-03-18
 description = "Lernen Sie, wie man eine Navigation für die Website erstellt."
-image = "/library/html-css/portfolio-de.png"
+image = "portfolio.de.png"
 prettify = true
 comments = true
 aliases = [
   "/library/html-css/de/part6/"
 ]
 weight = 6
-paging = "6"
 +++
 
 In diesem Teil werden wir eine Navigation einfügen, damit die Besucher zwischen den verschiedenen Seiten wechseln können.
@@ -40,12 +39,12 @@ Mit einfachen Links können wir von der Startseite auf die anderen Seiten spring
 </pre>
 
 <div class="alert alert-info">
-**Hinweis:** Der Link zu `/` verweist auf das Hauptverzeichnis. Mehr dazu im Abschnitt <a class="alert-link" href="/library/html-css/de/part1/#relative-und-absolute-urls">relative und absolute URLs</a>.
+**Hinweis:** Der Link zu `/` verweist auf das Hauptverzeichnis. Mehr dazu im Abschnitt <a class="alert-link" href="/de/library/html-css/part1/#relative-und-absolute-urls">relative und absolute URLs</a>.
 </div>
 
 Und so sieht die Navigation nun aus:
 
-![Navigation mit Links](/library/html-css/part6/navigation-links-de.png)
+![Navigation mit Links](navigation-links.de.png)
 
 Überprüfen Sie, ob die Links auch wirklich funktionieren und Sie zur gewollten Seite bringen.
 
@@ -163,4 +162,4 @@ Auf unserer Blog-Seite hatten wir noch etwas Platz gelassen, wo wir unserer Blog
 
 ## Wie weiter?
 
-&rarr; Fahren Sie weiter mit [Teil 7: Bootstrap Framework verwenden](/library/html-css/de/part7/).
+&rarr; Fahren Sie weiter mit [Teil 7: Bootstrap Framework verwenden](/de/library/html-css/part7/).

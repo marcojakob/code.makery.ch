@@ -1,16 +1,15 @@
 +++
-title = "HTML & CSS Tutorial - Teil 5: Blog und weitere Seiten"
+title = "Teil 5: Blog und weitere Seiten"
 date = 2014-08-13
 updated = 2015-03-18
 description = "Erstellen Sie eine Dateistruktur für mehrere Webseiten. Lernen Sie eine Struktur für einen Blog aufzustellen."
-image = "/library/html-css/portfolio-de.png"
+image = "portfolio.de.png"
 prettify = true
 comments = true
 aliases = [
   "/library/html-css/de/part5/"
 ]
 weight = 5
-paging = "5"
 +++
 
 Unser Portfolio hat bis hierhin nur eine Startseite. Die meisten *Websites* (gemeint ist damit der ganze Webauftritt) haben natürlich mehr als nur eine Seite. In diesem Teil werden wir weitere Seiten erstellen.
@@ -35,7 +34,7 @@ Eine neue Seite zu erstellen ist einfach. Am besten kopieren Sie die bisherige `
 
 Erstellen Sie einen Unterordner in Ihrem *Portfolio*-Ordner namens `blog`. Kopieren Sie die Datei `index.html` in diesen Unterordner. Nun sollte Ihre Dateistruktur so aussehen:
 
-![Blog Unterordner](/library/html-css/part5/blog-subfolder.png)
+![Blog Unterordner](blog-subfolder.png)
 
 Öffnen Sie nun die kopierte Datei `blog/index.html` in Ihrem Browser (wenn Sie den Brackets-Editor verwenden, klicken Sie auf den Blitz für die *Live-Vorschau*). Nun werden Sie merken, dass zwei Dinge nicht funktionieren:
 
@@ -87,7 +86,7 @@ Im HTML-Code oben sehen Sie ein neues Element mit den Tags `<!--` und `-->`. Mit
 
 Der Blog braucht natürlich noch Einträge. Wir erstellen für jeden Blogeintrag eine eigen HTML-Unterseite. Erstellen Sie einen Unterordner innerhalb des `blog`-Ordners mit dem Namen `erster-eintrag`. Kopieren Sie die Datei `blog/index.html` in diesen Ordner hinein.
 
-![Blogeintrag](/library/html-css/part5/blog-entry-subfolder-de.png)
+![Blogeintrag](blog-entry-subfolder.de.png)
 
 Im Blogeintrag ändern wir den Inhalt wie folgt ab:
 
@@ -145,7 +144,7 @@ Mit solchen Blogeinträgen werden Sie beim Lernen von Programmierung viel schnel
   **Hinweis:** Erstellen Sie für jeden Blogeintrag einen eigenen Unterordner (mit einer `index.html`-Seite). So haben Sie eine gute Ordnung und können Bilder oder andere Dateien für den Blogeintrag im Unterordner ablegen.
 </div>
 
-![Blogeintrag 2](/library/html-css/part5/blog-entry-subfolder2-de.png)
+![Blogeintrag 2](blog-entry-subfolder2.de.png)
 
 
 ## Seite für Projekte
@@ -215,11 +214,11 @@ Bei der Adresse sehen Sie ein neues Element: `<br>`. Es bewirkt einen Zeilenumbr
 
 Nun haben wir bereits fünf HTML-Seiten:
 
-![Alle Dateien](/library/html-css/part5/all-files-de.png)
+![Alle Dateien](all-files.de.png)
 
 
 ## Wie weiter?
 
 Was natürlich fehlt, ist eine Navigation, so dass man einfach zwischen diesen Seiten hin und her wechseln kann.
 
-&rarr; Das nehmen wir gleich in Angriff im [Teil 6: Navigieren zwischen Seiten](/library/html-css/de/part6/).
+&rarr; Das nehmen wir gleich in Angriff im [Teil 6: Navigieren zwischen Seiten](/de/library/html-css/part6/).

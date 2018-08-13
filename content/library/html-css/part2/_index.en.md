@@ -1,13 +1,12 @@
 +++
-title = "HTML & CSS Tutorial - Part 2: Publishing Your Website"
+title = "Part 2: Publishing Your Website"
 date = 2015-04-08
 updated = 2016-11-10
 description = "Learn to publish a website live in the internet. Compare different hosting possibilities like BitBalloon, Dropbox, Google Drive, and GitHub Pages."
-image = "/assets/library/html-css/portfolio.png"
+image = "portfolio.png"
 prettify = true
 comments = true
 weight = 2
-paging = "2"
 +++
 
 In the previous part you have created your first web site. It would be a pity if this website only stays on your computer and could never be looked at by anyone else. Therefore, we will now learn how to publish our website live on the internet.
@@ -26,26 +25,26 @@ There are numerous services where you can rent server space. Such a service is c
 
 ### Hosting on BitBalloon
 
-![BitBalloon Logo](/assets/library/html-css/part2/bitballoon-logo.png)
+![BitBalloon Logo](bitballoon-logo.png)
 
 [BitBalloon](https://www.bitballoon.com/) is a wonderfully simple service which I highly recommend. Here's how you can use it.
 
 1. Subscribe on the [Bitballoon website](https://www.bitballoon.com/). Click on *Sign Up* and then choose *Sign in Using Persona*. Then enter your email address and a password.
 
 2. Once you are logged in, you can simply drag your entire web folder (your Portfolio folder) in the provided space.
-![BitBalloon drag and drop](/assets/library/html-css/part2/bitballoon-drag-and-drop.png)
+![BitBalloon drag and drop](bitballoon-drag-and-drop.png)
 
 3. Hard to believe, but that's it. Once the page has been uploaded a URL is generated for you which points to your site. Click this URL and check whether the page is displayed correctly.
 
 4. To shorten your URL you can click on **Edit name** and enter an arbitrary name.
-![BitBalloon veröffentlicht](/assets/library/html-css/part2/bitballoon-published.png)
+![BitBalloon veröffentlicht](bitballoon-published.png)
 
 5. For Updates: When you want to release a new version of your website, simply drag the folder into the box with the text **Drag & Drop to Update your Site**.
 
 
 ### Hosting on GitHub
 
-![GitHub Logo](/assets/library/html-css/part2/github-logo.jpg)
+![GitHub Logo](github-logo.jpg)
 
 If you already have some experience with programming then GitHub is a great way for web site hosting. GitHub is a platform to facilitate collaboration among programmers and also offers free hosting for web pages on [GitHub Pages](https://pages.github.com/). GitHub Pages provides more options (for example, you can use your custom domain), but it requires skills in working with [Git](http://de.wikipedia.org/wiki/Git).
 

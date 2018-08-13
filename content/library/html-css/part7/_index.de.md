@@ -1,16 +1,15 @@
 +++
-title = "HTML & CSS Tutorial - Teil 7: Bootstrap Framework verwenden"
+title = "Teil 7: Bootstrap Framework verwenden"
 date = 2014-08-13
 updated = 2015-03-18
 description = "Lernen Sie das Bootstrap-Framework für Ihre Webseite einzusetzen."
-image = "/library/html-css/portfolio-de.png"
+image = "portfolio.de.png"
 prettify = true
 comments = true
 aliases = [
   "/library/html-css/de/part7/"
 ]
 weight = 7
-paging = "7"
 +++
 
 Bis hierhin haben wir alles HTML und CSS von Grund auf selber programmiert. Unser Projekt, das *Web Portfolio*, hat bereits einige HTML-Seiten mit etwas Inhalt, eine noch unfertige Navigation und etwas Styling.
@@ -26,11 +25,11 @@ Ganz von Hand unser Projekt zu einem kompletten und modernen Webauftritt weiter 
 
 Zum Glück sind wir nicht alleine mit diesen Aufgaben - dies betrifft mehr oder weniger alle Webdesigner. Da es kaum sinnvoll ist, wenn alle immer wieder die gleichen Aufgaben lösen, sind sogenannte *Frameworks* entstanden, die diese Arbeit viel einfacher machen.
 
-![Bootstrap Logo](/library/html-css/part7/bootstrap-logo.png)
+![Bootstrap Logo](bootstrap-logo.png)
 
 Das bekannteste dieser *Frameworks* heisst ***Bootstrap*** und wurde von Twitter entwickelt. Das *Bootstrap-Framework* ist eine enorme erleichtert für uns als Webentwickler. Wir werden Schritt-für-Schritt entdecken, was wir mit *Bootstrap* tun können. Hier aber schon mal eine Kostprobe, welche Auswirkungen *Bootstrap* auf unser Projekt haben kann:
 
-![Bootstrap Effekt](/library/html-css/part7/bootstrap-effect-de.png)
+![Bootstrap Effekt](bootstrap-effect.de.png)
 
 Mit *Bootstrap* sehen die Elemente nicht nur besser aus, sondern sie werden auch in allen Browsern praktisch gleich dargestellt.
 
@@ -73,7 +72,7 @@ So sollte Ihr `head`-Bereich nun etwa aussehen (evtl. mit einer neueren Versions
 
 Manche *Styles* aus dem Bootstrap-CSS werden direkt auf HTML-Elemente angewandt. Schauen wir uns zum Beispiel einen Link in *Chrome DevTools* an, sehen wir, wie im Bootstrap-CSS die Link-Farbe geändert wird und mit `text-decoration` der Unterstrich entfernt wird:
 
-![Bootstrap Link-Farbe](/library/html-css/part7/bootstrap-link-color.png)
+![Bootstrap Link-Farbe](bootstrap-link-color.png)
 
 Viele Bootstrap-Styles werden aber erst aktiviert, wenn man eine entsprechende **CSS-Klasse** hinzufügt.
 
@@ -189,25 +188,25 @@ So sieht der Code für die Navigation nun aus (achten Sie auf korrektes Einrück
 
 Und so wird es dargestellt:
 
-![Navbar](/library/html-css/part7/navbar-default-de.png)
+![Navbar](navbar-default.de.png)
 
 
 ### Dunkle Variante
 
 Es gibt eine zweite Variante der Bootstrap-Navigation:
 
-![Navbar Inverse](/library/html-css/part7/navbar-inverse-de.png)
+![Navbar Inverse](navbar-inverse.de.png)
 
 Um diese zu aktivieren, ändern Sie die Klasse `navbar-default` in `navbar-inverse` um.
 
 
 ## Optimieren für Mobile
 
-Mit Bootstrap und der Navigation sieht die Webseite in einem Desktop-Browser schon recht ansprechend aus. Versuchen Sie mal, die Webseite auf einem Mobiltelefon aufzurufen (dazu müssen Sie die Seite [veröffentlichen](/library/html-css/de/part2/)).
+Mit Bootstrap und der Navigation sieht die Webseite in einem Desktop-Browser schon recht ansprechend aus. Versuchen Sie mal, die Webseite auf einem Mobiltelefon aufzurufen (dazu müssen Sie die Seite [veröffentlichen](/de/library/html-css/part2/)).
 
 Sie werden feststellen, dass die Seite entweder abgeschnitten oder die Navigation viel zu klein dargestellt wird:
 
-![Mobile ohne Viewport](/library/html-css/part7/mobile-without-viewport-de.png)
+![Mobile ohne Viewport](mobile-without-viewport.de.png)
 
 Mit einer `meta`-Information im `head`-Bereich können wir den mobilen Browsern mitteilen, dass sie die Seite vernünftig anzeigen sollen:
 
@@ -223,14 +222,14 @@ Mit einer `meta`-Information im `head`-Bereich können wir den mobilen Browsern 
 
 Nun sollte es etwa so aussehen:
 
-![Mobile mit Viewport](/library/html-css/part7/mobile-with-viewport-de.png)
+![Mobile mit Viewport](mobile-with-viewport.de.png)
 
 Bootstrap wurde so entworfen, dass es auf [mobilen Bilschirmen gut funktioniert](http://holdirbootstrap.de/css/#overview-mobile). Im Screenshot oben sehen Sie, wie die Navigation automatisch untereinander angezeigt wird, sobald die Bildschirmbreite zu klein wird. Dies können Sie auch ausprobieren, indem Sie einfach das Browserfenster verkleinern.
 
 Ein Webdesign, welches auf die Bildschirmgrösse reagiert, nennt man [Responsive Webdesign](http://de.wikipedia.org/wiki/Responsive_Webdesign).
 
 <div class="alert alert-warning">
-  <strong>Hinweis:</strong> Bootstrap kann die Navigation auch automatisch zusammenklappen in ein Menu. Dafür müssen aber zusätzliche JavaScript-Dateien eingebunden werden. Im Artikel <a class="alert-link" href="/library/more-html-css/de/javascript-bootstrap/">JavaScript mit Bootstrap</a> erkläre ich, wie Sie eine solche Navigation programmieren können.
+  <strong>Hinweis:</strong> Bootstrap kann die Navigation auch automatisch zusammenklappen in ein Menu. Dafür müssen aber zusätzliche JavaScript-Dateien eingebunden werden. Im Artikel <a class="alert-link" href="/de/library/more-html-css/javascript-bootstrap/">JavaScript mit Bootstrap</a> erkläre ich, wie Sie eine solche Navigation programmieren können.
 </div>
 
 
@@ -299,4 +298,4 @@ Schauen Sie als nächstes Ihren Code an und stellen Sie sicher, dass das **HTML 
 
 ## Wie weiter?
 
-&rarr; Erfahren Sie die [nächsten Schritte](/library/html-css/de/next/).
+&rarr; Erfahren Sie die [nächsten Schritte](/de/library/html-css/next/).

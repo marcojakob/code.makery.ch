@@ -8,8 +8,8 @@ prettify = true
 comments = true
 aliases = [ "/library/html-css/de/" ]
 weight = 7
-sidebar_name = "Einleitung"
-paging_name = "Intro"
+sidebarName = "Einleitung"
+pagingName = "Intro"
 +++
 
 Mit dieser Anleitung lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen **sofort mit einem Projekt**, anstatt zuerst langweilige Theorie abzuhandeln.

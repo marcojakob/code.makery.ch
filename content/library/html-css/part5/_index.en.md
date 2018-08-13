@@ -1,12 +1,11 @@
 +++
-title = "HTML & CSS Tutorial - Part 5: Blog and Other Pages"
+title = "Blog and Other Pages"
 date = 2015-04-08
 description = "Create a file structure with multiple web pages, including a structure for writing blog posts."
-image = "/assets/library/html-css/portfolio.png"
+image = "portfolio.png"
 prettify = true
 comments = true
 weight = 5
-paging = "5"
 +++
 
 Our portfolio thus far only has a home page. Most websites have more than one page, of course. In this part we will add additional pages.
@@ -32,7 +31,7 @@ To create a new page is easy. It is best to copy the previous `index.html` so yo
 
 Create a subfolder in your *portfolio* folder named `blog`. Copy the `index.html` file into the new subfolder. Now your file structure should look like this:
 
-![Blog Subfolder](/assets/library/html-css/part5/blog-subfolder.png)
+![Blog Subfolder](blog-subfolder.png)
 
 Open the copied file `blog/index.html` in your browser. You will notice that two things do not work:
 
@@ -86,7 +85,7 @@ In the HTML code above you can see some special tags: `<!--` and `-->`. Between 
 
 Our blog needs some entries. We create a separate HTML page for each blog entry. Create a subfolder within the `blog` folder with the name `first-entry`. Use your file explorer to copy the file `blog/index.html` into the new subfolder.
 
-![Blog Entry](/assets/library/html-css/part5/blog-entry-subfolder.png)
+![Blog Entry](blog-entry-subfolder.png)
 
 Open the blog entry and change the content as follows:
 
@@ -144,7 +143,7 @@ With such blog entries you will advance much faster in mastering programming. Th
   **Hint:** Create a subfolder for each blog post (with an `index.html` page). This will give you a nice order where you can put pictures and other files for blog entries into separate subfolders.
 </div>
 
-![Blog Entry 2](/assets/library/html-css/part5/blog-entry-subfolder2.png)
+![Blog Entry 2](blog-entry-subfolder2.png)
 
 
 ## Projects Page
@@ -214,7 +213,7 @@ In the address you'll find a new item: `<br>`. It causes a line break. Also note
 
 Now we already have five HTML pages.
 
-![All Files](/assets/library/html-css/part5/all-files.png)
+![All Files](all-files.png)
 
 
 ## What's next?

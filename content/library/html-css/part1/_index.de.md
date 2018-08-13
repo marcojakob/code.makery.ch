@@ -5,9 +5,10 @@ description = "Erstellen Sie Ihre erste Webseite. Hier lernen Sie die Tools und 
 image = "portfolio.de.png"
 prettify = true
 comments = true
-aliases = [ "/library/html-css/de/part1/" ]
+aliases = [ 
+  "/library/html-css/de/part1/" 
+]
 weight = 1
-paging = "1"
 
 [[sidebars]]
 header = "Downloads"

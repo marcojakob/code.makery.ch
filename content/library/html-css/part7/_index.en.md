@@ -1,12 +1,11 @@
 +++
-title = "HTML & CSS Tutorial - Part 7: Bootstrap Framework"
+title = "Part 7: Bootstrap Framework"
 date = 2015-04-08
 description = "Learn to use the Bootstrap Framework in your website."
-image = "/assets/library/html-css/portfolio.png"
+image = "portfolio.png"
 prettify = true
 comments = true
 weight = 7
-paging = "7"
 +++
 
 So far we have programmed all HTML and CSS from scratch. Our *web portfolio* project already has a few HTML pages with some content, a navigation and some styling.
@@ -22,11 +21,11 @@ To manually evolve our project to a complete and modern web presence would mean 
 
 Fortunately, we are not alone with these tasks &ndash; this applies more or less to all web designers. Since it hardly makes sense for all to solve the same tasks over and over again, so-called *frameworks* were developed that make this job a lot easier.
 
-![Bootstrap Logo](/assets/library/html-css/part7/bootstrap-logo.png)
+![Bootstrap Logo](bootstrap-logo.png)
 
 The best known of these frameworks is **Bootstrap**, developed by Twitter. The *Bootstrap framework* is a tremendous help for us as web developers. Step-by-step we will discover what we can do with *Bootstrap*. Here is some taste of the effect *Bootstrap* could have on the styling of our project:
 
-![Bootstrap Effect](/assets/library/html-css/part7/bootstrap-effect.png)
+![Bootstrap Effect](bootstrap-effect.png)
 
 With *Bootstrap* the elements don't only look better, they are also  consistent across different browsers.
 
@@ -69,7 +68,7 @@ That's how your `head` section should look like (possibly with a newer version n
 
 Some styles from the Bootstrap CSS are applied directly to HTML elements. If we look, for example, at a link in *Chrome DevTools*, we see how through the Bootstrap CSS the link color was changed and the underscore was removed with `text-decoration`.
 
-![Bootstrap Link Color](/assets/library/html-css/part7/bootstrap-link-color.png)
+![Bootstrap Link Color](bootstrap-link-color.png)
 
 Such styling is automatically applied. But a lot of Bootstrap styles require that we add specific **CSS classes** to elements, as we will see next.
 
@@ -185,14 +184,14 @@ This is how the complete code will look like after the previous steps (pay atten
 
 And this is how it looks like:
 
-![Navbar](/assets/library/html-css/part7/navbar-default.png)
+![Navbar](navbar-default.png)
 
 
 ### Dark Version
 
 There is an alternative to the gray navigation:
 
-![Navbar Inverse](/assets/library/html-css/part7/navbar-inverse.png)
+![Navbar Inverse](navbar-inverse.png)
 
 To activate the alternative style, replace the `navbar-default` class with `navbar-inverse`.
 
@@ -203,7 +202,7 @@ With Bootstrap and the new navigation the website looks already quite appealing 
 
 You will notice that the page either doesn't fit the screen or the navigation is displayed too small.
 
-![Mobile without Viewport](/assets/library/html-css/part7/mobile-without-viewport.png)
+![Mobile without Viewport](mobile-without-viewport.png)
 
 With a `meta` info inside `head` we can tell the mobile browsers to properly scale the page.
 
@@ -219,7 +218,7 @@ With a `meta` info inside `head` we can tell the mobile browsers to properly sca
 
 It should now look something like this:
 
-![Mobile with Viewport](/assets/library/html-css/part7/mobile-with-viewport.png)
+![Mobile with Viewport](mobile-with-viewport.png)
 
 Bootstrap was designed so that it [works well on mobile screens](http://getbootstrap.com/css/#overview-mobile). In the screenshot above you can see how the navigation is automatically displayed vertically when the width of the screen is too small. If you're not using a mobile phone you can also simulate this by simply resizing your browser window.
 

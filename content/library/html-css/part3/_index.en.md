@@ -1,12 +1,11 @@
 +++
-title = "HTML & CSS Tutorial - Part 3: Introduction to CSS"
+title = "Part 3: Introduction to CSS"
 date = 2015-04-08
 description = "Learn how to style websites with CSS. "
-image = "/assets/library/html-css/portfolio.png"
+image = "portfolio.png"
 prettify = true
 comments = true
 weight = 3
-paging = "3"
 +++
 
 In the previous part we have created and published our first website. I admit, the website has very little content and doesn't yet look particularly appealing. We want to change this now. In this part you will learn how you can use CSS to style the page. In a later part we will add more style to our website with the help of a framework called Bootstrap.
@@ -25,7 +24,7 @@ A CSS file is an ordinary text file with the extension `.css`. We will link to t
 
 Create a **New File** in your *Portfolio* folder. Name the new file `main.css`.
 
-![New CSS File](/assets/library/html-css/part3/new-css-file.png)
+![New CSS File](part3/new-css-file.png)
 
 Now open your `index.html` and add a `<link>` element inside the `<head>` element. With the `<link>` element, we tell the HTML page to load the CSS file:
 
@@ -85,7 +84,7 @@ h2 {
 
 The result should look like this:
 
-![Changed Color](/assets/library/html-css/part3/changed-color.png)
+![Changed Color](part3/changed-color.png)
 
 
 ## Color Codes
@@ -106,11 +105,11 @@ Expressing colors with hexadecimal values is very popular because with it you ca
 
 If you are using the [Atom](https://atom.io/) editor and have the [color-picker](https://atom.io/packages/color-picker) package installed, you can open a color picker right in your CSS file: Right-click on the color code and select **Color Picker**.
 
-![Open Color Picker](/assets/library/html-css/part3/color-picker-open.png)
+![Open Color Picker](part3/color-picker-open.png)
 
 This immediately displays a color picker where you can easily choose a color. You can even switch between the various notations with the buttons at the bottom.
 
-![Color Picker](/assets/library/html-css/part3/color-picker-select.png)
+![Color Picker](part3/color-picker-select.png)
 
 
 ### Online Color Pickers
@@ -149,7 +148,7 @@ You have already seen how CSS rules can change the color of an HTML element. Let
 
 A CSS rule consists of three elements, a *selector*, a *property*, and a *value*.
 
-![CSS-Regel](/assets/library/html-css/part3/css-rule.png)
+![CSS-Regel](part3/css-rule.png)
 
 This rule states that all `<h2>` elements should get a background color of `#607d8b`.
 
@@ -360,7 +359,7 @@ Now we can target this title in CSS with `.title`. The CSS rule looks like the f
 
 If all goes well the portfolio now looks like this:
 
-![Portfolio](/assets/library/html-css/part3/portfolio.jpg)
+![Portfolio](part3/portfolio.jpg)
 
 
 ## What's next?

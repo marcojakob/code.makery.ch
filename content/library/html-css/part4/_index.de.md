@@ -1,16 +1,15 @@
 +++
-title = "HTML & CSS Tutorial - Teil 4: Entwicklertools im Browser"
+title = "Teil 4: Entwicklertools im Browser"
 date = 2014-08-13
 updated = 2015-03-18
 description = "Lernen Sie die Entwicklertools im Browser kennen (Chrome Developer Tools)."
-image = "/library/html-css/portfolio-de.png"
+image = "portfolio.de.png"
 prettify = true
 comments = true
 aliases = [
   "/library/html-css/de/part4/"
 ]
 weight = 4
-paging = "4"
 +++
 
 Im Chrome-Browser ist ein Tool versteckt, welches uns erlaubt, bei jeder Webseite hinter die Kulissen zu schauen. Dies ist extrem hilfreich, um entweder unsere eigene Webseite zu untersuchen oder um von anderen Webseiten etwas abzuschauen. Dieses Tool heisst **Chrome Developer Tools** (abgekürzt **DevTools**).
@@ -26,7 +25,7 @@ Im Chrome-Browser ist ein Tool versteckt, welches uns erlaubt, bei jeder Webseit
 
 Versuchen Sie das gleich mal auf Ihrer Portfolio-Webseite. Es sollte sich nun folgendes Fenster öffnen:
 
-![DevTools öffnen](/library/html-css/part4/open-devtools-de.png)
+![DevTools öffnen](open-devtools.de.png)
 
 <div class="alert alert-info">
 **Hinweis:** Wenn Sie den Brackets-Editor verwenden, deaktivieren Sie die Live-Vorschau und laden Sie die Seite neu. Ansonsten werden noch zusätzliche "ids" von Brackets angezeigt.
@@ -39,7 +38,7 @@ Mit *DevTools* können wir nun ganz einfach einzelne Elemente auf unserer Websei
 
 Nehmen wir als Beispiel das `h2`-Element: Klicken Sie mit der rechten Maustaste auf den "Willkommen"-Titel und wählen *Element untersuchen*. Dies öffnet *DevTools* und markiert auf der linken Seite gleich das `h2`-Element.
 
-![DevTools h2-Element](/library/html-css/part4/devtools-h2-de.png)
+![DevTools h2-Element](devtools-h2.de.png)
 
 Auf der rechten Seite sehen Sie, welche *Styles* auf das `h2`-Element angewandt werden. Sie sehen dort zum Beispiel die Farben, welche wir im `main.css` definiert haben. Unter den Regeln aus dem `main.css` wird ein Bereich für das `user agent stylesheet` angezeigt. Dies sind die Regeln, die standardmässig vom Browser auf `h2`-Elemente angewendet werden.
 
@@ -61,7 +60,7 @@ Mit *DevTools* kann man jede beliebige Webseite untersuchen und auch temporär v
 
 Bei grösseren Webseiten können die *Styles* recht lang werden. Dort kommt es dann oft vor, dass CSS-Regeln mehrfach definiert werden und somit einander überschreiben. Sie sehen dies zum Beispiel bei unserem `h1`-Element mit dem Titel. Die Schriftgrösse, welche wir definiert haben, überschreibt die standardmässige Schriftgrösse des Browsers. Deshalb ist diese durchgestrichen.
 
-![CSS Überschreiben](/library/html-css/part4/css-overwrite-de.png)
+![CSS Überschreiben](css-overwrite.de.png)
 
 
 ## Weitere Möglichkeiten von DevTools
@@ -73,4 +72,4 @@ Ausserdem gibt es einen sehr guten [DevTools Online-Kurs](http://discover-devtoo
 
 ***
 
-&rarr; Im nächsten Teil erstellen wir weitere Seiten und eine Navigation: [Teil 5: Navigieren zwischen Seiten](/library/html-css/de/part5/).
+&rarr; Im nächsten Teil erstellen wir weitere Seiten und eine Navigation: [Teil 5: Navigieren zwischen Seiten](/de/library/html-css/part5/).

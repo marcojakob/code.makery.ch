@@ -1,16 +1,15 @@
 +++
-title = "HTML & CSS Tutorial - Teil 2: Webseite veröffentlichen"
+title = "Teil 2: Webseite veröffentlichen"
 date = 2014-08-13
 updated = 2016-11-10
 description = "Lernen Sie, wie man eine Webseite live im Internet veröffentlicht."
-image = "/library/html-css/portfolio-de.png"
+image = "portfolio-de.png"
 prettify =  true
 comments =  true
 aliases = [
   "/library/html-css/de/part2/"
 ]
 weight = 2
-paging = "2"
 +++
 
 Im ersten Teil haben wir unsere erste Webseite erstellt. Es wäre ja schade, wenn diese Webseite nur auf unserem Computer liegt und sie gar nie von jemand anderem angeschaut werden kann. Deshalb werden wir jetzt die Webseite gleich live ins Internet stellen.
@@ -29,26 +28,26 @@ Es gibt zahlreiche Dienste, wo wir Speicherplatz auf einem Server mieten können
 
 ### Hosting auf BitBalloon
 
-![BitBalloon Logo](/library/html-css/part2/bitballoon-logo.png)
+![BitBalloon Logo](bitballoon-logo.png)
 
 [BitBalloon](https://www.bitballoon.com/) ist ein wunderbar einfacher Dienst, den ich sehr empfehlen kann. So geht es:
 
 1. Melden Sie sich an auf der [Bitballoon Webseite](https://www.bitballoon.com/). Klicken Sie dazu auf *Sign Up* und anschliessend auf *Sign in Using Persona*. Anschliessen geben Sie Ihre E-Mail-Adresse und ein Passwort ein.
 
 2. Sobald Sie angemeldet sind können Sie einfach Ihren gesamten Webseitenordner (Ihren Portfolio-Ordner) in den dafür vorgesehenen Bereich ziehen:
-![BitBalloon drag and drop](/library/html-css/part2/bitballoon-drag-and-drop.png)
+![BitBalloon drag and drop](bitballoon-drag-and-drop.png)
 
 3. Kaum zu glauben, aber das war's schon. Sobald die Seite hochgeladen ist, wurde für Sie eine URL generiert, unter welcher Ihre Seite aufgerufen werden kann. Klicken Sie auf diese URL und überprüfen Sie, ob die Seite korrekt angezeigt wird.
 
 4. Um Ihre URL etwas zu verkürzen können Sie auf ***Edit name*** klicken und einen beliebigen Namen eingeben.
-![BitBalloon veröffentlicht](/library/html-css/part2/bitballoon-published.png)
+![BitBalloon veröffentlicht](bitballoon-published.png)
 
 5. Für Updates: Sobald Sie eine neue Version Ihrer Webseite veröffentlichen möchten, ziehen Sie den Ordner einfach erneut in das Feld mit dem Text ***Drag & Drop to Update your Site***.
 
 
 ### Hosting auf Netlify
 
-![Netlify Logo](/library/html-css/part2/netlify-logo.png)
+![Netlify Logo](netlify-logo.png)
 
 [Netlify](https://www.netlify.com) ist von den gleichen Machern wie BitBalloon. Es ist aber die professionelle Variante. Auch Netlify unterstützt das einfache Hochladen der Website per Drag and Drop, hat aber noch weit mehr Funktionen.
 
@@ -57,7 +56,7 @@ Mit Netlify ist es möglich, eine Website unter dem eigenen Domainnamen gratis(!
 
 ### Hosting auf GitHub
 
-![GitHub Logo](/library/html-css/part2/github-logo.jpg)
+![GitHub Logo](github-logo.jpg)
 
 Wenn Sie schon etwas Erfahrung mit Programmieren haben, dann ist auch [GitHub](https://github.com) eine gute Möglichkeit für Webseiten-Hosting. GitHub ist eine Plattform, um die Zusammenarbeit unter Programmierern zu erleichtern und bietet darüber hinaus auf [GitHub Pages](https://pages.github.com/) Hosting für Webseiten an. GitHub Pages bietet mehr Optionen (z.B. mit eigenem Domainnamen verknüpfen), aber es erfordert Kenntnisse im Arbeiten mit [Git](http://de.wikipedia.org/wiki/Git).
 
