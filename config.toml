@@ -5,6 +5,8 @@ preserveTaxonomyNames = true
 removePathAccents = true
 enableRobotsTXT = true
 
+disableFastRender = true
+
 defaultContentLanguage = "en"
 
 [params]
