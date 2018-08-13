@@ -7,10 +7,12 @@
 
     <div class="list-group">
       <a href="{{ $series.RelPermalink }}" class="list-group-item{{ if eq .RelPermalink $series.RelPermalink }} active{{ end }}">
-        {{ $series.Title }}</a>
+        {{ $series.Title }}
+      </a>
       {{ range $series.Sections }}
         <a href="{{ .RelPermalink }}" class="list-group-item{{ if .InSection $ }} active{{ end }}">
-          {{ .Title }}</a>
+          {{ .Title }}
+        </a>
       {{ end }}
     </div>
   </div>

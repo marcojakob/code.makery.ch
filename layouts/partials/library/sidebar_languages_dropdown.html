@@ -5,7 +5,7 @@
   <ul class="dropdown-menu" role="menu">
     {{ $currentLang := .Lang }}
     {{ range .AllTranslations }}
-    <li>
+    <li{{ if eq .Lang $currentLang }} class="active"{{ end }}>
       <a href="{{ .RelPermalink }}">
         <i class="fa fa-fw fa-globe"></i> {{ .Language.LanguageName }}
       </a>
