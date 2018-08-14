@@ -1,7 +1,6 @@
 +++
 title = "Part 2: Publishing Your Website"
-date = 2015-04-08
-updated = 2016-11-10
+date = 2018-08-10
 description = "Learn to publish a website live in the internet. Compare different hosting possibilities like BitBalloon, Dropbox, Google Drive, and GitHub Pages."
 image = "portfolio.png"
 prettify = true

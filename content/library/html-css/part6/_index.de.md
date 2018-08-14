@@ -1,7 +1,6 @@
 +++
 title = "Teil 6: Navigation"
-date = 2014-08-13
-updated = 2015-03-18
+date = 2018-08-10
 description = "Lernen Sie, wie man eine Navigation für die Website erstellt."
 image = "portfolio.de.png"
 prettify = true
@@ -39,7 +38,7 @@ Mit einfachen Links können wir von der Startseite auf die anderen Seiten spring
 </pre>
 
 <div class="alert alert-info">
-**Hinweis:** Der Link zu `/` verweist auf das Hauptverzeichnis. Mehr dazu im Abschnitt <a class="alert-link" href="/de/library/html-css/part1/#relative-und-absolute-urls">relative und absolute URLs</a>.
+<strong>Hinweis:</strong> Der Link zu <code>/</code> verweist auf das Hauptverzeichnis. Mehr dazu im Abschnitt <a class="alert-link" href="/de/library/html-css/part1/#relative-und-absolute-urls">relative und absolute URLs</a>.
 </div>
 
 Und so sieht die Navigation nun aus:
@@ -49,7 +48,7 @@ Und so sieht die Navigation nun aus:
 Überprüfen Sie, ob die Links auch wirklich funktionieren und Sie zur gewollten Seite bringen.
 
 <div class="alert alert-info">
-  <p>**Hinweis:** Wenn Sie die Seite als Datei direkt im Browser öffnen (ohne die *Live-Vorschau* vom Brackets-Editor), dann werden die Links nicht ganz korrekt funktionieren. Der Grund ist, dass das Dateisystem einfach den Ordnerinhalt anzeigt und nicht automatisch `index.html` öffnet. Sie müssen dann manuell auf `index.html` klicken.</p>
+  <p><strong>Hinweis:</strong> Wenn Sie die Seite als Datei direkt im Browser öffnen (ohne die <em>Live-Vorschau</em> vom Brackets-Editor), dann werden die Links nicht ganz korrekt funktionieren. Der Grund ist, dass das Dateisystem einfach den Ordnerinhalt anzeigt und nicht automatisch <code>index.html</code> öffnet. Sie müssen dann manuell auf <code>index.html</code> klicken.</p>
   <p>Sobald Sie aber die Seite auf einem Server veröffentlichen, sollten die Links ganz normal funktionieren.</p>
 </div>
 
@@ -151,7 +150,7 @@ Auf unserer Blog-Seite hatten wir noch etwas Platz gelassen, wo wir unserer Blog
 &lt;!-- Hier kommt eine Liste mit allen Blogeinträgen. -->
 &lt;ul>
   &lt;li>Weitere Einträge folgen...&lt;/li>
-  &lt;li>&lt;a href="01-erster-eintrag/">Erster Eintrag&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="/blog/erster-eintrag/">Erster Eintrag&lt;/a>&lt;/li>
 &lt;/ul>
 </pre>
 

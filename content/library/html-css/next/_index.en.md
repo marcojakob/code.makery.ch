@@ -1,6 +1,6 @@
 +++
 title = "Next Steps"
-date = 2015-04-08
+date = 2018-08-10
 description = "How can you learn even more about HTML & CSS. Learn how to build your own web applications."
 image = "portfolio.png"
 prettify = false

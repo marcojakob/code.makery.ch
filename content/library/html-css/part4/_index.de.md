@@ -1,7 +1,6 @@
 +++
 title = "Teil 4: Entwicklertools im Browser"
-date = 2014-08-13
-updated = 2015-03-18
+date = 2018-08-10
 description = "Lernen Sie die Entwicklertools im Browser kennen (Chrome Developer Tools)."
 image = "portfolio.de.png"
 prettify = true
@@ -28,7 +27,7 @@ Versuchen Sie das gleich mal auf Ihrer Portfolio-Webseite. Es sollte sich nun fo
 ![DevTools öffnen](open-devtools.de.png)
 
 <div class="alert alert-info">
-**Hinweis:** Wenn Sie den Brackets-Editor verwenden, deaktivieren Sie die Live-Vorschau und laden Sie die Seite neu. Ansonsten werden noch zusätzliche "ids" von Brackets angezeigt.
+<strong>Hinweis:</strong> Wenn Sie den Brackets-Editor verwenden, deaktivieren Sie die Live-Vorschau und laden Sie die Seite neu. Ansonsten werden noch zusätzliche "ids" von Brackets angezeigt.
 </div>
 
 

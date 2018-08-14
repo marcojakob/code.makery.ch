@@ -1,6 +1,6 @@
 +++
 title = "Part 6: Navigation"
-date = 2015-04-08
+date = 2018-08-10
 description = "Learn how to create a navigation for your website."
 image = "portfolio.png"
 prettify = true

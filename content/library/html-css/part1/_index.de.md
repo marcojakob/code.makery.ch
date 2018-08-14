@@ -23,26 +23,43 @@ Wir legen gleich los und erstellen unsere erste Webseite.
 
 ## Unsere Tools
 
-Für die Webentwicklung brauchen wir zwei Programme: einen <abbr data-toggle="tooltip" title="Normaler Texteditor oder einen Code-Editor">Editor</abbr>, um die Dateien für die Webseite zu erstellen und einen <abbr data-toggle="tooltip" title="z.B. Internet Explorer, Edge, Firefox, Safari oder Chrome">Browser</abbr>, um unsere Webseite anzuzeigen und zu testen.
+Für die Webentwicklung brauchen wir zwei Programme: einen Editor, um die Dateien für die Webseite zu erstellen und einen Browser (z.B. Internet Explorer, Edge, Firefox, Safari oder Chrome), um unsere Webseite anzuzeigen und zu testen.
 
 
 ### Editor
 
 Zum Erstellen von Webseiten reicht eigentlich ein ganz normaler Texteditor. Es gibt aber Editoren, die uns die Arbeit beim Programmieren stark vereinfachen. Deshalb empfehle ich, dass Sie gleich mit einem modernen Code-Editor beginnen.
 
-![Brackets Editor](brackets-editor-screenshot.png)
+![Visual Studio Code Editor](vs-code-editor.png)
 
-Mein aktueller Favorit unter den zahlreichen Editoren ist [Brackets](http://brackets.io/) (kostenlos von Adobe). Ich werde zwischendurch auf die Bedienung von Brackets eingehen, was nicht heisst, dass Sie nicht auch einen anderen Editor verwenden können. Gute Alternativen zu Brackets wären zum Beispiel [Atom](http://atom.io) oder das etwas ältere [Notepad++](http://notepad-plus-plus.org/).
+Mein aktueller Favorit unter den zahlreichen Editoren ist [Visual Studio Code](https://code.visualstudio.com/) (kostenlos). Ich werde zwischendurch auf die Bedienung von Visual Studio Code (VS Code) eingehen, was nicht heisst, dass Sie nicht auch einen anderen Editor verwenden können. Gute Alternativen sind zum Beispiel [Atom](https://atom.io/) oder [Brackets](http://brackets.io).
 
-<a href="http://brackets.io" target="_blank">![Brackets Editor Logo](brackets-editor-logo.jpg)
+<a href="https://code.visualstudio.com/" target="_blank">![VS Code Editor Logo](vs-code-logo.png)
 </a>
 
-Also, legen Sie los und installieren Sie einen Editor. Wenn Sie nicht wissen welchen, nehmen Sie [Brackets](http://brackets.io).
+Also, legen Sie los und installieren Sie einen Editor. Wenn Sie nicht wissen welchen, nehmen Sie [VS Code](https://code.visualstudio.com/).
+
+
+#### Editor Erweiterungen
+
+Weil wir grad am Installieren sind, fügen wir gleich noch eine Erweiterungen zu VS Code hinzu, damit unser Editor Superkräfte hat: [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+
+1. Visual Studio Code öffnen.
+
+2. Öffnen Sie das Menu "Extensions".
+<p>![Open Extensions](open-extensions.png)</p>
+
+3. Tippen Sie in das Suchfeld "Live Server" und installieren Sie diese Erweiterung.
+<p>![Install Live Server](install-live-server.png)</p>
+
+4. Laden Sie Visual Studio neu, damit die Erweiterung aktiv wird.
+<p>![Install Live Server Reload](install-live-server-reload.png)</p>
+
 
 
 ### Browser
 
-Unsere Webseite sollte natürlich in allen gängigen Browsern (Internet Explorer, Firefox, Chrome und Safari) laufen. Für die Webentwicklung ist jedoch unbedingt [Chrome](https://www.google.com/chrome/browser/) zu empfehlen. Chrome beinhaltet sehr nützliche Tools für Entwickler, die wir oft nutzen werden. Ausserdem wird Chrome optimal vom Brackets Editor unterstützt, so dass Änderungen im Editor sofort in Chrome sichtbar sind (live reload).
+Unsere Webseite sollte natürlich in allen gängigen Browsern (Edge, Firefox, Chrome und Safari) laufen. Für die Webentwicklung ist jedoch [Chrome](https://www.google.com/chrome/browser/) zu empfehlen. Chrome beinhaltet sehr nützliche Tools für Entwickler, die wir oft nutzen werden.
 
 <a href="https://www.google.com/chrome/browser/" target="_blank">![Chrome Logo](chrome-logo.png)</a>
 
@@ -53,45 +70,39 @@ Falls Sie Chrome noch nicht haben, können Sie ihn [hier installieren](https://w
 
 Ausgerüstet mit Editor und Browser erstellen wir das erste HTML Dokument für unsere Webseite:
 
-1. Erstellen Sie zuerst einen Ordner auf ihrem Computer für unser erstes Projekt. Nennen Sie den Ordner zum Beispiel *Portfolio*.
+1. Erstellen Sie zuerst einen Ordner auf ihrem Computer für unser erstes Projekt. Nennen Sie den Ordner zum Beispiel `Portfolio`.
 
-2. Öffnen Sie Brackets (oder Ihren Code-Editor). Wenn Sie Brackets zum ersten Mal starten, können Sie im Menu *Debug | Change Language* die Sprache auf Deutsch umstellen.
+2. Öffnen Sie VS Code (oder Ihren Code-Editor).
 
-3. Öffnen Sie das Menu *Datei* und wählen Sie ***Ordner öffnen...***. Suchen Sie dort den vorhin erstellten *Portfolio* Ordner und öffnen Sie diesen.
-<p>
-![Ordner öffnen](open-folder.de.png)
-</p>
+3. Öffnen Sie das Menu *File* und wählen Sie ***Open Folder...***. Suchen Sie dort den vorhin erstellten `Portfolio` Ordner und öffnen Sie diesen.
+<p>![Ordner öffnen](open-folder.png)</p>
 
-4. Klicken Sie unterhalb des Ordners *Portfolio* mit der *rechten Maustaste* und wählen Sie *Neue Datei*. Geben Sie der Datei den Namen `index.html`.
-<p>
-![Neue Datei](new-file.de.png)
-</p>
+4. Klicken Sie unterhalb des Ordners *Portfolio* mit der *rechten Maustaste* und wählen Sie *New File*. Geben Sie der Datei den Namen `index.html`.
+<p>![Neue Datei](new-file.png)</p>
 
 5. Nun haben wir eine ganz einfache, leere Textdatei namens `index.html`.
-<p>
-![index.html](new-index-file.de.png)
-</p>
+<p>![index.html](new-index-file.png)</p>
 
 
 ### Warum index.html?
 
-Wie Sie wahrscheinlich ahnen konnten hat der Name `index.html` eine spezielle Bedeutung. Wenn nämlich eine Webseitenadresse aufgerufen wird, z.B. `http://code.makery.ch`, dann wird automatisch zuerst die Datei `index.html` angezeigt, in diesem Fall `http://code.makery.ch/index.html`. Für uns wird `index.html` also quasi zur Startseite.
+Wie Sie wahrscheinlich ahnen konnten hat der Name `index.html` eine spezielle Bedeutung. Wenn nämlich eine Webseitenadresse aufgerufen wird, z.B. `https://www.example.com`, dann wird automatisch zuerst die Datei `index.html` angezeigt, in diesem Fall `https://www.example.com/index.html`. Für uns wird `index.html` also quasi zur Startseite.
 
 
 ### Anzeigen und aktualisieren
 
 Nun wollen wir das Dokument mit Inhalt füllen. Tippen Sie die folgenden Zeilen ab. Als Text können Sie natürlich irgend etwas wählen.
 
-![HTML Struktur](first-website.de.png)
+![HTML Struktur](first-website.png)
 
-Zum Anzeigen der Seite klicken Sie auf den *Blitz* am rechten Rand (Live-Vorschau). Falls Brackets den Chrome Browser findet, dann wird jetzt die Seite angezeigt und sobald wir Änderungen vornehmen, werden diese gleich aktualisiert.
+Zum Anzeigen der Seite verwenden wir den oben installierten **Live Server**. Klicken Sie dazu mit der *rechten Maustaste* auf die Datei `index.html` (unterhalb des Portfolio-Ordners, nicht oben wo die offenen Dateien angezeigt werden). Wählen Sie ***Open with Live Server***. Nun sollte sich ein Browser-Fenster öffnen mit Ihrer ersten Website. Wann immer Sie Änderungen speichern, sollte die Website automatisch aktualisiert werden.
 
 <div class="alert alert-info">
 <p>
-Falls die Seite **nicht angezeigt wird**: Suchen Sie die `index.html`-Datei auf Ihrem Computer und öffnen Sie diese mit Chrome oder einem anderen Browser.
+Falls die Seite <strong>nicht im gewünschten Browser angezeigt wird</strong>: Ändern Sie auf ihrem Computer die Einstellungen so, dass ein anderer Browser der Standard-Browser ist. Alternativ können Sie auch die Adresse (z.B. <code>http://127.0.0.1:5500/index.html</code>) aus dem einen Browser rauskopieren und in einem anderen Browser einfügen.
 </p>
 <p>
-Falls die Seite **nicht aktualisiert wird** bei Änderungen: Speichern Sie alle Dateien und klicken Sie im Browser die Taste `F5` oder `cmd+r`.
+Falls die Seite <strong>nicht aktualisiert wird</strong> bei Änderungen: Speichern Sie alle Dateien und klicken Sie im Browser die Taste `F5` oder `cmd+r`.
 </p>
 </div>
 
@@ -100,18 +111,17 @@ Falls die Seite **nicht aktualisiert wird** bei Änderungen: Speichern Sie alle 
 
 ### Richtiges Einrücken
 
-Damit Sie die Übersicht behalten ist es wichtig, dass Sie die Zeilen immer korrekt mit der **Tabulator-Taste** einrücken. Die Standardeinstellung in Brackets ist meist, dass ein Tabulator 4 Leerzeichen lang ist. Dies ist etwas lang. Ich empfehle deshalb, dass Sie die Einstellung am unteren Rand von Brackets auf `Leerzeichen: 2` ändern.
-
-![Brackets Leerzeichen](brackets-spaces.de.png)
-
-**Wichtig:** Schauen Sie den **Beispielcode immer ganz genau an** und rücken Sie Ihren Code entsprechend ein. Es ist wirklich wichtig, dass Sie sich gleich von Anfang an sauberes Einrücken angewöhnen!
+Damit Sie die Übersicht behalten ist es wichtig, dass Sie die Zeilen immer korrekt mit der **Tabulator-Taste** einrücken. Schauen Sie den **Beispielcode immer ganz genau an** und rücken Sie Ihren Code entsprechend ein. Für den Browser spielt das keine Rolle. Aber für uns als Programmierer ist das wichtig, damit wir den Überblick behalten.
 
 <div class="alert alert-info">
 <p>
-<strong>Tipp 1:</strong> Mit `Shift+Tab` können Sie nach den Code nach links schieben.
+<strong>Tipp 1:</strong> Mit <code>Shift+Tab</code> können Sie nach den Code nach links schieben.
 </p>
 <p>
-<strong>Tipp 2:</strong> Wenn Sie mehrere Zeilen markieren können Sie diese mit `Tab` oder `Shift+Tab` gleichzeitig einrücken.
+<strong>Tipp 2:</strong> Wenn Sie mehrere Zeilen markieren können Sie diese mit <code>Tab</code> oder <code>Shift+Tab</code> gleichzeitig einrücken.
+</p>
+<p>
+<strong>Tipp 3 (automatisch):</strong> Rechte Maustaste irgendwo im Programmcode und dann <code>Format Document</code>.
 </p>
 </div>
 
@@ -258,4 +268,4 @@ So sieht im Moment mein Portfolio im Browser aus:
 
 ***
 
-&rarr; Im nächsten Teil lernen Sie, wie Sie die Webseite im Internet veröffentlichen können. Weiter geht's mit [Teil 2: Webseite veröffentlichen](/library/html-css/de/part2/)
+&rarr; Im nächsten Teil lernen Sie, wie Sie die Webseite im Internet veröffentlichen können. Weiter geht's mit [Teil 2: Webseite veröffentlichen](/de/library/html-css/part2/)

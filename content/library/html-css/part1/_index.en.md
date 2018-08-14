@@ -1,6 +1,6 @@
 +++
 title = "Part 1: Your First Website"
-date = 2015-04-08
+date = 2018-08-10
 description = "Create your first website. Get to know the programming tools and learn the basics of HTML and CSS."
 image = "portfolio.png"
 prettify = true

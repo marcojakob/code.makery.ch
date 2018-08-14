@@ -1,7 +1,6 @@
 +++
 title = "Teil 5: Blog und weitere Seiten"
-date = 2014-08-13
-updated = 2015-03-18
+date = 2018-08-10
 description = "Erstellen Sie eine Dateistruktur für mehrere Webseiten. Lernen Sie eine Struktur für einen Blog aufzustellen."
 image = "portfolio.de.png"
 prettify = true
@@ -26,7 +25,7 @@ Damit bei einem Aufruf des Unterordners die jeweilige Hauptseite automatisch als
 Eine neue Seite zu erstellen ist einfach. Am besten kopieren Sie die bisherige `index.html`, damit Sie bereits die Grundstruktur haben. Dann müssen wir natürlich jeweils ein paar Anpassungen vornehmen.
 
 <div class="alert alert-info">
-**Wichtig:** Achten Sie darauf, dass Sie beim Benennen von Unterordnern und Dateinamen keine Umlaute, Sonderzeichen oder Leerschläge verwenden. Meistens wählt man auch nur Kleinbuchstaben. Sie können Wörter aber zum Beispiel durch ein Minus (`-`) trennen, wenn Sie möchten.
+<strong>Wichtig:</strong> Achten Sie darauf, dass Sie beim Benennen von Unterordnern und Dateinamen keine Umlaute, Sonderzeichen oder Leerschläge verwenden. Meistens wählt man auch nur Kleinbuchstaben. Sie können Wörter aber zum Beispiel durch ein Minus (`-`) trennen, wenn Sie möchten.
 </div>
 
 
@@ -141,7 +140,7 @@ Mit solchen Blogeinträgen werden Sie beim Lernen von Programmierung viel schnel
 #### Zweiter Blogeintrag
 
 <div class="alert alert-info">
-  **Hinweis:** Erstellen Sie für jeden Blogeintrag einen eigenen Unterordner (mit einer `index.html`-Seite). So haben Sie eine gute Ordnung und können Bilder oder andere Dateien für den Blogeintrag im Unterordner ablegen.
+  <strong>Hinweis:</strong> Erstellen Sie für jeden Blogeintrag einen eigenen Unterordner (mit einer `index.html`-Seite). So haben Sie eine gute Ordnung und können Bilder oder andere Dateien für den Blogeintrag im Unterordner ablegen.
 </div>
 
 ![Blogeintrag 2](blog-entry-subfolder2.de.png)
@@ -180,7 +179,7 @@ Gehen Sie wie oben beim Blog vor und erstellen Sie einen Unterordner `projekte` 
 Als letzte Hauptseite fügen wir eine Seite mit Kontaktinformationen hinzu. Erstellen Sie einen Unterordner `kontakt` mit einer Datei `index.html`.
 
 <div class="alert alert-danger">
-**Wichtig:** *Überlegen Sie sich gut, welche Informationen Sie öffentlich machen wollen! Geben Sie zum Beispiel **nicht Ihre Haupt-E-Mail-Adresse an**, denn es kann sein, dass Sie nachher auf diese Adresse Spamnachrichten erhalten.*
+<strong>Wichtig:</strong> Überlegen Sie sich gut, welche Informationen Sie öffentlich machen wollen! Geben Sie zum Beispiel <strong>nicht Ihre Haupt-E-Mail-Adresse an</strong>, denn es kann sein, dass Sie nachher auf diese Adresse Spamnachrichten erhalten.
 </div>
 
 

@@ -1,6 +1,6 @@
 +++
 title = "Blog and Other Pages"
-date = 2015-04-08
+date = 2018-08-10
 description = "Create a file structure with multiple web pages, including a structure for writing blog posts."
 image = "portfolio.png"
 prettify = true

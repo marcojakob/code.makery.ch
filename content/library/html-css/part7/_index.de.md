@@ -1,7 +1,6 @@
 +++
 title = "Teil 7: Bootstrap Framework verwenden"
-date = 2014-08-13
-updated = 2015-03-18
+date = 2018-08-10
 description = "Lernen Sie das Bootstrap-Framework für Ihre Webseite einzusetzen."
 image = "portfolio.de.png"
 prettify = true
@@ -38,7 +37,7 @@ Mit *Bootstrap* sehen die Elemente nicht nur besser aus, sondern sie werden auch
 
 ### Dokumentation
 
-Die offizielle Dokumentation von [Bootstrap](http://getbootstrap.com/) ist auf Englisch. Es gibt aber auch eine [Bootstrap Übersetzung auf Deutsch](http://holdirbootstrap.de/). Sie sollten sich diese Webseiten irgendwo speichern, denn Sie werden dort immer wieder etwas nachschlagen müssen.
+Die offizielle Dokumentation von [Bootstrap](https://getbootstrap.com/) ist der beste Ort, um zu sehen, was man alles mit Bootstrap machen kann. Sie sollten sich diese Webseiten irgendwo speichern, denn Sie werden dort immer wieder etwas nachschlagen müssen.
 
 
 ### Bootstrap-CSS einbinden
@@ -47,24 +46,38 @@ Der wichtigste Teil von Bootstrap besteht aus einem grossen CSS. Für etwas komp
 
 Nun wollen wir das Bootstrap-CSS in unsere HTML-Seiten einbinden:
 
-1. Öffnen Sie die [Bootstrap-Webseite](http://holdirbootstrap.de/los-gehts/). Sie sehen dort, dass es mehrere Möglichkeiten gibt, Bootstrap herunterzuladen. Wir wählen die Variante über das *Bootstrap-CDN*. Damit müssen wir eigentlich gar nichts herunterladen, sondern nur im HTML angeben, wo die zusätzliche CSS-Datei liegt. Sie wird dann bei jedem Aufruf unserer Webseite direkt von den *CDN*-Servern heruntergeladen. *CDN*-Server sind Server, die über die ganze Welt verteilt sind, damit sie eine Datei sehr schnell ausliefern können.
+1. Öffnen Sie die [Bootstrap-Webseite](https://getbootstrap.com/). Sie sehen dort, dass es mehrere Möglichkeiten gibt, Bootstrap herunterzuladen. Wir wählen die Variante über das *BootstrapCDN*. Damit müssen wir eigentlich gar nichts herunterladen, sondern nur im HTML angeben, wo die zusätzliche CSS-Datei liegt. Sie wird dann bei jedem Aufruf unserer Webseite direkt von den *CDN*-Servern heruntergeladen. *CDN*-Server sind Server, die über die ganze Welt verteilt sind, damit sie eine Datei sehr schnell ausliefern können.
 
-2. Kopieren Sie also vom Abschnitt *Bootstrap-CDN* die erste Zeile mit dem `link`-Element.
+2. Kopieren Sie also vom Abschnitt *BootstrapCDN* die erste Zeile mit dem `link`-Element.
 
 3. Fügen Sie das `link`-Element in ihre HTML-Seiten ein. Wichtig ist, dass Sie es oberhalb von unserem `link`-Element für die `main.css`-Datei einfügen. Dadurch hat unser `main.css` eine höhere Wichtigkeit. Das bedeutet, dass wir CSS-Regeln aus dem Bootstrap-CSS mit unseren eigenen Regeln überschreiben können.
 
-So sollte Ihr `head`-Bereich nun etwa aussehen (evtl. mit einer neueren Versionsnummer von Bootstrap):
+4. Kopieren Sie die drei Zeilen für JS, Popper.js und jQuery.
+
+5. Fügen Sie diese JavaScript-Dateien zuunterst in den Body-Bereich ihrer HTML-Seite ein.
+
+So sollte Ihre HTML-Dateien nun etwa aussehen (evtl. mit einer neueren Versionsnummer und ein paar "integrity"-Zahlen von Bootstrap):
 
 
 ##### index.html
 
 <pre class="prettyprint lang-html">
-&lt;head>
-  &lt;meta charset="utf-8">
-  <mark>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></mark>
-  &lt;link rel="stylesheet" href="/main.css">
-  &lt;title>Web Portfolio von Marco&lt;/title>
-&lt;/head>
+&lt;html>
+  &lt;head>
+    &lt;meta charset="utf-8">
+    <mark>&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  </mark>
+    &lt;link rel="stylesheet" href="/main.css">
+    &lt;title>Web Portfolio von Marco&lt;/title>
+  &lt;/head>
+    &lt;body>
+      &lt;!-- Hier steht irgend ein Inhalt -->
+      <mark>
+      &lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">&lt;/script>
+      &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">&lt;/script>
+      &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">&lt;/script></mark>
+    &lt;/body>
+&lt;/html>
 </pre>
 
 
@@ -214,7 +227,7 @@ Mit einer `meta`-Information im `head`-Bereich können wir den mobilen Browsern 
 &lt;head>
   &lt;meta charset="utf-8">
   <mark>&lt;meta name="viewport" content="width=device-width, initial-scale=1"></mark>
-  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   &lt;link rel="stylesheet" href="main.css">
   &lt;title>Web Portfolio von Marco&lt;/title>
 &lt;/head>
@@ -245,7 +258,7 @@ Mit kleinen Anpassung können wir den Code aus der Startseite in alle anderen Se
 Kopieren Sie aus dem `head`-Bereich der Startseite die Zeile mit dem `viewport` und die Zeile mit dem Bootstrap CSS und fügen Sie diese in alle anderen Seiten ein:
 <pre class="prettyprint lang-html">
   &lt;meta name="viewport" content="width=device-width, initial-scale=1">
-  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 </pre>
 
 

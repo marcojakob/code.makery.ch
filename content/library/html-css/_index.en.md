@@ -1,6 +1,6 @@
 +++
 title = "HTML & CSS Tutorial (NEW VERSION)"
-date = 2015-04-08
+date = 2018-08-10
 description = "Learn the basics of HTML and CSS in this tutorial to create your own web projects. We immediately start with a practical example of building your own portfolio website."
 image = "portfolio.png"
 prettify = true

@@ -1,7 +1,6 @@
 +++
 title = "Teil 3: Einführung in CSS"
-date = 2014-08-13
-updated = 2015-03-18
+date = 2018-08-10
 description = "Lernen Sie, wie Sie mit CSS eine Webseite gestalten können."
 image = "portfolio.de.png"
 prettify = true
@@ -17,7 +16,7 @@ Vorhin haben Sie eine erste Webseite erstellt und veröffentlicht. Zugegeben, di
 
 ## Struktur und Style
 
-Nochmals zur Erinnerung: <abbr data-toggle="tooltip" title="Hypertext Markup Language">HTML</abbr> beschreibt die Struktur einer Webseite während <abbr data-toggle="tooltip" title="Cascading Style Sheet">CSS</abbr> die visuelle Erscheinung definiert.
+Nochmals zur Erinnerung: **HTML** beschreibt die Struktur einer Webseite während **CSS** die visuelle Erscheinung definiert.
 
 Die Aufteilung von Struktur und Style hat viele Vorteile, wie wir noch sehen werden. Es ist nicht zwingend, aber meistens schreibt man HTML und CSS auch in separate Dateien.
 
@@ -28,7 +27,7 @@ Eine CSS-Datei ist eine ganz normale Textdatei mit der Endung `.css`, die wir mi
 
 Erstellen Sie also in Ihrem *Portfolio*-Ordner eine **neue Datei**. Wir geben der Datei den Namen `main.css`.
 
-![Neue CSS-Datei](new-css-file.de.png)
+![Neue CSS-Datei](new-css-file.png)
 
 Nun wechseln wir zur `index.html`-Datei und fügen innerhalb des `<head>`-Elements ein `<link>`-Element hinzu. Mit dem `<link>`-Element können wir der HTML-Seite mitteilen, dass sie die CSS-Datei laden soll:
 
@@ -107,18 +106,14 @@ Bei den *Hex-Codes* stehen die ersten beiden Ziffern für den Rotanteil, die mit
 
 Das Ausdrücken von Farben mit Hexadezimalzahlen ist sehr beliebt, da man damit sehr viele Farbkombinationen dartsellen kann (über 16.7 Millionen). Es ist aber etwas schwierig mit ihnen zu arbeiten. Meistens braucht man deshalb einen Farbwähler.
 
-Falls Sie als Editor den [Brackets](http://brackets.io/) verwenden, können Sie den Farbwähler gleich in der CSS-Datei aufrufen. Klicken Sie dazu mit der rechten Maustaste auf den Farbcode und wählen **Schnell bearbeiten** oder drücken Sie die Tastenkombination `Ctrl+E`.
-
-![Schnell bearbeiten](quick-edit.de.png)
-
-Dann erscheint sofort ein Farbwähler, wo man bequem die Farbe auswählen kann. Sie können mit den drei Knöpfen auch zwischen den verschiedenen Notationsformen umschalten.
+Falls Sie als Editor [Visual Studio Code](https://code.visualstudio.com/) verwenden, können Sie den Farbwähler gleich in der CSS-Datei aufrufen. Fahren Sie dazu mit der Maus über den Farbcode und wählen Sie eine neue Farbe.
 
 ![Farbwähler](color-chooser.png)
 
 
 ### Online Farbwähler
 
-Falls Sie nicht mit dem Brackets-Editor und keinen Farbwähler integriert haben, können sie auf zahlreiche Online-Farbwähler zurückgreifen:
+Falls Sie einen anderen Farbwähler ausprobieren möchten, so gibt es auch zahlreiche Online-Farbwähler:
 
 * [HTML Color Codes](http://html-color-codes.info/)
 * [ColorPicker](http://www.colorpicker.com/)
@@ -134,8 +129,8 @@ Dazu gibt es verschiedene Hilfen, die das finden einer Farbpalette erleichtern. 
 
 ##### Fertige Farbpaletten
 
-* [Colour Lovers](http://www.colourlovers.com/palettes)
-* [Design Seeds](http://design-seeds.com/)
+* [Coolors](https://coolors.co/)
+* [Colormind](http://colormind.io/)
 * [Google Color Palette](http://www.google.com/design/spec/style/color.html)
 
 
@@ -243,35 +238,9 @@ Im folgenden Beispiel gilt der ID-Selektor für das Element, welches ein `id`-At
 </pre>
 
 
-### Nachkommenselektor
+### Weitere Selektoren
 
-Mit einem Nachkommenselektor kann man Elemente noch etwas genauer auswählen, indem man mehrere Typ-, Klassen- oder ID-Selektoren kombiniert.
-
-Schauen wir uns gleich ein Beispiel an, bevor ich etwas näher darauf eingehe:
-
-
-##### CSS
-
-<pre class="prettyprint lang-css">
-p a {
-  ...
-}
-</pre>
-
-##### HTML
-
-<pre class="prettyprint lang-html">
-&lt;p>
-  &lt;a href="http://code.makery.ch">Meine Webseite&lt;/a>
-&lt;/p>
-&lt;a href="http://www.example.com">Example Webseite&lt;/a>
-</pre>
-
-Der Nachkommenselektor `p a` wählt alle `a`-Elemente aus, die irgendwo innerhalb eines `p`-Elementes vorkommen. In unserem Beispiel würde die CSS-Regel auf <em>Meine Webseite</em> zutreffen, jedoch nicht auf <em>Example Webseite</em>.
-
-<div class="alert alert-info">
-<strong>Hinweis:</strong> Das `a`-Element muss nicht unbedingt direkt dem `p`-Element untergeordnet sein. Der Nachkommenselektor trifft auf irgend ein <em>Nachkomme</em> zu. Für den anderen Fall gibt es den Kindselektor (`>`), auf den ich jedoch hier nicht eingehen werde.
-</div>
+Es gibt noch ein paar weitere Selektoren (Google is your friend). Die wichtigsten sind jedoch die oben beschriebenen drei Selektoren. 
 
 
 ## CSS-Eigenschaften
@@ -368,4 +337,4 @@ Wenn alles geklappt hat, dann sieht das Portfolio nun etwa so aus:
 
 ***
 
-&rarr; Weiter geht's mit [Teil 4: Entwicklertools im Browser](/library/html-css/de/part4/).
+&rarr; Weiter geht's mit [Teil 4: Entwicklertools im Browser](/de/library/html-css/part4/).

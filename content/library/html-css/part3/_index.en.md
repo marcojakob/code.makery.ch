@@ -1,6 +1,6 @@
 +++
 title = "Part 3: Introduction to CSS"
-date = 2015-04-08
+date = 2018-08-10
 description = "Learn how to style websites with CSS. "
 image = "portfolio.png"
 prettify = true
