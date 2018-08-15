@@ -9,6 +9,12 @@ aliases = [
   "/library/html-css/de/part7/"
 ]
 weight = 7
+
+[[sidebars]]
+header = "Downloads"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Portfolio Teil 7"
+link = "https://github.com/marcojakob/tutorial-html-css/releases/download/v2.0/portfolio-part7.zip"
 +++
 
 Bis hierhin haben wir alles HTML und CSS von Grund auf selber programmiert. Unser Projekt, das *Web Portfolio*, hat bereits einige HTML-Seiten mit etwas Inhalt, eine noch unfertige Navigation und etwas Styling.
@@ -92,7 +98,7 @@ Viele Bootstrap-Styles werden aber erst aktiviert, wenn man eine entsprechende *
 
 ### Bootstrap Klassen verwenden
 
-Als Beispiel schauen wir uns an, wie mit Bootstrap die Textausrichtung geändert werden kann. In der Bootstrap-Dokumentation unter [Ausrichtungsklassen](http://holdirbootstrap.de/css/#type-alignment) finden Sie eine kurze Anleitung zur Textausrichtung.
+Als Beispiel schauen wir uns an, wie mit Bootstrap die Textausrichtung geändert werden kann. In der Bootstrap-Dokumentation unter [Ausrichtungsklassen](https://getbootstrap.com/docs/4.1/utilities/text/) finden Sie eine kurze Anleitung zur Textausrichtung.
 
 Wenn wir also zum Beispiel den `h2`-Titel zentrieren möchten, müssten wir die Klasse `text-center` hinzufügen:
 
@@ -115,7 +121,7 @@ Wir könnten sogar auf dem `body`-Element eine `text-center`-Klasse hinzufügen.
 
 Mit dem `<div>`-Element werden Elemente zu einem Block gruppiert. Für Bootstrap werden wir `div`-Elemente recht oft verwenden, um Styles auf einen ganzen Abschnitt der Seite anzuwenden.
 
-Eine zentrale CSS-Klasse in Bootstrap ist `container`. Der `container` passt den Inhalt automatisch an die Seitenbreite an und sorgt für einen sinnvollen Abstand zum Rand. Sie sollten auf Ihrer Bootstrap-Seite immer ein `div`-Element mit der `container`-Klasse haben. Lesen Sie die [Beschreibung von Container](http://holdirbootstrap.de/css/#overview-container) auf der Bootstrap-Webseite.
+Eine zentrale CSS-Klasse in Bootstrap ist `container`. Der `container` passt den Inhalt automatisch an die Seitenbreite an und sorgt für einen sinnvollen Abstand zum Rand. Sie sollten auf Ihrer Bootstrap-Seite immer ein `div`-Element mit der `container`-Klasse haben. Lesen Sie die [Beschreibung von Container](https://getbootstrap.com/docs/4.1/layout/overview/#containers) auf der Bootstrap-Webseite.
 
 Wir packen nun den Hauptinhalt unserer Startseite zwischen ein `<div class="container">` und `</div>`. (Um die Navigation werden wir uns weiter unten noch speziell kümmern.)
 
@@ -165,52 +171,56 @@ Ich möchte &lt;span class="text-warning">diese Worte&lt;/span> besonders hervor
 
 ## Navigation mit Bootstrap
 
-Nun wollen wir endlich die Navigation schöner gestalten mit der Hilfe von Bootstrap. In der Bootstrap-Dokumentation wird eine [Navbar](http://holdirbootstrap.de/komponenten/#navbar) beschrieben. Das Beispiel dort ist jedoch sehr komplex und beinhaltet Menus, Textfelder und Knöpfe. Wir wählen eine etwas einfachere Variante.
+Nun wollen wir endlich die Navigation schöner gestalten mit der Hilfe von Bootstrap. In der Bootstrap-Dokumentation wird eine [Navbar](https://getbootstrap.com/docs/4.1/components/navbar/) beschrieben. Das Beispiel dort ist jedoch sehr komplex und beinhaltet Menus, Textfelder und Knöpfe. Wir wählen eine etwas einfachere Variante.
 
-Programmieren sie die folgenden Schritte. Am besten probieren Sie nach jedem Schritt aus, was die Auswirkungen sind.
-
-1. Fügen Sie dem `ul`-Element Ihrer Navigation die zwei Klassen `nav` und `navbar-nav` hinzu:
-`<ul class="nav navbar-nav">`
-
-2. Packen Sie die gesamte Navigation in ein `div` mit der Klasse `container`. Dies bewirkt, dass die Abstände vom Rand gleich sind wie bei unserem Hauptinhalt. Vergessen Sie nicht das schliessende Tag `</div>`.
-`<div class="container">`
-
-3. Umgeben Sie das Ganze mit einem weiteren `div`. Diesmal brauchen wir die drei Klassen `navbar`, `navbar-default` und `navbar-static-top`. Diese Klassen bewirken, dass ein Balken oben am Rand dargestellt wird. Vergessen Sie auch hier nicht das schliessende Tag `</div>`.
-`<div class="navbar navbar-default navbar-static-top">`
-
-4. Fügen Sie beim `li`-Elemente von *Home* eine Klasse `active` hinzu. Dies bewirkt, dass der *Home*-Link speziell hervorgehoben wird. Damit merkt der Besucher, auf welcher Seite er sich im Moment befindet.
-`<li class="active"><a href="./">Home</a></li>`
-
-So sieht der Code für die Navigation nun aus (achten Sie auf korrektes Einrücken!):
+Kopieren Sie den folgenden Code für die Navigation:
 
 
 ##### index.html
 
 <pre class="prettyprint lang-html">
-<mark>&lt;div class="navbar navbar-default navbar-static-top"></mark>
-  <mark>&lt;div class="container"></mark>
-    &lt;ul <mark>class="nav navbar-nav"></mark>
-      &lt;li <mark>class="active"</mark>>&lt;a href="/">Home&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="/blog/">Blog&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="/projekte/">Projekte&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="/kontakt/">Kontakt&lt;/a>&lt;/li>
-    &lt;/ul>
-  <mark>&lt;/div></mark>
-<mark>&lt;/div></mark>
+&lt;nav class="navbar navbar-expand-lg navbar-light bg-light">
+  &lt;div class="container">
+    &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+      &lt;span class="navbar-toggler-icon">&lt;/span>
+    &lt;/button>
+    &lt;div class="collapse navbar-collapse" id="navbarMenu">
+      &lt;ul class="navbar-nav">
+        &lt;li>&lt;a class="nav-link active" href="/">Home&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link" href="/blog/">Blog&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link" href="/projects/">Projects&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link" href="/contact/">Contact&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+&lt;/nav>
 </pre>
 
-Und so wird es dargestellt:
 
-![Navbar](navbar-default.de.png)
+#### Erklärung
+
+1. Das äusserste `nav`-Element mit `navbar` als Klasse bewirkt, dass ein Balkoen oben am Rand dargestellt wird. Ein `nav` is eigentlich das genau Gleiche wie ein `div`, ausser dass man an Suchmaschinen einen kleinen Hinweis gibt, dass da eine Navigation kommt.
+
+2. Das nächste `div` mit der Klasse `container` bewirkt, dass die Abstände vom Rand gleich sind wie bei unserem Hauptinhalt. Beachten Sie jeweils das schliessende Tag `</div>`, welches dazugehört.
+
+3. Das `button`-Element mit Klasse `navbar-toggler` ist der Knopf in der mobilen Ansicht, um das Menu auszuklappen. Verkleinern Sie mal das Browser-Fenster in der Breite. Dann sollte der Knopf erscheinen.
+
+4. Im gegensatz zur vorherigen Variante, haben wir bei jedem Link eine Klasse `nav-link` hinzugefügt. Diese bewirkt, dass der Link in der Navigation den entsprechenden Stil erhält.
+
+5. Beachte: Das **aktive** Navigationselement ist jeweils mit der zusätzlichen Klasse `active` markiert. Dieses erscheint dann hervorgehoben.
+
+So ungefähr sollte es jetzt aussehen:
+
+![Navbar](navbar-light.png)
 
 
 ### Dunkle Variante
 
-Es gibt eine zweite Variante der Bootstrap-Navigation:
+Es gibt weitere Varianten der Bootstrap-Navigation:
 
-![Navbar Inverse](navbar-inverse.de.png)
+![Navbar Dark](navbar-dark.png)
 
-Um diese zu aktivieren, ändern Sie die Klasse `navbar-default` in `navbar-inverse` um.
+Um diese zu aktivieren, ändern Sie die Klasse `navbar-light` in `navbar-dark` und `bg-light` in `bg-dark` um.
 
 
 ## Optimieren für Mobile
@@ -237,12 +247,12 @@ Nun sollte es etwa so aussehen:
 
 ![Mobile mit Viewport](mobile-with-viewport.de.png)
 
-Bootstrap wurde so entworfen, dass es auf [mobilen Bilschirmen gut funktioniert](http://holdirbootstrap.de/css/#overview-mobile). Im Screenshot oben sehen Sie, wie die Navigation automatisch untereinander angezeigt wird, sobald die Bildschirmbreite zu klein wird. Dies können Sie auch ausprobieren, indem Sie einfach das Browserfenster verkleinern.
+Bootstrap wurde so entworfen, dass es auf mobilen Bilschirmen gut funktioniert. Im Screenshot oben sehen Sie, wie die Navigation automatisch untereinander angezeigt wird, sobald die Bildschirmbreite zu klein wird. Dies können Sie auch ausprobieren, indem Sie einfach das Browserfenster verkleinern.
 
 Ein Webdesign, welches auf die Bildschirmgrösse reagiert, nennt man [Responsive Webdesign](http://de.wikipedia.org/wiki/Responsive_Webdesign).
 
 <div class="alert alert-warning">
-  <strong>Hinweis:</strong> Bootstrap kann die Navigation auch automatisch zusammenklappen in ein Menu. Dafür müssen aber zusätzliche JavaScript-Dateien eingebunden werden. Im Artikel <a class="alert-link" href="/de/library/more-html-css/javascript-bootstrap/">JavaScript mit Bootstrap</a> erkläre ich, wie Sie eine solche Navigation programmieren können.
+  <strong>Hinweis:</strong> Bootstrap klappt die Navigation auch automatisch zusammen in der mobilen Ansicht. Dafür sind die JavaScript-Dateien zuständig, welche wir jeweils vor das schliessende <code>&lt;/body&gt;</code>-Tag kopiert haben.
 </div>
 
 
@@ -256,40 +266,52 @@ Mit kleinen Anpassung können wir den Code aus der Startseite in alle anderen Se
 #### 1. Viewport und Bootstrap-CSS einfügen
 
 Kopieren Sie aus dem `head`-Bereich der Startseite die Zeile mit dem `viewport` und die Zeile mit dem Bootstrap CSS und fügen Sie diese in alle anderen Seiten ein:
+
 <pre class="prettyprint lang-html">
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1">
-  &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+&lt;meta name="viewport" content="width=device-width, initial-scale=1">
+&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 </pre>
 
 
-#### 2. Navigation einfügen
+#### 2. JavaScript einfügen
 
-Kopieren Sie den gesamten Navigationsbereich aus der Startseite und fügen Sie diese in alle anderen Seiten ein. Achten Sie darauf, dass Sie jeweils beim aktuellen `li`-Element die `active`-Klasse hinzufügen:
+Kopieren Sie aus vom Schluss vom `body`-Bereich der Startseite die Links auf die JavaScript-Dateien und fügen Sie diese in alle anderen Seiten ein:
 
 <pre class="prettyprint lang-html">
-&lt;div class="navbar navbar-default navbar-static-top">
+&lt;body>
+  &lt;!-- Hier steht irgend ein Inhalt -->
+  <mark>
+  &lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">&lt;/script>
+  &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">&lt;/script>
+  &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">&lt;/script></mark>
+&lt;/body>
+</pre>
+
+
+#### 3. Navigation einfügen
+
+Kopieren Sie den gesamten Navigationsbereich aus der Startseite und fügen Sie diese in alle anderen Seiten ein. Achten Sie darauf, dass Sie jeweils beim aktuellen Link  die `active`-Klasse hinzufügen:
+
+<pre class="prettyprint lang-html">
+&lt;nav class="navbar navbar-expand-lg navbar-light bg-light">
   &lt;div class="container">
-    &lt;ul class="nav navbar-nav">
-      &lt;li>&lt;a <mark>href="/"</mark>>Home&lt;/a>&lt;/li>
-      &lt;li <mark>class="active"</mark>>&lt;a <mark>href="/blog/"</mark>>Blog&lt;/a>&lt;/li>
-      &lt;li>&lt;a <mark>href="/projekte/"</mark>>Projekte&lt;/a>&lt;/li>
-      &lt;li>&lt;a <mark>href="/kontakt/"</mark>>Kontakt&lt;/a>&lt;/li>
-    &lt;/ul>
+    &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+      &lt;span class="navbar-toggler-icon">&lt;/span>
+    &lt;/button>
+    &lt;div class="collapse navbar-collapse" id="navbarMenu">
+      &lt;ul class="navbar-nav">
+        &lt;li>&lt;a class="nav-link" href="/">Home&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link active" href="/blog/">Blog&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link" href="/projects/">Projects&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link" href="/contact/">Contact&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/div>
   &lt;/div>
-&lt;/div>
+&lt;/nav>
 </pre>
 
-<div class="alert alert-info">
-<p>
-**Achtung:** Links im Unterverzeichnis müssen mit `../` ergänzt werden, damit sie auf das übergeordnete Verzeichnis zeigen.
-</p>
-<p>
-Da die Blogeinträge noch ein Unterverzeichnis tiefer liegen, müssen die Links dort `../../` enthalten, um auf das oberste Verzeichnis zu zeigen.
-</p>
-</div>
 
-
-#### 3. Container-div einfügen
+#### 4. Container-div einfügen
 
 Wenn Sie die Unterseiten im Browser öffnen, werden Sie merken, dass die Seitenränder noch nicht korrekt sind. Um das zu korrigieren, müssen wir den gesamten Inhalt (alles unterhalb der Navigation) mit einem `div` umgeben. Dieses `div` muss die Klasse `container` haben. Korrigieren Sie das in allen Unterseiten:
 
@@ -302,7 +324,7 @@ Wenn Sie die Unterseiten im Browser öffnen, werden Sie merken, dass die Seitenr
 </pre>
 
 
-#### 4. Testen
+#### 5. Testen
 
 Nun ist es wichtig, dass Sie alle Seiten aufrufen und die **Links sorgfältig testen**!
 

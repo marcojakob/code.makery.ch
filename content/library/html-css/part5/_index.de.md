@@ -9,6 +9,12 @@ aliases = [
   "/library/html-css/de/part5/"
 ]
 weight = 5
+
+[[sidebars]]
+header = "Downloads"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Portfolio Teil 5"
+link = "https://github.com/marcojakob/tutorial-html-css/releases/download/v2.0/portfolio-part5.zip"
 +++
 
 Unser Portfolio hat bis hierhin nur eine Startseite. Die meisten *Websites* (gemeint ist damit der ganze Webauftritt) haben natürlich mehr als nur eine Seite. In diesem Teil werden wir weitere Seiten erstellen.

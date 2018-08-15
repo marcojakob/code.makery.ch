@@ -9,6 +9,12 @@ aliases = [
   "/library/html-css/de/part4/"
 ]
 weight = 4
+
+[[sidebars]]
+header = "Downloads"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Portfolio Teil 4"
+link = "https://github.com/marcojakob/tutorial-html-css/releases/download/v2.0/portfolio-part4.zip"
 +++
 
 Im Chrome-Browser ist ein Tool versteckt, welches uns erlaubt, bei jeder Webseite hinter die Kulissen zu schauen. Dies ist extrem hilfreich, um entweder unsere eigene Webseite zu untersuchen oder um von anderen Webseiten etwas abzuschauen. Dieses Tool heisst **Chrome Developer Tools** (abgekürzt **DevTools**).

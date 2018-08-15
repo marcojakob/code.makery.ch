@@ -9,6 +9,12 @@ aliases = [
   "/library/html-css/de/part6/"
 ]
 weight = 6
+
+[[sidebars]]
+header = "Downloads"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Portfolio Teil 6"
+link = "https://github.com/marcojakob/tutorial-html-css/releases/download/v2.0/portfolio-part6.zip"
 +++
 
 In diesem Teil werden wir eine Navigation einfügen, damit die Besucher zwischen den verschiedenen Seiten wechseln können.

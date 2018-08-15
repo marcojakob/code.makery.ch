@@ -9,6 +9,12 @@ aliases = [
   "/library/html-css/de/part3/"
 ]
 weight = 3
+
+[[sidebars]]
+header = "Downloads"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Portfolio Teil 3"
+link = "https://github.com/marcojakob/tutorial-html-css/releases/download/v2.0/portfolio-part3.zip"
 +++
 
 Vorhin haben Sie eine erste Webseite erstellt und veröffentlicht. Zugegeben, die Webseite hat noch wenig Inhalt und sieht nicht besonders ansprechend aus. Das wollen wir jetzt ändern. In diesem Teil lernen Sie, wie Sie mit CSS die Seite gestalten können. In einem späteren Teil werden wir mit Hilfe vom Bootstrap Framework noch mehr Style in die Webseite bringen.

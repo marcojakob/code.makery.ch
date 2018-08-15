@@ -13,9 +13,8 @@ weight = 1
 [[sidebars]]
 header = "Downloads"
 [[sidebars.items]]
-text = "Portfolio Teil 1"
-link = "https://github.com/marcojakob/tutorial-html-css/releases/download/v1.0/portfolio-part1.zip"
-iconCss = "fa fa-fw fa-download"
+text = "<i class=\"fa fa-fw fa-download\"></i> Portfolio Teil 1"
+link = "https://github.com/marcojakob/tutorial-html-css/releases/download/v2.0/portfolio-part1.zip"
 +++
 
 Wir legen gleich los und erstellen unsere erste Webseite.

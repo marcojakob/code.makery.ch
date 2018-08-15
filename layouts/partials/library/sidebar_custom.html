@@ -7,7 +7,7 @@
   <div class="list-group">
     {{ range .items }}
       <a href="{{ .link }}" class="list-group-item">
-        {{ if .iconCss }}<i class="{{ .iconCss }}"></i>{{ end }} {{ .text }}
+        {{ .text | safeHTML }}
       </a>
     {{ end }}
   </div>
