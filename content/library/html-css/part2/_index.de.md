@@ -2,9 +2,10 @@
 title = "Teil 2: Webseite veröffentlichen"
 date = 2018-08-10
 description = "Lernen Sie, wie man eine Webseite live im Internet veröffentlicht."
-image = "portfolio-de.png"
+image = "portfolio.de.png"
 prettify =  true
 comments =  true
+commentsIdentifier = "/library/html-css/de/part2/"
 aliases = [
   "/library/html-css/de/part2/"
 ] 
@@ -22,7 +23,7 @@ Im ersten Teil haben wir unsere erste Webseite erstellt. Es wäre ja schade, wen
 
 Was braucht es eigentlich, damit unsere Webseite im Internet aufgerufen werden kann? Wir brauchen einen **Server**, wo unsere Webseite gespeichert ist und eine **Adresse**, genannt URL, damit unsere Seite auf dem Server gefunden werden kann.
 
-Es gibt zahlreiche Dienste, wo wir Speicherplatz auf einem Server mieten können. Solche Dienste nennt man [Hosting](http://de.wikipedia.org/wiki/Hosting). Wir schauen nun ein paar Möglichkeiten für ein (gratis) *Hosting* an. Falls dies Ihre erste Webseite ist, empfehle ich, dass Sie einmal mit **Netlify** beginnen.
+Es gibt zahlreiche Dienste, wo wir Speicherplatz auf einem Server mieten können. Solche Dienste nennt man [Hosting](http://de.wikipedia.org/wiki/Hosting). Wir schauen nun ein paar Möglichkeiten für ein (gratis) *Hosting* an. Mein aktueller Topfavorit ist **Netlify**.
 
 
 ### Hosting auf Netlify
@@ -39,16 +40,18 @@ Es gibt zahlreiche Dienste, wo wir Speicherplatz auf einem Server mieten können
 3. Kaum zu glauben, aber das war's schon. Sobald die Seite hochgeladen ist, wurde für Sie eine URL generiert, unter welcher Ihre Seite aufgerufen werden kann. Klicken Sie auf diese URL und überprüfen Sie, ob die Seite korrekt angezeigt wird.
 <p>![Netlify Generated Website](netlify-generated-website.png)</p>
 
-4. Um Ihre URL etwas zu verkürzen können Sie auf ***Site settings*** klicken und einen beliebigen Namen eingeben.
+4. Um Ihre URL etwas zu verkürzen gehen Sie zu **Site settings**, klicken auf **Change site name** und geben einen beliebigen Namen eingeben.
 <p>![Netlify Change Site Name](netlify-change-site-name.png)</p>
 
-5. Für Updates: Sobald Sie eine neue Version Ihrer Webseite veröffentlichen möchten, ziehen Sie den Ordner einfach erneut in das Feld mit dem Text ***Drag and drop your site folder here***.
+5. **Für Updates:** Sobald Sie eine neue Version Ihrer Webseite veröffentlichen möchten, öffnen Sie das Menu **Deploys** und ziehen Sie den Ordner einfach erneut in das Feld mit dem Text **Drag and drop your site folder here**.
 <p>![Netlify Change Site Name](netlify-update-site.png)</p>
 
 
 #### Eigene Domain
 
-Irgendwann kommt der Zeitpunkt, wo Sie einen ganz eigenen Domainnamen, wie zum Beispiel `http://www.mein-super-name.ch`, möchten. Das Hosting bei Netlify ist gratis. Das Einzige, was sie bezahlen müssen, ist die Reservation der Domain bei einem Registrar. Dies kostet ca. 10$ pro Jahr. Sobald Sie eine eigene Adresse reserviert haben, können Sie diese mit Netlify verknüpfen. Siehe dazu die Einstellungen unter **Domains**, **Add custom domain**. 
+Irgendwann kommt der Zeitpunkt, wo Sie einen ganz eigenen Domainnamen, wie zum Beispiel `http://www.mein-super-name.ch`, möchten. Das Einzige, was sie bezahlen müssen, ist die Reservation der Domain bei einem beliebigen Domain Registrar. Dies kostet ca. 10$ pro Jahr. Das Hosting bei Netlify ist gratis.
+
+Sobald Sie eine eigene Adresse reserviert haben, können Sie diese mit Netlify verknüpfen. Siehe dazu die Einstellungen unter **Domains**, **Add custom domain**. 
 
 
 ### Hosting auf GitHub

@@ -6,6 +6,12 @@ image = "portfolio.png"
 prettify = true
 comments = true
 weight = 1
+
+[[sidebars]]
+header = "Downloads"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Portfolio Part 1"
+link = "https://github.com/marcojakob/tutorial-html-css/releases/download/v2.0/portfolio-part1.zip"
 +++
 
 Let's dive right in and create our first web page.
@@ -13,48 +19,45 @@ Let's dive right in and create our first web page.
 
 ## Our Tools
 
-For web development, you need two programs: an <abbr data-toggle="tooltip" title="Normal text editor or a code editor">editor</abbr> to create the files for the website and a <abbr data-toggle="tooltip" title="For example, Internet Explorer, Firefox, Safari, or Chrome">browser</abbr> to view and test your website.
+For web development, you need two programs: an **editor** to create the files for the website and a **browser** (for example Edge, Firefox, Safari, or Chrome) to view and test your website.
 
 
 ### Editor
 
 For creating web pages, a normal text editor would be sufficient. But there are editors that greatly simplify your work as a programmer. Therefore, I recommend that you use a modern code editor.
 
-![Atom Editor](atom-editor-screenshot.png)
+![Visual Studio Code Editor](vs-code-editor.png)
 
-My current favorite among the many editors is [Atom](https://atom.io/) (free). You may use an editor of your choice but I will occasionally refer to some functions of Atom. Good alternatives to Atom are [Brackets](http://brackets.io) or the slightly older but very good [Notepad++](http://notepad-plus-plus.org/).
+My current favorite among the many editors is [Visual Studio Code](https://code.visualstudio.com/) (free). You may use an editor of your choice but I will occasionally refer to some functions of Visual Studio Code (VS Code). Good alternatives are [Atom](https://atom.io) or [Brackets](http://brackets.io).
 
-<a href="https://atom.io" target="_blank">![Atom Editor Logo](atom-editor-logo.jpg)
+<a href="https://code.visualstudio.com/" target="_blank">![VS Code Editor Logo](vs-code-logo.png)
 </a>
 
-Go ahead and install an editor. If you do not know which one, use [Atom](https://atom.io) for now.
+Go ahead and install an editor. If you do not know which one, use [Visual Studio Code](https://code.visualstudio.com/) for now.
 
 
-#### Atom Editor Packages
+#### Editor Extensions
 
-While we're at it we'll install two Atom packages that will give superpowers to our editor: [atom-live-server](https://atom.io/packages/atom-live-server) and [color-picker](https://atom.io/packages/color-picker).
+While we're at it we'll an extension to VS Code that will give superpowers to our editor: [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-1. Open Atom.
-2. Open the **File** menu and select **Settings**.
-<p>
-![Open Settings](open-settings.png)
-</p>
-3. Go to **Install**, enter *atom-live-server* in the search bar, hit enter and install the **atom-live-server** package.
-<p>
-![Install Live Server Package](install-live-server-package.png)
-</p>
-4. Now enter *color-picker* in the search bar and also install the **color-picker** package.
-<p>
-![Install Color Picker Package](install-color-picker-package.png)
-</p>
+1. Open Visual Studio Code.
+
+2. Open the menu "Extensions".
+<p>![Open Extensions](open-extensions.png)</p>
+
+3. Type "Live Server" into the search field and install the extension. 
+<p>![Install Live Server](install-live-server.png)</p>
+
+4. Reload Visual Studio Code to activate the extension.
+<p>![Install Live Server Reload](install-live-server-reload.png)</p>
 
 ### Browser
 
-Our website should, of course, run in all major browsers (Internet Explorer, Firefox, Chrome and Safari). However, for web development I recommend you use [Chrome](https://www.google.com/chrome/browser/). Chrome includes very useful tools for developers which you will use often.
+Our website should, of course, run in all major browsers (Edge, Firefox, Chrome and Safari). However, for web development I recommend you use [Chrome](https://www.google.com/chrome/). Chrome includes very useful tools for developers which you will use often.
 
-<a href="https://www.google.com/chrome/browser/" target="_blank">![Chrome Logo](chrome-logo.png)</a>
+<a href="https://www.google.com/chrome/" target="_blank">![Chrome Logo](chrome-logo.png)</a>
 
-If you do not have Chrome on your computer, you can [install it here](https://www.google.com/chrome/browser/).
+If you do not have Chrome on your computer, you can [install it here](https://www.google.com/chrome/).
 
 
 ## Creating an HTML Document
@@ -63,7 +66,7 @@ Equipped with editor and browser, let's create the first HTML document for our w
 
 1. Create a folder on your computer for your project. Name the folder *Portfolio* (or anything you want).
 
-2. Open Atom (or your code editor of choice).
+2. Open VS Code.
 
 3. Open the **File** menu and select **Open Folder ...**. Browse for the folder you created and open it.
 <p>
@@ -83,7 +86,7 @@ Equipped with editor and browser, let's create the first HTML document for our w
 
 ### Why index.html?
 
-You could probably assume, the name `index.html` does have special meaning. If a website address is called, for example `http://code.makery.ch`, the `index.html` file is automatically displayed first, which in this case is `http://code.makery.ch/index.html`. For us, our first `index.html` will become our home page.
+You could probably assume, the name `index.html` does have special meaning. If a website address is called, for example `https://code.makery.ch`, the `index.html` file is automatically displayed first, which in this case is `https://code.makery.ch/index.html`. For us, our first `index.html` will become our home page.
 
 
 ### Viewing and Refreshing
@@ -92,13 +95,16 @@ Now you can fill the document with content. Type the following lines in your HTM
 
 ![HTML Structure](first-website.png)
 
-To view the page, we'll use the **live-server** package that we installed above. Open the **Packages** menu, choose **Live Server** and click on one of the ports. A browser window should open up and show your first website. Now, whenever you save any changes they are automatically updated by the live server.
+To view the page, we'll use the **Live Server** extension that we installed above. Right-click on your `index.html` (the file below the Portfolio folder and not the one above under "Open Editors"). Then click **Open with Live Server**. A browser window should open up and show your first website. Now, whenever you save any changes they are automatically updated by the live server.
 
 ![Start Live Server](start-live-server.png)
 
 <div class="alert alert-info">
 <p>
-If the page is **not updated automatically**: Save all files and click `F5` or `cmd+R` in the browser.
+If the page does <strong>not open in your preferred browser</strong>: Change the settings on your computer to make another browser your standard browser. Alternatively you can copy the address (for example <code>http://127.0.0.1:5500/index.html</code>) from one browser and insert it into another.
+</p>
+<p>
+If the the page <strong>is not updated</strong> after changes: Save all your files in the editor and then - inside the browser - refresh with <code>F5</code> or <code>cmd+r</code>.
 </p>
 </div>
 
@@ -107,11 +113,18 @@ If the page is **not updated automatically**: Save all files and click `F5` or `
 
 ### Indentation
 
-In order to keep your code clean, it is important that you correctly indent the lines with the **tab key**. Pay close attention to the example code and indent accordingly. It is important that you develop clean programming habits from the very beginning!
+In order to keep your code clean, it is important that you correctly indent the lines with the **tab key**. Pay close attention to the example code and indent accordingly. The browser does not care but it is important for us as programmers to be able to have a clear view.
 
 <div class="alert alert-info">
-  <p>**Tip 1:** Use `Shift+Tab` keys to move indentation to the left.</p>
-  <p>**Tip 2:** You can indent multiple lines at once if you select them and click `Tab` or `Shift+Tab`.</p>
+  <p>
+  <strong>Tip 1:</strong> Use <code>Shift+Tab</code> keys to move indentation to the left.
+  </p>
+  <p>
+  <strong>Tip 2:</strong> You can indent multiple lines at once if you select them and click <code>Tab</code> or <code>Shift+Tab</code>.
+  </p>
+  <p>
+  <strong>Tip 3 (automatically):</strong> Right-click somewhere in your program code and choose <code>Format Document</code>.
+  </p>
 </div>
 
 
@@ -136,7 +149,7 @@ As an example, let's look at the HTML element for a link. It is probably one of 
 
 ![HTML Element](html-element-attribute.png)
 
-The `<a>` element above includes an `href` attribute (short for "hypertext reference") with the value `http://code.makery.ch`. The browser knows that it must show the link as [My Website](http://code.makery.ch).
+The `<a>` element above includes an `href` attribute (short for "hypertext reference") with the value `https://code.makery.ch`. The browser knows that it must show the link as [My Website](https://code.makery.ch).
 
 
 ## Basic Structure of an HTML Page
@@ -166,7 +179,7 @@ We have already seen the two elements `<html>` and `<body>`. But the basic struc
 * Always put `<!DOCTYPE html>` on the first line. It tells the browser about the type of the document.
 * The `<html>` tag indicates the start and `</html>` the end of the document.
 * The `<head>` element contains additional information about the page. In contrast to the `<body>` element, this information does not appear in the main area of the browser.
-  * Within the `<head>`, there should be an indication about the character set: `<meta charset="utf-8">`. If you do not specify the character set some special characters may not get displayed correctly. You might have noticed that the `<meta>` element has no closing tag. There are a few <abbr data-toggle="tooltip" title="Important elements without closing tags: <br>, <img>, <meta>, <hr>, <link>, <input>">elements without closing tags</abbr>, but they are the exception.
+  * Within the `<head>`, there should be an indication about the character set: `<meta charset="utf-8">`. If you do not specify the character set some special characters may not get displayed correctly. You might have noticed that the `<meta>` element has no closing tag. There are a few elements without closing tags (`<br>`, `<img>`, etc.), but they are the exception.
   * Next you'll see the `<title>` element. The title is displayed in the title bar at the top of your browser window.
 * Everything inside the `<body>` element is displayed in the main area of the browser.
   * A `<h1>` defines the main heading. Sub headings can be created with `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>`.
@@ -174,9 +187,9 @@ We have already seen the two elements `<html>` and `<body>`. But the basic struc
 * After each opening tag, the next element should be indented (with a tab or two spaces) for better overview. Make sure you follow this habit.
 
 <div class="alert alert-info">
-  <p>**Tip 1:** Keep this basic HTML structure handy. You can use it for any new HTML page! </p>
-  <p>**Tip 2:** Use the keyboard shortcut `Ctrl+S` to save the current file.</p>
-  <p>**Tip 3:** Use the keyboard shortcut `Ctrl+Z` for undo.</p>
+  <p><strong>Tip 1:</strong> Keep this basic HTML structure handy. You can use it for any new HTML page! </p>
+  <p><strong>Tip 2:</strong> Use the keyboard shortcut <code>Ctrl+S</code> to save the current file.</p>
+  <p><strong>Tip 3:</strong> Use the keyboard shortcut <code>Ctrl+Z</code> for undo.</p>
 </div>
 
 With these basic HTML elements we are well prepared to bring our website to a new level. First, let's add an image so that the home page of our portfolio looks a bit more interesting.
@@ -190,27 +203,28 @@ To insert an image we use the `<img>` element. The following example will insert
 &lt;img src="marco.jpg" alt="Picture of me">
 </pre>
 
-The `<img>` element only has one opening but no closing tag. It contains a `src` and an `alt` attribute. The `src` attribute specifies the <abbr data-toggle="tooltip" title="Uniform Resource Locator">URL</abbr>, that is the location and file name of the image. The `alt` attribute is an "alternative text", which describes the content of the image. This text is used by search engines and if for some reason the image can not be displayed, for example on a screen reader for the blind.
+The `<img>` element only has one opening but no closing tag. It contains a `src` and an `alt` attribute. The `src` attribute specifies the URL, that is the location and file name of the image. The `alt` attribute is an "alternative text", which describes the content of the image. This text is used by search engines and if for some reason the image can not be displayed, for example on a screen reader for the blind.
 
 
 ### Relative and Absolute URLs
 
 URLs are used for the `src` attribute of images and also for the` href` attribute of links. The URL specifies the "address" of a file (for example another web page or an image). Depending on the location of the file, either a *relative* or *absolute* URL must be used.
 
-If a file **is part of the same web site**, then a ***relative URL*** can be used. As we have seen in the example above, this is only the name of the file.
+If a file **is part of the same web site**, then a **relative URL** can be used. As we have seen in the example above, this is only the name of the file.
 
-A *relative URL* is always *relative* to the current HTML page. If the target file is located in another folder, this must be taken into account. If the image from the example above were in a subfolder called `images`, the *relative URL* would be `images/marco.jpg`. If the file is in a parent folder you can reach it with `../`. The URL for the image in this case would be `../marco.jpg`.
+A **relative URL** is either *relative* to the current HTML page or *relative* to the root of our website. To reference a file in the same folder, we can just use the filename like `marco.jpg`. If the target file is located in another folder, this must be taken into account. If the image from the example above were in a subfolder called `images`, the *relative URL* would be `images/marco.jpg`. If the file is in a parent folder you can reach it with `../`. The URL for the image in this case would be `../marco.jpg`.
 
-If the file is located **on another website**, an ***absolut URL*** must be used. Absolute URLs contain the entire domain name and path. An example would be `http://code.makery.ch/images/marco.jpg`.
+Instead of navigating from the current file we can also start from the root of our website by adding a leading slash `/marco.jpg`. We can use this from any file in your website and in any subfolder and it will always start at the root. This is helpful for navigation links as we will see in a following part of the tutorial.
+
+If the file is located **on another website**, an **absolut URL** must be used. Absolute URLs contain the entire domain name and path. An example would be `https://code.makery.ch/images/marco.jpg`.
 
 
 <div class="alert alert-info">
-  **Remember the following about URLs:**
+  <strong>Remember the following about URLs:</strong>
   <ul>
-    <li>An URL that starts with `http://` is an absolute URL.</li>
-    <li>An URL without `http://` is an URL relative to the current web page.</li>
-    <li>A dot (`.`) refers to the current directory.</li>
+    <li>Inside the same folder we just use the filename, for example <code>marco.jpg</code></li>
     <li>Two dots (`..`) refer to the parent directory.</li>
+    <li>If we want to start in the root directory we add an `/` before the path of the file, for example <code>/marco.jpg</code>.</li>
   </ul>
 </div>
 

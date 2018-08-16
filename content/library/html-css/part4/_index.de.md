@@ -5,6 +5,7 @@ description = "Lernen Sie die Entwicklertools im Browser kennen (Chrome Develope
 image = "portfolio.de.png"
 prettify = true
 comments = true
+commentsIdentifier = "/library/html-css/de/part4/"
 aliases = [
   "/library/html-css/de/part4/"
 ]
@@ -31,10 +32,6 @@ Im Chrome-Browser ist ein Tool versteckt, welches uns erlaubt, bei jeder Webseit
 Versuchen Sie das gleich mal auf Ihrer Portfolio-Webseite. Es sollte sich nun folgendes Fenster öffnen:
 
 ![DevTools öffnen](open-devtools.de.png)
-
-<div class="alert alert-info">
-<strong>Hinweis:</strong> Wenn Sie den Brackets-Editor verwenden, deaktivieren Sie die Live-Vorschau und laden Sie die Seite neu. Ansonsten werden noch zusätzliche "ids" von Brackets angezeigt.
-</div>
 
 
 ## Ein Element untersuchen
@@ -70,9 +67,7 @@ Bei grösseren Webseiten können die *Styles* recht lang werden. Dort kommt es d
 
 ## Weitere Möglichkeiten von DevTools
 
-Es gibt noch viele weiter Möglichkeiten, um mit *DevTools* zu arbeiten. Wenn Sie mehr darüber wissen möchten, lesen Sie die [DevTools Dokumentation](https://developer.chrome.com/devtools/index).
-
-Ausserdem gibt es einen sehr guten [DevTools Online-Kurs](http://discover-devtools.codeschool.com/), welcher gratis zur Verfügung steht.
+Es gibt noch viele weiter Möglichkeiten, um mit *DevTools* zu arbeiten. Wenn Sie mehr darüber wissen möchten, lesen Sie die [DevTools Dokumentation](https://developers.google.com/web/tools/chrome-devtools/).
 
 
 ***

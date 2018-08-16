@@ -5,6 +5,7 @@ description = "Mit dieser Anleitung lernen Sie die Grundlagen von HTML & CSS, da
 image = "portfolio.de.png"
 prettify = true
 comments = true
+commentsIdentifier = "/library/html-css/de/"
 aliases = [ 
   "/library/html-css/de/" 
 ]

@@ -5,6 +5,7 @@ description = "Lernen Sie das Bootstrap-Framework für Ihre Webseite einzusetzen
 image = "portfolio.de.png"
 prettify = true
 comments = true
+commentsIdentifier = "/library/html-css/de/part7/"
 aliases = [
   "/library/html-css/de/part7/"
 ]
@@ -32,7 +33,7 @@ Zum Glück sind wir nicht alleine mit diesen Aufgaben - dies betrifft mehr oder 
 
 ![Bootstrap Logo](bootstrap-logo.png)
 
-Das bekannteste dieser *Frameworks* heisst ***Bootstrap*** und wurde von Twitter entwickelt. Das *Bootstrap-Framework* ist eine enorme erleichtert für uns als Webentwickler. Wir werden Schritt-für-Schritt entdecken, was wir mit *Bootstrap* tun können. Hier aber schon mal eine Kostprobe, welche Auswirkungen *Bootstrap* auf unser Projekt haben kann:
+Das bekannteste dieser *Frameworks* heisst **Bootstrap** und wurde von Twitter entwickelt. Das *Bootstrap-Framework* ist eine enorme erleichtert für uns als Webentwickler. Wir werden Schritt-für-Schritt entdecken, was wir mit *Bootstrap* tun können. Hier aber schon mal eine Kostprobe, welche Auswirkungen *Bootstrap* auf unser Projekt haben kann:
 
 ![Bootstrap Effekt](bootstrap-effect.de.png)
 
@@ -188,8 +189,8 @@ Kopieren Sie den folgenden Code für die Navigation:
       &lt;ul class="navbar-nav">
         &lt;li>&lt;a class="nav-link active" href="/">Home&lt;/a>&lt;/li>
         &lt;li>&lt;a class="nav-link" href="/blog/">Blog&lt;/a>&lt;/li>
-        &lt;li>&lt;a class="nav-link" href="/projects/">Projects&lt;/a>&lt;/li>
-        &lt;li>&lt;a class="nav-link" href="/contact/">Contact&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link" href="/projects/">Projekte&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link" href="/contact/">Kontakt&lt;/a>&lt;/li>
       &lt;/ul>
     &lt;/div>
   &lt;/div>
@@ -199,13 +200,13 @@ Kopieren Sie den folgenden Code für die Navigation:
 
 #### Erklärung
 
-1. Das äusserste `nav`-Element mit `navbar` als Klasse bewirkt, dass ein Balkoen oben am Rand dargestellt wird. Ein `nav` is eigentlich das genau Gleiche wie ein `div`, ausser dass man an Suchmaschinen einen kleinen Hinweis gibt, dass da eine Navigation kommt.
+1. Das äusserste `nav`-Element mit `navbar` als Klasse bewirkt, dass ein Balken oben am Rand dargestellt wird. Ein `nav` is eigentlich das genau Gleiche wie ein `div`, ausser dass man an Suchmaschinen einen kleinen Hinweis gibt, dass da eine Navigation kommt.
 
 2. Das nächste `div` mit der Klasse `container` bewirkt, dass die Abstände vom Rand gleich sind wie bei unserem Hauptinhalt. Beachten Sie jeweils das schliessende Tag `</div>`, welches dazugehört.
 
 3. Das `button`-Element mit Klasse `navbar-toggler` ist der Knopf in der mobilen Ansicht, um das Menu auszuklappen. Verkleinern Sie mal das Browser-Fenster in der Breite. Dann sollte der Knopf erscheinen.
 
-4. Im gegensatz zur vorherigen Variante, haben wir bei jedem Link eine Klasse `nav-link` hinzugefügt. Diese bewirkt, dass der Link in der Navigation den entsprechenden Stil erhält.
+4. Im Gegensatz zur vorherigen Variante, haben wir bei jedem Link eine Klasse `nav-link` hinzugefügt. Diese bewirkt, dass der Link in der Navigation den entsprechenden Stil erhält.
 
 5. Beachte: Das **aktive** Navigationselement ist jeweils mit der zusätzlichen Klasse `active` markiert. Dieses erscheint dann hervorgehoben.
 
@@ -302,8 +303,8 @@ Kopieren Sie den gesamten Navigationsbereich aus der Startseite und fügen Sie d
       &lt;ul class="navbar-nav">
         &lt;li>&lt;a class="nav-link" href="/">Home&lt;/a>&lt;/li>
         &lt;li>&lt;a class="nav-link active" href="/blog/">Blog&lt;/a>&lt;/li>
-        &lt;li>&lt;a class="nav-link" href="/projects/">Projects&lt;/a>&lt;/li>
-        &lt;li>&lt;a class="nav-link" href="/contact/">Contact&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link" href="/projects/">Projekte&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link" href="/contact/">Kontakt&lt;/a>&lt;/li>
       &lt;/ul>
     &lt;/div>
   &lt;/div>

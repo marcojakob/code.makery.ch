@@ -5,6 +5,7 @@ description = "Lernen Sie, wie man eine Navigation für die Website erstellt."
 image = "portfolio.de.png"
 prettify = true
 comments = true
+commentsIdentifier = "/library/html-css/de/part6/"
 aliases = [
   "/library/html-css/de/part6/"
 ]
@@ -156,7 +157,8 @@ Auf unserer Blog-Seite hatten wir noch etwas Platz gelassen, wo wir unserer Blog
 &lt;!-- Hier kommt eine Liste mit allen Blogeinträgen. -->
 &lt;ul>
   &lt;li>Weitere Einträge folgen...&lt;/li>
-  &lt;li>&lt;a href="/blog/erster-eintrag/">Erster Eintrag&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="zweiter-eintrag/">Zweiter Eintrag&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="erster-eintrag/">Erster Eintrag&lt;/a>&lt;/li>
 &lt;/ul>
 </pre>
 

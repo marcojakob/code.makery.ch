@@ -5,6 +5,7 @@ description = "Erstellen Sie Ihre erste Webseite. Hier lernen Sie die Tools und 
 image = "portfolio.de.png"
 prettify = true
 comments = true
+commentsIdentifier = "/library/html-css/de/part1/"
 aliases = [ 
   "/library/html-css/de/part1/" 
 ]
@@ -22,7 +23,7 @@ Wir legen gleich los und erstellen unsere erste Webseite.
 
 ## Unsere Tools
 
-Für die Webentwicklung brauchen wir zwei Programme: einen Editor, um die Dateien für die Webseite zu erstellen und einen Browser (z.B. Internet Explorer, Edge, Firefox, Safari oder Chrome), um unsere Webseite anzuzeigen und zu testen.
+Für die Webentwicklung brauchen wir zwei Programme: einen **Editor**, um die Dateien für die Webseite zu erstellen und einen **Browser** (z.B. Edge, Firefox, Safari oder Chrome), um unsere Webseite anzuzeigen und zu testen.
 
 
 ### Editor
@@ -58,11 +59,11 @@ Weil wir grad am Installieren sind, fügen wir gleich noch eine Erweiterungen zu
 
 ### Browser
 
-Unsere Webseite sollte natürlich in allen gängigen Browsern (Edge, Firefox, Chrome und Safari) laufen. Für die Webentwicklung ist jedoch [Chrome](https://www.google.com/chrome/browser/) zu empfehlen. Chrome beinhaltet sehr nützliche Tools für Entwickler, die wir oft nutzen werden.
+Unsere Webseite sollte natürlich in allen gängigen Browsern (Edge, Firefox, Chrome und Safari) laufen. Für die Webentwicklung ist jedoch [Chrome](https://www.google.com/chrome/) zu empfehlen. Chrome beinhaltet sehr nützliche Tools für Entwickler, die wir oft nutzen werden.
 
-<a href="https://www.google.com/chrome/browser/" target="_blank">![Chrome Logo](chrome-logo.png)</a>
+<a href="https://www.google.com/chrome/" target="_blank">![Chrome Logo](chrome-logo.png)</a>
 
-Falls Sie Chrome noch nicht haben, können Sie ihn [hier installieren](https://www.google.com/chrome/browser/).
+Falls Sie Chrome noch nicht haben, können Sie ihn [hier installieren](https://www.google.com/chrome/).
 
 
 ## Ein HTML Dokument erstellen
@@ -71,7 +72,7 @@ Ausgerüstet mit Editor und Browser erstellen wir das erste HTML Dokument für u
 
 1. Erstellen Sie zuerst einen Ordner auf ihrem Computer für unser erstes Projekt. Nennen Sie den Ordner zum Beispiel `Portfolio`.
 
-2. Öffnen Sie VS Code (oder Ihren Code-Editor).
+2. Öffnen Sie VS Code.
 
 3. Öffnen Sie das Menu *File* und wählen Sie ***Open Folder...***. Suchen Sie dort den vorhin erstellten `Portfolio` Ordner und öffnen Sie diesen.
 <p>![Ordner öffnen](open-folder.png)</p>
@@ -94,7 +95,9 @@ Nun wollen wir das Dokument mit Inhalt füllen. Tippen Sie die folgenden Zeilen 
 
 ![HTML Struktur](first-website.png)
 
-Zum Anzeigen der Seite verwenden wir den oben installierten **Live Server**. Klicken Sie dazu mit der *rechten Maustaste* auf die Datei `index.html` (unterhalb des Portfolio-Ordners, nicht oben wo die offenen Dateien angezeigt werden). Wählen Sie ***Open with Live Server***. Nun sollte sich ein Browser-Fenster öffnen mit Ihrer ersten Website. Wann immer Sie Änderungen speichern, sollte die Website automatisch aktualisiert werden.
+Zum Anzeigen der Seite verwenden wir den oben installierten **Live Server**. Klicken Sie dazu mit der *rechten Maustaste* auf die Datei `index.html` (unterhalb des Portfolio-Ordners, nicht oben wo die offenen Dateien angezeigt werden). Wählen Sie **Open with Live Server**. Nun sollte sich ein Browser-Fenster öffnen mit Ihrer ersten Website. Wann immer Sie Änderungen speichern, sollte die Website automatisch aktualisiert werden.
+
+![Start Live Server](start-live-server.png)
 
 <div class="alert alert-info">
 <p>
@@ -146,7 +149,7 @@ Als Beispiel schauen wir uns das HTML-Element für einen Link an. Es ist wahrsch
 
 ![HTML Element](html-element-attribute.de.png)
 
-Das abgebildete `a`-Element enthält ein `href`-Attribut (kurz für "Hypertext Reference") mit dem Wert `http://code.makery.ch`. Der Browser weiss damit, dass er den folgenden Link anzeigen muss: [Meine Webseite](http://code.makery.ch)
+Das abgebildete `a`-Element enthält ein `href`-Attribut (kurz für "Hypertext Reference") mit dem Wert `https://code.makery.ch`. Der Browser weiss damit, dass er den folgenden Link anzeigen muss: [Meine Webseite](https://code.makery.ch)
 
 
 ## Grundgerüst einer HTML-Seite
@@ -213,11 +216,13 @@ Das `<img>`-Element hat nur ein öffnendes aber kein schliessendes Tag. Es enth�
 
 Für das `src`-Attribut von Bildern, aber auch für das `href`-Attribut von Links, werden URLs verwendet. Mit der URL wird also die "Adresse" einer anderen Datei (z.B. eine andere Webseite oder ein Bild) angegeben. Je nach dem, wo diese Datei liegt, muss entweder eine *relative* oder eine *absolute* URL verwendet werden.
 
-Wenn eine Datei **auf der gleichen Internetseite** liegt, dann wird eine ***relative URL*** verwendet. Diese besteht, wie wir es oben im Beispiel gesehen haben, nur aus dem Namen der Datei.
+Wenn eine Datei **auf der gleichen Internetseite** liegt, dann wird eine **relative URL** verwendet. Diese besteht, wie wir es oben im Beispiel gesehen haben, nur aus dem Namen der Datei.
 
-Eine *relative URL* ist immer *relativ* zur aktuellen HTML-Seite. Wenn die Zieldatei in einem anderen Ordner liegt, muss dies berücksichtigt werden. Wenn das Bild aus dem Beispiel oben in einem Unterordner namens `bilder` liegt, dann würde die *relative URL* `bilder/marco.jpg` lauten. Falls die Datei in einem übergeordneten Ordner liegt, dann können wir mit `../` in diesen Ordner gelangen. Die URL wäre in diesem Fall `../marco.jpg`.
+Eine *relative URL* ist entweder *relativ* zur aktuellen HTML-Seite oder *relativ* zum Hauptordner unserer Website. Wenn die Zieldatei in einem anderen Ordner liegt, muss dies berücksichtigt werden. Wenn das Bild aus dem Beispiel oben in einem Unterordner namens `bilder` liegt, dann würde die *relative URL* `bilder/marco.jpg` lauten. Falls die Datei in einem übergeordneten Ordner liegt, dann können wir mit `../` in diesen Ordner gelangen. Die URL wäre in diesem Fall `../marco.jpg`.
 
-Wenn die Datei **auf einer anderen Internetseite** liegt, dann wird eine ***absolute URL*** verwendet. Dabei wird der ganze Domainname angegeben. Ein Beispiel wäre `http://code.makery.ch/bilder/marco.jpg`.
+Anstatt von der aktuellen Datei auszugehen, können wir auch im Hauptordner unserer Website starten indem wir mit einem Slash beginnen wie `/marco.jpg`. Wir können diese URL auf irgendeiner Unterseite oder in einem Unterordner verwenden und es wird immer im Hauptordner nach dieser Datei suchen. Dies ist hilfreich zum Beispiel für Navigationslinks, wie wir in einem späteren Teil sehen werden.
+
+Wenn die Datei **auf einer anderen Internetseite** liegt, dann wird eine **absolute URL** verwendet. Dabei wird der ganze Domainname angegeben. Ein Beispiel wäre `https://code.makery.ch/bilder/marco.jpg`.
 
 <div class="alert alert-info">
   <strong>Merken Sie sich zu URLs:</strong>

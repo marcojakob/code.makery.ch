@@ -6,6 +6,12 @@ image = "portfolio.png"
 prettify = true
 comments = true
 weight = 6
+
+[[sidebars]]
+header = "Downloads"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Portfolio Part 6"
+link = "https://github.com/marcojakob/tutorial-html-css/releases/download/v2.0/portfolio-part6.zip"
 +++
 
 In this part we will create a navigation so that visitors can switch between the pages.
@@ -35,7 +41,7 @@ With simple links we can jump from our home page to other pages. The navigation 
 </pre>
 
 <div class="alert alert-info">
-  **Note:** The link to `./` refers to the current directory. More info about this can be found in the section <a class="alert-link" href="/library/html-css/part1#relative-and-absolute-urls">relative and absolute URLs</a>.
+  <strong>Note:</strong> The link to <code>/</code> refers to the root directory. More info about this can be found in the section <a class="alert-link" href="/library/html-css/part1/#relative-and-absolute-urls">relative and absolute URLs</a>.
 </div>
 
 Our navigation should now look as follows:
@@ -45,7 +51,8 @@ Our navigation should now look as follows:
 Verify that the links actually work and that they lead you to the desired page.
 
 <div class="alert alert-info">
-  <p>**Note:** If you open the page as a file directly in the browser (without the *Live Server*) the links might not work quite right. The reason is that the file system simply displays the folder contents and not automatically opens `index.html`. You will have to manually click on `index.html`.</p>
+  <p>
+  <strong>Note:</strong> If you open the page as a file directly in the browser (without the <em>Live Server</em>) the links might not work quite right. The reason is that the file system simply displays the folder contents and not automatically opens <code>index.html</code>. You will have to manually click on <code>index.html</code>.</p>
   <p>As soon as you publish the site on a server, the links should work as normal.</p>
 </div>
 
@@ -154,7 +161,7 @@ Open the blog page `blog/index.html`. Below the "Blog Entries" heading insert th
 </pre>
 
 <div class="alert alert-info">
-  **Note:** Blog entries are often listed in reverse chronological order so that the last entry appears at the top of the list.
+  <strong>Note:</strong> Blog entries are often listed in reverse chronological order so that the last entry appears at the top of the list.
 </div>
 
 

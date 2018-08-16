@@ -6,6 +6,12 @@ image = "portfolio.png"
 prettify = true
 comments = true
 weight = 5
+
+[[sidebars]]
+header = "Downloads"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Portfolio Part 5"
+link = "https://github.com/marcojakob/tutorial-html-css/releases/download/v2.0/portfolio-part5.zip"
 +++
 
 Our portfolio thus far only has a home page. Most websites have more than one page, of course. In this part we will add additional pages.
@@ -23,7 +29,7 @@ To create a new page is easy. It is best to copy the previous `index.html` so yo
 
 
 <div class="alert alert-info">
-  **Important:** Make sure that you don't use any special characters or spaces when naming sub-folders and files. As a best practice you should only use standard, lowercase letters. You may separate multiple words with a dash (`-`).
+  <strong>Important:</strong> Make sure that you don't use any special characters or spaces when naming sub-folders and files. As a best practice you should only use standard, lowercase letters. You may separate multiple words with a dash (`-`).
 </div>
 
 
@@ -38,15 +44,15 @@ Open the copied file `blog/index.html` in your browser. You will notice that two
 1. The image is not displayed.
 2. The colors defined in the CSS are not applied.
 
-Since we are in a subfolder, the path to the files are not correct. For the image to appear we would need to use `../marco.jpg` instead of `marco.jpg` in the `src` attribute. But probably you will not want the same image on the blog page. So you can remove the entire `img` element.
+Since we are in a subfolder, the path to the files are not correct. For the image to appear we would need to use `../marco.jpg` or `/marco.jpg` instead of `marco.jpg` in the `src` attribute. But probably you will not want the same image on the blog page. So you can remove the entire `img` element.
 
-In **CSS** it is common to define CSS rules **for the entire project**. Thus it is important that we reference the same CSS file in the blog page. We achieve this by changing the URL from `main.css` to `../main.css`. The following shows the entire `link` element:
+In **CSS** it is common to define CSS rules **for the entire project**. Thus it is important that we reference the same CSS file in the blog page. We achieve this by changing the URL from `main.css` to `/main.css`. The leading `/` searches for the file in the root folder. The following shows the entire `link` element:
 
 
 ##### blog/index.html
 
 <pre class="prettyprint lang-html">
-&lt;link rel="stylesheet" href="../main.css">
+&lt;link rel="stylesheet" href="/main.css">
 </pre>
 
 This change should cause the styling from our CSS to also be applied to the blog page.
@@ -62,7 +68,7 @@ Next we change the title and content.
 &lt;html>
   &lt;head>
     &lt;meta charset="utf-8">
-    &lt;link rel="stylesheet" href="../main.css">
+    &lt;link rel="stylesheet" href="/main.css">
     &lt;title>Blog - Web Portfolio of Marco&lt;/title>
   &lt;/head>
   &lt;body>
@@ -97,7 +103,7 @@ Open the blog entry and change the content as follows:
 &lt;html>
   &lt;head>
     &lt;meta charset="utf-8">
-    &lt;link rel="stylesheet" href="../../main.css">
+    &lt;link rel="stylesheet" href="/main.css">
     &lt;title>First Entry - Web Portfolio of Marco&lt;/title>
   &lt;/head>
   &lt;body>
@@ -120,8 +126,8 @@ Here I've included a new HTML element (`hr`). You will easily find out what it d
 I recommend that you immediately start to write your own blog entries. You could write a short entry every time you learned something new about programming. For inspiration I list a few things that you could write about:
 
 * What did I learn today?
-   * Insert screenshots
-   * Links to helpful websites
+  * Insert screenshots
+  * Links to helpful websites
 * What are the problems I have encountered?
 * How did I solve these problems?
 * What should I work on the next time?
@@ -140,7 +146,7 @@ With such blog entries you will advance much faster in mastering programming. Th
 #### Second Blog Entry
 
 <div class="alert alert-info">
-  **Hint:** Create a subfolder for each blog post (with an `index.html` page). This will give you a nice order where you can put pictures and other files for blog entries into separate subfolders.
+  <strong>Hint:</strong> Create a subfolder for each blog post (with an <code>index.html</code> page). This will give you a nice order where you can put pictures and other files for blog entries into separate subfolders.
 </div>
 
 ![Blog Entry 2](blog-entry-subfolder2.png)
@@ -161,7 +167,7 @@ Proceed as we did for the blog page above and create a subfolder `projects` with
 &lt;html>
   &lt;head>
     &lt;meta charset="utf-8">
-    &lt;link rel="stylesheet" href="../main.css">
+    &lt;link rel="stylesheet" href="/main.css">
     &lt;title>Projects - Web Portfolio of Marco&lt;/title>
   &lt;/head>
   &lt;body>
@@ -179,7 +185,7 @@ Proceed as we did for the blog page above and create a subfolder `projects` with
 The last of our main pages is a contact page. Create a subfolder `contact` with a file` index.html`.
 
 <div class="alert alert-danger">
-  **Important:** Carefully consider what information you want to make public! For example, **do not publish your primary email address**, because you might receive some spam messages.
+  <strong>Important:</strong> Carefully consider what information you want to make public! For example, <strong>do not publish your primary email address</strong>, because you might receive some spam messages.
 </div>
 
 
@@ -191,7 +197,7 @@ The last of our main pages is a contact page. Create a subfolder `contact` with 
 &lt;html>
   &lt;head>
     &lt;meta charset="utf-8">
-    &lt;link rel="stylesheet" href="../main.css">
+    &lt;link rel="stylesheet" href="/main.css">
     &lt;title>Contact - Web Portfolio of Marco&lt;/title>
   &lt;/head>
   &lt;body>

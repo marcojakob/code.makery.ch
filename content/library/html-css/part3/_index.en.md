@@ -6,6 +6,12 @@ image = "portfolio.png"
 prettify = true
 comments = true
 weight = 3
+
+[[sidebars]]
+header = "Downloads"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Portfolio Part 3"
+link = "https://github.com/marcojakob/tutorial-html-css/releases/download/v2.0/portfolio-part3.zip"
 +++
 
 In the previous part we have created and published our first website. I admit, the website has very little content and doesn't yet look particularly appealing. We want to change this now. In this part you will learn how you can use CSS to style the page. In a later part we will add more style to our website with the help of a framework called Bootstrap.
@@ -13,7 +19,7 @@ In the previous part we have created and published our first website. I admit, t
 
 ## Structure and Style
 
-Just as a reminder: <abbr data-toggle="tooltip" title="Hypertext Markup Language">HTML</abbr> describes the structure of a web page while <abbr data-toggle="tooltip" title="Cascading Style Sheet">CSS</abbr> defines the visual appearance.
+Just as a reminder: **HTML** describes the structure of a web page while **CSS** defines the visual appearance.
 
 Separating structure and style has many advantages, as we shall see. It is not mandatory, but usually it is better to also write HTML and CSS in separate files.
 
@@ -24,7 +30,7 @@ A CSS file is an ordinary text file with the extension `.css`. We will link to t
 
 Create a **New File** in your *Portfolio* folder. Name the new file `main.css`.
 
-![New CSS File](part3/new-css-file.png)
+![Neue CSS-Datei](new-css-file.png)
 
 Now open your `index.html` and add a `<link>` element inside the `<head>` element. With the `<link>` element, we tell the HTML page to load the CSS file:
 
@@ -62,7 +68,7 @@ Insert this element in your `<head>` block. Now your code should look like the f
 </pre>
 
 <div class="alert alert-info">
-  <strong>Important:</strong> In order for the CSS to be found, the `href` attribute must contain the correct file path. This also means that if the file were in a subfolder, the subfolder would also need to be specified. For example, we would have to write `href="subfolder/main.css"`. Learn more about this in part 1 under <a class="alert-link" href="/library/html-css/part1#relative-and-absolute-urls">relative and absolute URL's</a>.
+  <strong>Important:</strong> In order for the CSS to be found, the <code>href</code> attribute must contain the correct file path. We only have one <code>main.css</code> and it is in our root folder. With the leading <code>/</code> we can get to the root folder from anywhere, even if our HTML file is in a subfolder. Our CSS file can thus always be loaded with <code>href="/main.css"</code>. Learn more about this in part 1 under <a class="alert-link" href="/library/html-css/part1/#relative-and-absolute-urls">relative and absolute URL's</a>.
 </div>
 
 
@@ -84,7 +90,7 @@ h2 {
 
 The result should look like this:
 
-![Changed Color](part3/changed-color.png)
+![Changed Color](changed-color.png)
 
 
 ## Color Codes
@@ -103,13 +109,9 @@ In the *Hex* notation, the first two characters represent the red channel, the m
 
 Expressing colors with hexadecimal values is very popular because with it you can represent a huge amout of color combinations (over 16.7 million). However, it is somewhat difficult to work with them. In most cases, you will need a color picker.
 
-If you are using the [Atom](https://atom.io/) editor and have the [color-picker](https://atom.io/packages/color-picker) package installed, you can open a color picker right in your CSS file: Right-click on the color code and select **Color Picker**.
+If you are using [Visual Studio Code](https://code.visualstudio.com/) as editor you can open a color picker right in your CSS file: Hover over the color code and you should see a color picker appear.
 
-![Open Color Picker](part3/color-picker-open.png)
-
-This immediately displays a color picker where you can easily choose a color. You can even switch between the various notations with the buttons at the bottom.
-
-![Color Picker](part3/color-picker-select.png)
+![Farbwähler](color-chooser.png)
 
 
 ### Online Color Pickers
@@ -130,8 +132,8 @@ There are several tools that make finding a color palette easier. Here are a few
 
 ##### Predefined Color Palettes
 
-* [Colour Lovers](http://www.colourlovers.com/palettes)
-* [Design Seeds](http://design-seeds.com/)
+* [Coolors](https://coolors.co/)
+* [Colormind](http://colormind.io/)
 * [Google Color Palette](http://www.google.com/design/spec/style/color.html)
 
 
@@ -148,7 +150,7 @@ You have already seen how CSS rules can change the color of an HTML element. Let
 
 A CSS rule consists of three elements, a *selector*, a *property*, and a *value*.
 
-![CSS-Regel](part3/css-rule.png)
+![CSS Rule](css-rule.png)
 
 This rule states that all `<h2>` elements should get a background color of `#607d8b`.
 
@@ -239,35 +241,9 @@ In the following example, the ID selector selects the element that has an `id` a
 </pre>
 
 
-### Descendant Selectors
+### More Selectors
 
-With a descendant selector you can select descendants of a matching element.
-
-Let's look at an example before we get into a little more detail.
-
-
-##### CSS
-
-<pre class="prettyprint lang-css">
-p a {
-  ...
-}
-</pre>
-
-##### HTML
-
-<pre class="prettyprint lang-html">
-&lt;p>
-  &lt;a href="http://code.makery.ch">My Website&lt;/a>
-&lt;/p>
-&lt;a href="http://www.example.com">Example Website&lt;/a>
-</pre>
-
-The descendant selector `p a` selects all `a` elements that occur anywhere within a `p` element. In our example, the CSS rule would apply to *My Website*, but not to the *Example Website*.
-
-<div class="alert alert-info">
-  **Note:** The `a` element in the example above does not necessarily have be a direct child of the `p` element. The descendent selector applies to *any descendant*. For the other case, there would be a child selector (`>`), which we will not discuss in detail here.
-</div>
+There are a few more selectors (Google is your friend). But the most important once are described above.
 
 
 ## CSS Properties
@@ -359,7 +335,7 @@ Now we can target this title in CSS with `.title`. The CSS rule looks like the f
 
 If all goes well the portfolio now looks like this:
 
-![Portfolio](part3/portfolio.jpg)
+![Portfolio](portfolio.jpg)
 
 
 ## What's next?

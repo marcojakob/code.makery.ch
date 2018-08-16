@@ -6,6 +6,12 @@ image = "portfolio.png"
 prettify = true
 comments = true
 weight = 7
+
+[[sidebars]]
+header = "Downloads"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Portfolio Teil 7"
+link = "https://github.com/marcojakob/tutorial-html-css/releases/download/v2.0/portfolio-part7.zip"
 +++
 
 So far we have programmed all HTML and CSS from scratch. Our *web portfolio* project already has a few HTML pages with some content, a navigation and some styling.
@@ -34,7 +40,7 @@ With *Bootstrap* the elements don't only look better, they are also  consistent 
 
 ### Documentation
 
-The official [Bootstrap documentation](http://getbootstrap.com/) is the best place to learn what's possible. It contains a lot of examples that you can copy and paste into your website. You should have this website open very frequently!
+The official [Bootstrap documentation](https://getbootstrap.com/) is the best place to learn what's possible. It contains a lot of examples that you can copy and paste into your website. You should have this website open very frequently!
 
 
 ### Linking to the Bootstrap CSS
@@ -43,24 +49,38 @@ The most important part of Bootstrap consists of a large CSS file. For more comp
 
 Now let's integrate the Bootstrap CSS in our HTML pages.
 
-1. Open the [Bootstrap website](http://getbootstrap.com/getting-started/). You will find that there are several ways to download Bootstrap. Instead of downloading Bootstrap we will use the **Bootstrap CDN**. We only need to specify the location of the CSS file in our HTML. It will then be downloaded directly from the *CDN* servers every time our website is accessed. *CDN* servers are servers that are located all over the world so that they can deliver a file very quickly.
+1. Open the [Bootstrap website](https://getbootstrap.com/). You will find that there are several ways to download Bootstrap. Instead of downloading Bootstrap we will use the **Bootstrap CDN**. We only need to specify the location of the CSS file in our HTML. It will then be downloaded directly from the *CDN* servers every time our website is accessed. *CDN* servers are servers that are located all over the world so that they can deliver a file very quickly.
 
-2. From the *Bootstrap CDN* section copy the first line with the `link` element.
+2. From the *BootstrapCDN* section copy the first line with the `link` element.
 
 3. Insert the `link` element into your HTML pages. It is important that you place the reference to the Bootstrap CSS **above** the `link` element of the `main.css` file. This enables us to override CSS rules from the Bootstrap CSS in our own CSS.
 
-That's how your `head` section should look like (possibly with a newer version number of Bootstrap):
+4. Copy the three rows for JavaScript: JS, Popper.js, and jQuery.
+
+5. Insert the JavaScript references at the end of the body section in your HTML.
+
+That's how your HTML files should look like (maybe with a newer version and a few "integrity" numbers:
 
 
 ##### index.html
 
 <pre class="prettyprint lang-html">
-&lt;head>
-  &lt;meta charset="utf-8">
-  <mark>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></mark>
-  &lt;link rel="stylesheet" href="main.css">
-  &lt;title>Web Portfolio of Marco&lt;/title>
-&lt;/head>
+&lt;html>
+  &lt;head>
+    &lt;meta charset="utf-8">
+    <mark>&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  </mark>
+    &lt;link rel="stylesheet" href="/main.css">
+    &lt;title>Web Portfolio von Marco&lt;/title>
+  &lt;/head>
+    &lt;body>
+      &lt;!-- Here is some website content -->
+      <mark>
+      &lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">&lt;/script>
+      &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">&lt;/script>
+      &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">&lt;/script></mark>
+    &lt;/body>
+&lt;/html>
 </pre>
 
 
@@ -75,7 +95,7 @@ Such styling is automatically applied. But a lot of Bootstrap styles require tha
 
 ### Using Bootstrap Classes
 
-As an example, let's look at how the text alignment can be changed using Bootstrap. In the Bootstrap documentation under [Alignment classes](http://getbootstrap.com/css/#type-alignment) you can find instructions on text alignment.
+As an example, let's look at how the text alignment can be changed using Bootstrap. In the Bootstrap documentation under [Alignment classes](https://getbootstrap.com/docs/4.1/utilities/text/) you can find instructions on text alignment.
 
 Let's say we want to center the `h2` title. We can do this by adding the `text-center` class as follows:
 
@@ -98,7 +118,7 @@ We could even add a `text-center` class to the `body` element. This would center
 
 With the `<div>` element other elements are grouped into a block. With Bootstrap `<div>` elements are used quite often to apply styles to an entire section of the page.
 
-An essential CSS class in Bootstrap is `container`. The `container` automatically adjusts its content to the width of the page and guarantees a reasonable margin to the edges. You should always have a `<div>` element with the` container` class in your page. Read the Bootstrap documentation for a [description of containers](http://getbootstrap.com/css/#overview-container).
+An essential CSS class in Bootstrap is `container`. The `container` automatically adjusts its content to the width of the page and guarantees a reasonable margin to the edges. You should always have a `<div>` element with the` container` class in your page. Read the Bootstrap documentation for a [description of containers](https://getbootstrap.com/docs/4.1/layout/overview/#containers).
 
 We will now pack the main content of our home page between a `<div class="container">` and the closing `</div>`. (We will deal with the navigation separately below.)
 
@@ -110,10 +130,10 @@ The `<body>` part of your page should look like this (pay attention to indentati
 <pre class="prettyprint lang-html">
 &lt;body>
   &lt;ul>
-    &lt;li>&lt;a href="./">Home&lt;/a>&lt;/li>
-    &lt;li>&lt;a href="blog/">Blog&lt;/a>&lt;/li>
-    &lt;li>&lt;a href="projects/">Projects&lt;/a>&lt;/li>
-    &lt;li>&lt;a href="contact/">Contact&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="/">Home&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="/blog/">Blog&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="/projekte/">Projekte&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="/kontakt/">Kontakt&lt;/a>&lt;/li>
   &lt;/ul>
 
   <mark>&lt;div class="container"></mark>
@@ -148,52 +168,56 @@ I would like to &lt;span class="text-warning">highlight those words&lt;/span>.
 
 ## Navigation with Bootstrap
 
-Finally, we want to make the navigation more beautiful with the help of Bootstrap. In the Bootstrap documentation a [Navbar](http://getbootstrap.com/components/#navbar) is described. However, the example is very complex and includes menus, text boxes and buttons. We'll implement a simpler version.
+Finally, we want to make the navigation more beautiful with the help of Bootstrap. In the Bootstrap documentation a [Navbar](https://getbootstrap.com/docs/4.1/components/navbar/) is described. However, the example is very complex and includes menus, text boxes and buttons. We'll implement a simpler version.
 
-Program the following steps. I recommend you test what happens after every step.
-
-1. Insert the two classes `nav` and `navbar-nav` to the `ul` element in your navigation.
-`<ul class="nav navbar-nav">`
-
-2. Surround the entire navigation with a new `<div>` with the `container` class. This has the effect that the distances from the edges are the same as in our main content. Do not forget the closing `</div>` tag after the navigation code.
-`<div class="container">`
-
-3. Surround it all with yet another `<div>`. This time we will need the three classes `navbar`, `navbar-default`, and `navbar-static-top`. Those classes ensure that the navigation is displayed at the top of the screen. Don't forget the closing `</div>` tag.
-`<div class="navbar navbar-default navbar-static-top">`
-
-4. In the `<li>` element of our home, insert a class called `active`. This has the effect that the *Home* link is highlighted. This tells the visitor about the currently active page.
-`<li class="active"><a href="./">Home</a></li>`
-
-This is how the complete code will look like after the previous steps (pay attention to correct indentation!):
+Copy the following code for your navigation:
 
 
 ##### index.html
 
 <pre class="prettyprint lang-html">
-<mark>&lt;div class="navbar navbar-default navbar-static-top"></mark>
-  <mark>&lt;div class="container"></mark>
-    &lt;ul <mark>class="nav navbar-nav"></mark>
-      &lt;li <mark>class="active"</mark>>&lt;a href="./">Home&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="blog/">Blog&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="projects/">Projects&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="contact/">Contact&lt;/a>&lt;/li>
-    &lt;/ul>
-  <mark>&lt;/div></mark>
-<mark>&lt;/div></mark>
+&lt;nav class="navbar navbar-expand-lg navbar-light bg-light">
+  &lt;div class="container">
+    &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+      &lt;span class="navbar-toggler-icon">&lt;/span>
+    &lt;/button>
+    &lt;div class="collapse navbar-collapse" id="navbarMenu">
+      &lt;ul class="navbar-nav">
+        &lt;li>&lt;a class="nav-link active" href="/">Home&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link" href="/blog/">Blog&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link" href="/projects/">Projects&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link" href="/contact/">Contact&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+&lt;/nav>
 </pre>
+
+#### Explanations
+
+1. The outer `nav` element with `navbar` as class creates the bar at the top of the page. A `nav` element is the same as a `div` except that we give a hint to seach engines that this is a navigation.
+
+2. The next `div` with the class `container` is responsible for the left and right margins to  aligns the navigation in the same way as the content of our website. Note always the corresponding closing `</div>` tag. 
+
+3. The `button` element with the class `navbar-toggler` is the button on the mobile view to expand the menu. To test this make the browser window small.
+
+4. Compared to our simple first navigation we have added a `nav-link` class to each link. This applies the correct styling to the links.
+
+5. Note: The **active** navigation element has an additional `active` class. This makes the active element stick out.
+
 
 And this is how it looks like:
 
-![Navbar](navbar-default.png)
+![Navbar](navbar-light.png)
 
 
 ### Dark Version
 
-There is an alternative to the gray navigation:
+There is a dark alternative for the navigation:
 
-![Navbar Inverse](navbar-inverse.png)
+![Navbar Dark](navbar-dark.png)
 
-To activate the alternative style, replace the `navbar-default` class with `navbar-inverse`.
+To activate the alternative style, replace the `navbar-light` with `navbar-dark` and `bg-light` with `bg-dark`.
 
 
 ## Optimizing for Mobile
@@ -210,9 +234,9 @@ With a `meta` info inside `head` we can tell the mobile browsers to properly sca
 &lt;head>
   &lt;meta charset="utf-8">
   <mark>&lt;meta name="viewport" content="width=device-width, initial-scale=1"></mark>
-  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   &lt;link rel="stylesheet" href="main.css">
-  &lt;title>Web Portfolio of Marco&lt;/title>
+  &lt;title>Web Portfolio von Marco&lt;/title>
 &lt;/head>
 </pre>
 
@@ -220,12 +244,12 @@ It should now look something like this:
 
 ![Mobile with Viewport](mobile-with-viewport.png)
 
-Bootstrap was designed so that it [works well on mobile screens](http://getbootstrap.com/css/#overview-mobile). In the screenshot above you can see how the navigation is automatically displayed vertically when the width of the screen is too small. If you're not using a mobile phone you can also simulate this by simply resizing your browser window.
+Bootstrap was designed so that it works well on mobile screens. In the screenshot above you can see how the navigation is automatically displayed vertically when the width of the screen is too small. If you're not using a mobile phone you can also simulate this by simply resizing your browser window.
 
 Web design that is optimized for different screen sizes is called [responsive web design](http://en.wikipedia.org/wiki/Responsive_web_design).
 
 <div class="alert alert-warning">
-  **Note:** Bootstrap is capable of automatically collapsing the menu into a menu button. But this requires additional JavaScript files. In the <a class="alert-link" href="/library/more-html-css/javascript-bootstrap/">JavaScript with Bootstrap</a> article I explain how you can program such navigations.
+  <strong>Note:</strong> Bootstrap is capable of automatically collapsing the menu into a menu button. This functionality is provided by the JavaScript files that we always insert just before the closing <code></body></code> tag.
 </div>
 
 
@@ -241,35 +265,49 @@ With small adjustments we can copy the code from the home page to all other page
 Copy the line with the `viewport` and the line with the Bootstrap CSS from the `head` area of the home page and paste it in all other sites.
 
 <pre class="prettyprint lang-html">
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1">
-  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+&lt;meta name="viewport" content="width=device-width, initial-scale=1">
+&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 </pre>
 
 
-#### 2. Insert Navigation
+#### 2. Insert JavaScript
+
+Copy the three JavaScript references from the end of the `body` section into every other page:
+
+<pre class="prettyprint lang-html">
+&lt;body>
+  &lt;!-- Hier steht irgend ein Inhalt -->
+  <mark>
+  &lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">&lt;/script>
+  &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">&lt;/script>
+  &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">&lt;/script></mark>
+&lt;/body>
+</pre>
+
+#### 3. Insert Navigation
 
 Copy the entire navigation of the home page and paste it into all the other pages. Make sure that you add the `active` class to the current `li` element.
 
 <pre class="prettyprint lang-html">
-&lt;div class="navbar navbar-default navbar-static-top">
+&lt;nav class="navbar navbar-expand-lg navbar-light bg-light">
   &lt;div class="container">
-    &lt;ul class="nav navbar-nav">
-      &lt;li>&lt;a <mark>href="../"</mark>>Home&lt;/a>&lt;/li>
-      &lt;li <mark>class="active"</mark>>&lt;a <mark>href="../blog/"</mark>>Blog&lt;/a>&lt;/li>
-      &lt;li>&lt;a <mark>href="../projects/"</mark>>Projects&lt;/a>&lt;/li>
-      &lt;li>&lt;a <mark>href="../contact/"</mark>>Contact&lt;/a>&lt;/li>
-    &lt;/ul>
+    &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+      &lt;span class="navbar-toggler-icon">&lt;/span>
+    &lt;/button>
+    &lt;div class="collapse navbar-collapse" id="navbarMenu">
+      &lt;ul class="navbar-nav">
+        &lt;li>&lt;a class="nav-link" href="/">Home&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link active" href="/blog/">Blog&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link" href="/projects/">Projects&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="nav-link" href="/contact/">Contact&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/div>
   &lt;/div>
-&lt;/div>
+&lt;/nav>
 </pre>
 
-<div class="alert alert-info">
-  <p>**Remember:** Links in subfolders must be prefixed with `../` to point to the parent folder.</p>
-  <p>Because the blog entries are in a sub-subfolder the links must be prefixed with `../../` to point to the root folder.</p>
-</div>
 
-
-#### 3. Insert Container div
+#### 4. Insert Container div
 
 When you open some pages in the browser you will notice that the margins are not correct. To fix this we need the entire content (everything below the navigation) to be surrounded by a `<div>`. This `<div>` must have the `container` class. Put containers in all the pages that don't have it yet.
 

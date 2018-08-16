@@ -5,6 +5,7 @@ description = "Lernen Sie, wie Sie mit CSS eine Webseite gestalten können."
 image = "portfolio.de.png"
 prettify = true
 comments = true
+commentsIdentifier = "/library/html-css/de/part3/"
 aliases = [
   "/library/html-css/de/part3/"
 ]

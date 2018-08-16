@@ -56,9 +56,7 @@ For larger websites, styles can get quite long. There will be multiple CSS rules
 
 ## Other DevTools Features
 
-There are many more ways to work with *DevTools*. If you want to know more about it, read the [DevTools documentation](https://developer.chrome.com/devtools/index).
-
-There is also a very good [DevTools online course](http://discover-devtools.codeschool.com/), which is available for free.
+There are many more ways to work with *DevTools*. If you want to know more about it, read the [DevTools documentation](https://developers.google.com/web/tools/chrome-devtools/).
 
 
 ## What's next?

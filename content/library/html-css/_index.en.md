@@ -7,6 +7,8 @@ prettify = true
 comments = true
 sidebarName = "Introduction"
 pagingName = "Intro"
+
+# Series Overview Info
 topics = [ "HTML-CSS" ]
 weight = 1
 overviewImage = "thumbnail.png"

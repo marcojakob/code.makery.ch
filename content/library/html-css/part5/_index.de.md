@@ -5,6 +5,7 @@ description = "Erstellen Sie eine Dateistruktur für mehrere Webseiten. Lernen S
 image = "portfolio.de.png"
 prettify = true
 comments = true
+commentsIdentifier = "/library/html-css/de/part5/"
 aliases = [
   "/library/html-css/de/part5/"
 ]
@@ -46,7 +47,7 @@ Erstellen Sie einen Unterordner in Ihrem *Portfolio*-Ordner namens `blog`. Kopie
 1. Das Bild wird nicht angezeigt.
 2. Die im CSS definierten Farben werden nicht übernommen.
 
-Da wir uns in einem Unterordner befinden, stimmt jetzt die URL (oder auch Pfad genannt) nicht mehr. Damit das Bild angezeigt würde, müssten wir für das `src`-Attribut anstatt `marco.jpg` nun `../marco.jpg` angeben. Aber wahrscheinlich wollen wir nicht schon wieder das gleiche Bild auf der Blogseite. Also können Sie das gesamte `img`-Element entfernen.
+Da wir uns in einem Unterordner befinden, stimmt jetzt die URL (oder auch Pfad genannt) nicht mehr. Damit das Bild angezeigt würde, müssten wir für das `src`-Attribut anstatt `marco.jpg` nun `../marco.jpg` oder `/marco.jpg` angeben. Aber wahrscheinlich wollen wir nicht schon wieder das gleiche Bild auf der Blogseite. Also können Sie das gesamte `img`-Element entfernen.
 
 Beim **CSS** ist es üblich, dass man die Regeln jeweils **für das gesamte Projekt** definiert. So ist es wichtig, dass wir die gleiche CSS-Datei auch in der Blogseite verwenden können. Dies erreichen wir, indem wir die URL ändern von `main.css` auf `/main.css`. Mit dem `/` springen wir in den Hauptordner zurück - egal, in welchem Unterordner wir uns gerade befinden. So sieht jetzt das gesamte link-Element aus:
 
@@ -146,7 +147,7 @@ Mit solchen Blogeinträgen werden Sie beim Lernen von Programmierung viel schnel
 #### Zweiter Blogeintrag
 
 <div class="alert alert-info">
-  <strong>Hinweis:</strong> Erstellen Sie für jeden Blogeintrag einen eigenen Unterordner (mit einer `index.html`-Seite). So haben Sie eine gute Ordnung und können Bilder oder andere Dateien für den Blogeintrag im Unterordner ablegen.
+  <strong>Hinweis:</strong> Erstellen Sie für jeden Blogeintrag einen eigenen Unterordner (mit einer <code>index.html</code>-Seite). So haben Sie eine gute Ordnung und können Bilder oder andere Dateien für den Blogeintrag im Unterordner ablegen.
 </div>
 
 ![Blogeintrag 2](blog-entry-subfolder2.de.png)
