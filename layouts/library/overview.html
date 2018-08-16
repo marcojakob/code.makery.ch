@@ -18,6 +18,6 @@
   </p>
   
   {{ $allTopics := $.Site.GetPage "taxonomyTerm" "topics" }}
-  {{ partial "library/overview.html" (dict "Page" . "Items" .Sections "Topics" $allTopics.Pages)}}
+  {{ partial "library/overview_content.html" (dict "Page" . "Items" .Sections "Topics" $allTopics.Pages)}}
 </div>
 {{ end }}

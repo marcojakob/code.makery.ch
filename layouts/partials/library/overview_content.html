@@ -30,7 +30,7 @@
     <div class="col-sm-9">
     {{ range .Items }}
       <div class="library-panel">
-        <a class="panel-link" href="/de{{ .RelPermalink }}">
+        <a class="panel-link" href="{{ .RelPermalink }}">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">{{ .Title }}</h4>
@@ -48,7 +48,7 @@
         {{ end }}
         </div>
           
-        <!-- <div class="language-buttons">
+        <div class="language-buttons">
           <div class="hidden-xs">
           {{ range .AllTranslations }}
             <a href="{{ .RelPermalink }}" class="btn btn-default btn-xs">{{ .Language.LanguageName }}</a>
@@ -68,7 +68,7 @@
               </ul>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     {{ end }}
     </div>
