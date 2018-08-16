@@ -1,60 +1,22 @@
----
-layout: article
-title: "Mehr HTML & CSS: JavaScript mit Bootstrap"
-date: 2015-03-18 00:00
-slug: more-html-css/de/javascript-bootstrap
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-javascript-bootstrap.md
-description: "Lernen Sie, wie die das Bootstrap-JavaScript in eine Webseite integriert werden kann. Enthält ein Beispiel zur Bootstrap Navigation."
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/more-html-css/de/
-    paging: Intro
-  - text: "Website-Layout mit Bootstrap"
-    link: /library/more-html-css/de/website-layout/
-    paging: 1
-    icon-css: fa fa-fw fa-th-large
-  - text: "Icons"
-    link: /library/more-html-css/de/icons/
-    paging: 2
-    icon-css: fa fa-fw fa-flag
-  - text: "Bilder mit Bootstrap"
-    link: /library/more-html-css/de/image-bootstrap/
-    icon-css: fa fa-fw fa-image
-    paging: 3
-  - text: "Bilder gestalten"
-    link: /library/more-html-css/de/image-editing/
-    icon-css: fa fa-fw fa-image
-    paging: 4
-  - text: "Kostenlose Bilder"
-    link: /library/more-html-css/de/image-sources/
-    icon-css: fa fa-fw fa-image
-    paging: 5
-  - text: "Textformatierung"
-    link: /library/more-html-css/de/text/
-    paging: 6
-    icon-css: fa fa-fw fa-font
-  - text: "JavaScript mit Bootstrap"
-    link: /library/more-html-css/de/javascript-bootstrap/
-    paging: 7
-    icon-css: fa fa-fw fa-code
-    active: true
-- header: Links
-  body:
-  - text: HTML & CSS Tutorial
-    link: /library/html-css/de/
-    icon-css: fa fa-fw fa-external-link
-languages:
-  header: Sprachen
-  collection: library
-  item: more-html-css
-  part: javascript-bootstrap
-  active: de
----
++++
+title = "JavaScript mit Bootstrap"
+date = 2018-08-16
+description = "Lernen Sie, wie die das Bootstrap-JavaScript in eine Webseite integriert werden kann. Enthält ein Beispiel zur Bootstrap Navigation."
+prettify = true
+comments = true
+commentsIdentifier = "/library/more-html-css/de/javascript-bootstrap/"
+aliases = [ 
+  "/library/more-html-css/de/javascript-bootstrap/" 
+]
+weight = 7
+
+# Custom Sidebars
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
+link = "/de/library/html-css/"
++++
 
 Der Kern von Bootstrap ist das CSS. Es gibt jedoch auch eine JavaScript-Datei von Bootstrap, die sehr nützliche Funktionen bietet. Schauen Sie sich mal um auf der [Bootstrap JavaScript Seite](http://holdirbootstrap.de/javascript/).
 
@@ -105,7 +67,7 @@ Es braucht also drei Dinge:
 
 Mit dem Bootstrap-CSS alleine konnten wir im [HTML & CSS Tutorial - Teil 7](/library/html-css/de/part7#navigation-mit-bootstrap) bereits eine ansehnliche Navigation programmieren. Nun verbessern wir diese Navigation weiter, so dass sie auf kleinen Bildschirmen automatisch einklappt.
 
-![Navigation eingeklappt](/assets/library/more-html-css/javascript-bootstrap/navigation-collapsed.png)
+![Navigation eingeklappt](navigation-collapsed.png)
 
 Der Programmcode dazu sieht nun so aus:
 

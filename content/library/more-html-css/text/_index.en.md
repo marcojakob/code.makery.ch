@@ -1,60 +1,18 @@
----
-layout: article
-title: "More HTML & CSS: Formatting Text"
-date: 2015-04-09 00:00
-slug: more-html-css/text
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-en-text.md
-description: "Learn about the typographic capabilities of HTML and CSS. Contains examples of how texts can be formatted with bootstrap."
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Articles in this Series
-  body:
-  - text: "Introduction"
-    link: /library/more-html-css/
-    paging: Intro
-  - text: "Website Layout with Bootstrap"
-    link: /library/more-html-css/website-layout/
-    paging: 1
-    icon-css: fa fa-fw fa-th-large
-  - text: "Icons"
-    link: /library/more-html-css/icons/
-    paging: 2
-    icon-css: fa fa-fw fa-flag
-  - text: "Images with Bootstrap"
-    link: /library/more-html-css/image-bootstrap/
-    icon-css: fa fa-fw fa-image
-    paging: 3
-  - text: "Image Editing"
-    link: /library/more-html-css/image-editing/
-    icon-css: fa fa-fw fa-image
-    paging: 4
-  - text: "Free Image Sources"
-    link: /library/more-html-css/image-sources/
-    icon-css: fa fa-fw fa-image
-    paging: 5
-  - text: "Formatting Text"
-    link: /library/more-html-css/text/
-    paging: 6
-    icon-css: fa fa-fw fa-font
-    active: true
-  - text: "JavaScript with Bootstrap"
-    link: /library/more-html-css/javascript-bootstrap/
-    paging: 7
-    icon-css: fa fa-fw fa-code
-- header: Links
-  body:
-  - text: HTML & CSS Tutorial
-    link: /library/html-css/
-    icon-css: fa fa-fw fa-external-link
-languages:
-  header: Languages
-  collection: library
-  item: more-html-css
-  part: text
-  active: en
----
++++
+title = "Formatting Text"
+date = 2018-08-16
+description = "Learn about the typographic capabilities of HTML and CSS. Contains examples of how texts can be formatted with bootstrap."
+prettify = true
+comments = true
+weight = 6
+
+# Custom Sidebars
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
+link = "/library/html-css/"
++++
 
 In this part you will learn about the typographic capabilities of HTML and CSS.
 
@@ -151,7 +109,7 @@ Es gibt auch die Möglichkeit, Schriftarten gleich mit der Webseite mitzuliefern
 The easiest way to embed fonts is with the help of [Google Fonts](https://www.google.com/fonts). Google Fonts are freely available fonts that can be downloaded directly from Google as needed. Here's how:
 
 1. Open the [Google Fonts](https://www.google.com/fonts) website and choose a font. Once you have selected a font, click on the **Quick-use** button.   
-![Quick Use](/assets/library/more-html-css/text/google-fonts-quick-use.png)
+![Quick Use](google-fonts-quick-use.png)
 
 2. Now you can select which version of the font you want (for example, light, bold, extra-bold, etc.). Copy the generated code in the `<head>` section of your website. As an example, I chose the font *Open Sans*:   
 <pre class="prettyprint lang-html">

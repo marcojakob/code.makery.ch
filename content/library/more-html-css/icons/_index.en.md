@@ -1,60 +1,18 @@
----
-layout: article
-title: "More HTML & CSS: Icons"
-date: 2015-04-09 00:00
-slug: more-html-css/icons
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-en-icons.md
-description: "Learn how to layout elements on web pages using the bootstrap grid."
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Articles in this Series
-  body:
-  - text: "Introduction"
-    link: /library/more-html-css/
-    paging: Intro
-  - text: "Website Layout with Bootstrap"
-    link: /library/more-html-css/website-layout/
-    paging: 1
-    icon-css: fa fa-fw fa-th-large
-  - text: "Icons"
-    link: /library/more-html-css/icons/
-    paging: 2
-    icon-css: fa fa-fw fa-flag
-    active: true
-  - text: "Images with Bootstrap"
-    link: /library/more-html-css/image-bootstrap/
-    icon-css: fa fa-fw fa-image
-    paging: 3
-  - text: "Image Editing"
-    link: /library/more-html-css/image-editing/
-    icon-css: fa fa-fw fa-image
-    paging: 4
-  - text: "Free Image Sources"
-    link: /library/more-html-css/image-sources/
-    icon-css: fa fa-fw fa-image
-    paging: 5
-  - text: "Formatting Text"
-    link: /library/more-html-css/text/
-    paging: 6
-    icon-css: fa fa-fw fa-font
-  - text: "JavaScript with Bootstrap"
-    link: /library/more-html-css/javascript-bootstrap/
-    paging: 7
-    icon-css: fa fa-fw fa-code
-- header: Links
-  body:
-  - text: HTML & CSS Tutorial
-    link: /library/html-css/
-    icon-css: fa fa-fw fa-external-link
-languages:
-  header: Languages
-  collection: library
-  item: more-html-css
-  part: icons
-  active: en
----
++++
+title = "Icons on Websites"
+date = 2018-08-16
+description = "Learn how to layout elements on web pages using the bootstrap grid."
+prettify = true
+comments = true
+weight = 2
+
+# Custom Sidebars
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
+link = "/library/html-css/"
++++
 
 Inserting icons into a website isn't difficult. But when you combine text and icons (for example on a button), or if the icon should be resizable, it can cause some trouble.
 
@@ -89,7 +47,7 @@ To use an icon we define a `<span>` element and give it two CSS classes:
 
 This `span` element can be inserted anywhere, for example in a title of a contact page: 
 
-![Contact Icon](/assets/library/more-html-css/icons/contact-icon.png)
+![Contact Icon](contact-icon.png)
 
 
 ## Font Awesome
@@ -110,7 +68,7 @@ Font Awesome icons are used by declaring an `<i>` element with specific CSS clas
 &lt;i class="fa fa-flag">&lt;i>
 </pre>
 
-This example produces a flag: ![Font Awesome Flagge](/assets/library/more-html-css/icons/fontawesome-flag.png)
+This example produces a flag: ![Font Awesome Flagge](fontawesome-flag.png)
 
 Have a look at the [Font Awesome examples](http://fontawesome.io/examples/) to see what you can do with the icons. You will also find some examples of how to use Font Awesome Icons in combination with Bootstrap components.
 

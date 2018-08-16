@@ -1,5 +1,5 @@
 +++
-title = "HTML & CSS Tutorial"
+title = "HTML & CSS Tutorial (Deutsch)"
 date = 2018-08-10
 description = "Mit dieser Anleitung lernen Sie die Grundlagen von HTML & CSS, damit Sie eigene Webprojekte realisieren können. Wir beginnen sofort mit einer eigenen Webseite für Ihr Portfolio."
 image = "portfolio.de.png"

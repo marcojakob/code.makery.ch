@@ -1,80 +1,42 @@
----
-layout: article
-title: "Mehr HTML & CSS: Website-Layout mit Bootstrap"
-date: 2014-08-16 00:00
-slug: more-html-css/de/website-layout
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-website-layout.md
-description: "Lernen Sie, wie Elemente auf Webseiten angeordnet werden können mit dem Bootstrap Raster."
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/more-html-css/de/
-    paging: Intro
-  - text: "Website-Layout mit Bootstrap"
-    link: /library/more-html-css/de/website-layout/
-    paging: 1
-    icon-css: fa fa-fw fa-th-large
-    active: true
-  - text: "Icons"
-    link: /library/more-html-css/de/icons/
-    paging: 2
-    icon-css: fa fa-fw fa-flag
-  - text: "Bilder mit Bootstrap"
-    link: /library/more-html-css/de/image-bootstrap/
-    icon-css: fa fa-fw fa-image
-    paging: 3
-  - text: "Bilder gestalten"
-    link: /library/more-html-css/de/image-editing/
-    icon-css: fa fa-fw fa-image
-    paging: 4
-  - text: "Kostenlose Bilder"
-    link: /library/more-html-css/de/image-sources/
-    icon-css: fa fa-fw fa-image
-    paging: 5
-  - text: "Textformatierung"
-    link: /library/more-html-css/de/text/
-    paging: 6
-    icon-css: fa fa-fw fa-font
-  - text: "JavaScript mit Bootstrap"
-    link: /library/more-html-css/de/javascript-bootstrap/
-    paging: 7
-    icon-css: fa fa-fw fa-code
-- header: Links
-  body:
-  - text: HTML & CSS Tutorial
-    link: /library/html-css/de/
-    icon-css: fa fa-fw fa-external-link
-languages:
-  header: Sprachen
-  collection: library
-  item: more-html-css
-  part: website-layout
-  active: de
----
++++
+title = "Website-Layout mit Bootstrap"
+date = 2018-08-16
+description = "Lernen Sie, wie Elemente auf Webseiten angeordnet werden können mit dem Bootstrap Raster."
+prettify = true
+comments = true
+commentsIdentifier = "/library/more-html-css/de/website-layout/"
+aliases = [ 
+  "/library/more-html-css/de/website-layout/" 
+]
+weight = 1
+
+# Custom Sidebars
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
+link = "/de/library/html-css/"
++++
 
 Standardmässig werden HTML-Elemente auf zwei Arten angeordnet:
 
 **Blockelemente** beginnen immer in einer neuen Zeile. Beispiele für Blockelemente sind `<div>`, `<h1>`, `<p>` und `<li>`.
 
-![Blockelemente](/assets/library/more-html-css/website-layout/block-elements.png)
+![Blockelemente](block-elements.png)
 
 **Inline-Elemente** stehen in der gleichen Zeile. Beispiele für Inline-Elemente sind `<span>`, `<a>`, `<strong>`, `<em>` und `<img>`.
 
-![Inline-Elemente](/assets/library/more-html-css/website-layout/inline-elements.png)
+![Inline-Elemente](inline-elements.png)
 
 Diese zwei Möglichkeiten reichen jedoch nicht, um ein richtiges Layout für eine Webseite zu erstellen. 
 
 Die meisten Webseiten haben entweder ein Layout mit **zwei Spalten** ...
 
-![Zwei-Spalten Layout](/assets/library/more-html-css/website-layout/two-columns.png)
+![Zwei-Spalten Layout](two-columns.png)
 
 ... oder ein Layout mit **drei Spalten**.
 
-![Drei-Spalten Layout](/assets/library/more-html-css/website-layout/three-columns.png)
+![Drei-Spalten Layout](three-columns.png)
 
 So etwas hinzubekommen ohne ein CSS-Framework wie *Bootstrap* wäre eine rechte Herausforderung. Mit Bootstrap wird es einfacher. 
 
@@ -89,7 +51,7 @@ Falls Sie Bootstrap in Ihrem Projekt noch nicht integriert haben, lesen Sie zuer
 
 Bootstrap beinhaltet ein **12-spaltiges Rastersystem** für das Layout (siehe [Dokumentation des Bootstrap-Rasters](http://holdirbootstrap.de/css/#grid)). Ein Raster kann man sich vorstellen, wie eine unsichtbare Tabelle mit zwölf Spalten:
 
-![Zwölf Spalten](/assets/library/more-html-css/website-layout/bootstrap-twelve-columns.png)
+![Zwölf Spalten](bootstrap-twelve-columns.png)
 
 Wir können nun unsere eigenen Spalten definieren, indem wir angeben, wie breit sie in diesem Raster sein sollen.
 
@@ -98,7 +60,7 @@ Wir können nun unsere eigenen Spalten definieren, indem wir angeben, wie breit 
 
 In diesem Beispiel definieren wir eine linke Spalte mit der Breite von 4 und eine rechte Spalte mit der Breite von 8. Links könnte man zum Beispiel eine Navigation einfügen und rechts den Seiteninhalt.
 
-![2-Spalten Layout](/assets/library/more-html-css/website-layout/bootstrap-two-columns.png)
+![2-Spalten Layout](bootstrap-two-columns.png)
 
 Im HTML-Code würde dieses Layout wie folgt aussehen:
 
@@ -141,14 +103,14 @@ Alle Bildschirme, welche kleiner sind als die angegebene Grösse, stellen die Sp
 
 So sieht unser Beispiel für das 2-spaltige Layout auf einem Smartphone aus:
 
-![2-Spalten Layout Smartphone](/assets/library/more-html-css/website-layout/bootstrap-two-columns-smartphone.png)
+![2-Spalten Layout Smartphone](bootstrap-two-columns-smartphone.png)
 
 
 ### Beispiel für ein 3-spaltiges Layout
 
 In diesem Beispiel definieren wir drei Spalten.
 
-![3-Spalten Layout](/assets/library/more-html-css/website-layout/bootstrap-three-columns.png)
+![3-Spalten Layout](bootstrap-three-columns.png)
 
 Im HTML-Code würde dieses Layout wie folgt aussehen:
 
@@ -173,7 +135,7 @@ Im HTML-Code würde dieses Layout wie folgt aussehen:
 
 Im [HTML & CSS Tutorial](/library/html-css/de/) haben wir ein Portfolio entwickelt mit einer Blog-Seite. Das folgende Beispiel zeigt ein **2-Spalten-Layout** für diese Blog-Seite. In der linken Spalte ist der bisherige Inhalt. In der rechten Spalte haben wir neu Platz zum Beispiel für ein paar Links. 
 
-<img src="/assets/library/more-html-css/website-layout/portfolio-two-columns-de.png" alt="Portfolio" class="img-thumbnail">
+<img src="portfolio-two-columns.de.png" alt="Portfolio" class="img-thumbnail">
 
 
 ##### blog/index.html

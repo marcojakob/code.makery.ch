@@ -1,60 +1,18 @@
----
-layout: article
-title: "More HTML & CSS: Images with Bootstrap"
-date: 2015-04-09 00:00
-slug: more-html-css/image-bootstrap
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-en-image-bootstrap.md
-description: "Learn some tricks on how to use images with Bootstrap."
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Articles in this Series
-  body:
-  - text: "Introduction"
-    link: /library/more-html-css/
-    paging: Intro
-  - text: "Website Layout with Bootstrap"
-    link: /library/more-html-css/website-layout/
-    paging: 1
-    icon-css: fa fa-fw fa-th-large
-  - text: "Icons"
-    link: /library/more-html-css/icons/
-    paging: 2
-    icon-css: fa fa-fw fa-flag
-  - text: "Images with Bootstrap"
-    link: /library/more-html-css/image-bootstrap/
-    icon-css: fa fa-fw fa-image
-    paging: 3
-    active: true
-  - text: "Image Editing"
-    link: /library/more-html-css/image-editing/
-    icon-css: fa fa-fw fa-image
-    paging: 4
-  - text: "Free Image Sources"
-    link: /library/more-html-css/image-sources/
-    icon-css: fa fa-fw fa-image
-    paging: 5
-  - text: "Formatting Text"
-    link: /library/more-html-css/text/
-    paging: 6
-    icon-css: fa fa-fw fa-font
-  - text: "JavaScript with Bootstrap"
-    link: /library/more-html-css/javascript-bootstrap/
-    paging: 7
-    icon-css: fa fa-fw fa-code
-- header: Links
-  body:
-  - text: HTML & CSS Tutorial
-    link: /library/html-css/
-    icon-css: fa fa-fw fa-external-link
-languages:
-  header: Languages
-  collection: library
-  item: more-html-css
-  part: image-bootstrap
-  active: en
----
++++
+title = "Images with Bootstrap"
+date = 2018-08-16
+description = "Learn some tricks on how to use images with Bootstrap."
+prettify = true
+comments = true
+weight = 3
+
+# Custom Sidebars
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
+link = "/library/html-css/"
++++
 
 In this part we will learn some tricks on how to use images with Bootstrap.
 
@@ -102,7 +60,7 @@ Bootstrap 3 provides a CSS class `img-responsive` that will automatically adjust
 
 With the CSS class `center-block` you can center images in Bootstrap (see [center content blocks](http://getbootstrap.com/css/#helper-classes-center) in the Bootstrap documentation):
 
-<img src="/assets/library/more-html-css/image-bootstrap/center-block.png" class="center-block">
+<img src="center-block.png" class="center-block">
 
 
 ##### Center an image
@@ -127,7 +85,7 @@ Images can be aligned to the left or to the right. The text will then flow aroun
 &lt;img src="..." alt="..." class="pull-left">
 </pre>
 
-![Left Align](/assets/library/more-html-css/image-bootstrap/pull-left.png)
+![Left Align](pull-left.png)
 
 
 ##### Float right
@@ -136,7 +94,7 @@ Images can be aligned to the left or to the right. The text will then flow aroun
 &lt;img src="..." alt="..." class="pull-right">
 </pre>
 
-![Right Align](/assets/library/more-html-css/image-bootstrap/pull-right.png)
+![Right Align](pull-right.png)
 
 
 #### New Line after Float (Clearfix)
@@ -151,7 +109,7 @@ When floating to the left or right all following elements are displayed next to 
 &lt;p>This text appears below the image.&lt;/p>
 </pre>
 
-![Clearfix](/assets/library/more-html-css/image-bootstrap/clearfix.png)
+![Clearfix](clearfix.png)
 
 
 #### Margin Around Image
@@ -180,7 +138,7 @@ Im CSS definieren wir jetzt den Abstand.
 }
 </pre> 
 
-![Gap](/assets/library/more-html-css/image-bootstrap/margin.png)
+![Gap](margin.png)
 
 There are also `margin-top`, `margin-bottom`, and `margin-left` if you need a gap in any other direction.
 
@@ -189,7 +147,7 @@ There are also `margin-top`, `margin-bottom`, and `margin-left` if you need a ga
 
 Bootstrap 3 provides ways for some simple images styles. You can round the corners, cut out a circle or add a subtle frame.
 
-![Image Shapes](/assets/library/more-html-css/image-bootstrap/image-shapes.png)
+![Image Shapes](image-shapes.png)
 
 You can add the following three CSS classes to your images (see [image shapes](http://getbootstrap.com/css/#images-shapes) in the Bootstrap documentation).
 

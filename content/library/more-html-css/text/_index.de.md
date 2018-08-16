@@ -1,60 +1,22 @@
----
-layout: article
-title: "Mehr HTML & CSS: Textformatierung"
-date: 2014-08-25 00:00
-slug: more-html-css/de/text
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-text.md
-description: "Lernen Sie die typografischen Möglichkeiten von HTML und CSS kennen. Enthält Beispiele, wie Texte mit Bootstrap formatiert werden können."
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/more-html-css/de/
-    paging: Intro
-  - text: "Website-Layout mit Bootstrap"
-    link: /library/more-html-css/de/website-layout/
-    paging: 1
-    icon-css: fa fa-fw fa-th-large
-  - text: "Icons"
-    link: /library/more-html-css/de/icons/
-    paging: 2
-    icon-css: fa fa-fw fa-flag
-  - text: "Bilder mit Bootstrap"
-    link: /library/more-html-css/de/image-bootstrap/
-    icon-css: fa fa-fw fa-image
-    paging: 3
-  - text: "Bilder gestalten"
-    link: /library/more-html-css/de/image-editing/
-    icon-css: fa fa-fw fa-image
-    paging: 4
-  - text: "Kostenlose Bilder"
-    link: /library/more-html-css/de/image-sources/
-    icon-css: fa fa-fw fa-image
-    paging: 5
-  - text: "Textformatierung"
-    link: /library/more-html-css/de/text/
-    paging: 6
-    icon-css: fa fa-fw fa-font
-    active: true
-  - text: "JavaScript mit Bootstrap"
-    link: /library/more-html-css/de/javascript-bootstrap/
-    paging: 7
-    icon-css: fa fa-fw fa-code
-- header: Links
-  body:
-  - text: HTML & CSS Tutorial
-    link: /library/html-css/de/
-    icon-css: fa fa-fw fa-external-link
-languages:
-  header: Sprachen
-  collection: library
-  item: more-html-css
-  part: text
-  active: de
----
++++
+title = "Textformatierung"
+date = 2018-08-16
+description = "Lernen Sie die typografischen Möglichkeiten von HTML und CSS kennen. Enthält Beispiele, wie Texte mit Bootstrap formatiert werden können."
+prettify = true
+comments = true
+commentsIdentifier = "/library/more-html-css/de/text/"
+aliases = [ 
+  "/library/more-html-css/de/text/" 
+]
+weight = 6
+
+# Custom Sidebars
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
+link = "/de/library/html-css/"
++++
 
 In diesem Teile lernen Sie Möglichkeiten kennen, wie Sie mit HTML und CSS Texte gestalten können.
 
@@ -149,7 +111,7 @@ Es gibt auch die Möglichkeit, Schriftarten gleich mit der Webseite mitzuliefern
 Die einfachste Art, Schriften einzubetten, ist mit der Hilfe von [Google Fonts](https://www.google.com/fonts). Die Google Fonts sind frei verfügbare Schriften, die nach Bedarf direkt von Google heruntergeladen werden können. So geht es:
 
 1. Gehen Sie auf die Webseite von [Google Fonts](https://www.google.com/fonts) und wählen Sie eine Schriftart. Sobald Sie eine Schriftart ausgewählt haben, klicken Sie auf den *Quick-use*-Knopf.   
-![Quick Use](/assets/library/more-html-css/text/google-fonts-quick-use.png)
+![Quick Use](google-fonts-quick-use.png)
 
 2. Nun können Sie auswählen, welche Ausführung der Schrift sie möchten (z.B. light, bold, extra-bold, etc.). Kopieren Sie anschliessend den generierten Code in den `<head>`-Bereich Ihrer Webseite. Als Beispiel habe ich mal die Schrift *Open Sans* ausgewählt:   
 <pre class="prettyprint lang-html">

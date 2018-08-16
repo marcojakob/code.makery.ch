@@ -1,60 +1,22 @@
----
-layout: article
-title: "Mehr HTML & CSS: Icons auf Website verwenden"
-date: 2014-08-20 00:00
-slug: more-html-css/de/icons
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-icons.md
-description: "Icons mit Icon Fonts auf einer Webseite einbinden. Links zu verschiedenen Bibliotheken für Icons."
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/more-html-css/de/
-    paging: Intro
-  - text: "Website-Layout mit Bootstrap"
-    link: /library/more-html-css/de/website-layout/
-    paging: 1
-    icon-css: fa fa-fw fa-th-large
-  - text: "Icons"
-    link: /library/more-html-css/de/icons/
-    paging: 2
-    icon-css: fa fa-fw fa-flag
-    active: true
-  - text: "Bilder mit Bootstrap"
-    link: /library/more-html-css/de/image-bootstrap/
-    icon-css: fa fa-fw fa-image
-    paging: 3
-  - text: "Bilder gestalten"
-    link: /library/more-html-css/de/image-editing/
-    icon-css: fa fa-fw fa-image
-    paging: 4
-  - text: "Kostenlose Bilder"
-    link: /library/more-html-css/de/image-sources/
-    icon-css: fa fa-fw fa-image
-    paging: 5
-  - text: "Textformatierung"
-    link: /library/more-html-css/de/text/
-    paging: 6
-    icon-css: fa fa-fw fa-font
-  - text: "JavaScript mit Bootstrap"
-    link: /library/more-html-css/de/javascript-bootstrap/
-    paging: 7
-    icon-css: fa fa-fw fa-code
-- header: Links
-  body:
-  - text: HTML & CSS Tutorial
-    link: /library/html-css/de/
-    icon-css: fa fa-fw fa-external-link
-languages:
-  header: Sprachen
-  collection: library
-  item: more-html-css
-  part: icons
-  active: de
----
++++
+title = "Icons auf Website verwenden"
+date = 2018-08-16
+description = "Icons mit Icon Fonts auf einer Webseite einbinden. Links zu verschiedenen Bibliotheken für Icons."
+prettify = true
+comments = true
+commentsIdentifier = "/library/more-html-css/de/icons/"
+aliases = [ 
+  "/library/more-html-css/de/icons/" 
+]
+weight = 2
+
+# Custom Sidebars
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
+link = "/de/library/html-css/"
++++
 
 Icons in eine Webseite einzufügen ist nicht schwer. Aber wenn man Texte und Icons kombiniert (z.B. für einen Button) oder wenn die Icons in der Grösse veränderbar sein sollen, dann wird es schwierig.
 
@@ -89,7 +51,7 @@ Um ein Icon zu verwenden definieren wir jeweils ein `<span>`-Element und geben i
 
 Dieses `span` kann nun irgendwo eigenfügt werden. Zum Beispiel in den Titel einer Kontaktseite: 
 
-![Kontakt Icon](/assets/library/more-html-css/icons/contact-icon-de.png)
+![Kontakt Icon](contact-icon.de.png)
 
 
 ## Font Awesome
@@ -110,7 +72,7 @@ Wie bei den Glyphicons werden die Font Awesome Icons mit zwei CSS-Klassen verwen
 &lt;i class="fa fa-flag">&lt;i>
 </pre>
 
-Dieses Beispiel gibt uns eine Flagge: ![Font Awesome Flagge](/assets/library/more-html-css/icons/fontawesome-flag.png)
+Dieses Beispiel gibt uns eine Flagge: ![Font Awesome Flagge](fontawesome-flag.png)
 
 Schauen Sie sich die [Beispiele auf Font Awesome](http://fontawesome.io/examples/) an, um zu sehen, auf welche Arten die Icons verwendet werden können. Sie finden dort auch Beispiele zur Verwendung mit für Bootstrap 3. 
 

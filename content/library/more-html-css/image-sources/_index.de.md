@@ -1,60 +1,22 @@
----
-layout: article
-title: "Mehr HTML & CSS: Kostenlose Bilder"
-date: 2015-03-18 00:00
-slug: more-html-css/de/image-sources
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-image-sources.md
-description: "Eine Anleitung zum Finden und Verwenden von Bildern aus dem Internet. Links zu gratis Bilddatenbanken."
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/more-html-css/de/
-    paging: Intro
-  - text: "Website-Layout mit Bootstrap"
-    link: /library/more-html-css/de/website-layout/
-    paging: 1
-    icon-css: fa fa-fw fa-th-large
-  - text: "Icons"
-    link: /library/more-html-css/de/icons/
-    paging: 2
-    icon-css: fa fa-fw fa-flag
-  - text: "Bilder mit Bootstrap"
-    link: /library/more-html-css/de/image-bootstrap/
-    icon-css: fa fa-fw fa-image
-    paging: 3
-  - text: "Bilder gestalten"
-    link: /library/more-html-css/de/image-editing/
-    icon-css: fa fa-fw fa-image
-    paging: 4
-  - text: "Kostenlose Bilder"
-    link: /library/more-html-css/de/image-sources/
-    icon-css: fa fa-fw fa-image
-    paging: 5
-    active: true
-  - text: "Textformatierung"
-    link: /library/more-html-css/de/text/
-    paging: 6
-    icon-css: fa fa-fw fa-font
-  - text: "JavaScript mit Bootstrap"
-    link: /library/more-html-css/de/javascript-bootstrap/
-    paging: 7
-    icon-css: fa fa-fw fa-code
-- header: Links
-  body:
-  - text: HTML & CSS Tutorial
-    link: /library/html-css/de/
-    icon-css: fa fa-fw fa-external-link
-languages:
-  header: Sprachen
-  collection: library
-  item: more-html-css
-  part: image-sources
-  active: de
----
++++
+title = "Kostenlose Bilder"
+date = 2018-08-16
+description = "Eine Anleitung zum Finden und Verwenden von Bildern aus dem Internet. Links zu gratis Bilddatenbanken."
+prettify = true
+comments = true
+commentsIdentifier = "/library/more-html-css/de/image-sources/"
+aliases = [ 
+  "/library/more-html-css/de/image-sources/" 
+]
+weight = 5
+
+# Custom Sidebars
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
+link = "/de/library/html-css/"
++++
 
 Beim Kopieren von Bildern aus dem Internet sollte man vorsichtig sein. Grundsätzlich gehören die Bilder dem Autor und dürfen nicht auf einer eigenen Website verwendet werden. Wenn man solche Bilder verwendet läuft man Gefahr, Ärger wegen des Urheberrechts zu bekommen.
 

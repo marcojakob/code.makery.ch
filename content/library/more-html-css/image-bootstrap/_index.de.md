@@ -1,60 +1,22 @@
----
-layout: article
-title: "Mehr HTML & CSS: Bilder mit Bootstrap verwenden"
-date: 2015-03-18 00:00
-slug: more-html-css/de/image-bootstrap
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-de-image-bootstrap.md
-description: "Lernen Sie wie Bilder mit Bootstrap verwendet werden können. Bilder automatisch auf die Bildschirmgrösse anpassen, Bilder ausrichten, etc."
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/more-html-css/de/
-    paging: Intro
-  - text: "Website-Layout mit Bootstrap"
-    link: /library/more-html-css/de/website-layout/
-    paging: 1
-    icon-css: fa fa-fw fa-th-large
-  - text: "Icons"
-    link: /library/more-html-css/de/icons/
-    paging: 2
-    icon-css: fa fa-fw fa-flag
-  - text: "Bilder mit Bootstrap"
-    link: /library/more-html-css/de/image-bootstrap/
-    icon-css: fa fa-fw fa-image
-    paging: 3
-    active: true
-  - text: "Bilder gestalten"
-    link: /library/more-html-css/de/image-editing/
-    icon-css: fa fa-fw fa-image
-    paging: 4
-  - text: "Kostenlose Bilder"
-    link: /library/more-html-css/de/image-sources/
-    icon-css: fa fa-fw fa-image
-    paging: 5
-  - text: "Textformatierung"
-    link: /library/more-html-css/de/text/
-    paging: 6
-    icon-css: fa fa-fw fa-font
-  - text: "JavaScript mit Bootstrap"
-    link: /library/more-html-css/de/javascript-bootstrap/
-    paging: 7
-    icon-css: fa fa-fw fa-code
-- header: Links
-  body:
-  - text: HTML & CSS Tutorial
-    link: /library/html-css/de/
-    icon-css: fa fa-fw fa-external-link
-languages:
-  header: Sprachen
-  collection: library
-  item: more-html-css
-  part: image-bootstrap
-  active: de
----
++++
+title = "Bilder mit Bootstrap verwenden"
+date = 2018-08-16
+description = "Lernen Sie wie Bilder mit Bootstrap verwendet werden können. Bilder automatisch auf die Bildschirmgrösse anpassen, Bilder ausrichten, etc."
+prettify = true
+comments = true
+commentsIdentifier = "/library/more-html-css/de/image-bootstrap/"
+aliases = [ 
+  "/library/more-html-css/de/image-bootstrap/" 
+]
+weight = 3
+
+# Custom Sidebars
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
+link = "/de/library/html-css/"
++++
 
 In diesem Teil lernen Sie ein paar Tricks mit Bildern:
 
@@ -102,7 +64,7 @@ Bootstrap 3 bietet hierzu eine CSS-Klasse `img-responsive`, welche Bilder automa
 
 Mit der CSS-Klasse `center-block` können Sie mit Bootstrap 3 Bilder zentrieren (siehe auch [center](http://holdirbootstrap.de/css/#helper-classes-center) in der Bootstrap Dokumentation):
 
-<img src="/assets/library/more-html-css/image-bootstrap/center-block.png" class="center-block">
+<img src="center-block.png" class="center-block">
 
 
 ##### Bild zentrieren
@@ -127,7 +89,7 @@ Bilder können nach links und nach rechts ausgerichtet werden. Der Text fliesst 
 &lt;img src="..." alt="..." class="pull-left">
 </pre>
 
-![Links ausrichten](/assets/library/more-html-css/image-bootstrap/pull-left.png)
+![Links ausrichten](pull-left.png)
 
 
 ##### Rechts ausrichten
@@ -136,7 +98,7 @@ Bilder können nach links und nach rechts ausgerichtet werden. Der Text fliesst 
 &lt;img src="..." alt="..." class="pull-right">
 </pre>
 
-![Rechts ausrichten](/assets/library/more-html-css/image-bootstrap/pull-right.png)
+![Rechts ausrichten](pull-right.png)
 
 
 #### Neue Zeile (Clearfix)
@@ -151,7 +113,7 @@ Beim Ausrichten nach links oder rechts werden alle nachfolgenden Elemente neben 
 &lt;p>Dieser Text ist unter dem Bild.&lt;/p>
 </pre>
 
-![Clearfix](/assets/library/more-html-css/image-bootstrap/clearfix-de.png)
+![Clearfix](clearfix.de.png)
 
 
 #### Abstand neben dem Bild
@@ -180,7 +142,7 @@ Im CSS definieren wir jetzt den Abstand.
 }
 </pre> 
 
-![Abstand](/assets/library/more-html-css/image-bootstrap/margin.png)
+![Abstand](margin.png)
 
 Neben `margin-right` gibt es natürlich `margin-top`, `margin-bottom` und `margin-left`.
 
@@ -189,7 +151,7 @@ Neben `margin-right` gibt es natürlich `margin-top`, `margin-bottom` und `margi
 
 Bootstrap 3 bietet Möglichkeiten, um Bilder ganz einfach auf einer Webseite zu gestalten. Sie können die Ecken abrunden, einen Kreis ausschneiden oder einen dezenten Rahmen hinzufügen:
 
-![Bilder mit Konturen](/assets/library/more-html-css/image-bootstrap/image-shapes.png)
+![Bilder mit Konturen](image-shapes.png)
 
 Mit den folgenden drei CSS-Klassen können Sie Ihren Bildern solche Konturen hinzufügen (weitere Infos unter [Bilder-Konturen](http://holdirbootstrap.de/css/#images-shapes) in der Bootstrap Dokumentation):
 

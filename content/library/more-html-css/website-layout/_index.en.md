@@ -1,80 +1,38 @@
----
-layout: article
-title: "More HTML & CSS: Website Layout with Bootstrap"
-date: 2015-04-09 00:00
-slug: more-html-css/website-layout
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-en-website-layout.md
-description: "Learn how to layout elements on web pages using the bootstrap grid."
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Articles in this Series
-  body:
-  - text: "Introduction"
-    link: /library/more-html-css/
-    paging: Intro
-  - text: "Website Layout with Bootstrap"
-    link: /library/more-html-css/website-layout/
-    paging: 1
-    icon-css: fa fa-fw fa-th-large
-    active: true
-  - text: "Icons"
-    link: /library/more-html-css/icons/
-    paging: 2
-    icon-css: fa fa-fw fa-flag
-  - text: "Images with Bootstrap"
-    link: /library/more-html-css/image-bootstrap/
-    icon-css: fa fa-fw fa-image
-    paging: 3
-  - text: "Image Editing"
-    link: /library/more-html-css/image-editing/
-    icon-css: fa fa-fw fa-image
-    paging: 4
-  - text: "Free Image Sources"
-    link: /library/more-html-css/image-sources/
-    icon-css: fa fa-fw fa-image
-    paging: 5
-  - text: "Formatting Text"
-    link: /library/more-html-css/text/
-    paging: 6
-    icon-css: fa fa-fw fa-font
-  - text: "JavaScript with Bootstrap"
-    link: /library/more-html-css/javascript-bootstrap/
-    paging: 7
-    icon-css: fa fa-fw fa-code
-- header: Links
-  body:
-  - text: HTML & CSS Tutorial
-    link: /library/html-css/
-    icon-css: fa fa-fw fa-external-link
-languages:
-  header: Languages
-  collection: library
-  item: more-html-css
-  part: website-layout
-  active: en
----
++++
+title = "Website Layout with Bootstrap"
+date = 2018-08-16
+description = "Learn how to layout elements on web pages using the bootstrap grid."
+prettify = true
+comments = true
+weight = 1
+
+# Custom Sidebars
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
+link = "/library/html-css/"
++++
 
 By default, HTML elements are arranged in two ways:
 
 **Block elements** always start on a new line. Examples of block elements are `<div>`, `<h1>`, `<p>`, and `<li>`.
 
-![Block Elements](/assets/library/more-html-css/website-layout/block-elements.png)
+![Block Elements](block-elements.png)
 
 **Inline Elements** are displayed in a line. Examples of inline elements are `<span>`, `<a>`, `<strong>`, `<em>`, and `<img>`.
 
-![Inline Elements](/assets/library/more-html-css/website-layout/inline-elements.png)
+![Inline Elements](inline-elements.png)
 
 However, these two options are not enough to create a proper layout for a web page.
 
 Most websites either have a layout with **two columns** ...
 
-![Two-column Layout](/assets/library/more-html-css/website-layout/two-columns.png)
+![Two-column Layout](two-columns.png)
 
 ... or they have a layout with **three columns**.
 
-![Three-column Layout](/assets/library/more-html-css/website-layout/three-columns.png)
+![Three-column Layout](three-columns.png)
 
 To create a layout like this without a CSS framework like *Bootstrap* would be quite a challenge. With Bootstrap it gets much easier.
 
@@ -89,7 +47,7 @@ In addition, the layout in Bootstrap is automatically adjusted to the screen siz
 
 Bootstrap contains a **12-column grid system** for the layout (see [documentation of the Bootstrap grid](http://getbootstrap.com/css/#grid)). A grid can be thought of as an invisible table with twelve columns.
 
-![Twelve Columns](/assets/library/more-html-css/website-layout/bootstrap-twelve-columns.png)
+![Twelve Columns](bootstrap-twelve-columns.png)
 
 We can define our own columns by specifying how many wide they should be inside the Bootstrap grid.
 
@@ -98,7 +56,7 @@ We can define our own columns by specifying how many wide they should be inside 
 
 In this example, we define a left column with a width of 4 and a right column with a width of 8. On the left we could have a navigation while on the right we would put the page's content.
 
-![2-Column Layout](/assets/library/more-html-css/website-layout/bootstrap-two-columns.png)
+![2-Column Layout](bootstrap-two-columns.png)
 
 In the HTML code of this layout would look like the following:
 
@@ -141,14 +99,14 @@ On all screens that are smaller all columns will automatically be stacked vertic
 
 This is how our example for a two-column layout would look like **on a smartphone**:
 
-![Two-Column Layout Smartphone](/assets/library/more-html-css/website-layout/bootstrap-two-columns-smartphone.png)
+![Two-Column Layout Smartphone](bootstrap-two-columns-smartphone.png)
 
 
 ### Example for a Three-Column Layout
 
 In this example, we define three columns.
 
-![Three-Column Layout](/assets/library/more-html-css/website-layout/bootstrap-three-columns.png)
+![Three-Column Layout](bootstrap-three-columns.png)
 
 In HTML code this layout would look like this:
 
@@ -173,7 +131,7 @@ In HTML code this layout would look like this:
 
 In the [HTML & CSS Tutorial](/library/html-css/) we developed a portfolio with a blog page. The following example shows a **two-column layout** for the blog page. The left column contains the list of blog entries. In the right column, we now have some space for things like a list of links.
 
-<img src="/assets/library/more-html-css/website-layout/portfolio-two-columns.png" alt="Portfolio" class="img-thumbnail">
+<img src="portfolio-two-columns.png" alt="Portfolio" class="img-thumbnail">
 
 
 ##### blog/index.html

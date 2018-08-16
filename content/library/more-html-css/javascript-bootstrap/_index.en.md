@@ -1,60 +1,18 @@
----
-layout: article
-title: "More HTML & CSS: JavaScript with Bootstrap"
-date: 2015-04-09 00:00
-slug: more-html-css/javascript-bootstrap
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/more-html-css-en-javascript-bootstrap.md
-description: "Learn how to integrate the Bootstrap JavaScript into your web page. Contains an example for a Bootstrap navigation."
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Articles in this Series
-  body:
-  - text: "Introduction"
-    link: /library/more-html-css/
-    paging: Intro
-  - text: "Website Layout with Bootstrap"
-    link: /library/more-html-css/website-layout/
-    paging: 1
-    icon-css: fa fa-fw fa-th-large
-  - text: "Icons"
-    link: /library/more-html-css/icons/
-    paging: 2
-    icon-css: fa fa-fw fa-flag
-  - text: "Images with Bootstrap"
-    link: /library/more-html-css/image-bootstrap/
-    icon-css: fa fa-fw fa-image
-    paging: 3
-  - text: "Image Editing"
-    link: /library/more-html-css/image-editing/
-    icon-css: fa fa-fw fa-image
-    paging: 4
-  - text: "Free Image Sources"
-    link: /library/more-html-css/image-sources/
-    icon-css: fa fa-fw fa-image
-    paging: 5
-  - text: "Formatting Text"
-    link: /library/more-html-css/text/
-    paging: 6
-    icon-css: fa fa-fw fa-font
-  - text: "JavaScript with Bootstrap"
-    link: /library/more-html-css/javascript-bootstrap/
-    paging: 7
-    icon-css: fa fa-fw fa-code
-    active: true
-- header: Links
-  body:
-  - text: HTML & CSS Tutorial
-    link: /library/html-css/
-    icon-css: fa fa-fw fa-external-link
-languages:
-  header: Languages
-  collection: library
-  item: more-html-css
-  part: javascript-bootstrap
-  active: en
----
++++
+title = "JavaScript with Bootstrap"
+date = 2018-08-16
+description = "Learn how to integrate the Bootstrap JavaScript into your web page. Contains an example for a Bootstrap navigation."
+prettify = true
+comments = true
+weight = 7
+
+# Custom Sidebars
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
+link = "/library/html-css/"
++++
 
 The Bootstrap core is its CSS. However, there is also a JavaScript file that is very useful. Have a look at the [Bootstrap JavaScript page](http://getbootstrap.com/javascript/) to find out what's possible.
 
@@ -104,7 +62,7 @@ Three things are needed:
 
 With only the Bootstrap CSS we were already able to program a pretty decent navigation in our Part 7 of our [HTML & CSS Tutorial](/library/html-css/part7#navigation-with-bootstrap). Now we further improve this navigation so that it automatically collapses on small screens.
 
-![Navigation collapsed](/assets/library/more-html-css/javascript-bootstrap/navigation-collapsed.png)
+![Navigation collapsed](navigation-collapsed.png)
 
 The HTML code looks like this:
 
