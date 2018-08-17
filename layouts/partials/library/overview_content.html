@@ -29,6 +29,7 @@
     
     <div class="col-sm-9">
     {{ range .Items }}
+      {{ if .Params.overview }}
       <div class="library-panel">
         <a class="panel-link" href="{{ .RelPermalink }}">
           <div class="panel panel-default">
@@ -70,6 +71,7 @@
           </div>
         </div>
       </div>
+      {{ end }}
     {{ end }}
     </div>
   </div>

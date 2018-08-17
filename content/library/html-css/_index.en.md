@@ -9,10 +9,11 @@ sidebarName = "Introduction"
 pagingName = "Intro"
 
 # Series Overview Info
-topics = [ "HTML-CSS" ]
-weight = 1
+overview = true
 overviewImage = "thumbnail.png"
 overviewDescription = "Course to learn HTML & CSS from the beginning."
+topics = [ "HTML-CSS" ]
+weight = 1
 +++
 
 In this tutorial you will learn the basics of HTML and CSS to create your own web projects. Instead of working through rather boring theory we will immediately **start with a project**.

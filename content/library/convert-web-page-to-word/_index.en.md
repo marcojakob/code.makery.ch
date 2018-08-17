@@ -1,23 +1,12 @@
----
-layout: article
-title: "Convert Web Page to Word Document"
-date: 2014-07-07 00:00
-slug: convert-web-page-to-word
-description: "Convert any HTML web page to a Word docx file in 5 simple steps."
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/convert-web-page-to-word.md
-published: true
-comments: false
-sidebars:
-- header: Languages
-  body:
-  - text: English
-    link: /library/convert-web-page-to-word/
-    icon-css: fa fa-fw fa-globe
-    active: true
-  - text: Deutsch
-    link: /library/convert-web-page-to-word/de/
-    icon-css: fa fa-fw fa-globe
----
++++
+title = "Convert Web Page to Word Document"
+date = 2014-07-07
+description = "Convert any HTML web page to a Word docx file in 5 simple steps."
+comments = false
+
+# Series Overview Info
+overview = false
++++
 
 This is the best way I found to convert an HTML page to a Word `docx` file. You can use this approach if you need a Word version of any web page. 
 
@@ -43,7 +32,7 @@ If the document contains images those images might only be linked. Usually you'l
 
 Go to the **File Menu** and choose **Info**. If there are linked images you should see a link icon on the right. Click on **Edit Links to Files**.
 
-![Links to Files](/assets/library/convert-web-page-to-word/links-to-files.png)
+![Links to Files](links-to-files.png)
 
 In the dialog **select all images you want to embed** in the list (use shift-key to select multiple images).
 
@@ -56,10 +45,10 @@ We can do some clean up to get rid of unwanted elements. Just delete the navigat
 
 The web page usually opens in *Web Layout View* in Word. Change to the "normal" **Print Layout View** to see how it would fit on printed pages.
 
-![Print Layout View](/assets/library/convert-web-page-to-word/print-layout-view.png)
+![Print Layout View](print-layout-view.png)
 
 After some layouting you should have a pretty good word document of the web page.
 
 **Note:** The heading *Styles* are automatically applied so you can just change the *Styles* and they will be applied to all headers.
 
-![Heading Styles](/assets/library/convert-web-page-to-word/heading-styles.png)
+![Heading Styles](heading-styles.png)

@@ -1,5 +1,6 @@
 {{ $series := .Scratch.Get "series" }}
-<nav>
+{{ if gt (len $series.Sections) 0  }}
+  <nav>
     <div class="article-paging">
       <ul class="pagination">
         <li{{ if eq .RelPermalink $series.RelPermalink }} class="active"{{ end }}>
@@ -17,3 +18,4 @@
       </ul>
     </div>
   </nav>
+{{ end }}

@@ -1,23 +1,9 @@
----
-layout: article
-title: "Webseite nach Word umwandeln"
-date: 2014-07-07 00:00
-slug: convert-web-page-to-word/de
-description: "Mit diesen 5 Schritten können Sie eine beliebige Webseite in eine Word docx-Datei umwandeln."
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/convert-web-page-to-word-de.md
-published: true
-comments: false
-sidebars:
-- header: Sprachen
-  body:
-  - text: English
-    link: /library/convert-web-page-to-word/
-    icon-css: fa fa-fw fa-globe
-  - text: Deutsch
-    link: /library/convert-web-page-to-word/de/
-    icon-css: fa fa-fw fa-globe
-    active: true
----
++++
+title = "Webseite nach Word umwandeln"
+date = 2014-07-07
+description = "Mit diesen 5 Schritten können Sie eine beliebige Webseite in eine Word docx-Datei umwandeln."
+comments = false
++++
 
 Mit dieser Beschreibung können Sie eine beliebige Webseite in eine Word `docx`-Datei umwandeln. 
 
@@ -43,7 +29,7 @@ Falls das Dokument Bilder enthält, dann sind diese Bilder wahrscheinlich nur ve
 
 Öffnen Sie wieder das Menu **Datei** und wählen Sie **Informationen**. Falls es verlinkte Bilder hat, sehen Sie auf der rechten Seite ein Linksymbol. Klicken Sie auf **Verknüfpungen mit Dateien bearbeiten**.
 
-![Links to Files](/assets/library/convert-web-page-to-word/links-to-files-de.png)
+![Links to Files](links-to-files.de.png)
 
 Im anschliessenden Dialog müssen Sie **alle Bilder markieren** in der Liste (verwenden Sie die Shift-Taste, um mehrere Bilder zu markieren).  
 
@@ -56,10 +42,10 @@ Nun können wir ein wenig aufräumen. Löschen Sie alle Elemente im Dokument, we
 
 Word öffnet eine Webseite normalerweise im **Weblayout**. Ändern sie dies zurück zum "normalen" **Seitenlayout**, damit Sie sehen, wie es auf gedruckte Seiten passen würde.
 
-![Print Layout View](/assets/library/convert-web-page-to-word/print-layout-view.png)
+![Print Layout View](print-layout-view.png)
 
 Nachdem wir das Layout ein wenig angepasst haben, sollten wir ein ziemlich brauchbares Word Dokument der Webseite haben.
 
 **Hinweis:** Auf Überschriften werden automatisch *Formatvorlagen* angewendet. Dies ermöglicht uns, dass wir sehr einfach alle Überschriften gleichzeitig ändern können.
 
-![Heading Styles](/assets/library/convert-web-page-to-word/heading-styles.png)
+![Heading Styles](heading-styles.png)

@@ -1,25 +1,30 @@
----
-layout: article
-title: Dart Drag and Drop
-date: 2014-07-17 00:00
-updated: 2017-06-27 00:00
-slug: dart-drag-and-drop
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-drag-and-drop.md
-description: "Drag and Drop for Dart web apps with mouse and touch support."
-image: /assets/library/dart-drag-and-drop/dnd-screenshot.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Source Code
-  body:
-  - text: Source on GitHub
-    link: https://github.com/marcojakob/dart-dnd
-    icon-css: fa fa-fw fa-github-alt
-  - text: Package on Pub
-    link: http://pub.dartlang.org/packages/dnd
-    icon-css: fa fa-fw fa-download
----
++++
+title = "Dart Drag and Drop"
+date = 2014-07-17
+updated = 2018-08-17
+description = "Drag and Drop for Dart web apps with mouse and touch support."
+image = "dnd-screenshot.png"
+prettify = true
+comments = true
+
+# Series Overview Info
+overview = true
+overviewImage = "dnd-screenshot.png"
+overviewDescription = "Drag and Drop for Dart web apps with mouse and touch support."
+topics = [ "Dart" ]
+weight = 8
+
+[[sidebars]]
+header = "Source Code"
+
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-github-alt\"></i> Source on GitHub"
+link = "https://github.com/marcojakob/dart-dnd"
+
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Package on Pub"
+link = "https://pub.dartlang.org/packages/dnd"
++++
 
 There are a few options when you want to support drag and drop in your web application the most popular being jQuery UI [Draggable](http://jqueryui.com/draggable/) and [Droppable](http://jqueryui.com/droppable/). I didn't like the dependency on jQuery and wanted something that would also support dragging on touch screens.
 

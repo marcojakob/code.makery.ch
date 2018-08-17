@@ -8,10 +8,11 @@ sidebarName = "Introduction"
 pagingName = "Intro"
 
 # Series Overview Info
-topics = [ "HTML-CSS" ]
-weight = 2
+overview = true
 overviewImage = "thumbnail.png"
 overviewDescription = "A collection of various topics around HTML & CSS."
+topics = [ "HTML-CSS" ]
+weight = 2
 
 # Custom Sidebars
 [[sidebars]]
