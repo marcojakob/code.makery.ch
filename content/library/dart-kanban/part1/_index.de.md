@@ -1,50 +1,25 @@
----
-layout: article
-title: "Dart Kanban - Teil 1: Webapplikation erstellen"
-date: 2015-03-23 00:00
-slug: dart-kanban/de/part1
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-kanban-de-part1.md
-description: "Eine erste Webapplikation mit Dart erstellen. Dart mit HTML verknüpfen und ein HTML-Element mit Dart verändern."
-image: /assets/library/dart-kanban/dart-kanban.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/dart-kanban/de/
-    paging: Einleitung
-  - text: "Dart Editor installieren"
-    link: /library/dart-kanban/de/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Webapp erstellen"
-    link: /library/dart-kanban/de/part1/
-    paging: 1
-    active: true
-  - text: "Teil 2: HTML vorbereiten"
-    link: /library/dart-kanban/de/part2/
-    paging: 2
-  - text: "Teil 3: Element hinzufügen"
-    link: /library/dart-kanban/de/part3/
-    paging: 3
-  - text: "Teil 4: Element verschieben"
-    link: /library/dart-kanban/de/part4/
-    paging: 4
-  - text: "Teil 5: Veröffentlichen"
-    link: /library/dart-kanban/de/part5/
-    paging: 5
-  - text: "Nächste Schritte"
-    link: /library/dart-kanban/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: "Source Code"
-  body:
-  - text: Beispielcode auf GitHub
-    link: https://github.com/marcojakob/tutorial-dart-kanban
-    icon-css: fa fa-fw fa-github
----
++++
+title = "Teil 1: Webapp erstellen"
+date = 2015-03-23
+description = "Eine erste Webapplikation mit Dart erstellen. Dart mit HTML verknüpfen und ein HTML-Element mit Dart verändern."
+image = "first-run.de.png"
+prettify = true
+comments = true
+commentsIdentifier = "/library/dart-kanban/de/part1/"
+aliases = [ 
+  "/library/dart-kanban/de/part1/" 
+]
+
+pagingName = "1"
+weight = 2
+
+[[sidebars]]
+header = "Source Code"
+
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-github-alt\"></i> Beispielcode auf GitHub"
+link = "https://github.com/marcojakob/tutorial-dart-kanban"
++++
 
 ## Eine Webapplikation erstellen
 
@@ -141,23 +116,23 @@ querySelector('#subtitle').text = 'von Marco';
 
 ## Die Webapplikation starten
 
-Selektieren Sie nun die `index.html` und klicken Sie auf den Run-Knopf ![Run](/assets/library/dart-kanban/part1/run.png). Der Dart Editor öffnet Dartium (spezieller Chrome Browser mit integrierter Dart VM) und lädt die `index.html`. Der Dart-Code sorgt dafür, dass der Untertitel gesetzt wird, wie im folgenden Screenshot.
+Selektieren Sie nun die `index.html` und klicken Sie auf den Run-Knopf ![Run](run.png). Der Dart Editor öffnet Dartium (spezieller Chrome Browser mit integrierter Dart VM) und lädt die `index.html`. Der Dart-Code sorgt dafür, dass der Untertitel gesetzt wird, wie im folgenden Screenshot.
 
-![Erster Start](/assets/library/dart-kanban/part1/first-run-de.png)
+![Erster Start](first-run.de.png)
 
 
 ### Andere Browser
 
 Wenn Sie die Webapplikation in einem anderen Browser laufen lassen möchten, dann kann der Dart-Code nach JavaScript übersetzt werden mittels dem [dart2js](https://www.dartlang.org/tools/dart2js/) Tool (ist bereits im Dart Editor enthalten). Dazu gibt es im Dart Editor ein praktisches Kontextmenu:
 
-![Run as JavaScript](/assets/library/dart-kanban/part1/run-as-javascript.png)
+![Run as JavaScript](run-as-javascript.png)
 
 Im letzten Teil dieser Serie wird noch genauer beschrieben, wie eine Dart-Applikation in JavaScript übersetzt und auf einem Webserver veröffentlicht werden kann.
 
 
 ## Wie weiter?
 
-Im [Teil 2](/library/dart-kanban/de/part2/) bereiten wir die Grundstruktur der HTML-Datei für unser Kanban Board vor.
+Im [Teil 2](/de/library/dart-kanban/part2/) bereiten wir die Grundstruktur der HTML-Datei für unser Kanban Board vor.
 
 
 

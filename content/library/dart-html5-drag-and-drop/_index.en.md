@@ -1,21 +1,22 @@
----
-layout: article
-title: Dart HTML5 Drag and Drop
-date: 2014-03-25 00:00
-updated: 2014-07-17
-slug: dart-html5-drag-and-drop
-published: true
-prettify: true
-comments: 
-  shortname: edumakery
-  identifier: http://edu.makery.ch/projects/dart-html5-drag-and-drop/index.html
-sidebars:
-- header: Source Code
-  body:
-  - text: Dart HTML5 Drag and Drop (GitHub)
-    link: https://github.com/marcojakob/dart-html5-dnd
-    icon-css: fa fa-fw fa-github-alt
----
++++
+title = "Dart HTML5 Drag and Drop"
+date = 2014-03-25
+updated = 2014-07-17
+prettify = true
+comments = true 
+commentsShortname = "edumakery"
+commentsIdentifier = "http://edu.makery.ch/projects/dart-html5-drag-and-drop/index.html"
+
+# Series Overview Info
+overview = false
+
+[[sidebars]]
+header = "Source Code"
+
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-github-alt\"></i> Source on GitHub"
+link = "https://github.com/marcojakob/dart-html5-dnd"
++++
 
 <div class="alert alert-danger">
   <p>

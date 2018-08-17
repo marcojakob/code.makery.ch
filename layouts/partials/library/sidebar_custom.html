@@ -1,7 +1,7 @@
 {{ range .Params.sidebars  }}
 <div class="panel panel-default sidebar">
   <div class="panel-heading">
-    <h4 class="panel-title">{{ .header }}</h4>
+    <h4 class="panel-title">{{ .header | safeHTML }}</h4>
   </div>
 
   <div class="list-group">

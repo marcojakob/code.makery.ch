@@ -7,11 +7,11 @@
 
     <div class="list-group">
       <a href="{{ $series.RelPermalink }}" class="list-group-item{{ if eq .RelPermalink $series.RelPermalink }} active{{ end }}">
-        {{ $series.Param "sidebarName" | default $series.Title }}
+        {{ $series.Param "sidebarName" | default $series.Title | safeHTML }}
       </a>
       {{ range $series.Sections }}
         <a href="{{ .RelPermalink }}" class="list-group-item{{ if .InSection $ }} active{{ end }}">
-          {{ .Param "sidebarName" | default .Title }}
+          {{ .Param "sidebarName" | default .Title | safeHTML }}
         </a>
       {{ end }}
     </div>

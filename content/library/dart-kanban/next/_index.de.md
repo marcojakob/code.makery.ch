@@ -1,45 +1,27 @@
----
-layout: article
-title: "Dart Kanban - Nächste Schritte"
-date: 2015-03-23 00:00
-slug: dart-kanban/de/next
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-kanban-de-next.md
-description: "Wie kann man noch mehr lernen über Web Programmierung."
-image: /assets/library/dart-kanban/dart-kanban.png
-published: true
-prettify: false
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/dart-kanban/de/
-    paging: Einleitung
-  - text: "Dart Editor installieren"
-    link: /library/dart-kanban/de/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Webapp erstellen"
-    link: /library/dart-kanban/de/part1/
-    paging: 1
-  - text: "Teil 2: HTML vorbereiten"
-    link: /library/dart-kanban/de/part2/
-    paging: 2
-  - text: "Teil 3: Element hinzufügen"
-    link: /library/dart-kanban/de/part3/
-    paging: 3
-  - text: "Teil 4: Element verschieben"
-    link: /library/dart-kanban/de/part4/
-    paging: 4
-  - text: "Teil 5: Veröffentlichen"
-    link: /library/dart-kanban/de/part5/
-    paging: 5
-  - text: "Nächste Schritte"
-    link: /library/dart-kanban/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-    active: true
----
++++
+title = "Nächste Schritte"
+date = 2015-03-23
+description = "Wie kann man noch mehr lernen über Web Programmierung."
+image = "dart-kanban.png"
+published = true
+prettify = false
+comments = true
+commentsIdentifier = "/library/dart-kanban/de/next/"
+aliases = [ 
+  "/library/dart-kanban/de/next/" 
+]
+
+sidebarName = "<i class=\"fa fa-fw fa-flag-checkered\"></i> Nächste Schritte"
+pagingName = "<i class=\"fa fa-fw fa-flag-checkered\"></i>"
+weight = 7
+
+[[sidebars]]
+header = "Source Code"
+
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-github-alt\"></i> Beispielcode auf GitHub"
+link = "https://github.com/marcojakob/tutorial-dart-kanban"
++++
 
 Gratuliere! Wenn Sie bis hierhin mitgemacht haben, so haben Sie jetzt Ihr eigenes Dart-Programm geschrieben und es veröffentlicht.
 

@@ -1,52 +1,35 @@
----
-layout: article
-title: "Dart Kanban - Die bessere Todo-Liste (Deutsch)"
-date: 2015-03-23 00:00
-slug: dart-kanban/de
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-kanban-de.md
-description: "Lernen Sie Dart Programmieren. Wir erstellen ein interaktives Kanban Board als Dart Webapplikation. Anleitung vom Dart installieren bis zur Veröffentlichung auf einem Webserver."
-image: /assets/library/dart-kanban/dart-kanban.png
-published: true
-prettify: false
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/dart-kanban/de/
-    paging: Einleitung
-    active: true
-  - text: "Dart Editor installieren"
-    link: /library/dart-kanban/de/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Webapp erstellen"
-    link: /library/dart-kanban/de/part1/
-    paging: 1
-  - text: "Teil 2: HTML vorbereiten"
-    link: /library/dart-kanban/de/part2/
-    paging: 2
-  - text: "Teil 3: Element hinzufügen"
-    link: /library/dart-kanban/de/part3/
-    paging: 3
-  - text: "Teil 4: Element verschieben"
-    link: /library/dart-kanban/de/part4/
-    paging: 4
-  - text: "Teil 5: Veröffentlichen"
-    link: /library/dart-kanban/de/part5/
-    paging: 5
-  - text: "Nächste Schritte"
-    link: /library/dart-kanban/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: "Source Code"
-  body:
-  - text: Beispielcode auf GitHub
-    link: https://github.com/marcojakob/tutorial-dart-kanban
-    icon-css: fa fa-fw fa-github
----
++++
+title = "Dart Kanban - Die bessere Todo-Liste (Deutsch)"
+date = 2015-03-23
+updated = 2018-08-17
+description = "Lernen Sie Dart Programmieren. Wir erstellen ein interaktives Kanban Board als Dart Webapplikation. Anleitung vom Dart installieren bis zur Veröffentlichung auf einem Webserver."
+image = "dart-kanban.png"
+prettify = false
+comments = true
+commentsIdentifier = "/library/dart-kanban/de/"
+aliases = [ 
+  "/library/dart-kanban/de/" 
+]
 
-<iframe src="http://marcojakob.github.io/tutorial-dart-kanban/" width="100%" height="363px"></iframe>
+# Series Overview Info
+overview = true
+overviewImage = "dart-kanban-small.png"
+overviewDescription = "An Event Bus library in Dart for decoupling applications."
+topics = [ "Dart" ]
+weight = 4
+
+sidebarName = "Einleitung"
+pagingName = "Intro"
+
+[[sidebars]]
+header = "Source Code"
+
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-github-alt\"></i> Beispielcode auf GitHub"
+link = "https://github.com/marcojakob/tutorial-dart-kanban"
++++
+
+<iframe src="https://marcojakob.github.io/tutorial-dart-kanban/" width="100%" height="363px"></iframe>
 
 
 ## Um was geht es?

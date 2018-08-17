@@ -5,13 +5,13 @@
       <ul class="pagination">
         <li{{ if eq .RelPermalink $series.RelPermalink }} class="active"{{ end }}>
           <a href="{{ $series.RelPermalink }}" data-toggle="tooltip" title="{{ $series.Title }}">
-          {{ $series.Param "pagingName" | default $series.Title }}
+          {{ $series.Param "pagingName" | default $series.Title | safeHTML }}
           </a>
         </li>
         {{ range $i, $el := $series.Sections }}
         <li{{ if $el.InSection $ }} class="active"{{ end }}>
           <a href="{{ $el.RelPermalink }}" data-toggle="tooltip" title="{{ $el.Title }}">
-            {{ $el.Param "pagingName" | default (add $i 1) }}
+            {{ $el.Param "pagingName" | default (add $i 1) | safeHTML }}
           </a>
         </li>
         {{ end }}

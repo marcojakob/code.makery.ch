@@ -1,50 +1,25 @@
----
-layout: article
-title: "Dart Kanban - Teil 5: Veröffentlichen"
-date: 2015-03-23 00:00
-slug: dart-kanban/de/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-kanban-de-part5.md
-description: "Die Dart Applikation nach JavaScript übersetzen. Den generierten Build-Ordner auf einem Webserver veröffentlichen."
-image: /assets/library/dart-kanban/dart-kanban.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/dart-kanban/de/
-    paging: Einleitung
-  - text: "Dart Editor installieren"
-    link: /library/dart-kanban/de/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Webapp erstellen"
-    link: /library/dart-kanban/de/part1/
-    paging: 1
-  - text: "Teil 2: HTML vorbereiten"
-    link: /library/dart-kanban/de/part2/
-    paging: 2
-  - text: "Teil 3: Element hinzufügen"
-    link: /library/dart-kanban/de/part3/
-    paging: 3
-  - text: "Teil 4: Element verschieben"
-    link: /library/dart-kanban/de/part4/
-    paging: 4
-  - text: "Teil 5: Veröffentlichen"
-    link: /library/dart-kanban/de/part5/
-    paging: 5
-    active: true
-  - text: "Nächste Schritte"
-    link: /library/dart-kanban/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: "Source Code"
-  body:
-  - text: Beispielcode auf GitHub
-    link: https://github.com/marcojakob/tutorial-dart-kanban
-    icon-css: fa fa-fw fa-github
----
++++
+title = "Teil 5: Veröffentlichen"
+date = 2015-03-23
+description = "Die Dart Applikation nach JavaScript übersetzen. Den generierten Build-Ordner auf einem Webserver veröffentlichen."
+image = "dart-kanban.png"
+prettify = true
+comments = true
+commentsIdentifier = "/library/dart-kanban/de/part5/"
+aliases = [ 
+  "/library/dart-kanban/de/part5/" 
+]
+
+pagingName = "5"
+weight = 6
+
+[[sidebars]]
+header = "Source Code"
+
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-github-alt\"></i> Beispielcode auf GitHub"
+link = "https://github.com/marcojakob/tutorial-dart-kanban"
++++
 
 Wenn man eine coole App mit Dart programmiert hat, dann möchte man diese natürlich auch veröffentlichen.
 
@@ -60,7 +35,7 @@ In jedem Dart-Projekt hat es eine `pubspec.yaml`-Datei. Darin wird beschrieben, 
 
 Öffnen Sie `pubspec.yaml` und wechseln Sie in die **Source**-Ansicht.
 
-![Dart Kommandozeile](/assets/library/dart-kanban/part5/pubspec-source.png)
+![Dart Kommandozeile](pubspec-source.png)
 
 Wir brauchen nun noch ein zusätzliches *Package* und die Angabe eines *Transformers*. Ersetzen Sie den Inhalt von `pubspec.yaml` mit folgendem Code:
 
@@ -84,14 +59,14 @@ Der `dart_to_js_script_rewriter` wird in unserem HTML den Link auf die Dart-Date
 
 Nun sind wir bereit für das Übersetzen in JavaScript: **Rechtsklick** auf `pubspec.yaml` | **Pub Build - Minified**. 
 
-![Build JavaScript](/assets/library/dart-kanban/part5/build-javascript.png)
+![Build JavaScript](build-javascript.png)
 
 Dann dauert es ein paar Sekunden und ein neuer Ordner mit Namen `build` wird erstellt mit dem übersetzten JavaScript.
 
 
 ## Der Build Ordner
 
-![Build Ordner](/assets/library/dart-kanban/part5/build-folder.png)
+![Build Ordner](build-folder.png)
 
 Im generierten `build`-Ordner befinden sich nun all die Dateien, die wir brauchen, um unser Programm auf einen Webserver zu stellen.
 
@@ -109,20 +84,20 @@ Das Veröffentlichen geht ganz einfach. Wir können den gesamten Ordner `build/w
 
 ### Hostingmöglichkeiten
 
-Im [HTML & CSS Tutorial Teil 2](/library/html-css/de/part2/) habe ich verschiedene Möglichkeiten beschrieben, wie man eine Website gratis oder sehr günstig hosten lassen kann. All diese Hosting-Anbieter können genau gleich verwendet werden für unsere Dart-Programme.
+Im [HTML & CSS Tutorial Teil 2](/de/library/html-css/part2/) habe ich verschiedene Möglichkeiten beschrieben, wie man eine Website gratis oder sehr günstig hosten lassen kann. All diese Hosting-Anbieter können genau gleich verwendet werden für unsere Dart-Programme.
 
 
-#### BitBalloon
+#### Netlify
 
-Speziell empfehlen kann ich [BitBalloon](https://www.bitballoon.com), da es kaum eine einfachere Möglichkeit gibt für Hosting: Einfach die Dateien per Drag-and-Drop in den (Chrome) Browser ziehen und schon ist die Seite live. Dies funktioniert sogar ohne Login!
+Speziell empfehlen kann ich [Netlify](https://www.netlify.com), da es kaum eine einfachere Möglichkeit gibt für Hosting: Einfach die Dateien per Drag-and-Drop in den (Chrome) Browser ziehen und schon ist die Seite live. Dies funktioniert sogar ohne Login!
 
 
 #### Andere Hostinganbieter
 
-Neben BitBalloon geibt es natürlich zahlreiche andere Hostingmöglichkeiten. Ein paar sind wie gesagt im [HTML & CSS Tutorial](/library/html-css/de/part2/) beschrieben.
+Neben Netlify geibt es natürlich zahlreiche andere Hostingmöglichkeiten. Ein paar sind wie gesagt im [HTML & CSS Tutorial](/de/library/html-css/part2/) beschrieben.
 
 
 ## Wie weiter?
 
-Erfahren Sie die [nächsten Schritte](/library/dart-kanban/de/next/) und wie Sie das Kanban Board weiterentwickeln können.
+Erfahren Sie die [nächsten Schritte](/de/library/dart-kanban/next/) und wie Sie das Kanban Board weiterentwickeln können.
 

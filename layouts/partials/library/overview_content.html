@@ -37,9 +37,13 @@
               <h4 class="panel-title">{{ .Title }}</h4>
             </div>
             <div class="panel-body">
-              {{ $url := (.Resources.GetMatch .Params.overviewImage) }}
-              <img src="{{ $url.RelPermalink }}" class="img-rounded">
-              <p class="small">{{ .Params.overviewDescription }}</p>
+              {{ $url := .Resources.GetMatch .Params.overviewImage }}
+              {{ if $url }}
+                <img src="{{ $url.RelPermalink }}" class="img-rounded">
+              {{ else }}
+                No image!
+              {{ end }}
+              <p class="small">{{ .Params.overviewDescription | markdownify }}</p>
             </div>
           </div>
         </a>

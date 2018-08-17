@@ -1,50 +1,25 @@
----
-layout: article
-title: "Dart Kanban - Teil 2: HTML vorbereiten"
-date: 2015-03-23 00:00
-slug: dart-kanban/de/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-kanban-de-part2.md
-description: "Das Kanban Board in der HTML-Datei vorbereiten. Drei Spalten mit dem Bootstrap-Raster erstellen."
-image: /assets/library/dart-kanban/dart-kanban.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/dart-kanban/de/
-    paging: Einleitung
-  - text: "Dart Editor installieren"
-    link: /library/dart-kanban/de/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Webapp erstellen"
-    link: /library/dart-kanban/de/part1/
-    paging: 1
-  - text: "Teil 2: HTML vorbereiten"
-    link: /library/dart-kanban/de/part2/
-    paging: 2
-    active: true
-  - text: "Teil 3: Element hinzufügen"
-    link: /library/dart-kanban/de/part3/
-    paging: 3
-  - text: "Teil 4: Element verschieben"
-    link: /library/dart-kanban/de/part4/
-    paging: 4
-  - text: "Teil 5: Veröffentlichen"
-    link: /library/dart-kanban/de/part5/
-    paging: 5
-  - text: "Nächste Schritte"
-    link: /library/dart-kanban/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: "Source Code"
-  body:
-  - text: Beispielcode auf GitHub
-    link: https://github.com/marcojakob/tutorial-dart-kanban
-    icon-css: fa fa-fw fa-github
----
++++
+title = "Teil 2: HTML vorbereiten"
+date = 2015-03-23
+description = "Das Kanban Board in der HTML-Datei vorbereiten. Drei Spalten mit dem Bootstrap-Raster erstellen."
+image = "columns.de.png"
+prettify = true
+comments = true
+commentsIdentifier = "/library/dart-kanban/de/part2/"
+aliases = [ 
+  "/library/dart-kanban/de/part2/" 
+]
+
+pagingName = "2"
+weight = 3
+
+[[sidebars]]
+header = "Source Code"
+
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-github-alt\"></i> Beispielcode auf GitHub"
+link = "https://github.com/marcojakob/tutorial-dart-kanban"
++++
 
 Unser Ziel ist eine **dymanische Webapplikation**: Der Benutzer soll direkt Änderungen vornehmen können. Es gibt aber auch Teile unserer Webapplikation, die statisch sind und sich somit nicht verändern werden (wie zum Beispiel der Titel "Kanban Board").
 
@@ -69,9 +44,9 @@ Zuerst erstellen wir ein Textfeld (Input) und einen Knopf (Button). Öffnen Sie 
 
 ### Styling
 
-Wir verwenden Bootstrap-Klassen für das [Input-Element](http://holdirbootstrap.de/css/#forms) und für den [Button](http://holdirbootstrap.de/css/#buttons).
+Wir verwenden Bootstrap-Klassen für das [Input-Element](https://getbootstrap.com/docs/4.1/components/forms/) und für den [Button](https://getbootstrap.com/docs/4.1/components/buttons/).
 
-![Textfeld und Knopf](/assets/library/dart-kanban/part2/input-button-de.png)
+![Textfeld und Knopf](input-button.de.png)
 
 Standardmässig werden die Textfelder in Bootstrap auf der ganzen Breite angezeigt. Wir möchten jedoch, dass der Knopf schön neben dem Textfeld positioniert wird.
 
@@ -97,7 +72,7 @@ Die beiden ersten Regeln verändern die Farbe des Hintergrunds und der feinen Li
 
 Bei der dritten Regel sprechen wir das Textfeld an über die ID `todo-input`. Darin geben wir an, dass es nicht die gesamte Breite einnehmen soll.
 
-![Textfeld und Knopf](/assets/library/dart-kanban/part2/input-button-styled-de.png)
+![Textfeld und Knopf](input-button-styled.de.png)
 
 
 ## Drei Spalten - Todo, Doing, Done
@@ -173,12 +148,12 @@ Die erste Listengruppe enthält bereits ein Beispielelement mit dem Text *"Mein 
 
 Wenn Sie das Programm jetzt starten, sollte es wie folgt aussehen. Testen Sie auch, wie es aussieht, wenn sie das Browser-Fenster ganz schmal machen.
 
-![Bootstrap Spalten](/assets/library/dart-kanban/part2/columns-de.png)
+![Bootstrap Spalten](columns.de.png)
 
 
 ## Wie weiter?
 
 Wir könnten natürlich im HTML-Code weitere Todo-Elemente in die drei Spalten einfügen. Aber das Ziel ist offensichtlich, dass dies dynamisch möglich ist. Das heisst, dass man neue Elemente mit dem Textfeld und dem Knopf hinzufügen kann.
 
-So etwas ist mit reinem HTML nicht möglich. Im [Teil 3](/library/dart-kanban/de/part3/) lernen wir, wie wir neue Elemente mit Dart dynamisch hinzufügen können.
+So etwas ist mit reinem HTML nicht möglich. Im [Teil 3](/de/library/dart-kanban/part3/) lernen wir, wie wir neue Elemente mit Dart dynamisch hinzufügen können.
 

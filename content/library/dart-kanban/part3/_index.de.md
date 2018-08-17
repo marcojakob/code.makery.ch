@@ -1,50 +1,25 @@
----
-layout: article
-title: "Dart Kanban - Teil 3: Elemente hinzufügen"
-date: 2015-03-23 00:00
-slug: dart-kanban/de/part3
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/dart-kanban-de-part3.md
-description: "Mit Dart neue HTML-Elemente hinzufügen. Auf Events vom Benutzer reagieren. Lernen, wie man mit der HTML-Bibliothek von Dart arbeitet."
-image: /assets/library/dart-kanban/dart-kanban.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/dart-kanban/de/
-    paging: Einleitung
-  - text: "Dart Editor installieren"
-    link: /library/dart-kanban/de/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Webapp erstellen"
-    link: /library/dart-kanban/de/part1/
-    paging: 1
-  - text: "Teil 2: HTML vorbereiten"
-    link: /library/dart-kanban/de/part2/
-    paging: 2
-  - text: "Teil 3: Element hinzufügen"
-    link: /library/dart-kanban/de/part3/
-    paging: 3
-    active: true
-  - text: "Teil 4: Element verschieben"
-    link: /library/dart-kanban/de/part4/
-    paging: 4
-  - text: "Teil 5: Veröffentlichen"
-    link: /library/dart-kanban/de/part5/
-    paging: 5
-  - text: "Nächste Schritte"
-    link: /library/dart-kanban/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: "Source Code"
-  body:
-  - text: Beispielcode auf GitHub
-    link: https://github.com/marcojakob/tutorial-dart-kanban
-    icon-css: fa fa-fw fa-github
----
++++
+title = "Teil 3: Elemente hinzufügen"
+date = 2015-03-23
+description = "Mit Dart neue HTML-Elemente hinzufügen. Auf Events vom Benutzer reagieren. Lernen, wie man mit der HTML-Bibliothek von Dart arbeitet."
+image = "dart-kanban.png"
+prettify = true
+comments = true
+commentsIdentifier = "/library/dart-kanban/de/part1/"
+aliases = [ 
+  "/library/dart-kanban/de/part1/" 
+]
+
+pagingName = "3"
+weight = 4
+
+[[sidebars]]
+header = "Source Code"
+
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-github-alt\"></i> Beispielcode auf GitHub"
+link = "https://github.com/marcojakob/tutorial-dart-kanban"
++++
 
 
 In diesem Teil programmieren wir die dynamische Funktionalität von unserem Kanban Board mit Dart.
@@ -178,4 +153,4 @@ Testen Sie das Programm, indem Sie einen Text in das Feld eingeben und auf den K
 
 ## Wie weiter?
 
-Im [Teil 4](/library/dart-kanban/de/part4/) werden unser Kanban Board so erweitern, damit die Todos in die zwei anderen spalten verschoben werden können.
+Im [Teil 4](/de/library/dart-kanban/part4/) werden unser Kanban Board so erweitern, damit die Todos in die zwei anderen spalten verschoben werden können.

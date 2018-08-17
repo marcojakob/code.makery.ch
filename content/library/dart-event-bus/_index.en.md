@@ -1,22 +1,30 @@
----
-layout: article
-title: Dart Event Bus
-date: 2014-03-25 00:00
-updated: 2014-09-08 00:00
-slug: dart-event-bus
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Source Code
-  body:
-  - text: Source on GitHub
-    link: https://github.com/marcojakob/dart-event-bus
-    icon-css: fa fa-fw fa-github-alt
-  - text: Package on Pub
-    link: http://pub.dartlang.org/packages/event_bus
-    icon-css: fa fa-fw fa-download
----
++++
+title = "Dart Event Bus"
+date = 2014-03-25
+updated = 2018-08-17
+description = "An Event Bus library in Dart for decoupling applications."
+image = "event-bus.png"
+prettify = true
+comments = true
+
+# Series Overview Info
+overview = true
+overviewImage = "event-bus-small.png"
+overviewDescription = "An Event Bus library in Dart for decoupling applications."
+topics = [ "Dart" ]
+weight = 9
+
+[[sidebars]]
+header = "Source Code"
+
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-github-alt\"></i> Source on GitHub"
+link = "https://github.com/marcojakob/dart-event-bus"
+
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Package on Pub"
+link = "https://pub.dartlang.org/packages/event_bus"
++++
 
 A simple Event Bus using Dart [Streams](https://api.dartlang.org/apidocs/channels/stable/dartdoc-viewer/dart:async.Stream) 
 for decoupling applications.
@@ -26,7 +34,7 @@ for decoupling applications.
 
 ## Demo
 
-<iframe src="http://marcojakob.github.io/dart-event-bus/" width="100%" height="420px"></iframe>
+<iframe src="https://marcojakob.github.io/dart-event-bus/" width="100%" height="420px"></iframe>
 
 ***
 
@@ -41,21 +49,21 @@ them.
 
 ### Event Bus and MVC
 
-The Event Bus pattern is especially helpful for decoupling [MVC](http://wikipedia.org/wiki/Model_View_Controller) 
-(or [MVP](http://wikipedia.org/wiki/Model_View_Presenter)) applications.
+The Event Bus pattern is especially helpful for decoupling [MVC](https://wikipedia.org/wiki/Model_View_Controller) 
+(or [MVP](https://wikipedia.org/wiki/Model_View_Presenter)) applications.
 
 **One group of MVC** is not a problem.
 
-![Model-View-Controller](/assets/library/dart-event-bus/mvc.png)
+![Model-View-Controller](mvc.png)
 
 But as soon as there are **multiple groups of MVCs**, those groups will have to talk
 to each other. This creates a tight coupling between the controllers.
 
-![Multi Model-View-Controllers](/assets/library/dart-event-bus/mvc-multi.png)
+![Multi Model-View-Controllers](mvc-multi.png)
 
 By communication through an **Event Bus**, the coupling is reduced.
 
-![Event Bus](/assets/library/dart-event-bus/event-bus.png)
+![Event Bus](event-bus.png)
 
 
 ## Usage
@@ -156,4 +164,4 @@ eventBus.fire(new UserLoggedInEvent(myUser));
 
 <i class="fa fa-fw fa-github-alt"></i> [Source on GitHub](https://github.com/marcojakob/dart-event-bus)
 
-<i class="fa fa-fw fa-download"></i> [Package on Pub](http://pub.dartlang.org/packages/event_bus)
+<i class="fa fa-fw fa-download"></i> [Package on Pub](https://pub.dartlang.org/packages/event_bus)
