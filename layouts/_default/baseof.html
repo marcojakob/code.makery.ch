@@ -45,8 +45,10 @@
     <link rel="alternate" hreflang="{{ .Language }}" href="{{ .Permalink }}" />
     {{ end}}
 
-    <!-- RSS Feed -->
-    <link rel="alternate" type="application/rss+xml" href="/rss" title="{{ .Scratch.Get "title" }} - RSS Feed">
+    <!-- RSS Feed and other output formats-->
+    {{ range .AlternativeOutputFormats -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink ($.Scratch.Get "title") | safeHTML }}
+    {{ end -}}
 
     <meta name="description" content="{{ .Description }}">
     <meta name="author" content="{{ .Site.Params.author }}" >
