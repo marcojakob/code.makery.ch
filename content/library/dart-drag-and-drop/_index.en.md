@@ -2,8 +2,8 @@
 title = "Dart Drag and Drop"
 date = 2014-07-17
 updated = 2018-08-17
-description = "Drag and Drop for Dart web apps with mouse and touch support."
 image = "dnd-screenshot.png"
+description = "Drag and Drop for Dart web apps with mouse and touch support."
 prettify = true
 comments = true
 

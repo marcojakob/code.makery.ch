@@ -1,9 +1,11 @@
-{{ block "variables" . -}}
 {{ .Scratch.Set "title" (print .Title " | " .Site.Title) -}}
 {{ .Scratch.Set "canonical" "" -}}
+
+{{ block "variables" . -}}
+{{/* In this block inheriting layouts can set variables like .Scratch.Set "title" */}}
 {{ end -}}
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ .Language }}">
   <head>
     <meta charset="utf-8">

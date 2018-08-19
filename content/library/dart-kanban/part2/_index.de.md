@@ -1,8 +1,8 @@
 +++
 title = "Teil 2: HTML vorbereiten"
 date = 2015-03-23
-description = "Das Kanban Board in der HTML-Datei vorbereiten. Drei Spalten mit dem Bootstrap-Raster erstellen."
 image = "columns.de.png"
+description = "Das Kanban Board in der HTML-Datei vorbereiten. Drei Spalten mit dem Bootstrap-Raster erstellen."
 prettify = true
 comments = true
 commentsIdentifier = "/library/dart-kanban/de/part2/"

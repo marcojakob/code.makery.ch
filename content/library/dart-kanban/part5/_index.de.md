@@ -1,8 +1,8 @@
 +++
 title = "Teil 5: Veröffentlichen"
 date = 2015-03-23
-description = "Die Dart Applikation nach JavaScript übersetzen. Den generierten Build-Ordner auf einem Webserver veröffentlichen."
 image = "dart-kanban.png"
+description = "Die Dart Applikation nach JavaScript übersetzen. Den generierten Build-Ordner auf einem Webserver veröffentlichen."
 prettify = true
 comments = true
 commentsIdentifier = "/library/dart-kanban/de/part5/"

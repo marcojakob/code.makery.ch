@@ -1,8 +1,8 @@
 +++
 title = "Teil 4: Elemente verschieben"
 date = 2015-03-23
-description = "Mit Dart HTML-Elemente verschieben und löschen. Auf Klick-Events reagieren."
 image = "dart-kanban.png"
+description = "Mit Dart HTML-Elemente verschieben und löschen. Auf Klick-Events reagieren."
 prettify = true
 comments = true
 commentsIdentifier = "/library/dart-kanban/de/part4/"

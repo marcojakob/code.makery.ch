@@ -1,8 +1,8 @@
 +++
 title = "Teil 1: Webapp erstellen"
 date = 2015-03-23
-description = "Eine erste Webapplikation mit Dart erstellen. Dart mit HTML verknüpfen und ein HTML-Element mit Dart verändern."
 image = "first-run.de.png"
+description = "Eine erste Webapplikation mit Dart erstellen. Dart mit HTML verknüpfen und ein HTML-Element mit Dart verändern."
 prettify = true
 comments = true
 commentsIdentifier = "/library/dart-kanban/de/part1/"

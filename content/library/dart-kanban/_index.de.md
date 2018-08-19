@@ -2,21 +2,14 @@
 title = "Dart Kanban - Die bessere Todo-Liste (Deutsch)"
 date = 2015-03-23
 updated = 2018-08-17
-description = "Lernen Sie Dart Programmieren. Wir erstellen ein interaktives Kanban Board als Dart Webapplikation. Anleitung vom Dart installieren bis zur Veröffentlichung auf einem Webserver."
 image = "dart-kanban.png"
+description = "Lernen Sie Dart Programmieren. Wir erstellen ein interaktives Kanban Board als Dart Webapplikation. Anleitung vom Dart installieren bis zur Veröffentlichung auf einem Webserver."
 prettify = false
 comments = true
 commentsIdentifier = "/library/dart-kanban/de/"
 aliases = [ 
   "/library/dart-kanban/de/" 
 ]
-
-# Series Overview Info
-overview = true
-overviewImage = "dart-kanban-small.png"
-overviewDescription = "An Event Bus library in Dart for decoupling applications."
-topics = [ "Dart" ]
-weight = 4
 
 sidebarName = "Einleitung"
 pagingName = "Intro"

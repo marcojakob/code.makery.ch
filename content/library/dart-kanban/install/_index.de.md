@@ -1,8 +1,8 @@
 +++
 title = "Dart Editor installieren"
 date = 2015-03-23
-description = "Dart Editor installieren und starten. Was enthält die Installation?"
 image = "dart-editor.png"
+description = "Dart Editor installieren und starten. Was enthält die Installation?"
 prettify = false
 comments = true
 commentsIdentifier = "/library/dart-kanban/de/install/"

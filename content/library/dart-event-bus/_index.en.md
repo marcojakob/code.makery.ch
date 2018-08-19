@@ -2,8 +2,8 @@
 title = "Dart Event Bus"
 date = 2014-03-25
 updated = 2018-08-17
-description = "An Event Bus library in Dart for decoupling applications."
 image = "event-bus.png"
+description = "An Event Bus library in Dart for decoupling applications."
 prettify = true
 comments = true
 

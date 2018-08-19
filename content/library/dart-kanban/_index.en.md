@@ -1,8 +1,8 @@
 +++
 title = "Dart Kanban - Build your Task Manager"
 date = 2015-03-23
-description = "Tutorial about how to build a Kanban-Style Todo Board with Dart."
 image = "dart-kanban.png"
+description = "Tutorial about how to build a Kanban-Style Todo Board with Dart."
 prettify = false
 comments = false
 

@@ -1,8 +1,8 @@
 +++
 title = "Teil 3: Elemente hinzufügen"
 date = 2015-03-23
-description = "Mit Dart neue HTML-Elemente hinzufügen. Auf Events vom Benutzer reagieren. Lernen, wie man mit der HTML-Bibliothek von Dart arbeitet."
 image = "dart-kanban.png"
+description = "Mit Dart neue HTML-Elemente hinzufügen. Auf Events vom Benutzer reagieren. Lernen, wie man mit der HTML-Bibliothek von Dart arbeitet."
 prettify = true
 comments = true
 commentsIdentifier = "/library/dart-kanban/de/part1/"

@@ -8,6 +8,8 @@
     {{ .Scratch.Set "series" .Parent -}}
     {{ .Scratch.Set "title" (print .Title " | " .Parent.Title " | " .Site.Title) -}}
   {{ end -}}
+
+  {{ .Scratch.Set "canonical" .Params.canonical -}}
 {{ end -}}
 
 {{ define "head_includes" }}

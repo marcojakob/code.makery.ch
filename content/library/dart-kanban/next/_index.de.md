@@ -1,8 +1,8 @@
 +++
 title = "Nächste Schritte"
 date = 2015-03-23
-description = "Wie kann man noch mehr lernen über Web Programmierung."
 image = "dart-kanban.png"
+description = "Wie kann man noch mehr lernen über Web Programmierung."
 published = true
 prettify = false
 comments = true
