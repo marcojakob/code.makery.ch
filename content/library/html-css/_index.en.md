@@ -13,6 +13,7 @@ overview = true
 overviewImage = "thumbnail.png"
 overviewDescription = "Course to learn HTML & CSS from the beginning."
 topics = [ "HTML-CSS" ]
+parts = 7
 weight = 1
 +++
 

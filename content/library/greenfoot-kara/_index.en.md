@@ -16,6 +16,7 @@ overviewDescription = """
 GreenfootKara is a visual and interactive introduction to programming in Java based on the **Greenfoot IDE**.
 """
 topics = [ "Java" ]
+parts = 5
 weight = 5
 
 [[sidebars]]

@@ -1,0 +1,45 @@
+<div class="library-panel">
+  <a class="panel-link" href="{{ .RelPermalink }}">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">{{ .Title }}</h4>
+      </div>
+      <div class="panel-body">
+        {{ $url := .Resources.GetMatch .Params.overviewImage }}
+        {{ if $url }}
+          <img src="{{ $url.RelPermalink }}" class="img-rounded">
+        {{ else }}
+          No image!
+        {{ end }}
+        <p class="small">{{ .Params.overviewDescription | markdownify }}</p>
+      </div>
+    </div>
+  </a>
+  <div class="part-label-container">
+    {{ with .Params.parts }}
+    <span class="label label-part">{{ . }} Part{{ if gt . 1 }}s{{ end }}</span>
+    {{ end }}
+  </div>
+    
+  <div class="language-buttons">
+    <div class="hidden-xs">
+      {{ range .AllTranslations }}
+        <a href="{{ .RelPermalink }}" class="btn btn-default btn-xs">{{ .Language.LanguageName }}</a>
+      {{ end }}
+    </div>
+    
+    <div class="visible-xs-block">
+      <div class="btn-group">
+        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-globe"></i> Languages <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+          {{ range .AllTranslations }}
+          <li>
+              <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -14,6 +14,7 @@ Tutorial about how to build a Kanban-Style Todo Board with Dart.
 Note: This course is currently **only available in German**.
 """
 topics = [ "Dart", "HTML-CSS" ]
+parts = 5
 weight = 4
 +++
 

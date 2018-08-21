@@ -14,6 +14,7 @@ overviewDescription = """
 Hello Dart is a visual and playful introduction to programming. We use the modern and fun Dart programming language. 
 """
 topics = [ "Dart" ]
+parts = 5
 weight = 3
 +++
 

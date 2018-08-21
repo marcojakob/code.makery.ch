@@ -1,6 +1,4 @@
 {{ define "variables" -}}
-  {{ .Scratch.Set "title" (print .Title " | " .Site.Title) -}}
-
   {{/* Set canonical path so that all the topic sub-paths point to the same path. */}}
   {{ .Scratch.Set "canonical" (print .Site.BaseURL "library/") -}}
 {{ end -}}
