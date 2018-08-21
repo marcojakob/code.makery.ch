@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container container-restricted">
+  {{ partial "navigation.html" . }}
+  
+  {{ if gt (len .Pages) 0 }}
+    {{ range (.Paginator 7).Pages }}
+      {{ partial "blog/summary.html" . }}
+    {{ end }}
+
+    {{ partial "blog/pagination.html" . }}
+  {{ else }}
+    {{ partial "blog/no_posts.html" . }}
+  {{ end }}
+</div>
+{{ end }}

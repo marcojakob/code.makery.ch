@@ -1,27 +1,22 @@
----
-layout: post
-title: Web und Mobile Apps Programmieren mit Dart
-date: 2013-09-26 00:00
-slug: web-und-mobile-mit-dart
-description: "Bisher war es kaum realistisch, im Anfängerunterricht mobile oder webbasierte Applikationen zu entwickeln. Die Programmiersprache Dart bietet neue Möchkeiten, wie solche Applikationen viel einfacher programmiert werden können."
-image: /assets/blog/13-09-26-web-und-mobile-mit-dart/dart-on-modern-platforms.png
-published: true
-prettify: true
-comments: true
-tags:
-- Dart
-- Web
----
++++
+title = "Web und Mobile Apps Programmieren mit Dart"
+date = 2013-09-26
+description = "Bisher war es kaum realistisch, im Anfängerunterricht mobile oder webbasierte Applikationen zu entwickeln. Die Programmiersprache Dart bietet neue Möchkeiten, wie solche Applikationen viel einfacher programmiert werden können."
+image = "dart-on-modern-platforms.png"
+prettify = true
+comments = true
+tags = [ "Dart", "Web" ]
++++
 
 <div class="alert alert-info">
   <p>
     Der folgende Artikel ist erschienen an der INFOS 2013 (GI-Fachtagung Informatik und Schule) in Kiel.
   </p>
   <p>
-    <i class="fa fa-fw fa-download"></i> <a class="alert-link" href="/assets/blog/13-09-26-web-und-mobile-mit-dart/web-und-mobile-apps-mit-dart-infos2013.pdf">Artikel als PDF</a> 
+    <i class="fa fa-fw fa-download"></i> <a class="alert-link" href="web-und-mobile-apps-mit-dart-infos2013.pdf">Artikel als PDF</a> 
   </p>
   <p>
-    <i class="fa fa-fw fa-download"></i> <a class="alert-link" href="/assets/blog/13-09-26-web-und-mobile-mit-dart/slides-dart-workshop-infos2013.pdf">Workshop Präsentation</a> 
+    <i class="fa fa-fw fa-download"></i> <a class="alert-link" href="slides-dart-workshop-infos2013.pdf">Workshop Präsentation</a> 
   </p>
 </div>
 
@@ -68,7 +63,7 @@ Google hat eine neue Sprache namens [Dart](http://www.dartlang.org) entwickelt.
 
 Dart ist *für das Web gemacht* und lässt sich direkt in JavaScript übersetzen. Somit laufen Dart-Anwendungen ohne zusätzliche Installation in allen modernen Desktopbrowsern und mobilen Browsern.
 
-![Dart on Modern Platforms](/assets/blog/13-09-26-web-und-mobile-mit-dart/dart-on-modern-platforms.png)
+![Dart on Modern Platforms](dart-on-modern-platforms.png)
 
 <small><em>Dart-Programme laufen auf allen modernen Plattformen (Bildquelle: Sean Poon und [Design Contest](http://www.designcontest.com/))</em></small>
 
