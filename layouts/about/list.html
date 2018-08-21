@@ -1,7 +1,3 @@
-{{ define "variables" -}}
-  {{ .Scratch.Set "title" (print .Title " | " .Site.Title) -}}
-{{ end -}}
-
 {{ define "main" }}
 <div class="container container-restricted">
   {{ partial "navigation.html" . }}

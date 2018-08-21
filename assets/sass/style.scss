@@ -375,6 +375,17 @@ iframe {
   font-size: 15px;
 }
 
+.blog-archive-table {
+  .clickable-row {
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+  }
+}
+
 
 //
 // Library

@@ -1,0 +1,61 @@
+{{ define "main" }}
+<div class="container container-restricted">
+  {{ partial "navigation.html" . }}
+  <h1 class="text-center">Blog Archive</h1>
+
+  <div class="row">
+    <div class="col-sm-offset-3 col-sm-6 text-center">
+      Tags:
+      {{ $elements := len .Site.Taxonomies.tags }}
+      {{ $.Scratch.Set "taxonomyCounter" 0 }}
+      {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+        {{ $.Scratch.Add "taxonomyCounter" 1 }}
+        <a href="/blog/tag/{{ $name | urlize }}/">{{ $name }}</a>{{ if lt ($.Scratch.Get "taxonomyCounter") $elements }},{{ end }}
+      {{ end }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-offset-3 col-sm-6">
+      <p>
+      <form class="text-center form-inline" action="https://google.com/search" method="get">
+        <input type="hidden" name="as_sitesearch" value="code.makery.ch">
+          <div class="input-group">
+            <input type="text" class="form-control" name="q" results="0">
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+            </span>
+          </div>
+      </form>
+      </p>
+    </div>
+  </div>
+
+  {{ range (where .Site.RegularPages "Section" "blog").GroupByDate "2006" }}
+    <div id="{{ .Key }}" class="year-anchor"></div>
+    <h3>{{ .Key }}</h3>
+
+    <table class="blog-archive-table table table-striped table-hover table-borderless">
+      <tbody>
+        {{ range .Pages }}
+        <tr class="clickable-row" data-href="{{ .RelPermalink }}">
+          <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+          <td>
+            <span class="pull-right text-nowrap">{{ dateFormat "Jan 2" .Date }}<span class="hidden-xs">, {{ .Date.Year }}</span></span>
+          </td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  {{ end }}
+</div>
+{{ end }}
+
+{{ define "body_includes" }}
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+  $(".clickable-row").click(function() {
+    window.document.location = $(this).data("href");
+  });
+});
+</script>
+{{ end }}

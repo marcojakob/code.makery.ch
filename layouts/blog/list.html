@@ -8,6 +8,10 @@
     {{ end }}
 
     {{ partial "blog/pagination.html" . }}
+
+    <div class="text-center">
+      <a href="/archive/">&mdash; Blog Archive &mdash;</a>
+    </div>
   {{ else }}
     {{ partial "blog/no_posts.html" . }}
   {{ end }}
