@@ -14,6 +14,10 @@ text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
 link = "/library/html-css/"
 +++
 
+<div class="alert alert-danger">
+<strong>Achtung:</strong> Diese Seite wird gerade aktualisiert auf Bootstrap 4, beinhaltet aber noch Informationen zu Bootstrap 3. Bitte verwenden Sie in der Zwischenzeit die <a class="alert-link" target="_blank" href="https://getbootstrap.com/">Originaldokumentation von Bootstrap.</a> 
+</div>
+
 Inserting icons into a website isn't difficult. But when you combine text and icons (for example on a button), or if the icon should be resizable, it can cause some trouble.
 
 The solution is to use **Icon Fonts**. Icon fonts are fonts that contain icons instead of letters. Thus, these icons can be used just like any other font, that means you can change their size and even their color.

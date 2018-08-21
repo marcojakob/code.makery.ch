@@ -18,6 +18,10 @@ text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
 link = "/de/library/html-css/"
 +++
 
+<div class="alert alert-danger">
+<strong>Achtung:</strong> Diese Seite wird gerade aktualisiert auf Bootstrap 4, beinhaltet aber noch Informationen zu Bootstrap 3. Bitte verwenden Sie in der Zwischenzeit die <a class="alert-link" target="_blank" href="https://getbootstrap.com/">Originaldokumentation von Bootstrap.</a> 
+</div>
+
 In diesem Teile lernen Sie Möglichkeiten kennen, wie Sie mit HTML und CSS Texte gestalten können.
 
 Wenn Sie [Bootstrap 3](http://holdirbootstrap.de/) verwenden, dann wird die Textformatierung viel einfacher. Bootstrap kümmert sich darum, dass die Texte und Textabstände typografisch korrekt und einheitlich angezeigt werden.

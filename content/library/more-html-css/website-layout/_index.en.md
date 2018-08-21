@@ -14,6 +14,10 @@ text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
 link = "/library/html-css/"
 +++
 
+<div class="alert alert-danger">
+<strong>Achtung:</strong> Diese Seite wird gerade aktualisiert auf Bootstrap 4, beinhaltet aber noch Informationen zu Bootstrap 3. Bitte verwenden Sie in der Zwischenzeit die <a class="alert-link" target="_blank" href="https://getbootstrap.com/">Originaldokumentation von Bootstrap.</a> 
+</div>
+
 By default, HTML elements are arranged in two ways:
 
 **Block elements** always start on a new line. Examples of block elements are `<div>`, `<h1>`, `<p>`, and `<li>`.

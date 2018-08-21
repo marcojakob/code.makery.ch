@@ -14,6 +14,10 @@ text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
 link = "/library/html-css/"
 +++
 
+<div class="alert alert-danger">
+<strong>Achtung:</strong> Diese Seite wird gerade aktualisiert auf Bootstrap 4, beinhaltet aber noch Informationen zu Bootstrap 3. Bitte verwenden Sie in der Zwischenzeit die <a class="alert-link" target="_blank" href="https://getbootstrap.com/">Originaldokumentation von Bootstrap.</a> 
+</div>
+
 In this part we will learn some tricks on how to use images with Bootstrap.
 
 * [Responsive Images](#responsive-images) - automatically fit the screen size

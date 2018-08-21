@@ -18,6 +18,10 @@ text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
 link = "/de/library/html-css/"
 +++
 
+<div class="alert alert-danger">
+<strong>Achtung:</strong> Diese Seite wird gerade aktualisiert auf Bootstrap 4, beinhaltet aber noch Informationen zu Bootstrap 3. Bitte verwenden Sie in der Zwischenzeit die <a class="alert-link" target="_blank" href="https://getbootstrap.com/">Originaldokumentation von Bootstrap.</a> 
+</div>
+
 Standardmässig werden HTML-Elemente auf zwei Arten angeordnet:
 
 **Blockelemente** beginnen immer in einer neuen Zeile. Beispiele für Blockelemente sind `<div>`, `<h1>`, `<p>` und `<li>`.

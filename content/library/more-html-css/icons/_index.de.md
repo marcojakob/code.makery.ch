@@ -18,6 +18,10 @@ text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
 link = "/de/library/html-css/"
 +++
 
+<div class="alert alert-danger">
+<strong>Achtung:</strong> Diese Seite wird gerade aktualisiert auf Bootstrap 4, beinhaltet aber noch Informationen zu Bootstrap 3. Bitte verwenden Sie in der Zwischenzeit die <a class="alert-link" target="_blank" href="https://getbootstrap.com/">Originaldokumentation von Bootstrap.</a> 
+</div>
+
 Icons in eine Webseite einzufügen ist nicht schwer. Aber wenn man Texte und Icons kombiniert (z.B. für einen Button) oder wenn die Icons in der Grösse veränderbar sein sollen, dann wird es schwierig.
 
 Die Lösung für dieses Problem sind **Icon Fonts**. Icon Fonts sind Schriftarten, welche anstatt Buchstaben nur Icons enthalten. Dadurch können diese Icons genauso verwendet werden, wie gewöhnliche Schriften, d.h. man kann ihre Grösse und auch die Farbe verändern. 

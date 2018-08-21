@@ -14,6 +14,10 @@ text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
 link = "/library/html-css/"
 +++
 
+<div class="alert alert-danger">
+<strong>Achtung:</strong> Diese Seite wird gerade aktualisiert auf Bootstrap 4, beinhaltet aber noch Informationen zu Bootstrap 3. Bitte verwenden Sie in der Zwischenzeit die <a class="alert-link" target="_blank" href="https://getbootstrap.com/">Originaldokumentation von Bootstrap.</a> 
+</div>
+
 The Bootstrap core is its CSS. However, there is also a JavaScript file that is very useful. Have a look at the [Bootstrap JavaScript page](http://getbootstrap.com/javascript/) to find out what's possible.
 
 In [HTML & CSS Tutorial - Part 7](/library/html-css/part7/), we have seen how the Bootstrap CSS can be integrated. Now, we also want to use the JavaScript file.

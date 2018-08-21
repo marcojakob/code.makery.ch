@@ -18,6 +18,10 @@ text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
 link = "/de/library/html-css/"
 +++
 
+<div class="alert alert-danger">
+<strong>Achtung:</strong> Diese Seite wird gerade aktualisiert auf Bootstrap 4, beinhaltet aber noch Informationen zu Bootstrap 3. Bitte verwenden Sie in der Zwischenzeit die <a class="alert-link" target="_blank" href="https://getbootstrap.com/">Originaldokumentation von Bootstrap.</a> 
+</div>
+
 Der Kern von Bootstrap ist das CSS. Es gibt jedoch auch eine JavaScript-Datei von Bootstrap, die sehr nützliche Funktionen bietet. Schauen Sie sich mal um auf der [Bootstrap JavaScript Seite](http://holdirbootstrap.de/javascript/).
 
 Im [HTML & CSS Tutorial - Teil 7](/library/html-css/de/part7/) haben wir gesehen, wie das Bootstrap-CSS eingebunden werden kann. Nun wollen wir zusätzlich die JavaScript-Datei einfügen.

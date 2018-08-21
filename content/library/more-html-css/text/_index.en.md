@@ -14,6 +14,10 @@ text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
 link = "/library/html-css/"
 +++
 
+<div class="alert alert-danger">
+<strong>Achtung:</strong> Diese Seite wird gerade aktualisiert auf Bootstrap 4, beinhaltet aber noch Informationen zu Bootstrap 3. Bitte verwenden Sie in der Zwischenzeit die <a class="alert-link" target="_blank" href="https://getbootstrap.com/">Originaldokumentation von Bootstrap.</a> 
+</div>
+
 In this part you will learn about the typographic capabilities of HTML and CSS.
 
 [Bootstrap 3](http://holdirbootstrap.de/) (or other CSS frameworks) make formatting texts much simpler. Bootstrap ensures that the texts and text margins are typographically correct and consistent.
