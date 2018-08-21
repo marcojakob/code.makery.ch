@@ -1,65 +1,30 @@
----
-layout: article
-title: "Hello Dart - Teil 3: Bedingte Anweisungen"
-date: 2015-01-21 00:00
-slug: hello-dart/de/part3
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part3.md
-description: "Lernen Sie den Programmablauf mit bedingten Anweisungen zu steuern. Zahlreiche Hello Dart Übungen helfen beim Verständnis."
-image: /assets/library/hello-dart/hello-dart.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/hello-dart/de/
-    paging: Einleitung
-  - text: "Hintergrundinfos"
-    link: /library/hello-dart/de/background/
-    icon-css: fa fa-fw fa-info
-    paging: <i class="fa fa-info"></i>
-  - text: "Installation"
-    link: /library/hello-dart/de/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Erste Schritte"
-    link: /library/hello-dart/de/part1/
-    paging: 1
-  - text: "Teil 2: Schleifen"
-    link: /library/hello-dart/de/part2/
-    paging: 2
-  - text: "Teil 3: Bedingte Anweisungen"
-    link: /library/hello-dart/de/part3/
-    paging: 3
-    active: true
-  - text: "Teil 4: Variablen"
-    link: /library/hello-dart/de/part4/
-    paging: 4
-  - text: "Teil 5: Funktionen"
-    link: /library/hello-dart/de/part5/
-    paging: 5
-  - text: "Nächste Schritte"
-    link: /library/hello-dart/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Lösungen
-  body:
-  - text: "Lösungen zu Teil 3"
-    link: /library/hello-dart/de/part3-solutions/
-    icon-css: fa fa-fw fa-check-square-o
-- header: Links
-  body:
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
-    icon-css: fa fa-fw fa-file-word-o
-languages:
-  header: Sprachen
-  collection: library
-  item: hello-dart
-  part: part3
-  active: de
----
++++
+title = "Teil 3: Bedingte Anweisungen"
+date = 2015-01-21
+description = "Lernen Sie den Programmablauf mit bedingten Anweisungen zu steuern. Zahlreiche Hello Dart Übungen helfen beim Verständnis."
+image = "guard.png"
+prettify = true
+comments = true
+commentsIdentifier = "/library/hello-dart/de/part3/"
+aliases = [ 
+  "/library/hello-dart/de/part3/" 
+]
+
+pagingName = "3"
+weight = 5
+
+[[sidebars]]
+header = "Lösungen"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-check-square-o\"></i> Lösungen Teil 3"
+link = "/de/library/hello-dart/part3/solutions/"
+
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Seite als Word-Datei"
+link = "/de/library/convert-web-page-to-word/"
++++
 
 Neben Schleifen gibt es eine zweite Struktur, die sehr wichtig ist, um den Programmablauf zu steuern. Mit **bedingten Anweisungen** kann man angeben, wann ein Block von Anweisungen ausgeführt werden soll und wann nicht.
 
@@ -73,7 +38,7 @@ if (treeFront()) {  // Bedingung.
 </pre>
 
 <div class="alert alert-info">
-  **Hinweis:** Der `else`-Teil (Block 2) kann weggelassen werden, wenn er nicht benötigt wird.
+  <strong>Hinweis:</strong> Der <code>else</code>-Teil (Block 2) kann weggelassen werden, wenn er nicht benötigt wird.
 </div>
 
 
@@ -119,7 +84,7 @@ move();
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.02: Star Track
 
-![Sternenspur](/assets/library/hello-dart/part3/star-track.png)
+![Sternenspur](star-track.png)
 
 Der Spieler soll vorwärts laufen und dabei überall einen Stern legen, wo keiner ist. Achten Sie am Schluss darauf, dass auch auf dem letzten Feld noch ein Stern liegt.
 
@@ -128,7 +93,7 @@ Der Spieler soll vorwärts laufen und dabei überall einen Stern legen, wo keine
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.03: Star at Tree
 
-![Stern beim Baum](/assets/library/hello-dart/part3/star-at-tree.png)
+![Stern beim Baum](star-at-tree.png)
 
 Der Spieler soll geradeaus gehen und überall dort einen Stern legen, wo entweder links oder rechts ein Baum steht.
 
@@ -137,7 +102,7 @@ Beachten Sie, dass Sie, wie bei den Schleifen erklärt, auch hier die *Logischen
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.04: Around Tree II
 
-![Um Baum herum A](/assets/library/hello-dart/part3/around-tree-a.png)
+![Um Baum herum A](around-tree-a.png)
 
 Um die Bäume herum laufen kennen wir bereits aus dem Teil 1. Wir haben es dort wie folgt gelöst:
 
@@ -168,7 +133,7 @@ class MyPlayer extends Player {
 
 Dieses Programm funktioniert ganz gut, solange die Welt mit den Bäumen immer genau gleich aussieht. Sobald ein Baum verschoben wird, gibt es Probleme.
 
-![Um Baum herum B](/assets/library/hello-dart/part3/around-tree-b.png)
+![Um Baum herum B](around-tree-b.png)
 
 Das `scenario3.04` hat drei Varianten. Öffnen Sie dieses Szenario und ändern Sie in der `main()`-Funktion den Text `scenario-a.txt` in `scenario-b.txt` um. Testen Sie nun, was passiert, wenn Sie das Programm wie oben dargestellt starten.
 
@@ -180,7 +145,7 @@ Sie kennen nun etliche Möglichkeiten, wie Sie mit Hilfe von Sensor-Methoden auf
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.05: Round Trip
 
-![Rundgang](/assets/library/hello-dart/part3/round-trip.png)
+![Rundgang](round-trip.png)
 
 Der Spieler geht in einem Rundgang auf die Suche nach einem Stern (und liest diesen auf). Jedes Feld im Rundgang hat genau zwei freie benachbarte Felder. Eines liegt immer hinter dem Spieler; von diesem Feld aus ist er auf das aktuelle Feld gekommen.
 
@@ -191,7 +156,7 @@ Laden Sie das `scenario3.05` und schreiben Sie ein Programm dazu. Testen Sie das
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.06: Around Tree III
 
-![Um Baum herum III](/assets/library/hello-dart/part3/around-tree-iii.png)
+![Um Baum herum III](around-tree-iii.png)
 
 Dies ist die ähnliche Übung wie die Aufgabe 3.04: Der Spieler soll den Stern finden, der geradeaus vor ihm liegt. Nun können aber eine beliebige Anzahl Bäume hintereinander stehen.
 
@@ -200,7 +165,7 @@ Laden Sie das `scenario3.06` und verbessern Sie die Methode `goAroundTree()` so,
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.07 (schwierig): Follow the Trail
 
-![Rundgang](/assets/library/hello-dart/part3/follow-the-trail.png)
+![Rundgang](follow-the-trail.png)
 
 Der Spieler soll einer Spur von Sternen folgen und diese jeweils auflesen. Vor den Bäumen soll er anhalten.
 
@@ -209,7 +174,7 @@ Der Spieler soll einer Spur von Sternen folgen und diese jeweils auflesen. Vor d
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 3.08 (schwierig): Guard
 
-![Wächter](/assets/library/hello-dart/part3/guard.png)
+![Wächter](guard.png)
 
 Der Spieler soll einen Wald bewachen voller Sterne. Er soll aussen am Waldrand entlang laufen.
 
@@ -220,7 +185,7 @@ Testen Sie Ihr Programm auch in der zweiten Welt.
 
 ## Wie weiter?
 
-Lernen Sie im [Teil 4](/library/hello-dart/de/part4/), wie wir mit Variablen etwas speichern können.
+Lernen Sie im [Teil 4](/de/library/hello-dart/part4/), wie wir mit Variablen etwas speichern können.
 
 
 ***

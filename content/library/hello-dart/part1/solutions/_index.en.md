@@ -1,61 +1,23 @@
----
-layout: article
-title: "Hello Dart - Solutions Part 1"
-date: 2015-05-01 00:00
-slug: hello-dart/part1-solutions
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-en-part1-solutions.md
-description: "Solutions for Hello Dart Part 1."
-image: /assets/library/hello-dart/hello-dart.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Articles in this Series
-  body:
-  - text: "Introduction"
-    link: /library/hello-dart/
-    paging: Intro
-  - text: "Installation"
-    link: /library/hello-dart/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Part 1: First Steps"
-    link: /library/hello-dart/part1/
-    paging: 1
-  - text: "Part 2: Loops"
-    link: /library/hello-dart/part2/
-    paging: 2
-  - text: "Part 3: Conditionals"
-    link: /library/hello-dart/part3/
-    paging: 3
-  - text: "Part 4: Variables"
-    link: /library/hello-dart/part4/
-    paging: 4
-  - text: "Part 5: Functions"
-    link: /library/hello-dart/part5/
-    paging: 5
-  - text: "Next Steps"
-    link: /library/hello-dart/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Solutions
-  body:
-  - text: "Solutions Part 1"
-    link: /library/hello-dart/part1-solutions/
-    icon-css: fa fa-fw fa-check-square-o
-    active: true
-- header: Links
-  body:
-  - text: Page as Word File
-    link: /library/convert-web-page-to-word/
-    icon-css: fa fa-fw fa-file-word-o
-languages:
-  header: Languages
-  collection: library
-  item: hello-dart
-  part: part1-solutions
-  active: en
----
++++
+title = "Solutions"
+date = 2015-05-01
+description = "Solutions for Hello Dart Part 1."
+prettify = true
+comments = true
+commentsIdentifier = "/library/hello-dart/part1-solutions/"
+aliases = [ 
+  "/library/hello-dart/part1-solutions/" 
+]
+
+pagingName = "<i class=\"fa fa-fw fa-check-square-o\"></i>"
+sidebarName = "<i class=\"fa fa-fw fa-check-square-o\"></i> Solutions"
+
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Page as Word File"
+link = "/library/convert-web-page-to-word/"
++++
 
 #### <i class="fa fa-check-square-o"></i> SOLUTION TASK 1.01: First Steps
 

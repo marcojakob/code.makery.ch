@@ -1,65 +1,30 @@
----
-layout: article
-title: "Hello Dart - Teil 2: Schleifen"
-date: 2015-01-21 00:00
-slug: hello-dart/de/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part2.md
-description: "Lernen Sie Schleifen programmieren mit Dart. Mit logischen Operatoren steuern wir den Programmablauf."
-image: /assets/library/hello-dart/hello-dart.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/hello-dart/de/
-    paging: Einleitung
-  - text: "Hintergrundinfos"
-    link: /library/hello-dart/de/background/
-    icon-css: fa fa-fw fa-info
-    paging: <i class="fa fa-info"></i>
-  - text: "Installation"
-    link: /library/hello-dart/de/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Erste Schritte"
-    link: /library/hello-dart/de/part1/
-    paging: 1
-  - text: "Teil 2: Schleifen"
-    link: /library/hello-dart/de/part2/
-    paging: 2
-    active: true
-  - text: "Teil 3: Bedingte Anweisungen"
-    link: /library/hello-dart/de/part3/
-    paging: 3
-  - text: "Teil 4: Variablen"
-    link: /library/hello-dart/de/part4/
-    paging: 4
-  - text: "Teil 5: Funktionen"
-    link: /library/hello-dart/de/part5/
-    paging: 5
-  - text: "Nächste Schritte"
-    link: /library/hello-dart/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Lösungen
-  body:
-  - text: "Lösungen zu Teil 2"
-    link: /library/hello-dart/de/part2-solutions/
-    icon-css: fa fa-fw fa-check-square-o
-- header: Links
-  body:
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
-    icon-css: fa fa-fw fa-file-word-o
-languages:
-  header: Sprachen
-  collection: library
-  item: hello-dart
-  part: part2
-  active: de
----
++++
+title = "Teil 2: Schleifen"
+date = 2015-01-21
+description = "Lernen Sie Schleifen programmieren mit Dart. Mit logischen Operatoren steuern wir den Programmablauf."
+image = "leaving-the-tunnel.png"
+prettify = true
+comments = true
+commentsIdentifier = "/library/hello-dart/de/part2/"
+aliases = [ 
+  "/library/hello-dart/de/part2/" 
+]
+
+pagingName = "2"
+weight = 4
+
+[[sidebars]]
+header = "Lösungen"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-check-square-o\"></i> Lösungen Teil 2"
+link = "/de/library/hello-dart/part2/solutions/"
+
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Seite als Word-Datei"
+link = "/de/library/convert-web-page-to-word/"
++++
 
 Im letzten Teil haben wir gelernt, wie wir unserem Spieler eine Reihe von Anweisungen geben können. Anstatt jede Anweisung einzeln aufzuführen, können wir auch Anweisungen wiederholen lassen. Beim Programmieren nennt man solche Wiederholungen **Schleifen**.
 
@@ -68,7 +33,7 @@ Als erstes Beispiel für eine Schleife möchten wir Folgendes tun:
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.01: Loop
 
-![Schleife](/assets/library/hello-dart/part2/loop.png)
+![Schleife](loop.png)
 
 Der Spieler soll sich solange vorwärts bewegen, bis er nicht mehr weiter kann.
 
@@ -102,22 +67,22 @@ Boolesche Werte können mit Hilfe von logischen Operatoren auch kombiniert oder 
   </thead>
   <tbody>
     <tr>
-      <td>`&&`</td>
+      <td><code>&&</code></td>
       <td>und</td>
-      <td>`treeFront() && onStar()`</td>
-      <td>Ist erfüllt (true), wenn beide Aussagen erfüllt sind, das heisst wenn der Spieler vor einem Baum **und** auf einem Stern steht.</td>
+      <td><code>treeFront() && onStar()</code></td>
+      <td>Ist erfüllt (true), wenn beide Aussagen erfüllt sind, das heisst wenn der Spieler vor einem Baum <strong>und</strong> auf einem Stern steht.</td>
     </tr>
     <tr>
-      <td>`||`</td>
+      <td><code>||</code></td>
       <td>oder</td>
-      <td>`treeFront() || onStar()`</td>
-      <td>Ist dann erfüllt (true), wenn entweder die eine **oder** die andere Aussage oder beide erfüllt sind.</td>
+      <td><code>treeFront() || onStar()</code></td>
+      <td>Ist dann erfüllt (true), wenn entweder die eine <strong>oder</strong> die andere Aussage oder beide erfüllt sind.</td>
     </tr>
     <tr>
-      <td>`!`</td>
+      <td><code>!</code></td>
       <td>nicht</td>
-      <td>`!treeFront()`</td>
-      <td>Ändert einen Ausdruck von true in false und umgekehrt. Diese Aussage wäre also dann erfüllt (true), wenn der Spieler **nicht** vor einem Baum steht.</td>
+      <td><code>!treeFront()</code></td>
+      <td>Ändert einen Ausdruck von true in false und umgekehrt. Diese Aussage wäre also dann erfüllt (true), wenn der Spieler <strong>nicht</strong> vor einem Baum steht.</td>
     </tr>
   </tbody>
 </table>
@@ -141,14 +106,14 @@ if (treeLeft() && !treeRight()) {
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.02: Loop Star
 
-![Schleife mit Stern](/assets/library/hello-dart/part2/loop-star.png)
+![Schleife mit Stern](loop-star.png)
 
 Öffnen Sie das `scenario2.02` und programmieren Sie den Spieler mit einer Schleife so, dass er vorwärts läuft, bis er auf dem Stern steht. 
 
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.03: Leaving the Tunnel
 
-![Tunnel verlassen](/assets/library/hello-dart/part2/leaving-the-tunnel.png)
+![Tunnel verlassen](leaving-the-tunnel.png)
 
 Unser Spieler ist in einem Tunnel und möchte raus. Schreiben Sie ein Programm für `scenario2.03`, bei dem der Spieler aus dem Tunnel hinaus läuft und stehen bleibt, sobald auf einer der beiden Seiten kein Baum mehr steht.
 
@@ -157,14 +122,14 @@ Am Schluss soll er ausserdem einen Stern ablegen.
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.04: Afraid of Tunnel
 
-![Angst vor dem Tunnel](/assets/library/hello-dart/part2/afraid-of-tunnel.png)
+![Angst vor dem Tunnel](afraid-of-tunnel.png)
 
 Der Spieler hat Angst vor Tunneln. Er soll auf jedem Feld überprüfen, ob es ein Tunneleingang ist (das heisst, ob es auf beiden Seiten Bäumen hat). Ist dies der Fall, so soll er stehen bleiben und in einer Sprechblase sagen, dass er Angst hat.
 
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 2.05: Climbing Up
 
-![Treppensteigen](/assets/library/hello-dart/part2/climbing-up.png)
+![Treppensteigen](climbing-up.png)
 
 Der Spieler soll eine beliebig lange Treppe hochlaufen.
 
@@ -188,7 +153,7 @@ Sie werden der `for`-Schleife später immer wieder begegnen, auch zum Teil in et
 
 ## Wie weiter?
 
-&rarr; Im [Teil 3](/library/hello-dart/de/part3/) lernen wir mit *bedingten Anweisungen* eine weitere Art kennen, unsere Programme zu steuern.
+&rarr; Im [Teil 3](/de/library/hello-dart/part3/) lernen wir mit *bedingten Anweisungen* eine weitere Art kennen, unsere Programme zu steuern.
 
 
 ***

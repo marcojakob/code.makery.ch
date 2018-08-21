@@ -1,67 +1,32 @@
----
-layout: article
-title: "Hello Dart - Part 4: Variables"
-date: 2015-05-01 00:00
-slug: hello-dart/part4
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-en-part4.md
-description: "With variables we can store data in Dart. Learn about the different data types available in Dart."
-image: /assets/library/hello-dart/hello-dart.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Articles in this Series
-  body:
-  - text: "Introduction"
-    link: /library/hello-dart/
-    paging: Intro
-  - text: "Installation"
-    link: /library/hello-dart/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Part 1: First Steps"
-    link: /library/hello-dart/part1/
-    paging: 1
-  - text: "Part 2: Loops"
-    link: /library/hello-dart/part2/
-    paging: 2
-  - text: "Part 3: Conditionals"
-    link: /library/hello-dart/part3/
-    paging: 3
-  - text: "Part 4: Variables"
-    link: /library/hello-dart/part4/
-    paging: 4
-    active: true
-  - text: "Part 5: Functions"
-    link: /library/hello-dart/part5/
-    paging: 5
-  - text: "Next Steps"
-    link: /library/hello-dart/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Solutions
-  body:
-  - text: "Solutions Part 4"
-    link: /library/hello-dart/part4-solutions/
-    icon-css: fa fa-fw fa-check-square-o
-- header: Links
-  body:
-  - text: Page as Word File
-    link: /library/convert-web-page-to-word/
-    icon-css: fa fa-fw fa-file-word-o
-languages:
-  header: Languages
-  collection: library
-  item: hello-dart
-  part: part4
-  active: en
----
++++
+title = "Part 4: Variables"
+date = 2015-05-01
+description = "With variables we can store data in Dart. Learn about the different data types available in Dart."
+image = "chessboard.png"
+prettify = true
+comments = true
+
+pagingName = "4"
+weight = 6
+
+[[sidebars]]
+header = "Solutions"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-check-square-o\"></i> Solutions Part 4"
+link = "/library/hello-dart/part4/solutions/"
+
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Page as Word File"
+link = "/library/convert-web-page-to-word/"
++++
 
 With loops we have learned to repeat certain events while a condition is met. Now we want to do the following:
 
 *The player is to lay a trail of five stars.*
 
-![Five Stars](/assets/library/hello-dart/part4/five-stars.png)
+![Five Stars](five-stars.png)
 
 This would, of course, be quite easy if we simple called `putStar()` and `move()` five times. But this is not very elegant. It would be nice if the player would count how many stars he has already placed. To do so, the player will need a "brain", that means some kind of memory. Memory in programming can be used through the use of variables.
 
@@ -108,7 +73,7 @@ In Dart there are a few pre-defined data types. With data types we can specify w
 
 
 <div class="alert alert-info">
-  **Note:** Anything that can be stored in a variable in Dart is called an **object**. The data type of an object is called a **class**. Classes and Objects are the basic building blocks of <a class="alert-link" href="http://en.wikipedia.org/wiki/Object-oriented_programming">object-oriented programming</a>.
+  <strong>Note:</strong> Anything that can be stored in a variable in Dart is called an <strong>object</strong>. The data type of an object is called a <strong>class</strong>. Classes and Objects are the basic building blocks of <a class="alert-link" href="http://en.wikipedia.org/wiki/Object-oriented_programming">object-oriented programming</a>.
 </div>
 
 Later, we will create our own classes. Let's have a look at the basic data types of Dart.
@@ -125,34 +90,34 @@ Later, we will create our own classes. Let's have a look at the basic data types
   </thead>
   <tbody>
     <tr>
-      <td>`int`</td>
+      <td><code>int</code></td>
       <td>Integer values</td>
-      <td>`1`, `2`, `-1233123`</td>
+      <td><code>1</code>, <code>2</code>, <code>-1233123</code></td>
     </tr>
     <tr>
-      <td>`double`</td>
+      <td><code>double</code></td>
       <td>Floating-point numbers</td>
-      <td>`0.5`, `-333.234`</td>
+      <td><code>0.5</code>, <code>-333.234</code></td>
     </tr>
     <tr>
-      <td>`String`</td>
-      <td>Text of arbitrary length. Either *singel or double quotes* can be used to create a string.</td>
-      <td>`'I am a text'` or `"I am also a text"`</td>
+      <td><code>String</code></td>
+      <td>Text of arbitrary length. Either <em>singel or double quotes</em> can be used to create a string.</td>
+      <td><code>'I am a text'</code> or <code>"I am also a text"</code></td>
     </tr>
     <tr>
-      <td>`bool`</td>
-      <td>A boolean is a logic value that can either be *true* or *false*.</td>
-      <td>`true` or `false`</td>
+      <td><code>bool</code></td>
+      <td>A boolean is a logic value that can either be <em>true</em> or <em>false</em>.</td>
+      <td><code>true</code> or <code>false</code></td>
     </tr>
     <tr>
-      <td>`List`</td>
-      <td>A collection of objects. Lists are sometimes also called *arrays*.</td>
-      <td>`[1, 2, 3]`</td>
+      <td><code>List</code></td>
+      <td>A collection of objects. Lists are sometimes also called <em>arrays</em>.</td>
+      <td><code>[1, 2, 3]</code></td>
     </tr>
     <tr>
-      <td>`Map`</td>
-      <td>A map is an object that associates *keys* and *values*.</td>
-      <td>`{ 'key-1': 'value-1', 'key-2': 'value-2' }`</td>
+      <td><code>Map</code></td>
+      <td>A map is an object that associates <em>keys</em> and <em>values</em>.</td>
+      <td><code>{ 'key-1': 'value-1', 'key-2': 'value-2' }</code></td>
     </tr>
   </tbody>
 </table>
@@ -172,34 +137,34 @@ The following operators can be used for comparisons in Dart. The result of each 
   </thead>
   <tbody>
     <tr>
-      <td>`==`</td>
+      <td><code>==</code></td>
       <td>equal</td>
-      <td>`k == 2`</td>
+      <td><code>k == 2</code></td>
     </tr>
     <tr>
-      <td>`!=`</td>
+      <td><code>!=</code></td>
       <td>unequal</td>
-      <td>`k != 12`</td>
+      <td><code>k != 12</code></td>
     </tr>
     <tr>
-      <td>`>`</td>
+      <td><code>></code></td>
       <td>greater than</td>
-      <td>`k > 67`</td>
+      <td><code>k > 67</code></td>
     </tr>
     <tr>
-      <td>`<`</td>
+      <td><code><</code></td>
       <td>less than</td>
-      <td>`k < 12`</td>
+      <td><code>k < 12</code></td>
     </tr>
     <tr>
-      <td>`>=`</td>
+      <td><code>>=</code></td>
       <td>greater than or equal to</td>
-      <td>`k >= 45`</td>
+      <td><code>k >= 45</code></td>
     </tr>
     <tr>
-      <td>`<=`</td>
+      <td><code><=</code></td>
       <td>less than or equal to</td>
-      <td>`k <= 23`</td>
+      <td><code>k <= 23</code></td>
     </tr>
   </tbody>
 </table>
@@ -224,29 +189,29 @@ For calculations we use the following arithmetic operators.
   </thead>
   <tbody>
     <tr>
-      <td>`+`</td>
+      <td><code>+</code></td>
       <td>Add</td>
-      <td>`h = w + 34`</td>
+      <td><code>h = w + 34</code></td>
     </tr>
     <tr>
-      <td>`-`</td>
+      <td><code>-</code></td>
       <td>Subtract</td>
-      <td>`y = 3.4 – t`</td>
+      <td><code>y = 3.4 – t</code></td>
     </tr>
     <tr>
-      <td>`*`</td>
+      <td><code>*</code></td>
       <td>Multiply</td>
-      <td>`z = h * 3.56`</td>
+      <td><code>z = h * 3.56</code></td>
     </tr>
     <tr>
-      <td>`/`</td>
+      <td><code>/</code></td>
       <td>Divide</td>
-      <td>`d = m / v`</td>
+      <td><code>d = m / v</code></td>
     </tr>
     <tr>
-      <td>`%`</td>
+      <td><code>%</code></td>
       <td>Modulo (the remainder of an integer division)</td>
-      <td>`count = w % 2`</td>
+      <td><code>count = w % 2</code></td>
     </tr>
   </tbody>
 </table>
@@ -256,7 +221,7 @@ For calculations we use the following arithmetic operators.
 
 #### <i class="fa fa-rocket mg-t"></i> TASK 4.01: Counting Stars
 
-![Counting Stars](/assets/library/hello-dart/part4/counting-stars.png)
+![Counting Stars](counting-stars.png)
 
 The player is to move from the left to the right and count all the stars.
 
@@ -272,13 +237,13 @@ The player is to move from the left to the right and count all the stars.
 
 
 <div class="alert alert-info">
-  **The Scope of Variables:** Variables are only valid within the block (curly braces) in which they are declared. They can also be declared outside the functions. Those variables are then available inside an entire class or, if declared outside any class, they are globally available.
+  <strong>The Scope of Variables:</strong> Variables are only valid within the block (curly braces) in which they are declared. They can also be declared outside the functions. Those variables are then available inside an entire class or, if declared outside any class, they are globally available.
 </div>
 
 
 #### <i class="fa fa-rocket mg-t"></i> TASK 4.02: Cleaning Up
 
-![Cleaning Up](/assets/library/hello-dart/part4/cleaning-up.png)
+![Cleaning Up](cleaning-up.png)
 
 The player is to remove all the stars.
 
@@ -298,21 +263,21 @@ The player is to remove all the stars.
 
 #### <i class="fa fa-rocket mg-t"></i> TASK 4.03: Inverting
 
-![Inverting](/assets/library/hello-dart/part4/inverting.png)
+![Inverting](inverting.png)
 
 The world is a square and has a tree at the end. Within the world there is a pattern of stars that is to be inverted by the player. Make sure that your code stays clear by extracting parts into their own functions.
 
 
 #### <i class="fa fa-rocket mg-t"></i> TASK 4.04: Chessboard
 
-![Chessboard](/assets/library/hello-dart/part4/chessboard.png)
+![Chessboard](chessboard.png)
 
 The world is a square and has a tree at the end. The player is to create a chessboard pattern with stars. 
 
 
 #### <i class="fa fa-rocket mg-t"></i> TASK 4.04 (difficult): Tree Line
 
-![Tree Line](/assets/library/hello-dart/part4/tree-line.jpg)
+![Tree Line](tree-line.jpg)
 
 In this world there are several rows of trees. The player is to determine the length (in number of trees) of the longest line of trees and report the result. Between the rows of trees is always at least one empty row. A star marks the end of the world.
 

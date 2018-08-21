@@ -1,66 +1,31 @@
----
-layout: article
-title: "Hello Dart: Installation"
-date: 2015-01-26 00:00
-slug: hello-dart/de/install
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-install.md
-description: "Dart Editor installieren. Die Hello Dart Szenarien laden und ein erstes Dart Programm starten."
-image: /assets/library/hello-dart/hello-dart.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/hello-dart/de/
-    paging: Einleitung
-  - text: "Hintergrundinfos"
-    link: /library/hello-dart/de/background/
-    icon-css: fa fa-fw fa-info
-    paging: <i class="fa fa-info"></i>
-  - text: "Installation"
-    link: /library/hello-dart/de/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-    active: true
-  - text: "Teil 1: Erste Schritte"
-    link: /library/hello-dart/de/part1/
-    paging: 1
-  - text: "Teil 2: Schleifen"
-    link: /library/hello-dart/de/part2/
-    paging: 2
-  - text: "Teil 3: Bedingte Anweisungen"
-    link: /library/hello-dart/de/part3/
-    paging: 3
-  - text: "Teil 4: Variablen"
-    link: /library/hello-dart/de/part4/
-    paging: 4
-  - text: "Teil 5: Funktionen"
-    link: /library/hello-dart/de/part5/
-    paging: 5
-  - text: "Nächste Schritte"
-    link: /library/hello-dart/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Links
-  body:
-  - text: Dart Editor Download
-    link: https://www.dartlang.org/tools/download.html
-    icon-css: fa fa-fw fa-download
-  - text: Hello Dart Szenarien
-    link: https://github.com/marcojakob/hello-dart/releases
-    icon-css: fa fa-fw fa-download
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
-    icon-css: fa fa-fw fa-file-word-o
-languages:
-  header: Sprachen
-  collection: library
-  item: hello-dart
-  part: install
-  active: de
----
++++
+title = "Installation"
+date = 2015-01-26
+description = "Dart Editor installieren. Die Hello Dart Szenarien laden und ein erstes Dart Programm starten."
+image = "hello-dart.png"
+prettify = true
+comments = true
+commentsIdentifier = "/library/hello-dart/de/install/"
+aliases = [ 
+  "/library/hello-dart/de/install/" 
+]
+
+sidebarName = "<i class=\"fa fa-fw fa-cog\"></i> Installation"
+pagingName = "<i class=\"fa fa-fw fa-cog\"></i>"
+weight = 2
+
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Dart Editor Download"
+link = "https://www.dartlang.org/tools/download.html"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Hello Dart Szenarien"
+link = "https://github.com/marcojakob/hello-dart/releases"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Seite als Word-Datei"
+link = "/de/library/convert-web-page-to-word/"
++++
 
 Zum Programmieren brauchen wir... 
 
@@ -84,7 +49,7 @@ Zum Programmieren brauchen wir...
 
 <div class="row">
   <div class="col-md-2">
-    ![Dart Editor](/assets/library/hello-dart/install/dart-editor-icon.png)
+    <img src="dart-editor-icon.png" alt="Dart Editor">
   </div>
   <div class="col-md-7">
     Dart Editor ist ein einfacher aber trotzdem mächtiger Editor. Damit können Dart-Projekte erstellt, editert und verwaltet werden. 
@@ -95,7 +60,7 @@ Zum Programmieren brauchen wir...
 
 <div class="row">
   <div class="col-md-2">
-    ![Dartium](/assets/library/hello-dart/install/chromium-icon.png)
+    <img src="chromium-icon.png" alt="Dartium">
   </div>
   <div class="col-md-7">
     Dies ist eine spezielle Version des Chrome Web Browsers, genannt Dartium, welcher die Dart VM (virtual machine) enthält. Dart Programme können direkt in diesem Browser laufen. Der Dart Editor führt Projekte automatisch darin aus.
@@ -106,7 +71,7 @@ Zum Programmieren brauchen wir...
 
 <div class="row">
   <div class="col-md-2">
-    ![Dart SDK](/assets/library/hello-dart/install/dart-sdk-icon.png)
+    <img src="dart-sdk-icon.png" alt="Dart SDK">
   </div>
   <div class="col-md-7">
     Das Verzeichnis <strong>dart-sdk</strong> enthält das Dart Software Development Kit. Hier befinden sich die Dart Standard-Bibliotheken und Tools für die Kommandozeile.
@@ -118,9 +83,9 @@ Zum Programmieren brauchen wir...
 
 ## Dart Editor starten
 
-![Dart Editor Executable](/assets/library/hello-dart/install/dart-logo-21.png) Starten Sie den Dart Editor mit einem Doppelklick auf die ausführbare Datei im Installationsordner.
+![Dart Editor Executable](dart-logo-21.png) Starten Sie den Dart Editor mit einem Doppelklick auf die ausführbare Datei im Installationsordner.
 
-![Dart Editor](/assets/library/hello-dart/install/dart-editor.png)
+![Dart Editor](dart-editor.png)
 
 
 ## `Hello Dart` Szenarien öffnen
@@ -130,20 +95,20 @@ Zum Programmieren brauchen wir...
 3. Im Dart Editor: Klicken Sie auf *File* | *Open Existing Folder...*. Wählen Sie dort den Ordner `hello_dart_scenarios` aus, den Sie vorher entpackt haben.
 4. Öffnen Sie im Unterordner `web/part1/scenario1.01` die Datei `my_player.dart` mit einem Doppelklick.   
 <p>
-![My Player](/assets/library/hello-dart/install/my-player.png)
+![My Player](my-player.png)
 </p>
-5. Klicken Sie auf das *Run*-Symbol ![Run](/assets/library/hello-dart/install/run.png).
+5. Klicken Sie auf das *Run*-Symbol ![Run](run.png).
 
 Jetzt sollte sich automatisch der Chromium Browser öffnen mit dem ersten Szenario:
 
-![First Scenario](/assets/library/hello-dart/install/first-scenario.png)
+![First Scenario](first-scenario.png)
 
 
 ***
 
 ### Wie weiter?
 
-Im [Teil 1](/library/hello-dart/de/part1/) machen wir unsere ersten Schritte beim Programmieren.
+Im [Teil 1](/de/library/hello-dart/part1/) machen wir unsere ersten Schritte beim Programmieren.
 
 ***
 

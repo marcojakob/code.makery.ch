@@ -21,7 +21,7 @@ text = "<i class=\"fa fa-fw fa-github-alt\"></i> GreenfootKara Quelldateien auf 
 link = "https://github.com/marcojakob/greenfoot-kara"
 [[sidebars.items]]
 text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Seite als Word-Datei"
-link = "/library/convert-web-page-to-word/"
+link = "/de/library/convert-web-page-to-word/"
 +++
 
 Auf dieser Seite finden Sie Hintergrundinformationen über `GreenfootKara`. Dies wird speziell hilfreich sein für Lehrpersonen.

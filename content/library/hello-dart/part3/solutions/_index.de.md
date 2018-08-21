@@ -1,65 +1,23 @@
----
-layout: article
-title: "Hello Dart - Lösungen Teil 3"
-date: 2015-01-21 00:00
-slug: hello-dart/de/part3-solutions
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part3-solutions.md
-description: "Lösungen zu Hello Dart Teil 3."
-image: /assets/library/hello-dart/hello-dart.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/hello-dart/de/
-    paging: Einleitung
-  - text: "Hintergrundinfos"
-    link: /library/hello-dart/de/background/
-    icon-css: fa fa-fw fa-info
-    paging: <i class="fa fa-info"></i>
-  - text: "Installation"
-    link: /library/hello-dart/de/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Erste Schritte"
-    link: /library/hello-dart/de/part1/
-    paging: 1
-  - text: "Teil 2: Schleifen"
-    link: /library/hello-dart/de/part2/
-    paging: 2
-  - text: "Teil 3: Bedingte Anweisungen"
-    link: /library/hello-dart/de/part3/
-    paging: 3
-  - text: "Teil 4: Variablen"
-    link: /library/hello-dart/de/part4/
-    paging: 4
-  - text: "Teil 5: Funktionen"
-    link: /library/hello-dart/de/part5/
-    paging: 5
-  - text: "Nächste Schritte"
-    link: /library/hello-dart/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Lösungen
-  body:
-  - text: "Lösungen zu Teil 3"
-    link: /library/hello-dart/de/part3-solutions/
-    icon-css: fa fa-fw fa-check-square-o
-    active: true
-- header: Links
-  body:
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
-    icon-css: fa fa-fw fa-file-word-o
-languages:
-  header: Sprachen
-  collection: library
-  item: hello-dart
-  part: part3-solutions
-  active: de
----
++++
+title = "Lösungen"
+date = 2015-01-21
+description = "Lösungen zu Hello Dart Teil 3."
+prettify = true
+comments = true
+commentsIdentifier = "/library/hello-dart/de/part3-solutions/"
+aliases = [ 
+  "/library/hello-dart/de/part3-solutions/" 
+]
+
+pagingName = "<i class=\"fa fa-fw fa-check-square-o\"></i>"
+sidebarName = "<i class=\"fa fa-fw fa-check-square-o\"></i> Lösungen"
+
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Seite als Word-Datei"
+link = "/de/library/convert-web-page-to-word/"
++++
 
 #### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 3.01: Conditionals
 

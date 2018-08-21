@@ -1,53 +1,23 @@
----
-layout: article
-title: "Hello Dart: Introduction to Programming"
-date: 2015-05-01 00:00
-slug: hello-dart
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-en.md
-description: "Hello Dart is a playful introduction to programming. Learn the basics of programming with the awesome Dart language."
-image: /assets/library/hello-dart/hello-dart.png
-published: true
-prettify: false
-comments: true
-sidebars:
-- header: Articles in this Series
-  body:
-  - text: "Introduction"
-    link: /library/hello-dart/
-    paging: Intro
-    active: true
-  - text: "Installation"
-    link: /library/hello-dart/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Part 1: First Steps"
-    link: /library/hello-dart/part1/
-    paging: 1
-  - text: "Part 2: Loops"
-    link: /library/hello-dart/part2/
-    paging: 2
-  - text: "Part 3: Conditionals"
-    link: /library/hello-dart/part3/
-    paging: 3
-  - text: "Part 4: Variables"
-    link: /library/hello-dart/part4/
-    paging: 4
-  - text: "Part 5: Functions"
-    link: /library/hello-dart/part5/
-    paging: 5
-  - text: "Next Steps"
-    link: /library/hello-dart/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-languages:
-  header: Languages
-  collection: library
-  item: hello-dart
-  part:
-  active: en
----
++++
+title = "Hello Dart: Introduction to Programming"
+date = 2015-05-01
+description = "Hello Dart is a playful introduction to programming. Learn the basics of programming with the awesome Dart language."
+image = "hello-dart.png"
+comments = true
+sidebarName = "Introduction"
+pagingName = "Intro"
 
-![Hello Dart](/assets/library/hello-dart/hello-dart-animation.gif)
+# Series Overview Info
+overview = true
+overviewImage = "hello-dart-overview.png"
+overviewDescription = """
+Hello Dart is a visual and playful introduction to programming. We use the modern and fun Dart programming language. 
+"""
+topics = [ "Dart" ]
+weight = 3
++++
+
+![Hello Dart](hello-dart-animation.gif)
 
 > `Hello Dart` is a playful introduction to programming with Dart.
 
@@ -65,14 +35,14 @@ Previously, it was hardly realistic to program mobile or web-based applications.
 
 The world of `Hello Dart` consists of fields, trees and stars.
 
-![Elements](/assets/library/hello-dart/intro/elements.png)
+![Elements](elements.png)
 
 
 ## The Player
 
 In the world of `Hello Dart` we move around with our character. You can choose from one of four characters.
 
-![Characters](/assets/library/hello-dart/intro/characters.png)
+![Characters](characters.png)
 
 A game character, called `Player` has the following actions and sensors that he/she can use:
 
@@ -89,33 +59,33 @@ A game character, called `Player` has the following actions and sensors that he/
   </thead>
   <tbody>
     <tr>
-      <td style="vertical-align:middle">![Move](/assets/library/hello-dart/intro/move.png)</td>
-      <td style="vertical-align:middle">`move()`</td>
+      <td style="vertical-align:middle"><img src="move.png" alt="Move"></td>
+      <td style="vertical-align:middle"><code>move()</code></td>
       <td style="vertical-align:middle">The player makes a step forward.</td>
     </tr>
     <tr>
-      <td style="vertical-align:middle">![Turn Left](/assets/library/hello-dart/intro/turn-left.png)</td>
-      <td style="vertical-align:middle">`turnLeft()`</td>
+      <td style="vertical-align:middle"><img src="turn-left.png" alt="Turn Left"></td>
+      <td style="vertical-align:middle"><code>turnLeft()</code></td>
       <td style="vertical-align:middle">The player turns left by 90 degrees.</td>
     </tr>
     <tr>
-      <td style="vertical-align:middle">![Turn Right](/assets/library/hello-dart/intro/turn-right.png)</td>
-      <td style="vertical-align:middle">`turnRight()`</td>
+      <td style="vertical-align:middle"><img src="turn-right.png" alt="Turn Right"></td>
+      <td style="vertical-align:middle"><code>turnRight()</code></td>
       <td style="vertical-align:middle">The player turns right by 90 degrees.</td>
     </tr>
     <tr>
-      <td style="vertical-align:middle">![Put Star](/assets/library/hello-dart/intro/put-star.png)</td>
-      <td style="vertical-align:middle">`putStar()`</td>
+      <td style="vertical-align:middle"><img src="put-star.png" alt="Put Star"></td>
+      <td style="vertical-align:middle"><code>putStar()</code></td>
       <td style="vertical-align:middle">The player puts down a star.</td>
     </tr>
     <tr>
-      <td style="vertical-align:middle">![Move](/assets/library/hello-dart/intro/remove-star.png)</td>
-      <td style="vertical-align:middle">`removeStar()`</td>
+      <td style="vertical-align:middle"><img src="remove-star.png" alt="Remove Star"></td>
+      <td style="vertical-align:middle"><code>removeStar()</code></td>
       <td style="vertical-align:middle">The player removes a star.</td>
     </tr>
     <tr>
-      <td style="vertical-align:middle">![Say](/assets/library/hello-dart/intro/say.png)</td>
-      <td style="vertical-align:middle; ">`say('Hello')`</td>
+      <td style="vertical-align:middle"><img src="say.png" alt="Say"></td>
+      <td style="vertical-align:middle"><code>say('Hello')</code></td>
       <td style="vertical-align:middle">The player says something using a speech bubble.</td>
     </tr>
   </tbody>
@@ -134,28 +104,28 @@ A game character, called `Player` has the following actions and sensors that he/
   </thead>
   <tbody>
     <tr>
-      <td style="vertical-align:middle">![Can Move](/assets/library/hello-dart/intro/can-move.png)</td>
-      <td style="vertical-align:middle">`canMove()`</td>
+      <td style="vertical-align:middle"><img src="can-move.png" alt="Can Move"></td>
+      <td style="vertical-align:middle"><code>canMove()</code></td>
       <td style="vertical-align:middle">The player checks if he can move to the next field.</td>
     </tr>
     <tr>
-      <td style="vertical-align:middle">![Tree Front](/assets/library/hello-dart/intro/tree-front.png)</td>
-      <td style="vertical-align:middle">`treeFront()`</td>
+      <td style="vertical-align:middle"><img src="tree-front.png" alt="Tree Front"></td>
+      <td style="vertical-align:middle"><code>treeFront()</code></td>
       <td style="vertical-align:middle">The player checks if there is a tree in front.</td>
     </tr>
     <tr>
-      <td style="vertical-align:middle">![Tree Left](/assets/library/hello-dart/intro/tree-left.png)</td>
-      <td style="vertical-align:middle">`treeLeft()`</td>
+      <td style="vertical-align:middle"><img src="tree-left.png" alt="Tree Left"></td>
+      <td style="vertical-align:middle"><code>treeLeft()</code></td>
       <td style="vertical-align:middle">The player checks if there is a tree on the left side.</td>
     </tr>
     <tr>
-      <td style="vertical-align:middle">![Tree Right](/assets/library/hello-dart/intro/tree-right.png)</td>
-      <td style="vertical-align:middle">`treeRight()`</td>
+      <td style="vertical-align:middle"><img src="tree-right.png" alt="Tree Right"></td>
+      <td style="vertical-align:middle"><code>treeRight()</code></td>
       <td style="vertical-align:middle">The player checks if there is a tree on the right side.</td>
     </tr>
     <tr>
-      <td style="vertical-align:middle">![On Star](/assets/library/hello-dart/intro/on-star.png)</td>
-      <td style="vertical-align:middle">`onStar()`</td>
+      <td style="vertical-align:middle"><img src="on-star.png" alt="On Star"></td>
+      <td style="vertical-align:middle"><code>onStar()</code></td>
       <td style="vertical-align:middle">The player checks if he is on a star.</td>
     </tr>
   </tbody>
@@ -178,7 +148,7 @@ If you want to know more about why I recommend Dart for programming, see [backgr
 
 ### Copyright
 
-I publish the `Hello Dart` materials under the [Creative Commons Attribution 4.0](http://creativecommons.org/licenses/by/4.0/) license. That means you can do pretty much everything you want with it. But you need to comply with the following:
+I publish the `Hello Dart` materials under the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license. That means you can do pretty much everything you want with it. But you need to comply with the following:
 
 * If you use my materials or programs, you must clearly indicate that I'm the original author of this material. Include my name, a link to the original and a link to the license. It could look something like the way I provide attribution to the images at the bottom of every page.
 

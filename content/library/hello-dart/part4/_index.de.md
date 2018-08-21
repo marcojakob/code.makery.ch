@@ -1,71 +1,36 @@
----
-layout: article
-title: "Hello Dart - Teil 4: Variablen"
-date: 2015-01-21 00:00
-slug: hello-dart/de/part4
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part4.md
-description: "Mit Variablen können wir Daten speichern in Dart. Lernen Sie die verschiedenen Datentypen von Dart kennen."
-image: /assets/library/hello-dart/hello-dart.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/hello-dart/de/
-    paging: Einleitung
-  - text: "Hintergrundinfos"
-    link: /library/hello-dart/de/background/
-    icon-css: fa fa-fw fa-info
-    paging: <i class="fa fa-info"></i>
-  - text: "Installation"
-    link: /library/hello-dart/de/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Erste Schritte"
-    link: /library/hello-dart/de/part1/
-    paging: 1
-  - text: "Teil 2: Schleifen"
-    link: /library/hello-dart/de/part2/
-    paging: 2
-  - text: "Teil 3: Bedingte Anweisungen"
-    link: /library/hello-dart/de/part3/
-    paging: 3
-  - text: "Teil 4: Variablen"
-    link: /library/hello-dart/de/part4/
-    paging: 4
-    active: true
-  - text: "Teil 5: Funktionen"
-    link: /library/hello-dart/de/part5/
-    paging: 5
-  - text: "Nächste Schritte"
-    link: /library/hello-dart/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Lösungen
-  body:
-  - text: "Lösungen zu Teil 4"
-    link: /library/hello-dart/de/part4-solutions/
-    icon-css: fa fa-fw fa-check-square-o
-- header: Links
-  body:
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
-    icon-css: fa fa-fw fa-file-word-o
-languages:
-  header: Sprachen
-  collection: library
-  item: hello-dart
-  part: part4
-  active: de
----
++++
+title = "Teil 4: Variablen"
+date = 2015-01-21
+description = "Mit Variablen können wir Daten speichern in Dart. Lernen Sie die verschiedenen Datentypen von Dart kennen."
+image = "chessboard.png"
+prettify = true
+comments = true
+commentsIdentifier = "/library/hello-dart/de/part4/"
+aliases = [ 
+  "/library/hello-dart/de/part4/" 
+]
+
+pagingName = "4"
+weight = 6
+
+[[sidebars]]
+header = "Lösungen"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-check-square-o\"></i> Lösungen Teil 4"
+link = "/de/library/hello-dart/part4/solutions/"
+
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Seite als Word-Datei"
+link = "/de/library/convert-web-page-to-word/"
++++
 
 Mit Schleifen haben wir gelernt, bestimmte Ereignisse zu wiederholen, solange eine Bedingung erfüllt ist. Nun möchten wir aber folgendes tun:
 
 *Der Spieler soll eine Spur von fünf Sternen legen.*
 
-![Fünf Sterne](/assets/library/hello-dart/part4/five-stars.png)
+![Fünf Sterne](five-stars.png)
 
 Dies wäre natürlich recht einfach, wenn wir `putStar()` und `move()` fünfmal aufrufen, jedoch wenig elegant. Schöner wäre es, wenn unser Spieler mitzählt, wie viele Sterne er bereits abgelegt hat. Damit der Spieler zählen kann, braucht er ein "Gedächtnis", d.h. konkret einen Speicher. Beim Programmieren sind die Speicherplätze durch Variablen ansprechbar.
 
@@ -110,7 +75,7 @@ Dann könnte man im obigen Programmbeispiel `while (i < anzahl)` schreiben.
 In Dart gibt es ein paar vordefinierte Datentypen. Mit Datentypen gibt man an, was in eine Variable gespeichert wird. Diese Angaben sind in Dart freiwillig. Das heisst, man kann alle Variablen einfach mit `var` deklarieren, wie wir es oben gemacht haben. Ich empfehle aber, meistens den Datentyp anzugeben. Dies hilft Fehler früh zu erkennen, da Dart Hinweise geben wird, wenn wir versuchen einen falschen Datentyp in eine Variable zu speichern.
 
 <div class="alert alert-info">
-  <strong>Merke:</strong> Alles, was in eine Variable gespeichert werden kann, wird in Dart als **Objekt** bezeichnet. Der Datentyp eines Objektes nennen wir eine **Klasse**. Klassen und Objekte sind die Grundelemente der <a class="alert-link" href="http://de.wikipedia.org/wiki/Objektorientierte_Programmierung">objektorientierten Programmierung</a>.
+  <strong>Merke:</strong> Alles, was in eine Variable gespeichert werden kann, wird in Dart als <strong>Objekt</strong> bezeichnet. Der Datentyp eines Objektes nennen wir eine <strong>Klasse</strong>. Klassen und Objekte sind die Grundelemente der <a class="alert-link" href="http://de.wikipedia.org/wiki/Objektorientierte_Programmierung">objektorientierten Programmierung</a>.
 </div>
 
 Später werden wir unsere eigenen Klassen erstellen. Jetzt schauen wir uns zuerst die Grunddatentypen von Dart an.
@@ -127,34 +92,34 @@ Später werden wir unsere eigenen Klassen erstellen. Jetzt schauen wir uns zuers
   </thead>
   <tbody>
     <tr>
-      <td>`int`</td>
+      <td><code>int</code></td>
       <td>Ganze Zahlen</td>
-      <td>`1`, `2`, `-1233123`</td>
+      <td><code>1</code>, <code>2</code>, <code>-1233123</code></td>
     </tr>
     <tr>
-      <td>`double`</td>
+      <td><code>double</code></td>
       <td>Fliesskommazahlen</td>
-      <td>`0.5`, `-333.234`</td>
+      <td><code>0.5</code>, <code>-333.234</code></td>
     </tr>
     <tr>
-      <td>`String`</td>
-      <td>Text in einer beliebigen Länge. Text wird immer *zwischen einfache oder doppelte Anführungszeichen* gestellt.</td>
-      <td>`'Ich bin ein Text'` oder `"Ich bin auch ein Text"`</td>
+      <td><code>String</code></td>
+      <td>Text in einer beliebigen Länge. Text wird immer <em>zwischen einfache oder doppelte Anführungszeichen</em> gestellt.</td>
+      <td><code>'Ich bin ein Text'</code> oder <code>"Ich bin auch ein Text"</code></td>
     </tr>
     <tr>
-      <td>`bool`</td>
-      <td>Ein Boolean ist ein Wahrheitswert, der entweder *wahr* oder *falsch* sein kann.</td>
-      <td>`true` oder `false`</td>
+      <td><code>bool</code></td>
+      <td>Ein Boolean ist ein Wahrheitswert, der entweder <em>wahr</em> oder <em>falsch</em> sein kann.</td>
+      <td><code>true</code> oder <code>false</code></td>
     </tr>
     <tr>
-      <td>`List`</td>
-      <td>Eine Sammlung von Objekten. Wird manchmal auch *Array* genannt.</td>
-      <td>`[1, 2, 3]`</td>
+      <td><code>List</code></td>
+      <td>Eine Sammlung von Objekten. Wird manchmal auch <em>Array</em> genannt.</td>
+      <td><code>[1, 2, 3]</code></td>
     </tr>
     <tr>
-      <td>`Map`</td>
-      <td>In einer Map kann man Objekte speichern als *Schlüssel* und *Werte*.</td>
-      <td>`{ 'schlüssel-1': 'wert-1', 'schlüssel-2': 'wert-2' }`</td>
+      <td><code>Map</code></td>
+      <td>In einer Map kann man Objekte speichern als <em>Schlüssel</em> und <em>Werte</em>.</td>
+      <td><code>{ 'schlüssel-1': 'wert-1', 'schlüssel-2': 'wert-2' }</code></td>
     </tr>
   </tbody>
 </table>
@@ -174,39 +139,39 @@ Folgende Operatoren können in Dart für Vergleiche verwendet werden. Das Ergebn
   </thead>
   <tbody>
     <tr>
-      <td>`==`</td>
+      <td><code>==</code></td>
       <td>gleich</td>
-      <td>`k == 2`</td>
+      <td><code>k == 2</code></td>
     </tr>
     <tr>
-      <td>`!=`</td>
+      <td><code>!=</code></td>
       <td>ungleich</td>
-      <td>`k != 12`</td>
+      <td><code>k != 12</code></td>
     </tr>
     <tr>
-      <td>`>`</td>
+      <td><code>></code></td>
       <td>grösser als</td>
-      <td>`k > 67`</td>
+      <td><code>k > 67</code></td>
     </tr>
     <tr>
-      <td>`<`</td>
+      <td><code><</code></td>
       <td>kleiner als</td>
-      <td>`k < 12`</td>
+      <td><code>k < 12</code></td>
     </tr>
     <tr>
-      <td>`>=`</td>
+      <td><code>>=</code></td>
       <td>grösser als oder gleich</td>
-      <td>`k >= 45`</td>
+      <td><code>k >= 45</code></td>
     </tr>
     <tr>
-      <td>`<=`</td>
+      <td><code><=</code></td>
       <td>kleiner als oder gleich</td>
-      <td>`k <= 23`</td>
+      <td><code>k <= 23</code></td>
     </tr>
   </tbody>
 </table>
 
-**Achtung:** Der Vergleich auf "Gleichheit" hat immer zwei Gleichheitszeichen `==`. Mit einem einzelnen Gleichheitszeichen `=` geschieht eine Zuweisung!
+**Achtung:** Der Vergleich auf "Gleichheit" hat immer zwei Gleichheitszeichen <code>==</code>. Mit einem einzelnen Gleichheitszeichen <code>=</code> geschieht eine Zuweisung!
 
 
 ## Arithmetische Operatoren
@@ -223,29 +188,29 @@ Zur Berechnung können folgende arithmetische Operatoren verwendet werden:
   </thead>
   <tbody>
     <tr>
-      <td>`+`</td>
+      <td><code>+</code></td>
       <td>Addition</td>
-      <td>`h = w + 34`</td>
+      <td><code>h = w + 34</code></td>
     </tr>
     <tr>
-      <td>`-`</td>
+      <td><code>-</code></td>
       <td>Subtraktion</td>
-      <td>`y = 3.4 – t`</td>
+      <td><code>y = 3.4 – t</code></td>
     </tr>
     <tr>
-      <td>`*`</td>
+      <td><code>*</code></td>
       <td>Multiplikation</td>
-      <td>`z = h * 3.56`</td>
+      <td><code>z = h * 3.56</code></td>
     </tr>
     <tr>
-      <td>`/`</td>
+      <td><code>/</code></td>
       <td>Division</td>
-      <td>`d = m / v`</td>
+      <td><code>d = m / v</code></td>
     </tr>
     <tr>
-      <td>`%`</td>
+      <td><code>%</code></td>
       <td>Modulo (liefert den Rest der Division)</td>
-      <td>`count = w % 2`</td>
+      <td><code>count = w % 2</code></td>
     </tr>
   </tbody>
 </table>
@@ -255,7 +220,7 @@ Zur Berechnung können folgende arithmetische Operatoren verwendet werden:
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.01: Counting Stars
 
-![Sternenspur](/assets/library/hello-dart/part4/counting-stars.png)
+![Sternenspur](counting-stars.png)
 
 Der Spieler soll von links nach rechts gehen und dabei die Sterne zählen.
 
@@ -271,13 +236,13 @@ Der Spieler soll von links nach rechts gehen und dabei die Sterne zählen.
 
 
 <div class="alert alert-info">
-  **Gültigkeitsbereich von Variablen:** Variablen sind immer nur innerhalb des Blockes (zwischen den geschweiften Klammern) gültig, in welchem sie deklariert wurden. Man kann sie auch ausserhalb der Funktionen deklarieren. Dann sind sie in der ganzen Klasse verfügbar, oder, falls sie sogar ausserhalb einer Klasse deklariert werden, sind sie überall verfügbar.
+  <strong>Gültigkeitsbereich von Variablen:</strong> Variablen sind immer nur innerhalb des Blockes (zwischen den geschweiften Klammern) gültig, in welchem sie deklariert wurden. Man kann sie auch ausserhalb der Funktionen deklarieren. Dann sind sie in der ganzen Klasse verfügbar, oder, falls sie sogar ausserhalb einer Klasse deklariert werden, sind sie überall verfügbar.
 </div>
 
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.02: Cleaning Up
 
-![Aufräumen](/assets/library/hello-dart/part4/cleaning-up.png)
+![Aufräumen](cleaning-up.png)
 
 Der Spieler soll alle Sterne wegräumen.
 
@@ -297,21 +262,21 @@ Der Spieler soll alle Sterne wegräumen.
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.03: Inverting
 
-![Invertieren](/assets/library/hello-dart/part4/inverting.png)
+![Invertieren](inverting.png)
 
 Die Welt hat eine quadratische Fläche und am Schluss einen Baum. Innerhalb der Fläche ist ein Muster aus Sternen gelegt, das vom Spieler invertiert (=umgedreht) werden soll. Achten Sie darauf, dass Ihr Code übersichtlich bleibt und lagern Sie allenfalls Teile in eigene Funktionen aus.
 
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.04: Chessboard
 
-![Schachbrett](/assets/library/hello-dart/part4/chessboard.png)
+![Schachbrett](chessboard.png)
 
 Die Welt hat eine quadratische Fläche und am Schluss einen Baum. Innerhalb der Fläche soll ein schachbrettartiges Muster aus Sternen gelegt werden.
 
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.04 (schwierig): Tree Line
 
-![Baumreihe](/assets/library/hello-dart/part4/tree-line.jpg)
+![Baumreihe](tree-line.jpg)
 
 In dieser Welt hat es verschiedene Baumreihen. Der Spieler soll nun die Länge (in Anzahl Bäumen) der längsten Baumreihe ermitteln und ausgeben. Zwischen den Baumreihen ist immer mindestens ein Feld Platz. Auf dem letzten Feld liegt ein Stern.
 
@@ -320,7 +285,7 @@ In dieser Welt hat es verschiedene Baumreihen. Der Spieler soll nun die Länge (
 
 ## Wie weiter?
 
-Fahren Sie weiter mit [Teil 5: Funktionen](/library/hello-dart/de/part5/)
+Fahren Sie weiter mit [Teil 5: Funktionen](/de/library/hello-dart/part5/)
 
 
 ***

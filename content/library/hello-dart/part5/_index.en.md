@@ -1,65 +1,30 @@
----
-layout: article
-title: "Hello Dart - Part 5: Functions"
-date: 2015-05-01 00:00
-slug: hello-dart/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-en-part5.md
-description: "We expanding our knowledge about functions and methods in Dart. We will learn about functions with parameters and return values."
-image: /assets/library/hello-dart/hello-dart.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Articles in this Series
-  body:
-  - text: "Introduction"
-    link: /library/hello-dart/
-    paging: Intro
-  - text: "Installation"
-    link: /library/hello-dart/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Part 1: First Steps"
-    link: /library/hello-dart/part1/
-    paging: 1
-  - text: "Part 2: Loops"
-    link: /library/hello-dart/part2/
-    paging: 2
-  - text: "Part 3: Conditionals"
-    link: /library/hello-dart/part3/
-    paging: 3
-  - text: "Part 4: Variables"
-    link: /library/hello-dart/part4/
-    paging: 4
-  - text: "Part 5: Functions"
-    link: /library/hello-dart/part5/
-    paging: 5
-    active: true
-  - text: "Next Steps"
-    link: /library/hello-dart/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Solutions
-  body:
-  - text: "Solutions Part 5"
-    link: /library/hello-dart/part5-solutions/
-    icon-css: fa fa-fw fa-check-square-o
-- header: Links
-  body:
-  - text: Page as Word File
-    link: /library/convert-web-page-to-word/
-    icon-css: fa fa-fw fa-file-word-o
-languages:
-  header: Languages
-  collection: library
-  item: hello-dart
-  part: part5
-  active: en
----
++++
+title = "Part 5: Functions"
+date = 2015-05-01
+description = "We expanding our knowledge about functions and methods in Dart. We will learn about functions with parameters and return values."
+image = "layered-cake.jpg"
+prettify = true
+comments = true
+
+pagingName = "5"
+weight = 7
+
+[[sidebars]]
+header = "Solutions"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-check-square-o\"></i> Solutions Part 5"
+link = "/library/hello-dart/part5/solutions/"
+
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Page as Word File"
+link = "/library/convert-web-page-to-word/"
++++
 
 <div class="row">
   <div class="col-sm-6">
-    <img alt="Rotkäppchen" src="/assets/library/hello-dart/part5/red-riding-hood.jpg">
+    <img alt="Rotkäppchen" src="red-riding-hood.jpg">
   </div>
   <div class="col-sm-6">
     <p>
@@ -109,7 +74,7 @@ public void drawRectangle(int width, int height)
 3. When such a function is called, the values are copied into the variables (in this case into `width` and `height`).
 
 <div class="alert alert-info">
-  **Importent:** Functions that are defined inside a class (which is usually the case) are also called **Methods**.
+  <strong>Importent:</strong> Functions that are defined inside a class (which is usually the case) are also called <strong>Methods</strong>.
 </div>
 
 
@@ -120,7 +85,7 @@ We will now use our player to "bake" a birthday cake for the grandmother. The ca
 
 #### <i class="fa fa-rocket mg-t"></i> TASK 5.01: Baking a Cake
 
-![Baking a Cake](/assets/library/hello-dart/part5/baking-a-cake.jpg) 
+![Baking a Cake](baking-a-cake.jpg) 
 
 In preparation for baking, the following methods should be provided:
 
@@ -140,7 +105,7 @@ The player starts in the lower left corner and looks to the right. The player sh
 
 #### <i class="fa fa-rocket mg-t"></i> TASK 5.02: Candles on Cake
 
-![Candles on Cake](/assets/library/hello-dart/part5/candles-on-cake.jpg) 
+![Candles on Cake](candles-on-cake.jpg) 
 
 To make the cake look like a birthday cake it needs a few candles, of course. Extend your program with an additional method `drawCandles(int count)` which sets the specified number of candles on the cake.
 
@@ -176,7 +141,7 @@ We want to put on the cake a **candle for every decade** of grandmother's age. A
 Program a function called `howOldIsGrandma()` that returns the age. With the help of this function the rest of the program should place a candle on the cake for every decade.
 
 <div class="alert alert-info">
-  **Note:** The division of two numbers in Dart always results in a `double`. To get an `int` again, we can use the `toInt()` or `round()` functions. <br> Example: `(5 / 3).toInt()`
+  <strong>Note:</strong> The division of two numbers in Dart always results in a <code>double</code>. To get an <code>int</code> again, we can use the <code>toInt()</code> or <code>round()</code> functions. <br> Example: <code>(5 / 3).toInt()</code>
 </div>
 
 
@@ -184,7 +149,7 @@ Program a function called `howOldIsGrandma()` that returns the age. With the hel
 
 #### <i class="fa fa-rocket mg-t"></i> TASK 5.04 (difficult): Layered Cake
 
-![Candles on Cake](/assets/library/hello-dart/part5/layered-cake.jpg) 
+![Candles on Cake](layered-cake.jpg) 
 
 Let the player "bake" a layered cake for the grandmother. The player should add a layer for every decade that the grandmother is over 50. Each layer should have two lines and should be indented on both sides by two stars.
 

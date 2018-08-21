@@ -1,65 +1,30 @@
----
-layout: article
-title: "Hello Dart - Part 1: First Steps"
-date: 2015-05-01 00:00
-slug: hello-dart/part1
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-en-part1.md
-description: "The first steps in programming with Dart. Get to know classes and functions and understand what the main function is for."
-image: /assets/library/hello-dart/part1/around-tree.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Articles in this Series
-  body:
-  - text: "Introduction"
-    link: /library/hello-dart/
-    paging: Intro
-  - text: "Installation"
-    link: /library/hello-dart/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Part 1: First Steps"
-    link: /library/hello-dart/part1/
-    paging: 1
-    active: true
-  - text: "Part 2: Loops"
-    link: /library/hello-dart/part2/
-    paging: 2
-  - text: "Part 3: Conditionals"
-    link: /library/hello-dart/part3/
-    paging: 3
-  - text: "Part 4: Variables"
-    link: /library/hello-dart/part4/
-    paging: 4
-  - text: "Part 5: Functions"
-    link: /library/hello-dart/part5/
-    paging: 5
-  - text: "Next Steps"
-    link: /library/hello-dart/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Solutions
-  body:
-  - text: "Solutions Part 1"
-    link: /library/hello-dart/part1-solutions/
-    icon-css: fa fa-fw fa-check-square-o
-- header: Links
-  body:
-  - text: Page as Word File
-    link: /library/convert-web-page-to-word/
-    icon-css: fa fa-fw fa-file-word-o
-languages:
-  header: Languages
-  collection: library
-  item: hello-dart
-  part: part1
-  active: en
----
++++
+title = "Part 1: First Steps"
+date = 2015-05-01
+description = "The first steps in programming with Dart. Get to know classes and functions and understand what the main function is for."
+image = "around-tree.png"
+prettify = true
+comments = true
+
+pagingName = "1"
+weight = 3
+
+[[sidebars]]
+header = "Solutions"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-check-square-o\"></i> Solutions Part 1"
+link = "/library/hello-dart/part1/solutions/"
+
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Page as Word File"
+link = "/library/convert-web-page-to-word/"
++++
 
 In this part we will take our first steps in programming.
 
-![Hello Dart](/assets/library/hello-dart/part1/hello.png)
+![Hello Dart](hello.png)
 
 
 ### Prerequisites
@@ -74,7 +39,7 @@ In this part we will take our first steps in programming.
 
 Open the file `my_player.dart` from the folder `scenario1.01`.
 
-![My Player](/assets/library/hello-dart/part1/my-player.png)
+![My Player](my-player.png)
 
 Let's have a look at the `MyPlayer` **class**. Attributes and behavior of our player are defined between the curly braces `{` and `}`.
 
@@ -88,10 +53,10 @@ Change the `start()` function so that the player first makes a step, then places
 In the [introduction](/library/hello-dart/) you will find all commands a player can execute.
 
 <div class="alert alert-info">
-  **Note:** After every command you must place a semicolon `;`.
+  <strong>Note:</strong> After every command you must place a semicolon <code>;</code>.
 </div>
 
-Click the *run* button ![Run](/assets/library/hello-dart/part1/run.png) to test your program.
+Click the *run* button ![Run](run.png) to test your program.
 
 
 ## `index.html` and the `main()` Function
@@ -107,7 +72,7 @@ In our `main()`, we call the `createWorld(...)` function. This function is part 
 
 The scenarios of `Hello Dart` include additional graphics that you can turn on if you want.
 
-![Catgirl](/assets/library/hello-dart/part1/catgirl.png)
+![Catgirl](catgirl.png)
 
 
 #### <i class="fa fa-rocket mg-t"></i> TASK 1.02: World Design
@@ -128,7 +93,7 @@ For **character** you can define values in quotes. Valid values are `boy`, `catg
 For **field** you can use the values `grass`, `stone`, `wood`, or `dirt`.
 
 <div class="alert alert-info">
-  **Hint:** To test a change it's fastest if you click `Ctrl+S` (or `⌘+S`) to save the file in the Dar Editor and then click `F5` (or `⌘+R`) to refresh the browser.
+  <strong>Hint:</strong> To test a change it's fastest if you click <code>Ctrl+S</code> (or <code>⌘+S</code>) to save the file in the Dar Editor and then click <code>F5</code> (or <code>⌘+R</code>) to refresh the browser.
 </div>
 
 
@@ -138,7 +103,7 @@ Open `scenario1.03`. If you start the scenario you should see a world with three
 
 Write a program that makes your player move on the specified path to the star. He must move around the trees. Arriving on the star, he should remove it.
 
-![Around Tree](/assets/library/hello-dart/part1/around-tree.png)
+![Around Tree](around-tree.png)
 
 
 ## New Functions

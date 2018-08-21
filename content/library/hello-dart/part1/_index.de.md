@@ -1,69 +1,34 @@
----
-layout: article
-title: "Hello Dart - Teil 1: Erste Schritte"
-date: 2015-01-21 00:00
-slug: hello-dart/de/part1
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part1.md
-description: "Die ersten Schritte im Programmieren mit Dart. Lernen Sie Klassen und Funktionen kennen und verstehen Sie, was die main-Funktion bewirkt."
-image: /assets/library/hello-dart/part1/around-tree.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/hello-dart/de/
-    paging: Einleitung
-  - text: "Hintergrundinfos"
-    link: /library/hello-dart/de/background/
-    icon-css: fa fa-fw fa-info
-    paging: <i class="fa fa-info"></i>
-  - text: "Installation"
-    link: /library/hello-dart/de/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Erste Schritte"
-    link: /library/hello-dart/de/part1/
-    paging: 1
-    active: true
-  - text: "Teil 2: Schleifen"
-    link: /library/hello-dart/de/part2/
-    paging: 2
-  - text: "Teil 3: Bedingte Anweisungen"
-    link: /library/hello-dart/de/part3/
-    paging: 3
-  - text: "Teil 4: Variablen"
-    link: /library/hello-dart/de/part4/
-    paging: 4
-  - text: "Teil 5: Funktionen"
-    link: /library/hello-dart/de/part5/
-    paging: 5
-  - text: "Nächste Schritte"
-    link: /library/hello-dart/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Lösungen
-  body:
-  - text: "Lösungen zu Teil 1"
-    link: /library/hello-dart/de/part1-solutions/
-    icon-css: fa fa-fw fa-check-square-o
-- header: Links
-  body:
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
-    icon-css: fa fa-fw fa-file-word-o
-languages:
-  header: Sprachen
-  collection: library
-  item: hello-dart
-  part: part1
-  active: de
----
++++
+title = "Teil 1: Erste Schritte"
+date = 2015-01-21
+description = "Die ersten Schritte im Programmieren mit Dart. Lernen Sie Klassen und Funktionen kennen und verstehen Sie, was die main-Funktion bewirkt."
+image = "around-tree.png"
+prettify = true
+comments = true
+commentsIdentifier = "/library/hello-dart/de/part1/"
+aliases = [ 
+  "/library/hello-dart/de/part1/" 
+]
+
+pagingName = "1"
+weight = 3
+
+[[sidebars]]
+header = "Lösungen"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-check-square-o\"></i> Lösungen Teil 1"
+link = "/de/library/hello-dart/part1/solutions/"
+
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Seite als Word-Datei"
+link = "/de/library/convert-web-page-to-word/"
++++
 
 In diesem ersten Teil wagen wir unsere ersten Schritte im Programmieren.  
 
-![Hello Dart](/assets/library/hello-dart/part1/hello.png)
+![Hello Dart](hello.png)
 
 
 ### Voraussetzungen
@@ -78,7 +43,7 @@ In diesem ersten Teil wagen wir unsere ersten Schritte im Programmieren.
 
 Öffnen Sie die Datei `my_player.dart` aus dem Ordner `scenario1.01`.
 
-![My Player](/assets/library/hello-dart/part1/my-player.png)
+![My Player](my-player.png)
 
 Betrachten wir einmal die **Klasse** `MyPlayer`. Zwischen den geschweiften Klammern `{` und `}` werden die Eigenschaften und das Verhalten unseres Spielers definiert. 
 
@@ -92,10 +57,10 @@ Das Einzige, was im Moment in dieser Klasse steht ist `start()` und drei Anweisu
 In der [Einleitung](/library/hello-dart/de/) finden Sie alle Befehle, die ein Spieler ausführen kann.
 
 <div class="alert alert-info">
-  <strong>Beachten Sie:</strong> Nach jedem Befehl muss ein Strichpunkt `;` stehen. 
+  <strong>Beachten Sie:</strong> Nach jedem Befehl muss ein Strichpunkt <code>;</code> stehen. 
 </div>
 
-Klicken Sie auf das *Run*-Symbol ![Run](/assets/library/hello-dart/part1/run.png), um Ihr Programm zu testen.
+Klicken Sie auf das *Run*-Symbol ![Run](run.png), um Ihr Programm zu testen.
 
 
 ## `index.html` und die `main()`-Funktion
@@ -111,7 +76,7 @@ In unserer `main()`-Funktion rufen wir die Funktion `createWorld(...)` auf. Dies
 
 Die Szenarien von `Hello Dart` beinhalten zusätzliche Grafiken, die Sie nach Ihren Vorlieben einschalten können.
 
-![Catgirl](/assets/library/hello-dart/part1/catgirl.png)
+![Catgirl](catgirl.png)
 
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 1.02: World Design
@@ -132,7 +97,7 @@ Für **character** können Sie innerhalb der Anführungszeichen die Werte `boy`,
 Für **field** sind die Werte `grass`, `stone`, `wood` oder `dirt` gültig.
 
 <div class="alert alert-info">
-  <strong>Tipp:</strong> Um eine Änderung zu testen geht es am schnellsten, wenn man `Ctrl+S` (oder `⌘+S`) zum Speichern und anschliessend im Browser `F5` (oder `⌘+R`) zum Aktualisieren klickt.
+  <strong>Tipp:</strong> Um eine Änderung zu testen geht es am schnellsten, wenn man <code>Ctrl+S</code> (oder <code>⌘+S</code>) zum Speichern und anschliessend im Browser <code>F5</code> (oder <code>⌘+R</code>) zum Aktualisieren klickt.
 </div>
 
 
@@ -142,7 +107,7 @@ Für **field** sind die Werte `grass`, `stone`, `wood` oder `dirt` gültig.
 
 Schreiben Sie ein Programm, welches Ihren Spieler auf dem angegebenen Weg zum Stern führt. Er muss dabei um die Bäume herumlaufen. Beim Stern angekommen, soll er ihn entfernen.
 
-![Around Tree](/assets/library/hello-dart/part1/around-tree.png)
+![Around Tree](around-tree.png)
 
 
 ## Neue Funktionen
@@ -164,7 +129,7 @@ Benutzen Sie nun innerhalb der `start()`-Funktion die Funktion `goAroundTree()` 
 
 ## Wie weiter?
 
-&rarr; Fahren Sie weiter mit [Teil 2: Schleifen](/library/hello-dart/de/part2/).
+&rarr; Fahren Sie weiter mit [Teil 2: Schleifen](/de/library/hello-dart/part2/).
 
 
 ***

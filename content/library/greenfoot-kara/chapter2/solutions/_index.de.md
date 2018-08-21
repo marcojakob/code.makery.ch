@@ -19,7 +19,7 @@ text = "<i class=\"fa fa-fw fa-file-archive-o\"></i> scenarios-chapter-2-solutio
 link = "https://github.com/marcojakob/greenfoot-kara/releases/download/v2.1.1/scenarios-chapter-2-solutions.zip"
 [[sidebars.items]]
 text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Seite als Word-Datei"
-link = "/library/convert-web-page-to-word/"
+link = "/de/library/convert-web-page-to-word/"
 +++
 
 #### <i class="fa fa-check-square-o"></i> LÖSUNG AUFGABE 2.01

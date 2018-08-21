@@ -1,55 +1,19 @@
----
-layout: article
-title: "Hello Dart: Hintergrundinfos"
-date: 2015-01-26 00:00
-slug: hello-dart/de/background
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-background.md
-description: "Hintergrundinformationen zu Hello Dart. Warum ich so begeistert bin von der Programmiersprache Dart."
-image: /assets/library/hello-dart/hello-dart.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/hello-dart/de/
-    paging: Einleitung
-  - text: "Hintergrundinfos"
-    link: /library/hello-dart/de/background/
-    icon-css: fa fa-fw fa-info
-    paging: <i class="fa fa-info"></i>
-    active: true
-  - text: "Installation"
-    link: /library/hello-dart/de/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Erste Schritte"
-    link: /library/hello-dart/de/part1/
-    paging: 1
-  - text: "Teil 2: Schleifen"
-    link: /library/hello-dart/de/part2/
-    paging: 2
-  - text: "Teil 3: Bedingte Anweisungen"
-    link: /library/hello-dart/de/part3/
-    paging: 3
-  - text: "Teil 4: Variablen"
-    link: /library/hello-dart/de/part4/
-    paging: 4
-  - text: "Teil 5: Funktionen"
-    link: /library/hello-dart/de/part5/
-    paging: 5
-  - text: "Nächste Schritte"
-    link: /library/hello-dart/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-languages:
-  header: Sprachen
-  collection: library
-  item: hello-dart
-  part: background
-  active: de
----
++++
+title = "Hintergrundinfos"
+date = 2015-01-26
+description = "Hintergrundinformationen zu Hello Dart. Warum ich so begeistert bin von der Programmiersprache Dart."
+image = "hello-dart.png"
+prettify = true
+comments = true
+commentsIdentifier = "/library/hello-dart/de/background/"
+aliases = [ 
+  "/library/hello-dart/de/background/" 
+]
+
+sidebarName = "<i class=\"fa fa-fw fa-info\"></i> Hintergrundinfos"
+pagingName = "<i class=\"fa fa-fw fa-info\"></i>"
+weight = 1
++++
 
 Auf dieser Seite erkläre ich, weshalb ich so begeistert bin von [Dart](https://www.dartlang.org) und ich diese Programmiersprache für Programmieranfänger wie auch für professionelle Programmierer empfehle.
 

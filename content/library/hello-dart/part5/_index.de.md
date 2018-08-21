@@ -1,69 +1,34 @@
----
-layout: article
-title: "Hello Dart - Teil 5: Funktionen"
-date: 2015-01-21 00:00
-slug: hello-dart/de/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/hello-dart-de-part5.md
-description: "Wir erweitern unsere Kenntnisse über Funktionen und Methoden in Dart. Wir lernen, wie wir Funktionen mit Parametern und Rückgabewerten verwenden können."
-image: /assets/library/hello-dart/hello-dart.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: Artikel dieser Serie
-  body:
-  - text: "Einleitung"
-    link: /library/hello-dart/de/
-    paging: Einleitung
-  - text: "Hintergrundinfos"
-    link: /library/hello-dart/de/background/
-    icon-css: fa fa-fw fa-info
-    paging: <i class="fa fa-info"></i>
-  - text: "Installation"
-    link: /library/hello-dart/de/install/
-    icon-css: fa fa-fw fa-cog
-    paging: <i class="fa fa-cog"></i>
-  - text: "Teil 1: Erste Schritte"
-    link: /library/hello-dart/de/part1/
-    paging: 1
-  - text: "Teil 2: Schleifen"
-    link: /library/hello-dart/de/part2/
-    paging: 2
-  - text: "Teil 3: Bedingte Anweisungen"
-    link: /library/hello-dart/de/part3/
-    paging: 3
-  - text: "Teil 4: Variablen"
-    link: /library/hello-dart/de/part4/
-    paging: 4
-  - text: "Teil 5: Funktionen"
-    link: /library/hello-dart/de/part5/
-    paging: 5
-    active: true
-  - text: "Nächste Schritte"
-    link: /library/hello-dart/de/next/
-    icon-css: fa fa-fw fa-flag-checkered
-    paging: <i class="fa fa-flag-checkered"></i>
-- header: Lösungen
-  body:
-  - text: "Lösungen zu Teil 5"
-    link: /library/hello-dart/de/part5-solutions/
-    icon-css: fa fa-fw fa-check-square-o
-- header: Links
-  body:
-  - text: Seite als Word-Datei
-    link: /library/convert-web-page-to-word/de/
-    icon-css: fa fa-fw fa-file-word-o
-languages:
-  header: Sprachen
-  collection: library
-  item: hello-dart
-  part: part5
-  active: de
----
++++
+title = "Teil 5: Funktionen"
+date = 2015-01-21
+description = "Wir erweitern unsere Kenntnisse über Funktionen und Methoden in Dart. Wir lernen, wie wir Funktionen mit Parametern und Rückgabewerten verwenden können."
+image = "layered-cake.jpg"
+prettify = true
+comments = true
+commentsIdentifier = "/library/hello-dart/de/part5/"
+aliases = [ 
+  "/library/hello-dart/de/part5/" 
+]
+
+pagingName = "5"
+weight = 7
+
+[[sidebars]]
+header = "Lösungen"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-check-square-o\"></i> Lösungen Teil 5"
+link = "/de/library/hello-dart/part5/solutions/"
+
+[[sidebars]]
+header = "Links"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Seite als Word-Datei"
+link = "/de/library/convert-web-page-to-word/"
++++
 
 <div class="row">
   <div class="col-sm-6">
-    <img alt="Rotkäppchen" src="/assets/library/hello-dart/part5/red-riding-hood.jpg">
+    <img alt="Rotkäppchen" src="red-riding-hood.jpg">
   </div>
   <div class="col-sm-6">
     <p>
@@ -125,7 +90,7 @@ Wir wollen nun mit unserem Spieler für die Grossmutter einen Geburtstagskuchen 
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 5.01: Baking a Cake
 
-![Baking a Cake](/assets/library/hello-dart/part5/baking-a-cake.jpg) 
+![Baking a Cake](baking-a-cake.jpg) 
 
 Als Vorbereitung für das Backen sollen folgende Methoden zur Verfügung gestellt werden:
 
@@ -145,7 +110,7 @@ Der Spieler startet in der Ecke unten links. Der Spieler soll nicht nur eine fix
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 5.02: Candles on Cake
 
-![Candles on Cake](/assets/library/hello-dart/part5/candles-on-cake.jpg) 
+![Candles on Cake](candles-on-cake.jpg) 
 
 Damit unser Kuchen auch wie ein Geburtstagskuchen aussieht, braucht er natürlich noch ein paar Kerzen. Erweitern Sie Ihr Programm um eine zusätzliche Funktion `drawCandles(int count)`, welche die angegebene Anzahl Kerzen auf den Kuchen setzt. 
 
@@ -181,7 +146,7 @@ Wir möchten der Grossmutter **für jedes Jahrzehnt eine Kerze** auf den Kuchen 
 Programmieren Sie eine Funktion `howOldIsGrandma()`, die das Alter der Grossmutter zurückgibt. Mit Hilfe dieser Funktion soll dann für jedes Jahrzehnt eine Kerze auf dem Kuchen platziert werden.
 
 <div class="alert alert-info">
-  <strong>Hinweis:</strong> Bei der Division von zwei Zahlen entsteht in Dart immer ein `double`. Damit wir wieder einen `int` erhalten, können wir die Funktion `toInt()` oder `round()` verwenden.<br>Beispiel: `(5 / 3).toInt()`   
+  <strong>Hinweis:</strong> Bei der Division von zwei Zahlen entsteht in Dart immer ein <code>double</code>. Damit wir wieder einen <code>int</code> erhalten, können wir die Funktion <code>toInt()</code> oder <code>round()</code> verwenden.<br>Beispiel: <code>(5 / 3).toInt()</code>   
 </div>
 
 
@@ -189,7 +154,7 @@ Programmieren Sie eine Funktion `howOldIsGrandma()`, die das Alter der Grossmutt
 
 #### <i class="fa fa-rocket mg-t"></i> AUFGABE 5.04 (schwierig): Layered Cake
 
-![Candles on Cake](/assets/library/hello-dart/part5/layered-cake.jpg) 
+![Candles on Cake](layered-cake.jpg) 
 
 "Backen" Sie mit unserem Spieler eine Torte mit einer Schicht für jedes Jahrzehnt, das die Grossmutter über 50 ist. Jede Schicht soll zwei Zeilen haben und soll auf beiden Seiten um zwei Sternen nach innen gerückt sein. 
 
@@ -198,7 +163,7 @@ Programmieren Sie eine Funktion `howOldIsGrandma()`, die das Alter der Grossmutt
 
 ## Ende ... und wie weiter?
 
-Erfahren Sie die [nächsten Schritte](/library/hello-dart/de/next/).
+Erfahren Sie die [nächsten Schritte](/de/library/hello-dart/next/).
 
 
 ***
