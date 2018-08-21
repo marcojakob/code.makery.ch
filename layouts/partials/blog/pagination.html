@@ -1,33 +1,36 @@
 <!-- Pagination -->
-{{ $pag := $.Paginator }}
-{{ $current := $pag.PageNumber }}
-{{ if gt $pag.TotalPages 1 }}
-<div class="pagination">
+<div class="text-center">
 
-  {{ if $pag.HasPrev }}
-    <a href="{{ $pag.Prev.URL }}" aria-label="Previous"><i class="fa fa-angle-left"></i></a>
-  {{ else }}
-    <a class="no-active"><i class="fa fa-angle-left"></i></a>
-  {{ end }}
-  
-  {{ range $pag.Pagers }}
-    {{ if eq .PageNumber 1 }}
-      <a href="{{ .URL }}" aria-label="First"{{ if eq .PageNumber $current }} class="active"{{end}}>1</a>
-    {{ else if eq .PageNumber .TotalPages }}
-      <a href="{{ .URL }}" aria-label="Last"{{ if eq .PageNumber $current }} class="active"{{end}}>{{ .PageNumber }}</a>
-    {{ else if and (lt .PageNumber (add $current 3)) (gt .PageNumber (sub $current 3)) }}  
-      <a href="{{ .URL }}"{{ if eq .PageNumber $current }} class="active"{{end}}>{{ .PageNumber }}</a>
-    {{ else if or (eq .PageNumber (add $current 3)) (eq .PageNumber (sub $current 3)) }}
-      <a class="no-active">...</a>
+  {{ $pag := $.Paginator }}
+  {{ $current := $pag.PageNumber }}
+  {{ if gt $pag.TotalPages 1 }}
+  <div class="pagination">
+    
+    {{ if $pag.HasPrev }}
+    <li><a href="{{ $pag.Prev.URL }}" aria-label="Previous"><i class="fa fa-angle-left"></i></a></li>
+    {{ else }}
+    <li class="disabled"><a><i class="fa fa-angle-left"></i></a></li>
     {{ end }}
+    
+    {{ range $pag.Pagers }}
+    {{ if eq .PageNumber 1 }}
+    <li {{ if eq .PageNumber $current }} class="active"{{end}}><a href="{{ .URL }}" aria-label="First">1</a></li>
+    {{ else if eq .PageNumber .TotalPages }}
+    <li {{ if eq .PageNumber $current }} class="active"{{end}}><a href="{{ .URL }}" aria-label="Last">{{ .PageNumber }}</a></li>
+    {{ else if and (lt .PageNumber (add $current 3)) (gt .PageNumber (sub $current 3)) }}  
+    <li {{ if eq .PageNumber $current }} class="active"{{end}}><a href="{{ .URL }}">{{ .PageNumber }}</a></li>
+    {{ else if or (eq .PageNumber (add $current 3)) (eq .PageNumber (sub $current 3)) }}
+    <li class="disabled"><a>...</a></li>
+    {{ end }}
+    {{ end }}
+    
+    {{ if $pag.HasNext }}
+    <li><a href="{{ $pag.Next.URL }}" aria-label="Next"><i class="fa fa-angle-right"></i></a></li>
+    {{ else }}
+    <li class="disabled"><a><i class="fa fa-angle-right"></i></a></li>
+    {{ end }} 
+    
+  </div>
   {{ end }}
-
-  {{ if $pag.HasNext }}
-    <a href="{{ $pag.Next.URL }}" aria-label="Next"><i class="fa fa-angle-right"></i></a>
-  {{ else }}
-    <a class="no-active"><i class="fa fa-angle-right"></i></a>
-  {{ end }} 
-
 </div>
-{{ end }}
 <!-- End Pagination -->

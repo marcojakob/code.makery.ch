@@ -236,6 +236,4 @@ Mit Dart gibt es erstmals eine realistische Möglichkeit, mobile und webbasierte
 
 ## Weitere Details
 
-Unterrichtsmaterial und weitere Informationen zum Programmieren mit Dart finden Sie auf der folgenden Webseite: 
-
-[Library](/library/)
+Unterrichtsmaterial und weitere Informationen zum Programmieren mit Dart finden Sie in der [Tutorial-Bibliothek](/library/).

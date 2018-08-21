@@ -1,20 +1,7 @@
 <article>
   <header class="post-header">
     <h2 class="post-title"><a class="black-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-    <div class="post-date text-center">
-      <span>
-        {{ partial "header_date.html" . }}
-      </span>
-      {{ with .Params.tags }}
-        • 
-        <span>
-        {{ $elements := len . }}
-        {{ range $index, $element := . }}
-          <a href="/blog/tag/{{ $element | lower }}/">{{ $element }}</a>{{ if gt $elements (add $index 1) }},{{ end }}
-        {{ end }}
-        </span>
-      {{ end }}
-    </div>
+    {{ partial "blog/date_and_tags.html" . }}
   </header>
   
   <section class="post-content text-center">

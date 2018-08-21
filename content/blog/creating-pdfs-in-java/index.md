@@ -1,7 +1,7 @@
 +++
 title = "Creating PDFs in Java"
 date = 2012-12-13
-image = ""
+image = "pdf.png"
 description = "Helpful tools to create PDFs in Java."
 prettify = true
 comments = true

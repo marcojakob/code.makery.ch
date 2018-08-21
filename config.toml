@@ -24,7 +24,8 @@ defaultContentLanguage = "en"
   tag = "tags"
 
 [permalinks]
-  topics = "/library/topics/:slug/"
+  topics = "/library/topic/:slug/"
+  tags = "/blog/tag/:slug/"
 
 [languages]
 [languages.en]

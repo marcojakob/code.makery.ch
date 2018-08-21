@@ -1,0 +1,26 @@
+{{ define "variables" -}}
+  {{ .Scratch.Set "title" (print "Blog (" .Title ") | " .Site.Title) -}}
+
+  {{/* Set canonical path so that all the tag sub-paths point to the same path. */}}
+  {{ .Scratch.Set "canonical" (print .Site.BaseURL "blog/") -}}
+{{ end -}}
+
+{{ define "main" }}
+<div class="container container-restricted">
+  {{ partial "navigation.html" . }}
+
+  <h1 class="text-center"><small>Posts tagged</small> {{ .Title }}</h1>
+  <p class="text-center small"><a href="/blog/">show all posts</a></p>
+  <hr class="post-ruler">
+  
+  {{ if gt (len .Pages) 0 }}
+    {{ range (.Paginator 7).Pages }}
+      {{ partial "blog/summary.html" . }}
+    {{ end }}
+
+    {{ partial "blog/pagination.html" . }}
+  {{ else }}
+    {{ partial "blog/no_posts.html" . }}
+  {{ end }}
+</div>
+{{ end }}

@@ -3,7 +3,7 @@
     {{ .Scratch.Set "isSeriesIndex" true -}}
     {{ .Scratch.Set "series" . -}}
     {{ .Scratch.Set "title" (print .Title " | " .Site.Title) -}}
-    {{ else -}}
+  {{ else -}}
     {{ .Scratch.Set "isSeriesIndex" false -}}
     {{ .Scratch.Set "series" .Parent -}}
     {{ .Scratch.Set "title" (print .Title " | " .Parent.Title " | " .Site.Title) -}}
