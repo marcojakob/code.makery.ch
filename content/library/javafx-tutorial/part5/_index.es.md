@@ -1,56 +1,24 @@
----
-layout: article
-title: "Tutorial JavaFX 8 - Parte 5: Persistencia de datos con XML"
-date: 2014-09-17
-slug: javafx-tutorial/es/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-es-part5.md
-description: "Almacena datos en XML con JAXB. Aprender a utilizar FileChooser y los menús de JavaFX."
-image: /assets/library/javafx-tutorial/part5/addressapp-part5.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Artículos en esta serie"
-  body:
-  - text: "Introducción"
-    link: /library/javafx-tutorial/es/
-    paging: Intro
-  - text: "Parte 1: Scene Builder"
-    link: /library/javafx-tutorial/es/part1/
-    paging: 1
-  - text: "Parte 2: Modelo y TableView"
-    link: /library/javafx-tutorial/es/part2/
-    paging: 2
-  - text: "Parte 3: Interacción con el usuario"
-    link: /library/javafx-tutorial/es/part3/
-    paging: 3
-  - text: "Parte 4: Hojas de estilo CSS"
-    link: /library/javafx-tutorial/es/part4/
-    paging: 4
-  - text: "Parte 5: Persistencia de datos con XML"
-    link: /library/javafx-tutorial/es/part5/
-    paging: 5
-    active: true
-  - text: "Parte 6: Gráficos estadísticos"
-    link: /library/javafx-tutorial/es/part6/
-    paging: 6
-  - text: "Parte 7: Despliegue"
-    link: /library/javafx-tutorial/es/part7/
-    paging: 7
-- header: "Código fuente"
-  body:
-  - text: Parte 5 proyecto Eclipse <em>(requiere al menos JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-5.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Lenguajes
-  collection: library
-  item: javafx-tutorial
-  part: part5
-  active: es
----
++++
+title = "Parte 5: Persistencia de datos con XML"
+date = 2014-09-17
+description = "Almacena datos en XML con JAXB. Aprender a utilizar FileChooser y los menús de JavaFX."
+image = "addressapp-part5.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/es/part5/"
+aliases = [ 
+  "/library/javafx-8-tutorial/es/part5/"
+]
+weight = 5
 
-![Screenshot AddressApp Part 5](/assets/library/javafx-tutorial/part5/addressapp-part5.png)
+[[sidebars]]
+header = "Código fuente"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Parte 5 proyecto Eclipse <em>(requiere al menos JDK 8u20)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-5.zip"
++++
+
+![Screenshot AddressApp Part 5](addressapp-part5.png)
 
 
 ## Contenidos en Parte 5
@@ -280,7 +248,7 @@ En nuestro `RootLayout.fxml` ya hay un menú, pero todavía no lo hemos utilizad
 
 Abre ela rchivo `RootLayout.fxml` en Scene Builder y arrastra los ítems de menú necesarios desde la sección *library* a la barra de menús (componente `MenuBar` en la *hierarchy*). Crea los siguientes ítems: **New**, **Open...**, **Save**, **Save As...**, y **Exit**.
 
-![Add Menu Items](/assets/library/javafx-tutorial/part5/add-menu-items.png)
+![Add Menu Items](add-menu-items.png)
 
 Truco: Mediante el uso de la opción *Accelerator* en la vista *Properties* se pueden establecer atajos de teclado para lanzar las acciones asociadas a los ítems del menú.
 
@@ -429,7 +397,7 @@ Si el usuario cierra la ventana del `FileChooser`sin escoger un archivo, se devu
 1. Abre `RootLayout.fxml` en Scene Builder. En la sección *Controller* selecciona `RootLayoutController` como controlador. 
 
 2. Vuelve a la sección *Hierarchy* y elige un ítem del menú. En el campo **On Action** de la sección *Code* debes tener como opciones todos los métodos disponibles en la clase de control. Elije el que corresponda a cada uno de los ítems del menú.   
-![Menu Actions](/assets/library/javafx-tutorial/part5/menu-actions.png)
+![Menu Actions](menu-actions.png)
 
 3. Repite el paso 2 para todos y cada uno de ls ítems del menú.
 
@@ -542,7 +510,7 @@ Ahora veamos como funciona todo junto
 
 ### ¿Qué es lo siguiente?
 
-En [Tutorial Parte 6](/library/javafx-tutorial/es/part6/) añadiremos un gráfico con estadísticas de las fechas de nacimiento de la lista de personas.
+En [Tutorial Parte 6](/es/library/javafx-tutorial/part6/) añadiremos un gráfico con estadísticas de las fechas de nacimiento de la lista de personas.
 
 
 ##### Otros artículos que podrían resultarte de interés

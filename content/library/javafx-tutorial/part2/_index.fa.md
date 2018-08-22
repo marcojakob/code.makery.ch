@@ -1,58 +1,26 @@
----
-layout: article
-title : "آموزش JavaFX 8 - قسمت دوم: مدل و TableView"
-date: 2014-04-19
-updated: 2015-07-28
-slug: javafx-tutorial/fa/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-fa-part2.md
-description: "استفاده از قابلیت JavaFX به نام TableView برای نشان دادن یک  ObservableList از افراد."
-image: /assets/library/javafx-tutorial/part2/addressapp-part2.png
-published: true
-prettify: true
-comments: true
-rtl: true
-sidebars:
-- header: "مباحث این سری"
-  body:
-  - text: "مقدمه"
-    link: /library/javafx-tutorial/fa/
-    paging: Intro
-  - text: "قسمت اول: Scene Builder"
-    link: /library/javafx-tutorial/fa/part1/
-    paging: 1
-  - text: "قسمت دوم: مدل و TableView"
-    link: /library/javafx-tutorial/fa/part2/
-    paging: 2
-    active: true
-  - text: "قسمت سوم: تعامل با کاربر"
-    link: /library/javafx-tutorial/fa/part3/
-    paging: 3
-  - text: "قسمت چهارم: سلیقه سازی با CSS"
-    link: /library/javafx-tutorial/fa/part4/
-    paging: 4
-  - text: "قسمت پنجم: ذخیره کردن داده به عنوان XML"
-    link: /library/javafx-tutorial/fa/part5/
-    paging: 5
-  - text: "قسمت ششم: رسم نمودار آماری"
-    link: /library/javafx-tutorial/fa/part6/
-    paging: 6
-  - text: "قسمت هفتم: ساختن نسخه قابل نصب"
-    link: /library/javafx-tutorial/fa/part7/
-    paging: 7
-- header: "دانلود سورس"
-  body:
-  - text: دانلود قسمت دوم به عنوان پروژه Eclipse <em>(حداقل به نسخه JDK 8u40 نیاز دارد)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip
-    icon-css: fa fa-fw fa-download
-languages:
-  header: "زبان‌ها"
-  collection: library
-  item: javafx-tutorial
-  part: part2
-  active: fa
----
++++
+title = "قسمت دوم: مدل و TableView"
+date = 2014-04-19
+updated = 2015-07-28
+description = "استفاده از قابلیت JavaFX به نام TableView برای نشان دادن یک  ObservableList از افراد."
+image = "addressapp-part2.png"
+rtl = true
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/fa/part2/"
+aliases = [ 
+  "/library/javafx-8-tutorial/fa/part2/"
+]
+weight = 2
 
-![Screenshot AddressApp Part 2](/assets/library/javafx-tutorial/part2/addressapp-part2.png)
+[[sidebars]]
+header = "دانلود سورس"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> دانلود قسمت دوم به عنوان پروژه Eclipse <em>(حداقل به نسخه JDK 8u40 نیاز دارد)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip"
++++
+
+![Screenshot AddressApp Part 2](addressapp-part2.png)
 
 
 ## مباحث قسمت دوم
@@ -409,15 +377,15 @@ public void showPersonOverview() {
 1. اول `PersonOverview.fxml` رو با *SceneBuilder* باز کنید. 
 
 2. *Controller* که در سمت چپ هست رو باز کنید و `PersonOverviewController` رو به عنوان **controller class** انتخاب کنبد.   
-![Set Controller Class](/assets/library/javafx-tutorial/part2/set-controller-class.png)
+![Set Controller Class](set-controller-class.png)
 
 3. `TableView` رو از قسمت *Hierarchy* انتخاب کنید و تو قسمت *Code* در سمت راست, `personTable` رو به عنوان **fx:id** انتخاب کنید.   
-![Set TableView fx:id](/assets/library/javafx-tutorial/part2/set-tableview-fx-id.png)
+![Set TableView fx:id](set-tableview-fx-id.png)
 
 4. همین کارو برای ستون‌ها انجام بدید و `firstNameColumn` و `lastNameColumn` رو به عنوان **fx:id** انتخاب کنید.
 
 5. برای **هر برچسب** روی ستون دوم, **fx:id** متناظرش رو انتخاب کنید. 
-![Set Label fx:id](/assets/library/javafx-tutorial/part2/set-label-fx-id.png)
+![Set Label fx:id](set-label-fx-id.png)
 
 6. مهم: به Eclipse برگردید و **با دکمه F5 کل پروژه رو رفرش کنید**. این مهمه چون بعضی مواقع Eclipse متوجه تغییراتی که تو SceneBuilder ایجاد کردیم نمیشه.
 
@@ -435,7 +403,7 @@ public void showPersonOverview() {
 
 ### بعدش چه اتفاقی میوفته؟
 
-در [آموزش قسمت سوم](/library/javafx-tutorial/fa/part3/) ما بعضی قابلیت‌ها مثل اضافه کردن شخص جدید, پاک کردن و به روز رسانی یک شخص رو به برنامه اضافه میکنیم. 
+در [آموزش قسمت سوم](/fa/library/javafx-tutorial/part3/) ما بعضی قابلیت‌ها مثل اضافه کردن شخص جدید, پاک کردن و به روز رسانی یک شخص رو به برنامه اضافه میکنیم. 
 
 
 ##### بعضی از مطالب که ممکنه در این زمینه مفید باشن

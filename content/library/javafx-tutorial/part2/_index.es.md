@@ -1,56 +1,24 @@
----
-layout: article
-title: "Tutorial JavaFX 8 - Parte 2: Modelo y TableView"
-date: 2014-09-17
-slug: javafx-tutorial/es/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-es-part2.md
-description: "Uso de un componente TableView para mostrar una lista (ObsevableList) de personas (Person)"
-image: /assets/library/javafx-tutorial/part2/addressapp-part2.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Artículos en esta serie"
-  body:
-  - text: "Introducción"
-    link: /library/javafx-tutorial/es/
-    paging: Intro
-  - text: "Parte 1: Scene Builder"
-    link: /library/javafx-tutorial/es/part1/
-    paging: 1
-  - text: "Parte 2: Modelo y TableView"
-    link: /library/javafx-tutorial/es/part2/
-    paging: 2
-    active: true
-  - text: "Parte 3: Interacción con el usuario"
-    link: /library/javafx-tutorial/es/part3/
-    paging: 3
-  - text: "Parte 4: Hojas de estilo CSS"
-    link: /library/javafx-tutorial/es/part4/
-    paging: 4
-  - text: "Parte 5: Persistencia de datos con XML"
-    link: /library/javafx-tutorial/es/part5/
-    paging: 5
-  - text: "Parte 6: Gráficos estadísticos"
-    link: /library/javafx-tutorial/es/part6/
-    paging: 6
-  - text: "Parte 7: Despliegue"
-    link: /library/javafx-tutorial/es/part7/
-    paging: 7
-- header: "Código fuente"
-  body:
-  - text: Parte 2 proyecto Eclipse <em>(requiere al menos JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-2.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Lenguajes
-  collection: library
-  item: javafx-tutorial
-  part: part2
-  active: es
----
++++
+title = "Parte 2: Modelo y TableView"
+date = 2014-09-17
+description = "Uso de un componente TableView para mostrar una lista (ObsevableList) de personas (Person)"
+image = "addressapp-part2.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/es/part2/"
+aliases = [ 
+  "/library/javafx-8-tutorial/es/part2/"
+]
+weight = 2
 
-![Screenshot AddressApp Part 2](/assets/library/javafx-tutorial/part2/addressapp-part2.png)
+[[sidebars]]
+header = "Código fuente"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Parte 2 proyecto Eclipse <em>(requiere al menos JDK 8u20)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip"
++++
+
+![Screenshot AddressApp Part 2](addressapp-part2.png)
 
 
 ## Contenidos en Parte 2
@@ -263,7 +231,7 @@ Finalmente vamos a añadir datos a nuestra table. Para ello necesitaremos un con
 2. Añadiremos algunos atributos para acceder a la tabla y las etiquetas de la vista. Estos atributos irán precedidos por la anotación `@FXML`. Esto es necesario para que la vista tenga acceso a los atributos y métodos del controlador, incluso aunque sean privados. Una vez definida la vista en fxml, la aplicación se encargará de rellenar automáticamente estos atributos al cargar el fxml. Así pues, añade el código siguiente:
 
 <div class="alert alert-info">
-**Nota:** acuérdate siempre de importar **javafx**, NO AWT ó Swing!
+<strong>Nota:</strong> acuérdate siempre de importar <strong>javafx</strong>, NO AWT ó Swing!
 </div>
 
 
@@ -386,15 +354,15 @@ public void showPersonOverview() {
 1. Abre `PersonOverview.fxml` en *SceneBuilder*.
 
 2. Abre la sección *Controller* en el lado izquierdo y selecciona `PersonOverviewController` como **controlador**.   
-![Set Controller Class](/assets/library/javafx-tutorial/part2/set-controller-class.png)
+![Set Controller Class](set-controller-class.png)
 
 3. Selecciona `TableView` en la sección *Hierarchy* y en el apartado *Code* escribe  `personTable` en la propiedad **fx:id**.   
-![Set TableView fx:id](/assets/library/javafx-tutorial/part2/set-tableview-fx-id.png)
+![Set TableView fx:id](set-tableview-fx-id.png)
 
 4. Haz lo mismo para las columnas, poniendo `firstNameColumn` y `lastNameColumn` como sus **fx:id** respectivamente.
 
 5. Para **cada etiqueta** en la segunda columna, introduce el **fx:id** que corresponda.   
-![Set Label fx:id](/assets/library/javafx-tutorial/part2/set-label-fx-id.png)
+![Set Label fx:id](set-label-fx-id.png)
 
 6. Importante: En Eclipse **refresca el projecto AddressApp** (tecla F5). Esto es necesario porque a veces Eclipse no se da cuenta de los cambios realizados desde el Scene Builder.
 
@@ -410,7 +378,7 @@ Enhorabuena!
 
 ### ¿Qué es lo siguiente?
 
-En [Tutorial Parte 3](/library/javafx-tutorial/es/part3/) añadiremos la funcionalidad requerida para añadir, borrar y editar contactos.
+En [Tutorial Parte 3](/es/library/javafx-tutorial/part3/) añadiremos la funcionalidad requerida para añadir, borrar y editar contactos.
 
 
 ##### Otros artículos que podrías encontrar de interés

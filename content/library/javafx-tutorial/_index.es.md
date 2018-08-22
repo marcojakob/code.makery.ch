@@ -1,55 +1,23 @@
----
-layout: article
-title: "Tutorial JavaFX 8 (Español)"
-date: 2014-09-17
-slug: javafx-tutorial/es
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-es.md
-description: "Este tutorial en siete partes describe el diseño, programación y publicación de una aplicación de contactos con JavaFX."
-image: /assets/library/javafx-tutorial/addressapp.png
-published: true
-prettify: true
-comments: false
-sidebars:
-- header: "Artículos en esta serie"
-  body:
-  - text: "Introducción"
-    link: /library/javafx-tutorial/es/
-    paging: Intro
-    active: true
-  - text: "Parte 1: Scene Builder"
-    link: /library/javafx-tutorial/es/part1/
-    paging: 1
-  - text: "Parte 2: Modelo y TableView"
-    link: /library/javafx-tutorial/es/part2/
-    paging: 2
-  - text: "Parte 3: Interacción con el usuario"
-    link: /library/javafx-tutorial/es/part3/
-    paging: 3
-  - text: "Parte 4: Hojas de estilo CSS"
-    link: /library/javafx-tutorial/es/part4/
-    paging: 4
-  - text: "Parte 5: Persistencia de datos con XML"
-    link: /library/javafx-tutorial/es/part5/
-    paging: 5
-  - text: "Parte 6: Gráficos estadísticos"
-    link: /library/javafx-tutorial/es/part6/
-    paging: 6
-  - text: "Parte 7: Despliegue"
-    link: /library/javafx-tutorial/es/part7/
-    paging: 7
-languages: 
-  header: Lenguajes
-  collection: library
-  item: javafx-tutorial
-  part: 
-  active: es
----
++++
+title = "Tutorial JavaFX (Español)"
+date = 2014-09-17
+description = "Este tutorial en siete partes describe el diseño, programación y publicación de una aplicación de contactos con JavaFX."
+image = "addressapp.png"
+prettify = true
+comments = true
+commentsIdentifier = "/library/javafx-8-tutorial/es/"
+aliases = [ 
+  "/library/javafx-8-tutorial/es/" 
+]
+sidebarName = "Introducción"
+pagingName = "Intro"
++++
 
 JavaFX proporciona a los desarrolladores de Java una nueva plataforma gráfica.  JavaFX 2.0 se publicó en octubre del 2011 con la intención de reemplazar a Swing en la creación de nuevos interfaces gráficos de usario (IGU). Cuando empecé a enseñar JavaFX en 2011 era una tecnología muy incipiente todavía. No había libros sobre JavaFX que fueran **adecuados para estudiantes de programación noveles**, así es que empecé a escribir una serie de tutoriales muy detallados sobre JavaFX.
 
 El tutorial te guía a lo largo del diseño, programación y publicación de una aplicación de contactos (libreta de direcciones) mediante JavaFX. Este es el aspecto que tendrá la aplicación final:
 
-![Screenshot AddressApp](/assets/library/javafx-tutorial/addressapp.png)
+![Screenshot AddressApp](addressapp.png)
 
 
 ## Lo que aprenderás
