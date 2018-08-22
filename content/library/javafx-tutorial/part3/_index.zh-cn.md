@@ -3,10 +3,10 @@ layout: article
 title: "JavaFX 8 教程 - 第三部分：与用户的交互"
 date: 2014-10-08
 updated: 2015-01-15
-slug: javafx-8-tutorial/zh-cn/part3
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part3.md
+slug: javafx-tutorial/zh-cn/part3
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-zh-cn-part3.md
 description: null
-image: /assets/library/javafx-8-tutorial/part3/addressapp-part3.png
+image: /assets/library/javafx-tutorial/part3/addressapp-part3.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "系列文章"
   body:
   - text: "简介"
-    link: /library/javafx-8-tutorial/zh-cn/
+    link: /library/javafx-tutorial/zh-cn/
     paging: 简介
   - text: "第一部分：Scene Builder"
-    link: /library/javafx-8-tutorial/zh-cn/part1/
+    link: /library/javafx-tutorial/zh-cn/part1/
     paging: 1
   - text: "第二部分：Model 和 TableView"
-    link: /library/javafx-8-tutorial/zh-cn/part2/
+    link: /library/javafx-tutorial/zh-cn/part2/
     paging: 2
   - text: "第三部分：与用户的交互"
-    link: /library/javafx-8-tutorial/zh-cn/part3/
+    link: /library/javafx-tutorial/zh-cn/part3/
     paging: 3
     active: true
   - text: "第四部分：CSS 样式"
-    link: /library/javafx-8-tutorial/zh-cn/part4/
+    link: /library/javafx-tutorial/zh-cn/part4/
     paging: 4
   - text: "第五部分：将数据用 XML 格式存储"
-    link: /library/javafx-8-tutorial/zh-cn/part5/
+    link: /library/javafx-tutorial/zh-cn/part5/
     paging: 5
   - text: "第六部分：统计图"
-    link: /library/javafx-8-tutorial/zh-cn/part6/
+    link: /library/javafx-tutorial/zh-cn/part6/
     paging: 6
   - text: "第七部分：部署"
-    link: /library/javafx-8-tutorial/zh-cn/part7/
+    link: /library/javafx-tutorial/zh-cn/part7/
     paging: 7
 - header: "下载源代码"
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: 语言
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part3
   active: zh-cn
 ---
 
-![Screenshot AddressApp Part 3](/assets/library/javafx-8-tutorial/part3/addressapp-part3.png)
+![Screenshot AddressApp Part 3](/assets/library/javafx-tutorial/part3/addressapp-part3.png)
 
 
 ## 第3部分的主题：
@@ -230,7 +230,7 @@ private void initialize() {
 
 现在试着**运行你的应用程序**，验证当你选择表中的人员时，关于该人员的详情是否正确的显示。
 
-如果有些事情不能工作，你可以对比下[PersonOverviewController.java](/assets/library/javafx-8-tutorial/part3/PersonOverviewController.java)中的`PersonOverviewController`类
+如果有些事情不能工作，你可以对比下[PersonOverviewController.java](/assets/library/javafx-tutorial/part3/PersonOverviewController.java)中的`PersonOverviewController`类
 
 
 
@@ -256,7 +256,7 @@ private void handleDeletePerson() {
 
 现在，使用*SceneBuilder*打开`PersonOverview.fxml`文件，选择*Delete*按钮，打开*Code*组，在**On Actin**的下拉菜单中选择`handleDeletePerson`。
 
-![On Action](/assets/library/javafx-8-tutorial/part3/handle-delete.png)
+![On Action](/assets/library/javafx-tutorial/part3/handle-delete.png)
 
 
 ### 错误处理
@@ -274,7 +274,7 @@ private void handleDeletePerson() {
 2. 在项目中创建一个**lib**子目录，添加controlsf jar文件到该目录下。
 3. 添加库到你的项目**classpath**中。在Eclipse中*右击jar文件*|选择*Build Path*| *Add to Build Path*。现在Eclipse知道这个库了。
 
-![ControlsFX Libaray](/assets/library/javafx-8-tutorial/part3/controlsfx-library.png)
+![ControlsFX Libaray](/assets/library/javafx-tutorial/part3/controlsfx-library.png)
 
 对`handleDeletePerson()`方法做一些修改后，不管什么时候用户没有选择表中的人员时按下删除按钮，我们能显示一个简单的对话框。
 
@@ -319,12 +319,12 @@ private void handleDeletePerson() {
 ### 设计对话框
 
 1. 在*view*包中创建新的fxml文件，称为`PersonEditDialog.fxml`
-![Create Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog1.png)
+![Create Edit Dialog](/assets/library/javafx-tutorial/part3/person-edit-dialog1.png)
 
 2. 使用`GridPan`，`Label`，`TextField`和`Button`创建一个对话框，如下所示:   
-![Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog2.png)   
+![Edit Dialog](/assets/library/javafx-tutorial/part3/person-edit-dialog2.png)   
 
-*如果你不能完成工作，你能下载这个[PersonEditDialog.fxml](/assets/library/javafx-8-tutorial/part3/PersonEditDialog.fxml).* 
+*如果你不能完成工作，你能下载这个[PersonEditDialog.fxml](/assets/library/javafx-tutorial/part3/PersonEditDialog.fxml).* 
 
 
 ### 创建控制器
@@ -616,7 +616,7 @@ private void handleEditPerson() {
 
 ### 下一步是什么？
 
-在教程[第4部分](/library/javafx-8-tutorial/zh-cn/part4/)中将添加一些CSS样式表。
+在教程[第4部分](/library/javafx-tutorial/zh-cn/part4/)中将添加一些CSS样式表。
 
 
 ##### 你可能有兴趣的一些其他文章

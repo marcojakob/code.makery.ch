@@ -3,10 +3,10 @@ layout: article
 title: "Tutorial JavaFX 8 - Bagian 6: Bagan Statistika"
 date: 2014-05-09
 updated: 2015-03-12
-slug: javafx-8-tutorial/id/part6
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id-part6.md
+slug: javafx-tutorial/id/part6
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-id-part6.md
 description: "Belajar bagaimana membuat bagan palang JavaFX."
-image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
+image: /assets/library/javafx-tutorial/part6/addressapp-part6.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "Seri Artikel"
   body:
   - text: "Pengenalan"
-    link: /library/javafx-8-tutorial/id/
+    link: /library/javafx-tutorial/id/
     paging: Intro
   - text: "Bagian 1: Scene Builder"
-    link: /library/javafx-8-tutorial/id/part1/
+    link: /library/javafx-tutorial/id/part1/
     paging: 1
   - text: "Bagian 2: Model dan TableView"
-    link: /library/javafx-8-tutorial/id/part2/
+    link: /library/javafx-tutorial/id/part2/
     paging: 2
   - text: "Bagian 3: Berinteraksi dengan pengguna"
-    link: /library/javafx-8-tutorial/id/part3/
+    link: /library/javafx-tutorial/id/part3/
     paging: 3
   - text: "Bagian 4: Memberikan gaya dengan CSS"
-    link: /library/javafx-8-tutorial/id/part4/
+    link: /library/javafx-tutorial/id/part4/
     paging: 4
   - text: "Bagian 5: Menyimpan data sebagai XML"
-    link: /library/javafx-8-tutorial/id/part5/
+    link: /library/javafx-tutorial/id/part5/
     paging: 5
   - text: "Bagian 6: Bagan Statistika"
-    link: /library/javafx-8-tutorial/id/part6/
+    link: /library/javafx-tutorial/id/part6/
     paging: 6
     active: true
   - text: "Bagian 7: Penyebaran"
-    link: /library/javafx-8-tutorial/id/part7/
+    link: /library/javafx-tutorial/id/part7/
     paging: 7
 - header: "Unduh kode sumber"
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: Bahasa
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part6
   active: id
 ---
 
-![Tangkapan layar AddressApp bagian 6](/assets/library/javafx-8-tutorial/part6/addressapp-part6.png)
+![Tangkapan layar AddressApp bagian 6](/assets/library/javafx-tutorial/part6/addressapp-part6.png)
 
 
 ## Pembahasan di bagian 6 6
@@ -71,7 +71,7 @@ Kita akan menggunakan **Bagan Palang** berisi sebuah palang untuk tiap bulan. Ti
 ## Tampilan FXML Statistik
 
 1. Kita mulai dengan membuat berkas `BirthdayStatistics.fxml` didalam paket `ch.makery.address.view` (*Klik kanan pada paket | New | other... | New FXML Document*).   
-![FXML Statistika tanggal lahir](/assets/library/javafx-8-tutorial/part6/birthday-statistics-fxml.png)
+![FXML Statistika tanggal lahir](/assets/library/javafx-tutorial/part6/birthday-statistics-fxml.png)
 
 2. Buka berkas `BirthdayStatistics.fxml` di Scene Builder.
 
@@ -189,7 +189,7 @@ public class BirthdayStatisticsController {
 3. Pilih `BarChart` kemudian pilih `barChart` sebagai properti fx:id  (didalam kelommpok *Code*).
 
 4. Pilih `CategoryAxis` dan pilih `xAxis` sebagai prperti fx:id.   
-![Kategori Axis](/assets/library/javafx-8-tutorial/part6/category-axis.png)
+![Kategori Axis](/assets/library/javafx-tutorial/part6/category-axis.png)
 
 5. Kamu mungkin menambah judul ke `BarChart` (di kelompok *Properties*) untuk membuat gaya lebih lanjut.
 
@@ -253,11 +253,11 @@ private void handleShowBirthdayStatistics() {
 
 Sekarang buka berkas `RootLayout.fxml` dengan Scene Builder. Buat *Statistics* `Menu` dengan *Show Statistics* `MenuItem`:
 
-![Menu tampilkan statistika](/assets/library/javafx-8-tutorial/part6/show-statistics-menu.png)
+![Menu tampilkan statistika](/assets/library/javafx-tutorial/part6/show-statistics-menu.png)
 
 Pilih *Show Statistics* `MenuItem` dan pilih `handleShowBirthdayStatistics` untuk `On Action` (didalam kelompok *Code*)   
 
-![Tampilkan statistika On Action](/assets/library/javafx-8-tutorial/part6/show-statistics-on-action.png)
+![Tampilkan statistika On Action](/assets/library/javafx-tutorial/part6/show-statistics-on-action.png)
 
 Pada Eclipse, segarkan (F5) **dan cobalah**.
 
@@ -271,7 +271,7 @@ Sebuah tempat bagus untuk informasi adalah tutorial dari oracle [Working with Ja
 
 ### Berikutnya
 
-Di tutorial terakhir [Bagian 7](/library/javafx-8-tutorial/id/part7/) kita akan menyebarkan aplikasi kita (yaitu paket dan memberikan aplikasi kepada pengguna kita)
+Di tutorial terakhir [Bagian 7](/library/javafx-tutorial/id/part7/) kita akan menyebarkan aplikasi kita (yaitu paket dan memberikan aplikasi kepada pengguna kita)
 
 
 ##### Beberapa artikel menarik lainnya

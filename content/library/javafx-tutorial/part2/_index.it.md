@@ -3,10 +3,10 @@ layout: article
 title: "JavaFX 8 Tutorial - Parte 2: Model and TableView"
 date: 2014-04-23
 updated: 2015-03-12
-slug: javafx-8-tutorial/it/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-it-part2.md
+slug: javafx-tutorial/it/part2
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-it-part2.md
 description: "Uso della TabletView JavaFX per visualizzare una  ObservableList di Persons."
-image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
+image: /assets/library/javafx-tutorial/part2/addressapp-part2.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "Articoli in questa serie"
   body:
   - text: "Introduzione"
-    link: /library/javafx-8-tutorial/it/
+    link: /library/javafx-tutorial/it/
     paging: Intro
   - text: "Parte 1: Scene Builder"
-    link: /library/javafx-8-tutorial/it/part1/
+    link: /library/javafx-tutorial/it/part1/
     paging: 1
   - text: "Parte 2: Model and TableView"
-    link: /library/javafx-8-tutorial/it/part2/
+    link: /library/javafx-tutorial/it/part2/
     paging: 2
     active: true
   - text: "Parte 3: Interazione con l'utente"
-    link: /library/javafx-8-tutorial/it/part3/
+    link: /library/javafx-tutorial/it/part3/
     paging: 3
   - text: "Parte 4: CSS Styling"
-    link: /library/javafx-8-tutorial/it/part4/
+    link: /library/javafx-tutorial/it/part4/
     paging: 4
   - text: "Parte 5: Conservazione dati come XML"
-    link: /library/javafx-8-tutorial/it/part5/
+    link: /library/javafx-tutorial/it/part5/
     paging: 5
   - text: "Parte 6: Grafico delle statistiche"
-    link: /library/javafx-8-tutorial/it/part6/
+    link: /library/javafx-tutorial/it/part6/
     paging: 6
   - text: "Parte 7: Deployment"
-    link: /library/javafx-8-tutorial/it/part7/
+    link: /library/javafx-tutorial/it/part7/
     paging: 7
 - header: "Download Sources"
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: Languages
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part2
   active: it
 ---
 
-![Screenshot AddressApp Part 2](/assets/library/javafx-8-tutorial/part2/addressapp-part2.png)
+![Screenshot AddressApp Part 2](/assets/library/javafx-tutorial/part2/addressapp-part2.png)
 
 
 ## Argomenti della Parte 2
@@ -401,15 +401,15 @@ Ci siamo quasi! Ma manca una piccola cosa: Non abbiamo ancora detto al nostro fi
 1. Aprire `PersonOverview.fxml` con *SceneBuilder*.
 
 2. Aprire il gruppo *Controller* sul lato sinistro e selezionare `PersonOverviewController` come **controller class**.   
-![Set Controller Class](/assets/library/javafx-8-tutorial/part2/set-controller-class.png)
+![Set Controller Class](/assets/library/javafx-tutorial/part2/set-controller-class.png)
 
 3. Selezionare la `TableView` nel gruppo *Hierarchy* e selezionare `personTable` nel campo **fx:id**.   
-![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png)
+![Set TableView fx:id](/assets/library/javafx-tutorial/part2/set-tableview-fx-id.png)
 
 4. Fare lo stesso per le colonne selezionando rispettivamente `firstNameColumn` e `lastNameColumn` nel campo **fx:id**.
 
 5. **Per ogni label** nella seconda colonna, scegliere il corrispondente **fx:id**.   
-![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png)
+![Set Label fx:id](/assets/library/javafx-tutorial/part2/set-label-fx-id.png)
 
 6. Importante: Tornare su Eclipse e **e aggiornare l'intero progetto** (F5). Questo è necessario perchè alcune volte Eclipse non rileva i cambiamenti apportati in Scene Builder.
 
@@ -427,7 +427,7 @@ Congratulazioni!
 
 ### What's Next?
 
-Nella [Parte 3 del tutorial](http://code.makery.ch/library/javafx-8-tutorial/it/part3/) aggiungeremo nuove funzionalità per aggiungere, cancellare e modificare una persona.
+Nella [Parte 3 del tutorial](http://code.makery.ch/library/javafx-tutorial/it/part3/) aggiungeremo nuove funzionalità per aggiungere, cancellare e modificare una persona.
 
 
 ##### Alcuni articoli che potresti trovare interessanti

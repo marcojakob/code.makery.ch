@@ -3,10 +3,10 @@ layout: article
 title: "Учебник по JavaFX 8 - Часть 2: Модель и компонент TableView"
 date: 2014-04-19
 updated: 2016-04-21
-slug: javafx-8-tutorial/ru/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part2.md
+slug: javafx-tutorial/ru/part2
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-ru-part2.md
 description: "Используйте JavaFX TableView для отображения списка людей из ObservableList"
-image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
+image: /assets/library/javafx-tutorial/part2/addressapp-part2.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "Статьи в этой серии"
   body:
   - text: "Введение"
-    link: /library/javafx-8-tutorial/ru/
+    link: /library/javafx-tutorial/ru/
     paging: Intro
   - text: "Часть 1: Scene Builder"
-    link: /library/javafx-8-tutorial/ru/part1/
+    link: /library/javafx-tutorial/ru/part1/
     paging: 1
   - text: "Часть 2: Модель и компонент TableView"
-    link: /library/javafx-8-tutorial/ru/part2/
+    link: /library/javafx-tutorial/ru/part2/
     paging: 2
     active: true
   - text: "Часть 3: Взаимодействие с пользователем"
-    link: /library/javafx-8-tutorial/ru/part3/
+    link: /library/javafx-tutorial/ru/part3/
     paging: 3
   - text: "Часть 4: Стилизация с помощью CSS"
-    link: /library/javafx-8-tutorial/ru/part4/
+    link: /library/javafx-tutorial/ru/part4/
     paging: 4
   - text: "Часть 5: Хранение данных в XML"
-    link: /library/javafx-8-tutorial/ru/part5/
+    link: /library/javafx-tutorial/ru/part5/
     paging: 5
   - text: "Часть 6: Статистическая диаграмма"
-    link: /library/javafx-8-tutorial/ru/part6/
+    link: /library/javafx-tutorial/ru/part6/
     paging: 6
   - text: "Часть 7: Развёртывание"
-    link: /library/javafx-8-tutorial/ru/part7/
+    link: /library/javafx-tutorial/ru/part7/
     paging: 7
 - header: Скачать исходники
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: Языки
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part2
   active: ru
 ---
 
-![Screenshot AddressApp Part 2](http://code.makery.ch/assets/library/javafx-8-tutorial/part2/addressapp-part2.png "GridPane Add Row")
+![Screenshot AddressApp Part 2](http://code.makery.ch/assets/library/javafx-tutorial/part2/addressapp-part2.png "GridPane Add Row")
 
 
 ## Часть 2: Содержание
@@ -400,15 +400,15 @@ public void showPersonOverview() {
 1. Откройте файл `PersonOverview.fxml` в приложении *Scene Builder*.
 
 2. Откройте вкладку *Controller* слева на панели *Document* и выберите класс `PersonControllerOverview` в качестве класса-контроллера.  
-![Set Controller Class](/assets/library/javafx-8-tutorial/part2/set-controller-class.png "Set Controller Class")
+![Set Controller Class](/assets/library/javafx-tutorial/part2/set-controller-class.png "Set Controller Class")
 
 3. Выберите компонент `TableView` на вкладке *Hierarchy*, перейдите на вкладку *Code* и в поле **fx:id** установите значение `personTable`.  
-![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png "Set TableView fx:id")
+![Set TableView fx:id](/assets/library/javafx-tutorial/part2/set-tableview-fx-id.png "Set TableView fx:id")
 
 4. Сделайте то же самое для колонок таблицы и установите значения свойства **fx:id** `firstNameColumn` и `lastNameColumn` соответственно.
 
 5. Для каждой метки во второй колонке компонента GridPane также установите соответствующие значения **fx:id**.  
-![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png "Set Label fx:id")
+![Set Label fx:id](/assets/library/javafx-tutorial/part2/set-label-fx-id.png "Set Label fx:id")
 
 6. Важно: сохраните файл `PersonOverview.fxml`, вернитесь в среду разработки Eclipse и обновите весь проект AdressApp (F5). Это необходимо для того, чтобы приложение Eclipse "увидело" те изменения, которые мы сделали в приложении Scene Builder.
 
@@ -426,7 +426,7 @@ public void showPersonOverview() {
 
 ### Что дальше?
 
-В [3-й части учебника](/library/javafx-8-tutorial/ru/part3/ "Tutorial Part 3") мы научим наше приложение добавлять, редактировать и удалять информацию в адресной книге.
+В [3-й части учебника](/library/javafx-tutorial/ru/part3/ "Tutorial Part 3") мы научим наше приложение добавлять, редактировать и удалять информацию в адресной книге.
 
 
 ##### Вам могут быть интересны также некоторые другие статьи

@@ -3,10 +3,10 @@ layout: article
 title: "JavaFX 8 Tutorial - Part 3: Interacting with the User"
 date: 2014-04-24
 updated: 2015-11-01
-slug: javafx-8-tutorial/it/part3
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-it-part3.md
+slug: javafx-tutorial/it/part3
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-it-part3.md
 description: "React to selection changes in the JavaFX TableView. Add, edit and remove items from the table and validate user input."
-image: /assets/library/javafx-8-tutorial/part3/addressapp-part3.png
+image: /assets/library/javafx-tutorial/part3/addressapp-part3.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "Articoli in questa serie"
   body:
   - text: "Introduzione"
-    link: /library/javafx-8-tutorial/it/
+    link: /library/javafx-tutorial/it/
     paging: Intro
   - text: "Parte 1: Scene Builder"
-    link: /library/javafx-8-tutorial/it/part1/
+    link: /library/javafx-tutorial/it/part1/
     paging: 1
   - text: "Parte 2: Model and TableView"
-    link: /library/javafx-8-tutorial/it/part2/
+    link: /library/javafx-tutorial/it/part2/
     paging: 2
   - text: "Parte 3: Interazione con l'utente"
-    link: /library/javafx-8-tutorial/it/part3/
+    link: /library/javafx-tutorial/it/part3/
     paging: 3
     active: true
   - text: "Parte 4: CSS Styling"
-    link: /library/javafx-8-tutorial/it/part4/
+    link: /library/javafx-tutorial/it/part4/
     paging: 4
   - text: "Parte 5: Conservazione dati come XML"
-    link: /library/javafx-8-tutorial/it/part5/
+    link: /library/javafx-tutorial/it/part5/
     paging: 5
   - text: "Parte 6: Grafico delle statistiche"
-    link: /library/javafx-8-tutorial/it/part6/
+    link: /library/javafx-tutorial/it/part6/
     paging: 6
   - text: "Parte 7: Deployment"
-    link: /library/javafx-8-tutorial/it/part7/
+    link: /library/javafx-tutorial/it/part7/
     paging: 7
 - header: "Download Sources"
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: Languages
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part3
   active: it
 ---
 
-![Screenshot AddressApp Part 3](/assets/library/javafx-8-tutorial/part3/addressapp-part3.png)
+![Screenshot AddressApp Part 3](/assets/library/javafx-tutorial/part3/addressapp-part3.png)
 
 
 ## Argomenti della parte 3
@@ -231,7 +231,7 @@ Con `personTable.getSelectionModel...` prendiamo il *selectedItemProperty* della
 
 Prova ad **avviare la tua applicazione** a questo punto. Verifica che quando selezioni una persona nella tabella, idettagli di questa persona sono visualizzati sulla destra.
 
-Se qualcosa non funziona, puoi comparare la tua classe `PersonOverviewController` con [PersonOverviewController.java](/assets/library/javafx-8-tutorial/part3/PersonOverviewController.java).
+Se qualcosa non funziona, puoi comparare la tua classe `PersonOverviewController` con [PersonOverviewController.java](/assets/library/javafx-tutorial/part3/PersonOverviewController.java).
 
 
 *****
@@ -256,7 +256,7 @@ private void handleDeletePerson() {
 
 Ora, apri il file `PersonOverview.fxml` in *SceneBuilder*. Seleziona il pulsante *Delete*, apri il gruppo *Code* e scegli `handleDeletePerson` nel menu a tendina di **On Action**.
 
-![On Action](/assets/library/javafx-8-tutorial/part3/handle-delete.png)
+![On Action](/assets/library/javafx-tutorial/part3/handle-delete.png)
 
 <div class="alert alert-info">
 **Ricorda:** Dopo aver effettuato cambiamenti nel file FXML in Scene Builder dovresti riaggioranre il progetto in Eclipse affinché i cambiamenti siano applicati.
@@ -316,10 +316,10 @@ Le azioni Nuovo e Modifica richiedono un pò più di impegno: Avremo bisogno di 
 ### Disegnare il Dialog
 
 1. Crea un nuovo file fxml chiamato `PersonEditDialog.fxml` dentro al package *view*.   
-![Create Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog1.png)
+![Create Edit Dialog](/assets/library/javafx-tutorial/part3/person-edit-dialog1.png)
 
 2. Usa il `GridPane`, `Label`s, `TextField`s e `Button`s per creare un Dialog come il seguente:   
-![Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog2.png)   
+![Edit Dialog](/assets/library/javafx-tutorial/part3/person-edit-dialog2.png)   
 
 
 ### Creare il Controllore
@@ -615,7 +615,7 @@ Spero che i concetti e la struttura di questa applicazione di permetteranno di c
 
 ### Qual'è il prossimo?
 
-Nella [Parte 4 del tutorial](/library/javafx-8-tutorial/it/part4/) aggiungeremo alcuni CSS per lo stile.
+Nella [Parte 4 del tutorial](/library/javafx-tutorial/it/part4/) aggiungeremo alcuni CSS per lo stile.
 
 
 ##### Alcuni articoli che potresti trovare interessanti

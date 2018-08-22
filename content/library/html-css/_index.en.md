@@ -5,6 +5,7 @@ description = "Learn the basics of HTML and CSS in this tutorial to create your 
 image = "portfolio.png"
 prettify = true
 comments = true
+
 sidebarName = "Introduction"
 pagingName = "Intro"
 

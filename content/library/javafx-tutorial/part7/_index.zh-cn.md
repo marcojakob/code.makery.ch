@@ -3,10 +3,10 @@ layout: article
 title: "JavaFX 8 教程 - 第七部分：部署"
 date: 2014-10-08
 updated: 2015-01-16
-slug: javafx-8-tutorial/zh-cn/part7
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part7.md
+slug: javafx-tutorial/zh-cn/part7
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-zh-cn-part7.md
 description: null
-image: /assets/library/javafx-8-tutorial/part7/addressapp-macos.png
+image: /assets/library/javafx-tutorial/part7/addressapp-macos.png
 published: true
 prettify: true
 comments: true
@@ -14,28 +14,28 @@ sidebars:
 - header: "系列文章"
   body:
   - text: "简介"
-    link: /library/javafx-8-tutorial/zh-cn/
+    link: /library/javafx-tutorial/zh-cn/
     paging: 简介
   - text: "第一部分：Scene Builder"
-    link: /library/javafx-8-tutorial/zh-cn/part1/
+    link: /library/javafx-tutorial/zh-cn/part1/
     paging: 1
   - text: "第二部分：Model 和 TableView"
-    link: /library/javafx-8-tutorial/zh-cn/part2/
+    link: /library/javafx-tutorial/zh-cn/part2/
     paging: 2
   - text: "第三部分：与用户的交互"
-    link: /library/javafx-8-tutorial/zh-cn/part3/
+    link: /library/javafx-tutorial/zh-cn/part3/
     paging: 3
   - text: "第四部分：CSS 样式"
-    link: /library/javafx-8-tutorial/zh-cn/part4/
+    link: /library/javafx-tutorial/zh-cn/part4/
     paging: 4
   - text: "第五部分：将数据用 XML 格式存储"
-    link: /library/javafx-8-tutorial/zh-cn/part5/
+    link: /library/javafx-tutorial/zh-cn/part5/
     paging: 5
   - text: "第六部分：统计图"
-    link: /library/javafx-8-tutorial/zh-cn/part6/
+    link: /library/javafx-tutorial/zh-cn/part6/
     paging: 6
   - text: "第七部分：部署"
-    link: /library/javafx-8-tutorial/zh-cn/part7/
+    link: /library/javafx-tutorial/zh-cn/part7/
     paging: 7
     active: true
 - header: "下载源代码"
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: 语言
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part7
   active: zh-cn
 ---
 
-![Screenshot AddressApp Part 7](/assets/library/javafx-8-tutorial/part7/addressapp-part7.png)
+![Screenshot AddressApp Part 7](/assets/library/javafx-tutorial/part7/addressapp-part7.png)
 
 我想已经写到本教程系列的最后一部分了，应该教你如何部署（例如：打包和发布）AddressApp
 
@@ -81,7 +81,7 @@ Oracle提供的官方JavaFx文档包含一个所有[JavaFX部署选项](http://d
 
 目标是在用户的计算机上单个目录中创建一个自包含的应用程序。下面是AddressApp应用看起来的样子（在Windows上）:
 
-![AddressApp本地包](/assets/library/javafx-8-tutorial/part7/native-package.png)
+![AddressApp本地包](/assets/library/javafx-tutorial/part7/native-package.png)
 
 `app`目录包含我们的应用数据和`runtime`目录（包含平台相关的Java运行时）。
 
@@ -100,12 +100,12 @@ E(fx)clipse使用`build.fxbuild`文件生成一个被Ant编译工具使用的文
 1. 从项目的根目录下打开`build.fxbuild`。
 
 2. 填写包含一个星号的字段。*对于MacOS：在应用程序标题中不能使用空格，因为好像会产生问题*。
-![fxbuild设置](/assets/library/javafx-8-tutorial/part7/fxbuild-settings.png)
+![fxbuild设置](/assets/library/javafx-tutorial/part7/fxbuild-settings.png)
 
 3.  在Windows下**Packaging Format**选择`exe`，MacOS下选择`dmg`，Linux下选择`rpm`
 
 4. 点击`Generate ant build.xml only`的连接（在右边可以找到）。
-![生成ant编译](/assets/library/javafx-8-tutorial/part7/generate-ant-build.png)
+![生成ant编译](/assets/library/javafx-tutorial/part7/generate-ant-build.png)
 
 5.  验证是否创建一个新的`build`目录和文件`build.xml`
 
@@ -114,16 +114,16 @@ E(fx)clipse使用`build.fxbuild`文件生成一个被Ant编译工具使用的文
 
 我们希望安装程序有一些好看的图标:
 
-* [AddressApp.ico](/assets/library/javafx-8-tutorial/part7/AddressApp.ico) 安装文件图标
-* [AddressApp-setup-icon.bmp](/assets/library/javafx-8-tutorial/part7/AddressApp-setup-icon.bmp) 安装启动画面图标
-* [AddressApp.icns](/assets/library/javafx-8-tutorial/part7/AddressApp.icns) Mac安装程序图标
+* [AddressApp.ico](/assets/library/javafx-tutorial/part7/AddressApp.ico) 安装文件图标
+* [AddressApp-setup-icon.bmp](/assets/library/javafx-tutorial/part7/AddressApp-setup-icon.bmp) 安装启动画面图标
+* [AddressApp.icns](/assets/library/javafx-tutorial/part7/AddressApp.icns) Mac安装程序图标
 
 
 1. 在`build`目录下创建下面的子目录:
   * `build/package/windows` (只用于Windows)
   * `build/package/macos` (只用于macos)
 2. 拷贝上面的相关图标到这些目录中，现在它应该看起来如下所示:   
-![安装器图标](/assets/library/javafx-8-tutorial/part7/installer-icons.png)
+![安装器图标](/assets/library/javafx-tutorial/part7/installer-icons.png)
 3. **重要**：图标的名称必须精确匹配`build.fxbuild`中指定的**Application的标题名**：
   * `YourAppTitle.ico`
   * `YourAppTitle-setup-icon.bmp`
@@ -137,7 +137,7 @@ E(fx)clipse使用`build.fxbuild`文件生成一个被Ant编译工具使用的文
 1. 在`build`目录下创建下面的子目录:
   * `build/dist`   
 2. 拷贝`resources`目录（包含我们应用的图标）到`build/dist`.    
-![编译资源](/assets/library/javafx-8-tutorial/part7/build-resources.png)
+![编译资源](/assets/library/javafx-tutorial/part7/build-resources.png)
 
 
 ### 第4步 编辑build.xml包含图标
@@ -176,7 +176,7 @@ E(fx)clipse生成的`build/build.xml`文件（准备使用**Ant**执行）。我
 
 
 有时候，版本数不能添加到`fx:application`中，使得安装器总是缺省的版本`1.0`（在注释中很多人指出这个问题）。为了修复它，手动添加版本号（感谢Marc找到解决办法）。
-[解决](http://code.makery.ch/library/javafx-8-tutorial/part7/#comment-1566725959)):
+[解决](http://code.makery.ch/library/javafx-tutorial/part7/#comment-1566725959)):
 
 ##### build.xml - 添加 "version"
 
@@ -193,7 +193,7 @@ E(fx)clipse生成的`build/build.xml`文件（准备使用**Ant**执行）。我
 
 ### 第5步（Windows） - Windows exe安装器
 
-![Windows下AddressApp](/assets/library/javafx-8-tutorial/part7/addressapp-windows.png)
+![Windows下AddressApp](/assets/library/javafx-tutorial/part7/addressapp-windows.png)
 
 使用**Inno Setup**，我们能为我们的应用程序创建一个单独`.exe`文件的Windows安装器。生成的`.exe`执行用户级别的安装（无需管理员权限）。也创建一个快捷方式（菜单和桌面）。
 
@@ -206,7 +206,7 @@ E(fx)clipse生成的`build/build.xml`文件（准备使用**Ant**执行）。我
 
 ### 第5步（MAC） - MacOS dmg安装器
 
-![MAC中AddressApp](/assets/library/javafx-8-tutorial/part7/addressapp-macos.png)
+![MAC中AddressApp](/assets/library/javafx-tutorial/part7/addressapp-macos.png)
 
 为了创建Mac OS `dmg`拖放安装器，不需要任何的要求。
 
@@ -222,13 +222,13 @@ E(fx)clipse生成的`build/build.xml`文件（准备使用**Ant**执行）。我
 
 最后一步，我们使用ant运行`build.xml`，*右击* `build.xml`文件| *Run As* | *Ant Build*。
 
-![运行Ant编译](/assets/library/javafx-8-tutorial/part7/run-ant-build.png)
+![运行Ant编译](/assets/library/javafx-tutorial/part7/run-ant-build.png)
 
 编译将**运行一会**（在我的计算机上大概1分钟）。
 
 如果一切都成功，你应该在`build/deploy/bundles`目录下找到本地打包。Windows版本看起来如下所示：
 
-![部署文件](/assets/library/javafx-8-tutorial/part7/deployed-file.png)
+![部署文件](/assets/library/javafx-tutorial/part7/deployed-file.png)
 
 
 文件`AddressApp-1.0.exe`可以用作为单个文件安装应用。该安装程序将拷贝打包到`C:/Users/[yourname]/AppData/Local/AddressApp`目录下。

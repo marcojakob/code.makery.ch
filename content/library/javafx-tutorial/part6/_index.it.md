@@ -3,10 +3,10 @@ layout: article
 title: "JavaFX 8 Tutorial - Parte 6: Grafico delle Statistiche"
 date: 2014-05-09
 updated: 2015-03-12
-slug: javafx-8-tutorial/it/part6
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-it-part6.md
+slug: javafx-tutorial/it/part6
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-it-part6.md
 description: "Learn how to create a JavaFX Bar Chart."
-image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
+image: /assets/library/javafx-tutorial/part6/addressapp-part6.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "Articoli in questa serie"
   body:
   - text: "Introduzione"
-    link: /library/javafx-8-tutorial/it/
+    link: /library/javafx-tutorial/it/
     paging: Intro
   - text: "Parte 1: Scene Builder"
-    link: /library/javafx-8-tutorial/it/part1/
+    link: /library/javafx-tutorial/it/part1/
     paging: 1
   - text: "Parte 2: Model and TableView"
-    link: /library/javafx-8-tutorial/it/part2/
+    link: /library/javafx-tutorial/it/part2/
     paging: 2
   - text: "Parte 3: Interazione con l'utente"
-    link: /library/javafx-8-tutorial/it/part3/
+    link: /library/javafx-tutorial/it/part3/
     paging: 3
   - text: "Parte 4: CSS Styling"
-    link: /library/javafx-8-tutorial/it/part4/
+    link: /library/javafx-tutorial/it/part4/
     paging: 4
   - text: "Parte 5: Conservazione dati come XML"
-    link: /library/javafx-8-tutorial/it/part5/
+    link: /library/javafx-tutorial/it/part5/
     paging: 5
   - text: "Parte 6: Grafico delle statistiche"
-    link: /library/javafx-8-tutorial/it/part6/
+    link: /library/javafx-tutorial/it/part6/
     paging: 6
     active: true
   - text: "Parte 7: Deployment"
-    link: /library/javafx-8-tutorial/it/part7/
+    link: /library/javafx-tutorial/it/part7/
     paging: 7
 - header: "Download Sources"
   body:
@@ -46,13 +46,13 @@ sidebars:
 languages: 
   header: Languages
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part6
   active: it
 ---
 
 
-![Screenshot AddressApp Part 6](/assets/library/javafx-8-tutorial/part6/addressapp-part6.png)
+![Screenshot AddressApp Part 6](/assets/library/javafx-tutorial/part6/addressapp-part6.png)
 
 
 ## Punti nella Parte 6
@@ -72,7 +72,7 @@ Useremo un **Bar Chart** contenente una barra per ogni mese. Ogni barra mostra q
 ## La Vista FXML Statistiche
 
 1. Iniziamo creando il file `BirthdayStatistics.fxml` all'interno del package `ch.makery.address.view` (*Click destro su package | New | other... | New FXML Document*).   
-![Birthday Statistics FXML](/assets/library/javafx-8-tutorial/part6/birthday-statistics-fxml.png)
+![Birthday Statistics FXML](/assets/library/javafx-tutorial/part6/birthday-statistics-fxml.png)
 
 2. Apriamo il file `BirthdayStatistics.fxml` con Scene Builder.
 
@@ -190,7 +190,7 @@ public class BirthdayStatisticsController {
 3. Seleziona `BarChart` e scegli `barChart` come fx:id Property (nel gruppo *Code*).
 
 4. Seleziona `CategoryAxis` e scegli `xAxis` come fx:id Property.   
-![Category Axis](/assets/library/javafx-8-tutorial/part6/category-axis.png)
+![Category Axis](/assets/library/javafx-tutorial/part6/category-axis.png)
 
 5. Puoi aggiungere un titolo a `BarChart` (nel gruppo *Properties*) per personalizzare lo stile.
 
@@ -254,11 +254,11 @@ private void handleShowBirthdayStatistics() {
 
 Ora, apri il file `RootLayout.fxml` con Scene Builder. Crea il `Menu` *Statistics* con `MenuItem` *Show Statistics*:
 
-![Show Statistics Menu](/assets/library/javafx-8-tutorial/part6/show-statistics-menu.png)
+![Show Statistics Menu](/assets/library/javafx-tutorial/part6/show-statistics-menu.png)
 
 Seleziona *Show Statistics* `MenuItem` e scegli `handleShowBirthdayStatistics` per `On Action` (nel gruppo *Code*)   
 
-![Show Statistics On Action](/assets/library/javafx-8-tutorial/part6/show-statistics-on-action.png)
+![Show Statistics On Action](/assets/library/javafx-tutorial/part6/show-statistics-on-action.png)
 
 Vai a Eclipse, aggiorna il progetto e **testalo**.
 
@@ -272,7 +272,7 @@ Un buon posto per ulteriori informazioni è il tutorial ufficiale della Oracle a
 
 ### Cosa viene dopo?
 
-Nell'ultimo tutorial [Parte 7](/library/javafx-8-tutorial/it/part7/) finalmente ci occuperemo della distribuzione (i.e. pacchettizzare e distribuire la nostra app agli utenti).
+Nell'ultimo tutorial [Parte 7](/library/javafx-tutorial/it/part7/) finalmente ci occuperemo della distribuzione (i.e. pacchettizzare e distribuire la nostra app agli utenti).
 
 
 ##### Qualche altro articolo che potresti trovare interessante

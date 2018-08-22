@@ -3,10 +3,10 @@ layout: article
 title: "Tutorial JavaFX 8 - Bagian 2: Model dan TableView"
 date: 2014-04-23
 updated: 2015-03-12
-slug: javafx-8-tutorial/id/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id-part2.md
+slug: javafx-tutorial/id/part2
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-id-part2.md
 description: "Gunakan TableView JavaFXUse untuk menampilkan ObservableList dari Persons."
-image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
+image: /assets/library/javafx-tutorial/part2/addressapp-part2.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "Seri artikel"
   body:
   - text: "Pengenalan"
-    link: /library/javafx-8-tutorial/id/
+    link: /library/javafx-tutorial/id/
     paging: Intro
   - text: "Bagian 1: Scene Builder"
-    link: /library/javafx-8-tutorial/id/part1/
+    link: /library/javafx-tutorial/id/part1/
     paging: 1
   - text: "Bagian 2: Model dan TableView"
-    link: /library/javafx-8-tutorial/id/part2/
+    link: /library/javafx-tutorial/id/part2/
     paging: 2
     active: true
   - text: "Bagian 3: Berinteraksi dengan pengguna"
-    link: /library/javafx-8-tutorial/id/part3/
+    link: /library/javafx-tutorial/id/part3/
     paging: 3
   - text: "Bagian 4: Memberikan gaya dengan CSS"
-    link: /library/javafx-8-tutorial/id/part4/
+    link: /library/javafx-tutorial/id/part4/
     paging: 4
   - text: "Bagian 5: Menyimpan data sebagai XML"
-    link: /library/javafx-8-tutorial/id/part5/
+    link: /library/javafx-tutorial/id/part5/
     paging: 5
   - text: "Bagian 6: Bagan Statistika"
-    link: /library/javafx-8-tutorial/id/part6/
+    link: /library/javafx-tutorial/id/part6/
     paging: 6
   - text: "Bagian 7: Penyebaran"
-    link: /library/javafx-8-tutorial/id/part7/
+    link: /library/javafx-tutorial/id/part7/
     paging: 7
 - header: "Unduh kode sumber"
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: Bahasa
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part2
   active: id
 ---
 
-![Tangkapan AddressApp bagian 2](/assets/library/javafx-8-tutorial/part2/addressapp-part2.png)
+![Tangkapan AddressApp bagian 2](/assets/library/javafx-tutorial/part2/addressapp-part2.png)
 
 
 ## Pembahasan di bagian 2
@@ -395,15 +395,15 @@ Kita hampir selesai, tapi satu hal terlewat, kita belum meberitahu `PersonOvervi
 1. Buka `PersonOverview.fxml` dengan *SceneBuilder*.
 
 2. Buka kelompok *Controller* pada sisi kiri dan pilih `PersonOverviewController` sebagai**controller class**.   
-![Atur kelas Controller](/assets/library/javafx-8-tutorial/part2/set-controller-class.png)
+![Atur kelas Controller](/assets/library/javafx-tutorial/part2/set-controller-class.png)
 
 3. Pilih `TableView` di kelompok *Hierarchy* dan pilih *Code*, kelompokan bidang `personTable` sebagai **fx:id**.   
-![Atur TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png)
+![Atur TableView fx:id](/assets/library/javafx-tutorial/part2/set-tableview-fx-id.png)
 
 4.Lakukan hal yang sama untuk kolom-kolom dan pilih `firstNameColumn` dan `lastNameColumn` sebagai masing-masing **fx:id**.
 
 5. Untuk tiap label **each label** di kolom kedua, pilih **fx:id** yang sesuai.   
-![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png)
+![Set Label fx:id](/assets/library/javafx-tutorial/part2/set-label-fx-id.png)
 
 6.  Penting: Pada Eclipse  **segarkan (F5) keseluruhan proyek AddressApp**. Ini diperlukan karena Eclipse terkadang tidak mengetahuiu adanya perubahan yang dibuat oleh Scene Builder.
 
@@ -419,7 +419,7 @@ Selamat!
 
 ### Berikutnya?
 
-Di [Tutorial bagian 3](/library/javafx-8-tutorial/id/part3/) kita akan menambah lebih banyak fungsi seperti penambahan, menghapus, memperbaharui Persons.
+Di [Tutorial bagian 3](/library/javafx-tutorial/id/part3/) kita akan menambah lebih banyak fungsi seperti penambahan, menghapus, memperbaharui Persons.
 
 
 ##### Beberapa artikel menarik lainnya

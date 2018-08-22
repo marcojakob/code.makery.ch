@@ -3,10 +3,10 @@ layout: article
 title: "آموزش JavaFX 8 (فارسی)"
 date: 2014-04-19
 updated: 2015-07-15
-slug: javafx-8-tutorial/fa
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fa.md
+slug: javafx-tutorial/fa
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-fa.md
 description: "یک آموزش 7 قسمتی شامل طراحی, برنامه نویسی و پیاده‌سازی نسخه قابل نصب یک برنامه آدرس به وسیله JavaFX"
-image: /assets/library/javafx-8-tutorial/addressapp.png
+image: /assets/library/javafx-tutorial/addressapp.png
 published: true
 prettify: true
 comments: true
@@ -15,34 +15,34 @@ sidebars:
 - header: "مباحث این سری"
   body:
   - text: "مقدمه"
-    link: /library/javafx-8-tutorial/fa/
+    link: /library/javafx-tutorial/fa/
     paging: Intro
     active: true
   - text: "قسمت اول: Scene Builder"
-    link: /library/javafx-8-tutorial/fa/part1/
+    link: /library/javafx-tutorial/fa/part1/
     paging: 1
   - text: "قسمت دوم: مدل و TableView"
-    link: /library/javafx-8-tutorial/fa/part2/
+    link: /library/javafx-tutorial/fa/part2/
     paging: 2
   - text: "قسمت سوم: تعامل با کاربر"
-    link: /library/javafx-8-tutorial/fa/part3/
+    link: /library/javafx-tutorial/fa/part3/
     paging: 3
   - text: "قسمت چهارم: سلیقه سازی با CSS"
-    link: /library/javafx-8-tutorial/fa/part4/
+    link: /library/javafx-tutorial/fa/part4/
     paging: 4
   - text: "قسمت پنجم: ذخیره کردن داده به عنوان XML"
-    link: /library/javafx-8-tutorial/fa/part5/
+    link: /library/javafx-tutorial/fa/part5/
     paging: 5
   - text: "قسمت ششم: رسم نمودار آماری"
-    link: /library/javafx-8-tutorial/fa/part6/
+    link: /library/javafx-tutorial/fa/part6/
     paging: 6
   - text: "قسمت هفتم: ساختن نسخه قابل نصب"
-    link: /library/javafx-8-tutorial/fa/part7/
+    link: /library/javafx-tutorial/fa/part7/
     paging: 7
 languages:
   header: "زبان‌ها"
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part:
   active: fa
 ---
@@ -51,7 +51,7 @@ languages:
 
 این آموزش شامل طراحی, برنامه نویسی, و پیاده‌سازی نسخه قابل نصب یک برنامه آدرس است. برنامه نهایی به شکل زیر خواهد بود:
 
-![Screenshot AddressApp](/assets/library/javafx-8-tutorial/addressapp.png)
+![Screenshot AddressApp](/assets/library/javafx-tutorial/addressapp.png)
 
 ## مباحثی که شما یاد میگیرید
 
@@ -76,7 +76,7 @@ languages:
 * **روشی که در اون خیلی یاد میگیرید:** پروژه JavaFX خودتونو از صفر بسازید.
 * **روش سریع:** سورس کد آموزش مربوطه رو دانلود کنید و اونو توی IDE مورد نظر خودتون باز کنید, بعد آموزش‌ رو بخونید تا کد رو متوجه بشید.
 
-امیدوارم بهتون کلی خوش بگذره!از [قسمت اول: Scene Builder](/library/javafx-8-tutorial/fa/part1/) شروع کنید.
+امیدوارم بهتون کلی خوش بگذره!از [قسمت اول: Scene Builder](/library/javafx-tutorial/fa/part1/) شروع کنید.
 
 <div dir="ltr" class="alert alert-success">
   <strong><i class="fa fa-trophy"></i> Attribution:</strong> The Persian translation has been contributed by 

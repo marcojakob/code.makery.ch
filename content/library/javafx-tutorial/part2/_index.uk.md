@@ -3,10 +3,10 @@ layout: article
 title: "Підручник з JavaFX 8 - Частина 2: Модель та компонент TableView"
 date: 2014-04-19
 updated: 2015-06-25
-slug: javafx-8-tutorial/uk/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-uk-part2.md
+slug: javafx-tutorial/uk/part2
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-uk-part2.md
 description: "Використовуйте JavaFX TableView для відображення списку персон з ObservableList"
-image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
+image: /assets/library/javafx-tutorial/part2/addressapp-part2.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "Статті цієї серії"
   body:
   - text: "Вступ"
-    link: /library/javafx-8-tutorial/uk/
+    link: /library/javafx-tutorial/uk/
     paging: Intro
   - text: "Частина 1: Scene Builder"
-    link: /library/javafx-8-tutorial/uk/part1/
+    link: /library/javafx-tutorial/uk/part1/
     paging: 1
   - text: "Частина 2: Модель та компонент TableView"
-    link: /library/javafx-8-tutorial/uk/part2/
+    link: /library/javafx-tutorial/uk/part2/
     paging: 2
     active: true
   - text: "Частина 3: Взаємодія з користувачем"
-    link: /library/javafx-8-tutorial/uk/part3/
+    link: /library/javafx-tutorial/uk/part3/
     paging: 3
   - text: "Частина 4: Стилізація за допомогою CSS"
-    link: /library/javafx-8-tutorial/uk/part4/
+    link: /library/javafx-tutorial/uk/part4/
     paging: 4
   - text: "Частина 5: Збереження даних в XML"
-    link: /library/javafx-8-tutorial/uk/part5/
+    link: /library/javafx-tutorial/uk/part5/
     paging: 5
   - text: "Частина 6: Статистична діаграма"
-    link: /library/javafx-8-tutorial/uk/part6/
+    link: /library/javafx-tutorial/uk/part6/
     paging: 6
   - text: "Частина 7: Розгортання"
-    link: /library/javafx-8-tutorial/uk/part7/
+    link: /library/javafx-tutorial/uk/part7/
     paging: 7
 - header: Скачати вихідний код
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: Мови
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part2
   active: uk
 ---
 
-![Screenshot AddressApp Part 2](http://code.makery.ch/assets/library/javafx-8-tutorial/part2/addressapp-part2.png "GridPane Add Row")
+![Screenshot AddressApp Part 2](http://code.makery.ch/assets/library/javafx-tutorial/part2/addressapp-part2.png "GridPane Add Row")
 
 ## Частина 2: Зміст
 
@@ -382,15 +382,15 @@ public void showPersonOverview() {
 1. Відкрийте файл `PersonOverview.fxml` в додатку *Scene Builder*.
 
 2. Відкрийте вкладку *Controller* зліва на панелі *Document* та виберіть клас `PersonControllerOverview` в якості класу-контролера (можете скористатись випадаючим списком справа).   
-![Set Controller Class](/assets/library/javafx-8-tutorial/part2/set-controller-class.png "Set Controller Class")
+![Set Controller Class](/assets/library/javafx-tutorial/part2/set-controller-class.png "Set Controller Class")
 
 3. Виберіть компонент `TableView` на вкладці *Hierarchy*, перейдіть на вкладку *Code* та, нарешті, встановіть значення `personTable` для поля **fx:id** (також можете скористатись випадаючим списком справа).   
-![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png "Set TableView fx:id")
+![Set TableView fx:id](/assets/library/javafx-tutorial/part2/set-tableview-fx-id.png "Set TableView fx:id")
 
 4. Зробіть те ж саме для колонок таблиці і встановіть значення властивості **fx:id** `firstNameColumn` і `secondNameColumn`, відповідно.
 
 5. Для **кожної текстової мітки** (`Label`) у другій колонці компонента *GridPane* також встановіть відповідні значення **fx:id** (на вкладці *Code*).   
-![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png "Set Label fx:id")
+![Set Label fx:id](/assets/library/javafx-tutorial/part2/set-label-fx-id.png "Set Label fx:id")
 
 6. Важливо: збережіть файл `PersonOverview.fxml`, а потім поверніться в середовище розробки Eclipse і **поновіть весь проект** (F5). Це необхідно для того, щоб додаток Eclipse визначив ті зміни, які ми зробили в додатку Scene Builder.
 
@@ -406,7 +406,7 @@ public void showPersonOverview() {
 
 ### Що далі?
 
-В [3 частині підручника](/library/javafx-8-tutorial/uk/part3/"Tutorial Part 3") ми навчимо наш додаток додавати, редагувати і видаляти адресні записи.
+В [3 частині підручника](/library/javafx-tutorial/uk/part3/"Tutorial Part 3") ми навчимо наш додаток додавати, редагувати і видаляти адресні записи.
 
 ##### Вам можуть бути цікаві також деякі інші статті
 

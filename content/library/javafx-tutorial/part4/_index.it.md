@@ -3,10 +3,10 @@ layout: article
 title: "JavaFX 8 Tutorial - Part 4: CSS Styling"
 date: 2014-04-25
 updated: 2014-08-27
-slug: javafx-8-tutorial/it/part4
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-it-part4.md
+slug: javafx-tutorial/it/part4
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-it-part4.md
 description: "In JavaFX you can style your user interface using CSS. We'll also add an application icon in this tutorial part."
-image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png
+image: /assets/library/javafx-tutorial/part4/addressapp-part4.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "Articoli in questa serie"
   body:
   - text: "Introduzione"
-    link: /library/javafx-8-tutorial/it/
+    link: /library/javafx-tutorial/it/
     paging: Intro
   - text: "Parte 1: Scene Builder"
-    link: /library/javafx-8-tutorial/it/part1/
+    link: /library/javafx-tutorial/it/part1/
     paging: 1
   - text: "Parte 2: Model and TableView"
-    link: /library/javafx-8-tutorial/it/part2/
+    link: /library/javafx-tutorial/it/part2/
     paging: 2
   - text: "Parte 3: Interazione con l'utente"
-    link: /library/javafx-8-tutorial/it/part3/
+    link: /library/javafx-tutorial/it/part3/
     paging: 3
   - text: "Parte 4: CSS Styling"
-    link: /library/javafx-8-tutorial/it/part4/
+    link: /library/javafx-tutorial/it/part4/
     paging: 4
     active: true
   - text: "Parte 5: Conservazione dati come XML"
-    link: /library/javafx-8-tutorial/it/part5/
+    link: /library/javafx-tutorial/it/part5/
     paging: 5
   - text: "Parte 6: Grafico delle statistiche"
-    link: /library/javafx-8-tutorial/it/part6/
+    link: /library/javafx-tutorial/it/part6/
     paging: 6
   - text: "Parte 7: Deployment"
-    link: /library/javafx-8-tutorial/it/part7/
+    link: /library/javafx-tutorial/it/part7/
     paging: 7
 - header: "Download Sources"
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: Languages
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part4
   active: it
 ---
 
-![Screenshot AddressApp Part 4](/assets/library/javafx-8-tutorial/part4/addressapp-part4.png)
+![Screenshot AddressApp Part 4](/assets/library/javafx-tutorial/part4/addressapp-part4.png)
 
 
 ## Argomenti nella parte 4
@@ -255,7 +255,7 @@ Adesso dobbiamo collegare il CSS all nostro oggetto Scene. Potremmo farlo dirett
 1. Apri il file `RootLayout.fxml` nel Scene Builder. 
 
 2. Seleziona la root `BorderPane` nella vista gerarchica. Sotto il gruppo *Properties* aggiugni il file `DarkTheme.css` come stylesheet.   
-![DarkTheme for RootLayout](/assets/library/javafx-8-tutorial/part4/darktheme-rootlayout.png)
+![DarkTheme for RootLayout](/assets/library/javafx-tutorial/part4/darktheme-rootlayout.png)
 
 
 #### Collegare il CSS a PersonEditDialog.fxml
@@ -263,7 +263,7 @@ Adesso dobbiamo collegare il CSS all nostro oggetto Scene. Potremmo farlo dirett
 1. Apri il file `PersonEditDialog.fxml` in Scene Builder. Seleziona la radice `AnchorPane` e scegli `DarkTheme.css` nel gruppo *Properties* come stylesheet.
 
 2. Lo sfondo rimane bianco, quindi aggiungi la Style Class `background` alla radice `AnchorPane`.   
-![Add Style Class](/assets/library/javafx-8-tutorial/part4/darktheme-personeditdialog.png)
+![Add Style Class](/assets/library/javafx-tutorial/part4/darktheme-personeditdialog.png)
 
 3. Seleziona il pulsante OK e scegli *Default Button* nella vista Properties. Questo cambierà il suo colore e lo setterà come pulsante di default quando la key *invio* sulla tastiera viene premuta dall'utente.
 
@@ -277,10 +277,10 @@ Adesso dobbiamo collegare il CSS all nostro oggetto Scene. Potremmo farlo dirett
 3. Potresti dover aggiustare la dimensione dei pulsanti affinché tutti i testi tornino ad essere visibili.
 
 4. Seleziona sulla destra l'`AnchorPane` che si trova dentro allo `SplitPane`.   
-![Background Style Select](/assets/library/javafx-8-tutorial/part4/background-style-select.png)   
+![Background Style Select](/assets/library/javafx-tutorial/part4/background-style-select.png)   
 
 5. Vai nel gruppo *Properties* e seleziona `background` come style class. Lo sfondo dovrebbe diventare nero.   
-![Background Style](/assets/library/javafx-8-tutorial/part4/background-style.png)
+![Background Style](/assets/library/javafx-tutorial/part4/background-style.png)
 
 
 #### Label con Style diversi
@@ -288,10 +288,10 @@ Adesso dobbiamo collegare il CSS all nostro oggetto Scene. Potremmo farlo dirett
 Ora, tutti i labels sul lato destro hanno la stessa dimensione. Nel file css ci sono già alcuni stili definiti come `.label-header` e `.label-bright` che useremo per un ulteriore personalizzaizone dei label.
 
 1. Select the *Person Details* label and add `label-header` as a Style Class.   
-![Label Header Style](/assets/library/javafx-8-tutorial/part4/label-header-style.png)
+![Label Header Style](/assets/library/javafx-tutorial/part4/label-header-style.png)
 
 2. Per ogni label nella colonna di destra (dove i dettagli della persona attuale sono visualizzati), aggiungi lo Style Class del css `label-bright`.   
-![Label Bright Style](/assets/library/javafx-8-tutorial/part4/label-bright-style.png)
+![Label Bright Style](/assets/library/javafx-tutorial/part4/label-bright-style.png)
 
 
 *****
@@ -301,11 +301,11 @@ Ora, tutti i labels sul lato destro hanno la stessa dimensione. Nel file css ci 
 
 Adesso la nostra applicazione ha l'icona di default nella title bar e nella task bar:
 
-![Default Icon](/assets/library/javafx-8-tutorial/part4/default-app-icon.png)
+![Default Icon](/assets/library/javafx-tutorial/part4/default-app-icon.png)
 
 Apparirebbe molto migliore con un'icona personalizzata:
 
-![Custom Icon](/assets/library/javafx-8-tutorial/part4/custom-app-icon.png)
+![Custom Icon](/assets/library/javafx-tutorial/part4/custom-app-icon.png)
 
 
 ### Il file Icon
@@ -314,7 +314,7 @@ Un possibile posto in cui reperire icone gratuitamente è [Icon Finder](http://w
 
 Creare una cartella (normale) dentro alla progetto AddressApp chiamata **resources** ed una sottocartella chiamata **images** al suo interno. Mettete l'icona che avete scelto all'interno della sottocartella. La tua struttura di cartelle dovrebbe apparire in questo modo adesso:
 
-![Custom Icon File](/assets/library/javafx-8-tutorial/part4/custom-icon-file.png)
+![Custom Icon File](/assets/library/javafx-tutorial/part4/custom-icon-file.png)
 
 
 ### Impostare l'icona nell'oggetto Scene
@@ -349,7 +349,7 @@ Puoi anche aggiungere un'icona all'oggetto stage del Dialog di modifica della pe
 
 ### Qual'è il prossimo?
 
-Nella [parte 5 del tutorial](/library/javafx-8-tutorial/it/part5/) aggiungeremo una memorizzazione su file XML per i nostri dati.
+Nella [parte 5 del tutorial](/library/javafx-tutorial/it/part5/) aggiungeremo una memorizzazione su file XML per i nostri dati.
 
 
 ##### Altri articoli che potrebbero insteressarti

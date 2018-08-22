@@ -3,11 +3,11 @@ layout: article
 title: "JavaFX 8 Tutorial - Part 6: Statistics Chart"
 date: 2014-05-09
 updated: 2015-05-16
-slug: javafx-8-tutorial/tr/part6
-canonical: /library/javafx-8-tutorial/part6/
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-tr-part6.md
+slug: javafx-tutorial/tr/part6
+canonical: /library/javafx-tutorial/part6/
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-tr-part6.md
 description: "Learn how to create a JavaFX Bar Chart."
-image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
+image: /assets/library/javafx-tutorial/part6/addressapp-part6.png
 published: true
 prettify: true
 comments: true
@@ -15,29 +15,29 @@ sidebars:
 - header: "Articles in this Series"
   body:
   - text: "Introduction"
-    link: /library/javafx-8-tutorial/tr/
+    link: /library/javafx-tutorial/tr/
     paging: Intro
   - text: "Part 1: Scene Builder"
-    link: /library/javafx-8-tutorial/tr/part1/
+    link: /library/javafx-tutorial/tr/part1/
     paging: 1
   - text: "Part 2: Model and TableView"
-    link: /library/javafx-8-tutorial/tr/part2/
+    link: /library/javafx-tutorial/tr/part2/
     paging: 2
   - text: "Part 3: Interacting with the User"
-    link: /library/javafx-8-tutorial/tr/part3/
+    link: /library/javafx-tutorial/tr/part3/
     paging: 3
   - text: "Part 4: CSS Styling"
-    link: /library/javafx-8-tutorial/tr/part4/
+    link: /library/javafx-tutorial/tr/part4/
     paging: 4
   - text: "Part 5: Storing Data as XML"
-    link: /library/javafx-8-tutorial/tr/part5/
+    link: /library/javafx-tutorial/tr/part5/
     paging: 5
   - text: "Part 6: Statistics Chart"
-    link: /library/javafx-8-tutorial/tr/part6/
+    link: /library/javafx-tutorial/tr/part6/
     paging: 6
     active: true
   - text: "Part 7: Deployment"
-    link: /library/javafx-8-tutorial/tr/part7/
+    link: /library/javafx-tutorial/tr/part7/
     paging: 7
 - header: "Download Sources"
   body:
@@ -47,7 +47,7 @@ sidebars:
 languages: 
   header: Languages
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part6
   active: tr
 ---
@@ -56,7 +56,7 @@ languages:
   <i class="fa fa-language"></i> This page needs a Turkish translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
 </div>
 
-![Screenshot AddressApp Part 6](/assets/library/javafx-8-tutorial/part6/addressapp-part6.png)
+![Screenshot AddressApp Part 6](/assets/library/javafx-tutorial/part6/addressapp-part6.png)
 
 
 ## Topics in Part 6
@@ -76,7 +76,7 @@ We'll use a **Bar Chart** containing a bar for each month. Each bar shows how ma
 ## The Statistics FXML View
 
 1. We start by creating a `BirthdayStatistics.fxml` file inside our `ch.makery.address.view` package (*Right-click on package | New | other... | New FXML Document*).   
-![Birthday Statistics FXML](/assets/library/javafx-8-tutorial/part6/birthday-statistics-fxml.png)
+![Birthday Statistics FXML](/assets/library/javafx-tutorial/part6/birthday-statistics-fxml.png)
 
 2. Open the `BirthdayStatistics.fxml` file in Scene Builder.
 
@@ -194,7 +194,7 @@ public class BirthdayStatisticsController {
 3. Select the `BarChart` and choose `barChart` as fx:id Property (in the *Code* group).
 
 4. Select the `CategoryAxis` and choose `xAxis` as fx:id Property.   
-![Category Axis](/assets/library/javafx-8-tutorial/part6/category-axis.png)
+![Category Axis](/assets/library/javafx-tutorial/part6/category-axis.png)
 
 5. You may add a title to the `BarChart` (in *Properties* group) for further styling.
 
@@ -258,11 +258,11 @@ private void handleShowBirthdayStatistics() {
 
 Now, open the `RootLayout.fxml` file with Scene Builder. Create the *Statistics* `Menu` with a *Show Statistics* `MenuItem`:
 
-![Show Statistics Menu](/assets/library/javafx-8-tutorial/part6/show-statistics-menu.png)
+![Show Statistics Menu](/assets/library/javafx-tutorial/part6/show-statistics-menu.png)
 
 Select the *Show Statistics* `MenuItem` and choose `handleShowBirthdayStatistics` for `On Action` (in *Code* group)   
 
-![Show Statistics On Action](/assets/library/javafx-8-tutorial/part6/show-statistics-on-action.png)
+![Show Statistics On Action](/assets/library/javafx-tutorial/part6/show-statistics-on-action.png)
 
 Go to Eclipse, refresh the project and **test it**.
 
@@ -276,7 +276,7 @@ A good place for more information is the official Oracle tutorial on [Working wi
 
 ### What's Next?
 
-In the last tutorial [Part 7](/library/javafx-8-tutorial/part7/) we will finally deploy our application (i.e. package and deliver the app to our users).
+In the last tutorial [Part 7](/library/javafx-tutorial/part7/) we will finally deploy our application (i.e. package and deliver the app to our users).
 
 
 ##### Some other articles you might find interesting

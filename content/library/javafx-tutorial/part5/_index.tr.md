@@ -3,11 +3,11 @@ layout: article
 title: "JavaFX 8 Tutorial - Part 5: Storing Data as XML"
 date: 2014-04-25 01:00
 updated: 2015-05-16
-slug: javafx-8-tutorial/tr/part5
-canonical: /library/javafx-8-tutorial/part5/
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-tr-part5.md
+slug: javafx-tutorial/tr/part5
+canonical: /library/javafx-tutorial/part5/
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-tr-part5.md
 description: "Save data as XML with JAXB. Learn how to use the JavaFX FileChooser and the JavaFX Menu."
-image: /assets/library/javafx-8-tutorial/part5/addressapp-part5.png
+image: /assets/library/javafx-tutorial/part5/addressapp-part5.png
 published: true
 prettify: true
 comments: true
@@ -15,29 +15,29 @@ sidebars:
 - header: "Articles in this Series"
   body:
   - text: "Introduction"
-    link: /library/javafx-8-tutorial/tr/
+    link: /library/javafx-tutorial/tr/
     paging: Intro
   - text: "Part 1: Scene Builder"
-    link: /library/javafx-8-tutorial/tr/part1/
+    link: /library/javafx-tutorial/tr/part1/
     paging: 1
   - text: "Part 2: Model and TableView"
-    link: /library/javafx-8-tutorial/tr/part2/
+    link: /library/javafx-tutorial/tr/part2/
     paging: 2
   - text: "Part 3: Interacting with the User"
-    link: /library/javafx-8-tutorial/tr/part3/
+    link: /library/javafx-tutorial/tr/part3/
     paging: 3
   - text: "Part 4: CSS Styling"
-    link: /library/javafx-8-tutorial/tr/part4/
+    link: /library/javafx-tutorial/tr/part4/
     paging: 4
   - text: "Part 5: Storing Data as XML"
-    link: /library/javafx-8-tutorial/tr/part5/
+    link: /library/javafx-tutorial/tr/part5/
     paging: 5
     active: true
   - text: "Part 6: Statistics Chart"
-    link: /library/javafx-8-tutorial/tr/part6/
+    link: /library/javafx-tutorial/tr/part6/
     paging: 6
   - text: "Part 7: Deployment"
-    link: /library/javafx-8-tutorial/tr/part7/
+    link: /library/javafx-tutorial/tr/part7/
     paging: 7
 - header: "Download Sources"
   body:
@@ -47,7 +47,7 @@ sidebars:
 languages: 
   header: Languages
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part5
   active: tr
 ---
@@ -56,7 +56,7 @@ languages:
   <i class="fa fa-language"></i> This page needs a Turkish translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
 </div>
 
-![Screenshot AddressApp Part 5](/assets/library/javafx-8-tutorial/part5/addressapp-part5.png)
+![Screenshot AddressApp Part 5](/assets/library/javafx-tutorial/part5/addressapp-part5.png)
 
 
 ## Topics in Part 5
@@ -291,7 +291,7 @@ In our `RootLayout.fxml` there is already a menu, but we haven't used it yet. Be
 
 Open the `RootLayout.fxml` file in Scene Builder and drag the necessary menu items from the *library* group to the `MenuBar` bar in the *hierarchy* group. Create a **New**, **Open...**, **Save**, **Save As...**, and **Exit** menu item.
 
-![Add Menu Items](/assets/library/javafx-8-tutorial/part5/add-menu-items.png)
+![Add Menu Items](/assets/library/javafx-tutorial/part5/add-menu-items.png)
 
 Hint: Using the *Accelerator* setting under the *Properties* group you can set shortcut keys to menu items.
 
@@ -440,7 +440,7 @@ If the user closes the dialog without choosing a file, `null` is returned. Other
 1. Open `RootLayout.fxml` in Scene Builder. In the *Controller* group select the `RootLayoutController` as Controller class. 
 
 2. Go back to the *Hierarchy* group and select a menu item. In the *Code* group under **On Action** you should see a choice of all the available controller methods. Choose the corresponding method for each menu item.   
-![Menu Actions](/assets/library/javafx-8-tutorial/part5/menu-actions.png)
+![Menu Actions](/assets/library/javafx-tutorial/part5/menu-actions.png)
 
 3. Repeat the steps for every menu item.
 
@@ -554,7 +554,7 @@ Let's see how it all works together:
 
 ### What's Next?
 
-In Tutorial [Part 6](/library/javafx-8-tutorial/tr/part6/) we'll add a birthday statistics chart.
+In Tutorial [Part 6](/library/javafx-tutorial/tr/part6/) we'll add a birthday statistics chart.
 
 
 ##### Some other articles you might find interesting

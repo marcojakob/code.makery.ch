@@ -48,7 +48,7 @@ Then we finish off with:
 #### JavaFX
 
 * JavaFX comes with a decent default theme called [Modena](http://fxexperience.com/2013/01/modena-new-theme-for-javafx-8/).
-* The theme is easily [customizable with CSS](/library/javafx-8-tutorial/part4/).
+* The theme is easily [customizable with CSS](/library/javafx-tutorial/part4/).
 * There are [many UI widgets](http://fxexperience.com/2013/01/modena-new-theme-for-javafx-8/) (scroll down to "All controls in Modena"). It comes with complex widgets and interactions out of the box: [TreeTableView](http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/tree-table-view.htm), TextFlow (supports rich text), [DatePicker](/blog/javafx-8-date-picker/), Charts, 3D support, [WebView](http://docs.oracle.com/javase/8/javafx/api/javafx/scene/web/WebView.html) (with a modified Webkit engine), Drag and Drop, and more.
 * If you need more widgets there is the excellent [ControlsFX](http://fxexperience.com/controlsfx/) project and also [JFXtras](http://jfxtras.org/).
 * JavaFX also comes with a nice visual designer called [JavaFX Scene Builder](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684.html) which I like a lot.
@@ -102,7 +102,7 @@ I haven't tried any of the JavaFX ports for mobile but from what I've seen they 
 
 When you're a Java programmer and you've created some Swing GUIs, learning JavaFX will be straigt forward. As a Java Swing developer you should be excited by the new possibilities of JavaFX.
 
-If you work through my [JavaFX 8 Tutorial](/library/javafx-8-tutorial/) you will get familiar with the most important concepts of JavaFX and even some new Java 8 language features:
+If you work through my [JavaFX 8 Tutorial](/library/javafx-tutorial/) you will get familiar with the most important concepts of JavaFX and even some new Java 8 language features:
 
 * Separating the presentation layer with FXML and SceneBuilder (you can also create JavaFX applications in Java code completely, if you want).
 * Using the new Properties classes and ObservableLists for automatic UI updates.

@@ -2,10 +2,10 @@
 layout: article
 title: "JavaFX 8 튜토리얼 - 6부: 통계 차트"
 date: 2016-10-30
-slug: javafx-8-tutorial/kr/part6
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part6.md
+slug: javafx-tutorial/kr/part6
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-kr-part6.md
 description: "JavaFX 바 차트를 만드는 방법을 배웁니다."
-image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
+image: /assets/library/javafx-tutorial/part6/addressapp-part6.png
 published: true
 prettify: true
 comments: true
@@ -13,29 +13,29 @@ sidebars:
 - header: "차례"
   body:
   - text: "소개"
-    link: /library/javafx-8-tutorial/kr/
+    link: /library/javafx-tutorial/kr/
     paging: Intro
   - text: "1부: Scene Builder"
-    link: /library/javafx-8-tutorial/kr/part1/
+    link: /library/javafx-tutorial/kr/part1/
     paging: 1
   - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-8-tutorial/kr/part2/
+    link: /library/javafx-tutorial/kr/part2/
     paging: 2
   - text: "3부: 사용자 상호작용"
-    link: /library/javafx-8-tutorial/kr/part3/
+    link: /library/javafx-tutorial/kr/part3/
     paging: 3
   - text: "4부: CSS 꾸미기"
-    link: /library/javafx-8-tutorial/kr/part4/
+    link: /library/javafx-tutorial/kr/part4/
     paging: 4
   - text: "5부: XML로 데이터 저장하기"
-    link: /library/javafx-8-tutorial/kr/part5/
+    link: /library/javafx-tutorial/kr/part5/
     paging: 5
   - text: "6부: 통계 차트"
-    link: /library/javafx-8-tutorial/kr/part6/
+    link: /library/javafx-tutorial/kr/part6/
     paging: 6
     active: true
   - text: "7부: 배포"
-    link: /library/javafx-8-tutorial/kr/part7/
+    link: /library/javafx-tutorial/kr/part7/
     paging: 7
 - header: "소스 코드 다운로드"
   body:
@@ -45,12 +45,12 @@ sidebars:
 languages:
   header: 언어
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part6
   active: kr
 ---
 
-![Screenshot AddressApp Part 6](/assets/library/javafx-8-tutorial/part6/addressapp-part6.png)
+![Screenshot AddressApp Part 6](/assets/library/javafx-tutorial/part6/addressapp-part6.png)
 
 
 ## 6부 주제
@@ -69,7 +69,7 @@ AddressApp의 모든 연락처에는 생일이 있습니다. 생일을 기념할
 ## FXML View 통계
 
 1. `ch.makery.address.view` 패키지 (* 마우스 오른쪽 클릭 | New | other... | New FXML Document*)에 `BirthdayStatistics.fxml` 파일을 만듭니다.   
-![Birthday Statistics FXML](/assets/library/javafx-8-tutorial/part6/birthday-statistics-fxml.png)
+![Birthday Statistics FXML](/assets/library/javafx-tutorial/part6/birthday-statistics-fxml.png)
 
 2. Scene Builder로 `BirthdayStatistics.fxml` 파일을 엽니다.
 
@@ -186,7 +186,7 @@ public class BirthdayStatisticsController {
 3. `BarChart`를 선택 후 fx:id 프로퍼티로 `barChart`를 고릅니다 (*Code* 그룹에서).
 
 4. `CategoryAxis`를 선택하고 fx:id 프로퍼티로 `xAxis`를 고릅니다.   
-![Category Axis](/assets/library/javafx-8-tutorial/part6/category-axis.png)
+![Category Axis](/assets/library/javafx-tutorial/part6/category-axis.png)
 
 5. `BarChart`의 타이틀 (*Properties* 그룹에서)을 추가할 수 있습니다.
 
@@ -250,11 +250,11 @@ private void handleShowBirthdayStatistics() {
 
 이제 Scene Builder로 `RootLayout.fxml` 파일을 엽니다. *Show Statistics* `MenuItem`을 포함한 *Statistics* `Menu`를 만듭니다:
 
-![Show Statistics Menu](/assets/library/javafx-8-tutorial/part6/show-statistics-menu.png)
+![Show Statistics Menu](/assets/library/javafx-tutorial/part6/show-statistics-menu.png)
 
 *Show Statistics* `MenuItem`을 선택하고 `On Action`을 `handleShowBirthdayStatistics`로 고릅니다 (*Code* 그룹에서).
 
-![Show Statistics On Action](/assets/library/javafx-8-tutorial/part6/show-statistics-on-action.png)
+![Show Statistics On Action](/assets/library/javafx-tutorial/part6/show-statistics-on-action.png)
 
 Eclipse로 가서 프로젝트를 새로고침한 후 **테스트 하세요**.
 
@@ -268,7 +268,7 @@ Eclipse로 가서 프로젝트를 새로고침한 후 **테스트 하세요**.
 
 ### 다음 할 일은?
 
-마지막 [튜토리얼 7부](/library/javafx-8-tutorial/kr/part7/)에서는 마침내 우리 애플리케이션을 배포할 겁니다 (즉 패키징과 전달)
+마지막 [튜토리얼 7부](/library/javafx-tutorial/kr/part7/)에서는 마침내 우리 애플리케이션을 배포할 겁니다 (즉 패키징과 전달)
 
 
 ##### 흥미로운 자료들

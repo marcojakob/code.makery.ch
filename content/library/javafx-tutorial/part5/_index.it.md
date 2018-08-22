@@ -3,10 +3,10 @@ layout: article
 title: "JavaFX 8 Tutorial - Part 5: Storing Data as XML"
 date: 2014-04-25 01:00
 updated: 2015-11-12
-slug: javafx-8-tutorial/it/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-it-part5.md
+slug: javafx-tutorial/it/part5
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-it-part5.md
 description: "Save data as XML with JAXB. Learn how to use the JavaFX FileChooser and the JavaFX Menu."
-image: /assets/library/javafx-8-tutorial/part5/addressapp-part5.png
+image: /assets/library/javafx-tutorial/part5/addressapp-part5.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "Articoli in questa serie"
   body:
   - text: "Introduzione"
-    link: /library/javafx-8-tutorial/it/
+    link: /library/javafx-tutorial/it/
     paging: Intro
   - text: "Parte 1: Scene Builder"
-    link: /library/javafx-8-tutorial/it/part1/
+    link: /library/javafx-tutorial/it/part1/
     paging: 1
   - text: "Parte 2: Model and TableView"
-    link: /library/javafx-8-tutorial/it/part2/
+    link: /library/javafx-tutorial/it/part2/
     paging: 2
   - text: "Parte 3: Interazione con l'utente"
-    link: /library/javafx-8-tutorial/it/part3/
+    link: /library/javafx-tutorial/it/part3/
     paging: 3
   - text: "Parte 4: CSS Styling"
-    link: /library/javafx-8-tutorial/it/part4/
+    link: /library/javafx-tutorial/it/part4/
     paging: 4
   - text: "Parte 5: Conservazione dati come XML"
-    link: /library/javafx-8-tutorial/it/part5/
+    link: /library/javafx-tutorial/it/part5/
     paging: 5
     active: true
   - text: "Parte 6: Grafico delle statistiche"
-    link: /library/javafx-8-tutorial/it/part6/
+    link: /library/javafx-tutorial/it/part6/
     paging: 6
   - text: "Parte 7: Deployment"
-    link: /library/javafx-8-tutorial/it/part7/
+    link: /library/javafx-tutorial/it/part7/
     paging: 7
 - header: "Download Sources"
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: Languages
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part5
   active: it
 ---
 
-![Screenshot AddressApp Part 5](/assets/library/javafx-8-tutorial/part5/addressapp-part5.png)
+![Screenshot AddressApp Part 5](/assets/library/javafx-tutorial/part5/addressapp-part5.png)
 
 
 ## Argomenti nella parte 5
@@ -286,7 +286,7 @@ In our `RootLayout.fxml` there is already a menu, but we haven't used it yet. Be
 
 Open the `RootLayout.fxml` file in Scene Builder and drag the necessary menu items from the *library* group to the `MenuBar` bar in the *hierarchy* group. Create a **New**, **Open...**, **Save**, **Save As...**, and **Exit** menu item.
 
-![Add Menu Items](/assets/library/javafx-8-tutorial/part5/add-menu-items.png)
+![Add Menu Items](/assets/library/javafx-tutorial/part5/add-menu-items.png)
 
 Hint: Using the *Accelerator* setting under the *Properties* group you can set shortcut keys to menu items.
 
@@ -435,7 +435,7 @@ Se l'utente chiude il dialog senza aver scelto un file, viene ritornato il valor
 1. Apri `RootLayout.fxml` in Scene Builder. Nel gruppo *Controller* seleziona `RootLayoutController` come controllore della classe.
 
 2. Torna al gruppo *Hierarchy* e seleziona una item del menu. Nel gruppo *Code* sotto **On Action** dovresti vedere una scelta di tutti i metodi disponibili nel controllore. Scegli il corrispondente metodo per ogni item del monu.
-![Menu Actions](/assets/library/javafx-8-tutorial/part5/menu-actions.png)
+![Menu Actions](/assets/library/javafx-tutorial/part5/menu-actions.png)
 
 3. Ripeti i passi per ogni item del menu.
 
@@ -549,7 +549,7 @@ Guardiamo aadesso come funziona il meccanismo:
 
 ### Qual'è il prossimo?
 
-Nella [parte 6 del tutorial](/library/javafx-8-tutorial/it/part6/) aggiungeremo un grafico per la statistica del compleanno.
+Nella [parte 6 del tutorial](/library/javafx-tutorial/it/part6/) aggiungeremo un grafico per la statistica del compleanno.
 
 
 ##### Alcuni articoli che potresti trovare interessanti

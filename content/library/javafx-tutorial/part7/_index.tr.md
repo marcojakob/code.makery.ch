@@ -3,11 +3,11 @@ layout: article
 title: "JavaFX 8 Tutorial - Part 7: Deployment"
 date: 2014-05-10
 updated: 2015-05-16
-slug: javafx-8-tutorial/tr/part7
-canonical: /library/javafx-8-tutorial/part7/
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-tr-part7.md
+slug: javafx-tutorial/tr/part7
+canonical: /library/javafx-tutorial/part7/
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-tr-part7.md
 description: "How to deploy a JavaFX application as native package. Create an installer for Windows, MacOS, or Linux."
-image: /assets/library/javafx-8-tutorial/part7/addressapp-macos.png
+image: /assets/library/javafx-tutorial/part7/addressapp-macos.png
 published: true
 prettify: true
 comments: true
@@ -15,28 +15,28 @@ sidebars:
 - header: "Articles in this Series"
   body:
   - text: "Introduction"
-    link: /library/javafx-8-tutorial/tr/
+    link: /library/javafx-tutorial/tr/
     paging: Intro
   - text: "Part 1: Scene Builder"
-    link: /library/javafx-8-tutorial/tr/part1/
+    link: /library/javafx-tutorial/tr/part1/
     paging: 1
   - text: "Part 2: Model and TableView"
-    link: /library/javafx-8-tutorial/tr/part2/
+    link: /library/javafx-tutorial/tr/part2/
     paging: 2
   - text: "Part 3: Interacting with the User"
-    link: /library/javafx-8-tutorial/tr/part3/
+    link: /library/javafx-tutorial/tr/part3/
     paging: 3
   - text: "Part 4: CSS Styling"
-    link: /library/javafx-8-tutorial/tr/part4/
+    link: /library/javafx-tutorial/tr/part4/
     paging: 4
   - text: "Part 5: Storing Data as XML"
-    link: /library/javafx-8-tutorial/tr/part5/
+    link: /library/javafx-tutorial/tr/part5/
     paging: 5
   - text: "Part 6: Statistics Chart"
-    link: /library/javafx-8-tutorial/tr/part6/
+    link: /library/javafx-tutorial/tr/part6/
     paging: 6
   - text: "Part 7: Deployment"
-    link: /library/javafx-8-tutorial/tr/part7/
+    link: /library/javafx-tutorial/tr/part7/
     paging: 7
     active: true
 - header: "Download Sources"
@@ -47,7 +47,7 @@ sidebars:
 languages: 
   header: Languages
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part7
   active: tr
 ---
@@ -56,7 +56,7 @@ languages:
   <i class="fa fa-language"></i> This page needs a Turkish translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
 </div>
 
-![Screenshot AddressApp Part 7](/assets/library/javafx-8-tutorial/part7/addressapp-part7.png)
+![Screenshot AddressApp Part 7](/assets/library/javafx-tutorial/part7/addressapp-part7.png)
 
 I thought I'd write one last part of this tutorial series to show how to deploy (that means package and publish) the AddressApp.
 
@@ -91,7 +91,7 @@ In this post I will show how to create a **Native Package** with Eclipse and the
 
 The goal is to create a self-contained application in a single folder on the user's computer. Here is how it will look like for our AddressApp (on Windows):
 
-![AddressApp Native Package](/assets/library/javafx-8-tutorial/part7/native-package.png)
+![AddressApp Native Package](/assets/library/javafx-tutorial/part7/native-package.png)
 
 The `app` folder contains our application data and the `runtime` folder contains the platform-specific Java runtime.
 
@@ -110,12 +110,12 @@ The file `build.fxbuild` is used by e(fx)clipse to generate a file that will be 
 1. Open `build.fxbuild` from your project root.
 
 2. Fill out all the fields containing a star. *For MacOS: Do not use spaces in Application title as this seems to cause a problem.*    
-![fxbuild settings](/assets/library/javafx-8-tutorial/part7/fxbuild-settings.png)
+![fxbuild settings](/assets/library/javafx-tutorial/part7/fxbuild-settings.png)
 
 3. As **Packaging Format** choose `exe` for Windows, `dmg` for MacOS, or `rpm` for Linux.
 
 4. Click on the link `Generate ant build.xml only` (found on the right side).   
-![generate ant build](/assets/library/javafx-8-tutorial/part7/generate-ant-build.png)
+![generate ant build](/assets/library/javafx-tutorial/part7/generate-ant-build.png)
 
 5. Verify that a new `build` folder and a file `build.xml` is created.
 
@@ -124,17 +124,17 @@ The file `build.fxbuild` is used by e(fx)clipse to generate a file that will be 
 
 We would like to have some nice icons for our installer:
 
-* [AddressApp.ico](/assets/library/javafx-8-tutorial/part7/AddressApp.ico) for the installer file icon
-* [AddressApp-setup-icon.bmp](/assets/library/javafx-8-tutorial/part7/AddressApp-setup-icon.bmp) for the installer splash screen icon
-* [AddressApp.icns](/assets/library/javafx-8-tutorial/part7/AddressApp.icns) for the mac installer icon
-* [AddressApp-volume.icns](/assets/library/javafx-8-tutorial/part7/AddressApp-volume.icns) for the mac desktop icon
+* [AddressApp.ico](/assets/library/javafx-tutorial/part7/AddressApp.ico) for the installer file icon
+* [AddressApp-setup-icon.bmp](/assets/library/javafx-tutorial/part7/AddressApp-setup-icon.bmp) for the installer splash screen icon
+* [AddressApp.icns](/assets/library/javafx-tutorial/part7/AddressApp.icns) for the mac installer icon
+* [AddressApp-volume.icns](/assets/library/javafx-tutorial/part7/AddressApp-volume.icns) for the mac desktop icon
 
 
 1. Create the following subfolders in the `build` folder:
   * `build/package/windows` (only used for windows)
   * `build/package/macosx` (only used for macos)
 2. Copy the corresponding icons from above into those subfolders. It should look something like this now:   
-![Installer Icons](/assets/library/javafx-8-tutorial/part7/installer-icons.png)
+![Installer Icons](/assets/library/javafx-tutorial/part7/installer-icons.png)
 3. **Important**: The name of the icons must exactly match the **Application title** you specified in `build.fxbuild`:
   * `YourAppTitle.ico`
   * `YourAppTitle-setup-icon.bmp`
@@ -149,7 +149,7 @@ Our `resources` folder isn't copied automatically. We must manually add it to th
 1. Create the following subfolder in the `build` folder:
   * `build/dist`   
 2. Copy the `resources` folder (containing our application images) into `build/dist`.    
-![Build Resources](/assets/library/javafx-8-tutorial/part7/build-resources.png)
+![Build Resources](/assets/library/javafx-tutorial/part7/build-resources.png)
 
 
 ### Step 4 - Edit build.xml to include icons
@@ -187,7 +187,7 @@ Find the block `fx:resources id="appRes"` further down in the file. Add one line
 </pre>
 
 
-Somehow, the version number doesn't get added in the `fx:application` which makes the installer always default to version `1.0` (as pointed out by a few people in the comments). To fix this, manually add the version number (thanks Marc for [finding out](http://code.makery.ch/library/javafx-8-tutorial/part7/#comment-1566725959)):
+Somehow, the version number doesn't get added in the `fx:application` which makes the installer always default to version `1.0` (as pointed out by a few people in the comments). To fix this, manually add the version number (thanks Marc for [finding out](http://code.makery.ch/library/javafx-tutorial/part7/#comment-1566725959)):
 
 ##### build.xml - add "version"
 
@@ -204,7 +204,7 @@ We could already run the `build.xml` as an Ant build at this point. This would g
 
 ### Step 5 (WINDOWS) - Windows exe Installer
 
-![AddressApp on Windows](/assets/library/javafx-8-tutorial/part7/addressapp-windows.png)
+![AddressApp on Windows](/assets/library/javafx-tutorial/part7/addressapp-windows.png)
 
 With **Inno Setup** we can create a Windows Installer of our application as a single `.exe` file. The resulting `.exe` will perform a user level installation (no admin permissions required). Also a shortcut will be created (menu or desktop).
 
@@ -217,7 +217,7 @@ With **Inno Setup** we can create a Windows Installer of our application as a si
 
 ### Step 5 (MAC) - MacOS dmg Installer
 
-![AddressApp on Mac](/assets/library/javafx-8-tutorial/part7/addressapp-macos.png)
+![AddressApp on Mac](/assets/library/javafx-tutorial/part7/addressapp-macos.png)
 
 To create a Mac OS `dmg` drag-and-drop installer, no additional tool is required.
 
@@ -233,13 +233,13 @@ For other packaging options (`msi` for windows, `rpm` for Linux) see this native
 
 As a final step, we run the `build.xml` with Ant: *Right-click* on the `build.xml` file | *Run As* | *Ant Build*.
 
-![Run Ant Build](/assets/library/javafx-8-tutorial/part7/run-ant-build.png)
+![Run Ant Build](/assets/library/javafx-tutorial/part7/run-ant-build.png)
 
 The building **will take a while** (about 1 minute on my computer).
 
 If everything was successful, you should find the native bundle in the folder `build/deploy/bundles`. This is how the windows version looks like:
 
-![Deployed File](/assets/library/javafx-8-tutorial/part7/deployed-file.png)
+![Deployed File](/assets/library/javafx-tutorial/part7/deployed-file.png)
 
 
 The file `AddressApp-1.0.exe` can be used as a single file to install the application. This installer will copy the bundle to `C:/Users/[yourname]/AppData/Local/AddressApp`.

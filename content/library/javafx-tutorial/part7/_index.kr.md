@@ -2,10 +2,10 @@
 layout: article
 title: "JavaFX 8 튜토리얼 - 7부: 배포"
 date: 2016-10-30
-slug: javafx-8-tutorial/kr/part7
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part7.md
+slug: javafx-tutorial/kr/part7
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-kr-part7.md
 description: "JavaFX 애플리케이션을 네이티브 패키지로 배포하는 방법을 배웁니다. Windows, MacOS, 또는 Linux 인스톨러를 만듭니다."
-image: /assets/library/javafx-8-tutorial/part7/addressapp-macos.png
+image: /assets/library/javafx-tutorial/part7/addressapp-macos.png
 published: true
 prettify: true
 comments: true
@@ -13,28 +13,28 @@ sidebars:
 - header: "차례"
   body:
   - text: "소개"
-    link: /library/javafx-8-tutorial/kr/
+    link: /library/javafx-tutorial/kr/
     paging: Intro
   - text: "1부: Scene Builder"
-    link: /library/javafx-8-tutorial/kr/part1/
+    link: /library/javafx-tutorial/kr/part1/
     paging: 1
   - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-8-tutorial/kr/part2/
+    link: /library/javafx-tutorial/kr/part2/
     paging: 2
   - text: "3부: 사용자 상호작용"
-    link: /library/javafx-8-tutorial/kr/part3/
+    link: /library/javafx-tutorial/kr/part3/
     paging: 3
   - text: "4부: CSS 꾸미기"
-    link: /library/javafx-8-tutorial/kr/part4/
+    link: /library/javafx-tutorial/kr/part4/
     paging: 4
   - text: "5부: XML로 데이터 저장하기"
-    link: /library/javafx-8-tutorial/kr/part5/
+    link: /library/javafx-tutorial/kr/part5/
     paging: 5
   - text: "6부: 통계 차트"
-    link: /library/javafx-8-tutorial/kr/part6/
+    link: /library/javafx-tutorial/kr/part6/
     paging: 6
   - text: "7부: 배포"
-    link: /library/javafx-8-tutorial/kr/part7/
+    link: /library/javafx-tutorial/kr/part7/
     paging: 7
     active: true
 - header: "소스 코드 다운로드"
@@ -45,12 +45,12 @@ sidebars:
 languages:
   header: 언어
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part7
   active: kr
 ---
 
-![Screenshot AddressApp Part 7](/assets/library/javafx-8-tutorial/part7/addressapp-part7.png)
+![Screenshot AddressApp Part 7](/assets/library/javafx-tutorial/part7/addressapp-part7.png)
 
 이 튜토리얼의 마지막 주제로 AddressApp을 배포 (패키지와 퍼블리싱)하는 방법을 보여드리려고 합니다.
 
@@ -85,7 +85,7 @@ Oracle이 제공하는 공식 JavaFX 문서에 모든 가능한 [JavaFX deployme
 
 사용자 컴퓨터에서 디렉토리 하나에 독립적인 애플리케이션을 만드는 것이 목표입니다. 우리 AddressApp은 다음과 같이 보일 겁니다 (Windows 기준):
 
-![AddressApp Native Package](/assets/library/javafx-8-tutorial/part7/native-package.png)
+![AddressApp Native Package](/assets/library/javafx-tutorial/part7/native-package.png)
 
 `app` 디렉토리에는 애플리케이션 데이터가 있고 `runtime`에는 플랫폼 특정 Java 런타임이 있습니다.
 
@@ -104,12 +104,12 @@ e(fx)clipse 플러그인이 네이티브 패키지와 인스톨러를 만드는 
 1. 여러분의 상위 프로젝트에서 `build.fxbuild`를 엽니다.
 
 2. 별이 표시된 모든 필드를 채웁니다. *MacOS 사용자는 Application title에 공백을 넣으면 문제가 발생합니다.*    
-![fxbuild settings](/assets/library/javafx-8-tutorial/part7/fxbuild-settings.png)
+![fxbuild settings](/assets/library/javafx-tutorial/part7/fxbuild-settings.png)
 
 3. **Packaging Format**을 Windows면 `exe`로, MacOS면 `dmg`로, 또는 리눅스면 `rpm`으로 고릅니다.
 
 4. `Generate ant build.xml only` 링크를 클릭합니다 (우측에 있습니다).   
-![generate ant build](/assets/library/javafx-8-tutorial/part7/generate-ant-build.png)
+![generate ant build](/assets/library/javafx-tutorial/part7/generate-ant-build.png)
 
 5. `build` 디렉토리와 `build.fxml` 파일이 만들어졌는지 확인합니다.
 
@@ -118,17 +118,17 @@ e(fx)clipse 플러그인이 네이티브 패키지와 인스톨러를 만드는 
 
 인스톨러에 멋진 아이콘을 넣고 싶습니다:
 
-* 인스톨러 파일 아이콘 [AddressApp.ico](/assets/library/javafx-8-tutorial/part7/AddressApp.ico)
-* 인스톨러 시작 화면 아이콘 [AddressApp-setup-icon.bmp](/assets/library/javafx-8-tutorial/part7/AddressApp-setup-icon.bmp)
-* Mac 인스톨러 아이콘 [AddressApp.icns](/assets/library/javafx-8-tutorial/part7/AddressApp.icns)
-* Mac 데스크탑 아이콘 [AddressApp-volume.icns](/assets/library/javafx-8-tutorial/part7/AddressApp-volume.icns)
+* 인스톨러 파일 아이콘 [AddressApp.ico](/assets/library/javafx-tutorial/part7/AddressApp.ico)
+* 인스톨러 시작 화면 아이콘 [AddressApp-setup-icon.bmp](/assets/library/javafx-tutorial/part7/AddressApp-setup-icon.bmp)
+* Mac 인스톨러 아이콘 [AddressApp.icns](/assets/library/javafx-tutorial/part7/AddressApp.icns)
+* Mac 데스크탑 아이콘 [AddressApp-volume.icns](/assets/library/javafx-tutorial/part7/AddressApp-volume.icns)
 
 
 1. `build` 디렉토리에 다음 하위 디렉토리를 만듭니다:
   * `build/package/windows` (Windows)
   * `build/package/macosx` (MacOS)
 2. 위 하위 디렉토리에 다음처럼 아이콘들을 복사합니다:
-![Installer Icons](/assets/library/javafx-8-tutorial/part7/installer-icons.png)
+![Installer Icons](/assets/library/javafx-tutorial/part7/installer-icons.png)
 3. **중요**: 아이콘 이름은 반드시 `build.fxbuild`에서 지정한 **Application title**과 정확히 일치해야 합니다:   
   * `YourAppTitle.ico`
   * `YourAppTitle-setup-icon.bmp`
@@ -143,7 +143,7 @@ e(fx)clipse 플러그인이 네이티브 패키지와 인스톨러를 만드는 
 1. `build` 디렉토리에 다음처럼 하위 디렉토리를 만듭니다:
   * `build/dist`
 2. `resources` 디렉토리를 `build/dist` 디렉토리 (애플리케이션 이미지 포함)에 복사합니다.    
-![Build Resources](/assets/library/javafx-8-tutorial/part7/build-resources.png)
+![Build Resources](/assets/library/javafx-tutorial/part7/build-resources.png)
 
 
 ### 4단계 - build.xml을 편집해서 아이콘 포함시키기
@@ -181,7 +181,7 @@ e(fx)clipse는 (아직?) `resources` 디렉토리 같은 추가 리소스와 인
 </pre>
 
 
-왜 그런지 모르겠지만, `fx:application`에서 버전 번호가 더해지지 않고 `1.0` (사람들이 댓글로 지적)으로 고정되어서 이 문제를 고치기 위해 수동으로 버전 숫자를 넣습니다 ([문제](http://code.makery.ch/library/javafx-8-tutorial/part7/#comment-1566725959)를 찾은 Marc에게 감사합니다):
+왜 그런지 모르겠지만, `fx:application`에서 버전 번호가 더해지지 않고 `1.0` (사람들이 댓글로 지적)으로 고정되어서 이 문제를 고치기 위해 수동으로 버전 숫자를 넣습니다 ([문제](http://code.makery.ch/library/javafx-tutorial/part7/#comment-1566725959)를 찾은 Marc에게 감사합니다):
 
 ##### build.xml - "version" 추가
 
@@ -198,7 +198,7 @@ e(fx)clipse는 (아직?) `resources` 디렉토리 같은 추가 리소스와 인
 
 ### 5단계 (WINDOWS) - Windows exe 인스톨러
 
-![AddressApp on Windows](/assets/library/javafx-8-tutorial/part7/addressapp-windows.png)
+![AddressApp on Windows](/assets/library/javafx-tutorial/part7/addressapp-windows.png)
 
 **Inno Setup**으로 우리 애플리케이션의 Windows 인스톨러를 `.exe` 파일로 만들 수 있습니다. `.exe`는 사용자 수준의 설치 (관리자 권한이 필요 없음)를 수행합니다. 또 단축아이콘도 만들어집니다 (메뉴 또는 바탕화면에).
 
@@ -211,7 +211,7 @@ e(fx)clipse는 (아직?) `resources` 디렉토리 같은 추가 리소스와 인
 
 ### 5단계 (MAC) - MacOS dmg 인스톨러
 
-![AddressApp on Mac](/assets/library/javafx-8-tutorial/part7/addressapp-macos.png)
+![AddressApp on Mac](/assets/library/javafx-tutorial/part7/addressapp-macos.png)
 
 Mac OS `dmg` 드래그 앤 드롭 인스톨러를 만드는 데에는 다른 툴이 필요 없습니다.
 
@@ -227,13 +227,13 @@ Mac OS `dmg` 드래그 앤 드롭 인스톨러를 만드는 데에는 다른 툴
 
 마지막 단계에서 우리는 Ant로 `build.xml`을 실행합니다: `build.xml` 파일에서 마우스 오른쪽 클릭 | *Run As* | *Ant Build*.
 
-![Run Ant Build](/assets/library/javafx-8-tutorial/part7/run-ant-build.png)
+![Run Ant Build](/assets/library/javafx-tutorial/part7/run-ant-build.png)
 
 빌드하는 데에는 **시간이 걸립니다** (제 컴퓨터에서는 1분 정도 걸립니다).
 
 만일 모든 작업이 성공했다면 `build/deploy/bundles` 디렉토리에서 네이티브 번들을 찾아야 합니다. Windows 버전은 다음처럼 보입니다:
 
-![Deployed File](/assets/library/javafx-8-tutorial/part7/deployed-file.png)
+![Deployed File](/assets/library/javafx-tutorial/part7/deployed-file.png)
 
 
 `AddressApp-1.0.exe` 파일이 애플리케이션을 설치하는 단일 파일로 사용될 수 있습니다. 이 인스톨러는 번들을 `C:/Users/[yourname]/AppData/Local/AddressApp`에 복사할 겁니다.

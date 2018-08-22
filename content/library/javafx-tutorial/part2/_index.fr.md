@@ -3,10 +3,10 @@ layout: article
 title: "Tutoriel JavaFX 8 - partie 2 : Modèle et TableView"
 date: 2014-04-23
 updated: 2015-04-15
-slug: javafx-8-tutorial/fr/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part2.md
+slug: javafx-tutorial/fr/part2
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-fr-part2.md
 description: "Utiliser un contrôle JavaFX TableView pour afficher une ObservableList de personnes."
-image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
+image: /assets/library/javafx-tutorial/part2/addressapp-part2.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "Les articles dans ce tutoriel"
   body:
   - text: "Introduction"
-    link: /library/javafx-8-tutorial/fr/
+    link: /library/javafx-tutorial/fr/
     paging: Intro
   - text: "Partie 1 : le Scene Builder"
-    link: /library/javafx-8-tutorial/fr/part1/
+    link: /library/javafx-tutorial/fr/part1/
     paging: 1
   - text: "Partie 2 : modèle et TableView"
-    link: /library/javafx-8-tutorial/fr/part2/
+    link: /library/javafx-tutorial/fr/part2/
     paging: 2
     active: true
   - text: "Partie 3 : interaction avec l'utilisateur"
-    link: /library/javafx-8-tutorial/fr/part3/
+    link: /library/javafx-tutorial/fr/part3/
     paging: 3
   - text: "Partie 4 : style CSS"
-    link: /library/javafx-8-tutorial/fr/part4/
+    link: /library/javafx-tutorial/fr/part4/
     paging: 4
   - text: "Partie 5 : stockage de données en XML"
-    link: /library/javafx-8-tutorial/fr/part5/
+    link: /library/javafx-tutorial/fr/part5/
     paging: 5
   - text: "Partie 6 : statistiques graphiques"
-    link: /library/javafx-8-tutorial/fr/part6/
+    link: /library/javafx-tutorial/fr/part6/
     paging: 6
   - text: "Partie 7 : déploiement"
-    link: /library/javafx-8-tutorial/fr/part7/
+    link: /library/javafx-tutorial/fr/part7/
     paging: 7
 - header: "Téléchargez les sources"
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: Langues
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part2
   active: fr
 ---
 
-![Screenshot AddressApp Part 2](/assets/library/javafx-8-tutorial/part2/addressapp-part2.png)
+![Screenshot AddressApp Part 2](/assets/library/javafx-tutorial/part2/addressapp-part2.png)
 
 
 ## Sujets dans la partie 2
@@ -401,15 +401,15 @@ Nous y sommes persque ! Mais une petite chose manque encore : pour l'instant nou
 1. Ouvrez `PersonOverview.fxml` avec le *SceneBuilder* ! 
 
 2. Ouvrez le groupe *Controller* sur le côté gauche et sélectionnez la classe `PersonOverviewController` comme **classe de contrôleur** !    
-![Set Controller Class](/assets/library/javafx-8-tutorial/part2/set-controller-class.png)
+![Set Controller Class](/assets/library/javafx-tutorial/part2/set-controller-class.png)
 
 3. Sélectionnez le `TableView` dans le groupe *Hierarchy* et sélectionnez dans le groupe *Code* le champ `personTable` en tant que **fx:id**.   
-![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png)
+![Set TableView fx:id](/assets/library/javafx-tutorial/part2/set-tableview-fx-id.png)
 
 4. Faites la même chose pour les colonnes et sélectionnez `firstNameColumn` et `lastNameColumn` dans le champ **fx:id** ! 
 
 5. Sélectionnez le champ **fx:id** correspondant pour **chaque étiquette** dans la deuxième colonne ! 
-![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png)
+![Set Label fx:id](/assets/library/javafx-tutorial/part2/set-label-fx-id.png)
 
 6. Important : retournez dans Eclipse, **raffraîchissez le projet complet** AddressApp (F5). C'est nécessaire car    Eclipse n'a pas connaissance des changements faits dans le Scene Builder ! 
 
@@ -427,7 +427,7 @@ Félicitations!
 
 ### Et après ?
 
-Dans la [Partie 3 du tutoriel](/library/javafx-8-tutorial/fr/part3/), nous allons ajouter plus de fonctionnalités telles que l'ajout, la suppression et la modification des personnes. 
+Dans la [Partie 3 du tutoriel](/library/javafx-tutorial/fr/part3/), nous allons ajouter plus de fonctionnalités telles que l'ajout, la suppression et la modification des personnes. 
 
 
 ##### Voici quelques articles qui pourraient aussi vous intéresser : 

@@ -3,10 +3,10 @@ layout: article
 title: "JavaFX 8 튜토리얼"
 date: 2016-10-30
 updated: 2016-11-03
-slug: javafx-8-tutorial/kr
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr.md
+slug: javafx-tutorial/kr
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-kr.md
 description: "이 튜토리얼은 7부에 걸쳐 JavaFX로 주소록 애플리케이션을 디자인, 프로그래밍, 배포하는 방법을 차근차근 설명합니다."
-image: /assets/library/javafx-8-tutorial/addressapp.png
+image: /assets/library/javafx-tutorial/addressapp.png
 published: true
 prettify: true
 comments: true
@@ -14,34 +14,34 @@ sidebars:
 - header: "차례"
   body:
   - text: "소개"
-    link: /library/javafx-8-tutorial/kr/
+    link: /library/javafx-tutorial/kr/
     paging: Intro
     active: true
   - text: "1부: Scene Builder"
-    link: /library/javafx-8-tutorial/kr/part1/
+    link: /library/javafx-tutorial/kr/part1/
     paging: 1
   - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-8-tutorial/kr/part2/
+    link: /library/javafx-tutorial/kr/part2/
     paging: 2
   - text: "3부: 사용자 상호작용"
-    link: /library/javafx-8-tutorial/kr/part3/
+    link: /library/javafx-tutorial/kr/part3/
     paging: 3
   - text: "4부: CSS 꾸미기"
-    link: /library/javafx-8-tutorial/kr/part4/
+    link: /library/javafx-tutorial/kr/part4/
     paging: 4
   - text: "5부: 데이터를 XML로 저장하기"
-    link: /library/javafx-8-tutorial/kr/part5/
+    link: /library/javafx-tutorial/kr/part5/
     paging: 5
   - text: "6부: 통계 차트"
-    link: /library/javafx-8-tutorial/kr/part6/
+    link: /library/javafx-tutorial/kr/part6/
     paging: 6
   - text: "7부: 배포"
-    link: /library/javafx-8-tutorial/kr/part7/
+    link: /library/javafx-tutorial/kr/part7/
     paging: 7
 languages:
   header: 언어
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part:
   active: kr
 ---
@@ -51,7 +51,7 @@ languages:
 
 이 튜토리얼은 여러분에게 주소록 애플리케이션을 디자인, 프로그래밍, 배포하는 방법을 차근차근 설명합니다. 완성된 형태는 다음과 같습니다:
 
-![Screenshot AddressApp](/assets/library/javafx-8-tutorial/addressapp.png)
+![Screenshot AddressApp](/assets/library/javafx-tutorial/addressapp.png)
 
 
 ## 배우는 내용
@@ -79,7 +79,7 @@ languages:
 * **많이 배우기 방식:** 이 프로젝트를 처음부터 만듭니다.
 * **빠른 방식:** 튜토리얼 소스 코드를 여러분의 IDE (기본적으로 Eclipse 프로젝트지만 NetBeans 같은 다른 IDE도 사용할 수 있습니다)에서 불러옵니다. 그 다음에는 튜토리얼을 따라 코드를 이해합니다.
 
-이제 즐겁게 공부하세요! [1부: Scene Builder](/library/javafx-8-tutorial/kr/part1/)부터 시작하세요.
+이제 즐겁게 공부하세요! [1부: Scene Builder](/library/javafx-tutorial/kr/part1/)부터 시작하세요.
 
 
 <div class="alert alert-success">

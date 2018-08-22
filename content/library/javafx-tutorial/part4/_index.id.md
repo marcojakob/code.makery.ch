@@ -3,10 +3,10 @@ layout: article
 title: "Tutorial JavaFX 8 - Bagian 4: Memberikan gaya dengan CSS"
 date: 2014-04-25
 updated: 2015-01-05
-slug: javafx-8-tutorial/id/part4
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-id-part4.md
+slug: javafx-tutorial/id/part4
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-id-part4.md
 description: "Di JavaFX anda bisa memberi gaya pada antarmuka pengguna menggunakan CSS. Jika juga akan memberikan ikon aplikasi pada tutorial ini."
-image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png
+image: /assets/library/javafx-tutorial/part4/addressapp-part4.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "Seri Artikel"
   body:
   - text: "Pengenalan"
-    link: /library/javafx-8-tutorial/id/
+    link: /library/javafx-tutorial/id/
     paging: Intro
   - text: "Bagian 1: Scene Builder"
-    link: /library/javafx-8-tutorial/id/part1/
+    link: /library/javafx-tutorial/id/part1/
     paging: 1
   - text: "Bagian 2: Model dan TableView"
-    link: /library/javafx-8-tutorial/id/part2/
+    link: /library/javafx-tutorial/id/part2/
     paging: 2
   - text: "Bagian 3: Berinteraksi dengan pengguna"
-    link: /library/javafx-8-tutorial/id/part3/
+    link: /library/javafx-tutorial/id/part3/
     paging: 3
   - text: "Bagian 4: Memberikan gaya dengan CSS"
-    link: /library/javafx-8-tutorial/id/part4/
+    link: /library/javafx-tutorial/id/part4/
     paging: 4
     active: true
   - text: "Bagian 5: Menyimpan data sebagai XML"
-    link: /library/javafx-8-tutorial/id/part5/
+    link: /library/javafx-tutorial/id/part5/
     paging: 5
   - text: "Bagian 6: Bagan Statistika"
-    link: /library/javafx-8-tutorial/id/part6/
+    link: /library/javafx-tutorial/id/part6/
     paging: 6
   - text: "Bagian 7: Penyebaran"
-    link: /library/javafx-8-tutorial/id/part7/
+    link: /library/javafx-tutorial/id/part7/
     paging: 7
 - header: "Unduh kode sumber"
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: Bahasa
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part4
   active: id
 ---
 
-![Tangkapan layar AddressApp bagian 4](/assets/library/javafx-8-tutorial/part4/addressapp-part4.png)
+![Tangkapan layar AddressApp bagian 4](/assets/library/javafx-tutorial/part4/addressapp-part4.png)
 
 
 ## Pembahasan di bagian 4
@@ -255,7 +255,7 @@ Kita sekarang perlu melampirkan CSS ke Scene. Kita dapat melakukan ini melalui k
 1. Buka berkas `RootLayout.fxml` di Scene Builder. 
 
 2. Pilih akar `BorderPane` di Hierarchy. Dibawah kelompok *Properties* tambah berkas `DarkTheme.css` file as stylesheet.   
-![DarkTheme untuk RootLayout](/assets/library/javafx-8-tutorial/part4/darktheme-rootlayout.png)
+![DarkTheme untuk RootLayout](/assets/library/javafx-tutorial/part4/darktheme-rootlayout.png)
 
 
 #### Lampirkan CSS ke PersonEditDialog.fxml
@@ -263,7 +263,7 @@ Kita sekarang perlu melampirkan CSS ke Scene. Kita dapat melakukan ini melalui k
 1. Buka berkas `PersonEditDialog.fxml` di Scene Builder. Pilih akar `AnchorPane` dan pilih `DarkTheme.css` in the kelompok *Properties* sebagai stylesheet.
 
 2. atar belakang masih berwarna putih, jadi tambah kelas gaya `background` ke akar `AnchorPane`.   
-![Menambah kelas gaya](/assets/library/javafx-8-tutorial/part4/darktheme-personeditdialog.png)
+![Menambah kelas gaya](/assets/library/javafx-tutorial/part4/darktheme-personeditdialog.png)
 
 3. Pilih tombol OK dan pilih *Default Button* di tampilan Properties. Ini akan merubah warnah dan membuat tombol baku ketika tombol *enter* ditekan oleh pengguna.
 
@@ -277,10 +277,10 @@ Kita sekarang perlu melampirkan CSS ke Scene. Kita dapat melakukan ini melalui k
 3. Anda mungkin perlu menyesuaian ukuran dari tombol sehingga semua teks ditampilkan.
 
 4. Pilih `AnchorPane` yang tepat didalam `SplitPane`.   
-![Background Style Select](/assets/library/javafx-8-tutorial/part4/background-style-select.png)   
+![Background Style Select](/assets/library/javafx-tutorial/part4/background-style-select.png)   
 
 5. Pada keompok *Properties* pilih `background` sebagai kelas gaya. Latarbelakang akan berwarna hitam.   
-![Background Style](/assets/library/javafx-8-tutorial/part4/background-style.png)
+![Background Style](/assets/library/javafx-tutorial/part4/background-style.png)
 
 
 #### Label dengan Gaya yang berbeda
@@ -288,10 +288,10 @@ Kita sekarang perlu melampirkan CSS ke Scene. Kita dapat melakukan ini melalui k
 Saat ini semua label pada sisi kanan memliki ukuran yang sama. Sudah ada beberapa gaya yang didefinisikan dalam berkas CSS bernama`.label-header` dan `.label-bright` kita akan gunakan ini sebagai gaya.
 
 1. Pilih label *Person Details* dan tambahkan `label-header` sebagai kelas gaya.   
-![Label Header Style](/assets/library/javafx-8-tutorial/part4/label-header-style.png)
+![Label Header Style](/assets/library/javafx-tutorial/part4/label-header-style.png)
 
 2. Untuk tiap label di sisi kanan kolom (dimana rinncian person ditampilkan) tambah kelas gaya `label-bright`.   
-![Label Bright Style](/assets/library/javafx-8-tutorial/part4/label-bright-style.png)
+![Label Bright Style](/assets/library/javafx-tutorial/part4/label-bright-style.png)
 
 
 *****
@@ -301,11 +301,11 @@ Saat ini semua label pada sisi kanan memliki ukuran yang sama. Sudah ada beberap
 
 Saat ini aplikasi kita hanya memiliki ikon baku di palang judul dan palang tugas:
 
-![Default Icon](/assets/library/javafx-8-tutorial/part4/default-app-icon.png)
+![Default Icon](/assets/library/javafx-tutorial/part4/default-app-icon.png)
 
 Akan lebih terlihat lebih baik jika memiliki ikon khusus:
 
-![Custom Icon](/assets/library/javafx-8-tutorial/part4/custom-app-icon.png)
+![Custom Icon](/assets/library/javafx-tutorial/part4/custom-app-icon.png)
 
 
 ### Berkas Ikon
@@ -314,7 +314,7 @@ Tempat yang memungkinkan untuk mendapatkan ikon2 ada di  [Icon Finder](http://ww
 
 Buat sebuah folder didalam proyek AddressApp bernama **resources** dan subfolder bernama **images**.Taruh ikon dalam images folder. Struktur folder anda akan terlihat seperti :
 
-![Custom Icon File](/assets/library/javafx-8-tutorial/part4/custom-icon-file.png)
+![Custom Icon File](/assets/library/javafx-tutorial/part4/custom-icon-file.png)
 
 
 ### Atur Ikon Ke Scene
@@ -349,7 +349,7 @@ Anda tentunya juga dapat menambah ikon pada stage dari  dialog pembaharuan perso
 
 ### Berikutnya?
 
-Didalam [Tutorial Bagian 5](/library/javafx-8-tutorial/id/part5/) kita akan menggunakan XML sebagai penyimpanan data.
+Didalam [Tutorial Bagian 5](/library/javafx-tutorial/id/part5/) kita akan menggunakan XML sebagai penyimpanan data.
 
 
 ##### Beberapa artikel menarik lainnya

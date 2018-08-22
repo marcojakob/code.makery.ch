@@ -3,11 +3,11 @@ layout: article
 title: "JavaFX 8 Tutorial - Part 2: Model and TableView"
 date: 2014-04-23
 updated: 2015-05-16
-slug: javafx-8-tutorial/tr/part2
-canonical: /library/javafx-8-tutorial/part2/
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-tr-part2.md
+slug: javafx-tutorial/tr/part2
+canonical: /library/javafx-tutorial/part2/
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-tr-part2.md
 description: "Use a JavaFX TableView to display an ObservableList of Persons."
-image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
+image: /assets/library/javafx-tutorial/part2/addressapp-part2.png
 published: true
 prettify: true
 comments: true
@@ -15,29 +15,29 @@ sidebars:
 - header: "Articles in this Series"
   body:
   - text: "Introduction"
-    link: /library/javafx-8-tutorial/tr/
+    link: /library/javafx-tutorial/tr/
     paging: Intro
   - text: "Part 1: Scene Builder"
-    link: /library/javafx-8-tutorial/tr/part1/
+    link: /library/javafx-tutorial/tr/part1/
     paging: 1
   - text: "Part 2: Model and TableView"
-    link: /library/javafx-8-tutorial/tr/part2/
+    link: /library/javafx-tutorial/tr/part2/
     paging: 2
     active: true
   - text: "Part 3: Interacting with the User"
-    link: /library/javafx-8-tutorial/tr/part3/
+    link: /library/javafx-tutorial/tr/part3/
     paging: 3
   - text: "Part 4: CSS Styling"
-    link: /library/javafx-8-tutorial/tr/part4/
+    link: /library/javafx-tutorial/tr/part4/
     paging: 4
   - text: "Part 5: Storing Data as XML"
-    link: /library/javafx-8-tutorial/tr/part5/
+    link: /library/javafx-tutorial/tr/part5/
     paging: 5
   - text: "Part 6: Statistics Chart"
-    link: /library/javafx-8-tutorial/tr/part6/
+    link: /library/javafx-tutorial/tr/part6/
     paging: 6
   - text: "Part 7: Deployment"
-    link: /library/javafx-8-tutorial/tr/part7/
+    link: /library/javafx-tutorial/tr/part7/
     paging: 7
 - header: "Download Sources"
   body:
@@ -47,7 +47,7 @@ sidebars:
 languages: 
   header: Languages
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part2
   active: tr
 ---
@@ -56,7 +56,7 @@ languages:
   <i class="fa fa-language"></i> This page needs a Turkish translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
 </div>
 
-![Screenshot AddressApp Part 2](/assets/library/javafx-8-tutorial/part2/addressapp-part2.png)
+![Screenshot AddressApp Part 2](/assets/library/javafx-tutorial/part2/addressapp-part2.png)
 
 
 ## Topics in Part 2
@@ -406,15 +406,15 @@ We're almost there! But one little thing is missing: We haven't told our `Person
 1. Open `PersonOverview.fxml` with the *SceneBuilder*.
 
 2. Open the *Controller* group on the left side and select the `PersonOverviewController` as **controller class**.   
-![Set Controller Class](/assets/library/javafx-8-tutorial/part2/set-controller-class.png)
+![Set Controller Class](/assets/library/javafx-tutorial/part2/set-controller-class.png)
 
 3. Select the `TableView` in the *Hierarchy* group and choose in the *Code* group the `personTable` field as **fx:id**.   
-![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png)
+![Set TableView fx:id](/assets/library/javafx-tutorial/part2/set-tableview-fx-id.png)
 
 4. Do the same for the columns and select `firstNameColumn` and `lastNameColumn` as **fx:id** respectively.
 
 5. For **each label** in the second column, choose the corresponding **fx:id**.   
-![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png)
+![Set Label fx:id](/assets/library/javafx-tutorial/part2/set-label-fx-id.png)
 
 6. Important: Go back to Eclipse and **refresh the entire AddressApp project** (F5). This is necessary because Eclipse sometimes doesn't know about changes that were made inside the Scene Builder.
 
@@ -432,7 +432,7 @@ Congratulations!
 
 ### What's Next?
 
-In [Tutorial Part 3](/library/javafx-8-tutorial/tr/part3/) we will add more functionality like adding, deleting and editing Persons.
+In [Tutorial Part 3](/library/javafx-tutorial/tr/part3/) we will add more functionality like adding, deleting and editing Persons.
 
 
 ##### Some other articles you might find interesting

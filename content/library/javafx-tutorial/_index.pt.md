@@ -3,10 +3,10 @@ layout: article
 title: "Tutorial JavaFX 8 (Português)"
 date: 2014-09-10
 updated: 2014-11-06
-slug: javafx-8-tutorial/pt
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt.md
+slug: javafx-tutorial/pt
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-pt.md
 description: "Este Tutorial em sete partes orienta a criação, programação e a implantação de um aplicativo de endereços usando JavaFX."
-image: /assets/library/javafx-8-tutorial/addressapp.png
+image: /assets/library/javafx-tutorial/addressapp.png
 published: true
 prettify: true
 comments: false
@@ -14,34 +14,34 @@ sidebars:
 - header: "Artigos nesta serie"
   body:
   - text: "Introdução"
-    link: /library/javafx-8-tutorial/pt/
+    link: /library/javafx-tutorial/pt/
     paging: Intro
     active: true
   - text: "Parte 1: Scene Builder"
-    link: /library/javafx-8-tutorial/pt/part1/
+    link: /library/javafx-tutorial/pt/part1/
     paging: 1
   - text: "Parte 2: Modelo e TableView"
-    link: /library/javafx-8-tutorial/pt/part2/
+    link: /library/javafx-tutorial/pt/part2/
     paging: 2
   - text: "Parte 3: Interagindo com o usuário"
-    link: /library/javafx-8-tutorial/pt/part3/
+    link: /library/javafx-tutorial/pt/part3/
     paging: 3
   - text: "Parte 4: Estilos usando CSS"
-    link: /library/javafx-8-tutorial/pt/part4/
+    link: /library/javafx-tutorial/pt/part4/
     paging: 4
   - text: "Parte 5: Salvando dados como XML"
-    link: /library/javafx-8-tutorial/pt/part5/
+    link: /library/javafx-tutorial/pt/part5/
     paging: 5
   - text: "Parte 6: Gráficos de Estatistica"
-    link: /library/javafx-8-tutorial/pt/part6/
+    link: /library/javafx-tutorial/pt/part6/
     paging: 6
   - text: "Parte 7: Implantação"
-    link: /library/javafx-8-tutorial/pt/part7/
+    link: /library/javafx-tutorial/pt/part7/
     paging: 7
 languages: 
   header: Linguagens
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: 
   active: pt
 ---
@@ -50,7 +50,7 @@ Em 2012 eu criei um tutorial muito detalhado [JavaFX 2 tutorial series](/library
 
 Este Tutorial em sete partes orienta a criação, programação e a implantação de um aplicativo de endereços. No fim nossa aplicação ficará como a da imagem:
 
-![Screenshot AddressApp](/assets/library/javafx-8-tutorial/addressapp.png)
+![Screenshot AddressApp](/assets/library/javafx-tutorial/addressapp.png)
 
 
 ## Oque você aprenderá
@@ -77,7 +77,7 @@ Há duas maneira de usar este tutorial:
 * **Aprendizagem:** Crie seu própio projeto JavaFX do zero.
 * **Modo rapido:** Importe o código fonte de uma parte do tutorial para sua IDE (é um projeto Eclipse, mas você pode usar outras IDEs como o NetBeans com algumas modificações). E depois ler o tutorial para entender o código.
 
-Espero que você se divirta! Começe com [Parte 1: Scene Builder](/library/javafx-8-tutorial/pt/part1/).
+Espero que você se divirta! Começe com [Parte 1: Scene Builder](/library/javafx-tutorial/pt/part1/).
 
 
 <div class="alert alert-success">

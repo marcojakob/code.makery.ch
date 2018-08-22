@@ -48,7 +48,7 @@ When used in schools, the entire `GreenfootKara` material will take about **16-2
 
 * *Option 1:* Develop a custom project with Greenfoot
 * *Option 2:* Start using a professional development environment like Eclipse, Netbeans, etc. (see [GameGridKara](/library/gamegrid-kara/))
-* *Option 3:* Start [GUI-programming with JavaFX](/library/javafx-8-tutorial/)
+* *Option 3:* Start [GUI-programming with JavaFX](/library/javafx-tutorial/)
 
 
 ***

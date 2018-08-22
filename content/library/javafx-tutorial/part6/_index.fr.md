@@ -3,10 +3,10 @@ layout: article
 title: "Tutoriel JavaFX 8 - partie 6 : statistiques graphiques"
 date: 2014-05-09
 updated: 2015-04-15
-slug: javafx-8-tutorial/fr/part6
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fr-part6.md
+slug: javafx-tutorial/fr/part6
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-fr-part6.md
 description: "Apprenez à créer un JavaFX Bar Chart."
-image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
+image: /assets/library/javafx-tutorial/part6/addressapp-part6.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "Les articles dans ce tutoriel"
   body:
   - text: "Introduction"
-    link: /library/javafx-8-tutorial/fr/
+    link: /library/javafx-tutorial/fr/
     paging: Intro
   - text: "Partie 1 : le Scene Builder"
-    link: /library/javafx-8-tutorial/fr/part1/
+    link: /library/javafx-tutorial/fr/part1/
     paging: 1
   - text: "Partie 2 : modèle et TableView"
-    link: /library/javafx-8-tutorial/fr/part2/
+    link: /library/javafx-tutorial/fr/part2/
     paging: 2
   - text: "Partie 3 : interaction avec l'utilisateur"
-    link: /library/javafx-8-tutorial/fr/part3/
+    link: /library/javafx-tutorial/fr/part3/
     paging: 3
   - text: "Partie 4 : style CSS"
-    link: /library/javafx-8-tutorial/fr/part4/
+    link: /library/javafx-tutorial/fr/part4/
     paging: 4
   - text: "Partie 5 : stockage de données en XML"
-    link: /library/javafx-8-tutorial/fr/part5/
+    link: /library/javafx-tutorial/fr/part5/
     paging: 5
   - text: "Partie 6 : statistiques graphiques"
-    link: /library/javafx-8-tutorial/fr/part6/
+    link: /library/javafx-tutorial/fr/part6/
     paging: 6
     active: true
   - text: "Partie 7 : déploiement"
-    link: /library/javafx-8-tutorial/fr/part7/
+    link: /library/javafx-tutorial/fr/part7/
     paging: 7
 - header: "Téléchargez les sources"
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: Langues
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part6
   active: fr
 ---
 
-![Screenshot AddressApp Part 6](/assets/library/javafx-8-tutorial/part6/addressapp-part6.png)
+![Screenshot AddressApp Part 6](/assets/library/javafx-tutorial/part6/addressapp-part6.png)
 
 
 ## Sujet dans la partie 6
@@ -71,7 +71,7 @@ Nous allons utiliser un **Bar Chart** (histogramme) contenant une barre pour cha
 ## La vue statistiques FXML
 
 1. Nous commençons pas créer un fichier `BirthdayStatistics.fxml` à l'intérieur de notre package `ch.makery.address.view` (*Clique droit sur package | New | other... | New FXML Document*).
-![Birthday Statistics FXML](/assets/library/javafx-8-tutorial/part6/birthday-statistics-fxml.png)
+![Birthday Statistics FXML](/assets/library/javafx-tutorial/part6/birthday-statistics-fxml.png)
 
 2. Ouvrez le fichier `BirthdayStatistics.fxml` dans Scene Builder.
 
@@ -189,7 +189,7 @@ public class BirthdayStatisticsController {
 3. Sélectionnez le `BarChart` et choisissez `barChart` comme propriété fx:id (dans le groupe *Code*).
 
 4. Sélectionnez `CategoryAxis` et choisissez `xAxis` comme propriété fx:id.
-![Category Axis](/assets/library/javafx-8-tutorial/part6/category-axis.png)
+![Category Axis](/assets/library/javafx-tutorial/part6/category-axis.png)
 
 5. Vous pouvez ajouter un titre au `BarChart` (dans le groupe *Properties*) pour plus de style.
 
@@ -253,11 +253,11 @@ private void handleShowBirthdayStatistics() {
 
 Maintenant, ouvrez le fichier `RootLayout.fxml` avec Scene Builder. Créer un menu *Statistics* avec le `MenuItem` *Show Statistics*:
 
-![Show Statistics Menu](/assets/library/javafx-8-tutorial/part6/show-statistics-menu.png)
+![Show Statistics Menu](/assets/library/javafx-tutorial/part6/show-statistics-menu.png)
 
 Sélectionnez le `MenuItem` *Show Statistics* et choisissez `handleShowBirthdayStatistics` dans la propriété `On Action` (Dans le groupe *Code*)
 
-![Show Statistics On Action](/assets/library/javafx-8-tutorial/part6/show-statistics-on-action.png)
+![Show Statistics On Action](/assets/library/javafx-tutorial/part6/show-statistics-on-action.png)
 
 Allez sur Eclipse, rafraîchissez le projet et **testez le**.
 
@@ -271,7 +271,7 @@ Un bon endroit pour obtenir plus d'informations est le tutoriel officiel d'Oracl
 
 ### Et après?
 
-Dans le dernier tutoriel [Partie 7](/library/javafx-8-tutorial/fr/part7/) nous allons enfin déployer notre application (c'est à dire empaqueter et délivrer l'application à l'utilisateur).
+Dans le dernier tutoriel [Partie 7](/library/javafx-tutorial/fr/part7/) nous allons enfin déployer notre application (c'est à dire empaqueter et délivrer l'application à l'utilisateur).
 
 
 ##### Voici quelques articles qui pourraient aussi vous intéresser :

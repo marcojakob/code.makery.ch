@@ -2,10 +2,10 @@
 layout: article
 title: "Tutorial JavaFX 8 - Parte 4: Hojas de estilo CSS"
 date: 2014-09-17
-slug: javafx-8-tutorial/es/part4
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es-part4.md
+slug: javafx-tutorial/es/part4
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-es-part4.md
 description: "En JavaFX puedes dar estilo al interfaz de usuario utilizando CSS. También añadiremos un icono de aplicación en esta parte del tutorial"
-image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png
+image: /assets/library/javafx-tutorial/part4/addressapp-part4.png
 published: true
 prettify: true
 comments: true
@@ -13,29 +13,29 @@ sidebars:
 - header: "Artículos en esta serie"
   body:
   - text: "Introducción"
-    link: /library/javafx-8-tutorial/es/
+    link: /library/javafx-tutorial/es/
     paging: Intro
   - text: "Parte 1: Scene Builder"
-    link: /library/javafx-8-tutorial/es/part1/
+    link: /library/javafx-tutorial/es/part1/
     paging: 1
   - text: "Parte 2: Modelo y TableView"
-    link: /library/javafx-8-tutorial/es/part2/
+    link: /library/javafx-tutorial/es/part2/
     paging: 2
   - text: "Parte 3: Interacción con el usuario"
-    link: /library/javafx-8-tutorial/es/part3/
+    link: /library/javafx-tutorial/es/part3/
     paging: 3
   - text: "Parte 4: Hojas de estilo CSS"
-    link: /library/javafx-8-tutorial/es/part4/
+    link: /library/javafx-tutorial/es/part4/
     paging: 4
     active: true
   - text: "Parte 5: Persistencia de datos con XML"
-    link: /library/javafx-8-tutorial/es/part5/
+    link: /library/javafx-tutorial/es/part5/
     paging: 5
   - text: "Parte 6: Gráficos estadísticos"
-    link: /library/javafx-8-tutorial/es/part6/
+    link: /library/javafx-tutorial/es/part6/
     paging: 6
   - text: "Parte 7: Despliegue"
-    link: /library/javafx-8-tutorial/es/part7/
+    link: /library/javafx-tutorial/es/part7/
     paging: 7
 - header: "Código fuente"
   body:
@@ -45,12 +45,12 @@ sidebars:
 languages: 
   header: Lenguajes
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part4
   active: es
 ---
 
-![Screenshot AddressApp Part 4](/assets/library/javafx-8-tutorial/part4/addressapp-part4.png)
+![Screenshot AddressApp Part 4](/assets/library/javafx-tutorial/part4/addressapp-part4.png)
 
 
 ## Contenidos en Parte 4
@@ -256,7 +256,7 @@ A continuación necesitamos vincular el CSS a nuestra escena. Podemos hacer esto
 1. Abre el archivo `RootLayout.fxml` en Scene Builder. 
 
 2. Selecciona el `BorderPane` raíz en la sección *Hierarchy*. En la vista *Properties* añade el archivo `DarkTheme.css` como hoja de estilo (campo denominado `Stylesheets`).   
-![DarkTheme for RootLayout](/assets/library/javafx-8-tutorial/part4/darktheme-rootlayout.png)
+![DarkTheme for RootLayout](/assets/library/javafx-tutorial/part4/darktheme-rootlayout.png)
 
 
 #### Añade el CSS a PersonEditDialog.fxml
@@ -264,7 +264,7 @@ A continuación necesitamos vincular el CSS a nuestra escena. Podemos hacer esto
 1. Abre el archivo `PersonEditDialog.fxml` en Scene Builder. Selecciona el `AnchorPane` raíz e incluye `DarkTheme.css` como hoja de estilo en la sección *Properties*.
 
 2. El fondo todavía es blanco, hay que añadir la clase `background` al `AnchorPane` raíz.   
-![Add Style Class](/assets/library/javafx-8-tutorial/part4/darktheme-personeditdialog.png)
+![Add Style Class](/assets/library/javafx-tutorial/part4/darktheme-personeditdialog.png)
 
 3. Selecciona el botón OK y elige *Default Button* en la vista *Properties*. Eso cambiará su color y lo convertirá en el botón "por defecto", el que se ejecutará si el usuario aprieta la tecla *enter*.
 
@@ -278,10 +278,10 @@ A continuación necesitamos vincular el CSS a nuestra escena. Podemos hacer esto
 3. Posiblemente tengas que ajustar el tamaño de los botones para que se muestre todo el texto.
 
 4. Selecciona el panel `AnchorPane` de la derecha, dentro del `SplitPane`.   
-![Background Style Select](/assets/library/javafx-8-tutorial/part4/background-style-select.png)   
+![Background Style Select](/assets/library/javafx-tutorial/part4/background-style-select.png)   
 
 5. Ves a la vista *Properties* y elige `background` como clase de estilo. El fondo debería volverse negro.   
-![Background Style](/assets/library/javafx-8-tutorial/part4/background-style.png)
+![Background Style](/assets/library/javafx-tutorial/part4/background-style.png)
 
 
 #### Etiquetas con un estilo diferente
@@ -289,10 +289,10 @@ A continuación necesitamos vincular el CSS a nuestra escena. Podemos hacer esto
 En este momento, todas las etiquetas en el lado derecho tienen el mismo tamaño. Ya tenemos definidos en el CSS unos estilos denominados `.label-header` y `.label-bright` que vamos a usar para personalizar la apariencia de las etiquetas.
 
 1. Selecciona la etiqueta (`Label`) *Person Details* y añade `label-header` como clase de estilo.   
-![Label Header Style](/assets/library/javafx-8-tutorial/part4/label-header-style.png)
+![Label Header Style](/assets/library/javafx-tutorial/part4/label-header-style.png)
 
 2. A cada etiqueta en la columna de la derecha (donde se muestran los detalles de una persona), añade la clase de estilo `label-bright`.   
-![Label Bright Style](/assets/library/javafx-8-tutorial/part4/label-bright-style.png)
+![Label Bright Style](/assets/library/javafx-tutorial/part4/label-bright-style.png)
 
 
 *****
@@ -302,11 +302,11 @@ En este momento, todas las etiquetas en el lado derecho tienen el mismo tamaño.
 
 Ahora mismo nuestra aplicación utiliza el icono por defecto para la barra de título y la barra de tareas:
 
-![Default Icon](/assets/library/javafx-8-tutorial/part4/default-app-icon.png)
+![Default Icon](/assets/library/javafx-tutorial/part4/default-app-icon.png)
 
 Quedaría mucho mejor con un icono propio:
 
-![Custom Icon](/assets/library/javafx-8-tutorial/part4/custom-app-icon.png)
+![Custom Icon](/assets/library/javafx-tutorial/part4/custom-app-icon.png)
 
 
 ### El archivo de icono
@@ -315,7 +315,7 @@ Un posible sitio para obtener iconos gratuitos es [Icon Finder](http://www.iconf
 
 Crea una carpeta dentro de tu aplicación llamado **resources** y añádele una subcarpeta para almacenar imágenes, llámala **images**. Pon el icono que hayas elegido dentro de la carpeta de imágenes. La estructura de directorios de tu carpeta debe tener un aspecto similar a este:
 
-![Custom Icon File](/assets/library/javafx-8-tutorial/part4/custom-icon-file.png)
+![Custom Icon File](/assets/library/javafx-tutorial/part4/custom-icon-file.png)
 
 
 ### Establece el icono de la escena principal
@@ -350,7 +350,7 @@ También puedes añadir un icono a la escena que contiene la venta de edición d
 
 ### ¿Qué es lo siguiente?
 
-En [Tutorial Parte 5](/library/javafx-8-tutorial/es/part5/) añadiremos la capacidad de almacenar datos mediante XML.
+En [Tutorial Parte 5](/library/javafx-tutorial/es/part5/) añadiremos la capacidad de almacenar datos mediante XML.
 
 
 ##### Otros artículos que podrían resultarte de interés

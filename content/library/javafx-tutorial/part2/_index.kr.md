@@ -3,10 +3,10 @@ layout: article
 title: "JavaFX 8 튜토리얼 - 2부: Model 그리고 TableView"
 date: 2016-10-30
 updated: 2016-11-04
-slug: javafx-8-tutorial/kr/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part2.md
+slug: javafx-tutorial/kr/part2
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-kr-part2.md
 description: "JavaFX TableView를 사용해서 연락처의 ObservableList를 보여줍니다."
-image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
+image: /assets/library/javafx-tutorial/part2/addressapp-part2.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "차례"
   body:
   - text: "소개"
-    link: /library/javafx-8-tutorial/kr/
+    link: /library/javafx-tutorial/kr/
     paging: Intro
   - text: "1부: Scene Builder"
-    link: /library/javafx-8-tutorial/kr/part1/
+    link: /library/javafx-tutorial/kr/part1/
     paging: 1
   - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-8-tutorial/kr/part2/
+    link: /library/javafx-tutorial/kr/part2/
     paging: 2
     active: true
   - text: "3부: 사용자 상호작용"
-    link: /library/javafx-8-tutorial/kr/part3/
+    link: /library/javafx-tutorial/kr/part3/
     paging: 3
   - text: "4부: CSS 꾸미기"
-    link: /library/javafx-8-tutorial/kr/part4/
+    link: /library/javafx-tutorial/kr/part4/
     paging: 4
   - text: "5부: 데이터를 XML로 저장하기"
-    link: /library/javafx-8-tutorial/kr/part5/
+    link: /library/javafx-tutorial/kr/part5/
     paging: 5
   - text: "6부: 통계 차트"
-    link: /library/javafx-8-tutorial/kr/part6/
+    link: /library/javafx-tutorial/kr/part6/
     paging: 6
   - text: "7부: 배포"
-    link: /library/javafx-8-tutorial/kr/part7/
+    link: /library/javafx-tutorial/kr/part7/
     paging: 7
 - header: "소스 코드 다운로드"
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages:
   header: 언어
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part2
   active: kr
 ---
 
-![Screenshot AddressApp Part 2](/assets/library/javafx-8-tutorial/part2/addressapp-part2.png)
+![Screenshot AddressApp Part 2](/assets/library/javafx-tutorial/part2/addressapp-part2.png)
 
 
 ## 2부 주제
@@ -401,15 +401,15 @@ public void showPersonOverview() {
 1. *Scene Builder*로 `PersonOverview.fxml`을 엽니다.
 
 2. 왼쪽 패널에서 *Controller* 그룹을 열어서 **Controller class**를 `PersonOverviewController`로 선택합니다.   
-![Set Controller Class](/assets/library/javafx-8-tutorial/part2/set-controller-class.png)
+![Set Controller Class](/assets/library/javafx-tutorial/part2/set-controller-class.png)
 
 3. *Hierarchy* 그룹에서 `TableView`를 선택한 다음 *Code* 그룹에서 **fx:id** 값을 `personTable` 필드로 선택합니다.   
-![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png)
+![Set TableView fx:id](/assets/library/javafx-tutorial/part2/set-tableview-fx-id.png)
 
 4. TableView의 열도 마찬가지로 **fx:id** 값을 `firstNameColumn`과 `lastNameColumn`으로 각각 선택합니다.
 
 5. 두 번째 열의 **각 Label**도 마찬가지로 적절한 **fx:id** 값을 선택하세요.   
-![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png)
+![Set Label fx:id](/assets/library/javafx-tutorial/part2/set-label-fx-id.png)
 
 6. 중요합니다: Eclipse로 돌아가서 **주소록 프로젝트 전체를 새로고침** 하세요 (F5). 왜냐하면 Eclipse는 가끔 Scene Builder에서 일어난 변화를 모를 때가 있습니다.
 
@@ -427,7 +427,7 @@ public void showPersonOverview() {
 
 ### 다음 할 일은?
 
-[튜토리얼 3부](/library/javafx-8-tutorial/kr/part3/)에서는 연락처를 추가, 삭제 그리고 변경하는 기능을 추가할 겁니다.
+[튜토리얼 3부](/library/javafx-tutorial/kr/part3/)에서는 연락처를 추가, 삭제 그리고 변경하는 기능을 추가할 겁니다.
 
 
 ##### 흥미로울 수 있는 정보

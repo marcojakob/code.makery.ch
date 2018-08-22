@@ -4,9 +4,9 @@ title: "Підручник з JavaFX 8 (Українська)"
 date: 2014-04-19
 updated: 2015-06-25
 description: "Цей підручник, що складається з семи частин, введе вас у проектування, програмування та розгортання додатку Адресна книга за допомогою JavaFX"
-slug: javafx-8-tutorial/uk
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-uk.md
-image: /assets/library/javafx-8-tutorial/addressapp.png
+slug: javafx-tutorial/uk
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-uk.md
+image: /assets/library/javafx-tutorial/addressapp.png
 published: true
 prettify: true
 comments: true
@@ -14,34 +14,34 @@ sidebars:
 - header: "Статті цієї серії"
   body:
   - text: "Вступ"
-    link: /library/javafx-8-tutorial/uk/
+    link: /library/javafx-tutorial/uk/
     paging: Intro
     active: true
   - text: "Частина 1: Scene Builder"
-    link: /library/javafx-8-tutorial/uk/part1/
+    link: /library/javafx-tutorial/uk/part1/
     paging: 1
   - text: "Частина 2: Модель та компонент TableView"
-    link: /library/javafx-8-tutorial/uk/part2/
+    link: /library/javafx-tutorial/uk/part2/
     paging: 2
   - text: "Частина 3: Взаємодія з користувачем"
-    link: /library/javafx-8-tutorial/uk/part3/
+    link: /library/javafx-tutorial/uk/part3/
     paging: 3
   - text: "Частина 4: Стилізація за допомогою CSS"
-    link: /library/javafx-8-tutorial/uk/part4/
+    link: /library/javafx-tutorial/uk/part4/
     paging: 4
   - text: "Частина 5: Збереження даних в XML"
-    link: /library/javafx-8-tutorial/uk/part5/
+    link: /library/javafx-tutorial/uk/part5/
     paging: 5
   - text: "Частина 6: Статистична діаграма"
-    link: /library/javafx-8-tutorial/uk/part6/
+    link: /library/javafx-tutorial/uk/part6/
     paging: 6
   - text: "Частина 7: Розгортання"
-    link: /library/javafx-8-tutorial/uk/part7/
+    link: /library/javafx-tutorial/uk/part7/
     paging: 7
 languages: 
   header: Мови
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: 
   active: uk
 ---
@@ -50,7 +50,7 @@ languages:
 
 Цей підручник проведе вас крізь проектування, програмування та розгортання додатку з функціональністю адресної книги. Так буде виглядати наш додаток в кінці розробки:
 
-![Screenshot AddressApp](/assets/library/javafx-8-tutorial/addressapp.png "AdressApp")
+![Screenshot AddressApp](/assets/library/javafx-tutorial/addressapp.png "AdressApp")
 
 ## Ви навчитесь
 
@@ -76,7 +76,7 @@ languages:
 - **вчіть багато**: Створюйте свій JavaFX проект з нуля та поступово наповнюйте його класами.
 - **вчіть швидко**: Імпортуйте вихідний код для кожної частини підручника у ваше середовище розробки (проект розрахований на IDE Eclipse, проте ви можете використовувати інші середовища розробки за невеликих змін, наприклад NetBeans), а потім намагайтесь розібрати даний матеріал.
 
-Сподіваюсь, вам сподобається! Почнемо з [Частина 1: додаток Scene Builder](/library/javafx-8-tutorial/uk/part1/ "Part 1: Scene Builder.").
+Сподіваюсь, вам сподобається! Почнемо з [Частина 1: додаток Scene Builder](/library/javafx-tutorial/uk/part1/ "Part 1: Scene Builder.").
 
 <div class="alert alert-success">
   <strong><i class="fa fa-trophy"></i> Attribution:</strong> Ukrainian translations have been contributed by 

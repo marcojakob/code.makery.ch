@@ -3,10 +3,10 @@ layout: article
 title: "JavaFX 8 教程 - 第二部分：Model 和 TableView"
 date: 2014-10-08
 updated: 2015-01-15
-slug: javafx-8-tutorial/zh-cn/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part2.md
+slug: javafx-tutorial/zh-cn/part2
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-zh-cn-part2.md
 description: null
-image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
+image: /assets/library/javafx-tutorial/part2/addressapp-part2.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "系列文章"
   body:
   - text: "简介"
-    link: /library/javafx-8-tutorial/zh-cn/
+    link: /library/javafx-tutorial/zh-cn/
     paging: 简介
   - text: "第一部分：Scene Builder"
-    link: /library/javafx-8-tutorial/zh-cn/part1/
+    link: /library/javafx-tutorial/zh-cn/part1/
     paging: 1
   - text: "第二部分：Model 和 TableView"
-    link: /library/javafx-8-tutorial/zh-cn/part2/
+    link: /library/javafx-tutorial/zh-cn/part2/
     paging: 2
     active: true
   - text: "第三部分：与用户的交互"
-    link: /library/javafx-8-tutorial/zh-cn/part3/
+    link: /library/javafx-tutorial/zh-cn/part3/
     paging: 3
   - text: "第四部分：CSS 样式"
-    link: /library/javafx-8-tutorial/zh-cn/part4/
+    link: /library/javafx-tutorial/zh-cn/part4/
     paging: 4
   - text: "第五部分：将数据用 XML 格式存储"
-    link: /library/javafx-8-tutorial/zh-cn/part5/
+    link: /library/javafx-tutorial/zh-cn/part5/
     paging: 5
   - text: "第六部分：统计图"
-    link: /library/javafx-8-tutorial/zh-cn/part6/
+    link: /library/javafx-tutorial/zh-cn/part6/
     paging: 6
   - text: "第七部分：部署"
-    link: /library/javafx-8-tutorial/zh-cn/part7/
+    link: /library/javafx-tutorial/zh-cn/part7/
     paging: 7
 - header: "下载源代码"
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: 语言
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part2
   active: zh-cn
 ---
 
-![Screenshot AddressApp Part 2](/assets/library/javafx-8-tutorial/part2/addressapp-part2.png)
+![Screenshot AddressApp Part 2](/assets/library/javafx-tutorial/part2/addressapp-part2.png)
 
 
 ## 第二部分的主题
@@ -388,15 +388,15 @@ public void showPersonOverview() {
 1. 使用*SceneBuilder* 打开 `PersonOverview.fxml`.
 
 2. 打开左边的 *Controller* 组选择`PersonOverviewController` 作为 **controller class**.   
-![Set Controller Class(设置控制器类)](/assets/library/javafx-8-tutorial/part2/set-controller-class.png)
+![Set Controller Class(设置控制器类)](/assets/library/javafx-tutorial/part2/set-controller-class.png)
 
 3. 在 *Hierarchy* 组选择`TableView` 并选择 *Code* 组将 `personTable` 作为 **fx:id**.   
-![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png)
+![Set TableView fx:id](/assets/library/javafx-tutorial/part2/set-tableview-fx-id.png)
 
 4. 对列做相同的事并且将 `firstNameColumn` and `lastNameColumn`分别作为 **fx:id** .
 
 5. 对在第二列的 **each label** , 选择对应的 **fx:id**.   
-![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png)
+![Set Label fx:id](/assets/library/javafx-tutorial/part2/set-label-fx-id.png)
 
 6. 重要事项: 回到eclipse并且 **refresh the entire AddressApp project** (F5). 这是必要的因为有时候eclipse并不知道在Scene Builder中作出的改变.
 
@@ -412,7 +412,7 @@ public void showPersonOverview() {
 
 ### 接下去做什么?
 
-在 [Tutorial Part 3](/library/javafx-8-tutorial/zh-cn/part3/) 我们将加入增加,删除和编辑人员的功能.
+在 [Tutorial Part 3](/library/javafx-tutorial/zh-cn/part3/) 我们将加入增加,删除和编辑人员的功能.
 
 
 ##### 一些你可能感兴趣的其他文章

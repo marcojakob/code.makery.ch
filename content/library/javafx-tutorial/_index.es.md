@@ -2,10 +2,10 @@
 layout: article
 title: "Tutorial JavaFX 8 (Español)"
 date: 2014-09-17
-slug: javafx-8-tutorial/es
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-es.md
+slug: javafx-tutorial/es
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-es.md
 description: "Este tutorial en siete partes describe el diseño, programación y publicación de una aplicación de contactos con JavaFX."
-image: /assets/library/javafx-8-tutorial/addressapp.png
+image: /assets/library/javafx-tutorial/addressapp.png
 published: true
 prettify: true
 comments: false
@@ -13,34 +13,34 @@ sidebars:
 - header: "Artículos en esta serie"
   body:
   - text: "Introducción"
-    link: /library/javafx-8-tutorial/es/
+    link: /library/javafx-tutorial/es/
     paging: Intro
     active: true
   - text: "Parte 1: Scene Builder"
-    link: /library/javafx-8-tutorial/es/part1/
+    link: /library/javafx-tutorial/es/part1/
     paging: 1
   - text: "Parte 2: Modelo y TableView"
-    link: /library/javafx-8-tutorial/es/part2/
+    link: /library/javafx-tutorial/es/part2/
     paging: 2
   - text: "Parte 3: Interacción con el usuario"
-    link: /library/javafx-8-tutorial/es/part3/
+    link: /library/javafx-tutorial/es/part3/
     paging: 3
   - text: "Parte 4: Hojas de estilo CSS"
-    link: /library/javafx-8-tutorial/es/part4/
+    link: /library/javafx-tutorial/es/part4/
     paging: 4
   - text: "Parte 5: Persistencia de datos con XML"
-    link: /library/javafx-8-tutorial/es/part5/
+    link: /library/javafx-tutorial/es/part5/
     paging: 5
   - text: "Parte 6: Gráficos estadísticos"
-    link: /library/javafx-8-tutorial/es/part6/
+    link: /library/javafx-tutorial/es/part6/
     paging: 6
   - text: "Parte 7: Despliegue"
-    link: /library/javafx-8-tutorial/es/part7/
+    link: /library/javafx-tutorial/es/part7/
     paging: 7
 languages: 
   header: Lenguajes
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: 
   active: es
 ---
@@ -49,7 +49,7 @@ JavaFX proporciona a los desarrolladores de Java una nueva plataforma gráfica. 
 
 El tutorial te guía a lo largo del diseño, programación y publicación de una aplicación de contactos (libreta de direcciones) mediante JavaFX. Este es el aspecto que tendrá la aplicación final:
 
-![Screenshot AddressApp](/assets/library/javafx-8-tutorial/addressapp.png)
+![Screenshot AddressApp](/assets/library/javafx-tutorial/addressapp.png)
 
 
 ## Lo que aprenderás
@@ -77,7 +77,7 @@ Hay dos formas de utilizarlo
 * **máximo-aprendizaje**: Crea tu propio proyecto JavaFX desde cero.
 * **máxima-rápidez**: Importa el código fuente de una parte del tutorial en tu entorno de desarrollo favorito (es un proyecto Eclipse, pero puedes usar otros entornos, como Netbeans, con ligeras modificaciones). Después revisa el tutorial para entender el código. Este enfoque también resulta útil si te quedas atascado en la creación de tu propio código.
 
-¡ Espero que te diviertas y aprendas mucho ! Empieza en  [Part 1: Scene Builder](/library/javafx-8-tutorial/es/part1/).
+¡ Espero que te diviertas y aprendas mucho ! Empieza en  [Part 1: Scene Builder](/library/javafx-tutorial/es/part1/).
 
 
 

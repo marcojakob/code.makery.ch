@@ -2,10 +2,10 @@
 layout: article
 title: "JavaFX 8 튜토리얼 - 4부: CSS 꾸미기"
 date: 2016-10-30
-slug: javafx-8-tutorial/kr/part4
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part4.md
+slug: javafx-tutorial/kr/part4
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-kr-part4.md
 description: "여러분은 JavaFX에서 CSS로 사용자 인터페이스를 꾸밀 수 있습니다. 우리는 또 튜토리얼 4부에서 애플리케이션 아이콘을 추가해 볼 겁니다."
-image: /assets/library/javafx-8-tutorial/part4/addressapp-part4.png
+image: /assets/library/javafx-tutorial/part4/addressapp-part4.png
 published: true
 prettify: true
 comments: true
@@ -13,29 +13,29 @@ sidebars:
 - header: "차례"
   body:
   - text: "소개"
-    link: /library/javafx-8-tutorial/kr/
+    link: /library/javafx-tutorial/kr/
     paging: Intro
   - text: "1부: Scene Builder"
-    link: /library/javafx-8-tutorial/kr/part1/
+    link: /library/javafx-tutorial/kr/part1/
     paging: 1
   - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-8-tutorial/kr/part2/
+    link: /library/javafx-tutorial/kr/part2/
     paging: 2
   - text: "3부: 사용자 상호작용"
-    link: /library/javafx-8-tutorial/kr/part3/
+    link: /library/javafx-tutorial/kr/part3/
     paging: 3
   - text: "4부: CSS 꾸미기"
-    link: /library/javafx-8-tutorial/kr/part4/
+    link: /library/javafx-tutorial/kr/part4/
     paging: 4
     active: true
   - text: "5부: XML로 데이터 저장하기"
-    link: /library/javafx-8-tutorial/kr/part5/
+    link: /library/javafx-tutorial/kr/part5/
     paging: 5
   - text: "6부: 통계 차트"
-    link: /library/javafx-8-tutorial/kr/part6/
+    link: /library/javafx-tutorial/kr/part6/
     paging: 6
   - text: "7부: 배포"
-    link: /library/javafx-8-tutorial/kr/part7/
+    link: /library/javafx-tutorial/kr/part7/
     paging: 7
 - header: "소스 코드 다운로드"
   body:
@@ -45,12 +45,12 @@ sidebars:
 languages:
   header: 언어
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part4
   active: kr
 ---
 
-![Screenshot AddressApp Part 4](/assets/library/javafx-8-tutorial/part4/addressapp-part4.png)
+![Screenshot AddressApp Part 4](/assets/library/javafx-tutorial/part4/addressapp-part4.png)
 
 
 ## 4부 주제
@@ -252,7 +252,7 @@ JavaFX 8의 디폴트 CSS 스타일은 **`modena.css`**라고 부르는 파일�
 1. Scene Builder로 `RootLayout.fxml` 파일을 엽니다.
 
 2. Hierarchy 그룹에서 상위 레이아웃인 `BorderPane`을 선택합니다. *Properties* 그룹 밑에서 스타일시트를 `DarkTheme.css`로 추가합니다.   
-![DarkTheme for RootLayout](/assets/library/javafx-8-tutorial/part4/darktheme-rootlayout.png)
+![DarkTheme for RootLayout](/assets/library/javafx-tutorial/part4/darktheme-rootlayout.png)
 
 
 #### PersonEditDialog.fxml에 CSS 추가하기
@@ -260,7 +260,7 @@ JavaFX 8의 디폴트 CSS 스타일은 **`modena.css`**라고 부르는 파일�
 1. Scene Builder로 `PersonEditDialog.fxml` 파일을 엽니다. 상위 레이아웃인 `AnchorPane`을 선택한 후 *Properties* 그룹의 Stylesheets를 `DarkTheme.css`로 고릅니다.
 
 2. 아직도 배경이 흰색이므로 `AnchorPane`에 Style Class인 `background`를 추가합니다.   
-![Add Style Class](/assets/library/javafx-8-tutorial/part4/darktheme-personeditdialog.png)
+![Add Style Class](/assets/library/javafx-tutorial/part4/darktheme-personeditdialog.png)
 
 3. OK 버튼을 선택한 후 Properties 그룹에서 *Default Button*을 고릅니다. 그러면 사용자가 키를 *누를 때* 색깔이 바뀌고 이를 디폴트 버튼으로 만들 겁니다.
 
@@ -274,10 +274,10 @@ JavaFX 8의 디폴트 CSS 스타일은 **`modena.css`**라고 부르는 파일�
 3. 버튼 크기를 조정하면 모든 텍스트가 표시될 겁니다.
 
 4. 오른쪽 `AnchorPane`을 선택합니다. 이는 `SplitPane` 안에 있습니다.   
-![Background Style Select](/assets/library/javafx-8-tutorial/part4/background-style-select.png)   
+![Background Style Select](/assets/library/javafx-tutorial/part4/background-style-select.png)   
 
 5. *Properties* 그룹에서 Style Class로 `background`를 선택합니다. 이제 배경이 검정색으로 바뀝니다.   
-![Background Style](/assets/library/javafx-8-tutorial/part4/background-style.png)
+![Background Style](/assets/library/javafx-tutorial/part4/background-style.png)
 
 
 #### 서로 다른 스타일의 라벨들
@@ -285,10 +285,10 @@ JavaFX 8의 디폴트 CSS 스타일은 **`modena.css`**라고 부르는 파일�
 이제 오른쪽에 있는 모든 라벨은 같은 크기로 되었습니다. CSS 파일에는 `.label-header`와 `.label-bright` 라는 스타일이 미리 정의되어 있는데 곧 이를 사용해 볼 겁니다.
 
 1. *Person Details* 라벨을 선택한 후 Style Class에 `label-header`를 추가합니다.   
-![Label Header Style](/assets/library/javafx-8-tutorial/part4/label-header-style.png)
+![Label Header Style](/assets/library/javafx-tutorial/part4/label-header-style.png)
 
 2. 오른쪽 열 (실제로 연락처 정보가 표시되는 열)의 각 라벨의 Style Class에 `label-bright`를 추가합니다.   
-![Label Bright Style](/assets/library/javafx-8-tutorial/part4/label-bright-style.png)
+![Label Bright Style](/assets/library/javafx-tutorial/part4/label-bright-style.png)
 
 
 *****
@@ -298,11 +298,11 @@ JavaFX 8의 디폴트 CSS 스타일은 **`modena.css`**라고 부르는 파일�
 
 현재 우리 애플리케이션의 타이틀바와 태스크바에는 디폴트 아이콘을 가지고 있습니다:
 
-![Default Icon](/assets/library/javafx-8-tutorial/part4/default-app-icon.png)
+![Default Icon](/assets/library/javafx-tutorial/part4/default-app-icon.png)
 
 하지만 커스텀 아이콘이 더 좋아 보입니다:
 
-![Custom Icon](/assets/library/javafx-8-tutorial/part4/custom-app-icon.png)
+![Custom Icon](/assets/library/javafx-tutorial/part4/custom-app-icon.png)
 
 
 ### 아이콘 파일
@@ -311,7 +311,7 @@ JavaFX 8의 디폴트 CSS 스타일은 **`modena.css`**라고 부르는 파일�
 
 여러분의 주소록 프로젝트 밑에 **resources** 디렉토리를 만들고 나서 이 아래에 **images** 라는 하위 디렉토리를 만듭니다 (일반적인 디렉토리). 디렉토리 구조는 다음과 같습니다:
 
-![Custom Icon File](/assets/library/javafx-8-tutorial/part4/custom-icon-file.png)
+![Custom Icon File](/assets/library/javafx-tutorial/part4/custom-icon-file.png)
 
 
 ### Scene에 아이콘 설정하기
@@ -346,7 +346,7 @@ public void start(Stage primaryStage) {
 
 ### 다음 할 일은?
 
-[튜토리얼 5부](/library/javafx-8-tutorial/kr/part5/)에서는 데이터를 유지하기 위해 XML 스토리지를 추가할 겁니다.
+[튜토리얼 5부](/library/javafx-tutorial/kr/part5/)에서는 데이터를 유지하기 위해 XML 스토리지를 추가할 겁니다.
 
 
 ##### 흥미로운 자료들

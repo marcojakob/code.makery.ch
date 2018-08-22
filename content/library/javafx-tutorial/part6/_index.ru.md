@@ -3,10 +3,10 @@ layout: article
 title: "Учебник по JavaFX 8 - Часть 6: Статистическая диаграмма"
 date: 2014-05-09
 updated: 2016-04-26
-slug: javafx-8-tutorial/ru/part6
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-ru-part6.md
+slug: javafx-tutorial/ru/part6
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-ru-part6.md
 description: "Учимся в JavaFX создавать столбцовую диаграмму."
-image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
+image: /assets/library/javafx-tutorial/part6/addressapp-part6.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "Статьи в этой серии"
   body:
   - text: "Введение"
-    link: /library/javafx-8-tutorial/ru/
+    link: /library/javafx-tutorial/ru/
     paging: Intro
   - text: "Часть 1: Scene Builder"
-    link: /library/javafx-8-tutorial/ru/part1/
+    link: /library/javafx-tutorial/ru/part1/
     paging: 1
   - text: "Часть 2: Модель и компонент TableView"
-    link: /library/javafx-8-tutorial/ru/part2/
+    link: /library/javafx-tutorial/ru/part2/
     paging: 2
   - text: "Часть 3: Взаимодействие с пользователем"
-    link: /library/javafx-8-tutorial/ru/part3/
+    link: /library/javafx-tutorial/ru/part3/
     paging: 3
   - text: "Часть 4: Стилизация с помощью CSS"
-    link: /library/javafx-8-tutorial/ru/part4/
+    link: /library/javafx-tutorial/ru/part4/
     paging: 4
   - text: "Часть 5: Хранение данных в XML"
-    link: /library/javafx-8-tutorial/ru/part5/
+    link: /library/javafx-tutorial/ru/part5/
     paging: 5
   - text: "Часть 6: Статистическая диаграмма"
-    link: /library/javafx-8-tutorial/ru/part6/
+    link: /library/javafx-tutorial/ru/part6/
     paging: 6
     active: true
   - text: "Часть 7: Развёртывание"
-    link: /library/javafx-8-tutorial/ru/part7/
+    link: /library/javafx-tutorial/ru/part7/
     paging: 7
 - header: Скачать исходники
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: Языки
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part6
   active: ru
 ---
 
-![Screenshot AddressApp Part 6](/assets/library/javafx-8-tutorial/part6/addressapp-part6.png)
+![Screenshot AddressApp Part 6](/assets/library/javafx-tutorial/part6/addressapp-part6.png)
 
 
 ## Часть 6: Содержание
@@ -71,7 +71,7 @@ languages:
 ## FXML-представление статистики
 
 1. Начните с создания внутри пакета `ch.makery.address.view` файла `BirthdayStatistics.fxml` *(правый клик на пакете | New | other... | New FXML Document)*.  
-![Birthday Statistics FXML](/assets/library/javafx-8-tutorial/part6/birthday-statistics-fxml.png)
+![Birthday Statistics FXML](/assets/library/javafx-tutorial/part6/birthday-statistics-fxml.png)
 
 2. Откройте файл `BirthdayStatistics.fxml` в приложении Scene Builder.
 
@@ -190,7 +190,7 @@ public class BirthdayStatisticsController {
 3. Выберите компонент `BarChart` и в свойстве *fx:id* установите значение `barChart`.
 
 4. Выберите `CategoryAxis` и в свойстве *fx:id* установите значение `xAxis`.
-![Category Axis](/assets/library/javafx-8-tutorial/part6/category-axis.png)
+![Category Axis](/assets/library/javafx-tutorial/part6/category-axis.png)
 
 5. Для будущей стилизации, во вкладке *Properties* вы можете добавить название своей диаграммы.
 
@@ -254,11 +254,11 @@ private void handleShowBirthdayStatistics() {
 
 Теперь в приложении *Scene Builder* откройте файл `RootLayout.fxml` и создайте меню *Statistics* с единственным пунктом меню *Show Statistics*:
 
-![Show Statistics Menu](/assets/library/javafx-8-tutorial/part6/show-statistics-menu.png)
+![Show Statistics Menu](/assets/library/javafx-tutorial/part6/show-statistics-menu.png)
 
 Выберите пункт меню *Show Statistics* и в качестве значения свойства `On Action` установите метод `handleShowBirthdayStatistics`.
 
-![Show Statistics On Action](/assets/library/javafx-8-tutorial/part6/show-statistics-on-action.png)
+![Show Statistics On Action](/assets/library/javafx-tutorial/part6/show-statistics-on-action.png)
 
 Перейдите в среду разработки *Eclipse*, обновите проект и протестируйте ваше приложение.
 
@@ -272,7 +272,7 @@ private void handleShowBirthdayStatistics() {
 
 ### Что дальше?
 
-В последней, [7-й части учебника](/library/javafx-8-tutorial/ru/part7/) мы наконец развернём наше приложение (то есть, упакуем и доставим приложение нашим пользователям).
+В последней, [7-й части учебника](/library/javafx-tutorial/ru/part7/) мы наконец развернём наше приложение (то есть, упакуем и доставим приложение нашим пользователям).
 
 
 ##### Вам могут быть интересны также некоторые другие статьи

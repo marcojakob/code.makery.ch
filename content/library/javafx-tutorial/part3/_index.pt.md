@@ -3,10 +3,10 @@ layout: article
 title: "JavaFX 8 Tutorial - Parte 3: Interagindo com o Usuário"
 date: 2014-04-24
 updated: 2014-11-08
-slug: javafx-8-tutorial/pt/part3
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt-part3.md
+slug: javafx-tutorial/pt/part3
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-pt-part3.md
 description: "Reagir às mudanças de seleção na TableView do JavaFX. Adicionar, editar e remover items da  tabela e validar entrada do usuário."
-image: /assets/library/javafx-8-tutorial/part3/addressapp-part3.png
+image: /assets/library/javafx-tutorial/part3/addressapp-part3.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "Artigos nesta serie"
   body:
   - text: "Introdução"
-    link: /library/javafx-8-tutorial/pt/
+    link: /library/javafx-tutorial/pt/
     paging: Intro
   - text: "Parte 1: Scene Builder"
-    link: /library/javafx-8-tutorial/pt/part1/
+    link: /library/javafx-tutorial/pt/part1/
     paging: 1
   - text: "Parte 2: Modelo e TableView"
-    link: /library/javafx-8-tutorial/pt/part2/
+    link: /library/javafx-tutorial/pt/part2/
     paging: 2
   - text: "Parte 3: Interagindo com o usuário"
-    link: /library/javafx-8-tutorial/pt/part3/
+    link: /library/javafx-tutorial/pt/part3/
     paging: 3
     active: true
   - text: "Parte 4: Estilos usando CSS"
-    link: /library/javafx-8-tutorial/pt/part4/
+    link: /library/javafx-tutorial/pt/part4/
     paging: 4
   - text: "Parte 5: Salvando dados como XML"
-    link: /library/javafx-8-tutorial/pt/part5/
+    link: /library/javafx-tutorial/pt/part5/
     paging: 5
   - text: "Parte 6: Gráficos de Estatistica"
-    link: /library/javafx-8-tutorial/pt/part6/
+    link: /library/javafx-tutorial/pt/part6/
     paging: 6
   - text: "Parte 7: Implantação"
-    link: /library/javafx-8-tutorial/pt/part7/
+    link: /library/javafx-tutorial/pt/part7/
     paging: 7
 - header: "Download de Códigos Fonte"
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: Linguagens
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part3
   active: pt
 ---
 
-![Screenshot AddressApp Part 3](/assets/library/javafx-8-tutorial/part3/addressapp-part3.png)
+![Screenshot AddressApp Part 3](/assets/library/javafx-tutorial/part3/addressapp-part3.png)
 
 
 ## Tópicos na Parte 3
@@ -230,7 +230,7 @@ Com `personTable.getSelectionModel...` nós obtemos a *selectedItemProperty* da 
 
 Tente **rodar sua aplicação** neste ponto. Verifique que quando você seleciona uma pessoa na tabela, detalhes saquela pessoa são mostrados à direita.
 
-Se algo não funcionar, você pode comprar sua classe `PersonOverviewController` com [PersonOverviewController.java](/assets/library/javafx-8-tutorial/part3/PersonOverviewController.java).
+Se algo não funcionar, você pode comprar sua classe `PersonOverviewController` com [PersonOverviewController.java](/assets/library/javafx-tutorial/part3/PersonOverviewController.java).
 
 
 *****
@@ -255,7 +255,7 @@ private void handleDeletePerson() {
 
 Agora, abra o arquivo `PersonOverview.fxml` no *SceneBuilder*. Selecione o botão *Delete*, abra o grupo *Code* e escolha `handleDeletePerson` no dropdown de **On Action**.
 
-![On Action](/assets/library/javafx-8-tutorial/part3/handle-delete.png)
+![On Action](/assets/library/javafx-tutorial/part3/handle-delete.png)
 
 
 ### Lidando com Erros
@@ -272,7 +272,7 @@ Nós adicionaremos uma janela de popup para informar o usuário. Você precisar�
 **Importante: O ControlsFX deve estar na versão `8.0.6_20` ou maior para trabalhar com o `JDK 8u20`, versões anteriores vão ter problemas de compatibilidade.**
 2. Crie uma subpasta **lib** no projeto e adicione o arquivo controlsfx-jar a esta pasta.
 3. Adcione a biblioteca ao **classpath** do seu projeto: No Eclipse *clique com o botão direito no arquivo* | *Build Path* | *Add to Build Path*. Agora o Eclipse sabe sobre a biblioteca.
-![ControlsFX Libaray](/assets/library/javafx-8-tutorial/part3/controlsfx-library.png)
+![ControlsFX Libaray](/assets/library/javafx-tutorial/part3/controlsfx-library.png)
 
 Com algumas mudanças feitas no método `handleDeletePerson()`, nós podemos mostrar uma janela simples de popup quando o usuário clicar no botão delete quando não houver uma pessoa selecionada na tabela:
 
@@ -318,12 +318,12 @@ As ações new (novo) e edit (editar)  são um pouco mais trabalhosas: Nós prec
 ### Desenhando o Dialog
 
 1. Crie um novo arquivo fxml chamado `PersonEditDialog.fxml` dentro do pacote *view*.   
-![Create Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog1.png)
+![Create Edit Dialog](/assets/library/javafx-tutorial/part3/person-edit-dialog1.png)
 
 2. Use um `GridPane`, `Label`s, `TextField`s e `Button`s para criar um Dialog como o seguinte:   
-![Edit Dialog](/assets/library/javafx-8-tutorial/part3/person-edit-dialog2.png)   
+![Edit Dialog](/assets/library/javafx-tutorial/part3/person-edit-dialog2.png)   
 
-*Se você não quiser fazer o trabalho, você pode baixar este [PersonEditDialog.fxml](/assets/library/javafx-8-tutorial/part3/PersonEditDialog.fxml).* 
+*Se você não quiser fazer o trabalho, você pode baixar este [PersonEditDialog.fxml](/assets/library/javafx-tutorial/part3/PersonEditDialog.fxml).* 
 
 
 ### Criar o Controller
@@ -616,7 +616,7 @@ Eu espero que os conceitos e estrutura desta aplicação vão levá-los a começ
 
 ### O Que Vem Depois?
 
-No [Tutorial Parte 4](/library/javafx-8-tutorial/pt/part4/) nós adicionaremos alguma estilização CSS.
+No [Tutorial Parte 4](/library/javafx-tutorial/pt/part4/) nós adicionaremos alguma estilização CSS.
 
 
 ##### Alguns outros artigos que você deve achar interessante (em inglês)

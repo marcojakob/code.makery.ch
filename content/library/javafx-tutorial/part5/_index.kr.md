@@ -2,10 +2,10 @@
 layout: article
 title: "JavaFX 8 튜토리얼 - 5부: XML로 데이터 저장하기"
 date: 2016-10-30
-slug: javafx-8-tutorial/kr/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-kr-part5.md
+slug: javafx-tutorial/kr/part5
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-kr-part5.md
 description: "JAXB를 이용해서 데이터를 XML로 저장합니다. JavaFX FileChooser와 JavaFX Menu 사용 방법을 배웁니다."
-image: /assets/library/javafx-8-tutorial/part5/addressapp-part5.png
+image: /assets/library/javafx-tutorial/part5/addressapp-part5.png
 published: true
 prettify: true
 comments: true
@@ -13,29 +13,29 @@ sidebars:
 - header: "차례"
   body:
   - text: "소개"
-    link: /library/javafx-8-tutorial/kr/
+    link: /library/javafx-tutorial/kr/
     paging: Intro
   - text: "1부: Scene Builder"
-    link: /library/javafx-8-tutorial/kr/part1/
+    link: /library/javafx-tutorial/kr/part1/
     paging: 1
   - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-8-tutorial/kr/part2/
+    link: /library/javafx-tutorial/kr/part2/
     paging: 2
   - text: "3부: 사용자 상호작용"
-    link: /library/javafx-8-tutorial/kr/part3/
+    link: /library/javafx-tutorial/kr/part3/
     paging: 3
   - text: "4부: CSS 꾸미기"
-    link: /library/javafx-8-tutorial/kr/part4/
+    link: /library/javafx-tutorial/kr/part4/
     paging: 4
   - text: "5부: XML로 데이터 저장하기"
-    link: /library/javafx-8-tutorial/kr/part5/
+    link: /library/javafx-tutorial/kr/part5/
     paging: 5
     active: true
   - text: "6부: 통계 차트"
-    link: /library/javafx-8-tutorial/kr/part6/
+    link: /library/javafx-tutorial/kr/part6/
     paging: 6
   - text: "7부: 배포"
-    link: /library/javafx-8-tutorial/kr/part7/
+    link: /library/javafx-tutorial/kr/part7/
     paging: 7
 - header: "소스 코드 다운로드"
   body:
@@ -45,12 +45,12 @@ sidebars:
 languages:
   header: 언어
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part5
   active: kr
 ---
 
-![Screenshot AddressApp Part 5](/assets/library/javafx-8-tutorial/part5/addressapp-part5.png)
+![Screenshot AddressApp Part 5](/assets/library/javafx-tutorial/part5/addressapp-part5.png)
 
 
 ## 5부 주제
@@ -281,7 +281,7 @@ public void savePersonDataToFile(File file) {
 
 Scene Builder로 `RootLayout.fxml` 파일을 열어서 *library* 그룹의 menu item을 *hierarchy* 그룹의 `MenuBar`에 추가합니다. **New**, **Open...**, **Save**, **Save As...**, 그리고 **Exit** 메뉴를 만드세요.
 
-![Add Menu Items](/assets/library/javafx-8-tutorial/part5/add-menu-items.png)
+![Add Menu Items](/assets/library/javafx-tutorial/part5/add-menu-items.png)
 
 힌트: *Properties* 그룹 아래 *Accelerator* 설정을 사용해서 메뉴 항목에 단축키를 설정할 수 있습니다.
 
@@ -429,7 +429,7 @@ public class RootLayoutController {
 1. Scene Builder로 `RootLayout.fxml`을 엽니다. *Controller* 그룹에서 Controller 클래스로 `RootLayoutController`를 선택합니다.
 
 2. *Hierarchy* 그룹으로 돌아가서 메뉴 아이템을 선택합니다. 여러분은 *Code* 그룹 아래 **On Action**에서 사용 가능한 모든 컨트롤러 메서드를 보게 될 겁니다. 메뉴 아이템별로 그에 상응하는 메서드를 고릅니다.   
-![Menu Actions](/assets/library/javafx-8-tutorial/part5/menu-actions.png)
+![Menu Actions](/assets/library/javafx-tutorial/part5/menu-actions.png)
 
 3. 모든 메뉴 아이템에 반복합니다.
 
@@ -542,7 +542,7 @@ public LocalDate getBirthday() {
 
 ### 다음 할 일은?
 
-[튜토리얼 6부](/library/javafx-8-tutorial/kr/part6/)에서는 생일 통계 차트를 추가할 겁니다.
+[튜토리얼 6부](/library/javafx-tutorial/kr/part6/)에서는 생일 통계 차트를 추가할 겁니다.
 
 
 ##### 흥미로운 자료들

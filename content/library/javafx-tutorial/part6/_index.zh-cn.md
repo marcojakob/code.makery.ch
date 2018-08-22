@@ -3,10 +3,10 @@ layout: article
 title: "JavaFX 8 教程 - 第六部分：统计图"
 date: 2014-10-08
 updated: 2015-01-16
-slug: javafx-8-tutorial/zh-cn/part6
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-zh-cn-part6.md
+slug: javafx-tutorial/zh-cn/part6
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-zh-cn-part6.md
 description: null
-image: /assets/library/javafx-8-tutorial/part6/addressapp-part6.png
+image: /assets/library/javafx-tutorial/part6/addressapp-part6.png
 published: true
 prettify: true
 comments: true
@@ -14,29 +14,29 @@ sidebars:
 - header: "系列文章"
   body:
   - text: "简介"
-    link: /library/javafx-8-tutorial/zh-cn/
+    link: /library/javafx-tutorial/zh-cn/
     paging: 简介
   - text: "第一部分：Scene Builder"
-    link: /library/javafx-8-tutorial/zh-cn/part1/
+    link: /library/javafx-tutorial/zh-cn/part1/
     paging: 1
   - text: "第二部分：Model 和 TableView"
-    link: /library/javafx-8-tutorial/zh-cn/part2/
+    link: /library/javafx-tutorial/zh-cn/part2/
     paging: 2
   - text: "第三部分：与用户的交互"
-    link: /library/javafx-8-tutorial/zh-cn/part3/
+    link: /library/javafx-tutorial/zh-cn/part3/
     paging: 3
   - text: "第四部分：CSS 样式"
-    link: /library/javafx-8-tutorial/zh-cn/part4/
+    link: /library/javafx-tutorial/zh-cn/part4/
     paging: 4
   - text: "第五部分：将数据用 XML 格式存储"
-    link: /library/javafx-8-tutorial/zh-cn/part5/
+    link: /library/javafx-tutorial/zh-cn/part5/
     paging: 5
   - text: "第六部分：统计图"
-    link: /library/javafx-8-tutorial/zh-cn/part6/
+    link: /library/javafx-tutorial/zh-cn/part6/
     paging: 6
     active: true
   - text: "第七部分：部署"
-    link: /library/javafx-8-tutorial/zh-cn/part7/
+    link: /library/javafx-tutorial/zh-cn/part7/
     paging: 7
 - header: "下载源代码"
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: 语言
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part6
   active: zh-cn
 ---
 
-![Screenshot AddressApp Part 6](/assets/library/javafx-8-tutorial/part6/addressapp-part6.png)
+![Screenshot AddressApp Part 6](/assets/library/javafx-tutorial/part6/addressapp-part6.png)
 
 
 ## 第6部分的主题
@@ -71,7 +71,7 @@ languages:
 ## 统计FXML视图
 
 1. 在`ch.makery.address.view`包中我们开始创建一个`BirthdayStatistics.fxml`（*右击包|New|other..|New FXML Document*）
-![生日统计FXML](/assets/library/javafx-8-tutorial/part6/birthday-statistics-fxml.png)
+![生日统计FXML](/assets/library/javafx-tutorial/part6/birthday-statistics-fxml.png)
 
 2. 在Scene Builder中打开`BirthdayStatistics.fxml`文件。
 
@@ -190,7 +190,7 @@ public class BirthdayStatisticsController {
 3. 选择`BarChart`，并且选择`barChar`作为fx:id属性（在*Code*组中）
 
 4. 选择`CategoryAxis`，并且选择`xAxis`作为fx:id属性。  
-![类别轴](/assets/library/javafx-8-tutorial/part6/category-axis.png)
+![类别轴](/assets/library/javafx-tutorial/part6/category-axis.png)
 
 5. 你可以添加一个标题给`BarChar`（在*Properties*组中）进一步修饰。
 
@@ -254,11 +254,11 @@ private void handleShowBirthdayStatistics() {
 
 现在，使用Scene Builder打开`RootLayout.fxml`文件。创建*Staticstic* `菜单`，带有一个*Show Statistcs* `MenuItem`:
 
-![Show Statistics菜单](/assets/library/javafx-8-tutorial/part6/show-statistics-menu.png)
+![Show Statistics菜单](/assets/library/javafx-tutorial/part6/show-statistics-menu.png)
 
 选择*Show Statistics* `MenuItem`，并且选择`handleShowBirthdayStatistics`作为`On Action`（在*Code*组中）。  
 
-![Show Statistics On Action](/assets/library/javafx-8-tutorial/part6/show-statistics-on-action.png)
+![Show Statistics On Action](/assets/library/javafx-tutorial/part6/show-statistics-on-action.png)
 
 进入到Eclipse，刷新项目，**测试它**。
 
@@ -272,7 +272,7 @@ private void handleShowBirthdayStatistics() {
 
 ### 下一步做什么？
 
-在最后的教程[第7部分](/library/javafx-8-tutorial/zh-cn/part7/) 中，我们将最后部署我们的应用（例如：打包并且发布应用到我们的用户）
+在最后的教程[第7部分](/library/javafx-tutorial/zh-cn/part7/) 中，我们将最后部署我们的应用（例如：打包并且发布应用到我们的用户）
 
 
 ##### 一些你可能感兴趣的其它文章

@@ -3,10 +3,10 @@ layout: article
 title: "Tutorial JavaFX 8 - Parte 2: Modelo e TableView"
 date: 2014-09-10
 updated: 2014-11-06
-slug: javafx-8-tutorial/pt/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-pt-part2.md
+slug: javafx-tutorial/pt/part2
+github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-pt-part2.md
 description: "Use uma TableView JavaFX para mostrar uma ObservableList de Persons."
-image: /assets/library/javafx-8-tutorial/part2/addressapp-part2.png
+image: /assets/library/javafx-tutorial/part2/addressapp-part2.png
 published: true
 prettify: true
 comments: false
@@ -14,29 +14,29 @@ sidebars:
 - header: "Artigos nesta serie"
   body:
   - text: "Introdução"
-    link: /library/javafx-8-tutorial/pt/
+    link: /library/javafx-tutorial/pt/
     paging: Intro
   - text: "Parte 1: Scene Builder"
-    link: /library/javafx-8-tutorial/pt/part1/
+    link: /library/javafx-tutorial/pt/part1/
     paging: 1
   - text: "Parte 2: Modelo e TableView"
-    link: /library/javafx-8-tutorial/pt/part2/
+    link: /library/javafx-tutorial/pt/part2/
     paging: 2
     active: true
   - text: "Parte 3: Interagindo com o usuário"
-    link: /library/javafx-8-tutorial/pt/part3/
+    link: /library/javafx-tutorial/pt/part3/
     paging: 3
   - text: "Parte 4: Estilos usando CSS"
-    link: /library/javafx-8-tutorial/pt/part4/
+    link: /library/javafx-tutorial/pt/part4/
     paging: 4
   - text: "Parte 5: Salvando dados como XML"
-    link: /library/javafx-8-tutorial/pt/part5/
+    link: /library/javafx-tutorial/pt/part5/
     paging: 5
   - text: "Parte 6: Gráficos de Estatistica"
-    link: /library/javafx-8-tutorial/pt/part6/
+    link: /library/javafx-tutorial/pt/part6/
     paging: 6
   - text: "Parte 7: Implantação"
-    link: /library/javafx-8-tutorial/pt/part7/
+    link: /library/javafx-tutorial/pt/part7/
     paging: 7
 - header: "Download de Códigos Fonte"
   body:
@@ -46,12 +46,12 @@ sidebars:
 languages: 
   header: Linguagens
   collection: library
-  item: javafx-8-tutorial
+  item: javafx-tutorial
   part: part2
   active: pt
 ---
 
-![Screenshot AddressApp Part 2](/assets/library/javafx-8-tutorial/part2/addressapp-part2.png)
+![Screenshot AddressApp Part 2](/assets/library/javafx-tutorial/part2/addressapp-part2.png)
 
 
 ## Tópicos na Parte 2
@@ -387,15 +387,15 @@ Nós estamos quase lá. Mas uma pequena coisa está faltando: Nós não contamos
 1. Abra `PersonOverview.fxml` com o *SceneBuilder*.
 
 2. Abra o grupo *Controller* no lado direito e selecione `PersonOverviewController` como **controller class**.   
-![Set Controller Class](/assets/library/javafx-8-tutorial/part2/set-controller-class.png)
+![Set Controller Class](/assets/library/javafx-tutorial/part2/set-controller-class.png)
 
 3. Selecione a `TableView` no grupo *Hierarchy* e escolha no grupo *Code* o campo `personTable` como **fx:id**.   
-![Set TableView fx:id](/assets/library/javafx-8-tutorial/part2/set-tableview-fx-id.png)
+![Set TableView fx:id](/assets/library/javafx-tutorial/part2/set-tableview-fx-id.png)
 
 4. Faça o mesmo para as colunas, selecione `firstNameColumn` e `lastNameColumn` como **fx:id** respectivamente.
 
 5. Para **cada label** nas segunda coluna, escolha o **fx:id** correspondente.   
-![Set Label fx:id](/assets/library/javafx-8-tutorial/part2/set-label-fx-id.png)
+![Set Label fx:id](/assets/library/javafx-tutorial/part2/set-label-fx-id.png)
 
 6. Importante: Volta ao Eclipse e **atualize (refresh) o projeto AddressApp inteiro project** (F5). Isso é necessário porque o Eclipse às vezes não sabe sobre mudanças que foram feitas dentro do Scene Builder.
 
@@ -411,7 +411,7 @@ Parabéns!
 
 ### O Que Vem Depois?
 
-No [Tutorial Parte 3](/library/javafx-8-tutorial/pt/part3/) nós adicionaremos mais funcionalidades como adicionar, deletar e editar Persons.
+No [Tutorial Parte 3](/library/javafx-tutorial/pt/part3/) nós adicionaremos mais funcionalidades como adicionar, deletar e editar Persons.
 
 
 ##### Alguns outros artigos que você deve achar interessante (em inglês)
