@@ -1,57 +1,25 @@
----
-layout: article
-title: "JavaFX 8 튜토리얼"
-date: 2016-10-30
-updated: 2016-11-03
-slug: javafx-tutorial/kr
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-kr.md
-description: "이 튜토리얼은 7부에 걸쳐 JavaFX로 주소록 애플리케이션을 디자인, 프로그래밍, 배포하는 방법을 차근차근 설명합니다."
-image: /assets/library/javafx-tutorial/addressapp.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "차례"
-  body:
-  - text: "소개"
-    link: /library/javafx-tutorial/kr/
-    paging: Intro
-    active: true
-  - text: "1부: Scene Builder"
-    link: /library/javafx-tutorial/kr/part1/
-    paging: 1
-  - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-tutorial/kr/part2/
-    paging: 2
-  - text: "3부: 사용자 상호작용"
-    link: /library/javafx-tutorial/kr/part3/
-    paging: 3
-  - text: "4부: CSS 꾸미기"
-    link: /library/javafx-tutorial/kr/part4/
-    paging: 4
-  - text: "5부: 데이터를 XML로 저장하기"
-    link: /library/javafx-tutorial/kr/part5/
-    paging: 5
-  - text: "6부: 통계 차트"
-    link: /library/javafx-tutorial/kr/part6/
-    paging: 6
-  - text: "7부: 배포"
-    link: /library/javafx-tutorial/kr/part7/
-    paging: 7
-languages:
-  header: 언어
-  collection: library
-  item: javafx-tutorial
-  part:
-  active: kr
----
-
++++
+title = "JavaFX 8 튜토리얼"
+date = 2016-10-30
+updated = 2016-11-03
+description = "이 튜토리얼은 7부에 걸쳐 JavaFX로 주소록 애플리케이션을 디자인, 프로그래밍, 배포하는 방법을 차근차근 설명합니다."
+image = "addressapp.png"
+published = true
+prettify = true
+comments = true
+commentsIdentifier = "/library/javafx-8-tutorial/kr/"
+aliases = [ 
+  "/library/javafx-8-tutorial/kr/" 
+]
+sidebarName = "소개"
+pagingName = "Intro"
++++
 
 2012년에 우리 학생들을 위해 [JavaFX 2 tutorial series](/library/javafx-2-tutorial/)를 매우 자세하게 썼습니다. 전 세계 사람들로부터 매우 긍정적인 피드백을 받았습니다. 그래서 저는 **JavaFX 2 튜토리얼을 JavaFX 8로 다시 쓰기로** 결정했습니다. 무엇이 다른지 궁금하면 [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)를 읽으세요.
 
 이 튜토리얼은 여러분에게 주소록 애플리케이션을 디자인, 프로그래밍, 배포하는 방법을 차근차근 설명합니다. 완성된 형태는 다음과 같습니다:
 
-![Screenshot AddressApp](/assets/library/javafx-tutorial/addressapp.png)
+![Screenshot AddressApp](addressapp.png)
 
 
 ## 배우는 내용
@@ -79,7 +47,7 @@ languages:
 * **많이 배우기 방식:** 이 프로젝트를 처음부터 만듭니다.
 * **빠른 방식:** 튜토리얼 소스 코드를 여러분의 IDE (기본적으로 Eclipse 프로젝트지만 NetBeans 같은 다른 IDE도 사용할 수 있습니다)에서 불러옵니다. 그 다음에는 튜토리얼을 따라 코드를 이해합니다.
 
-이제 즐겁게 공부하세요! [1부: Scene Builder](/library/javafx-tutorial/kr/part1/)부터 시작하세요.
+이제 즐겁게 공부하세요! [1부: Scene Builder](/kr/library/javafx-tutorial/part1/)부터 시작하세요.
 
 
 <div class="alert alert-success">

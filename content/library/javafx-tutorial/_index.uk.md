@@ -1,56 +1,24 @@
----
-layout: article
-title: "Підручник з JavaFX 8 (Українська)"
-date: 2014-04-19
-updated: 2015-06-25
-description: "Цей підручник, що складається з семи частин, введе вас у проектування, програмування та розгортання додатку Адресна книга за допомогою JavaFX"
-slug: javafx-tutorial/uk
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-uk.md
-image: /assets/library/javafx-tutorial/addressapp.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Статті цієї серії"
-  body:
-  - text: "Вступ"
-    link: /library/javafx-tutorial/uk/
-    paging: Intro
-    active: true
-  - text: "Частина 1: Scene Builder"
-    link: /library/javafx-tutorial/uk/part1/
-    paging: 1
-  - text: "Частина 2: Модель та компонент TableView"
-    link: /library/javafx-tutorial/uk/part2/
-    paging: 2
-  - text: "Частина 3: Взаємодія з користувачем"
-    link: /library/javafx-tutorial/uk/part3/
-    paging: 3
-  - text: "Частина 4: Стилізація за допомогою CSS"
-    link: /library/javafx-tutorial/uk/part4/
-    paging: 4
-  - text: "Частина 5: Збереження даних в XML"
-    link: /library/javafx-tutorial/uk/part5/
-    paging: 5
-  - text: "Частина 6: Статистична діаграма"
-    link: /library/javafx-tutorial/uk/part6/
-    paging: 6
-  - text: "Частина 7: Розгортання"
-    link: /library/javafx-tutorial/uk/part7/
-    paging: 7
-languages: 
-  header: Мови
-  collection: library
-  item: javafx-tutorial
-  part: 
-  active: uk
----
++++
+title = "Підручник з JavaFX 8 (Українська)"
+date = 2014-04-19
+updated = 2015-06-25
+description = "Цей підручник, що складається з семи частин, введе вас у проектування, програмування та розгортання додатку Адресна книга за допомогою JavaFX"
+image = "addressapp.png"
+prettify = true
+comments = true
+commentsIdentifier = "/library/javafx-8-tutorial/uk/"
+aliases = [ 
+  "/library/javafx-8-tutorial/uk/" 
+]
+sidebarName = "Вступ"
+pagingName = "Intro"
++++
 
 В 2012 році я написав дуже детальний [підручник з JavaFX 2](/library/javafx-2-tutorial/) для моїх студентів. Багато людей по всьому світу прочитали цей матеріал та дали дуже позитивні відгуки про нього. Тому я вирішив **переписати цей підручник для нової версії JavaFX 8** (про зміни ви можете прочитати тут - [Оновлення до JavaFX 8 - Що нового?](/blog/update-to-javafx-8-whats-new/ "Update to JavaFX 8 - What's New")).
 
 Цей підручник проведе вас крізь проектування, програмування та розгортання додатку з функціональністю адресної книги. Так буде виглядати наш додаток в кінці розробки:
 
-![Screenshot AddressApp](/assets/library/javafx-tutorial/addressapp.png "AdressApp")
+![Screenshot AddressApp](addressapp.png "AdressApp")
 
 ## Ви навчитесь
 

@@ -1,56 +1,24 @@
----
-layout: article
-title: "Tutorial JavaFX 8 (Bahasa Indonesia)"
-date: 2014-04-19
-updated: 2015-03-12
-slug: javafx-tutorial/id
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-id.md
-description: "Tujuh bagian tutorial ini mencakup mendesain, memprogram, dan penyebaran aplikasi alamat dengan JavaFX."
-image: /assets/library/javafx-tutorial/addressapp.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Seri artikel"
-  body:
-  - text: "Pengenalan"
-    link: /library/javafx-tutorial/id/
-    paging: Intro
-    active: true
-  - text: "Bagian 1: Scene Builder"
-    link: /library/javafx-tutorial/id/part1/
-    paging: 1
-  - text: "Bagian 2: Model dan TableView"
-    link: /library/javafx-tutorial/id/part2/
-    paging: 2
-  - text: "Bagian 3: Berinteraksi dengan pengguna"
-    link: /library/javafx-tutorial/id/part3/
-    paging: 3
-  - text: "Bagian 4: Memberikan gaya dengan CSS"
-    link: /library/javafx-tutorial/id/part4/
-    paging: 4
-  - text: "Bagian 5: Menyimpan data sebagai XML"
-    link: /library/javafx-tutorial/id/part5/
-    paging: 5
-  - text: "Bagian 6: Bagan Statistika"
-    link: /library/javafx-tutorial/id/part6/
-    paging: 6
-  - text: "Bagian 7: Penyebaran"
-    link: /library/javafx-tutorial/id/part7/
-    paging: 7
-languages: 
-  header: Bahasa
-  collection: library
-  item: javafx-tutorial
-  part:
-  active: id
----
++++
+title = "Tutorial JavaFX 8 (Bahasa Indonesia)"
+date = 2014-04-19
+updated = 2015-03-12
+description = "Tujuh bagian tutorial ini mencakup mendesain, memprogram, dan penyebaran aplikasi alamat dengan JavaFX."
+image = "addressapp.png"
+prettify = true
+comments = true
+commentsIdentifier = "/library/javafx-8-tutorial/id/"
+aliases = [ 
+  "/library/javafx-8-tutorial/id/" 
+]
+sidebarName = "Pengenalan"
+pagingName = "Intro"
++++
 
 Pada 2012 saya telah menulis [Seri Tutorial JavaFX 2](/library/javafx-2-tutorial/) yang terperinci untuk murid-muridku. Banyak orang dari penjuru dunia telah membaca tutorial ini dan memberi umpan balik yang positif. Lalu saya memutuskan **menulis ulang Tutorial JavaFX 2 untuk JavaFX 8** (baca perubahan di [Pembaharuan javaFX 8 - Apa yang baru](/blog/update-to-javafx-8-whats-new/)).
 
 Tutorial ini menuntun anda melalui merancang, pemrograman dan menggunakan aplikasi alamat. Berikut adalah bentuk akhir aplikasi yang akan terlihat:
 
-![Tangkapan Layar AddressApp](/assets/library/javafx-tutorial/addressapp.png)
+![Tangkapan Layar AddressApp](addressapp.png)
 
 
 ## Apa yang akan anda pelajari
@@ -78,7 +46,7 @@ Ada dua cara untuk menggunakan tutorial ini:
 * **Jalur pelajari lebih banyak:** Buat proyek JavaFX anda sendiri dari awal.
 * **Jalur cepat:** Impor source kode dari bagian tutorial ke IDE (ini merupakan proyek yang dibuat dengan Eclipse, tapi anda bisa menggunakan IDE lainnya seperti NetBeans dengan sedikit modifikasi). Kemudian melalui tutorial untuk memahami kode tersebut.
 
-Sekarang, saya harap anda akan bersenang-senang! dimulai dari [Bagian 1 : Scene Builder](/library/javafx-tutorial/id/part1/).
+Sekarang, saya harap anda akan bersenang-senang! dimulai dari [Bagian 1 : Scene Builder](/id/library/javafx-tutorial/part1/).
 
 <div class="alert alert-success">
   <strong><i class="fa fa-trophy"></i> Attribution:</strong> The Indonesian translation has been contributed by 

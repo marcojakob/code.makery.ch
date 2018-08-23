@@ -1,56 +1,24 @@
----
-layout: article
-title: "JavaFX 8 Tutorial (Italiano)"
-date: 2014-04-19
-updated: 2015-03-12
-slug: javafx-tutorial/it
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-it.md
-description: "Questo tutorial in sette parti, guida nella progettazione, nella programmazione e nel deploying di una applicazione rubrica con JavaFX."
-image: /assets/library/javafx-tutorial/addressapp.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Articoli in questa serie"
-  body:
-  - text: "Introduzione"
-    link: /library/javafx-tutorial/it/
-    paging: Intro
-    active: true
-  - text: "Parte 1: Scene Builder"
-    link: /library/javafx-tutorial/it/part1/
-    paging: 1
-  - text: "Parte 2: Model and TableView"
-    link: /library/javafx-tutorial/it/part2/
-    paging: 2
-  - text: "Parte 3: Interazione con l'utente"
-    link: /library/javafx-tutorial/it/part3/
-    paging: 3
-  - text: "Parte 4: CSS Styling"
-    link: /library/javafx-tutorial/it/part4/
-    paging: 4
-  - text: "Parte 5: Conservazione dati come XML"
-    link: /library/javafx-tutorial/it/part5/
-    paging: 5
-  - text: "Parte 6: Grafico delle statistiche"
-    link: /library/javafx-tutorial/it/part6/
-    paging: 6
-  - text: "Parte 7: Deployment"
-    link: /library/javafx-tutorial/it/part7/
-    paging: 7
-languages: 
-  header: Languages
-  collection: library
-  item: javafx-tutorial
-  part: 
-  active: it
----
++++
+title = "JavaFX 8 Tutorial (Italiano)"
+date = 2014-04-19
+updated = 2015-03-12
+description = "Questo tutorial in sette parti, guida nella progettazione, nella programmazione e nel deploying di una applicazione rubrica con JavaFX."
+image = "addressapp.png"
+prettify = true
+comments = true
+commentsIdentifier = "/library/javafx-8-tutorial/it/"
+aliases = [ 
+  "/library/javafx-8-tutorial/it/" 
+]
+sidebarName = "Introduzione"
+pagingName = "Intro"
++++
 
 Già nel 2012 avevo scritto una serie di dettagliati tutorial su [JavaFX 2](/java/javafx-2-tutorial-intro/) per i miei studenti. Molte persone in tutto il mondo hanno letto i tutorial dandomi feedback davvero positivi. Così ho deciso di **riscrivere il tutorial su JavaFX 2 per JavaFX 8** (leggi qualcosa sui cambiamenti in [Update to JavaFX 8 - What's New](/blog/update-to-javafx-8-whats-new/)).
  
 Questo tutorial ti guida nella progettazione, nella programmazione e nel "deploying" di una rubrica. Così apparirà l'applicazione finita:
 
-![Screenshot AddressApp](/assets/library/javafx-tutorial/addressapp.png)
+![Screenshot AddressApp](addressapp.png)
 
 
 ##Cosa imparerai
@@ -79,7 +47,7 @@ Ci sono due modi per usare questo tutorial:
 * **Metedo veloce** Importare il codice sorgente per il tutorial nel proprio IDE (è un progetto Eclipse, ma è possibile usare altri IDE come NetBeans con piccole modifiche). Dopodichè usare il tutorial per capire il codice
 
 
-Adesso spero che vi divertirete! Iniziamo con [Parte 1: Scene Builder](/library/javafx-tutorial/it/part1/).
+Adesso spero che vi divertirete! Iniziamo con [Parte 1: Scene Builder](/it/library/javafx-tutorial/part1/).
 
 <div class="alert alert-success">
   <strong><i class="fa fa-trophy"></i> Attribution:</strong> The italian translation has been contributed by 

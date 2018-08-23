@@ -1,56 +1,24 @@
----
-layout: article
-title: "Учебник по JavaFX 8 (Русский)"
-date: 2014-04-19
-updated: 2016-04-20
-description: "Этот учебник, состоящий из семи частей, введёт вас в проектирование, программирование и развёртывание приложения Адресной книги, с помощью JavaFX"
-slug: javafx-tutorial/ru
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-ru.md
-image: /assets/library/javafx-tutorial/addressapp.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Статьи в этой серии"
-  body:
-  - text: "Введение"
-    link: /library/javafx-tutorial/ru/
-    paging: Intro
-    active: true
-  - text: "Часть 1: Scene Builder"
-    link: /library/javafx-tutorial/ru/part1/
-    paging: 1
-  - text: "Часть 2: Модель и компонент TableView"
-    link: /library/javafx-tutorial/ru/part2/
-    paging: 2
-  - text: "Часть 3: Взаимодействие с пользователем"
-    link: /library/javafx-tutorial/ru/part3/
-    paging: 3
-  - text: "Часть 4: Стилизация с помощью CSS"
-    link: /library/javafx-tutorial/ru/part4/
-    paging: 4
-  - text: "Часть 5: Хранение данных в XML"
-    link: /library/javafx-tutorial/ru/part5/
-    paging: 5
-  - text: "Часть 6: Статистическая диаграмма"
-    link: /library/javafx-tutorial/ru/part6/
-    paging: 6
-  - text: "Часть 7: Развёртывание"
-    link: /library/javafx-tutorial/ru/part7/
-    paging: 7
-languages: 
-  header: Языки
-  collection: library
-  item: javafx-tutorial
-  part: 
-  active: ru
----
++++
+title = "Учебник по JavaFX 8 (Русский)"
+date = 2014-04-19
+updated = 2016-04-20
+description = "Этот учебник, состоящий из семи частей, введёт вас в проектирование, программирование и развёртывание приложения Адресной книги, с помощью JavaFX"
+image = "addressapp.png"
+prettify = true
+comments = true
+commentsIdentifier = "/library/javafx-8-tutorial/ru/"
+aliases = [ 
+  "/library/javafx-8-tutorial/ru/" 
+]
+sidebarName = "Введение"
+pagingName = "Intro"
++++
 
 В 2012-м году я написал для своих студентов очень детальный [учебник по JavaFX 2](http://code.makery.ch/library/javafx-2-tutorial/). Его прочитали в разных частях света, и многие люди очень позитивно отозвались о данном материале. Поэтому я решил переписать учебник для новой версии JavaFX 8 (об изменениях вы можете почитать здесь - [Обновление до JavaFX 8 - Что Нового](http://code.makery.ch/blog/update-to-javafx-8-whats-new/ "Update to JavaFX 8 - What's New")).
 
 В этом учебнике я расскажу о проектировании, программировании и развёртывании приложения с функциональностью адресной книги. Когда мы закончим разработку, наше приложение будет выглядеть так:
 
-![Screenshot AddressApp](http://code.makery.ch/assets/library/javafx-tutorial/addressapp.png "AdressApp")
+![Screenshot AddressApp](http://code.makery.chaddressapp.png "AdressApp")
 
 
 ## Нам предстоит научиться
@@ -78,7 +46,7 @@ languages:
 - **учите много**: Создавайте с нуля свой проект JavaFX и постепенно наполняйте кодом его классы и методы.
 - **учите быстро**: Импортируйте в вашу среду разработки исходный код для каждой части учебника, а потом читайте учебник и старайтесь понять код. *Этот проект написан для среды разработки Eclipse, но с некоторыми модификациями (это не касается процесса развёртывания), его можно использовать в NetBeans, IntelliJ IDEA и других IDE*.
 
-Надеюсь, что, процесс обучения вам понравится! Начнём с [Часть 1: Scene Builder](/library/javafx-tutorial/ru/part1/ "Part 1: Scene Builder.").
+Надеюсь, что, процесс обучения вам понравится! Начнём с [Часть 1: Scene Builder](/ru/library/javafx-tutorial/part1/ "Part 1: Scene Builder.").
 
 <div class="alert alert-success">
   <strong><i class="fa fa-trophy"></i> Attribution:</strong> Russian translations have been contributed by 
