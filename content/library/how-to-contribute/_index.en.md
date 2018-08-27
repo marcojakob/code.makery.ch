@@ -31,7 +31,7 @@ When you are logged in you will see the code view:
 
 Now you can make changes to the article. Some quick hints:
 
-* Every article starts with a [YAML front matter](https://en.wikipedia.org/wiki/YAML). This contains information for the page generator about *title*, *sidebars*, etc. You can usually just skip to the first paragraph until you see the three dashes `---`. This is where the article starts. (If you want to know more details about the front matter we're using see article section in the project's [Readme](https://github.com/marcojakob/code.makery.ch#article-collections) 
+* Every article starts with a [TOML front matter](https://github.com/toml-lang/toml). This contains information for the page generator about *title*, *sidebars*, etc. You can usually just skip to the first paragraph until you see the three dashes `+++`. This is where the article starts. (If you want to know more details about the front matter we're using see the project's [Readme](https://github.com/marcojakob/code.makery.ch) 
 
 * Articles are written in Markdown. Here is a nice [Markdown guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) if you are not already familiar with it.
 
