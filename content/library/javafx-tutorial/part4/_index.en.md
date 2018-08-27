@@ -59,7 +59,7 @@ Unzip the `jfxrt.jar`. You should find the `modena.css` under `com/sun/javafx/sc
 This default style sheet is always applied to a JavaFX application. By adding a custom style sheet we can override the default styles of the `modena.css`.   
 
 <div class="alert alert-info">
-**Hint:** It helps to look at the default CSS file to see which styles you might need to override.
+<strong>Hint:</strong> It helps to look at the default CSS file to see which styles you might need to override.
 </div>
 
 
