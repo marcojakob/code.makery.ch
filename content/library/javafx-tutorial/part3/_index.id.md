@@ -1,57 +1,25 @@
----
-layout: article
-title: "Tutorial JavaFX 8 - Bagian 3: Interaksi pengguna"
-date: 2014-04-24
-updated: 2015-03-12
-slug: javafx-tutorial/id/part3
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-id-part3.md
-description: "Bereaksi terhadap perubahan seleksi pada TableView. Menambah, memperbaharui, dan menghapus bulir-bulir dari table dan juga memvalidasi masukan pengguna."
-image: /assets/library/javafx-tutorial/part3/addressapp-part3.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Seri Artikel"
-  body:
-  - text: "Pengenalan"
-    link: /library/javafx-tutorial/id/
-    paging: Intro
-  - text: "Bagian 1: Scene Builder"
-    link: /library/javafx-tutorial/id/part1/
-    paging: 1
-  - text: "Bagian 2: Model dan TableView"
-    link: /library/javafx-tutorial/id/part2/
-    paging: 2
-  - text: "Bagian 3: Berinteraksi dengan pengguna"
-    link: /library/javafx-tutorial/id/part3/
-    paging: 3
-    active: true
-  - text: "Bagian 4: Memberikan gaya dengan CSS"
-    link: /library/javafx-tutorial/id/part4/
-    paging: 4
-  - text: "Bagian 5: Menyimpan data sebagai XML"
-    link: /library/javafx-tutorial/id/part5/
-    paging: 5
-  - text: "Bagian 6: Bagan Statistika"
-    link: /library/javafx-tutorial/id/part6/
-    paging: 6
-  - text: "Bagian 7: Penyebaran"
-    link: /library/javafx-tutorial/id/part7/
-    paging: 7
-- header: "Unduh kode sumber"
-  body:
-  - text: Bagian 3 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-3.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Bahasa
-  collection: library
-  item: javafx-tutorial
-  part: part3
-  active: id
----
++++
+title = "Bagian 3: Interaksi pengguna"
+date = 2014-04-24
+updated = 2015-03-12
+description = "Bereaksi terhadap perubahan seleksi pada TableView. Menambah, memperbaharui, dan menghapus bulir-bulir dari table dan juga memvalidasi masukan pengguna."
+image = "addressapp-part3.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/id/part3/"
+aliases = [ 
+  "/library/javafx-8-tutorial/id/part3/"
+]
+weight = 3
 
-![Tangkapan layar AddressApp bagian 3](/assets/library/javafx-tutorial/part3/addressapp-part3.png)
+[[sidebars]]
+header = "Unduh kode sumber"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Bagian 3 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-3.zip"
++++
+
+![Tangkapan layar AddressApp bagian 3](addressapp-part3.png)
 
 
 ## Pembahasan dibagian 3
@@ -182,8 +150,8 @@ public class DateUtil {
 </pre>
 
 <div class="alert alert-info">
-**Petunjuk:** Kamu bisa merubah bentu dari tanggal dengan mengganti
-`DATE_PATTERN`. Untuk semua kemungkinan pola ang ada lihat <a class="alert-link" href="http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a>.
+<strong>Petunjuk:</strong> Kamu bisa merubah bentu dari tanggal dengan mengganti
+<code>DATE_PATTERN</code>. Untuk semua kemungkinan pola ang ada lihat <a class="alert-link" href="http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a>.
 </div>
 
 
@@ -231,7 +199,7 @@ Dengan `personTable.getSelectionModel...` kita mendapatkan *selectedItemProperty
 
 Coba **jalankan aplikasi anda**, pastikan ketika anda memilih person di tabel, detail mengenai person ditampilkan pada sisi kanan.
 
-Jika tidak berfungsi, anda bisa membandingkan kelas `PersonOverviewController` punya anda dengan [PersonOverviewController.java](/assets/library/javafx-tutorial/part3/PersonOverviewController.java).
+Jika tidak berfungsi, anda bisa membandingkan kelas `PersonOverviewController` punya anda dengan [PersonOverviewController.java](PersonOverviewController.java).
 
 
 *****
@@ -256,10 +224,10 @@ private void handleDeletePerson() {
 
 Sekarang buka berkas `PersonOverview.fxml` dari *SceneBuilder*. Pilih tombol hapus, buka kelompok *Code* dan pilih `handleDeletePerson` di dropdown of **On Action**.
 
-![Sedang beraksi](/assets/library/javafx-tutorial/part3/handle-delete.png)
+![Sedang beraksi](handle-delete.png)
 
 <div class="alert alert-info">
-**Ingat:** Setelah membuat perubahan pada berkas FXML di Scene Builder, mungkin perlu di segarkan (f5) pada Eclipse, agar perubahan diterapkan.
+<strong>Ingat:</strong> Setelah membuat perubahan pada berkas FXML di Scene Builder, mungkin perlu di segarkan (f5) pada Eclipse, agar perubahan diterapkan.
 </div>
 
 
@@ -319,12 +287,12 @@ Aksi baru dan pembaharuan perlu sedikit tindakan: Kita akan perlu kustom dialog 
 ### Desain Dialog
 
 1. Buat fxml baru bernama `PersonEditDialog.fxml` didalam paket *view*.   
-![Buat Dialog pembaharuan](/assets/library/javafx-tutorial/part3/person-edit-dialog1.png)
+![Buat Dialog pembaharuan](person-edit-dialog1.png)
 
 2. Gunakan `GridPane`, `Label`, `TextField` dan `Button` untuk membuat dalog seperti:   
-![Dialog pembaharuan](/assets/library/javafx-tutorial/part3/person-edit-dialog2.png)   
+![Dialog pembaharuan](person-edit-dialog2.png)   
 
-*Jika anda tidak ingin repot, bisa mengunduh pada [PersonEditDialog.fxml](/assets/library/javafx-tutorial/part3/PersonEditDialog.fxml).* 
+*Jika anda tidak ingin repot, bisa mengunduh pada [PersonEditDialog.fxml](PersonEditDialog.fxml).* 
 
 
 ### Buat Pengendali
@@ -624,7 +592,7 @@ Saya harap konsep dan struktur dari aplikasi ini akan dapat membuat anda menulis
 
 ### Berikutnya?
 
-[Tutorial Bagian 4](/library/javafx-tutorial/id/part4/) kita akan menambahkan gaya CSS.
+[Tutorial Bagian 4](/id/library/javafx-tutorial/part4/) kita akan menambahkan gaya CSS.
 
 
 ##### Beberapa artikel menarik lainnya

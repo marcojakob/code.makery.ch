@@ -1,57 +1,25 @@
----
-layout: article
-title: "JavaFX 8 Tutorial - Parte 1: Scene Builder"
-date: 2014-04-19 01:00
-updated: 2015-03-12
-slug: javafx-tutorial/it/part1
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-it-part1.md
-description: "Impariamo come impostare un progetto JavaFX. Questo tutorial in sette parti, guida nella progettazione, nella programmazione e nel deploying di una applicazione rubrica con JavaFX."
-image: /assets/library/javafx-tutorial/part1/addressapp-part1.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Articoli in questa serie"
-  body:
-  - text: "Introduzione"
-    link: /library/javafx-tutorial/it/
-    paging: Intro
-  - text: "Parte 1: Scene Builder"
-    link: /library/javafx-tutorial/it/part1/
-    paging: 1
-    active: true
-  - text: "Parte 2: Model and TableView"
-    link: /library/javafx-tutorial/it/part2/
-    paging: 2
-  - text: "Parte 3: Interazione con l'utente"
-    link: /library/javafx-tutorial/it/part3/
-    paging: 3
-  - text: "Parte 4: CSS Styling"
-    link: /library/javafx-tutorial/it/part4/
-    paging: 4
-  - text: "Parte 5: Conservazione dati come XML"
-    link: /library/javafx-tutorial/it/part5/
-    paging: 5
-  - text: "Parte 6: Grafico delle statistiche"
-    link: /library/javafx-tutorial/it/part6/
-    paging: 6
-  - text: "Parte 7: Deployment"
-    link: /library/javafx-tutorial/it/part7/
-    paging: 7
-- header: "Download Sources"
-  body:
-  - text: Parte 1 come progetto Eclipse <em>(requires at least JDK 8u40)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-1.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Languages
-  collection: library
-  item: javafx-tutorial
-  part: part1
-  active: it
----
++++
+title = "Parte 1: Scene Builder"
+date = 2014-04-19
+updated = 2015-03-12
+description = "Impariamo come impostare un progetto JavaFX. Questo tutorial in sette parti, guida nella progettazione, nella programmazione e nel deploying di una applicazione rubrica con JavaFX."
+image = "addressapp-part1.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/it/part1/"
+aliases = [ 
+  "/library/javafx-8-tutorial/it/part1/"
+]
+weight = 1
 
-![Screenshot AddressApp Part 1](/assets/library/javafx-tutorial/part1/addressapp-part1.png)
+[[sidebars]]
+header = "Scaricare Fonti"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Parte 1 come progetto Eclipse <em>(requires at least JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-1.zip"
++++
+
+![Screenshot AddressApp Part 1](addressapp-part1.png)
 
 ### Argomenti nella parte 1
  
@@ -79,13 +47,13 @@ Abbiamo bisogno che Eclipse usi JDK 8 e dovremo specificargli dove trovare Scene
 2. Cliccare *Add...*, selezionare *Standard VM* e scegliere la *Directory* di installazione del tuo JDK 8.
 
 3. Rimuovere gli altri JREs o JDKs così che **JDK 8 vada di default**.  
-![Preferences JDK](/assets/library/javafx-tutorial/part1/preferences-jdk.png)
+![Preferences JDK](preferences-jdk.png)
 
 4. Andare su *Java | Compiler*. Imposta **Compiler compliance level to 1.8**. 
-![Preferences Compliance](/assets/library/javafx-tutorial/part1/preferences-compliance.png)
+![Preferences Compliance](preferences-compliance.png)
 
 5. Andare sulle preferenze di *JavaFX*. Specificare il percorso dell'eseguibile di Scene Builder.  
-![Preferences JavaFX](/assets/library/javafx-tutorial/part1/preferences-javafx.png)
+![Preferences JavaFX](preferences-javafx.png)
 
 
 ### Link di supporto
@@ -131,9 +99,9 @@ Ci sono due modi per creare l'interfaccia utente. O usare un file XML o programm
 
 Tasto destro sul package view e creiamo un nuovo *FXML Document* chiamato `PersonOverview`.   
 
-![New FXML Document](/assets/library/javafx-tutorial/part1/new-fxml-document.png)
+![New FXML Document](new-fxml-document.png)
 
-![New PersonOverview](/assets/library/javafx-tutorial/part1/new-person-overview.png)
+![New PersonOverview](new-person-overview.png)
 
 
 
@@ -143,45 +111,45 @@ Tasto destro sul package view e creiamo un nuovo *FXML Document* chiamato `Perso
 ## Progettare con Scene Builder
 
 <div class="alert alert-warning">
-  **Nota:** Se non riuscite a farlo funzionare, scaricate il sorgente di questa parte del tutorial e provate con il file fxml                incluso.
+  <strong>Nota:</strong> Se non riuscite a farlo funzionare, scaricate il sorgente di questa parte del tutorial e provate con il file fxml                incluso.
 </div>
 
 Tasto destro su `PersonOverview.fxml` e click su *Open with Scene Builder*. Adesso dovreste vedere Scene Builder con solo un *AncherPane* (visibile sotto Hierarchy sulla sinistra).
 
 (Se Scene Builder non si apre, andare su *Window | Preferences | JavaFX* e settare il giusto percorso dell'installazione di Scene Builder).
 
-1. Selezionare *Anchor Pane* nella Hierarchy e modificare le dimensioni sotto Layout (lato destro): 
-![Anchor Pane Size](/assets/library/javafx-tutorial/part1/anchor-pane-size.png)
+1. Selezionare *Anchor Pane* nella Hierarchy e modificare le dimensioni sotto Layout (lato destro):   
+![Anchor Pane Size](anchor-pane-size.png)
 
 2. Aggiungere un *Split Pane (Horizontal Flow)* trascinandolo dalla Library nella area principale. Tasto destro su *Split Pane* nella vista *Hierarchy* e selezionare *Fit to Parent*.  
-![Fit to Parent](/assets/library/javafx-tutorial/part1/fit-to-parent.png)
+![Fit to Parent](fit-to-parent.png)
 
 3. Trascinare una *TableView* (sotto *Controls*) nella parte sinistra dello *SplitPane*. Selezionare la TableView (non la colonna) e impostare il seguente "layout constraints" per la TableView. All'interno di un *AnchorPane* è sempre possibile impostare gli  anchors per i quattro bordi ([Più informazioni sui Layouts](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).   
-![TableView Anchors](/assets/library/javafx-tutorial/part1/table-view-anchors.png)
+![TableView Anchors](table-view-anchors.png)
 
 4. Andare al menù *Preview | Show Preview in Window* per vedere come si comporta. Provare a ridemensionare la finestra. La TableView dovrebbe ridimensionarsi insieme alla finestra come fosse ancorata ai bordi.
 
 5. Cambiare il testo delle colonne (sotto Properties) in "First Name" e "Last Name".   
-![Column Texts](/assets/library/javafx-tutorial/part1/column-texts.png)
+![Column Texts](column-texts.png)
 
 6. Selezionare la *TableView* e scegliere *constrained-resize* per la *Column Resize Policy* (sotto Properties). Questo assicurerà che la colonna occuperà tutto lo spazio disponibile.   
-![Column Resize Policy](/assets/library/javafx-tutorial/part1/column-resize-policy.png)
+![Column Resize Policy](column-resize-policy.png)
 
 7. Aggiungere una *Label* sul lato destro con il testo "Person Details" (suggerimento: usare la barra di ricerca per trovare *Label*). Regolare il suo layout usando gli anchors.   
-![Person Details Label](/assets/library/javafx-tutorial/part1/person-details-label.png)
+![Person Details Label](person-details-label.png)
 
 8. Aggiungere un *GridPane* sul lato destro, selezionarlo e regolare il suo layout con gli anchors (superiore, destro e sinistro).    
-![GridPane Layout](/assets/library/javafx-tutorial/part1/grid-pane-layout.png)
+![GridPane Layout](grid-pane-layout.png)
 
 9. Aggiungere le seguenti labels alle celle.   
 *Nota: Per aggiungere una riga al GridPane selezionare un esistente numero di riga (diventerà giallo), tasto destro sul numero di riga e scegliere "Add Row".*   
-![Add labels](/assets/library/javafx-tutorial/part1/add-labels.png)
+![Add labels](add-labels.png)
 
 10. Aggiungere una *ButtonBar* in basso. Aggiungere tre bottoni alla barra. Adesso, impostare gli anchors (destro e inferiore) della *ButtonBar* così da posizionarla nel lato destro.   
-![Button Group](/assets/library/javafx-tutorial/part1/button-group.png)
+![Button Group](button-group.png)
 
 11. Adesso dovresti vedere qualcosa simile alla figura. Usa il menù *Preview* per testare il comportamento quando viene ridimensionata.   
-![Preview](/assets/library/javafx-tutorial/part1/scene-builder-preview.png)
+![Preview](scene-builder-preview.png)
 
 
 
@@ -193,15 +161,15 @@ Tasto destro su `PersonOverview.fxml` e click su *Open with Scene Builder*. Ades
 Abbiamo bisogno di un altro FXML per il nostro layout radice che conterrà una barra dei menù e si aggancerà all'appena creato  `PersonOverview.fxml`.
 
 1. Creare un'altro *FXML Document* all'interno del "view package" chiamandolo `RootLayout.fxml`. Questa volta sceglieremo *BorderPane* come elemento radice.   
-![New RootLayout](/assets/library/javafx-tutorial/part1/new-root-layout.png)
+![New RootLayout](new-root-layout.png)
 
 2. Aprire `RootLayout.fxml` con Scene Builder.
 
 3. Ridimensionare *BorderPane* con *Pref Width* impostato a 600 e *Pref Height* impostato a 400.   
-![RootLayout Size](/assets/library/javafx-tutorial/part1/root-layout-size.png)
+![RootLayout Size](root-layout-size.png)
 
 4. Implementeremo le funzionalità dei menù in un secondo momento.   
-![MenuBar](/assets/library/javafx-tutorial/part1/menu-bar.png)
+![MenuBar](menu-bar.png)
 
 
 ### La Classe Main JavaFX 
@@ -209,16 +177,16 @@ Abbiamo bisogno di un altro FXML per il nostro layout radice che conterrà una b
 Adesso abbiamo bisogno di creare la **main java class** che avvia la nostra applicazione con il `RootLayout.fxml` e aggiunge la `PersonOverview.fxml` al centro. 
 
 1. Tasto destro sul progetto, selezionare *New | Other...* e scegliere *JavaFX Main Class*.   
-![New JavaFX Main Class](/assets/library/javafx-tutorial/part1/new-main-class.png)
+![New JavaFX Main Class](new-main-class.png)
 
 2. Chiameremo la classe `MainApp` e la metteremo nel controller package `ch.makery.address` (nota: questo è un package parente dei `view` e `model` subpackages).   
-![New JavaFX Main Class](/assets/library/javafx-tutorial/part1/new-main-class2.png)
+![New JavaFX Main Class](new-main-class2.png)
 
 
 La classe `MainApp.java` generata è estesa da `Application` e contiene due metodi. Questa è la struttura base di cui abbiamo bisogno per avviare una applicazione JavaFX. La parte più importante è il metodo `start(Stage primaryStage)`. Questo è automaticamente chiamato quando l'applicazione viene `lanciata` dall'interno del metodo `main`.
 Come puoi vedere, il metodo `start(...)` riceve uno `Stage` come parametro. Il seguente grafico illustra la struttura di ogni applicazione JavaFX:
 
-![New FXML Document](/assets/library/javafx-tutorial/part1/javafx-hierarchy.png)   
+![New FXML Document](javafx-hierarchy.png)   
 *Image Source: http://www.oracle.com*
 
 **E' come uno spettacolo teatrale**:`Stage` è un il contenitore principale, di solito un finistra `Window` con dei bordi e i tipici pulsanti per minimizzare, massimizzare e chiudere. All'interno di `Stage` si aggiunge una `Scene` che può, naturalmente, avvicendarsi ad un'altra. All'interno della `Scene` gli effettivi nodi JavaFX come `AnchorPane`, `TextBox`, etc. vengono aggiunti.
@@ -329,7 +297,7 @@ Per risolvere controlla di non aver sbagliato il nome del tuo file `fxml`!
 
 ### What's Next?
 
-Nella [Parte 2 del tutorial](http://code.makery.ch/library/javafx-tutorial/it/part2/) aggiungeremo alcuni dati e alcune funzionalità alla nostra rubrica.
+Nella [Parte 2 del tutorial](/it/library/javafx-tutorial/part2/) aggiungeremo alcuni dati e alcune funzionalità alla nostra rubrica.
 
 
 ##### Alcuni articoli che potresti trovare interessanti

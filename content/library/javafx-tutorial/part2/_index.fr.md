@@ -1,57 +1,25 @@
----
-layout: article
-title: "Tutoriel JavaFX 8 - partie 2 : Modèle et TableView"
-date: 2014-04-23
-updated: 2015-04-15
-slug: javafx-tutorial/fr/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-fr-part2.md
-description: "Utiliser un contrôle JavaFX TableView pour afficher une ObservableList de personnes."
-image: /assets/library/javafx-tutorial/part2/addressapp-part2.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Les articles dans ce tutoriel"
-  body:
-  - text: "Introduction"
-    link: /library/javafx-tutorial/fr/
-    paging: Intro
-  - text: "Partie 1 : le Scene Builder"
-    link: /library/javafx-tutorial/fr/part1/
-    paging: 1
-  - text: "Partie 2 : modèle et TableView"
-    link: /library/javafx-tutorial/fr/part2/
-    paging: 2
-    active: true
-  - text: "Partie 3 : interaction avec l'utilisateur"
-    link: /library/javafx-tutorial/fr/part3/
-    paging: 3
-  - text: "Partie 4 : style CSS"
-    link: /library/javafx-tutorial/fr/part4/
-    paging: 4
-  - text: "Partie 5 : stockage de données en XML"
-    link: /library/javafx-tutorial/fr/part5/
-    paging: 5
-  - text: "Partie 6 : statistiques graphiques"
-    link: /library/javafx-tutorial/fr/part6/
-    paging: 6
-  - text: "Partie 7 : déploiement"
-    link: /library/javafx-tutorial/fr/part7/
-    paging: 7
-- header: "Téléchargez les sources"
-  body:
-  - text: Projet Eclipse relatif à la partie 2 <em>(JDK 8u40 requis au minimum)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Langues
-  collection: library
-  item: javafx-tutorial
-  part: part2
-  active: fr
----
++++
+title = "Partie 2 : Modèle et TableView"
+date = 2014-04-23
+updated = 2015-04-15
+description = "Utiliser un contrôle JavaFX TableView pour afficher une ObservableList de personnes."
+image = "addressapp-part2.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/fr/part2/"
+aliases = [ 
+  "/library/javafx-8-tutorial/fr/part2/"
+]
+weight = 2
 
-![Screenshot AddressApp Part 2](/assets/library/javafx-tutorial/part2/addressapp-part2.png)
+[[sidebars]]
+header = "Téléchargez les sources"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Projet Eclipse relatif à la partie 2 <em>(JDK 8u40 requis au minimum)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip"
++++
+
+![Screenshot AddressApp Part 2](addressapp-part2.png)
 
 
 ## Sujets dans la partie 2
@@ -264,7 +232,7 @@ Maintenant intégrons finalement les données dans notre tableau ! Nous aurons b
 2. Nous allons ajouter quelques variables qui nous donneront accès au tableau et aux étiquettes de l'affichage. Les champs et quelques méthodes ont une annotation spéciale `@FXML`. Ceci est nécessaire au fichier fxml pour accéder aux champs et aux méthodes privées. Après avoir tout préparé dans le fichier fxml, l'application remplira automatiquement les variables lors du chargement du fxml. Ajoutons le code suivant : 
 
 <div class="alert alert-info">
-**Note : ** rappelez-vous de toujours utiliser les **imports javafx**, PAS awt ou swing ! 
+<strong>Note : </strong> rappelez-vous de toujours utiliser les <strong>imports javafx</strong>, PAS awt ou swing ! 
 </div>
 
 
@@ -346,7 +314,7 @@ Ce code nécessitera probablement quelques explications :
 
 <div class="alert alert-info">
   <p>
-    Nous n'utilisons que les valeurs `StringProperty` pour les colonnes de notre tableau dans cet exemple. Si vous voulez utiliser une `IntegerProperty` ou `DoubleProperty`, la méthode `setCellValueFactory(...)` doit avoir un `asObject()` en plus :
+    Nous n'utilisons que les valeurs <code>StringProperty</code> pour les colonnes de notre tableau dans cet exemple. Si vous voulez utiliser une <code>IntegerProperty</code> ou <code>DoubleProperty</code>, la méthode <code>setCellValueFactory(...)</code> doit avoir un <code>asObject()</code> en plus :
   </p>
   <p>
   <pre>myIntegerColumn.setCellValueFactory(cellData -> 
@@ -401,15 +369,15 @@ Nous y sommes persque ! Mais une petite chose manque encore : pour l'instant nou
 1. Ouvrez `PersonOverview.fxml` avec le *SceneBuilder* ! 
 
 2. Ouvrez le groupe *Controller* sur le côté gauche et sélectionnez la classe `PersonOverviewController` comme **classe de contrôleur** !    
-![Set Controller Class](/assets/library/javafx-tutorial/part2/set-controller-class.png)
+![Set Controller Class](set-controller-class.png)
 
 3. Sélectionnez le `TableView` dans le groupe *Hierarchy* et sélectionnez dans le groupe *Code* le champ `personTable` en tant que **fx:id**.   
-![Set TableView fx:id](/assets/library/javafx-tutorial/part2/set-tableview-fx-id.png)
+![Set TableView fx:id](set-tableview-fx-id.png)
 
 4. Faites la même chose pour les colonnes et sélectionnez `firstNameColumn` et `lastNameColumn` dans le champ **fx:id** ! 
 
 5. Sélectionnez le champ **fx:id** correspondant pour **chaque étiquette** dans la deuxième colonne ! 
-![Set Label fx:id](/assets/library/javafx-tutorial/part2/set-label-fx-id.png)
+![Set Label fx:id](set-label-fx-id.png)
 
 6. Important : retournez dans Eclipse, **raffraîchissez le projet complet** AddressApp (F5). C'est nécessaire car    Eclipse n'a pas connaissance des changements faits dans le Scene Builder ! 
 
@@ -427,7 +395,7 @@ Félicitations!
 
 ### Et après ?
 
-Dans la [Partie 3 du tutoriel](/library/javafx-tutorial/fr/part3/), nous allons ajouter plus de fonctionnalités telles que l'ajout, la suppression et la modification des personnes. 
+Dans la [Partie 3 du tutoriel](/fr/library/javafx-tutorial/part3/), nous allons ajouter plus de fonctionnalités telles que l'ajout, la suppression et la modification des personnes. 
 
 
 ##### Voici quelques articles qui pourraient aussi vous intéresser : 

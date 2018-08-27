@@ -1,57 +1,25 @@
----
-layout: article
-title: "Tutorial JavaFX 8 - Bagian 7: Penyebaran"
-date: 2014-05-10
-updated: 2015-03-12
-slug: javafx-tutorial/id/part7
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-id-part7.md
-description: "Bagaimana untuk menyebarkan aplikasi JavaFX sebagai paket asli. Membuat pemasang untuk Windows, MacOS, dan Linux."
-image: /assets/library/javafx-tutorial/part7/addressapp-macos.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Seri Artikel"
-  body:
-  - text: "Pengenalan"
-    link: /library/javafx-tutorial/id/
-    paging: Intro
-  - text: "Bagian 1: Scene Builder"
-    link: /library/javafx-tutorial/id/part1/
-    paging: 1
-  - text: "Bagian 2: Model dan TableView"
-    link: /library/javafx-tutorial/id/part2/
-    paging: 2
-  - text: "Bagian 3: Berinteraksi dengan pengguna"
-    link: /library/javafx-tutorial/id/part3/
-    paging: 3
-  - text: "Bagian 4: Memberikan gaya dengan CSS"
-    link: /library/javafx-tutorial/id/part4/
-    paging: 4
-  - text: "Bagian 5: Menyimpan data sebagai XML"
-    link: /library/javafx-tutorial/id/part5/
-    paging: 5
-  - text: "Bagian 6: Bagan Statistika"
-    link: /library/javafx-tutorial/id/part6/
-    paging: 6
-  - text: "Bagian 7: Penyebaran"
-    link: /library/javafx-tutorial/id/part7/
-    paging: 7
-    active: true
-- header: "Unduh kode sumber"
-  body:
-  - text: Bagian 7 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-7.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Bahasa
-  collection: library
-  item: javafx-tutorial
-  part: part7
-  active: id
----
++++
+title = "Bagian 7: Penyebaran"
+date = 2014-05-10
+updated = 2015-03-12
+description = "Bagaimana untuk menyebarkan aplikasi JavaFX sebagai paket asli. Membuat pemasang untuk Windows, MacOS, dan Linux."
+image = "addressapp-macos.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/id/part7/"
+aliases = [ 
+  "/library/javafx-8-tutorial/id/part7/"
+]
+weight = 7
 
-![Tangkapan layar AddressApp bagian 7](/assets/library/javafx-tutorial/part7/addressapp-part7.png)
+[[sidebars]]
+header = "Unduh kode sumber"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Bagian 7 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-7.zip"
++++
+
+![Tangkapan layar AddressApp bagian 7](addressapp-part7.png)
 
 Saya pikir saya akan menulis satu bagian terakhir dari seri tutorial ini untuk menunjukan bagaimana untuk menyebarkan (ini berarti memaket dan publikasi) AddressApp.
 
@@ -86,7 +54,7 @@ Pada kirimian ini saya akan menunjukan bagaimana membuat **paket asli** dengan E
 
 Tujuan membuat aplikasi mandiri dalam satu folder di komputer pengguna. Di tangkapan layarn akan menampilkan bagaimana akan terlihat untuk AddressApp (di Windows):
 
-![Paket alami AddressApp](/assets/library/javafx-tutorial/part7/native-package.png)
+![Paket alami AddressApp](native-package.png)
 
 Folder `app` berisi data aplikasi dan folder `runtime` berisi Java runtime berdasar platform.
 
@@ -105,12 +73,12 @@ Berkas `build.fxbuild` digunakan oleh e(fx)clipse untuk menghasilkan sebuah berk
 1. Buka `build.fxbuild`.
 
 2. Isi semua bidang yang berisi bintang. *Untuk MacOS, jangan gunakan spasi di judul aplikasi, karena ini akan menyebabkan masalah.*    
-![Pengaturan fxbuild](/assets/library/javafx-tutorial/part7/fxbuild-settings.png)
+![Pengaturan fxbuild](fxbuild-settings.png)
 
 3. Sebagai **bentuk pemaketan** pilih `exe` untuk Windows, `dmg` untuk MacOS, dan `rpm` untuk Linux.
 
 4. Klik pada tautan `Generate ant build.xml only` ((pada sisi kanan)e).   
-![Bangkitkan ant build](/assets/library/javafx-tutorial/part7/generate-ant-build.png)
+![Bangkitkan ant build](generate-ant-build.png)
 
 5. Verifikasi folder `build` baru dan sebuah berkas `build.xml` telah dibuat.
 
@@ -119,17 +87,17 @@ Berkas `build.fxbuild` digunakan oleh e(fx)clipse untuk menghasilkan sebuah berk
 
 Kita ingin memiliki ikon yang menarik untuk pemasang :
 
-* [AddressApp.ico](/assets/library/javafx-tutorial/part7/AddressApp.ico) untuk berkas ikon pemasang.
-* [AddressApp-setup-icon.bmp](/assets/library/javafx-tutorial/part7/AddressApp-setup-icon.bmp) untuk pemasang ikon Splash scren.
-* [AddressApp.icns](/assets/library/javafx-tutorial/part7/AddressApp.icns) untuk ikon pemasang MacOs.
-* [AddressApp-volume.icns](/assets/library/javafx-tutorial/part7/AddressApp-volume.icns) untuk ikon Mac
-* 
+* [AddressApp.ico](AddressApp.ico) untuk berkas ikon pemasang.
+* [AddressApp-setup-icon.bmp](AddressApp-setup-icon.bmp) untuk pemasang ikon Splash scren.
+* [AddressApp.icns](AddressApp.icns) untuk ikon pemasang MacOs.
+* [AddressApp-volume.icns](AddressApp-volume.icns) untuk ikon Mac
+
 
 1. Buat subfolder didalam folder `build`:
   * `build/package/windows` (hanya digunakan untuk windows)
   * `build/package/macosx` (hanya digunakan untuk macos)
 2. Salin ikon yang sesuai dari atas ke subfolder ini. Ini seharusnya terlihat seperti : 
-![Installer Icons](/assets/library/javafx-tutorial/part7/installer-icons.png)
+![Installer Icons](installer-icons.png)
 3. **Penting**: Nama ikon harus sama tepat dengan **judul aplikasi**yang telah di tentukan dalam `build.fxbuild`:
   * `YourAppTitle.ico`
   * `YourAppTitle-setup-icon.bmp`
@@ -144,7 +112,7 @@ Folder `resources` idak tersalin secara otomatis, kita harus secara manual menam
 1. Buat subfolder berikut didalam folder `build`:
   * `build/dist`   
 2. Salin folder `resources` (berisi gambar-gambar aplikasi) ke `build/dist`.    
-![Build Resources](/assets/library/javafx-tutorial/part7/build-resources.png)
+![Build Resources](build-resources.png)
 
 
 ### Langkah 4 - Perbaharui build.xml untuk memasukan ikon-ikon
@@ -199,7 +167,7 @@ Kita sudah bisa menjalankan `build.xml` sebagai Ant build pada saat ini. Ini dap
 
 ### Langkah 5 (WINDOWS) - Window pemasang Exe
 
-![AddressApp di Windows](/assets/library/javafx-tutorial/part7/addressapp-windows.png)
+![AddressApp di Windows](addressapp-windows.png)
 
 Dengan **Inno Setup** kita dapat membuat pemasang aplikasi Window sebagai sebuah berkas `.exe` `.exe` yang dihasilkan akan melakukan pemasangan tingkat pengguna (tidak ada memerlukan ijin admin), juga jalan pintas akan dibuat (menu atau Desktop).
 
@@ -212,7 +180,7 @@ Dengan **Inno Setup** kita dapat membuat pemasang aplikasi Window sebagai sebuah
 
 ### Langkah 5 (MAC) - MacOS pemasangan dmg 
 
-![AddressApp di Mac](/assets/library/javafx-tutorial/part7/addressapp-macos.png)
+![AddressApp di Mac](addressapp-macos.png)
 
 Unutk membuat MacOs `dmg` pemasangan seret dan lepaskan (drag-and-drop) tidak ada alat tambahan yang diperlukan. 
 
@@ -228,13 +196,13 @@ Untuk pilihan pemaketan lain (`msi` untuk windows, `rpm` untuk Linux) lihat pema
 
 Sebagai langkah akhir, kita menjalankan `build.xml` dengan Ant: *klik kanan* pada berkas `build.xml` *Run As* | *Ant Build*.
 
-![Run Ant Build](/assets/library/javafx-tutorial/part7/run-ant-build.png)
+![Run Ant Build](run-ant-build.png)
 
 Proses ini akan memakan waktu (sekitar 1 menit pada komputer saya).
 
 Jika semua telah berhasil, kamu seharusnya menemukan bundle alami di folder `build/deploy/bundles`. Berikut adalah contoh versi window 
 
-![Deployed File](/assets/library/javafx-tutorial/part7/deployed-file.png)
+![Deployed File](deployed-file.png)
 
 
 Berkas `AddressApp-1.0.exe` dapat digunakan sebagai sebuah berkas pemasangan. Pemasangan ini akan menyalin bundle ke `C:/Users/[yourname]/AppData/Local/AddressApp`.

@@ -1,57 +1,25 @@
----
-layout: article
-title: "JavaFX 8 Tutorial - Part 5: Storing Data as XML"
-date: 2014-04-25 01:00
-updated: 2015-11-12
-slug: javafx-tutorial/it/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-it-part5.md
-description: "Save data as XML with JAXB. Learn how to use the JavaFX FileChooser and the JavaFX Menu."
-image: /assets/library/javafx-tutorial/part5/addressapp-part5.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Articoli in questa serie"
-  body:
-  - text: "Introduzione"
-    link: /library/javafx-tutorial/it/
-    paging: Intro
-  - text: "Parte 1: Scene Builder"
-    link: /library/javafx-tutorial/it/part1/
-    paging: 1
-  - text: "Parte 2: Model and TableView"
-    link: /library/javafx-tutorial/it/part2/
-    paging: 2
-  - text: "Parte 3: Interazione con l'utente"
-    link: /library/javafx-tutorial/it/part3/
-    paging: 3
-  - text: "Parte 4: CSS Styling"
-    link: /library/javafx-tutorial/it/part4/
-    paging: 4
-  - text: "Parte 5: Conservazione dati come XML"
-    link: /library/javafx-tutorial/it/part5/
-    paging: 5
-    active: true
-  - text: "Parte 6: Grafico delle statistiche"
-    link: /library/javafx-tutorial/it/part6/
-    paging: 6
-  - text: "Parte 7: Deployment"
-    link: /library/javafx-tutorial/it/part7/
-    paging: 7
-- header: "Download Sources"
-  body:
-  - text: Part 5 as Eclipse Project <em>(requires at least JDK 8u40)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-5.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Languages
-  collection: library
-  item: javafx-tutorial
-  part: part5
-  active: it
----
++++
+title = "Part 5: Storing Data as XML"
+date = 2014-04-25
+updated = 2015-11-12
+description = "Save data as XML with JAXB. Learn how to use the JavaFX FileChooser and the JavaFX Menu."
+image = "addressapp-part5.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/it/part5/"
+aliases = [ 
+  "/library/javafx-8-tutorial/it/part5/"
+]
+weight = 5
 
-![Screenshot AddressApp Part 5](/assets/library/javafx-tutorial/part5/addressapp-part5.png)
+[[sidebars]]
+header = "Scaricare Fonti"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Parte 5 come progetto Eclipse <em>(requires at least JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-5.zip"
++++
+
+![Screenshot AddressApp Part 5](addressapp-part5.png)
 
 
 ## Argomenti nella parte 5
@@ -286,7 +254,7 @@ In our `RootLayout.fxml` there is already a menu, but we haven't used it yet. Be
 
 Open the `RootLayout.fxml` file in Scene Builder and drag the necessary menu items from the *library* group to the `MenuBar` bar in the *hierarchy* group. Create a **New**, **Open...**, **Save**, **Save As...**, and **Exit** menu item.
 
-![Add Menu Items](/assets/library/javafx-tutorial/part5/add-menu-items.png)
+![Add Menu Items](add-menu-items.png)
 
 Hint: Using the *Accelerator* setting under the *Properties* group you can set shortcut keys to menu items.
 
@@ -435,7 +403,7 @@ Se l'utente chiude il dialog senza aver scelto un file, viene ritornato il valor
 1. Apri `RootLayout.fxml` in Scene Builder. Nel gruppo *Controller* seleziona `RootLayoutController` come controllore della classe.
 
 2. Torna al gruppo *Hierarchy* e seleziona una item del menu. Nel gruppo *Code* sotto **On Action** dovresti vedere una scelta di tutti i metodi disponibili nel controllore. Scegli il corrispondente metodo per ogni item del monu.
-![Menu Actions](/assets/library/javafx-tutorial/part5/menu-actions.png)
+![Menu Actions](menu-actions.png)
 
 3. Ripeti i passi per ogni item del menu.
 
@@ -549,7 +517,7 @@ Guardiamo aadesso come funziona il meccanismo:
 
 ### Qual'è il prossimo?
 
-Nella [parte 6 del tutorial](/library/javafx-tutorial/it/part6/) aggiungeremo un grafico per la statistica del compleanno.
+Nella [parte 6 del tutorial](/it/library/javafx-tutorial/part6/) aggiungeremo un grafico per la statistica del compleanno.
 
 
 ##### Alcuni articoli che potresti trovare interessanti

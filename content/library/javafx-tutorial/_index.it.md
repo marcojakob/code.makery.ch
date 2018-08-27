@@ -1,5 +1,5 @@
 +++
-title = "JavaFX 8 Tutorial (Italiano)"
+title = "JavaFX Tutorial (Italiano)"
 date = 2014-04-19
 updated = 2015-03-12
 description = "Questo tutorial in sette parti, guida nella progettazione, nella programmazione e nel deploying di una applicazione rubrica con JavaFX."
@@ -21,7 +21,7 @@ Questo tutorial ti guida nella progettazione, nella programmazione e nel "deploy
 ![Screenshot AddressApp](addressapp.png)
 
 
-##Cosa imparerai
+## Cosa imparerai
 
 * Creazione e avviamento di un progetto JavaFX
 * Uso di Scene Builder per progettare l'interfaccia utente

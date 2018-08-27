@@ -1,57 +1,25 @@
----
-layout: article
-title: "JavaFX 8 教程 - 第一部分：Scene Builder"
-date: 2014-10-08
-updated: 2014-10-29
-slug: javafx-tutorial/zh-cn/part1
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-zh-cn-part1.md
-description: "这 7 部分组成的教程将介绍一个用 JavaFX 编写的联系人程的设计，开发与部署的过程。"
-image: /assets/library/javafx-tutorial/part1/addressapp-part1.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "系列文章"
-  body:
-  - text: "简介"
-    link: /library/javafx-tutorial/zh-cn/
-    paging: 简介
-  - text: "第一部分：Scene Builder"
-    link: /library/javafx-tutorial/zh-cn/part1/
-    paging: 1
-    active: true
-  - text: "第二部分：Model 和 TableView"
-    link: /library/javafx-tutorial/zh-cn/part2/
-    paging: 2
-  - text: "第三部分：与用户的交互"
-    link: /library/javafx-tutorial/zh-cn/part3/
-    paging: 3
-  - text: "第四部分：CSS 样式"
-    link: /library/javafx-tutorial/zh-cn/part4/
-    paging: 4
-  - text: "第五部分：将数据用 XML 格式存储"
-    link: /library/javafx-tutorial/zh-cn/part5/
-    paging: 5
-  - text: "第六部分：统计图"
-    link: /library/javafx-tutorial/zh-cn/part6/
-    paging: 6
-  - text: "第七部分：部署"
-    link: /library/javafx-tutorial/zh-cn/part7/
-    paging: 7
-- header: "下载源代码"
-  body:
-  - text: 第一部分为 Eclipse 项目 <em>（要求至少 JDK 8u20）</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-1.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: 语言
-  collection: library
-  item: javafx-tutorial
-  part: part1
-  active: zh-cn
----
++++
+title = "第一部分：Scene Builder"
+date = 2014-10-08
+updated = 2014-10-29
+description = "这 7 部分组成的教程将介绍一个用 JavaFX 编写的联系人程的设计，开发与部署的过程。"
+image = "addressapp-part1.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/zh-cn/part1/"
+aliases = [ 
+  "/library/javafx-8-tutorial/zh-cn/part1/"
+]
+weight = 1
 
-![Screenshot AddressApp Part 1](/assets/library/javafx-tutorial/part1/addressapp-part1.png)
+[[sidebars]]
+header = "下载源代码"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> 第一部分为 Eclipse 项目 <em>（要求至少 JDK 8u20）</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-1.zip"
++++
+
+![Screenshot AddressApp Part 1](addressapp-part1.png)
 
 ### 第一部分的主题
 
@@ -80,13 +48,13 @@ languages:
 2. 点击 *Add...*, 选择 *Standard VM* 并选择你安装 JDK 8 的 *Directory* 。
 
 3. 移除其他的 JREs 或 JDKs 从而使 **JDK 8 成为默认**。
-![Preferences JDK](/assets/library/javafx-tutorial/part1/preferences-jdk.png)
+![Preferences JDK](preferences-jdk.png)
 
 4. 在 *Java | Compiler* 中设置 **Compiler compliance level 到 1.8**。
-![Preferences Compliance](/assets/library/javafx-tutorial/part1/preferences-compliance.png)
+![Preferences Compliance](preferences-compliance.png)
 
 5. 在 *JavaFX* 中指定你的 Scene Builder 可执行文件的路径。
-![Preferences JavaFX](/assets/library/javafx-tutorial/part1/preferences-javafx.png)
+![Preferences JavaFX](preferences-javafx.png)
 
 
 ### 帮助链接
@@ -131,9 +99,9 @@ languages:
 
 在view包上右键创建一个新*FXML Document*，把它命名为`PersonOverview`。 
 
-![New FXML Document](/assets/library/javafx-tutorial/part1/new-fxml-document.png)
+![New FXML Document](new-fxml-document.png)
 
-![New PersonOverview](/assets/library/javafx-tutorial/part1/new-person-overview.png)
+![New PersonOverview](new-person-overview.png)
 
 
 
@@ -143,43 +111,43 @@ languages:
 ## 用Scene Builder来设计你的界面
 
 <div class="alert alert-warning">
-  **注意:** 你可以下载这部分教程的源码，它里面已经包含了设计好的布局文件。
+  <strong>注意:</strong> 你可以下载这部分教程的源码，它里面已经包含了设计好的布局文件。
 </div>
 
 在`PersonOverview.fxml` 右键选择 *Open with Scene Builder*，那么你将会在打开的Scene Builder里面看到一个固定的界面设计区域(在整个界面的左边)。
 
-1. 选中这个界面设计区域，你就可以在右边的属性设置栏中对它的尺寸进行修改:
-![Anchor Pane Size](/assets/library/javafx-tutorial/part1/anchor-pane-size.png)
+1. 选中这个界面设计区域，你就可以在右边的属性设置栏中对它的尺寸进行修改:   
+![Anchor Pane Size](anchor-pane-size.png)
 
-2. 从Scene Builder的左边控件栏中拖拽一个 *Splite Pane(Horizontal Flow)* 到界面设计区域，在Builder的右边视图结构中选择刚添加的Pane，在弹出的右键菜单中选择 *Fit to Parent* 。
-![Fit to Parent](/assets/library/javafx-tutorial/part1/fit-to-parent.png)
+2. 从Scene Builder的左边控件栏中拖拽一个 *Splite Pane(Horizontal Flow)* 到界面设计区域，在Builder的右边视图结构中选择刚添加的Pane，在弹出的右键菜单中选择 *Fit to Parent* 。   
+![Fit to Parent](fit-to-parent.png)
 
-3. 同样从左边的控件栏中拖拽一个 *TableView* 到 *SplitPane* 的左边，选择这个TableView(而不是它的列)对它的布局进行设置，你可以在 *AnchorPane* 中对这个TableView四个边的外边距进行调节。([more information on Layouts](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).
-![TableView Anchors](/assets/library/javafx-tutorial/part1/table-view-anchors.png)
+3. 同样从左边的控件栏中拖拽一个 *TableView* 到 *SplitPane* 的左边，选择这个TableView(而不是它的列)对它的布局进行设置，你可以在 *AnchorPane* 中对这个TableView四个边的外边距进行调节。([more information on Layouts](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).   
+![TableView Anchors](table-view-anchors.png)
 
 4. 点击菜单中的 *Preview | Show Preview in Window* 可以预览你设计好的界面，试着缩放预览的界面，你会发现TableView会随着窗口的缩放而变化。
 
-5. 修改TableView中的列名字，"First Name" and "Last Name"，在右边面板中的属性设置项
-![Column Texts](/assets/library/javafx-tutorial/part1/column-texts.png)
+5. 修改TableView中的列名字，"First Name" and "Last Name"，在右边面板中的属性设置项   
+![Column Texts](column-texts.png)
 
-6. 选择这个 *TableView* ，在右边面板中将它的 *Column Resize Policy* 修改成 *constrained-resize* (同样是在属性设置项里面)。确保这个TableView的列能够铺满所有的可用空间。
-![Column Resize Policy](/assets/library/javafx-tutorial/part1/column-resize-policy.png)
+6. 选择这个 *TableView* ，在右边面板中将它的 *Column Resize Policy* 修改成 *constrained-resize* (同样是在属性设置项里面)。确保这个TableView的列能够铺满所有的可用空间。   
+![Column Resize Policy](column-resize-policy.png)
 
-7. 添加一个 *Label* 到 *SplitePane*的右边部分，并设置它的显示文字为 "Person Details" (提示: 你可以通过搜索来找到 *Label* 这个控件)。 使用anchors来调节这个控件的布局位置。
-![Person Details Label](/assets/library/javafx-tutorial/part1/person-details-label.png)
+7. 添加一个 *Label* 到 *SplitePane*的右边部分，并设置它的显示文字为 "Person Details" (提示: 你可以通过搜索来找到 *Label* 这个控件)。 使用anchors来调节这个控件的布局位置。   
+![Person Details Label](person-details-label.png)
 
-8. 再添加一个 *GridPane* *SplitePane*的右边部分, 使用anchors来调节这个控件的布局位置。
-![GridPane Layout](/assets/library/javafx-tutorial/part1/grid-pane-layout.png)
+8. 再添加一个 *GridPane* *SplitePane*的右边部分, 使用anchors来调节这个控件的布局位置。   
+![GridPane Layout](grid-pane-layout.png)
 
 9. 按照下面的图添加多个 *Lables*到表格中去。
-10. *注意: 添加一个控件到已经存在的行里面去，你可在这行的行号上右键选择 "Add Row"。*
-![Add labels](/assets/library/javafx-tutorial/part1/add-labels.png)
+10. *注意: 添加一个控件到已经存在的行里面去，你可在这行的行号上右键选择 "Add Row"。*   
+![Add labels](add-labels.png)
 
-10. 添加3个按钮到这个 *GridPane* 的下面。 小提示: 选择这3个按钮，右键 *Wrap In | HBox*，那么它们会被放置到一个HBox里面。 你可能需要对这个HBox指定一个 *spacing*,同时也需要设置它们的右边和下边的anchors。
-![Button Group](/assets/library/javafx-tutorial/part1/button-group.png)
+10. 添加3个按钮到这个 *GridPane* 的下面。 小提示: 选择这3个按钮，右键 *Wrap In | HBox*，那么它们会被放置到一个HBox里面。 你可能需要对这个HBox指定一个 *spacing*,同时也需要设置它们的右边和下边的anchors。   
+![Button Group](button-group.png)
 
-11. 那么基本已经完成了界面的设计，你可以通过 *Preview* 来预览一下你设计的界面，同时缩放一下窗口来检验一下各个控件的位置是否正确。
-![Preview](/assets/library/javafx-tutorial/part1/scene-builder-preview.png)
+11. 那么基本已经完成了界面的设计，你可以通过 *Preview* 来预览一下你设计的界面，同时缩放一下窗口来检验一下各个控件的位置是否正确。   
+![Preview](scene-builder-preview.png)
 
 
 
@@ -190,34 +158,34 @@ languages:
 
 我们还需要新建一个*FXML*文件来做为主布局文件，它将包含菜单栏并存放我们之前创建的布局文件 `PersonOverview.fxml` 。
 
-1. 在view包里面创建一个新的 *FXML Document* 叫做 `RootLayout.fxml`, 这一次，选择 *BorderPane* 做为它的根节点
-![New RootLayout](/assets/library/javafx-tutorial/part1/new-root-layout.png)
+1. 在view包里面创建一个新的 *FXML Document* 叫做 `RootLayout.fxml`, 这一次，选择 *BorderPane* 做为它的根节点   
+![New RootLayout](new-root-layout.png)
 
 2. 在Scene Builder中打开 `RootLayout.fxml`。
 
-3. 通过设置 *Pref Width* 为600和 *Pref Height* 为400来改变这个 *BorderPane*的尺寸。
-![RootLayout Size](/assets/library/javafx-tutorial/part1/root-layout-size.png)
+3. 通过设置 *Pref Width* 为600和 *Pref Height* 为400来改变这个 *BorderPane*的尺寸。   
+![RootLayout Size](root-layout-size.png)
 
-4. 在最顶上添加一个 *MenuBar*，先不去给这个菜单添加任何的功能。
-![MenuBar](/assets/library/javafx-tutorial/part1/menu-bar.png)
+4. 在最顶上添加一个 *MenuBar*，先不去给这个菜单添加任何的功能。   
+![MenuBar](menu-bar.png)
 
 
 ### The JavaFX Main Class
 
 现在，我们需要创建一个 **main java class** 用来加载 `RootLayout.fxml` ，同时添加 `PersonOverview.fxml` 到*RootLayout.fxml*中去，这个main class将做为我们这个应用程序的入口。
 
-1. 在工程上右键选择 *New | Other...*，然后选择 *JavaFX Main Class*。
-![New JavaFX Main Class](/assets/library/javafx-tutorial/part1/new-main-class.png)
+1. 在工程上右键选择 *New | Other...*，然后选择 *JavaFX Main Class*。   
+![New JavaFX Main Class](new-main-class.png)
 
 2. 将这个class命名为 `MainApp`，将它放置到controller包中，也就是上面建的 `ch.makery.address` (注意: 这个包下有两个子包，分别是`view` 和 `model`)。   
-![New JavaFX Main Class](/assets/library/javafx-tutorial/part1/new-main-class2.png)
+![New JavaFX Main Class](new-main-class2.png)
 
 
 你可能注意到了IDE生成的 `MainApp.java` 继承自 `Application` 同时包含了两个方法， 这是一个JavaFX应用程序的最基本的代码结构，这里最重要的方法是 `start(Stage primaryStage)` ，它将会在应用程序运行时通过内部的 `main` 方法自动调用。
 
 正如你所看到的，这个`start(...)` 方法会接收一个 `Stage` 类型的参数，下面的图向你展示了一个JavaFX应用程序的基本结构。
 
-![New FXML Document](/assets/library/javafx-tutorial/part1/javafx-hierarchy.png)   
+![New FXML Document](javafx-hierarchy.png)   
 *Image Source: http://www.oracle.com*
 
 **一切看起来象是剧场里表演**: 这里的 `Stage` 是一个主容器，它就是我们通常所认为的窗口（有边，高和宽，还有关闭按钮）。在这个 `Stage` 里面，你可以放置一个 `Scene`，当然你可以切换别的 `Scene`，而在这个 `Scene` 里面，我们就可以放置各种各样的控件。
@@ -328,7 +296,7 @@ public class MainApp extends Application {
 
 ### 接下来，做些什么?
 
-在 [Tutorial Part 2](/library/javafx-tutorial/zh-cn/part2/) 中，我们将会为这个应用程序添加一些功能。
+在 [Tutorial Part 2](/zh-cn/library/javafx-tutorial/part2/) 中，我们将会为这个应用程序添加一些功能。
 
 
 ##### 这些文章可能会对你有帮助

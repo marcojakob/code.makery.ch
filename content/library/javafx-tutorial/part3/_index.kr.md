@@ -1,56 +1,24 @@
----
-layout: article
-title: "JavaFX 8 튜토리얼 - 3부: 사용자 상호작용"
-date: 2016-10-30
-slug: javafx-tutorial/kr/part3
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-kr-part3.md
-description: "JavaFX TableView 선택에 반응하게 만듭니다. 테이블에 추가, 변경 그리고 삭제하고, 사용자 입력을 검사합니다."
-image: /assets/library/javafx-tutorial/part3/addressapp-part3.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "차례"
-  body:
-  - text: "소개"
-    link: /library/javafx-tutorial/kr/
-    paging: Intro
-  - text: "1부: Scene Builder"
-    link: /library/javafx-tutorial/kr/part1/
-    paging: 1
-  - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-tutorial/kr/part2/
-    paging: 2
-  - text: "3부: 사용자 상호작용"
-    link: /library/javafx-tutorial/kr/part3/
-    paging: 3
-    active: true
-  - text: "4부: CSS 꾸미기"
-    link: /library/javafx-tutorial/kr/part4/
-    paging: 4
-  - text: "5부: XML로 데이터 저장하기"
-    link: /library/javafx-tutorial/kr/part5/
-    paging: 5
-  - text: "6부: 통계 차트"
-    link: /library/javafx-tutorial/kr/part6/
-    paging: 6
-  - text: "7부: 배포"
-    link: /library/javafx-tutorial/kr/part7/
-    paging: 7
-- header: "소스 코드 다운로드"
-  body:
-  - text: 3부 Eclipse 프로젝트 <em>(JDK 8u40 이상 필요)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-3.zip
-    icon-css: fa fa-fw fa-download
-languages:
-  header: 언어
-  collection: library
-  item: javafx-tutorial
-  part: part3
-  active: kr
----
++++
+title = "3부: 사용자 상호작용"
+date = 2016-10-30
+description = "JavaFX TableView 선택에 반응하게 만듭니다. 테이블에 추가, 변경 그리고 삭제하고, 사용자 입력을 검사합니다."
+image = "addressapp-part3.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/kr/part3/"
+aliases = [ 
+  "/library/javafx-8-tutorial/kr/part3/"
+]
+weight = 3
 
-![Screenshot AddressApp Part 3](/assets/library/javafx-tutorial/part3/addressapp-part3.png)
+[[sidebars]]
+header = "소스 코드 다운로드"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> 3부 Eclipse 프로젝트 <em>(JDK 8u40 이상 필요)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-3.zip"
++++
+
+![Screenshot AddressApp Part 3](addressapp-part3.png)
 
 
 ## 3부 주제
@@ -180,7 +148,7 @@ public class DateUtil {
 </pre>
 
 <div class="alert alert-info">
-**힌트:** `DATE_PATTERN`을 변경해서 날짜 형식을 바꿀 수 있습니다. 지원하는 형식은 <a class="alert-link" href="http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a>를 보세요.
+<strong>힌트:</strong> `DATE_PATTERN`을 변경해서 날짜 형식을 바꿀 수 있습니다. 지원하는 형식은 <a class="alert-link" href="http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a>를 보세요.
 </div>
 
 
@@ -228,7 +196,7 @@ private void initialize() {
 
 **여러분의 애플리케이션을 실행**해 보세요. 그리고 테이블 내 연락처를 선택하면 자세한 정보가 오른쪽에 나타나는지 확인하세요.
 
-만일 잘 되지 않으면 여러분의 `PersonOverviewController` 클래스를 [PersonOverviewController.java](/assets/library/javafx-tutorial/part3/PersonOverviewController.java)와 비교할 수 있습니다.
+만일 잘 되지 않으면 여러분의 `PersonOverviewController` 클래스를 [PersonOverviewController.java](PersonOverviewController.java)와 비교할 수 있습니다.
 
 
 *****
@@ -253,10 +221,10 @@ private void handleDeletePerson() {
 
 이제 *SceneBuilder*로 `PersonOverview.fxml` 파일을 엽니다. *Delete* 버튼을 선택한 후 *Code* 그룹에서 **On Action** 값을 `handleDeletePerson`으로 고릅니다.
 
-![On Action](/assets/library/javafx-tutorial/part3/handle-delete.png)
+![On Action](handle-delete.png)
 
 <div class="alert alert-info">
-**기억하세요:** Scene Builder로 FXML 파일을 변경한 내용을 적용하기 위해 Eclipse 프로젝트를 새로고침해야 할 수 있습니다.
+<strong>기억하세요:</strong> Scene Builder로 FXML 파일을 변경한 내용을 적용하기 위해 Eclipse 프로젝트를 새로고침해야 할 수 있습니다.
 </div>
 
 
@@ -312,10 +280,10 @@ private void handleDeletePerson() {
 ### 다이얼로그 디자인
 
 1. 새로운 fxml 파일인 `PersonEditDialog.fxml`을 *view* 패키지에 만듭니다.   
-![Create Edit Dialog](/assets/library/javafx-tutorial/part3/person-edit-dialog1.png)
+![Create Edit Dialog](person-edit-dialog1.png)
 
 2. 다음처럼 다이얼로그를 만들기 위해 `GridPane`, `Label`, `TextField` 그리고 `Button`을 사용하세요:   
-![Edit Dialog](/assets/library/javafx-tutorial/part3/person-edit-dialog2.png)   
+![Edit Dialog](person-edit-dialog2.png)   
 
 
 ### 컨트롤러 만들기
@@ -611,7 +579,7 @@ Scene Builder로 `PersonOverview.fxml` 파일을 열어서 new와 edit 버튼의
 
 ### 다음 할 일은?
 
-[튜토리얼 4부](/library/javafx-tutorial/kr/part4/)에서는 CSS 스타일을 추가합니다.
+[튜토리얼 4부](/kr/library/javafx-tutorial/part4/)에서는 CSS 스타일을 추가합니다.
 
 
 ##### 흥미로운 자료들

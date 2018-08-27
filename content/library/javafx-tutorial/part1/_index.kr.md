@@ -1,57 +1,25 @@
----
-layout: article
-title: "JavaFX 8 튜토리얼 - 1부: Scene Builder"
-date: 2016-10-30
-updated: 2016-11-03
-slug: javafx-tutorial/kr/part1
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-kr-part1.md
-description: "JavaFX 프로젝트를 만드는 방법을 배웁니다. 이 문서는 JavaFX로 주소록 애플리케이션을 디자인, 프로그래밍, 배포하는 7부로 구성된 튜토리얼 중 1부입니다."
-image: /assets/library/javafx-tutorial/part1/addressapp-part1.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "차례"
-  body:
-  - text: "소개"
-    link: /library/javafx-tutorial/kr/
-    paging: Intro
-  - text: "1부: Scene Builder"
-    link: /library/javafx-tutorial/kr/part1/
-    paging: 1
-    active: true
-  - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-tutorial/kr/part2/
-    paging: 2
-  - text: "3부: 사용자 상호작용"
-    link: /library/javafx-tutorial/kr/part3/
-    paging: 3
-  - text: "4부: CSS 꾸미기"
-    link: /library/javafx-tutorial/kr/part4/
-    paging: 4
-  - text: "5부: 데이터를 XML로 저장하기"
-    link: /library/javafx-tutorial/kr/part5/
-    paging: 5
-  - text: "6부: 통계 차트"
-    link: /library/javafx-tutorial/kr/part6/
-    paging: 6
-  - text: "7부: 배포"
-    link: /library/javafx-tutorial/kr/part7/
-    paging: 7
-- header: "소스 코드 다운로드"
-  body:
-  - text: 1부 Eclipse 프로젝트 <em>(JDK 8u40 이상 필요)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-1.zip
-    icon-css: fa fa-fw fa-download
-languages:
-  header: 언어
-  collection: library
-  item: javafx-tutorial
-  part: part1
-  active: kr
----
++++
+title = "1부: Scene Builder"
+date = 2016-10-30
+updated = 2016-11-03
+description = "JavaFX 프로젝트를 만드는 방법을 배웁니다. 이 문서는 JavaFX로 주소록 애플리케이션을 디자인, 프로그래밍, 배포하는 7부로 구성된 튜토리얼 중 1부입니다."
+image = "addressapp-part1.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/kr/part1/"
+aliases = [ 
+  "/library/javafx-8-tutorial/kr/part1/"
+]
+weight = 1
 
-![Screenshot AddressApp Part 1](/assets/library/javafx-tutorial/part1/addressapp-part1.png)
+[[sidebars]]
+header = "소스 코드 다운로드"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> 1부 Eclipse 프로젝트 <em>(JDK 8u40 이상 필요)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-1.zip"
++++
+
+![Screenshot AddressApp Part 1](addressapp-part1.png)
 
 ### 주제
 
@@ -80,13 +48,13 @@ Eclipse가 JDK 8과 Scene Builder를 사용할 수 있게 해야 합니다:
 2. *Add..*를 클릭한 후 *Standard VM*를 선택, JDK 8이 설치되어 있는 *디렉토리*를 고릅니다.
 
 3. 다른 JRE나 JDK를 삭제합니다. 그러면 **JDK 8 하나만 남습니다**.   
-![Preferences JDK](/assets/library/javafx-tutorial/part1/preferences-jdk.png)
+![Preferences JDK](preferences-jdk.png)
 
 4. *Java | Compiler*를 찾아 **Compiler compliance level을 1.8**로 설정합니다.   
-![Preferences Compliance](/assets/library/javafx-tutorial/part1/preferences-compliance.png)
+![Preferences Compliance](preferences-compliance.png)
 
 5. *JavaFX* 부분을 찾아 Scene Builder 실행 파일이 있는 경로를 지정합니다.   
-![Preferences JavaFX](/assets/library/javafx-tutorial/part1/preferences-javafx.png)
+![Preferences JavaFX](preferences-javafx.png)
 
 
 ### 유용한 정보
@@ -132,9 +100,9 @@ e(fx)clipse를 설치하고 나서 Eclipse에서 *File | New | Other...*, *JavaF
 
 뷰 패키지에 마우스 오른쪽 버튼을 클릭해서 `PersonOverview` 라는 새로운 *FXML Document*를 만듭니다.   
 
-![New FXML Document](/assets/library/javafx-tutorial/part1/new-fxml-document.png)
+![New FXML Document](new-fxml-document.png)
 
-![New PersonOverview](/assets/library/javafx-tutorial/part1/new-person-overview.png)
+![New PersonOverview](new-person-overview.png)
 
 
 
@@ -144,7 +112,7 @@ e(fx)clipse를 설치하고 나서 Eclipse에서 *File | New | Other...*, *JavaF
 ## Scene Builder로 디자인하기
 
 <div class="alert alert-warning">
-  **참고:** 여기까지 잘 되지 않으면 소스 코드를 받아서 해 보세요.
+  <strong>참고:</strong> 여기까지 잘 되지 않으면 소스 코드를 받아서 해 보세요.
 </div>
 
 `PersonOverview.fxml` 파일에서 마우스 오른쪽 버튼 클릭 후 *Open with Scene Builder*를 클릭합니다. 그러면 Scene Builder가 열리고 *AnchorPane* 하나만 보입니다 (좌측 Hierarchy 그룹).
@@ -152,36 +120,36 @@ e(fx)clipse를 설치하고 나서 Eclipse에서 *File | New | Other...*, *JavaF
 (Scene Builder가 열리지 않으면 *Window | Preferences | JavaFX*에서 Scene Builder가 설치된 경로를 정확히 설정합니다).
 
 1. Hierarchy 그룹에서 *Anchor Pane*를 선택하고 우측 Layout 그룹에서 Size를 조정합니다:   
-![Anchor Pane Size](/assets/library/javafx-tutorial/part1/anchor-pane-size.png)
+![Anchor Pane Size](anchor-pane-size.png)
 
 2. Library 그룹에서 *Split Pane (Horizontal Flow)*을 드래그해서 화면에 추가합니다. *Hierarchy* 그룹의 *Split Pane*에 마우스 오른쪽 버튼 클릭 후 *Fit to Parent*를 클릭합니다.   
-![Fit to Parent](/assets/library/javafx-tutorial/part1/fit-to-parent.png)
+![Fit to Parent](fit-to-parent.png)
 
 3. *TableView*를 드래그해서 (*Controls* 아래) *SplitPane*의 왼쪽에 배치합니다. TableView를 선택해서(열이 아닌 테이블 자체) 다음처럼 Layout 그룹의 Constraints를 설정합니다. 여러분은 *AnchorPane* 안쪽에서 언제나 상하좌우로 앵커를 설정할 수 있습니다 ([more information on Layouts](http://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm)).   
-![TableView Anchors](/assets/library/javafx-tutorial/part1/table-view-anchors.png)
+![TableView Anchors](table-view-anchors.png)
 
 4. *Preview | Show Preview in Window* 메뉴에서 잘 되는지 확인하세요. 윈도우 크기를 늘리거나 줄여 보세요. 앵커를 설정한 대로 TableView는 윈도우와 함께 크기가 바뀝니다.
 
 5. Properties 그룹에서 각 열의 텍스트를 "First Name"과 "Last Name"으로 바꿉니다.   
-![Column Texts](/assets/library/javafx-tutorial/part1/column-texts.png)
+![Column Texts](column-texts.png)
 
 6. *TableView*를 선택한 후 *Column Resize Policy* (Properties 그룹에서) 값을 *constrained-resize*로 고릅니다. 이 값은 열이 언제나 빈 공간까지 차지하게 합니다.   
-![Column Resize Policy](/assets/library/javafx-tutorial/part1/column-resize-policy.png)
+![Column Resize Policy](column-resize-policy.png)
 
 7. 오른쪽에 *Label*을 추가해서 텍스트를 "Person Details"로 합니다 (힌트: *Label*를 쉽게 찾으려면 검색하세요). 앵커로 레이아웃을 조정하세요.   
-![Person Details Label](/assets/library/javafx-tutorial/part1/person-details-label.png)
+![Person Details Label](person-details-label.png)
 
 8. 오른쪽에 *GridPane*을 추가한 후 앵커로 레이아웃을 조정합니다 (위쪽, 오른쪽, 왼쪽).    
-![GridPane Layout](/assets/library/javafx-tutorial/part1/grid-pane-layout.png)
+![GridPane Layout](grid-pane-layout.png)
 
 9. 셀에 Label을 추가합니다. (*참고: GridPane에 행을 추가하려면 존재하는 행 숫자를 선택한 후 (노란색으로 바뀜) 마우스 오른쪽 버튼을 클릭해서 "Add Row"를 클릭하세요.*)   
-![Add labels](/assets/library/javafx-tutorial/part1/add-labels.png)
+![Add labels](add-labels.png)
 
 10. 하단에 *ButtonBar*를 추가한 다음 버튼 3개를 넣으세요. *ButtonBar*에 앵커를 설정하면 (오른쪽과 아래쪽) 오른쪽 영역에 배치됩니다.   
-![Button Group](/assets/library/javafx-tutorial/part1/button-group.png)
+![Button Group](button-group.png)
 
 11. 이제 다음 화면처럼 보일 겁니다. *Preview* 메뉴를 이용해서 크기를 늘리거나 줄여 보세요.   
-![Preview](/assets/library/javafx-tutorial/part1/scene-builder-preview.png)
+![Preview](scene-builder-preview.png)
 
 
 
@@ -193,15 +161,15 @@ e(fx)clipse를 설치하고 나서 Eclipse에서 *File | New | Other...*, *JavaF
 우리는 다른 FXML 파일을 만들어서 이 상위 레이아웃이 메뉴바와 방금 만든 `PersonOverview.fxml`을 포함하게 할 겁니다.
 
 1. 뷰 패키지에 `RootLayout.fxml` 이라는 새로운 *FXML Document*를 만듭니다. 이번에는 *BorderPane*을 상위 레이아웃으로 고릅니다.   
-![New RootLayout](/assets/library/javafx-tutorial/part1/new-root-layout.png)
+![New RootLayout](new-root-layout.png)
 
 2. `RootLayout.fxml`을 Scene Builder로 엽니다.
 
 3. *BorderPane*의 *Pref Width*를 600으로, *Pref Height*를 400으로 설정하세요.   
-![RootLayout Size](/assets/library/javafx-tutorial/part1/root-layout-size.png)
+![RootLayout Size](root-layout-size.png)
 
 4. 상단에 *MenuBar*를 추가하세요. 지금은 메뉴 기능을 구현하지 않을 겁니다.   
-![MenuBar](/assets/library/javafx-tutorial/part1/menu-bar.png)
+![MenuBar](menu-bar.png)
 
 
 ### JavaFX 메인 클래스
@@ -209,17 +177,17 @@ e(fx)clipse를 설치하고 나서 Eclipse에서 *File | New | Other...*, *JavaF
 이제 우리는 **메인 Java 클래스**를 만들어서 애플리케이션을 시작하고 `PersonOverview.fxml`을 가운데에 추가할 겁니다.
 
 1. 프로젝트에서 마우스 오른쪽 버튼 클릭 후, *New | Other...*를 선택하고, *JavaFX Main Class*를 선택합니다.   
-![New JavaFX Main Class](/assets/library/javafx-tutorial/part1/new-main-class.png)
+![New JavaFX Main Class](new-main-class.png)
 
 2. 이 클래스 이름을 `MainApp`으로 하고 컨트롤러 패키지인 `ch.makery.address`에 넣습니다 (참고: 이 패키지는 하위 패키지인 `view`와 `model`의 부모 패키지입니다).   
-![New JavaFX Main Class](/assets/library/javafx-tutorial/part1/new-main-class2.png)
+![New JavaFX Main Class](new-main-class2.png)
 
 
 생성된 `MainApp.java` 클래스는 `Application`을 확장(상속)하고 메서드 2개를 가집니다. 이게 바로 우리가 JavaFX 애플리케이션을 시작하는 데 필요한 기본적인 구조입니다. 가장 중요한 부분은 `start(Stage primaryStage)` 메서드입니다. 이 메서드는 `main` 메서드에서 애플리케이션이 `실행되면` 자동으로 호출됩니다.
 
 보다시피 `start(...)` 메서드는 파라미터로 `Stage`를 받습니다. 다음 그림은 모든 JavaFX 애플리케이션의 구조입니다:
 
-![New FXML Document](/assets/library/javafx-tutorial/part1/javafx-hierarchy.png)
+![New FXML Document](javafx-hierarchy.png)
 *그림 출처: http://www.oracle.com*
 
 **연극과 비슷합니다**: `Stage`는 `Window`처럼 경계, 최소화, 최대화, 그리고 닫기 버튼을 가지는 메인 컨테이너입니다. 여러분은 `Stage` 안에 `Scene`을 추가할 수 있는데, 이는 물론 다른 `Scene`으로 바뀔 수 있습니다. `Scene` 안에는 `AnchorPane`, `TextBox` 등의 실제 JavaFX 노드가 추가됩니다.
@@ -330,7 +298,7 @@ public class MainApp extends Application {
 
 ### 다음 할 일은?
 
-[튜토리얼 2부](/library/javafx-tutorial/kr/part2/)에서는 우리 애플리케이션에 데이터와 기능을 몇 가지 추가해 볼 겁니다.
+[튜토리얼 2부](/kr/library/javafx-tutorial/part2/)에서는 우리 애플리케이션에 데이터와 기능을 몇 가지 추가해 볼 겁니다.
 
 
 ##### 흥미로울 수 있는 정보

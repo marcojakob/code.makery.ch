@@ -1,57 +1,25 @@
----
-layout: article
-title: "Tutorial JavaFX 8 - Bagian 2: Model dan TableView"
-date: 2014-04-23
-updated: 2015-03-12
-slug: javafx-tutorial/id/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-id-part2.md
-description: "Gunakan TableView JavaFXUse untuk menampilkan ObservableList dari Persons."
-image: /assets/library/javafx-tutorial/part2/addressapp-part2.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Seri artikel"
-  body:
-  - text: "Pengenalan"
-    link: /library/javafx-tutorial/id/
-    paging: Intro
-  - text: "Bagian 1: Scene Builder"
-    link: /library/javafx-tutorial/id/part1/
-    paging: 1
-  - text: "Bagian 2: Model dan TableView"
-    link: /library/javafx-tutorial/id/part2/
-    paging: 2
-    active: true
-  - text: "Bagian 3: Berinteraksi dengan pengguna"
-    link: /library/javafx-tutorial/id/part3/
-    paging: 3
-  - text: "Bagian 4: Memberikan gaya dengan CSS"
-    link: /library/javafx-tutorial/id/part4/
-    paging: 4
-  - text: "Bagian 5: Menyimpan data sebagai XML"
-    link: /library/javafx-tutorial/id/part5/
-    paging: 5
-  - text: "Bagian 6: Bagan Statistika"
-    link: /library/javafx-tutorial/id/part6/
-    paging: 6
-  - text: "Bagian 7: Penyebaran"
-    link: /library/javafx-tutorial/id/part7/
-    paging: 7
-- header: "Unduh kode sumber"
-  body:
-  - text: Bagian 2 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Bahasa
-  collection: library
-  item: javafx-tutorial
-  part: part2
-  active: id
----
++++
+title = "Bagian 2: Model dan TableView"
+date = 2014-04-23
+updated = 2015-03-12
+description = "Gunakan TableView JavaFXUse untuk menampilkan ObservableList dari Persons."
+image = "addressapp-part2.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/id/part2/"
+aliases = [ 
+  "/library/javafx-8-tutorial/id/part2/"
+]
+weight = 2
 
-![Tangkapan AddressApp bagian 2](/assets/library/javafx-tutorial/part2/addressapp-part2.png)
+[[sidebars]]
+header = "Unduh kode sumber"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Bagian 2 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip"
++++
+
+![Tangkapan AddressApp bagian 2](addressapp-part2.png)
 
 
 ## Pembahasan di bagian 2
@@ -265,7 +233,7 @@ Sekarang mari kita memberi data pada table. Kita perlu pengendali untuk `PersonO
 
 <div class="alert alert-info">
   <p>
-    Kita hanya menggunakan nilai `StringProperty` untuk tabel kolom didalam contoh ini. Ketika anda ingin menggunakan `IntegerProperty` atau `DoubleProperty`, `setCellValueFactory(...)` harus mempunyai tambahan `asObject()`:
+    Kita hanya menggunakan nilai <code>StringProperty</code> untuk tabel kolom didalam contoh ini. Ketika anda ingin menggunakan <code>IntegerProperty</code> atau <code>DoubleProperty</code>, <code>setCellValueFactory(...)</code> harus mempunyai tambahan <code>asObject()</code>:
   </p>
   <p>
   <pre>myIntegerColumn.setCellValueFactory(cellData -> 
@@ -395,15 +363,15 @@ Kita hampir selesai, tapi satu hal terlewat, kita belum meberitahu `PersonOvervi
 1. Buka `PersonOverview.fxml` dengan *SceneBuilder*.
 
 2. Buka kelompok *Controller* pada sisi kiri dan pilih `PersonOverviewController` sebagai**controller class**.   
-![Atur kelas Controller](/assets/library/javafx-tutorial/part2/set-controller-class.png)
+![Atur kelas Controller](set-controller-class.png)
 
 3. Pilih `TableView` di kelompok *Hierarchy* dan pilih *Code*, kelompokan bidang `personTable` sebagai **fx:id**.   
-![Atur TableView fx:id](/assets/library/javafx-tutorial/part2/set-tableview-fx-id.png)
+![Atur TableView fx:id](set-tableview-fx-id.png)
 
 4.Lakukan hal yang sama untuk kolom-kolom dan pilih `firstNameColumn` dan `lastNameColumn` sebagai masing-masing **fx:id**.
 
 5. Untuk tiap label **each label** di kolom kedua, pilih **fx:id** yang sesuai.   
-![Set Label fx:id](/assets/library/javafx-tutorial/part2/set-label-fx-id.png)
+![Set Label fx:id](set-label-fx-id.png)
 
 6.  Penting: Pada Eclipse  **segarkan (F5) keseluruhan proyek AddressApp**. Ini diperlukan karena Eclipse terkadang tidak mengetahuiu adanya perubahan yang dibuat oleh Scene Builder.
 
@@ -419,7 +387,7 @@ Selamat!
 
 ### Berikutnya?
 
-Di [Tutorial bagian 3](/library/javafx-tutorial/id/part3/) kita akan menambah lebih banyak fungsi seperti penambahan, menghapus, memperbaharui Persons.
+Di [Tutorial bagian 3](/id/library/javafx-tutorial/part3/) kita akan menambah lebih banyak fungsi seperti penambahan, menghapus, memperbaharui Persons.
 
 
 ##### Beberapa artikel menarik lainnya

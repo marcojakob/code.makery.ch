@@ -1,5 +1,5 @@
 +++
-title = "Tutoriel JavaFX 8 (Français)"
+title = "Tutoriel JavaFX (Français)"
 date = 2014-04-19
 updated = 2015-04-15
 description = "Les sept étapes de ce tutorial vous amèneront à découvrir tout à tour, le design, la programmation et enfin le déploiement d'une application de répertoire d'adresses."

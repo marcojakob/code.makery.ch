@@ -1,57 +1,25 @@
----
-layout: article
-title: "JavaFX 8 튜토리얼 - 2부: Model 그리고 TableView"
-date: 2016-10-30
-updated: 2016-11-04
-slug: javafx-tutorial/kr/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-kr-part2.md
-description: "JavaFX TableView를 사용해서 연락처의 ObservableList를 보여줍니다."
-image: /assets/library/javafx-tutorial/part2/addressapp-part2.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "차례"
-  body:
-  - text: "소개"
-    link: /library/javafx-tutorial/kr/
-    paging: Intro
-  - text: "1부: Scene Builder"
-    link: /library/javafx-tutorial/kr/part1/
-    paging: 1
-  - text: "2부: Model 그리고 TableView"
-    link: /library/javafx-tutorial/kr/part2/
-    paging: 2
-    active: true
-  - text: "3부: 사용자 상호작용"
-    link: /library/javafx-tutorial/kr/part3/
-    paging: 3
-  - text: "4부: CSS 꾸미기"
-    link: /library/javafx-tutorial/kr/part4/
-    paging: 4
-  - text: "5부: 데이터를 XML로 저장하기"
-    link: /library/javafx-tutorial/kr/part5/
-    paging: 5
-  - text: "6부: 통계 차트"
-    link: /library/javafx-tutorial/kr/part6/
-    paging: 6
-  - text: "7부: 배포"
-    link: /library/javafx-tutorial/kr/part7/
-    paging: 7
-- header: "소스 코드 다운로드"
-  body:
-  - text: 2부 Eclipse 프로젝트 <em>(JDK 8u40 이상 필요)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip
-    icon-css: fa fa-fw fa-download
-languages:
-  header: 언어
-  collection: library
-  item: javafx-tutorial
-  part: part2
-  active: kr
----
++++
+title = "2부: Model 그리고 TableView"
+date = 2016-10-30
+updated = 2016-11-04
+description = "JavaFX TableView를 사용해서 연락처의 ObservableList를 보여줍니다."
+image = "addressapp-part2.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/kr/part2/"
+aliases = [ 
+  "/library/javafx-8-tutorial/kr/part2/"
+]
+weight = 2
 
-![Screenshot AddressApp Part 2](/assets/library/javafx-tutorial/part2/addressapp-part2.png)
+[[sidebars]]
+header = "소스 코드 다운로드"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> 2부 Eclipse 프로젝트 <em>(JDK 8u40 이상 필요)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip"
++++
+
+![Screenshot AddressApp Part 2](addressapp-part2.png)
 
 
 ## 2부 주제
@@ -264,7 +232,7 @@ public class Person {
 2. 테이블과 Label에 접근하기 위해 인스턴스 변수를 추가할 겁니다. 일부 필드와 메서드에 `@FXML` 이라는 특별한 어노테이션이 있습니다. 이는 fxml 파일이 private 필드와 prviate 메서드를 이용하기 위해 필요합니다. fxml 파일에서 모든 설정을 마치고 나서, 이 파일이 로드될 때 애플리케이션은 각 필드에 값을 자동으로 채웁니다:
 
 <div class="alert alert-info">
-**참고:** awt나 swing이 아니라 항상 **javafx import** 구문을 사용한다는 것을 명심하세요!
+<strong>참고:</strong> awt나 swing이 아니라 항상 <strong>javafx import</strong> 구문을 사용한다는 것을 명심하세요!
 </div>
 
 
@@ -346,7 +314,7 @@ public class PersonOverviewController {
 
 <div class="alert alert-info">
   <p>
-    이 예제에서는 테이블 열에 대해 `StringProperty` 값을 사용하고 있습니다. `IntegerProperty`나 `DoubleProperty`가 필요하다면 `setCellValueFactory(...)`는 반드시 추가로 `asObject()`를 이용해야 합니다:
+    이 예제에서는 테이블 열에 대해 <code>StringProperty</code> 값을 사용하고 있습니다. <code>IntegerProperty</code>나 <code>DoubleProperty</code>가 필요하다면 <code>setCellValueFactory(...)</code>는 반드시 추가로 <code>asObject()</code>를 이용해야 합니다:
   </p>
   <p>
   <pre>myIntegerColumn.setCellValueFactory(cellData ->
@@ -401,15 +369,15 @@ public void showPersonOverview() {
 1. *Scene Builder*로 `PersonOverview.fxml`을 엽니다.
 
 2. 왼쪽 패널에서 *Controller* 그룹을 열어서 **Controller class**를 `PersonOverviewController`로 선택합니다.   
-![Set Controller Class](/assets/library/javafx-tutorial/part2/set-controller-class.png)
+![Set Controller Class](set-controller-class.png)
 
 3. *Hierarchy* 그룹에서 `TableView`를 선택한 다음 *Code* 그룹에서 **fx:id** 값을 `personTable` 필드로 선택합니다.   
-![Set TableView fx:id](/assets/library/javafx-tutorial/part2/set-tableview-fx-id.png)
+![Set TableView fx:id](set-tableview-fx-id.png)
 
 4. TableView의 열도 마찬가지로 **fx:id** 값을 `firstNameColumn`과 `lastNameColumn`으로 각각 선택합니다.
 
 5. 두 번째 열의 **각 Label**도 마찬가지로 적절한 **fx:id** 값을 선택하세요.   
-![Set Label fx:id](/assets/library/javafx-tutorial/part2/set-label-fx-id.png)
+![Set Label fx:id](set-label-fx-id.png)
 
 6. 중요합니다: Eclipse로 돌아가서 **주소록 프로젝트 전체를 새로고침** 하세요 (F5). 왜냐하면 Eclipse는 가끔 Scene Builder에서 일어난 변화를 모를 때가 있습니다.
 
@@ -427,7 +395,7 @@ public void showPersonOverview() {
 
 ### 다음 할 일은?
 
-[튜토리얼 3부](/library/javafx-tutorial/kr/part3/)에서는 연락처를 추가, 삭제 그리고 변경하는 기능을 추가할 겁니다.
+[튜토리얼 3부](/kr/library/javafx-tutorial/part3/)에서는 연락처를 추가, 삭제 그리고 변경하는 기능을 추가할 겁니다.
 
 
 ##### 흥미로울 수 있는 정보

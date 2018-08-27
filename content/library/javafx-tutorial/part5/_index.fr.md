@@ -1,57 +1,25 @@
----
-layout: article
-title: "Tutoriel JavaFX 8 - partie 5 : stockage de données en XML"
-date: 2014-04-25 01:00
-updated: 2015-04-15
-slug: javafx-tutorial/fr/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-fr-part5.md
-description: "Enregistrer les données en XML avec JAXB. Apprenez comment utiliser le FileChooser et le menu de JavaFX."
-image: /assets/library/javafx-tutorial/part5/addressapp-part5.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Les articles dans ce tutoriel"
-  body:
-  - text: "Introduction"
-    link: /library/javafx-tutorial/fr/
-    paging: Intro
-  - text: "Partie 1 : le Scene Builder"
-    link: /library/javafx-tutorial/fr/part1/
-    paging: 1
-  - text: "Partie 2 : modèle et TableView"
-    link: /library/javafx-tutorial/fr/part2/
-    paging: 2
-  - text: "Partie 3 : interaction avec l'utilisateur"
-    link: /library/javafx-tutorial/fr/part3/
-    paging: 3
-  - text: "Partie 4 : style CSS"
-    link: /library/javafx-tutorial/fr/part4/
-    paging: 4
-  - text: "Partie 5 : stockage de données en XML"
-    link: /library/javafx-tutorial/fr/part5/
-    paging: 5
-    active: true
-  - text: "Partie 6 : statistiques graphiques"
-    link: /library/javafx-tutorial/fr/part6/
-    paging: 6
-  - text: "Partie 7 : déploiement"
-    link: /library/javafx-tutorial/fr/part7/
-    paging: 7
-- header: "Téléchargez les sources"
-  body:
-  - text: Projet Eclipse relatif à la partie 5 <em>(JDK 8u40 requis au minimum)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-5.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Langues
-  collection: library
-  item: javafx-tutorial
-  part: part5
-  active: fr
----
++++
+title = "Partie 5 : stockage de données en XML"
+date = 2014-04-25
+updated = 2015-04-15
+description = "Enregistrer les données en XML avec JAXB. Apprenez comment utiliser le FileChooser et le menu de JavaFX."
+image = "addressapp-part5.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/fr/part5/"
+aliases = [ 
+  "/library/javafx-8-tutorial/fr/part5/"
+]
+weight = 5
 
-![Screenshot AddressApp Part 5](/assets/library/javafx-tutorial/part5/addressapp-part5.png)
+[[sidebars]]
+header = "Téléchargez les sources"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Projet Eclipse relatif à la partie 5 <em>(JDK 8u40 requis au minimum)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-5.zip"
++++
+
+![Screenshot AddressApp Part 5](addressapp-part5.png)
 
 
 ## Sujets dans la partie 5
@@ -286,7 +254,7 @@ Dans notre `RootLayout.fxml` il y a déjà un menu mais nous ne l'avons pas enco
 
 Ouvrez le fichier `RootLayout.fxml` dans Scene Builder puis faites un drag and drop depuis le groupe *library* pour ajouter les éléments menus à la `MenuBar` dans le groupe *hierarchy*. Créez un menu **New**, **Open...**, **Save**, **Save As...**, et **Exit** ! 
 
-![Add Menu Items](/assets/library/javafx-tutorial/part5/add-menu-items.png)
+![Add Menu Items](add-menu-items.png)
 
 Astuce : Utilisez le paramètre *Accelerator* dans le groupe des *Properties* pour ajouter des raccourcis clavier aux éléments du menu ! 
 
@@ -435,7 +403,7 @@ La valeur `null` est renvoyée lorsque l'utilisateur referme la boîte de dialog
 1. Ouvrez le fichier `RootLayout.fxml` dans Scene Builder ! Sélectionnez le `RootLayoutController` comme classe contrôleur dans le groupe *Controller* ! 
 
 2. Retournez dans le groupe *Hierarchy* et sélectionnez un élément menu. Dans le groupe *Code* sous **On Action** vous devriez voir un choix de toutes les méthodes contrôleur disponibles. Sélectionnez la méthode correspondante pour chaque élément du menu !   
-![Menu Actions](/assets/library/javafx-tutorial/part5/menu-actions.png)
+![Menu Actions](menu-actions.png)
 
 3. Répétez ces étapes pour tous les éléments du menu ! 
 
@@ -549,7 +517,7 @@ Voyons maintenant comment tout cela s'articule :
 
 ### Et ensuite ?
 
-Dans la [Partie 6](/library/javafx-tutorial/fr/part6/) du tutoriel, nous allons ajouter un graphique illustrant les statistiques des dates de naissance. 
+Dans la [Partie 6](/fr/library/javafx-tutorial/part6/) du tutoriel, nous allons ajouter un graphique illustrant les statistiques des dates de naissance. 
 
 
 ##### Voici quelques autres article qui pourraient vous intéresser

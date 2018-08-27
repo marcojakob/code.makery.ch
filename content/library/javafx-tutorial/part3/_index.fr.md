@@ -1,57 +1,25 @@
----
-layout: article
-title: "Tutoriel JavaFX 8 - partie 3 : interaction avec l'utilisateur"
-date: 2014-04-24
-updated: 2015-04-15
-slug: javafx-tutorial/fr/part3
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-fr-part3.md
-description: "Réagir aux changements de sélection dans le JavaFX TableView. Ajouter, modifier et supprimer des éléments de la table et valider l'entrée de l'utilisateur."
-image: /assets/library/javafx-tutorial/part3/addressapp-part3.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Les articles dans ce tutoriel"
-  body:
-  - text: "Introduction"
-    link: /library/javafx-tutorial/fr/
-    paging: Intro
-  - text: "Partie 1 : le Scene Builder"
-    link: /library/javafx-tutorial/fr/part1/
-    paging: 1
-  - text: "Partie 2 : modèle et TableView"
-    link: /library/javafx-tutorial/fr/part2/
-    paging: 2
-  - text: "Partie 3 : interaction avec l'utilisateur"
-    link: /library/javafx-tutorial/fr/part3/
-    paging: 3
-    active: true
-  - text: "Partie 4 : style CSS"
-    link: /library/javafx-tutorial/fr/part4/
-    paging: 4
-  - text: "Partie 5 : stockage de données en XML"
-    link: /library/javafx-tutorial/fr/part5/
-    paging: 5
-  - text: "Partie 6 : statistiques graphiques"
-    link: /library/javafx-tutorial/fr/part6/
-    paging: 6
-  - text: "Partie 7 : déploiement"
-    link: /library/javafx-tutorial/fr/part7/
-    paging: 7
-- header: "Téléchargez les sources"
-  body:
-  - text: Projet Eclipse relatif à la partie 3 <em>(JDK 8u40 requis au minimum)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-3.zip
-    icon-css: fa fa-fw fa-download
-languages:
-  header: Langues
-  collection: library
-  item: javafx-tutorial
-  part: part3
-  active: fr
----
++++
+title = "Partie 3 : interaction avec l'utilisateur"
+date = 2014-04-24
+updated = 2015-04-15
+description = "Réagir aux changements de sélection dans le JavaFX TableView. Ajouter, modifier et supprimer des éléments de la table et valider l'entrée de l'utilisateur."
+image = "addressapp-part3.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/fr/part3/"
+aliases = [ 
+  "/library/javafx-8-tutorial/fr/part3/"
+]
+weight = 3
 
-![Screenshot AddressApp Part 3](/assets/library/javafx-tutorial/part3/addressapp-part3.png)
+[[sidebars]]
+header = "Téléchargez les sources"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Projet Eclipse relatif à la partie 3 <em>(JDK 8u40 requis au minimum)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-3.zip"
++++
+
+![Screenshot AddressApp Part 3](addressapp-part3.png)
 
 
 ## Topics in Part 3
@@ -180,7 +148,7 @@ public class DateUtil {
 </pre>
 
 <div class="alert alert-info">
-**Astuce:** Vous pouvez changer le format de la date en changeant le
+<strong>Astuce:</strong> Vous pouvez changer le format de la date en changeant le
 `DATE_PATTERN`. Pour tous les formats possibles voir <a class="alert-link" href="http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a>.
 </div>
 
@@ -228,7 +196,7 @@ Avec `personTable.getSelectionModel...` nous obtenons la *selectedItemProperty* 
 
 Essayez de **lancer l'application** à ce stade. Vérifiez que lorsque vous sélectionnez une personne dans la table, les détails de celle-ci soient affichés à droite.
 
-Si quelque chose ne fonctionne pas, vous pouvez comparer votre classe `PersonOverviewController` avec [PersonOverviewController.java](/assets/library/javafx-tutorial/part3/PersonOverviewController.java).
+Si quelque chose ne fonctionne pas, vous pouvez comparer votre classe `PersonOverviewController` avec [PersonOverviewController.java](PersonOverviewController.java).
 
 
 *****
@@ -254,10 +222,10 @@ private void handleDeletePerson() {
 
 Maintenant, ouvrez le fichier `PersonOverview.fxml` dans *SceneBuilder*. Sélectionnez le bouton *Delete*, ouvrez le groupe *Code* et choisissez `handleDeletePerson` dans la liste déroulante de ** On Action **.
 
-![On Action](/assets/library/javafx-tutorial/part3/handle-delete.png)
+![On Action](handle-delete.png)
 
 <div class="alert alert-info">
-** N'oubliez pas: ** Après avoir modifié un fichier FXML à partir de Scene Builder vous pourriez avoir besoin de rafraîchir le projet dans Eclipse pour que les modifications soient appliquées.
+<strong>N'oubliez pas: </strong> Après avoir modifié un fichier FXML à partir de Scene Builder vous pourriez avoir besoin de rafraîchir le projet dans Eclipse pour que les modifications soient appliquées.
 </div>
 
 
@@ -311,11 +279,11 @@ Les actions Nouveau et Editer demandent un peu plus de travail. Nous allons avoi
 
 ### Conception de la boîte de dialogue
 
-1. Créer un nouveau fichier fxml appelé `PersonEditDialog.fxml` à l'intérieur du package *view*. 
-![Create Edit Dialog](/assets/library/javafx-tutorial/part3/person-edit-dialog1.png)
+1. Créer un nouveau fichier fxml appelé `PersonEditDialog.fxml` à l'intérieur du package *view*.   
+![Create Edit Dialog](person-edit-dialog1.png)
 
-2. Utilisez un `GridPane`, des `Label`, des `TextField` et des `Button` pour créer une boîte de dialogue comme suit:
-![Edit Dialog](/assets/library/javafx-tutorial/part3/person-edit-dialog2.png)
+2. Utilisez un `GridPane`, des `Label`, des `TextField` et des `Button` pour créer une boîte de dialogue comme suit:   
+![Edit Dialog](person-edit-dialog2.png)
 
 
 ### Créer le Contrôleur
@@ -611,7 +579,7 @@ J'espère que les concepts et la structure de cette application vous permettra d
 
 ### Et après ?
 
-Dans le [Tutorial Part 4](/library/javafx-tutorial/fr/part4/) nous allons ajouter quelques styles CSS.
+Dans le [Tutorial Part 4](/fr/library/javafx-tutorial/part4/) nous allons ajouter quelques styles CSS.
 
 
 ##### Voici quelques articles qui pourraient aussi vous intéresser :

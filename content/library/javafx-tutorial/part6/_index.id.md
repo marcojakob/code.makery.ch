@@ -1,57 +1,25 @@
----
-layout: article
-title: "Tutorial JavaFX 8 - Bagian 6: Bagan Statistika"
-date: 2014-05-09
-updated: 2015-03-12
-slug: javafx-tutorial/id/part6
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-id-part6.md
-description: "Belajar bagaimana membuat bagan palang JavaFX."
-image: /assets/library/javafx-tutorial/part6/addressapp-part6.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Seri Artikel"
-  body:
-  - text: "Pengenalan"
-    link: /library/javafx-tutorial/id/
-    paging: Intro
-  - text: "Bagian 1: Scene Builder"
-    link: /library/javafx-tutorial/id/part1/
-    paging: 1
-  - text: "Bagian 2: Model dan TableView"
-    link: /library/javafx-tutorial/id/part2/
-    paging: 2
-  - text: "Bagian 3: Berinteraksi dengan pengguna"
-    link: /library/javafx-tutorial/id/part3/
-    paging: 3
-  - text: "Bagian 4: Memberikan gaya dengan CSS"
-    link: /library/javafx-tutorial/id/part4/
-    paging: 4
-  - text: "Bagian 5: Menyimpan data sebagai XML"
-    link: /library/javafx-tutorial/id/part5/
-    paging: 5
-  - text: "Bagian 6: Bagan Statistika"
-    link: /library/javafx-tutorial/id/part6/
-    paging: 6
-    active: true
-  - text: "Bagian 7: Penyebaran"
-    link: /library/javafx-tutorial/id/part7/
-    paging: 7
-- header: "Unduh kode sumber"
-  body:
-  - text: Bagian 6 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-6.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Bahasa
-  collection: library
-  item: javafx-tutorial
-  part: part6
-  active: id
----
++++
+title = "Bagian 6: Bagan Statistika"
+date = 2014-05-09
+updated = 2015-03-12
+description = "Belajar bagaimana membuat bagan palang JavaFX."
+image = "addressapp-part6.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/id/part6/"
+aliases = [ 
+  "/library/javafx-8-tutorial/id/part6/"
+]
+weight = 6
 
-![Tangkapan layar AddressApp bagian 6](/assets/library/javafx-tutorial/part6/addressapp-part6.png)
+[[sidebars]]
+header = "Unduh kode sumber"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Bagian 6 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-6.zip"
++++
+
+![Tangkapan layar AddressApp bagian 6](addressapp-part6.png)
 
 
 ## Pembahasan di bagian 6 6
@@ -71,7 +39,7 @@ Kita akan menggunakan **Bagan Palang** berisi sebuah palang untuk tiap bulan. Ti
 ## Tampilan FXML Statistik
 
 1. Kita mulai dengan membuat berkas `BirthdayStatistics.fxml` didalam paket `ch.makery.address.view` (*Klik kanan pada paket | New | other... | New FXML Document*).   
-![FXML Statistika tanggal lahir](/assets/library/javafx-tutorial/part6/birthday-statistics-fxml.png)
+![FXML Statistika tanggal lahir](birthday-statistics-fxml.png)
 
 2. Buka berkas `BirthdayStatistics.fxml` di Scene Builder.
 
@@ -189,7 +157,7 @@ public class BirthdayStatisticsController {
 3. Pilih `BarChart` kemudian pilih `barChart` sebagai properti fx:id  (didalam kelommpok *Code*).
 
 4. Pilih `CategoryAxis` dan pilih `xAxis` sebagai prperti fx:id.   
-![Kategori Axis](/assets/library/javafx-tutorial/part6/category-axis.png)
+![Kategori Axis](category-axis.png)
 
 5. Kamu mungkin menambah judul ke `BarChart` (di kelompok *Properties*) untuk membuat gaya lebih lanjut.
 
@@ -253,11 +221,11 @@ private void handleShowBirthdayStatistics() {
 
 Sekarang buka berkas `RootLayout.fxml` dengan Scene Builder. Buat *Statistics* `Menu` dengan *Show Statistics* `MenuItem`:
 
-![Menu tampilkan statistika](/assets/library/javafx-tutorial/part6/show-statistics-menu.png)
+![Menu tampilkan statistika](show-statistics-menu.png)
 
 Pilih *Show Statistics* `MenuItem` dan pilih `handleShowBirthdayStatistics` untuk `On Action` (didalam kelompok *Code*)   
 
-![Tampilkan statistika On Action](/assets/library/javafx-tutorial/part6/show-statistics-on-action.png)
+![Tampilkan statistika On Action](show-statistics-on-action.png)
 
 Pada Eclipse, segarkan (F5) **dan cobalah**.
 
@@ -271,7 +239,7 @@ Sebuah tempat bagus untuk informasi adalah tutorial dari oracle [Working with Ja
 
 ### Berikutnya
 
-Di tutorial terakhir [Bagian 7](/library/javafx-tutorial/id/part7/) kita akan menyebarkan aplikasi kita (yaitu paket dan memberikan aplikasi kepada pengguna kita)
+Di tutorial terakhir [Bagian 7](/id/library/javafx-tutorial/part7/) kita akan menyebarkan aplikasi kita (yaitu paket dan memberikan aplikasi kepada pengguna kita)
 
 
 ##### Beberapa artikel menarik lainnya

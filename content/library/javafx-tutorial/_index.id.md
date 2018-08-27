@@ -1,5 +1,5 @@
 +++
-title = "Tutorial JavaFX 8 (Bahasa Indonesia)"
+title = "Tutorial JavaFX (Bahasa Indonesia)"
 date = 2014-04-19
 updated = 2015-03-12
 description = "Tujuh bagian tutorial ini mencakup mendesain, memprogram, dan penyebaran aplikasi alamat dengan JavaFX."

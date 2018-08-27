@@ -1,57 +1,25 @@
----
-layout: article
-title: "Tutorial JavaFX 8 - Parte 6: Gráficos de Estatistica"
-date: 2014-09-10
-updated: 2014-11-12
-slug: javafx-tutorial/pt/part6
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-pt-part6.md
-description: "Aprenda como criar um Gráfico de Barras JavaFX (JavaFX Bar Chart)."
-image: /assets/library/javafx-tutorial/part6/addressapp-part6.png
-published: true
-prettify: true
-comments: false
-sidebars:
-- header: "Artigos nesta serie"
-  body:
-  - text: "Introdução"
-    link: /library/javafx-tutorial/pt/
-    paging: Intro
-  - text: "Parte 1: Scene Builder"
-    link: /library/javafx-tutorial/pt/part1/
-    paging: 1
-  - text: "Parte 2: Modelo e TableView"
-    link: /library/javafx-tutorial/pt/part2/
-    paging: 2
-  - text: "Parte 3: Interagindo com o usuário"
-    link: /library/javafx-tutorial/pt/part3/
-    paging: 3
-  - text: "Parte 4: Estilos usando CSS"
-    link: /library/javafx-tutorial/pt/part4/
-    paging: 4
-  - text: "Parte 5: Salvando dados como XML"
-    link: /library/javafx-tutorial/pt/part5/
-    paging: 5
-  - text: "Parte 6: Gráficos de Estatistica"
-    link: /library/javafx-tutorial/pt/part6/
-    paging: 6
-    active: true
-  - text: "Parte 7: Implantação"
-    link: /library/javafx-tutorial/pt/part7/
-    paging: 7
-- header: "Download de Códigos Fonte"
-  body:
-  - text: "Parte 6 como um projeto Eclipse <em>(versão mínima requirida: JDK 8u20)</em>"
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-6.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Linguagens
-  collection: library
-  item: javafx-tutorial
-  part: part6
-  active: pt
----
++++
+title = "Parte 6: Gráficos de Estatistica"
+date = 2014-09-10
+updated = 2014-11-12
+description = "Aprenda como criar um Gráfico de Barras JavaFX (JavaFX Bar Chart)."
+image = "addressapp-part6.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/pt/part6/"
+aliases = [ 
+  "/library/javafx-8-tutorial/pt/part6/"
+]
+weight = 6
 
-![Screenshot AddressApp Part 6](/assets/library/javafx-tutorial/part6/addressapp-part6.png)
+[[sidebars]]
+header = "Download de Códigos Fonte"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Parte 6 como um projeto Eclipse <em>(versão mínima requirida: JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-6.zip"
++++
+
+![Screenshot AddressApp Part 6](addressapp-part6.png)
 
 
 ## Tópicos na Parte 6
@@ -71,7 +39,7 @@ Nós usaremos um **Bar Chart (Gráfico de Barras)** contendo uma barra para cada
 ## A View FXML de Estatísticas
 
 1. Nós começaremos criando um arquivo `BirthdayStatistics.fxml` dentro do nosso pacote `ch.makery.address.view` (*Clique com o botão direito no pacote | New | other... | New FXML Document*).   
-![Birthday Statistics FXML](/assets/library/javafx-tutorial/part6/birthday-statistics-fxml.png)
+![Birthday Statistics FXML](birthday-statistics-fxml.png)
 
 2. Abra o arquivo `BirthdayStatistics.fxml` no Scene Builder.
 
@@ -189,7 +157,7 @@ public class BirthdayStatisticsController {
 3. Selecione o `BarChart` e escolha `barChart` como propriedade fx:id (no grupo *Code*).
 
 4. Selecione a `CategoryAxis` (eixo de caregoria) e escolha `xAxis` (eixo x) como propriedade fx:id.   
-![Category Axis](/assets/library/javafx-tutorial/part6/category-axis.png)
+![Category Axis](category-axis.png)
 
 5. Você pode adicionar um título ao `BarChart` (no grupo *Properties*) para mais estilização.
 
@@ -253,11 +221,11 @@ private void handleShowBirthdayStatistics() {
 
  Agora, abra o arquivo `RootLayout.fxml` com o Scene Builder. Crie o `Menu` *Statistics* com um `MenuItem` (item de menu) *Show Statistics* :
 
-![Show Statistics Menu](/assets/library/javafx-tutorial/part6/show-statistics-menu.png)
+![Show Statistics Menu](show-statistics-menu.png)
 
 Selecione o `MenuItem` *Show Statistics* e escolha `handleShowBirthdayStatistics` para `On Action` (no grupo *Code*)   
 
-![Show Statistics On Action](/assets/library/javafx-tutorial/part6/show-statistics-on-action.png)
+![Show Statistics On Action](show-statistics-on-action.png)
 
 Vá ao Eclipse, atualize (refresh) o projeto e **testa ele**.
 
@@ -271,7 +239,7 @@ Um bom lugar para obter mais informaçãoé no tutorial official da Oracle no si
 
 ### O Que Vem Depois?
 
-No último tutorial [Parte 7](/library/javafx-tutorial/pt/part7/) nós finalmente implantaremos (deploy)  nossa aplicação (por exemplo empacotar e entregar o aplicativo para nosso usuários).
+No último tutorial [Parte 7](/pt/library/javafx-tutorial/part7/) nós finalmente implantaremos (deploy)  nossa aplicação (por exemplo empacotar e entregar o aplicativo para nosso usuários).
 
 
 ##### Alguns outros artigos que você deve achar interessante (em inglês)

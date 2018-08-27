@@ -1,57 +1,25 @@
----
-layout: article
-title: "Tutorial JavaFX 8 - Bagian 4: Memberikan gaya dengan CSS"
-date: 2014-04-25
-updated: 2015-01-05
-slug: javafx-tutorial/id/part4
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-id-part4.md
-description: "Di JavaFX anda bisa memberi gaya pada antarmuka pengguna menggunakan CSS. Jika juga akan memberikan ikon aplikasi pada tutorial ini."
-image: /assets/library/javafx-tutorial/part4/addressapp-part4.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Seri Artikel"
-  body:
-  - text: "Pengenalan"
-    link: /library/javafx-tutorial/id/
-    paging: Intro
-  - text: "Bagian 1: Scene Builder"
-    link: /library/javafx-tutorial/id/part1/
-    paging: 1
-  - text: "Bagian 2: Model dan TableView"
-    link: /library/javafx-tutorial/id/part2/
-    paging: 2
-  - text: "Bagian 3: Berinteraksi dengan pengguna"
-    link: /library/javafx-tutorial/id/part3/
-    paging: 3
-  - text: "Bagian 4: Memberikan gaya dengan CSS"
-    link: /library/javafx-tutorial/id/part4/
-    paging: 4
-    active: true
-  - text: "Bagian 5: Menyimpan data sebagai XML"
-    link: /library/javafx-tutorial/id/part5/
-    paging: 5
-  - text: "Bagian 6: Bagan Statistika"
-    link: /library/javafx-tutorial/id/part6/
-    paging: 6
-  - text: "Bagian 7: Penyebaran"
-    link: /library/javafx-tutorial/id/part7/
-    paging: 7
-- header: "Unduh kode sumber"
-  body:
-  - text: Bagian 4 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-4.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Bahasa
-  collection: library
-  item: javafx-tutorial
-  part: part4
-  active: id
----
++++
+title = "Bagian 4: Memberikan gaya dengan CSS"
+date = 2014-04-25
+updated = 2015-01-05
+description = "Di JavaFX anda bisa memberi gaya pada antarmuka pengguna menggunakan CSS. Jika juga akan memberikan ikon aplikasi pada tutorial ini."
+image = "addressapp-part4.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/id/part4/"
+aliases = [ 
+  "/library/javafx-8-tutorial/id/part4/"
+]
+weight = 4
 
-![Tangkapan layar AddressApp bagian 4](/assets/library/javafx-tutorial/part4/addressapp-part4.png)
+[[sidebars]]
+header = "Unduh kode sumber"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Bagian 4 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-4.zip"
++++
+
+![Tangkapan layar AddressApp bagian 4](addressapp-part4.png)
 
 
 ## Pembahasan di bagian 4
@@ -90,7 +58,7 @@ Unzip the `jfxrt.jar`. Anda akan menemukan `modena.css` didalam `com/sun/javafx/
 Gaya baku ini selalu diterapkan ke aplikasi JavaFX. Dengan menambah CSS yang disesuaikan kita dapat mengesampingkan gaya baku dari `modena.css`.   
 
 <div class="alert alert-info">
-**Petunjuk:** Akan membantu untuk melihat CSS baku, untuk melihat gaya mana yang perlu untuk dikesampingkan
+<strong>Petunjuk:</strong> Akan membantu untuk melihat CSS baku, untuk melihat gaya mana yang perlu untuk dikesampingkan
 </div>
 
 
@@ -255,7 +223,7 @@ Kita sekarang perlu melampirkan CSS ke Scene. Kita dapat melakukan ini melalui k
 1. Buka berkas `RootLayout.fxml` di Scene Builder. 
 
 2. Pilih akar `BorderPane` di Hierarchy. Dibawah kelompok *Properties* tambah berkas `DarkTheme.css` file as stylesheet.   
-![DarkTheme untuk RootLayout](/assets/library/javafx-tutorial/part4/darktheme-rootlayout.png)
+![DarkTheme untuk RootLayout](darktheme-rootlayout.png)
 
 
 #### Lampirkan CSS ke PersonEditDialog.fxml
@@ -263,7 +231,7 @@ Kita sekarang perlu melampirkan CSS ke Scene. Kita dapat melakukan ini melalui k
 1. Buka berkas `PersonEditDialog.fxml` di Scene Builder. Pilih akar `AnchorPane` dan pilih `DarkTheme.css` in the kelompok *Properties* sebagai stylesheet.
 
 2. atar belakang masih berwarna putih, jadi tambah kelas gaya `background` ke akar `AnchorPane`.   
-![Menambah kelas gaya](/assets/library/javafx-tutorial/part4/darktheme-personeditdialog.png)
+![Menambah kelas gaya](darktheme-personeditdialog.png)
 
 3. Pilih tombol OK dan pilih *Default Button* di tampilan Properties. Ini akan merubah warnah dan membuat tombol baku ketika tombol *enter* ditekan oleh pengguna.
 
@@ -277,10 +245,10 @@ Kita sekarang perlu melampirkan CSS ke Scene. Kita dapat melakukan ini melalui k
 3. Anda mungkin perlu menyesuaian ukuran dari tombol sehingga semua teks ditampilkan.
 
 4. Pilih `AnchorPane` yang tepat didalam `SplitPane`.   
-![Background Style Select](/assets/library/javafx-tutorial/part4/background-style-select.png)   
+![Background Style Select](background-style-select.png)   
 
 5. Pada keompok *Properties* pilih `background` sebagai kelas gaya. Latarbelakang akan berwarna hitam.   
-![Background Style](/assets/library/javafx-tutorial/part4/background-style.png)
+![Background Style](background-style.png)
 
 
 #### Label dengan Gaya yang berbeda
@@ -288,10 +256,10 @@ Kita sekarang perlu melampirkan CSS ke Scene. Kita dapat melakukan ini melalui k
 Saat ini semua label pada sisi kanan memliki ukuran yang sama. Sudah ada beberapa gaya yang didefinisikan dalam berkas CSS bernama`.label-header` dan `.label-bright` kita akan gunakan ini sebagai gaya.
 
 1. Pilih label *Person Details* dan tambahkan `label-header` sebagai kelas gaya.   
-![Label Header Style](/assets/library/javafx-tutorial/part4/label-header-style.png)
+![Label Header Style](label-header-style.png)
 
 2. Untuk tiap label di sisi kanan kolom (dimana rinncian person ditampilkan) tambah kelas gaya `label-bright`.   
-![Label Bright Style](/assets/library/javafx-tutorial/part4/label-bright-style.png)
+![Label Bright Style](label-bright-style.png)
 
 
 *****
@@ -301,11 +269,11 @@ Saat ini semua label pada sisi kanan memliki ukuran yang sama. Sudah ada beberap
 
 Saat ini aplikasi kita hanya memiliki ikon baku di palang judul dan palang tugas:
 
-![Default Icon](/assets/library/javafx-tutorial/part4/default-app-icon.png)
+![Default Icon](default-app-icon.png)
 
 Akan lebih terlihat lebih baik jika memiliki ikon khusus:
 
-![Custom Icon](/assets/library/javafx-tutorial/part4/custom-app-icon.png)
+![Custom Icon](custom-app-icon.png)
 
 
 ### Berkas Ikon
@@ -314,7 +282,7 @@ Tempat yang memungkinkan untuk mendapatkan ikon2 ada di  [Icon Finder](http://ww
 
 Buat sebuah folder didalam proyek AddressApp bernama **resources** dan subfolder bernama **images**.Taruh ikon dalam images folder. Struktur folder anda akan terlihat seperti :
 
-![Custom Icon File](/assets/library/javafx-tutorial/part4/custom-icon-file.png)
+![Custom Icon File](custom-icon-file.png)
 
 
 ### Atur Ikon Ke Scene
@@ -349,7 +317,7 @@ Anda tentunya juga dapat menambah ikon pada stage dari  dialog pembaharuan perso
 
 ### Berikutnya?
 
-Didalam [Tutorial Bagian 5](/library/javafx-tutorial/id/part5/) kita akan menggunakan XML sebagai penyimpanan data.
+Didalam [Tutorial Bagian 5](/id/library/javafx-tutorial/part5/) kita akan menggunakan XML sebagai penyimpanan data.
 
 
 ##### Beberapa artikel menarik lainnya

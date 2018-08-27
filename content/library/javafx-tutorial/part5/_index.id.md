@@ -1,57 +1,25 @@
----
-layout: article
-title: "Tutorial JavaFX 8 - Bagian 5: Menyimpan data sebagai XML"
-date: 2014-04-25 01:00
-updated: 2015-01-05
-slug: javafx-tutorial/id/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-id-part5.md
-description: "Menyimpan data sebagai XML denan JAXB. Belajar bagaimana menggunakan JavaFX FileChooser dan JavaFX Menu."
-image: /assets/library/javafx-tutorial/part5/addressapp-part5.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Seri Artikel"
-  body:
-  - text: "Pengenalan"
-    link: /library/javafx-tutorial/id/
-    paging: Intro
-  - text: "Bagian 1: Scene Builder"
-    link: /library/javafx-tutorial/id/part1/
-    paging: 1
-  - text: "Bagian 2: Model dan TableView"
-    link: /library/javafx-tutorial/id/part2/
-    paging: 2
-  - text: "Bagian 3: Berinteraksi dengan pengguna"
-    link: /library/javafx-tutorial/id/part3/
-    paging: 3
-  - text: "Bagian 4: Memberikan gaya dengan CSS"
-    link: /library/javafx-tutorial/id/part4/
-    paging: 4
-  - text: "Bagian 5: Menyimpan data sebagai XML"
-    link: /library/javafx-tutorial/id/part5/
-    paging: 5
-    active: true
-  - text: "Bagian 6: Bagan Statistika"
-    link: /library/javafx-tutorial/id/part6/
-    paging: 6
-  - text: "Bagian 7: Penyebaran"
-    link: /library/javafx-tutorial/id/part7/
-    paging: 7
-- header: "Unduh kode sumber"
-  body:
-  - text: Bagian 5 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-5.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Bahasa
-  collection: library
-  item: javafx-tutorial
-  part: part5
-  active: id
----
++++
+title = "Bagian 5: Menyimpan data sebagai XML"
+date = 2014-04-25
+updated = 2015-01-05
+description = "Menyimpan data sebagai XML denan JAXB. Belajar bagaimana menggunakan JavaFX FileChooser dan JavaFX Menu."
+image = "addressapp-part5.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/id/part5/"
+aliases = [ 
+  "/library/javafx-8-tutorial/id/part5/"
+]
+weight = 5
 
-![Tangkapan layar AddressApp bagian 5](/assets/library/javafx-tutorial/part5/addressapp-part5.png)
+[[sidebars]]
+header = "Unduh kode sumber"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Bagian 5 - Proyek dari Eclise <em>(Diperlukan setidaknya JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-5.zip"
++++
+
+![Tangkapan layar AddressApp bagian 5](addressapp-part5.png)
 
 
 ## Pembahasan di bagian 5
@@ -286,7 +254,7 @@ Di `RootLayout.fxml` telah ada menu, tetap ita belum menggunakanya. Sebelum kita
 
 Buka berkas `RootLayout.fxml` di Scene Builder dan seret bulir menu yang diperlukan dari kelompok *library* ke `MenuBar` di kelompok *hierarchy*. Buat **New**, **Open...**, **Save**, **Save As...**, dan **Exit** bulir menu.
 
-![Menambah bulir-bulir menu](/assets/library/javafx-tutorial/part5/add-menu-items.png)
+![Menambah bulir-bulir menu](add-menu-items.png)
 
 Petunjuk: Gunakan pengaturan *Accelerator* di kelompok *Properties* anda bisa membuat jalan pintas pada menu.
 
@@ -436,8 +404,8 @@ Jika pengguna menutup dialog tanpa memilih sebuah berkas, nilai `null` kan dikem
 
 1. Buka `RootLayout.fxml` di Scene Builder. Dikelompok *Controller* pilih `RootLayoutController` sebagai Controller class. 
 
-2. Pada kelompok *Hierarchy* dan pilih sebuah bulir menu. Di *Code* dibawah **On Action** anda seharusnya melihat pilihan dari semua metode pengendali yang ada. Pilih metode yang tepat untuk tiap menu. 
-![Menu Actions](/assets/library/javafx-tutorial/part5/menu-actions.png)
+2. Pada kelompok *Hierarchy* dan pilih sebuah bulir menu. Di *Code* dibawah **On Action** anda seharusnya melihat pilihan dari semua metode pengendali yang ada. Pilih metode yang tepat untuk tiap menu.    
+![Menu Actions](menu-actions.png)
 
 3. Ulangi langkah-langkah ini untuk tiap bulir menu.
 
@@ -551,7 +519,7 @@ Mari kita lihat bagaimana semua ini berfungsi:
 
 ### Berikutnya
 
-Pada Tutorial [Bagian 6](/library/javafx-tutorial/id/part6/) kita akan menambah bagan statistika tanggal lahir.
+Pada Tutorial [Bagian 6](/id/library/javafx-tutorial/part6/) kita akan menambah bagan statistika tanggal lahir.
 
 
 ##### Beberapa artikel menarik lainnya
