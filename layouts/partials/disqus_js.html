@@ -1,0 +1,40 @@
+{{ if .Params.comments }}
+  {{ if .Params.commentsShortname }}
+    {{ $.Scratch.Set "disqusShortname" .Params.commentsShortname }}
+  {{ else }}
+    {{ $.Scratch.Set "disqusShortname" $.Site.Params.disqusShortname }}
+  {{ end }}
+
+  {{ if .Params.commentsIdentifier }}
+    {{ $.Scratch.Set "disqusIdentifier" .Params.commentsIdentifier }}
+  {{ else }}
+    {{ $.Scratch.Set "disqusIdentifier" $.RelPermalink }}
+  {{ end }}
+
+  {{ if .Params.commentsUrl }}
+    {{ $.Scratch.Set "disqusUrl" .Params.commentsUrl }}
+  {{ else }}
+    {{ $.Scratch.Set "disqusUrl" $.Permalink }}
+  {{ end }}
+
+  {{ if .Params.commentsTitle }}
+    {{ $.Scratch.Set "disqusTitle" (replace .Params.commentsTitle "'" "") }}
+  {{ else }}
+    {{ $.Scratch.Set "disqusTitle" (replace $.Title "'" "") }}
+  {{ end }}
+
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = '{{ $.Scratch.Get "disqusShortname" }}'; // Required - the forum shortname
+    var disqus_identifier = '{{ $.Scratch.Get "disqusIdentifier" }}';
+    var disqus_url = '{{ $.Scratch.Get "disqusUrl" }}';
+    var disqus_title = '{{ $.Scratch.Get "disqusTitle" }}';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+{{ end }}

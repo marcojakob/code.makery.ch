@@ -1,0 +1,98 @@
+{{ .Scratch.Set "title" (print .Title " | " .Site.Title) -}}
+{{ .Scratch.Set "canonical" "" -}}
+
+{{ block "variables" . -}}
+{{/* In this block inheriting layouts can set variables like .Scratch.Set "title" */}}
+{{ end -}}
+
+<!DOCTYPE html>
+<html lang="{{ .Language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ .Scratch.Get "title" }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="{{ .Site.Params.keywords }}">
+    <!--
+    /**
+     * @license
+     * MyFonts Webfont Build ID 2872352, 2014-08-27T06:57:40-0400
+     *
+     * The fonts listed in this notice are subject to the End User License
+     * Agreement(s) entered into by the website owner. All other parties are
+     * explicitly restricted from using the Licensed Webfonts(s).
+     *
+     * You may obtain a valid license at the URLs below.
+     *
+     * Webfont: Museo Slab 700 by exljbris
+     * URL: http://www.myfonts.com/fonts/exljbris/museo-slab/700/
+     * Copyright: Copyright (c) 2009 by Jos Buivenga. All rights reserved.
+     * Licensed pageviews: 500,000
+     *
+     * License: http://www.myfonts.com/viewlicense?type=web&buildid=2872352
+     *
+     * © 2014 MyFonts Inc
+    */
+    -->
+    {{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $style := resources.Get "sass/style.scss" | resources.ToCSS $options }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+    {{ if .Scratch.Get "canonical" }}
+    <link rel="canonical" href="{{ .Scratch.Get "canonical" }}" />
+    {{ end }}
+
+    <!-- Alternate Languages -->
+    {{ range .Translations }}
+    <link rel="alternate" hreflang="{{ .Language }}" href="{{ .Permalink }}" />
+    {{ end}}
+
+    <!-- RSS Feed and other output formats-->
+    {{ range .AlternativeOutputFormats -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink ($.Scratch.Get "title") | safeHTML }}
+    {{ end -}}
+
+    <meta name="description" content="{{ .Description }}">
+    <meta name="author" content="{{ .Site.Params.author }}" >
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="summary">
+
+    <!-- Open Graph data -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ .Scratch.Get "title" }}" />
+    <meta property="og:description" content="{{ .Description }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    {{ if .Params.image -}}
+      {{ if (hasPrefix .Params.image "http") -}}
+      <meta property="og:image" content="{{ .Params.image }}" />
+      {{ else }}
+      <meta property="og:image" content="{{ .Permalink }}{{ .Params.image }}" />
+      {{ end }}
+    {{ else -}}
+    <meta property="og:image" content="{{ .Site.BaseURL }}images/logo-164x164.png" />
+    {{ end }}
+
+    {{ if .Site.Params.googlePlus }}
+    <link rel="author" href="https://plus.google.com/{{ .Site.Params.googlePlus }}"/>
+    {{ end }}
+
+    {{ partial "analytics_js.html" . }}
+
+    {{ block "head_includes" . }}{{ end }}
+  </head>
+
+
+  <body>
+    {{ partial "header.html" . }}
+
+    {{ block "main" . }}{{ end }}
+
+    {{ partial "footer.html" . }}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    
+    {{ block "body_includes" . }}{{ end }}
+  </body>
+</html>

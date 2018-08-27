@@ -1,0 +1,16 @@
+{{ if .IsTranslated }}
+<div class="btn-group sidebar-dropdown">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">{{ i18n "libraryLanguages" }} <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    {{ $currentLang := .Lang }}
+    {{ range .AllTranslations }}
+    <li{{ if eq .Lang $currentLang }} class="active"{{ end }}>
+      <a href="{{ .RelPermalink }}">
+        <i class="fa fa-fw fa-globe"></i> {{ .Language.LanguageName }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

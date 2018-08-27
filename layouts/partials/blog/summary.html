@@ -1,0 +1,12 @@
+<article>
+  <header class="post-header">
+    <h2 class="post-title"><a class="black-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    {{ partial "blog/date_and_tags.html" . }}
+  </header>
+  
+  <section class="post-content text-center">
+    <p>{{ .Params.description }}</p>
+    <p><a href="{{ .RelPermalink }}" class="post-more btn btn-default">Read more &rarr;</a></p>
+  </section>
+  <hr class="post-ruler">
+</article>

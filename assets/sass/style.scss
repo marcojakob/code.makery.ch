@@ -1,0 +1,486 @@
+@import "custom-variables.scss";
+@import "fonts.scss";
+@import "bootstrap/bootstrap.scss";
+
+@import "bootstrap-social.scss";
+
+
+//
+// General styles
+// -------------------------------
+
+// Black links without text decorations.
+a {
+  &.black-link,
+  &.gray-link,
+  &.main-link {
+    text-decoration: none;
+  }
+
+  &.black-link {
+    color: $text-color;
+  }
+
+  &.gray-link {
+    color: $gray-light;
+  }
+
+  &.main-link {
+    color: $main-color;
+  }
+
+  &:hover.black-link,
+  &:focus.black-link,
+  &:hover.gray-link,
+  &:focus.gray-link,
+  &:hover.main-link,
+  &:focus.main-link
+  {
+    color: $link-color;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-text {
+  color: $main-color;
+}
+
+// Code blocks
+pre {
+  font-size: $font-size-code-block;
+}
+
+// Ordered lists
+ol {
+  list-style-type: decimal;
+  ol {
+    list-style-type: lower-alpha;
+    ol {
+      list-style-type: lower-roman;
+    }
+  }
+}
+
+// Ordered lists starting with lower-alpha
+ol.alpha-list,
+.alpha-list + ol {
+  list-style-type: lower-alpha;
+  ol {
+    list-style-type: lower-roman;
+    ol {
+      list-style-type: decimal;
+    }
+  }
+}
+
+// Remove border from iframe.
+iframe {
+  border: none;
+}
+
+// Medium top margin.
+.mg-t {
+  margin-top: ($line-height-computed / 2);
+}
+
+// Large top margin.
+.mg-t-lg {
+  margin-top: $line-height-computed;
+}
+
+//
+// Ribbon (http://unindented.org/articles/github-ribbon-using-css-transforms/)
+// ----------------------------------------------------------------------------
+.ribbon {
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.ribbon a {
+  position: absolute;
+  right: -60px;
+  top: 60px;
+  transform: rotate(45deg);
+  box-shadow: 0 0 10px #888;
+  background-color: $main-color;
+  color: #fff;
+  display: block;
+  font-family: $font-family-sans-serif;
+  margin: 1px 0;
+  padding: 5px 50px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 5px #444;
+
+  &:before,
+  &:after {
+    content: '';
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 1px;
+    background-color: lighten($main-color, 20%);
+  }
+  &:before {
+    top: 1px;
+  }
+  &:after {
+    top: auto;
+    bottom: 1px;
+  }
+}
+
+
+//
+// Site header
+// -------------------------------
+.site-header {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.site-title {
+  a {
+    color: $text-color;
+    text-decoration: none;
+    font-size: 50px;
+    line-height: 1;
+  }
+}
+
+.site-intro {
+  font-size: 20px;
+  line-height: 1;
+  color: $gray-light;
+}
+
+//
+// Site footer
+// -------------------------------
+.site-footer {
+  position: relative;
+  margin: 8rem 0 0 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-top: $hr-border 1px solid;
+  text-align: center;
+  background: #fbfbfb;
+  font-size: $font-size-small;
+  color: $gray-light;
+
+  form {
+    margin-bottom: ($line-height-computed / 2);
+  }
+
+  .form-control {
+    margin-bottom: 5px;
+  }
+}
+
+
+//
+// Navigation
+// ---------------------
+.site-navigation {
+  text-align: center;
+  border-bottom: 1px solid #dbdbdb;
+  margin-top: 1.8em;
+  margin-bottom: 2.8em;
+  font-size: 14px;
+
+  ul {
+    margin : 0;
+    padding: 0;
+    position: relative;
+  }
+
+  li {
+    list-style: none;
+    border-top: rgba(0,0,0,0.1) 1px solid;
+    margin: 0;
+    line-height: 1.3em;
+
+    a {
+      display: block;
+      padding:10px 0;
+      background:transparent;
+    }
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 17px;
+
+    ul {
+      margin: 20px 0 0 0;
+
+      &:after {
+        content: " ";
+        display: table;
+        clear:both;
+      }
+    }
+
+	li {
+      border: none;
+      display: inline-block;
+      text-transform: uppercase;
+
+      a {
+        border-bottom: 0;
+        padding: 10px 30px;
+      }
+
+      a:hover,
+      a:focus {
+        color: $link-color;
+      }
+    }
+  }
+}
+
+
+//
+// Sidebar & Sidebar-Dropdown
+// -------------------------------
+.sidebar {
+  font-size: 15px;
+  font-family: $font-family-sans-serif;
+}
+
+.sidebar-dropdown {
+  font-family: $font-family-sans-serif;
+  margin-top: 1em;
+  margin-right: 5px;
+
+  button {
+    font-weight: bold;
+    background-color: $panel-default-heading-bg;
+  }
+}
+
+
+//
+// Paging
+// -------------------------------
+.paging {
+  position: relative;
+  text-align: center;
+
+  .previous {
+    position: absolute;
+    left: 0;
+  }
+
+  .next {
+    position: absolute;
+    right: 0;
+  }
+}
+
+
+//
+// Pagination
+// -------------------------------
+.pagination {
+  > .disabled {
+    > span,
+    > span:hover,
+    > span:focus,
+    > a,
+    > a:hover,
+    > a:focus {
+      cursor: default;
+    }
+  }
+}
+
+
+//
+// Main-layout
+// -------------------------------
+.container-restricted {
+  max-width: 750px;
+}
+
+//
+// Home page (index.html)
+// -------------------------------
+.home-featured {
+  margin-top: 70px;
+}
+
+.home-recent {
+  margin-top: 70px;
+
+  h3,
+  h4 {
+    font-weight: normal;
+  }
+}
+
+//
+// Articles and Blog posts
+// -------------------------------
+.post-container {
+  max-width: 750px;
+}
+
+.post-header {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.article-title {
+  margin-top: 0;
+}
+
+.article-date,
+.post-date {
+  font-size: 15px;
+  line-height: 1;
+  color: $gray-light;
+}
+
+.article-content,
+.post-content {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.post-ruler {
+  width: 50%;
+}
+
+.article-paging {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.github-edit {
+  position: absolute;
+  top: -24px;
+  right: 15px;
+  font-size: 15px;
+}
+
+.blog-archive-table {
+  .clickable-row {
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+  }
+}
+
+
+//
+// Library
+// -------------------------------
+
+// Panels
+.library-panel {
+  position: relative;
+
+  .panel-body {
+    img {
+      float: left;
+      max-width: 120px;
+    }
+    p {
+      padding-left: 135px;
+      margin-bottom: 24px;
+    }
+  }
+
+  // Entire panel as a link
+  .panel-link {
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      color: inherit;
+      text-decoration: none;
+
+      & > div {
+        border-color: $panel-hover-border;
+      }
+    }
+  }
+
+  .topic-label-container {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-family: $font-family-sans-serif;
+  }
+
+  .part-label-container {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-family: $font-family-sans-serif;
+    color: $topic-java;
+  }
+
+  .language-buttons {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding-left: 150px;
+    font-family: $font-family-sans-serif;
+  }
+}
+
+
+// Topic Colors
+.topic-java {
+  color: $topic-java;
+}
+
+.topic-javafx {
+  color: $topic-javafx;
+}
+
+.topic-dart {
+  color: $topic-dart;
+}
+
+.topic-html-css {
+  color: $topic-html-css;
+}
+
+// Topic Labels
+.label-topic-java {
+  @include label-variant($topic-java);
+}
+
+.label-topic-javafx {
+  @include label-variant($topic-javafx);
+}
+
+.label-topic-dart {
+  @include label-variant($topic-dart);
+}
+
+.label-topic-html-css {
+  @include label-variant($topic-html-css);
+}
+
+// Part Label
+.label-part {
+  @include label-variant($main-color);
+}

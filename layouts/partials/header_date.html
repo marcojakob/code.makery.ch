@@ -1,0 +1,12 @@
+{{ if .Params.updated }}
+  {{ .Scratch.Set "lastUpdated" .Params.updated }}
+{{ else }}
+  {{ .Scratch.Set "lastUpdated" .Date }}
+{{ end }}
+
+<time class="article-date" itemprop="dateModified" datetime="{{ dateFormat "2006-01-02" (.Scratch.Get "lastUpdated") }}">
+  {{ dateFormat "Jan 2, 2006" .Date }}
+  {{ if .Params.updated }}
+    • Updated: {{ dateFormat "Jan 2, 2006" .Params.updated }}
+  {{ end }}
+</time>

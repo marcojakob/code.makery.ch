@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="container container-restricted">
+  {{ partial "navigation.html" . }}
+  <h2 class="text-center"><small>Path</small> Java Development</h2>
+  
+  <p class="text-center">Learn to code Java and JavaFX applications.</p>
+  
+
+  <h4>Getting started with Java Programming</h4>
+  <p>In the <em>GreenfootKara</em> course you learn the basics of programming in Java. To make it simple for beginners, it uses Greenfoot as the development environment. After this course you may transition to a professional environment like Eclipse, NetBeans, or IntelliJ.</p>
+  
+  {{ with .Site.GetPage "/library/greenfoot-kara" }}
+    {{ partial "paths/item.html" . }}
+  {{ end }}
+
+  <h4>User Interfaces with JavaFX</h4>
+  <p>JavaFX is a very nice graphics platform. It is now the preferred and official choice for graphical user interfaces in Java. This tutorial takes you through designing and programming a complete Address Application.</p>
+  
+  {{ with .Site.GetPage "/library/javafx-tutorial" }}
+    {{ partial "paths/item.html" . }}
+  {{ end }}
+  </div>
+</div>
+{{ end }}

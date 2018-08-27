@@ -1,0 +1,67 @@
+
+{{ define "main" }}
+
+<div class="container">
+  <div class="row home-featured">
+    <div class="col-sm-4 text-center">
+      <a class="black-link" href="/library/">
+        <div>
+          <i class="fa fa-book fa-5x"></i>
+        </div>
+        <h2>Library</h2>
+      </a>
+      <p>
+        A complete catalog of available <strong>tutorials</strong> and <strong>open source projects</strong>.
+      </p>
+      <p>
+        <a class="btn btn-default" href="/library/">Browse Library</a>
+      </p>
+    </div>
+    
+    <div class="col-sm-4 text-center">
+      <a class="black-link" href="/paths/">
+        <div>
+          <i class="fa fa-code-fork fa-flip-vertical fa-5x"></i>
+        </div>
+        <h2>Paths</h2>
+      </a>
+      <p>Learning paths guide you through a topic you would like to learn.</p>
+      <p>
+        <a class="btn btn-default" href="/paths/">Browse Paths</a>
+      </p>
+    </div>
+  
+    <div class="col-sm-4 text-center">
+      <a class="black-link" href="/blog/">
+        <div>
+          <i class="fa fa-file-text-o fa-5x"></i>
+        </div>
+        <h2>Blog</h2>
+      </a>
+      <p>
+        I write about programming and how to learn it.
+      </p>
+      <p>
+        If you <a href="https://tinyletter.com/codemakery">subscribe via Email</a> I'll send updates directly to your inbox.
+      </p>
+      <p>
+        <a class="btn btn-default" href="/blog/">Read the Blog</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="row home-recent">
+    <div class="col-sm-offset-2 col-sm-8 text-center">
+      <h3><a class="gray-link" href="/blog/">Recent Blog Posts</a></h3>
+
+      {{ range first 2 (where .Site.RegularPages "Section" "blog") }}
+        {{ partial "blog/summary_home.html" . }}
+      {{ end }}
+      <div class="text-center">
+        <a href="/blog/">&mdash; Show Blog &mdash;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }}

@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="container post-container">
+  {{ partial "navigation.html" . }}
+
+  <article>
+    <header class="post-header">
+      <h1 class="post-title">{{ .Title }}</h1>
+      {{ partial "blog/date_and_tags.html" . }}
+    </header>
+
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+  </article>
+  
+  {{ if .Params.comments }}
+  <hr>
+  <section>
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+  </section>
+  {{ end }}
+</div>
+{{ end }}
+
+{{ define "body_includes" }}
+  {{ if .Params.prettify }}
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&amp;lang=dart"></script>
+  {{ end }}
+
+  {{ partial "disqus_js.html" . }}
+  {{ partial "custom_js.html" . }}
+{{ end }}

@@ -1,0 +1,14 @@
+<div class="post-date text-center">
+  <span>
+    {{ partial "header_date.html" . }}
+  </span>
+  {{ with .Params.tags }}
+    • 
+    <span>
+    {{ $elements := len . }}
+    {{ range $index, $element := . }}
+      <a href="/blog/tag/{{ $element | urlize }}/">{{ $element }}</a>{{ if gt $elements (add $index 1) }},{{ end }}
+    {{ end }}
+    </span>
+  {{ end }}
+</div>

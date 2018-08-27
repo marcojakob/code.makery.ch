@@ -1,0 +1,15 @@
+{{ if .IsTranslated }}
+<div class="panel panel-default sidebar">
+  <div class="panel-heading">
+    <h4 class="panel-title">{{ i18n "libraryLanguages" }}</h4>  
+  </div>
+  <div class="list-group">
+    {{ $currentLang := .Lang }}
+    {{ range .AllTranslations }}
+    <a href="{{ .RelPermalink }}" class="list-group-item{{ if eq .Lang $currentLang  }} active{{ end }}">
+      <i class="fa fa-fw fa-globe"></i> {{ .Language.LanguageName }}
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

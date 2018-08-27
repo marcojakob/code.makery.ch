@@ -1,0 +1,14 @@
+{{ define "variables" -}}
+  {{ .Scratch.Set "title" (print .Title " | " .Site.Title) -}}
+{{ end -}}
+
+{{ define "main" }}
+<div class="container container-restricted">
+  {{ partial "navigation.html" . }}
+
+  <div>
+    <h1>Looks like you're lost</h1>
+    <p>The page you requested doesn't exist, I'll get you <a href="/">back on track</a>.</p>
+  </div>
+</div>
+{{ end }}

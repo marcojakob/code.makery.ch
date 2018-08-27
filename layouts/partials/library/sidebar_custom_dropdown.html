@@ -1,0 +1,15 @@
+{{ range .Params.sidebars  }}
+<div class="btn-group sidebar-dropdown">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">{{ .header | safeHTML }} <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      {{ range .items }}
+      <li>
+        <a href="{{ .link }}">
+          {{ .text | safeHTML }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}

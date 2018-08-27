@@ -1,0 +1,81 @@
+{{ define "variables" -}}
+  {{ if eq (lower .Parent.Name) "library" -}}
+    {{ .Scratch.Set "isSeriesIndex" true -}}
+    {{ .Scratch.Set "series" . -}}
+    {{ .Scratch.Set "title" (print .Title " | " .Site.Title) -}}
+  {{ else -}}
+    {{ .Scratch.Set "isSeriesIndex" false -}}
+    {{ .Scratch.Set "series" .Parent -}}
+    {{ .Scratch.Set "title" (print .Title " | " .Parent.Title " | " .Site.Title) -}}
+  {{ end -}}
+
+  {{ .Scratch.Set "canonical" .Params.canonical -}}
+{{ end -}}
+
+{{ define "head_includes" }}
+  {{ partial "custom_css.html" . }}
+{{ end }}
+
+{{ define "main" }}
+<div class="container article-container">
+  {{ partial "navigation.html" . }}
+
+  {{ partial "header_github.html" . }}
+
+  <article class="row"{{ if .Params.rtl }} dir="rtl"{{ end }}>
+    <aside class="col-md-3">
+      <div class="visible-md-block visible-lg-block">
+        {{ partial "library/sidebar_series.html" . }}
+        {{ partial "library/sidebar_custom.html" . }}
+        {{ partial "library/sidebar_languages.html" . }}
+      </div>
+    </aside>
+
+    <div class="col-md-9">
+      <header class="article-header">
+        {{ if not (.Scratch.Get "isSeriesIndex") }}
+        <a href="{{ (.Scratch.Get "series").RelPermalink }}" class="black-link"><i class="fa fa-fw fa-folder-open-o"></i> {{ (.Scratch.Get "series").Title }}</a>
+        {{ end }}
+        <h1 class="article-title">{{ .Title }}</h1>
+        {{ partial "header_date.html" . }}
+      </header>
+
+      <aside class="visible-xs-block visible-sm-block">
+        {{ partial "library/sidebar_series_dropdown.html" . }}
+        {{ partial "library/sidebar_custom_dropdown.html" . }}
+        {{ partial "library/sidebar_languages_dropdown.html" . }}
+      </aside>
+
+      <div class="article-content">
+        {{ .Content }}
+      </div>
+
+      <hr>
+
+      {{ partial "library/paging.html" . }}
+    </div>
+  </article>
+
+
+  {{ if .Params.comments }}
+  <section class="row">
+    <div class="col-md-offset-3 col-md-9">
+      <h2>Comments</h2>
+      <div id="disqus_thread"></div>
+    </div>
+  </section>
+  {{ end }}
+</div>
+{{ end }}
+
+
+{{ define "body_includes" }}
+  <script type="text/javascript" src="/js/bootstrap-init-tooltips.min.js"></script>
+
+  {{ if .Params.prettify }}
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&amp;lang=dart"></script>
+  {{ end }}
+
+  {{ partial "disqus_js.html" . }}
+  {{ partial "custom_js.html" . }}
+{{ end }}
