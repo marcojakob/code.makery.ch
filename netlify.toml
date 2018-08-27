@@ -3,4 +3,4 @@ publish = "public"
 command = "hugo"
 
 [context.production.environment]
-  HUGO_VERSION = "0.46"
+  HUGO_VERSION = "0.47.1"
