@@ -1,57 +1,24 @@
----
-layout: article
-title: "JavaFX 8 教程 - 第四部分：CSS 样式"
-date: 2014-10-08
-updated: 2015-01-17
-slug: javafx-tutorial/zh-cn/part4
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-zh-cn-part4.md
-description: null
-image: /assets/library/javafx-tutorial/part4/addressapp-part4.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "系列文章"
-  body:
-  - text: "简介"
-    link: /library/javafx-tutorial/zh-cn/
-    paging: 简介
-  - text: "第一部分：Scene Builder"
-    link: /library/javafx-tutorial/zh-cn/part1/
-    paging: 1
-  - text: "第二部分：Model 和 TableView"
-    link: /library/javafx-tutorial/zh-cn/part2/
-    paging: 2
-  - text: "第三部分：与用户的交互"
-    link: /library/javafx-tutorial/zh-cn/part3/
-    paging: 3
-  - text: "第四部分：CSS 样式"
-    link: /library/javafx-tutorial/zh-cn/part4/
-    paging: 4
-    active: true
-  - text: "第五部分：将数据用 XML 格式存储"
-    link: /library/javafx-tutorial/zh-cn/part5/
-    paging: 5
-  - text: "第六部分：统计图"
-    link: /library/javafx-tutorial/zh-cn/part6/
-    paging: 6
-  - text: "第七部分：部署"
-    link: /library/javafx-tutorial/zh-cn/part7/
-    paging: 7
-- header: "下载源代码"
-  body:
-  - text: Part 4 as Eclipse Project <em>(requires at least JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-4.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: 语言
-  collection: library
-  item: javafx-tutorial
-  part: part4
-  active: zh-cn
----
++++
+title = "第四部分：CSS 样式"
+date = 2014-10-08
+updated = 2015-01-17
+description = "在JavaFX中，您可以使用CSS设置用户界面的样式。 我们还将在本教程部分添加一个应用程序图标。"
+image = "addressapp-part4.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/zh-cn/part4/"
+aliases = [ 
+  "/library/javafx-8-tutorial/zh-cn/part4/"
+]
+weight = 4
 
-![Screenshot AddressApp Part 4](/assets/library/javafx-tutorial/part4/addressapp-part4.png)
+[[sidebars]]
+header = "下载源代码"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Part 4 as Eclipse Project <em>(requires at least JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-4.zip"
++++
+![Screenshot AddressApp Part 4](addressapp-part4.png)
 
 
 ## 第4部分主题
@@ -91,7 +58,7 @@ languages:
 
 
 <div class="alert alert-info">
-**提示**：查看缺省的CSS文件能够让你模板你需要覆盖掉那些样式。
+<strong>提示</strong>：查看缺省的CSS文件能够让你模板你需要覆盖掉那些样式。
 </div>
 
 
@@ -257,7 +224,7 @@ languages:
 
 2. 在*Hierarchy*视图中选择根节点`BorderPane`。在*Properties*组中添加`DarkTheme.css`作为样式表。
 
-![DarkTheme for RootLayout](/assets/library/javafx-tutorial/part4/darktheme-rootlayout.png)
+![DarkTheme for RootLayout](darktheme-rootlayout.png)
 
 
 #### 添加CSS到PersonEditDialog.fxml
@@ -266,7 +233,7 @@ languages:
 
 2. 背景仍然是白色的，因此添加样式类`background`到根节点`AnchorPane`。
 
-![Add Style Class](/assets/library/javafx-tutorial/part4/darktheme-personeditdialog.png)
+![Add Style Class](darktheme-personeditdialog.png)
 
 3.  选择OK按钮，在*Properties*视图中选择*Default Button*单选框。这将修改它的颜色，当用户*输入*关键词时，使用它作为缺省的按钮。
 
@@ -281,10 +248,10 @@ languages:
 3. 你可能需要调整按钮的大小，以便显示所有的文本。
 
 4. 选择`SplitPane`中右边的`AnchorPane`。
-![Background Style Select](/assets/library/javafx-tutorial/part4/background-style-select.png)   
+![Background Style Select](background-style-select.png)   
 
 5. 进入到*Properties*组，并且选择`background`作为样式表。背景现在应该变为黑色。
-![Background Style](/assets/library/javafx-tutorial/part4/background-style.png)
+![Background Style](background-style.png)
 
 
 #### 使用不同样式的标签
@@ -292,10 +259,10 @@ languages:
 现在，在左边的所有的标签都有相同的大小。这里已经有一些样式定义在CSS文件中，称为`.label-header`和`.label-bright`。我们将使用更多样式的标签Label。
 
 1. 选择*Person Detail*标签，添加`label-header`作为样式类。
-![Label Header Style](/assets/library/javafx-tutorial/part4/label-header-style.png)
+![Label Header Style](label-header-style.png)
 
 2. 给右边一列的每个Label（显示人员详情的那列）添加CSS样式类`label-bright`。
-![Label Bright Style](/assets/library/javafx-tutorial/part4/label-bright-style.png)
+![Label Bright Style](label-bright-style.png)
 
 
 *****
@@ -305,11 +272,11 @@ languages:
 
 现在，在标题栏和任务栏中，我们的应用只有一个缺省图标:
 
-![Default Icon](/assets/library/javafx-tutorial/part4/default-app-icon.png)
+![Default Icon](default-app-icon.png)
 
 使用自定义图标看起来更好了。
 
-![Custom Icon](/assets/library/javafx-tutorial/part4/custom-app-icon.png)
+![Custom Icon](custom-app-icon.png)
 
 
 ### 图标文件
@@ -318,7 +285,7 @@ languages:
 
 通常在你的AddressApp项目中创建一个目录称为**resources**，在它中子目录称为**images**。把你选择的图标放入到images目录中。现在，你的目录结构应该看上去如下所示：
 
-![Custom Icon File](/assets/library/javafx-tutorial/part4/custom-icon-file.png)
+![Custom Icon File](custom-icon-file.png)
 
 
 ### 设置图标到场景
@@ -353,7 +320,7 @@ public void start(Stage primaryStage) {
 
 ### 下一步
 
-在本教程的[第5部分](/library/javafx-tutorial/zh-cn/part5/)将为我们数据添加XML存储。
+在本教程的[第5部分](/zh-cn/library/javafx-tutorial/part5/)将为我们数据添加XML存储。
 
 
 ##### 你可能感兴趣的有些其他文章

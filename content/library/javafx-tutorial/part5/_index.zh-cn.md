@@ -1,57 +1,25 @@
----
-layout: article
-title: "JavaFX 8 教程 - 第五部分：将数据用 XML 格式存储"
-date: 2014-10-08
-updated: 2015-01-16
-slug: javafx-tutorial/zh-cn/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-zh-cn-part5.md
-description: null
-image: /assets/library/javafx-tutorial/part5/addressapp-part5.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "系列文章"
-  body:
-  - text: "简介"
-    link: /library/javafx-tutorial/zh-cn/
-    paging: 简介
-  - text: "第一部分：Scene Builder"
-    link: /library/javafx-tutorial/zh-cn/part1/
-    paging: 1
-  - text: "第二部分：Model 和 TableView"
-    link: /library/javafx-tutorial/zh-cn/part2/
-    paging: 2
-  - text: "第三部分：与用户的交互"
-    link: /library/javafx-tutorial/zh-cn/part3/
-    paging: 3
-  - text: "第四部分：CSS 样式"
-    link: /library/javafx-tutorial/zh-cn/part4/
-    paging: 4
-  - text: "第五部分：将数据用 XML 格式存储"
-    link: /library/javafx-tutorial/zh-cn/part5/
-    paging: 5
-    active: true
-  - text: "第六部分：统计图"
-    link: /library/javafx-tutorial/zh-cn/part6/
-    paging: 6
-  - text: "第七部分：部署"
-    link: /library/javafx-tutorial/zh-cn/part7/
-    paging: 7
-- header: "下载源代码"
-  body:
-  - text: Part 5 as Eclipse Project <em>(requires at least JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-5.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: 语言
-  collection: library
-  item: javafx-tutorial
-  part: part5
-  active: zh-cn
----
++++
+title = "第五部分：将数据用 XML 格式存储"
+date = 2014-10-08
+updated = 2015-01-16
+description = "使用JAXB将数据另存为XML。 了解如何使用JavaFX FileChooser和JavaFX菜单。"
+image = "addressapp-part5.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/zh-cn/part5/"
+aliases = [ 
+  "/library/javafx-8-tutorial/zh-cn/part5/"
+]
+weight = 5
 
-![Screenshot AddressApp Part 5](/assets/library/javafx-tutorial/part5/addressapp-part5.png)
+[[sidebars]]
+header = "下载源代码"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Part 5 as Eclipse Project <em>(requires at least JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-5.zip"
++++
+
+![Screenshot AddressApp Part 5](addressapp-part5.png)
 
 
 ## 第5部分的主题
@@ -281,7 +249,7 @@ public void savePersonDataToFile(File file) {
 
 在Scene Builder中打开`RootLayout.fxml`，从*library*组中拖曳必要的菜单到*Hierarchy*组的`MemuBar`中。创建**New**，**Open…**，**Save**，**Save As…**和**Exit**菜单项。
 
-![添加菜单项](/assets/library/javafx-tutorial/part5/add-menu-items.png)
+![添加菜单项](add-menu-items.png)
 
 提示：使用*Properties*组下的*Accelerator*设置，你能设置菜单项的快捷键。
 
@@ -429,7 +397,7 @@ public class RootLayoutController {
 1. 在Scene Builder中打开`RootLayout.fxml`。在*Controller*组中选择`RootLayoutController`作为控制器类。
 
 2. 回到*Hierarchy*组中，选择一个菜单项。在*Code*组中**On Action**下，应该看到所有可用控制器方法的选择。为每个菜单项选择响应的方法。  
-![菜单动作](/assets/library/javafx-tutorial/part5/menu-actions.png)
+![菜单动作](menu-actions.png)
 
 3. 为每个菜单项重复第2步。
 
@@ -543,7 +511,7 @@ public LocalDate getBirthday() {
 
 ### 下一步是什么？
 
-在本教程的[第6部分](/library/javafx-tutorial/zh-cn/part6/)，我们添加一个*生日统计图表*。
+在本教程的[第6部分](/zh-cn/library/javafx-tutorial/part6/)，我们添加一个*生日统计图表*。
 
 
 ##### 一些其它你可能感兴趣的文章

@@ -1,57 +1,25 @@
----
-layout: article
-title: "Підручник з JavaFX 8 - Частина 4: Стилізація за допомогою CSS"
-date: 2014-04-25
-updated: 2015-06-25
-slug: javafx-tutorial/uk/part4
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-uk-part4.md
-description: "В JavaFX ви можете змінювати зовнішній вигляд додатку за допомогою CSS. В цій частині ми також навчимося додавати іконку нашого додатку"
-image: /assets/library/javafx-tutorial/part4/addressapp-part4.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Статті цієї серії"
-  body:
-  - text: "Вступ"
-    link: /library/javafx-tutorial/uk/
-    paging: Intro
-  - text: "Частина 1: Scene Builder"
-    link: /library/javafx-tutorial/uk/part1/
-    paging: 1
-  - text: "Частина 2: Модель та компонент TableView"
-    link: /library/javafx-tutorial/uk/part2/
-    paging: 2
-  - text: "Частина 3: Взаємодія з користувачем"
-    link: /library/javafx-tutorial/uk/part3/
-    paging: 3
-  - text: "Частина 4: Стилізація за допомогою CSS"
-    link: /library/javafx-tutorial/uk/part4/
-    paging: 4
-    active: true
-  - text: "Частина 5: Збереження даних в XML"
-    link: /library/javafx-tutorial/uk/part5/
-    paging: 5
-  - text: "Частина 6: Статистична діаграма"
-    link: /library/javafx-tutorial/uk/part6/
-    paging: 6
-  - text: "Частина 7: Розгортання"
-    link: /library/javafx-tutorial/uk/part7/
-    paging: 7
-- header: Скачати вихідний код
-  body:
-  - text: Частина 4 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-4.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Мови
-  collection: library
-  item: javafx-tutorial
-  part: part4
-  active: uk
----
++++
+title = "Частина 4: Стилізація за допомогою CSS"
+date = 2014-04-25
+updated = 2015-06-25
+description = "В JavaFX ви можете змінювати зовнішній вигляд додатку за допомогою CSS. В цій частині ми також навчимося додавати іконку нашого додатку"
+image = "addressapp-part4.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/uk/part4/"
+aliases = [ 
+  "/library/javafx-8-tutorial/uk/part4/"
+]
+weight = 4
 
-![Screenshot AddressApp Part 4](/assets/library/javafx-tutorial/part4/addressapp-part4.png "AddressApp Part4")
+[[sidebars]]
+header = "Скачати вихідний код"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Частина 4 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-4.zip"
++++
+
+![Screenshot AddressApp Part 4](addressapp-part4.png "AddressApp Part4")
 
 ## Частина 4: Зміст
 
@@ -84,7 +52,7 @@ languages:
 Цей стиль завжди застосовується для JavaFX додатків за замовчуванням. Додаючи стилі користувача, ви замінюєте оригінальні стилі з файлу `modena.css`.
 
 <div class = "alert alert-info">
-**Підказка:** Для того, щоб знати які стилі вам треба замінити, перегляньте цей файл.
+<strong>Підказка:</strong> Для того, щоб знати які стилі вам треба замінити, перегляньте цей файл.
 </div>
 
 ### Установка стилів користувача
@@ -246,14 +214,14 @@ languages:
 1. Відкрийте файл `RootLayout.fxml` в додатку Scene Builder.
 
 2. Виберіть кореневий контейнер `BorderPane` на вкладці *Hierarchy*, перейдіть на вкладку *Properties* і вкажіть файл `DarkTheme.css` в ролі таблиць стилів.   
-![DarkTheme for RootLayout](/assets/library/javafx-tutorial/part4/darktheme-rootlayout.png "DarkTheme RootLayout")
+![DarkTheme for RootLayout](darktheme-rootlayout.png "DarkTheme RootLayout")
 
 #### Приєднуємо таблиці стилів до файлу PersonEditDialog.fxml
 
 1. Відкрийте файл `PersonEditDialog.fxml` в додатку Scene Builder. Виберіть кореневий контейнер `AnchorPane` у вкладці *Hierarchy*, перейдіть на вкладку *Properties* і вкажіть файл `DarkTheme.css` в ролі таблиць стилів.
 
 2. Фон залишився білим, тому вкажіть для кореневого компонента `AnchorPane` в класі стилю значення `background`.   
-![Add Style Class](/assets/library/javafx-tutorial/part4/darktheme-personeditdialog.png "DarkTheme Person Edit Dialog")
+![Add Style Class](darktheme-personeditdialog.png "DarkTheme Person Edit Dialog")
 
 3. Виберіть кнопку *OK* і встановіть властивість *Default Button* у вкладці *Properties*. В результаті зміниться її колір і кнопка буде використовуватися за замовчуванням, коли користувач, перебуваючи у вікні, натисне клавішу enter.
 
@@ -266,20 +234,20 @@ languages:
 3. Можливо, вам буде потрібно змінити розмір кнопок для того, щоб відображався весь текст.
 
 4. Виберіть правий компонент `AnchorPane` всередині компонента `SplitPane`.
-![Background Style Select](/assets/library/javafx-tutorial/part4/background-style-select.png)
+![Background Style Select](background-style-select.png)
 
 5. Перейдіть на вкладку *Properties* та вкажіть значення `background` як клас стилю. Тепер фон стане чорного кольору.  
-![Background Style](/assets/library/javafx-tutorial/part4/background-style.png)
+![Background Style](background-style.png)
 
 #### Текстові мітки з іншими стилями
 
 Тепер всі текстові мітки з правого боку мають однаковий розмір. Для подальшої стилізації текстових міток, ми будемо використовувати вже визначені стилі `.label-header` та `label-bright`.
 
 1. Виберіть мітку *Person Details* і додайте в якості класу стилю значення `label-header`.
-![Label Header Style](/assets/library/javafx-tutorial/part4/label-header-style.png)
+![Label Header Style](label-header-style.png)
 
 2. Для кожної мітки в правій колонці (де будуть відображатись дані наших записів) додайте як клас стилю значення `label-bright`.   
-![Label Bright Style](/assets/library/javafx-tutorial/part4/label-bright-style.png "Label Bright Style")
+![Label Bright Style](label-bright-style.png "Label Bright Style")
 
 *****
 
@@ -287,11 +255,11 @@ languages:
 
 На даний момент в нашому додатку на панелі назв і панелі завдань використовується іконка за замовчуванням:
 
-![Default Icon](/assets/library/javafx-tutorial/part4/default-app-icon.png "Default App Icon")
+![Default Icon](default-app-icon.png "Default App Icon")
 
 З іконкою користувача наш додаток буде виглядати красивіше:
 
-![Custom Icon](/assets/library/javafx-tutorial/part4/custom-app-icon.png)
+![Custom Icon](custom-app-icon.png)
 
 ### Файл зображення
 
@@ -299,7 +267,7 @@ languages:
 
 Створіть папку **resources** всередині вашого проекту AddressApp, а в ній папку **images**. Помістіть обрану вами іконку в папку зображень. Ваша структура папок повинна мати такий вигляд:
 
-![Custom Icon File](/assets/library/javafx-tutorial/part4/custom-icon-file.png "Custom Icon File")
+![Custom Icon File](custom-icon-file.png "Custom Icon File")
 
 ### Встановлення іконки в додаток
 
@@ -331,7 +299,7 @@ public void start(Stage primaryStage) {
 
 ### Що далі?
 
-В [5 частині підручника](/library/javafx-tutorial/uk/part5/ "JavaFX Tutorial Part 5") ми додамо XML сховище для наших даних.
+В [5 частині підручника](/uk/library/javafx-tutorial/part5/ "JavaFX Tutorial Part 5") ми додамо XML сховище для наших даних.
 
 ##### Вам можуть бути цікаві також деякі інші статті
 

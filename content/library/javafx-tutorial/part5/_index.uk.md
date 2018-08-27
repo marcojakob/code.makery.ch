@@ -1,57 +1,25 @@
----
-layout: article
-title: "Підручник з JavaFX 8 - Частина 5: Збереження даних в XML"
-date: 2014-04-25
-updated: 2015-06-25
-slug: javafx-tutorial/uk/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-uk-part5.md
-description: "Збереження даних в XML за допомогою JAXB. Вчимося використовувати JavaFX компоненти FileChooser та Menu"
-image: /assets/library/javafx-tutorial/part5/addressapp-part5.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Статті цієї серії"
-  body:
-  - text: "Вступ"
-    link: /library/javafx-tutorial/uk/
-    paging: Intro
-  - text: "Частина 1: Scene Builder"
-    link: /library/javafx-tutorial/uk/part1/
-    paging: 1
-  - text: "Частина 2: Модель та компонент TableView"
-    link: /library/javafx-tutorial/uk/part2/
-    paging: 2
-  - text: "Частина 3: Взаємодія з користувачем"
-    link: /library/javafx-tutorial/uk/part3/
-    paging: 3
-  - text: "Частина 4: Стилізація за допомогою CSS"
-    link: /library/javafx-tutorial/uk/part4/
-    paging: 4
-  - text: "Частина 5: Збереження даних в XML"
-    link: /library/javafx-tutorial/uk/part5/
-    paging: 5
-    active: true
-  - text: "Частина 6: Статистична діаграма"
-    link: /library/javafx-tutorial/uk/part6/
-    paging: 6
-  - text: "Частина 7: Розгортання"
-    link: /library/javafx-tutorial/uk/part7/
-    paging: 7
-- header: Скачати вихідний код
-  body:
-  - text: Частина 5 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-5.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Мови
-  collection: library
-  item: javafx-tutorial
-  part: part5
-  active: uk
----
++++
+title = "Частина 5: Збереження даних в XML"
+date = 2014-04-25
+updated = 2015-06-25
+description = "Збереження даних в XML за допомогою JAXB. Вчимося використовувати JavaFX компоненти FileChooser та Menu"
+image = "addressapp-part5.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/uk/part5/"
+aliases = [ 
+  "/library/javafx-8-tutorial/uk/part5/"
+]
+weight = 5
 
-![Screenshot AddressApp Part 5](/assets/library/javafx-tutorial/part5/addressapp-part5.png)
+[[sidebars]]
+header = "Скачати вихідний код"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Частина 5 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-5.zip"
++++
+
+![Screenshot AddressApp Part 5](addressapp-part5.png)
 
 ## Частина 5: Зміст
 
@@ -272,7 +240,7 @@ public void savePersonDataToFile(File file) {
 
 Відкрийте файл `RootLayout.fxml` в додатку Scene Builder і перенесіть необхідну кількість пунктів меню з вкладки *Бібліотека* на вкладку *Ієрархія* в `MenuBar`. Створіть наступні пункти меню: **Новий**, **Відкрити...**, **Зберегти**, **Зберегти як...** та **Вихід**.
 
-![Add Menu Items](/assets/library/javafx-tutorial/part5/add-menu-items.png)
+![Add Menu Items](add-menu-items.png)
 
 Підказка: Використовуйте властивість *Accelerator* на вкладці *Properties* для встановлення гарячих клавіш для пунктів меню.
 
@@ -417,7 +385,7 @@ public class RootLayoutController {
 1. Відкрийте файл `RootLayout.fxml` в додатку Scene Builder. На вкладці *Controller* в якості класу-контролера виберіть значення `RootLayoutController`.
 
 2. Перейдіть на вкладку *Hierarchy* і виберіть пункт меню. У вкладці *Code* в якості значень властивості *On Action* ви зможете побачити всі доступні методи обраного класу-контролера. Виберіть той метод з перечислених у випадаючому списку справа, який відповідає цьому пункту меню.   
-![Menu Actions](/assets/library/javafx-tutorial/part5/menu-actions.png)
+![Menu Actions](menu-actions.png)
 
 3. Повторіть попередній крок для кожного пункту меню.
 
@@ -525,7 +493,7 @@ public LocalDate getBirthday() {
 
 ### Що далі?
 
-В [6 частині підручника](/library/javafx-tutorial/uk/part6/ "Tutorial Part 6") ми додамо статистичний графік днів народження.
+В [6 частині підручника](/uk/library/javafx-tutorial/part6/ "Tutorial Part 6") ми додамо статистичний графік днів народження.
 
 ##### Вам можуть бути цікаві також деякі інші статті
 

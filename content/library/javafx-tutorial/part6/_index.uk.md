@@ -1,57 +1,25 @@
----
-layout: article
-title: "Підручник з JavaFX 8 - Частина 6: Статистична діаграма"
-date: 2014-05-09
-updated: 2015-06-25
-slug: javafx-tutorial/uk/part6
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-uk-part6.md
-description: "Вчимося створювати стовпчикову діаграму в JavaFX"
-image: /assets/library/javafx-tutorial/part6/addressapp-part6.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Статті цієї серії"
-  body:
-  - text: "Вступ"
-    link: /library/javafx-tutorial/uk/
-    paging: Intro
-  - text: "Частина 1: Scene Builder"
-    link: /library/javafx-tutorial/uk/part1/
-    paging: 1
-  - text: "Частина 2: Модель та компонент TableView"
-    link: /library/javafx-tutorial/uk/part2/
-    paging: 2
-  - text: "Частина 3: Взаємодія з користувачем"
-    link: /library/javafx-tutorial/uk/part3/
-    paging: 3
-  - text: "Частина 4: Стилізація за допомогою CSS"
-    link: /library/javafx-tutorial/uk/part4/
-    paging: 4
-  - text: "Частина 5: Збереження даних в XML"
-    link: /library/javafx-tutorial/uk/part5/
-    paging: 5
-  - text: "Частина 6: Статистична діаграма"
-    link: /library/javafx-tutorial/uk/part6/
-    paging: 6
-    active: true
-  - text: "Частина 7: Розгортання"
-    link: /library/javafx-tutorial/uk/part7/
-    paging: 7
-- header: Скачати вихідний код
-  body:
-  - text: Частина 6 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-6.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Мови
-  collection: library
-  item: javafx-tutorial
-  part: part6
-  active: uk
----
++++
+title = "Частина 6: Статистична діаграма"
+date = 2014-05-09
+updated = 2015-06-25
+description = "Вчимося створювати стовпчикову діаграму в JavaFX"
+image = "addressapp-part6.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/uk/part6/"
+aliases = [ 
+  "/library/javafx-8-tutorial/uk/part6/"
+]
+weight = 6
 
-![Screenshot AddressApp Part 6](/assets/library/javafx-tutorial/part6/addressapp-part6.png)
+[[sidebars]]
+header = "Скачати вихідний код"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Частина 6 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-6.zip"
++++
+
+![Screenshot AddressApp Part 6](addressapp-part6.png)
 
 ## Частина 6: Зміст
 
@@ -68,7 +36,7 @@ languages:
 ## FXML-представлення статистики
 
 1. Почнемо зі створення файлу `BirthdayStatistics.fxml` всередині пакету `ch.makery.address.view` *(правий клік на пакеті | New | other... | New FXML Document)*.  
-![Birthday Statistics FXML](/assets/library/javafx-tutorial/part6/birthday-statistics-fxml.png)
+![Birthday Statistics FXML](birthday-statistics-fxml.png)
 
 2. Відкрийте файл `BirthdayStatistics.fxml` в додатку Scene Builder.
 
@@ -182,7 +150,7 @@ public class BirthdayStatisticsController {
 3. Виберіть компонент `BarChart` та встановіть значення `barChart` у властивості *fx:id* (на вкладці **Code**).
 
 4. Виберіть `CategoryAxis` та встановіть значення `xAxis` у властивості *fx:id*.
-![Category Axis](/assets/library/javafx-tutorial/part6/category-axis.png)
+![Category Axis](category-axis.png)
 
 5. Для майбутньої стилізації, у вкладці *Properties*, ви можете додати назву вашої діаграми.
 
@@ -241,11 +209,11 @@ private void handleShowBirthdayStatistics() {
 
 Тепер відкрийте файл `RootLayout.fxml` в додатку Scene Builder та створіть меню *Statistics* з пунктом меню *Show Statistics*:
 
-![Show Statistics Menu](/assets/library/javafx-tutorial/part6/show-statistics-menu.png)
+![Show Statistics Menu](show-statistics-menu.png)
 
 Виберіть пункт меню *Show Statistics* та як значення властивості `On Action` встановіть метод `handleShowBirthdayStatistics` (на вкладці *Code*).
 
-![Show Statistics On Action](/assets/library/javafx-tutorial/part6/show-statistics-on-action.png)
+![Show Statistics On Action](show-statistics-on-action.png)
 
 Перейдіть в середовище розробки Eclipse, оновіть проект та **протестуйте ваш додаток**.
 
@@ -257,7 +225,7 @@ private void handleShowBirthdayStatistics() {
 
 ### Що далі?
 
-В останній, [7 частині підручника](/library/javafx-tutorial/uk/part7/) ми, нарешті, розгорнемо наш додаток (тобто упакуємо та доставимо його нашим користувачам).
+В останній, [7 частині підручника](/uk/library/javafx-tutorial/part7/) ми, нарешті, розгорнемо наш додаток (тобто упакуємо та доставимо його нашим користувачам).
 
 ##### Вам можуть бути цікаві також деякі інші статті
 

@@ -1,57 +1,25 @@
----
-layout: article
-title: "Підручник з JavaFX 8 - Частина 3: Взаємодія з користувачем"
-date: 2014-04-24
-updated: 2015-06-25
-slug: javafx-tutorial/uk/part3
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-uk-part3.md
-description: "Реакція на вибір записів у JavaFX TableView. Додавання, редагування та видалення елементів з таблиці, а також перевірка вводу користувача"
-image: /assets/library/javafx-tutorial/part3/addressapp-part3.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Статті цієї серії"
-  body:
-  - text: "Вступ"
-    link: /library/javafx-tutorial/uk/
-    paging: Intro
-  - text: "Частина 1: Scene Builder"
-    link: /library/javafx-tutorial/uk/part1/
-    paging: 1
-  - text: "Частина 2: Модель та компонент TableView"
-    link: /library/javafx-tutorial/uk/part2/
-    paging: 2
-  - text: "Частина 3: Взаємодія з користувачем"
-    link: /library/javafx-tutorial/uk/part3/
-    paging: 3
-    active: true
-  - text: "Частина 4: Стилізація за допомогою CSS"
-    link: /library/javafx-tutorial/uk/part4/
-    paging: 4
-  - text: "Частина 5: Збереження даних в XML"
-    link: /library/javafx-tutorial/uk/part5/
-    paging: 5
-  - text: "Частина 6: Статистична діаграма"
-    link: /library/javafx-tutorial/uk/part6/
-    paging: 6
-  - text: "Частина 7: Розгортання"
-    link: /library/javafx-tutorial/uk/part7/
-    paging: 7
-- header: Скачати вихідний код
-  body:
-  - text: Частина 3 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-3.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Мови
-  collection: library
-  item: javafx-tutorial
-  part: part3
-  active: uk
----
++++
+title = "Частина 3: Взаємодія з користувачем"
+date = 2014-04-24
+updated = 2015-06-25
+description = "Реакція на вибір записів у JavaFX TableView. Додавання, редагування та видалення елементів з таблиці, а також перевірка вводу користувача"
+image = "addressapp-part3.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/uk/part3/"
+aliases = [ 
+  "/library/javafx-8-tutorial/uk/part3/"
+]
+weight = 3
 
-![Підручник з JavaFX 8 - Частина 3: Взаємодія з користувачем](/assets/library/javafx-tutorial/part3/addressapp-part3.png "AdressApp")
+[[sidebars]]
+header = "Скачати вихідний код"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Частина 3 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-3.zip"
++++
+
+![Підручник з JavaFX 8 - Частина 3: Взаємодія з користувачем](addressapp-part3.png "AdressApp")
 
 ## Частина 3: Зміст
 
@@ -176,7 +144,7 @@ public class DateUtil {
 </pre>
 
 <div class = "alert alert-info">
-**Підказка**: Ви можете змінити формат дати, змінюючи константу `DATE_PATTERN`. За всіма можливими форматами дивіться документацію до класу [DateTimeFormatter](http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html)
+<strong>Підказка</strong>: Ви можете змінити формат дати, змінюючи константу <code>DATE_PATTERN</code>. За всіма можливими форматами дивіться документацію до класу <a class="alert-link" href="http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a>
 </div>
 
 #### Використання класу DateUtil
@@ -221,7 +189,7 @@ private void initialize() {
 
 **Запустіть свій додаток** і перевірте, чи відображаються деталі запису в правій частині, коли ви обираєте запис з таблиці.
 
-Якщо у вас щось не працює, то ви можете порівняти свій клас `PersonOverviewController` з моїм [PersonOverviewController.java](/assets/library/javafx-tutorial/part3/PersonOverviewController.java "PersonOverviewController.java").
+Якщо у вас щось не працює, то ви можете порівняти свій клас `PersonOverviewController` з моїм [PersonOverviewController.java](PersonOverviewController.java "PersonOverviewController.java").
 
 *****
 
@@ -244,10 +212,10 @@ private void handleDeletePerson() {
 
 Тепер відкрийте файл `PersonOverview.fxml` в додатку *Scene Builder*. Виберіть кнопку **Delete**, відкрийте вкладку *Code* і проставте метод `handleDeletePerson` в значення пункту *On Action*.
 
-![On Action](/assets/library/javafx-tutorial/part3/handle-delete.png "Handle Delete")
+![On Action](handle-delete.png "Handle Delete")
 
 <div class = "alert alert-info">
-**Пам'ятайте**: Після внесення змін у FXML файл в Scene Builder вам, можливо, буде потрібно оновити проект в Eclipse, щоб зміни застосовувалися.
+<strong>Пам'ятайте</strong>: Після внесення змін у FXML файл в Scene Builder вам, можливо, буде потрібно оновити проект в Eclipse, щоб зміни застосовувалися.
 </div>
 
 ### Обробка помилок
@@ -285,7 +253,7 @@ private void handleDeletePerson() {
 </pre>
 
 <div class = "alert alert-info">
-Щоб подивитися додаткові приклади використання діалогових вікон, читайте статтю [Діалоги в JavaFX 8](http://code.makery.ch/blog/javafx-dialogs-official/)
+Щоб подивитися додаткові приклади використання діалогових вікон, читайте статтю <a href="/blog/javafx-dialogs-official/">Діалоги в JavaFX 8</a>
 </div>
 
 *****
@@ -297,11 +265,11 @@ private void handleDeletePerson() {
 ### Дизайн вікна редагування
 
 1. Створіть новий fxml файл під назвою `PersonEditDialog` всередині пакету `view`.
-![Create Edit Dialog](/assets/library/javafx-tutorial/part3/person-edit-dialog1.png "Person Edit Dialog")
+![Create Edit Dialog](person-edit-dialog1.png "Person Edit Dialog")
 2. Використовуйте компоненти `GridPane`, `Label`, `TextField` і `Button` для створення подібного вікна редагування:   
-![Edit Dialog](/assets/library/javafx-tutorial/part3/person-edit-dialog2.png "Person Edit Dialog")
+![Edit Dialog](person-edit-dialog2.png "Person Edit Dialog")
 
-*Якщо щось не працює, ви можете скачати [PersonEditDialog.fxml](/assets/library/javafx-tutorial/part3/PersonEditDialog.fxml "PersonEditDialog.fxml").*
+*Якщо щось не працює, ви можете скачати [PersonEditDialog.fxml](PersonEditDialog.fxml "PersonEditDialog.fxml").*
 
 ### Створення контролера
 
@@ -590,7 +558,7 @@ private void handleEditPerson() {
 
 ### Що далі?
 
-В [4 частині підручника](/library/javafx-tutorial/uk/part4/"Tutorial Part 4") ми будемо підключати CSS-стилі до нашого додатку.
+В [4 частині підручника](/uk/library/javafx-tutorial/part4/ "Tutorial Part 4") ми будемо підключати CSS-стилі до нашого додатку.
 
 ##### Вам можуть бути цікаві також деякі інші статті
 

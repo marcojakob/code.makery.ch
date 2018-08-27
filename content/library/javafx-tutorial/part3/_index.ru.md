@@ -1,59 +1,25 @@
----
-layout: article
-title: "Учебник по JavaFX 8 - Часть 3: Взаимодействие с пользователем"
-date: 2014-04-24
-updated: 2016-04-21
-slug: javafx-tutorial/ru/part3
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-ru-part3.md
-description: "Реакция на выбор записей в JavaFX TableView. Добавление, изменение и удаление элементов из таблицы, а так же проверка пользовательского ввода"
-image: /assets/library/javafx-tutorial/part3/addressapp-part3.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Статьи в этой серии"
-  body:
-  - text: "Введение"
-    link: /library/javafx-tutorial/ru/
-    paging: Intro
-  - text: "Часть 1: Scene Builder"
-    link: /library/javafx-tutorial/ru/part1/
-    paging: 1
-  - text: "Часть 2: Модель и компонент TableView"
-    link: /library/javafx-tutorial/ru/part2/
-    paging: 2
-  - text: "Часть 3: Взаимодействие с пользователем"
-    link: /library/javafx-tutorial/ru/part3/
-    paging: 3
-    active: true
-  - text: "Часть 4: Стилизация с помощью CSS"
-    link: /library/javafx-tutorial/ru/part4/
-    paging: 4
-  - text: "Часть 5: Хранение данных в XML"
-    link: /library/javafx-tutorial/ru/part5/
-    paging: 5
-  - text: "Часть 6: Статистическая диаграмма"
-    link: /library/javafx-tutorial/ru/part6/
-    paging: 6
-  - text: "Часть 7: Развёртывание"
-    link: /library/javafx-tutorial/ru/part7/
-    paging: 7
-- header: Скачать исходники
-  body:
-  - text: Часть 3 как проект Eclipse <em>(Требуется хотя бы JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-3.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Языки
-  collection: library
-  item: javafx-tutorial
-  part: part3
-  active: ru
----
++++
+title = "Часть 3: Взаимодействие с пользователем"
+date = 2014-04-24
+updated = 2016-04-21
+description = "Реакция на выбор записей в JavaFX TableView. Добавление, изменение и удаление элементов из таблицы, а так же проверка пользовательского ввода"
+image = "addressapp-part3.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/ru/part3/"
+aliases = [ 
+  "/library/javafx-8-tutorial/ru/part3/"
+]
+weight = 3
 
-**Обновление от 27 августа 2014-го года:** *Сейчас используем JDK 8u20 и ControlsFX 8.0.6_20*
+[[sidebars]]
+header = "Скачать исходники"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Часть 3 как проект Eclipse <em>(Требуется хотя бы JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-3.zip"
++++
 
-![Учебник по JavaFX 8 - Часть 3: Взаимодействие с пользователем](/assets/library/javafx-tutorial/part3/addressapp-part3.png "AdressApp")
+![Учебник по JavaFX 8 - Часть 3: Взаимодействие с пользователем](addressapp-part3.png "AdressApp")
 
 
 ## Часть 3: Содержание
@@ -184,7 +150,7 @@ public class DateUtil {
 </pre>
 
 <div class="alert alert-info">
-**Подсказка**: формат даты можно поменять, просто изменив константу `DATE_PATTERN`. Все возможные форматы описаны в документации к классу [DateTimeFormatter](http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html)
+<strong>Подсказка</strong>: формат даты можно поменять, просто изменив константу <code>DATE_PATTERN</code>. Все возможные форматы описаны в документации к классу [DateTimeFormatter](http://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html)
 </div>
 
 
@@ -234,7 +200,7 @@ private void initialize() {
 
 **Запустите свое приложение** и проверьте, отображаются ли детали адресата в правой части, когда в таблице выбирается определённый адресат.
 
-Если у вас что-то не работает, то вы можете сравнить свой класс `PersonOverviewController` с [PersonOverviewController.java](/assets/library/javafx-tutorial/part3/PersonOverviewController.java "PersonOverviewController.java").
+Если у вас что-то не работает, то вы можете сравнить свой класс `PersonOverviewController` с [PersonOverviewController.java](PersonOverviewController.java "PersonOverviewController.java").
 
 
 *****
@@ -259,11 +225,11 @@ private void handleDeletePerson() {
 
 Теперь в приложении Scene Builder откройте файл `PersonOverview.fxml`. Выберите кнопку **Delete**, откройте вкладку *Code* и укажите метод `handleDeletePerson` в значение пункта *On Action*.  
 
-![On Action](/assets/library/javafx-tutorial/part3/handle-delete.png "Handle Delete")
+![On Action](handle-delete.png "Handle Delete")
 
 
 <div class="alert alert-info">
-**Помните:** После изменения FXML-файла в Scene Builder, для того, чтобы изменения вступили в силу, вам может понадобится обновить проект в Eclipse.
+<strong>Помните:</strong> После изменения FXML-файла в Scene Builder, для того, чтобы изменения вступили в силу, вам может понадобится обновить проект в Eclipse.
 </div>
 
 ### Обработка ошибок
@@ -318,12 +284,12 @@ private void handleDeletePerson() {
 ### Дизайн окна редактирования
 
 1. Внутри пакета `view` создайте новый fxml-файл `PersonEditDialog`.  
-![Create Edit Dialog](/assets/library/javafx-tutorial/part3/person-edit-dialog1.png "Person Edit Dialog")
+![Create Edit Dialog](person-edit-dialog1.png "Person Edit Dialog")
 2. Используйте компоненты `GridPane`, `Label`, `TextField` и `Button` для создания окна редактирования, похожего на это:  
-![Edit Dialog](/assets/library/javafx-tutorial/part3/person-edit-dialog2.png "Person Edit Dialog")
+![Edit Dialog](person-edit-dialog2.png "Person Edit Dialog")
 
 
-*Если что-то не работает, вы можете скачать [PersonEditDialog.fxml](/assets/library/javafx-tutorial/part3/PersonEditDialog.fxml "PersonEditDialog.fxml").*
+*Если что-то не работает, вы можете скачать [PersonEditDialog.fxml](PersonEditDialog.fxml "PersonEditDialog.fxml").*
 
 
 ### Создание контроллера
@@ -620,7 +586,7 @@ private void handleEditPerson() {
 
 ### Что дальше?
 
-В [4-й части учебника](/library/javafx-tutorial/ru/part4/ "Tutorial Part 4") мы будем подключать к нашему приложению CSS-стили.
+В [4-й части учебника](/ru/library/javafx-tutorial/part4/ "Tutorial Part 4") мы будем подключать к нашему приложению CSS-стили.
 
 
 ##### Вам могут быть интересны также некоторые другие статьи

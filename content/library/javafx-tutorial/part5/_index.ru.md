@@ -1,57 +1,25 @@
----
-layout: article
-title: "Учебник по JavaFX 8 - Часть 5: Хранение данных в XML"
-date: 2014-04-25
-updated: 2016-04-22
-slug: javafx-tutorial/ru/part5
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-ru-part5.md
-description: "Сохранение данных в XML с помощью JAXB. Учимся использовать JavaFX-компоненты FileChooser и Menu."
-image: /assets/library/javafx-tutorial/part5/addressapp-part5.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Статьи в этой серии"
-  body:
-  - text: "Введение"
-    link: /library/javafx-tutorial/ru/
-    paging: Intro
-  - text: "Часть 1: Scene Builder"
-    link: /library/javafx-tutorial/ru/part1/
-    paging: 1
-  - text: "Часть 2: Модель и компонент TableView"
-    link: /library/javafx-tutorial/ru/part2/
-    paging: 2
-  - text: "Часть 3: Взаимодействие с пользователем"
-    link: /library/javafx-tutorial/ru/part3/
-    paging: 3
-  - text: "Часть 4: Стилизация с помощью CSS"
-    link: /library/javafx-tutorial/ru/part4/
-    paging: 4
-  - text: "Часть 5: Хранение данных в XML"
-    link: /library/javafx-tutorial/ru/part5/
-    paging: 5
-    active: true
-  - text: "Часть 6: Статистическая диаграмма"
-    link: /library/javafx-tutorial/ru/part6/
-    paging: 6
-  - text: "Часть 7: Развёртывание"
-    link: /library/javafx-tutorial/ru/part7/
-    paging: 7
-- header: Скачать исходники
-  body:
-  - text: Часть 5 как проект Eclipse <em>(Требуется хотя бы JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-5.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Языки
-  collection: library
-  item: javafx-tutorial
-  part: part5
-  active: ru
----
++++
+title = "Часть 5: Хранение данных в XML"
+date = 2014-04-25
+updated = 2016-04-22
+description = "Сохранение данных в XML с помощью JAXB. Учимся использовать JavaFX-компоненты FileChooser и Menu."
+image = "addressapp-part5.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/ru/part5/"
+aliases = [ 
+  "/library/javafx-8-tutorial/ru/part5/"
+]
+weight = 5
 
-![Screenshot AddressApp Part 5](/assets/library/javafx-tutorial/part5/addressapp-part5.png)
+[[sidebars]]
+header = "Скачать исходники"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Часть 5 как проект Eclipse <em>(Требуется хотя бы JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-5.zip"
++++
+
+![Screenshot AddressApp Part 5](addressapp-part5.png)
 
 
 ## Часть 5: Содержание
@@ -286,7 +254,7 @@ public void savePersonDataToFile(File file) {
 
 В приложении Scene Builder откройте файл `RootLayout.fxml` и перенесите необходимое количество пунктов меню (MenuItem) из вкладки *Library* на вкладку *Hierarchy*. Создайте следующие пункты меню:  **New**, **Open...**, **Save**, **Save as...** и **Exit**.
 
-![Add Menu Items](/assets/library/javafx-tutorial/part5/add-menu-items.png)
+![Add Menu Items](add-menu-items.png)
 
 Подсказка: для установки на пункты меню горячих клавиш спользуйте свойство *Accelerator* во вкладке *Properties*.
 
@@ -437,7 +405,7 @@ public class RootLayoutController {
 1. В приложении Scene Builder откройте файл `RootLayout.fxml`. Во вкладке *Controller* в качестве класса-контроллера выберите значение `RootLayoutController`.
 
 2. Перейдите на вкладку *Hierarchy* и выберите пункт меню. Во вкладке *Code* в качестве значений свойства *On Action* вы можете увидеть все доступные методы выбранного класса-контроллера. Выберите метод, соответствующий данному пункту меню.  
-![Menu Actions](/assets/library/javafx-tutorial/part5/menu-actions.png)
+![Menu Actions](menu-actions.png)
 
 3. Повторите предыдущий шаг для каждого пункта меню.
 
@@ -552,7 +520,7 @@ public LocalDate getBirthday() {
 
 ### Что дальше?
 
-В [6-й части учебника](/library/javafx-tutorial/ru/part6/ "Tutorial Part 6") мы добавим статистический график дней рождений.
+В [6-й части учебника](/ru/library/javafx-tutorial/part6/ "Tutorial Part 6") мы добавим статистический график дней рождений.
 
 
 ##### Вам могут быть интересны также некоторые другие статьи

@@ -1,57 +1,25 @@
----
-layout: article
-title: "Учебник по JavaFX 8 - Часть 7: Развёртывание"
-date: 2014-05-10
-updated: 2016-04-26
-slug: javafx-tutorial/ru/part7
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-ru-part7.md
-description: "Развёртывание приложения JavaFX как нативного пакета (native package). Создание инсталляторов для Windows, Mac и Linux."
-image: /assets/library/javafx-tutorial/part7/addressapp-macos.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Статьи в этой серии"
-  body:
-  - text: "Введение"
-    link: /library/javafx-tutorial/ru/
-    paging: Intro
-  - text: "Часть 1: Scene Builder"
-    link: /library/javafx-tutorial/ru/part1/
-    paging: 1
-  - text: "Часть 2: Модель и компонент TableView"
-    link: /library/javafx-tutorial/ru/part2/
-    paging: 2
-  - text: "Часть 3: Взаимодействие с пользователем"
-    link: /library/javafx-tutorial/ru/part3/
-    paging: 3
-  - text: "Часть 4: Стилизация с помощью CSS"
-    link: /library/javafx-tutorial/ru/part4/
-    paging: 4
-  - text: "Часть 5: Хранение данных в XML"
-    link: /library/javafx-tutorial/ru/part5/
-    paging: 5
-  - text: "Часть 6: Статистическая диаграмма"
-    link: /library/javafx-tutorial/ru/part6/
-    paging: 6
-  - text: "Часть 7: Развёртывание"
-    link: /library/javafx-tutorial/ru/part7/
-    paging: 7
-    active: true
-- header: Скачать исходники
-  body:
-  - text: Часть 7 как проект Eclipse <em>(Требуется хотя бы JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-7.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Языки
-  collection: library
-  item: javafx-tutorial
-  part: part7
-  active: ru
----
++++
+title = "Часть 7: Развёртывание"
+date = 2014-05-10
+updated = 2016-04-26
+description = "Развёртывание приложения JavaFX как нативного пакета (native package). Создание инсталляторов для Windows, Mac и Linux."
+image = "addressapp-macos.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/ru/part7/"
+aliases = [ 
+  "/library/javafx-8-tutorial/ru/part7/"
+]
+weight = 7
 
-![Screenshot AddressApp Part 7](/assets/library/javafx-tutorial/part7/addressapp-part7.png)
+[[sidebars]]
+header = "Скачать исходники"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Часть 7 как проект Eclipse <em>(Требуется хотя бы JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-7.zip"
++++
+
+![Screenshot AddressApp Part 7](addressapp-part7.png)
 
 Я написал последнюю часть данного учебника для того, чтобы показать вам, как развернуть (то есть упаковать и опубликовать) наше приложение AddressApp. 
 
@@ -86,7 +54,7 @@ languages:
 
 Цель заключается в создании автономно-упакованного приложения, которое будет размещаться на компьютере пользователя в одной директории. То, как наше приложение будет примерно выглядеть в Windows можно посмотреть ниже:
 
-![AddressApp Native Package](/assets/library/javafx-tutorial/part7/native-package.png)
+![AddressApp Native Package](native-package.png)
 
 В папке `app` лежат данные приложения, а в папке `runtime` - платформ-зависимая среда выполнения.
 
@@ -105,12 +73,12 @@ languages:
 1. Откройте файл `build.fxbuild` из корневой папки вашего проекта.
 
 2. Заполните все поля, помеченные звёздочками. Для владельцев MacOS: не используйте пробелы в названии приложения (в поле *Application Title*) так как это, похоже, приводит к проблемам).  
-![fxbuild settings](/assets/library/javafx-tutorial/part7/fxbuild-settings.png)
+![fxbuild settings](fxbuild-settings.png)
 
 3. Выберите формат упаковки: для Windows - `exe`, для MacOS - `dmg`, или Linux - `rpm`.
 
 4. Справа нажмите на ссылку `Generate ant build.xml only`.  
-![generate ant build](/assets/library/javafx-tutorial/part7/generate-ant-build.png)
+![generate ant build](generate-ant-build.png)
 
 5. Проверьте, была ли создана папка `build` с файлом `build.xml`.
 
@@ -119,16 +87,16 @@ languages:
 
 Мы можем добавить в наш установщик пару красивых иконок:
 
-* [AddressApp.ico](/assets/library/javafx-tutorial/part7/AddressApp.ico) для иконки файла установщика
-* [AddressApp-setup-icon.bmp](/assets/library/javafx-tutorial/part7/AddressApp-setup-icon.bmp) для экрана приветствия установщика
-* [AddressApp.icns](/assets/library/javafx-tutorial/part7/AddressApp.icns) - для установщика под MacOS
-* [AddressApp-volume.icns](/assets/library/javafx-tutorial/part7/AddressApp-volume.icns) для рабочего стола Mac
+* [AddressApp.ico](AddressApp.ico) для иконки файла установщика
+* [AddressApp-setup-icon.bmp](AddressApp-setup-icon.bmp) для экрана приветствия установщика
+* [AddressApp.icns](AddressApp.icns) - для установщика под MacOS
+* [AddressApp-volume.icns](AddressApp-volume.icns) для рабочего стола Mac
 
 1. Создайте в папке `build` следующие подкаталоги:
   * `build/package/windows` (используется только в Windows)
   * `build/package/macosx` (используется только в MacOS)
 2. Из приведенных ссылок загрузите соответствующие иконки и поместите их в назначенные для них папки. В результате это должно выглядеть так:  
-![Installer Icons](/assets/library/javafx-tutorial/part7/installer-icons.png)
+![Installer Icons](installer-icons.png)
 3. **Важно**: Имена иконок должны точно соответствовать имени приложения, которое вы указали в `build.fxbuild`:
   * `НазваниеВашегоПриложения.ico`
   * `НазваниеВашегоПриложения-setup-icon.bmp`
@@ -143,7 +111,7 @@ languages:
 1. Создайте в папке `build` подкаталог `dist`:
 	* `build/dist`
 2. Скопируйте папку `resources` (которая содержит иконки нашего приложения) в `build/dist`.  
-![Build Resources](/assets/library/javafx-tutorial/part7/build-resources.png)
+![Build Resources](build-resources.png)
 
 
 ### Шаг 4. Редактируем build.xml и включаем в него иконки
@@ -198,7 +166,7 @@ languages:
 
 ### Шаг 5. EXE-установщик под Windows
 
-![AddressApp on Windows](/assets/library/javafx-tutorial/part7/addressapp-windows.png)
+![AddressApp on Windows](addressapp-windows.png)
 
 С помощью утилиты **Inno Setup** можно создать установщик нашей адресной книги для Windows в виде единого `.exe`-файла. Созданный `.exe`-установщик будет устанавливать программу на уровне пользователя (не потребуются права администратора). Также он создаст ярлык (в меню или на рабочем столе).
 
@@ -211,7 +179,7 @@ languages:
 
 ### Шаг 5. DMG-установщик для MacOS
 
-![AddressApp on Mac](/assets/library/javafx-tutorial/part7/addressapp-macos.png)
+![AddressApp on Mac](addressapp-macos.png)
 
 Для создания `dmg`-установщика под MacOS никаких дополнительных инструментов не потребуется.
 
@@ -227,13 +195,13 @@ languages:
 
 На последнем этапе мы запустим файл `build.xml` с помощью Ant: кликните правой кнопкой мышки на файле `build.xml` *| Run As | Ant Build*.
 
-![Run Ant Build](/assets/library/javafx-tutorial/part7/run-ant-build.png)
+![Run Ant Build](run-ant-build.png)
 
 Сборка приложения займёт какое-то время (около 1 минуты на моём компьютере).
 
 Если всё прошло удачно, вы должны найти нативные сборки в папке `build/deploy/bundles`. Вот так выглядит версия для Windows:
 
-![Deployed File](/assets/library/javafx-tutorial/part7/deployed-file.png)
+![Deployed File](deployed-file.png)
 
 
 Файл `AddressApp-1.0.exe` может использоваться как единственный файл для установки приложения. Этот установщик скопирует нашу сборку в папку `C:/Users/[yourname]/AppData/Local/AddressApp`.

@@ -1,57 +1,25 @@
----
-layout: article
-title: "Підручник з JavaFX 8 - Частина 7: Розгортання"
-date: 2014-05-10
-updated: 2015-06-25
-slug: javafx-tutorial/uk/part7
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-uk-part7.md
-description: "Розгортання JavaFX додатку з упаковки, що залежить від платформи (native package). Створення інсталяційниого пакета для Windows, Mac чи Linux"
-image: /assets/library/javafx-tutorial/part7/addressapp-macos.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Статті цієї серії"
-  body:
-  - text: "Вступ"
-    link: /library/javafx-tutorial/uk/
-    paging: Intro
-  - text: "Частина 1: Scene Builder"
-    link: /library/javafx-tutorial/uk/part1/
-    paging: 1
-  - text: "Частина 2: Модель та компонент TableView"
-    link: /library/javafx-tutorial/uk/part2/
-    paging: 2
-  - text: "Частина 3: Взаємодія з користувачем"
-    link: /library/javafx-tutorial/uk/part3/
-    paging: 3
-  - text: "Частина 4: Стилізація за допомогою CSS"
-    link: /library/javafx-tutorial/uk/part4/
-    paging: 4
-  - text: "Частина 5: Збереження даних в XML"
-    link: /library/javafx-tutorial/uk/part5/
-    paging: 5
-  - text: "Частина 6: Статистична діаграма"
-    link: /library/javafx-tutorial/uk/part6/
-    paging: 6
-  - text: "Частина 7: Розгортання"
-    link: /library/javafx-tutorial/uk/part7/
-    paging: 7
-    active: true
-- header: Скачати вихідний код
-  body:
-  - text: Частина 7 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-7.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Мови
-  collection: library
-  item: javafx-tutorial
-  part: part7
-  active: uk
----
++++
+title = "Частина 7: Розгортання"
+date = 2014-05-10
+updated = 2015-06-25
+description = "Розгортання JavaFX додатку з упаковки, що залежить від платформи (native package). Створення інсталяційниого пакета для Windows, Mac чи Linux"
+image = "addressapp-macos.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/uk/part7/"
+aliases = [ 
+  "/library/javafx-8-tutorial/uk/part7/"
+]
+weight = 7
 
-![Screenshot AddressApp Part 7](/assets/library/javafx-tutorial/part7/addressapp-part7.png)
+[[sidebars]]
+header = "Скачати вихідний код"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Частина 7 як проект Eclipse <em>(Необхідно хоча б JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-7.zip"
++++
+
+![Screenshot AddressApp Part 7](addressapp-part7.png)
 
 Я думаю, що потрібно написати останню частину цього підручника, щоб показати, як розгорнути (запакувати та опублікувати) AddressApp.
 
@@ -83,7 +51,7 @@ Java рекламується під слоганом **"Написано одн
 
 Мета полягає у створенні автономно-упакованого додатку, розміщеного в одній директорії на комп'ютері користувача. Як приблизно буде виглядати результат для нашого додатку на Windows, можна подивитися нижче:
 
-![AddressApp Native Package](/assets/library/javafx-tutorial/part7/native-package.png)
+![AddressApp Native Package](native-package.png)
 
 Папка `app` містить дані нашого додатку, а папка `runtime` - платформо-залежне середовище виконання.
 
@@ -101,12 +69,12 @@ Java рекламується під слоганом **"Написано одн
 1. Відкрийте файл `build.fxbuild` з кореневої папки вашого проекту.
 
 2. Заповніть всі поля, помічені зірочкою. *Для MacOS: не використовуйте пробіли в назві додатку (в полі **Application Title**) оскільки це, здається, приводить до проблем).*
-![fxbuild settings](/assets/library/javafx-tutorial/part7/fxbuild-settings.png)
+![fxbuild settings](fxbuild-settings.png)
 
 3. Виберіть значення **формату упаковки**: для Windows - `exe`, для MacOS - `dmg`, для Linux - `rpm`.
 
 4. Натисніть на посилання `Generate ant build.xml only` праворуч.  
-![generate ant build](/assets/library/javafx-tutorial/part7/generate-ant-build.png)
+![generate ant build](generate-ant-build.png)
 
 5. Перевірте, чи створилась нова папка `build` з файлом `build.xml`.
 
@@ -114,17 +82,17 @@ Java рекламується під слоганом **"Написано одн
 
 Ми можемо додати в наш інсталятор пару гарних зображень:
 
-* [AddressApp.ico](/assets/library/javafx-tutorial/part7/AddressApp.ico) для іконки інсталяційного файлу
-* [AddressApp-setup-icon.bmp](/assets/library/javafx-tutorial/part7/AddressApp-setup-icon.bmp) для екрану привітання інсталятора
-* [AddressApp.icns](/assets/library/javafx-tutorial/part7/AddressApp.icns) - для інсталятора під MacOS
-* [AddressApp-volume.icns](/assets/library/javafx-tutorial/part7/AddressApp-volume.icns) для інсталятора під MacOS
+* [AddressApp.ico](AddressApp.ico) для іконки інсталяційного файлу
+* [AddressApp-setup-icon.bmp](AddressApp-setup-icon.bmp) для екрану привітання інсталятора
+* [AddressApp.icns](AddressApp.icns) - для інсталятора під MacOS
+* [AddressApp-volume.icns](AddressApp-volume.icns) для інсталятора під MacOS
  
 1. Створіть наступні піддиректорії в папці `build`:
   * `build/package/windows` (використовується лише в Windows)
   * `build/package/macosx` (використовується лише в MacOS)
   
 2. Скопіюйте відповідні іконки з приведених посилань та розмістіть їх в призначені для них папки. В результаті це повинно виглядати так:  
-![Installer Icons](/assets/library/javafx-tutorial/part7/installer-icons.png)
+![Installer Icons](installer-icons.png)
 
 3. **Важливо**: Імена іконок повинні точно співпадати з **іменем додатку** (Application title), яке ви вказали в `build.fxbuild`:
 	* `YourAppTitle.ico`
@@ -139,7 +107,7 @@ Java рекламується під слоганом **"Написано одн
 1. Створіть піддиректорію `dist` в папці `build`:
 	* `build/dist`
 2. Скопіюйте папку `resources` (яка містить іконки для нашого додатку) в `build/dist`.  
-![Build Resources](/assets/library/javafx-tutorial/part7/build-resources.png)
+![Build Resources](build-resources.png)
 
 ### Крок 4 - Редагуємо build.xml та включаємо в нього іконки
 
@@ -189,7 +157,7 @@ Java рекламується під слоганом **"Написано одн
 
 ### Крок 5 - exe інсталятор під Windows
 
-![AddressApp on Windows](/assets/library/javafx-tutorial/part7/addressapp-windows.png)
+![AddressApp on Windows](addressapp-windows.png)
 
 За допомогою **Inno Setup** ми можемо створити для нашого додатку інсталятор під Windows у вигляді єдиного `.exe` файлу. Створений `.exe` інсталятор буде проводити установку програми на рівні користувача (не потрібні права адміністратора). Також буде створено ярлик (в меню або на робочому столі).
 
@@ -201,7 +169,7 @@ Java рекламується під слоганом **"Написано одн
 
 ### Крок 5 - dmg інсталятор для MacOS
 
-![AddressApp on Mac](/assets/library/javafx-tutorial/part7/addressapp-macos.png)
+![AddressApp on Mac](addressapp-macos.png)
 
 Для створення `dmg` інсталятора під MacOS ніяких додаткових інструментів не потрібно.
 
@@ -215,13 +183,13 @@ Java рекламується під слоганом **"Написано одн
 
 На останньому кроці ми запустимо файл `build.xml` за допомогою Ant: виконайте клік *правою кнопкою мишки* на файлі `build.xml` *| Run As | Ant Build*.
 
-![Run Ant Build](/assets/library/javafx-tutorial/part7/run-ant-build.png)
+![Run Ant Build](run-ant-build.png)
 
 Збірка додатку займе **трохи часу** (близько хвилини на моєму комп'ютері).
 
 Якщо все пройшло вдало, ви повинні знайти нативні збірки в папці `build/deploy/bundles`. Ось так виглядає версія для Windows:
 
-![Deployed File](/assets/library/javafx-tutorial/part7/deployed-file.png)
+![Deployed File](deployed-file.png)
 
 Файл `AddressApp-1.0.exe` може використовуватися як єдиний файл для установки програми. Цей інсталятор скопіює нашу збірку в папку `C:/Users/[yourname]/AppData/Local/AddressApp`.
 

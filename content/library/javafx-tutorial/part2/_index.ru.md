@@ -1,55 +1,23 @@
----
-layout: article
-title: "Учебник по JavaFX 8 - Часть 2: Модель и компонент TableView"
-date: 2014-04-19
-updated: 2016-04-21
-slug: javafx-tutorial/ru/part2
-github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-tutorial-ru-part2.md
-description: "Используйте JavaFX TableView для отображения списка людей из ObservableList"
-image: /assets/library/javafx-tutorial/part2/addressapp-part2.png
-published: true
-prettify: true
-comments: true
-sidebars:
-- header: "Статьи в этой серии"
-  body:
-  - text: "Введение"
-    link: /library/javafx-tutorial/ru/
-    paging: Intro
-  - text: "Часть 1: Scene Builder"
-    link: /library/javafx-tutorial/ru/part1/
-    paging: 1
-  - text: "Часть 2: Модель и компонент TableView"
-    link: /library/javafx-tutorial/ru/part2/
-    paging: 2
-    active: true
-  - text: "Часть 3: Взаимодействие с пользователем"
-    link: /library/javafx-tutorial/ru/part3/
-    paging: 3
-  - text: "Часть 4: Стилизация с помощью CSS"
-    link: /library/javafx-tutorial/ru/part4/
-    paging: 4
-  - text: "Часть 5: Хранение данных в XML"
-    link: /library/javafx-tutorial/ru/part5/
-    paging: 5
-  - text: "Часть 6: Статистическая диаграмма"
-    link: /library/javafx-tutorial/ru/part6/
-    paging: 6
-  - text: "Часть 7: Развёртывание"
-    link: /library/javafx-tutorial/ru/part7/
-    paging: 7
-- header: Скачать исходники
-  body:
-  - text: Часть 2 как проект Eclipse <em>(Требуется хотя бы JDK 8u20)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/addressapp-jfx8-part-2.zip
-    icon-css: fa fa-fw fa-download
-languages: 
-  header: Языки
-  collection: library
-  item: javafx-tutorial
-  part: part2
-  active: ru
----
++++
+title = "Часть 2: Модель и компонент TableView"
+date = 2014-04-19
+updated = 2016-04-21
+description = "Используйте JavaFX TableView для отображения списка людей из ObservableList"
+image = "addressapp-part2.png"
+prettify = true
+comments = true 
+commentsIdentifier = "/library/javafx-8-tutorial/ru/part2/"
+aliases = [ 
+  "/library/javafx-8-tutorial/ru/part2/"
+]
+weight = 2
+
+[[sidebars]]
+header = "Скачать исходники"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-download\"></i> Часть 2 как проект Eclipse <em>(Требуется хотя бы JDK 8u40)</em>"
+link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-2.zip"
++++
 
 ![Screenshot AddressApp Part 2](addressapp-part2.png "GridPane Add Row")
 
@@ -264,7 +232,7 @@ public class Person {
 2. Для того, чтобы получить доступ к таблице и меткам представления, мы определим некоторые переменные. Эти переменные и некоторые методы имеют специальную аннотацию `@FXML`. Она необходима для того, чтобы fxml-файл имел доступ к приватным полям и методам. После этого мы настроим наш fxml-файл так, что при его загрузке приложение автоматически заполняло эти переменные данными. Итак, давайте добавим следующий код в наш класс:
 
 <div class="alert alert-info">
-**Примечание**: При импорте пакетов всегда используйте пакет ***javafx***, а НЕ *awt* или *swing*!
+<strong>Примечание</strong>: При импорте пакетов всегда используйте пакет <strong>javafx</strong>, а НЕ awt или swing!
 </div>
 
 
@@ -345,7 +313,7 @@ public class PersonOverviewController {
 
 <div class="alert alert-info">
   <p>
-    В нашем примере для столбцов таблицы мы использовали только значения `StringProperty`. Если нам понадобится использовать `IntegerProperty` или `DoubleProperty`, то `setCellValueFactory(...)` должен иметь дополнительный метод `asObject()`:
+    В нашем примере для столбцов таблицы мы использовали только значения <code>StringProperty</code>. Если нам понадобится использовать <code>IntegerProperty</code> или <code>DoubleProperty</code>, то <code>setCellValueFactory(...)</code> должен иметь дополнительный метод <code>asObject()</code>:
   </p>
   <p>
   <pre>myIntegerColumn.setCellValueFactory(cellData -> 
@@ -400,15 +368,15 @@ public void showPersonOverview() {
 1. Откройте файл `PersonOverview.fxml` в приложении *Scene Builder*.
 
 2. Откройте вкладку *Controller* слева на панели *Document* и выберите класс `PersonControllerOverview` в качестве класса-контроллера.  
-![Set Controller Class](/assets/library/javafx-tutorial/part2/set-controller-class.png "Set Controller Class")
+![Set Controller Class](set-controller-class.png "Set Controller Class")
 
 3. Выберите компонент `TableView` на вкладке *Hierarchy*, перейдите на вкладку *Code* и в поле **fx:id** установите значение `personTable`.  
-![Set TableView fx:id](/assets/library/javafx-tutorial/part2/set-tableview-fx-id.png "Set TableView fx:id")
+![Set TableView fx:id](set-tableview-fx-id.png "Set TableView fx:id")
 
 4. Сделайте то же самое для колонок таблицы и установите значения свойства **fx:id** `firstNameColumn` и `lastNameColumn` соответственно.
 
 5. Для каждой метки во второй колонке компонента GridPane также установите соответствующие значения **fx:id**.  
-![Set Label fx:id](/assets/library/javafx-tutorial/part2/set-label-fx-id.png "Set Label fx:id")
+![Set Label fx:id](set-label-fx-id.png "Set Label fx:id")
 
 6. Важно: сохраните файл `PersonOverview.fxml`, вернитесь в среду разработки Eclipse и обновите весь проект AdressApp (F5). Это необходимо для того, чтобы приложение Eclipse "увидело" те изменения, которые мы сделали в приложении Scene Builder.
 
@@ -426,7 +394,7 @@ public void showPersonOverview() {
 
 ### Что дальше?
 
-В [3-й части учебника](/library/javafx-tutorial/ru/part3/ "Tutorial Part 3") мы научим наше приложение добавлять, редактировать и удалять информацию в адресной книге.
+В [3-й части учебника](/ru/library/javafx-tutorial/part3/ "Tutorial Part 3") мы научим наше приложение добавлять, редактировать и удалять информацию в адресной книге.
 
 
 ##### Вам могут быть интересны также некоторые другие статьи
