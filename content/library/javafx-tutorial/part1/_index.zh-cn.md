@@ -15,7 +15,7 @@ weight = 1
 [[sidebars]]
 header = "下载源代码"
 [[sidebars.items]]
-text = "<i class=\"fa fa-fw fa-download\"></i> 第一部分为 Eclipse 项目 <em>（要求至少 JDK 8u20）</em>"
+text = "<i class=\"fa fa-fw fa-download\"></i> 第一部分为 Eclipse 项目 <em>（要求至少 JDK 8u40）</em>"
 link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-1.zip"
 +++
 
