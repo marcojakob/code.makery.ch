@@ -1,2 +1,2 @@
 # Redirect default Netlify subdomain to primary domain
-http://codemakery.netlify.com/* http://code.makery.ch/:splat 301!
+https://codemakery.netlify.com/* https://code.makery.ch/:splat 301!
