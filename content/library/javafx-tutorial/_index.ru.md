@@ -14,11 +14,11 @@ sidebarName = "Введение"
 pagingName = "Intro"
 +++
 
-В 2012-м году я написал для своих студентов очень детальный [учебник по JavaFX 2](http://code.makery.ch/library/javafx-2-tutorial/). Его прочитали в разных частях света, и многие люди очень позитивно отозвались о данном материале. Поэтому я решил переписать учебник для новой версии JavaFX 8 (об изменениях вы можете почитать здесь - [Обновление до JavaFX 8 - Что Нового](http://code.makery.ch/blog/update-to-javafx-8-whats-new/ "Update to JavaFX 8 - What's New")).
+В 2012-м году я написал для своих студентов очень детальный [учебник по JavaFX 2](https://code.makery.ch/library/javafx-2-tutorial/). Его прочитали в разных частях света, и многие люди очень позитивно отозвались о данном материале. Поэтому я решил переписать учебник для новой версии JavaFX 8 (об изменениях вы можете почитать здесь - [Обновление до JavaFX 8 - Что Нового](https://code.makery.ch/blog/update-to-javafx-8-whats-new/ "Update to JavaFX 8 - What's New")).
 
 В этом учебнике я расскажу о проектировании, программировании и развёртывании приложения с функциональностью адресной книги. Когда мы закончим разработку, наше приложение будет выглядеть так:
 
-![Screenshot AddressApp](http://code.makery.chaddressapp.png "AdressApp")
+![Screenshot AddressApp](addressapp.png "AdressApp")
 
 
 ## Нам предстоит научиться

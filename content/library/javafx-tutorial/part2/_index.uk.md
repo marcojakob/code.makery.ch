@@ -51,7 +51,7 @@ languages:
   active: uk
 ---
 
-![Screenshot AddressApp Part 2](http://code.makery.ch/assets/library/javafx-tutorial/part2/addressapp-part2.png "GridPane Add Row")
+![Screenshot AddressApp Part 2](addressapp-part2.png "GridPane Add Row")
 
 ## Частина 2: Зміст
 
