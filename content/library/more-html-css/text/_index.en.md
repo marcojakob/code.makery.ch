@@ -6,6 +6,8 @@ prettify = true
 comments = true
 weight = 6
 
+sidebarName = "<i class=\"fa fa-fw fa-font\"></i> Formatting Text"
+
 # Custom Sidebars
 [[sidebars]]
 header = "Links"

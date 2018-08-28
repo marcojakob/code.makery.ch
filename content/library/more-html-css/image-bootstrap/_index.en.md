@@ -6,6 +6,8 @@ prettify = true
 comments = true
 weight = 3
 
+sidebarName = "<i class=\"fa fa-fw fa-image\"></i> Images with Bootstrap"
+
 # Custom Sidebars
 [[sidebars]]
 header = "Links"

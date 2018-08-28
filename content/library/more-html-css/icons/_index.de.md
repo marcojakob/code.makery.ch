@@ -10,6 +10,8 @@ aliases = [
 ]
 weight = 2
 
+sidebarName = "<i class=\"fa fa-fw fa-flag\"></i> Icons auf Website verwenden"
+
 # Custom Sidebars
 [[sidebars]]
 header = "Links"

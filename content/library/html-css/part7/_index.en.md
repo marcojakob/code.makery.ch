@@ -249,7 +249,7 @@ Bootstrap was designed so that it works well on mobile screens. In the screensho
 Web design that is optimized for different screen sizes is called [responsive web design](http://en.wikipedia.org/wiki/Responsive_web_design).
 
 <div class="alert alert-warning">
-  <strong>Note:</strong> Bootstrap is capable of automatically collapsing the menu into a menu button. This functionality is provided by the JavaScript files that we always insert just before the closing <code></body></code> tag.
+  <strong>Note:</strong> Bootstrap is capable of automatically collapsing the menu into a menu button. This functionality is provided by the JavaScript files that we always insert just before the closing <code>&lt;/body&gt;</code> tag.
 </div>
 
 

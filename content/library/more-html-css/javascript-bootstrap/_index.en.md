@@ -6,6 +6,8 @@ prettify = true
 comments = true
 weight = 7
 
+sidebarName = "<i class=\"fa fa-fw fa-code\"></i> JavaScript with Bootstrap"
+
 # Custom Sidebars
 [[sidebars]]
 header = "Links"

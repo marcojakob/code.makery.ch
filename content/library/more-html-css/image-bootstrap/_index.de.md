@@ -10,6 +10,8 @@ aliases = [
 ]
 weight = 3
 
+sidebarName = "<i class=\"fa fa-fw fa-image\"></i> Bilder mit Bootstrap verwenden"
+
 # Custom Sidebars
 [[sidebars]]
 header = "Links"

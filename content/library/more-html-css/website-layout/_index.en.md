@@ -6,6 +6,8 @@ prettify = true
 comments = true
 weight = 1
 
+sidebarName = "<i class=\"fa fa-fw fa-th-large\"></i> Website Layout with Boostrap"
+
 # Custom Sidebars
 [[sidebars]]
 header = "Links"

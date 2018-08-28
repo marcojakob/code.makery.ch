@@ -10,6 +10,8 @@ aliases = [
 ]
 weight = 7
 
+sidebarName = "<i class=\"fa fa-fw fa-code\"></i> JavaScript mit Bootstrap"
+
 # Custom Sidebars
 [[sidebars]]
 header = "Links"
