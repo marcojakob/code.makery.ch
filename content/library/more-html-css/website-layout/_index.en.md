@@ -1,6 +1,7 @@
 +++
 title = "Website Layout with Bootstrap"
-date = 2018-08-16
+date = 2015-04-09
+updated = 2018-08-28
 description = "Learn how to layout elements on web pages using the bootstrap grid."
 prettify = true
 comments = true
@@ -16,8 +17,8 @@ text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
 link = "/library/html-css/"
 +++
 
-<div class="alert alert-danger">
-<strong>Achtung:</strong> Diese Seite wird gerade aktualisiert auf Bootstrap 4, beinhaltet aber noch Informationen zu Bootstrap 3. Bitte verwenden Sie in der Zwischenzeit die <a class="alert-link" target="_blank" href="https://getbootstrap.com/">Originaldokumentation von Bootstrap.</a> 
+<div class="alert alert-info">
+This page has been updated to cover <a href="https://getbootstrap.com/" class="alert-link">Bootstrap 4</a>. 
 </div>
 
 By default, HTML elements are arranged in two ways:
@@ -51,11 +52,11 @@ In addition, the layout in Bootstrap is automatically adjusted to the screen siz
   If you haven't yet integrated Bootstrap in your project, please read <a href="/library/html-css/part7/" class="alert-link">how to use the Bootstrap Framework</a> in the HTML &amp; CSS Tutorial.
 </div>
 
-Bootstrap contains a **12-column grid system** for the layout (see [documentation of the Bootstrap grid](http://getbootstrap.com/css/#grid)). A grid can be thought of as an invisible table with twelve columns.
+Bootstrap uses a **12-column grid system** for the layout (see [documentation of the Bootstrap grid](https://getbootstrap.com/docs/4.1/layout/grid/)). A grid can be thought of as an invisible table with twelve columns.
 
 ![Twelve Columns](bootstrap-twelve-columns.png)
 
-We can define our own columns by specifying how many wide they should be inside the Bootstrap grid.
+We define our columns by specifying how many colums out of the possible 12 we would like to use.
 
 
 ### Example for a Two-Column Layout
@@ -80,28 +81,29 @@ In the HTML code of this layout would look like the following:
 </pre>
 
 <div class="alert alert-info">
-  **Hints about the Bootstrap grid:**
+  <strong>Hints about the Bootstrap grid:</strong>
 
   <ul>
-    <li>The grid should always be in a `<div>` with the `container` class. (To use a full width container, spanning the entire width of the viewport use the `container-fluid` class.)</li>
-    <li>Inside the container is a `<div>` with class `row`. We this we define a row in the grid.</li>
-    <li>Inside a row we define the columns with the various `col` classes.</li>
+    <li>The grid should always be in a <code>&lt;div></code> with the <code>container</code> class. (To use a full width container, spanning the entire width of the viewport use the <code>container-fluid</code> class.)</li>
+    <li>Inside the container is a <code>&lt;div></code> with class <code>row</code>. With this we define a row in the grid.</li>
+    <li>Inside a row we define the columns with the various <code>col</code> classes.</li>
   </ul>
 </div>
 
 
 ### Screen Sizes
 
-Every Bootstrap column class contains an indication of the screen size. There are four scree sizes:
+Every Bootstrap column class contains an indication of the screen size. There are four [screen sizes](https://getbootstrap.com/docs/4.1/layout/grid/#grid-options):
 
-* `col-xs` - Column for extra small devices (smartphones, lower than 768px)
-* `col-sm` - Column for small devices (tablets, 768px and up)
-* `col-md` - Column for medium devices (desktops, 992px and up)
-* `col-lg` - Column for large devices (large desktops, 1200px and up)
+* `col` - Column for extra small devices (smartphones, lower than 576px)
+* `col-sm` - Column for small devices (smartphones, 576px and up)
+* `col-md` - Column for medium devices (tablets, 768px and up)
+* `col-lg` - Column for large devices (desktops, 992px and up)
+* `col-xl` - Column for extra large devices (large desktops, 1200px and up)
 
 Specifying `col-sm-4` in our example above thus means, that a column of width 4 will be displayed on screens that have at least the size of a tablet.
 
-On all screens that are smaller all columns will automatically be stacked vertically.
+On all screens that are smaller, the columns will automatically be stacked vertically.
 
 This is how our example for a two-column layout would look like **on a smartphone**:
 
@@ -157,7 +159,7 @@ In the [HTML & CSS Tutorial](/library/html-css/) we developed a portfolio with a
       &lt;/ul>
     &lt;/div>
 
-    &lt;div class="col-sm-3 col-sm-offset-1">
+    &lt;div class="col-sm-3 offset-sm-1">
       &lt;h3>Links&lt;/h3>
         &lt;p>
           Have a look at the following blogs of my friends:
@@ -175,13 +177,13 @@ In the [HTML & CSS Tutorial](/library/html-css/) we developed a portfolio with a
 
 #### Explanations
 
-* In the right column I've added a second CSS class called `col-sm-offset-1`. This causes that the right to be moved one position to the right. Thus we get a slightly larger distance between the two columns.
+* In the right column I've added a second CSS class called `offset-sm-1`. This causes the column to be moved one position to the right. Thus we get a slightly larger distance between the two columns.
 * Test the layout by resizing your browser window.
-* The class `list-unstyled` removes the bullet points of the list items (see [Bootstrap Lists](http://getbootstrap.com/css/#type-lists)).
+* The class `list-unstyled` removes the bullet points of the list items (see [Bootstrap Lists](https://getbootstrap.com/docs/4.1/content/typography/#unstyled)).
 
 
 ## More Infos on Bootstrap Layout
 
-Read the section about the [Grid System](http://getbootstrap.com/css/#grid) in the Bootstrap documentation.
+Read the section about the [Grid System](https://getbootstrap.com/docs/4.1/layout/grid/) in the Bootstrap documentation.
 
-An extensive and very good explanation about how the Bootstrap grid system works can be found in [The Subtle Magic Behind Why the Bootstrap 3 Grid Works](http://www.helloerik.com/the-subtle-magic-behind-why-the-bootstrap-3-grid-works).
+An extensive and very good explanation about how the Bootstrap grid system works can be found in [How the Bootstrap 4 Grid Works](https://uxplanet.org/how-the-bootstrap-4-grid-works-a1b04703a3b7).
