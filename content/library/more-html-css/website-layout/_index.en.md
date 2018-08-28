@@ -105,7 +105,7 @@ Specifying `col-sm-4` in our example above thus means, that a column of width 4 
 
 On all screens that are smaller, the columns will automatically be stacked vertically.
 
-This is how our example for a two-column layout would look like **on a smartphone**:
+This is how our example for a two-column layout would look like on a smartphone:
 
 ![Two-Column Layout Smartphone](bootstrap-two-columns-smartphone.png)
 

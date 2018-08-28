@@ -1,6 +1,7 @@
 +++
 title = "Website-Layout mit Bootstrap"
-date = 2018-08-16
+date = 2015-04-09
+updated = 2018-08-28
 description = "Lernen Sie, wie Elemente auf Webseiten angeordnet werden können mit dem Bootstrap Raster."
 prettify = true
 comments = true
@@ -20,8 +21,8 @@ text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
 link = "/de/library/html-css/"
 +++
 
-<div class="alert alert-danger">
-<strong>Achtung:</strong> Diese Seite wird gerade aktualisiert auf Bootstrap 4, beinhaltet aber noch Informationen zu Bootstrap 3. Bitte verwenden Sie in der Zwischenzeit die <a class="alert-link" target="_blank" href="https://getbootstrap.com/">Originaldokumentation von Bootstrap.</a> 
+<div class="alert alert-info">
+Diese Seite wurde aktualisiert für <a href="https://getbootstrap.com/" class="alert-link">Bootstrap 4</a>. 
 </div>
 
 Standardmässig werden HTML-Elemente auf zwei Arten angeordnet:
@@ -52,10 +53,10 @@ Zusätzlich wird das Layout in Bootstrap automatisch auf die Bilschirmgrösse an
 ## Das Bootstrap Raster
 
 <div class="alert alert-warning">
-Falls Sie Bootstrap in Ihrem Projekt noch nicht integriert haben, lesen Sie zuerst den Teil über <a href="/library/html-css/de/part7/" class="alert-link">Bootstrap Framework verwenden</a> aus dem HTML &amp; CSS Tutorial.
+Falls Sie Bootstrap in Ihrem Projekt noch nicht integriert haben, lesen Sie zuerst den Teil über <a href="/de/library/html-css/part7/" class="alert-link">Bootstrap Framework verwenden</a> aus dem HTML &amp; CSS Tutorial.
 </div>
 
-Bootstrap beinhaltet ein **12-spaltiges Rastersystem** für das Layout (siehe [Dokumentation des Bootstrap-Rasters](http://holdirbootstrap.de/css/#grid)). Ein Raster kann man sich vorstellen, wie eine unsichtbare Tabelle mit zwölf Spalten:
+Bootstrap beinhaltet ein **12-spaltiges Rastersystem** für das Layout (siehe [Dokumentation des Bootstrap-Rasters](https://getbootstrap.com/docs/4.1/layout/grid/)). Ein Raster kann man sich vorstellen wie eine unsichtbare Tabelle mit zwölf Spalten:
 
 ![Zwölf Spalten](bootstrap-twelve-columns.png)
 
@@ -84,24 +85,25 @@ Im HTML-Code würde dieses Layout wie folgt aussehen:
 </pre>
 
 <div class="alert alert-info">
-**Zu Beachten beim Bootstrap-Raster:**
+<strong>Zu Beachten beim Bootstrap-Raster:</strong>
 
 <ul>
-  <li>Das Raster sollte immer in einem `<div>` mit einer `container`-Klasse sein. (Wenn die Breite immer bis ganz zum Rand ausgefüllt werden soll, kann man alternativ die `container-fluid`-Klasse verwenden.)</li>
-  <li>Innerhalb des Containers kommt ein `<div>` mit der Klasse `row`. Damit definieren wir eine Zeile im Raster.</li>
-  <li>Innerhalb der Zeilen kommen schliesslich die Spalten mit den `col`-Klassen.  </li>
+  <li>Das Raster sollte immer in einem <code>&lt;div></code> mit einer <code>container</code>-Klasse sein. (Wenn die Breite immer bis ganz zum Rand ausgefüllt werden soll, kann man alternativ die <code>container-fluid</code>-Klasse verwenden.)</li>
+  <li>Innerhalb des Containers kommt ein <code>&lt;div></code> mit der Klasse <code>row</code>. Damit definieren wir eine Zeile im Raster.</li>
+  <li>Innerhalb der Zeilen kommen schliesslich die Spalten mit den <code>col</code>-Klassen.  </li>
 </ul>
 </div>
 
 
 ### Bildschirmgrössen
 
-Eine Spaltenangabe beinhaltet immer in der Mitte eine Angabe über die Bildschirmgrösse. Es gibt die folgenden vier Bildschirmgrössen:
+Eine Spaltenangabe beinhaltet jeweils eine Angabe über die Bildschirmgrösse. Es gibt die folgenden vier Bildschirmgrössen:
 
-* `col-xs` - Spalte für Extra-Small-Geräte (Smartphones, schmaler als 768px)
-* `col-sm` - Spalte für Small-Geräte (Tablets, breiter als 768px)
-* `col-md` - Spalte für Medium-Geräte (Desktops, breiter als 992px)
-* `col-lg` - Spalte für Large-Geräte (grosse Desktops, breiter als 1200px)
+* `col` - Spalte für Extra-Small-Geräte (Smartphones, schmaler als 576px)
+* `col-sm` - Spalte für Small-Geräte (Smartphones, breiter als 576px)
+* `col-md` - Spalte für Medium-Geräte (Tablets, breiter als 768px)
+* `col-lg` - Spalte für Large-Geräte (Desktops, breiter als 992px)
+* `col-xl` - Spalte für Extra-Large-Geräte (grosse Desktops, breiter als 1200px)
 
 Die Angabe `col-sm-4` aus unserem Beispiel oben bedeutet also, dass ungefähr ab der Grösse eines Tablets eine Spalte der Breite 4 dargestellt wird. 
 
@@ -139,7 +141,7 @@ Im HTML-Code würde dieses Layout wie folgt aussehen:
 
 ## Anwendung auf Portfolio-Blog
 
-Im [HTML & CSS Tutorial](/library/html-css/de/) haben wir ein Portfolio entwickelt mit einer Blog-Seite. Das folgende Beispiel zeigt ein **2-Spalten-Layout** für diese Blog-Seite. In der linken Spalte ist der bisherige Inhalt. In der rechten Spalte haben wir neu Platz zum Beispiel für ein paar Links. 
+Im [HTML & CSS Tutorial](/de/library/html-css/) haben wir ein Portfolio entwickelt mit einer Blog-Seite. Das folgende Beispiel zeigt ein **2-Spalten-Layout** für diese Blog-Seite. In der linken Spalte ist der bisherige Inhalt. In der rechten Spalte haben wir neu Platz zum Beispiel für ein paar Links. 
 
 <img src="portfolio-two-columns.de.png" alt="Portfolio" class="img-thumbnail">
 
@@ -162,7 +164,7 @@ Im [HTML & CSS Tutorial](/library/html-css/de/) haben wir ein Portfolio entwicke
       &lt;/ul>
     &lt;/div>
 
-    &lt;div class="<mark>col-sm-3 col-sm-offset-1</mark>">
+    &lt;div class="<mark>col-sm-3 offset-sm-1</mark>">
       &lt;h3>Empfehlungen&lt;/h3>
       &lt;p>
         Die folgenden Blogs von Kollegen kann ich sehr empfehlen:
@@ -181,14 +183,14 @@ Im [HTML & CSS Tutorial](/library/html-css/de/) haben wir ein Portfolio entwicke
 
 #### Hinweise
 
-* Bei der rechten Spalte wurde noch eine zweite CSS-Klasse hinzugefügt: `col-sm-offset-1`. Dies bedeutet, dass die rechte Spalte um eins nach rechts gerückt werden soll. Damit erhalten wir einen etwas grösseren Abstand zwischen den beiden Spalten.
+* Bei der rechten Spalte wurde noch eine zweite CSS-Klasse hinzugefügt: `offset-sm-1`. Dies bedeutet, dass die rechte Spalte um eins nach rechts gerückt werden soll. Damit erhalten wir einen etwas grösseren Abstand zwischen den beiden Spalten.
 * Testen Sie das Layout in unterschiedlichen Browsergrössen.
-* Die Klasse `list-unstyled` bewirkt, dass die Listenelemente ohne Punkt angezeigt werden (siehe [Bootstrap Listen](http://holdirbootstrap.de/css/#type-lists)).
+* Die Klasse `list-unstyled` bewirkt, dass die Listenelemente ohne Punkt angezeigt werden (siehe [Bootstrap Listen](https://getbootstrap.com/docs/4.1/content/typography/#unstyled)).
 
 
 
 ## Weitere Informationen zu Layout
 
-Lesen Sie den Abschnitt über das [Raster-System](http://holdirbootstrap.de/css/#grid) in der Bootstrap Dokumentation.
+Lesen Sie den Abschnitt über das [Raster-System](https://getbootstrap.com/docs/4.1/layout/grid/) in der Bootstrap Dokumentation.
 
-Eine ausführliche Erklärung, wie das Raster-System funktioniert, finden Sie in [The Subtle Magic Behind Why the Bootstrap 3 Grid Works](http://www.helloerik.com/the-subtle-magic-behind-why-the-bootstrap-3-grid-works).
+Eine ausführliche Erklärung, wie das Raster-System funktioniert, finden Sie in [How the Bootstrap 4 Grid Works](https://uxplanet.org/how-the-bootstrap-4-grid-works-a1b04703a3b7).
