@@ -1,6 +1,7 @@
 +++
 title = "Textformatierung"
-date = 2018-08-16
+date = 2015-04-09
+updated = 2018-08-28
 description = "Lernen Sie die typografischen Möglichkeiten von HTML und CSS kennen. Enthält Beispiele, wie Texte mit Bootstrap formatiert werden können."
 prettify = true
 comments = true
@@ -20,19 +21,19 @@ text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
 link = "/de/library/html-css/"
 +++
 
-<div class="alert alert-danger">
-<strong>Achtung:</strong> Diese Seite wird gerade aktualisiert auf Bootstrap 4, beinhaltet aber noch Informationen zu Bootstrap 3. Bitte verwenden Sie in der Zwischenzeit die <a class="alert-link" target="_blank" href="https://getbootstrap.com/">Originaldokumentation von Bootstrap.</a> 
+<div class="alert alert-info">
+Diese Seite wurde aktualisiert für <a href="https://getbootstrap.com/" class="alert-link">Bootstrap 4</a>. 
 </div>
 
 In diesem Teile lernen Sie Möglichkeiten kennen, wie Sie mit HTML und CSS Texte gestalten können.
 
-Wenn Sie [Bootstrap 3](http://holdirbootstrap.de/) verwenden, dann wird die Textformatierung viel einfacher. Bootstrap kümmert sich darum, dass die Texte und Textabstände typografisch korrekt und einheitlich angezeigt werden.
+Wenn Sie [Bootstrap](https://getbootstrap.com/) verwenden, dann wird die Textformatierung viel einfacher. Bootstrap kümmert sich darum, dass die Texte und Textabstände typografisch korrekt und einheitlich angezeigt werden.
 
 <div class="alert alert-warning">
 Falls Sie Bootstrap in Ihrem Projekt noch nicht integriert haben, lesen Sie zuerst den Teil über <a href="/library/html-css/de/part7/" class="alert-link">Bootstrap Framework verwenden</a> aus dem HTML &amp; CSS Tutorial.
 </div>
 
-Das Meiste wird bereits unter [Typografie](http://holdirbootstrap.de/css/#type) in der Bootstrap Dokumentation erklärt. Deshalb werde ich nur auf die wichtigsten Textformatierungen eingehen. Schliesslich zeige ich auf, wie Sie die Standardschrift von Bootstrap verändern können.
+Das Meiste wird bereits unter [typography](https://getbootstrap.com/docs/4.1/content/typography/)in der Bootstrap Dokumentation erklärt. Deshalb werde ich nur auf die wichtigsten Textformatierungen eingehen. Schliesslich zeige ich auf, wie Sie die Standardschrift von Bootstrap verändern können.
 
 
 ## Überschriften
@@ -48,7 +49,7 @@ Das Meiste wird bereits unter [Typografie](http://holdirbootstrap.de/css/#type) 
 <mark>&lt;h6></mark>Überschrift 6<mark>&lt;/h6></mark>
 </pre>
 
-Mehr dazu im Abschnitt [Überschriften](http://holdirbootstrap.de/css/#type-headings) in der Bootstrap Dokumentation.
+Mehr dazu im Abschnitt [Überschriften](https://getbootstrap.com/docs/4.1/content/typography/#headings) in der Bootstrap Dokumentation.
 
 
 ## Fett
@@ -59,7 +60,7 @@ Um Text **fett** darzustellen, verwenden wir das HTML-Element `<strong>`:
 &lt;p>So kann man das <mark>&lt;strong></mark>Wichtige<mark>&lt;/strong></mark> in einem Satz hervorheben.&lt;/p>
 </pre>
 
-Mehr dazu im Abschnitt [Inline-Text-Elemente](http://holdirbootstrap.de/css/#type-inline-text) der Bootstrap Dokumentation.
+Mehr dazu im Abschnitt [Inline-Text-Elemente](https://getbootstrap.com/docs/4.1/content/typography/#inline-text-elements) der Bootstrap Dokumentation.
 
 
 ## Kursiv
@@ -70,7 +71,7 @@ Um Text *kursiv* darzustellen, verwenden wir das HTML-Element `<em>` (steht für
 &lt;p>So kann man Text <mark>&lt;em></mark>kursiv<mark>&lt;/em></mark> dartsellen.&lt;/p>
 </pre>
 
-Mehr dazu im Abschnitt [Inline-Text-Elemente](http://holdirbootstrap.de/css/#type-inline-text) der Bootstrap Dokumentation.
+Mehr dazu im Abschnitt [Inline-Text-Elemente](https://getbootstrap.com/docs/4.1/content/typography/#inline-text-elements) der Bootstrap Dokumentation.
 
 
 ## Schriftart ändern
@@ -83,7 +84,7 @@ Bootstrap verwendet standardmässig die folgenden Schriften:
 ##### Standard Bootstrap-Schriften
 
 <pre class="prettyprint lang-css">
-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 </pre>
 
 Diese Schriften werden auf dem `<body>`-Element definiert und gelten somit für die gesamte Webseite.
@@ -116,18 +117,20 @@ Es gibt auch die Möglichkeit, Schriftarten gleich mit der Webseite mitzuliefern
 
 Die einfachste Art, Schriften einzubetten, ist mit der Hilfe von [Google Fonts](https://www.google.com/fonts). Die Google Fonts sind frei verfügbare Schriften, die nach Bedarf direkt von Google heruntergeladen werden können. So geht es:
 
-1. Gehen Sie auf die Webseite von [Google Fonts](https://www.google.com/fonts) und wählen Sie eine Schriftart. Sobald Sie eine Schriftart ausgewählt haben, klicken Sie auf den *Quick-use*-Knopf.   
-![Quick Use](google-fonts-quick-use.png)
+1. Gehen Sie auf die Webseite von [Google Fonts](https://www.google.com/fonts) und wählen Sie eine Schriftart mit Plus-Zeichen aus.   
 
-2. Nun können Sie auswählen, welche Ausführung der Schrift sie möchten (z.B. light, bold, extra-bold, etc.). Kopieren Sie anschliessend den generierten Code in den `<head>`-Bereich Ihrer Webseite. Als Beispiel habe ich mal die Schrift *Open Sans* ausgewählt:   
+2. Öffnen Sie ganz unten die ausgewählten Fonts. Jetzt können Sie auf *customize* wechseln und die Version der Schriftart zu wählen (zum Beispiel light, bold, extra-bold, etc.).   
+![Google Fonts](google-fonts-selected.png)
+
+3. Kopieren Sie anschliessend den generierten Code in den `<head>`-Bereich Ihrer Webseite. Als Beispiel habe ich mal die Schrift *Roboto Condensed* ausgewählt:   
 <pre class="prettyprint lang-html">
-&lt;link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+&lt;link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
 </pre>
 
-3. Google Fonts wird den CSS-Code für die ausgewählte Schriftart automatisch generieren. Nun können wir die Schrift in unserem CSS verwenden:   
+4. Google Fonts wird den CSS-Code für die ausgewählte Schriftart automatisch generieren. Nun können wir die Schrift in unserem CSS verwenden:   
 <pre class="prettyprint lang-css">
    body {
-     font-family: "Open Sans", sans-serif;
+     font-family: 'Roboto Condensed', sans-serif;
    }
 </pre>
 
@@ -137,34 +140,12 @@ Die einfachste Art, Schriften einzubetten, ist mit der Hilfe von [Google Fonts](
 Eine passende Schriftart auszuwählen ist sehr wichtig und gibt Ihrer Webseite ein persönliches Aussehen. Oft verwendet man zwei Schriftarten in Kombination, eine Schriftart für die Überschriften und eine für den Text.
 
 Schauen Sie sich empfohlene Schriftkombinationen von Google Fonts auf folgenden Seiten an:
+
 * [Theme Armada](http://blog.themearmada.com/8-amazing-google-font-combinations/)
 * [Brian Gardner](http://briangardner.com/google-font-combinations/)
 * [Caleb McGuire](http://www.mrmcguire.com/10-useful-google-font-combinations-for-your-next-site/)
 * [Beautiful Web Type](http://hellohappy.org/beautiful-web-type/)
 * und weitere
-
-Als Beispiel wähle ich die Kombination von *Oswald* für Überschriften und *Lato* für den Text:
-
-1. Suchen Sie auf [Google Fonts](https://www.google.com/fonts) die beiden Schriftarten *Oswald* und *Lato*. Achten Sie darauf, dass Sie für fette Überschriften die Schrift als *Bold 700* auswählen!
-
-2. Fügen Sie den Code für *Oswald* und *Lato* im `<head>`-Bereich ein:   
-<pre class="prettyprint lang-html">
-&lt;link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-&lt;link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-</pre>
-
-3. Nun müssen wir im CSS die beiden Schriftarten einfügen:   
-<pre class="prettyprint lang-css">
-   body {
-     font-family: "Lato", sans-serif;
-   }
-   
-   h1, h2, h3, h4, h5, h6 {
-     font-family: "Oswald", sans-serif;
-     font-weight: 700;
-   }
-</pre>
-
 
 
 #### Weitere Schriftarten
@@ -174,5 +155,4 @@ Neben Google Fonts gibt etliche Plattformen, wo Sie Schriftarten entweder kosten
 * [Font Squirrel](http://www.fontsquirrel.com/)
 * [dafont](http://www.dafont.com/)
 * [Typekit](https://typekit.com/)
-* [Font Deck](http://fontdeck.com/)
 

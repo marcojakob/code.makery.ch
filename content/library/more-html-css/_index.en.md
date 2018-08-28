@@ -12,7 +12,7 @@ overview = true
 overviewImage = "thumbnail.png"
 overviewDescription = "A collection of various topics around HTML & CSS."
 topics = [ "HTML-CSS" ]
-parts = 7
+parts = 6
 weight = 2
 
 # Custom Sidebars
