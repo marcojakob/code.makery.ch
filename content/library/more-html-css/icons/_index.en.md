@@ -1,7 +1,8 @@
 +++
 title = "Icons on Websites"
-date = 2018-08-16
-description = "Learn how to layout elements on web pages using the bootstrap grid."
+date = 2015-04-09
+updated = 2018-08-28
+description = "Integrate icons with Icon Fonts and SVG on your website. Links to free icon libraries."
 prettify = true
 comments = true
 weight = 2
@@ -16,73 +17,45 @@ text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
 link = "/library/html-css/"
 +++
 
-<div class="alert alert-danger">
-<strong>Achtung:</strong> Diese Seite wird gerade aktualisiert auf Bootstrap 4, beinhaltet aber noch Informationen zu Bootstrap 3. Bitte verwenden Sie in der Zwischenzeit die <a class="alert-link" target="_blank" href="https://getbootstrap.com/">Originaldokumentation von Bootstrap.</a> 
-</div>
-
 Inserting icons into a website isn't difficult. But when you combine text and icons (for example on a button), or if the icon should be resizable, it can cause some trouble.
 
-The solution is to use **Icon Fonts**. Icon fonts are fonts that contain icons instead of letters. Thus, these icons can be used just like any other font, that means you can change their size and even their color.
+The solution is to use **Icon Fonts** or **SVG Icons**. Icon fonts and SVG icons can be adjusted to any size and color.
 
-<i class="fa fa-umbrella" style="color: #333"></i> 
-<i class="fa fa-umbrella fa-3x" style="color: #333"></i> 
-<i class="fa fa-umbrella fa-5x" style="color: #333"></i>
-<i class="fa fa-umbrella" style="color: #ffc107"></i> 
-<i class="fa fa-umbrella fa-3x" style="color: #ffa000"></i> 
-<i class="fa fa-umbrella fa-5x" style="color: #ff6f00"></i>
+![Icons](icons.png)
+
+In the following, we will look at a few options.
 
 
-In the following, we will look at a few icon fonts and their use.
+## Ionicons (SVG)
 
+[Ionicons](https://ionicons.com/) are very easy to integrate in your website.
 
-## Glyphicons (with Bootstrap 3)
+Go to the [Ionicons usage](https://ionicons.com/usage) page and copy the installation script tag. Place the `<script>` near the end of your page, right before the closing `</body>` tag.
 
-<div class="alert alert-warning">
-  If you haven't yet integrated Bootstrap in your project, please read <a href="/library/html-css/part7/" class="alert-link">how to use the Bootstrap Framework</a> in the HTML &amp; CSS Tutorial.
-</div>
+Here is an example of the script tag, but you should get the newest version from the website:
 
-If you're using Bootstrap 200 [Glyphicons](http://glyphicons.com/) are automatically integrated.
-
-Here is a list of all available icons in the [Bootstrap dokumentation under Glyphicons](http://getbootstrap.com/components/#glyphicons).
-
-To use an icon we define a `<span>` element and give it two CSS classes:
-
-<pre class="prettyprint lang-html">
-&lt;span class="glyphicon glyphicon-send">&lt;/span>
+<pre class="prettyprint lang-javascript">
+&lt;script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js">&lt;/script>
 </pre>
 
-This `span` element can be inserted anywhere, for example in a title of a contact page: 
-
-![Contact Icon](contact-icon.png)
-
-
-## Font Awesome
-
-One of the most popular freely available icon font is [Font Awesome](http://fontawesome.io/). Font Awesome comes with more than 500 icons.
-
-To [integrate Font Awesome](http://fontawesome.io/get-started/) you can simply use their CDN link. This means you don't need to download anything and you can simple add the following line to the `<head>` section of your HTML file:
+To use an icon just choose one from the [Ionicons Icon Overview](https://ionicons.com/). If you click on an icon it will show you the code you must use. Here is an example with an icon and text:
 
 <pre class="prettyprint lang-html">
-&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+&lt;ion-icon name="heart">&lt;/ion-icon> I love icons
 </pre>
 
-**Note:** *Look up the CDN link on the [Font Awesome Website](http://fontawesome.io/get-started/) to get the latest version.*
+This will result in an icon and text like this:
 
-Font Awesome icons are used by declaring an `<i>` element with specific CSS classes.
-
-<pre class="prettyprint lang-html">
-&lt;i class="fa fa-flag">&lt;i>
-</pre>
-
-This example produces a flag: ![Font Awesome Flagge](fontawesome-flag.png)
-
-Have a look at the [Font Awesome examples](http://fontawesome.io/examples/) to see what you can do with the icons. You will also find some examples of how to use Font Awesome Icons in combination with Bootstrap components.
+![Love Icons](love-icons.png)
 
 
 ## Other Icon Libraries
 
-* On [IcoMoon](https://icomoon.io/) you'll find an app to create your own icon font.
-* [Fontello](http://fontello.com/) is another generator for icon fonts.
-* [Iconfinder](https://www.iconfinder.com/) - A lot of freely available icons (Note: Depending on the license you will need to mention the author on your website)
-* A list of [12 free icon fonts](http://t3n.de/news/10-kostenlose-icon-fonts-450651/) (in German).
+* [Font Awesome](https://fontawesome.com/free) - a very popular icon font.
+* [Octicons](https://octicons.github.com/)
+* [Iconic](https://useiconic.com/open/)
+* [Glyph](http://glyph.smarticons.co/)
+* [Bytesize](https://github.com/danklammer/bytesize-icons)
+* [Google Material Icons](https://material.io/tools/icons/)
+* And much more...
 
