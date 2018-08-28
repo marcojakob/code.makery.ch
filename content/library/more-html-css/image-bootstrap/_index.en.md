@@ -1,6 +1,7 @@
 +++
 title = "Images with Bootstrap"
-date = 2018-08-16
+date = 2015-04-09
+updated = 2018-08-28
 description = "Learn some tricks on how to use images with Bootstrap."
 prettify = true
 comments = true
@@ -16,14 +17,15 @@ text = "<i class=\"fa fa-fw fa-external-link\"></i> HTML & CSS Tutorial"
 link = "/library/html-css/"
 +++
 
-<div class="alert alert-danger">
-<strong>Achtung:</strong> Diese Seite wird gerade aktualisiert auf Bootstrap 4, beinhaltet aber noch Informationen zu Bootstrap 3. Bitte verwenden Sie in der Zwischenzeit die <a class="alert-link" target="_blank" href="https://getbootstrap.com/">Originaldokumentation von Bootstrap.</a> 
+<div class="alert alert-info">
+This page has been updated to cover <a href="https://getbootstrap.com/" class="alert-link">Bootstrap 4</a>. 
 </div>
+
 
 In this part we will learn some tricks on how to use images with Bootstrap.
 
 * [Responsive Images](#responsive-images) - automatically fit the screen size
-* [Positioning Images](#positioning-images) - center, left align, right align
+* [Aligning Images](#aligning-images) - center, left align, right align
 * [Image Shapes](#image-shapes) - Round edges, etc.
 
 <div class="alert alert-warning">
@@ -39,18 +41,11 @@ The easiest way to include images in a website is as follows.
 </pre>
 
 
-## Optimal Image Size
-
-The image above has a fixed size. Although, you can shrink or enlarge the image with a CSS rule like `width: 200px;`, this is often not what you want. You should always try to optimize the download size of your web page. If you let the user download a 400px wide image and display it at 200px it might be a waste of bandwidth.
-
-**Side Note:** There are instances where larger images are desired, for example for high-resolution "retina" displays. If you want to go that extra mile for such devices you should use a JavaScript library like [retina.js](http://imulus.github.io/retinajs/).
-
-
 ## Responsive Images
 
 When a web page is displayed on different screens you will have to shrink images on smaller screens.
 
-Bootstrap 3 provides a CSS class `img-responsive` that will automatically adjusts images to fit the screen size (read about [responsive images in the Bootstrap documentation](http://getbootstrap.com/css/#images-responsive)).
+Bootstrap provides a CSS class `img-fluid` that will automatically adjusts images to fit the container size (read about [responsive images in the Bootstrap documentation](https://getbootstrap.com/docs/4.1/content/images/#responsive-images)).
 
 
 ##### Insert a responsive image
@@ -60,56 +55,69 @@ Bootstrap 3 provides a CSS class `img-responsive` that will automatically adjust
 </pre>
 
 
-## Positioning Images
+## Image Sizes
+
+Although, you can shrink or enlarge the image with a CSS rule like `width: 200px;`, this is often not what you want. You should always try to optimize the download size of your web page. If you let the user download a 400px wide image and display it at 200px it might be a waste of bandwidth.
+
+
+### Resulution Switching 
+
+If you want to optimize further, you could server small images to small screens while serving large images to large screens. This is called resolution switching for responsive images. In [this article on responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) you can learn how this can be done using the `srcset` attribute.
+
+
+## Aligning Images
+
+Also see [Aligning Images](https://getbootstrap.com/docs/4.1/content/images/#aligning-images) in the official Bootstrap documentation.
+
 
 ### Center
 
-With the CSS class `center-block` you can center images in Bootstrap (see [center content blocks](http://getbootstrap.com/css/#helper-classes-center) in the Bootstrap documentation):
+With the CSS class `mx-auto` you can center images in Bootstrap. Images are inline elements by default. They can only be centered if we make it a block element by adding the class `d-block`. 
 
-<img src="center-block.png" class="center-block">
+![Image Center](center.png)
 
 
 ##### Center an image
 
 <pre class="prettyprint lang-html">
-&lt;img src="..." alt="..." class="center-block">
+&lt;img src="..." alt="..." class="mx-auto d-block">
 </pre>
 
 <div class="alert alert-info">
-  **Note:** The class `center-block` can also be used to center any HTML elements. But for text and other inline elements you must use  `text-center` instead (see <a href="http://getbootstrap.com/css/#type-alignment" class="alert-link">alignment classes</a> in the Bootstrap documentation).
+  <strong>Note:</strong> The class <code>mx-auto</code> can also be used to center any HTML elements. But for text and other inline elements you should use <code>text-center</code> instead (see <a href="https://getbootstrap.com/docs/4.1/utilities/spacing/#horizontal-centering" class="alert-link">horizontal centering</a> and <a class="alert-link" href="https://getbootstrap.com/docs/4.1/utilities/text/#text-alignment">text alignment</a>).
 </div>
 
 
 ### Left and Right Align
 
-Images can be aligned to the left or to the right. The text will then flow around the image. To do this we use the so-called *floats* (read about [floats](http://getbootstrap.com/css/#helper-classes-floats) in the Bootstrap documentation).
+Images can be aligned to the left or to the right. The text will then flow around the image. To do this we use the so-called *floats* (read about [floats](https://getbootstrap.com/docs/4.1/utilities/float/) in the Bootstrap documentation).
 
 
 ##### Float left
 
 <pre class="prettyprint lang-html">
-&lt;img src="..." alt="..." class="pull-left">
+&lt;img src="..." alt="..." class="float-left">
 </pre>
 
-![Left Align](pull-left.png)
+![Left Align](float-left.png)
 
 
 ##### Float right
 
 <pre class="prettyprint lang-html">
-&lt;img src="..." alt="..." class="pull-right">
+&lt;img src="..." alt="..." class="float-right">
 </pre>
 
-![Right Align](pull-right.png)
+![Right Align](float-right.png)
 
 
 #### New Line after Float (Clearfix)
 
-When floating to the left or right all following elements are displayed next to the image. If you want to start on a new line, you have to use the `clearfix` class. This class is usually added on a parent `<div>` element (more info about [clearfix](http://getbootstrap.com/css/#helper-classes-clearfix) in the Bootstrap documentation).
+When floating to the left or right all following elements are displayed next to the image. If you want to start on a new line, you have to use the `clearfix` class. This class is usually added on a parent `<div>` element (more info about [clearfix](https://getbootstrap.com/docs/4.1/utilities/clearfix/) in the Bootstrap documentation).
 
 <pre class="prettyprint lang-html">
 &lt;div class="clearfix">
-  &lt;img src="..." alt="..." class="pull-left">
+  &lt;img src="..." alt="..." class="float-left">
   &lt;p>This text appears next to the image.&lt;/p>
 &lt;/div>
 &lt;p>This text appears below the image.&lt;/p>
@@ -120,49 +128,33 @@ When floating to the left or right all following elements are displayed next to 
 
 #### Margin Around Image
 
-Usually you will want some margin between the image and text or other content. A simple way to do this is to define `margins` in CSS.
-
-If we created a rule for `img` elements in CSS this would be applied to all images on our entire website. This is usually not desired.
-
-For the gap to the right of an image we therefore introduce a new CSS class called `gap-right`.
+Usually you will want some margin between the image and text or other content. A simple way to do this is to use the [Bootstrap Spacing Classes](https://getbootstrap.com/docs/4.1/utilities/spacing/) like `mr-2`. But you could also define `margins` in your CSS.
 
 
-##### HTML for gap right
+##### HTML for Gap Right
 
 <pre class="prettyprint lang-html">
-&lt;img src="..." alt="..." class="pull-left gap-right">
+&lt;img src="..." alt="..." class="pull-left mr-2">
 </pre>
 
 
-Im CSS definieren wir jetzt den Abstand.
-
-##### CSS for gap right
-
-<pre class="prettyprint lang-css">
-.gap-right {
-  margin-right: 10px; 
-}
-</pre> 
-
 ![Gap](margin.png)
-
-There are also `margin-top`, `margin-bottom`, and `margin-left` if you need a gap in any other direction.
 
 
 ## Image Shapes
 
-Bootstrap 3 provides ways for some simple images styles. You can round the corners, cut out a circle or add a subtle frame.
+Bootstrap provides ways for some simple image styles. You can [round the corners](https://getbootstrap.com/docs/4.1/utilities/borders/#border-radius), [cut out a circle](https://getbootstrap.com/docs/4.1/utilities/borders/#border-radius) or [add a subtle frame](https://getbootstrap.com/docs/4.1/content/images/#image-thumbnails).
 
 ![Image Shapes](image-shapes.png)
 
-You can add the following three CSS classes to your images (see [image shapes](http://getbootstrap.com/css/#images-shapes) in the Bootstrap documentation).
+You can add the following CSS classes to your images:
 
 
 ##### Image Shapes with Bootstrap
 
 <pre class="prettyprint lang-html">
-&lt;img src="..." alt="..." class="img-rounded">
-&lt;img src="..." alt="..." class="img-circle">
+&lt;img src="..." alt="..." class="rounded">
+&lt;img src="..." alt="..." class="rounded-circle">
 &lt;img src="..." alt="..." class="img-thumbnail">
 </pre>
 
