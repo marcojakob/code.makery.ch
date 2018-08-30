@@ -49,6 +49,7 @@ Umarım eğlenirsiniz! Şununla başlayın [Bölüm 1: Scene Builder](/tr/librar
   <strong><i class="fa fa-trophy"></i> Attribution:</strong> Turkish translations have been contributed by 
   <ul>
     <li><a href="https://github.com/alperenkirimer" class="alert-link">Alperen Kırımer</a></li> 
+    <li><a href="https://github.com/iokumus" class="alert-link">iokumus</a></li> 
   </ul>
   Thank you very much!
 </div>
