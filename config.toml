@@ -68,14 +68,18 @@ defaultContentLanguage = "en"
   languageName = "Русский"
   weight = 10
 
-[languages.tr]
-  languageName = "Türkçe"
-  weight = 11
-
 [languages.uk]
   languageName = "Українська"
-  weight = 12
+  weight = 11
 
 [languages.zh-cn]
   languageName = "中文（简体）"
+  weight = 12
+
+[languages.tr]
+  languageName = "Türkçe"
   weight = 13
+
+[languages.ar]
+  languageName = "عربى"
+  weight = 14
