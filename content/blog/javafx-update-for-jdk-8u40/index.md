@@ -31,7 +31,7 @@ I've updated the entire [JavaFX 8 Tutorial](/library/javafx-tutorial/) for JDK8u
 
 Every time someone contacts me, who wants to contribute a translation, I get very excited!
 
-As of today, the JavaFX 8 Tutorial is **available in six languages and two are being translated** right now!  [English](/library/javafx-tutorial/), [Portuguese](/library/javafx-tutorial/pt/), [Spanish](/library/javafx-tutorial/es/), [Chinese](/library/javafx-tutorial/zh-cn/), [Russian](/library/javafx-tutorial/ru/), and [Indonesian](/library/javafx-tutorial/id/). [French](/library/javafx-tutorial/fr/) has a partial translation and someone has just sent a pull request today for an Italian translation.
+As of today, the JavaFX 8 Tutorial is **available in six languages and two are being translated** right now!  [English](/library/javafx-tutorial/), [Portuguese](/pt/library/javafx-tutorial/), [Spanish](/es/library/javafx-tutorial/), [Chinese](/zh-cn/library/javafx-tutorial/), [Russian](/ru/library/javafx-tutorial/), and [Indonesian](/id/library/javafx-tutorial/). [French](/fr/library/javafx-tutorial/) has a partial translation and someone has just sent a pull request today for an Italian translation.
 
 
 ### Help Needed for Updating the Translations

@@ -44,7 +44,7 @@ pagingName = "Intro"
 - **вчіть багато**: Створюйте свій JavaFX проект з нуля та поступово наповнюйте його класами.
 - **вчіть швидко**: Імпортуйте вихідний код для кожної частини підручника у ваше середовище розробки (проект розрахований на IDE Eclipse, проте ви можете використовувати інші середовища розробки за невеликих змін, наприклад NetBeans), а потім намагайтесь розібрати даний матеріал.
 
-Сподіваюсь, вам сподобається! Почнемо з [Частина 1: додаток Scene Builder](/library/javafx-tutorial/uk/part1/ "Part 1: Scene Builder.").
+Сподіваюсь, вам сподобається! Почнемо з [Частина 1: додаток Scene Builder](/uk/library/javafx-tutorial/part1/ "Part 1: Scene Builder.").
 
 <div class="alert alert-success">
   <strong><i class="fa fa-trophy"></i> Attribution:</strong> Ukrainian translations have been contributed by 

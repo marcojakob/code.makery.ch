@@ -3,6 +3,9 @@ title = "Webseite nach Word umwandeln"
 date = 2014-07-07
 description = "Mit diesen 5 Schritten können Sie eine beliebige Webseite in eine Word docx-Datei umwandeln."
 comments = false
+aliases = [
+  "/library/convert-web-page-to-word/de/"
+]
 +++
 
 Mit dieser Beschreibung können Sie eine beliebige Webseite in eine Word `docx`-Datei umwandeln. 

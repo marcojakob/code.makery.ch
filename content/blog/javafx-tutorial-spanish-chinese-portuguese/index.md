@@ -25,7 +25,7 @@ Wow, I'm really excited about the community contributions that were made to the 
   <tbody>
     <tr>
       <td>
-        <a href="/library/javafx-tutorial/es/">JavaFX 8 Tutorial - Spanish</a>
+        <a href="/es/library/javafx-tutorial/">JavaFX 8 Tutorial - Spanish</a>
       <td>
         <div class="progress">
           <div class="progress-bar" style="width: 100%;">100%</div>
@@ -35,7 +35,7 @@ Wow, I'm really excited about the community contributions that were made to the 
     </tr>
     <tr>
       <td>
-        <a href="/library/javafx-tutorial/pt/">JavaFX 8 Tutorial - Portuguese</a>
+        <a href="/pt/library/javafx-tutorial/">JavaFX 8 Tutorial - Portuguese</a>
       <td>
         <div class="progress">
           <div class="progress-bar" style="width: 100%;">100%</div>
@@ -45,7 +45,7 @@ Wow, I'm really excited about the community contributions that were made to the 
     </tr>
     <tr>
       <td>
-        <a href="/library/javafx-tutorial/zh-cn/">JavaFX 8 Tutorial - Chinese</a>
+        <a href="/zh-cn/library/javafx-tutorial/">JavaFX 8 Tutorial - Chinese</a>
       <td>
         <div class="progress">
           <div class="progress-bar" style="width: 100%;">100%</div>
@@ -55,7 +55,7 @@ Wow, I'm really excited about the community contributions that were made to the 
     </tr>
     <tr>
       <td>
-        <a href="/library/greenfoot-kara/fr/chapter1/">GreenfootKara - French</a>
+        <a href="/fr/library/greenfoot-kara/chapter1/">GreenfootKara - French</a>
       <td>
         <div class="progress">
           <div class="progress-bar" style="width: 90%;">90%</div>

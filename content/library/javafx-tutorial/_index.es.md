@@ -45,7 +45,7 @@ Hay dos formas de utilizarlo
 * **máximo-aprendizaje**: Crea tu propio proyecto JavaFX desde cero.
 * **máxima-rápidez**: Importa el código fuente de una parte del tutorial en tu entorno de desarrollo favorito (es un proyecto Eclipse, pero puedes usar otros entornos, como Netbeans, con ligeras modificaciones). Después revisa el tutorial para entender el código. Este enfoque también resulta útil si te quedas atascado en la creación de tu propio código.
 
-¡ Espero que te diviertas y aprendas mucho ! Empieza en  [Part 1: Scene Builder](/library/javafx-tutorial/es/part1/).
+¡ Espero que te diviertas y aprendas mucho ! Empieza en  [Part 1: Scene Builder](/es/library/javafx-tutorial/part1/).
 
 
 
