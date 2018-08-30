@@ -95,7 +95,7 @@ If you provide some choices, a combobox will be displayed:
 ![JavaFX Input Dialog with Choices](javafx-input-dialog-choices.png)
 
 <pre class="prettyprint lang-java">
-List<String> choices = new ArrayList<>();
+List&lt;String> choices = new ArrayList&lt;>();
 choices.add("a");
 choices.add("b");
 choices.add("c");

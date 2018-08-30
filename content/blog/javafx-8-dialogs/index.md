@@ -192,7 +192,7 @@ response.ifPresent(name -> System.out.println("Your name: " + name));
 ![JavaFX Choice Input Dialog](choice-input-dialog.png)
 
 <pre class="prettyprint lang-java">
-List&lt;String> choices = new ArrayList<>();
+List&lt;String> choices = new ArrayList&lt;>();
 choices.add("a");
 choices.add("b");
 choices.add("c");
