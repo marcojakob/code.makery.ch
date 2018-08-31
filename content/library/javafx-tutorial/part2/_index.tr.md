@@ -1,16 +1,10 @@
 +++
 title = "Kısım 2: Model ve TableView"
-date = 2014-04-23
-updated = 2015-03-12
+date = 2018-08-31
 description = "Kişilerin ObservableList'ini göstermek için JavaFX TableView kullan."
 image = "addressapp-part2.png"
 prettify = true
 comments = true
-commentsIdentifier = "/java/javafx-8-tutorial-part2/"
-aliases = [ 
-  "/library/javafx-8-tutorial/part2/",
-	"/library/javafx-2-tutorial/part2/"
-]
 weight = 2
 
 [[sidebars]]
@@ -395,7 +389,7 @@ Tebrikler!
 
 ### Sırada Ne Var?
 
-[Tutorial Kısım 3](/library/javafx-tutorial/part3/) Kişilerin eklenmesi, silinmesi ve düzenlenmesi gibi bazı işlevler ekleyeceğiz.
+[Tutorial Kısım 3](/tr/library/javafx-tutorial/part3/) Kişilerin eklenmesi, silinmesi ve düzenlenmesi gibi bazı işlevler ekleyeceğiz.
 
 
 ##### İlginç bulabileceğiniz diğer bazı makaleler

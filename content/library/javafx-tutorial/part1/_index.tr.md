@@ -1,6 +1,6 @@
 +++
 title = "Kısım 1: Scene Builder"
-updated = 2018-08-30
+date = 2018-06-01
 description = "JavaFX projesinin nasıl oluşturulacağını öğrenin. Bu yedi kısımdan oluşan ve JavaFX ile bir adres uygulamasının tasarımı, programlaması ve yayımlanmasını içeren tutorialın bir parçasıdır."
 image = "addressapp-part1.png"
 prettify = true
