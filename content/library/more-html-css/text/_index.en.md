@@ -106,9 +106,7 @@ Such fonts are called *Web Safe Fonts*. [CSS Font Stack](https://www.cssfontstac
 
 ### Embedding a Custom Font
 
-There is also the possibility of embedding your custom font with the website. This So we are countless fonts. The only downside is that additional writing course extend the charging time of our website something.
-
-Es gibt auch die Möglichkeit, Schriftarten gleich mit der Webseite mitzuliefern. This opens a wealth of possibilities. The disadvantage is that the font must be downloaded which might make our website a little bit slower.
+It is also possible to include custom fonts with the website. So we have countless fonts at our disposal. The only disadvantage is that additional fonts extend the loading time of our website a little bit.
 
 
 #### Google Fonts
