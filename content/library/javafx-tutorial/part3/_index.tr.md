@@ -1,16 +1,10 @@
 +++
 title = "Kısım 3: Kullanıcı ile Etkileşim"
-date = 2014-04-24
-updated = 2015-03-12
+date = 2018-09-03
 description = "JavaFX TablView içindeki seçim deiğişimlerine tepki ver. Tablodan çıkarma, ekleme, düzenleme işlemleri yap ve kullanıcı giriini doğrula"
 image = "addressapp-part3.png"
 prettify = true
 comments = true
-commentsIdentifier = "/java/javafx-8-tutorial-part3/"
-aliases = [ 
-  "/library/javafx-8-tutorial/part3/",
-  "/library/javafx-2-tutorial/part3/"
-]
 weight = 3
 
 [[sidebars]]
@@ -281,10 +275,10 @@ Yeni ve düzenle aksiyonları biraz daha fazla uğraş istiyor: Kullanıcıdan k
 
 ### Diyalogun Tasarlanması
 
-1. *view* paketi içerisinde `PersonEditDialog.fxml` isminde yeni bir fxml dosyası oluşturun. 
+1. *view* paketi içerisinde `PersonEditDialog.fxml` isminde yeni bir fxml dosyası oluşturun.   
 ![Create Edit Dialog](person-edit-dialog1.png)
 
-2.  `GridPane`, `Label`lar, `TextField`lar ve `Button` kullanarak aşağıdaki gibi bir diyalog oluşturun. 
+2.  `GridPane`, `Label`lar, `TextField`lar ve `Button` kullanarak aşağıdaki gibi bir diyalog oluşturun.   
 ![Edit Dialog](person-edit-dialog2.png)   
 
 
@@ -572,14 +566,14 @@ private void handleEditPerson() {
 
 ## Bitti!
 
-Şimdi çalışır durumda bir *Adres Uygulama*nız olması gerekir. Uygulama kişileri ekleyebilir, düzenleyebilir ve silebilir. Hatta kötü kullanıcı girişlerini engellemek için bazı doğrulamalar bile var.
+Şimdi çalışır durumda bir *Adres Uygulama* nız olması gerekir. Uygulama kişileri ekleyebilir, düzenleyebilir ve silebilir. Hatta kötü kullanıcı girişlerini engellemek için bazı doğrulamalar bile var.
 
 Umarım bu uygulamanın konsepti ve yapısı sizin kendi JavaFX uygulamanızı yazmanıza başlamak için yardımcı olur! 
 
 
 ### Sırada Ne Var?
 
-[Tutorial Kısım 4]'te(/library/javafx-tutorial/part4/) CSS biçimlendirme ekleyeceğiz.
+[Tutorial Kısım 4](/tr/library/javafx-tutorial/part4/) CSS biçimlendirme ekleyeceğiz.
 
 
 ##### İlginç bulabileceğiniz diğer bazı makaleler
