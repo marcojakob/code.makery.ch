@@ -217,7 +217,8 @@ Aşağıdaki `DarkTheme.css` isimli CSS dosyasını *view* paketine ekleyin.
 
 1. `RootLayout.fxml` dosyasını Scene Builder ile açın. 
 
-2. Hierarchy görünümünde `BorderPane` kökünü seçin. *Properties* grubu altında biçimlendirme dosyası olarak `DarkTheme.css`'yi ekleyin.   ![DarkTheme for RootLayout](darktheme-rootlayout.png)
+2. Hierarchy görünümünde `BorderPane` kökünü seçin. *Properties* grubu altında biçimlendirme dosyası olarak `DarkTheme.css`'yi ekleyin.   
+![DarkTheme for RootLayout](darktheme-rootlayout.png)
 
 
 #### CSS'yi PersonEditDialog.fxml'e ekle
@@ -241,7 +242,7 @@ Aşağıdaki `DarkTheme.css` isimli CSS dosyasını *view* paketine ekleyin.
 4. Sağ `AnchorPane`'i seçin, bu `SplitPane` içerisindedir.   
 ![Background Style Select](background-style-select.png)   
 
-5. *Properties* grubuna gidin ve biçim sınıfı olarak `background`'u seçin. Arkaplan şimdi siyaha dönmeli. 
+5. *Properties* grubuna gidin ve biçim sınıfı olarak `background`'u seçin. Arkaplan şimdi siyaha dönmeli.   
 ![Background Style](background-style.png)
 
 
@@ -249,10 +250,10 @@ Aşağıdaki `DarkTheme.css` isimli CSS dosyasını *view* paketine ekleyin.
 
 Şu anda sağ taraftaki tüm etiketler aynı boyutta. Halizhazırda css dosyası içerisinde, etiketleri biçimlendirmede kullanacağımız `.label-header` ve `.label-bright` isimli biçimler tanımlıdır. 
 
-1. *Person Details* etiketini seçin ve Style Class olarak `label-header`'ı ekleyin.
+1. *Person Details* etiketini seçin ve Style Class olarak `label-header`'ı ekleyin.   
 ![Label Header Style](label-header-style.png)
 
-2. Sağ sütundaki her bir etiket için ( kişi detay bilgilerinin gösterildiği taraf), `label-bright` Style Class'ı ekleyin.
+2. Sağ sütundaki her bir etiket için ( kişi detay bilgilerinin gösterildiği taraf), `label-bright` Style Class'ı ekleyin.   
 ![Label Bright Style](label-bright-style.png)
 
 
