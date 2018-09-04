@@ -1,16 +1,10 @@
 +++
 title = "Kısım 4: CSS Biçimlendirme"
-date = 2014-04-25
-updated = 2014-08-27
+date = 2018-09-04
 description = "JavaFX'te kendi kullanıcı arayüzünüzü CSS ile biçimlendirebilirsiniz. Bu kısımda ayrıca uygulama ikonu da ekleyeceğiz."
 image = "addressapp-part4.png"
 prettify = true
 comments = true
-commentsIdentifier = "/java/javafx-8-tutorial-part4/"
-aliases = [ 
-  "/library/javafx-8-tutorial/part4/",
-  "/library/javafx-2-tutorial/part4/"
-]
 weight = 4
 
 [[sidebars]]
@@ -317,7 +311,7 @@ Tabi ki kişi düzenleme dialog sahnesine de ikon ekleyebilirsiniz.
 
 ### Sırada Ne Var?
 
-[Tutorial Kısım 5](/library/javafx-tutorial/part5/)'te verimiz için XML depolama ekleyeceğiz. 
+[Tutorial Kısım 5](/tr/library/javafx-tutorial/part5/)'te verimiz için XML depolama ekleyeceğiz. 
 
 
 ##### İlginç bulabileceğiniz bazı diğer makaleler
