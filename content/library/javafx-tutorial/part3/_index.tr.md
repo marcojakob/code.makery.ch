@@ -1,7 +1,7 @@
 +++
 title = "Kısım 3: Kullanıcı ile Etkileşim"
 date = 2018-09-03
-description = "JavaFX TablView içindeki seçim deiğişimlerine tepki ver. Tablodan çıkarma, ekleme, düzenleme işlemleri yap ve kullanıcı giriini doğrula"
+description = "JavaFX TableView içindeki seçim değişimlerine tepki ver. Tablodan çıkarma, ekleme, düzenleme işlemleri yap ve kullanıcı girişini doğrula"
 image = "addressapp-part3.png"
 prettify = true
 comments = true
@@ -17,7 +17,7 @@ link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/a
 ![Screenshot AddressApp Part 3](addressapp-part3.png)
 
 
-## Kısım 3 teki Bailıklar
+## Kısım 3 teki Başlıklar
 
 * Tablodaki **seçim değişikliklerine tepki ver**.
 * **Ekleme**,**Düzenleme** ve **Silme** düğmelerine fonksiyonellik ekle.
@@ -28,13 +28,13 @@ link = "https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/a
 *****
 
 
-## Tablo Seçimlerine Teki Ver
+## Tablo Seçimlerine Tepki Ver
 
 Açıkçası uygulamamızın sağ tarafını henüz kullanmadık. Yapılacak şey, kullanıcı tablodan bir kişiyi seçtiğinde, o kişinin detaylarını sağ tarafta göstermek.  
 
-İlk olarak, tek bir `Person` bilgileri ile etiketleri dolduracak yeni bir metodu `PersonOverviewController`ierisine ekleyelim.  
+İlk olarak, tek bir `Person` bilgileri ile etiketleri dolduracak yeni bir metodu `PersonOverviewController`içerisine ekleyelim.  
 
-`showPersonDetails(Person person)` isimli bir metod oluştur. Bütün etiketleri dolaş ve `setText(...)` kullanarak metinleri kullanıcı detayları ile ayarla. Eğer parametre olarak `null` gelirse, bütün etiketler temizlenmeli. 
+`showPersonDetails(Person person)` isimli bir metod oluşturun. Bütün etiketleri dolaşın ve `setText(...)` kullanarak metinleri kullanıcı detayları ile ayarlayın. Eğer parametre olarak `null` gelirse, bütün etiketler temizlenmeli. 
 
 
 ##### PersonOverviewController.java
@@ -164,7 +164,7 @@ Kişi tablosunda kullanıcı bir kişiyi seçtiğinde haberdar olmak için *değ
 
 JavaFX'te tek bir `changed(...)` metodu olan [`ChangeListener`](http://docs.oracle.com/javase/8/javafx/api/) isminde bir arayüz var. Metodun üç parametresi var:  `izlenebilir`, `eskiDeğer`, ve  `yeniDeğer`
 
-Java 8 *lambda expression* kullanarak böyle bir `ChangeListener` (değişim izleyici) oluşturacağız. `PersonOverviewController` içerisindeki `initialize()` metoduna birkaç setır ekleyelim. Şimdi şöyle gözükecek:
+Java 8 *lambda expression* kullanarak böyle bir `ChangeListener` (değişim dinleyici) oluşturacağız. `PersonOverviewController` içerisindeki `initialize()` metoduna birkaç satır ekleyelim. Şimdi şöyle gözükecek:
 
 
 ##### PersonOverviewController.java
@@ -187,7 +187,7 @@ private void initialize() {
 }
 </pre>
 
-`showPersonDetails(null);` ile kişidetaylarını sıfırlıyoruz. 
+`showPersonDetails(null);` ile kişi detaylarını sıfırlıyoruz. 
 
 `personTable.getSelectionModel...` ile kişi tablosunun *selectedItemProperty*'sini alıyoruz ve ona bir dinleyici ekliyoruz. Ne zaman kullanıcı tablodan bir kişi seçse, bizim *lambda expression*'ımız çalışıyor. Yeni seçilen kişiyi alıyoruz ve `showPersonDetails(...)` metoduna veriyoruz.
 
@@ -199,7 +199,7 @@ Eğer birşeyler çalışmazsa, `PersonOverviewController` sınıfınızı [Pers
 
 ## Silme Düğmesi
 
-Arayüzümüzde halihzırdabir silme düğmesi var ama bir fonksiyonu yok. *Scene Builder* içerisinden bir düğme için aksiyon seçebiliriz. Controller içerisinde `@FXML` ile işaretlenmiş (ya da public olan) herhangi bir fonksiyon *Scene Builder* tarafından erişilebilirdir. Bu yüüzden ilk olarak `PersonOverviewController` sınıfımızın sonuna bir silme metodu ekleyelim:
+Arayüzümüzde halihazırda bir silme düğmesi var ama bir fonksiyonu yok. *Scene Builder* içerisinden bir düğme için aksiyon seçebiliriz. Controller içerisinde `@FXML` ile işaretlenmiş (ya da public olan) herhangi bir fonksiyon *Scene Builder* tarafından erişilebilirdir. Bu yüzden ilk olarak `PersonOverviewController` sınıfımızın sonuna bir silme metodu ekleyelim:
 
 
 ##### PersonOverviewController.java
@@ -215,23 +215,23 @@ private void handleDeletePerson() {
 }
 </pre>
 
-Şimdi `PersonOverview.fxml` dosyasını *SceneBuilder* içerisinden açın. *Silme* düğmesini seçin, *Code* grubu açın ve **On Action** dropdown listesinden `handleDeletePerson`'ı seçin. 
+Şimdi `PersonOverview.fxml` dosyasını *SceneBuilder* içerisinden açın. *Silme* düğmesini seçin, *Code* grubunu açın ve **On Action** dropdown listesinden `handleDeletePerson`'ı seçin. 
 
 ![On Action](handle-delete.png)
 
 <div class="alert alert-info">
-<strong>Hatırlatma:</strong>FXML dosyasına Scene Builder içerisinden deişiklik yaptıktan sonra,değişikliklerin uygulanması için Eclipseteki projeyi yenileyin. 
+<strong>Hatırlatma:</strong>FXML dosyasına Scene Builder içerisinden değişiklik yaptıktan sonra,değişikliklerin uygulanması için Eclipse teki projeyi yenileyin. 
 </div>
 
 
 
 ### Hata Yönetimi
 
-Eğer bu noktada uygulamayı çalıştırırsanız, seçilen kişiyi tanlodan silebilmeniz gerekir. Ama eğer **seçili bir kişi yokken düğmeye tıklarsanız** ne olacak?  
+Eğer bu noktada uygulamayı çalıştırırsanız, seçilen kişiyi tablodan silebilmeniz gerekir. Ama eğer **seçili bir kişi yokken düğmeye tıklarsanız** ne olacak?  
 
 `ArrayIndexOutOfBoundsException` oluşacaktır çünkü `-1` indisindeki bir kişiyi silemeyecektir. `-1` `getSelectedIndex()` tarafından gönderilir, anlamı seçim yapılmadığıdır. 
 
-Tabi ki böyle bir hatayı gözardı etmek iyi değildir. Kullanıcıyı silme işleminden önce bir kişiyi seçmesi gerekitiği konusunda bilgilendirmeliyiz. ( Daha da iyisi düğmeyi pasif etmektir, böylece kullanıcının yanlış birşey yapma şansı ortadan kalkar). 
+Tabi ki böyle bir hatayı gözardı etmek iyi değildir. Kullanıcıyı silme işleminden önce bir kişiyi seçmesi gerektiği konusunda bilgilendirmeliyiz. ( Daha da iyisi düğmeyi pasif etmektir, böylece kullanıcının yanlış birşey yapma şansı ortadan kalkar). 
 
 `handleDeletePerson()` metoduna yapılan bazı değişiklikler ile, tabloda kişi seçili değilken kullanıcı silme düğmesine bastığında basit bir popup diyalog gösterebiliriz: 
 
@@ -456,17 +456,17 @@ Bu controller ile ilgili birkaç not:
 
 * Düzenlenecek kişiyi ayarlamak için`setPerson(...)` metodu başka bir sınıftan çağırılabilir. 
 * Kullanıcı OK düğmesine bastığında `handleOk()` metodu çağırılır. İlk olarak `isInputValid()` metodu çağırılarak bazı doğrulamalar yapılır. Sadece doğrulama başarılı ise kişi nesnesi kullanıcının girdiği verilerle doldurulur. Bu değişiklikler `setPerson(...)` metoduna gönderilen kişi nesnesine doğrudan uygulanır!
-* Boolean `okClicked` çağıranın, kullanıcının OK ya da Cancel butonunlarından hangisine bastığını anlaması için kullanıldı. 
+* Boolean `okClicked` çağıranın, kullanıcının OK ya da Cancel butonlarından hangisine bastığını anlaması için kullanıldı. 
 
 
 ### View ve Controller Bağlantısı 
 
 View (FXML) ve controller oluşturuldu, bunları birbirine bağlamamız lazım::
 
-1. `PersonEditDialog.fxml`'i aç.
-2. Soldaki *Controller* grup içerisinde controller sınıfı olarak `PersonEditDialogController`'ı seç.  
-3. `TextField`'ların **fx:id**'lerini controllerdaki karşılık gelen alanlara ayarla. 
-4. İki düğmenin **onAction**'larını karı gelen yönetici metodlara ayarla. 
+1. `PersonEditDialog.fxml`'i açın.
+2. Soldaki *Controller* grup içerisinde controller sınıfı olarak `PersonEditDialogController`'ı seçin.  
+3. `TextField`'ların **fx:id**'lerini controllerdaki karşılık gelen alanlara ayarlayın. 
+4. İki düğmenin **onAction**'larını karşılık gelen yönetici metodlara ayarlayın. 
 
 
 ### Dialogun Açılması
@@ -516,7 +516,7 @@ public boolean showPersonEditDialog(Person person) {
 }
 </pre>
 
-`PersonOverviewController`'a aşağıdaki metodu ekleyin. Kullanıcı *new* ya da *edit* düğmelerine bastığında,bu metodlar `MainApp`'ten `showPersonEditDialog(...)`'u çağırır.      
+`PersonOverviewController`'a aşağıdaki metodu ekleyin. Kullanıcı *new* ya da *edit* düğmelerine bastığında, bu metodlar `MainApp`'ten `showPersonEditDialog(...)`'u çağırır.      
 
 ##### PersonOverviewController.java
 
