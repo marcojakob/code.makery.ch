@@ -1,16 +1,10 @@
 +++
 title = "Kısım 5: Veriyi XML Olarak Depolamak"
-date = 2014-04-25
-updated = 2015-03-12
+date = 2018-09-05
 description = "Veriyi JAXB ile XML olarak saklama. JavaFX FileChooser ve JavaFX Menu kullanımını öğrenme."
 image = "addressapp-part5.png"
 prettify = true
 comments = true
-commentsIdentifier = "/java/javafx-8-tutorial-part5/"
-aliases = [ 
-  "/library/javafx-8-tutorial/part5/",
-  "/library/javafx-2-tutorial/part5/"
-]
 weight = 5
 
 [[sidebars]]
@@ -402,7 +396,7 @@ Eğer kullanıcı herhangi bir dosya seçmeden dialogu kapatırsa `null` gönder
 
 1. `RootLayout.fxml`i Scene Builder'da açın. *Controller* grubunda Controller sınıfı olarak `RootLayoutController`'ı seçin.
 
-2. *Hierarchy* grubuna geri gidip ve bir menü maddesi seçin. **On Action** altındaki *Code* grubunda tüm kullanılabilir controllermetdolarını görmelisiniz. Her menü maddesi için karşılık gelen metodu seçin. 
+2. *Hierarchy* grubuna geri gidip ve bir menü maddesi seçin. **On Action** altındaki *Code* grubunda tüm kullanılabilir controllermetdolarını görmelisiniz. Her menü maddesi için karşılık gelen metodu seçin.   
 ![Menu Actions](menu-actions.png)
 
 3. Her bir menü maddesi için adımları tekrar edin.
@@ -516,7 +510,7 @@ Tümünün birlikte nasıl çalıştığına bakalım:
 
 ### Sırada Ne Var?
 
-Tutorial [Kısım 6]'da(/library/javafx-tutorial/part6/) doğum tarihi istatistik grafiği ekleyeceğiz.
+Tutorial [Kısım 6](/tr/library/javafx-tutorial/part6/)'da doğum tarihi istatistik grafiği ekleyeceğiz.
 
 
 ##### İlginç bulabileceğiniz diğer bazı makaleler
