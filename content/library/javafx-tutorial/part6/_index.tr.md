@@ -1,16 +1,10 @@
 +++
 title = "Kısım 6: İstatistik Grafiği"
-date = 2014-05-09
-updated = 2015-03-12
+date = 2018-09-05
 description = "JavaFX Sütun Grafiğini nasıl yapacağınızı öğrenin."
 image = "addressapp-part6.png"
 prettify = true
 comments = true
-commentsIdentifier = "/java/javafx-8-tutorial-part6/"
-aliases = [ 
-  "/library/javafx-8-tutorial/part6/",
-  "/library/javafx-2-tutorial/part6/"
-]
 weight = 6
 
 [[sidebars]]
@@ -236,7 +230,7 @@ Daha fazla bilgi için iyi bir kaynak resmi Oracle tutorial [Working with JavaFX
 
 ### Sırada Ne Var?
 
-Son tutorial'da [Kısım 7](/library/javafx-tutorial/part7/) nihayet uygulamamızı dağıtacağız ( yani uygulamamızı paketleyip kullanıcılara ileteceğiz).
+Son tutorial'da [Kısım 7](/tr/library/javafx-tutorial/part7/) nihayet uygulamamızı dağıtacağız ( yani uygulamamızı paketleyip kullanıcılara ileteceğiz).
 
 
 ##### İlginç bulabileceğiniz diğer bazı makaleler
