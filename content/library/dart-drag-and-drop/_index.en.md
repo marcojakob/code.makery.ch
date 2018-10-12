@@ -53,11 +53,11 @@ This is a basic example using some draggable documents and a trash as a dropzone
 
 An example with a custom image as drag avatar. The image is changed depending on the remaining distance to the trash.
 
-<a href="https://marcojakob.github.io/dart-dnd/custom-avatar/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="https://marcojakob.github.io/dart-dnd/custom_avatar/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
-<iframe src="https://marcojakob.github.io/dart-dnd/custom-avatar/" width="100%" height="330px"></iframe>
+<iframe src="https://marcojakob.github.io/dart-dnd/custom_avatar/" width="100%" height="330px"></iframe>
 
 ***
 
@@ -68,11 +68,11 @@ An example that uses only drag detection. Use this if you want to implement your
 
 Even without a drag avatar and `Dropzone` this helps quite a lot as it unifies touch and mouse dragging and provides convenient event streams.
 
-<a href="https://marcojakob.github.io/dart-dnd/detection-only/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="https://marcojakob.github.io/dart-dnd/detection_only/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
-<iframe src="https://marcojakob.github.io/dart-dnd/detection-only/" width="100%" height="300px"></iframe>
+<iframe src="https://marcojakob.github.io/dart-dnd/detection_only/" width="100%" height="300px"></iframe>
 
 ***
 
@@ -81,11 +81,11 @@ Even without a drag avatar and `Dropzone` this helps quite a lot as it unifies t
 
 This example shows how to freely drag and position an element. Instead of using a clone for the drag avatar, the original element itself is dragged.
 
-<a href="https://marcojakob.github.io/dart-dnd/free-dragging/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="https://marcojakob.github.io/dart-dnd/free_dragging/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
-<iframe src="https://marcojakob.github.io/dart-dnd/free-dragging/" width="100%" height="300px"></iframe>
+<iframe src="https://marcojakob.github.io/dart-dnd/free_dragging/" width="100%" height="300px"></iframe>
 
 ***
 
@@ -122,11 +122,11 @@ Dragging can be constrained to horizontal or vertical only.
 
 *A nice side effect: When a drag is constrained to either horizontal or vertical only, the other direction can be used for scrolling on touch devices.*
 
-<a href="https://marcojakob.github.io/dart-dnd/horizontal-only/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="https://marcojakob.github.io/dart-dnd/horizontal_only/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
-<iframe src="https://marcojakob.github.io/dart-dnd/horizontal-only/" width="100%" height="200px"></iframe>
+<iframe src="https://marcojakob.github.io/dart-dnd/horizontal_only/" width="100%" height="200px"></iframe>
 
 ***
 
@@ -135,11 +135,11 @@ Dragging can be constrained to horizontal or vertical only.
 
 You can use predefined or custom `Acceptor`s to determine which `Draggable`s are accepted by which `Dropzone`s.
 
-<a href="https://marcojakob.github.io/dart-dnd/custom-acceptor/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="https://marcojakob.github.io/dart-dnd/custom_acceptor/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
-<iframe src="https://marcojakob.github.io/dart-dnd/custom-acceptor/" width="100%" height="500px"></iframe>
+<iframe src="https://marcojakob.github.io/dart-dnd/custom_acceptor/" width="100%" height="500px"></iframe>
 
 ***
 
@@ -151,11 +151,11 @@ An example of how to drag over nested `Dropzone`s.
 *Note: If dropped on an inner [Dropzone] the outer [Dropzone] will also receive the drop event.*
 
 
-<a href="https://marcojakob.github.io/dart-dnd/nested-dropzones/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="https://marcojakob.github.io/dart-dnd/nested_dropzones/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
-<iframe src="https://marcojakob.github.io/dart-dnd/nested-dropzones/" width="100%" height="350px"></iframe>
+<iframe src="https://marcojakob.github.io/dart-dnd/nested_dropzones/" width="100%" height="350px"></iframe>
 
 ***
 
@@ -164,8 +164,8 @@ An example of how to drag over nested `Dropzone`s.
 
 An example example to create basic sortable/rearranging behavior.
 
-<a href="https://marcojakob.github.io/dart-dnd/simple-sortable/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
+<a href="https://marcojakob.github.io/dart-dnd/simple_sortable/" target="_blank" class="pull-right"><i class="fa fa-external-link"></i> Open in separate tab</a>
 
 #### Live demo
 
-<iframe src="https://marcojakob.github.io/dart-dnd/simple-sortable/" width="100%" height="450px"></iframe>
+<iframe src="https://marcojakob.github.io/dart-dnd/simple_sortable/" width="100%" height="450px"></iframe>
