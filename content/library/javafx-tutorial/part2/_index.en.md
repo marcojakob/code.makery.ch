@@ -7,9 +7,10 @@ image = "addressapp-part2.png"
 prettify = true
 comments = true
 commentsIdentifier = "/java/javafx-8-tutorial-part2/"
-aliases = [ 
+aliases = [
+  "/java/javafx-8-tutorial-part2/",
   "/library/javafx-8-tutorial/part2/",
-	"/library/javafx-2-tutorial/part2/"
+  "/library/javafx-2-tutorial/part2/"
 ]
 weight = 2
 
