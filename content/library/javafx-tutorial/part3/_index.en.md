@@ -7,7 +7,8 @@ image = "addressapp-part3.png"
 prettify = true
 comments = true
 commentsIdentifier = "/java/javafx-8-tutorial-part3/"
-aliases = [ 
+aliases = [
+  "/java/javafx-8-tutorial-part3/",
   "/library/javafx-8-tutorial/part3/",
   "/library/javafx-2-tutorial/part3/"
 ]
