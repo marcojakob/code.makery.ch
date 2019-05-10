@@ -173,7 +173,7 @@ Com o **Inno Setup** nós podemso criar um instalador para Windows de nossa apli
 
 2. Informe ao Windows o caminho de instalaçaõ do Inno Setup (ex: `C:\Program Files (x86)\Inno Setup 5`). Para fazer isso, adicione Inno Setup a variavel de ambiente `Path`. Se você não sabe onde encontra-la, leia  (em inglês) [How to set the path and environment variables in Windows](http://www.computerhope.com/issues/ch000549.htm).
 
-3. Reinicie o Eclipse e continue com o Passo 5.
+3. Reinicie o Eclipse e continue com o Passo 6.
 
 
 ### Passo 5 (MAC) - Instalador dmg para MacOS 
