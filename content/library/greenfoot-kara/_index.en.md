@@ -44,7 +44,7 @@ Greenfoot is great for novice programmers because one doesn't have to deal with 
 
 ## Kara
 
-Kara is a ladybug that lives in a simple world with trees, leafs and mushrooms.
+Kara is a ladybug that lives in a simple world with trees, leaves and mushrooms.
 
 ![Kara](kara.png) ![Mushroom](mushroom.png) ![Leaf](leaf.png) ![Tree](tree.png)
 
@@ -53,7 +53,7 @@ The rules of Kara's world are simple:
 
 ### Kara's Actions
 
-* Kara can move around with `move()` (Kara can push a mushroom, can step on leafs but can't walk through trees)
+* Kara can move around with `move()` (Kara can push a mushroom, can step on leaves but can't walk through trees)
 * Kara turns left or right with `turnLeft()` or `turnRight()`
 * Kara puts down a leaf with `putLeaf()`
 * Kara picks up a leaf with `removeLeaf()`

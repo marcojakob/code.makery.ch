@@ -62,7 +62,7 @@ In Greenfoot, we create new objects as follows: *Right click* on the class of Ka
 
 #### <i class="fa fa-rocket"></i> TASK 1.01: First Steps
 
-Create an object of (the **gray**!) `Kara`. Create several objects of the leafs.
+Create an object of (the **gray**!) `Kara`. Create several objects of the leaves.
 
 *Tip: To create multiple objects of the same class, press the Shift-key before you click.*
 

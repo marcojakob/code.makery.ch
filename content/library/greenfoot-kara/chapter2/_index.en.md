@@ -253,7 +253,7 @@ Load the scenario **Kara 211...** and write a program for it. Test your program 
 
 ![Task 12](task12.png)
 
-Kara plays Pacman: Kara is on the first of a long trail of leafs, ending in front of a tree. Kara picks up all leafs and stops in front of the trees.
+Kara plays Pacman: Kara is on the first of a long trail of leaves, ending in front of a tree. Kara picks up all leaves and stops in front of the trees.
 
 As a better overview, write some parts of the program in their own methods.
 
