@@ -35,7 +35,7 @@ Sokoban (倉庫番, Japanese "Warehouse Manager") is a computer game developed b
 
 In In a simple game the principle task is to have a character move successively all objects - usually boxes - to the designated target areas. The boxes can only be moved and cannot be pulled by the character, nor can several boxes be simultaneously pushed. Besides mastering a level it is a continuing challenge to minimize the necessary steps.
 
-In our Kara Sokoban the mushrooms must be pushed on the target fields (leafs).
+In our Kara Sokoban the mushrooms must be pushed on the target fields (leaves).
 
 
 ### Description of Levels
