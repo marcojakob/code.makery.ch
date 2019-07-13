@@ -81,7 +81,7 @@ public void drawRectangle(int width, int height)
 
 ### Baking the Cake
 
-We will now use Kara to "bake" a birthday cake for the grandmother. The cake will be made of leafs.
+We will now use Kara to "bake" a birthday cake for the grandmother. The cake will be made of leaves.
 
 Open the scenario **Kara 501 ...** from the folder **scenarios-chapter-5**.
 
@@ -94,14 +94,14 @@ Kara rotates by 180 degrees.
 Kara takes the number of steps in the current direction (see example in theory section above).
 
 3. `public void putLeafs(int count)`   
-Kara puts the specified number of leafs. The first one he places at the current position, the other following in his line of sight.
+Kara puts the specified number of leaves. The first one he places at the current position, the other following in his line of sight.
 
 
 #### <i class="fa fa-rocket"></i> TASK 5.01: Baking a Cake
 
 ![TASK 5.01](task01.png) 
 
-Kara draws a rectangle with leafs symbolizing the cake. Kara starts in the lower left corner and looks to the right.
+Kara draws a rectangle with leaves symbolizing the cake. Kara starts in the lower left corner and looks to the right.
 
 Kara should be able to make a **rectangle with variable width and height**! 
 The method call `drawRectangle(21, 4)` should therefore create a rectangle with width 21 and height of 4.
