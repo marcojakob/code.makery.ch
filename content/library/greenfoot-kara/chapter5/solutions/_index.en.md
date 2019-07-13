@@ -49,7 +49,7 @@ public class MyKaraIO extends KaraIO {
 		}
 	}
 
-	public void Leaves(int count) {
+	public void leaves(int count) {
 		int i = 0;
 		while (i &lt; count) {
 			putLeaf();
