@@ -28,7 +28,7 @@ link = "/library/convert-web-page-to-word/"
 
 In the last chapter we have learned to repeat certain events while a condition is met. Now we want to do the following:
 
-*Kara is to lay a trail of five leafs.*
+*Kara is to lay a trail of five leaves.*
 
 ![Loop Example](loop-example.png) 
 
@@ -263,11 +263,11 @@ To calculate we use the following arithmetic operators:
 
 ***
 
-#### <i class="fa fa-rocket"></i> TASK 3.01: Counting Leafs
+#### <i class="fa fa-rocket"></i> TASK 3.01: Counting Leaves
 
 ![TASK 3.01](task01.png) 
 
-Kara is going horizontally from left to right until he reaches the tree. On his way he counts the leafs and reports the result at the end.
+Kara is going horizontally from left to right until he reaches the tree. On his way he counts the leaves and reports the result at the end.
 
 *Hints:*
 
@@ -280,7 +280,7 @@ Kara is going horizontally from left to right until he reaches the tree. On his 
 
 ![TASK 3.02](task02.png) 
 
-A square area is surrounded by trees. Within the area is a set pattern of leafs
+A square area is surrounded by trees. Within the area is a set pattern of leaves
 that Kara must invert. Kara starts in the upper left corner with a view to the right.
 
 *Hints:*
@@ -296,7 +296,7 @@ that Kara must invert. Kara starts in the upper left corner with a view to the r
 
 ![TASK 3.03](task03.png) 
 
-A square area is surrounded by trees. Within the area is a checkerboard-like pattern of leafs to be laid by Kara. Kara starts in the upper left corner with a view to the right.
+A square area is surrounded by trees. Within the area is a checkerboard-like pattern of leaves to be laid by Kara. Kara starts in the upper left corner with a view to the right.
 
 
 
