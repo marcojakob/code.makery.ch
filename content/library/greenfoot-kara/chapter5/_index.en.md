@@ -93,7 +93,7 @@ Kara rotates by 180 degrees.
 2. `public void multiMove(int steps)`   
 Kara takes the number of steps in the current direction (see example in theory section above).
 
-3. `public void putLeafs(int count)`   
+3. `public void Leaves(int count)`   
 Kara puts the specified number of leaves. The first one he places at the current position, the other following in his line of sight.
 
 
