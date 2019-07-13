@@ -36,7 +36,7 @@ public class MyKaraIO extends KaraIO {
 	public void drawRectangle(int width, int height) {
 		int i = 0;
 		while (i &lt; height) {
-			putLeafs(width);
+			putLeaves(width);
 			turnAround();
 			multiMove(width);
 
@@ -49,7 +49,7 @@ public class MyKaraIO extends KaraIO {
 		}
 	}
 
-	public void putLeafs(int count) {
+	public void Leaves(int count) {
 		int i = 0;
 		while (i &lt; count) {
 			putLeaf();
@@ -93,7 +93,7 @@ public class MyKaraIO extends KaraIO {
 		while (i &lt; count) {
 			move();
 			turnLeft();
-			putLeafs(3);
+			putLeaves(3);
 			turnAround();
 			multiMove(3);
 			turnLeft();
@@ -106,7 +106,7 @@ public class MyKaraIO extends KaraIO {
 		// ...
 	}
 
-	public void putLeafs(int count) {
+	public void putLeaves(int count) {
 		// ...
 	}
 
@@ -145,7 +145,7 @@ public class MyKaraIO extends KaraIO {
 		// ...
 	}
 
-	public void putLeafs(int count) {
+	public void putLeaves(int count) {
 		// ...
 	}
 
@@ -192,7 +192,7 @@ public class MyKaraIO extends KaraIO {
 		// ...
 	}
 
-	public void putLeafs(int count) {
+	public void putLeaves(int count) {
 		// ...
 	}
 
