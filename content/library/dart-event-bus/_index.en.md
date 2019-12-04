@@ -109,15 +109,15 @@ class NewOrderEvent {
 Register listeners for a **specific events**: 
 
 <pre class="prettyprint lang-dart">
-eventBus.on<UserLoggedInEvent>().listen((event) {
+eventBus.on&lt;UserLoggedInEvent>().listen((event) {
   // All events are of type UserLoggedInEvent (or subtypes of it).
   print(event.user);
 });
-```
+</pre>
 
 Register listeners for **all events**:
 
-```dart
+<pre class="prettyprint lang-dart">
 eventBus.on().listen((event) {
   // Print the runtime type. Such a set up could be used for logging.
   print(event.runtimeType);
@@ -134,7 +134,7 @@ API. One example is the use of [StreamSubscriptions](https://api.dartlang.org/ap
 to later unsubscribe from the events.
 
 <pre class="prettyprint lang-dart">
-StreamSubscription loginSubscription = eventBus.on<UserLoggedInEvent>().listen((event) {
+StreamSubscription loginSubscription = eventBus.on&lt;UserLoggedInEvent>().listen((event) {
   print(event.user);
 });
 
