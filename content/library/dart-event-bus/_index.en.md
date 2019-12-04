@@ -1,7 +1,7 @@
 +++
 title = "Dart Event Bus"
 date = 2014-03-25
-updated = 2018-08-17
+updated = 2019-12-05
 image = "event-bus.png"
 description = "An Event Bus library in Dart for decoupling applications."
 prettify = true
@@ -78,20 +78,11 @@ set up to group a specific set of events.
 <pre class="prettyprint lang-dart">
 import 'package:event_bus/event_bus.dart';
 
-EventBus eventBus = new EventBus();
+EventBus eventBus = EventBus();
 </pre>
 
-You can alternatively use the `HierarchicalEventBus` that filters events by 
-event class **including** its subclasses. 
-
-*Note that the hierarchical event bus uses `dart:mirrors` which support in 
-dart2js is experimental.*
-
-<pre class="prettyprint lang-dart">
-import 'package:event_bus/event_bus_hierarchical.dart';
-
-EventBus eventBus = new HierarchicalEventBus();
-</pre>
+**Note:** _The default constructor will create an asynchronous event bus. To
+create a synchronous bus you must provide the optional `sync: true` attribute._
 
 
 ### 2. Define Events
@@ -101,13 +92,13 @@ Any Dart class can be used as an event.
 <pre class="prettyprint lang-dart">
 class UserLoggedInEvent {
   User user;
-  
+
   UserLoggedInEvent(this.user);
 }
 
 class NewOrderEvent {
   Order order;
-  
+
   NewOrderEvent(this.order);
 }
 </pre>
@@ -118,17 +109,18 @@ class NewOrderEvent {
 Register listeners for a **specific events**: 
 
 <pre class="prettyprint lang-dart">
-eventBus.on(UserLoggedInEvent).listen((UserLoggedInEvent event) {
+eventBus.on<UserLoggedInEvent>().listen((event) {
+  // All events are of type UserLoggedInEvent (or subtypes of it).
   print(event.user);
 });
-</pre>
+```
 
 Register listeners for **all events**:
 
-<pre class="prettyprint lang-dart">
+```dart
 eventBus.on().listen((event) {
   // Print the runtime type. Such a set up could be used for logging.
-  print(event.runtimeType); 
+  print(event.runtimeType);
 });
 </pre>
 
@@ -142,8 +134,8 @@ API. One example is the use of [StreamSubscriptions](https://api.dartlang.org/ap
 to later unsubscribe from the events.
 
 <pre class="prettyprint lang-dart">
-StreamSubscription loginSubscription = eventBus.on(UserLoggedInEvent).listen((UserLoggedInEvent event) {
-  print(event.user);	
+StreamSubscription loginSubscription = eventBus.on<UserLoggedInEvent>().listen((event) {
+  print(event.user);
 });
 
 loginSubscription.cancel();
@@ -155,8 +147,23 @@ loginSubscription.cancel();
 Finally, we need to fire an event.
 
 <pre class="prettyprint lang-dart">
-User myUser = new User('Mickey');
-eventBus.fire(new UserLoggedInEvent(myUser));
+User myUser = User('Mickey');
+eventBus.fire(UserLoggedInEvent(myUser));
+</pre>
+
+
+## Using Custom Stream Controllers
+
+Instead of using the default `StreamController` you can use the following constructor
+to provide your own.
+
+An example would be to use an [RxDart](https://pub.dartlang.org/packages/rxdart) Subject
+as the controller.
+
+<pre class="prettyprint lang-dart">
+import 'package:rxdart/rxdart.dart';
+
+EventBus behaviorBus = EventBus.customController(BehaviorSubject());
 </pre>
 
 
