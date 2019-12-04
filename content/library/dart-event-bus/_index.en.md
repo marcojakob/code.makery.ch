@@ -23,7 +23,7 @@ link = "https://github.com/marcojakob/dart-event-bus"
 
 [[sidebars.items]]
 text = "<i class=\"fa fa-fw fa-download\"></i> Package on Pub"
-link = "https://pub.dartlang.org/packages/event_bus"
+link = "https://pub.dev/packages/event_bus"
 +++
 
 A simple Event Bus using Dart [Streams](https://api.dartlang.org/apidocs/channels/stable/dartdoc-viewer/dart:async.Stream) 
@@ -157,7 +157,7 @@ eventBus.fire(UserLoggedInEvent(myUser));
 Instead of using the default `StreamController` you can use the following constructor
 to provide your own.
 
-An example would be to use an [RxDart](https://pub.dartlang.org/packages/rxdart) Subject
+An example would be to use an [RxDart](https://pub.dev/packages/rxdart) Subject
 as the controller.
 
 <pre class="prettyprint lang-dart">
@@ -171,4 +171,4 @@ EventBus behaviorBus = EventBus.customController(BehaviorSubject());
 
 <i class="fa fa-fw fa-github-alt"></i> [Source on GitHub](https://github.com/marcojakob/dart-event-bus)
 
-<i class="fa fa-fw fa-download"></i> [Package on Pub](https://pub.dartlang.org/packages/event_bus)
+<i class="fa fa-fw fa-download"></i> [Package on Pub](https://pub.dev/packages/event_bus)
