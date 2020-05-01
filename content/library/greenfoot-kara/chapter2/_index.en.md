@@ -174,22 +174,22 @@ The following table shows the three main logical operators in Java:
   </thead>
   <tbody>
     <tr>
-      <td>`&&`</td>
+      <td><code>&&</code></td>
       <td>and</td>
-      <td>`treeFront() && onLeaf()`</td>
-      <td>Is only satisfied (true) if both statements are true, i.e. if Kara is facing a tree **and** is on a leaf.</td>
+      <td><code>treeFront() && onLeaf()</code></td>
+      <td>Is only satisfied (true) if both statements are true, i.e. if Kara is facing a tree <strong>and</strong> is on a leaf.</td>
     </tr>
     <tr>
-      <td>`||`</td>
+      <td><code>||</code></td>
       <td>or</td>
-      <td>`treeFront() || onLeaf()`</td>
-      <td>Is satisfied (true) if either one **or** the other or both statements are true.</td>
+      <td><code>treeFront() || onLeaf()</code></td>
+      <td>Is satisfied (true) if either one <strong>or</strong> the other or both statements are true.</td>
     </tr>
     <tr>
-      <td>`!`</td>
+      <td><code>!</code></td>
       <td>not</td>
-      <td>`!treeFront()`</td>
-      <td>Changes an expression of true to false and vice versa. This statement would be satisfied (true) if Kara is **not** facing a tree.</td>
+      <td><code>!treeFront()</code></td>
+      <td>Changes an expression of true to false and vice versa. This statement would be satisfied (true) if Kara is <strong>not</strong> facing a tree.</td>
     </tr>
   </tbody>
 </table>
@@ -309,7 +309,6 @@ Describe what each of the following loops does, and how many steps Kara takes.
       <td>Move as long as ther is a tree on the left.</td>
       <td>4</td>
     </tr>
-    
     <tr>
       <td>b.</td>
       <td><pre>while (treeRight()) {
@@ -318,7 +317,6 @@ Describe what each of the following loops does, and how many steps Kara takes.
       <td>?</td>
       <td>?</td>
     </tr>
-    
     <tr>
       <td>c.</td>
       <td><pre>while (treeLeft() || treeRight()) {
@@ -327,7 +325,6 @@ Describe what each of the following loops does, and how many steps Kara takes.
       <td>?</td>
       <td>?</td>
     </tr>
-    
     <tr>
       <td>d.</td>
       <td><pre>if (treeLeft()) {
@@ -338,7 +335,6 @@ Describe what each of the following loops does, and how many steps Kara takes.
       <td>?</td>
       <td>?</td>
     </tr>
-
     <tr>
       <td>e.</td>
       <td><pre>while (!treeFront) {
@@ -349,7 +345,6 @@ Describe what each of the following loops does, and how many steps Kara takes.
       <td>?</td>
       <td>?</td>
     </tr>
-    
   </tbody>
 </table>
 

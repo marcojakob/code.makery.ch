@@ -35,16 +35,16 @@ Es gibt zahlreiche Dienste, wo wir Speicherplatz auf einem Server mieten können
 1. Melden Sie sich an auf der [Netlify Webseite](https://www.netlify.com/). Klicken Sie dazu auf *Sign Up* und anschliessend auf *Email*. Anschliessen geben Sie Ihre E-Mail-Adresse und ein Passwort ein.
 
 2. Sobald Sie angemeldet sind, können Sie einfach Ihren gesamten Webseitenordner (Ihren Portfolio-Ordner) in den dafür vorgesehenen Bereich ziehen:
-<p>![Netlify Drag and Drop](netlify-drag-and-drop.png)</p>
+![Netlify Drag and Drop](netlify-drag-and-drop.png)
 
 3. Kaum zu glauben, aber das war's schon. Sobald die Seite hochgeladen ist, wurde für Sie eine URL generiert, unter welcher Ihre Seite aufgerufen werden kann. Klicken Sie auf diese URL und überprüfen Sie, ob die Seite korrekt angezeigt wird.
-<p>![Netlify Generated Website](netlify-generated-website.png)</p>
+![Netlify Generated Website](netlify-generated-website.png)
 
 4. Um Ihre URL etwas zu verkürzen gehen Sie zu **Site settings**, klicken auf **Change site name** und geben einen beliebigen Namen eingeben.
-<p>![Netlify Change Site Name](netlify-change-site-name.png)</p>
+![Netlify Change Site Name](netlify-change-site-name.png)
 
 5. **Für Updates:** Sobald Sie eine neue Version Ihrer Webseite veröffentlichen möchten, öffnen Sie das Menu **Deploys** und ziehen Sie den Ordner einfach erneut in das Feld mit dem Text **Drag and drop your site folder here**.
-<p>![Netlify Change Site Name](netlify-update-site.png)</p>
+![Netlify Change Site Name](netlify-update-site.png)
 
 
 #### Eigene Domain

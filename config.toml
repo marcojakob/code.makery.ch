@@ -15,9 +15,11 @@ defaultContentLanguage = "en"
   email = "info@makery.ch"
   analyticsId = "UA-34917397-3"
   disqusShortname = "codemakery"
-  googlePlus = "+MarcoJakob7"
   twitter = "codemakery"
   github = "https://github.com/marcojakob/code.makery.ch"
+
+[markup.goldmark.renderer]
+  unsafe = true
 
 [taxonomies]
   topic = "topics"

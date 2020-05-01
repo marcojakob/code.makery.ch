@@ -37,7 +37,7 @@ Es gibt zahlreiche Möglichkeiten, wie das Kanban Board weiterentwickelt werden 
 * Usw.
 
 <div class="alert alert-warning">
-  <strong>Bald geht's weiter:</strong> Für ein paar dieser Features werde ich in den nächsten Wochen Anleitungen entwickeln. Wenn Sie erfahren möchten, wenn neues Material zur Verfügung steht, melden Sie sich am besten für den <a href="https://tinyletter.com/codemakery" class="alert-link">Newsletter</a> an oder folgen mir auf <a href="https://twitter.com/codemakery" class="alert-link">Twitter</a> oder <a href="https://plus.google.com/+MarcoJakob7" class="alert-link">Google+</a>.
+  <strong>Bald geht's weiter:</strong> Für ein paar dieser Features werde ich in den nächsten Wochen Anleitungen entwickeln. Wenn Sie erfahren möchten, wenn neues Material zur Verfügung steht, melden Sie sich am besten für den <a href="https://tinyletter.com/codemakery" class="alert-link">Newsletter</a> an oder folgen mir auf <a href="https://twitter.com/codemakery" class="alert-link">Twitter</a>.
 </div>
 
 

@@ -68,20 +68,14 @@ Equipped with editor and browser, let's create the first HTML document for our w
 
 2. Open VS Code.
 
-3. Open the **File** menu and select **Open Folder ...**. Browse for the folder you created and open it.
-<p>
+3. Open the **File** menu and select **Open Folder ...**. Browse for the folder you created and open it.    
 ![Open Folder](open-folder.png)
-</p>
 
 4. Right-click below the folder and select **New File**. Name the file `index.html`.
-<p>
 ![New File](new-file.png)
-</p>
 
 5. Now you have a blank text file named `index.html`.
-<p>
 ![index.html](new-index-file.png)
-</p>
 
 
 ### Why index.html?

@@ -175,22 +175,22 @@ Le tableau suivant montre les trois opérateurs logiques principaux en Java :
   </thead>
   <tbody>
     <tr>
-      <td>`&&`</td>
+      <td><code>&&</code></td>
       <td>et</td>
-      <td>`treeFront() && onLeaf()`</td>
-      <td>VRAI (true) seulement si les deux conditions sont vraies, ç.à d. si Kara fait face à un arbre **et** est sur une feuille.</td>
+      <td><code>treeFront() && onLeaf()</code></td>
+      <td>VRAI (true) seulement si les deux conditions sont vraies, ç.à d. si Kara fait face à un arbre <strong>et</strong> est sur une feuille.</td>
     </tr>
     <tr>
-      <td>`||`</td>
+      <td><code>||</code></td>
       <td>ou</td>
-      <td>`treeFront() || onLeaf()`</td>
-      <td>VRAI (true) si l'un **ou** l'autre **ou** les deux ex-pressions sont vraies.</td>
+      <td><code>treeFront() || onLeaf()</code></td>
+      <td>VRAI (true) si l'un <strong>ou</strong> l'autre <strong>ou</strong> les deux ex-pressions sont vraies.</td>
     </tr>
     <tr>
-      <td>`!`</td>
+      <td><code>!</code></td>
       <td>non</td>
-      <td>`!treeFront()`</td>
-      <td>Fait passer une expression de true à false et vice versa. Cette expression sera VRAI (true) si Kara **ne** fait **pas** not face à un arbre.</td>
+      <td><code>!treeFront()</code></td>
+      <td>Fait passer une expression de true à false et vice versa. Cette expression sera VRAI (true) si Kara <strong>ne</strong> fait <strong>pas</strong> not face à un arbre.</td>
     </tr>
   </tbody>
 </table>
@@ -308,7 +308,6 @@ Descrivez ce que chacune des boucles suivantes fait, et combien de pas fait Kara
       <td>Se déplace tant qu'il y a un arbre sur sa gauche.</td>
       <td>4</td>
     </tr>
-    
     <tr>
       <td>b.</td>
       <td><pre>while (treeRight()) {
@@ -317,7 +316,6 @@ Descrivez ce que chacune des boucles suivantes fait, et combien de pas fait Kara
       <td>?</td>
       <td>?</td>
     </tr>
-    
     <tr>
       <td>c.</td>
       <td><pre>while (treeLeft() || treeRight()) {
@@ -326,7 +324,6 @@ Descrivez ce que chacune des boucles suivantes fait, et combien de pas fait Kara
       <td>?</td>
       <td>?</td>
     </tr>
-    
     <tr>
       <td>d.</td>
       <td><pre>if (treeLeft()) {
@@ -337,7 +334,6 @@ Descrivez ce que chacune des boucles suivantes fait, et combien de pas fait Kara
       <td>?</td>
       <td>?</td>
     </tr>
-
     <tr>
       <td>e.</td>
       <td><pre>while (!treeFront) {
@@ -348,7 +344,6 @@ Descrivez ce que chacune des boucles suivantes fait, et combien de pas fait Kara
       <td>?</td>
       <td>?</td>
     </tr>
-    
   </tbody>
 </table>
 

@@ -177,22 +177,22 @@ Die folgende Tabelle zeigt die drei wichtigsten logischen Operatoren in Java:
   </thead>
   <tbody>
     <tr>
-      <td>`&&`</td>
+      <td><code>&&</code></td>
       <td>und</td>
-      <td>`treeFront() && onLeaf()`</td>
-      <td>Ist erfüllt (true), wenn beide Aussagen erfüllt sind, d.h. wenn Kara vor einem Baum **und** auf einem Blatt steht.</td>
+      <td><code>treeFront() && onLeaf()</code></td>
+      <td>Ist erfüllt (true), wenn beide Aussagen erfüllt sind, d.h. wenn Kara vor einem Baum <strong>und</strong> auf einem Blatt steht.</td>
     </tr>
     <tr>
-      <td>`||`</td>
+      <td><code>||</code></td>
       <td>oder</td>
-      <td>`treeFront() || onLeaf()`</td>
-      <td>Ist dann erfüllt (true), wenn entweder die eine **oder** die andere Aussage oder beide erfüllt sind.</td>
+      <td><code>treeFront() || onLeaf()</code></td>
+      <td>Ist dann erfüllt (true), wenn entweder die eine <strong>oder</strong> die andere Aussage oder beide erfüllt sind.</td>
     </tr>
     <tr>
-      <td>`!`</td>
+      <td><code>!</code></td>
       <td>nicht</td>
-      <td>`!treeFront()`</td>
-      <td>Ändert einen Ausdruck von true in false und umgekehrt. Diese Aussage wäre also dann erfüllt (true), wenn Kara **nicht** vor einem Baum steht.</td>
+      <td><code>!treeFront()</code></td>
+      <td>Ändert einen Ausdruck von true in false und umgekehrt. Diese Aussage wäre also dann erfüllt (true), wenn Kara <strong>nicht</strong> vor einem Baum steht.</td>
     </tr>
   </tbody>
 </table>
@@ -311,7 +311,6 @@ Beschreiben Sie, was die folgenden Schleifen bewirken und wie viele Schritte Kar
       <td>Solange links ein Baum steht, mache einen Schritt.</td>
       <td>4</td>
     </tr>
-    
     <tr>
       <td>b.</td>
       <td><pre>while (treeRight()) {
@@ -320,7 +319,6 @@ Beschreiben Sie, was die folgenden Schleifen bewirken und wie viele Schritte Kar
       <td>?</td>
       <td>?</td>
     </tr>
-    
     <tr>
       <td>c.</td>
       <td><pre>while (treeLeft() || treeRight()) {
@@ -329,7 +327,6 @@ Beschreiben Sie, was die folgenden Schleifen bewirken und wie viele Schritte Kar
       <td>?</td>
       <td>?</td>
     </tr>
-    
     <tr>
       <td>d.</td>
       <td><pre>if (treeLeft()) {
@@ -340,7 +337,6 @@ Beschreiben Sie, was die folgenden Schleifen bewirken und wie viele Schritte Kar
       <td>?</td>
       <td>?</td>
     </tr>
-
     <tr>
       <td>e.</td>
       <td><pre>while (!treeFront) {
@@ -351,7 +347,6 @@ Beschreiben Sie, was die folgenden Schleifen bewirken und wie viele Schritte Kar
       <td>?</td>
       <td>?</td>
     </tr>
-    
   </tbody>
 </table>
 

@@ -84,31 +84,31 @@ These data types are called "elementary" because they are the basic data types i
   </thead>
   <tbody>
     <tr>
-      <td>`byte`</td>
+      <td><code>byte</code></td>
       <td>-128</td>
       <td>127</td>
       <td>8 bit</td>
     </tr>
     <tr>
-      <td>`short`</td>
+      <td><code>short</code></td>
       <td>-32'768</td>
       <td>32'767</td>
       <td>16 bit</td>
     </tr>
     <tr>
-      <td>`int`</td>
+      <td><code>int</code></td>
       <td>-2'147'483'648</td>
       <td>2'147'483'647</td>
       <td>32 bit</td>
     </tr>
     <tr>
-      <td>`long`</td>
+      <td><code>long</code></td>
       <td>-9'223'372'036'854'775'808</td>
       <td>9'223'372'036'854'775'807</td>
       <td>64 bit</td>
     </tr>
     <tr>
-      <td>`char`</td>
+      <td><code>char</code></td>
       <td>0</td>
       <td>65'635</td>
       <td>16 bit</td>
@@ -130,13 +130,13 @@ These data types are called "elementary" because they are the basic data types i
   </thead>
   <tbody>
     <tr>
-      <td>`float`</td>
+      <td><code>float</code></td>
       <td>-3.4 \* 10<sup>38</sup></td>
       <td>3.4 \* 10<sup>38</td>
       <td>32 bit</td>
     </tr>
     <tr>
-      <td>`double`</td>
+      <td><code>double</code></td>
       <td>-1.7 \* 10<sup>308</sup></td>
       <td>1.7 \* 10<sup>308</sup></td>
       <td>64 bit</td>
@@ -157,8 +157,8 @@ These data types are called "elementary" because they are the basic data types i
   </thead>
   <tbody>
     <tr>
-      <td>`boolean`</td>
-      <td>`true` or `false`</td>
+      <td><code>boolean</code></td>
+      <td><code>true</code> or <code>false</code></td>
       <td>1 bit</td>
     </tr>
   </tbody>
@@ -181,34 +181,34 @@ The following operators can be used for comparisons in Java. The result is alway
   </thead>
   <tbody>
     <tr>
-      <td>`==`</td>
+      <td><code>==</code></td>
       <td>equal</td>
-      <td>`k == 2`</td>
+      <td><code>k == 2</code></td>
     </tr>
     <tr>
-      <td>`!=`</td>
+      <td><code>!=</code></td>
       <td>not equal</td>
-      <td>`k < 12`</td>
+      <td><code>k < 12</code></td>
     </tr>
     <tr>
-      <td>`>`</td>
+      <td><code>></code></td>
       <td>greater than</td>
-      <td>`k > 67`</td>
+      <td><code>k > 67</code></td>
     </tr>
     <tr>
-      <td>`<`</td>
+      <td><code><</code></td>
       <td>less than</td>
-      <td>`k < 12`</td>
+      <td><code>k < 12</code></td>
     </tr>
     <tr>
-      <td>`>=`</td>
+      <td><code>>=</code></td>
       <td>greater than or equal to</td>
-      <td>`k >= 45`</td>
+      <td><code>k >= 45</code></td>
     </tr>
     <tr>
-      <td>`<=`</td>
+      <td><code><=</code></td>
       <td>less than or equal to</td>
-      <td>`k <= 23`</td>
+      <td><code>k <= 23</code></td>
     </tr>
   </tbody>
 </table>
@@ -233,29 +233,29 @@ To calculate we use the following arithmetic operators:
   </thead>
   <tbody>
     <tr>
-      <td>`+`</td>
+      <td><code>+</code></td>
       <td>Add</td>
-      <td>`h = value + 34`</td>
+      <td><code>h = value + 34</code></td>
     </tr>
     <tr>
-      <td>`-`</td>
+      <td><code>-</code></td>
       <td>Subtract</td>
-      <td>`y = 3.4 – t`</td>
+      <td><code>y = 3.4 – t</code></td>
     </tr>
     <tr>
-      <td>`*`</td>
+      <td><code>*</code></td>
       <td>Multiply</td>
-      <td>`z = h * 3.56`</td>
+      <td><code>z = h * 3.56</code></td>
     </tr>
     <tr>
-      <td>`/`</td>
+      <td><code>/</code></td>
       <td>Divide</td>
-      <td>`d = m / v`</td>
+      <td><code>d = m / v</code></td>
     </tr>
     <tr>
-      <td>`%`</td>
+      <td><code>%</code></td>
       <td>Get the remainder of an integer division (modulo)</td>
-      <td>`count = w % 2`</td>
+      <td><code>count = w % 2</code></td>
     </tr>
   </tbody>
 </table>

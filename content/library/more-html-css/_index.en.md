@@ -34,7 +34,6 @@ The parts in this series do not have a particular order. Just look at the topics
 &rarr; A good place to start is the [Website Layout with Bootstrap](/library/more-html-css/website-layout/).
 
 
-
 <!-- MORE IDEAS
 
 

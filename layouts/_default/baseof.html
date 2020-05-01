@@ -73,10 +73,6 @@
     <meta property="og:image" content="{{ .Site.BaseURL }}images/logo-164x164.png" />
     {{ end }}
 
-    {{ if .Site.Params.googlePlus }}
-    <link rel="author" href="https://plus.google.com/{{ .Site.Params.googlePlus }}"/>
-    {{ end }}
-
     {{ partial "analytics_js.html" . }}
 
     {{ block "head_includes" . }}{{ end }}

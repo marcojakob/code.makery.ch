@@ -31,16 +31,16 @@ There are numerous services where you can rent server space. Such a service is c
 1. Sign up on the [Netlify website](https://www.netlify.com/). Click on *Sign Up* and then choose *Email*. Enter your email address and a password.
 
 2. Once you are logged in, you can simply drag your entire web folder (your Portfolio folder) in the provided space.
-<p>![Netlify Drag and Drop](netlify-drag-and-drop.png)</p>
+![Netlify Drag and Drop](netlify-drag-and-drop.png)
 
 3. Hard to believe, but that's it. Once the page has been uploaded a URL is generated for you which points to your site. Click this URL and check whether the page is displayed correctly.
-<p>![Netlify Generated Website](netlify-generated-website.png)</p>
+![Netlify Generated Website](netlify-generated-website.png)
 
 4. To shorten your URL you can open **Site settings** click on **Change site name** and enter an arbitrary name.
-<p>![Netlify Change Site Name](netlify-change-site-name.png)</p>
+![Netlify Change Site Name](netlify-change-site-name.png)
 
 5. **For Updates:** When you want to release a new version of your website open the **Deploys** menu and simply drag the folder into the box with the text **Drag and Drop your site folder here**.
-<p>![Netlify Change Site Name](netlify-update-site.png)</p>
+![Netlify Change Site Name](netlify-update-site.png)
 
 
 #### Your Own Domain Name

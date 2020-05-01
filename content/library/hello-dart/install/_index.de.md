@@ -94,9 +94,7 @@ Zum Programmieren brauchen wir...
 2. Entpacken Sie die Zip-Datei.
 3. Im Dart Editor: Klicken Sie auf *File* | *Open Existing Folder...*. Wählen Sie dort den Ordner `hello_dart_scenarios` aus, den Sie vorher entpackt haben.
 4. Öffnen Sie im Unterordner `web/part1/scenario1.01` die Datei `my_player.dart` mit einem Doppelklick.   
-<p>
 ![My Player](my-player.png)
-</p>
 5. Klicken Sie auf das *Run*-Symbol ![Run](run.png).
 
 Jetzt sollte sich automatisch der Chromium Browser öffnen mit dem ersten Szenario:

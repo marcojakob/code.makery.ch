@@ -30,11 +30,11 @@ Seit langem bin ich auf der Suche nach Programmiersprachen und Programmiertools,
   </div>
   <div class="panel-body">
     <ol style="margin-bottom: 0;">
-      <li>Macht **Programmieranfänger glücklich**</li>
-      <li>Macht **professionelle Programmierer glücklich und produktiv**</li>
-      <li>Läuft auf **mobilen** Plattformen: Android, iOS, Windows Phone</li>
-      <li>Läuft auf dem **Desktop**: Windows, Mac OS, Linux</li>
-      <li>Hat **breite Einsatzmöglichkeiten**: Interaktive Spiele, Animationen, Business-Applikationen, Client-Server-Applikationen, etc.</li>
+      <li>Macht <strong>Programmieranfänger glücklich</strong></li>
+      <li>Macht <strong>professionelle Programmierer glücklich und produktiv</strong></li>
+      <li>Läuft auf <strong>mobilen</strong> Plattformen: Android, iOS, Windows Phone</li>
+      <li>Läuft auf dem <strong>Desktop</strong>: Windows, Mac OS, Linux</li>
+      <li>Hat <strong>breite Einsatzmöglichkeiten</strong>: Interaktive Spiele, Animationen, Business-Applikationen, Client-Server-Applikationen, etc.</li>
     </ol>
   </div>
 </div>

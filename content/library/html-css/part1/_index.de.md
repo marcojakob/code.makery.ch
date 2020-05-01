@@ -75,13 +75,13 @@ Ausgerüstet mit Editor und Browser erstellen wir das erste HTML Dokument für u
 2. Öffnen Sie VS Code.
 
 3. Öffnen Sie das Menu *File* und wählen Sie ***Open Folder...***. Suchen Sie dort den vorhin erstellten `Portfolio` Ordner und öffnen Sie diesen.
-<p>![Ordner öffnen](open-folder.png)</p>
+![Ordner öffnen](open-folder.png)
 
 4. Klicken Sie unterhalb des Ordners *Portfolio* mit der *rechten Maustaste* und wählen Sie *New File*. Geben Sie der Datei den Namen `index.html`.
-<p>![Neue Datei](new-file.png)</p>
+![Neue Datei](new-file.png)
 
 5. Nun haben wir eine ganz einfache, leere Textdatei namens `index.html`.
-<p>![index.html](new-index-file.png)</p>
+![index.html](new-index-file.png)
 
 
 ### Warum index.html?

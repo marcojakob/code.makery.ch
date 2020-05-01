@@ -168,15 +168,15 @@ HTML5 is here to stay. But for a business application of significant size you wi
   </tr>
   <tr>
     <td>JavaScript MVC Framework</td>
-    <td>[angular.js](https://angularjs.org/) (Google), [ember.js](http://emberjs.com/), [backbone.js](http://backbonejs.org/), [react.js](http://facebook.github.io/react/) (Facebook), etc. </td>
+    <td><a href="https://angularjs.org/">angular.js</a> (Google), <a href="https://reactjs.org/">react.js</a>) (Facebook), etc. </td>
   </tr>
   <tr>
     <td>Languages to improve or replace JavaScript</td>
-    <td>[CoffeeScript](http://coffeescript.org/), [TypeScript](http://www.typescriptlang.org/) (Microsoft), [Dart](https://www.dartlang.org/) (Google), etc.</td>
+    <td><a href="https://www.typescriptlang.org/">TypeScript</a> (Microsoft), <a href="https://www.dartlang.org/">Dart</a> (Google), etc.</td>
   </tr>
   <tr>
     <td>CSS frameworks:</td>
-    <td>[Less](http://lesscss.org/), [Sass](http://sass-lang.com/), etc.</td>
+    <td><a href="http://lesscss.org/">Less</a>, <a href="http://sass-lang.com/">Sass</a>, etc.</td>
   </tr>
   <tr>
     <td>UI Components</td>
