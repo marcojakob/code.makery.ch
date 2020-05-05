@@ -138,7 +138,7 @@ A game character, called `Player` has the following actions and sensors that he/
 
 #### Installation
 
-First you need to install the Dart Editor and the `Hello Dart` scenarios. It's described in those [installation instructions](/library/hello-dart/install/).
+First you need to install Dart and the `Hello Dart` scenarios. It's described in those [installation instructions](/library/hello-dart/install/).
 
 
 #### Background Infos
