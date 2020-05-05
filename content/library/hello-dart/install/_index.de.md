@@ -1,7 +1,8 @@
 +++
 title = "Installation"
 date = 2015-01-26
-description = "Dart Editor installieren. Die Hello Dart Szenarien laden und ein erstes Dart Programm starten."
+updated = 2020-05-05
+description = "Dart und Visual Studio Code. Die Hello Dart Szenarien laden und ein erstes Dart Programm starten."
 image = "hello-dart.png"
 prettify = true
 comments = true
@@ -17,10 +18,13 @@ weight = 2
 [[sidebars]]
 header = "Links"
 [[sidebars.items]]
-text = "<i class=\"fa fa-fw fa-download\"></i> Dart Editor Download"
-link = "https://www.dartlang.org/tools/download.html"
+text = "<i class=\"fa fa-fw fa-external-link\"></i> Dart SDK"
+link = "https://dart.dev/tools/sdk/archive"
 [[sidebars.items]]
-text = "<i class=\"fa fa-fw fa-download\"></i> Hello Dart Szenarien"
+text = "<i class=\"fa fa-fw fa-external-link\"></i> Visual Studio Code"
+link = "https://code.visualstudio.com/"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-external-link\"></i> Hello Dart Szenarien"
 link = "https://github.com/marcojakob/hello-dart/releases"
 [[sidebars.items]]
 text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Seite als Word-Datei"
@@ -29,75 +33,69 @@ link = "/de/library/convert-web-page-to-word/"
 
 Zum Programmieren brauchen wir... 
 
-* den **Dart Editor** und 
-* die `Hello Dart`-Szenarien.
+* Dart SDK
+* Visual Studio Code Editor
+* `Hello Dart`-Szenarien
 
 
-## Dart Editor installieren
+## Dart installieren
 
-1. Laden Sie den [Dart Editor hier](https://www.dartlang.org/tools/download.html) herunter.
-2. Entpacken Sie das Zip mit dem Dart Editor auf Ihre Festplatte.
+![Dart SDK](dart-sdk-icon.png)
 
-<div class="alert alert-info">
-  <strong>Hinweis:</strong> Dart Editor benötigt Java in der Version 6 oder höher. Falls nötig, laden Sie die [Java Runtime](http://www.oracle.com/technetwork/java/javase/downloads/) herunter. Bei anderen Problemen mit der Installation, suchen Sie unter <a href="https://www.dartlang.org/tools/editor/troubleshoot.html" class="alert-link">Troubleshoot</a> nach einer Lösung.
-</div>
-
-
-### Was enthält die Installation?
-
-***
-
-<div class="row">
-  <div class="col-md-2">
-    <img src="dart-editor-icon.png" alt="Dart Editor">
-  </div>
-  <div class="col-md-7">
-    Dart Editor ist ein einfacher aber trotzdem mächtiger Editor. Damit können Dart-Projekte erstellt, editert und verwaltet werden. 
-  </div>
-</div>
-
-***
-
-<div class="row">
-  <div class="col-md-2">
-    <img src="chromium-icon.png" alt="Dartium">
-  </div>
-  <div class="col-md-7">
-    Dies ist eine spezielle Version des Chrome Web Browsers, genannt Dartium, welcher die Dart VM (virtual machine) enthält. Dart Programme können direkt in diesem Browser laufen. Der Dart Editor führt Projekte automatisch darin aus.
-  </div>
-</div>
-
-***
-
-<div class="row">
-  <div class="col-md-2">
-    <img src="dart-sdk-icon.png" alt="Dart SDK">
-  </div>
-  <div class="col-md-7">
-    Das Verzeichnis <strong>dart-sdk</strong> enthält das Dart Software Development Kit. Hier befinden sich die Dart Standard-Bibliotheken und Tools für die Kommandozeile.
-  </div>
-</div>
-
-***
+1. Gehe zur [Dart SDK Website](https://dart.dev/tools/sdk/archive).
+2. Unter `Stable channel` lade das Dart SDK als zip für dein Betriebssystem herunter.
+3. Entpacke das heruntergeladene Zip in den Ordner `C:\dart-sdk\` (auf Windows).
+4. Füge `C:\dart-sdk\bin` zu den [Umgebungsvariablen](https://www.computerhope.com/issues/ch000549.htm) in deinen Systemeinsteillungen hinzu.
 
 
-## Dart Editor starten
+## Visual Studio Code installieren
 
-![Dart Editor Executable](dart-logo-21.png) Starten Sie den Dart Editor mit einem Doppelklick auf die ausführbare Datei im Installationsordner.
+<a href="https://code.visualstudio.com/" target="_blank">![VS Code Editor Logo](vs-code-logo.png)
+</a>
 
-![Dart Editor](dart-editor.png)
+Gehe zur [Visual Studio Code](https://code.visualstudio.com/) Website und installiere es. Visual Studio Code wird unser Programmiereditor sein.
+
+
+### Dart Extension installieren
+
+In Visual Studio Code öffne das "extensions" Menu.
+
+![Extensions](extensions.png)
+
+Installiere nun die Dart "extension". Dies macht den Code Editor parat für die Dart Sparche.
+
+![Dart Extension](extensions-dart.png)
 
 
 ## `Hello Dart` Szenarien öffnen
 
-1. Laden Sie unter [Hello Dart-Releases](https://github.com/marcojakob/hello-dart/releases) die Zip-Datei `hello_dart_scenarios.zip` herunter (nehmen Sie die neuste Version).  
-2. Entpacken Sie die Zip-Datei.
-3. Im Dart Editor: Klicken Sie auf *File* | *Open Existing Folder...*. Wählen Sie dort den Ordner `hello_dart_scenarios` aus, den Sie vorher entpackt haben.
-4. Öffnen Sie im Unterordner `web/part1/scenario1.01` die Datei `my_player.dart` mit einem Doppelklick.   
-![My Player](my-player.png)
-5. Klicken Sie auf das *Run*-Symbol ![Run](run.png).
+1. Lade die Zip-Datei von [Hello Dart Releases](https://github.com/marcojakob/hello-dart/releases) herunter (achte darauf, die neuste Version zu nehmen).  
+2. Entpacke das Zip auf deinem Computer.
+3. In Visual Studio Code: Klicke auf **File | Open Folder...**. Wähle den `hello-dart` Ordner, den du soeben entpackt hast.
+4. Rechtsklick auf die Datei `pubspec.yaml` und dann `Get Packages`.   
+![Get Packages](get-packages.png)
 
-Jetzt sollte sich automatisch der Chromium Browser öffnen mit dem ersten Szenario:
+Dies wird alle Abhängikeiten herunterladen, die unser Programm braucht.
+
+## Web Server installieren
+
+Wir brauchen einen Web Server, genannt [webdev](https://dart.dev/tools/webdev), um unsere Dart-Programme zu starten.
+
+Öffne das Terminal unter dem Menu **View | Terminal**.
+
+Gib den Befehl `pub global activate webdev` ein und drücke Enter.
+
+![Install Webdev](terminal-install-webdev.png)
+
+##  Web Server starten
+
+Gib nun `webdev serve` im Terminal ein.
+
+![Serve Webdev](terminal-start-webdev.png)
+
+Dies wird den Web Server lokal starten. Du solltest eine lokale Web-Adresse sehen (beginnt mit http://127....). Nutze Ctrl+click auf diese URL, um den Browser zu öffnen (am besten Chrome verwenden).
+
+Im Browser solltest du eine Liste von Szenarien sehen. Wenn du das erste Szenario öffnest, so sollte so was in dieser Art erscheinen:
 
 ![First Scenario](first-scenario.png)
 

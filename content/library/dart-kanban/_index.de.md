@@ -35,7 +35,7 @@ In diesem Tutorial programmieren wir ein [Kanban Board](http://de.wikipedia.org/
   <strong>Was lernen wir?</strong>
 
   <ul>
-    <li>Dart Editor installieren.</li>
+    <li>Visual Studio Code installieren.</li>
     <li>Eine neue Webapplikation erstellen.</li>
     <li>Dart und HTML verknüpfen.</li>
     <li>HTML-Elemente hinzufügen.</li>
@@ -56,6 +56,6 @@ In diesem Tutorial programmieren wir ein [Kanban Board](http://de.wikipedia.org/
 
 ## Los geht's
 
-Als erstes [installieren wir den Dart Editor](/library/dart-kanban/de/install/). Falls Sie dies bereits gemacht haben, können Sie gleich beginnen mit [Teil 1: Webapp erstellen](/library/dart-kanban/de/part1).
+Als erstes [installieren wir Dart und Visual Studio Code](/library/dart-kanban/de/install/). Falls Sie dies bereits gemacht haben, können Sie gleich beginnen mit [Teil 1: Webapp erstellen](/library/dart-kanban/de/part1).
 
 Viel Spass!

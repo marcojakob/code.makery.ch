@@ -72,9 +72,7 @@ Dart ist eine **objektorientierte Sprache**, welche sich sehr gut für den Unter
 
 Fast genauso wichtig wie die Programmiersprache selbst ist das, was rund um die Sprache zur Verfügung steht:
 
-**Dart Editor** ist eine komfortable Entwicklungsumgebung für Dart. Der Editor enthält professionelle Programmierhilfen wie Code-Vervollständigung, Umbenennen von Variablen und Debugging. Trotzdem ist der Dart Editor sehr einfach und übersichtlich gehalten, d.h. er enthält keine unnötigen Elemente, die Anfänger abschrecken könnten.
-
-Der Dart Editor läuft *ohne Installation* auf Windows, Linux und Mac. Da keine Installation nötig ist, kann er zum Beispiel auch von einem USB-Stick gestartet werden.
+**Visual Studio Code** ist eine komfortable Entwicklungsumgebung für Dart. Der Editor enthält professionelle Programmierhilfen wie Code-Vervollständigung, Umbenennen von Variablen und Debugging. Trotzdem ist der Visual Studio Code sehr einfach und übersichtlich gehalten, d.h. er enthält keine unnötigen Elemente, die Anfänger abschrecken könnten.
 
 Viele **nützliche Bibliotheken** sind bei Dart schon eingebaut. Zum Beispiel für mathematische Berechnungen, für Interaktionen mit HTML, zum Speichern in Dateien und Datenbanken, für Kryptografie etc. Zusätzliche Bibliotheken werden nach Bedarf automatisch von einem zentralen Server heruntergeladen.
 
@@ -145,7 +143,7 @@ main() {
 }
 </pre>
 
-**Kommentar.** Typen von Variablen, Parametern und Rückgabewerten können optional angegeben werden. Man könnte also bei *var number* den Typ genauer angeben und *int number* schreiben. Damit würde man vom Dart Editor gewarnt, wenn man etwas anderes als einen Integer in diese Variable speichern möchte. Deshalb ist es oft sinnvoll, den Typ anzugeben. Für eine Einführung in die Thematik der Variablen ist es aber praktisch, wenn man zuerst ohne Typen arbeiten kann. Diese Möglichkeit hat man bei den meisten Programmiersprachen nicht.
+**Kommentar.** Typen von Variablen, Parametern und Rückgabewerten können optional angegeben werden. Man könnte also bei *var number* den Typ genauer angeben und *int number* schreiben. Damit würde man vom Editor gewarnt, wenn man etwas anderes als einen Integer in diese Variable speichern möchte. Deshalb ist es oft sinnvoll, den Typ anzugeben. Für eine Einführung in die Thematik der Variablen ist es aber praktisch, wenn man zuerst ohne Typen arbeiten kann. Diese Möglichkeit hat man bei den meisten Programmiersprachen nicht.
 
 
 ### Integer

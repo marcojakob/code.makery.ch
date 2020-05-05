@@ -1,8 +1,9 @@
 +++
-title = "Dart Editor installieren"
+title = "Dart installieren"
 date = 2015-03-23
+updated = 2020-05-05
 image = "dart-editor.png"
-description = "Dart Editor installieren und starten. Was enthält die Installation?"
+description = "Dart installieren und starten. Was enthält die Installation?"
 prettify = false
 comments = true
 commentsIdentifier = "/library/dart-kanban/de/install/"
@@ -10,7 +11,7 @@ aliases = [
   "/library/dart-kanban/de/install/" 
 ]
 
-sidebarName = "<i class=\"fa fa-fw fa-cog\"></i> Dart Editor installieren"
+sidebarName = "<i class=\"fa fa-fw fa-cog\"></i> Dart installieren"
 pagingName = "<i class=\"fa fa-fw fa-cog\"></i>"
 weight = 1
 
@@ -22,59 +23,50 @@ text = "<i class=\"fa fa-fw fa-github-alt\"></i> Beispielcode auf GitHub"
 link = "https://github.com/marcojakob/tutorial-dart-kanban"
 +++
 
-*Falls Sie den Dart Editor bereits installiert haben, können Sie diesen Teil überspringen.*
+*Falls Sie den Dart bereits installiert haben, können Sie diesen Teil überspringen.*
 
 
-## Dart Editor herunterladen
+## Dart installieren
 
-1. Laden Sie den [Dart Editor hier](https://www.dartlang.org/tools/download.html) herunter.
-2. Entpacken Sie das Zip mit dem Dart Editor auf Ihre Festplatte.
+![Dart SDK](dart-sdk-icon.png)
 
-<div class="alert alert-info">
-  <strong>Hinweis:</strong> Dart Editor benötigt Java in der Version 6 oder höher. Falls Sie noch keine Java Runtime installiert haben, laden Sie diese herunter und installieren Sie sie. Bei anderen Problemen mit der Installation, suchen Sie unter <a href="https://www.dartlang.org/tools/editor/troubleshoot.html" class="alert-link">Troubleshoot</a> nach einer Lösung.
-</div>
+1. Gehe zur [Dart SDK Website](https://dart.dev/tools/sdk/archive).
+2. Unter `Stable channel` lade das Dart SDK als zip für dein Betriebssystem herunter.
+3. Entpacke das heruntergeladene Zip in den Ordner `C:\dart-sdk\` (auf Windows).
+4. Füge `C:\dart-sdk\bin` zu den [Umgebungsvariablen](https://www.computerhope.com/issues/ch000549.htm) in deinen Systemeinsteillungen hinzu.
 
+## Visual Studio Code installieren
 
-### Was enthält die Installation?
+<a href="https://code.visualstudio.com/" target="_blank">![VS Code Editor Logo](vs-code-logo.png)
+</a>
 
-***
-
-<div class="row">
-  <div class="col-md-2">
-    <img src="dart-editor-icon.png" alt="Dart Editor">
-  </div>
-  <div class="col-md-7">
-    Dart Editor ist ein einfacher aber trotzdem mächtiger Editor. Damit können Dart-Projekte erstellt, editert und verwaltet werden. 
-  </div>
-</div>
-
-***
-
-<div class="row">
-  <div class="col-md-2">
-    <img src="chromium-icon.png" alt="Chromium">
-  </div>
-  <div class="col-md-7">
-    Dies ist eine spezielle Version des Chrome Web Browsers, genannt Dartium, welcher die Dart VM (virtual machine) enthält. Dart Programme können direkt in diesem Browser laufen. Der Dart Editor führt Projekte automatisch darin aus.
-  </div>
-</div>
-
-***
-
-<div class="row">
-  <div class="col-md-2">
-    <img src="dart-sdk-icon.png" alt="Dart SDK">
-  </div>
-  <div class="col-md-7">
-    Das Verzeichnis <strong>dart-sdk</strong> enthält das Dart Software Development Kit. Hier befinden sich die Dart Standard-Bibliotheken und Tools für die Kommandozeile.
-  </div>
-</div>
-
-***
+Gehe zur [Visual Studio Code](https://code.visualstudio.com/) Website und installiere es. Visual Studio Code wird unser Programmiereditor sein.
 
 
-## Dart Editor starten
+### Dart Extension installieren
 
-![Dart Editor Executable](dart-logo-21.png) Starten Sie den Dart Editor mit einem Doppelklick auf die ausführbare Datei im Installationsordner.
+In Visual Studio Code öffne das "extensions" Menu.
 
-![Dart Editor](dart-editor.png)
+![Extensions](extensions.png)
+
+Installiere nun die Dart "extension". Dies macht den Code Editor parat für die Dart Sparche.
+
+![Dart Extension](extensions-dart.png)
+
+## Web Server installieren
+
+Wir brauchen einen Web Server, genannt [webdev](https://dart.dev/tools/webdev), um unsere Dart-Programme zu starten.
+
+Öffne das Terminal unter dem Menu **View | Terminal**.
+
+Gib den Befehl `pub global activate webdev` ein und drücke Enter.
+
+![Install Webdev](terminal-install-webdev.png)
+
+##  Web Server starten
+
+Gib nun `webdev serve` im Terminal ein.
+
+![Serve Webdev](terminal-start-webdev.png)
+
+Dies wird den Web Server lokal starten. Du solltest eine lokale Web-Adresse sehen (beginnt mit http://127....). Nutze Ctrl+click auf diese URL, um den Browser zu öffnen (am besten Chrome verwenden).

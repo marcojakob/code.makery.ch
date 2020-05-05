@@ -49,7 +49,7 @@ main() {
   character = 'catgirl';
   field = 'stone';
 
-  createWorld('scenario.txt', new MyPlayer());
+  createWorld('scenario.txt', MyPlayer());
 }
 </pre>
 
@@ -99,7 +99,7 @@ class MyPlayer extends Player {
 
 #### Explanations
 
-The **comments** in the source code have been omitted (that is the text that is displayed in light blue in the Dart Editor).
+The **comments** in the source code have been omitted (that is the text that is displayed in green in the Editor).
 
 Comments in the source code are written for additional information. Comments are intended only for humans and are ignored by the computer. There are several ways to write comments in the source code:
 

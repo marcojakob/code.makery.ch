@@ -1,6 +1,7 @@
 +++
 title = "Hello Dart: Einführung in die Programmierung (Deutsch)"
 date = 2015-01-21
+updated = 2020-05-05
 description = "Hello Dart ist eine spielerische Einführung in die Programmierung. Lernen Sie die Grundlagen der Programmierung mit Dart."
 image = "hello-dart.png"
 prettify = false
@@ -23,10 +24,11 @@ Bisher war es kaum realistisch, als Programmieranfänger mobile oder webbasierte
 
 `Hello Dart` führt Sie schrittweise durch die Grundlagen der Programmierung. Es werden keine Programmierkenntnisse vorausgesetzt. Die spielerische Welt von `Hello Dart` veranschaulicht Ihre Programme. Bald werden Sie aber aus den engen Regeln dieser Welt ausbrechen wollen, was auch das Ziel ist. Nach der Einführung mit `Hello Dart` haben Sie eine gute Grundlage, um schon bald eigene Web-Programmierprojekte zu realisieren.
 
+<!--
 <div class="alert alert-info">
 Lesen Sie unter <a class="alert-link" href="/library/hello-dart/de/background/">Hintegrundinfos</a>, warum ich Dart im Moment als optimale Sprache für Web und Mobile Apps sehe, die sich sowohl für Einsteiger wie auch für professionelle Softwareentwickler eignet.
 </div>
-
+-->
 
 ## Die Welt
 
@@ -133,7 +135,7 @@ Ein Spielcharakter, genannt `Player`, hat folgende Möglichkeiten:
 
 #### Installation
 
-Als erstes sollten Sie den Dart Editor und die `Hello Dart`-Szenarien [installieren](/de/library/hello-dart/install/).
+Als erstes sollten Sie Dart und die `Hello Dart`-Szenarien [installieren](/de/library/hello-dart/install/).
 
 
 #### Hintergrundinfos

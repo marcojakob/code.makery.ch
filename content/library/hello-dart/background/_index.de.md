@@ -107,7 +107,7 @@ Neben clientseitigen Webapplikationen (z.B. interaktive Spiele und dymanische Bu
 
 Dart ist stark an die bekanntesten Programmiersprachen wie Java und C# angelehnt, ist aber konsistenter und eleganter. Das macht die Sprache einfach zu lernen für Umsteiger (Nr. 2) und viel einfacher für Programmieranfänger (Nr. 1).
 
-Fast genauso wichtig wie die Programmiersprache selbst ist das, was rund um die Sprache zur Verfügung steht. Auch hier ist Dart enorm durchdacht und kaum eine andere Sprache bietet so einfache Programmiertools: Komfortable aber einfache Entwicklungsumgebung (Dart Editor), keine komplizierte Installation, viele nützliche Bibliotheken, die nach bedarf automatisch vom Server heruntergeladen werden, etc.
+Fast genauso wichtig wie die Programmiersprache selbst ist das, was rund um die Sprache zur Verfügung steht. Auch hier ist Dart enorm durchdacht und kaum eine andere Sprache bietet so einfache Programmiertools: Komfortable aber einfache Entwicklungsumgebung, keine komplizierte Installation, viele nützliche Bibliotheken, die nach bedarf automatisch vom Server heruntergeladen werden, etc.
 
 Ganz einfach: Ich bin begeistert von Dart und ich denke, dass Dart noch viele Programmieranfänger und erfahrene Programmierer glücklich machen wird!
 

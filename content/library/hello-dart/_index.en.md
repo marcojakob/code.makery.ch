@@ -1,6 +1,7 @@
 +++
 title = "Hello Dart: Introduction to Programming"
 date = 2015-05-01
+updated = 2020-05-05
 description = "Hello Dart is a playful introduction to programming. Learn the basics of programming with the awesome Dart language."
 image = "hello-dart.png"
 comments = true

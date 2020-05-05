@@ -49,7 +49,7 @@ main() {
   character = 'catgirl';
   field = 'stone';
 
-  createWorld('scenario.txt', new MyPlayer());
+  createWorld('scenario.txt', MyPlayer());
 }
 </pre>
 

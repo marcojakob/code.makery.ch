@@ -1,7 +1,8 @@
 +++
 title = "Installation"
 date = 2015-05-01
-description = "Installing Dart Editor. Loading the Hello Dart scenarios and starting a first Dart program."
+updated = 2020-05-05
+description = "Installing Dart and Visual Studio Code. Loading the Hello Dart scenarios and starting a first Dart program."
 image = "hello-dart.png"
 prettify = true
 comments = true
@@ -13,10 +14,13 @@ weight = 2
 [[sidebars]]
 header = "Links"
 [[sidebars.items]]
-text = "<i class=\"fa fa-fw fa-download\"></i> Dart Editor Download"
-link = "https://www.dartlang.org/tools/download.html"
+text = "<i class=\"fa fa-fw fa-external-link\"></i> Dart SDK"
+link = "https://dart.dev/tools/sdk/archive"
 [[sidebars.items]]
-text = "<i class=\"fa fa-fw fa-download\"></i> Hello Dart Scenarios"
+text = "<i class=\"fa fa-fw fa-external-link\"></i> Visual Studio Code"
+link = "https://code.visualstudio.com/"
+[[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-external-link\"></i> Hello Dart Scenarios"
 link = "https://github.com/marcojakob/hello-dart/releases"
 [[sidebars.items]]
 text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Page as Word File"
@@ -25,75 +29,68 @@ link = "/library/convert-web-page-to-word/"
 
 To start programming we need...
 
-* the **Dart Editor** and
-* the `Hello Dart` scenarios.
+* Dart SDK
+* Visual Studio Code Editor
+* `Hello Dart` scenarios
 
 
-## Dart Editor Installation
+## Installing Dart SDK
 
-1. Download the [Dart Editor here](https://www.dartlang.org/tools/download.html).
-2. Unzip the downloaded files to your hard drive.
+![Dart SDK](dart-sdk-icon.png)
 
-<div class="alert alert-info">
-  <strong>Note:</strong> Dart Editor requires Java 6 or higher. [Download the JRE](http://www.oracle.com/technetwork/java/javase/downloads/), if needed. For other problems with the installation, see <a href="https://www.dartlang.org/tools/editor/troubleshoot.html" class="alert-link">Troubleshooting Dart Editor</a>.
-</div>
-
-
-### What's Included with Dart Editor?
-
-***
-
-<div class="row">
-  <div class="col-md-2">
-    <img src="dart-editor-icon.png" alt="Dart Editor">
-  </div>
-  <div class="col-md-7">
-    Dart Editor is a simple but powerful editor. You can conveniently create, edit, and manage Dart projects with it. 
-  </div>
-</div>
-
-***
-
-<div class="row">
-  <div class="col-md-2">
-    <img src="chromium-icon.png" alt="Dartium">
-  </div>
-  <div class="col-md-7">
-    A special version of Chromium that includes the Dart VM. You can use Dartium to test and debug your Dart web applications. The Dart Editor will automatically open Dartium when you run your projects.
-  </div>
-</div>
-
-***
-
-<div class="row">
-  <div class="col-md-2">
-    <img src="dart-sdk-icon.png" alt="Dart SDK">
-  </div>
-  <div class="col-md-7">
-    The directory <strong>dart-sdk</strong> contains the Dart VM, standard libraries, and command-line tools.
-  </div>
-</div>
-
-***
+1. Go to [Dart SDK Website](https://dart.dev/tools/sdk/archive).
+2. Under `Stable channel` download the Dart SDK as zip file for your operating system.
+3. Unzip the downloaded files to the folder `C:\dart-sdk\` (on Windows).
+4. Add `C:\dart-sdk\bin` to your systems [environment variables](https://www.computerhope.com/issues/ch000549.htm).
 
 
-## Starting Dart Editor
+## Installing Visual Studio Code
 
-![Dart Editor Executable](dart-logo-21.png) Start the Dart Editor by double-clicking the executable file in the installation folder.
+<a href="https://code.visualstudio.com/" target="_blank">![VS Code Editor Logo](vs-code-logo.png)
+</a>
 
-![Dart Editor](dart-editor.png)
+Go to the [Visual Studio Code](https://code.visualstudio.com/) website and install it. This will be our code editor.
+
+### Install Dart Extension
+
+In Visual Studio Code open the extensions menu.
+
+![Extensions](extensions.png)
+
+Then install the Dart extension. This will give us support for the Dart language in the code editor.
+
+![Dart Extension](extensions-dart.png)
 
 
-## Opening the `Hello Dart` Scenarios
+## Setup for `Hello Dart` Scenarios
 
-1. Download the the `hello_dart_scenarios.zip` file from [Hello Dart Releases](https://github.com/marcojakob/hello-dart/releases) (use the latest version).  
+1. Download the source code (zip) from [Hello Dart Releases](https://github.com/marcojakob/hello-dart/releases) (use the latest version).  
 2. Unzip the files to your computer.
-3. In Dart Editor: Click on **File | Open Existing Folder...**. Choose the `hello_dart_scenarios` folder that you have just unzipped.
-4. Use a double-click to open the file `my_player.dart` from the subfolder `web/part1/scenario1.01`.   
-![My Player](my-player.png)
-5. Click the *Run* button ![Run](run.png).
+3. In Visual Studio Code: Click on **File | Open Folder...**. Choose the `hello-dart` folder that you have just unzipped.
+4. Right-click the file `pubspec.yaml` and choose `Get Packages`.   
+![Get Packages](get-packages.png)
 
-The Chromium browser should now automatically open with the first scenario:
+This will download the packages that this program depends on.
+
+## Install Web Server
+
+We need a web server, called [webdev](https://dart.dev/tools/webdev), to be able to start our Dart programs. 
+
+Open the terminal in the menu with **View | Terminal**.
+
+Use the command `pub global activate webdev` and hit enter.
+
+![Install Webdev](terminal-install-webdev.png)
+
+## Start Web Server
+
+Now enter `webdev serve` in the terminal.
+
+![Serve Webdev](terminal-start-webdev.png)
+
+This will start the web server locally. You will see a local web address (starting with http://127....). Ctrl+click this URL to open it in a browser (preferably Chrome).
+
+In the browser you should see a list of scenarios. If you open the first scenario you should see something like this:
 
 ![First Scenario](first-scenario.png)
 

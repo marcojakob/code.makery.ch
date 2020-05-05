@@ -1,6 +1,7 @@
 +++
 title = "Teil 1: Erste Schritte"
 date = 2015-01-21
+updated = 2020-05-05
 description = "Die ersten Schritte im Programmieren mit Dart. Lernen Sie Klassen und Funktionen kennen und verstehen Sie, was die main-Funktion bewirkt."
 image = "around-tree.png"
 prettify = true
@@ -34,7 +35,7 @@ In diesem ersten Teil wagen wir unsere ersten Schritte im Programmieren.
 ### Voraussetzungen
 
 * Sie brauchen keine Vorkenntnisse im Programmieren, um mit `Hello Dart` zu starten!
-* Sie müssen den Dart Editor mit den `Hello Dart`-Szenarien installiert haben. Falls Sie das noch nicht gemacht haben, finden Sie hier eine [Installationsanleitung](/library/hello-dart/de/install/).
+* Sie müssen Dart mit den `Hello Dart`-Szenarien installiert haben. Falls Sie das noch nicht gemacht haben, finden Sie hier eine [Installationsanleitung](/library/hello-dart/de/install/).
 
 ***
 
@@ -88,7 +89,7 @@ main() {
   character = 'catgirl';
   field = 'stone';
   
-  createWorld('scenario.txt', new MyPlayer());
+  createWorld('scenario.txt', MyPlayer());
 }
 </pre>
 
