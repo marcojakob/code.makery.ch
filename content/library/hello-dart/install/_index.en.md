@@ -29,9 +29,9 @@ link = "/library/convert-web-page-to-word/"
 
 To start programming we need...
 
-* Dart SDK
-* Visual Studio Code Editor
-* `Hello Dart` scenarios
+- Dart SDK
+- Visual Studio Code Editor
+- `Hello Dart` scenarios
 
 
 ## Installing Dart SDK
@@ -40,8 +40,14 @@ To start programming we need...
 
 1. Go to [Dart SDK Website](https://dart.dev/tools/sdk/archive).
 2. Under `Stable channel` download the Dart SDK as zip file for your operating system.
-3. Unzip the downloaded files to the folder `C:\dart-sdk\` (on Windows).
-4. Add `C:\dart-sdk\bin` to your systems [environment variables](https://www.computerhope.com/issues/ch000549.htm).
+3. Unzip the downloaded files to a folder like `C:\dart-sdk\` (on Windows).
+
+### Configure PATH Environment Variable
+
+To run the Dart tools from command line we need to add two directories to the PATH [environment variables](https://www.computerhope.com/issues/ch000549.htm).
+
+- The `bin` subfolder where you put your Dart SDK: `C:\dart-sdk\bin` (or similar)
+- The [pub cache](https://dart.dev/tools/pub/cmd/pub-global#running-a-script-from-your-path) (Dart's package manager): `%APPDATA%\Pub\Cache\bin` (on Windows) or `$HOME/.pub-cache/bin` (on macOS)
 
 
 ## Installing Visual Studio Code
@@ -82,9 +88,12 @@ Use the command `pub global activate webdev` and hit enter.
 
 ![Install Webdev](terminal-install-webdev.png)
 
+
 ## Start Web Server
 
 Now enter `webdev serve` in the terminal.
+
+*Note: If you get an error message, your PATH variable might not be set up correctly (see above).*
 
 ![Serve Webdev](terminal-start-webdev.png)
 
