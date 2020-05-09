@@ -1,6 +1,7 @@
 +++
 title = "Part 3: Conditionals"
 date = 2015-05-01
+updated = 2020-05-05
 description = "Learn to control the program flow with conditional statements. Numerous Hello Dart exercises will help you understand it."
 image = "guard.png"
 prettify = true

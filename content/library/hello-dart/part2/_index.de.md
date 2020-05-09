@@ -1,6 +1,7 @@
 +++
 title = "Teil 2: Schleifen"
 date = 2015-01-21
+updated = 2020-05-05
 description = "Lernen Sie Schleifen programmieren mit Dart. Mit logischen Operatoren steuern wir den Programmablauf."
 image = "leaving-the-tunnel.png"
 prettify = true

@@ -1,6 +1,7 @@
 +++
 title = "Teil 4: Variablen"
 date = 2015-01-21
+updated = 2020-05-05
 description = "Mit Variablen können wir Daten speichern in Dart. Lernen Sie die verschiedenen Datentypen von Dart kennen."
 image = "chessboard.png"
 prettify = true

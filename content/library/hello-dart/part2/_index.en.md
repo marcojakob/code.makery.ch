@@ -1,6 +1,7 @@
 +++
 title = "Part 2: Loops"
 date = 2015-05-01
+updated = 2020-05-05
 description = "Learn to program loops with Dart. With logical operators we control the program flow."
 image = "leaving-the-tunnel.png"
 prettify = true

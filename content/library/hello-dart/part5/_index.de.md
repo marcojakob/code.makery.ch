@@ -1,6 +1,7 @@
 +++
 title = "Teil 5: Funktionen"
 date = 2015-01-21
+updated = 2020-05-05
 description = "Wir erweitern unsere Kenntnisse über Funktionen und Methoden in Dart. Wir lernen, wie wir Funktionen mit Parametern und Rückgabewerten verwenden können."
 image = "layered-cake.jpg"
 prettify = true

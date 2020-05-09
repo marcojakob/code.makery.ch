@@ -1,6 +1,7 @@
 +++
 title = "Teil 3: Bedingte Anweisungen"
 date = 2015-01-21
+updated = 2020-05-05
 description = "Lernen Sie den Programmablauf mit bedingten Anweisungen zu steuern. Zahlreiche Hello Dart Übungen helfen beim Verständnis."
 image = "guard.png"
 prettify = true
