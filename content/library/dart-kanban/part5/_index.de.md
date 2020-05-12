@@ -44,7 +44,7 @@ Dann dauert es ein paar Sekunden und ein neuer Ordner mit Namen `build` wird ers
 
 ![Build Ordner](build-folder.png)
 
-Im generierten `build`-Ordner befinden sich nun all die Dateien, die wir brauchen, um unser Programm auf einen Webserver zu stellen.
+Im generierten `build`-Ordner befinden sich nun all die Dateien, die wir brauchen, um unser Programm auf einen Webserver zu stellen. Für unser Programm reichen die vier Dateien `index.html`, `styles.css`, `favicon.ico` und `main.dart.js`. Letztere ist die Übersetzung unseres Dart Programmes in JavaScript.
 
 
 ## Veröffentlichen (Deployment)
