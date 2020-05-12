@@ -70,7 +70,7 @@ drawRectangle(21, 4);
 1. In previous programs it was rather cumbersome to always write the parentheses `()` for each function. Now it is clear that the previously used functions were merely cases where no parameter was passed.
 2. Inside the parentheses of a function declaration, the parameter (in this case `steps`) is specified with a type (here `int`). Multiple parameters are separated by commas as seen in this example:
 <pre class="prettyprint lang-java">
-public void drawRectangle(int width, int height)
+drawRectangle(int width, int height)
 </pre>
 3. When such a function is called, the values are copied into the variables (in this case into `width` and `height`).
 

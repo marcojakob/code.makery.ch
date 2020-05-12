@@ -75,7 +75,7 @@ drawRectangle(21, 4);
 1. Bei den bisherigen Programmen war es eher lästig, die Funktionen immer mit einem Klammerpaar `()` zu versehen. Nun wird klar, dass die bisher eingesetzten Funktionen nur Spezialfälle darstellten, bei denen kein Parameter übergeben wird.
 2. In der Klammer wird der Parameter (hier `steps`) mit einem Typ angegeben (hier `int`). Mehrere Parameter werden durch Kommas getrennt. Beispiel:    
 <pre class="prettyprint lang-java">
-public void drawRectangle(int width, int height)
+drawRectangle(int width, int height)
 </pre>
 3. Beim Aufruf einer Funktion wird der Wert in die Variable (hier `width` und `height`) kopiert.
 
