@@ -18,4 +18,6 @@ parts = 5
 weight = 4
 +++
 
-Sorry, this course hasn't been translated to English yet. It is only [available in German](/de/library/dart-kanban/).
+This course hasn't been translated to English yet. It is only [available in German](/de/library/dart-kanban/).
+
+<a href="/de/library/dart-kanban/" class="btn btn-warning"><i class="fa fa-hand-o-right"></i> Dart Kanban in German</a>
