@@ -1,7 +1,8 @@
 +++
 title = "Teil 1: Webapp erstellen"
 date = 2015-03-23
-image = "first-run.de.png"
+updated = 2020-05-05
+image = "first-run.png"
 description = "Eine erste Webapplikation mit Dart erstellen. Dart mit HTML verknüpfen und ein HTML-Element mit Dart verändern."
 prettify = true
 comments = true
@@ -23,67 +24,69 @@ link = "https://github.com/marcojakob/tutorial-dart-kanban"
 
 ## Eine Webapplikation erstellen
 
-Um eine Webapplikation zu erstellen öffnen Sie das Menu **File | New Project...**
+Erstelle zuerst einen Ordner auf deinem Computer für deine Webapplikation (z.B. `dart-kanban`).
 
-1. Schreiben Sie `dart_kanban` in das Feld für den *Project name*.
-2. Legen Sie im zweiten Feld den Ordner fest, wo Sie das Projekt speichern wollen.
-3. Wählen Sie **ubersimplewebapp** aus der Liste der Vorlagen aus.
-4. Klicken Sie auf **Finish**.
+Öffne den leeren Ordner in **Visual Studio Code**.
 
-Der Dart Editor erstellt daraufhin alle Dateien, die es für eine Webapplikation braucht. Wir schauen uns nun die wichtigsten Dateien an.
+Öffne das Terminal unter dem Menu **View | Terminal**.
+
+Gib den Befehl `stagehand web-simple` ein und drücke Enter.
+
+![Webapplikation erstellen](create-web-app.png)
+
+*Hinweis: Wenn du hier eine Fehlermeldung erhältst, dann kann es sein, dass deine Installation noch nicht korrekt ist (siehe [Dart Installation](/de/library/dart-install/)).*
+
+Dies erstellt alle Dateien, die es für eine Webapplikation braucht. Wir schauen uns nun die wichtigsten Dateien an.
 
 
 ### Die HTML-Datei
 
-Die Datei `web/index.html` ist die Datei, die vom Browser geladen wird und die Grundstruktur vorgibt. Ersetzen Sie den automatisch erstellen Code mit dem folgenden HTML.
+Die Datei `web/index.html` ist die Datei, die vom Browser geladen wird und die Grundstruktur vorgibt.
 
 <pre class="prettyprint lang-html">
 &lt;!DOCTYPE html>
+
 &lt;html>
   &lt;head>
-    &lt;meta charset="utf-8">
-    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
-    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    &lt;link rel="stylesheet" href="styles/main.css">
-    &lt;title>Kanban Board&lt;/title>
+    &lt;meta charset="utf-8" />
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <mark>&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"></mark>
+    <mark>&lt;title>Kanban Board&lt;/title></mark>
+    &lt;link rel="stylesheet" href="styles.css" />
+    &lt;link rel="icon" href="favicon.ico" />
+    &lt;script defer src="main.dart.js">&lt;/script>
   &lt;/head>
 
   &lt;body>
-    &lt;div class="container">
-      &lt;div class="page-header">
-        &lt;h1>Kanban Board &lt;small id="subtitle">&lt;/small>&lt;/h1>
-      &lt;/div>
-    &lt;/div>
-
-    &lt;script type="application/dart" src="main.dart">&lt;/script>
-    &lt;script src="packages/browser/dart.js">&lt;/script>
+    <mark>&lt;div class="container"></mark>
+    <mark>  &lt;div class="page-header mt-4 mb-4"></mark>
+    <mark>    &lt;h1>Kanban Board &lt;small id="subtitle">&lt;/small>&lt;/h1></mark>
+    <mark>  &lt;/div></mark>
+    <mark>&lt;/div></mark>
   &lt;/body>
 &lt;/html>
 </pre>
 
-Speichern Sie die Datei nach den Änderungen mit **File | Save** oder der Tastenkombination **Ctrl+S**.
+Wir ändern die HTML Datei etwas ab und machen folgende Ergänzungen (siehe Markierungen):
 
+- Zeile mit [Bootstrap](https://getbootstrap.com/).
+- Anpassung des Titels im Head.
+- Inhalt mit Container, Titel und Platzhalter für den Untertitel (werden wir später noch verwenden).
 
-#### Erklärungen zum HTML-Code
-
-Im `head` werden zwei Stylesheets eingefügt. Wir verwenden hier das [Bootstrap](http://holdirbootstrap.de/) CSS für ein attraktives Aussehen. Das zweite ist unser eigenes CSS.
-
-Der `body` enthält zwei Div-Container mit Bootstrap-Klassen und einen Titel und Untertitel. Der Untertitel hat eine ID `subtitle`, die wir später noch verwenden werden.
-
-Am Schluss befinden sich die zwei wichtigen `script`-Tags. Das erste gibt an, dass die `main.dart`-Datei geladen werden soll. Das zweite Script, `dart.js`, wird verwendet für Browser, die kein Dart unterstützten. Darin wird `main.dart` mit dem entsprechenden JavaScript ersetzt.
+Speichere die Datei nach den Änderungen mit der Tastenkombination <kbd>Ctrl+S</kbd>.
 
 
 ### Die Dart-Datei
 
-Öffnen Sie die Datei `main.dart` und ändern Sie den Code so ab, dass er wie folgt aussieht.
+Öffne die Datei `main.dart` und ändere den Code so ab, dass er wie folgt aussieht.
 
 <pre class="prettyprint lang-dart">
 import 'dart:html';
 
 void main() {
-  Element subtitle = querySelector('#subtitle');
-  subtitle.text = 'von Marco';
+  var subtitle = querySelector('#subtitle');
+  subtitle.text = 'by Marco';
 }
 </pre>
 
@@ -116,18 +119,23 @@ querySelector('#subtitle').text = 'von Marco';
 
 ## Die Webapplikation starten
 
-Selektieren Sie nun die `index.html` und klicken Sie auf den Run-Knopf ![Run](run.png). Der Dart Editor öffnet Dartium (spezieller Chrome Browser mit integrierter Dart VM) und lädt die `index.html`. Der Dart-Code sorgt dafür, dass der Untertitel gesetzt wird, wie im folgenden Screenshot.
+Öffne das Terminal (**View | Terminal**) und gib folgende Befehle ein:
 
-![Erster Start](first-run.de.png)
+`pub get` (ist nur das erste Mal nötig, um die benötigten Packages herunterzuladen).
 
+`webdev serve` (startet den Webserver)
 
-### Andere Browser
+![Starten](run.png)
 
-Wenn Sie die Webapplikation in einem anderen Browser laufen lassen möchten, dann kann der Dart-Code nach JavaScript übersetzt werden mittels dem [dart2js](https://www.dartlang.org/tools/dart2js/) Tool (ist bereits im Dart Editor enthalten). Dazu gibt es im Dart Editor ein praktisches Kontextmenu:
+Klicke nun auf mit Ctrl+Click auf die URL, damit diese im Browser geöffnet wird.
 
-![Run as JavaScript](run-as-javascript.png)
+Nun solltest du folgenden Bildschirm sehen. Der Dart-Code sorgt dafür, dass der Untertitel gesetzt wird, wie im folgenden Screenshot.
 
-Im letzten Teil dieser Serie wird noch genauer beschrieben, wie eine Dart-Applikation in JavaScript übersetzt und auf einem Webserver veröffentlicht werden kann.
+![Erster Start](first-run.png)
+
+<div class="alert alert-info">
+    <strong>Zum Beenden:</strong>  Um den Webserver zu beenden, nutze die Tastenkombination <kbd>Ctrl+C</kbd> im Terminal (geht für alle Prozesse, die im Terminal laufen).
+</div>
 
 
 ## Wie weiter?

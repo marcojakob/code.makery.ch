@@ -1,6 +1,7 @@
 +++
 title = "Teil 4: Elemente verschieben"
 date = 2015-03-23
+updated = 2020-05-05
 image = "dart-kanban.png"
 description = "Mit Dart HTML-Elemente verschieben und löschen. Auf Klick-Events reagieren."
 prettify = true
@@ -28,14 +29,13 @@ Im vorherigen Teil haben wir gelernt, wie wir neue Todos zu unserer Liste hinzuf
 
 Zum Verschieben unserer Todo-Elemente werden wir auf die Klick-Events reagieren, ähnlich wie beim Knopf. Zuerst brauchen wir eine weitere Funktion für solche Events.
 
-Fügen Sie folgende Funktion am Schluss der Dart-Datei ein:
+Füge folgende Funktion am Schluss der Dart-Datei ein:
 
 <pre class="prettyprint lang-dart">
 /// Verschiebt ein Todo-Element zur 'doing' oder 'done' Liste oder löscht es,
 /// wenn es in der letzten Liste angeklickt wird.
 void moveItem(Event e) {
-
-  // Holt das gecklickte Element aus dem Event.
+  // Das gecklickte Element aus dem Event holen.
   Element item = e.target;
 
   // Verschieben oder löschen, je nach dem in welcher Liste das Element ist.
@@ -65,21 +65,24 @@ Falls das Element in der letzten Liste geklickt wurde, entfernen wir es.
 
 Die Funktion haben wir parat. Jetzt müssen wir diese nur noch im richtigen Moment aufrufen.
 
-Fügen Sie in der `addTodoItem()`-Funktion eine Zeile hinzu:
+Füge in der `addTodoItem()`-Funktion eine Zeile hinzu:
 
 <pre class="prettyprint lang-dart">
+
 /// Fügt ein neues Todo-Element zur Liste hinzu.
 void addTodoItem(Event e) {
-  AnchorElement newTodo = new AnchorElement();
+  var newTodo = AnchorElement();
   newTodo.href = '#';
   newTodo.text = todoInput.value;
   newTodo.classes.add('list-group-item');
+  newTodo.classes.add('list-group-item-action');
 
+  // Klick-Event-Listener für das Todo-Element.
   <mark>newTodo.onClick.listen(moveItem);</mark>
 
   todoList.children.add(newTodo);
 
-  // Löscht das Textfeld.
+  // Das Textfeld löschen.
   todoInput.value = '';
 }
 </pre>
@@ -89,14 +92,14 @@ Mit dieser Zeile wird bei jedem neuen Todo-Element gleich ein Klick-Event-Listen
 
 ## Abschliessen und Testen
 
-Nun können Sie das Programm testen indem Sie ein neues Todo hinzufügen und dieses dann anklicken. Es sollte jeweils in die nächste Liste verschoben und am Schluss gelöscht werden.
+Nun kannst du das Programm testen indem du ein neues Todo hinzufügen und dieses dann anklickst. Es sollte jeweils in die nächste Liste verschoben und am Schluss gelöscht werden.
 
-Wahrscheinlich werden Sie feststellen, dass das Element, welches wir als Beispiel direkt in die HTML-Datei geschrieben haben, nicht auf Klicks reagiert. Der Grund ist, dass wir nur bei den neuen Elementen einen Klick-Event-Listener hinzufügen, jedoch nicht bei den bestehenden Elementen.
+Wahrscheinlich wirst du feststellen, dass das Element, welches wir als Beispiel direkt in die HTML-Datei geschrieben haben, nicht auf Klicks reagiert. Der Grund ist, dass wir nur bei den neuen Elementen einen Klick-Event-Listener hinzufügen, jedoch nicht beim bestehenden Element.
 
-Öffnen Sie nochmals die `index.html`-Datei und entfernen Sie das `<a>`-Element: 
+Öffnen nochmals die `index.html`-Datei und entfernen das `<a>`-Element: 
 
 <pre class="prettyprint lang-html">
-<del>&lt;a href="#" class="list-group-item">Mein erstes Todo&lt;/a></del>
+<del>&lt;a href="#" class="list-group-item list-group-item-action">Mein erstes Todo&lt;/a></del>
 </pre>
 
 

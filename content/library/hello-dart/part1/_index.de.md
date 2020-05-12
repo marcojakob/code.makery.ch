@@ -23,6 +23,9 @@ link = "/de/library/hello-dart/part1/solutions/"
 [[sidebars]]
 header = "Links"
 [[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-external-link\"></i> Hello Dart Szenarien"
+link = "https://github.com/marcojakob/hello-dart/releases"
+[[sidebars.items]]
 text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Seite als Word-Datei"
 link = "/de/library/convert-web-page-to-word/"
 +++
@@ -34,11 +37,34 @@ In diesem ersten Teil wagen wir unsere ersten Schritte im Programmieren.
 
 ### Voraussetzungen
 
-* Sie brauchen keine Vorkenntnisse im Programmieren, um mit `Hello Dart` zu starten!
-* Sie müssen Dart mit den `Hello Dart`-Szenarien installiert haben. Falls Sie das noch nicht gemacht haben, finden Sie hier eine [Installationsanleitung](/library/hello-dart/de/install/).
+* Du brauchst keine Vorkenntnisse im Programmieren, um mit `Hello Dart` zu starten!
+* Du musst Dart installiert haben. Falls du das noch nicht gemacht hast, findest du hier eine [Installationsanleitung](/de/library/dart-install/).
 
 ***
 
+## `Hello Dart` Szenarien öffnen
+
+1. Lade die Zip-Datei von [Hello Dart Releases](https://github.com/marcojakob/hello-dart/releases) herunter (achte darauf, die neuste Version zu nehmen).  
+2. Entpacke das Zip auf deinem Computer.
+3. In Visual Studio Code: Klicke auf **File | Open Folder...**. Wähle den `hello-dart` Ordner, den du soeben entpackt hast.
+4. Rechtsklick auf die Datei `pubspec.yaml` und dann `Get Packages`.   
+![Get Packages](get-packages.png)
+
+Dies wird alle Abhängikeiten herunterladen, die unser Programm braucht.
+
+##  Web Server starten
+
+Gib nun `webdev serve` im Terminal ein.
+
+*Hinweis: Wenn du hier eine Fehlermeldung erhältst, dann kann es sein, dass deine Installation noch nicht korrekt ist (siehe [Dart Installation](/de/library/dart-install/)).*
+
+![Serve Webdev](terminal-start-webdev.png)
+
+Dies wird den Web Server lokal starten. Du solltest eine lokale Web-Adresse sehen (beginnt mit http://127....). Nutze Ctrl+click auf diese URL, um den Browser zu öffnen (am besten Chrome verwenden).
+
+Im Browser solltest du eine Liste von Szenarien sehen. Wenn du das erste Szenario öffnest, so sollte so was in dieser Art erscheinen:
+
+![First Scenario](first-scenario.png)
 
 ## Die Klasse `MyPlayer`
 
@@ -55,7 +81,7 @@ Das Einzige, was im Moment in dieser Klasse steht ist `start()` und drei Anweisu
 
 Ändern Sie die `start()`-Funktion so ab, dass der Spieler zuerst einen Schritt macht, dann einen Stern legt und schliesslich wieder einen Schritt macht.
 
-In der [Einleitung](/library/hello-dart/de/) finden Sie alle Befehle, die ein Spieler ausführen kann.
+In der [Einleitung](/de/library/hello-dart/) finden Sie alle Befehle, die ein Spieler ausführen kann.
 
 <div class="alert alert-info">
   <strong>Beachten Sie:</strong> Nach jedem Befehl muss ein Strichpunkt <code>;</code> stehen. 

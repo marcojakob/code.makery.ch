@@ -21,7 +21,7 @@ link = "/de/library/html-css/"
 
 Diese Serie ist eine Sammlung von Anleitungen zu verschiedenen Themen rund um HTML & CSS.
 
-Die Anleitungen bauen direkt auf den Kenntnissen aus dem [HTML & CSS Tutorial](/library/html-css/de/) auf. 
+Die Anleitungen bauen direkt auf den Kenntnissen aus dem [HTML & CSS Tutorial](/de/library/html-css/) auf. 
 
 <a href="/library/html-css/de/" class="btn btn-warning"><i class="fa fa-hand-o-right"></i> HTML &amp; CSS Tutorial</a>
 

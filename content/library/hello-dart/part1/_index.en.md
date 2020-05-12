@@ -19,6 +19,9 @@ link = "/library/hello-dart/part1/solutions/"
 [[sidebars]]
 header = "Links"
 [[sidebars.items]]
+text = "<i class=\"fa fa-fw fa-external-link\"></i> Hello Dart Scenarios"
+link = "https://github.com/marcojakob/hello-dart/releases"
+[[sidebars.items]]
 text = "<i class=\"fa fa-fw fa-file-word-o\"></i> Page as Word File"
 link = "/library/convert-web-page-to-word/"
 +++
@@ -30,8 +33,33 @@ In this part we will take our first steps in programming.
 
 ### Prerequisites
 
-* You need no prior knowledge of programming to start with `Hello Dart`!
-* You must have Dart and the `Hello Dart` scenarios installed. If you don't have it yet, please go through the [installation instructions](/library/hello-dart/install/).
+* You need NO prior knowledge of programming to start with `Hello Dart`!
+* You must have Dart installed. If you don't have it yet, please go through the [installation instructions](/library/dart-install/).
+
+## Setup for `Hello Dart` Scenarios
+
+1. Download the source code (zip) from [Hello Dart Releases](https://github.com/marcojakob/hello-dart/releases) (use the latest version).  
+2. Unzip the files to your computer.
+3. In Visual Studio Code: Click on **File | Open Folder...**. Choose the `hello-dart` folder that you have just unzipped.
+4. Right-click the file `pubspec.yaml` and choose `Get Packages`.   
+![Get Packages](get-packages.png)
+
+This will download the packages that this program depends on.
+
+## Start Web Server
+
+Now enter `webdev serve` in the terminal.
+
+*Note: If you get an error message, your Dart installation is not set up correctly (see [Dart installation](/library/dart-install/)).*
+
+![Serve Webdev](terminal-start-webdev.png)
+
+This will start the web server locally. You will see a local web address (starting with http://127....). Ctrl+click this URL to open it in a browser (preferably Chrome).
+
+In the browser you should see a list of scenarios. If you open the first scenario you should see something like this:
+
+![First Scenario](first-scenario.png)
+
 
 ***
 
