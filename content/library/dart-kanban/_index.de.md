@@ -1,7 +1,7 @@
 +++
 title = "Dart Kanban - Die bessere Todo-Liste (Deutsch)"
 date = 2015-03-23
-updated = 2018-08-17
+updated = 2020-05-05
 image = "dart-kanban.png"
 description = "Lernen Sie Dart Programmieren. Wir erstellen ein interaktives Kanban Board als Dart Webapplikation. Anleitung vom Dart installieren bis zur Veröffentlichung auf einem Webserver."
 prettify = false
