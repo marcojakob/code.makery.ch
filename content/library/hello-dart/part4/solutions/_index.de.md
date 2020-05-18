@@ -145,8 +145,11 @@ class MyPlayer extends Player {
 }
 </pre>
 
+#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 4.04: Chessboard
 
-#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 4.04: Tree Line
+(Lösung fehlt)
+
+#### <i class="fa fa-check-square-o mg-t-lg"></i> LÖSUNG AUFGABE 4.05: Tree Line
 
 <pre class="prettyprint lang-dart">
 class MyPlayer extends Player {

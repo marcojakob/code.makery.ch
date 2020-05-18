@@ -276,7 +276,7 @@ The world is a square and has a tree at the end. Within the world there is a pat
 The world is a square and has a tree at the end. The player is to create a chessboard pattern with stars. 
 
 
-#### <i class="fa fa-rocket mg-t"></i> TASK 4.04 (difficult): Tree Line
+#### <i class="fa fa-rocket mg-t"></i> TASK 4.05 (difficult): Tree Line
 
 ![Tree Line](tree-line.jpg)
 

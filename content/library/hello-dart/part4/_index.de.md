@@ -275,7 +275,7 @@ Die Welt hat eine quadratische Fläche und am Schluss einen Baum. Innerhalb der 
 Die Welt hat eine quadratische Fläche und am Schluss einen Baum. Innerhalb der Fläche soll ein schachbrettartiges Muster aus Sternen gelegt werden.
 
 
-#### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.04 (schwierig): Tree Line
+#### <i class="fa fa-rocket mg-t"></i> AUFGABE 4.05 (schwierig): Tree Line
 
 ![Baumreihe](tree-line.jpg)
 
