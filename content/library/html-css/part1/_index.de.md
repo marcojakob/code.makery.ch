@@ -46,14 +46,14 @@ Weil wir grad am Installieren sind, fügen wir gleich noch eine Erweiterungen zu
 
 1. Visual Studio Code öffnen.
 
-2. Öffnen Sie das Menu "Extensions".
-<p>![Open Extensions](open-extensions.png)</p>
+2. Öffnen Sie das Menu "Extensions".   
+![Open Extensions](open-extensions.png)
 
-3. Tippen Sie in das Suchfeld "Live Server" und installieren Sie diese Erweiterung.
-<p>![Install Live Server](install-live-server.png)</p>
+3. Tippen Sie in das Suchfeld "Live Server" und installieren Sie diese Erweiterung.   
+![Install Live Server](install-live-server.png)
 
-4. Laden Sie Visual Studio neu, damit die Erweiterung aktiv wird.
-<p>![Install Live Server Reload](install-live-server-reload.png)</p>
+4. Laden Sie Visual Studio neu, damit die Erweiterung aktiv wird.   
+![Install Live Server Reload](install-live-server-reload.png)
 
 
 
