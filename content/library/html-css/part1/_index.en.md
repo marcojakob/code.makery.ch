@@ -42,14 +42,14 @@ While we're at it we'll an extension to VS Code that will give superpowers to ou
 
 1. Open Visual Studio Code.
 
-2. Open the menu "Extensions".
-<p>![Open Extensions](open-extensions.png)</p>
+2. Open the menu "Extensions".   
+![Open Extensions](open-extensions.png)
 
-3. Type "Live Server" into the search field and install the extension. 
-<p>![Install Live Server](install-live-server.png)</p>
+3. Type "Live Server" into the search field and install the extension.    
+![Install Live Server](install-live-server.png)
 
-4. Reload Visual Studio Code to activate the extension.
-<p>![Install Live Server Reload](install-live-server-reload.png)</p>
+4. Reload Visual Studio Code to activate the extension.   
+![Install Live Server Reload](install-live-server-reload.png)
 
 ### Browser
 
