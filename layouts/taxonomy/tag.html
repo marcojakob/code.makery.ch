@@ -2,7 +2,7 @@
   {{ .Scratch.Set "title" (print "Blog (" .Title ") | " .Site.Title) -}}
 
   {{/* Set canonical path so that all the tag sub-paths point to the same path. */}}
-  {{ .Scratch.Set "canonical" (print .Site.BaseURL "blog/") -}}
+  {{ .Scratch.Set "canonical" (print .Site.BaseURL "/blog/") -}}
 {{ end -}}
 
 {{ define "main" }}
