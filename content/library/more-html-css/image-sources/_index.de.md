@@ -46,7 +46,7 @@ Es gibt aber Autoren, die ihre Bilder gratis zur Verfügung stellen. Solche frei
 - [The Noun Project](https://thenounproject.com/)
 - [Material Icons by Goolge](https://material.io/tools/icons/)
 - [CaptainIcon](https://mariodelvalle.github.io/CaptainIconWeb/)
-- [Linea Icons](http://linea.io/)
+- [Linea Icons](http://linea.is/)
 
 ### Google Bildersuche mit Filter für Nutzungsrechte
 
