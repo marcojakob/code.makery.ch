@@ -42,7 +42,7 @@ However, there are numerous authors who provide their images for free. Such free
 - [The Noun Project](https://thenounproject.com/)
 - [Material Icons by Goolge](https://material.io/tools/icons/)
 - [CaptainIcon](https://mariodelvalle.github.io/CaptainIconWeb/)
-- [Linea Icons](http://linea.io/)
+- [Linea Icons](http://linea.is/)
 
 ## Google Image Search Filtered By License
 
