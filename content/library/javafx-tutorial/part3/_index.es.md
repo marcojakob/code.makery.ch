@@ -164,7 +164,7 @@ birthdayLabel.setText(DateUtil.format(person.getBirthday()));
 
 ### Detecta cambios de selección en la tabla
 
-Para enterarse de que el usuario ha seleccionado a un persona en la tabla de contactos, necesitamos escuchar los cambios. Esto se consigue mediante la implementación de un interface de JavaFX que se llama [`ChangeListener`](http://docs.oracle.com/javase/8/javafx/api/) with one method called `changed(...)`. Este método solo tiene tres parámetros: `observable`, `oldValue`, y `newValue`.
+Para enterarse de que el usuario ha seleccionado a un persona en la tabla de contactos, necesitamos escuchar los cambios. Esto se consigue mediante la implementación de un interface de JavaFX que se llama [`ChangeListener`](http://docs.oracle.com/javase/8/javafx/api/) con un método llamado `changed(...)`. Este método solo tiene tres parámetros: `observable`, `oldValue`, y `newValue`.
 
 En Java 8 la forma más elegante de implementar una interfaz con un único método es mediante una *lambda expression*. Añadiremos algunas líneas al método `initialize()` de  `PersonOverviewController`. El código resultante se asemejará al siguiente:
 
