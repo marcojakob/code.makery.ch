@@ -231,15 +231,6 @@ Se produce un error de tipo `ArrayIndexOutOfBoundsException` porque no puede bor
 
 Ignorar semejante error no es nada recomendable. Deberíamos hacerle saber al usuario que tiene que seleccionar una persona previamente para poderla borrar (incluso mejor sería deshabilitar el botón para que el usuario ni siquiera tenga la oportunidad de realizar una acción incorrecta).
 
-Vamos a añadir un diálogo emergente para informar al usuario. Desafortunadamente no hay componentes para diálogos incluidos en JavaFX 8. Para evitar tener que crearlos manualmente podemos **añadir una librería** que ya los incluya ([Dialogs](/blog/javafx-8-dialogs/)): 
-
-1. Descarga este [controlsfx-8.0.6_20.jar](https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.0/controlsfx-8.0.6_20.jar) (también se puede obtener de la [página web de ControlsFX](http://fxexperience.com/controlsfx/)).   
-**Importante: La versión de ControlsFX debe ser la `8.0.6_20` o superior para que funcione con `JDK 8u20` debido a un cambio crítico en esa versión.**
-2. Crea una subcarpeta **lib** dentro del proyecto y coloca dentro del archivo jar.
-3. Añade la librería al **classpath** de tu proyecto: En Eclipse se puede hacer mediante *clic-derecho sobre el archivo jar* | *Build Path* | *Add to Build Path*. Ahora Eclipse ya sabe donde encontrar esa librería.
-
-![ControlsFX Libaray](controlsfx-library.png)
-
 Con algunos cambios en el método `handleDeletePerson()` podemos mostrar una simple ventana de diálogo emergente en el caso de que el usuario pulse el botón Delete sin haber seleccionado a nadie en la tabla de contactos:
 
 
@@ -256,11 +247,13 @@ private void handleDeletePerson() {
         personTable.getItems().remove(selectedIndex);
     } else {
         // Nothing selected.
-        Dialogs.create()
-            .title("No Selection")
-            .masthead("No Person Selected")
-            .message("Please select a person in the table.")
-            .showWarning();
+        Alert alert = new Alert(AlertType.WARNING);
+        alert.initOwner(mainApp.getPrimaryStage());
+        alert.setTitle("No Selection");
+        alert.setHeaderText("No Person Selected");
+        alert.setContentText("Please select a person in the table.");
+
+        alert.showAndWait();
     }
 }
 </pre>
@@ -300,11 +293,10 @@ Crea el controlador para la ventana de edición de personas y llámalo `PersonEd
 package ch.makery.address.view;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
-import org.controlsfx.dialog.Dialogs;
-
 import ch.makery.address.model.Person;
 import ch.makery.address.util.DateUtil;
 
@@ -447,11 +439,14 @@ public class PersonEditDialogController {
             return true;
         } else {
             // Show the error message.
-        	Dialogs.create()
-		        .title("Invalid Fields")
-		        .masthead("Please correct invalid fields")
-		        .message(errorMessage)
-		        .showError();
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.initOwner(dialogStage);
+            alert.setTitle("Invalid Fields");
+            alert.setHeaderText("Please correct invalid fields");
+            alert.setContentText(errorMessage);
+
+            alert.showAndWait();
+
             return false;
         }
     }
@@ -556,11 +551,13 @@ private void handleEditPerson() {
 
     } else {
         // Nothing selected.
-        Dialogs.create()
-            .title("No Selection")
-            .masthead("No Person Selected")
-            .message("Please select a person in the table.")
-            .showWarning();
+        Alert alert = new Alert(AlertType.WARNING);
+        alert.initOwner(mainApp.getPrimaryStage());
+        alert.setTitle("No Selection");
+        alert.setHeaderText("No Person Selected");
+        alert.setContentText("Please select a person in the table.");
+
+        alert.showAndWait();
     }
 }
 </pre>
