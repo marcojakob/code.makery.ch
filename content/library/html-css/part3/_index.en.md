@@ -141,7 +141,7 @@ There are several tools that make finding a color palette easier. Here are a few
 
 * [Kuler](https://kuler.adobe.com) - define a color rule, pull the knob with the small arrow and you've got five colors that fit together
 * [Paletton](http://www.paletton.com) - a sophisticated controller for finding color palettes
-* [Colourco.de](http://colourco.de/) - another practical palette generator
+* [ColourCode](https://www.toptal.com/designers/colourcode) - another practical palette generator
 
 
 ## CSS Rules
