@@ -145,7 +145,7 @@ Dazu gibt es verschiedene Hilfen, die das finden einer Farbpalette erleichtern. 
 
 * [Kuler](https://kuler.adobe.com) - eine Farbregel definieren, am Regler mit dem kleinen Pfeil ziehen und schon hat man fünf Farben, die zusammen passen.
 * [Paletton](http://www.paletton.com) - ein ausgeklügelter Regler zum Finden von Farbpaletten.
-* [Colourco.de](http://colourco.de/) - ein weiterer, praktischer Paletten-Generator
+* [ColourCode](https://www.toptal.com/designers/colourcode) - ein weiterer, praktischer Paletten-Generator
 
 
 ## CSS-Regeln
