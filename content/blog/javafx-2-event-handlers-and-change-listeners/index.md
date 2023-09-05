@@ -4,7 +4,7 @@ date = 2012-12-19
 image = "screenshot-01.png"
 description = "We explore how to handle the most common JavaFX events = Button events, CheckBox events, Hyperlink events, Slider events, TextBox events, ListView events."
 prettify = true
-comments = true
+# comments = true
 commentsShortname = "edumakery"
 commentsIdentifier = "http://edu.makery.ch/blog/2012/12/19/javafx-event-handlers-and-change-listeners/"
 tags = [ "Java", "JavaFX" ]

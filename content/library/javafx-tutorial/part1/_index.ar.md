@@ -6,7 +6,7 @@ description = "Learn how to set up a JavaFX project. This is part one of a seven
 image = "addressapp-part1.png"
 prettify = true
 rtl = true
-comments = true 
+# comments = true 
 weight = 1
 
 [[sidebars]]

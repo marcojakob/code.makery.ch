@@ -5,7 +5,7 @@ updated = 2016-04-21
 description = "Используйте JavaFX TableView для отображения списка людей из ObservableList"
 image = "addressapp-part2.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/ru/part2/"
 aliases = [ 
   "/library/javafx-8-tutorial/ru/part2/"

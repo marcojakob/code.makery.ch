@@ -6,7 +6,7 @@ image = "dart-kanban.png"
 description = "Wie kann man noch mehr lernen über Web Programmierung."
 published = true
 prettify = false
-comments = true
+# comments = true
 commentsIdentifier = "/library/dart-kanban/de/next/"
 aliases = [ 
   "/library/dart-kanban/de/next/" 

@@ -4,7 +4,7 @@ date = 2018-08-10
 description = "Learn how to create a navigation for your website."
 image = "portfolio.png"
 prettify = true
-comments = true
+# comments = true
 weight = 6
 
 [[sidebars]]

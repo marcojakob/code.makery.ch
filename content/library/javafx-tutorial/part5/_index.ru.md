@@ -5,7 +5,7 @@ updated = 2016-04-22
 description = "Сохранение данных в XML с помощью JAXB. Учимся использовать JavaFX-компоненты FileChooser и Menu."
 image = "addressapp-part5.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/ru/part5/"
 aliases = [ 
   "/library/javafx-8-tutorial/ru/part5/"

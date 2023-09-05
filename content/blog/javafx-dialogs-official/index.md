@@ -5,7 +5,7 @@ udpated = 2015-03-12
 image = "login-dialog.png"
 description = "Examples of how to create simple popup Dialogs and Alerts in JavaFX. Official Dialogs were included in JDK 8u40."
 prettify = true
-comments = true
+# comments = true
 tags = [ "Java", "JavaFX" ]
 +++
 

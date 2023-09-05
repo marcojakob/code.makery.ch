@@ -5,7 +5,7 @@ updated = 2020-05-05
 image = "dart-kanban.png"
 description = "Mit Dart neue HTML-Elemente hinzufügen. Auf Events vom Benutzer reagieren. Lernen, wie man mit der HTML-Bibliothek von Dart arbeitet."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/dart-kanban/de/part1/"
 aliases = [ 
   "/library/dart-kanban/de/part1/" 

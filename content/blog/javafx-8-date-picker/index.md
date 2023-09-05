@@ -5,7 +5,7 @@ updated = 2014-05-14
 image = "date-picker.png"
 description = "Finally, with JavaFX 8 a DatePicker control was added! Learn how to use it, together with the new Java 8 Date and Time API."
 prettify = true
-comments = true
+# comments = true
 tags = [ "Java", "JavaFX" ]
 +++
 

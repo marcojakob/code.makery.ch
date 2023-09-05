@@ -5,7 +5,7 @@ description = "تأخذك هذه الاقسام السبعة عبر تصميم �
 image = "addressapp.png"
 prettify = true
 rtl = true
-comments = true 
+# comments = true 
 sidebarName = "مقدمة"
 pagingName = "مقدمة"
 +++

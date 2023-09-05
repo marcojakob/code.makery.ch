@@ -5,7 +5,7 @@ updated = 2018-08-17
 image = "dnd-screenshot.png"
 description = "Drag and Drop for Dart web apps with mouse and touch support."
 prettify = true
-comments = true
+# comments = true
 
 # Series Overview Info
 overview = true

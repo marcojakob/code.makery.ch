@@ -5,7 +5,7 @@ updated = 2014-11-13
 description = "How to deploy a JavaFX application as native package. Create an installer for Windows, MacOS, or Linux."
 image = "addressapp-macos.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/pt/part7/"
 aliases = [ 
   "/library/javafx-8-tutorial/pt/part7/"

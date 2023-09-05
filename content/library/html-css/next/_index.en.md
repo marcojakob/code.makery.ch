@@ -4,7 +4,7 @@ date = 2018-08-10
 description = "How can you learn even more about HTML & CSS. Learn how to build your own web applications."
 image = "portfolio.png"
 prettify = false
-comments = true
+# comments = true
 weight = 8
 pagingName = "Next"
 +++

@@ -5,7 +5,7 @@ updated = 2015-01-16
 description = "使用JAXB将数据另存为XML。 了解如何使用JavaFX FileChooser和JavaFX菜单。"
 image = "addressapp-part5.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/zh-cn/part5/"
 aliases = [ 
   "/library/javafx-8-tutorial/zh-cn/part5/"

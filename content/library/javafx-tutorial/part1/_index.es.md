@@ -4,7 +4,7 @@ date = 2014-09-17
 description = "Este tutorial describe como crear y empezar un proyecto JavaFX con Eclipse."
 image = "addressapp-part1.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/es/part1/"
 aliases = [ 
   "/library/javafx-8-tutorial/es/part1/"

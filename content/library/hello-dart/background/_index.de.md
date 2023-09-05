@@ -4,7 +4,7 @@ date = 2015-01-26
 description = "Hintergrundinformationen zu Hello Dart. Warum ich so begeistert bin von der Programmiersprache Dart."
 image = "hello-dart.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/hello-dart/de/background/"
 aliases = [ 
   "/library/hello-dart/de/background/" 

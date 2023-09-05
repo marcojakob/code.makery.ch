@@ -5,7 +5,7 @@ updated = 2014-03-08
 image = "greenfootkara-screenshot.png"
 description = "In diesem Kapitel von GreenfootKara lernend wir über Variablen."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/greenfoot-kara/de/chapter3/"
 aliases = [ 
   "/library/greenfoot-kara/de/chapter3/" 

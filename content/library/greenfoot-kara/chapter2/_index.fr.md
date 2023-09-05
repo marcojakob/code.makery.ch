@@ -4,7 +4,7 @@ date = 2014-07-10
 image = "greenfootkara-screenshot.png"
 description = "Pour résoudre des problèmes difficiles en programmation, il est souvent utile de représenter graphiquement la succession de tâches à l'aide d'un diagramme simple."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/greenfoot-kara/fr/chapter2/"
 aliases = [ 
   "/library/greenfoot-kara/fr/chapter2/" 

@@ -4,7 +4,7 @@ date = 2015-04-09
 updated = 2018-08-28
 description = "Integrate icons with Icon Fonts and SVG on your website. Links to free icon libraries."
 prettify = true
-comments = true
+# comments = true
 weight = 2
 
 sidebarName = "<i class=\"fa fa-fw fa-flag\"></i> Icons on Websites"

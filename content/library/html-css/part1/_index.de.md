@@ -4,7 +4,7 @@ date = 2018-08-10
 description = "Erstellen Sie Ihre erste Webseite. Hier lernen Sie die Tools und die Grundlagen von HTML & CSS kennen."
 image = "portfolio.de.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/html-css/de/part1/"
 aliases = [ 
   "/library/html-css/de/part1/" 

@@ -4,7 +4,7 @@ date = 2018-08-10
 description = "Erstellen Sie eine Dateistruktur für mehrere Webseiten. Lernen Sie eine Struktur für einen Blog aufzustellen."
 image = "portfolio.de.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/html-css/de/part5/"
 aliases = [
   "/library/html-css/de/part5/"

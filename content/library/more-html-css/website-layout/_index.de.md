@@ -4,7 +4,7 @@ date = 2015-04-09
 updated = 2018-08-28
 description = "Lernen Sie, wie Elemente auf Webseiten angeordnet werden können mit dem Bootstrap Raster."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/more-html-css/de/website-layout/"
 aliases = [ 
   "/library/more-html-css/de/website-layout/" 

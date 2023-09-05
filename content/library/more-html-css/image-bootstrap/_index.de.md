@@ -4,7 +4,7 @@ date = 2015-04-09
 updated = 2018-08-28
 description = "Lernen Sie wie Bilder mit Bootstrap verwendet werden können. Bilder automatisch auf die Bildschirmgrösse anpassen, Bilder ausrichten, etc."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/more-html-css/de/image-bootstrap/"
 aliases = [ 
   "/library/more-html-css/de/image-bootstrap/" 

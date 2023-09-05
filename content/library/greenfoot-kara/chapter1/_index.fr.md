@@ -4,7 +4,7 @@ date = 2014-07-10
 image = "greenfootkara-screenshot.png"
 description = "Dans ce chapitre de GreenfootKara, nous allons faire nos premiers pas dans la programmation."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/greenfoot-kara/fr/chapter1/"
 aliases = [ 
   "/library/greenfoot-kara/fr/chapter1/" 

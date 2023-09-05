@@ -5,7 +5,7 @@ updated = 2014-10-28
 image = "custom-dialog.png"
 description = "Examples of how to create simple popup Dialogs in JavaFX 8."
 prettify = true
-comments = true
+# comments = true
 tags = [ "Java", "JavaFX" ]
 +++
 

@@ -5,7 +5,7 @@ updated = 2015-03-12
 description = "Tujuh bagian tutorial ini mencakup mendesain, memprogram, dan penyebaran aplikasi alamat dengan JavaFX."
 image = "addressapp.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/javafx-8-tutorial/id/"
 aliases = [ 
   "/library/javafx-8-tutorial/id/" 

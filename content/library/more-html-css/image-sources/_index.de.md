@@ -3,7 +3,7 @@ title = "Kostenlose Bilder"
 date = 2018-08-16
 description = "Eine Anleitung zum Finden und Verwenden von Bildern aus dem Internet. Links zu gratis Bilddatenbanken."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/more-html-css/de/image-sources/"
 aliases = [ 
   "/library/more-html-css/de/image-sources/" 

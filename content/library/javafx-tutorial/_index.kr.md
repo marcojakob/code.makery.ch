@@ -6,7 +6,7 @@ description = "이 튜토리얼은 7부에 걸쳐 JavaFX로 주소록 애플리�
 image = "addressapp.png"
 published = true
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/javafx-8-tutorial/kr/"
 aliases = [ 
   "/library/javafx-8-tutorial/kr/" 

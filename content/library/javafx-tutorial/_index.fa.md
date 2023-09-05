@@ -6,7 +6,7 @@ description = "یک آموزش 7 قسمتی شامل طراحی, برنامه ن
 image = "addressapp.png"
 prettify = true
 rtl = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/javafx-8-tutorial/fa/"
 aliases = [ 
   "/library/javafx-8-tutorial/fa/" 

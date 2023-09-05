@@ -5,7 +5,7 @@ canonical = "/library/greenfoot-kara/background/"
 image = "greenfoot-kara-logo.png"
 description = "Background information on how to work with GreenfootKara."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/greenfoot-kara/fr/background/"
 aliases = [ 
   "/library/greenfoot-kara/fr/background/" 

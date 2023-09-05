@@ -5,7 +5,7 @@ updated = 2015-04-15
 description = "Réagir aux changements de sélection dans le JavaFX TableView. Ajouter, modifier et supprimer des éléments de la table et valider l'entrée de l'utilisateur."
 image = "addressapp-part3.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/fr/part3/"
 aliases = [ 
   "/library/javafx-8-tutorial/fr/part3/"

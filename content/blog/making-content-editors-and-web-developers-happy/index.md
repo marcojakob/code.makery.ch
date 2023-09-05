@@ -4,7 +4,7 @@ date = 2015-03-16
 image = "static-cms-workflow.png"
 description = "How to create a Static CMS that combines the advantages of a static site generator and a web-based CMS."
 prettify = true
-comments = true
+# comments = true
 tags = [ "Web", "Static Site Generators" ]
 +++
 

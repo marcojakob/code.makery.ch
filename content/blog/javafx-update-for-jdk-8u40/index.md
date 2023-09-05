@@ -4,7 +4,7 @@ date = 2015-03-12
 image = "addressapp.png"
 description = "JDK 8u40 was released. It includes some new JavaFX UI controls like Dialogs, Spinner, and Formatted TextField."
 prettify = true
-comments = true
+# comments = true
 tags = [ "Java", "JavaFX" ]
 +++
 

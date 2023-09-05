@@ -3,7 +3,7 @@ title = "Image Editing"
 date = 2018-08-16
 description = "A list of links to image editing programs. Graphic tools and online graphics programs."
 prettify = true
-comments = true
+# comments = true
 weight = 4
 
 sidebarName = "<i class=\"fa fa-fw fa-image\"></i> Image Editing"

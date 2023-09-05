@@ -4,7 +4,7 @@ date = 2014-10-29
 image = "javafx-vs-html5.png"
 description = "Should you choose JavaFX or HTML5 for your next richt client application? This article can give you some criteria to make your choice."
 prettify = true
-comments = true
+# comments = true
 tags = [ "Web", "Java", "JavaFX" ]
 +++
 

@@ -4,7 +4,7 @@ date = 2015-05-01
 description = "How can you learn even more about web programming after you've completed the Hello Dart tutorial."
 image = "hello-dart.png"
 prettify = false
-comments = true
+# comments = true
 
 sidebarName = "<i class=\"fa fa-fw fa-flag-checkered\"></i> Next Steps"
 pagingName = "<i class=\"fa fa-fw fa-flag-checkered\"></i>"

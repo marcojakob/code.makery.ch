@@ -5,7 +5,7 @@ updated = 2014-03-08
 image = "greenfootkara-screenshot.png"
 description = "In diesem Kapitel wagen wir unsere ersten Schritte im Programmieren."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/greenfoot-kara/de/chapter1/"
 aliases = [ 
   "/library/greenfoot-kara/de/chapter1/" 

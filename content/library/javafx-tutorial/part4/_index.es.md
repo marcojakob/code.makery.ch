@@ -4,7 +4,7 @@ date = 2014-09-17
 description = "En JavaFX puedes dar estilo al interfaz de usuario utilizando CSS. También añadiremos un icono de aplicación en esta parte del tutorial"
 image = "addressapp-part4.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/es/part4/"
 aliases = [ 
   "/library/javafx-8-tutorial/es/part4/"

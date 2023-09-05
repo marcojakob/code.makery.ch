@@ -5,7 +5,7 @@ updated = 2015-01-05
 description = "Menyimpan data sebagai XML denan JAXB. Belajar bagaimana menggunakan JavaFX FileChooser dan JavaFX Menu."
 image = "addressapp-part5.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/id/part5/"
 aliases = [ 
   "/library/javafx-8-tutorial/id/part5/"

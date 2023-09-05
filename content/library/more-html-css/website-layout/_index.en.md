@@ -4,7 +4,7 @@ date = 2015-04-09
 updated = 2018-08-28
 description = "Learn how to layout elements on web pages using the bootstrap grid."
 prettify = true
-comments = true
+# comments = true
 weight = 1
 
 sidebarName = "<i class=\"fa fa-fw fa-th-large\"></i> Website Layout with Boostrap"

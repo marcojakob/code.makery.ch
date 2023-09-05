@@ -6,7 +6,7 @@ description = "Learn how to set up a JavaFX project. This is part one of a seven
 image = "addressapp-part1.png"
 rtl = true
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/fa/part1/"
 aliases = [ 
   "/library/javafx-8-tutorial/fa/part1/"

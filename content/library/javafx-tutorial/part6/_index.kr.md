@@ -4,7 +4,7 @@ date = 2016-10-30
 description = "JavaFX 바 차트를 만드는 방법을 배웁니다."
 image = "addressapp-part6.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/kr/part6/"
 aliases = [ 
   "/library/javafx-8-tutorial/kr/part6/"

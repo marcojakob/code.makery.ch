@@ -4,7 +4,7 @@ date = 2018-08-10
 description = "Learn how to use the developer tools in the browser (Chrome Developer Tools (Chrome Developer Tools)."
 image = "portfolio.png"
 prettify = true
-comments = true
+# comments = true
 weight = 4
 +++
 

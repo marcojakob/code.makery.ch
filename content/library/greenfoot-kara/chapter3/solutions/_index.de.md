@@ -3,7 +3,7 @@ title = "Lösungen"
 date = 2012-10-03
 updated = 2014-03-08
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/greenfoot-kara/de/chapter3-solutions/"
 aliases = [ 
   "/library/greenfoot-kara/de/chapter3-solutions/" 

@@ -4,7 +4,7 @@ date = 2018-08-10
 description = "Learn to use the Bootstrap Framework in your website."
 image = "portfolio.png"
 prettify = true
-comments = true
+# comments = true
 weight = 7
 
 [[sidebars]]

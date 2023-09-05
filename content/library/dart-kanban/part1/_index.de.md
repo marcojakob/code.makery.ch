@@ -5,7 +5,7 @@ updated = 2020-05-05
 image = "first-run.png"
 description = "Eine erste Webapplikation mit Dart erstellen. Dart mit HTML verknüpfen und ein HTML-Element mit Dart verändern."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/dart-kanban/de/part1/"
 aliases = [ 
   "/library/dart-kanban/de/part1/" 

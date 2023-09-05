@@ -3,7 +3,7 @@ title = "Lösungen"
 date = 2015-01-21
 description = "Lösungen zu Hello Dart Teil 5."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/hello-dart/de/part5-solutions/"
 aliases = [ 
   "/library/hello-dart/de/part5-solutions/" 

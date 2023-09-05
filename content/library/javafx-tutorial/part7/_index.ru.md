@@ -5,7 +5,7 @@ updated = 2016-04-26
 description = "Развёртывание приложения JavaFX как нативного пакета (native package). Создание инсталляторов для Windows, Mac и Linux."
 image = "addressapp-macos.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/ru/part7/"
 aliases = [ 
   "/library/javafx-8-tutorial/ru/part7/"

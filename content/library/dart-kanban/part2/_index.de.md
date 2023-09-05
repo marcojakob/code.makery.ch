@@ -5,7 +5,7 @@ updated = 2020-05-05
 image = "columns.png"
 description = "Das Kanban Board in der HTML-Datei vorbereiten. Drei Spalten mit dem Bootstrap-Raster erstellen."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/dart-kanban/de/part2/"
 aliases = [ 
   "/library/dart-kanban/de/part2/" 

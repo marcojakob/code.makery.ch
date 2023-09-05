@@ -4,7 +4,7 @@ date = 2012-10-03
 image = "greenfoot-kara-logo.png"
 description = "Background information on how to work with GreenfootKara."
 prettify = true
-comments = true
+# comments = true
 
 sidebarName = "<i class=\"fa fa-fw fa-info\"></i> Background Info"
 pagingName = "<i class=\"fa fa-fw fa-info\"></i>"

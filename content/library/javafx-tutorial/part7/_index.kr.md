@@ -4,7 +4,7 @@ date = 2016-10-30
 description = "JavaFX 애플리케이션을 네이티브 패키지로 배포하는 방법을 배웁니다. Windows, MacOS, 또는 Linux 인스톨러를 만듭니다."
 image = "addressapp-macos.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/kr/part7/"
 aliases = [ 
   "/library/javafx-8-tutorial/kr/part7/"

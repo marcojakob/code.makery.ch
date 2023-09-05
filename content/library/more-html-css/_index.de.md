@@ -3,7 +3,7 @@ title = "Mehr HTML & CSS (Deutsch)"
 date = 2018-08-16
 description = "Lernen Sie mehr über HTML und CSS. Hier finden Sie Anleitungen zu Website-Layout, Bilder, Bootstrap und mehr."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/more-html-css/de/"
 aliases = [ 
   "/library/more-html-css/de/" 

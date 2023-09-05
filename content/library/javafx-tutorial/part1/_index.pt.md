@@ -5,7 +5,7 @@ updated = 2014-11-06
 description = "Este tutorial de sete partes aborda os processos de design, programação e immplantação de uma aplicação de cadastro de endereços feita com JavaFX."
 image = "addressapp-part1.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/pt/part1/"
 aliases = [ 
   "/library/javafx-8-tutorial/pt/part1/"

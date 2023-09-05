@@ -5,7 +5,7 @@ updated = 2020-05-05
 description = "Dart und Visual Studio Code installieren."
 image = "dart-sdk-icon.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/hello-dart/de/install/"
 aliases = [ 
   "/library/hello-dart/de/install/" 

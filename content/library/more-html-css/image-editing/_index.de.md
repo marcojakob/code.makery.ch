@@ -3,7 +3,7 @@ title = "Bilder gestalten"
 date = 2018-08-16
 description = "Eine Liste mit Links zu Bildbearbeitungsprogrammen. Grafikprogramme zum Installieren und Online Grafikprogramme."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/more-html-css/de/image-editing/"
 aliases = [ 
   "/library/more-html-css/de/image-editing/" 

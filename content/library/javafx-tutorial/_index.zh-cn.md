@@ -6,7 +6,7 @@ description = "这 7 部分组成的教程将介绍一个用 JavaFX 编写的联
 image = "addressapp.png"
 published = true
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/javafx-8-tutorial/zh-cn/"
 aliases = [ 
   "/library/javafx-8-tutorial/zh-cn/" 

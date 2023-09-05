@@ -5,7 +5,7 @@ updated = 2014-03-08
 image = "greenfootkara-screenshot.png"
 description = "Um schwierige Aufgaben beim Programmieren zu lösen, ist es oft hilfreich, den Programmablauf in einem Flussdiagramm darzustellen. In diesem Kapitel lernen wir deshalb über Flussdiagramme."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/greenfoot-kara/de/chapter2/"
 aliases = [ 
   "/library/greenfoot-kara/de/chapter2/" 

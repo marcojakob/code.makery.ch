@@ -5,7 +5,7 @@ updated = 2014-03-08
 image = "greenfootkara-screenshot.png"
 description = "In this chapter of GreenfootKara we will take our first steps in programming."
 prettify = true
-comments = true
+# comments = true
 
 pagingName = "1"
 weight = 2

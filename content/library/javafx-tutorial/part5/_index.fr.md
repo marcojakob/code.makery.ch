@@ -5,7 +5,7 @@ updated = 2015-04-15
 description = "Enregistrer les données en XML avec JAXB. Apprenez comment utiliser le FileChooser et le menu de JavaFX."
 image = "addressapp-part5.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/fr/part5/"
 aliases = [ 
   "/library/javafx-8-tutorial/fr/part5/"

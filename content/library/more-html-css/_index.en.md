@@ -3,7 +3,7 @@ title = "More HTML & CSS"
 date = 2018-08-16
 description = "Learn more about HTML and CSS. Here you will find instructions on website layout, images, Bootstrap, and more."
 prettify = true
-comments = true
+# comments = true
 sidebarName = "Introduction"
 pagingName = "Intro"
 

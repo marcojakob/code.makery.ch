@@ -4,7 +4,7 @@ date = 2016-10-30
 description = "여러분은 JavaFX에서 CSS로 사용자 인터페이스를 꾸밀 수 있습니다. 우리는 또 튜토리얼 4부에서 애플리케이션 아이콘을 추가해 볼 겁니다."
 image = "addressapp-part4.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/kr/part4/"
 aliases = [ 
   "/library/javafx-8-tutorial/kr/part4/"

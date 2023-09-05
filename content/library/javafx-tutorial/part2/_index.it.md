@@ -5,7 +5,7 @@ updated = 2015-03-12
 description = "Uso della TabletView JavaFX per visualizzare una  ObservableList di Persons."
 image = "addressapp-part2.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/it/part2/"
 aliases = [ 
   "/library/javafx-8-tutorial/it/part2/"

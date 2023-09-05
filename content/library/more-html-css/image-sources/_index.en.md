@@ -3,7 +3,7 @@ title = "Free Image Sources"
 date = 2018-08-16
 description = "A guide to finding and using images on the internet. Links to free image databases."
 prettify = true
-comments = true
+# comments = true
 weight = 5
 
 sidebarName = "<i class=\"fa fa-fw fa-image\"></i> Free Image Sources"

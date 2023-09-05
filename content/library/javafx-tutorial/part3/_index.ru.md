@@ -5,7 +5,7 @@ updated = 2016-04-21
 description = "Реакция на выбор записей в JavaFX TableView. Добавление, изменение и удаление элементов из таблицы, а так же проверка пользовательского ввода"
 image = "addressapp-part3.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/ru/part3/"
 aliases = [ 
   "/library/javafx-8-tutorial/ru/part3/"

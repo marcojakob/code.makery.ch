@@ -5,7 +5,7 @@ updated = 2015-06-25
 description = "Розгортання JavaFX додатку з упаковки, що залежить від платформи (native package). Створення інсталяційниого пакета для Windows, Mac чи Linux"
 image = "addressapp-macos.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/uk/part7/"
 aliases = [ 
   "/library/javafx-8-tutorial/uk/part7/"

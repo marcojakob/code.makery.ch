@@ -5,7 +5,7 @@ updated = 2015-01-17
 description = "在JavaFX中，您可以使用CSS设置用户界面的样式。 我们还将在本教程部分添加一个应用程序图标。"
 image = "addressapp-part4.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/zh-cn/part4/"
 aliases = [ 
   "/library/javafx-8-tutorial/zh-cn/part4/"

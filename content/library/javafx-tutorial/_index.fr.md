@@ -5,7 +5,7 @@ updated = 2015-04-15
 description = "Les sept étapes de ce tutorial vous amèneront à découvrir tout à tour, le design, la programmation et enfin le déploiement d'une application de répertoire d'adresses."
 image = "addressapp.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/javafx-8-tutorial/fr/"
 aliases = [ 
   "/library/javafx-8-tutorial/fr/" 

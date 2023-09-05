@@ -5,7 +5,7 @@ canonical = "/library/greenfoot-kara/chapter5/"
 image = "greenfootkara-screenshot.png"
 description = "Dans ce chapitre de GreenfootKara nous apprenons comment structurer notre code avec des méthodes."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/greenfoot-kara/fr/chapter5/"
 aliases = [ 
   "/library/greenfoot-kara/fr/chapter5/" 

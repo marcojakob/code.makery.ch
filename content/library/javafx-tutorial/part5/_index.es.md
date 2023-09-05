@@ -4,7 +4,7 @@ date = 2014-09-17
 description = "Almacena datos en XML con JAXB. Aprender a utilizar FileChooser y los menús de JavaFX."
 image = "addressapp-part5.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/es/part5/"
 aliases = [ 
   "/library/javafx-8-tutorial/es/part5/"

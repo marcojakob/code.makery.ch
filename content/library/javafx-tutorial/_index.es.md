@@ -4,7 +4,7 @@ date = 2014-09-17
 description = "Este tutorial en siete partes describe el diseño, programación y publicación de una aplicación de contactos con JavaFX."
 image = "addressapp.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/javafx-8-tutorial/es/"
 aliases = [ 
   "/library/javafx-8-tutorial/es/" 

@@ -4,7 +4,7 @@ date = 2018-08-10
 description = "Create a file structure with multiple web pages, including a structure for writing blog posts."
 image = "portfolio.png"
 prettify = true
-comments = true
+# comments = true
 weight = 5
 
 [[sidebars]]

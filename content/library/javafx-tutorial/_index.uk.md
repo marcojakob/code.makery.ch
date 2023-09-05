@@ -5,7 +5,7 @@ updated = 2015-06-25
 description = "Цей підручник, що складається з семи частин, введе вас у проектування, програмування та розгортання додатку Адресна книга за допомогою JavaFX"
 image = "addressapp.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/javafx-8-tutorial/uk/"
 aliases = [ 
   "/library/javafx-8-tutorial/uk/" 

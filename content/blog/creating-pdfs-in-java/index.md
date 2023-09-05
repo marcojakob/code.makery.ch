@@ -4,7 +4,7 @@ date = 2012-12-13
 image = "pdf.png"
 description = "Helpful tools to create PDFs in Java."
 prettify = true
-comments = true
+# comments = true
 tags = [ "Java" ]
 +++
 

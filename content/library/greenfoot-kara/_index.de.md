@@ -5,7 +5,7 @@ updated = 2014-03-08
 image = "greenfootkara-screenshot.png"
 description = "GreenfootKara ist eine visuelle und interaktive Einführung in die Programmierung in Java basierdend auf der Greenfoot IDE."
 prettify = false
-comments = true
+# comments = true
 commentsIdentifier = "/library/greenfoot-kara/de/"
 aliases = [ 
   "/library/greenfoot-kara/de/" 

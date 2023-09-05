@@ -5,7 +5,7 @@ updated = 2015-04-15
 image = "tableview-sorting-filtering.png"
 description = "The JavaFX 8 SortedList and FilteredList allow easy sorting and filtering of data in a TableView." 
 prettify = true
-comments = true
+# comments = true
 tags = [ "Java", "JavaFX" ]
 +++
 

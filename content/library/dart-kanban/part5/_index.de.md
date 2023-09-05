@@ -5,7 +5,7 @@ updated = 2020-05-05
 image = "dart-kanban.png"
 description = "Die Dart Applikation nach JavaScript übersetzen. Den generierten Build-Ordner auf einem Webserver veröffentlichen."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/dart-kanban/de/part5/"
 aliases = [ 
   "/library/dart-kanban/de/part5/" 

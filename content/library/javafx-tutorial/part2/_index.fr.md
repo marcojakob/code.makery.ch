@@ -5,7 +5,7 @@ updated = 2015-04-15
 description = "Utiliser un contrôle JavaFX TableView pour afficher une ObservableList de personnes."
 image = "addressapp-part2.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/fr/part2/"
 aliases = [ 
   "/library/javafx-8-tutorial/fr/part2/"

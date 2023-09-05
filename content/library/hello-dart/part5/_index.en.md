@@ -5,7 +5,7 @@ updated = 2020-05-05
 description = "We expanding our knowledge about functions and methods in Dart. We will learn about functions with parameters and return values."
 image = "layered-cake.jpg"
 prettify = true
-comments = true
+# comments = true
 
 pagingName = "5"
 weight = 7

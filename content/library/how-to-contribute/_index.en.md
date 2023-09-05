@@ -3,7 +3,7 @@ title = "How to Contribute"
 date = 2014-07-10
 updated = 2014-08-27
 description = "How you can contribute to improving the tutorials."
-comments = true
+# comments = true
 
 # Series Overview Info
 overview = false

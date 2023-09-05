@@ -5,7 +5,7 @@ updated = 2014-11-12
 description = "Aprenda como criar um Gráfico de Barras JavaFX (JavaFX Bar Chart)."
 image = "addressapp-part6.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/pt/part6/"
 aliases = [ 
   "/library/javafx-8-tutorial/pt/part6/"

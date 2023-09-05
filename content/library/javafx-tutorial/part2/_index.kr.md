@@ -5,7 +5,7 @@ updated = 2016-11-04
 description = "JavaFX TableView를 사용해서 연락처의 ObservableList를 보여줍니다."
 image = "addressapp-part2.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/kr/part2/"
 aliases = [ 
   "/library/javafx-8-tutorial/kr/part2/"

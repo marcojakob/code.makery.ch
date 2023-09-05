@@ -5,7 +5,7 @@ updated = 2015-01-05
 description = "Di JavaFX anda bisa memberi gaya pada antarmuka pengguna menggunakan CSS. Jika juga akan memberikan ikon aplikasi pada tutorial ini."
 image = "addressapp-part4.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/id/part4/"
 aliases = [ 
   "/library/javafx-8-tutorial/id/part4/"

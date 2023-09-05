@@ -5,7 +5,7 @@ updated = 2015-03-12
 description = "Learn how to set up a JavaFX project. This is part one of a seven-part tutorial about designing, programming and deploying an address application with JavaFX."
 image = "addressapp-part1.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/java/javafx-8-tutorial-part1/"
 aliases = [
   "/java/javafx-8-tutorial-part1/",

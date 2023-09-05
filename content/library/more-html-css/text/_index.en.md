@@ -4,7 +4,7 @@ date = 2015-04-09
 updated = 2018-08-28
 description = "Learn about the typographic capabilities of HTML and CSS. Contains examples of how texts can be formatted with bootstrap."
 prettify = true
-comments = true
+# comments = true
 weight = 6
 
 sidebarName = "<i class=\"fa fa-fw fa-font\"></i> Formatting Text"

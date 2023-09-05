@@ -5,7 +5,7 @@ updated = 2016-04-26
 description = "Учимся в JavaFX создавать столбцовую диаграмму."
 image = "addressapp-part6.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/ru/part6/"
 aliases = [ 
   "/library/javafx-8-tutorial/ru/part6/"

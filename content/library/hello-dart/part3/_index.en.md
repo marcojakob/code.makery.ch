@@ -5,7 +5,7 @@ updated = 2020-05-05
 description = "Learn to control the program flow with conditional statements. Numerous Hello Dart exercises will help you understand it."
 image = "guard.png"
 prettify = true
-comments = true
+# comments = true
 
 pagingName = "3"
 weight = 5

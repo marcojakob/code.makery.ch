@@ -4,7 +4,7 @@ date = 2015-01-21
 description = "Wie kann man noch mehr lernen über Webprogrammierung."
 image = "hello-dart.png"
 prettify = false
-comments = true
+# comments = true
 
 sidebarName = "<i class=\"fa fa-fw fa-flag-checkered\"></i> Nächste Schritte"
 pagingName = "<i class=\"fa fa-fw fa-flag-checkered\"></i>"

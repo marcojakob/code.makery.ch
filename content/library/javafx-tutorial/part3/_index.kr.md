@@ -4,7 +4,7 @@ date = 2016-10-30
 description = "JavaFX TableView 선택에 반응하게 만듭니다. 테이블에 추가, 변경 그리고 삭제하고, 사용자 입력을 검사합니다."
 image = "addressapp-part3.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/kr/part3/"
 aliases = [ 
   "/library/javafx-8-tutorial/kr/part3/"

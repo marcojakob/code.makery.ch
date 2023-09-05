@@ -5,7 +5,7 @@ updated = 2015-06-25
 description = "Вчимося створювати стовпчикову діаграму в JavaFX"
 image = "addressapp-part6.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/uk/part6/"
 aliases = [ 
   "/library/javafx-8-tutorial/uk/part6/"

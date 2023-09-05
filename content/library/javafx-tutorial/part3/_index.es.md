@@ -4,7 +4,7 @@ date = 2014-09-17
 description = "Respuesta a cambios de selección en un TableView. Añadir, editar y borrar ítems de la tabla y validar la entrada del usuario."
 image = "addressapp-part3.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/es/part3/"
 aliases = [ 
   "/library/javafx-8-tutorial/es/part3/"

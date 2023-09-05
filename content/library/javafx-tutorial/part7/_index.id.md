@@ -5,7 +5,7 @@ updated = 2015-03-12
 description = "Bagaimana untuk menyebarkan aplikasi JavaFX sebagai paket asli. Membuat pemasang untuk Windows, MacOS, dan Linux."
 image = "addressapp-macos.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/id/part7/"
 aliases = [ 
   "/library/javafx-8-tutorial/id/part7/"

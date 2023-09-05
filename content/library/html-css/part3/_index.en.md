@@ -4,7 +4,7 @@ date = 2018-08-10
 description = "Learn how to style websites with CSS. "
 image = "portfolio.png"
 prettify = true
-comments = true
+# comments = true
 weight = 3
 
 [[sidebars]]

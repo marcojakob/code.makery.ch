@@ -4,7 +4,7 @@ date = 2012-10-03
 image = "greenfoot-kara-logo.png"
 description = "Hintergrundinformationen über GreenfootKara."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/greenfoot-kara/de/background/"
 aliases = [ 
   "/library/greenfoot-kara/de/background/" 

@@ -5,7 +5,7 @@ updated = 2014-11-06
 description = "Este Tutorial em sete partes orienta a criação, programação e a implantação de um aplicativo de endereços usando JavaFX."
 image = "addressapp.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/javafx-8-tutorial/pt/"
 aliases = [ 
   "/library/javafx-8-tutorial/pt/" 

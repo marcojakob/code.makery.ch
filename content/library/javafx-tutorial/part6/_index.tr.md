@@ -4,7 +4,7 @@ date = 2018-09-05
 description = "JavaFX Sütun Grafiğini nasıl yapacağınızı öğrenin."
 image = "addressapp-part6.png"
 prettify = true
-comments = true
+# comments = true
 weight = 6
 
 [[sidebars]]

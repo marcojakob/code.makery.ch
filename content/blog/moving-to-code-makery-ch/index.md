@@ -4,7 +4,7 @@ date = 2014-03-28
 image = "code-makery.png"
 description = "This blog moved from edu.makery.ch to code.makery.ch."
 prettify = true
-comments = true
+# comments = true
 +++
 
 

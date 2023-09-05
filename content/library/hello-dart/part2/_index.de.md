@@ -5,7 +5,7 @@ updated = 2020-05-05
 description = "Lernen Sie Schleifen programmieren mit Dart. Mit logischen Operatoren steuern wir den Programmablauf."
 image = "leaving-the-tunnel.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/hello-dart/de/part2/"
 aliases = [ 
   "/library/hello-dart/de/part2/" 

@@ -6,7 +6,7 @@ description = ""
 image = "addressapp-part5.png"
 prettify = true
 rtl = true
-comments = true 
+# comments = true 
 weight = 5
 
 [[sidebars]]

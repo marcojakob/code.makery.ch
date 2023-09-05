@@ -5,7 +5,7 @@ updated = 2014-03-08
 image = "greenfootkara-screenshot.png"
 description = "In this chapter of GreenfootKara we learn how to program a Sokoban game."
 prettify = true
-comments = true
+# comments = true
 
 pagingName = "4"
 weight = 5

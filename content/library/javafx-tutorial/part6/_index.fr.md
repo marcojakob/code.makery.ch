@@ -5,7 +5,7 @@ updated = 2015-04-15
 description = "Apprenez à créer un JavaFX Bar Chart."
 image = "addressapp-part6.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/fr/part6/"
 aliases = [ 
   "/library/javafx-8-tutorial/fr/part6/"

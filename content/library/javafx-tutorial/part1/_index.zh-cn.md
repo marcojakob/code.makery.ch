@@ -5,7 +5,7 @@ updated = 2014-10-29
 description = "这 7 部分组成的教程将介绍一个用 JavaFX 编写的联系人程的设计，开发与部署的过程。"
 image = "addressapp-part1.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/zh-cn/part1/"
 aliases = [ 
   "/library/javafx-8-tutorial/zh-cn/part1/"

@@ -4,7 +4,7 @@ date = 2018-08-10
 description = "Wie kann man noch mehr lernen über HTML & CSS."
 image = "portfolio.de.png"
 prettify = false
-comments = true
+# comments = true
 commentsIdentifier = "/library/html-css/de/next/"
 aliases = [
   "/library/html-css/de/next/"

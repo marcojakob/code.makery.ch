@@ -4,7 +4,7 @@ date = 2015-04-09
 updated = 2018-08-28
 description = "Learn some tricks on how to use images with Bootstrap."
 prettify = true
-comments = true
+# comments = true
 weight = 3
 
 sidebarName = "<i class=\"fa fa-fw fa-image\"></i> Images with Bootstrap"

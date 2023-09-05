@@ -4,7 +4,7 @@ date = 2013-06-13
 image = "dart-logo.png"
 description = "The last few months I have been programming with Google's new Dart language. I'm very excited about how great it is to work with Dart!"
 prettify = true
-comments = true
+# comments = true
 tags = [ "Dart", "Web" ]
 +++
 

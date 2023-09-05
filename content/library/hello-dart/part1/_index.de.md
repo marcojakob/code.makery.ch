@@ -5,7 +5,7 @@ updated = 2020-05-05
 description = "Die ersten Schritte im Programmieren mit Dart. Lernen Sie Klassen und Funktionen kennen und verstehen Sie, was die main-Funktion bewirkt."
 image = "around-tree.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/hello-dart/de/part1/"
 aliases = [ 
   "/library/hello-dart/de/part1/" 

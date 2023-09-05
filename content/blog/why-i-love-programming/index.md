@@ -1,7 +1,7 @@
 +++
 title = "Why I Love Programming"
 date = 2012-10-01
-comments = true
+# comments = true
 +++
 
 I really love to program because I can be creative and make new things out of nothing. All I need is a computer and I can start creating programs and easily share my work with other people. There are not a lot of professions in our world today that allow this kind of creativity. 

@@ -3,7 +3,7 @@ title = "Persisting Data in Java"
 date = 2012-12-13
 image = "floppy.png"
 prettify = true
-comments = true
+# comments = true
 tags = [ "Java" ]
 +++
 

@@ -5,7 +5,7 @@ updated = 2014-03-08
 image = "greenfootkara-screenshot.png"
 description = "GreenfootKara is a visual and interactive introduction to programming in Java based on the Greenfoot IDE."
 prettify = false
-comments = true
+# comments = true
 sidebarName = "Introduction"
 pagingName = "Intro"
 

@@ -5,7 +5,7 @@ updated = 2015-01-15
 description = "使用JavaFX TableView显示Observable人员列表。"
 image = "addressapp-part2.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/zh-cn/part2/"
 aliases = [ 
   "/library/javafx-8-tutorial/zh-cn/part2/"

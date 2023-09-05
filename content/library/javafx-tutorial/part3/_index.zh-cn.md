@@ -5,7 +5,7 @@ updated = 2015-01-15
 description = "对JavaFX TableView中的选择更改做出反应。 添加，编辑和删除表中的项目并验证用户输入。"
 image = "addressapp-part3.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/zh-cn/part3/"
 aliases = [ 
   "/library/javafx-8-tutorial/zh-cn/part3/"

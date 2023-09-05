@@ -4,7 +4,7 @@ date = 2012-10-02
 image = "kara-example-collect-leafs.png"
 description = "Kara offers a playful introduction to fundamental concepts of programming."
 prettify = true
-comments = true
+# comments = true
 tags = [ "Java", "Dart" ]
 +++
 

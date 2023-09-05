@@ -4,7 +4,7 @@ date = 2015-04-09
 updated = 2018-08-28
 description = "Lernen Sie die typografischen Möglichkeiten von HTML und CSS kennen. Enthält Beispiele, wie Texte mit Bootstrap formatiert werden können."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/more-html-css/de/text/"
 aliases = [ 
   "/library/more-html-css/de/text/" 

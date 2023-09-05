@@ -4,7 +4,7 @@ date = 2015-01-26
 description = "Reasons why the Dart programming language is one of the best languages for programming beginners and professionals alike."
 image = "hello-dart.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/hello-dart/background/"
 aliases = [ 
   "/library/hello-dart/background/" 

@@ -4,7 +4,7 @@ date = 2014-05-03
 image = "event-handling-examples.png"
 description = "We explore how to handle the most common JavaFX events: Button events, CheckBox events, Hyperlink events, Slider events, TextBox events, ListView events."
 prettify = true
-comments = true
+# comments = true
 tags = [ "Java", "JavaFX" ]
 +++
 

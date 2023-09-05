@@ -4,7 +4,7 @@ date = 2014-07-10
 image = "greenfootkara-screenshot.png"
 description = "Dans ce chapitre de GreenfootKara, nous apprenons à programmer un jeu Sokoban."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/greenfoot-kara/fr/chapter4/"
 aliases = [ 
   "/library/greenfoot-kara/fr/chapter4/" 

@@ -4,7 +4,7 @@ date = 2018-08-10
 description = "Learn to publish a website live in the internet. Compare different hosting possibilities like BitBalloon, Dropbox, Google Drive, and GitHub Pages."
 image = "portfolio.png"
 prettify = true
-comments = true
+# comments = true
 weight = 2
 +++
 

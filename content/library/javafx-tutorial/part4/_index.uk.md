@@ -5,7 +5,7 @@ updated = 2015-06-25
 description = "В JavaFX ви можете змінювати зовнішній вигляд додатку за допомогою CSS. В цій частині ми також навчимося додавати іконку нашого додатку"
 image = "addressapp-part4.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/uk/part4/"
 aliases = [ 
   "/library/javafx-8-tutorial/uk/part4/"

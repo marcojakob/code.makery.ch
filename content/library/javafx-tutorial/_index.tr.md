@@ -5,7 +5,7 @@ updated = 2015-05-16
 description = "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
 image = "addressapp.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/javafx-8-tutorial/tr/"
 aliases = [ 
   "/library/javafx-8-tutorial/tr/" 

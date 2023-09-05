@@ -4,7 +4,7 @@ date = 2018-08-31
 description = "Kişilerin ObservableList'ini göstermek için JavaFX TableView kullan."
 image = "addressapp-part2.png"
 prettify = true
-comments = true
+# comments = true
 weight = 2
 
 [[sidebars]]

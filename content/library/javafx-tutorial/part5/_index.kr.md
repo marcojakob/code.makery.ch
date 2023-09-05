@@ -4,7 +4,7 @@ date = 2016-10-30
 description = "JAXB를 이용해서 데이터를 XML로 저장합니다. JavaFX FileChooser와 JavaFX Menu 사용 방법을 배웁니다."
 image = "addressapp-part5.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/kr/part5/"
 aliases = [ 
   "/library/javafx-8-tutorial/kr/part5/"

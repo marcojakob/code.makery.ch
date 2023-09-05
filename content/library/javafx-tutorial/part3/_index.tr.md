@@ -4,7 +4,7 @@ date = 2018-09-03
 description = "JavaFX TableView içindeki seçim değişimlerine tepki ver. Tablodan çıkarma, ekleme, düzenleme işlemleri yap ve kullanıcı girişini doğrula"
 image = "addressapp-part3.png"
 prettify = true
-comments = true
+# comments = true
 weight = 3
 
 [[sidebars]]

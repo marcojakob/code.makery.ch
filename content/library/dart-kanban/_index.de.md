@@ -5,7 +5,7 @@ updated = 2020-05-05
 image = "dart-kanban.png"
 description = "Lernen Sie Dart Programmieren. Wir erstellen ein interaktives Kanban Board als Dart Webapplikation. Anleitung vom Dart installieren bis zur Veröffentlichung auf einem Webserver."
 prettify = false
-comments = true
+# comments = true
 commentsIdentifier = "/library/dart-kanban/de/"
 aliases = [ 
   "/library/dart-kanban/de/" 

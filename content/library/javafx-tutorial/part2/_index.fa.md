@@ -6,7 +6,7 @@ description = "استفاده از قابلیت JavaFX به نام TableView ب�
 image = "addressapp-part2.png"
 rtl = true
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/fa/part2/"
 aliases = [ 
   "/library/javafx-8-tutorial/fa/part2/"

@@ -5,7 +5,7 @@ updated = 2020-05-05
 description = "Lernen Sie den Programmablauf mit bedingten Anweisungen zu steuern. Zahlreiche Hello Dart Übungen helfen beim Verständnis."
 image = "guard.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/hello-dart/de/part3/"
 aliases = [ 
   "/library/hello-dart/de/part3/" 

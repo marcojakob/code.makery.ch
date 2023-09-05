@@ -5,7 +5,7 @@ updated = 2015-06-25
 description = "Дізнайтесь, як створити проект JavaFX. Це перша частина підручника з проектування, програмування та розгортання додатку Адресна книга за допомогою JavaFX"
 image = "addressapp-part1.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/uk/part1/"
 aliases = [ 
   "/library/javafx-8-tutorial/uk/part1/"

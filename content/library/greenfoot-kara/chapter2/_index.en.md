@@ -5,7 +5,7 @@ updated = 2014-03-08
 image = "greenfootkara-screenshot.png"
 description = "In order to solve difficult tasks in programming, it is often helpful to outline the program flow in a flowchart."
 prettify = true
-comments = true
+# comments = true
 
 pagingName = "2"
 weight = 3

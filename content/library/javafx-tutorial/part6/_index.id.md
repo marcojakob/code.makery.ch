@@ -5,7 +5,7 @@ updated = 2015-03-12
 description = "Belajar bagaimana membuat bagan palang JavaFX."
 image = "addressapp-part6.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/id/part6/"
 aliases = [ 
   "/library/javafx-8-tutorial/id/part6/"

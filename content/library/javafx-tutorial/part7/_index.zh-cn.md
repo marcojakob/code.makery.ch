@@ -5,7 +5,7 @@ updated = 2015-01-16
 description = "如何将JavaFX应用程序部署为本机程序包。 为Windows，MacOS或Linux创建安装程序。"
 image = "addressapp-macos.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/zh-cn/part7/"
 aliases = [ 
   "/library/javafx-8-tutorial/zh-cn/part7/"

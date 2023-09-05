@@ -4,7 +4,7 @@ date = 2018-08-10
 description = "Lernen Sie, wie man eine Navigation für die Website erstellt."
 image = "portfolio.de.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/html-css/de/part6/"
 aliases = [
   "/library/html-css/de/part6/"

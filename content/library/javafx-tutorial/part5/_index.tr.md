@@ -4,7 +4,7 @@ date = 2018-09-05
 description = "Veriyi JAXB ile XML olarak saklama. JavaFX FileChooser ve JavaFX Menu kullanımını öğrenme."
 image = "addressapp-part5.png"
 prettify = true
-comments = true
+# comments = true
 weight = 5
 
 [[sidebars]]

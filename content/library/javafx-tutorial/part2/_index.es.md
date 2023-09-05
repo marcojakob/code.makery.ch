@@ -4,7 +4,7 @@ date = 2014-09-17
 description = "Uso de un componente TableView para mostrar una lista (ObsevableList) de personas (Person)"
 image = "addressapp-part2.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/es/part2/"
 aliases = [ 
   "/library/javafx-8-tutorial/es/part2/"

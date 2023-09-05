@@ -4,7 +4,7 @@ date = 2018-06-01
 description = "JavaFX projesinin nasıl oluşturulacağını öğrenin. Bu yedi kısımdan oluşan ve JavaFX ile bir adres uygulamasının tasarımı, programlaması ve yayımlanmasını içeren tutorialın bir parçasıdır."
 image = "addressapp-part1.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/tr/part1/"
 aliases = [ 
   "/library/javafx-8-tutorial/tr/part1/"

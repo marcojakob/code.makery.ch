@@ -4,7 +4,7 @@ date = 2014-05-02
 image = "tableview-cell-renderer.png"
 description = "In this post I will show how to customize the rendering of a JavaFX TableView."
 prettify = true
-comments = true
+# comments = true
 tags = [ "Java", "JavaFX" ]
 +++
 

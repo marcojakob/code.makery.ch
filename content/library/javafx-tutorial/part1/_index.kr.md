@@ -5,7 +5,7 @@ updated = 2016-11-03
 description = "JavaFX 프로젝트를 만드는 방법을 배웁니다. 이 문서는 JavaFX로 주소록 애플리케이션을 디자인, 프로그래밍, 배포하는 7부로 구성된 튜토리얼 중 1부입니다."
 image = "addressapp-part1.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/kr/part1/"
 aliases = [ 
   "/library/javafx-8-tutorial/kr/part1/"

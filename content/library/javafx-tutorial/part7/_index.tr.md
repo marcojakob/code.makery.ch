@@ -6,7 +6,7 @@ canonical = "/library/javafx-tutorial/part7/"
 description = "How to deploy a JavaFX application as native package. Create an installer for Windows, MacOS, or Linux."
 image = "addressapp-macos.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/tr/part7/"
 aliases = [ 
   "/library/javafx-8-tutorial/tr/part7/"

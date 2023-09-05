@@ -3,7 +3,7 @@ title = "Dart HTML5 Drag and Drop"
 date = 2014-03-25
 updated = 2014-07-17
 prettify = true
-comments = true 
+# comments = true 
 commentsShortname = "edumakery"
 commentsIdentifier = "http://edu.makery.ch/projects/dart-html5-drag-and-drop/index.html"
 

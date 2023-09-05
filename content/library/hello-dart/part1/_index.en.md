@@ -5,7 +5,7 @@ updated = 2020-05-05
 description = "The first steps in programming with Dart. Get to know classes and functions and understand what the main function is for."
 image = "around-tree.png"
 prettify = true
-comments = true
+# comments = true
 
 pagingName = "1"
 weight = 3

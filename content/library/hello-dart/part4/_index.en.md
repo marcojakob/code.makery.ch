@@ -5,7 +5,7 @@ updated = 2020-05-05
 description = "With variables we can store data in Dart. Learn about the different data types available in Dart."
 image = "chessboard.png"
 prettify = true
-comments = true
+# comments = true
 
 pagingName = "4"
 weight = 6

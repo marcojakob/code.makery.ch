@@ -5,7 +5,7 @@ updated = 2014-11-10
 image = "translate.png"
 description = "JavaFX Tutorial translated to Spanish, Porguguese, and Chinese."
 prettify = false
-comments = true
+# comments = true
 tags = [ "Java", "JavaFX" ]
 +++
 

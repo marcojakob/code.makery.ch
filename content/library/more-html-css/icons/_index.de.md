@@ -4,7 +4,7 @@ date = 2015-04-09
 updated = 2018-08-28
 description = "Icons mit Icon Fonts und SVG auf einer Webseite einbinden. Links zu verschiedenen Gratis-Bibliotheken für Icons."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/more-html-css/de/icons/"
 aliases = [ 
   "/library/more-html-css/de/icons/" 

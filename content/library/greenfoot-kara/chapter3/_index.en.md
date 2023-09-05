@@ -5,7 +5,7 @@ updated = 2014-03-08
 image = "greenfootkara-screenshot.png"
 description = "Dans ce chapitre de GreenfootKara nous apprenons à propos des variables."
 prettify = true
-comments = true
+# comments = true
 
 pagingName = "3"
 weight = 4

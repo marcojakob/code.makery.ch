@@ -5,7 +5,7 @@ updated = 2020-05-05
 description = "Installing Dart and Visual Studio Code."
 image = "dart-sdk-icon.png"
 prettify = true
-comments = true
+# comments = true
 
 sidebarName = "<i class=\"fa fa-fw fa-cog\"></i> Installation"
 pagingName = "<i class=\"fa fa-fw fa-cog\"></i>"

@@ -5,7 +5,7 @@ updated = 2020-05-05
 description = "Mit Variablen können wir Daten speichern in Dart. Lernen Sie die verschiedenen Datentypen von Dart kennen."
 image = "chessboard.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/hello-dart/de/part4/"
 aliases = [ 
   "/library/hello-dart/de/part4/" 

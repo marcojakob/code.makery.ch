@@ -4,7 +4,7 @@ date = 2014-07-17
 image = "dnd-screenshot.png"
 description = "I gave up on HTML5 drag and drop and created a new Dart library without HTML5."
 prettify = false
-comments = true
+# comments = true
 tags = [ "Dart", "Web" ]
 +++
 

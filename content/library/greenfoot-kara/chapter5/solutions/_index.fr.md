@@ -2,7 +2,7 @@
 title = "Solutions"
 date = 2014-07-10
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/greenfoot-kara/fr/chapter5-solutions/"
 aliases = [ 
   "/library/greenfoot-kara/fr/chapter5-solutions/" 

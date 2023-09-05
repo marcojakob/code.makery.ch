@@ -5,7 +5,7 @@ updated = 2015-01-16
 description = "了解如何创建JavaFX条形图。"
 image = "addressapp-part6.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/zh-cn/part6/"
 aliases = [ 
   "/library/javafx-8-tutorial/zh-cn/part6/"

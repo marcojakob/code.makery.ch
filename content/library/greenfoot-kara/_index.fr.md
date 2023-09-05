@@ -5,7 +5,7 @@ canonical = "/library/greenfoot-kara/"
 image = "greenfootkara-screenshot.png"
 description = "GreenfootKara is a visual and interactive introduction to programming in Java based on the Greenfoot IDE."
 prettify = false
-comments = true
+# comments = true
 commentsIdentifier = "/library/greenfoot-kara/fr/"
 aliases = [ 
   "/library/greenfoot-kara/fr/" 

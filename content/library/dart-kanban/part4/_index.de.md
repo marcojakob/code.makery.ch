@@ -5,7 +5,7 @@ updated = 2020-05-05
 image = "dart-kanban.png"
 description = "Mit Dart HTML-Elemente verschieben und löschen. Auf Klick-Events reagieren."
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/dart-kanban/de/part4/"
 aliases = [ 
   "/library/dart-kanban/de/part4/" 

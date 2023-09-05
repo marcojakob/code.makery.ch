@@ -5,7 +5,7 @@ updated = 2014-03-08
 image = "greenfootkara-screenshot.png"
 description = "In this chapter of GreenfootKara we learn about how to structure our code with methods."
 prettify = true
-comments = true
+# comments = true
 
 pagingName = "5"
 weight = 6

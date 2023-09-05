@@ -5,7 +5,7 @@ updated = 2020-05-05
 description = "Learn to program loops with Dart. With logical operators we control the program flow."
 image = "leaving-the-tunnel.png"
 prettify = true
-comments = true
+# comments = true
 
 pagingName = "2"
 weight = 4

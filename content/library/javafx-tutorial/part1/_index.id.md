@@ -5,7 +5,7 @@ updated = 2015-03-12
 description = "Belajar untuk mengatur proyek JavaFX. Bagian ini merupakan salah satu dari tujuh tutorial yang membahas tentang mendesain, memprogram dan penyebarang aplikasi alamat dengan JavaFX."
 image = "addressapp-part1.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/id/part1/"
 aliases = [ 
   "/library/javafx-8-tutorial/id/part1/"

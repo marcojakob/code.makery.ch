@@ -4,7 +4,7 @@ date = 2018-09-04
 description = "JavaFX'te kendi kullanıcı arayüzünüzü CSS ile biçimlendirebilirsiniz. Bu kısımda ayrıca uygulama ikonu da ekleyeceğiz."
 image = "addressapp-part4.png"
 prettify = true
-comments = true
+# comments = true
 weight = 4
 
 [[sidebars]]

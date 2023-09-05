@@ -4,7 +4,7 @@ date = 2014-05-10
 image = "addressapp-javafx8.png"
 description = "I describe the changes I made when updating to JavaFX 8. This should give you a fairly good overview of the new possibilities of Java 8 and JavaFX 8."
 prettify = true
-comments = true
+# comments = true
 tags = [ "Java", "JavaFX" ]
 +++
 

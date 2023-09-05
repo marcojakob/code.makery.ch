@@ -5,7 +5,7 @@ updated = 2019-12-05
 image = "event-bus.png"
 description = "An Event Bus library in Dart for decoupling applications."
 prettify = true
-comments = true
+# comments = true
 
 # Series Overview Info
 overview = true

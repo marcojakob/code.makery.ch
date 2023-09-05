@@ -5,7 +5,7 @@ updated = 2015-03-12
 description = "Bereaksi terhadap perubahan seleksi pada TableView. Menambah, memperbaharui, dan menghapus bulir-bulir dari table dan juga memvalidasi masukan pengguna."
 image = "addressapp-part3.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/id/part3/"
 aliases = [ 
   "/library/javafx-8-tutorial/id/part3/"

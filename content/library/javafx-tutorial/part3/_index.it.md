@@ -5,7 +5,7 @@ updated = 2015-11-01
 description = "React to selection changes in the JavaFX TableView. Add, edit and remove items from the table and validate user input."
 image = "addressapp-part3.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/it/part3/"
 aliases = [ 
   "/library/javafx-8-tutorial/it/part3/"

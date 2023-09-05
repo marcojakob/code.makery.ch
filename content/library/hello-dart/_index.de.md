@@ -5,7 +5,7 @@ updated = 2020-05-05
 description = "Hello Dart ist eine spielerische Einführung in die Programmierung. Lernen Sie die Grundlagen der Programmierung mit Dart."
 image = "hello-dart.png"
 prettify = false
-comments = true
+# comments = true
 commentsIdentifier = "/library/hello-dart/de/"
 aliases = [ 
   "/library/hello-dart/de/" 

@@ -5,7 +5,7 @@ updated = 2015-04-15
 description = "Apprenez comment créer un projet JavaFX. Cette page fait partie d'un tutoriel de sept pages relatif à la conception, la programmation et le déploiment d'une application type carnet d'adresses avec JavaFX."
 image = "addressapp-part1.png"
 prettify = true
-comments = true 
+# comments = true 
 commentsIdentifier = "/library/javafx-8-tutorial/fr/part1/"
 aliases = [ 
   "/library/javafx-8-tutorial/fr/part1/"

@@ -4,7 +4,7 @@ date = 2013-09-26
 description = "Bisher war es kaum realistisch, im Anfängerunterricht mobile oder webbasierte Applikationen zu entwickeln. Die Programmiersprache Dart bietet neue Möchkeiten, wie solche Applikationen viel einfacher programmiert werden können."
 image = "dart-on-modern-platforms.png"
 prettify = true
-comments = true
+# comments = true
 tags = [ "Dart", "Web" ]
 +++
 

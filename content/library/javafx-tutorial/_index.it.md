@@ -5,7 +5,7 @@ updated = 2015-03-12
 description = "Questo tutorial in sette parti, guida nella progettazione, nella programmazione e nel deploying di una applicazione rubrica con JavaFX."
 image = "addressapp.png"
 prettify = true
-comments = true
+# comments = true
 commentsIdentifier = "/library/javafx-8-tutorial/it/"
 aliases = [ 
   "/library/javafx-8-tutorial/it/" 
